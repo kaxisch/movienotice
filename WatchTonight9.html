@@ -12,12 +12,10 @@
 html { background: var(--bg); }
 body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300; overflow-x: hidden; }
 
-/* FLOATING ORBS */
-.orb { position: fixed; border-radius: 50%; filter: blur(90px); pointer-events: none; z-index: -1; top: 0; left: 0; will-change: transform; }
-.orb-1 { width: 200px; height: 200px; background: radial-gradient(circle, rgba(220,170,20,0.70) 0%, transparent 70%); }
-.orb-2 { width: 170px; height: 170px; background: radial-gradient(circle, rgba(20,100,220,0.70) 0%, transparent 70%); }
-.orb-3 { width: 140px; height: 140px; background: radial-gradient(circle, rgba(30,160,210,0.70) 0%, transparent 70%); }
-.orb-4 { width: 120px; height: 120px; background: radial-gradient(circle, rgba(200,150,10,0.70) 0%, transparent 70%); }
+/* FIXED GLOWS */
+.glow-fixed { position: fixed; border-radius: 50%; pointer-events: none; z-index: 0; }
+.glow-yellow { width: 780px; height: 780px; right: -390px; top: calc(28% - 80px); background: radial-gradient(circle, rgba(220,170,20,0.35) 0%, rgba(220,170,20,0.08) 40%, transparent 70%); filter: blur(40px); }
+.glow-blue   { width: 690px; height: 690px; left: -345px;  bottom: -230px; background: radial-gradient(circle, rgba(20,117,220,0.35) 0%, rgba(20,117,220,0.10) 40%, transparent 70%); filter: blur(50px); }
 .material-symbols-outlined { font-family: 'Material Symbols Outlined' !important; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; font-weight: normal; font-style: normal; display: inline-block; line-height: 1; text-transform: none; letter-spacing: normal; }
 .glass { background: var(--glass-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--glass-border); }
 
@@ -216,10 +214,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 </head>
 <body>
 
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-<div class="orb orb-3"></div>
-<div class="orb orb-4"></div>
+<div class="glow-fixed glow-yellow"></div>
+<div class="glow-fixed glow-blue"></div>
 
 <header id="navbar">
   <div class="nav-inner">
@@ -1271,72 +1267,6 @@ function refreshData() { loadData(true); }
 switchTab(currentTab);
 loadData(false);
 
-// Floating orb physics
-(function() {
-  var configs = [
-    { cls: 'orb-1', w: 200, h: 200, spd: 1.80 },
-    { cls: 'orb-2', w: 170, h: 170, spd: 1.60 },
-    { cls: 'orb-3', w: 140, h: 140, spd: 2.00 },
-    { cls: 'orb-4', w: 120, h: 120, spd: 1.70 }
-  ];
-  var orbs = [];
-  function rand(a, b) { return a + Math.random() * (b - a); }
-  function getTopBound() {
-    var tabBar = document.getElementById('tab-bar');
-    return (tabBar ? tabBar.offsetHeight : 120) + 76;
-  }
-  var zones = [
-    { xFn: function(vw, w) { return rand(-w * 0.1, vw * 0.3); },          yFn: function(top, vh, h) { return rand(top, top + (vh - top) * 0.45); } },
-    { xFn: function(vw, w) { return rand(vw * 0.55, vw - w * 0.2); },      yFn: function(top, vh, h) { return rand(top, top + (vh - top) * 0.45); } },
-    { xFn: function(vw, w) { return rand(vw * 0.1, vw * 0.5); },           yFn: function(top, vh, h) { return rand(top + (vh - top) * 0.45, vh - h * 0.2); } },
-    { xFn: function(vw, w) { return rand(vw * 0.4, vw - w * 0.1); },       yFn: function(top, vh, h) { return rand(top + (vh - top) * 0.45, vh - h * 0.2); } }
-  ];
-  function init() {
-    var vw = window.innerWidth;
-    var vh = window.innerHeight;
-    var top = getTopBound();
-    orbs = configs.map(function(c, i) {
-      var z = zones[i];
-      var x = z.xFn(vw, c.w);
-      var y = z.yFn(top, vh, c.h);
-      var angle = rand(0, Math.PI * 2);
-      var o = {
-        el: document.querySelector('.' + c.cls),
-        w: c.w, h: c.h, spd: c.spd,
-        x: x, y: y,
-        vx: Math.cos(angle) * c.spd,
-        vy: Math.sin(angle) * c.spd
-      };
-      if (o.el) o.el.style.transform = 'translate(' + Math.round(x) + 'px,' + Math.round(y) + 'px)';
-      return o;
-    });
-  }
-  function tick() {
-    var vw = window.innerWidth;
-    var vh = window.innerHeight;
-    var topBound = getTopBound();
-    var botBound = vh + 60;
-    orbs.forEach(function(o) {
-      o.x += o.vx;
-      o.y += o.vy;
-      var xMin = -o.w * 0.3, xMax = vw - o.w * 0.7;
-      if (o.x < xMin) { o.x = xMin; o.vx = Math.abs(o.vx) * 0.9; }
-      if (o.x > xMax) { o.x = xMax; o.vx = -Math.abs(o.vx) * 0.9; }
-      if (o.y < topBound) { o.y = topBound; o.vy = Math.abs(o.vy) * 0.9; }
-      if (o.y > botBound) { o.y = botBound; o.vy = -Math.abs(o.vy) * 0.9; }
-      o.vx += (Math.random() - 0.5) * 0.006;
-      o.vy += (Math.random() - 0.5) * 0.006;
-      var spd = Math.sqrt(o.vx * o.vx + o.vy * o.vy);
-      if (spd > 2.5)  { o.vx = o.vx / spd * 2.5;  o.vy = o.vy / spd * 2.5;  }
-      if (spd < 0.80) { o.vx = o.vx / spd * 0.80; o.vy = o.vy / spd * 0.80; }
-      if (o.el) o.el.style.transform = 'translate(' + Math.round(o.x) + 'px,' + Math.round(o.y) + 'px)';
-    });
-    requestAnimationFrame(tick);
-  }
-  init();
-  requestAnimationFrame(tick);
-  window.addEventListener('resize', init);
-})();
 </script>
 </body>
 </html>
