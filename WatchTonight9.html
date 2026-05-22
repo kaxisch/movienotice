@@ -76,8 +76,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .content-area { padding: 40px 64px; max-width: 1440px; margin: 0 auto; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
-.movie-card { cursor: pointer; min-width: 0; display: flex; flex-direction: column; }
-.card-img-wrap { position: relative; width: 100%; padding-top: 150%; border-radius: 16px; overflow: hidden; margin-bottom: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); transition: border-color 0.3s; }
+.movie-card { min-width: 0; display: flex; flex-direction: column; }
+.card-img-wrap { cursor: pointer; position: relative; width: 100%; padding-top: 150%; border-radius: 16px; overflow: hidden; margin-bottom: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); transition: border-color 0.3s; }
 .card-img-wrap:hover { border-color: rgba(255,255,255,0.15); box-shadow: 0 0 20px rgba(255,255,255,0.05); }
 .card-img-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s; }
 .card-img-wrap:hover img { transform: scale(1.08); }
@@ -379,7 +379,7 @@ var filtered = { now: [], soon: [], stream: [] };
 var currentTab = (function() {
   var h = window.location.hash.replace('#','');
   if (h === 'soon' || h === 'stream') return h;
-  try { var v = localStorage.getItem("wt_active_tab"); if (v === 'soon' || v === 'stream') return v; } catch(e) {}
+  try { var v = sessionStorage.getItem("wt_active_tab"); if (v === 'soon' || v === 'stream') return v; } catch(e) {}
   return "now";
 })();
 var activeGenres = {};
@@ -821,8 +821,8 @@ function cardHTML(m, showRatings, showPlatforms) {
     if (m.platforms) for (var i = 0; i < m.platforms.length; i++) names.push(m.platforms[i].name);
     platformsHTML = '<p class="card-platforms">' + escHtml(names.join(' · ')) + '</p>';
   }
-  return '<div class="movie-card fade-in" id="card-' + m.id + '" onclick="openModal(' + m.id + ')">' +
-    '<div class="card-img-wrap">' + imgHTML +
+  return '<div class="movie-card fade-in" id="card-' + m.id + '">' +
+    '<div class="card-img-wrap" onclick="openModal(' + m.id + ')">' + imgHTML +
     '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(m.genre.slice(0,2).join(' / ')) + '</span></div></div>' +
     '<p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn + metaHTML + platformsHTML + '</div>';
 }
@@ -1046,7 +1046,7 @@ function updateMobileActiveBar() {
 }
 function switchTab(t) {
   currentTab = t;
-  try { localStorage.setItem("wt_active_tab", t); } catch(e) {}
+  try { sessionStorage.setItem("wt_active_tab", t); } catch(e) {}
   try { history.replaceState(null, '', t === 'now' ? '#' : '#' + t); } catch(e) {}
   document.getElementById("sort-select").value = tabSortState[t];
   document.querySelectorAll(".tab-content").forEach(function(el) { el.classList.remove("active"); });
@@ -1149,6 +1149,14 @@ function playTrailer(key) {
 }
 function closeTrailer() { document.getElementById("trailer-iframe").src = ""; document.getElementById("trailer-modal").classList.remove("open"); }
 document.addEventListener("keydown", function(e) { if (e.key === "Escape") { closeModal(); closeTrailer(); } });
+
+document.addEventListener("click", function(e) {
+  var panel = document.getElementById("filter-panel");
+  if (panel.style.display !== "block") return;
+  if (panel.contains(e.target)) return;
+  if (e.target.closest("#mobile-search-toggle, .filter-btn")) return;
+  toggleFilter();
+});
 
 document.addEventListener("DOMContentLoaded", function() {
   bindSearchInput(document.getElementById("tab-search"));
