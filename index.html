@@ -81,6 +81,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 .movie-card { min-width: 0; display: flex; flex-direction: column; }
+.card-info { flex: 1; display: grid; grid-template-rows: auto auto 1fr auto auto auto; min-height: 0; }
 .card-img-wrap { cursor: pointer; position: relative; width: 100%; padding-top: 150%; border-radius: 16px; overflow: hidden; margin-bottom: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); transition: border-color 0.3s; }
 .card-img-wrap:hover { border-color: rgba(255,255,255,0.15); box-shadow: 0 0 20px rgba(255,255,255,0.05); }
 .card-img-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s; }
@@ -94,11 +95,14 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .card-no-img { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.1); }
 .card-title { font-size: 14px; font-weight: 300; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
 .card-title-en { font-size: 11px; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; }
-.card-meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.10); margin-top: auto; padding-top: 8px; }
-.card-platforms { font-size: 11px; color: rgba(255,255,255,0.55); margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.card-date { font-size: 11px; color: rgba(255,255,255,0.55); }
-.badge-imdb { background: rgba(245,210,80,0.15); border: 1px solid rgba(245,210,80,0.5); color: rgba(255,255,255,0.5); border-radius: 8px; padding: 1px 5px; font-size: 10px; font-weight: 400; white-space: nowrap; }
-.badge-tmdb { background: rgba(90,200,250,0.15); border: 1px solid rgba(90,200,250,0.5); color: rgba(255,255,255,0.5); border-radius: 8px; padding: 1px 5px; font-size: 10px; font-weight: 400; white-space: nowrap; }
+.card-meta { display: contents; }
+.card-platforms { font-size: 11px; color: rgba(255,255,255,0.55); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+.card-date { font-size: 11px; color: rgba(255,255,255,0.55); border-top: 1px solid rgba(255,255,255,0.10); padding-top: 8px; }
+.card-badges { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; width: 100%; margin-top: 4px; min-height: 24px; }
+.badge-imdb { background: rgba(196,168,102,0.10); border: 1px solid rgba(196,168,102,0.28); color: #d4b876; border-radius: 8px; padding: 3px 5px; font-size: 11px; font-weight: 500; white-space: nowrap; display: inline-flex; align-items: center; line-height: 1; }
+.badge-tmdb { background: rgba(70,140,155,0.12); border: 1px solid rgba(70,140,155,0.3); color: #8fc0ca; border-radius: 8px; padding: 3px 5px; font-size: 11px; font-weight: 500; white-space: nowrap; display: inline-flex; align-items: center; line-height: 1; }
+.badge-rt { background: rgba(180,70,60,0.12); border: 1px solid rgba(180,70,60,0.3); color: #e08a82; border-radius: 8px; padding: 3px 5px; font-size: 11px; font-weight: 500; white-space: nowrap; display: inline-flex; align-items: center; line-height: 1; }
+.badge-mc { background: rgba(90,140,95,0.12); border: 1px solid rgba(90,140,95,0.3); color: #9cc09f; border-radius: 8px; padding: 3px 5px; font-size: 11px; font-weight: 500; white-space: nowrap; display: inline-flex; align-items: center; line-height: 1; }
 
 @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 .skeleton { background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: 8px; }
@@ -116,7 +120,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .modal-hero-media { position: absolute; inset: 0; }
 .modal-hero-img { width: 100%; height: 100%; object-fit: cover; object-position: top center; mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 82%, transparent 100%), linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); mask-composite: intersect; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 82%, transparent 100%), linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); -webkit-mask-composite: source-in; }
 .modal-hero-grad2 { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,10,15,0.4) 0%, transparent 50%); }
-.modal-hero-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 50%; background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 100%); pointer-events: none; z-index: 1; }
+.modal-hero-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 70%; background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.92) 100%); pointer-events: none; z-index: 1; }
 .modal-hero-info { position: absolute; bottom: 0; left: 0; padding: 24px 32px; z-index: 2; }
 .modal-genre-tags { display: flex; gap: 8px; margin-bottom: 10px; }
 .modal-genre-tag { background: var(--glass-bg); backdrop-filter: blur(12px); border: 1px solid var(--glass-border); padding: 2px 10px; border-radius: 4px; font-size: 10px; letter-spacing: 0.05em; }
@@ -202,6 +206,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   .nav-inner { padding: 14px 20px; }
   .tab-bar-inner { padding: 0 20px; }
   .content-area { padding: 28px 20px; }
+  footer { padding-left: 20px !important; padding-right: 20px !important; }
   .modal-hero-info { padding: 16px 20px; }
   .modal-body { padding: 20px; }
   .filter-row { flex-wrap: nowrap; justify-content: space-between; padding: 10px 0; row-gap: 0; }
@@ -215,9 +220,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   #mobile-search-wrap { display: block; }
 }
 @media(max-width:430px){
-  .badge-imdb, .badge-tmdb { padding: 1px 2px; }
+  .badge-imdb, .badge-tmdb, .badge-rt, .badge-mc { padding: 3px 2px; }
   .card-date { font-size: 11px; }
-  .card-meta { gap: 4px; }
 }
 </style>
 </head>
@@ -365,7 +369,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 </div>
 
 <footer style="padding:40px 64px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:32px;">
-  <p style="color:rgba(255,255,255,0.3);font-size:12px;font-weight:300">WatchTonight · 資料來源 TMDB & OMDb · made by Axis Chang</p>
+  <p style="color:rgba(255,255,255,0.3);font-size:12px;font-weight:300">WatchTonight · 資料來源 TMDB、OMDb（含 IMDb、爛番茄、Metacritic 評分）· made by Axis Chang</p>
 </footer>
 
 <script>
@@ -378,9 +382,9 @@ var MOTN_KEY = "motn-key-v4-My83nan7gdEaLpMnFUZ5lOqINx7RhoKQ";
 var MOTN_BASE = "https://api.movieofthenight.com/v4";
 var IMG_W = "https://image.tmdb.org/t/p/w500";
 var IMG_BG = "https://image.tmdb.org/t/p/w1280";
-var CACHE_KEY = "watchtonight_v15";
+var CACHE_KEY = "watchtonight_v16";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
-var IMDB_CACHE_KEY = "watchtonight_imdb_v1";
+var IMDB_CACHE_KEY = "watchtonight_imdb_v2";
 var IMDB_CACHE_TTL = 7 * 24 * 60 * 60 * 1000;
 function loadImdbCache() {
   try {
@@ -391,11 +395,11 @@ function loadImdbCache() {
     return obj.data || {};
   } catch(e) { return {}; }
 }
-function saveImdbRating(imdbId, rating) {
+function saveImdbData(imdbId, ratings) {
   try {
     var raw = localStorage.getItem(IMDB_CACHE_KEY);
     var obj = raw ? JSON.parse(raw) : { ts: Date.now(), data: {} };
-    obj.data[imdbId] = rating;
+    obj.data[imdbId] = ratings;
     localStorage.setItem(IMDB_CACHE_KEY, JSON.stringify(obj));
   } catch(e) {}
 }
@@ -545,13 +549,28 @@ function getBasicDetail(id) {
   }).catch(function() { return {}; });
 }
 
+function parseOmdbRatings(d) {
+  var imdb = (d.imdbRating && d.imdbRating !== "N/A") ? d.imdbRating : "";
+  var rt = "";
+  if (d.Ratings) {
+    for (var i = 0; i < d.Ratings.length; i++) {
+      if (d.Ratings[i].Source === "Rotten Tomatoes" && d.Ratings[i].Value !== "N/A") { rt = d.Ratings[i].Value; break; }
+    }
+  }
+  var mc = (d.Metascore && d.Metascore !== "N/A") ? d.Metascore : "";
+  return { imdb: imdb, rt: rt, mc: mc };
+}
+
 function getImdb(imdbId) {
-  if (!imdbId) return Promise.resolve("");
-  if (imdbLocalCache[imdbId]) return Promise.resolve(imdbLocalCache[imdbId]);
+  if (!imdbId) return Promise.resolve({ imdb: "", rt: "", mc: "" });
+  if (imdbLocalCache[imdbId]) {
+    var c = imdbLocalCache[imdbId];
+    return Promise.resolve(typeof c === "string" ? { imdb: c, rt: "", mc: "" } : c);
+  }
   var startIdx = omdbKeyIndex % OMDB_KEYS.length;
   omdbKeyIndex++;
   function tryKey(attempt) {
-    if (attempt >= OMDB_KEYS.length) return Promise.resolve("");
+    if (attempt >= OMDB_KEYS.length) return Promise.resolve({ imdb: "", rt: "", mc: "" });
     var key = OMDB_KEYS[(startIdx + attempt) % OMDB_KEYS.length];
     if (omdbExhausted[key]) return tryKey(attempt + 1);
     return fetch("https://www.omdbapi.com/?i=" + imdbId + "&apikey=" + key)
@@ -561,11 +580,11 @@ function getImdb(imdbId) {
           omdbExhausted[key] = true;
           return tryKey(attempt + 1);
         }
-        var rating = (d.imdbRating && d.imdbRating !== "N/A") ? d.imdbRating : "";
-        if (rating) { imdbLocalCache[imdbId] = rating; saveImdbRating(imdbId, rating); }
-        return rating;
+        var ratings = parseOmdbRatings(d);
+        if (ratings.imdb || ratings.rt || ratings.mc) { imdbLocalCache[imdbId] = ratings; saveImdbData(imdbId, ratings); }
+        return ratings;
       })
-      .catch(function() { return ""; });
+      .catch(function() { return { imdb: "", rt: "", mc: "" }; });
   }
   return tryKey(0);
 }
@@ -585,7 +604,7 @@ function buildBasicMovie(m) {
     poster: m.poster_path ? IMG_W + m.poster_path : null,
     backdrop: m.backdrop_path ? IMG_BG + m.backdrop_path : null,
     voteAverage: m.vote_average ? m.vote_average.toFixed(1) : "",
-    genre: [], duration: 0, synopsis: "", imdb: "", trailerKey: null,
+    genre: [], duration: 0, synopsis: "", imdb: "", rt: "", mc: "", trailerKey: null,
     cast: [], crew: [], budget: 0, revenue: 0, status: "",
     origLang: m.original_language || "", origTitle: m.original_title || "",
     platforms: [], popularity: m.popularity || 0, imdbId: ""
@@ -669,7 +688,7 @@ function motnToMovie(item) {
     duration: show.runtime || 0,
     synopsis: show.overview || "",
     voteAverage: show.rating ? (show.rating / 10).toFixed(1) : "",
-    imdb: "",
+    imdb: "", rt: "", mc: "",
     trailerKey: null,
     cast: [], crew: [], budget: 0, revenue: 0,
     status: "Released",
@@ -806,10 +825,10 @@ function enrichBackground(rawData, skipNowFilter) {
         if (d.genres) movie.genre = d.genres.map(function(g) { return toTrad(g.name); });
         movie.imdbId = d.imdb_id || "";
         updateCardGenre(movie.id, movie.genre);
-        if (d.imdb_id) getImdb(d.imdb_id).then(function(rating) {
-          movie.imdb = rating || "";
-          var el = document.getElementById("imdb-" + movie.id);
-          if (el && rating) { el.querySelector("span").textContent = rating; el.style.display = ""; }
+        if (d.imdb_id) getImdb(d.imdb_id).then(function(ratings) {
+          if (ratings.imdb) { movie.imdb = ratings.imdb; var el = document.getElementById("imdb-" + movie.id); if (el) { el.querySelector("span").textContent = ratings.imdb; el.style.display = ""; } }
+          if (ratings.rt) { movie.rt = ratings.rt; var rtEl = document.getElementById("rt-" + movie.id); if (rtEl) { rtEl.querySelector("span").textContent = ratings.rt; rtEl.style.display = ""; } }
+          if (ratings.mc) { movie.mc = ratings.mc; var mcEl = document.getElementById("mc-" + movie.id); if (mcEl) { mcEl.querySelector("span").textContent = ratings.mc; mcEl.style.display = ""; } }
         });
       }
     }).catch(function() {}).then(onEnrichDone);
@@ -837,12 +856,18 @@ function cardHTML(m, showRatings, showPlatforms) {
     : '<div class="card-no-img"><span class="material-symbols-outlined" style="font-size:48px">movie</span></div>';
   var titleEn = (m.titleEn && m.titleEn !== m.titleZh)
     ? '<p class="card-title-en">' + escHtml(m.titleEn) + '</p>'
-    : '<div style="height:4px"></div>';
+    : '<p class="card-title-en"></p>';
   var metaHTML = '<div class="card-meta"><span class="card-date">' + formatDate(m.releaseDate) + '</span>';
   if (showRatings) {
     var imdbStyle = m.imdb ? '' : ' style="display:none"';
-    metaHTML += '<span class="badge-imdb" id="imdb-' + m.id + '"' + imdbStyle + '>IMDb <span style="color:rgba(255,255,255,0.7)">' + escHtml(m.imdb || '') + '</span></span>';
-    if (m.voteAverage) metaHTML += '<span class="badge-tmdb">TMDB <span style="color:rgba(255,255,255,0.7)">' + tmdbScore(m.voteAverage) + '</span></span>';
+    var rtStyle = m.rt ? '' : ' style="display:none"';
+    var mcStyle = m.mc ? '' : ' style="display:none"';
+    metaHTML += '<div class="card-badges">';
+    metaHTML += '<span class="badge-imdb" id="imdb-' + m.id + '"' + imdbStyle + '>IMDb ' + escHtml(m.imdb || '') + '</span>';
+    metaHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '><svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;vertical-align:middle;margin-right:2px"><path d="M9.39062 1.98047C10.9661 2.92468 11.9998 4.50879 12 6.30371C12 9.19723 9.31327 11.5448 6 11.5449C2.68684 11.5449 0 9.19729 0 6.30371C2.58634e-05 4.52964 1.01216 2.96319 2.55762 2.01562L3.54492 2.55176L2.37988 4.44629C2.31509 4.55166 2.27242 4.6472 2.24805 4.7373C2.19735 4.92517 2.23996 5.06172 2.28516 5.14258C2.36849 5.29151 2.52759 5.37988 2.70996 5.37988C2.83408 5.37984 2.97181 5.34088 3.13086 5.25977L5.82129 3.8877L8.71582 5.27832C8.87274 5.35373 9.00746 5.3906 9.12695 5.39062C9.3129 5.39062 9.47228 5.29883 9.55273 5.14551C9.59684 5.06137 9.63579 4.92115 9.57227 4.73145C9.543 4.64405 9.4942 4.55214 9.42383 4.4502L8.12305 2.56543L9.39062 1.98047ZM6.03516 0.0449219L6.83398 1.18066L6.94922 1.34473L7.14746 1.36914L8.40527 1.52051L7.36719 2.00098L6.88086 2.22461L7.18359 2.66602L8.1709 4.09668L6.01074 3.05859L5.80957 2.96289L5.6123 3.06445L3.55859 4.11035L4.46094 2.64551L4.70801 2.24121L4.29199 2.01367L3.41211 1.53613L4.79785 1.3623L4.98828 1.33887L5.10254 1.18359L5.94922 0.0439453C5.96811 0.0186072 5.98301 0.00535117 5.99121 0C5.99878 0.00489482 6.0155 0.0170432 6.03516 0.0449219Z" fill="#e08a82"/></svg>' + escHtml(m.rt || '') + '</span>';
+    metaHTML += '<span class="badge-mc" id="mc-' + m.id + '"' + mcStyle + '>MT ' + escHtml(m.mc || '') + '</span>';
+    if (m.voteAverage) metaHTML += '<span class="badge-tmdb">TMDB ' + tmdbScore(m.voteAverage) + '</span>';
+    metaHTML += '</div>';
   }
   metaHTML += '</div>';
   var platformsHTML = '';
@@ -854,7 +879,8 @@ function cardHTML(m, showRatings, showPlatforms) {
   return '<div class="movie-card fade-in" id="card-' + m.id + '">' +
     '<div class="card-img-wrap" onclick="openModal(' + m.id + ')">' + imgHTML +
     '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(m.genre.slice(0,2).join(' / ')) + '</span></div></div>' +
-    '<p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn + metaHTML + platformsHTML + '</div>';
+    '<div class="card-info"><p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn +
+    '<div class="card-spacer"></div>' + metaHTML + platformsHTML + '</div></div>';
 }
 
 function skeletonHTML() {
@@ -1111,7 +1137,11 @@ function openModal(id) {
   getDetail(id).then(function(detail) {
     var imdbRating = movie.imdb || "";
     if (!imdbRating) {
-      return getExternalIds(id).then(function(ext) { return getImdb(ext.imdb_id); }).then(function(r) { renderModal(movie, detail, r); });
+      return getExternalIds(id).then(function(ext) { return getImdb(ext.imdb_id); }).then(function(ratings) {
+        if (ratings.rt && !movie.rt) movie.rt = ratings.rt;
+        if (ratings.mc && !movie.mc) movie.mc = ratings.mc;
+        renderModal(movie, detail, ratings.imdb || "");
+      });
     }
     renderModal(movie, detail, imdbRating);
   });
@@ -1153,12 +1183,14 @@ function renderModal(movie, detail, imdbRating) {
   var metaHTML = "";
   for (var mr = 0; mr < metaRows.length; mr++) metaHTML += '<div class="meta-row"><span class="meta-key">' + metaRows[mr][0] + '</span><span class="meta-val">' + escHtml(metaRows[mr][1]) + '</span></div>';
   var bdHTML = detail.backdrop ? '<img class="modal-hero-img" src="' + detail.backdrop + '"/>' : '<div style="width:100%;height:100%;background:rgba(255,255,255,0.05)"></div>';
-  var ratingsHTML = '';
-  if (imdbRating || detail.voteAverage) {
-    if (imdbRating) ratingsHTML += '<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>IMDb <span class="val">' + escHtml(imdbRating) + '</span></span>';
-    if (imdbRating && detail.voteAverage) ratingsHTML += '<span class="modal-rating-divider"></span>';
-    if (detail.voteAverage) ratingsHTML += '<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>TMDB <span class="val">' + tmdbScore(detail.voteAverage) + '</span></span>';
-  }
+  var rtRating = movie.rt || "";
+  var mcRating = movie.mc || "";
+  var ratingItems = [];
+  if (imdbRating) ratingItems.push('<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>IMDb <span class="val">' + escHtml(imdbRating) + '</span></span>');
+  if (rtRating) ratingItems.push('<span class="modal-rating-item"><svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><path d="M9.39062 1.98047C10.9661 2.92468 11.9998 4.50879 12 6.30371C12 9.19723 9.31327 11.5448 6 11.5449C2.68684 11.5449 0 9.19729 0 6.30371C2.58634e-05 4.52964 1.01216 2.96319 2.55762 2.01562L3.54492 2.55176L2.37988 4.44629C2.31509 4.55166 2.27242 4.6472 2.24805 4.7373C2.19735 4.92517 2.23996 5.06172 2.28516 5.14258C2.36849 5.29151 2.52759 5.37988 2.70996 5.37988C2.83408 5.37984 2.97181 5.34088 3.13086 5.25977L5.82129 3.8877L8.71582 5.27832C8.87274 5.35373 9.00746 5.3906 9.12695 5.39062C9.3129 5.39062 9.47228 5.29883 9.55273 5.14551C9.59684 5.06137 9.63579 4.92115 9.57227 4.73145C9.543 4.64405 9.4942 4.55214 9.42383 4.4502L8.12305 2.56543L9.39062 1.98047ZM6.03516 0.0449219L6.83398 1.18066L6.94922 1.34473L7.14746 1.36914L8.40527 1.52051L7.36719 2.00098L6.88086 2.22461L7.18359 2.66602L8.1709 4.09668L6.01074 3.05859L5.80957 2.96289L5.6123 3.06445L3.55859 4.11035L4.46094 2.64551L4.70801 2.24121L4.29199 2.01367L3.41211 1.53613L4.79785 1.3623L4.98828 1.33887L5.10254 1.18359L5.94922 0.0439453C5.96811 0.0186072 5.98301 0.00535117 5.99121 0C5.99878 0.00489482 6.0155 0.0170432 6.03516 0.0449219Z" fill="rgba(255,255,255,0.6)"/></svg> RT <span class="val">' + escHtml(rtRating) + '</span></span>');
+  if (mcRating) ratingItems.push('<span class="modal-rating-item"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="6" cy="6" r="5.3" stroke="rgba(255,255,255,0.6)" stroke-width="0.9"/><text x="6" y="8.2" text-anchor="middle" font-size="7.5" font-family="sans-serif" fill="rgba(255,255,255,0.6)">m</text></svg> MT <span class="val">' + escHtml(mcRating) + '</span></span>');
+  if (detail.voteAverage) ratingItems.push('<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>TMDB <span class="val">' + tmdbScore(detail.voteAverage) + '</span></span>');
+  var ratingsHTML = ratingItems.join('<span class="modal-rating-divider"></span>');
   var bgHTML = detail.backdrop
     ? '<img src="' + detail.backdrop + '" style="width:100%;height:100%;object-fit:cover;object-position:top center;opacity:1;filter:blur(30px);transform:scale(1.06);will-change:transform"/>' +
       '<div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 0%,transparent 45%,rgba(10,10,15,0.6) 72%,#0a0a0f 100%)"></div>' +
@@ -1244,11 +1276,21 @@ function fetchImdbInBackground(movies) {
   if (pending === 0) return;
   movies.forEach(function(m) {
     if (!m.id || !m.imdbId || m.imdb) { pending--; if (pending === 0) saveCache(allMovies); return; }
-    getImdb(m.imdbId).then(function(rating) {
-      if (rating) {
-        m.imdb = rating;
+    getImdb(m.imdbId).then(function(ratings) {
+      if (ratings.imdb) {
+        m.imdb = ratings.imdb;
         var el = document.getElementById("imdb-" + m.id);
-        if (el) { el.querySelector("span").textContent = rating; el.style.display = ""; }
+        if (el) { el.querySelector("span").textContent = ratings.imdb; el.style.display = ""; }
+      }
+      if (ratings.rt) {
+        m.rt = ratings.rt;
+        var rtEl = document.getElementById("rt-" + m.id);
+        if (rtEl) { rtEl.querySelector("span").textContent = ratings.rt; rtEl.style.display = ""; }
+      }
+      if (ratings.mc) {
+        m.mc = ratings.mc;
+        var mcEl = document.getElementById("mc-" + m.id);
+        if (mcEl) { mcEl.querySelector("span").textContent = ratings.mc; mcEl.style.display = ""; }
       }
       pending--;
       if (pending === 0) saveCache(allMovies);
@@ -1270,11 +1312,9 @@ function loadData(forceRefresh) {
       setTimeout(function() {
         ["now","stream"].forEach(function(t) {
           allMovies[t].forEach(function(m) {
-            if (!m.imdb) return;
-            var el = document.getElementById("imdb-" + m.id);
-            if (!el) return;
-            el.querySelector("span").textContent = m.imdb;
-            el.style.display = "";
+            if (m.imdb) { var el = document.getElementById("imdb-" + m.id); if (el) { el.querySelector("span").textContent = m.imdb; el.style.display = ""; } }
+            if (m.rt) { var rtEl = document.getElementById("rt-" + m.id); if (rtEl) { rtEl.querySelector("span").textContent = m.rt; rtEl.style.display = ""; } }
+            if (m.mc) { var mcEl = document.getElementById("mc-" + m.id); if (mcEl) { mcEl.querySelector("span").textContent = m.mc; mcEl.style.display = ""; } }
           });
         });
       }, 300);
