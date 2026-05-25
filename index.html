@@ -107,7 +107,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 #detail-modal.open { display: block; }
 .modal-backdrop { display: none; }
 .modal-scroll { position: relative; width: 100%; height: 100%; overflow-y: auto; }
-.modal-inner { position: relative; max-width: 896px; margin: 0 auto; min-height: 100vh; }
+.modal-inner { position: relative; max-width: 896px; margin: 0 auto; min-height: 100vh; z-index: 1; }
+#modal-hero-slot { position: absolute; top: 0; left: 0; right: 0; height: 45vh; min-height: 300px; z-index: 0; pointer-events: none; overflow: hidden; }
 .modal-close { position: fixed; top: 24px; right: 40px; z-index: 70; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.15); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.35); border-radius: 999px; color: rgba(255,255,255,0.8); cursor: pointer; transition: color 0.2s, background 0.2s; }
 @media(max-width:768px){ .modal-close { top: 16px; right: 16px; } }
 .modal-close:hover { color: #fff; background: rgba(255,255,255,0.25); }
@@ -130,7 +131,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .btn-trailer:hover { background: rgba(255,255,255,0.25); }
 .modal-body { padding: 24px 32px; }
 .modal-body > * + * { margin-top: 32px; }
-.modal-synopsis { color: rgba(255,255,255,0.6); font-size: 14px; line-height: 1.7; }
+.modal-synopsis { color: rgba(255,255,255,0.7); font-size: 16px; line-height: 1.7; }
 .crew-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(12px); border-radius: 16px; padding: 16px; }
 @media(min-width:768px){ .crew-grid { grid-template-columns: repeat(3,1fr); } }
 .crew-name { font-size: 14px; font-weight: 300; color: #fff; margin-bottom: 4px; }
@@ -170,7 +171,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .fade-in { animation: fadeIn 0.4s ease forwards; }
 
 @media(min-width:769px){
-  .modal-hero { height: 400px; }
+  .modal-hero { height: 480px; }
+  #modal-hero-slot { height: 480px; }
 }
 @media(min-width:960px){
   .modal-close { right: calc(50vw - 432px); }
@@ -213,7 +215,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 }
 @media(max-width:430px){
   .badge-imdb, .badge-tmdb { padding: 1px 2px; }
-  .card-date { font-size: 10px; }
+  .card-date { font-size: 11px; }
   .card-meta { gap: 4px; }
 }
 </style>
@@ -341,6 +343,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 <div id="detail-modal">
   <div class="modal-backdrop" onclick="closeModal()"></div>
   <div class="modal-scroll">
+    <div id="modal-hero-slot"></div>
     <div class="modal-inner">
       <button class="modal-close" onclick="closeModal()">
         <span class="material-symbols-outlined" style="font-size:20px;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24">close</span>
@@ -366,7 +369,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 
 <script>
 var TMDB_KEY = "2ff61a89bf2684be8b207853cd89db24";
-var OMDB_KEYS = ["5f9393e9", "d2e6c0dc"];
+var OMDB_KEYS = ["5f9393e9", "d2e6c0dc", "e8e518de"];
 var omdbKeyIndex = 0;
 var omdbExhausted = {};
 var TMDB_BASE = "https://api.themoviedb.org/3";
@@ -376,6 +379,26 @@ var IMG_W = "https://image.tmdb.org/t/p/w500";
 var IMG_BG = "https://image.tmdb.org/t/p/w1280";
 var CACHE_KEY = "watchtonight_v15";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
+var IMDB_CACHE_KEY = "watchtonight_imdb_v1";
+var IMDB_CACHE_TTL = 7 * 24 * 60 * 60 * 1000;
+function loadImdbCache() {
+  try {
+    var raw = localStorage.getItem(IMDB_CACHE_KEY);
+    if (!raw) return {};
+    var obj = JSON.parse(raw);
+    if (Date.now() - obj.ts > IMDB_CACHE_TTL) return {};
+    return obj.data || {};
+  } catch(e) { return {}; }
+}
+function saveImdbRating(imdbId, rating) {
+  try {
+    var raw = localStorage.getItem(IMDB_CACHE_KEY);
+    var obj = raw ? JSON.parse(raw) : { ts: Date.now(), data: {} };
+    obj.data[imdbId] = rating;
+    localStorage.setItem(IMDB_CACHE_KEY, JSON.stringify(obj));
+  } catch(e) {}
+}
+var imdbLocalCache = loadImdbCache();
 
 var allMovies = { now: [], soon: [], stream: [] };
 var filtered = { now: [], soon: [], stream: [] };
@@ -523,6 +546,7 @@ function getBasicDetail(id) {
 
 function getImdb(imdbId) {
   if (!imdbId) return Promise.resolve("");
+  if (imdbLocalCache[imdbId]) return Promise.resolve(imdbLocalCache[imdbId]);
   var startIdx = omdbKeyIndex % OMDB_KEYS.length;
   omdbKeyIndex++;
   function tryKey(attempt) {
@@ -536,7 +560,9 @@ function getImdb(imdbId) {
           omdbExhausted[key] = true;
           return tryKey(attempt + 1);
         }
-        return (d.imdbRating && d.imdbRating !== "N/A") ? d.imdbRating : "";
+        var rating = (d.imdbRating && d.imdbRating !== "N/A") ? d.imdbRating : "";
+        if (rating) { imdbLocalCache[imdbId] = rating; saveImdbRating(imdbId, rating); }
+        return rating;
       })
       .catch(function() { return ""; });
   }
@@ -1076,7 +1102,8 @@ function openModal(id) {
   var modal = document.getElementById("detail-modal");
   modal.classList.add("open");
   document.body.style.overflow = "hidden";
-  document.getElementById("modal-content").innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:100vh"><div class="skeleton" style="width:64px;height:64px;border-radius:50%"></div></div>';
+  document.getElementById("modal-hero-slot").innerHTML = '';
+  document.getElementById("modal-content").innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:60vh"><div class="skeleton" style="width:64px;height:64px;border-radius:50%"></div></div>';
   var movie = null;
   ["now","soon","stream"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.id === id) movie = m; }); });
   if (!movie) movie = {};
@@ -1124,15 +1151,20 @@ function renderModal(movie, detail, imdbRating) {
   ];
   var metaHTML = "";
   for (var mr = 0; mr < metaRows.length; mr++) metaHTML += '<div class="meta-row"><span class="meta-key">' + metaRows[mr][0] + '</span><span class="meta-val">' + escHtml(metaRows[mr][1]) + '</span></div>';
-  var bdHTML = detail.backdrop ? '<img src="' + detail.backdrop + '" style="width:100%;height:100%;object-fit:cover;opacity:0.6"/>' : '<div style="width:100%;height:100%;background:rgba(255,255,255,0.05)"></div>';
+  var bdHTML = detail.backdrop ? '<img src="' + detail.backdrop + '" style="width:100%;height:100%;object-fit:cover;object-position:top center;opacity:1"/>' : '<div style="width:100%;height:100%;background:rgba(255,255,255,0.05)"></div>';
   var ratingsHTML = '';
   if (imdbRating || detail.voteAverage) {
     if (imdbRating) ratingsHTML += '<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>IMDb <span class="val">' + escHtml(imdbRating) + '</span></span>';
     if (imdbRating && detail.voteAverage) ratingsHTML += '<span class="modal-rating-divider"></span>';
     if (detail.voteAverage) ratingsHTML += '<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>TMDB <span class="val">' + tmdbScore(detail.voteAverage) + '</span></span>';
   }
+  var bgHTML = detail.backdrop
+    ? '<img src="' + detail.backdrop + '" style="width:100%;height:100%;object-fit:cover;object-position:top center;opacity:1;filter:blur(3px);transform:scale(1.06)"/>' +
+      '<div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 0%,transparent 45%,rgba(10,10,15,0.6) 72%,#0a0a0f 100%)"></div>' +
+      ''
+    : '';
   var html = '<div class="fade-in"><div class="modal-hero">' + bdHTML +
-    '<div class="modal-hero-grad1"></div><div class="modal-hero-grad2"></div>' +
+    '<div class="modal-hero-grad1"></div>' +
     '<div class="modal-hero-info">' +
     '<div class="modal-info-group"><div class="modal-genre-tags">' + genreTags + '</div>' +
     '<h2 class="modal-title">' + escHtml(movie.titleZh || detail.origTitle || "—") + '</h2>' +
@@ -1146,6 +1178,7 @@ function renderModal(movie, detail, imdbRating) {
     (castHTML ? '<div><p class="section-label">主要演員</p><div class="cast-row">' + castHTML + '</div></div>' : '') +
     (platformHTML ? '<div><p class="section-label">收看平台</p><div class="platform-row">' + platformHTML + '</div></div>' : '') +
     '<div><p class="section-label">其他資訊</p><div class="meta-panel">' + metaHTML + '</div></div></div></div>';
+  document.getElementById("modal-hero-slot").innerHTML = bgHTML;
   document.getElementById("modal-content").innerHTML = html;
 }
 
