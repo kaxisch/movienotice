@@ -376,7 +376,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 
 <script>
 var TMDB_KEY = "2ff61a89bf2684be8b207853cd89db24";
-var OMDB_KEYS = ["5f9393e9", "d2e6c0dc", "e8e518de"];
+var OMDB_KEYS = ["5f9393e9", "d2e6c0dc", "e8e518de", "8ed98825"];
 var omdbKeyIndex = 0;
 var omdbExhausted = {};
 var TMDB_BASE = "https://api.themoviedb.org/3";
@@ -386,7 +386,7 @@ var IMG_W = "https://image.tmdb.org/t/p/w500";
 var IMG_BG = "https://image.tmdb.org/t/p/w1280";
 var CACHE_KEY = "watchtonight_v16";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
-var IMDB_CACHE_KEY = "watchtonight_imdb_v2";
+var IMDB_CACHE_KEY = "watchtonight_imdb_v3";
 var IMDB_CACHE_TTL = 7 * 24 * 60 * 60 * 1000;
 function loadImdbCache() {
   try {
@@ -420,6 +420,15 @@ var activePlatforms = {};
 var searchDebounce = null;
 var mobilePanelOpen = false;
 var tabSortState = { now: "date_desc", soon: "date_asc", stream: "date_desc" };
+
+var countryMap = {
+  "US":"美國","GB":"英國","FR":"法國","DE":"德國","IT":"義大利","JP":"日本","KR":"韓國",
+  "CN":"中國","HK":"香港","TW":"台灣","AU":"澳洲","CA":"加拿大","ES":"西班牙","IN":"印度",
+  "NZ":"紐西蘭","IE":"愛爾蘭","NL":"荷蘭","BE":"比利時","SE":"瑞典","DK":"丹麥","NO":"挪威",
+  "FI":"芬蘭","RU":"俄羅斯","MX":"墨西哥","BR":"巴西","AR":"阿根廷","TH":"泰國","SG":"新加坡",
+  "ZA":"南非","AT":"奧地利","CH":"瑞士","PL":"波蘭","CZ":"捷克","HU":"匈牙利","PT":"葡萄牙",
+  "GR":"希臘","IL":"以色列","TR":"土耳其","MY":"馬來西亞","ID":"印尼","PH":"菲律賓","VN":"越南"
+};
 
 var genreMap = {
   "动作":"動作","冒险":"冒險","喜剧":"喜劇","犯罪":"犯罪","纪录片":"紀錄片",
@@ -514,13 +523,15 @@ function getDetail(id) {
     }
     var genres = [];
     if (d.genres) for (var g = 0; g < d.genres.length; g++) genres.push(toTrad(d.genres[g].name));
+    var countries = [];
+    if (d.production_countries) for (var pc = 0; pc < d.production_countries.length; pc++) countries.push(countryMap[d.production_countries[pc].iso_3166_1] || d.production_countries[pc].name);
     return {
       duration: d.runtime || "", genres: genres, synopsis: d.overview || "",
       poster: d.poster_path ? IMG_W + d.poster_path : null,
       backdrop: d.backdrop_path ? IMG_BG + d.backdrop_path : null,
       voteAverage: d.vote_average ? d.vote_average.toFixed(1) : "",
       trailerKey: trailer ? trailer.key : null,
-      imdbId: d.imdb_id || "", 
+      imdbId: d.imdb_id || "", countries: countries,
       cast: cast, crew: crew, budget: d.budget || 0, revenue: d.revenue || 0,
       status: d.status || "", origLang: d.original_language || "", origTitle: d.original_title || "", platforms: platforms
     };
@@ -567,7 +578,8 @@ function getImdb(imdbId) {
   if (!imdbId) return Promise.resolve({ imdb: "", rt: "", mc: "" });
   if (imdbLocalCache[imdbId]) {
     var c = imdbLocalCache[imdbId];
-    return Promise.resolve(typeof c === "string" ? { imdb: c, rt: "", mc: "" } : c);
+    var cached = typeof c === "string" ? { imdb: c, rt: "", mc: "" } : c;
+    if (cached.imdb) return Promise.resolve(cached.imdb === "N/A" ? { imdb: "", rt: cached.rt, mc: cached.mc } : cached);
   }
   var startIdx = omdbKeyIndex % OMDB_KEYS.length;
   omdbKeyIndex++;
@@ -583,7 +595,8 @@ function getImdb(imdbId) {
           return tryKey(attempt + 1);
         }
         var ratings = parseOmdbRatings(d);
-        if (ratings.imdb || ratings.rt || ratings.mc) { imdbLocalCache[imdbId] = ratings; saveImdbData(imdbId, ratings); }
+        var toCache = { imdb: ratings.imdb || (d.imdbRating === "N/A" ? "N/A" : ""), rt: ratings.rt, mc: ratings.mc };
+        if (toCache.imdb || toCache.rt || toCache.mc) { imdbLocalCache[imdbId] = toCache; saveImdbData(imdbId, toCache); }
         return ratings;
       })
       .catch(function() { return { imdb: "", rt: "", mc: "" }; });
@@ -1178,6 +1191,7 @@ function renderModal(movie, detail, imdbRating) {
     ["原始標題", detail.origTitle || movie.titleEn || "—"],
     ["狀態", statusMap[detail.status] || detail.status || "—"],
     ["原始語言", langMap[detail.origLang] || detail.origLang || "—"],
+    ["製片國家", detail.countries && detail.countries.length ? detail.countries.join(' · ') : "—"],
     ["電影成本", detail.budget ? "$" + detail.budget.toLocaleString() : "—"],
     ["票房收入", detail.revenue ? "$" + detail.revenue.toLocaleString() : "—"],
     ["上映日期", formatDate(movie.releaseDate) || "—"]
@@ -1277,7 +1291,7 @@ function fetchImdbInBackground(movies) {
   var pending = movies.length;
   if (pending === 0) return;
   movies.forEach(function(m) {
-    if (!m.id || !m.imdbId || m.imdb) { pending--; if (pending === 0) saveCache(allMovies); return; }
+    if (!m.id || !m.imdbId || (m.imdb && m.imdb !== "N/A")) { pending--; if (pending === 0) saveCache(allMovies); return; }
     getImdb(m.imdbId).then(function(ratings) {
       if (ratings.imdb) {
         m.imdb = ratings.imdb;
@@ -1309,6 +1323,7 @@ function loadData(forceRefresh) {
     var cached = loadCache();
     if (cached) {
       allMovies = cached;
+      ["now","soon","stream"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.imdb === "N/A") m.imdb = ""; }); });
       filtered = { now: cached.now.slice(), soon: cached.soon.slice(), stream: cached.stream.slice() };
       sortMovies();
       setTimeout(function() {
@@ -1321,6 +1336,7 @@ function loadData(forceRefresh) {
         });
       }, 300);
       buildGenreFilters(); buildPlatformFilters();
+      fetchImdbInBackground(allMovies.now); fetchImdbInBackground(allMovies.stream);
       return;
     }
   }
