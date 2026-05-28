@@ -731,10 +731,12 @@ function fetchBasicLists() {
     npA.forEach(function(m) { npAIds[m.id] = true; });
     var npB = results[1].filter(function(m) { return !npAIds[m.id] && m.release_date >= cutoff45 && m.popularity > 45; }).slice(0, 20);
     var np = dedup(npA.concat(npB));
-    var csA = dedup(results[2]);
+    var npIds2 = {};
+    np.forEach(function(m) { npIds2[m.id] = true; });
+    var csA = dedup(results[2]).filter(function(m) { return !npIds2[m.id]; });
     var csAIds = {};
     csA.forEach(function(m) { csAIds[m.id] = true; });
-    var csB = results[4].filter(function(m) { return !csAIds[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
+    var csB = results[4].filter(function(m) { return !csAIds[m.id] && !npIds2[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
     var cs = dedup(csA.concat(csB)).slice(0, 40);
     var tmdbStream = results[3];
     var npIds = {};
