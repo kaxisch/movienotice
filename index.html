@@ -388,6 +388,14 @@ var CACHE_KEY = "watchtonight_v16";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
 var IMDB_CACHE_KEY = "watchtonight_imdb_v3";
 var IMDB_CACHE_TTL = 7 * 24 * 60 * 60 * 1000;
+var STREAM_SEEN_KEY = "watchtonight_stream_seen_v1";
+var STREAM_SEEN_TTL = 14 * 24 * 60 * 60 * 1000;
+function loadStreamSeen() {
+  try { var raw = localStorage.getItem(STREAM_SEEN_KEY); return raw ? JSON.parse(raw) : {}; } catch(e) { return {}; }
+}
+function saveStreamSeen(data) {
+  try { localStorage.setItem(STREAM_SEEN_KEY, JSON.stringify(data)); } catch(e) {}
+}
 function loadImdbCache() {
   try {
     var raw = localStorage.getItem(IMDB_CACHE_KEY);
@@ -630,42 +638,56 @@ var BLOCKED_LANGS = ["ind", "hin", "tam", "tel", "msa"];
 var THIRTY_DAYS_AGO = Date.now() / 1000 - 30 * 24 * 60 * 60;
 
 function fetchStreamingNew() {
-  var params = new URLSearchParams({
-    country: "sg",
-    change_type: "new",
-    item_type: "show",
-    show_type: "movie",
-    order_direction: "desc"
-  });
-  var url = MOTN_BASE + "/changes?" + params.toString();
-  var controller = new AbortController();
-  var tid = setTimeout(function() { controller.abort(); }, 8000);
-  return fetch(url, { headers: { "X-API-Key": MOTN_KEY }, signal: controller.signal }).then(function(r) {
-    clearTimeout(tid);
-    if (!r.ok) throw new Error("MOTN " + r.status);
-    return r.json();
-  }).then(function(data) {
-    var shows = data.shows || {};
-    var changes = data.changes || [];
-    var seen = {};
-    var results = [];
-    for (var i = 0; i < changes.length; i++) {
-      var ch = changes[i];
-      if (ch.streamingOptionType !== "subscription") continue;
-      if (ch.timestamp < THIRTY_DAYS_AGO) continue;
-      var show = shows[ch.showId];
-      if (!show) continue;
-      if (seen[ch.showId]) continue;
-      if (show.releaseYear < 2020) continue;
-      var lang = show.originalLanguage || "";
-      if (BLOCKED_LANGS.indexOf(lang) !== -1) continue;
-      seen[ch.showId] = true;
-      results.push({ motnShow: show, change: ch });
+  var baseParams = {
+    country: "sg", change_type: "new", item_type: "show",
+    show_type: "movie", order_direction: "desc"
+  };
+  var allResults = [];
+  var seenShows = {};
+  var MAX_PAGES = 6;
+
+  function fetchPage(cursor, pageNum) {
+    if (pageNum > MAX_PAGES) {
+      allResults.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
+      return Promise.resolve(allResults);
     }
-    results.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
-    return results.slice(0, 20);
-  }).catch(function(e) {
-    clearTimeout(tid);
+    var p = new URLSearchParams(baseParams);
+    if (cursor) p.set("cursor", cursor);
+    var url = MOTN_BASE + "/changes?" + p.toString();
+    var controller = new AbortController();
+    var tid = setTimeout(function() { controller.abort(); }, 8000);
+    return fetch(url, { headers: { "X-API-Key": MOTN_KEY }, signal: controller.signal })
+      .then(function(r) { clearTimeout(tid); if (!r.ok) throw new Error("MOTN " + r.status); return r.json(); })
+      .then(function(data) {
+        var shows = data.shows || {};
+        var changes = data.changes || [];
+        var allOld = true;
+        for (var i = 0; i < changes.length; i++) {
+          var ch = changes[i];
+          if (ch.timestamp >= THIRTY_DAYS_AGO) allOld = false;
+          if (ch.streamingOptionType !== "subscription") continue;
+          if (ch.timestamp < THIRTY_DAYS_AGO) continue;
+          var show = shows[ch.showId];
+          if (!show || seenShows[ch.showId]) continue;
+          if (show.releaseYear < 2020) continue;
+          var lang = show.originalLanguage || "";
+          if (BLOCKED_LANGS.indexOf(lang) !== -1) continue;
+          seenShows[ch.showId] = true;
+          allResults.push({ motnShow: show, change: ch });
+        }
+        if (!allOld && data.hasMore && data.nextCursor) return fetchPage(data.nextCursor, pageNum + 1);
+        allResults.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
+        return allResults;
+      })
+      .catch(function(e) {
+        clearTimeout(tid);
+        if (pageNum === 1) throw e;
+        allResults.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
+        return allResults;
+      });
+  }
+
+  return fetchPage(null, 1).catch(function(e) {
     console.warn("MOTN API 失敗：" + e.message);
     return [];
   });
@@ -1351,12 +1373,27 @@ function loadData(forceRefresh) {
     enrichBackground(data);
     // MOTN 跑完後再插入串流 tab
     data._motnPromise.then(function(motnResults) {
-      if (!motnResults || motnResults.length === 0) return;
+      var streamSeen = loadStreamSeen();
+      var now = Date.now();
+      if (motnResults) {
+        motnResults.forEach(function(item) {
+          var key = item.change.showId;
+          if (!streamSeen[key]) streamSeen[key] = { firstSeen: now, item: item };
+        });
+      }
+      var cleaned = {};
+      Object.keys(streamSeen).forEach(function(k) {
+        if (now - streamSeen[k].firstSeen < STREAM_SEEN_TTL) cleaned[k] = streamSeen[k];
+      });
+      saveStreamSeen(cleaned);
+      var allSeenItems = Object.keys(cleaned).map(function(k) { return cleaned[k].item; });
+      allSeenItems.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
+      if (allSeenItems.length === 0) return;
       var npIds = {}; allMovies.now.forEach(function(m) { npIds[m.id] = true; });
       var existIds = {}; allMovies.stream.forEach(function(m) { existIds[m.id] = true; });
-      var stMotn = motnResults.map(motnToMovie).filter(function(m) { return !npIds[m.id] && !existIds[m.id]; });
+      var stMotn = allSeenItems.map(motnToMovie).filter(function(m) { return !npIds[m.id] && !existIds[m.id]; });
       if (stMotn.length === 0) return;
-      allMovies.stream = stMotn.concat(allMovies.stream).slice(0, 30);
+      allMovies.stream = stMotn.concat(allMovies.stream).slice(0, 40);
       applyFilters();
       buildGenreFilters(); buildPlatformFilters();
       enrichBackground({ _np: [], _cs: [], _stMotn: stMotn, _stTmdb: [] }, true);
