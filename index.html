@@ -38,8 +38,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 
 #tab-bar { position: sticky; top: 0; z-index: 40; background: rgba(10,10,15,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.06); }
 .tab-bar-inner { max-width: 1440px; margin: 0 auto; padding: 0 64px; }
-.tabs { display: flex; gap: 32px; position: relative; }
-.tab-btn { padding: 14px 0; font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.6); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.2s; font-family: 'Manrope', sans-serif; white-space: nowrap; }
+.tabs { display: flex; gap: 32px; position: relative; margin-bottom: 8px; }
+.tab-btn { padding: 14px 0 5px; font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.6); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: color 0.2s; font-family: 'Manrope', sans-serif; white-space: nowrap; }
 .tab-btn:hover { color: #fff; }
 .tab-btn.active { color: #fff; border-bottom-color: transparent; }
 #tab-indicator { position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #fff; border-radius: 2px; pointer-events: none; transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1); }
@@ -483,7 +483,14 @@ var genreMap = {
   "音乐":"音樂","悬疑":"懸疑","爱情":"愛情","科幻":"科幻","电视电影":"電視電影",
   "惊悚":"驚悚","战争":"戰爭","西部":"西部","动画":"動畫","传记":"傳記",
   "运动":"運動","歌舞":"歌舞","武侠":"武俠","古装":"古裝",
-  "记录片":"紀錄片","纪录":"紀錄","记录":"紀錄"
+  "记录片":"紀錄片","纪录":"紀錄","记录":"紀錄",
+  "Action":"動作","Adventure":"冒險","Comedy":"喜劇","Crime":"犯罪",
+  "Documentary":"紀錄片","Drama":"劇情","Family":"家庭","Fantasy":"奇幻",
+  "History":"歷史","Horror":"恐怖","Music":"音樂","Mystery":"懸疑",
+  "Romance":"愛情","Science Fiction":"科幻","TV Movie":"電視電影",
+  "Thriller":"驚悚","War":"戰爭","Western":"西部","Animation":"動畫",
+  "Biography":"傳記","Sport":"運動","Musical":"歌舞","War & Politics":"戰爭",
+  "Sci-Fi & Fantasy":"科幻","Action & Adventure":"動作","Kids":"家庭","News":"紀錄片"
 };
 
 function toTrad(s) { return genreMap[s] || s; }
