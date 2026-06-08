@@ -216,7 +216,9 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   footer { padding-left: 20px !important; padding-right: 20px !important; }
   .modal-hero-info { padding: 16px 20px; }
   .modal-body { padding: 20px; }
-  .filter-row { flex-wrap: nowrap; justify-content: space-between; padding: 10px 0; row-gap: 0; }
+  .filter-row { flex-wrap: nowrap; justify-content: flex-start; gap: 8px; padding: 10px 0; row-gap: 0; }
+  .view-toggle { margin-left: auto; }
+  .view-divider-desktop { display: none; }
   .filter-left-group { width: auto; flex: 0 0 auto; }
   .filter-right-group { display: none; }
   .tab-search-wrap { display: none; }
@@ -230,6 +232,26 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   .badge-imdb, .badge-tmdb, .badge-rt, .badge-mc { padding: 3px 2px; }
   .card-date { font-size: 11px; }
 }
+
+/* View toggle */
+.view-toggle { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+.view-btn { display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; background: transparent; border: none; color: rgba(255,255,255,0.3); cursor: pointer; border-radius: 6px; transition: background 0.15s, color 0.15s; }
+.view-btn.active { color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.09); }
+@media(hover:hover){ .view-btn:hover { color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.05); } }
+.view-divider-desktop { flex-shrink: 0; }
+
+/* List view */
+.movie-list { display: flex; flex-direction: column; gap: 5px; }
+.list-item { display: flex; align-items: center; gap: 12px; padding: 9px 12px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
+.list-item:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.14); }
+.list-poster { width: 36px; height: 54px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+.list-no-poster { width: 36px; height: 54px; border-radius: 6px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.15); }
+.list-info { flex: 1; min-width: 0; }
+.list-title { font-size: 14px; font-weight: 300; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.list-subtitle { font-size: 11px; color: rgba(255,255,255,0.45); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+.list-date { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; }
+.list-badges { display: flex; align-items: center; gap: 4px; flex-shrink: 0; margin-left: 8px; }
+@media(max-width:600px){ .list-badges { display: none; } }
 </style>
 </head>
 <body>
@@ -290,6 +312,15 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
         </div>
         <button id="clear-all-filters-btn" class="clear-active-btn" onclick="clearFilters()">
           <span class="material-symbols-outlined" style="font-size:14px">close</span>
+        </button>
+      </div>
+      <div class="view-toggle">
+        <div class="divider-v view-divider-desktop"></div>
+        <button id="btn-view-card" class="view-btn active" onclick="setView('card')" title="卡片模式">
+          <span class="material-symbols-outlined" style="font-size:20px">grid_view</span>
+        </button>
+        <button id="btn-view-list" class="view-btn" onclick="setView('list')" title="列表模式">
+          <span class="material-symbols-outlined" style="font-size:20px">view_list</span>
         </button>
       </div>
     </div>
@@ -435,6 +466,7 @@ var activePlatforms = {};
 var searchDebounce = null;
 var mobilePanelOpen = false;
 var tabSortState = { now: "date_desc", soon: "date_asc", stream: "date_desc" };
+var currentView = 'card';
 
 var countryMap = {
   "US":"美國","GB":"英國","FR":"法國","DE":"德國","IT":"義大利","JP":"日本","KR":"韓國",
@@ -943,6 +975,42 @@ function showSkeletons() {
   ["now","soon","stream"].forEach(function(t) { document.getElementById("grid-" + t).innerHTML = skeletonHTML(); });
 }
 
+function setView(v) {
+  currentView = v;
+  document.getElementById('btn-view-card').classList.toggle('active', v === 'card');
+  document.getElementById('btn-view-list').classList.toggle('active', v === 'list');
+  renderGrids();
+}
+
+function listRowHTML(m, showRatings, showPlatforms) {
+  var imgHTML = m.poster
+    ? '<img class="list-poster" src="' + m.poster + '" alt="" loading="lazy"/>'
+    : '<div class="list-no-poster"><span class="material-symbols-outlined" style="font-size:16px">movie</span></div>';
+  var subtitleParts = [];
+  if (m.titleEn && m.titleEn !== m.titleZh) subtitleParts.push(m.titleEn);
+  if (m.genre && m.genre.length > 0) subtitleParts.push(m.genre.slice(0, 2).join(' / '));
+  var subtitleHTML = subtitleParts.length ? '<p class="list-subtitle">' + escHtml(subtitleParts.join(' · ')) + '</p>' : '';
+  var badgesHTML = '';
+  if (showRatings) {
+    var imdbStyle = m.imdb ? '' : ' style="display:none"';
+    var rtStyle = m.rt ? '' : ' style="display:none"';
+    var mcStyle = m.mc ? '' : ' style="display:none"';
+    badgesHTML += '<span class="badge-imdb" id="imdb-' + m.id + '"' + imdbStyle + '>IMDb<span>' + escHtml(m.imdb || '') + '</span></span>';
+    badgesHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '><svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;vertical-align:middle;margin-right:2px"><path d="M9.39062 1.98047C10.9661 2.92468 11.9998 4.50879 12 6.30371C12 9.19723 9.31327 11.5448 6 11.5449C2.68684 11.5449 0 9.19729 0 6.30371C2.58634e-05 4.52964 1.01216 2.96319 2.55762 2.01562L3.54492 2.55176L2.37988 4.44629C2.31509 4.55166 2.27242 4.6472 2.24805 4.7373C2.19735 4.92517 2.23996 5.06172 2.28516 5.14258C2.36849 5.29151 2.52759 5.37988 2.70996 5.37988C2.83408 5.37984 2.97181 5.34088 3.13086 5.25977L5.82129 3.8877L8.71582 5.27832C8.87274 5.35373 9.00746 5.3906 9.12695 5.39062C9.3129 5.39062 9.47228 5.29883 9.55273 5.14551C9.59684 5.06137 9.63579 4.92115 9.57227 4.73145C9.543 4.64405 9.4942 4.55214 9.42383 4.4502L8.12305 2.56543L9.39062 1.98047ZM6.03516 0.0449219L6.83398 1.18066L6.94922 1.34473L7.14746 1.36914L8.40527 1.52051L7.36719 2.00098L6.88086 2.22461L7.18359 2.66602L8.1709 4.09668L6.01074 3.05859L5.80957 2.96289L5.6123 3.06445L3.55859 4.11035L4.46094 2.64551L4.70801 2.24121L4.29199 2.01367L3.41211 1.53613L4.79785 1.3623L4.98828 1.33887L5.10254 1.18359L5.94922 0.0439453C5.96811 0.0186072 5.98301 0.00535117 5.99121 0C5.99878 0.00489482 6.0155 0.0170432 6.03516 0.0449219Z" fill="#e08a82"/></svg><span>' + escHtml(m.rt || '') + '</span></span>';
+    badgesHTML += '<span class="badge-mc" id="mc-' + m.id + '"' + mcStyle + '>MT<span>' + escHtml(m.mc || '') + '</span></span>';
+    if (m.voteAverage) badgesHTML += '<span class="badge-tmdb">TMDB ' + tmdbScore(m.voteAverage) + '</span>';
+  }
+  if (showPlatforms && m.platforms && m.platforms.length) {
+    var names = []; for (var i = 0; i < m.platforms.length; i++) names.push(m.platforms[i].name);
+    badgesHTML += '<span style="font-size:11px;color:rgba(255,255,255,0.45)">' + escHtml(names.join(' · ')) + '</span>';
+  }
+  return '<div class="list-item fade-in" id="card-' + m.id + '" onclick="openModal(' + m.id + ')">' +
+    imgHTML +
+    '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatDate(m.releaseDate) + '</p>' : '') + '</div>' +
+    '<div class="list-badges">' + badgesHTML + '</div>' +
+    '</div>';
+}
+
 function renderGrids() {
   var contentArea = document.getElementById("content-" + currentTab);
   if (contentArea) {
@@ -952,8 +1020,15 @@ function renderGrids() {
   setTimeout(function() {
     ["now","soon","stream"].forEach(function(t) {
       var html = "";
-      for (var i = 0; i < filtered[t].length; i++) html += cardHTML(filtered[t][i], true, t === "stream");
-      document.getElementById("grid-" + t).innerHTML = html;
+      var gridEl = document.getElementById("grid-" + t);
+      if (currentView === 'list') {
+        gridEl.className = 'movie-list';
+        for (var i = 0; i < filtered[t].length; i++) html += listRowHTML(filtered[t][i], true, t === "stream");
+      } else {
+        gridEl.className = 'movie-grid';
+        for (var i = 0; i < filtered[t].length; i++) html += cardHTML(filtered[t][i], true, t === "stream");
+      }
+      gridEl.innerHTML = html;
       var empty = document.getElementById("empty-" + t);
       if (filtered[t].length === 0) empty.classList.add("show"); else empty.classList.remove("show");
     });
