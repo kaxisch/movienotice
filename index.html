@@ -139,7 +139,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .modal-rating-item .val { color: #fff; }
 .btn-trailer { display: inline-flex; align-items: center; gap: 6px; padding: 6px 18px 6px 8px; background: rgba(255,255,255,0.20); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.4); border-radius: 999px; color: #fff; font-size: 14px; font-weight: 400; font-family: 'Manrope', sans-serif; cursor: pointer; transition: background 0.2s; }
 .btn-trailer:hover { background: rgba(255,255,255,0.25); }
-.modal-body { padding: 24px 32px; }
+.modal-body { padding: 24px 32px; position: relative; z-index: 1; background: var(--bg); }
 .modal-body > * + * { margin-top: 32px; }
 .modal-synopsis { color: rgba(255,255,255,0.7); font-size: 16px; line-height: 1.7; }
 .crew-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(12px); border-radius: 16px; padding: 16px; }
@@ -280,7 +280,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
       <button class="tab-btn" id="tab-now" onclick="switchTab('now')">現正熱映</button>
       <button class="tab-btn" id="tab-soon" onclick="switchTab('soon')">即將上映</button>
       <button class="tab-btn" id="tab-stream" onclick="switchTab('stream')">串流新上架</button>
-      <span id="movie-count" style="margin-left:0px; color:#888; font-size:13px; align-self:center;"></span>
+      <span id="movie-count" style="margin-left:0px; color:#888; font-size:13px; align-self:flex-end; padding-bottom:7px;"></span>
       <div id="tab-indicator"></div>
     </div>
     <div class="filter-row">
