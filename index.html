@@ -9,6 +9,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"/>
 <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="電影佈告欄"/>
 <link rel="manifest" href="/manifest.webmanifest"/>
@@ -1531,6 +1532,13 @@ loadData(false);
   }, { passive: true });
 })();
 
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('[SW] registered:', reg.scope))
+      .catch(err => console.warn('[SW] register failed:', err));
+  }
 </script>
 </body>
 </html>
