@@ -822,7 +822,7 @@ function fetchBasicLists() {
     var csAIds = {};
     csA.forEach(function(m) { csAIds[m.id] = true; });
     var csB = results[4].filter(function(m) { return !csAIds[m.id] && !npIds2[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
-    var cs = dedup(csA.concat(csB)).slice(0, 40);
+    var cs = dedup(csA.concat(csB));
     var tmdbStream = results[3];
     var npIds = {};
     np.forEach(function(m) { npIds[m.id] = true; });
@@ -867,38 +867,27 @@ function enrichBackground(rawData, skipNowFilter) {
   function onEnrichDone() {
     done++;
     if (done < total) return;
+    var todayStr = today();
+    var nowToSoon = [];
+
     if (!skipNowFilter) {
-      var validNowIds = {};
       allMovies.now = allMovies.now.filter(function(m) {
-        var pass = (!m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration >= 70);
-        if (pass) validNowIds[m.id] = true;
-        return pass;
+        if (m.releaseDate && m.releaseDate > todayStr) { nowToSoon.push(m); return false; }
+        return (!m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration >= 70);
       });
-      filtered.now = filtered.now.filter(function(m) { return validNowIds[m.id]; });
-      document.querySelectorAll('#grid-now .movie-card').forEach(function(el) {
-        if (!validNowIds[el.id.replace('card-', '')]) {
-          el.style.transition = 'opacity 0.3s'; el.style.opacity = '0';
-          setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 300);
-        }
-      });
-      var countEl = document.getElementById("movie-count");
-      if (countEl && currentTab === "now") countEl.textContent = filtered.now.length + " 部";
     }
-    var validSoonIds = {};
+
+    var soonIdSet = {};
+    allMovies.soon.forEach(function(m) { soonIdSet[m.id] = true; });
+    nowToSoon.forEach(function(m) { if (!soonIdSet[m.id]) { allMovies.soon.push(m); } });
+
     allMovies.soon = allMovies.soon.filter(function(m) {
-      var pass = (!m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration >= 70);
-      if (pass) validSoonIds[m.id] = true;
-      return pass;
+      var hasFutureTheatrical = m.releaseDate && m.releaseDate >= todayStr;
+      return (hasFutureTheatrical || !m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration >= 70);
     });
-    filtered.soon = filtered.soon.filter(function(m) { return validSoonIds[m.id]; });
-    document.querySelectorAll('#grid-soon .movie-card').forEach(function(el) {
-      if (!validSoonIds[el.id.replace('card-', '')]) {
-        el.style.transition = 'opacity 0.3s'; el.style.opacity = '0';
-        setTimeout(function() { if (el.parentNode) el.parentNode.removeChild(el); }, 300);
-      }
-    });
-    var soonCountEl = document.getElementById("movie-count");
-    if (soonCountEl && currentTab === "soon") soonCountEl.textContent = filtered.soon.length + " 部";
+
+    applyFilters();
+    renderGrids();
     buildGenreFilters(); buildPlatformFilters(); saveCache(allMovies);
     fetchImdbInBackground(allMovies.now); fetchImdbInBackground(allMovies.stream);
   }
