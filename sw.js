@@ -1,11 +1,9 @@
-const CACHE_VERSION = 'movienotice-v2';
+const CACHE_VERSION = 'movienotice-v3';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
 const API_CACHE = `${CACHE_VERSION}-api`;
 
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
   '/manifest.webmanifest',
   '/logo.svg',
   '/favicon.svg',
@@ -50,7 +48,8 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   if (url.origin === self.location.origin) {
-    e.respondWith(staleWhileRevalidate(e.request, STATIC_CACHE));
+    const isHtml = e.request.headers.get('accept') && e.request.headers.get('accept').includes('text/html');
+    e.respondWith(isHtml ? networkFirst(e.request, STATIC_CACHE) : staleWhileRevalidate(e.request, STATIC_CACHE));
     return;
   }
 });
@@ -95,6 +94,20 @@ async function cacheFirstWithTTL(request, cacheName, ttl) {
   } catch (err) {
     if (cached) return cached;
     return new Response('', { status: 503 });
+  }
+}
+
+async function networkFirst(request, cacheName) {
+  try {
+    const response = await fetch(request);
+    if (response.ok) {
+      const cache = await caches.open(cacheName);
+      cache.put(request, response.clone());
+    }
+    return response;
+  } catch (err) {
+    const cached = await caches.match(request);
+    return cached || new Response('Offline', { status: 503 });
   }
 }
 
