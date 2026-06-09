@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'movienotice-v1';
+const CACHE_VERSION = 'movienotice-v2';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
 const API_CACHE = `${CACHE_VERSION}-api`;
