@@ -595,8 +595,21 @@ function getDetail(id) {
   }).catch(function() { return {}; });
 }
 
+function extractTwTheatricalDate(d) {
+  if (!d.release_dates || !d.release_dates.results) return "";
+  for (var i = 0; i < d.release_dates.results.length; i++) {
+    var entry = d.release_dates.results[i];
+    if (entry.iso_3166_1 !== "TW" || !entry.release_dates) continue;
+    var theatrical = entry.release_dates.filter(function(r) { return r.type === 3; });
+    if (!theatrical.length) return "";
+    theatrical.sort(function(a, b) { return b.release_date > a.release_date ? 1 : -1; });
+    return theatrical[0].release_date.split("T")[0];
+  }
+  return "";
+}
+
 function getBasicDetail(id) {
-  return tmdbFetch("/movie/" + id, { append_to_response: "watch/providers" }).then(function(d) {
+  return tmdbFetch("/movie/" + id, { append_to_response: "watch/providers,release_dates" }).then(function(d) {
     var tw = (d["watch/providers"] && d["watch/providers"].results) ? d["watch/providers"].results.TW : null;
     var allP = [].concat((tw && tw.flatrate) ? tw.flatrate : []).concat((tw && tw.rent) ? tw.rent : []).concat((tw && tw.buy) ? tw.buy : []);
     var seen = {}; var platforms = [];
@@ -614,7 +627,8 @@ function getBasicDetail(id) {
       trailerKey: null,
       cast: [], crew: [], budget: d.budget || 0, revenue: d.revenue || 0,
       status: d.status || "", origLang: d.original_language || "", origTitle: d.original_title || "",
-      platforms: platforms
+      platforms: platforms,
+      twReleaseDate: extractTwTheatricalDate(d)
     };
   }).catch(function() { return {}; });
 }
@@ -846,6 +860,10 @@ function enrichBackground(rawData, skipNowFilter) {
     var el = document.querySelector('#card-' + id + ' .card-hover-genre');
     if (el) el.textContent = genre.slice(0, 2).join(' / ');
   }
+  function updateCardDate(id, date) {
+    var el = document.querySelector('#card-' + id + ' .card-date');
+    if (el && date) el.textContent = formatDate(date);
+  }
   function onEnrichDone() {
     done++;
     if (done < total) return;
@@ -895,6 +913,7 @@ function enrichBackground(rawData, skipNowFilter) {
         if (detail.voteAverage) movie.voteAverage = detail.voteAverage;
         if (detail.poster && !movie.poster) movie.poster = detail.poster;
         if (detail.backdrop && !movie.backdrop) movie.backdrop = detail.backdrop;
+        if (detail.twReleaseDate) { movie.releaseDate = detail.twReleaseDate; updateCardDate(movie.id, movie.releaseDate); }
         updateCardGenre(movie.id, movie.genre);
       }
     }).catch(function() {}).then(onEnrichDone);
