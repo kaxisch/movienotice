@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
-<title>MovieNotice｜今晚看什麼</title>
+<title>MovieNotice｜電影公布欄</title>
 <link rel="icon" href="favicon.ico" sizes="32x32"/>
 <link rel="icon" href="apple-touch-icon.png" type="image/png"/>
 <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"/>
 <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<meta name="apple-mobile-web-app-title" content="今晚看什麼"/>
+<meta name="apple-mobile-web-app-title" content="電影公布欄"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
 <style>
@@ -29,7 +29,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 #navbar { position: relative; z-index: 50; background: rgba(10,10,15,0.95); border-bottom: 1px solid rgba(255,255,255,0.06); }
 .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 16px 64px; max-width: 1440px; margin: 0 auto; }
 .nav-logo { font-size: 20px; font-weight: 200; letter-spacing: -0.5px; color: #fff; }
-.nav-logo span { color: rgba(255,255,255,0.55); font-size: 13px; margin-left: 8px; }
+.nav-logo span { color: rgba(255,255,255,0.55); font-size: 13px; margin-left: 8px; letter-spacing: 0.01em; }
 .nav-right { display: flex; align-items: center; gap: 8px; }
 .nav-refresh-btn { display: flex; align-items: center; gap: 6px; padding: 8px 12px; border: none; background: transparent; color: rgba(255,255,255,0.7); cursor: pointer; border-radius: 999px; transition: background 0.2s, color 0.2s; font-size: 14px; font-weight: 300; font-family: 'Manrope', sans-serif; }
 .nav-refresh-btn:hover { background: rgba(255,255,255,0.05); color: #fff; }
@@ -261,7 +261,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 
 <header id="navbar">
   <div class="nav-inner">
-    <div class="nav-logo"><img src="logo.svg" width="28" height="28" alt="" style="vertical-align:middle;margin-right:4px;position:relative;top:-2px"/>MovieNotice<span>今晚看什麼</span></div>
+    <div class="nav-logo"><img src="logo.svg" width="28" height="28" alt="" style="vertical-align:middle;margin-right:4px;position:relative;top:-2px"/>MovieNotice<span>電影公布欄</span></div>
     <div class="nav-right">
       <button id="refresh-btn" class="nav-refresh-btn" onclick="refreshData()">
         <span class="material-symbols-outlined" id="refresh-icon" style="font-size:20px">refresh</span>
