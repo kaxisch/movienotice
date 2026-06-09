@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
-<title>WatchTonight｜今晚看什麼</title>
+<title>MovieNotice｜今晚看什麼</title>
 <link rel="icon" href="favicon.ico" sizes="32x32"/>
 <link rel="icon" href="apple-touch-icon.png" type="image/png"/>
 <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"/>
@@ -261,7 +261,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 
 <header id="navbar">
   <div class="nav-inner">
-    <div class="nav-logo"><img src="logo.svg" width="28" height="28" alt="" style="vertical-align:middle;margin-right:4px;position:relative;top:-2px"/>WatchTonight<span>今晚看什麼</span></div>
+    <div class="nav-logo"><img src="logo.svg" width="28" height="28" alt="" style="vertical-align:middle;margin-right:4px;position:relative;top:-2px"/>MovieNotice<span>今晚看什麼</span></div>
     <div class="nav-right">
       <button id="refresh-btn" class="nav-refresh-btn" onclick="refreshData()">
         <span class="material-symbols-outlined" id="refresh-icon" style="font-size:20px">refresh</span>
@@ -409,7 +409,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 </div>
 
 <footer style="padding:40px 64px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:32px;">
-  <p style="color:rgba(255,255,255,0.3);font-size:12px;font-weight:300">WatchTonight · 資料來源 TMDB、OMDb（含 IMDb、爛番茄、Metacritic 評分）· made by Axis Chang</p>
+  <p style="color:rgba(255,255,255,0.3);font-size:12px;font-weight:300">MovieNotice · 資料來源 TMDB、OMDb（含 IMDb、爛番茄、Metacritic 評分）· made by Axis Chang</p>
 </footer>
 
 <script>
@@ -422,11 +422,11 @@ var MOTN_KEY = "motn-key-v4-My83nan7gdEaLpMnFUZ5lOqINx7RhoKQ";
 var MOTN_BASE = "https://api.movieofthenight.com/v4";
 var IMG_W = "https://image.tmdb.org/t/p/w500";
 var IMG_BG = "https://image.tmdb.org/t/p/w1280";
-var CACHE_KEY = "watchtonight_v16";
+var CACHE_KEY = "movienotice_v16";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
-var IMDB_CACHE_KEY = "watchtonight_imdb_v3";
+var IMDB_CACHE_KEY = "movienotice_imdb_v3";
 var IMDB_CACHE_TTL = 7 * 24 * 60 * 60 * 1000;
-var STREAM_SEEN_KEY = "watchtonight_stream_seen_v1";
+var STREAM_SEEN_KEY = "movienotice_stream_seen_v1";
 var STREAM_SEEN_TTL = 14 * 24 * 60 * 60 * 1000;
 function loadStreamSeen() {
   try { var raw = localStorage.getItem(STREAM_SEEN_KEY); return raw ? JSON.parse(raw) : {}; } catch(e) { return {}; }
