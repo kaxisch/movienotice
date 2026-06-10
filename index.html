@@ -417,6 +417,11 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 
 <script>
 var TMDB_KEY = "32835f29d7e2a220bad50c0f5a674246";
+// 白名單:這些電影 TMDB query 撈不到(popularity 太低),強制納入(自動依 TW 上映日期分類)
+var FORCE_INCLUDE_TMDB_IDS = [
+  1046758,   // 末路相縫 Sew Torn
+  1134463,   // 美夢 Dreams: Sueños
+];
 var OMDB_KEYS = ["5f9393e9", "d2e6c0dc", "e8e518de", "8ed98825"];
 var omdbKeyIndex = 0;
 var omdbExhausted = {};
@@ -536,6 +541,98 @@ function tmdbFetch(path, params, noRegion) {
   return fetch(url.toString()).then(function(r) {
     if (!r.ok) throw new Error("TMDB " + r.status);
     return r.json();
+  });
+}
+
+// 用 TMDB ID 直接抓單部電影資料
+function fetchByIds(ids) {
+  if (!ids || ids.length === 0) return Promise.resolve([]);
+
+  var promises = ids.map(function(id) {
+    var url = new URL(TMDB_BASE + "/movie/" + id);
+    url.searchParams.set("api_key", TMDB_KEY);
+    url.searchParams.set("language", "zh-TW");
+    return fetch(url.toString())
+      .then(function(r) {
+        if (!r.ok) {
+          console.warn("fetchByIds: " + id + " failed " + r.status);
+          return null;
+        }
+        return r.json();
+      })
+      .catch(function(err) {
+        console.warn("fetchByIds: " + id + " error", err);
+        return null;
+      });
+  });
+
+  return Promise.all(promises).then(function(results) {
+    return results.filter(function(r) { return r !== null; });
+  });
+}
+
+// 用 TMDB ID 抓電影,並判斷該分到 now 還是 soon (依台灣上映日期)
+function fetchByIdsWithTwBucket(ids) {
+  if (!ids || ids.length === 0) return Promise.resolve({ nowItems: [], soonItems: [] });
+
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  var promises = ids.map(function(id) {
+    var movieUrl = new URL(TMDB_BASE + "/movie/" + id);
+    movieUrl.searchParams.set("api_key", TMDB_KEY);
+    movieUrl.searchParams.set("language", "zh-TW");
+    movieUrl.searchParams.set("append_to_response", "release_dates");
+
+    return fetch(movieUrl.toString())
+      .then(function(r) {
+        if (!r.ok) {
+          console.warn("fetchByIdsWithTwBucket: " + id + " failed " + r.status);
+          return null;
+        }
+        return r.json();
+      })
+      .then(function(m) {
+        if (!m) return null;
+        var twDate = null;
+        if (m.release_dates && m.release_dates.results) {
+          for (var i = 0; i < m.release_dates.results.length; i++) {
+            var entry = m.release_dates.results[i];
+            if (entry.iso_3166_1 === "TW") {
+              for (var j = 0; j < entry.release_dates.length; j++) {
+                var d = entry.release_dates[j].release_date;
+                if (d) {
+                  twDate = d.substring(0, 10);
+                  break;
+                }
+              }
+              break;
+            }
+          }
+        }
+        if (twDate) m.release_date = twDate;
+        var bucket = "now";
+        if (twDate) {
+          var twDateObj = new Date(twDate);
+          if (twDateObj > today) bucket = "soon";
+        }
+        return { movie: m, bucket: bucket };
+      })
+      .catch(function(err) {
+        console.warn("fetchByIdsWithTwBucket: " + id + " error", err);
+        return null;
+      });
+  });
+
+  return Promise.all(promises).then(function(results) {
+    var nowItems = [];
+    var soonItems = [];
+    results.forEach(function(r) {
+      if (!r) return;
+      if (r.bucket === "now") nowItems.push(r.movie);
+      else soonItems.push(r.movie);
+    });
+    return { nowItems: nowItems, soonItems: soonItems };
   });
 }
 
@@ -827,13 +924,39 @@ function fetchBasicLists() {
     var npIds = {};
     np.forEach(function(m) { npIds[m.id] = true; });
     var stTmdb = tmdbStream.filter(function(m) { return !npIds[m.id] && m.release_date >= cutoff60; }).slice(0, 15);
-    return {
-      now: np.map(buildBasicMovie),
-      soon: cs.map(buildBasicMovie),
-      stream: stTmdb.map(buildBasicMovie),
-      _np: np, _cs: cs, _stMotn: [], _stTmdb: stTmdb,
-      _motnPromise: motnPromise
-    };
+    return fetchByIdsWithTwBucket(FORCE_INCLUDE_TMDB_IDS).then(function(forced) {
+      // 合併到 np (現正熱映)
+      var npExistingIds = {};
+      np.forEach(function(m) { npExistingIds[m.id] = true; });
+      forced.nowItems.forEach(function(m) {
+        if (!npExistingIds[m.id]) {
+          np.push(m);
+          console.log("Force included into NOW:", m.title || m.original_title);
+        } else {
+          console.log("Already in NOW, skip:", m.title || m.original_title);
+        }
+      });
+
+      // 合併到 cs (即將上映)
+      var csExistingIds = {};
+      cs.forEach(function(m) { csExistingIds[m.id] = true; });
+      forced.soonItems.forEach(function(m) {
+        if (!csExistingIds[m.id]) {
+          cs.push(m);
+          console.log("Force included into SOON:", m.title || m.original_title);
+        } else {
+          console.log("Already in SOON, skip:", m.title || m.original_title);
+        }
+      });
+
+      return {
+        now: np.map(buildBasicMovie),
+        soon: cs.map(buildBasicMovie),
+        stream: stTmdb.map(buildBasicMovie),
+        _np: np, _cs: cs, _stMotn: [], _stTmdb: stTmdb,
+        _motnPromise: motnPromise
+      };
+    });
   });
 }
 
