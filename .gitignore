@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 環境變數和 API keys (絕對不能 commit)
+.env
+scripts/.env
+
+# 爬蟲產出的資料 (法律風險，不公開)
+data/
+scripts/samples/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+.cursor/
