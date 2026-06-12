@@ -549,9 +549,6 @@ function fetchByIds(ids) {
 function fetchByIdsWithTwBucket(ids) {
   if (!ids || ids.length === 0) return Promise.resolve({ nowItems: [], soonItems: [] });
 
-  var today = new Date();
-  today.setHours(0, 0, 0, 0);
-
   var promises = ids.map(function(id) {
     var movieUrl = new URL(TMDB_BASE + "/movie/" + id);
     movieUrl.searchParams.set("api_key", TMDB_KEY);
@@ -587,8 +584,15 @@ function fetchByIdsWithTwBucket(ids) {
         if (twDate) m.release_date = twDate;
         var bucket = "now";
         if (twDate) {
-          var twDateObj = new Date(twDate);
-          if (twDateObj > today) bucket = "soon";
+          // 用字串比較避免時區問題
+          var todayStr = (function() {
+            var d = new Date();
+            var year = d.getFullYear();
+            var mo = String(d.getMonth() + 1).padStart(2, '0');
+            var day = String(d.getDate()).padStart(2, '0');
+            return year + '-' + mo + '-' + day;
+          })();
+          if (twDate > todayStr) bucket = "soon";
         }
         return { movie: m, bucket: bucket };
       })
