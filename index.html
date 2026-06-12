@@ -177,10 +177,6 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 #error-banner { display: none; margin-bottom: 24px; background: var(--glass-bg); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 16px; font-size: 14px; color: rgba(255,255,255,0.6); }
 #error-banner.show { display: block; }
 
-#stream-toast { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(12px); z-index: 80; display: flex; align-items: center; gap: 8px; padding: 10px 18px; background: rgba(80,80,100,0.45); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 999px; font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.75); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.25s, transform 0.25s; }
-#stream-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-@keyframes toast-spin { to { transform: rotate(360deg); } }
-#stream-toast .toast-spinner { width: 13px; height: 13px; border: 1.5px solid rgba(255,255,255,0.2); border-top-color: rgba(255,255,255,0.7); border-radius: 50%; animation: toast-spin 0.7s linear infinite; flex-shrink: 0; }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 .fade-in { animation: fadeIn 0.4s ease forwards; }
@@ -279,7 +275,6 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
     <div class="tabs">
       <button class="tab-btn" id="tab-now" onclick="switchTab('now')">現正熱映</button>
       <button class="tab-btn" id="tab-soon" onclick="switchTab('soon')">即將上映</button>
-      <button class="tab-btn" id="tab-stream" onclick="switchTab('stream')">串流新上架</button>
       <span id="movie-count" style="margin-left:0px; color:#888; font-size:13px; align-self:flex-end; padding-bottom:7px;"></span>
       <div id="tab-indicator"></div>
     </div>
@@ -353,10 +348,6 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
             <option value="8">8 分以上</option>
           </select>
         </div>
-        <div id="stream-platform-filter" style="display:none">
-          <p class="filter-group-label">串流平台</p>
-          <div class="filter-tags" id="platform-filters"></div>
-        </div>
       </div>
       <div class="filter-panel-bottom">
         <button class="clear-btn" onclick="clearFilters()">
@@ -370,8 +361,6 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   </div>
 </div>
 
-<div id="stream-toast"><span class="toast-spinner"></span>載入中…</div>
-
 <div class="content-area">
   <div id="error-banner"></div>
   <div class="tab-content" id="content-now">
@@ -381,10 +370,6 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   <div class="tab-content" id="content-soon">
     <div class="movie-grid" id="grid-soon"></div>
     <p class="empty-msg" id="empty-soon">沒有符合條件的電影</p>
-  </div>
-  <div class="tab-content" id="content-stream">
-    <div class="movie-grid" id="grid-stream"></div>
-    <p class="empty-msg" id="empty-stream">沒有符合條件的電影</p>
   </div>
 </div>
 
@@ -426,22 +411,12 @@ var OMDB_KEYS = ["5f9393e9", "d2e6c0dc", "e8e518de", "8ed98825"];
 var omdbKeyIndex = 0;
 var omdbExhausted = {};
 var TMDB_BASE = "https://api.themoviedb.org/3";
-var MOTN_KEY = "motn-key-v4-My83nan7gdEaLpMnFUZ5lOqINx7RhoKQ";
-var MOTN_BASE = "https://api.movieofthenight.com/v4";
 var IMG_W = "https://image.tmdb.org/t/p/w500";
 var IMG_BG = "https://image.tmdb.org/t/p/w1280";
 var CACHE_KEY = "movienotice_v16";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
 var IMDB_CACHE_KEY = "movienotice_imdb_v3";
 var IMDB_CACHE_TTL = 7 * 24 * 60 * 60 * 1000;
-var STREAM_SEEN_KEY = "movienotice_stream_seen_v1";
-var STREAM_SEEN_TTL = 14 * 24 * 60 * 60 * 1000;
-function loadStreamSeen() {
-  try { var raw = localStorage.getItem(STREAM_SEEN_KEY); return raw ? JSON.parse(raw) : {}; } catch(e) { return {}; }
-}
-function saveStreamSeen(data) {
-  try { localStorage.setItem(STREAM_SEEN_KEY, JSON.stringify(data)); } catch(e) {}
-}
 function loadImdbCache() {
   try {
     var raw = localStorage.getItem(IMDB_CACHE_KEY);
@@ -461,19 +436,18 @@ function saveImdbData(imdbId, ratings) {
 }
 var imdbLocalCache = loadImdbCache();
 
-var allMovies = { now: [], soon: [], stream: [] };
-var filtered = { now: [], soon: [], stream: [] };
+var allMovies = { now: [], soon: [] };
+var filtered = { now: [], soon: [] };
 var currentTab = (function() {
   var h = window.location.hash.replace('#','');
-  if (h === 'soon' || h === 'stream') return h;
-  try { var v = sessionStorage.getItem("wt_active_tab"); if (v === 'soon' || v === 'stream') return v; } catch(e) {}
+  if (h === 'soon') return h;
+  try { var v = sessionStorage.getItem("wt_active_tab"); if (v === 'soon') return v; } catch(e) {}
   return "now";
 })();
 var activeGenres = {};
-var activePlatforms = {};
 var searchDebounce = null;
 var mobilePanelOpen = false;
-var tabSortState = { now: "date_desc", soon: "date_asc", stream: "date_desc" };
+var tabSortState = { now: "date_desc", soon: "date_asc" };
 var currentView = 'card';
 
 var countryMap = {
@@ -794,120 +768,15 @@ function buildBasicMovie(m) {
   };
 }
 
-var BLOCKED_LANGS = ["ind", "hin", "tam", "tel", "msa"];
-var THIRTY_DAYS_AGO = Date.now() / 1000 - 30 * 24 * 60 * 60;
-
-function fetchStreamingNew() {
-  var baseParams = {
-    country: "sg", change_type: "new", item_type: "show",
-    show_type: "movie", order_direction: "desc"
-  };
-  var allResults = [];
-  var seenShows = {};
-  var MAX_PAGES = 6;
-
-  function fetchPage(cursor, pageNum) {
-    if (pageNum > MAX_PAGES) {
-      allResults.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
-      return Promise.resolve(allResults);
-    }
-    var p = new URLSearchParams(baseParams);
-    if (cursor) p.set("cursor", cursor);
-    var url = MOTN_BASE + "/changes?" + p.toString();
-    var controller = new AbortController();
-    var tid = setTimeout(function() { controller.abort(); }, 8000);
-    return fetch(url, { headers: { "X-API-Key": MOTN_KEY }, signal: controller.signal })
-      .then(function(r) { clearTimeout(tid); if (!r.ok) throw new Error("MOTN " + r.status); return r.json(); })
-      .then(function(data) {
-        var shows = data.shows || {};
-        var changes = data.changes || [];
-        var allOld = true;
-        for (var i = 0; i < changes.length; i++) {
-          var ch = changes[i];
-          if (ch.timestamp >= THIRTY_DAYS_AGO) allOld = false;
-          if (ch.streamingOptionType !== "subscription") continue;
-          if (ch.timestamp < THIRTY_DAYS_AGO) continue;
-          var show = shows[ch.showId];
-          if (!show || seenShows[ch.showId]) continue;
-          if (show.releaseYear < 2020) continue;
-          var lang = show.originalLanguage || "";
-          if (BLOCKED_LANGS.indexOf(lang) !== -1) continue;
-          seenShows[ch.showId] = true;
-          allResults.push({ motnShow: show, change: ch });
-        }
-        if (!allOld && data.hasMore && data.nextCursor) return fetchPage(data.nextCursor, pageNum + 1);
-        allResults.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
-        return allResults;
-      })
-      .catch(function(e) {
-        clearTimeout(tid);
-        if (pageNum === 1) throw e;
-        allResults.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
-        return allResults;
-      });
-  }
-
-  return fetchPage(null, 1).catch(function(e) {
-    console.warn("MOTN API 失敗：" + e.message);
-    return [];
-  });
-}
-
-function motnToMovie(item) {
-  var show = item.motnShow;
-  var ch = item.change;
-  var tmdbId = (show.tmdbId && typeof show.tmdbId === "string") ? parseInt(show.tmdbId.replace("movie/", "")) : null;
-  var title = (show.title || "").replace(/^"|"$/g, "");
-  var origTitle = (show.originalTitle || show.title || "").replace(/^"|"$/g, "");
-  var streamingOptions = show.streamingOptions && show.streamingOptions["sg"] ? show.streamingOptions["sg"] : [];
-  var platforms = [];
-  var seen = {};
-  for (var i = 0; i < streamingOptions.length; i++) {
-    var opt = streamingOptions[i];
-    if (opt.type !== "subscription") continue;
-    if (!opt.service || seen[opt.service.id]) continue;
-    seen[opt.service.id] = true;
-    platforms.push({ name: opt.service.name, logo: null });
-  }
-  var releaseDate = "";
-  if (ch.timestamp) {
-    var d = new Date(ch.timestamp * 1000);
-    releaseDate = d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
-  }
-  return {
-    id: tmdbId || Math.floor(Math.random() * 1000000),
-    titleZh: title || origTitle,
-    titleEn: origTitle || title,
-    releaseDate: releaseDate,
-    poster: show.imageSet && show.imageSet.verticalPoster ? (show.imageSet.verticalPoster.w360 || show.imageSet.verticalPoster.w240 || "") : "",
-    backdrop: show.imageSet && show.imageSet.horizontalBackdrop ? (show.imageSet.horizontalBackdrop.w1080 || "") : "",
-    genre: show.genres ? show.genres.map(function(g){ return g.name; }) : [],
-    duration: show.runtime || 0,
-    synopsis: show.overview || "",
-    voteAverage: show.rating ? (show.rating / 10).toFixed(1) : "",
-    imdb: "", rt: "", mc: "",
-    trailerKey: null,
-    cast: [], crew: [], budget: 0, revenue: 0,
-    status: "Released",
-    origLang: show.originalLanguage || "",
-    origTitle: show.originalTitle || show.title || "",
-    platforms: platforms,
-    popularity: 0,
-    tmdbId: tmdbId
-  };
-}
 
 function fetchBasicLists() {
-  var motnPromise = fetchStreamingNew(); // 立刻開始，但不阻塞
   return Promise.all([
     fetchPages("/discover/movie", { "release_date.gte": daysAgo(45), "release_date.lte": today(), sort_by: "popularity.desc", with_release_type: "3|2", region: "TW", watch_region: "TW" }, 3),
     fetchPages("/discover/movie", { "primary_release_date.gte": daysAgo(45), "primary_release_date.lte": today(), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true),
     fetchPages("/discover/movie", { "release_date.gte": daysLater(1), "release_date.lte": daysLater(180), sort_by: "release_date.asc", with_release_type: "3|2", watch_region: "TW" }, 3),
-    fetchPages("/discover/movie", { "release_date.gte": daysAgo(60), "release_date.lte": today(), sort_by: "popularity.desc", watch_region: "TW", with_watch_monetization_types: "flatrate", "vote_count.gte": 20 }, 2),
     fetchPages("/discover/movie", { "primary_release_date.gte": daysLater(1), "primary_release_date.lte": daysLater(180), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true)
   ]).then(function(results) {
     var cutoff45 = daysAgo(45);
-    var cutoff60 = daysAgo(60);
     var npA = dedup(results[0]).filter(function(m) { return m.release_date >= cutoff45; });
     var npAIds = {};
     npA.forEach(function(m) { npAIds[m.id] = true; });
@@ -918,12 +787,8 @@ function fetchBasicLists() {
     var csA = dedup(results[2]).filter(function(m) { return !npIds2[m.id]; });
     var csAIds = {};
     csA.forEach(function(m) { csAIds[m.id] = true; });
-    var csB = results[4].filter(function(m) { return !csAIds[m.id] && !npIds2[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
+    var csB = results[3].filter(function(m) { return !csAIds[m.id] && !npIds2[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
     var cs = dedup(csA.concat(csB));
-    var tmdbStream = results[3];
-    var npIds = {};
-    np.forEach(function(m) { npIds[m.id] = true; });
-    var stTmdb = tmdbStream.filter(function(m) { return !npIds[m.id] && m.release_date >= cutoff60; }).slice(0, 15);
     return fetchByIdsWithTwBucket(FORCE_INCLUDE_TMDB_IDS).then(function(forced) {
       // 合併到 np (現正熱映)
       var npExistingIds = {};
@@ -952,9 +817,7 @@ function fetchBasicLists() {
       return {
         now: np.map(buildBasicMovie),
         soon: cs.map(buildBasicMovie),
-        stream: stTmdb.map(buildBasicMovie),
-        _np: np, _cs: cs, _stMotn: [], _stTmdb: stTmdb,
-        _motnPromise: motnPromise
+        _np: np, _cs: cs
       };
     });
   });
@@ -963,18 +826,15 @@ function fetchBasicLists() {
 function enrichBackground(rawData, skipNowFilter) {
   var nowIds = {}; allMovies.now.forEach(function(m) { nowIds[m.id] = true; });
   var soonIds = {}; allMovies.soon.forEach(function(m) { soonIds[m.id] = true; });
-  var streamIds = {}; allMovies.stream.forEach(function(m) { streamIds[m.id] = true; });
   var npToEnrich = rawData._np.filter(function(r) { return nowIds[r.id]; });
   var csToEnrich = rawData._cs.filter(function(r) { return soonIds[r.id]; });
-  var stMotnToEnrich = rawData._stMotn.filter(function(m) { return m.tmdbId && streamIds[m.id]; });
-  var stTmdbToEnrich = rawData._stTmdb.filter(function(r) { return streamIds[r.id]; });
-  var total = npToEnrich.length + csToEnrich.length + stMotnToEnrich.length + stTmdbToEnrich.length;
+  var total = npToEnrich.length + csToEnrich.length;
   if (total === 0) { buildGenreFilters(); buildPlatformFilters(); saveCache(allMovies); return; }
   var done = 0;
 
   function findMovie(id) {
     var found = null;
-    ["now","soon","stream"].forEach(function(t) {
+    ["now","soon"].forEach(function(t) {
       for (var i = 0; i < allMovies[t].length; i++) { if (allMovies[t][i].id === id) { found = allMovies[t][i]; break; } }
     });
     return found;
@@ -1011,8 +871,8 @@ function enrichBackground(rawData, skipNowFilter) {
 
     applyFilters();
     renderGrids();
-    buildGenreFilters(); buildPlatformFilters(); saveCache(allMovies);
-    fetchImdbInBackground(allMovies.now); fetchImdbInBackground(allMovies.stream);
+    buildGenreFilters(); saveCache(allMovies);
+    fetchImdbInBackground(allMovies.now);
   }
 
   npToEnrich.concat(csToEnrich).forEach(function(raw) {
@@ -1031,42 +891,6 @@ function enrichBackground(rawData, skipNowFilter) {
     }).catch(function() {}).then(onEnrichDone);
   });
 
-  stMotnToEnrich.forEach(function(motnMovie) {
-    tmdbFetch("/movie/" + motnMovie.tmdbId, { append_to_response: "credits" }).then(function(d) {
-      var movie = findMovie(motnMovie.id);
-      if (movie) {
-        if (d.title) { movie.titleZh = d.title.replace(/^"|"$/g, ""); var tEl = document.querySelector('#card-' + movie.id + ' .card-title'); if (tEl) tEl.textContent = movie.titleZh; }
-        if (d.overview) movie.synopsis = d.overview;
-        if (d.runtime) movie.duration = d.runtime;
-        if (d.vote_average) movie.voteAverage = d.vote_average.toFixed(1);
-        if (d.poster_path) { movie.poster = IMG_W + d.poster_path; var iEl = document.querySelector('#card-' + movie.id + ' img'); if (iEl) iEl.src = movie.poster; }
-        if (d.backdrop_path) movie.backdrop = IMG_BG + d.backdrop_path;
-        if (d.genres) movie.genre = d.genres.map(function(g) { return toTrad(g.name); });
-        movie.imdbId = d.imdb_id || "";
-        updateCardGenre(movie.id, movie.genre);
-        if (d.imdb_id) getImdb(d.imdb_id).then(function(ratings) {
-          if (ratings.imdb) { movie.imdb = ratings.imdb; var el = document.getElementById("imdb-" + movie.id); if (el) { el.querySelector("span").textContent = ratings.imdb; el.style.display = ""; } }
-          if (ratings.rt) { movie.rt = ratings.rt; var rtEl = document.getElementById("rt-" + movie.id); if (rtEl) { rtEl.querySelector("span").textContent = ratings.rt; rtEl.style.display = ""; } }
-          if (ratings.mc) { movie.mc = ratings.mc; var mcEl = document.getElementById("mc-" + movie.id); if (mcEl) { mcEl.querySelector("span").textContent = ratings.mc; mcEl.style.display = ""; } }
-        });
-      }
-    }).catch(function() {}).then(onEnrichDone);
-  });
-
-  stTmdbToEnrich.forEach(function(raw) {
-    getBasicDetail(raw.id).then(function(detail) {
-      var movie = findMovie(raw.id);
-      if (movie) {
-        movie.genre = detail.genres || []; movie.duration = detail.duration || 0;
-        movie.synopsis = detail.synopsis || ""; movie.platforms = detail.platforms || [];
-        movie.imdbId = detail.imdbId || "";
-        if (detail.voteAverage) movie.voteAverage = detail.voteAverage;
-        updateCardGenre(movie.id, movie.genre);
-        var platEl = document.querySelector('#card-' + movie.id + ' .card-platforms');
-        if (platEl) platEl.textContent = movie.platforms.map(function(p) { return p.name; }).join(' · ');
-      }
-    }).catch(function() {}).then(onEnrichDone);
-  });
 }
 
 function cardHTML(m, showRatings, showPlatforms) {
@@ -1113,7 +937,7 @@ function skeletonHTML() {
 }
 
 function showSkeletons() {
-  ["now","soon","stream"].forEach(function(t) { document.getElementById("grid-" + t).innerHTML = skeletonHTML(); });
+  ["now","soon"].forEach(function(t) { document.getElementById("grid-" + t).innerHTML = skeletonHTML(); });
 }
 
 function setView(v) {
@@ -1159,7 +983,7 @@ function renderGrids() {
     contentArea.style.opacity = "0";
   }
   setTimeout(function() {
-    ["now","soon","stream"].forEach(function(t) {
+    ["now","soon"].forEach(function(t) {
       var html = "";
       var gridEl = document.getElementById("grid-" + t);
       if (currentView === 'list') {
@@ -1187,8 +1011,7 @@ function applyFilters() {
   var minRating = parseFloat(document.getElementById("min-rating-select").value) || 0;
   var searchVal = (document.getElementById("tab-search").value || "").toLowerCase();
   var genreKeys = Object.keys(activeGenres);
-  var platformKeys = Object.keys(activePlatforms);
-  ["now","soon","stream"].forEach(function(t) {
+  ["now","soon"].forEach(function(t) {
     filtered[t] = allMovies[t].filter(function(m) {
       if (searchVal && m.titleZh.toLowerCase().indexOf(searchVal) === -1 && m.titleEn.toLowerCase().indexOf(searchVal) === -1) return false;
       if (minRating > 0) {
@@ -1199,11 +1022,6 @@ function applyFilters() {
         var ok = false;
         for (var i = 0; i < m.genre.length; i++) if (activeGenres[m.genre[i]]) { ok = true; break; }
         if (!ok) return false;
-      }
-      if (t === "stream" && platformKeys.length > 0) {
-        var ok2 = false;
-        for (var j = 0; j < m.platforms.length; j++) if (activePlatforms[m.platforms[j].name]) { ok2 = true; break; }
-        if (!ok2) return false;
       }
       return true;
     });
@@ -1216,8 +1034,6 @@ function updateActiveFiltersBadge() {
   var parts = [];
   var genreKeys = Object.keys(activeGenres);
   for (var i = 0; i < genreKeys.length; i++) parts.push(genreKeys[i]);
-  var platformKeys = Object.keys(activePlatforms);
-  for (var j = 0; j < platformKeys.length; j++) parts.push(platformKeys[j]);
   var rating = parseFloat(document.getElementById("min-rating-select").value) || 0;
   if (rating > 0) parts.push(rating + "分以上");
   var el = document.getElementById("active-filters-text");
@@ -1232,7 +1048,7 @@ function updateActiveFiltersBadge() {
 
 function sortMovies() {
   tabSortState[currentTab] = document.getElementById("sort-select").value;
-  ["now","soon","stream"].forEach(function(t) {
+  ["now","soon"].forEach(function(t) {
     var v = tabSortState[t];
     filtered[t] = filtered[t].slice().sort(function(a, b) {
       if (v === "date_desc") return b.releaseDate > a.releaseDate ? 1 : -1;
@@ -1283,28 +1099,17 @@ function clearSearch() {
 
 function buildGenreFilters() {
   var gs = {};
-  ["now","soon","stream"].forEach(function(t) { allMovies[t].forEach(function(m) { m.genre.forEach(function(g) { gs[toTrad(g)] = true; }); }); });
+  ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { m.genre.forEach(function(g) { gs[toTrad(g)] = true; }); }); });
   var genres = Object.keys(gs).sort(); var html = "";
   for (var i = 0; i < genres.length; i++) html += '<button class="filter-tag" onclick="toggleGenre(\'' + escHtml(genres[i]) + '\',this)">' + escHtml(genres[i]) + '</button>';
   document.getElementById("genre-filters").innerHTML = html;
-}
-function buildPlatformFilters() {
-  var ps = {};
-  allMovies.stream.forEach(function(m) { m.platforms.forEach(function(p) { ps[p.name] = true; }); });
-  var platforms = Object.keys(ps).sort(); var html = "";
-  for (var i = 0; i < platforms.length; i++) html += '<button class="filter-tag" onclick="togglePlatform(\'' + escHtml(platforms[i]) + '\',this)">' + escHtml(platforms[i]) + '</button>';
-  document.getElementById("platform-filters").innerHTML = html;
 }
 function toggleGenre(g, btn) {
   if (activeGenres[g]) { delete activeGenres[g]; btn.classList.remove("active"); } else { activeGenres[g] = true; btn.classList.add("active"); }
   applyFilters();
 }
-function togglePlatform(p, btn) {
-  if (activePlatforms[p]) { delete activePlatforms[p]; btn.classList.remove("active"); } else { activePlatforms[p] = true; btn.classList.add("active"); }
-  applyFilters();
-}
 function clearFilters() {
-  activeGenres = {}; activePlatforms = {};
+  activeGenres = {};
   document.getElementById("min-rating-select").value = "0";
   document.getElementById("tab-search").value = "";
   var ms = document.getElementById("mobile-tab-search");
@@ -1314,10 +1119,8 @@ function clearFilters() {
 }
 function toggleFilter(btn) {
   var panel = document.getElementById("filter-panel");
-  var sf = document.getElementById("stream-platform-filter");
   var isOpen = panel.style.display === "block";
   panel.style.display = isOpen ? "none" : "block";
-  sf.style.display = (currentTab === "stream" && !isOpen) ? "block" : "none";
   if (window.innerWidth <= 768) {
     mobilePanelOpen = !isOpen;
     var toggle = document.getElementById("mobile-search-toggle");
@@ -1339,8 +1142,6 @@ function getMobileActiveParts() {
   if (sv) parts.push(sv);
   var genreKeys = Object.keys(activeGenres);
   for (var i = 0; i < genreKeys.length; i++) parts.push(genreKeys[i]);
-  var platformKeys = Object.keys(activePlatforms);
-  for (var j = 0; j < platformKeys.length; j++) parts.push(platformKeys[j]);
   var rating = parseFloat(document.getElementById("min-rating-select").value) || 0;
   if (rating > 0) parts.push(rating + "分以上");
   return parts;
@@ -1380,8 +1181,6 @@ function switchTab(t) {
   document.getElementById("content-" + t).classList.add("active");
   document.getElementById("tab-" + t).classList.add("active");
   moveTabIndicator(t);
-  var panel = document.getElementById("filter-panel");
-  if (panel.style.display === "block") document.getElementById("stream-platform-filter").style.display = t === "stream" ? "block" : "none";
   var countEl = document.getElementById("movie-count");
   if (countEl && filtered) countEl.textContent = (filtered[t] ? filtered[t].length : 0) + " 部";
 }
@@ -1394,7 +1193,7 @@ function openModal(id) {
   document.getElementById("modal-hero-slot").innerHTML = '';
   document.getElementById("modal-content").innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:60vh"><div class="skeleton" style="width:64px;height:64px;border-radius:50%"></div></div>';
   var movie = null;
-  ["now","soon","stream"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.id === id) movie = m; }); });
+  ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.id === id) movie = m; }); });
   if (!movie) movie = {};
   getDetail(id).then(function(detail) {
     var imdbRating = movie.imdb || "";
@@ -1570,82 +1369,49 @@ function loadData(forceRefresh) {
     var cached = loadCache();
     if (cached) {
       allMovies = cached;
-      ["now","soon","stream"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.imdb === "N/A") m.imdb = ""; }); });
-      filtered = { now: cached.now.slice(), soon: cached.soon.slice(), stream: cached.stream.slice() };
+      ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.imdb === "N/A") m.imdb = ""; }); });
+      filtered = { now: cached.now.slice(), soon: cached.soon.slice() };
       sortMovies();
       setTimeout(function() {
-        ["now","stream"].forEach(function(t) {
-          allMovies[t].forEach(function(m) {
-            if (m.imdb) { var el = document.getElementById("imdb-" + m.id); if (el) { el.querySelector("span").textContent = m.imdb; el.style.display = ""; } }
-            if (m.rt) { var rtEl = document.getElementById("rt-" + m.id); if (rtEl) { rtEl.querySelector("span").textContent = m.rt; rtEl.style.display = ""; } }
-            if (m.mc) { var mcEl = document.getElementById("mc-" + m.id); if (mcEl) { mcEl.querySelector("span").textContent = m.mc; mcEl.style.display = ""; } }
-          });
+        allMovies.now.forEach(function(m) {
+          if (m.imdb) { var el = document.getElementById("imdb-" + m.id); if (el) { el.querySelector("span").textContent = m.imdb; el.style.display = ""; } }
+          if (m.rt) { var rtEl = document.getElementById("rt-" + m.id); if (rtEl) { rtEl.querySelector("span").textContent = m.rt; rtEl.style.display = ""; } }
+          if (m.mc) { var mcEl = document.getElementById("mc-" + m.id); if (mcEl) { mcEl.querySelector("span").textContent = m.mc; mcEl.style.display = ""; } }
         });
       }, 300);
-      buildGenreFilters(); buildPlatformFilters();
-      fetchImdbInBackground(allMovies.now); fetchImdbInBackground(allMovies.stream);
+      buildGenreFilters();
+      fetchImdbInBackground(allMovies.now);
       return;
     }
   }
   icon.classList.add("spinning"); btn.disabled = true; showSkeletons();
   fetchBasicLists().then(function(data) {
-    allMovies = { now: data.now, soon: data.soon, stream: data.stream };
-    filtered = { now: data.now.slice(), soon: data.soon.slice(), stream: data.stream.slice() };
-    sortMovies(); buildGenreFilters(); buildPlatformFilters();
+    allMovies = { now: data.now, soon: data.soon };
+    filtered = { now: data.now.slice(), soon: data.soon.slice() };
+    sortMovies(); buildGenreFilters();
     icon.classList.remove("spinning"); btn.disabled = false;
     enrichBackground(data);
-    showStreamToast();
-    // MOTN 跑完後再插入串流 tab
-    data._motnPromise.then(function(motnResults) {
-      hideStreamToast();
-      var streamSeen = loadStreamSeen();
-      var now = Date.now();
-      if (motnResults) {
-        motnResults.forEach(function(item) {
-          var key = item.change.showId;
-          if (!streamSeen[key]) streamSeen[key] = { firstSeen: now, item: item };
-        });
-      }
-      var cleaned = {};
-      Object.keys(streamSeen).forEach(function(k) {
-        if (now - streamSeen[k].firstSeen < STREAM_SEEN_TTL) cleaned[k] = streamSeen[k];
-      });
-      saveStreamSeen(cleaned);
-      var allSeenItems = Object.keys(cleaned).map(function(k) { return cleaned[k].item; });
-      allSeenItems.sort(function(a, b) { return b.change.timestamp - a.change.timestamp; });
-      if (allSeenItems.length === 0) return;
-      var npIds = {}; allMovies.now.forEach(function(m) { npIds[m.id] = true; });
-      var existIds = {}; allMovies.stream.forEach(function(m) { existIds[m.id] = true; });
-      var stMotn = allSeenItems.map(motnToMovie).filter(function(m) { return !npIds[m.id] && !existIds[m.id]; });
-      if (stMotn.length === 0) return;
-      allMovies.stream = stMotn.concat(allMovies.stream).slice(0, 40);
-      applyFilters();
-      buildGenreFilters(); buildPlatformFilters();
-      enrichBackground({ _np: [], _cs: [], _stMotn: stMotn, _stTmdb: [] }, true);
-    });
   }).catch(function(e) {
-    hideStreamToast();
     icon.classList.remove("spinning"); btn.disabled = false;
     errBanner.textContent = "⚠️ 資料載入失敗：" + e.message;
     errBanner.classList.add("show");
     var cached = loadCache();
     if (cached) {
       allMovies = cached;
-      filtered = { now: cached.now.slice(), soon: cached.soon.slice(), stream: cached.stream.slice() };
+      filtered = { now: cached.now.slice(), soon: cached.soon.slice() };
       renderGrids();
     }
   });
 }
 
-function showStreamToast() { document.getElementById("stream-toast").classList.add("show"); }
-function hideStreamToast() { document.getElementById("stream-toast").classList.remove("show"); }
-
 function refreshData() { loadData(true); }
+localStorage.removeItem("movienotice_stream_seen_v1");
+localStorage.removeItem("watchtonight_stream_seen_v1");
 switchTab(currentTab);
 loadData(false);
 
 (function() {
-  var TABS = ['now', 'soon', 'stream'];
+  var TABS = ['now', 'soon'];
   var startX = 0, startY = 0;
   document.addEventListener('touchstart', function(e) {
     startX = e.touches[0].clientX;
