@@ -19,8 +19,8 @@ from dotenv import load_dotenv
 # 設定區塊
 CONTACT_EMAIL = "quietcron@gmail.com"
 USER_AGENT = f"MovieNotice-DataChecker/1.0 (+{CONTACT_EMAIL})"
-ATMOVIES_NOW = "http://www.atmovies.com.tw/movie/now/"
-ATMOVIES_NEXT = "http://www.atmovies.com.tw/movie/next/"
+ATMOVIES_NOW = "http://www.atmovies.com.tw/movie/now/0/"
+ATMOVIES_NEXT = "http://www.atmovies.com.tw/movie/next/0/"
 TMDB_BASE = "https://api.themoviedb.org/3"
 TMDB_DELAY = 0.3
 SCRAPE_DELAY = 2
@@ -86,61 +86,99 @@ def fetch_atmovies(url):
 
 
 def parse_now(html):
-    """解析現正熱映 ul.filmListPA"""
+    """解析現正熱映 List All 頁面 (按日期分組)"""
     soup = BeautifulSoup(html, "html.parser")
-    ul = soup.find("ul", class_="filmListPA")
     movies = []
-    if not ul:
-        log("WARN: filmListPA not found in NOW page")
-        return movies
-    for li in ul.find_all("li", recursive=False):
-        a = li.find("a")
-        runtime = li.find("span", class_="runtime")
-        if not a or not runtime:
+
+    # List All 結構: <h2>日期</h2> 然後接 <ul><li>...</li></ul>
+    # 每個 h2 後面跟著一組電影,直到下一個 h2
+
+    for h2 in soup.find_all("h2"):
+        date_text = h2.get_text(strip=True)
+        date = normalize_date(date_text)
+        if not date:
             continue
-        title = a.get_text(strip=True)
-        href = a.get("href", "")
-        movie_id = extract_atmovies_id(href)
-        date = normalize_date(runtime.get_text())
-        if title and movie_id and date:
-            movies.append({
-                "title_zh": title,
-                "release_date_tw": date,
-                "atmovies_id": movie_id,
-                "atmovies_url": f"http://www.atmovies.com.tw{href}",
-            })
+
+        # 找這個 h2 之後的 ul
+        ul = h2.find_next_sibling("ul")
+        if not ul:
+            continue
+
+        for li in ul.find_all("li", recursive=False):
+            # li 內含 <a href=".../movie/fxxx/"> 連結
+            link = li.find("a", href=lambda h: h and "/movie/f" in h)
+            if not link:
+                continue
+
+            href = link.get("href", "")
+            movie_id = extract_atmovies_id(href)
+            if not movie_id:
+                continue
+
+            # 取得片名: 可能在 a 內的文字 (有時 a 內只有 img,要找下個 a)
+            title = link.get_text(strip=True)
+            if not title:
+                # 找 li 內第二個有文字內容的 a
+                all_links = li.find_all("a")
+                for a in all_links:
+                    text = a.get_text(strip=True)
+                    if text:
+                        title = text
+                        break
+
+            if title and movie_id:
+                movies.append({
+                    "title_zh": title,
+                    "release_date_tw": date,
+                    "atmovies_id": movie_id,
+                    "atmovies_url": f"http://www.atmovies.com.tw{href}",
+                })
+
     return movies
 
 
 def parse_next(html):
-    """解析即將上映 ul.filmListAllX"""
+    """解析即將上映 List All 頁面 (按日期分組,跟 parse_now 結構相同)"""
     soup = BeautifulSoup(html, "html.parser")
-    ul = soup.find("ul", class_="filmListAllX")
     movies = []
-    if not ul:
-        log("WARN: filmListAllX not found in NEXT page")
-        return movies
-    for li in ul.find_all("li", recursive=False):
-        title_div = li.find("div", class_="filmtitle")
-        runtime_div = li.find("div", class_="runtime")
-        if not title_div or not runtime_div:
-            continue
-        a = title_div.find("a")
-        if not a:
-            continue
-        title = a.get_text(strip=True)
-        href = a.get("href", "")
-        movie_id = extract_atmovies_id(href)
-        date_a = runtime_div.find("a")
-        date_text = date_a.get_text() if date_a else runtime_div.get_text()
+
+    for h2 in soup.find_all("h2"):
+        date_text = h2.get_text(strip=True)
         date = normalize_date(date_text)
-        if title and movie_id and date:
-            movies.append({
-                "title_zh": title,
-                "release_date_tw": date,
-                "atmovies_id": movie_id,
-                "atmovies_url": f"http://www.atmovies.com.tw{href}",
-            })
+        if not date:
+            continue
+
+        ul = h2.find_next_sibling("ul")
+        if not ul:
+            continue
+
+        for li in ul.find_all("li", recursive=False):
+            link = li.find("a", href=lambda h: h and "/movie/f" in h)
+            if not link:
+                continue
+
+            href = link.get("href", "")
+            movie_id = extract_atmovies_id(href)
+            if not movie_id:
+                continue
+
+            title = link.get_text(strip=True)
+            if not title:
+                all_links = li.find_all("a")
+                for a in all_links:
+                    text = a.get_text(strip=True)
+                    if text:
+                        title = text
+                        break
+
+            if title and movie_id:
+                movies.append({
+                    "title_zh": title,
+                    "release_date_tw": date,
+                    "atmovies_id": movie_id,
+                    "atmovies_url": f"http://www.atmovies.com.tw{href}",
+                })
+
     return movies
 
 
