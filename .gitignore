@@ -9,7 +9,8 @@ __pycache__/
 scripts/.env
 
 # 爬蟲產出的資料 (法律風險，不公開)
-data/
+data/missing-tw-dates.json
+data/raw/
 scripts/samples/
 
 # macOS

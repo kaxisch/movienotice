@@ -19,8 +19,10 @@ from dotenv import load_dotenv
 # 設定區塊
 CONTACT_EMAIL = "quietcron@gmail.com"
 USER_AGENT = f"MovieNotice-DataChecker/1.0 (+{CONTACT_EMAIL})"
-ATMOVIES_NOW = "http://www.atmovies.com.tw/movie/now/0/"
-ATMOVIES_NEXT = "http://www.atmovies.com.tw/movie/next/0/"
+# NOW 改爬「首輪 List」分頁(有準確上映日期和廳數)
+ATMOVIES_NOW_BASE = "http://www.atmovies.com.tw/movie/now/1/"
+# NEXT 改爬週次分頁列表(從 next 主頁抓取所有 w 連結)
+ATMOVIES_NEXT_INDEX = "http://www.atmovies.com.tw/movie/next/"
 TMDB_BASE = "https://api.themoviedb.org/3"
 TMDB_DELAY = 0.3
 SCRAPE_DELAY = 2
@@ -85,28 +87,109 @@ def fetch_atmovies(url):
         return raw_bytes.decode("utf-8", errors="replace")
 
 
-def parse_now(html):
-    """解析現正熱映 List All 頁面 (按日期分組)"""
-    soup = BeautifulSoup(html, "html.parser")
+def fetch_now_all_pages():
+    """爬 NOW 首輪 List 的所有分頁,直到找不到 ~MORE~ 連結為止"""
+    all_html = []
+    url = ATMOVIES_NOW_BASE
+    page_num = 1
+    max_pages = 6  # 安全機制,避免無限迴圈
+
+    while page_num <= max_pages:
+        log(f"Fetching NOW page {page_num}: {url}")
+        html = fetch_atmovies(url)
+        all_html.append(html)
+
+        # 在 HTML 中找下一頁的連結
+        # 開眼用 "~MORE~更多影片" 標示下一頁
+        soup = BeautifulSoup(html, "html.parser")
+
+        # 開眼用 onclick="grabFile('/movie/...')" 來翻頁
+        # 不是普通 href,要從 onclick 屬性抓
+        next_link = None
+        for a in soup.find_all("a"):
+            text = a.get_text(strip=True)
+            onclick = a.get("onclick", "")
+            if "MORE" in text and "grabFile" in onclick:
+                # 從 onclick="grabFile('/movie/movie2_now_2.html','LA-more');" 抓出 URL
+                match = re.search(r"grabFile\(['\"]([^'\"]+)['\"]", onclick)
+                if match:
+                    next_link = match.group(1)
+                    break
+
+        if not next_link:
+            log(f"NOW: no more pages after page {page_num}")
+            break
+
+        # 組出絕對 URL
+        if next_link.startswith("/"):
+            url = "http://www.atmovies.com.tw" + next_link
+        elif next_link.startswith("http"):
+            url = next_link
+        else:
+            url = "http://www.atmovies.com.tw/movie/" + next_link
+
+        page_num += 1
+        time.sleep(SCRAPE_DELAY)
+
+    log(f"NOW: fetched {page_num} pages total")
+    return all_html
+
+
+def fetch_next_all_weeks():
+    """爬 NEXT 主頁取得所有週次分頁的 URL,然後個別爬每個週次分頁"""
+    all_html = []
+
+    # 1. 爬主頁找所有 wXX 連結
+    log(f"Fetching NEXT index: {ATMOVIES_NEXT_INDEX}")
+    index_html = fetch_atmovies(ATMOVIES_NEXT_INDEX)
+    soup = BeautifulSoup(index_html, "html.parser")
+
+    # 用 set 去重(主頁可能多處列出同一連結)
+    week_links = set()
+    for a in soup.find_all("a"):
+        href = a.get("href", "")
+        # 匹配 /movie/next/w23/ 這種格式
+        match = re.match(r".*?(/movie/next/w\d+/?)$", href)
+        if match:
+            week_links.add(match.group(1))
+
+    log(f"NEXT: found {len(week_links)} week pages")
+
+    # 2. 個別爬每個週次分頁
+    for week_path in sorted(week_links):
+        time.sleep(SCRAPE_DELAY)
+        url = "http://www.atmovies.com.tw" + week_path
+        log(f"Fetching NEXT week: {url}")
+        html = fetch_atmovies(url)
+        all_html.append(html)
+
+    log(f"NEXT: fetched {len(all_html)} week pages total")
+    return all_html
+
+
+def parse_now(html_pages):
+    """解析首輪 List 多分頁的所有電影
+    Args:
+        html_pages: list[str],每個元素是一個分頁的 HTML
+    Returns:
+        list[dict]: 包含每部電影的資訊
+    """
     movies = []
+    seen_ids = set()
 
-    # List All 結構: <h2>日期</h2> 然後接 <ul><li>...</li></ul>
-    # 每個 h2 後面跟著一組電影,直到下一個 h2
+    for html in html_pages:
+        soup = BeautifulSoup(html, "html.parser")
 
-    for h2 in soup.find_all("h2"):
-        date_text = h2.get_text(strip=True)
-        date = normalize_date(date_text)
-        if not date:
-            continue
+        # 找所有 <article class="filmList"> (首輪 List 每部電影一個 article)
+        articles = soup.find_all("article", class_="filmList")
 
-        # 找這個 h2 之後的 ul
-        ul = h2.find_next_sibling("ul")
-        if not ul:
-            continue
+        for article in articles:
+            # 找片名連結
+            title_div = article.find("div", class_="filmTitle")
+            if not title_div:
+                continue
 
-        for li in ul.find_all("li", recursive=False):
-            # li 內含 <a href=".../movie/fxxx/"> 連結
-            link = li.find("a", href=lambda h: h and "/movie/f" in h)
+            link = title_div.find("a")
             if not link:
                 continue
 
@@ -115,45 +198,84 @@ def parse_now(html):
             if not movie_id:
                 continue
 
-            # 取得片名: 可能在 a 內的文字 (有時 a 內只有 img,要找下個 a)
-            title = link.get_text(strip=True)
-            if not title:
-                # 找 li 內第二個有文字內容的 a
-                all_links = li.find_all("a")
-                for a in all_links:
-                    text = a.get_text(strip=True)
-                    if text:
-                        title = text
-                        break
+            # 去重(以防同部片出現在多個分頁)
+            if movie_id in seen_ids:
+                continue
+            seen_ids.add(movie_id)
 
-            if title and movie_id:
-                movies.append({
-                    "title_zh": title,
-                    "release_date_tw": date,
-                    "atmovies_id": movie_id,
-                    "atmovies_url": f"http://www.atmovies.com.tw{href}",
-                })
+            # 提取中文片名 + 英文片名
+            # 開眼的格式: "中文片名 English Title"
+            # 中文部分(到第一個空格或英文字之前)是中文片名
+            full_title = link.get_text(strip=True)
+
+            # 簡單分離: 找第一個英文/數字字元的位置
+            match = re.search(r"[A-Za-z0-9]", full_title)
+            if match and match.start() > 0:
+                title_zh = full_title[:match.start()].strip()
+                title_en = full_title[match.start():].strip()
+            else:
+                title_zh = full_title.strip()
+                title_en = ""
+
+            # 找上映日期和廳數 (在 <div class="runtime"> 標籤裡)
+            release_date_tw = None
+            screen_count = 0
+
+            for runtime_div in article.find_all("div", class_="runtime"):
+                text = runtime_div.get_text()
+
+                # 找「上映日期:6/12/2026」
+                date_match = re.search(r"上映日期[:：]\s*(\d{1,2}/\d{1,2}/\d{4})", text)
+                if date_match:
+                    date_str = date_match.group(1)
+                    # 轉成 YYYY-MM-DD
+                    parts = date_str.split("/")
+                    if len(parts) == 3:
+                        m, d, y = parts
+                        release_date_tw = f"{y}-{m.zfill(2)}-{d.zfill(2)}"
+
+                # 找「上映廳數 (89)」
+                screen_match = re.search(r"上映廳數\s*\(?(\d+)\)?", text)
+                if screen_match:
+                    screen_count = int(screen_match.group(1))
+
+            # 如果沒抓到日期,跳過這部
+            if not release_date_tw:
+                continue
+
+            movies.append({
+                "title_zh": title_zh,
+                "title_en": title_en,
+                "release_date_tw": release_date_tw,
+                "screen_count": screen_count,
+                "atmovies_id": movie_id,
+                "atmovies_url": f"http://www.atmovies.com.tw{href}",
+            })
 
     return movies
 
 
-def parse_next(html):
-    """解析即將上映 List All 頁面 (按日期分組,跟 parse_now 結構相同)"""
-    soup = BeautifulSoup(html, "html.parser")
+def parse_next(html_pages):
+    """解析 NEXT 週次分頁的所有電影
+    Args:
+        html_pages: list[str],每個元素是一個週次分頁的 HTML
+    Returns:
+        list[dict]: 包含每部電影的資訊
+    """
     movies = []
+    seen_ids = set()
 
-    for h2 in soup.find_all("h2"):
-        date_text = h2.get_text(strip=True)
-        date = normalize_date(date_text)
-        if not date:
-            continue
+    for html in html_pages:
+        soup = BeautifulSoup(html, "html.parser")
 
-        ul = h2.find_next_sibling("ul")
-        if not ul:
-            continue
+        articles = soup.find_all("article", class_="filmList")
 
-        for li in ul.find_all("li", recursive=False):
-            link = li.find("a", href=lambda h: h and "/movie/f" in h)
+        for article in articles:
+            title_div = article.find("div", class_="filmTitle")
+            if not title_div:
+                continue
+
+            link = title_div.find("a")
             if not link:
                 continue
 
@@ -162,22 +284,49 @@ def parse_next(html):
             if not movie_id:
                 continue
 
-            title = link.get_text(strip=True)
-            if not title:
-                all_links = li.find_all("a")
-                for a in all_links:
-                    text = a.get_text(strip=True)
-                    if text:
-                        title = text
-                        break
+            if movie_id in seen_ids:
+                continue
+            seen_ids.add(movie_id)
 
-            if title and movie_id:
-                movies.append({
-                    "title_zh": title,
-                    "release_date_tw": date,
-                    "atmovies_id": movie_id,
-                    "atmovies_url": f"http://www.atmovies.com.tw{href}",
-                })
+            full_title = link.get_text(strip=True)
+
+            match = re.search(r"[A-Za-z0-9]", full_title)
+            if match and match.start() > 0:
+                title_zh = full_title[:match.start()].strip()
+                title_en = full_title[match.start():].strip()
+            else:
+                title_zh = full_title.strip()
+                title_en = ""
+
+            release_date_tw = None
+            screen_count = 0
+
+            for runtime_div in article.find_all("div", class_="runtime"):
+                text = runtime_div.get_text()
+
+                date_match = re.search(r"上映日期[:：]\s*(\d{1,2}/\d{1,2}/\d{4})", text)
+                if date_match:
+                    date_str = date_match.group(1)
+                    parts = date_str.split("/")
+                    if len(parts) == 3:
+                        m, d, y = parts
+                        release_date_tw = f"{y}-{m.zfill(2)}-{d.zfill(2)}"
+
+                screen_match = re.search(r"上映廳數\s*\(?(\d+)\)?", text)
+                if screen_match:
+                    screen_count = int(screen_match.group(1))
+
+            if not release_date_tw:
+                continue
+
+            movies.append({
+                "title_zh": title_zh,
+                "title_en": title_en,
+                "release_date_tw": release_date_tw,
+                "screen_count": screen_count,
+                "atmovies_id": movie_id,
+                "atmovies_url": f"http://www.atmovies.com.tw{href}",
+            })
 
     return movies
 
@@ -227,15 +376,17 @@ def has_tw_release(release_results):
 
 def main():
     try:
-        html_now = fetch_atmovies(ATMOVIES_NOW)
+        # NOW: 爬首輪 List + 翻頁 (約 2-4 頁)
+        now_pages = fetch_now_all_pages()
         time.sleep(SCRAPE_DELAY)
-        html_next = fetch_atmovies(ATMOVIES_NEXT)
+        # NEXT: 從主頁抓所有 wXX 連結, 個別爬每個週次分頁
+        next_pages = fetch_next_all_weeks()
     except Exception as e:
         log(f"FATAL: failed to fetch atmovies: {e}")
         sys.exit(1)
 
-    movies_now = parse_now(html_now)
-    movies_next = parse_next(html_next)
+    movies_now = parse_now(now_pages)
+    movies_next = parse_next(next_pages)
     log(f"Scraped NOW: {len(movies_now)} movies")
     log(f"Scraped NEXT: {len(movies_next)} movies")
 
@@ -314,6 +465,30 @@ def main():
     log(f"TMDB has TW date: {len(tmdb_has_tw_date)}")
     log(f"Missing TW date (NEEDS UPDATE): {len(missing_tw_date)}")
     log(f"\nOutput written to: {OUTPUT_FILE}")
+
+    # 產出 tw-whitelist.json 給網站使用 (精簡版,只有 TMDB ID + TW 上映日期)
+    whitelist_path = OUTPUT_DIR / "tw-whitelist.json"
+    whitelist_data = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "tmdb_ids": []
+    }
+
+    # 從 tmdb_has_tw_date bucket 抓出所有有 TMDB ID 的片
+    for m in output["tmdb_has_tw_date"]:
+        if m.get("tmdb_id"):
+            whitelist_data["tmdb_ids"].append(m["tmdb_id"])
+
+    # 從 missing_tw_date bucket 也抓 (這些片有 TMDB 條目,只是缺 TW date)
+    for m in output["missing_tw_date"]:
+        if m.get("tmdb_id"):
+            whitelist_data["tmdb_ids"].append(m["tmdb_id"])
+
+    # 去重並排序
+    whitelist_data["tmdb_ids"] = sorted(set(whitelist_data["tmdb_ids"]))
+
+    with open(whitelist_path, "w", encoding="utf-8") as f:
+        json.dump(whitelist_data, f, ensure_ascii=False, indent=2)
+    log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
 
 
 if __name__ == "__main__":
