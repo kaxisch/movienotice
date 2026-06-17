@@ -781,7 +781,9 @@ function fetchBasicLists() {
     fetchPages("/discover/movie", { "release_date.gte": daysAgo(45), "release_date.lte": today(), sort_by: "popularity.desc", with_release_type: "3|2", region: "TW", watch_region: "TW" }, 3),
     fetchPages("/discover/movie", { "primary_release_date.gte": daysAgo(45), "primary_release_date.lte": today(), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true),
     fetchPages("/discover/movie", { "release_date.gte": daysLater(1), "release_date.lte": daysLater(180), sort_by: "release_date.asc", with_release_type: "3|2", watch_region: "TW" }, 3),
-    fetchPages("/discover/movie", { "primary_release_date.gte": daysLater(1), "primary_release_date.lte": daysLater(180), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true)
+    fetchPages("/discover/movie", { "primary_release_date.gte": daysLater(1), "primary_release_date.lte": daysLater(180), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true),
+    // 反向白名單: 開眼有的 TMDB ID 清單
+    fetch("data/tw-whitelist.json").then(function(r) { return r.ok ? r.json() : { tmdb_ids: [] }; }).catch(function() { return { tmdb_ids: [] }; })
   ]).then(function(results) {
     var cutoff45 = daysAgo(45);
     var npA = dedup(results[0]).filter(function(m) { return m.release_date >= cutoff45; });
@@ -796,6 +798,18 @@ function fetchBasicLists() {
     csA.forEach(function(m) { csAIds[m.id] = true; });
     var csB = results[3].filter(function(m) { return !csAIds[m.id] && !npIds2[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
     var cs = dedup(csA.concat(csB));
+
+    // 反向白名單過濾: 只保留在開眼清單裡的 TMDB ID
+    var whitelist = results[4] && results[4].tmdb_ids ? results[4].tmdb_ids : [];
+    if (whitelist.length > 0) {
+      var whitelistSet = {};
+      whitelist.forEach(function(id) { whitelistSet[id] = true; });
+      var npBefore = np.length, csBefore = cs.length;
+      np = np.filter(function(m) { return whitelistSet[m.id]; });
+      cs = cs.filter(function(m) { return whitelistSet[m.id]; });
+      console.log("Whitelist filter: NOW " + npBefore + " -> " + np.length + ", SOON " + csBefore + " -> " + cs.length);
+    }
+
     return fetchByIdsWithTwBucket(FORCE_INCLUDE_TMDB_IDS).then(function(forced) {
       // 合併到 np (現正熱映)
       var npExistingIds = {};
