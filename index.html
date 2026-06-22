@@ -418,24 +418,52 @@ var IMG_W = "https://image.tmdb.org/t/p/w500";
 var IMG_BG = "https://image.tmdb.org/t/p/w1280";
 var CACHE_KEY = "movienotice_v17";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
-var IMDB_CACHE_KEY = "movienotice_imdb_v3";
-var IMDB_CACHE_TTL = 7 * 24 * 60 * 60 * 1000;
+var IMDB_CACHE_KEY = "movienotice_imdb_v4";
+var IMDB_CACHE_TTL = 3 * 24 * 60 * 60 * 1000;
+function normalizeImdbRatings(ratings) {
+  return {
+    imdb: ratings && ratings.imdb && ratings.imdb !== "N/A" ? ratings.imdb : "",
+    rt: ratings && ratings.rt ? ratings.rt : "",
+    mc: ratings && ratings.mc ? ratings.mc : ""
+  };
+}
+function normalizeImdbCacheEntry(entry, fallbackTs) {
+  if (!entry) return null;
+  if (typeof entry === "string") return { ts: fallbackTs || 0, ratings: normalizeImdbRatings({ imdb: entry }) };
+  if (entry.ratings) return { ts: entry.ts || fallbackTs || 0, ratings: normalizeImdbRatings(entry.ratings) };
+  return { ts: fallbackTs || 0, ratings: normalizeImdbRatings(entry) };
+}
 function loadImdbCache() {
   try {
     var raw = localStorage.getItem(IMDB_CACHE_KEY);
     if (!raw) return {};
     var obj = JSON.parse(raw);
-    if (Date.now() - obj.ts > IMDB_CACHE_TTL) return {};
-    return obj.data || {};
+    var data = obj && obj.data ? obj.data : {};
+    var out = {};
+    Object.keys(data).forEach(function(imdbId) {
+      var entry = normalizeImdbCacheEntry(data[imdbId], obj.ts);
+      if (entry) out[imdbId] = entry;
+    });
+    return out;
   } catch(e) { return {}; }
 }
 function saveImdbData(imdbId, ratings) {
   try {
     var raw = localStorage.getItem(IMDB_CACHE_KEY);
-    var obj = raw ? JSON.parse(raw) : { ts: Date.now(), data: {} };
-    obj.data[imdbId] = ratings;
+    var obj = raw ? JSON.parse(raw) : { data: {} };
+    if (!obj.data) obj.data = {};
+    obj.data[imdbId] = { ts: Date.now(), ratings: normalizeImdbRatings(ratings) };
     localStorage.setItem(IMDB_CACHE_KEY, JSON.stringify(obj));
   } catch(e) {}
+}
+function getCachedImdbData(imdbId) {
+  var entry = normalizeImdbCacheEntry(imdbLocalCache[imdbId]);
+  if (!entry) return null;
+  if (Date.now() - entry.ts > IMDB_CACHE_TTL) return null;
+  return entry.ratings;
+}
+function getMoviesForRatingRefresh(forceRefreshRatings) {
+  return forceRefreshRatings ? allMovies.now.concat(allMovies.soon) : allMovies.now;
 }
 var imdbLocalCache = loadImdbCache();
 
@@ -723,12 +751,12 @@ function parseOmdbRatings(d) {
   return { imdb: imdb, rt: rt, mc: mc };
 }
 
-function getImdb(imdbId) {
+function getImdb(imdbId, options) {
+  options = options || {};
   if (!imdbId) return Promise.resolve({ imdb: "", rt: "", mc: "" });
-  if (imdbLocalCache[imdbId]) {
-    var c = imdbLocalCache[imdbId];
-    var cached = typeof c === "string" ? { imdb: c, rt: "", mc: "" } : c;
-    if (cached.imdb) return Promise.resolve(cached.imdb === "N/A" ? { imdb: "", rt: cached.rt, mc: cached.mc } : cached);
+  if (!options.forceRefresh) {
+    var cached = getCachedImdbData(imdbId);
+    if (cached) return Promise.resolve(cached);
   }
   var startIdx = omdbKeyIndex % OMDB_KEYS.length;
   omdbKeyIndex++;
@@ -744,9 +772,10 @@ function getImdb(imdbId) {
           return tryKey(attempt + 1);
         }
         var ratings = parseOmdbRatings(d);
-        var toCache = { imdb: ratings.imdb || (d.imdbRating === "N/A" ? "N/A" : ""), rt: ratings.rt, mc: ratings.mc };
-        if (toCache.imdb || toCache.rt || toCache.mc) { imdbLocalCache[imdbId] = toCache; saveImdbData(imdbId, toCache); }
-        return ratings;
+        var toCache = normalizeImdbRatings(ratings);
+        imdbLocalCache[imdbId] = { ts: Date.now(), ratings: toCache };
+        saveImdbData(imdbId, toCache);
+        return toCache;
       })
       .catch(function() { return { imdb: "", rt: "", mc: "" }; });
   }
@@ -851,13 +880,19 @@ function fetchBasicLists() {
   });
 }
 
-function enrichBackground(rawData, skipNowFilter, deferInitialRender) {
+function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefreshRatings) {
   var nowIds = {}; allMovies.now.forEach(function(m) { nowIds[m.id] = true; });
   var soonIds = {}; allMovies.soon.forEach(function(m) { soonIds[m.id] = true; });
   var npToEnrich = rawData._np.filter(function(r) { return nowIds[r.id]; });
   var csToEnrich = rawData._cs.filter(function(r) { return soonIds[r.id]; });
   var total = npToEnrich.length + csToEnrich.length;
-  if (total === 0) { applyFilters(); buildGenreFilters(); saveCache(allMovies); return; }
+  if (total === 0) {
+    applyFilters();
+    buildGenreFilters();
+    saveCache(allMovies);
+    fetchImdbInBackground(getMoviesForRatingRefresh(!!forceRefreshRatings), { forceRefresh: !!forceRefreshRatings });
+    return;
+  }
   var done = 0;
 
   function findMovie(id) {
@@ -901,7 +936,7 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender) {
     applyFilters(true);
     if (deferInitialRender || beforeSig !== filteredSignature()) renderGrids();
     buildGenreFilters(); saveCache(allMovies);
-    fetchImdbInBackground(allMovies.now);
+    fetchImdbInBackground(getMoviesForRatingRefresh(!!forceRefreshRatings), { forceRefresh: !!forceRefreshRatings });
   }
 
   npToEnrich.concat(csToEnrich).forEach(function(raw) {
@@ -1215,11 +1250,16 @@ function openModal(id) {
   if (!movie) movie = {};
   getDetail(id).then(function(detail) {
     var imdbRating = movie.imdb || "";
-    if (!imdbRating) {
-      return getExternalIds(id).then(function(ext) { return getImdb(ext.imdb_id); }).then(function(ratings) {
+    if (!movie.imdb || !movie.rt || !movie.mc) {
+      var imdbPromise = movie.imdbId ? Promise.resolve(movie.imdbId) : getExternalIds(id).then(function(ext) { return ext.imdb_id || ""; });
+      return imdbPromise.then(function(imdbId) {
+        if (imdbId && !movie.imdbId) movie.imdbId = imdbId;
+        return getImdb(imdbId);
+      }).then(function(ratings) {
+        if (ratings.imdb && !movie.imdb) movie.imdb = ratings.imdb;
         if (ratings.rt && !movie.rt) movie.rt = ratings.rt;
         if (ratings.mc && !movie.mc) movie.mc = ratings.mc;
-        renderModal(movie, detail, ratings.imdb || "");
+        renderModal(movie, detail, movie.imdb || ratings.imdb || imdbRating);
       });
     }
     renderModal(movie, detail, imdbRating);
@@ -1351,12 +1391,21 @@ function scrollToResults() {
   }
 }
 
-function fetchImdbInBackground(movies) {
-  var pending = movies.length;
-  if (pending === 0) return;
+function fetchImdbInBackground(movies, options) {
+  options = options || {};
+  var uniqueMovies = [];
+  var seenIds = {};
   movies.forEach(function(m) {
-    if (!m.id || !m.imdbId || (m.imdb && m.imdb !== "N/A")) { pending--; if (pending === 0) saveCache(allMovies); return; }
-    getImdb(m.imdbId).then(function(ratings) {
+    if (!m || !m.id || seenIds[m.id]) return;
+    seenIds[m.id] = true;
+    uniqueMovies.push(m);
+  });
+  var pending = uniqueMovies.length;
+  if (pending === 0) return;
+  uniqueMovies.forEach(function(m) {
+    var hasAllRatings = !!(m.imdb && m.rt && m.mc);
+    if (!m.imdbId || (!options.forceRefresh && hasAllRatings)) { pending--; if (pending === 0) saveCache(allMovies); return; }
+    getImdb(m.imdbId, { forceRefresh: !!options.forceRefresh }).then(function(ratings) {
       if (ratings.imdb) {
         m.imdb = ratings.imdb;
         var el = document.getElementById("imdb-" + m.id);
@@ -1391,14 +1440,14 @@ function loadData(forceRefresh) {
       filtered = { now: cached.now.slice(), soon: cached.soon.slice() };
       sortMovies();
       setTimeout(function() {
-        allMovies.now.forEach(function(m) {
+        allMovies.now.concat(allMovies.soon).forEach(function(m) {
           if (m.imdb) { var el = document.getElementById("imdb-" + m.id); if (el) { el.querySelector("span").textContent = m.imdb; el.style.display = ""; } }
           if (m.rt) { var rtEl = document.getElementById("rt-" + m.id); if (rtEl) { rtEl.querySelector("span").textContent = m.rt; rtEl.style.display = ""; } }
           if (m.mc) { var mcEl = document.getElementById("mc-" + m.id); if (mcEl) { mcEl.querySelector("span").textContent = m.mc; mcEl.style.display = ""; } }
         });
       }, 300);
       buildGenreFilters();
-      fetchImdbInBackground(allMovies.now);
+      fetchImdbInBackground(getMoviesForRatingRefresh(false));
       return;
     }
   }
@@ -1409,7 +1458,7 @@ function loadData(forceRefresh) {
     var deferInitialRender = !forceRefresh;
     sortMovies(deferInitialRender); buildGenreFilters();
     icon.classList.remove("spinning"); btn.disabled = false;
-    enrichBackground(data, false, deferInitialRender);
+    enrichBackground(data, false, deferInitialRender, forceRefresh);
   }).catch(function(e) {
     icon.classList.remove("spinning"); btn.disabled = false;
     errBanner.textContent = "⚠️ 資料載入失敗：" + e.message;
