@@ -10,6 +10,8 @@ scripts/.env
 
 # 爬蟲產出的資料 (法律風險，不公開)
 data/missing-tw-dates.json
+data/*.tsv
+data/*.csv
 data/raw/
 scripts/samples/
 
