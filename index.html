@@ -410,13 +410,14 @@ var FORCE_INCLUDE_TMDB_IDS = [
   1046758,   // 末路相縫 Sew Torn
   1134463,   // 美夢 Dreams: Sueños
 ];
+var WHITELIST_TW_DATES = {};
 var OMDB_KEYS = ["5f9393e9", "d2e6c0dc", "e8e518de", "8ed98825"];
 var omdbKeyIndex = 0;
 var omdbExhausted = {};
 var TMDB_BASE = "https://api.themoviedb.org/3";
 var IMG_W = "https://image.tmdb.org/t/p/w500";
 var IMG_BG = "https://image.tmdb.org/t/p/w1280";
-var CACHE_KEY = "movienotice_v17";
+var CACHE_KEY = "movienotice_v22";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
 var IMDB_CACHE_KEY = "movienotice_imdb_v4";
 var IMDB_CACHE_TTL = 3 * 24 * 60 * 60 * 1000;
@@ -515,6 +516,22 @@ function tmdbScore(v) {
 function today() { return new Date().toISOString().split("T")[0]; }
 function daysAgo(n) { return new Date(Date.now() - n * 86400000).toISOString().split("T")[0]; }
 function daysLater(n) { return new Date(Date.now() + n * 86400000).toISOString().split("T")[0]; }
+function dateYear(s) { return s ? parseInt(s.slice(0, 4), 10) : 0; }
+function dateDiffDays(a, b) {
+  if (!a || !b) return 0;
+  var ad = new Date(a + "T00:00:00Z");
+  var bd = new Date(b + "T00:00:00Z");
+  return Math.round(Math.abs(ad - bd) / 86400000);
+}
+function isLikelyTmdbMismatch(whitelistDate, primaryReleaseDate, twTheatricalDate) {
+  if (!whitelistDate) return false;
+  if (primaryReleaseDate) {
+    var yearGap = Math.abs(dateYear(primaryReleaseDate) - dateYear(whitelistDate));
+    if (yearGap > 2) return true;
+  }
+  if (twTheatricalDate && dateDiffDays(twTheatricalDate, whitelistDate) > 120) return true;
+  return false;
+}
 function formatDate(d) {
   if (!d) return "";
   var p = d.split("-");
@@ -597,6 +614,7 @@ function fetchByIdsWithTwBucket(ids) {
       .then(function(m) {
         if (!m) return null;
         var twDate = null;
+        var whitelistDate = WHITELIST_TW_DATES[String(id)] || "";
         if (m.release_dates && m.release_dates.results) {
           for (var i = 0; i < m.release_dates.results.length; i++) {
             var entry = m.release_dates.results[i];
@@ -611,6 +629,10 @@ function fetchByIdsWithTwBucket(ids) {
               break;
             }
           }
+        }
+        if (isLikelyTmdbMismatch(whitelistDate, m.release_date || "", twDate || "")) {
+          console.warn("Auto excluded likely TMDB mismatch:", id, m.title || m.original_title, "whitelist=", whitelistDate, "primary=", m.release_date || "", "tw=", twDate || "");
+          return null;
         }
         if (twDate) m.release_date = twDate;
         var bucket = "now";
@@ -730,6 +752,7 @@ function getBasicDetail(id) {
       backdrop: d.backdrop_path ? IMG_BG + d.backdrop_path : null,
       voteAverage: d.vote_average ? d.vote_average.toFixed(1) : "",
       imdbId: d.imdb_id || "",
+      primaryReleaseDate: d.release_date || "",
       trailerKey: null,
       cast: [], crew: [], budget: d.budget || 0, revenue: d.revenue || 0,
       status: d.status || "", origLang: d.original_language || "", origTitle: d.original_title || "",
@@ -798,6 +821,7 @@ function buildBasicMovie(m) {
   return {
     id: m.id, titleZh: m.title || "", titleEn: m.original_title || "",
     releaseDate: m.release_date || "",
+    twReleaseDateVerified: !!m.release_date,
     poster: m.poster_path ? IMG_W + m.poster_path : null,
     backdrop: m.backdrop_path ? IMG_BG + m.backdrop_path : null,
     voteAverage: m.vote_average ? m.vote_average.toFixed(1) : "",
@@ -816,9 +840,13 @@ function fetchBasicLists() {
     fetchPages("/discover/movie", { "release_date.gte": daysLater(1), "release_date.lte": daysLater(180), sort_by: "release_date.asc", with_release_type: "3|2", watch_region: "TW" }, 3),
     fetchPages("/discover/movie", { "primary_release_date.gte": daysLater(1), "primary_release_date.lte": daysLater(180), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true),
     // 反向白名單: 開眼有的 TMDB ID 清單
-    fetch("data/tw-whitelist.json").then(function(r) { return r.ok ? r.json() : { tmdb_ids: [] }; }).catch(function() { return { tmdb_ids: [] }; })
+    fetch("data/tw-whitelist.json").then(function(r) { return r.ok ? r.json() : { tmdb_ids: [], tw_release_dates: {} }; }).catch(function() { return { tmdb_ids: [], tw_release_dates: {} }; })
   ]).then(function(results) {
     var cutoff45 = daysAgo(45);
+    var todayStr = today();
+    var tomorrowStr = daysLater(1);
+    var soonWhitelistCutoff = daysLater(60);
+    var soonCutoff180 = daysLater(180);
     var npA = dedup(results[0]).filter(function(m) { return m.release_date >= cutoff45; });
     var npAIds = {};
     npA.forEach(function(m) { npAIds[m.id] = true; });
@@ -832,27 +860,45 @@ function fetchBasicLists() {
     var csB = results[3].filter(function(m) { return !csAIds[m.id] && !npIds2[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
     var cs = dedup(csA.concat(csB));
 
-    // 反向白名單過濾: 現正熱映仍以開眼為準; 即將上映的遠期 TW 日期保留
-    var whitelist = results[4] && results[4].tmdb_ids ? results[4].tmdb_ids : [];
-    if (whitelist.length > 0) {
-      var whitelistSet = {};
-      whitelist.forEach(function(id) { whitelistSet[id] = true; });
-      var npBefore = np.length, csBefore = cs.length;
-      np = np.filter(function(m) { return whitelistSet[m.id]; });
-      cs = cs.filter(function(m) {
-        if (whitelistSet[m.id]) return true;
-        return csAIds[m.id] && m.release_date > daysLater(60);
-      });
-      console.log("Whitelist filter: NOW " + npBefore + " -> " + np.length + ", SOON " + csBefore + " -> " + cs.length);
-    }
+    var whitelistRaw = results[4] && results[4].tmdb_ids ? results[4].tmdb_ids : [];
+    var whitelist = whitelistRaw.slice();
+    WHITELIST_TW_DATES = {};
+    var whitelistDatesRaw = results[4] && results[4].tw_release_dates ? results[4].tw_release_dates : {};
+    Object.keys(whitelistDatesRaw).forEach(function(id) {
+      WHITELIST_TW_DATES[id] = whitelistDatesRaw[id];
+    });
+    var whitelistSet = {};
+    whitelist.forEach(function(id) { whitelistSet[id] = true; });
 
-    return fetchByIdsWithTwBucket(FORCE_INCLUDE_TMDB_IDS).then(function(forced) {
+    np = np.filter(function(m) { return !!whitelistSet[m.id]; });
+    cs = cs.filter(function(m) {
+      if (whitelistSet[m.id]) return true;
+      return m.release_date && m.release_date > soonWhitelistCutoff;
+    });
+
+    var existingIds = {};
+    np.forEach(function(m) { existingIds[m.id] = true; });
+    cs.forEach(function(m) { existingIds[m.id] = true; });
+    var nowBeforeBackfill = np.length;
+    var soonBeforeBackfill = cs.length;
+
+    // 白名單只負責補洞，不再作為主過濾條件。
+    var whitelistBackfillIds = whitelist.filter(function(id) { return !existingIds[id]; });
+
+    return Promise.all([
+      fetchByIdsWithTwBucket(FORCE_INCLUDE_TMDB_IDS),
+      fetchByIdsWithTwBucket(whitelistBackfillIds)
+    ]).then(function(extraResults) {
+      var forced = extraResults[0];
+      var whitelistBackfill = extraResults[1];
+
       // 合併到 np (現正熱映)
       var npExistingIds = {};
       np.forEach(function(m) { npExistingIds[m.id] = true; });
       forced.nowItems.forEach(function(m) {
         if (!npExistingIds[m.id]) {
           np.push(m);
+          npExistingIds[m.id] = true;
           console.log("Force included into NOW:", m.title || m.original_title);
         } else {
           console.log("Already in NOW, skip:", m.title || m.original_title);
@@ -865,11 +911,50 @@ function fetchBasicLists() {
       forced.soonItems.forEach(function(m) {
         if (!csExistingIds[m.id]) {
           cs.push(m);
+          csExistingIds[m.id] = true;
           console.log("Force included into SOON:", m.title || m.original_title);
         } else {
           console.log("Already in SOON, skip:", m.title || m.original_title);
         }
       });
+
+      // 白名單補片: 以開眼上映日為優先，只負責補回 discover 漏掉的片。
+      var whitelistMovies = whitelistBackfill.nowItems.concat(whitelistBackfill.soonItems);
+      var whitelistSeenIds = {};
+      whitelistMovies.forEach(function(m) {
+        if (!m || whitelistSeenIds[m.id]) return;
+        whitelistSeenIds[m.id] = true;
+
+        var whitelistDate = WHITELIST_TW_DATES[String(m.id)] || "";
+        if (whitelistDate) m.release_date = whitelistDate;
+        if (!m.release_date) return;
+
+        if (m.release_date >= cutoff45 && m.release_date <= todayStr) {
+          if (!npExistingIds[m.id]) {
+            np.push(m);
+            npExistingIds[m.id] = true;
+            console.log("Whitelist backfill into NOW:", m.title || m.original_title);
+          }
+          return;
+        }
+
+        if (m.release_date >= tomorrowStr && m.release_date <= soonCutoff180) {
+          if (!csExistingIds[m.id]) {
+            cs.push(m);
+            csExistingIds[m.id] = true;
+            console.log("Whitelist backfill into SOON:", m.title || m.original_title);
+          }
+        }
+      });
+
+      np.sort(function(a, b) {
+        return (b.release_date || "").localeCompare(a.release_date || "");
+      });
+      cs.sort(function(a, b) {
+        return (a.release_date || "").localeCompare(b.release_date || "");
+      });
+      console.log("Now list summary: discover " + nowBeforeBackfill + ", whitelist backfill " + (np.length - nowBeforeBackfill) + ", final " + np.length);
+      console.log("Soon list summary: discover " + soonBeforeBackfill + ", whitelist backfill " + (cs.length - soonBeforeBackfill) + ", final " + cs.length);
 
       return {
         now: np.map(buildBasicMovie),
@@ -918,8 +1003,9 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
 
     if (!skipNowFilter) {
       allMovies.now = allMovies.now.filter(function(m) {
+        if (m.autoExcluded) return false;
         if (m.releaseDate && m.releaseDate > todayStr) { nowToSoon.push(m); return false; }
-        return (!m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration >= 70);
+        return (!m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration > 60);
       });
     }
 
@@ -928,8 +1014,10 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
     nowToSoon.forEach(function(m) { if (!soonIdSet[m.id]) { allMovies.soon.push(m); } });
 
     allMovies.soon = allMovies.soon.filter(function(m) {
-      var hasFutureTheatrical = m.releaseDate && m.releaseDate >= todayStr;
-      return (hasFutureTheatrical || !m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration >= 70);
+      if (m.autoExcluded) return false;
+      var hasFutureTheatrical = m.twReleaseDateVerified && m.releaseDate && m.releaseDate >= todayStr;
+      if (!hasFutureTheatrical) return false;
+      return (hasFutureTheatrical || !m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration > 60);
     });
 
     var beforeSig = deferInitialRender ? "" : filteredSignature();
@@ -949,7 +1037,19 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
         if (detail.voteAverage) movie.voteAverage = detail.voteAverage;
         if (detail.poster && !movie.poster) movie.poster = detail.poster;
         if (detail.backdrop && !movie.backdrop) movie.backdrop = detail.backdrop;
-        if (detail.twReleaseDate) { movie.releaseDate = detail.twReleaseDate; updateCardDate(movie.id, movie.releaseDate); }
+        var whitelistDate = WHITELIST_TW_DATES[String(movie.id)] || "";
+        movie.autoExcluded = isLikelyTmdbMismatch(whitelistDate, detail.primaryReleaseDate || "", detail.twReleaseDate || "");
+        if (whitelistDate) {
+          movie.releaseDate = whitelistDate;
+          movie.twReleaseDateVerified = true;
+          updateCardDate(movie.id, movie.releaseDate);
+        } else if (detail.twReleaseDate) {
+          movie.releaseDate = detail.twReleaseDate;
+          movie.twReleaseDateVerified = true;
+          updateCardDate(movie.id, movie.releaseDate);
+        } else {
+          movie.twReleaseDateVerified = false;
+        }
         updateCardGenre(movie.id, movie.genre);
       }
     }).catch(function() {}).then(onEnrichDone);

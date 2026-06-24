@@ -470,18 +470,23 @@ def main():
     whitelist_path = OUTPUT_DIR / "tw-whitelist.json"
     whitelist_data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tmdb_ids": []
+        "tmdb_ids": [],
+        "tw_release_dates": {}
     }
 
     # 從 tmdb_has_tw_date bucket 抓出所有有 TMDB ID 的片
     for m in output["tmdb_has_tw_date"]:
         if m.get("tmdb_id"):
             whitelist_data["tmdb_ids"].append(m["tmdb_id"])
+            if m.get("release_date_tw"):
+                whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
 
     # 從 missing_tw_date bucket 也抓 (這些片有 TMDB 條目,只是缺 TW date)
     for m in output["missing_tw_date"]:
         if m.get("tmdb_id"):
             whitelist_data["tmdb_ids"].append(m["tmdb_id"])
+            if m.get("release_date_tw"):
+                whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
 
     # 去重並排序
     whitelist_data["tmdb_ids"] = sorted(set(whitelist_data["tmdb_ids"]))
