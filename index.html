@@ -835,9 +835,9 @@ function buildBasicMovie(m) {
 
 function fetchBasicLists() {
   return Promise.all([
-    fetchPages("/discover/movie", { "release_date.gte": daysAgo(45), "release_date.lte": today(), sort_by: "popularity.desc", with_release_type: "3|2", region: "TW", watch_region: "TW" }, 3),
+    fetchPages("/discover/movie", { "release_date.gte": daysAgo(45), "release_date.lte": today(), sort_by: "release_date.desc", with_release_type: "3|2", region: "TW", watch_region: "TW" }, 8),
     fetchPages("/discover/movie", { "primary_release_date.gte": daysAgo(45), "primary_release_date.lte": today(), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true),
-    fetchPages("/discover/movie", { "release_date.gte": daysLater(1), "release_date.lte": daysLater(180), sort_by: "release_date.asc", with_release_type: "3|2", watch_region: "TW" }, 3),
+    fetchPages("/discover/movie", { "release_date.gte": daysLater(1), "release_date.lte": daysLater(180), sort_by: "release_date.asc", with_release_type: "3|2", watch_region: "TW" }, 8),
     fetchPages("/discover/movie", { "primary_release_date.gte": daysLater(1), "primary_release_date.lte": daysLater(180), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true),
     // 反向白名單: 開眼有的 TMDB ID 清單
     fetch("data/tw-whitelist.json").then(function(r) { return r.ok ? r.json() : { tmdb_ids: [], tw_release_dates: {} }; }).catch(function() { return { tmdb_ids: [], tw_release_dates: {} }; })
@@ -870,6 +870,7 @@ function fetchBasicLists() {
     var whitelistSet = {};
     whitelist.forEach(function(id) { whitelistSet[id] = true; });
 
+    // 開眼清單作為台灣院線白名單；TMDB 多抓幾頁只用來降低候選片漏抓。
     np = np.filter(function(m) { return !!whitelistSet[m.id]; });
     cs = cs.filter(function(m) {
       if (whitelistSet[m.id]) return true;
@@ -882,7 +883,7 @@ function fetchBasicLists() {
     var nowBeforeBackfill = np.length;
     var soonBeforeBackfill = cs.length;
 
-    // 白名單只負責補洞，不再作為主過濾條件。
+    // 白名單補片: 把 discover 因頁數或排序漏掉的開眼片補回來。
     var whitelistBackfillIds = whitelist.filter(function(id) { return !existingIds[id]; });
 
     return Promise.all([
