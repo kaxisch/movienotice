@@ -93,6 +93,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .card-img-wrap { cursor: pointer; position: relative; width: 100%; padding-top: 150%; border-radius: 16px; overflow: hidden; margin-bottom: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); transition: border-color 0.3s; }
 .card-img-wrap:hover { border-color: rgba(255,255,255,0.15); box-shadow: 0 0 20px rgba(255,255,255,0.05); }
 .card-img-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s; }
+.card-img-wrap img.card-img-backdrop { object-position: center; transform: scale(1.02); }
 .card-img-wrap:hover img { transform: scale(1.08); }
 .card-hover-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); opacity: 0; transition: opacity 0.3s; display: flex; flex-direction: column; justify-content: flex-end; padding: 12px; }
 .card-img-wrap:hover .card-hover-overlay { opacity: 1; }
@@ -247,6 +248,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .list-item { display: flex; align-items: center; gap: 12px; padding: 9px 12px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
 .list-item:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.14); }
 .list-poster { width: 36px; height: 54px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
+.list-poster.list-poster-backdrop { object-position: center; }
 .list-no-poster { width: 36px; height: 54px; border-radius: 6px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.15); }
 .list-info { flex: 1; min-width: 0; }
 .list-title { font-size: 14px; font-weight: 300; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -411,6 +413,7 @@ var FORCE_INCLUDE_TMDB_IDS = [
   1134463,   // 美夢 Dreams: Sueños
 ];
 var WHITELIST_TW_DATES = {};
+var WHITELIST_TITLES_ZH = {};
 var OMDB_KEYS = ["5f9393e9", "d2e6c0dc", "e8e518de", "8ed98825"];
 var omdbKeyIndex = 0;
 var omdbExhausted = {};
@@ -818,12 +821,16 @@ function filteredSignature() {
 }
 
 function buildBasicMovie(m) {
+  var whitelistTitleZh = WHITELIST_TITLES_ZH[String(m.id)] || "";
+  var posterUrl = m.poster_path ? IMG_W + m.poster_path : null;
+  var backdropUrl = m.backdrop_path ? IMG_BG + m.backdrop_path : null;
   return {
-    id: m.id, titleZh: m.title || "", titleEn: m.original_title || "",
+    id: m.id, titleZh: whitelistTitleZh || m.title || "", titleEn: m.original_title || "",
     releaseDate: m.release_date || "",
     twReleaseDateVerified: !!m.release_date,
-    poster: m.poster_path ? IMG_W + m.poster_path : null,
-    backdrop: m.backdrop_path ? IMG_BG + m.backdrop_path : null,
+    poster: posterUrl || backdropUrl,
+    posterIsBackdrop: !posterUrl && !!backdropUrl,
+    backdrop: backdropUrl,
     voteAverage: m.vote_average ? m.vote_average.toFixed(1) : "",
     genre: [], duration: 0, synopsis: "", imdb: "", rt: "", mc: "", trailerKey: null,
     cast: [], crew: [], budget: 0, revenue: 0, status: "",
@@ -840,7 +847,7 @@ function fetchBasicLists() {
     fetchPages("/discover/movie", { "release_date.gte": daysLater(1), "release_date.lte": daysLater(180), sort_by: "release_date.asc", with_release_type: "3|2", watch_region: "TW" }, 8),
     fetchPages("/discover/movie", { "primary_release_date.gte": daysLater(1), "primary_release_date.lte": daysLater(180), sort_by: "popularity.desc", with_release_type: "2|3", with_original_language: "en" }, 2, true),
     // 反向白名單: 開眼有的 TMDB ID 清單
-    fetch("data/tw-whitelist.json").then(function(r) { return r.ok ? r.json() : { tmdb_ids: [], tw_release_dates: {} }; }).catch(function() { return { tmdb_ids: [], tw_release_dates: {} }; })
+    fetch("data/tw-whitelist.json").then(function(r) { return r.ok ? r.json() : { tmdb_ids: [], tw_release_dates: {}, titles_zh: {} }; }).catch(function() { return { tmdb_ids: [], tw_release_dates: {}, titles_zh: {} }; })
   ]).then(function(results) {
     var cutoff45 = daysAgo(45);
     var todayStr = today();
@@ -863,9 +870,14 @@ function fetchBasicLists() {
     var whitelistRaw = results[4] && results[4].tmdb_ids ? results[4].tmdb_ids : [];
     var whitelist = whitelistRaw.slice();
     WHITELIST_TW_DATES = {};
+    WHITELIST_TITLES_ZH = {};
     var whitelistDatesRaw = results[4] && results[4].tw_release_dates ? results[4].tw_release_dates : {};
     Object.keys(whitelistDatesRaw).forEach(function(id) {
       WHITELIST_TW_DATES[id] = whitelistDatesRaw[id];
+    });
+    var whitelistTitlesRaw = results[4] && results[4].titles_zh ? results[4].titles_zh : {};
+    Object.keys(whitelistTitlesRaw).forEach(function(id) {
+      WHITELIST_TITLES_ZH[id] = whitelistTitlesRaw[id];
     });
     var whitelistSet = {};
     whitelist.forEach(function(id) { whitelistSet[id] = true; });
@@ -1036,9 +1048,17 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
         movie.synopsis = detail.synopsis || ""; movie.platforms = detail.platforms || [];
         movie.imdbId = detail.imdbId || "";
         if (detail.voteAverage) movie.voteAverage = detail.voteAverage;
-        if (detail.poster && !movie.poster) movie.poster = detail.poster;
+        if (detail.poster) {
+          movie.poster = detail.poster;
+          movie.posterIsBackdrop = false;
+        } else if (!movie.poster && detail.backdrop) {
+          movie.poster = detail.backdrop;
+          movie.posterIsBackdrop = true;
+        }
         if (detail.backdrop && !movie.backdrop) movie.backdrop = detail.backdrop;
         var whitelistDate = WHITELIST_TW_DATES[String(movie.id)] || "";
+        var whitelistTitleZh = WHITELIST_TITLES_ZH[String(movie.id)] || "";
+        if (whitelistTitleZh) movie.titleZh = whitelistTitleZh;
         movie.autoExcluded = isLikelyTmdbMismatch(whitelistDate, detail.primaryReleaseDate || "", detail.twReleaseDate || "");
         if (whitelistDate) {
           movie.releaseDate = whitelistDate;
@@ -1059,8 +1079,10 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
 }
 
 function cardHTML(m, showRatings, showPlatforms) {
-  var imgHTML = m.poster
-    ? '<img src="' + m.poster + '" alt="" loading="lazy"/>'
+  var cardImage = m.poster || m.backdrop || "";
+  var useBackdropImage = !!(!m.poster && m.backdrop) || !!m.posterIsBackdrop;
+  var imgHTML = cardImage
+    ? '<img src="' + cardImage + '" alt="" loading="lazy"' + (useBackdropImage ? ' class="card-img-backdrop"' : '') + '/>'
     : '<div class="card-no-img"><span class="material-symbols-outlined" style="font-size:48px">movie</span></div>';
   var titleEn = (m.titleEn && m.titleEn !== m.titleZh)
     ? '<p class="card-title-en">' + escHtml(m.titleEn) + '</p>'
@@ -1113,8 +1135,10 @@ function setView(v) {
 }
 
 function listRowHTML(m, showRatings, showPlatforms) {
-  var imgHTML = m.poster
-    ? '<img class="list-poster" src="' + m.poster + '" alt="" loading="lazy"/>'
+  var listImage = m.poster || m.backdrop || "";
+  var useBackdropImage = !!(!m.poster && m.backdrop) || !!m.posterIsBackdrop;
+  var imgHTML = listImage
+    ? '<img class="list-poster' + (useBackdropImage ? ' list-poster-backdrop' : '') + '" src="' + listImage + '" alt="" loading="lazy"/>'
     : '<div class="list-no-poster"><span class="material-symbols-outlined" style="font-size:16px">movie</span></div>';
   var subtitleParts = [];
   if (m.titleEn && m.titleEn !== m.titleZh) subtitleParts.push(m.titleEn);

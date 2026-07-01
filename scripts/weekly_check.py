@@ -9,6 +9,7 @@ import re
 import sys
 import json
 import time
+import difflib
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -29,6 +30,7 @@ SCRAPE_DELAY = 2
 
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
 OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
+OVERRIDES_FILE = OUTPUT_DIR / "tmdb-overrides.json"
 
 # 載入 TMDB API key
 load_dotenv(Path(__file__).resolve().parent / ".env")
@@ -331,8 +333,32 @@ def parse_next(html_pages):
     return movies
 
 
+def normalize_title_key(text):
+    """做寬鬆比對用的片名正規化"""
+    text = (text or "").strip().lower()
+    text = re.sub(r"[\s\-–—:：'\"!?,.!&／/·・()\[\]{}]+", "", text)
+    return text
+
+
+def title_similarity(a, b):
+    """0~1 片名相似度"""
+    a_norm = normalize_title_key(a)
+    b_norm = normalize_title_key(b)
+    if not a_norm or not b_norm:
+        return 0.0
+    if a_norm == b_norm:
+        return 1.0
+    if a_norm in b_norm or b_norm in a_norm:
+        shorter = min(len(a_norm), len(b_norm))
+        longer = max(len(a_norm), len(b_norm))
+        return shorter / longer if longer else 0.0
+    return difflib.SequenceMatcher(None, a_norm, b_norm).ratio()
+
+
 def tmdb_search(title, year=None):
-    """用片名搜 TMDB"""
+    """用片名搜 TMDB,回傳候選清單"""
+    if not title:
+        return []
     params = {
         "api_key": TMDB_API_KEY,
         "query": title,
@@ -344,11 +370,134 @@ def tmdb_search(title, year=None):
     try:
         r = requests.get(f"{TMDB_BASE}/search/movie", params=params, timeout=15)
         r.raise_for_status()
-        results = r.json().get("results", [])
-        return results[0] if results else None
+        return r.json().get("results", [])
     except Exception as e:
         log(f"  TMDB search failed for '{title}': {e}")
+        return []
+
+
+def score_tmdb_candidate(movie, candidate):
+    """對單一 TMDB 候選打分"""
+    score = 0.0
+    title_zh = movie.get("title_zh", "")
+    title_en = movie.get("title_en", "")
+    candidate_title = candidate.get("title") or ""
+    candidate_original = candidate.get("original_title") or ""
+    zh_norm = normalize_title_key(title_zh)
+    en_norm = normalize_title_key(title_en)
+    candidate_title_norm = normalize_title_key(candidate_title)
+    candidate_original_norm = normalize_title_key(candidate_original)
+
+    zh_title_score = max(
+        title_similarity(title_zh, candidate_title),
+        title_similarity(title_zh, candidate_original),
+    )
+    en_title_score = max(
+        title_similarity(title_en, candidate_title),
+        title_similarity(title_en, candidate_original),
+    )
+
+    if zh_title_score == 1.0:
+        score += 45
+    else:
+        score += zh_title_score * 35
+
+    if zh_norm and (
+        candidate_title_norm.startswith(zh_norm)
+        or candidate_original_norm.startswith(zh_norm)
+    ):
+        score += 20
+
+    if title_en:
+        if en_title_score == 1.0:
+            score += 80
+        else:
+            score += en_title_score * 60
+    elif len(normalize_title_key(title_zh)) <= 2 and zh_title_score < 0.95:
+        # 中文超短片名在沒有英文輔助時很容易誤配,先保守扣分
+        score -= 15
+
+    release_date = candidate.get("release_date") or ""
+    candidate_year = int(release_date[:4]) if len(release_date) >= 4 and release_date[:4].isdigit() else None
+    target_year = int(movie["release_date_tw"][:4]) if movie.get("release_date_tw") else None
+    if target_year and candidate_year:
+        year_gap = abs(candidate_year - target_year)
+        strong_title_match = zh_title_score >= 0.95 or en_title_score >= 0.95
+        if year_gap == 0:
+            score += 25
+        elif year_gap == 1:
+            score += 10
+        elif year_gap >= 3:
+            penalty = min(45, year_gap * 12)
+            if strong_title_match:
+                penalty = min(12, max(4, year_gap * 2))
+            score -= penalty
+
+    if title_en and en_title_score < 0.45:
+        score -= 25
+    if title_zh and zh_title_score < 0.30 and not (
+        zh_norm and (
+            candidate_title_norm.startswith(zh_norm)
+            or candidate_original_norm.startswith(zh_norm)
+        )
+    ):
+        score -= 20
+
+    popularity = candidate.get("popularity") or 0
+    score += min(8, popularity / 50.0)
+
+    return score
+
+
+def choose_tmdb_match(movie):
+    """綜合中文/英文搜尋結果後挑最合理的 TMDB 候選"""
+    query_year = int(movie["release_date_tw"][:4]) if movie.get("release_date_tw") else None
+    candidates = {}
+
+    search_queries = [movie.get("title_zh", "")]
+    title_en = movie.get("title_en", "").strip()
+    if title_en:
+        search_queries.append(title_en)
+
+    for query in search_queries:
+        for result in tmdb_search(query, year=query_year):
+            candidates[result["id"]] = result
+        time.sleep(TMDB_DELAY)
+
+    if query_year:
+        for query in search_queries:
+            for result in tmdb_search(query):
+                candidates[result["id"]] = result
+            time.sleep(TMDB_DELAY)
+
+    if not candidates:
         return None
+
+    ranked = sorted(
+        (
+            {
+                "score": score_tmdb_candidate(movie, candidate),
+                "candidate": candidate,
+            }
+            for candidate in candidates.values()
+        ),
+        key=lambda item: item["score"],
+        reverse=True,
+    )
+
+    best = ranked[0]
+    if best["score"] < 35:
+        log(
+            f"  TMDB ambiguous match for '{movie['title_zh']}'"
+            f" best={best['candidate'].get('title', '')} score={best['score']:.1f}"
+        )
+        return None
+
+    log(
+        f"  TMDB match: {best['candidate'].get('title', '')}"
+        f" (id={best['candidate']['id']}, score={best['score']:.1f})"
+    )
+    return best["candidate"]
 
 
 def tmdb_release_dates(tmdb_id):
@@ -374,7 +523,67 @@ def has_tw_release(release_results):
     return False
 
 
+def load_tmdb_overrides():
+    """載入人工覆寫的 TMDB 對照"""
+    if not OVERRIDES_FILE.exists():
+        return {}
+    try:
+        with open(OVERRIDES_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        log(f"  Failed to load overrides: {e}")
+        return {}
+
+
+def tmdb_movie(tmdb_id):
+    """直接用 TMDB ID 取單片資料"""
+    try:
+        r = requests.get(
+            f"{TMDB_BASE}/movie/{tmdb_id}",
+            params={"api_key": TMDB_API_KEY, "language": "zh-TW", "region": "TW"},
+            timeout=15,
+        )
+        r.raise_for_status()
+        return r.json()
+    except Exception as e:
+        log(f"  TMDB movie fetch failed for id={tmdb_id}: {e}")
+        return None
+
+
+def export_google_sheets_tsv(output, generated_at_local):
+    """輸出給 Google Sheets 用的 TSV"""
+    tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
+    rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "TMDB 連結"]]
+
+    for movie in output["missing_tw_date"]:
+        rows.append([
+            "missing_tw_date",
+            movie.get("title_zh", ""),
+            movie.get("release_date_tw", ""),
+            movie.get("tmdb_title", ""),
+            movie.get("tmdb_url", ""),
+        ])
+
+    for movie in output["tmdb_not_found"]:
+        rows.append([
+            "tmdb_not_found",
+            movie.get("title_zh", ""),
+            movie.get("release_date_tw", ""),
+            movie.get("title_en", ""),
+            "",
+        ])
+
+    with open(tsv_path, "w", encoding="utf-8", newline="") as f:
+        for row in rows:
+            f.write("\t".join(str(cell) for cell in row) + "\n")
+
+    return tsv_path
+
+
 def main():
+    tmdb_overrides = load_tmdb_overrides()
+
     try:
         # NOW: 爬首輪 List + 翻頁 (約 2-4 頁)
         now_pages = fetch_now_all_pages()
@@ -406,14 +615,14 @@ def main():
 
     for i, movie in enumerate(unique, 1):
         log(f"[{i}/{len(unique)}] {movie['title_zh']} ({movie['release_date_tw']})")
-        year = int(movie["release_date_tw"][:4])
-
-        result = tmdb_search(movie["title_zh"], year=year)
-        time.sleep(TMDB_DELAY)
-
-        if not result:
-            result = tmdb_search(movie["title_zh"])
+        override = tmdb_overrides.get(movie["atmovies_id"])
+        if override and override.get("tmdb_id"):
+            override_id = override["tmdb_id"]
+            log(f"  TMDB override: {movie['atmovies_id']} -> {override_id}")
+            result = tmdb_movie(override_id)
             time.sleep(TMDB_DELAY)
+        else:
+            result = choose_tmdb_match(movie)
 
         if not result:
             tmdb_not_found.append(movie)
@@ -440,8 +649,9 @@ def main():
             missing_tw_date.append(record)
 
     tz = timezone(timedelta(hours=8))
+    generated_at_local = datetime.now(tz)
     output = {
-        "generated_at": datetime.now(tz).isoformat(),
+        "generated_at": generated_at_local.isoformat(),
         "source": "atmovies.com.tw",
         "summary": {
             "total_scraped": len(unique),
@@ -471,7 +681,8 @@ def main():
     whitelist_data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "tmdb_ids": [],
-        "tw_release_dates": {}
+        "tw_release_dates": {},
+        "titles_zh": {}
     }
 
     # 從 tmdb_has_tw_date bucket 抓出所有有 TMDB ID 的片
@@ -480,6 +691,8 @@ def main():
             whitelist_data["tmdb_ids"].append(m["tmdb_id"])
             if m.get("release_date_tw"):
                 whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
+            if m.get("title_zh"):
+                whitelist_data["titles_zh"][str(m["tmdb_id"])] = m["title_zh"]
 
     # 從 missing_tw_date bucket 也抓 (這些片有 TMDB 條目,只是缺 TW date)
     for m in output["missing_tw_date"]:
@@ -487,6 +700,8 @@ def main():
             whitelist_data["tmdb_ids"].append(m["tmdb_id"])
             if m.get("release_date_tw"):
                 whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
+            if m.get("title_zh"):
+                whitelist_data["titles_zh"][str(m["tmdb_id"])] = m["title_zh"]
 
     # 去重並排序
     whitelist_data["tmdb_ids"] = sorted(set(whitelist_data["tmdb_ids"]))
@@ -494,6 +709,9 @@ def main():
     with open(whitelist_path, "w", encoding="utf-8") as f:
         json.dump(whitelist_data, f, ensure_ascii=False, indent=2)
     log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
+
+    tsv_path = export_google_sheets_tsv(output, generated_at_local)
+    log(f"Google Sheets TSV written to: {tsv_path}")
 
 
 if __name__ == "__main__":
