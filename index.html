@@ -424,6 +424,17 @@ var CACHE_KEY = "movienotice_v23";
 var CACHE_TTL = 24 * 60 * 60 * 1000;
 var IMDB_CACHE_KEY = "movienotice_imdb_v4";
 var IMDB_CACHE_TTL = 3 * 24 * 60 * 60 * 1000;
+var DYNAMIC_WHITELIST_KEY = "movienotice_dynamic_whitelist_v1";
+var CANDIDATE_CHECK_TTL = 12 * 60 * 60 * 1000;
+var CANDIDATE_INITIAL_BATCH_LIMIT = 5;
+var CANDIDATE_DRIP_BATCH_LIMIT = 1;
+var CANDIDATE_DRIP_INTERVAL_MS = 4000;
+var CANDIDATE_SESSION_MAX_CHECKS = 15;
+var candidateRefreshInFlight = false;
+var candidateRefreshSessionStarted = false;
+var candidateRefreshChecksThisSession = 0;
+var candidateRefreshTimer = null;
+var candidateRefreshPayloadPromise = null;
 function normalizeImdbRatings(ratings) {
   return {
     imdb: ratings && ratings.imdb && ratings.imdb !== "N/A" ? ratings.imdb : "",
@@ -484,6 +495,7 @@ var searchDebounce = null;
 var mobilePanelOpen = false;
 var tabSortState = { now: "date_desc", soon: "date_asc" };
 var currentView = 'card';
+var currentModalMovieId = null;
 
 var countryMap = {
   "US":"美國","GB":"英國","FR":"法國","DE":"德國","IT":"義大利","JP":"日本","KR":"韓國",
@@ -526,6 +538,9 @@ function dateDiffDays(a, b) {
   var bd = new Date(b + "T00:00:00Z");
   return Math.round(Math.abs(ad - bd) / 86400000);
 }
+function normalizeTitleKey(text) {
+  return String(text || "").toLowerCase().trim().replace(/[\s\-–—:：'"!?,.&／/·・()\[\]{}]+/g, "");
+}
 function isLikelyTmdbMismatch(whitelistDate, primaryReleaseDate, twTheatricalDate) {
   if (!whitelistDate) return false;
   if (primaryReleaseDate) {
@@ -550,6 +565,55 @@ function loadCache() {
     var obj = JSON.parse(raw);
     return Date.now() - obj.ts > CACHE_TTL ? null : obj.data;
   } catch(e) { return null; }
+}
+function emptyDynamicWhitelist() {
+  return {
+    tmdb_ids: [],
+    tw_release_dates: {},
+    titles_zh: {},
+    resolved_by_atmovies: {},
+    checked_candidates: {}
+  };
+}
+function normalizeDynamicWhitelist(data) {
+  var base = emptyDynamicWhitelist();
+  if (!data || typeof data !== "object") return base;
+  if (Array.isArray(data.tmdb_ids)) base.tmdb_ids = data.tmdb_ids.slice();
+  if (data.tw_release_dates && typeof data.tw_release_dates === "object") base.tw_release_dates = data.tw_release_dates;
+  if (data.titles_zh && typeof data.titles_zh === "object") base.titles_zh = data.titles_zh;
+  if (data.resolved_by_atmovies && typeof data.resolved_by_atmovies === "object") base.resolved_by_atmovies = data.resolved_by_atmovies;
+  if (data.checked_candidates && typeof data.checked_candidates === "object") base.checked_candidates = data.checked_candidates;
+  return base;
+}
+function loadDynamicWhitelist() {
+  try {
+    var raw = localStorage.getItem(DYNAMIC_WHITELIST_KEY);
+    if (!raw) return emptyDynamicWhitelist();
+    return normalizeDynamicWhitelist(JSON.parse(raw));
+  } catch(e) {
+    return emptyDynamicWhitelist();
+  }
+}
+function saveDynamicWhitelist(data) {
+  try { localStorage.setItem(DYNAMIC_WHITELIST_KEY, JSON.stringify(normalizeDynamicWhitelist(data))); } catch(e) {}
+}
+function mergeWhitelistData(staticData) {
+  var merged = {
+    tmdb_ids: (staticData && staticData.tmdb_ids ? staticData.tmdb_ids.slice() : []),
+    tw_release_dates: Object.assign({}, staticData && staticData.tw_release_dates ? staticData.tw_release_dates : {}),
+    titles_zh: Object.assign({}, staticData && staticData.titles_zh ? staticData.titles_zh : {})
+  };
+  var dynamic = loadDynamicWhitelist();
+  dynamic.tmdb_ids.forEach(function(id) {
+    if (merged.tmdb_ids.indexOf(id) === -1) merged.tmdb_ids.push(id);
+  });
+  Object.keys(dynamic.tw_release_dates).forEach(function(id) {
+    merged.tw_release_dates[id] = dynamic.tw_release_dates[id];
+  });
+  Object.keys(dynamic.titles_zh).forEach(function(id) {
+    merged.titles_zh[id] = dynamic.titles_zh[id];
+  });
+  return merged;
 }
 function escHtml(s) {
   return String(s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
@@ -765,6 +829,367 @@ function getBasicDetail(id) {
   }).catch(function() { return {}; });
 }
 
+function fetchMovieWithTwInfo(id) {
+  return tmdbFetch("/movie/" + id, { append_to_response: "release_dates" }).then(function(d) {
+    return { movie: d, twReleaseDate: extractTwTheatricalDate(d) };
+  }).catch(function() { return null; });
+}
+
+function scoreAtmoviesCandidateResult(candidate, result) {
+  var zhNorm = normalizeTitleKey(candidate.title_zh);
+  var enNorm = normalizeTitleKey(candidate.title_en);
+  var titleNorm = normalizeTitleKey(result.title);
+  var originalNorm = normalizeTitleKey(result.original_title);
+  var score = 0;
+
+  if (zhNorm && (titleNorm === zhNorm || originalNorm === zhNorm)) score += 60;
+  else if (zhNorm && (
+    titleNorm.indexOf(zhNorm) === 0 || originalNorm.indexOf(zhNorm) === 0 ||
+    zhNorm.indexOf(titleNorm) === 0 || zhNorm.indexOf(originalNorm) === 0
+  )) score += 25;
+
+  if (enNorm && (titleNorm === enNorm || originalNorm === enNorm)) score += 90;
+  else if (enNorm && (
+    titleNorm.indexOf(enNorm) >= 0 || originalNorm.indexOf(enNorm) >= 0 ||
+    enNorm.indexOf(titleNorm) >= 0 || enNorm.indexOf(originalNorm) >= 0
+  )) score += 35;
+
+  var candidateYear = dateYear(candidate.release_date_tw || "");
+  var resultYear = dateYear(result.release_date || "");
+  if (candidateYear && resultYear) {
+    var gap = Math.abs(candidateYear - resultYear);
+    if (gap === 0) score += 20;
+    else if (gap === 1) score += 10;
+    else if (gap > 2) score -= 20;
+  }
+
+  return score;
+}
+
+function candidateDateMatches(tmdbDate, atmoviesDate) {
+  if (!tmdbDate || !atmoviesDate) return false;
+  return dateDiffDays(tmdbDate, atmoviesDate) <= 14;
+}
+
+function resolveAtmoviesSearchCandidate(candidate, results, index) {
+  if (!results || index >= results.length) return Promise.resolve(null);
+  return fetchMovieWithTwInfo(results[index].id).then(function(info) {
+    if (info && candidateDateMatches(info.twReleaseDate, candidate.release_date_tw)) return info;
+    return resolveAtmoviesSearchCandidate(candidate, results, index + 1);
+  });
+}
+
+function searchAtmoviesCandidateOnTmdb(candidate) {
+  var queries = [];
+  if (candidate.title_zh) queries.push(candidate.title_zh);
+  if (candidate.title_en) queries.push(candidate.title_en);
+  if (!queries.length) return Promise.resolve(null);
+
+  var year = dateYear(candidate.release_date_tw || "");
+  return Promise.all(queries.map(function(query) {
+    var params = { query: query };
+    if (year) params.year = year;
+    return tmdbFetch("/search/movie", params, true).catch(function() { return { results: [] }; });
+  })).then(function(responses) {
+    var seen = {};
+    var combined = [];
+    responses.forEach(function(response) {
+      var items = response && response.results ? response.results : [];
+      items.forEach(function(item) {
+        if (!item || seen[item.id]) return;
+        seen[item.id] = true;
+        combined.push(item);
+      });
+    });
+    combined.sort(function(a, b) {
+      return scoreAtmoviesCandidateResult(candidate, b) - scoreAtmoviesCandidateResult(candidate, a);
+    });
+    combined = combined.filter(function(item) { return scoreAtmoviesCandidateResult(candidate, item) >= 35; }).slice(0, 3);
+    return resolveAtmoviesSearchCandidate(candidate, combined, 0);
+  });
+}
+
+function candidatePriorityValue(candidate) {
+  if (!candidate || !candidate.release_date_tw) return Number.MAX_SAFE_INTEGER;
+  var target = new Date(candidate.release_date_tw + "T00:00:00Z").getTime();
+  var todayMs = new Date(today() + "T00:00:00Z").getTime();
+  var diff = Math.abs(target - todayMs);
+  return diff + (candidate.source_bucket === "missing_tw_date" ? 0 : 1000000);
+}
+
+function candidateRefreshLog(message, details) {
+  if (details !== undefined) console.log("[Candidate refresh]", message, details);
+  else console.log("[Candidate refresh]", message);
+}
+
+function clearCandidateRefreshTimer() {
+  if (!candidateRefreshTimer) return;
+  clearTimeout(candidateRefreshTimer);
+  candidateRefreshTimer = null;
+}
+
+function loadAtmoviesCandidatesPayload() {
+  if (!candidateRefreshPayloadPromise) {
+    candidateRefreshPayloadPromise = fetch("data/atmovies-candidates.json").then(function(r) {
+      return r.ok ? r.json() : { candidates: [] };
+    }).catch(function() {
+      return { candidates: [] };
+    }).then(function(payload) {
+      var candidates = payload && payload.candidates ? payload.candidates : [];
+      candidateRefreshLog("Loaded candidate pool: " + candidates.length + " movies");
+      return candidates;
+    });
+  }
+  return candidateRefreshPayloadPromise;
+}
+
+function getAtmoviesCandidateStats(candidates, dynamicStore) {
+  var recentPast = daysAgo(60);
+  var nearFuture = daysLater(120);
+  var stats = {
+    total: 0,
+    invalid: 0,
+    out_of_window: 0,
+    resolved: 0,
+    ttl_blocked: 0,
+    eligible: []
+  };
+  candidates.forEach(function(candidate) {
+    if (!candidate || !candidate.atmovies_id || !candidate.release_date_tw) {
+      stats.invalid++;
+      return;
+    }
+    stats.total++;
+    if (candidate.release_date_tw < recentPast || candidate.release_date_tw > nearFuture) {
+      stats.out_of_window++;
+      return;
+    }
+    if (dynamicStore.resolved_by_atmovies[candidate.atmovies_id]) {
+      stats.resolved++;
+      return;
+    }
+    var checked = dynamicStore.checked_candidates[candidate.atmovies_id];
+    if (checked && Date.now() - checked.checked_at <= CANDIDATE_CHECK_TTL) {
+      stats.ttl_blocked++;
+      return;
+    }
+    stats.eligible.push(candidate);
+  });
+  stats.eligible.sort(function(a, b) {
+    return candidatePriorityValue(a) - candidatePriorityValue(b);
+  });
+  return stats;
+}
+
+function pickAtmoviesCandidateBatch(candidates, dynamicStore, limit) {
+  return getAtmoviesCandidateStats(candidates, dynamicStore).eligible.slice(0, limit);
+}
+
+function describeCandidateStopReason(stats) {
+  if (!stats || stats.total === 0) return "Stopped: candidate pool is empty.";
+  if (stats.eligible.length > 0) return "";
+  if (stats.ttl_blocked > 0 && stats.resolved === 0) {
+    return "Stopped: waiting for TTL expiry; " + stats.ttl_blocked + " candidate(s) were checked recently.";
+  }
+  if (stats.ttl_blocked > 0) {
+    return "Stopped: no eligible candidates left; " + stats.resolved + " resolved, " + stats.ttl_blocked + " waiting for TTL expiry.";
+  }
+  if (stats.resolved > 0 && stats.out_of_window > 0) {
+    return "Stopped: all current candidates are either resolved (" + stats.resolved + ") or outside the date window (" + stats.out_of_window + ").";
+  }
+  if (stats.resolved > 0) {
+    return "Stopped: all in-range candidates are already resolved (" + stats.resolved + ").";
+  }
+  if (stats.out_of_window > 0) {
+    return "Stopped: all remaining candidates are outside the date window (" + stats.out_of_window + ").";
+  }
+  return "Stopped: no eligible candidates left for this session.";
+}
+
+function rememberCandidateCheck(dynamicStore, candidate, status, tmdbId) {
+  dynamicStore.checked_candidates[candidate.atmovies_id] = {
+    checked_at: Date.now(),
+    status: status,
+    tmdb_id: tmdbId || null
+  };
+}
+
+function addResolvedCandidateToDynamicWhitelist(dynamicStore, candidate, movie, twReleaseDate) {
+  var tmdbId = movie.id;
+  var tmdbIdStr = String(tmdbId);
+  var effectiveDate = candidate.release_date_tw || twReleaseDate || "";
+  var effectiveTitleZh = candidate.title_zh || movie.title || movie.original_title || "";
+
+  if (dynamicStore.tmdb_ids.indexOf(tmdbId) === -1) dynamicStore.tmdb_ids.push(tmdbId);
+  if (effectiveDate) dynamicStore.tw_release_dates[tmdbIdStr] = effectiveDate;
+  if (effectiveTitleZh) dynamicStore.titles_zh[tmdbIdStr] = effectiveTitleZh;
+  dynamicStore.resolved_by_atmovies[candidate.atmovies_id] = {
+    tmdb_id: tmdbId,
+    title_zh: effectiveTitleZh,
+    release_date_tw: effectiveDate,
+    resolved_at: Date.now()
+  };
+  rememberCandidateCheck(dynamicStore, candidate, "resolved", tmdbId);
+}
+
+function mergeResolvedMovieIntoLists(movieData, candidate, twReleaseDate) {
+  if (!movieData || !movieData.id) return null;
+  var tmdbIdStr = String(movieData.id);
+  var effectiveDate = candidate.release_date_tw || twReleaseDate || "";
+  var effectiveTitleZh = candidate.title_zh || movieData.title || movieData.original_title || "";
+
+  if (effectiveDate) WHITELIST_TW_DATES[tmdbIdStr] = effectiveDate;
+  if (effectiveTitleZh) WHITELIST_TITLES_ZH[tmdbIdStr] = effectiveTitleZh;
+
+  var existing = findMovieInLists(movieData.id);
+  if (!existing) {
+    existing = buildBasicMovie(movieData);
+    existing.releaseDate = effectiveDate || existing.releaseDate;
+    existing.twReleaseDateVerified = !!existing.releaseDate;
+    existing.titleZh = effectiveTitleZh || existing.titleZh;
+    existing.titleEn = movieData.original_title || existing.titleEn;
+    var bucket = classifyReleaseBucket(existing.releaseDate);
+    if (bucket === "now") allMovies.now.push(existing);
+    else if (bucket === "soon") allMovies.soon.push(existing);
+    else return null;
+  } else {
+    existing.releaseDate = effectiveDate || existing.releaseDate;
+    existing.twReleaseDateVerified = !!existing.releaseDate;
+    existing.titleZh = effectiveTitleZh || existing.titleZh;
+  }
+  return existing;
+}
+
+function checkAtmoviesCandidate(dynamicStore, candidate) {
+  var resolver = candidate.tmdb_id
+    ? fetchMovieWithTwInfo(candidate.tmdb_id)
+    : searchAtmoviesCandidateOnTmdb(candidate);
+
+  return resolver.then(function(info) {
+    if (!info || !info.movie || !candidateDateMatches(info.twReleaseDate, candidate.release_date_tw)) {
+      rememberCandidateCheck(dynamicStore, candidate, "no_match", candidate.tmdb_id || null);
+      candidateRefreshLog("No match:", candidate.title_zh || candidate.title_en || candidate.atmovies_id);
+      return false;
+    }
+
+    addResolvedCandidateToDynamicWhitelist(dynamicStore, candidate, info.movie, info.twReleaseDate);
+    var movie = mergeResolvedMovieIntoLists(info.movie, candidate, info.twReleaseDate);
+    candidateRefreshLog("Resolved:", {
+      title: candidate.title_zh || candidate.title_en || candidate.atmovies_id,
+      tmdbId: info.movie.id,
+      tmdbTitle: info.movie.title || info.movie.original_title || ""
+    });
+    if (!movie) return false;
+
+    return getBasicDetail(movie.id).then(function(detail) {
+      applyMovieDetail(movie, detail);
+      return true;
+    }).catch(function() {
+      return true;
+    });
+  }).catch(function() {
+    rememberCandidateCheck(dynamicStore, candidate, "error", candidate.tmdb_id || null);
+    candidateRefreshLog("Error while checking:", candidate.title_zh || candidate.title_en || candidate.atmovies_id);
+    return false;
+  });
+}
+
+function runAtmoviesCandidateBatch(limit, reason) {
+  if (candidateRefreshInFlight) {
+    candidateRefreshLog("Skip batch: another batch is still running.");
+    return Promise.resolve({ processed: 0, changed: false, stop: false, reason: "busy" });
+  }
+  candidateRefreshInFlight = true;
+  return loadAtmoviesCandidatesPayload().then(function(candidates) {
+    var dynamicStore = loadDynamicWhitelist();
+    var remainingQuota = CANDIDATE_SESSION_MAX_CHECKS - candidateRefreshChecksThisSession;
+    var batchLimit = Math.min(limit, remainingQuota);
+    if (batchLimit <= 0) return { processed: 0, changed: false, stop: true, reason: "limit" };
+    var stats = getAtmoviesCandidateStats(candidates, dynamicStore);
+    var batch = stats.eligible.slice(0, batchLimit);
+    if (!batch.length) {
+      candidateRefreshLog(describeCandidateStopReason(stats), {
+        total: stats.total,
+        resolved: stats.resolved,
+        ttlBlocked: stats.ttl_blocked,
+        outOfWindow: stats.out_of_window,
+        invalid: stats.invalid
+      });
+      return { processed: 0, changed: false, stop: true, reason: "empty" };
+    }
+
+    candidateRefreshLog("Checking " + batch.length + " candidate(s) [" + reason + "]", batch.map(function(candidate) {
+      return (candidate.title_zh || candidate.title_en || candidate.atmovies_id) + " (" + candidate.release_date_tw + ")";
+    }));
+
+    var changed = false;
+    return batch.reduce(function(chain, candidate) {
+      return chain.then(function() {
+        return checkAtmoviesCandidate(dynamicStore, candidate).then(function(didChange) {
+          if (didChange) changed = true;
+        });
+      });
+    }, Promise.resolve()).then(function() {
+      candidateRefreshChecksThisSession += batch.length;
+      saveDynamicWhitelist(dynamicStore);
+      if (changed) normalizeMovieBuckets(false, false, false);
+      candidateRefreshLog("Batch complete: " + candidateRefreshChecksThisSession + "/" + CANDIDATE_SESSION_MAX_CHECKS + " checked this page load.");
+      return {
+        processed: batch.length,
+        changed: changed,
+        stop: candidateRefreshChecksThisSession >= CANDIDATE_SESSION_MAX_CHECKS,
+        reason: candidateRefreshChecksThisSession >= CANDIDATE_SESSION_MAX_CHECKS ? "limit" : ""
+      };
+    });
+  }).catch(function(err) {
+    console.warn("Candidate refresh failed", err);
+    return { processed: 0, changed: false, stop: true, reason: "error" };
+  }).then(function(result) {
+    candidateRefreshInFlight = false;
+    return result;
+  });
+}
+
+function scheduleNextCandidateRefreshTick() {
+  clearCandidateRefreshTimer();
+  if (candidateRefreshChecksThisSession >= CANDIDATE_SESSION_MAX_CHECKS) {
+    candidateRefreshLog("Stopped background checks: reached session cap of " + CANDIDATE_SESSION_MAX_CHECKS + ".");
+    return;
+  }
+  candidateRefreshTimer = setTimeout(function() {
+    runAtmoviesCandidateBatch(CANDIDATE_DRIP_BATCH_LIMIT, "drip").then(function(result) {
+      if (!result || result.stop || result.processed === 0) {
+        if (result && result.reason === "limit") {
+          candidateRefreshLog("Stopped background checks: reached session cap of " + CANDIDATE_SESSION_MAX_CHECKS + ".");
+        }
+        return;
+      }
+      scheduleNextCandidateRefreshTick();
+    });
+  }, CANDIDATE_DRIP_INTERVAL_MS);
+  candidateRefreshLog("Next background check scheduled in " + Math.round(CANDIDATE_DRIP_INTERVAL_MS / 1000) + "s.");
+}
+
+function backgroundRefreshAtmoviesCandidates() {
+  if (candidateRefreshSessionStarted) {
+    candidateRefreshLog("Session already started; skip duplicate trigger.");
+    return;
+  }
+  candidateRefreshSessionStarted = true;
+  candidateRefreshChecksThisSession = 0;
+  clearCandidateRefreshTimer();
+  candidateRefreshLog(
+    "Start session: initial " + CANDIDATE_INITIAL_BATCH_LIMIT +
+    ", then +" + CANDIDATE_DRIP_BATCH_LIMIT + " every " +
+    Math.round(CANDIDATE_DRIP_INTERVAL_MS / 1000) + "s, max " +
+    CANDIDATE_SESSION_MAX_CHECKS + " per page load."
+  );
+  runAtmoviesCandidateBatch(CANDIDATE_INITIAL_BATCH_LIMIT, "initial").then(function(result) {
+    if (!result || result.stop || result.processed === 0) return;
+    scheduleNextCandidateRefreshTick();
+  });
+}
+
 function parseOmdbRatings(d) {
   var imdb = (d.imdbRating && d.imdbRating !== "N/A") ? d.imdbRating : "";
   var rt = "";
@@ -839,6 +1264,99 @@ function buildBasicMovie(m) {
   };
 }
 
+function classifyReleaseBucket(releaseDate) {
+  if (!releaseDate) return "";
+  if (releaseDate >= daysAgo(45) && releaseDate <= today()) return "now";
+  if (releaseDate >= daysLater(1) && releaseDate <= daysLater(180)) return "soon";
+  return "";
+}
+
+function findMovieInLists(id) {
+  var found = null;
+  ["now","soon"].forEach(function(t) {
+    if (found) return;
+    for (var i = 0; i < allMovies[t].length; i++) {
+      if (allMovies[t][i].id === id) { found = allMovies[t][i]; break; }
+    }
+  });
+  return found;
+}
+
+function updateCardGenre(id, genre) {
+  var el = document.querySelector('#card-' + id + ' .card-hover-genre');
+  if (el) el.textContent = genre.slice(0, 2).join(' / ');
+}
+
+function updateCardDate(id, date) {
+  var el = document.querySelector('#card-' + id + ' .card-date');
+  if (el && date) el.textContent = formatDate(date);
+}
+
+function applyMovieDetail(movie, detail) {
+  if (!movie || !detail) return;
+  movie.genre = detail.genres || [];
+  movie.duration = detail.duration || 0;
+  movie.synopsis = detail.synopsis || "";
+  movie.platforms = detail.platforms || [];
+  movie.imdbId = detail.imdbId || "";
+  if (detail.voteAverage) movie.voteAverage = detail.voteAverage;
+  if (detail.poster) {
+    movie.poster = detail.poster;
+    movie.posterIsBackdrop = false;
+  } else if (!movie.poster && detail.backdrop) {
+    movie.poster = detail.backdrop;
+    movie.posterIsBackdrop = true;
+  }
+  if (detail.backdrop && !movie.backdrop) movie.backdrop = detail.backdrop;
+  var whitelistDate = WHITELIST_TW_DATES[String(movie.id)] || "";
+  var whitelistTitleZh = WHITELIST_TITLES_ZH[String(movie.id)] || "";
+  if (whitelistTitleZh) movie.titleZh = whitelistTitleZh;
+  movie.autoExcluded = isLikelyTmdbMismatch(whitelistDate, detail.primaryReleaseDate || "", detail.twReleaseDate || "");
+  if (whitelistDate) {
+    movie.releaseDate = whitelistDate;
+    movie.twReleaseDateVerified = true;
+    updateCardDate(movie.id, movie.releaseDate);
+  } else if (detail.twReleaseDate) {
+    movie.releaseDate = detail.twReleaseDate;
+    movie.twReleaseDateVerified = true;
+    updateCardDate(movie.id, movie.releaseDate);
+  } else {
+    movie.twReleaseDateVerified = false;
+  }
+  updateCardGenre(movie.id, movie.genre);
+}
+
+function normalizeMovieBuckets(skipNowFilter, deferInitialRender, forceRefreshRatings) {
+  var todayStr = today();
+  var nowToSoon = [];
+
+  if (!skipNowFilter) {
+    allMovies.now = allMovies.now.filter(function(m) {
+      if (m.autoExcluded) return false;
+      if (m.releaseDate && m.releaseDate > todayStr) { nowToSoon.push(m); return false; }
+      return (!m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration > 60);
+    });
+  }
+
+  var soonIdSet = {};
+  allMovies.soon.forEach(function(m) { soonIdSet[m.id] = true; });
+  nowToSoon.forEach(function(m) { if (!soonIdSet[m.id]) { allMovies.soon.push(m); } });
+
+  allMovies.soon = allMovies.soon.filter(function(m) {
+    if (m.autoExcluded) return false;
+    var hasFutureTheatrical = m.twReleaseDateVerified && m.releaseDate && m.releaseDate >= todayStr;
+    if (!hasFutureTheatrical) return false;
+    return (hasFutureTheatrical || !m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration > 60);
+  });
+
+  var beforeSig = deferInitialRender ? "" : filteredSignature();
+  applyFilters(true);
+  if (deferInitialRender || beforeSig !== filteredSignature()) renderGrids();
+  buildGenreFilters();
+  saveCache(allMovies);
+  fetchImdbInBackground(getMoviesForRatingRefresh(!!forceRefreshRatings), { forceRefresh: !!forceRefreshRatings });
+}
+
 
 function fetchBasicLists() {
   return Promise.all([
@@ -867,15 +1385,16 @@ function fetchBasicLists() {
     var csB = results[3].filter(function(m) { return !csAIds[m.id] && !npIds2[m.id] && m.release_date >= daysLater(1); }).slice(0, 15);
     var cs = dedup(csA.concat(csB));
 
-    var whitelistRaw = results[4] && results[4].tmdb_ids ? results[4].tmdb_ids : [];
+    var mergedWhitelist = mergeWhitelistData(results[4] || {});
+    var whitelistRaw = mergedWhitelist.tmdb_ids ? mergedWhitelist.tmdb_ids : [];
     var whitelist = whitelistRaw.slice();
     WHITELIST_TW_DATES = {};
     WHITELIST_TITLES_ZH = {};
-    var whitelistDatesRaw = results[4] && results[4].tw_release_dates ? results[4].tw_release_dates : {};
+    var whitelistDatesRaw = mergedWhitelist.tw_release_dates ? mergedWhitelist.tw_release_dates : {};
     Object.keys(whitelistDatesRaw).forEach(function(id) {
       WHITELIST_TW_DATES[id] = whitelistDatesRaw[id];
     });
-    var whitelistTitlesRaw = results[4] && results[4].titles_zh ? results[4].titles_zh : {};
+    var whitelistTitlesRaw = mergedWhitelist.titles_zh ? mergedWhitelist.titles_zh : {};
     Object.keys(whitelistTitlesRaw).forEach(function(id) {
       WHITELIST_TITLES_ZH[id] = whitelistTitlesRaw[id];
     });
@@ -985,94 +1504,22 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
   var csToEnrich = rawData._cs.filter(function(r) { return soonIds[r.id]; });
   var total = npToEnrich.length + csToEnrich.length;
   if (total === 0) {
-    applyFilters();
-    buildGenreFilters();
-    saveCache(allMovies);
-    fetchImdbInBackground(getMoviesForRatingRefresh(!!forceRefreshRatings), { forceRefresh: !!forceRefreshRatings });
+    normalizeMovieBuckets(skipNowFilter, deferInitialRender, forceRefreshRatings);
+    backgroundRefreshAtmoviesCandidates();
     return;
   }
   var done = 0;
-
-  function findMovie(id) {
-    var found = null;
-    ["now","soon"].forEach(function(t) {
-      for (var i = 0; i < allMovies[t].length; i++) { if (allMovies[t][i].id === id) { found = allMovies[t][i]; break; } }
-    });
-    return found;
-  }
-  function updateCardGenre(id, genre) {
-    var el = document.querySelector('#card-' + id + ' .card-hover-genre');
-    if (el) el.textContent = genre.slice(0, 2).join(' / ');
-  }
-  function updateCardDate(id, date) {
-    var el = document.querySelector('#card-' + id + ' .card-date');
-    if (el && date) el.textContent = formatDate(date);
-  }
   function onEnrichDone() {
     done++;
     if (done < total) return;
-    var todayStr = today();
-    var nowToSoon = [];
-
-    if (!skipNowFilter) {
-      allMovies.now = allMovies.now.filter(function(m) {
-        if (m.autoExcluded) return false;
-        if (m.releaseDate && m.releaseDate > todayStr) { nowToSoon.push(m); return false; }
-        return (!m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration > 60);
-      });
-    }
-
-    var soonIdSet = {};
-    allMovies.soon.forEach(function(m) { soonIdSet[m.id] = true; });
-    nowToSoon.forEach(function(m) { if (!soonIdSet[m.id]) { allMovies.soon.push(m); } });
-
-    allMovies.soon = allMovies.soon.filter(function(m) {
-      if (m.autoExcluded) return false;
-      var hasFutureTheatrical = m.twReleaseDateVerified && m.releaseDate && m.releaseDate >= todayStr;
-      if (!hasFutureTheatrical) return false;
-      return (hasFutureTheatrical || !m.platforms || m.platforms.length === 0) && (m.duration === 0 || m.duration > 60);
-    });
-
-    var beforeSig = deferInitialRender ? "" : filteredSignature();
-    applyFilters(true);
-    if (deferInitialRender || beforeSig !== filteredSignature()) renderGrids();
-    buildGenreFilters(); saveCache(allMovies);
-    fetchImdbInBackground(getMoviesForRatingRefresh(!!forceRefreshRatings), { forceRefresh: !!forceRefreshRatings });
+    normalizeMovieBuckets(skipNowFilter, deferInitialRender, forceRefreshRatings);
+    backgroundRefreshAtmoviesCandidates();
   }
 
   npToEnrich.concat(csToEnrich).forEach(function(raw) {
     getBasicDetail(raw.id).then(function(detail) {
-      var movie = findMovie(raw.id);
-      if (movie) {
-        movie.genre = detail.genres || []; movie.duration = detail.duration || 0;
-        movie.synopsis = detail.synopsis || ""; movie.platforms = detail.platforms || [];
-        movie.imdbId = detail.imdbId || "";
-        if (detail.voteAverage) movie.voteAverage = detail.voteAverage;
-        if (detail.poster) {
-          movie.poster = detail.poster;
-          movie.posterIsBackdrop = false;
-        } else if (!movie.poster && detail.backdrop) {
-          movie.poster = detail.backdrop;
-          movie.posterIsBackdrop = true;
-        }
-        if (detail.backdrop && !movie.backdrop) movie.backdrop = detail.backdrop;
-        var whitelistDate = WHITELIST_TW_DATES[String(movie.id)] || "";
-        var whitelistTitleZh = WHITELIST_TITLES_ZH[String(movie.id)] || "";
-        if (whitelistTitleZh) movie.titleZh = whitelistTitleZh;
-        movie.autoExcluded = isLikelyTmdbMismatch(whitelistDate, detail.primaryReleaseDate || "", detail.twReleaseDate || "");
-        if (whitelistDate) {
-          movie.releaseDate = whitelistDate;
-          movie.twReleaseDateVerified = true;
-          updateCardDate(movie.id, movie.releaseDate);
-        } else if (detail.twReleaseDate) {
-          movie.releaseDate = detail.twReleaseDate;
-          movie.twReleaseDateVerified = true;
-          updateCardDate(movie.id, movie.releaseDate);
-        } else {
-          movie.twReleaseDateVerified = false;
-        }
-        updateCardGenre(movie.id, movie.genre);
-      }
+      var movie = findMovieInLists(raw.id);
+      if (movie) applyMovieDetail(movie, detail);
     }).catch(function() {}).then(onEnrichDone);
   });
 
@@ -1366,6 +1813,7 @@ function switchTab(t) {
 function openModal(id) {
   if (!id) return;
   var modal = document.getElementById("detail-modal");
+  currentModalMovieId = id;
   modal.classList.add("open");
   document.body.style.overflow = "hidden";
   document.getElementById("modal-hero-slot").innerHTML = '';
@@ -1374,20 +1822,22 @@ function openModal(id) {
   ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.id === id) movie = m; }); });
   if (!movie) movie = {};
   getDetail(id).then(function(detail) {
+    if (currentModalMovieId !== id || !modal.classList.contains("open")) return;
     var imdbRating = movie.imdb || "";
+    renderModal(movie, detail, imdbRating);
     if (!movie.imdb || !movie.rt || !movie.mc) {
       var imdbPromise = movie.imdbId ? Promise.resolve(movie.imdbId) : getExternalIds(id).then(function(ext) { return ext.imdb_id || ""; });
       return imdbPromise.then(function(imdbId) {
         if (imdbId && !movie.imdbId) movie.imdbId = imdbId;
         return getImdb(imdbId);
       }).then(function(ratings) {
+        if (currentModalMovieId !== id || !modal.classList.contains("open")) return;
         if (ratings.imdb && !movie.imdb) movie.imdb = ratings.imdb;
         if (ratings.rt && !movie.rt) movie.rt = ratings.rt;
         if (ratings.mc && !movie.mc) movie.mc = ratings.mc;
         renderModal(movie, detail, movie.imdb || ratings.imdb || imdbRating);
       });
     }
-    renderModal(movie, detail, imdbRating);
   });
 }
 
@@ -1460,7 +1910,7 @@ function renderModal(movie, detail, imdbRating) {
   document.getElementById("modal-content").innerHTML = html;
 }
 
-function closeModal() { document.getElementById("detail-modal").classList.remove("open"); document.body.style.overflow = ""; }
+function closeModal() { currentModalMovieId = null; document.getElementById("detail-modal").classList.remove("open"); document.body.style.overflow = ""; }
 function playTrailer(key) {
   var isLocal = location.protocol === "file:";
   if (isLocal) {
@@ -1573,6 +2023,7 @@ function loadData(forceRefresh) {
       }, 300);
       buildGenreFilters();
       fetchImdbInBackground(getMoviesForRatingRefresh(false));
+      backgroundRefreshAtmoviesCandidates();
       return;
     }
   }

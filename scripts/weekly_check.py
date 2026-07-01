@@ -31,6 +31,7 @@ SCRAPE_DELAY = 2
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
 OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
 OVERRIDES_FILE = OUTPUT_DIR / "tmdb-overrides.json"
+ATMOVIES_CANDIDATES_FILE = OUTPUT_DIR / "atmovies-candidates.json"
 
 # 載入 TMDB API key
 load_dotenv(Path(__file__).resolve().parent / ".env")
@@ -58,6 +59,24 @@ def extract_atmovies_id(href):
     """從 /movie/fben26657236/ 取出 fben26657236"""
     m = re.search(r"f[a-z]{3}\d{8}", href)
     return m.group(0) if m else None
+
+
+def split_atmovies_title(full_title):
+    """拆開眼片名成中文/英文,但保留像「哆啦A夢」這種中英混寫中文名"""
+    full_title = (full_title or "").strip()
+    if not full_title:
+        return "", ""
+
+    match = re.match(
+        r"^(?P<title_zh>.+?)\s+(?P<title_en>[A-Za-z0-9][A-Za-z0-9\s\-–—:：'\"!?,.&／/·・()\[\]{}]+)$",
+        full_title,
+    )
+    if not match:
+        return full_title, ""
+
+    title_zh = match.group("title_zh").strip()
+    title_en = match.group("title_en").strip()
+    return title_zh or full_title, title_en
 
 
 def fetch_atmovies(url):
@@ -210,14 +229,7 @@ def parse_now(html_pages):
             # 中文部分(到第一個空格或英文字之前)是中文片名
             full_title = link.get_text(strip=True)
 
-            # 簡單分離: 找第一個英文/數字字元的位置
-            match = re.search(r"[A-Za-z0-9]", full_title)
-            if match and match.start() > 0:
-                title_zh = full_title[:match.start()].strip()
-                title_en = full_title[match.start():].strip()
-            else:
-                title_zh = full_title.strip()
-                title_en = ""
+            title_zh, title_en = split_atmovies_title(full_title)
 
             # 找上映日期和廳數 (在 <div class="runtime"> 標籤裡)
             release_date_tw = None
@@ -292,13 +304,7 @@ def parse_next(html_pages):
 
             full_title = link.get_text(strip=True)
 
-            match = re.search(r"[A-Za-z0-9]", full_title)
-            if match and match.start() > 0:
-                title_zh = full_title[:match.start()].strip()
-                title_en = full_title[match.start():].strip()
-            else:
-                title_zh = full_title.strip()
-                title_en = ""
+            title_zh, title_en = split_atmovies_title(full_title)
 
             release_date_tw = None
             screen_count = 0
@@ -338,6 +344,36 @@ def normalize_title_key(text):
     text = (text or "").strip().lower()
     text = re.sub(r"[\s\-–—:：'\"!?,.!&／/·・()\[\]{}]+", "", text)
     return text
+
+
+def has_han(text):
+    """判斷字串是否包含中日韓漢字"""
+    return bool(re.search(r"[\u4e00-\u9fff]", text or ""))
+
+
+def preferred_display_title(movie):
+    """站上顯示標題優先使用較完整的 TMDB 中文名,否則回退開眼片名"""
+    atmovies_title = (movie.get("title_zh") or "").strip()
+    tmdb_title = (movie.get("tmdb_title") or "").strip()
+
+    if not tmdb_title:
+        return atmovies_title
+    if not atmovies_title:
+        return tmdb_title
+    if not has_han(tmdb_title):
+        return atmovies_title
+
+    at_norm = normalize_title_key(atmovies_title)
+    tmdb_norm = normalize_title_key(tmdb_title)
+
+    if at_norm == tmdb_norm:
+        return tmdb_title
+    if at_norm and (tmdb_norm.startswith(at_norm) or at_norm.startswith(tmdb_norm)):
+        return tmdb_title
+    if len(tmdb_norm) > len(at_norm):
+        return tmdb_title
+
+    return atmovies_title
 
 
 def title_similarity(a, b):
@@ -581,6 +617,51 @@ def export_google_sheets_tsv(output, generated_at_local):
     return tsv_path
 
 
+def export_atmovies_candidates(output, generated_at_local):
+    """輸出給前端背景補查用的開眼候選片清單"""
+    candidates = []
+
+    for movie in output["missing_tw_date"]:
+        candidates.append({
+            "source_bucket": "missing_tw_date",
+            "title_zh": movie.get("title_zh", ""),
+            "title_en": movie.get("title_en", ""),
+            "release_date_tw": movie.get("release_date_tw", ""),
+            "screen_count": movie.get("screen_count", 0),
+            "atmovies_id": movie.get("atmovies_id", ""),
+            "atmovies_url": movie.get("atmovies_url", ""),
+            "tmdb_id": movie.get("tmdb_id"),
+            "tmdb_title": movie.get("tmdb_title", ""),
+        })
+
+    for movie in output["tmdb_not_found"]:
+        candidates.append({
+            "source_bucket": "tmdb_not_found",
+            "title_zh": movie.get("title_zh", ""),
+            "title_en": movie.get("title_en", ""),
+            "release_date_tw": movie.get("release_date_tw", ""),
+            "screen_count": movie.get("screen_count", 0),
+            "atmovies_id": movie.get("atmovies_id", ""),
+            "atmovies_url": movie.get("atmovies_url", ""),
+            "tmdb_id": None,
+            "tmdb_title": "",
+        })
+
+    payload = {
+        "generated_at": generated_at_local.isoformat(),
+        "source": "atmovies.com.tw",
+        "summary": {
+            "candidate_count": len(candidates),
+        },
+        "candidates": candidates,
+    }
+
+    with open(ATMOVIES_CANDIDATES_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+    return ATMOVIES_CANDIDATES_FILE
+
+
 def main():
     tmdb_overrides = load_tmdb_overrides()
 
@@ -691,8 +772,9 @@ def main():
             whitelist_data["tmdb_ids"].append(m["tmdb_id"])
             if m.get("release_date_tw"):
                 whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
-            if m.get("title_zh"):
-                whitelist_data["titles_zh"][str(m["tmdb_id"])] = m["title_zh"]
+            display_title = preferred_display_title(m)
+            if display_title:
+                whitelist_data["titles_zh"][str(m["tmdb_id"])] = display_title
 
     # 從 missing_tw_date bucket 也抓 (這些片有 TMDB 條目,只是缺 TW date)
     for m in output["missing_tw_date"]:
@@ -700,8 +782,9 @@ def main():
             whitelist_data["tmdb_ids"].append(m["tmdb_id"])
             if m.get("release_date_tw"):
                 whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
-            if m.get("title_zh"):
-                whitelist_data["titles_zh"][str(m["tmdb_id"])] = m["title_zh"]
+            display_title = preferred_display_title(m)
+            if display_title:
+                whitelist_data["titles_zh"][str(m["tmdb_id"])] = display_title
 
     # 去重並排序
     whitelist_data["tmdb_ids"] = sorted(set(whitelist_data["tmdb_ids"]))
@@ -712,6 +795,8 @@ def main():
 
     tsv_path = export_google_sheets_tsv(output, generated_at_local)
     log(f"Google Sheets TSV written to: {tsv_path}")
+    candidates_path = export_atmovies_candidates(output, generated_at_local)
+    log(f"Atmovies candidates written to: {candidates_path}")
 
 
 if __name__ == "__main__":
