@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'movienotice-v3';
+const CACHE_VERSION = 'movienotice-v4';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
 const API_CACHE = `${CACHE_VERSION}-api`;
@@ -48,6 +48,10 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   if (url.origin === self.location.origin) {
+    if (url.pathname.startsWith('/data/')) {
+      e.respondWith(networkFirst(e.request, STATIC_CACHE));
+      return;
+    }
     const isHtml = e.request.headers.get('accept') && e.request.headers.get('accept').includes('text/html');
     e.respondWith(isHtml ? networkFirst(e.request, STATIC_CACHE) : staleWhileRevalidate(e.request, STATIC_CACHE));
     return;
