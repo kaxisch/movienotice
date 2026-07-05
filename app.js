@@ -894,23 +894,18 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
   if (total === 0) {
     normalizeMovieBuckets(skipNowFilter, deferInitialRender, forceRefreshRatings);
     backgroundRefreshAtmoviesCandidates();
-    return;
-  }
-  var done = 0;
-  function onEnrichDone() {
-    done++;
-    if (done < total) return;
-    normalizeMovieBuckets(skipNowFilter, deferInitialRender, forceRefreshRatings);
-    backgroundRefreshAtmoviesCandidates();
+    return Promise.resolve();
   }
 
-  npToEnrich.concat(csToEnrich).forEach(function(raw) {
-    getBasicDetail(raw.id).then(function(detail) {
+  return Promise.all(npToEnrich.concat(csToEnrich).map(function(raw) {
+    return getBasicDetail(raw.id).then(function(detail) {
       var movie = findMovieInLists(raw.id);
       if (movie) applyMovieDetail(movie, detail);
-    }).catch(function() {}).then(onEnrichDone);
+    }).catch(function() {});
+  })).then(function() {
+    normalizeMovieBuckets(skipNowFilter, deferInitialRender, forceRefreshRatings);
+    backgroundRefreshAtmoviesCandidates();
   });
-
 }
 
 function cardHTML(m, showRatings) {
