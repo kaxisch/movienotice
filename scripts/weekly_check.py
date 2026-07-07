@@ -33,10 +33,28 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
 OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
 OVERRIDES_FILE = OUTPUT_DIR / "tmdb-overrides.json"
 ATMOVIES_CANDIDATES_FILE = OUTPUT_DIR / "atmovies-candidates.json"
+MOVIE_DATA_FILE = OUTPUT_DIR / "movie-data.json"
+IMG_W = "https://image.tmdb.org/t/p/w500"
+IMG_BG = "https://image.tmdb.org/t/p/w1280"
+NOW_WINDOW_DAYS = 45
+SOON_WINDOW_DAYS = 180
+DEFAULT_OMDB_API_KEYS = [
+    "5f9393e9",
+    "d2e6c0dc",
+    "e8e518de",
+    "8ed98825",
+]
 
 # 載入 TMDB API key
 load_dotenv(Path(__file__).resolve().parent / ".env")
 TMDB_API_KEY = os.environ.get("TMDB_API_KEY")
+OMDB_API_KEYS = [
+    item.strip()
+    for item in os.environ.get("OMDB_API_KEYS", "").split(",")
+    if item.strip()
+]
+if not OMDB_API_KEYS:
+    OMDB_API_KEYS = DEFAULT_OMDB_API_KEYS[:]
 if not TMDB_API_KEY:
     print("ERROR: TMDB_API_KEY not set in .env", file=sys.stderr)
     sys.exit(1)
@@ -601,6 +619,376 @@ def tmdb_movie_url(tmdb_id):
     return f"https://www.themoviedb.org/movie/{tmdb_id}?language=zh-TW"
 
 
+def tmdb_movie_full(tmdb_id):
+    """抓前端完整顯示用的 TMDB 單片資料"""
+    try:
+        r = requests.get(
+            f"{TMDB_BASE}/movie/{tmdb_id}",
+            params={
+                "api_key": TMDB_API_KEY,
+                "language": "zh-TW",
+                "region": "TW",
+                "append_to_response": "videos,credits,watch/providers,release_dates,external_ids",
+            },
+            timeout=20,
+        )
+        r.raise_for_status()
+        return r.json()
+    except Exception as e:
+        log(f"  TMDB full movie fetch failed for id={tmdb_id}: {e}")
+        return None
+
+
+def tmdb_discover(path, params, max_pages):
+    """抓 TMDB discover 多頁結果"""
+    out = []
+    total_pages = 1
+    for page in range(1, max_pages + 1):
+        try:
+            req_params = {
+                "api_key": TMDB_API_KEY,
+                "language": "zh-TW",
+                "page": page,
+            }
+            req_params.update(params)
+            r = requests.get(f"{TMDB_BASE}{path}", params=req_params, timeout=20)
+            r.raise_for_status()
+            data = r.json()
+            total_pages = min(data.get("total_pages", 1), max_pages)
+            out.extend(data.get("results", []))
+            if page >= total_pages:
+                break
+            time.sleep(TMDB_DELAY)
+        except Exception as e:
+            log(f"  TMDB discover failed for page={page}: {e}")
+            break
+    return out
+
+
+def extract_tw_theatrical_date(payload):
+    """從 append_to_response 後的 release_dates 取出台灣院線上映日"""
+    release_dates = payload.get("release_dates", {})
+    for entry in release_dates.get("results", []):
+        if entry.get("iso_3166_1") != "TW":
+            continue
+        theatrical = [item for item in entry.get("release_dates", []) if item.get("type") == 3]
+        if not theatrical:
+            continue
+        theatrical.sort(key=lambda item: item.get("release_date", ""), reverse=True)
+        release_date = theatrical[0].get("release_date", "")
+        if release_date:
+            return release_date[:10]
+    return ""
+
+
+def parse_watch_platforms(payload):
+    providers = payload.get("watch/providers", {}).get("results", {}).get("TW", {})
+    all_items = providers.get("flatrate", []) + providers.get("rent", []) + providers.get("buy", [])
+    seen = set()
+    out = []
+    for item in all_items:
+        name = item.get("provider_name")
+        if not name or name in seen:
+            continue
+        seen.add(name)
+        out.append({
+            "name": name,
+            "logo": item.get("logo_path") or "",
+        })
+    return out
+
+
+def parse_cast(payload):
+    out = []
+    for item in payload.get("credits", {}).get("cast", [])[:8]:
+        out.append({
+            "name": item.get("name", ""),
+            "char": item.get("character", ""),
+            "photo": f"{IMG_W}{item['profile_path']}" if item.get("profile_path") else None,
+        })
+    return out
+
+
+def parse_crew(payload):
+    jobs = {"Director", "Screenplay", "Writer"}
+    out = []
+    for item in payload.get("credits", {}).get("crew", []):
+        if item.get("job") not in jobs:
+            continue
+        out.append({
+            "name": item.get("name", ""),
+            "job": item.get("job", ""),
+        })
+        if len(out) >= 3:
+            break
+    return out
+
+
+def pick_trailer_key(payload):
+    videos = payload.get("videos", {}).get("results", [])
+    trailer = None
+    for item in videos:
+        if item.get("type") == "Trailer" and item.get("site") == "YouTube":
+            trailer = item
+            break
+    if not trailer and videos:
+        trailer = videos[0]
+    return trailer.get("key") if trailer else None
+
+
+def parse_omdb_ratings(imdb_id):
+    if not imdb_id or not OMDB_API_KEYS:
+        return {"imdb": "", "rt": "", "mc": ""}
+    for key in OMDB_API_KEYS:
+        try:
+            r = requests.get(
+                "https://www.omdbapi.com/",
+                params={"i": imdb_id, "apikey": key},
+                timeout=15,
+            )
+            r.raise_for_status()
+            data = r.json()
+            if data.get("Response") == "False":
+                continue
+            imdb = data.get("imdbRating", "")
+            imdb = imdb if imdb and imdb != "N/A" else ""
+            rt = ""
+            for item in data.get("Ratings", []):
+                if item.get("Source") == "Rotten Tomatoes" and item.get("Value") != "N/A":
+                    rt = item.get("Value", "")
+                    break
+            mc = data.get("Metascore", "")
+            mc = mc if mc and mc != "N/A" else ""
+            return {"imdb": imdb, "rt": rt, "mc": mc}
+        except Exception:
+            continue
+    return {"imdb": "", "rt": "", "mc": ""}
+
+
+def classify_release_bucket(release_date, today_local):
+    if not release_date:
+        return ""
+    if today_local - timedelta(days=NOW_WINDOW_DAYS) <= release_date <= today_local:
+        return "now"
+    if today_local + timedelta(days=1) <= release_date <= today_local + timedelta(days=SOON_WINDOW_DAYS):
+        return "soon"
+    return ""
+
+
+def build_static_movie(record, payload, ratings):
+    tmdb_id = record["tmdb_id"]
+    title_zh = preferred_display_title(record)
+    release_date = record.get("release_date_tw") or extract_tw_theatrical_date(payload) or payload.get("release_date", "")
+    poster = f"{IMG_W}{payload['poster_path']}" if payload.get("poster_path") else ""
+    backdrop = f"{IMG_BG}{payload['backdrop_path']}" if payload.get("backdrop_path") else ""
+    genres = [item.get("name", "") for item in payload.get("genres", []) if item.get("name")]
+    countries = [item.get("name", "") for item in payload.get("production_countries", []) if item.get("name")]
+    platforms = parse_watch_platforms(payload)
+    cast = parse_cast(payload)
+    crew = parse_crew(payload)
+    vote_average = payload.get("vote_average")
+    vote_average = f"{vote_average:.1f}" if isinstance(vote_average, (int, float)) and vote_average > 0 else ""
+    detail = {
+        "duration": payload.get("runtime") or "",
+        "genres": genres,
+        "synopsis": payload.get("overview") or "",
+        "poster": poster or None,
+        "backdrop": backdrop or None,
+        "voteAverage": vote_average,
+        "trailerKey": pick_trailer_key(payload),
+        "imdbId": payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""),
+        "countries": countries,
+        "cast": cast,
+        "crew": crew,
+        "budget": payload.get("budget") or 0,
+        "revenue": payload.get("revenue") or 0,
+        "status": payload.get("status") or "",
+        "origLang": payload.get("original_language") or "",
+        "origTitle": payload.get("original_title") or "",
+        "platforms": platforms,
+    }
+    return {
+        "id": tmdb_id,
+        "titleZh": title_zh,
+        "titleEn": payload.get("original_title") or record.get("title_en", ""),
+        "releaseDate": release_date,
+        "twReleaseDateVerified": bool(record.get("release_date_tw")),
+        "poster": poster or backdrop or None,
+        "posterIsBackdrop": not bool(poster) and bool(backdrop),
+        "backdrop": backdrop or None,
+        "voteAverage": vote_average,
+        "genre": genres,
+        "duration": detail["duration"],
+        "synopsis": detail["synopsis"],
+        "imdb": ratings.get("imdb", ""),
+        "rt": ratings.get("rt", ""),
+        "mc": ratings.get("mc", ""),
+        "trailerKey": detail["trailerKey"],
+        "cast": cast,
+        "crew": crew,
+        "budget": detail["budget"],
+        "revenue": detail["revenue"],
+        "status": detail["status"],
+        "origLang": detail["origLang"],
+        "origTitle": detail["origTitle"],
+        "platforms": platforms,
+        "popularity": payload.get("popularity") or 0,
+        "imdbId": detail["imdbId"],
+        "countries": countries,
+        "detail": detail,
+        "tmdbUrl": tmdb_movie_url(tmdb_id),
+        "atmoviesId": record.get("atmovies_id", ""),
+        "atmoviesUrl": record.get("atmovies_url", ""),
+    }
+
+
+def should_keep_static_movie(movie):
+    release_date = parse_iso_date(movie.get("releaseDate", ""))
+    if not release_date:
+        return False
+    if movie.get("platforms"):
+        return False
+    duration = movie.get("duration") or 0
+    if duration and duration <= 60:
+        return False
+    return True
+
+
+def dedup_discover_results(items):
+    seen = set()
+    out = []
+    for item in items:
+        tmdb_id = item.get("id")
+        if not tmdb_id or tmdb_id in seen:
+            continue
+        seen.add(tmdb_id)
+        out.append(item)
+    return out
+
+
+def fetch_supplemental_soon_candidates(today_local):
+    """補抓開眼視窗外的遠期即將上映片，沿用舊版前端 discover 邏輯"""
+    today_str = today_local.isoformat()
+    soon_cutoff_180 = (today_local + timedelta(days=SOON_WINDOW_DAYS)).isoformat()
+    soon_whitelist_cutoff = (today_local + timedelta(days=60)).isoformat()
+
+    tw_results = tmdb_discover(
+        "/discover/movie",
+        {
+            "release_date.gte": (today_local + timedelta(days=1)).isoformat(),
+            "release_date.lte": soon_cutoff_180,
+            "sort_by": "release_date.asc",
+            "with_release_type": "3|2",
+            "watch_region": "TW",
+            "region": "TW",
+        },
+        8,
+    )
+    en_results = tmdb_discover(
+        "/discover/movie",
+        {
+            "primary_release_date.gte": (today_local + timedelta(days=1)).isoformat(),
+            "primary_release_date.lte": soon_cutoff_180,
+            "sort_by": "popularity.desc",
+            "with_release_type": "2|3",
+            "with_original_language": "en",
+        },
+        2,
+    )
+
+    tw_results = dedup_discover_results(tw_results)
+    tw_ids = {item["id"] for item in tw_results if item.get("id")}
+    extra_en = [
+        item for item in en_results
+        if item.get("id")
+        and item["id"] not in tw_ids
+        and (item.get("release_date") or "") >= today_str
+    ][:15]
+
+    combined = dedup_discover_results(tw_results + extra_en)
+    return [
+        item for item in combined
+        if (item.get("release_date") or "") > soon_whitelist_cutoff
+        and (item.get("release_date") or "") <= soon_cutoff_180
+    ]
+
+
+def export_static_movie_data(output, generated_at_local):
+    """輸出前端使用的完整靜態資料，避免瀏覽器直接打第三方 API"""
+    movies = {"now": [], "soon": []}
+    today_local = generated_at_local.date()
+    records = output["tmdb_has_tw_date"] + output["missing_tw_date"]
+    existing_ids = set()
+
+    for idx, record in enumerate(records, 1):
+        tmdb_id = record.get("tmdb_id")
+        if not tmdb_id:
+            continue
+        log(f"Static export [{idx}/{len(records)}] TMDB {tmdb_id}")
+        payload = tmdb_movie_full(tmdb_id)
+        if not payload:
+            continue
+        ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
+        movie = build_static_movie(record, payload, ratings)
+        if not should_keep_static_movie(movie):
+            continue
+        bucket = classify_release_bucket(parse_iso_date(movie.get("releaseDate", "")), today_local)
+        if not bucket:
+            continue
+        existing_ids.add(movie["id"])
+        movies[bucket].append(movie)
+        time.sleep(TMDB_DELAY)
+
+    supplemental_soon = fetch_supplemental_soon_candidates(today_local)
+    for idx, candidate in enumerate(supplemental_soon, 1):
+        tmdb_id = candidate.get("id")
+        if not tmdb_id or tmdb_id in existing_ids:
+            continue
+        log(f"Soon supplement [{idx}/{len(supplemental_soon)}] TMDB {tmdb_id}")
+        payload = tmdb_movie_full(tmdb_id)
+        if not payload:
+            continue
+        tw_release_date = extract_tw_theatrical_date(payload)
+        if not tw_release_date:
+            continue
+        record = {
+            "tmdb_id": tmdb_id,
+            "tmdb_title": candidate.get("title") or candidate.get("original_title") or "",
+            "title_zh": candidate.get("title") or candidate.get("original_title") or "",
+            "title_en": candidate.get("original_title") or "",
+            "release_date_tw": tw_release_date,
+            "atmovies_id": "",
+            "atmovies_url": "",
+        }
+        ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
+        movie = build_static_movie(record, payload, ratings)
+        if not should_keep_static_movie(movie):
+            continue
+        if classify_release_bucket(parse_iso_date(movie.get("releaseDate", "")), today_local) != "soon":
+            continue
+        existing_ids.add(movie["id"])
+        movies["soon"].append(movie)
+        time.sleep(TMDB_DELAY)
+
+    movies["now"].sort(key=lambda item: item.get("releaseDate", ""), reverse=True)
+    movies["soon"].sort(key=lambda item: item.get("releaseDate", ""))
+
+    payload = {
+        "generated_at": generated_at_local.isoformat(),
+        "source": "atmovies.com.tw",
+        "summary": {
+            "now_count": len(movies["now"]),
+            "soon_count": len(movies["soon"]),
+        },
+        "movies": movies,
+    }
+
+    with open(MOVIE_DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+    return MOVIE_DATA_FILE, payload
+
+
 def should_export_tsv_movie(movie, generated_at_local):
     """TSV 只保留未來片與近兩週內的近期片，排除太舊的殘留項"""
     release_date = parse_iso_date(movie.get("release_date_tw", ""))
@@ -610,7 +998,7 @@ def should_export_tsv_movie(movie, generated_at_local):
     return release_date >= cutoff
 
 
-def export_google_sheets_tsv(output, generated_at_local):
+def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
     """輸出給 Google Sheets 用的 TSV"""
     tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
     rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "TMDB 連結"]]
@@ -634,6 +1022,26 @@ def export_google_sheets_tsv(output, generated_at_local):
             movie.get("title_zh", ""),
             movie.get("release_date_tw", ""),
             movie.get("title_en", ""),
+            "",
+        ])
+
+    movie_buckets = movie_data.get("movies", {}) if movie_data else {}
+
+    for movie in movie_buckets.get("now", []):
+        rows.append([
+            "現正熱映",
+            movie.get("titleZh", ""),
+            movie.get("releaseDate", ""),
+            movie.get("titleEn", ""),
+            "",
+        ])
+
+    for movie in movie_buckets.get("soon", []):
+        rows.append([
+            "即將上映",
+            movie.get("titleZh", ""),
+            movie.get("releaseDate", ""),
+            movie.get("titleEn", ""),
             "",
         ])
 
@@ -820,10 +1228,12 @@ def main():
         json.dump(whitelist_data, f, ensure_ascii=False, indent=2)
     log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
 
-    tsv_path = export_google_sheets_tsv(output, generated_at_local)
-    log(f"Google Sheets TSV written to: {tsv_path}")
     candidates_path = export_atmovies_candidates(output, generated_at_local)
     log(f"Atmovies candidates written to: {candidates_path}")
+    movie_data_path, movie_data_payload = export_static_movie_data(output, generated_at_local)
+    log(f"Static movie data written to: {movie_data_path}")
+    tsv_path = export_google_sheets_tsv(output, generated_at_local, movie_data_payload)
+    log(f"Google Sheets TSV written to: {tsv_path}")
 
 
 if __name__ == "__main__":

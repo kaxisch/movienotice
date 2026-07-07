@@ -16,6 +16,9 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .nav-logo span { color: rgba(255,255,255,0.55); font-size: 13px; margin-left: 8px; letter-spacing: 0.01em; }
 .nav-right { display: flex; align-items: center; gap: 8px; }
 .nav-refresh-btn { display: flex; align-items: center; gap: 6px; padding: 8px 12px; border: none; background: transparent; color: rgba(255,255,255,0.7); cursor: pointer; border-radius: 999px; transition: background 0.2s, color 0.2s; font-size: 14px; font-weight: 300; font-family: 'Manrope', sans-serif; }
+.nav-refresh-btn#data-status { gap: 4px; }
+.nav-refresh-btn .data-status-icon { font-size: 16px; color: rgba(255,255,255,0.55); }
+.nav-refresh-btn .refresh-label { color: rgba(255,255,255,0.55); font-size: 13px; letter-spacing: 0.01em; }
 .nav-refresh-btn:hover { background: rgba(255,255,255,0.05); color: #fff; }
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .spinning { animation: spin 1s linear infinite; display: inline-block; }

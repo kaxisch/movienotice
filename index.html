@@ -30,10 +30,10 @@
   <div class="nav-inner">
     <div class="nav-logo"><img src="logo.svg" width="28" height="28" alt="" style="vertical-align:middle;margin-right:4px;position:relative;top:-2px"/>MovieNotice<span>電影佈告欄</span></div>
     <div class="nav-right">
-      <button id="refresh-btn" class="nav-refresh-btn" onclick="refreshData()">
-        <span class="material-symbols-outlined" id="refresh-icon" style="font-size:20px">refresh</span>
-        <span class="refresh-label">更新</span>
-      </button>
+      <div id="data-status" class="nav-refresh-btn" aria-live="polite">
+        <span class="material-symbols-outlined data-status-icon">schedule</span>
+        <span class="refresh-label">載入資料中</span>
+      </div>
     </div>
   </div>
 </header>

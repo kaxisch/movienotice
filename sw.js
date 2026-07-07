@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'movienotice-v5';
+const CACHE_VERSION = 'movienotice-v6';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
 const API_CACHE = `${CACHE_VERSION}-api`;
@@ -8,6 +8,7 @@ const STATIC_ASSETS = [
   '/index.html',
   '/styles.css',
   '/app.js',
+  '/data/movie-data.json',
   '/manifest.webmanifest',
   '/logo.svg',
   '/favicon.svg',
@@ -45,10 +46,6 @@ self.addEventListener('fetch', (e) => {
 
   if (url.hostname === 'image.tmdb.org') {
     e.respondWith(cacheFirst(e.request, POSTER_CACHE));
-    return;
-  }
-  if (url.hostname === 'api.themoviedb.org' || url.hostname === 'www.omdbapi.com') {
-    e.respondWith(cacheFirstWithTTL(e.request, API_CACHE, API_TTL));
     return;
   }
   if (url.origin === self.location.origin) {
