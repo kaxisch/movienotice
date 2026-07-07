@@ -34,8 +34,19 @@ var countryMap = {
   "NZ":"紐西蘭","IE":"愛爾蘭","NL":"荷蘭","BE":"比利時","SE":"瑞典","DK":"丹麥","NO":"挪威",
   "FI":"芬蘭","RU":"俄羅斯","MX":"墨西哥","BR":"巴西","AR":"阿根廷","TH":"泰國","SG":"新加坡",
   "ZA":"南非","AT":"奧地利","CH":"瑞士","PL":"波蘭","CZ":"捷克","HU":"匈牙利","PT":"葡萄牙",
-  "GR":"希臘","IL":"以色列","TR":"土耳其","MY":"馬來西亞","ID":"印尼","PH":"菲律賓","VN":"越南"
+  "GR":"希臘","IL":"以色列","TR":"土耳其","MY":"馬來西亞","ID":"印尼","PH":"菲律賓","VN":"越南",
+  "United States of America":"美國","Japan":"日本","United Kingdom":"英國","Taiwan":"台灣",
+  "France":"法國","Canada":"加拿大","Netherlands":"荷蘭","South Korea":"韓國","Germany":"德國",
+  "Thailand":"泰國","Hong Kong":"香港","Mexico":"墨西哥","Saudi Arabia":"沙烏地阿拉伯",
+  "Spain":"西班牙","Belgium":"比利時","Ireland":"愛爾蘭","United Arab Emirates":"阿拉伯聯合大公國",
+  "Brazil":"巴西","Chile":"智利","China":"中國","Tunisia":"突尼西亞","Cyprus":"賽普勒斯",
+  "Italy":"義大利","Palestinian Territory":"巴勒斯坦","Indonesia":"印尼","Hungary":"匈牙利",
+  "Turkey":"土耳其","Greece":"希臘","Sweden":"瑞典","Philippines":"菲律賓","India":"印度"
 };
+function formatCountryList(countries) {
+  if (!countries || !countries.length) return "—";
+  return countries.map(function(country) { return countryMap[country] || country; }).join(" · ");
+}
 
 var genreMap = {
   "动作":"動作","冒险":"冒險","喜剧":"喜劇","犯罪":"犯罪","纪录片":"紀錄片",
@@ -1214,9 +1225,11 @@ function switchTab(t) {
 function openModal(id) {
   if (!id) return;
   var modal = document.getElementById("detail-modal");
+  var modalScroll = modal.querySelector(".modal-scroll");
   currentModalMovieId = id;
   modal.classList.add("open");
   document.body.style.overflow = "hidden";
+  if (modalScroll) modalScroll.scrollTop = 0;
   document.getElementById("modal-hero-slot").innerHTML = '';
   document.getElementById("modal-content").innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:60vh"><div class="skeleton" style="width:64px;height:64px;border-radius:50%"></div></div>';
   var movie = null;
@@ -1226,12 +1239,13 @@ function openModal(id) {
     if (currentModalMovieId !== id || !modal.classList.contains("open")) return;
     var imdbRating = movie.imdb || "";
     renderModal(movie, detail, imdbRating);
+    if (modalScroll) modalScroll.scrollTop = 0;
   });
 }
 
 function renderModal(movie, detail, imdbRating) {
   var trailerKey = detail.trailerKey || movie.trailerKey;
-  var langMap = {en:"英語",zh:"中文",ja:"日語",ko:"韓語",fr:"法語",es:"西班牙語",de:"德語",it:"義大利語",th:"泰語",hi:"印地語"};
+  var langMap = {en:"英語",zh:"中文",ja:"日語",ko:"韓語",fr:"法語",es:"西班牙語",de:"德語",it:"義大利語",th:"泰語",hi:"印地語",tl:"菲律賓語",ar:"阿拉伯語",id:"印尼語",pt:"葡萄牙語",tr:"土耳其語"};
   var statusMap = {Released:"已上映","In Production":"製作中",Planned:"計畫中"};
   var genres = normalizeGenreList(detail.genres || movie.genre || []);
   var genreTags = "";
@@ -1254,14 +1268,17 @@ function renderModal(movie, detail, imdbRating) {
     if (platforms[p].logo) platformHTML += '<img class="platform-logo" src="https://image.tmdb.org/t/p/w92' + platforms[p].logo + '"/>';
     platformHTML += '<span class="platform-name">' + escHtml(platforms[p].name) + '</span></div>';
   }
+  var subtitleParts = [];
+  if (detail.origTitle) subtitleParts.push(detail.origTitle);
+  if (movie.releaseDate) subtitleParts.push(formatDate(movie.releaseDate));
+  if (detail.duration) subtitleParts.push(detail.duration + "分鐘");
   var metaRows = [
     ["原始標題", detail.origTitle || movie.titleEn || "—"],
     ["狀態", statusMap[detail.status] || detail.status || "—"],
     ["原始語言", langMap[detail.origLang] || detail.origLang || "—"],
-    ["製片國家", detail.countries && detail.countries.length ? detail.countries.join(' · ') : "—"],
+    ["製片國家", formatCountryList(detail.countries)],
     ["電影成本", detail.budget ? "$" + detail.budget.toLocaleString() : "—"],
-    ["票房收入", detail.revenue ? "$" + detail.revenue.toLocaleString() : "—"],
-    ["上映日期", formatDate(movie.releaseDate) || "—"]
+    ["票房收入", detail.revenue ? "$" + detail.revenue.toLocaleString() : "—"]
   ];
   var metaHTML = "";
   for (var mr = 0; mr < metaRows.length; mr++) metaHTML += '<div class="meta-row"><span class="meta-key">' + metaRows[mr][0] + '</span><span class="meta-val">' + escHtml(metaRows[mr][1]) + '</span></div>';
@@ -1284,7 +1301,7 @@ function renderModal(movie, detail, imdbRating) {
     '<div class="modal-hero-info">' +
     '<div class="modal-info-group"><div class="modal-genre-tags">' + genreTags + '</div>' +
     '<h2 class="modal-title">' + escHtml(movie.titleZh || detail.origTitle || "—") + '</h2>' +
-    '<p class="modal-subtitle">' + escHtml(detail.origTitle || "") + (movie.releaseDate ? ' · ' + movie.releaseDate.split('-')[0] : '') + (detail.duration ? ' · ' + detail.duration + '分鐘' : '') + '</p>' +
+    '<p class="modal-subtitle">' + escHtml(subtitleParts.join(' · ')) + '</p>' +
     '</div>' +
     (ratingsHTML ? '<div class="modal-ratings">' + ratingsHTML + '</div>' : '') +
     (trailerKey ? '<button class="btn-trailer" onclick="playTrailer(\'' + trailerKey + '\')"><span class="material-symbols-outlined" style="font-size:22px">play_arrow</span>播放預告</button>' : '') +
