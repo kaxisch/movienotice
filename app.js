@@ -1,6 +1,6 @@
 var STATIC_DATA_PATH = "data/movie-data.json";
 var CACHE_KEY = "movienotice_static_v1";
-var CACHE_TTL = 24 * 60 * 60 * 1000;
+var CACHE_TTL = 60 * 60 * 1000;
 var movieDataMeta = { generated_at: "" };
 function normalizeImdbRatings(ratings) {
   return {
