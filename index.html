@@ -29,12 +29,6 @@
 <header id="navbar">
   <div class="nav-inner">
     <div class="nav-logo"><img src="logo.svg" width="28" height="28" alt="" style="vertical-align:middle;margin-right:4px;position:relative;top:-2px"/>MovieNotice<span>電影佈告欄</span></div>
-    <div class="nav-right">
-      <div id="data-status" class="nav-refresh-btn" aria-live="polite">
-        <span class="material-symbols-outlined data-status-icon">schedule</span>
-        <span class="refresh-label">載入資料中</span>
-      </div>
-    </div>
   </div>
 </header>
 
@@ -164,7 +158,14 @@
   </div>
 </div>
 
-<footer style="padding:40px 64px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:32px;">
+<div class="content-area footer-status-wrap">
+  <div id="data-status" class="nav-refresh-btn footer-status" aria-live="polite">
+    <span class="material-symbols-outlined data-status-icon">schedule</span>
+    <span class="refresh-label">載入資料中</span>
+  </div>
+</div>
+
+<footer style="padding:40px 64px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:-8px;">
   <p style="color:rgba(255,255,255,0.3);font-size:12px;font-weight:300">MovieNotice · 資料來源 TMDB、OMDb（含 IMDb、爛番茄、Metacritic 評分）· made by Axis Chang</p>
 </footer>
 
