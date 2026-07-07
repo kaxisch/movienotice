@@ -20,6 +20,8 @@ This updates:
 - `data/movie-data.json`
 - `data/tw-whitelist.json`
 - `data/atmovies-candidates.json`
+- `data/atmovies-next-snapshot.json`
+- `data/atmovies-next-diff.json`
 - `data/missing-tw-dates.json`
 - `data/YYYY-MM-DD.tsv`
 
@@ -50,9 +52,11 @@ Usually the important files are:
 - `data/movie-data.json`
 - `data/tw-whitelist.json`
 - `data/atmovies-candidates.json`
+- `data/atmovies-next-diff.json`
 
 Reference / review files:
 
+- `data/atmovies-next-snapshot.json`
 - `data/missing-tw-dates.json`
 - `data/YYYY-MM-DD.tsv`
 
@@ -77,3 +81,4 @@ git add app.js index.html sw.js scripts/weekly_check.py
 - The public site now reads static data from `data/movie-data.json`
 - Regular visitors do not consume TMDB / OMDb API usage
 - API usage happens when you run `scripts/weekly_check.py`
+- `data/atmovies-next-diff.json` compares this run with the previous `近期上映` snapshot and shows `added` / `removed` / `changed`

@@ -34,6 +34,8 @@ OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
 OVERRIDES_FILE = OUTPUT_DIR / "tmdb-overrides.json"
 ATMOVIES_CANDIDATES_FILE = OUTPUT_DIR / "atmovies-candidates.json"
 MOVIE_DATA_FILE = OUTPUT_DIR / "movie-data.json"
+ATMOVIES_NEXT_SNAPSHOT_FILE = OUTPUT_DIR / "atmovies-next-snapshot.json"
+ATMOVIES_NEXT_DIFF_FILE = OUTPUT_DIR / "atmovies-next-diff.json"
 IMG_W = "https://image.tmdb.org/t/p/w500"
 IMG_BG = "https://image.tmdb.org/t/p/w1280"
 NOW_WINDOW_DAYS = 45
@@ -1089,6 +1091,126 @@ def export_atmovies_candidates(output, generated_at_local):
     return ATMOVIES_CANDIDATES_FILE
 
 
+def build_next_snapshot_payload(movies_next, generated_at_local):
+    """把本次開眼近期上映片單整理成可比較的 snapshot"""
+    items = []
+    seen_ids = set()
+
+    for movie in sorted(
+        movies_next,
+        key=lambda item: ((item.get("release_date_tw") or ""), (item.get("title_zh") or ""), (item.get("atmovies_id") or "")),
+    ):
+        atmovies_id = movie.get("atmovies_id") or ""
+        if not atmovies_id or atmovies_id in seen_ids:
+            continue
+        seen_ids.add(atmovies_id)
+        items.append({
+            "atmovies_id": atmovies_id,
+            "title_zh": movie.get("title_zh", ""),
+            "title_en": movie.get("title_en", ""),
+            "release_date_tw": movie.get("release_date_tw", ""),
+            "screen_count": movie.get("screen_count", 0),
+            "atmovies_url": movie.get("atmovies_url", ""),
+        })
+
+    return {
+        "generated_at": generated_at_local.isoformat(),
+        "source": "atmovies.com.tw",
+        "summary": {
+            "movie_count": len(items),
+        },
+        "movies": items,
+    }
+
+
+def load_previous_next_snapshot():
+    """讀取前一次開眼近期上映 snapshot；沒有就回 None"""
+    if not ATMOVIES_NEXT_SNAPSHOT_FILE.exists():
+        return None
+    try:
+        with open(ATMOVIES_NEXT_SNAPSHOT_FILE, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        return payload if isinstance(payload, dict) else None
+    except Exception as e:
+        log(f"Failed to load previous next snapshot: {e}")
+        return None
+
+
+def build_next_diff_payload(previous_snapshot, current_snapshot, generated_at_local):
+    """比較這次與上次的開眼近期上映清單"""
+    previous_movies = previous_snapshot.get("movies", []) if previous_snapshot else []
+    current_movies = current_snapshot.get("movies", [])
+
+    prev_map = {
+        item.get("atmovies_id"): item
+        for item in previous_movies
+        if isinstance(item, dict) and item.get("atmovies_id")
+    }
+    curr_map = {
+        item.get("atmovies_id"): item
+        for item in current_movies
+        if isinstance(item, dict) and item.get("atmovies_id")
+    }
+
+    prev_ids = set(prev_map.keys())
+    curr_ids = set(curr_map.keys())
+
+    added = [curr_map[movie_id] for movie_id in sorted(curr_ids - prev_ids)]
+    removed = [prev_map[movie_id] for movie_id in sorted(prev_ids - curr_ids)]
+    unchanged = []
+    changed = []
+
+    for movie_id in sorted(prev_ids & curr_ids):
+        prev_item = prev_map[movie_id]
+        curr_item = curr_map[movie_id]
+        if (
+            prev_item.get("release_date_tw") != curr_item.get("release_date_tw")
+            or prev_item.get("screen_count", 0) != curr_item.get("screen_count", 0)
+            or prev_item.get("title_zh", "") != curr_item.get("title_zh", "")
+            or prev_item.get("title_en", "") != curr_item.get("title_en", "")
+        ):
+            changed.append({
+                "atmovies_id": movie_id,
+                "before": prev_item,
+                "after": curr_item,
+            })
+        else:
+            unchanged.append(curr_item)
+
+    return {
+        "generated_at": generated_at_local.isoformat(),
+        "source": "atmovies.com.tw",
+        "compared_to": previous_snapshot.get("generated_at", "") if previous_snapshot else "",
+        "summary": {
+            "previous_count": len(previous_movies),
+            "current_count": len(current_movies),
+            "added": len(added),
+            "removed": len(removed),
+            "changed": len(changed),
+            "unchanged": len(unchanged),
+        },
+        "added": added,
+        "removed": removed,
+        "changed": changed,
+        "unchanged": unchanged,
+    }
+
+
+def export_next_snapshot_and_diff(movies_next, generated_at_local):
+    """輸出開眼近期上映 snapshot 與前後差異 diff"""
+    previous_snapshot = load_previous_next_snapshot()
+    current_snapshot = build_next_snapshot_payload(movies_next, generated_at_local)
+    diff_payload = build_next_diff_payload(previous_snapshot, current_snapshot, generated_at_local)
+
+    with open(ATMOVIES_NEXT_SNAPSHOT_FILE, "w", encoding="utf-8") as f:
+        json.dump(current_snapshot, f, ensure_ascii=False, indent=2)
+
+    with open(ATMOVIES_NEXT_DIFF_FILE, "w", encoding="utf-8") as f:
+        json.dump(diff_payload, f, ensure_ascii=False, indent=2)
+
+    return ATMOVIES_NEXT_SNAPSHOT_FILE, ATMOVIES_NEXT_DIFF_FILE, diff_payload
+
+
 def main():
     tmdb_overrides = load_tmdb_overrides()
 
@@ -1219,6 +1341,15 @@ def main():
     with open(whitelist_path, "w", encoding="utf-8") as f:
         json.dump(whitelist_data, f, ensure_ascii=False, indent=2)
     log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
+
+    next_snapshot_path, next_diff_path, next_diff_payload = export_next_snapshot_and_diff(movies_next, generated_at_local)
+    log(
+        "Atmovies NEXT diff written to: "
+        f"{next_diff_path} (added {next_diff_payload['summary']['added']}, "
+        f"removed {next_diff_payload['summary']['removed']}, "
+        f"changed {next_diff_payload['summary']['changed']})"
+    )
+    log(f"Atmovies NEXT snapshot written to: {next_snapshot_path}")
 
     candidates_path = export_atmovies_candidates(output, generated_at_local)
     log(f"Atmovies candidates written to: {candidates_path}")
