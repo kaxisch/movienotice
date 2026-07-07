@@ -8,6 +8,13 @@ From the project root:
 python3 scripts/weekly_check.py
 ```
 
+Required in `scripts/.env`:
+
+```env
+TMDB_API_KEY=...
+OMDB_API_KEYS=key1,key2,key3,key4
+```
+
 This updates:
 
 - `data/movie-data.json`

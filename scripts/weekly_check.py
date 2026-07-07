@@ -38,12 +38,6 @@ IMG_W = "https://image.tmdb.org/t/p/w500"
 IMG_BG = "https://image.tmdb.org/t/p/w1280"
 NOW_WINDOW_DAYS = 45
 SOON_WINDOW_DAYS = 180
-DEFAULT_OMDB_API_KEYS = [
-    "5f9393e9",
-    "d2e6c0dc",
-    "e8e518de",
-    "8ed98825",
-]
 
 # 載入 TMDB API key
 load_dotenv(Path(__file__).resolve().parent / ".env")
@@ -53,8 +47,6 @@ OMDB_API_KEYS = [
     for item in os.environ.get("OMDB_API_KEYS", "").split(",")
     if item.strip()
 ]
-if not OMDB_API_KEYS:
-    OMDB_API_KEYS = DEFAULT_OMDB_API_KEYS[:]
 if not TMDB_API_KEY:
     print("ERROR: TMDB_API_KEY not set in .env", file=sys.stderr)
     sys.exit(1)
