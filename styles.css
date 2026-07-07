@@ -105,9 +105,10 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .modal-scroll { position: relative; width: 100%; height: 100%; overflow-y: auto; }
 .modal-inner { position: relative; max-width: 896px; margin: 0 auto; min-height: 100vh; z-index: 1; }
 #modal-hero-slot { position: absolute; top: 0; left: 0; right: 0; height: 45vh; min-height: 300px; z-index: 0; pointer-events: none; overflow: hidden; }
-.modal-close { position: fixed; top: 24px; right: 40px; z-index: 70; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.15); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.35); border-radius: 999px; color: rgba(255,255,255,0.8); cursor: pointer; transition: color 0.2s, background 0.2s; }
+.modal-close { position: fixed; top: 24px; right: 40px; z-index: 70; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(190,190,190,0.30); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.75); border-radius: 999px; color: rgba(255,255,255,0.8); cursor: pointer; transition: color 0.2s, background 0.2s, box-shadow 0.2s; box-shadow: 0 4px 14px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.10), inset 0 0 0 1px rgba(0,0,0,0.06); }
+.modal-close .material-symbols-outlined { text-shadow: 0 0 2px rgba(0,0,0,0.20), 0 0 8px rgba(0,0,0,0.20), 0 0 20px rgba(0,0,0,0.28), 0 0 42px rgba(0,0,0,0.20); }
 @media(max-width:768px){ .modal-close { top: 16px; right: 16px; } }
-.modal-close:hover { color: #fff; background: rgba(255,255,255,0.25); }
+.modal-close:hover { color: #fff; background: rgba(210,210,210,0.32); box-shadow: 0 4px 16px rgba(0,0,0,0.12), 0 1px 5px rgba(0,0,0,0.12), inset 0 0 0 1px rgba(0,0,0,0.08); }
 .modal-hero { position: relative; height: 45vh; min-height: 300px; overflow: hidden; box-shadow: 0 0 100px 20px rgba(0,0,0,0.5); }
 .modal-hero-media { position: absolute; inset: 0; }
 .modal-hero-img { width: 100%; height: 100%; object-fit: cover; object-position: top center; mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 82%, transparent 100%), linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); mask-composite: intersect; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 82%, transparent 100%), linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%); -webkit-mask-composite: source-in; }

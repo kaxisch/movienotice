@@ -54,6 +54,32 @@ var genreMap = {
 };
 
 function toTrad(s) { return genreMap[s] || s; }
+function normalizeGenreList(genres) {
+  if (!Array.isArray(genres)) return [];
+  var seen = {};
+  var result = [];
+  genres.forEach(function(g) {
+    var trad = toTrad(g);
+    if (!trad || seen[trad]) return;
+    seen[trad] = true;
+    result.push(trad);
+  });
+  return result;
+}
+function normalizeMovieGenres(movie) {
+  if (!movie) return movie;
+  movie.genre = normalizeGenreList(movie.genre);
+  if (movie.detail) movie.detail.genres = normalizeGenreList(movie.detail.genres || movie.genre);
+  return movie;
+}
+function normalizeMoviePayload(payload) {
+  if (!payload || !payload.movies) return payload;
+  ["now","soon"].forEach(function(t) {
+    if (!Array.isArray(payload.movies[t])) payload.movies[t] = [];
+    payload.movies[t].forEach(normalizeMovieGenres);
+  });
+  return payload;
+}
 function tmdbScore(v) {
   if (!v) return "";
   var n = parseFloat(v);
@@ -672,7 +698,7 @@ function findMovieInLists(id) {
 
 function updateCardGenre(id, genre) {
   var el = document.querySelector('#card-' + id + ' .card-hover-genre');
-  if (el) el.textContent = genre.slice(0, 2).join(' / ');
+  if (el) el.textContent = normalizeGenreList(genre).slice(0, 2).join(' / ');
 }
 
 function updateCardDate(id, date) {
@@ -682,7 +708,8 @@ function updateCardDate(id, date) {
 
 function applyMovieDetail(movie, detail) {
   if (!movie || !detail) return;
-  movie.genre = detail.genres || [];
+  movie.genre = normalizeGenreList(detail.genres || []);
+  detail.genres = movie.genre.slice();
   movie.duration = detail.duration || 0;
   movie.synopsis = detail.synopsis || "";
   movie.platforms = detail.platforms || [];
@@ -932,7 +959,7 @@ function cardHTML(m, showRatings) {
   metaHTML += '</div>';
   return '<div class="movie-card fade-in" id="card-' + m.id + '">' +
     '<div class="card-img-wrap" onclick="openModal(' + m.id + ')">' + imgHTML +
-    '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(m.genre.slice(0,2).join(' / ')) + '</span></div></div>' +
+    '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(normalizeGenreList(m.genre).slice(0,2).join(' / ')) + '</span></div></div>' +
     '<div class="card-info"><p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn +
     '<div class="card-spacer"></div>' + metaHTML + '</div></div>';
 }
@@ -966,7 +993,8 @@ function listRowHTML(m, showRatings) {
     : '<div class="list-no-poster"><span class="material-symbols-outlined" style="font-size:16px">movie</span></div>';
   var subtitleParts = [];
   if (m.titleEn && m.titleEn !== m.titleZh) subtitleParts.push(m.titleEn);
-  if (m.genre && m.genre.length > 0) subtitleParts.push(m.genre.slice(0, 2).join(' / '));
+  var displayGenres = normalizeGenreList(m.genre);
+  if (displayGenres.length > 0) subtitleParts.push(displayGenres.slice(0, 2).join(' / '));
   var subtitleHTML = subtitleParts.length ? '<p class="list-subtitle">' + escHtml(subtitleParts.join(' · ')) + '</p>' : '';
   var badgesHTML = '';
   if (showRatings) {
@@ -1018,7 +1046,7 @@ function applyFilters(skipRender) {
       }
       if (genreKeys.length > 0) {
         var ok = false;
-        for (var i = 0; i < m.genre.length; i++) if (activeGenres[m.genre[i]]) { ok = true; break; }
+        for (var i = 0; i < m.genre.length; i++) if (activeGenres[toTrad(m.genre[i])]) { ok = true; break; }
         if (!ok) return false;
       }
       return true;
@@ -1097,7 +1125,7 @@ function clearSearch() {
 
 function buildGenreFilters() {
   var gs = {};
-  ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { m.genre.forEach(function(g) { gs[toTrad(g)] = true; }); }); });
+  ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { normalizeGenreList(m.genre).forEach(function(g) { gs[g] = true; }); }); });
   var genres = Object.keys(gs).sort(); var html = "";
   for (var i = 0; i < genres.length; i++) html += '<button class="filter-tag" onclick="toggleGenre(\'' + escHtml(genres[i]) + '\',this)">' + escHtml(genres[i]) + '</button>';
   document.getElementById("genre-filters").innerHTML = html;
@@ -1205,7 +1233,7 @@ function renderModal(movie, detail, imdbRating) {
   var trailerKey = detail.trailerKey || movie.trailerKey;
   var langMap = {en:"英語",zh:"中文",ja:"日語",ko:"韓語",fr:"法語",es:"西班牙語",de:"德語",it:"義大利語",th:"泰語",hi:"印地語"};
   var statusMap = {Released:"已上映","In Production":"製作中",Planned:"計畫中"};
-  var genres = detail.genres || movie.genre || [];
+  var genres = normalizeGenreList(detail.genres || movie.genre || []);
   var genreTags = "";
   for (var i = 0; i < Math.min(genres.length,3); i++) genreTags += '<span class="modal-genre-tag">' + escHtml(genres[i]) + '</span>';
   var cast = detail.cast || []; var castHTML = "";
@@ -1337,6 +1365,7 @@ function loadData(forceRefresh) {
     var cached = loadCache();
     if (cached) {
       movieDataMeta.generated_at = cached.generated_at || "";
+      cached = normalizeMoviePayload(cached);
       allMovies = cached.movies || { now: [], soon: [] };
       filtered = { now: allMovies.now.slice(), soon: allMovies.soon.slice() };
       sortMovies();
@@ -1351,6 +1380,7 @@ function loadData(forceRefresh) {
     return r.json();
   }).then(function(payload) {
     movieDataMeta.generated_at = payload.generated_at || "";
+    payload = normalizeMoviePayload(payload);
     allMovies = payload.movies || { now: [], soon: [] };
     filtered = { now: allMovies.now.slice(), soon: allMovies.soon.slice() };
     sortMovies();
@@ -1363,6 +1393,7 @@ function loadData(forceRefresh) {
     var cached = loadCache();
     if (cached) {
       movieDataMeta.generated_at = cached.generated_at || "";
+      cached = normalizeMoviePayload(cached);
       allMovies = cached.movies || { now: [], soon: [] };
       filtered = { now: allMovies.now.slice(), soon: allMovies.soon.slice() };
       renderGrids();

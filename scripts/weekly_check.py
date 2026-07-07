@@ -16,6 +16,10 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+try:
+    from opencc import OpenCC
+except ImportError:
+    OpenCC = None
 
 # 設定區塊
 CONTACT_EMAIL = "quietcron@gmail.com"
@@ -38,8 +42,37 @@ ATMOVIES_NEXT_SNAPSHOT_FILE = OUTPUT_DIR / "atmovies-next-snapshot.json"
 ATMOVIES_NEXT_DIFF_FILE = OUTPUT_DIR / "atmovies-next-diff.json"
 IMG_W = "https://image.tmdb.org/t/p/w500"
 IMG_BG = "https://image.tmdb.org/t/p/w1280"
-NOW_WINDOW_DAYS = 45
+NOW_LOOKBACK_DAYS = 180
 SOON_WINDOW_DAYS = 180
+GENRE_MAP = {
+    "动作": "動作",
+    "冒险": "冒險",
+    "喜剧": "喜劇",
+    "犯罪": "犯罪",
+    "纪录片": "紀錄片",
+    "剧情": "劇情",
+    "家庭": "家庭",
+    "奇幻": "奇幻",
+    "历史": "歷史",
+    "恐怖": "恐怖",
+    "音乐": "音樂",
+    "悬疑": "懸疑",
+    "爱情": "愛情",
+    "科幻": "科幻",
+    "电视电影": "電視電影",
+    "惊悚": "驚悚",
+    "战争": "戰爭",
+    "西部": "西部",
+    "动画": "動畫",
+    "传记": "傳記",
+    "运动": "運動",
+    "歌舞": "歌舞",
+    "武侠": "武俠",
+    "古装": "古裝",
+    "记录片": "紀錄片",
+    "纪录": "紀錄",
+    "记录": "紀錄",
+}
 
 # 載入 TMDB API key
 load_dotenv(Path(__file__).resolve().parent / ".env")
@@ -53,9 +86,34 @@ if not TMDB_API_KEY:
     print("ERROR: TMDB_API_KEY not set in .env", file=sys.stderr)
     sys.exit(1)
 
+if OpenCC is None:
+    print("ERROR: opencc-python-reimplemented not installed. Run: pip install -r scripts/requirements.txt", file=sys.stderr)
+    sys.exit(1)
+
+TRADITIONAL_CONVERTER = OpenCC("s2twp")
+
 
 def log(msg):
     print(msg, file=sys.stderr)
+
+
+def to_traditional_text(value):
+    return TRADITIONAL_CONVERTER.convert(value) if isinstance(value, str) else value
+
+
+def to_traditional_data(value):
+    if isinstance(value, str):
+        return to_traditional_text(value)
+    if isinstance(value, list):
+        return [to_traditional_data(item) for item in value]
+    if isinstance(value, dict):
+        return {key: to_traditional_data(item) for key, item in value.items()}
+    return value
+
+
+def write_traditional_json(path, payload):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(to_traditional_data(payload), f, ensure_ascii=False, indent=2)
 
 
 def normalize_date(s):
@@ -285,6 +343,7 @@ def parse_now(html_pages):
                 "screen_count": screen_count,
                 "atmovies_id": movie_id,
                 "atmovies_url": f"http://www.atmovies.com.tw{href}",
+                "source_bucket": "now",
             })
 
     return movies
@@ -355,6 +414,7 @@ def parse_next(html_pages):
                 "screen_count": screen_count,
                 "atmovies_id": movie_id,
                 "atmovies_url": f"http://www.atmovies.com.tw{href}",
+                "source_bucket": "next",
             })
 
     return movies
@@ -365,6 +425,22 @@ def normalize_title_key(text):
     text = (text or "").strip().lower()
     text = re.sub(r"[\s\-–—:：'\"!?,.!&／/·・()\[\]{}]+", "", text)
     return text
+
+
+def to_trad_genre(genre):
+    return GENRE_MAP.get(genre, genre)
+
+
+def normalize_genres(genres):
+    seen = set()
+    result = []
+    for genre in genres:
+        trad = to_trad_genre(genre)
+        if not trad or trad in seen:
+            continue
+        seen.add(trad)
+        result.append(trad)
+    return result
 
 
 def has_han(text):
@@ -759,11 +835,14 @@ def parse_omdb_ratings(imdb_id):
     return {"imdb": "", "rt": "", "mc": ""}
 
 
-def classify_release_bucket(release_date, today_local):
+def classify_release_bucket(record, release_date, today_local, tmdb_has_tw_date=True):
     if not release_date:
         return ""
-    if today_local - timedelta(days=NOW_WINDOW_DAYS) <= release_date <= today_local:
-        return "now"
+    if record.get("source_bucket") == "now":
+        now_cutoff = today_local - timedelta(days=NOW_LOOKBACK_DAYS)
+        if tmdb_has_tw_date and now_cutoff <= release_date <= today_local:
+            return "now"
+        return ""
     if today_local + timedelta(days=1) <= release_date <= today_local + timedelta(days=SOON_WINDOW_DAYS):
         return "soon"
     return ""
@@ -775,7 +854,7 @@ def build_static_movie(record, payload, ratings):
     release_date = record.get("release_date_tw") or extract_tw_theatrical_date(payload) or payload.get("release_date", "")
     poster = f"{IMG_W}{payload['poster_path']}" if payload.get("poster_path") else ""
     backdrop = f"{IMG_BG}{payload['backdrop_path']}" if payload.get("backdrop_path") else ""
-    genres = [item.get("name", "") for item in payload.get("genres", []) if item.get("name")]
+    genres = normalize_genres([item.get("name", "") for item in payload.get("genres", []) if item.get("name")])
     countries = [item.get("name", "") for item in payload.get("production_countries", []) if item.get("name")]
     platforms = parse_watch_platforms(payload)
     cast = parse_cast(payload)
@@ -836,11 +915,11 @@ def build_static_movie(record, payload, ratings):
     }
 
 
-def should_keep_static_movie(movie):
+def should_keep_static_movie(movie, record):
     release_date = parse_iso_date(movie.get("releaseDate", ""))
     if not release_date:
         return False
-    if movie.get("platforms"):
+    if not record.get("atmovies_id") and movie.get("platforms"):
         return False
     duration = movie.get("duration") or 0
     if duration and duration <= 60:
@@ -911,10 +990,14 @@ def export_static_movie_data(output, generated_at_local):
     """輸出前端使用的完整靜態資料，避免瀏覽器直接打第三方 API"""
     movies = {"now": [], "soon": []}
     today_local = generated_at_local.date()
-    records = output["tmdb_has_tw_date"] + output["missing_tw_date"]
+    records = [
+        (record, True) for record in output["tmdb_has_tw_date"]
+    ] + [
+        (record, False) for record in output["missing_tw_date"]
+    ]
     existing_ids = set()
 
-    for idx, record in enumerate(records, 1):
+    for idx, (record, tmdb_has_tw_date) in enumerate(records, 1):
         tmdb_id = record.get("tmdb_id")
         if not tmdb_id:
             continue
@@ -924,9 +1007,14 @@ def export_static_movie_data(output, generated_at_local):
             continue
         ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
         movie = build_static_movie(record, payload, ratings)
-        if not should_keep_static_movie(movie):
+        if not should_keep_static_movie(movie, record):
             continue
-        bucket = classify_release_bucket(parse_iso_date(movie.get("releaseDate", "")), today_local)
+        bucket = classify_release_bucket(
+            record,
+            parse_iso_date(movie.get("releaseDate", "")),
+            today_local,
+            tmdb_has_tw_date,
+        )
         if not bucket:
             continue
         existing_ids.add(movie["id"])
@@ -953,12 +1041,13 @@ def export_static_movie_data(output, generated_at_local):
             "release_date_tw": tw_release_date,
             "atmovies_id": "",
             "atmovies_url": "",
+            "source_bucket": "next",
         }
         ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
         movie = build_static_movie(record, payload, ratings)
-        if not should_keep_static_movie(movie):
+        if not should_keep_static_movie(movie, record):
             continue
-        if classify_release_bucket(parse_iso_date(movie.get("releaseDate", "")), today_local) != "soon":
+        if classify_release_bucket(record, parse_iso_date(movie.get("releaseDate", "")), today_local) != "soon":
             continue
         existing_ids.add(movie["id"])
         movies["soon"].append(movie)
@@ -977,8 +1066,7 @@ def export_static_movie_data(output, generated_at_local):
         "movies": movies,
     }
 
-    with open(MOVIE_DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    write_traditional_json(MOVIE_DATA_FILE, payload)
 
     return MOVIE_DATA_FILE, payload
 
@@ -1085,8 +1173,7 @@ def export_atmovies_candidates(output, generated_at_local):
         "candidates": candidates,
     }
 
-    with open(ATMOVIES_CANDIDATES_FILE, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    write_traditional_json(ATMOVIES_CANDIDATES_FILE, payload)
 
     return ATMOVIES_CANDIDATES_FILE
 
@@ -1202,11 +1289,9 @@ def export_next_snapshot_and_diff(movies_next, generated_at_local):
     current_snapshot = build_next_snapshot_payload(movies_next, generated_at_local)
     diff_payload = build_next_diff_payload(previous_snapshot, current_snapshot, generated_at_local)
 
-    with open(ATMOVIES_NEXT_SNAPSHOT_FILE, "w", encoding="utf-8") as f:
-        json.dump(current_snapshot, f, ensure_ascii=False, indent=2)
+    write_traditional_json(ATMOVIES_NEXT_SNAPSHOT_FILE, current_snapshot)
 
-    with open(ATMOVIES_NEXT_DIFF_FILE, "w", encoding="utf-8") as f:
-        json.dump(diff_payload, f, ensure_ascii=False, indent=2)
+    write_traditional_json(ATMOVIES_NEXT_DIFF_FILE, diff_payload)
 
     return ATMOVIES_NEXT_SNAPSHOT_FILE, ATMOVIES_NEXT_DIFF_FILE, diff_payload
 
@@ -1295,8 +1380,7 @@ def main():
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    write_traditional_json(OUTPUT_FILE, output)
 
     log("")
     log("=== Summary ===")
@@ -1338,8 +1422,7 @@ def main():
     # 去重並排序
     whitelist_data["tmdb_ids"] = sorted(set(whitelist_data["tmdb_ids"]))
 
-    with open(whitelist_path, "w", encoding="utf-8") as f:
-        json.dump(whitelist_data, f, ensure_ascii=False, indent=2)
+    write_traditional_json(whitelist_path, whitelist_data)
     log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
 
     next_snapshot_path, next_diff_path, next_diff_payload = export_next_snapshot_and_diff(movies_next, generated_at_local)
