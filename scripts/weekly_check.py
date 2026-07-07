@@ -27,6 +27,7 @@ ATMOVIES_NEXT_INDEX = "http://www.atmovies.com.tw/movie/next/"
 TMDB_BASE = "https://api.themoviedb.org/3"
 TMDB_DELAY = 0.3
 SCRAPE_DELAY = 2
+TSV_LOOKBACK_DAYS = 14
 
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
 OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
@@ -53,6 +54,14 @@ def normalize_date(s):
         return None
     y, mo, d = m.groups()
     return f"{int(y):04d}-{int(mo):02d}-{int(d):02d}"
+
+
+def parse_iso_date(value):
+    """把 YYYY-MM-DD 轉成 date; 失敗回傳 None"""
+    try:
+        return datetime.strptime((value or "").strip(), "%Y-%m-%d").date()
+    except ValueError:
+        return None
 
 
 def extract_atmovies_id(href):
@@ -587,12 +596,28 @@ def tmdb_movie(tmdb_id):
         return None
 
 
+def tmdb_movie_url(tmdb_id):
+    """站內檢查用 TMDB 連結，固定帶 zh-TW"""
+    return f"https://www.themoviedb.org/movie/{tmdb_id}?language=zh-TW"
+
+
+def should_export_tsv_movie(movie, generated_at_local):
+    """TSV 只保留未來片與近兩週內的近期片，排除太舊的殘留項"""
+    release_date = parse_iso_date(movie.get("release_date_tw", ""))
+    if not release_date:
+        return True
+    cutoff = generated_at_local.date() - timedelta(days=TSV_LOOKBACK_DAYS)
+    return release_date >= cutoff
+
+
 def export_google_sheets_tsv(output, generated_at_local):
     """輸出給 Google Sheets 用的 TSV"""
     tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
     rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "TMDB 連結"]]
 
     for movie in output["missing_tw_date"]:
+        if not should_export_tsv_movie(movie, generated_at_local):
+            continue
         rows.append([
             "missing_tw_date",
             movie.get("title_zh", ""),
@@ -602,6 +627,8 @@ def export_google_sheets_tsv(output, generated_at_local):
         ])
 
     for movie in output["tmdb_not_found"]:
+        if not should_export_tsv_movie(movie, generated_at_local):
+            continue
         rows.append([
             "tmdb_not_found",
             movie.get("title_zh", ""),
@@ -719,7 +746,7 @@ def main():
         record = {
             **movie,
             "tmdb_id": tmdb_id,
-            "tmdb_url": f"https://www.themoviedb.org/movie/{tmdb_id}",
+            "tmdb_url": tmdb_movie_url(tmdb_id),
             "tmdb_title": tmdb_title,
             "tmdb_release_year": tmdb_year,
         }
