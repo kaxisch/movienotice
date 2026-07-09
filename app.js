@@ -1257,19 +1257,276 @@ function switchTab(t) {
   if (countEl && filtered) countEl.textContent = (filtered[t] ? filtered[t].length : 0) + " 部";
 }
 
+var modalSwipeState = {
+  tracking: false,
+  active: false,
+  pointerId: null,
+  startX: 0,
+  startY: 0,
+  deltaX: 0,
+  deltaY: 0,
+  lastX: 0,
+  lastTime: 0,
+  velocityX: 0,
+  closing: false
+};
+var lockedBodyScrollY = 0;
+var modalVerticalTouchState = {
+  active: false,
+  pointerId: null,
+  startY: 0,
+  lastY: 0
+};
+
+function isTouchModalViewport() {
+  return window.matchMedia("(max-width: 1024px)").matches;
+}
+
+function resetModalSwipe() {
+  modalSwipeState.tracking = false;
+  modalSwipeState.active = false;
+  modalSwipeState.pointerId = null;
+  modalSwipeState.startX = 0;
+  modalSwipeState.startY = 0;
+  modalSwipeState.deltaX = 0;
+  modalSwipeState.deltaY = 0;
+  modalSwipeState.lastX = 0;
+  modalSwipeState.lastTime = 0;
+  modalSwipeState.velocityX = 0;
+  modalSwipeState.closing = false;
+  var modal = document.getElementById("detail-modal");
+  if (!modal) return;
+  modal.classList.remove("swiping");
+  modal.classList.remove("swipe-closing");
+  modal.style.removeProperty("--modal-swipe-offset");
+  modal.style.removeProperty("--modal-swipe-progress");
+}
+
+function lockBodyScroll() {
+  lockedBodyScrollY = window.scrollY || window.pageYOffset || 0;
+  document.documentElement.style.overflow = "hidden";
+  document.documentElement.style.overscrollBehavior = "none";
+  document.body.style.position = "fixed";
+  document.body.style.top = -lockedBodyScrollY + "px";
+  document.body.style.left = "0";
+  document.body.style.right = "0";
+  document.body.style.width = "100%";
+  document.body.style.overflow = "hidden";
+}
+
+function unlockBodyScroll() {
+  document.documentElement.style.overflow = "";
+  document.documentElement.style.overscrollBehavior = "";
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.left = "";
+  document.body.style.right = "";
+  document.body.style.width = "";
+  document.body.style.overflow = "";
+  window.scrollTo(0, lockedBodyScrollY || 0);
+}
+
+function finishSwipeClose() {
+  currentModalMovieId = null;
+  var modal = document.getElementById("detail-modal");
+  if (modal) modal.classList.remove("open");
+  resetModalSwipe();
+  unlockBodyScroll();
+}
+
+function animateModalSwipeClose() {
+  var modal = document.getElementById("detail-modal");
+  if (!modal || modalSwipeState.closing) return;
+  modalSwipeState.closing = true;
+  modal.classList.remove("swiping");
+  modal.classList.add("swipe-closing");
+  modal.style.setProperty("--modal-swipe-progress", "0");
+  window.requestAnimationFrame(function() {
+    modal.style.setProperty("--modal-swipe-offset", window.innerWidth + "px");
+  });
+  window.setTimeout(finishSwipeClose, 240);
+}
+
+function buildModalHeroSlot(imageUrl) {
+  if (!imageUrl) return "";
+  return '<img src="' + escHtml(imageUrl) + '" style="position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;object-position:top center;opacity:1;filter:blur(30px);will-change:transform"/>' +
+    '<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 44%,rgba(0,0,0,0.30) 58%,rgba(0,0,0,0.70) 79%,rgba(0,0,0,0.94) 100%)"></div>';
+}
+
+function buildModalLoadingState(movie) {
+  var heroImage = movie && (movie.backdrop || movie.poster) ? (movie.backdrop || movie.poster) : "";
+  var title = movie && (movie.titleZh || movie.titleEn) ? (movie.titleZh || movie.titleEn) : "載入中";
+  var subtitle = [];
+  if (movie && movie.releaseDate) subtitle.push(formatDate(movie.releaseDate));
+  if (movie && movie.duration) subtitle.push(movie.duration + "分鐘");
+  return {
+    heroSlot: buildModalHeroSlot(heroImage),
+    content: '<div class="fade-in"><div class="modal-hero"><div class="modal-hero-media">' +
+      (heroImage
+        ? '<img class="modal-hero-img" src="' + escHtml(heroImage) + '" fetchpriority="high" decoding="async"/>'
+        : '<div style="width:100%;height:100%" class="skeleton"></div>') +
+      '</div><div class="modal-hero-fade"></div><div class="modal-hero-info"><div class="modal-info-group">' +
+      '<h2 class="modal-title">' + escHtml(title) + '</h2>' +
+      '<p class="modal-subtitle">' + escHtml(subtitle.join(' · ') || "載入詳細資訊中") + '</p>' +
+      '</div></div></div><div class="modal-body"><div style="display:flex;align-items:center;justify-content:center;min-height:180px"><div class="skeleton" style="width:64px;height:64px;border-radius:50%"></div></div></div></div>'
+  };
+}
+
+function shouldPreventModalOverscroll(modalScroll, deltaY) {
+  var maxScrollTop = modalScroll.scrollHeight - modalScroll.clientHeight;
+  var atTop = modalScroll.scrollTop <= 0;
+  var atBottom = modalScroll.scrollTop >= maxScrollTop - 1;
+  return (atTop && deltaY > 0) || (atBottom && deltaY < 0);
+}
+
+function initModalSwipe() {
+  var modal = document.getElementById("detail-modal");
+  var modalScroll = modal ? modal.querySelector(".modal-scroll") : null;
+  if (!modal || !modalScroll) return;
+
+  modalScroll.addEventListener("touchstart", function(e) {
+    if (!isTouchModalViewport() || !modal.classList.contains("open")) return;
+    if (e.touches.length !== 1) return;
+    var verticalTouch = e.touches[0];
+    modalVerticalTouchState.active = true;
+    modalVerticalTouchState.pointerId = verticalTouch.identifier;
+    modalVerticalTouchState.startY = verticalTouch.clientY;
+    modalVerticalTouchState.lastY = verticalTouch.clientY;
+    if (e.target.closest(".cast-row")) return;
+    var touch = e.touches[0];
+    if (modalSwipeState.closing) return;
+    modalSwipeState.tracking = true;
+    modalSwipeState.active = false;
+    modalSwipeState.pointerId = touch.identifier;
+    modalSwipeState.startX = touch.clientX;
+    modalSwipeState.startY = touch.clientY;
+    modalSwipeState.deltaX = 0;
+    modalSwipeState.deltaY = 0;
+    modalSwipeState.lastX = touch.clientX;
+    modalSwipeState.lastTime = Date.now();
+    modalSwipeState.velocityX = 0;
+  }, { passive: true });
+
+  modal.addEventListener("touchmove", function(e) {
+    if (!isTouchModalViewport() || !modal.classList.contains("open")) return;
+    if (!modalVerticalTouchState.active) return;
+    var verticalTouch = null;
+    for (var i = 0; i < e.touches.length; i++) {
+      if (e.touches[i].identifier === modalVerticalTouchState.pointerId) {
+        verticalTouch = e.touches[i];
+        break;
+      }
+    }
+    if (!verticalTouch) return;
+    var deltaYFromLast = verticalTouch.clientY - modalVerticalTouchState.lastY;
+    modalVerticalTouchState.lastY = verticalTouch.clientY;
+    if (shouldPreventModalOverscroll(modalScroll, deltaYFromLast)) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  modalScroll.addEventListener("touchmove", function(e) {
+    if (!isTouchModalViewport() || !modal.classList.contains("open")) return;
+    var verticalTouch = null;
+    for (var vt = 0; vt < e.touches.length; vt++) {
+      if (e.touches[vt].identifier === modalVerticalTouchState.pointerId) {
+        verticalTouch = e.touches[vt];
+        break;
+      }
+    }
+    if (verticalTouch) {
+      var deltaYFromLast = verticalTouch.clientY - modalVerticalTouchState.lastY;
+      if (shouldPreventModalOverscroll(modalScroll, deltaYFromLast)) {
+        e.preventDefault();
+      }
+    }
+    if (!modalSwipeState.tracking || !isTouchModalViewport() || !modal.classList.contains("open")) return;
+    var touch = null;
+    for (var i = 0; i < e.touches.length; i++) {
+      if (e.touches[i].identifier === modalSwipeState.pointerId) {
+        touch = e.touches[i];
+        break;
+      }
+    }
+    if (!touch) return;
+    var now = Date.now();
+    var dt = Math.max(now - modalSwipeState.lastTime, 16);
+    modalSwipeState.velocityX = (touch.clientX - modalSwipeState.lastX) / dt;
+    modalSwipeState.lastX = touch.clientX;
+    modalSwipeState.lastTime = now;
+    modalSwipeState.deltaX = touch.clientX - modalSwipeState.startX;
+    modalSwipeState.deltaY = touch.clientY - modalSwipeState.startY;
+    if (!modalSwipeState.active) {
+      if (modalSwipeState.deltaX <= 0) return;
+      if (Math.abs(modalSwipeState.deltaY) > Math.abs(modalSwipeState.deltaX)) return;
+      if (modalSwipeState.deltaX < 12) return;
+      modalSwipeState.active = true;
+      modal.classList.add("swiping");
+    }
+    if (modalSwipeState.deltaX <= 0) {
+      modal.style.setProperty("--modal-swipe-offset", "0px");
+      modal.style.setProperty("--modal-swipe-progress", "0");
+      return;
+    }
+    if (Math.abs(modalSwipeState.deltaY) > Math.abs(modalSwipeState.deltaX)) {
+      modal.style.setProperty("--modal-swipe-offset", "0px");
+      modal.style.setProperty("--modal-swipe-progress", "0");
+      return;
+    }
+    e.preventDefault();
+    var easedOffset = modalSwipeState.deltaX * 0.16;
+    var clampedOffset = Math.min(easedOffset, 48);
+    modal.style.setProperty("--modal-swipe-offset", clampedOffset + "px");
+    modal.style.setProperty("--modal-swipe-progress", "0");
+  }, { passive: false });
+
+  function finishSwipe() {
+    if (!modalSwipeState.tracking) return;
+    modalSwipeState.tracking = false;
+    if (!modalSwipeState.active) {
+      modalSwipeState.pointerId = null;
+      return;
+    }
+    var shouldClose =
+      Math.abs(modalSwipeState.deltaX) > Math.abs(modalSwipeState.deltaY) * 1.15 &&
+      (modalSwipeState.deltaX > 26 || (modalSwipeState.deltaX > 14 && modalSwipeState.velocityX > 0.35));
+    modalSwipeState.active = false;
+    modalSwipeState.pointerId = null;
+    if (shouldClose) {
+      animateModalSwipeClose();
+      return;
+    }
+    modal.classList.remove("swiping");
+    modal.style.setProperty("--modal-swipe-offset", "0px");
+    modal.style.setProperty("--modal-swipe-progress", "0");
+  }
+
+  modalScroll.addEventListener("touchend", finishSwipe);
+  modalScroll.addEventListener("touchend", function() {
+    modalVerticalTouchState.active = false;
+    modalVerticalTouchState.pointerId = null;
+  });
+  modalScroll.addEventListener("touchcancel", function() {
+    modalVerticalTouchState.active = false;
+    modalVerticalTouchState.pointerId = null;
+    resetModalSwipe();
+  });
+}
+
 function openModal(id) {
   if (!id) return;
   var modal = document.getElementById("detail-modal");
   var modalScroll = modal.querySelector(".modal-scroll");
-  currentModalMovieId = id;
-  modal.classList.add("open");
-  document.body.style.overflow = "hidden";
-  if (modalScroll) modalScroll.scrollTop = 0;
-  document.getElementById("modal-hero-slot").innerHTML = '';
-  document.getElementById("modal-content").innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:60vh"><div class="skeleton" style="width:64px;height:64px;border-radius:50%"></div></div>';
   var movie = null;
   ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.id === id) movie = m; }); });
   if (!movie) movie = {};
+  currentModalMovieId = id;
+  modal.classList.add("open");
+  lockBodyScroll();
+  if (modalScroll) modalScroll.scrollTop = 0;
+  var loadingState = buildModalLoadingState(movie);
+  document.getElementById("modal-hero-slot").innerHTML = loadingState.heroSlot;
+  document.getElementById("modal-content").innerHTML = loadingState.content;
   getDetail(id).then(function(detail) {
     if (currentModalMovieId !== id || !modal.classList.contains("open")) return;
     var imdbRating = movie.imdb || "";
@@ -1317,7 +1574,8 @@ function renderModal(movie, detail, imdbRating) {
   ];
   var metaHTML = "";
   for (var mr = 0; mr < metaRows.length; mr++) metaHTML += '<div class="meta-row"><span class="meta-key">' + metaRows[mr][0] + '</span><span class="meta-val">' + escHtml(metaRows[mr][1]) + '</span></div>';
-  var bdHTML = detail.backdrop ? '<img class="modal-hero-img" src="' + detail.backdrop + '"/>' : '<div style="width:100%;height:100%;background:rgba(255,255,255,0.05)"></div>';
+  var heroImage = detail.backdrop || movie.backdrop || movie.poster || "";
+  var bdHTML = heroImage ? '<img class="modal-hero-img" src="' + escHtml(heroImage) + '" fetchpriority="high" decoding="async"/>' : '<div style="width:100%;height:100%;background:rgba(255,255,255,0.05)"></div>';
   var rtRating = movie.rt || "";
   var mcRating = movie.mc || "";
   var ratingItems = [];
@@ -1326,11 +1584,7 @@ function renderModal(movie, detail, imdbRating) {
   if (mcRating) ratingItems.push('<span class="modal-rating-item"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="6" cy="6" r="5.3" stroke="rgba(255,255,255,0.6)" stroke-width="0.9"/><text x="6" y="8.2" text-anchor="middle" font-size="7.5" font-family="sans-serif" fill="rgba(255,255,255,0.6)">m</text></svg> MT <span class="val">' + escHtml(mcRating) + '</span></span>');
   if (detail.voteAverage) ratingItems.push('<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>TMDB <span class="val">' + tmdbScore(detail.voteAverage) + '</span></span>');
   var ratingsHTML = ratingItems.join('<span class="modal-rating-divider"></span>');
-  var bgHTML = detail.backdrop
-    ? '<img src="' + detail.backdrop + '" style="position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;object-position:top center;opacity:1;filter:blur(30px);will-change:transform"/>' +
-      '<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 44%,rgba(0,0,0,0.30) 58%,rgba(0,0,0,0.70) 79%,rgba(0,0,0,0.94) 100%)"></div>' +
-      ''
-    : '';
+  var bgHTML = buildModalHeroSlot(heroImage);
   var html = '<div class="fade-in"><div class="modal-hero"><div class="modal-hero-media">' + bdHTML +
     '</div><div class="modal-hero-fade"></div>' +
     '<div class="modal-hero-info">' +
@@ -1350,7 +1604,9 @@ function renderModal(movie, detail, imdbRating) {
   document.getElementById("modal-content").innerHTML = html;
 }
 
-function closeModal() { currentModalMovieId = null; document.getElementById("detail-modal").classList.remove("open"); document.body.style.overflow = ""; }
+function closeModal() {
+  finishSwipeClose();
+}
 function playTrailer(key) {
   var isLocal = location.protocol === "file:";
   if (isLocal) {
@@ -1372,6 +1628,7 @@ document.addEventListener("click", function(e) {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+  initModalSwipe();
   requestAnimationFrame(function() { moveTabIndicator(currentTab); });
   bindSearchInput(document.getElementById("tab-search"));
   var mSearch = document.getElementById("mobile-tab-search");

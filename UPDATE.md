@@ -82,3 +82,11 @@ git add app.js index.html sw.js scripts/weekly_check.py
 - Regular visitors do not consume TMDB / OMDb API usage
 - API usage happens when you run `scripts/weekly_check.py`
 - `data/atmovies-next-diff.json` compares this run with the previous `近期上映` snapshot and shows `added` / `removed` / `changed`
+
+## Recent UI Notes
+
+- `modal` now supports mobile / tablet right-swipe close
+- right-swipe close timing was tuned to feel smoother and slightly slower
+- opening `modal` now shows a temporary hero image first, so text does not appear much earlier than the image
+- iPhone Safari `modal` scrolling was adjusted to reduce background page exposure during vertical drag / overscroll
+- bottom spacing in the `其他資訊` area was increased to `56px` plus safe-area inset on mobile
