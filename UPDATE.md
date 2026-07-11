@@ -76,6 +76,40 @@ If code changed too, also add:
 git add app.js index.html sw.js scripts/weekly_check.py
 ```
 
+## 6. Automated Google Sheets weekly run
+
+GitHub Actions can run the crawler every Wednesday and Saturday at 09:00 Asia/Taipei:
+
+```yaml
+cron: "0 1 * * 3,6"
+```
+
+The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets:
+
+- Drive folder: `tw movie` (prefer setting the exact folder id)
+- Spreadsheet: `movienotice_weekly`
+- Worksheet per run: `YYYY-MM-DD`
+- Columns: `類別`, `台灣中文片名`, `台灣上映日期`, `原文片名`, `TMDB 連結`
+
+Required GitHub Secrets:
+
+```env
+TMDB_API_KEY=...
+OMDB_API_KEYS=key1,key2,key3,key4
+GOOGLE_SERVICE_ACCOUNT_JSON={...}
+GOOGLE_DRIVE_FOLDER_ID=...
+```
+
+Optional GitHub Variables:
+
+```env
+GOOGLE_DRIVE_FOLDER_NAME=tw movie
+GOOGLE_SPREADSHEET_NAME=movienotice_weekly
+```
+
+Share the `tw movie` folder with the service account email and grant Editor access.
+If the same date is published again, the existing date worksheet is cleared and rewritten.
+
 ## Notes
 
 - The public site now reads static data from `data/movie-data.json`

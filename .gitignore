@@ -7,6 +7,9 @@ __pycache__/
 # 環境變數和 API keys (絕對不能 commit)
 .env
 scripts/.env
+google-service-account.json
+scripts/google-service-account.json
+*service-account*.json
 
 # 爬蟲產出的資料 (法律風險，不公開)
 data/missing-tw-dates.json
