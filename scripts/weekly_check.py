@@ -40,6 +40,7 @@ ATMOVIES_CANDIDATES_FILE = OUTPUT_DIR / "atmovies-candidates.json"
 MOVIE_DATA_FILE = OUTPUT_DIR / "movie-data.json"
 ATMOVIES_NEXT_SNAPSHOT_FILE = OUTPUT_DIR / "atmovies-next-snapshot.json"
 ATMOVIES_NEXT_DIFF_FILE = OUTPUT_DIR / "atmovies-next-diff.json"
+MANUAL_RELEASES_FILE = OUTPUT_DIR / "manual-releases.json"
 IMG_W = "https://image.tmdb.org/t/p/w500"
 IMG_BG = "https://image.tmdb.org/t/p/w1280"
 NOW_LOOKBACK_DAYS = 180
@@ -838,6 +839,13 @@ def parse_omdb_ratings(imdb_id):
 def classify_release_bucket(record, release_date, today_local, tmdb_has_tw_date=True):
     if not release_date:
         return ""
+    if record.get("source_bucket") == "manual":
+        now_cutoff = today_local - timedelta(days=NOW_LOOKBACK_DAYS)
+        if now_cutoff <= release_date <= today_local:
+            return "now"
+        if today_local + timedelta(days=1) <= release_date <= today_local + timedelta(days=SOON_WINDOW_DAYS):
+            return "soon"
+        return ""
     if record.get("source_bucket") == "now":
         now_cutoff = today_local - timedelta(days=NOW_LOOKBACK_DAYS)
         if tmdb_has_tw_date and now_cutoff <= release_date <= today_local:
@@ -912,6 +920,7 @@ def build_static_movie(record, payload, ratings):
         "tmdbUrl": tmdb_movie_url(tmdb_id),
         "atmoviesId": record.get("atmovies_id", ""),
         "atmoviesUrl": record.get("atmovies_url", ""),
+        "sourceBucket": record.get("source_bucket", ""),
     }
 
 
@@ -919,12 +928,25 @@ def should_keep_static_movie(movie, record):
     release_date = parse_iso_date(movie.get("releaseDate", ""))
     if not release_date:
         return False
-    if not record.get("atmovies_id") and movie.get("platforms"):
+    if record.get("source_bucket") != "manual" and not record.get("atmovies_id") and movie.get("platforms"):
         return False
     duration = movie.get("duration") or 0
     if duration and duration <= 60:
         return False
     return True
+
+
+def load_manual_releases():
+    """載入人工保留片清單；用來補開眼短暫下架或漏列的院線片"""
+    if not MANUAL_RELEASES_FILE.exists():
+        return []
+    try:
+        with open(MANUAL_RELEASES_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, list) else []
+    except Exception as e:
+        log(f"  Failed to load manual releases: {e}")
+        return []
 
 
 def dedup_discover_results(items):
@@ -1053,6 +1075,37 @@ def export_static_movie_data(output, generated_at_local):
         movies["soon"].append(movie)
         time.sleep(TMDB_DELAY)
 
+    manual_releases = load_manual_releases()
+    for idx, manual in enumerate(manual_releases, 1):
+        tmdb_id = manual.get("tmdb_id")
+        if not tmdb_id or tmdb_id in existing_ids:
+            continue
+        log(f"Manual release [{idx}/{len(manual_releases)}] TMDB {tmdb_id}")
+        payload = tmdb_movie_full(tmdb_id)
+        if not payload:
+            continue
+        release_date_tw = manual.get("release_date_tw") or extract_tw_theatrical_date(payload) or payload.get("release_date", "")
+        record = {
+            "tmdb_id": tmdb_id,
+            "tmdb_title": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
+            "title_zh": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
+            "title_en": manual.get("title_en") or payload.get("original_title") or "",
+            "release_date_tw": release_date_tw,
+            "atmovies_id": manual.get("atmovies_id", ""),
+            "atmovies_url": manual.get("atmovies_url", ""),
+            "source_bucket": "manual",
+        }
+        ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
+        movie = build_static_movie(record, payload, ratings)
+        if not should_keep_static_movie(movie, record):
+            continue
+        bucket = classify_release_bucket(record, parse_iso_date(movie.get("releaseDate", "")), today_local)
+        if not bucket:
+            continue
+        existing_ids.add(movie["id"])
+        movies[bucket].append(movie)
+        time.sleep(TMDB_DELAY)
+
     movies["now"].sort(key=lambda item: item.get("releaseDate", ""), reverse=True)
     movies["soon"].sort(key=lambda item: item.get("releaseDate", ""))
 
@@ -1131,6 +1184,27 @@ def append_next_diff_tsv_rows(rows, next_diff_payload):
         ])
 
 
+def append_manual_release_tsv_rows(rows, generated_at_local):
+    today_local = generated_at_local.date()
+    for manual in load_manual_releases():
+        release_date = parse_iso_date(manual.get("release_date_tw", ""))
+        if not release_date:
+            continue
+        now_cutoff = today_local - timedelta(days=NOW_LOOKBACK_DAYS)
+        soon_cutoff = today_local + timedelta(days=SOON_WINDOW_DAYS)
+        if release_date < now_cutoff or release_date > soon_cutoff:
+            continue
+        rows.append([
+            "人工保留片",
+            manual.get("title_zh", ""),
+            manual.get("release_date_tw", ""),
+            manual.get("title_en", ""),
+            tmdb_movie_url(manual.get("tmdb_id")) if manual.get("tmdb_id") else "",
+            "",
+            manual.get("note", ""),
+        ])
+
+
 def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_diff_payload=None):
     """輸出給 Google Sheets 用的 TSV"""
     tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
@@ -1163,6 +1237,7 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_d
         ])
 
     append_next_diff_tsv_rows(rows, next_diff_payload)
+    append_manual_release_tsv_rows(rows, generated_at_local)
 
     movie_buckets = movie_data.get("movies", {}) if movie_data else {}
 

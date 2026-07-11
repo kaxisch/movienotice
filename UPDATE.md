@@ -98,8 +98,14 @@ The sheet includes these review categories:
 - `近期上映新增`
 - `近期上映清單移除` (removed from Atmovies NEXT only; it may still be on the site as `現正熱映`)
 - `近期上映資料變更`
+- `人工保留片`
 - `現正熱映`
 - `即將上映`
+
+`data/manual-releases.json` stores confirmed theatrical releases that should stay visible
+even when they are not currently listed by Atmovies. These rows are deduplicated by TMDB ID,
+so if Atmovies later lists the movie again, the Atmovies-sourced entry wins and the manual
+row only acts as backup.
 
 Recommended setup: create the `movienotice_weekly` spreadsheet manually in your Drive,
 share it with the service account email as Editor, and set `GOOGLE_SPREADSHEET_ID`.
