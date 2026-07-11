@@ -91,12 +91,22 @@ The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets:
 - Worksheet per run: `YYYY-MM-DD`
 - Columns: `類別`, `台灣中文片名`, `台灣上映日期`, `原文片名`, `TMDB 連結`
 
+Recommended setup: create the `movienotice_weekly` spreadsheet manually in your Drive,
+share it with the service account email as Editor, and set `GOOGLE_SPREADSHEET_ID`.
+This keeps the file owned by your Google account and avoids service-account Drive quota issues.
+
 Required GitHub Secrets:
 
 ```env
 TMDB_API_KEY=...
 OMDB_API_KEYS=key1,key2,key3,key4
 GOOGLE_SERVICE_ACCOUNT_JSON={...}
+GOOGLE_SPREADSHEET_ID=...
+```
+
+Optional fallback secret if the workflow should find/create the spreadsheet by folder:
+
+```env
 GOOGLE_DRIVE_FOLDER_ID=...
 ```
 

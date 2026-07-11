@@ -58,6 +58,11 @@ def parse_args():
         help=f"Google Sheet file name. Default: {DEFAULT_SPREADSHEET_NAME}",
     )
     parser.add_argument(
+        "--spreadsheet-id",
+        default=os.environ.get("GOOGLE_SPREADSHEET_ID", ""),
+        help="Existing Google Spreadsheet id. Preferred because the file stays owned by your Drive account.",
+    )
+    parser.add_argument(
         "--folder-id",
         default=os.environ.get("GOOGLE_DRIVE_FOLDER_ID", ""),
         help="Target Google Drive folder id. Preferred for automation.",
@@ -184,6 +189,14 @@ def create_spreadsheet(drive_service, folder_id, spreadsheet_name):
     }
     return drive_service.files().create(
         body=metadata,
+        fields="id,name,webViewLink",
+        supportsAllDrives=True,
+    ).execute()
+
+
+def get_spreadsheet_file(drive_service, spreadsheet_id):
+    return drive_service.files().get(
+        fileId=spreadsheet_id,
         fields="id,name,webViewLink",
         supportsAllDrives=True,
     ).execute()
@@ -340,13 +353,17 @@ def publish():
     drive_service = build("drive", "v3", credentials=credentials, cache_discovery=False)
     sheets_service = build("sheets", "v4", credentials=credentials, cache_discovery=False)
 
-    folder_id = resolve_folder_id(drive_service, args.folder_id, args.folder_name)
-    spreadsheet = find_spreadsheet(drive_service, folder_id, args.spreadsheet_name)
-    if spreadsheet:
-        log(f"Using spreadsheet: {spreadsheet['name']} ({spreadsheet['id']})")
+    if args.spreadsheet_id:
+        spreadsheet = get_spreadsheet_file(drive_service, args.spreadsheet_id)
+        log(f"Using spreadsheet by id: {spreadsheet['name']} ({spreadsheet['id']})")
     else:
-        spreadsheet = create_spreadsheet(drive_service, folder_id, args.spreadsheet_name)
-        log(f"Created spreadsheet: {spreadsheet['name']} ({spreadsheet['id']})")
+        folder_id = resolve_folder_id(drive_service, args.folder_id, args.folder_name)
+        spreadsheet = find_spreadsheet(drive_service, folder_id, args.spreadsheet_name)
+        if spreadsheet:
+            log(f"Using spreadsheet: {spreadsheet['name']} ({spreadsheet['id']})")
+        else:
+            spreadsheet = create_spreadsheet(drive_service, folder_id, args.spreadsheet_name)
+            log(f"Created spreadsheet: {spreadsheet['name']} ({spreadsheet['id']})")
 
     spreadsheet_id = spreadsheet["id"]
     sheet_id = ensure_date_sheet(sheets_service, spreadsheet_id, run_date)

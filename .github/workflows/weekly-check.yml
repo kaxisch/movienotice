@@ -37,6 +37,7 @@ jobs:
       - name: Publish TSV to Google Sheets
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
           GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
           GOOGLE_DRIVE_FOLDER_NAME: ${{ vars.GOOGLE_DRIVE_FOLDER_NAME || 'tw movie' }}
           GOOGLE_SPREADSHEET_NAME: ${{ vars.GOOGLE_SPREADSHEET_NAME || 'movienotice_weekly' }}
