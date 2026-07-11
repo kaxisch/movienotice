@@ -1080,10 +1080,61 @@ def should_export_tsv_movie(movie, generated_at_local):
     return release_date >= cutoff
 
 
-def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
+def append_next_diff_tsv_rows(rows, next_diff_payload):
+    """把開眼近期上映清單差異加到 Google Sheets TSV，方便人工檢查"""
+    if not next_diff_payload:
+        return
+
+    for movie in next_diff_payload.get("added", []):
+        rows.append([
+            "近期上映新增",
+            movie.get("title_zh", ""),
+            movie.get("release_date_tw", ""),
+            movie.get("title_en", ""),
+            movie.get("atmovies_url", ""),
+            "",
+            "本次出現在開眼近期上映清單",
+        ])
+
+    for movie in next_diff_payload.get("removed", []):
+        rows.append([
+            "近期上映清單移除",
+            movie.get("title_zh", ""),
+            movie.get("release_date_tw", ""),
+            movie.get("title_en", ""),
+            movie.get("atmovies_url", ""),
+            "",
+            "只代表從開眼近期上映清單消失；可能已轉現正熱映",
+        ])
+
+    for item in next_diff_payload.get("changed", []):
+        before = item.get("before", {})
+        after = item.get("after", {})
+        changed_fields = []
+        if before.get("release_date_tw") != after.get("release_date_tw"):
+            changed_fields.append("上映日期")
+        if before.get("screen_count", 0) != after.get("screen_count", 0):
+            changed_fields.append("廳數")
+        if before.get("title_zh", "") != after.get("title_zh", ""):
+            changed_fields.append("中文片名")
+        if before.get("title_en", "") != after.get("title_en", ""):
+            changed_fields.append("原文片名")
+
+        rows.append([
+            "近期上映資料變更",
+            after.get("title_zh", "") or before.get("title_zh", ""),
+            after.get("release_date_tw", ""),
+            after.get("title_en", "") or before.get("title_en", ""),
+            after.get("atmovies_url", "") or before.get("atmovies_url", ""),
+            before.get("release_date_tw", ""),
+            "、".join(changed_fields) if changed_fields else "資料有變更",
+        ])
+
+
+def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_diff_payload=None):
     """輸出給 Google Sheets 用的 TSV"""
     tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
-    rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "TMDB 連結"]]
+    rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "連結", "原上映日期", "備註"]]
 
     for movie in output["missing_tw_date"]:
         if not should_export_tsv_movie(movie, generated_at_local):
@@ -1094,6 +1145,8 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
             movie.get("release_date_tw", ""),
             movie.get("tmdb_title", ""),
             movie.get("tmdb_url", ""),
+            "",
+            "",
         ])
 
     for movie in output["tmdb_not_found"]:
@@ -1105,7 +1158,11 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
             movie.get("release_date_tw", ""),
             movie.get("title_en", ""),
             "",
+            "",
+            "",
         ])
+
+    append_next_diff_tsv_rows(rows, next_diff_payload)
 
     movie_buckets = movie_data.get("movies", {}) if movie_data else {}
 
@@ -1116,6 +1173,8 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
             movie.get("releaseDate", ""),
             movie.get("titleEn", ""),
             "",
+            "",
+            "",
         ])
 
     for movie in movie_buckets.get("soon", []):
@@ -1124,6 +1183,8 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
             movie.get("titleZh", ""),
             movie.get("releaseDate", ""),
             movie.get("titleEn", ""),
+            "",
+            "",
             "",
         ])
 
@@ -1438,7 +1499,7 @@ def main():
     log(f"Atmovies candidates written to: {candidates_path}")
     movie_data_path, movie_data_payload = export_static_movie_data(output, generated_at_local)
     log(f"Static movie data written to: {movie_data_path}")
-    tsv_path = export_google_sheets_tsv(output, generated_at_local, movie_data_payload)
+    tsv_path = export_google_sheets_tsv(output, generated_at_local, movie_data_payload, next_diff_payload)
     log(f"Google Sheets TSV written to: {tsv_path}")
 
 

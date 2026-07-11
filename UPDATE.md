@@ -89,7 +89,17 @@ The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets:
 - Drive folder: `tw movie` (prefer setting the exact folder id)
 - Spreadsheet: `movienotice_weekly`
 - Worksheet per run: `YYYY-MM-DD`
-- Columns: `類別`, `台灣中文片名`, `台灣上映日期`, `原文片名`, `TMDB 連結`
+- Columns: `類別`, `台灣中文片名`, `台灣上映日期`, `原文片名`, `連結`, `原上映日期`, `備註`
+
+The sheet includes these review categories:
+
+- `missing_tw_date`
+- `tmdb_not_found`
+- `近期上映新增`
+- `近期上映清單移除` (removed from Atmovies NEXT only; it may still be on the site as `現正熱映`)
+- `近期上映資料變更`
+- `現正熱映`
+- `即將上映`
 
 Recommended setup: create the `movienotice_weekly` spreadsheet manually in your Drive,
 share it with the service account email as Editor, and set `GOOGLE_SPREADSHEET_ID`.
