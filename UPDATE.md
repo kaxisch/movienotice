@@ -120,6 +120,23 @@ GOOGLE_SPREADSHEET_NAME=movienotice_weekly
 Share the `tw movie` folder with the service account email and grant Editor access.
 If the same date is published again, the existing date worksheet is cleared and rewritten.
 
+The workflow also validates the generated site data before updating the public site.
+It fails without publishing site changes if:
+
+- `movie-data.json` is not valid JSON or required movie fields are missing
+- `現正熱映` or `即將上映` drops below 20 movies
+- total site movies drops below 50
+- total site movies drops below 50% of the previous committed site data
+- `missing_tw_date` or `tmdb_not_found` exceeds 40 items
+
+When validation passes, GitHub Actions commits these site data files back to `main`:
+
+- `data/movie-data.json`
+- `data/tw-whitelist.json`
+- `data/atmovies-candidates.json`
+- `data/atmovies-next-snapshot.json`
+- `data/atmovies-next-diff.json`
+
 ## Notes
 
 - The public site now reads static data from `data/movie-data.json`
