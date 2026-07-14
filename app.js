@@ -906,6 +906,15 @@ function enrichBackground(rawData, skipNowFilter, deferInitialRender, forceRefre
   });
 }
 
+function openMovieLink(event, id) {
+  if (event && (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) {
+    return true;
+  }
+  if (event) event.preventDefault();
+  openModal(id);
+  return false;
+}
+
 function cardHTML(m, showRatings) {
   var cardImage = m.poster || m.backdrop || "";
   var useBackdropImage = !!(!m.poster && m.backdrop) || !!m.posterIsBackdrop;
@@ -928,11 +937,12 @@ function cardHTML(m, showRatings) {
     metaHTML += '</div>';
   }
   metaHTML += '</div>';
-  return '<div class="movie-card fade-in" id="card-' + m.id + '">' +
-    '<div class="card-img-wrap" onclick="openModal(' + m.id + ')">' + imgHTML +
+  var href = escHtml(movieDetailHref(m));
+  return '<a class="movie-card movie-link fade-in" id="card-' + m.id + '" href="' + href + '" onclick="return openMovieLink(event,' + m.id + ')">' +
+    '<div class="card-img-wrap">' + imgHTML +
     '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(normalizeGenreList(m.genre).slice(0,2).join(' / ')) + '</span></div></div>' +
     '<div class="card-info"><p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn +
-    '<div class="card-spacer"></div>' + metaHTML + '</div></div>';
+    '<div class="card-spacer"></div>' + metaHTML + '</div></a>';
 }
 
 function skeletonHTML() {
@@ -977,11 +987,12 @@ function listRowHTML(m, showRatings) {
     badgesHTML += '<span class="badge-mc" id="mc-' + m.id + '"' + mcStyle + '>MT<span>' + escHtml(m.mc || '') + '</span></span>';
     if (m.voteAverage) badgesHTML += '<span class="badge-tmdb">TMDB ' + tmdbScore(m.voteAverage) + '</span>';
   }
-  return '<div class="list-item fade-in" id="card-' + m.id + '" onclick="openModal(' + m.id + ')">' +
+  var href = escHtml(movieDetailHref(m));
+  return '<a class="list-item movie-link fade-in" id="card-' + m.id + '" href="' + href + '" onclick="return openMovieLink(event,' + m.id + ')">' +
     imgHTML +
     '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatDate(m.releaseDate) + '</p>' : '') + '</div>' +
     '<div class="list-badges">' + badgesHTML + '</div>' +
-    '</div>';
+    '</a>';
 }
 
 function renderGrids() {

@@ -71,6 +71,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .content-area.tab-fading { opacity: 0; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
+.movie-link { color: inherit; text-decoration: none; }
+.movie-link:focus-visible { outline: 2px solid rgba(255,255,255,0.38); outline-offset: 4px; }
 .movie-card { min-width: 0; display: flex; flex-direction: column; }
 .card-info { flex: 1; display: grid; grid-template-rows: auto auto 1fr auto auto auto; min-height: 0; }
 .card-img-wrap { cursor: pointer; position: relative; width: 100%; padding-top: 150%; border-radius: 16px; overflow: hidden; margin-bottom: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); transition: border-color 0.3s; }
