@@ -583,6 +583,41 @@ def score_tmdb_candidate(movie, candidate):
     return score
 
 
+def tmdb_candidate_match_diagnostics(movie, candidate, score):
+    """回傳已接受 TMDB 配對的人工複查理由。"""
+    reasons = []
+    title_zh = movie.get("title_zh", "")
+    title_en = movie.get("title_en", "")
+    candidate_title = candidate.get("title") or ""
+    candidate_original = candidate.get("original_title") or ""
+
+    zh_title_score = max(
+        title_similarity(title_zh, candidate_title),
+        title_similarity(title_zh, candidate_original),
+    )
+    en_title_score = max(
+        title_similarity(title_en, candidate_title),
+        title_similarity(title_en, candidate_original),
+    ) if title_en else 1.0
+
+    release_date = candidate.get("release_date") or ""
+    candidate_year = int(release_date[:4]) if len(release_date) >= 4 and release_date[:4].isdigit() else None
+    target_year = int(movie["release_date_tw"][:4]) if movie.get("release_date_tw") else None
+
+    if score < 55:
+        reasons.append(f"配對分數偏低 {score:.1f}")
+    if target_year and candidate_year:
+        year_gap = abs(candidate_year - target_year)
+        if year_gap >= 2:
+            reasons.append(f"開眼年份 {target_year} / TMDB 年份 {candidate_year}")
+    if title_en and en_title_score < 0.55:
+        reasons.append(f"英文片名相似度偏低 {en_title_score:.2f}")
+    if title_zh and zh_title_score < 0.45:
+        reasons.append(f"中文片名相似度偏低 {zh_title_score:.2f}")
+
+    return reasons
+
+
 def choose_tmdb_match(movie):
     """綜合中文/英文搜尋結果後挑最合理的 TMDB 候選"""
     query_year = int(movie["release_date_tw"][:4]) if movie.get("release_date_tw") else None
@@ -631,7 +666,14 @@ def choose_tmdb_match(movie):
         f"  TMDB match: {best['candidate'].get('title', '')}"
         f" (id={best['candidate']['id']}, score={best['score']:.1f})"
     )
-    return best["candidate"]
+    candidate = dict(best["candidate"])
+    candidate["_match_score"] = best["score"]
+    candidate["_match_suspicious_reasons"] = tmdb_candidate_match_diagnostics(
+        movie,
+        best["candidate"],
+        best["score"],
+    )
+    return candidate
 
 
 def tmdb_release_dates(tmdb_id):
@@ -649,12 +691,19 @@ def tmdb_release_dates(tmdb_id):
         return []
 
 
-def has_tw_release(release_results):
-    """檢查有沒有 TW"""
+def extract_tw_theatrical_date_from_results(release_results):
+    """從 /release_dates 結果取出台灣院線上映日。"""
     for entry in release_results:
-        if entry.get("iso_3166_1") == "TW":
-            return True
-    return False
+        if entry.get("iso_3166_1") != "TW":
+            continue
+        theatrical = [item for item in entry.get("release_dates", []) if item.get("type") == 3]
+        if not theatrical:
+            continue
+        theatrical.sort(key=lambda item: item.get("release_date", ""), reverse=True)
+        release_date = theatrical[0].get("release_date", "")
+        if release_date:
+            return release_date[:10]
+    return ""
 
 
 def load_tmdb_overrides():
@@ -1205,10 +1254,43 @@ def append_manual_release_tsv_rows(rows, generated_at_local):
         ])
 
 
+def append_tmdb_date_mismatch_tsv_rows(rows, output, generated_at_local):
+    for movie in output.get("tmdb_date_mismatch", []):
+        if not should_export_tsv_movie(movie, generated_at_local):
+            continue
+        rows.append([
+            "tmdb_date_mismatch",
+            movie.get("title_zh", ""),
+            movie.get("release_date_tw", ""),
+            movie.get("tmdb_title", ""),
+            movie.get("tmdb_url", ""),
+            movie.get("tmdb_tw_release_date", ""),
+            "開眼與 TMDB 台灣院線上映日不同，請以開眼為準",
+        ])
+
+
+def append_tmdb_match_suspicious_tsv_rows(rows, output, generated_at_local):
+    for movie in output.get("tmdb_match_suspicious", []):
+        if not should_export_tsv_movie(movie, generated_at_local):
+            continue
+        reasons = movie.get("tmdb_match_suspicious_reasons", [])
+        rows.append([
+            "tmdb_match_suspicious",
+            movie.get("title_zh", ""),
+            movie.get("release_date_tw", ""),
+            movie.get("tmdb_title", ""),
+            movie.get("tmdb_url", ""),
+            movie.get("tmdb_primary_release_date", ""),
+            "、".join(reasons) if reasons else "TMDB 配對可信度偏低，請人工確認",
+        ])
+
+
 def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_diff_payload=None):
     """輸出給 Google Sheets 用的 TSV"""
     tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
     rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "連結", "原上映日期", "備註"]]
+
+    append_tmdb_date_mismatch_tsv_rows(rows, output, generated_at_local)
 
     for movie in output["missing_tw_date"]:
         if not should_export_tsv_movie(movie, generated_at_local):
@@ -1222,6 +1304,8 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_d
             "",
             "",
         ])
+
+    append_tmdb_match_suspicious_tsv_rows(rows, output, generated_at_local)
 
     for movie in output["tmdb_not_found"]:
         if not should_export_tsv_movie(movie, generated_at_local):
@@ -1463,6 +1547,8 @@ def main():
     tmdb_not_found = []
     tmdb_has_tw_date = []
     missing_tw_date = []
+    tmdb_date_mismatch = []
+    tmdb_match_suspicious = []
 
     for i, movie in enumerate(unique, 1):
         log(f"[{i}/{len(unique)}] {movie['title_zh']} ({movie['release_date_tw']})")
@@ -1481,21 +1567,32 @@ def main():
 
         tmdb_id = result["id"]
         tmdb_title = result.get("title") or result.get("original_title", "")
+        tmdb_primary_release_date = result.get("release_date", "")
         tmdb_year = (result.get("release_date") or "")[:4]
 
         release_results = tmdb_release_dates(tmdb_id)
         time.sleep(TMDB_DELAY)
+        tmdb_tw_release_date = extract_tw_theatrical_date_from_results(release_results)
 
         record = {
             **movie,
             "tmdb_id": tmdb_id,
             "tmdb_url": tmdb_movie_url(tmdb_id),
             "tmdb_title": tmdb_title,
+            "tmdb_primary_release_date": tmdb_primary_release_date,
             "tmdb_release_year": tmdb_year,
+            "tmdb_tw_release_date": tmdb_tw_release_date,
+            "tmdb_match_score": result.get("_match_score"),
+            "tmdb_match_suspicious_reasons": result.get("_match_suspicious_reasons", []),
         }
 
-        if has_tw_release(release_results):
+        if record["tmdb_match_suspicious_reasons"]:
+            tmdb_match_suspicious.append(record)
+
+        if tmdb_tw_release_date:
             tmdb_has_tw_date.append(record)
+            if movie.get("release_date_tw") and movie.get("release_date_tw") != tmdb_tw_release_date:
+                tmdb_date_mismatch.append(record)
         else:
             missing_tw_date.append(record)
 
@@ -1509,10 +1606,14 @@ def main():
             "tmdb_not_found": len(tmdb_not_found),
             "tmdb_has_tw_date": len(tmdb_has_tw_date),
             "missing_tw_date": len(missing_tw_date),
+            "tmdb_date_mismatch": len(tmdb_date_mismatch),
+            "tmdb_match_suspicious": len(tmdb_match_suspicious),
         },
         "missing_tw_date": missing_tw_date,
         "tmdb_not_found": tmdb_not_found,
         "tmdb_has_tw_date": tmdb_has_tw_date,
+        "tmdb_date_mismatch": tmdb_date_mismatch,
+        "tmdb_match_suspicious": tmdb_match_suspicious,
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -1524,6 +1625,8 @@ def main():
     log(f"TMDB not found: {len(tmdb_not_found)}")
     log(f"TMDB has TW date: {len(tmdb_has_tw_date)}")
     log(f"Missing TW date (NEEDS UPDATE): {len(missing_tw_date)}")
+    log(f"TMDB date mismatch: {len(tmdb_date_mismatch)}")
+    log(f"TMDB suspicious match: {len(tmdb_match_suspicious)}")
     log(f"\nOutput written to: {OUTPUT_FILE}")
 
     # 產出 tw-whitelist.json 給網站使用 (精簡版,只有 TMDB ID + TW 上映日期)

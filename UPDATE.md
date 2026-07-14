@@ -93,7 +93,9 @@ The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets:
 
 The sheet includes these review categories:
 
+- `tmdb_date_mismatch` (TMDB has a TW theatrical date, but it differs from Atmovies)
 - `missing_tw_date`
+- `tmdb_match_suspicious` (accepted TMDB match has low confidence and should be reviewed)
 - `tmdb_not_found`
 - `近期上映新增`
 - `近期上映清單移除` (removed from Atmovies NEXT only; it may still be on the site as `現正熱映`)
