@@ -1,7 +1,6 @@
 const CACHE_VERSION = 'movienotice-v9';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
-const API_CACHE = `${CACHE_VERSION}-api`;
 
 const STATIC_ASSETS = [
   './',
@@ -18,8 +17,6 @@ const STATIC_ASSETS = [
   './icons/icon-512.png',
   './icons/icon-512-maskable.png',
 ];
-
-const API_TTL = 24 * 60 * 60 * 1000; // 24 小時
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
@@ -71,34 +68,6 @@ async function cacheFirst(request, cacheName) {
     }
     return response;
   } catch (err) {
-    return new Response('', { status: 503 });
-  }
-}
-
-async function cacheFirstWithTTL(request, cacheName, ttl) {
-  const cache = await caches.open(cacheName);
-  const cached = await cache.match(request);
-  if (cached) {
-    const cachedAt = parseInt(cached.headers.get('sw-cached-at') || '0');
-    if (Date.now() - cachedAt < ttl) return cached;
-  }
-  try {
-    const response = await fetch(request);
-    if (response.ok) {
-      const headers = new Headers(response.headers);
-      headers.set('sw-cached-at', Date.now().toString());
-      const blob = await response.blob();
-      const cachedResponse = new Response(blob, {
-        status: response.status,
-        statusText: response.statusText,
-        headers: headers,
-      });
-      cache.put(request, cachedResponse.clone());
-      return cachedResponse;
-    }
-    return response;
-  } catch (err) {
-    if (cached) return cached;
     return new Response('', { status: 503 });
   }
 }

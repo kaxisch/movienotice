@@ -398,11 +398,6 @@ function candidatePriorityValue(candidate) {
   return diff + (candidate.source_bucket === "missing_tw_date" ? 0 : 1000000);
 }
 
-function candidateRefreshLog(message, details) {
-  if (details !== undefined) console.log("[Candidate refresh]", message, details);
-  else console.log("[Candidate refresh]", message);
-}
-
 function clearCandidateRefreshTimer() {
   if (!candidateRefreshTimer) return;
   clearTimeout(candidateRefreshTimer);
@@ -417,7 +412,6 @@ function loadAtmoviesCandidatesPayload() {
       return { candidates: [] };
     }).then(function(payload) {
       var candidates = payload && payload.candidates ? payload.candidates : [];
-      candidateRefreshLog("Loaded candidate pool: " + candidates.length + " movies");
       return candidates;
     });
   }
@@ -427,31 +421,19 @@ function loadAtmoviesCandidatesPayload() {
 function getAtmoviesCandidateStats(candidates, dynamicStore) {
   var recentPast = daysAgo(60);
   var nearFuture = daysLater(120);
-  var stats = {
-    total: 0,
-    invalid: 0,
-    out_of_window: 0,
-    resolved: 0,
-    ttl_blocked: 0,
-    eligible: []
-  };
+  var stats = { eligible: [] };
   candidates.forEach(function(candidate) {
     if (!candidate || !candidate.atmovies_id || !candidate.release_date_tw) {
-      stats.invalid++;
       return;
     }
-    stats.total++;
     if (candidate.release_date_tw < recentPast || candidate.release_date_tw > nearFuture) {
-      stats.out_of_window++;
       return;
     }
     if (dynamicStore.resolved_by_atmovies[candidate.atmovies_id]) {
-      stats.resolved++;
       return;
     }
     var checked = dynamicStore.checked_candidates[candidate.atmovies_id];
     if (checked && Date.now() - checked.checked_at <= CANDIDATE_CHECK_TTL) {
-      stats.ttl_blocked++;
       return;
     }
     stats.eligible.push(candidate);
@@ -460,27 +442,6 @@ function getAtmoviesCandidateStats(candidates, dynamicStore) {
     return candidatePriorityValue(a) - candidatePriorityValue(b);
   });
   return stats;
-}
-
-function describeCandidateStopReason(stats) {
-  if (!stats || stats.total === 0) return "Stopped: candidate pool is empty.";
-  if (stats.eligible.length > 0) return "";
-  if (stats.ttl_blocked > 0 && stats.resolved === 0) {
-    return "Stopped: waiting for TTL expiry; " + stats.ttl_blocked + " candidate(s) were checked recently.";
-  }
-  if (stats.ttl_blocked > 0) {
-    return "Stopped: no eligible candidates left; " + stats.resolved + " resolved, " + stats.ttl_blocked + " waiting for TTL expiry.";
-  }
-  if (stats.resolved > 0 && stats.out_of_window > 0) {
-    return "Stopped: all current candidates are either resolved (" + stats.resolved + ") or outside the date window (" + stats.out_of_window + ").";
-  }
-  if (stats.resolved > 0) {
-    return "Stopped: all in-range candidates are already resolved (" + stats.resolved + ").";
-  }
-  if (stats.out_of_window > 0) {
-    return "Stopped: all remaining candidates are outside the date window (" + stats.out_of_window + ").";
-  }
-  return "Stopped: no eligible candidates left for this session.";
 }
 
 function rememberCandidateCheck(dynamicStore, candidate, status, tmdbId) {
@@ -545,17 +506,11 @@ function checkAtmoviesCandidate(dynamicStore, candidate) {
   return resolver.then(function(info) {
     if (!info || !info.movie || !candidateDateMatches(info.twReleaseDate, candidate.release_date_tw)) {
       rememberCandidateCheck(dynamicStore, candidate, "no_match", candidate.tmdb_id || null);
-      candidateRefreshLog("No match:", candidate.title_zh || candidate.title_en || candidate.atmovies_id);
       return false;
     }
 
     addResolvedCandidateToDynamicWhitelist(dynamicStore, candidate, info.movie, info.twReleaseDate);
     var movie = mergeResolvedMovieIntoLists(info.movie, candidate, info.twReleaseDate);
-    candidateRefreshLog("Resolved:", {
-      title: candidate.title_zh || candidate.title_en || candidate.atmovies_id,
-      tmdbId: info.movie.id,
-      tmdbTitle: info.movie.title || info.movie.original_title || ""
-    });
     if (!movie) return false;
 
     return getBasicDetail(movie.id).then(function(detail) {
@@ -566,14 +521,12 @@ function checkAtmoviesCandidate(dynamicStore, candidate) {
     });
   }).catch(function() {
     rememberCandidateCheck(dynamicStore, candidate, "error", candidate.tmdb_id || null);
-    candidateRefreshLog("Error while checking:", candidate.title_zh || candidate.title_en || candidate.atmovies_id);
     return false;
   });
 }
 
-function runAtmoviesCandidateBatch(limit, reason) {
+function runAtmoviesCandidateBatch(limit) {
   if (candidateRefreshInFlight) {
-    candidateRefreshLog("Skip batch: another batch is still running.");
     return Promise.resolve({ processed: 0, changed: false, stop: false, reason: "busy" });
   }
   candidateRefreshInFlight = true;
@@ -585,19 +538,8 @@ function runAtmoviesCandidateBatch(limit, reason) {
     var stats = getAtmoviesCandidateStats(candidates, dynamicStore);
     var batch = stats.eligible.slice(0, batchLimit);
     if (!batch.length) {
-      candidateRefreshLog(describeCandidateStopReason(stats), {
-        total: stats.total,
-        resolved: stats.resolved,
-        ttlBlocked: stats.ttl_blocked,
-        outOfWindow: stats.out_of_window,
-        invalid: stats.invalid
-      });
       return { processed: 0, changed: false, stop: true, reason: "empty" };
     }
-
-    candidateRefreshLog("Checking " + batch.length + " candidate(s) [" + reason + "]", batch.map(function(candidate) {
-      return (candidate.title_zh || candidate.title_en || candidate.atmovies_id) + " (" + candidate.release_date_tw + ")";
-    }));
 
     var changed = false;
     return batch.reduce(function(chain, candidate) {
@@ -610,7 +552,6 @@ function runAtmoviesCandidateBatch(limit, reason) {
       candidateRefreshChecksThisSession += batch.length;
       saveDynamicWhitelist(dynamicStore);
       if (changed) normalizeMovieBuckets(false, false, false);
-      candidateRefreshLog("Batch complete: " + candidateRefreshChecksThisSession + "/" + CANDIDATE_SESSION_MAX_CHECKS + " checked this page load.");
       return {
         processed: batch.length,
         changed: changed,
@@ -630,21 +571,16 @@ function runAtmoviesCandidateBatch(limit, reason) {
 function scheduleNextCandidateRefreshTick() {
   clearCandidateRefreshTimer();
   if (candidateRefreshChecksThisSession >= CANDIDATE_SESSION_MAX_CHECKS) {
-    candidateRefreshLog("Stopped background checks: reached session cap of " + CANDIDATE_SESSION_MAX_CHECKS + ".");
     return;
   }
   candidateRefreshTimer = setTimeout(function() {
-    runAtmoviesCandidateBatch(CANDIDATE_DRIP_BATCH_LIMIT, "drip").then(function(result) {
+    runAtmoviesCandidateBatch(CANDIDATE_DRIP_BATCH_LIMIT).then(function(result) {
       if (!result || result.stop || result.processed === 0) {
-        if (result && result.reason === "limit") {
-          candidateRefreshLog("Stopped background checks: reached session cap of " + CANDIDATE_SESSION_MAX_CHECKS + ".");
-        }
         return;
       }
       scheduleNextCandidateRefreshTick();
     });
   }, CANDIDATE_DRIP_INTERVAL_MS);
-  candidateRefreshLog("Next background check scheduled in " + Math.round(CANDIDATE_DRIP_INTERVAL_MS / 1000) + "s.");
 }
 
 function backgroundRefreshAtmoviesCandidates() {
@@ -892,9 +828,6 @@ function fetchBasicLists() {
         if (!npExistingIds[m.id]) {
           np.push(m);
           npExistingIds[m.id] = true;
-          console.log("Force included into NOW:", m.title || m.original_title);
-        } else {
-          console.log("Already in NOW, skip:", m.title || m.original_title);
         }
       });
 
@@ -905,9 +838,6 @@ function fetchBasicLists() {
         if (!csExistingIds[m.id]) {
           cs.push(m);
           csExistingIds[m.id] = true;
-          console.log("Force included into SOON:", m.title || m.original_title);
-        } else {
-          console.log("Already in SOON, skip:", m.title || m.original_title);
         }
       });
 
@@ -926,7 +856,6 @@ function fetchBasicLists() {
           if (!npExistingIds[m.id]) {
             np.push(m);
             npExistingIds[m.id] = true;
-            console.log("Whitelist backfill into NOW:", m.title || m.original_title);
           }
           return;
         }
@@ -935,7 +864,6 @@ function fetchBasicLists() {
           if (!csExistingIds[m.id]) {
             cs.push(m);
             csExistingIds[m.id] = true;
-            console.log("Whitelist backfill into SOON:", m.title || m.original_title);
           }
         }
       });
@@ -946,9 +874,6 @@ function fetchBasicLists() {
       cs.sort(function(a, b) {
         return (a.release_date || "").localeCompare(b.release_date || "");
       });
-      console.log("Now list summary: discover " + nowBeforeBackfill + ", whitelist backfill " + (np.length - nowBeforeBackfill) + ", final " + np.length);
-      console.log("Soon list summary: discover " + soonBeforeBackfill + ", whitelist backfill " + (cs.length - soonBeforeBackfill) + ", final " + cs.length);
-
       return {
         now: np.map(buildBasicMovie),
         soon: cs.map(buildBasicMovie),
