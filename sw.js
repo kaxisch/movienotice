@@ -1,21 +1,21 @@
-const CACHE_VERSION = 'movienotice-v6';
+const CACHE_VERSION = 'movienotice-v7';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
 const API_CACHE = `${CACHE_VERSION}-api`;
 
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/data/movie-data.json',
-  '/manifest.webmanifest',
-  '/logo.svg',
-  '/favicon.svg',
-  '/apple-touch-icon.png',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
-  '/icons/icon-512-maskable.png',
+  './',
+  './index.html',
+  './styles.css',
+  './app.js',
+  './data/movie-data.json',
+  './manifest.webmanifest',
+  './logo.svg',
+  './favicon.svg',
+  './apple-touch-icon.png',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
+  './icons/icon-512-maskable.png',
 ];
 
 const API_TTL = 24 * 60 * 60 * 1000; // 24 小時
@@ -49,7 +49,7 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   if (url.origin === self.location.origin) {
-    if (url.pathname.startsWith('/data/')) {
+    if (url.pathname.startsWith(new URL('./data/', self.registration.scope).pathname)) {
       e.respondWith(networkFirst(e.request, STATIC_CACHE));
       return;
     }

@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<meta name="description" content="台灣上映電影資訊">  
-<meta name="google-site-verification" content="JG9b85go-hJgyT-dPYVUOa8BosboH2BhpdhtPE3f-do" />  
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
-<title>MovieNotice｜電影佈告欄</title>
+<title>台灣上映電影情報｜現正熱映、即將上映與電影評分 | MovieNotice</title>
+<meta name="description" content="MovieNotice 提供台灣現正熱映與即將上映電影資訊，包含上映日期、IMDb、TMDB、爛番茄與 Metacritic 評分，方便快速查詢近期電影。"/>
+<meta name="google-site-verification" content="JG9b85go-hJgyT-dPYVUOa8BosboH2BhpdhtPE3f-do"/>
+<link rel="canonical" href="https://movienotice.pages.dev/"/>
+<meta property="og:locale" content="zh_TW"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="MovieNotice"/>
+<meta property="og:title" content="台灣上映電影情報｜現正熱映、即將上映與電影評分 | MovieNotice"/>
+<meta property="og:description" content="MovieNotice 提供台灣現正熱映與即將上映電影資訊，包含上映日期、IMDb、TMDB、爛番茄與 Metacritic 評分，方便快速查詢近期電影。"/>
+<meta property="og:url" content="https://movienotice.pages.dev/"/>
+<meta property="og:image" content="https://movienotice.pages.dev/icons/icon-512.png"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="台灣上映電影情報｜現正熱映、即將上映與電影評分 | MovieNotice"/>
+<meta name="twitter:description" content="MovieNotice 提供台灣現正熱映與即將上映電影資訊，包含上映日期、IMDb、TMDB、爛番茄與 Metacritic 評分，方便快速查詢近期電影。"/>
+<meta name="twitter:image" content="https://movienotice.pages.dev/icons/icon-512.png"/>
 <link rel="icon" href="favicon.ico" sizes="32x32"/>
 <link rel="icon" href="apple-touch-icon.png" type="image/png"/>
 <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"/>
@@ -14,7 +26,7 @@
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="電影佈告欄"/>
-<link rel="manifest" href="/manifest.webmanifest"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 <meta name="theme-color" content="#0a0a0f"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
@@ -27,6 +39,29 @@
   gtag('js', new Date());
 
   gtag('config', 'G-15QHSQT4KF');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://movienotice.pages.dev/#website",
+      "url": "https://movienotice.pages.dev/",
+      "name": "MovieNotice",
+      "alternateName": "電影佈告欄",
+      "inLanguage": "zh-TW",
+      "description": "MovieNotice 提供台灣現正熱映與即將上映電影資訊，包含上映日期、IMDb、TMDB、爛番茄與 Metacritic 評分，方便快速查詢近期電影。"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://movienotice.pages.dev/#organization",
+      "name": "MovieNotice",
+      "url": "https://movienotice.pages.dev/",
+      "logo": "https://movienotice.pages.dev/icons/icon-512.png"
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -42,6 +77,9 @@
     </div>
   </div>
 </header>
+
+<main id="main-content">
+<h1 class="visually-hidden">台灣上映電影情報、現正熱映、即將上映與電影評分</h1>
 
 <div id="tab-bar">
   <div class="tab-bar-inner">
@@ -180,11 +218,12 @@
 <footer style="padding:40px 64px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:-8px;">
   <p style="color:rgba(255,255,255,0.3);font-size:12px;font-weight:300">MovieNotice · 資料來源 TMDB、OMDb（含 IMDb、爛番茄、Metacritic 評分）· made by Axis Chang</p>
 </footer>
+</main>
 
 <script src="app.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('sw.js')
       .then(reg => console.log('[SW] registered:', reg.scope))
       .catch(err => console.warn('[SW] register failed:', err));
   }

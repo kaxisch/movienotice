@@ -1,9 +1,9 @@
 {
   "name": "MovieNotice｜電影佈告欄",
   "short_name": "電影佈告欄",
-  "description": "台灣上映電影資訊",
-  "start_url": "/",
-  "scope": "/",
+  "description": "台灣上映電影情報，提供現正熱映、即將上映與電影評分資訊。",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#0a0a0f",
@@ -12,19 +12,19 @@
   "categories": ["entertainment", "lifestyle"],
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-512-maskable.png",
+      "src": "icons/icon-512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
