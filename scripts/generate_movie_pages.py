@@ -13,6 +13,7 @@ DATA_PATH = ROOT / "data" / "movie-data.json"
 MOVIES_DIR = ROOT / "movies"
 SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://movienotice.pages.dev"
+SITE_NAME = "MovieNotice 電影佈告欄"
 
 MOVIE_PAGE_CSS_PATH = ROOT / "movie-page.css"
 MOVIE_PAGE_CSS = """
@@ -167,7 +168,7 @@ def render_movie_page(movie, generated_at):
     detail = detail_for(movie)
     title_zh = movie.get("titleZh") or detail.get("origTitle") or movie.get("titleEn") or "電影"
     title_en = movie.get("titleEn") or detail.get("origTitle") or ""
-    page_title = f"《{title_zh}》台灣上映日期、評分、預告、劇情簡介 | MovieNotice"
+    page_title = f"《{title_zh}》台灣上映日期、評分、預告、劇情簡介 | {SITE_NAME}"
     description = description_for(movie, detail)
     url = movie_url(movie)
     hero_image = detail.get("backdrop") or movie.get("backdrop") or movie.get("poster") or ""
@@ -241,7 +242,7 @@ def render_movie_page(movie, generated_at):
 <link rel="canonical" href="{h(url)}"/>
 <meta property="og:locale" content="zh_TW"/>
 <meta property="og:type" content="video.movie"/>
-<meta property="og:site_name" content="MovieNotice"/>
+<meta property="og:site_name" content="{h(SITE_NAME)}"/>
 <meta property="og:title" content="{h(page_title)}"/>
 <meta property="og:description" content="{h(description)}"/>
 <meta property="og:url" content="{h(url)}"/>
