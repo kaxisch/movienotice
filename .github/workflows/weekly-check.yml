@@ -40,6 +40,9 @@ jobs:
       - name: Validate generated site data
         run: python3 scripts/validate_movie_data.py --previous-movie-data /tmp/previous-movie-data.json
 
+      - name: Generate movie detail pages
+        run: python3 scripts/generate_movie_pages.py
+
       - name: Publish TSV to Google Sheets
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
@@ -53,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/movie-data.json data/tw-whitelist.json data/atmovies-candidates.json data/atmovies-next-snapshot.json data/atmovies-next-diff.json
+          git add data/movie-data.json data/tw-whitelist.json data/atmovies-candidates.json data/atmovies-next-snapshot.json data/atmovies-next-diff.json movies sitemap.xml
           if git diff --cached --quiet; then
             echo "No site data changes to commit."
           else
