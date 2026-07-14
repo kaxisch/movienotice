@@ -14,6 +14,11 @@ MOVIES_DIR = ROOT / "movies"
 SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://movienotice.pages.dev"
 
+MOVIE_PAGE_CSS_PATH = ROOT / "movie-page.css"
+MOVIE_PAGE_CSS = """
+*{box-sizing:border-box}body{margin:0;background:#0a0a0f;color:#fff;font-family:Manrope,-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;font-weight:300}.page-bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 90% 10%,rgba(220,170,20,.16),transparent 38%),radial-gradient(circle at 0 85%,rgba(30,72,240,.13),transparent 42%),#0a0a0f}.material-symbols-outlined{font-family:'Material Symbols Outlined'!important;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;font-weight:normal;font-style:normal;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal}.topbar{position:sticky;top:0;z-index:10;background:rgba(10,10,15,.9);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(18px)}.topbar-inner{max-width:1040px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}.brand img{height:34px;width:auto}.brand span{color:rgba(255,255,255,.68);font-size:13px}.back-link{color:rgba(255,255,255,.58);font-size:13px;text-decoration:none}.hero{position:relative;min-height:520px;display:flex;align-items:flex-end;overflow:hidden}.hero-media{position:absolute;inset:0}.hero-media img{width:100%;height:100%;object-fit:cover;opacity:.46}.hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#0a0a0f 0%,rgba(10,10,15,.82) 28%,rgba(10,10,15,.18) 100%)}.hero-content{position:relative;width:100%;max-width:1040px;margin:0 auto;padding:96px 24px 42px}.genre-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.genre-tag{font-size:12px;color:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:4px 10px;background:rgba(255,255,255,.06)}h1{font-size:clamp(34px,6vw,68px);line-height:1.02;margin:0 0 12px;font-weight:300;letter-spacing:0}.subtitle{margin:0;color:rgba(255,255,255,.68);font-size:15px}.ratings{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:22px;margin-bottom:20px}.rating-divider{width:1px;height:12px;background:rgba(255,255,255,.3)}.rating-item{display:flex;align-items:center;gap:4px;font-size:13px;color:rgba(255,255,255,.5)}.rating-item .star{font-size:13px;color:rgba(255,255,255,.6);font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24}.rating-item .val{color:#fff}.trailer-link{display:inline-flex;align-items:center;gap:6px;margin-top:0;padding:6px 18px 6px 8px;background:rgba(255,255,255,.20);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.4);border-radius:999px;color:#fff;font-size:14px;font-weight:400;text-decoration:none;transition:background .2s}.trailer-link:hover{background:rgba(255,255,255,.25)}.content{max-width:1040px;margin:0 auto;padding:34px 24px 72px}.synopsis{font-size:17px;line-height:1.9;color:rgba(255,255,255,.8);max-width:820px;margin:0 0 34px}.crew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:16px;margin-bottom:34px}.crew-name,.cast-name{margin:0;color:#fff;font-size:14px}.crew-role,.cast-char{margin:4px 0 0;color:rgba(255,255,255,.52);font-size:12px}.section-label{margin:0 0 14px;color:rgba(255,255,255,.42);font-size:12px;text-transform:uppercase;letter-spacing:.1em}.cast-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));column-gap:16px;row-gap:32px;margin-bottom:36px}.cast-photo,.cast-no-photo{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.cast-card{min-width:0}.cast-name{margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cast-char{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta-panel{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}.meta-row{display:flex;gap:16px;margin-bottom:12px}.meta-row:last-child{margin-bottom:0}.meta-key{font-size:14px;color:rgba(255,255,255,.65);width:80px;flex-shrink:0;padding-top:2px}.meta-val{font-size:14px;color:#fff}@media(max-width:720px){.topbar-inner{padding:12px 18px}.brand img{height:30px}.brand span{display:none}.hero{min-height:470px}.hero-content{padding:82px 20px 34px}.content{padding:28px 20px 58px}.cast-row{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px;row-gap:28px}.synopsis{font-size:15px}.meta-row{align-items:flex-start}.meta-val{text-align:left}}
+"""
+
 LANG_MAP = {
     "en": "英語",
     "zh": "中文",
@@ -36,6 +41,22 @@ STATUS_MAP = {
     "Released": "已上映",
     "In Production": "製作中",
     "Planned": "計畫中",
+}
+
+COUNTRY_MAP = {
+    "US": "美國", "GB": "英國", "FR": "法國", "DE": "德國", "IT": "義大利", "JP": "日本", "KR": "韓國",
+    "CN": "中國", "HK": "香港", "TW": "台灣", "AU": "澳洲", "CA": "加拿大", "ES": "西班牙", "IN": "印度",
+    "NZ": "紐西蘭", "IE": "愛爾蘭", "NL": "荷蘭", "BE": "比利時", "SE": "瑞典", "DK": "丹麥", "NO": "挪威",
+    "FI": "芬蘭", "RU": "俄羅斯", "MX": "墨西哥", "BR": "巴西", "AR": "阿根廷", "TH": "泰國", "SG": "新加坡",
+    "ZA": "南非", "AT": "奧地利", "CH": "瑞士", "PL": "波蘭", "CZ": "捷克", "HU": "匈牙利", "PT": "葡萄牙",
+    "GR": "希臘", "IL": "以色列", "TR": "土耳其", "MY": "馬來西亞", "ID": "印尼", "PH": "菲律賓", "VN": "越南",
+    "United States of America": "美國", "Japan": "日本", "United Kingdom": "英國", "Taiwan": "台灣",
+    "France": "法國", "Canada": "加拿大", "Netherlands": "荷蘭", "South Korea": "韓國", "Germany": "德國",
+    "Thailand": "泰國", "Hong Kong": "香港", "Mexico": "墨西哥", "Saudi Arabia": "沙烏地阿拉伯",
+    "Spain": "西班牙", "Belgium": "比利時", "Ireland": "愛爾蘭", "United Arab Emirates": "阿拉伯聯合大公國",
+    "Brazil": "巴西", "Chile": "智利", "China": "中國", "Tunisia": "突尼西亞", "Cyprus": "賽普勒斯",
+    "Italy": "義大利", "Palestinian Territory": "巴勒斯坦", "Indonesia": "印尼", "Hungary": "匈牙利",
+    "Turkey": "土耳其", "Greece": "希臘", "Sweden": "瑞典", "Philippines": "菲律賓", "India": "印度",
 }
 
 
@@ -120,13 +141,19 @@ def rating_items(movie, detail):
     return items
 
 
+def format_country_list(countries):
+    if not countries:
+        return "—"
+    return " · ".join(COUNTRY_MAP.get(country, country) for country in countries)
+
+
 def render_meta_panel(movie, detail):
     countries = detail.get("countries") or movie.get("countries") or []
     rows = [
         ("原始標題", detail.get("origTitle") or movie.get("titleEn") or "—"),
         ("狀態", STATUS_MAP.get(detail.get("status"), detail.get("status") or "—")),
         ("原始語言", LANG_MAP.get(detail.get("origLang"), detail.get("origLang") or "—")),
-        ("製片國家", "、".join(countries) if countries else "—"),
+        ("製片國家", format_country_list(countries)),
         ("電影成本", f"${detail.get('budget'):,}" if detail.get("budget") else "—"),
         ("票房收入", f"${detail.get('revenue'):,}" if detail.get("revenue") else "—"),
     ]
@@ -156,10 +183,13 @@ def render_movie_page(movie, generated_at):
         if part
     )
     genre_tags = "".join(f'<span class="genre-tag">{h(genre)}</span>' for genre in genres[:3])
-    ratings_html = "".join(
-        f'<span class="rating-item"><span class="rating-label">{h(label)}</span><span class="rating-value">{h(value)}</span></span>'
-        for label, value in rating_items(movie, detail)
-    )
+    rating_parts = []
+    for label, value in rating_items(movie, detail):
+        icon = '<span class="material-symbols-outlined star">star</span>' if label in ("IMDb", "TMDB") else ""
+        rating_parts.append(
+            f'<span class="rating-item">{icon}{h(label)} <span class="val">{h(value)}</span></span>'
+        )
+    ratings_html = '<span class="rating-divider"></span>'.join(rating_parts)
     crew = detail.get("crew") or movie.get("crew") or []
     crew_html = "".join(
         f'<div><p class="crew-name">{h(person.get("name"))}</p><p class="crew-role">{h("導演" if person.get("job") == "Director" else "編劇" if person.get("job") == "Screenplay" else "製作人")}</p></div>'
@@ -178,7 +208,7 @@ def render_movie_page(movie, generated_at):
     )
     trailer_key = detail.get("trailerKey") or movie.get("trailerKey")
     trailer_html = (
-        f'<a class="trailer-link" href="https://www.youtube.com/watch?v={h(trailer_key)}" rel="noopener" target="_blank">播放預告</a>'
+        f'<a class="trailer-link" href="https://www.youtube.com/watch?v={h(trailer_key)}" rel="noopener" target="_blank"><span class="material-symbols-outlined" style="font-size:22px">play_arrow</span>播放預告</a>'
         if trailer_key
         else ""
     )
@@ -198,9 +228,7 @@ def render_movie_page(movie, generated_at):
         "director": [{"@type": "Person", "name": p.get("name")} for p in crew if p.get("job") == "Director" and p.get("name")],
     }
     json_ld = {k: v for k, v in json_ld.items() if v}
-    css = """
-*{box-sizing:border-box}body{margin:0;background:#0a0a0f;color:#fff;font-family:Manrope,-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;font-weight:300}.page-bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 90% 10%,rgba(220,170,20,.16),transparent 38%),radial-gradient(circle at 0 85%,rgba(30,72,240,.13),transparent 42%),#0a0a0f}.topbar{position:sticky;top:0;z-index:10;background:rgba(10,10,15,.9);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(18px)}.topbar-inner{max-width:1040px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}.brand img{height:34px;width:auto}.brand span{color:rgba(255,255,255,.68);font-size:13px}.back-link{color:rgba(255,255,255,.58);font-size:13px;text-decoration:none}.hero{position:relative;min-height:520px;display:flex;align-items:flex-end;overflow:hidden}.hero-media{position:absolute;inset:0}.hero-media img{width:100%;height:100%;object-fit:cover;opacity:.46}.hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#0a0a0f 0%,rgba(10,10,15,.82) 28%,rgba(10,10,15,.18) 100%)}.hero-content{position:relative;width:100%;max-width:1040px;margin:0 auto;padding:96px 24px 42px}.genre-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.genre-tag{font-size:12px;color:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:4px 10px;background:rgba(255,255,255,.06)}h1{font-size:clamp(34px,6vw,68px);line-height:1.02;margin:0 0 12px;font-weight:300;letter-spacing:0}.subtitle{margin:0;color:rgba(255,255,255,.68);font-size:15px}.ratings{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.rating-item{display:inline-flex;gap:6px;align-items:center;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:10px;padding:6px 9px;font-size:13px}.rating-label{color:rgba(255,255,255,.58)}.rating-value{color:#fff}.trailer-link{display:inline-flex;margin-top:18px;color:#0a0a0f;background:#fff;text-decoration:none;border-radius:999px;padding:9px 14px;font-size:14px}.content{max-width:1040px;margin:0 auto;padding:34px 24px 72px}.synopsis{font-size:17px;line-height:1.9;color:rgba(255,255,255,.8);max-width:820px;margin:0 0 34px}.crew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:16px;margin-bottom:34px}.crew-name,.cast-name{margin:0;color:#fff;font-size:14px}.crew-role,.cast-char{margin:4px 0 0;color:rgba(255,255,255,.52);font-size:12px}.section-label{margin:0 0 14px;color:rgba(255,255,255,.42);font-size:12px;text-transform:uppercase;letter-spacing:.1em}.cast-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:16px;margin-bottom:36px}.cast-photo,.cast-no-photo{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.cast-card{min-width:0}.cast-name{margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cast-char{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta-panel{border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.03)}.meta-row{display:flex;justify-content:space-between;gap:18px;padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.06)}.meta-row:last-child{border-bottom:0}.meta-key{color:rgba(255,255,255,.45);font-size:13px}.meta-val{color:rgba(255,255,255,.82);font-size:13px;text-align:right}.footer-note{margin-top:28px;color:rgba(255,255,255,.36);font-size:12px}@media(max-width:720px){.topbar-inner{padding:12px 18px}.brand img{height:30px}.brand span{display:none}.hero{min-height:470px}.hero-content{padding:82px 20px 34px}.content{padding:28px 20px 58px}.cast-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.synopsis{font-size:15px}.meta-row{align-items:flex-start;flex-direction:column;gap:5px}.meta-val{text-align:left}}
-"""
+
     fallback_bg = "rgba(255,255,255,0.05)"
     hero_media = f'<img src="{h(hero_image)}" alt="{h(title_zh)}" fetchpriority="high" decoding="async"/>' if hero_image else f'<div style="width:100%;height:100%;background:{fallback_bg}"></div>'
     return f"""<!DOCTYPE html>
@@ -227,7 +255,7 @@ def render_movie_page(movie, generated_at):
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<style>{css}</style>
+<link rel="stylesheet" href="../../movie-page.css"/>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>
 <body>
@@ -240,7 +268,6 @@ def render_movie_page(movie, generated_at):
 {f'<div class="crew-grid">{crew_html}</div>' if crew_html else ''}
 {f'<div><p class="section-label">主要演員</p><div class="cast-row">{cast_html}</div></div>' if cast_html else ''}
 <div><p class="section-label">其他資訊</p><div class="meta-panel">{render_meta_panel(movie, detail)}</div></div>
-<p class="footer-note">MovieNotice · 資料來源 TMDB、OMDb（含 IMDb、爛番茄、Metacritic 評分）· 更新時間 {h(format_date(str(generated_at)[:10]))}</p>
 </section>
 </main>
 </body>
@@ -276,6 +303,7 @@ def write_sitemap(movies):
 
 
 def main():
+    MOVIE_PAGE_CSS_PATH.write_text(MOVIE_PAGE_CSS.strip() + "\n", encoding="utf-8")
     payload, movies = load_movies()
     if MOVIES_DIR.exists():
         shutil.rmtree(MOVIES_DIR)

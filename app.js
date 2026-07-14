@@ -1572,6 +1572,17 @@ function openModal(id) {
   });
 }
 
+function movieDetailSlug(movie, detail) {
+  var title = (movie && (movie.titleEn || movie.origTitle || movie.titleZh)) || (detail && detail.origTitle) || "movie";
+  var slug = String(title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  if (!slug) slug = "movie";
+  return String(movie.id) + "-" + slug;
+}
+
+function movieDetailHref(movie, detail) {
+  return "movies/" + encodeURIComponent(movieDetailSlug(movie, detail)) + "/";
+}
+
 function renderModal(movie, detail, imdbRating) {
   var trailerKey = detail.trailerKey || movie.trailerKey;
   var langMap = {en:"英語",zh:"中文",ja:"日語",ko:"韓語",fr:"法語",es:"西班牙語",de:"德語",it:"義大利語",th:"泰語",hi:"印地語",tl:"菲律賓語",ar:"阿拉伯語",id:"印尼語",pt:"葡萄牙語",tr:"土耳其語"};
@@ -1621,6 +1632,7 @@ function renderModal(movie, detail, imdbRating) {
   if (mcRating) ratingItems.push('<span class="modal-rating-item"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="6" cy="6" r="5.3" stroke="rgba(255,255,255,0.6)" stroke-width="0.9"/><text x="6" y="8.2" text-anchor="middle" font-size="7.5" font-family="sans-serif" fill="rgba(255,255,255,0.6)">m</text></svg> MT <span class="val">' + escHtml(mcRating) + '</span></span>');
   if (detail.voteAverage) ratingItems.push('<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>TMDB <span class="val">' + tmdbScore(detail.voteAverage) + '</span></span>');
   var ratingsHTML = ratingItems.join('<span class="modal-rating-divider"></span>');
+  var detailHref = movieDetailHref(movie, detail);
   var bgHTML = buildModalHeroSlot(heroImage);
   var html = '<div class="fade-in"><div class="modal-hero"><div class="modal-hero-media">' + bdHTML +
     '</div><div class="modal-hero-fade"></div>' +
@@ -1636,7 +1648,9 @@ function renderModal(movie, detail, imdbRating) {
     (crewHTML ? '<div class="crew-grid">' + crewHTML + '</div>' : '') +
     (castHTML ? '<div><p class="section-label">主要演員</p><div class="cast-row">' + castHTML + '</div></div>' : '') +
     (platformHTML ? '<div><p class="section-label">收看平台</p><div class="platform-row">' + platformHTML + '</div></div>' : '') +
-    '<div><p class="section-label">其他資訊</p><div class="meta-panel">' + metaHTML + '</div></div></div></div>';
+    '<div><p class="section-label">其他資訊</p><div class="meta-panel">' + metaHTML + '</div>' +
+    '<div class="modal-detail-link-row"><a class="modal-detail-link" href="' + escHtml(detailHref) + '" aria-label="開啟獨立電影頁面" title="開啟獨立電影頁面">' +
+    '<span class="material-symbols-outlined" style="font-size:18px">open_in_new</span></a></div></div></div></div>';
   document.getElementById("modal-hero-slot").innerHTML = bgHTML;
   document.getElementById("modal-content").innerHTML = html;
 }

@@ -160,6 +160,9 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .meta-row:last-child { margin-bottom: 0; }
 .meta-key { font-size: 14px; color: rgba(255,255,255,0.65); width: 80px; flex-shrink: 0; padding-top: 2px; }
 .meta-val { font-size: 14px; color: #fff; }
+.modal-detail-link-row { display: flex; justify-content: flex-end; margin-top: 10px; }
+.modal-detail-link { width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.34); text-decoration: none; border-radius: 999px; transition: color 0.18s, background 0.18s; }
+.modal-detail-link:hover { color: rgba(255,255,255,0.78); background: rgba(255,255,255,0.06); }
 
 #trailer-modal { position: fixed; inset: 0; z-index: 70; display: none; align-items: center; justify-content: center; }
 #trailer-modal.open { display: flex; }
