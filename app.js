@@ -1243,18 +1243,55 @@ function moveTabIndicator(tabId) {
   indicator.style.width = btn.offsetWidth + 'px';
 }
 
+var tabFadeTimer = null;
+var tabFadeSeq = 0;
+
+function activateTabContent(t) {
+  document.querySelectorAll(".tab-content").forEach(function(el) { el.classList.remove("active"); });
+  document.getElementById("content-" + t).classList.add("active");
+  var countEl = document.getElementById("movie-count");
+  if (countEl && filtered) countEl.textContent = (filtered[t] ? filtered[t].length : 0) + " 部";
+}
+
+function jumpToContentTop() {
+  var contentArea = document.querySelector(".content-area");
+  var tabBar = document.getElementById("tab-bar");
+  if (!contentArea || !tabBar) return;
+  var targetY = contentArea.offsetTop - tabBar.offsetHeight;
+  window.scrollTo(0, Math.max(0, targetY));
+}
+
 function switchTab(t) {
+  var shouldFadeContent = currentTab !== t;
+  var contentArea = document.querySelector(".content-area");
   currentTab = t;
   try { sessionStorage.setItem("wt_active_tab", t); } catch(e) {}
   try { history.replaceState(null, '', t === 'now' ? '#' : '#' + t); } catch(e) {}
   document.getElementById("sort-select").value = tabSortState[t];
-  document.querySelectorAll(".tab-content").forEach(function(el) { el.classList.remove("active"); });
   document.querySelectorAll(".tab-btn").forEach(function(el) { el.classList.remove("active"); });
-  document.getElementById("content-" + t).classList.add("active");
   document.getElementById("tab-" + t).classList.add("active");
   moveTabIndicator(t);
-  var countEl = document.getElementById("movie-count");
-  if (countEl && filtered) countEl.textContent = (filtered[t] ? filtered[t].length : 0) + " 部";
+
+  if (!shouldFadeContent || !contentArea) {
+    activateTabContent(t);
+    return;
+  }
+
+  tabFadeSeq += 1;
+  var seq = tabFadeSeq;
+  if (tabFadeTimer) clearTimeout(tabFadeTimer);
+  contentArea.classList.add("tab-fading");
+
+  tabFadeTimer = setTimeout(function() {
+    if (seq !== tabFadeSeq) return;
+    jumpToContentTop();
+    activateTabContent(t);
+    requestAnimationFrame(function() {
+      if (seq !== tabFadeSeq) return;
+      contentArea.classList.remove("tab-fading");
+      tabFadeTimer = null;
+    });
+  }, 160);
 }
 
 var modalSwipeState = {

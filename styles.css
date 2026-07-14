@@ -70,7 +70,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .close-filter-btn:hover { background: rgba(255,255,255,0.12); color: #fff; }
 .filter-panel-bottom { display: flex; align-items: center; justify-content: space-between; }
 
-.content-area { padding: 40px 64px; max-width: 1440px; margin: 0 auto; }
+.content-area { padding: 40px 64px; max-width: 1440px; margin: 0 auto; opacity: 1; transition: opacity 0.16s ease; }
+.content-area.tab-fading { opacity: 0; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 .movie-card { min-width: 0; display: flex; flex-direction: column; }
