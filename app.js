@@ -1189,7 +1189,14 @@ function activateTabContent(t) {
   if (countEl && filtered) countEl.textContent = (filtered[t] ? filtered[t].length : 0) + " 部";
 }
 
-function jumpToContentTop() {
+function isTabBarPinned() {
+  var tabBar = document.getElementById("tab-bar");
+  if (!tabBar) return false;
+  return tabBar.getBoundingClientRect().top <= 0;
+}
+
+function jumpToContentTop(keepTabBarPinned) {
+  if (!keepTabBarPinned) return;
   var contentArea = document.querySelector(".content-area");
   var tabBar = document.getElementById("tab-bar");
   if (!contentArea || !tabBar) return;
@@ -1200,6 +1207,7 @@ function jumpToContentTop() {
 function switchTab(t) {
   var shouldFadeContent = currentTab !== t;
   var contentArea = document.querySelector(".content-area");
+  var keepTabBarPinned = isTabBarPinned();
   currentTab = t;
   try { sessionStorage.setItem("wt_active_tab", t); } catch(e) {}
   try { history.replaceState(null, '', t === 'now' ? '#' : '#' + t); } catch(e) {}
@@ -1220,7 +1228,7 @@ function switchTab(t) {
 
   tabFadeTimer = setTimeout(function() {
     if (seq !== tabFadeSeq) return;
-    jumpToContentTop();
+    jumpToContentTop(keepTabBarPinned);
     activateTabContent(t);
     requestAnimationFrame(function() {
       if (seq !== tabFadeSeq) return;
