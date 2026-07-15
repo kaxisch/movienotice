@@ -1,6 +1,9 @@
 name: Refresh Website from TMDB
 
 on:
+  schedule:
+    # Recheck Google Sheet candidates against TMDB every three hours.
+    - cron: "37 */3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -36,7 +39,9 @@ jobs:
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           OMDB_API_KEYS: ${{ secrets.OMDB_API_KEYS }}
-        run: python3 scripts/weekly_check.py --mode site
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
+        run: python3 scripts/refresh_site_from_google_sheet.py
 
       - name: Validate generated site data
         run: python3 scripts/validate_movie_data.py --previous-movie-data /tmp/previous-movie-data.json

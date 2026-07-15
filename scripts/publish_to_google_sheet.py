@@ -20,6 +20,8 @@ from dotenv import load_dotenv
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
+CANDIDATES_FILE = DATA_DIR / "atmovies-candidates.json"
+CANDIDATES_SHEET_TITLE = "_candidates"
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -113,6 +115,31 @@ def load_tsv_rows(tsv_path):
     if not rows:
         raise ValueError(f"TSV file is empty: {tsv_path}")
 
+    return rows
+
+
+def load_candidate_rows(path=CANDIDATES_FILE):
+    if not path.exists():
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+    rows = [[
+        "tmdb_id", "source_bucket", "title_zh", "title_en",
+        "release_date_tw", "atmovies_id", "atmovies_url", "tmdb_title",
+    ]]
+    for item in payload.get("candidates", []):
+        if not item.get("tmdb_id"):
+            continue
+        rows.append([
+            item.get("tmdb_id"),
+            item.get("source_bucket", ""),
+            item.get("title_zh", ""),
+            item.get("title_en", ""),
+            item.get("release_date_tw", ""),
+            item.get("atmovies_id", ""),
+            item.get("atmovies_url", ""),
+            item.get("tmdb_title", ""),
+        ])
     return rows
 
 
@@ -369,6 +396,13 @@ def publish():
     sheet_id = ensure_date_sheet(sheets_service, spreadsheet_id, run_date)
     write_rows(sheets_service, spreadsheet_id, run_date, rows)
     format_sheet(sheets_service, spreadsheet_id, sheet_id, len(rows[0]))
+
+    candidate_rows = load_candidate_rows()
+    if candidate_rows:
+        candidate_sheet_id = ensure_date_sheet(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
+        write_rows(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE, candidate_rows)
+        format_sheet(sheets_service, spreadsheet_id, candidate_sheet_id, len(candidate_rows[0]))
+        log(f"Wrote {len(candidate_rows) - 1} refresh candidates to worksheet {CANDIDATES_SHEET_TITLE}.")
 
     metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
     spreadsheet_url = metadata.get("spreadsheetUrl") or spreadsheet.get("webViewLink", "")

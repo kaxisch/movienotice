@@ -1091,38 +1091,6 @@ def export_static_movie_data(output, generated_at_local):
         movies[bucket].append(movie)
         time.sleep(TMDB_DELAY)
 
-    supplemental_soon = fetch_supplemental_soon_candidates(today_local)
-    for idx, candidate in enumerate(supplemental_soon, 1):
-        tmdb_id = candidate.get("id")
-        if not tmdb_id or tmdb_id in existing_ids:
-            continue
-        log(f"Soon supplement [{idx}/{len(supplemental_soon)}] TMDB {tmdb_id}")
-        payload = tmdb_movie_full(tmdb_id)
-        if not payload:
-            continue
-        tw_release_date = extract_tw_theatrical_date(payload)
-        if not tw_release_date:
-            continue
-        record = {
-            "tmdb_id": tmdb_id,
-            "tmdb_title": candidate.get("title") or candidate.get("original_title") or "",
-            "title_zh": candidate.get("title") or candidate.get("original_title") or "",
-            "title_en": candidate.get("original_title") or "",
-            "release_date_tw": tw_release_date,
-            "atmovies_id": "",
-            "atmovies_url": "",
-            "source_bucket": "next",
-        }
-        ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
-        movie = build_static_movie(record, payload, ratings)
-        if not should_keep_static_movie(movie, record):
-            continue
-        if classify_release_bucket(record, parse_iso_date(movie.get("releaseDate", "")), today_local) != "soon":
-            continue
-        existing_ids.add(movie["id"])
-        movies["soon"].append(movie)
-        time.sleep(TMDB_DELAY)
-
     manual_releases = load_manual_releases()
     for idx, manual in enumerate(manual_releases, 1):
         tmdb_id = manual.get("tmdb_id")
@@ -1357,12 +1325,12 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_d
 
 
 def export_atmovies_candidates(output, generated_at_local):
-    """輸出給前端背景補查用的開眼候選片清單"""
+    """輸出給私人 Google Sheet / TMDB refresh 使用的完整候選片清單"""
     candidates = []
 
-    for movie in output["missing_tw_date"]:
+    for movie in output["tmdb_has_tw_date"] + output["missing_tw_date"]:
         candidates.append({
-            "source_bucket": "missing_tw_date",
+            "source_bucket": movie.get("source_bucket", ""),
             "title_zh": movie.get("title_zh", ""),
             "title_en": movie.get("title_en", ""),
             "release_date_tw": movie.get("release_date_tw", ""),
@@ -1371,19 +1339,6 @@ def export_atmovies_candidates(output, generated_at_local):
             "atmovies_url": movie.get("atmovies_url", ""),
             "tmdb_id": movie.get("tmdb_id"),
             "tmdb_title": movie.get("tmdb_title", ""),
-        })
-
-    for movie in output["tmdb_not_found"]:
-        candidates.append({
-            "source_bucket": "tmdb_not_found",
-            "title_zh": movie.get("title_zh", ""),
-            "title_en": movie.get("title_en", ""),
-            "release_date_tw": movie.get("release_date_tw", ""),
-            "screen_count": movie.get("screen_count", 0),
-            "atmovies_id": movie.get("atmovies_id", ""),
-            "atmovies_url": movie.get("atmovies_url", ""),
-            "tmdb_id": None,
-            "tmdb_title": "",
         })
 
     payload = {
@@ -1646,11 +1601,20 @@ def main():
     if args.mode == "audit":
         # Audit output remains private to the workflow runner and Google Sheet.
         # Do not rebuild or publish website data from the Atmovies crawl.
+        candidates_path = export_atmovies_candidates(output, generated_at_local)
+        log(f"Private refresh candidates written to: {candidates_path}")
         tsv_path = export_google_sheets_tsv(output, generated_at_local)
         log(f"Google Sheets TSV written to: {tsv_path}")
         return
 
-    # 產出 tw-whitelist.json 給網站使用 (只有 TMDB 已確認的台灣院線日期)
+    write_tw_whitelist(output)
+
+    movie_data_path, movie_data_payload = export_static_movie_data(output, generated_at_local)
+    log(f"Static movie data written to: {movie_data_path}")
+
+
+def write_tw_whitelist(output):
+    """Write the public whitelist from TMDB-verified records only."""
     whitelist_path = OUTPUT_DIR / "tw-whitelist.json"
     whitelist_data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -1674,9 +1638,7 @@ def main():
 
     write_traditional_json(whitelist_path, whitelist_data)
     log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
-
-    movie_data_path, movie_data_payload = export_static_movie_data(output, generated_at_local)
-    log(f"Static movie data written to: {movie_data_path}")
+    return whitelist_path, whitelist_data
 
 
 if __name__ == "__main__":

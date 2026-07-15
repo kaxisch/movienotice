@@ -90,6 +90,7 @@ The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets. It d
 - Spreadsheet: `movienotice_weekly`
 - Worksheet per run: `YYYY-MM-DD`
 - Columns: `類別`, `台灣中文片名`, `台灣上映日期`, `原文片名`, `連結`, `原上映日期`, `備註`
+- Private refresh candidates: `_candidates` (replaced on every audit)
 
 The sheet includes these review categories:
 
@@ -101,7 +102,7 @@ The sheet includes these review categories:
 
 ## 7. Refresh the public website from TMDB
 
-After adding a Taiwan theatrical release date to TMDB, open GitHub Actions and manually run **Refresh Website from TMDB**. This workflow checks the current candidate list against TMDB, but publishes only TMDB fields for movies whose TMDB `release_dates` response contains a Taiwan theatrical date. It then validates and commits the regenerated website data to `main`. It does not publish a Google Sheet.
+The weekly audit replaces a private `_candidates` worksheet with the latest matched TMDB IDs. **Refresh Website from TMDB** runs automatically every three hours and can also be run manually. It reads `_candidates`, the currently published movie IDs, and `manual-releases.json`; it never crawls Atmovies. Movies remain published while their TMDB Taiwan theatrical date is within the configured display window, even if Atmovies temporarily removes them. The workflow publishes only TMDB fields, validates the result, and commits the regenerated website data to `main`.
 
 `data/manual-releases.json` stores confirmed theatrical releases that should stay visible
 even when they are not currently listed by Atmovies. These rows are deduplicated by TMDB ID,
