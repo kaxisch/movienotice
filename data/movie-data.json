@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-15T22:36:07.297985+08:00",
+  "generated_at": "2026-07-15T23:19:11.276882+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 48,
-    "soon_count": 46
+    "soon_count": 47
   },
   "movies": {
     "now": [
@@ -12483,6 +12483,156 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1433568?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 950028,
+        "titleZh": "開放性邀請",
+        "titleEn": "The Invite",
+        "releaseDate": "2026-08-28",
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/fYvFr8hmabWNNMa7PXZSGMfA9gY.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+        "voteAverage": "7.6",
+        "genre": [
+          "劇情",
+          "喜劇"
+        ],
+        "duration": 107,
+        "synopsis": "",
+        "imdb": "7.8",
+        "rt": "",
+        "mc": "82",
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "塞斯·羅根",
+            "char": "Joe",
+            "photo": "https://image.tmdb.org/t/p/w500/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+          },
+          {
+            "name": "奧莉薇亞·魏爾德",
+            "char": "Angela",
+            "photo": "https://image.tmdb.org/t/p/w500/eODi1QKamyVa41eSK2SjU20VAZS.jpg"
+          },
+          {
+            "name": "潘妮洛普·克魯茲",
+            "char": "Pina",
+            "photo": "https://image.tmdb.org/t/p/w500/j5iHd2ctzlcQ3gJ3CyEq4GYlY7V.jpg"
+          },
+          {
+            "name": "艾德華·諾頓",
+            "char": "Hawk",
+            "photo": "https://image.tmdb.org/t/p/w500/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg"
+          },
+          {
+            "name": "Mel Powell",
+            "char": "Bartender (uncredited)",
+            "photo": "https://image.tmdb.org/t/p/w500/qu7T2uxliIK6TbCp1JAVY5rWPLl.jpg"
+          },
+          {
+            "name": "Rachel Thurow",
+            "char": "Subway Goer (uncredited)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Rashida Jones",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Will McCormack",
+            "job": "Screenplay"
+          },
+          {
+            "name": "奧莉薇亞·魏爾德",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 8720872,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "The Invite",
+        "platforms": [],
+        "popularity": 32.4384,
+        "imdbId": "tt14173636",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 107,
+          "genres": [
+            "劇情",
+            "喜劇"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/fYvFr8hmabWNNMa7PXZSGMfA9gY.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+          "voteAverage": "7.6",
+          "trailerKey": null,
+          "imdbId": "tt14173636",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "塞斯·羅根",
+              "char": "Joe",
+              "photo": "https://image.tmdb.org/t/p/w500/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+            },
+            {
+              "name": "奧莉薇亞·魏爾德",
+              "char": "Angela",
+              "photo": "https://image.tmdb.org/t/p/w500/eODi1QKamyVa41eSK2SjU20VAZS.jpg"
+            },
+            {
+              "name": "潘妮洛普·克魯茲",
+              "char": "Pina",
+              "photo": "https://image.tmdb.org/t/p/w500/j5iHd2ctzlcQ3gJ3CyEq4GYlY7V.jpg"
+            },
+            {
+              "name": "艾德華·諾頓",
+              "char": "Hawk",
+              "photo": "https://image.tmdb.org/t/p/w500/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg"
+            },
+            {
+              "name": "Mel Powell",
+              "char": "Bartender (uncredited)",
+              "photo": "https://image.tmdb.org/t/p/w500/qu7T2uxliIK6TbCp1JAVY5rWPLl.jpg"
+            },
+            {
+              "name": "Rachel Thurow",
+              "char": "Subway Goer (uncredited)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Rashida Jones",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Will McCormack",
+              "job": "Screenplay"
+            },
+            {
+              "name": "奧莉薇亞·魏爾德",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 8720872,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "The Invite",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/950028?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
