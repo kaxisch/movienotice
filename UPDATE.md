@@ -76,15 +76,15 @@ If code changed too, also add:
 git add app.js index.html sw.js scripts/weekly_check.py
 ```
 
-## 6. Automated Google Sheets weekly run
+## 6. Automated Google Sheets audit
 
-GitHub Actions can run the crawler every Wednesday and Saturday at 09:05 Asia/Taipei:
+GitHub Actions runs the private Atmovies review audit every Wednesday and Saturday at 09:05 Asia/Taipei:
 
 ```yaml
 cron: "5 1 * * 3,6"
 ```
 
-The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets:
+The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets. It does not update the public website:
 
 - Drive folder: `tw movie` (prefer setting the exact folder id)
 - Spreadsheet: `movienotice_weekly`
@@ -97,12 +97,11 @@ The sheet includes these review categories:
 - `missing_tw_date`
 - `tmdb_match_suspicious` (accepted TMDB match has low confidence and should be reviewed)
 - `tmdb_not_found`
-- `近期上映新增`
-- `近期上映清單移除` (removed from Atmovies NEXT only; it may still be on the site as `現正熱映`)
-- `近期上映資料變更`
 - `人工保留片`
-- `現正熱映`
-- `即將上映`
+
+## 7. Refresh the public website from TMDB
+
+After adding a Taiwan theatrical release date to TMDB, open GitHub Actions and manually run **Refresh Website from TMDB**. This workflow checks the current candidate list against TMDB, but publishes only TMDB fields for movies whose TMDB `release_dates` response contains a Taiwan theatrical date. It then validates and commits the regenerated website data to `main`. It does not publish a Google Sheet.
 
 `data/manual-releases.json` stores confirmed theatrical releases that should stay visible
 even when they are not currently listed by Atmovies. These rows are deduplicated by TMDB ID,
@@ -138,29 +137,28 @@ GOOGLE_SPREADSHEET_NAME=movienotice_weekly
 Share the `tw movie` folder with the service account email and grant Editor access.
 If the same date is published again, the existing date worksheet is cleared and rewritten.
 
-The workflow also validates the generated site data before updating the public site.
+The manual website refresh validates the generated site data before updating the public site.
 It fails without publishing site changes if:
 
 - `movie-data.json` is not valid JSON or required movie fields are missing
 - `現正熱映` or `即將上映` drops below 20 movies
 - total site movies drops below 50
 - total site movies drops below 50% of the previous committed site data
-- `missing_tw_date` or `tmdb_not_found` exceeds 40 items
 
 When validation passes, GitHub Actions commits these site data files back to `main`:
 
 - `data/movie-data.json`
 - `data/tw-whitelist.json`
-- `data/atmovies-candidates.json`
-- `data/atmovies-next-snapshot.json`
-- `data/atmovies-next-diff.json`
+- `movies/`
+- `movie-page.css`
+- `sitemap.xml`
 
 ## Notes
 
 - The public site now reads static data from `data/movie-data.json`
 - Regular visitors do not consume TMDB / OMDb API usage
 - API usage happens when you run `scripts/weekly_check.py`
-- `data/atmovies-next-diff.json` compares this run with the previous `近期上映` snapshot and shows `added` / `removed` / `changed`
+- Atmovies audit outputs are ignored by Git and remain private to the workflow runner and Google Sheet
 
 ## Recent UI Notes
 

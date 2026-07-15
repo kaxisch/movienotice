@@ -1,4 +1,4 @@
-name: Weekly MovieNotice Check
+name: Weekly Atmovies Audit
 
 on:
   schedule:
@@ -7,7 +7,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: movienotice-data-jobs
+  cancel-in-progress: false
 
 jobs:
   weekly-check:
@@ -28,20 +32,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Save previous site data
-        run: git show HEAD:data/movie-data.json > /tmp/previous-movie-data.json
-
-      - name: Run weekly crawler
+      - name: Run weekly audit crawler
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           OMDB_API_KEYS: ${{ secrets.OMDB_API_KEYS }}
-        run: python3 scripts/weekly_check.py
-
-      - name: Validate generated site data
-        run: python3 scripts/validate_movie_data.py --previous-movie-data /tmp/previous-movie-data.json
-
-      - name: Generate movie detail pages
-        run: python3 scripts/generate_movie_pages.py
+        run: python3 scripts/weekly_check.py --mode audit
 
       - name: Publish TSV to Google Sheets
         env:
@@ -51,15 +46,3 @@ jobs:
           GOOGLE_DRIVE_FOLDER_NAME: ${{ vars.GOOGLE_DRIVE_FOLDER_NAME || 'tw movie' }}
           GOOGLE_SPREADSHEET_NAME: ${{ vars.GOOGLE_SPREADSHEET_NAME || 'movienotice_weekly' }}
         run: python3 scripts/publish_to_google_sheet.py
-
-      - name: Commit updated site data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/movie-data.json data/tw-whitelist.json data/atmovies-candidates.json data/atmovies-next-snapshot.json data/atmovies-next-diff.json movies movie-page.css sitemap.xml
-          if git diff --cached --quiet; then
-            echo "No site data changes to commit."
-          else
-            git commit -m "Update weekly movie data"
-            git push origin main
-          fi

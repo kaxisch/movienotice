@@ -10,6 +10,7 @@ import sys
 import json
 import time
 import difflib
+import argparse
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -907,8 +908,8 @@ def classify_release_bucket(record, release_date, today_local, tmdb_has_tw_date=
 
 def build_static_movie(record, payload, ratings):
     tmdb_id = record["tmdb_id"]
-    title_zh = preferred_display_title(record)
-    release_date = record.get("release_date_tw") or extract_tw_theatrical_date(payload) or payload.get("release_date", "")
+    title_zh = payload.get("title") or payload.get("original_title") or ""
+    release_date = record.get("tmdb_tw_release_date") or extract_tw_theatrical_date(payload)
     poster = f"{IMG_W}{payload['poster_path']}" if payload.get("poster_path") else ""
     backdrop = f"{IMG_BG}{payload['backdrop_path']}" if payload.get("backdrop_path") else ""
     genres = normalize_genres([item.get("name", "") for item in payload.get("genres", []) if item.get("name")])
@@ -942,7 +943,7 @@ def build_static_movie(record, payload, ratings):
         "titleZh": title_zh,
         "titleEn": payload.get("original_title") or record.get("title_en", ""),
         "releaseDate": release_date,
-        "twReleaseDateVerified": bool(record.get("release_date_tw")),
+        "twReleaseDateVerified": bool(release_date),
         "poster": poster or backdrop or None,
         "posterIsBackdrop": not bool(poster) and bool(backdrop),
         "backdrop": backdrop or None,
@@ -967,9 +968,9 @@ def build_static_movie(record, payload, ratings):
         "countries": countries,
         "detail": detail,
         "tmdbUrl": tmdb_movie_url(tmdb_id),
-        "atmoviesId": record.get("atmovies_id", ""),
-        "atmoviesUrl": record.get("atmovies_url", ""),
-        "sourceBucket": record.get("source_bucket", ""),
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb",
     }
 
 
@@ -1061,11 +1062,9 @@ def export_static_movie_data(output, generated_at_local):
     """輸出前端使用的完整靜態資料，避免瀏覽器直接打第三方 API"""
     movies = {"now": [], "soon": []}
     today_local = generated_at_local.date()
-    records = [
-        (record, True) for record in output["tmdb_has_tw_date"]
-    ] + [
-        (record, False) for record in output["missing_tw_date"]
-    ]
+    # Public site data is intentionally restricted to movies whose TMDB
+    # release_dates payload contains a Taiwan theatrical date.
+    records = [(record, True) for record in output["tmdb_has_tw_date"]]
     existing_ids = set()
 
     for idx, (record, tmdb_has_tw_date) in enumerate(records, 1):
@@ -1133,13 +1132,16 @@ def export_static_movie_data(output, generated_at_local):
         payload = tmdb_movie_full(tmdb_id)
         if not payload:
             continue
-        release_date_tw = manual.get("release_date_tw") or extract_tw_theatrical_date(payload) or payload.get("release_date", "")
+        release_date_tw = extract_tw_theatrical_date(payload)
+        if not release_date_tw:
+            continue
         record = {
             "tmdb_id": tmdb_id,
             "tmdb_title": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
             "title_zh": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
             "title_en": manual.get("title_en") or payload.get("original_title") or "",
             "release_date_tw": release_date_tw,
+            "tmdb_tw_release_date": release_date_tw,
             "atmovies_id": manual.get("atmovies_id", ""),
             "atmovies_url": manual.get("atmovies_url", ""),
             "source_bucket": "manual",
@@ -1160,7 +1162,7 @@ def export_static_movie_data(output, generated_at_local):
 
     payload = {
         "generated_at": generated_at_local.isoformat(),
-        "source": "atmovies.com.tw",
+        "source": "api.themoviedb.org",
         "summary": {
             "now_count": len(movies["now"]),
             "soon_count": len(movies["soon"]),
@@ -1516,7 +1518,19 @@ def export_next_snapshot_and_diff(movies_next, generated_at_local):
     return ATMOVIES_NEXT_SNAPSHOT_FILE, ATMOVIES_NEXT_DIFF_FILE, diff_payload
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Check Atmovies against TMDB and optionally refresh the site.")
+    parser.add_argument(
+        "--mode",
+        choices=("audit", "site"),
+        default="audit",
+        help="audit writes the review TSV; site rebuilds public data using TMDB-verified Taiwan dates only.",
+    )
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
     tmdb_overrides = load_tmdb_overrides()
 
     try:
@@ -1629,7 +1643,14 @@ def main():
     log(f"TMDB suspicious match: {len(tmdb_match_suspicious)}")
     log(f"\nOutput written to: {OUTPUT_FILE}")
 
-    # 產出 tw-whitelist.json 給網站使用 (精簡版,只有 TMDB ID + TW 上映日期)
+    if args.mode == "audit":
+        # Audit output remains private to the workflow runner and Google Sheet.
+        # Do not rebuild or publish website data from the Atmovies crawl.
+        tsv_path = export_google_sheets_tsv(output, generated_at_local)
+        log(f"Google Sheets TSV written to: {tsv_path}")
+        return
+
+    # 產出 tw-whitelist.json 給網站使用 (只有 TMDB 已確認的台灣院線日期)
     whitelist_path = OUTPUT_DIR / "tw-whitelist.json"
     whitelist_data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -1642,19 +1663,9 @@ def main():
     for m in output["tmdb_has_tw_date"]:
         if m.get("tmdb_id"):
             whitelist_data["tmdb_ids"].append(m["tmdb_id"])
-            if m.get("release_date_tw"):
-                whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
-            display_title = preferred_display_title(m)
-            if display_title:
-                whitelist_data["titles_zh"][str(m["tmdb_id"])] = display_title
-
-    # 從 missing_tw_date bucket 也抓 (這些片有 TMDB 條目,只是缺 TW date)
-    for m in output["missing_tw_date"]:
-        if m.get("tmdb_id"):
-            whitelist_data["tmdb_ids"].append(m["tmdb_id"])
-            if m.get("release_date_tw"):
-                whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["release_date_tw"]
-            display_title = preferred_display_title(m)
+            if m.get("tmdb_tw_release_date"):
+                whitelist_data["tw_release_dates"][str(m["tmdb_id"])] = m["tmdb_tw_release_date"]
+            display_title = m.get("tmdb_title", "")
             if display_title:
                 whitelist_data["titles_zh"][str(m["tmdb_id"])] = display_title
 
@@ -1664,21 +1675,8 @@ def main():
     write_traditional_json(whitelist_path, whitelist_data)
     log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
 
-    next_snapshot_path, next_diff_path, next_diff_payload = export_next_snapshot_and_diff(movies_next, generated_at_local)
-    log(
-        "Atmovies NEXT diff written to: "
-        f"{next_diff_path} (added {next_diff_payload['summary']['added']}, "
-        f"removed {next_diff_payload['summary']['removed']}, "
-        f"changed {next_diff_payload['summary']['changed']})"
-    )
-    log(f"Atmovies NEXT snapshot written to: {next_snapshot_path}")
-
-    candidates_path = export_atmovies_candidates(output, generated_at_local)
-    log(f"Atmovies candidates written to: {candidates_path}")
     movie_data_path, movie_data_payload = export_static_movie_data(output, generated_at_local)
     log(f"Static movie data written to: {movie_data_path}")
-    tsv_path = export_google_sheets_tsv(output, generated_at_local, movie_data_payload, next_diff_payload)
-    log(f"Google Sheets TSV written to: {tsv_path}")
 
 
 if __name__ == "__main__":
