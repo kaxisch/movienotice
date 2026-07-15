@@ -1012,50 +1012,26 @@ def dedup_discover_results(items):
 
 
 def fetch_supplemental_soon_candidates(today_local):
-    """補抓開眼視窗外的遠期即將上映片，沿用舊版前端 discover 邏輯"""
-    today_str = today_local.isoformat()
-    soon_cutoff_180 = (today_local + timedelta(days=SOON_WINDOW_DAYS)).isoformat()
-    soon_whitelist_cutoff = (today_local + timedelta(days=60)).isoformat()
+    """補抓開眼視窗外（第 61～180 天）的台灣院線候選片。
+
+    Discover 只負責找候選 ID；公開前仍須逐片以 release_dates 驗證
+    Taiwan theatrical (type 3) 日期。
+    """
+    far_future_start = (today_local + timedelta(days=61)).isoformat()
+    far_future_end = (today_local + timedelta(days=SOON_WINDOW_DAYS)).isoformat()
 
     tw_results = tmdb_discover(
         "/discover/movie",
         {
-            "release_date.gte": (today_local + timedelta(days=1)).isoformat(),
-            "release_date.lte": soon_cutoff_180,
+            "release_date.gte": far_future_start,
+            "release_date.lte": far_future_end,
             "sort_by": "release_date.asc",
-            "with_release_type": "3|2",
-            "watch_region": "TW",
+            "with_release_type": "3",
             "region": "TW",
         },
-        8,
+        20,
     )
-    en_results = tmdb_discover(
-        "/discover/movie",
-        {
-            "primary_release_date.gte": (today_local + timedelta(days=1)).isoformat(),
-            "primary_release_date.lte": soon_cutoff_180,
-            "sort_by": "popularity.desc",
-            "with_release_type": "2|3",
-            "with_original_language": "en",
-        },
-        2,
-    )
-
-    tw_results = dedup_discover_results(tw_results)
-    tw_ids = {item["id"] for item in tw_results if item.get("id")}
-    extra_en = [
-        item for item in en_results
-        if item.get("id")
-        and item["id"] not in tw_ids
-        and (item.get("release_date") or "") >= today_str
-    ][:15]
-
-    combined = dedup_discover_results(tw_results + extra_en)
-    return [
-        item for item in combined
-        if (item.get("release_date") or "") > soon_whitelist_cutoff
-        and (item.get("release_date") or "") <= soon_cutoff_180
-    ]
+    return dedup_discover_results(tw_results)
 
 
 def export_static_movie_data(output, generated_at_local):

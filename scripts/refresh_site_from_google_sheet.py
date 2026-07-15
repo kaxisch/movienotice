@@ -121,13 +121,22 @@ def load_manual_ids():
 def build_verified_output(candidates):
     candidate_by_id = {item["tmdb_id"]: item for item in candidates}
     ordered_ids = list(candidate_by_id)
+
+    today = datetime.now(timezone(timedelta(hours=8))).date()
+    supplemental = weekly.fetch_supplemental_soon_candidates(today)
+    log(f"Discovered {len(supplemental)} TMDB Taiwan theatrical candidates for days 61-180")
+    for item in supplemental:
+        tmdb_id = item.get("id")
+        if tmdb_id and tmdb_id not in candidate_by_id:
+            ordered_ids.append(tmdb_id)
+            candidate_by_id[tmdb_id] = {"tmdb_id": tmdb_id}
+
     retained_ids = load_current_site_ids() + load_current_whitelist_ids() + load_manual_ids()
     for tmdb_id in retained_ids:
         if tmdb_id not in candidate_by_id:
             ordered_ids.append(tmdb_id)
             candidate_by_id[tmdb_id] = {"tmdb_id": tmdb_id}
 
-    today = datetime.now(timezone(timedelta(hours=8))).date()
     past_cutoff = today - timedelta(days=weekly.NOW_LOOKBACK_DAYS)
     future_cutoff = today + timedelta(days=weekly.SOON_WINDOW_DAYS)
     verified = []
