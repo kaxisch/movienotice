@@ -78,10 +78,10 @@ git add app.js index.html sw.js scripts/weekly_check.py
 
 ## 6. Automated Google Sheets weekly run
 
-GitHub Actions can run the crawler every Wednesday and Saturday at 09:31 Asia/Taipei:
+GitHub Actions can run the crawler every Wednesday and Saturday at 09:05 Asia/Taipei:
 
 ```yaml
-cron: "31 1 * * 3,6"
+cron: "5 1 * * 3,6"
 ```
 
 The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets:

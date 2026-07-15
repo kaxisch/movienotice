@@ -2,8 +2,8 @@ name: Weekly MovieNotice Check
 
 on:
   schedule:
-    # 09:31 Asia/Taipei every Wednesday and Saturday.
-    - cron: "31 1 * * 3,6"
+    # 09:05 Asia/Taipei every Wednesday and Saturday.
+    - cron: "5 1 * * 3,6"
   workflow_dispatch:
 
 permissions:
