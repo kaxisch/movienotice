@@ -145,11 +145,19 @@ def build_verified_output(candidates):
         log(f"TMDB candidate [{index}/{len(ordered_ids)}] {tmdb_id}")
         movie = weekly.tmdb_movie(tmdb_id)
         if not movie:
+            log(f"  Excluded TMDB {tmdb_id}: movie details could not be loaded")
             continue
         release_results = weekly.tmdb_release_dates(tmdb_id)
         tw_date = weekly.extract_tw_theatrical_date_from_results(release_results)
         release_date = weekly.parse_iso_date(tw_date)
-        if not release_date or release_date < past_cutoff or release_date > future_cutoff:
+        if not release_date:
+            log(f"  Excluded TMDB {tmdb_id}: no Taiwan theatrical type 3 release date")
+            continue
+        if release_date < past_cutoff or release_date > future_cutoff:
+            log(
+                f"  Excluded TMDB {tmdb_id}: Taiwan theatrical date {tw_date} "
+                f"is outside {past_cutoff.isoformat()}..{future_cutoff.isoformat()}"
+            )
             continue
 
         source = candidate_by_id[tmdb_id]
@@ -188,8 +196,7 @@ def main():
     log(f"Loaded {len(candidates)} candidates from Google Sheet")
     output, generated_at = build_verified_output(candidates)
     if verified_signature(output) == current_whitelist_signature():
-        log("No TMDB Taiwan theatrical date changes; site refresh is not needed")
-        return
+        log("No TMDB Taiwan theatrical date changes; refreshing full site metadata anyway")
     weekly.write_tw_whitelist(output)
     path, payload = weekly.export_static_movie_data(output, generated_at)
     log(
