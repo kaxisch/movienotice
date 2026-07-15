@@ -15,13 +15,9 @@ TMDB_API_KEY=...
 OMDB_API_KEYS=key1,key2,key3,key4
 ```
 
-This updates:
+This writes private audit data:
 
-- `data/movie-data.json`
-- `data/tw-whitelist.json`
 - `data/atmovies-candidates.json`
-- `data/atmovies-next-snapshot.json`
-- `data/atmovies-next-diff.json`
 - `data/missing-tw-dates.json`
 - `data/YYYY-MM-DD.tsv`
 
@@ -52,11 +48,9 @@ Usually the important files are:
 - `data/movie-data.json`
 - `data/tw-whitelist.json`
 - `data/atmovies-candidates.json`
-- `data/atmovies-next-diff.json`
 
 Reference / review files:
 
-- `data/atmovies-next-snapshot.json`
 - `data/missing-tw-dates.json`
 - `data/YYYY-MM-DD.tsv`
 

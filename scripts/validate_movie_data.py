@@ -6,7 +6,7 @@ Validate generated MovieNotice static data before publishing it to the site.
 import argparse
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 
@@ -36,7 +36,7 @@ def movie_count(payload):
     return len(movies.get("now", [])) + len(movies.get("soon", []))
 
 
-def validate_movie(movie, bucket, index, errors):
+def validate_movie(movie, bucket, index, reference_date, errors):
     label = f"{bucket}[{index}]"
     if not isinstance(movie, dict):
         errors.append(f"{label} is not an object")
@@ -46,8 +46,24 @@ def validate_movie(movie, bucket, index, errors):
         errors.append(f"{label} missing id")
     if not str(movie.get("titleZh", "")).strip():
         errors.append(f"{label} missing titleZh")
-    if not parse_date(movie.get("releaseDate")):
+    release_date = parse_date(movie.get("releaseDate"))
+    if not release_date:
         errors.append(f"{label} has invalid releaseDate: {movie.get('releaseDate')!r}")
+    elif reference_date:
+        if release_date < reference_date - timedelta(days=180):
+            errors.append(f"{label} releaseDate is more than 180 days old")
+        if release_date > reference_date + timedelta(days=180):
+            errors.append(f"{label} releaseDate is more than 180 days ahead")
+        if bucket == "now" and release_date > reference_date:
+            errors.append(f"{label} has a future releaseDate in the now bucket")
+        if bucket == "soon" and release_date <= reference_date:
+            errors.append(f"{label} does not have a future releaseDate in the soon bucket")
+    if movie.get("twReleaseDateVerified") is not True:
+        errors.append(f"{label} is not TMDB Taiwan theatrical-date verified")
+    if movie.get("sourceBucket") != "tmdb":
+        errors.append(f"{label} sourceBucket must be 'tmdb'")
+    if movie.get("atmoviesId") or movie.get("atmoviesUrl"):
+        errors.append(f"{label} exposes private Atmovies source data")
 
 
 def validate_payload(payload, previous_payload, min_now, min_soon, min_total, max_drop_ratio):
@@ -85,10 +101,19 @@ def validate_payload(payload, previous_payload, min_now, min_soon, min_total, ma
     if total_count < min_total:
         errors.append(f"total_count {total_count} is below minimum {min_total}")
 
+    generated_at = payload.get("generated_at", "")
+    try:
+        reference_date = datetime.fromisoformat(generated_at).date()
+    except (TypeError, ValueError):
+        reference_date = None
+
+    if payload.get("source") != "api.themoviedb.org":
+        errors.append("public data source must be api.themoviedb.org")
+
     seen_ids = {}
     for bucket, items in (("now", now), ("soon", soon)):
         for index, movie in enumerate(items, 1):
-            validate_movie(movie, bucket, index, errors)
+            validate_movie(movie, bucket, index, reference_date, errors)
             movie_id = movie.get("id") if isinstance(movie, dict) else None
             if movie_id:
                 if movie_id in seen_ids:
@@ -104,9 +129,10 @@ def validate_payload(payload, previous_payload, min_now, min_soon, min_total, ma
                     f"total_count {total_count} dropped below {max_drop_ratio:.0%} of previous total {previous_total}"
                 )
 
-    generated_at = payload.get("generated_at", "")
     if not generated_at:
         warnings.append("generated_at is missing")
+    elif not reference_date:
+        errors.append(f"generated_at is invalid: {generated_at!r}")
 
     return {
         "now_count": now_count,

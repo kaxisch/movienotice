@@ -10,7 +10,6 @@ import sys
 import json
 import time
 import difflib
-import argparse
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -39,8 +38,6 @@ OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
 OVERRIDES_FILE = OUTPUT_DIR / "tmdb-overrides.json"
 ATMOVIES_CANDIDATES_FILE = OUTPUT_DIR / "atmovies-candidates.json"
 MOVIE_DATA_FILE = OUTPUT_DIR / "movie-data.json"
-ATMOVIES_NEXT_SNAPSHOT_FILE = OUTPUT_DIR / "atmovies-next-snapshot.json"
-ATMOVIES_NEXT_DIFF_FILE = OUTPUT_DIR / "atmovies-next-diff.json"
 MANUAL_RELEASES_FILE = OUTPUT_DIR / "manual-releases.json"
 IMG_W = "https://image.tmdb.org/t/p/w500"
 IMG_BG = "https://image.tmdb.org/t/p/w1280"
@@ -116,16 +113,6 @@ def to_traditional_data(value):
 def write_traditional_json(path, payload):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(to_traditional_data(payload), f, ensure_ascii=False, indent=2)
-
-
-def normalize_date(s):
-    """把 2026/5/27 或 2026/06/03 轉成 2026-05-27"""
-    s = s.strip()
-    m = re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", s)
-    if not m:
-        return None
-    y, mo, d = m.groups()
-    return f"{int(y):04d}-{int(mo):02d}-{int(d):02d}"
 
 
 def parse_iso_date(value):
@@ -443,36 +430,6 @@ def normalize_genres(genres):
         seen.add(trad)
         result.append(trad)
     return result
-
-
-def has_han(text):
-    """判斷字串是否包含中日韓漢字"""
-    return bool(re.search(r"[\u4e00-\u9fff]", text or ""))
-
-
-def preferred_display_title(movie):
-    """站上顯示標題優先使用較完整的 TMDB 中文名,否則回退開眼片名"""
-    atmovies_title = (movie.get("title_zh") or "").strip()
-    tmdb_title = (movie.get("tmdb_title") or "").strip()
-
-    if not tmdb_title:
-        return atmovies_title
-    if not atmovies_title:
-        return tmdb_title
-    if not has_han(tmdb_title):
-        return atmovies_title
-
-    at_norm = normalize_title_key(atmovies_title)
-    tmdb_norm = normalize_title_key(tmdb_title)
-
-    if at_norm == tmdb_norm:
-        return tmdb_title
-    if at_norm and (tmdb_norm.startswith(at_norm) or at_norm.startswith(tmdb_norm)):
-        return tmdb_title
-    if len(tmdb_norm) > len(at_norm):
-        return tmdb_title
-
-    return atmovies_title
 
 
 def title_similarity(a, b):
@@ -1128,57 +1085,6 @@ def should_export_tsv_movie(movie, generated_at_local):
     return release_date >= cutoff
 
 
-def append_next_diff_tsv_rows(rows, next_diff_payload):
-    """把開眼近期上映清單差異加到 Google Sheets TSV，方便人工檢查"""
-    if not next_diff_payload:
-        return
-
-    for movie in next_diff_payload.get("added", []):
-        rows.append([
-            "近期上映新增",
-            movie.get("title_zh", ""),
-            movie.get("release_date_tw", ""),
-            movie.get("title_en", ""),
-            movie.get("atmovies_url", ""),
-            "",
-            "本次出現在開眼近期上映清單",
-        ])
-
-    for movie in next_diff_payload.get("removed", []):
-        rows.append([
-            "近期上映清單移除",
-            movie.get("title_zh", ""),
-            movie.get("release_date_tw", ""),
-            movie.get("title_en", ""),
-            movie.get("atmovies_url", ""),
-            "",
-            "只代表從開眼近期上映清單消失；可能已轉現正熱映",
-        ])
-
-    for item in next_diff_payload.get("changed", []):
-        before = item.get("before", {})
-        after = item.get("after", {})
-        changed_fields = []
-        if before.get("release_date_tw") != after.get("release_date_tw"):
-            changed_fields.append("上映日期")
-        if before.get("screen_count", 0) != after.get("screen_count", 0):
-            changed_fields.append("廳數")
-        if before.get("title_zh", "") != after.get("title_zh", ""):
-            changed_fields.append("中文片名")
-        if before.get("title_en", "") != after.get("title_en", ""):
-            changed_fields.append("原文片名")
-
-        rows.append([
-            "近期上映資料變更",
-            after.get("title_zh", "") or before.get("title_zh", ""),
-            after.get("release_date_tw", ""),
-            after.get("title_en", "") or before.get("title_en", ""),
-            after.get("atmovies_url", "") or before.get("atmovies_url", ""),
-            before.get("release_date_tw", ""),
-            "、".join(changed_fields) if changed_fields else "資料有變更",
-        ])
-
-
 def append_manual_release_tsv_rows(rows, generated_at_local):
     today_local = generated_at_local.date()
     for manual in load_manual_releases():
@@ -1231,7 +1137,7 @@ def append_tmdb_match_suspicious_tsv_rows(rows, output, generated_at_local):
         ])
 
 
-def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_diff_payload=None):
+def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
     """輸出給 Google Sheets 用的 TSV"""
     tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
     rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "連結", "原上映日期", "備註"]]
@@ -1266,7 +1172,6 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None, next_d
             "",
         ])
 
-    append_next_diff_tsv_rows(rows, next_diff_payload)
     append_manual_release_tsv_rows(rows, generated_at_local)
 
     movie_buckets = movie_data.get("movies", {}) if movie_data else {}
@@ -1331,137 +1236,7 @@ def export_atmovies_candidates(output, generated_at_local):
     return ATMOVIES_CANDIDATES_FILE
 
 
-def build_next_snapshot_payload(movies_next, generated_at_local):
-    """把本次開眼近期上映片單整理成可比較的 snapshot"""
-    items = []
-    seen_ids = set()
-
-    for movie in sorted(
-        movies_next,
-        key=lambda item: ((item.get("release_date_tw") or ""), (item.get("title_zh") or ""), (item.get("atmovies_id") or "")),
-    ):
-        atmovies_id = movie.get("atmovies_id") or ""
-        if not atmovies_id or atmovies_id in seen_ids:
-            continue
-        seen_ids.add(atmovies_id)
-        items.append({
-            "atmovies_id": atmovies_id,
-            "title_zh": movie.get("title_zh", ""),
-            "title_en": movie.get("title_en", ""),
-            "release_date_tw": movie.get("release_date_tw", ""),
-            "screen_count": movie.get("screen_count", 0),
-            "atmovies_url": movie.get("atmovies_url", ""),
-        })
-
-    return {
-        "generated_at": generated_at_local.isoformat(),
-        "source": "atmovies.com.tw",
-        "summary": {
-            "movie_count": len(items),
-        },
-        "movies": items,
-    }
-
-
-def load_previous_next_snapshot():
-    """讀取前一次開眼近期上映 snapshot；沒有就回 None"""
-    if not ATMOVIES_NEXT_SNAPSHOT_FILE.exists():
-        return None
-    try:
-        with open(ATMOVIES_NEXT_SNAPSHOT_FILE, "r", encoding="utf-8") as f:
-            payload = json.load(f)
-        return payload if isinstance(payload, dict) else None
-    except Exception as e:
-        log(f"Failed to load previous next snapshot: {e}")
-        return None
-
-
-def build_next_diff_payload(previous_snapshot, current_snapshot, generated_at_local):
-    """比較這次與上次的開眼近期上映清單"""
-    previous_movies = previous_snapshot.get("movies", []) if previous_snapshot else []
-    current_movies = current_snapshot.get("movies", [])
-
-    prev_map = {
-        item.get("atmovies_id"): item
-        for item in previous_movies
-        if isinstance(item, dict) and item.get("atmovies_id")
-    }
-    curr_map = {
-        item.get("atmovies_id"): item
-        for item in current_movies
-        if isinstance(item, dict) and item.get("atmovies_id")
-    }
-
-    prev_ids = set(prev_map.keys())
-    curr_ids = set(curr_map.keys())
-
-    added = [curr_map[movie_id] for movie_id in sorted(curr_ids - prev_ids)]
-    removed = [prev_map[movie_id] for movie_id in sorted(prev_ids - curr_ids)]
-    unchanged = []
-    changed = []
-
-    for movie_id in sorted(prev_ids & curr_ids):
-        prev_item = prev_map[movie_id]
-        curr_item = curr_map[movie_id]
-        if (
-            prev_item.get("release_date_tw") != curr_item.get("release_date_tw")
-            or prev_item.get("screen_count", 0) != curr_item.get("screen_count", 0)
-            or prev_item.get("title_zh", "") != curr_item.get("title_zh", "")
-            or prev_item.get("title_en", "") != curr_item.get("title_en", "")
-        ):
-            changed.append({
-                "atmovies_id": movie_id,
-                "before": prev_item,
-                "after": curr_item,
-            })
-        else:
-            unchanged.append(curr_item)
-
-    return {
-        "generated_at": generated_at_local.isoformat(),
-        "source": "atmovies.com.tw",
-        "compared_to": previous_snapshot.get("generated_at", "") if previous_snapshot else "",
-        "summary": {
-            "previous_count": len(previous_movies),
-            "current_count": len(current_movies),
-            "added": len(added),
-            "removed": len(removed),
-            "changed": len(changed),
-            "unchanged": len(unchanged),
-        },
-        "added": added,
-        "removed": removed,
-        "changed": changed,
-        "unchanged": unchanged,
-    }
-
-
-def export_next_snapshot_and_diff(movies_next, generated_at_local):
-    """輸出開眼近期上映 snapshot 與前後差異 diff"""
-    previous_snapshot = load_previous_next_snapshot()
-    current_snapshot = build_next_snapshot_payload(movies_next, generated_at_local)
-    diff_payload = build_next_diff_payload(previous_snapshot, current_snapshot, generated_at_local)
-
-    write_traditional_json(ATMOVIES_NEXT_SNAPSHOT_FILE, current_snapshot)
-
-    write_traditional_json(ATMOVIES_NEXT_DIFF_FILE, diff_payload)
-
-    return ATMOVIES_NEXT_SNAPSHOT_FILE, ATMOVIES_NEXT_DIFF_FILE, diff_payload
-
-
-def parse_args():
-    parser = argparse.ArgumentParser(description="Check Atmovies against TMDB and optionally refresh the site.")
-    parser.add_argument(
-        "--mode",
-        choices=("audit", "site"),
-        default="audit",
-        help="audit writes the review TSV; site rebuilds public data using TMDB-verified Taiwan dates only.",
-    )
-    return parser.parse_args()
-
-
 def main():
-    args = parse_args()
     tmdb_overrides = load_tmdb_overrides()
 
     try:
@@ -1574,19 +1349,11 @@ def main():
     log(f"TMDB suspicious match: {len(tmdb_match_suspicious)}")
     log(f"\nOutput written to: {OUTPUT_FILE}")
 
-    if args.mode == "audit":
-        # Audit output remains private to the workflow runner and Google Sheet.
-        # Do not rebuild or publish website data from the Atmovies crawl.
-        candidates_path = export_atmovies_candidates(output, generated_at_local)
-        log(f"Private refresh candidates written to: {candidates_path}")
-        tsv_path = export_google_sheets_tsv(output, generated_at_local)
-        log(f"Google Sheets TSV written to: {tsv_path}")
-        return
-
-    write_tw_whitelist(output)
-
-    movie_data_path, movie_data_payload = export_static_movie_data(output, generated_at_local)
-    log(f"Static movie data written to: {movie_data_path}")
+    # The crawler is audit-only. Public data is rebuilt separately from TMDB.
+    candidates_path = export_atmovies_candidates(output, generated_at_local)
+    log(f"Private refresh candidates written to: {candidates_path}")
+    tsv_path = export_google_sheets_tsv(output, generated_at_local)
+    log(f"Google Sheets TSV written to: {tsv_path}")
 
 
 def write_tw_whitelist(output):
