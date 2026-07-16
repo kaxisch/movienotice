@@ -38,12 +38,6 @@ LANG_MAP = {
     "tr": "土耳其語",
 }
 
-STATUS_MAP = {
-    "Released": "已上映",
-    "In Production": "製作中",
-    "Planned": "計畫中",
-}
-
 COUNTRY_MAP = {
     "US": "美國", "GB": "英國", "FR": "法國", "DE": "德國", "IT": "義大利", "JP": "日本", "KR": "韓國",
     "CN": "中國", "HK": "香港", "TW": "台灣", "AU": "澳洲", "CA": "加拿大", "ES": "西班牙", "IN": "印度",
@@ -152,7 +146,6 @@ def render_meta_panel(movie, detail):
     countries = detail.get("countries") or movie.get("countries") or []
     rows = [
         ("原始標題", detail.get("origTitle") or movie.get("titleEn") or "—"),
-        ("狀態", STATUS_MAP.get(detail.get("status"), detail.get("status") or "—")),
         ("原始語言", LANG_MAP.get(detail.get("origLang"), detail.get("origLang") or "—")),
         ("製片國家", format_country_list(countries)),
         ("電影成本", f"${detail.get('budget'):,}" if detail.get("budget") else "—"),
