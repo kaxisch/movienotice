@@ -841,7 +841,6 @@ function movieDetailHref(movie, detail) {
 function renderModal(movie, detail, imdbRating) {
   var trailerKey = detail.trailerKey || movie.trailerKey;
   var langMap = {en:"英語",zh:"中文",ja:"日語",ko:"韓語",fr:"法語",es:"西班牙語",de:"德語",it:"義大利語",th:"泰語",hi:"印地語",tl:"菲律賓語",ar:"阿拉伯語",id:"印尼語",pt:"葡萄牙語",tr:"土耳其語"};
-  var statusMap = {Released:"已上映","In Production":"製作中",Planned:"計畫中"};
   var genres = normalizeGenreList(detail.genres || movie.genre || []);
   var genreTags = "";
   for (var i = 0; i < Math.min(genres.length,3); i++) genreTags += '<span class="modal-genre-tag">' + escHtml(genres[i]) + '</span>';
@@ -869,7 +868,6 @@ function renderModal(movie, detail, imdbRating) {
   if (detail.duration) subtitleParts.push(detail.duration + "分鐘");
   var metaRows = [
     ["原始標題", detail.origTitle || movie.titleEn || "—"],
-    ["狀態", statusMap[detail.status] || detail.status || "—"],
     ["原始語言", langMap[detail.origLang] || detail.origLang || "—"],
     ["製片國家", formatCountryList(detail.countries)],
     ["電影成本", detail.budget ? "$" + detail.budget.toLocaleString() : "—"],
