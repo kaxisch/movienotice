@@ -244,9 +244,9 @@ def render_movie_page(movie, generated_at):
 <meta name="twitter:title" content="{h(page_title)}"/>
 <meta name="twitter:description" content="{h(description)}"/>
 <meta name="twitter:image" content="{h(poster or hero_image)}"/>
-<link rel="icon" href="../../favicon.ico" sizes="32x32"/>
-<link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any"/>
-<link rel="apple-touch-icon" href="../../apple-touch-icon.png"/>
+<link rel="icon" href="../../favicon.ico?v=10" sizes="32x32"/>
+<link rel="icon" href="../../favicon.svg?v=10" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="../../movie-page.css"/>
@@ -254,7 +254,7 @@ def render_movie_page(movie, generated_at):
 </head>
 <body>
 <div class="page-bg"></div>
-<header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg" alt="MovieNotice 電影佈告欄"/><span>電影佈告欄</span></a><a class="back-link" href="../../">回電影列表</a></div></header>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span>電影佈告欄</span></a><a class="back-link" href="../../">回電影列表</a></div></header>
 <main>
 <section class="hero"><div class="hero-media">{hero_media}</div><div class="hero-content"><div class="genre-tags">{genre_tags}</div><h1>{h(title_zh)}</h1><p class="subtitle">{h(subtitle)}</p><div class="ratings">{ratings_html}</div>{trailer_html}</div></section>
 <section class="content">

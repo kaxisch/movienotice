@@ -982,15 +982,15 @@ function applyLoadedMoviePayload(payload) {
 function loadData(forceRefresh) {
   var errBanner = document.getElementById("error-banner");
   errBanner.classList.remove("show");
+  var cached = null;
   if (!forceRefresh) {
-    var cached = loadCache();
+    cached = loadCache();
     if (cached) {
       applyLoadedMoviePayload(cached);
-      return;
     }
   }
-  showSkeletons();
-  fetch(STATIC_DATA_PATH, { cache: forceRefresh ? "reload" : "default" }).then(function(r) {
+  if (!cached) showSkeletons();
+  fetch(STATIC_DATA_PATH, { cache: "no-store" }).then(function(r) {
     if (!r.ok) throw new Error("STATIC " + r.status);
     return r.json();
   }).then(function(payload) {
@@ -999,9 +999,9 @@ function loadData(forceRefresh) {
   }).catch(function(e) {
     errBanner.textContent = "⚠️ 資料載入失敗：" + e.message;
     errBanner.classList.add("show");
-    var cached = loadCache();
-    if (cached) {
-      applyLoadedMoviePayload(cached);
+    var fallback = cached || loadCache();
+    if (fallback) {
+      applyLoadedMoviePayload(fallback);
     }
   });
 }

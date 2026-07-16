@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'movienotice-v9';
+const CACHE_VERSION = 'movienotice-v10';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
 
@@ -8,14 +8,13 @@ const STATIC_ASSETS = [
   './styles.css',
   './movie-page.css',
   './app.js',
-  './data/movie-data.json',
-  './manifest.webmanifest',
-  './logo.svg',
-  './favicon.svg',
-  './apple-touch-icon.png',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-512-maskable.png',
+  './manifest.webmanifest?v=10',
+  './logo.svg?v=10',
+  './favicon.svg?v=10',
+  './apple-touch-icon.png?v=10',
+  './icons/icon-192.png?v=10',
+  './icons/icon-512.png?v=10',
+  './icons/icon-512-maskable.png?v=10',
 ];
 
 self.addEventListener('install', (e) => {
@@ -74,7 +73,7 @@ async function cacheFirst(request, cacheName) {
 
 async function networkFirst(request, cacheName) {
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: 'no-store' });
     if (response.ok) {
       const cache = await caches.open(cacheName);
       cache.put(request, response.clone());

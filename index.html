@@ -18,15 +18,15 @@
 <meta name="twitter:title" content="MovieNotice 電影佈告欄｜台灣上映電影情報、現正熱映與即將上映"/>
 <meta name="twitter:description" content="MovieNotice 電影佈告欄提供台灣現正熱映與即將上映電影資訊，包含上映日期、IMDb、TMDB、爛番茄與 Metacritic 評分，方便快速查詢近期電影。"/>
 <meta name="twitter:image" content="https://movienotice.pages.dev/icons/icon-512.png"/>
-<link rel="icon" href="favicon.ico" sizes="32x32"/>
-<link rel="icon" href="apple-touch-icon.png" type="image/png"/>
-<link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"/>
-<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="icon" href="favicon.ico?v=10" sizes="32x32"/>
+<link rel="icon" href="apple-touch-icon.png?v=10" type="image/png"/>
+<link rel="icon" href="favicon.svg?v=10" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=10"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="電影佈告欄"/>
-<link rel="manifest" href="manifest.webmanifest"/>
+<link rel="manifest" href="manifest.webmanifest?v=10"/>
 <meta name="theme-color" content="#0a0a0f"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
@@ -72,7 +72,7 @@
 <header id="navbar">
   <div class="nav-inner">
     <div class="nav-logo">
-      <img src="logo.svg" width="171" height="40" alt="MovieNotice 電影佈告欄"/>
+      <img src="logo.svg?v=10" width="171" height="40" alt="MovieNotice 電影佈告欄"/>
       <span>電影佈告欄</span>
     </div>
   </div>
@@ -220,10 +220,11 @@
 </footer>
 </main>
 
-<script src="app.js"></script>
+<script src="app.js?v=10"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
+    navigator.serviceWorker.register('sw.js?v=10', { updateViaCache: 'none' })
+      .then(registration => registration.update())
       .catch(err => console.warn('[SW] register failed:', err));
   }
 </script>
