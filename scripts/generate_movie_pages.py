@@ -99,11 +99,26 @@ def normalize_genres(movie, detail):
     return result
 
 
+RELEASE_LANGUAGE_MAP = {"ja": "日文", "zh": "中文", "en": "英文"}
+
+
+def format_release_dates(movie, separator="、"):
+    releases = movie.get("twTheatricalReleases") or []
+    if len(releases) < 2:
+        return format_date(movie.get("releaseDate"))
+    labels = []
+    for item in releases:
+        date_label = format_date(item.get("date"))
+        language = RELEASE_LANGUAGE_MAP.get(item.get("language"), "")
+        labels.append(f"{date_label}（{language}）" if language else date_label)
+    return separator.join(labels)
+
+
 def description_for(movie, detail):
     title = movie.get("titleZh") or detail.get("origTitle") or movie.get("titleEn") or "電影"
     parts = [f"《{title}》"]
     if movie.get("releaseDate"):
-        parts.append(f"台灣上映日期 {format_date(movie.get('releaseDate'))}")
+        parts.append(f"台灣上映日期 {format_release_dates(movie)}")
     genres = normalize_genres(movie, detail)
     if genres:
         parts.append("類型：" + "、".join(genres[:3]))
@@ -144,13 +159,16 @@ def format_country_list(countries):
 
 def render_meta_panel(movie, detail):
     countries = detail.get("countries") or movie.get("countries") or []
-    rows = [
+    rows = []
+    if len(movie.get("twTheatricalReleases") or []) > 1:
+        rows.append(("台灣上映", format_release_dates(movie)))
+    rows.extend([
         ("原始標題", detail.get("origTitle") or movie.get("titleEn") or "—"),
         ("原始語言", LANG_MAP.get(detail.get("origLang"), detail.get("origLang") or "—")),
         ("製片國家", format_country_list(countries)),
         ("電影成本", f"${detail.get('budget'):,}" if detail.get("budget") else "—"),
         ("票房收入", f"${detail.get('revenue'):,}" if detail.get("revenue") else "—"),
-    ]
+    ])
     return "\n".join(
         f'<div class="meta-row"><span class="meta-key">{h(key)}</span><span class="meta-val">{h(value)}</span></div>'
         for key, value in rows
@@ -171,7 +189,7 @@ def render_movie_page(movie, generated_at):
         part
         for part in [
             title_en,
-            format_date(movie.get("releaseDate")),
+            format_release_dates(movie),
             f"{detail.get('duration')}分鐘" if detail.get("duration") else "",
         ]
         if part

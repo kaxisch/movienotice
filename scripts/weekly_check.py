@@ -651,17 +651,41 @@ def tmdb_release_dates(tmdb_id):
 
 def extract_tw_theatrical_date_from_results(release_results):
     """從 /release_dates 結果取出台灣院線上映日。"""
+    theatrical = extract_tw_theatrical_releases_from_results(release_results)
+    return theatrical[-1]["date"] if theatrical else ""
+
+
+def extract_tw_theatrical_releases_from_results(release_results):
+    """取出台灣 type 3 上映紀錄，依日期由早到晚排列並去除重複項目。"""
+    releases = []
+    seen = set()
     for entry in release_results:
         if entry.get("iso_3166_1") != "TW":
             continue
-        theatrical = [item for item in entry.get("release_dates", []) if item.get("type") == 3]
-        if not theatrical:
-            continue
-        theatrical.sort(key=lambda item: item.get("release_date", ""), reverse=True)
-        release_date = theatrical[0].get("release_date", "")
-        if release_date:
-            return release_date[:10]
-    return ""
+        for item in entry.get("release_dates", []):
+            if item.get("type") != 3:
+                continue
+            release_date = item.get("release_date", "")[:10]
+            if not parse_iso_date(release_date):
+                continue
+            language = (item.get("iso_639_1") or "").lower()
+            key = (release_date, language)
+            if key in seen:
+                continue
+            seen.add(key)
+            releases.append({"date": release_date, "language": language})
+    releases.sort(key=lambda item: (item["date"], item["language"]))
+    return releases
+
+
+def releases_in_window(releases, start_date, end_date):
+    """只保留網站有效顯示範圍內的上映紀錄。"""
+    eligible = []
+    for item in releases:
+        release_date = parse_iso_date(item.get("date", ""))
+        if release_date and start_date <= release_date <= end_date:
+            eligible.append(item)
+    return eligible
 
 
 def load_tmdb_overrides():
@@ -746,17 +770,7 @@ def tmdb_discover(path, params, max_pages):
 def extract_tw_theatrical_date(payload):
     """從 append_to_response 後的 release_dates 取出台灣院線上映日"""
     release_dates = payload.get("release_dates", {})
-    for entry in release_dates.get("results", []):
-        if entry.get("iso_3166_1") != "TW":
-            continue
-        theatrical = [item for item in entry.get("release_dates", []) if item.get("type") == 3]
-        if not theatrical:
-            continue
-        theatrical.sort(key=lambda item: item.get("release_date", ""), reverse=True)
-        release_date = theatrical[0].get("release_date", "")
-        if release_date:
-            return release_date[:10]
-    return ""
+    return extract_tw_theatrical_date_from_results(release_dates.get("results", []))
 
 
 def parse_watch_platforms(payload):
@@ -867,6 +881,7 @@ def build_static_movie(record, payload, ratings):
     tmdb_id = record["tmdb_id"]
     title_zh = payload.get("title") or payload.get("original_title") or ""
     release_date = record.get("tmdb_tw_release_date") or extract_tw_theatrical_date(payload)
+    theatrical_releases = record.get("tmdb_tw_release_dates") or []
     poster = f"{IMG_W}{payload['poster_path']}" if payload.get("poster_path") else ""
     backdrop = f"{IMG_BG}{payload['backdrop_path']}" if payload.get("backdrop_path") else ""
     genres = normalize_genres([item.get("name", "") for item in payload.get("genres", []) if item.get("name")])
@@ -900,6 +915,7 @@ def build_static_movie(record, payload, ratings):
         "titleZh": title_zh,
         "titleEn": payload.get("original_title") or record.get("title_en", ""),
         "releaseDate": release_date,
+        "twTheatricalReleases": theatrical_releases,
         "twReleaseDateVerified": bool(release_date),
         "poster": poster or backdrop or None,
         "posterIsBackdrop": not bool(poster) and bool(backdrop),
@@ -1033,9 +1049,14 @@ def export_static_movie_data(output, generated_at_local):
         payload = tmdb_movie_full(tmdb_id)
         if not payload:
             continue
-        release_date_tw = extract_tw_theatrical_date(payload)
-        if not release_date_tw:
+        theatrical_releases = releases_in_window(
+            extract_tw_theatrical_releases_from_results(payload.get("release_dates", {}).get("results", [])),
+            today_local - timedelta(days=NOW_LOOKBACK_DAYS),
+            today_local + timedelta(days=SOON_WINDOW_DAYS),
+        )
+        if not theatrical_releases:
             continue
+        release_date_tw = theatrical_releases[0]["date"]
         record = {
             "tmdb_id": tmdb_id,
             "tmdb_title": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
@@ -1043,6 +1064,7 @@ def export_static_movie_data(output, generated_at_local):
             "title_en": manual.get("title_en") or payload.get("original_title") or "",
             "release_date_tw": release_date_tw,
             "tmdb_tw_release_date": release_date_tw,
+            "tmdb_tw_release_dates": theatrical_releases,
             "atmovies_id": manual.get("atmovies_id", ""),
             "atmovies_url": manual.get("atmovies_url", ""),
             "source_bucket": "manual",

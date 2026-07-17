@@ -60,6 +60,22 @@ def validate_movie(movie, bucket, index, reference_date, errors):
             errors.append(f"{label} does not have a future releaseDate in the soon bucket")
     if movie.get("twReleaseDateVerified") is not True:
         errors.append(f"{label} is not TMDB Taiwan theatrical-date verified")
+    theatrical_releases = movie.get("twTheatricalReleases", [])
+    if not isinstance(theatrical_releases, list):
+        errors.append(f"{label} twTheatricalReleases must be a list")
+    elif theatrical_releases:
+        dates = [parse_date(item.get("date")) for item in theatrical_releases if isinstance(item, dict)]
+        if len(dates) != len(theatrical_releases) or any(date is None for date in dates):
+            errors.append(f"{label} has invalid twTheatricalReleases")
+        elif dates != sorted(dates):
+            errors.append(f"{label} twTheatricalReleases is not sorted by date")
+        elif release_date != dates[0]:
+            errors.append(f"{label} releaseDate must match the earliest listed theatrical release")
+        if reference_date and all(date is not None for date in dates):
+            for theatrical_date in dates:
+                if not reference_date - timedelta(days=180) <= theatrical_date <= reference_date + timedelta(days=180):
+                    errors.append(f"{label} has a theatrical release outside the 180-day display window")
+                    break
     if movie.get("sourceBucket") != "tmdb":
         errors.append(f"{label} sourceBucket must be 'tmdb'")
     if movie.get("atmoviesId") or movie.get("atmoviesUrl"):

@@ -148,17 +148,17 @@ def build_verified_output(candidates):
             log(f"  Excluded TMDB {tmdb_id}: movie details could not be loaded")
             continue
         release_results = weekly.tmdb_release_dates(tmdb_id)
-        tw_date = weekly.extract_tw_theatrical_date_from_results(release_results)
-        release_date = weekly.parse_iso_date(tw_date)
-        if not release_date:
-            log(f"  Excluded TMDB {tmdb_id}: no Taiwan theatrical type 3 release date")
-            continue
-        if release_date < past_cutoff or release_date > future_cutoff:
+        theatrical_releases = weekly.extract_tw_theatrical_releases_from_results(release_results)
+        eligible_releases = weekly.releases_in_window(theatrical_releases, past_cutoff, future_cutoff)
+        if not eligible_releases:
+            available_dates = ", ".join(item["date"] for item in theatrical_releases) or "none"
             log(
-                f"  Excluded TMDB {tmdb_id}: Taiwan theatrical date {tw_date} "
-                f"is outside {past_cutoff.isoformat()}..{future_cutoff.isoformat()}"
+                f"  Excluded TMDB {tmdb_id}: no Taiwan theatrical type 3 date inside "
+                f"{past_cutoff.isoformat()}..{future_cutoff.isoformat()} (available: {available_dates})"
             )
             continue
+        tw_date = eligible_releases[0]["date"]
+        release_date = weekly.parse_iso_date(tw_date)
 
         source = candidate_by_id[tmdb_id]
         verified.append({
@@ -168,6 +168,7 @@ def build_verified_output(candidates):
             "tmdb_primary_release_date": movie.get("release_date", ""),
             "tmdb_release_year": (movie.get("release_date") or "")[:4],
             "tmdb_tw_release_date": tw_date,
+            "tmdb_tw_release_dates": eligible_releases,
             "release_date_tw": tw_date,
             "title_zh": movie.get("title") or movie.get("original_title", ""),
             "title_en": movie.get("original_title", ""),

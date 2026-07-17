@@ -129,6 +129,15 @@ function formatDate(d) {
   var p = d.split("-");
   return p[0] + "/" + p[1] + "/" + p[2];
 }
+var releaseLanguageMap = { "ja":"日文", "zh":"中文", "en":"英文" };
+function formatReleaseDates(movie, separator) {
+  var releases = Array.isArray(movie.twTheatricalReleases) ? movie.twTheatricalReleases : [];
+  if (releases.length < 2) return formatDate(movie.releaseDate);
+  return releases.map(function(item) {
+    var language = releaseLanguageMap[item.language] || "";
+    return formatDate(item.date) + (language ? "（" + language + "）" : "");
+  }).join(separator === undefined ? "<br>" : separator);
+}
 function formatUpdateTime(isoString) {
   if (!isoString) return "";
   var d = new Date(isoString);
@@ -235,7 +244,7 @@ function cardHTML(m, showRatings) {
   var titleEn = (m.titleEn && m.titleEn !== m.titleZh)
     ? '<p class="card-title-en">' + escHtml(m.titleEn) + '</p>'
     : '<p class="card-title-en"></p>';
-  var metaHTML = '<div class="card-meta"><span class="card-date">' + formatDate(m.releaseDate) + '</span>';
+  var metaHTML = '<div class="card-meta"><span class="card-date">' + formatReleaseDates(m) + '</span>';
   if (showRatings) {
     var imdbStyle = m.imdb ? '' : ' style="display:none"';
     var rtStyle = m.rt ? '' : ' style="display:none"';
@@ -301,7 +310,7 @@ function listRowHTML(m, showRatings) {
   var href = escHtml(movieDetailHref(m));
   return '<a class="list-item movie-link fade-in" id="card-' + m.id + '" href="' + href + '" onclick="return openMovieLink(event,' + m.id + ')">' +
     imgHTML +
-    '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatDate(m.releaseDate) + '</p>' : '') + '</div>' +
+    '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatReleaseDates(m) + '</p>' : '') + '</div>' +
     '<div class="list-badges">' + badgesHTML + '</div>' +
     '</a>';
 }
@@ -660,7 +669,7 @@ function buildModalLoadingState(movie) {
   var heroImage = movie && (movie.backdrop || movie.poster) ? (movie.backdrop || movie.poster) : "";
   var title = movie && (movie.titleZh || movie.titleEn) ? (movie.titleZh || movie.titleEn) : "載入中";
   var subtitle = [];
-  if (movie && movie.releaseDate) subtitle.push(formatDate(movie.releaseDate));
+  if (movie && movie.releaseDate) subtitle.push(formatReleaseDates(movie, "、"));
   if (movie && movie.duration) subtitle.push(movie.duration + "分鐘");
   return {
     heroSlot: buildModalHeroSlot(heroImage),
@@ -875,15 +884,19 @@ function renderModal(movie, detail, imdbRating) {
   }
   var subtitleParts = [];
   if (detail.origTitle) subtitleParts.push(detail.origTitle);
-  if (movie.releaseDate) subtitleParts.push(formatDate(movie.releaseDate));
+  if (movie.releaseDate) subtitleParts.push(formatReleaseDates(movie, "、"));
   if (detail.duration) subtitleParts.push(detail.duration + "分鐘");
-  var metaRows = [
+  var metaRows = [];
+  if (Array.isArray(movie.twTheatricalReleases) && movie.twTheatricalReleases.length > 1) {
+    metaRows.push(["台灣上映", formatReleaseDates(movie, "、")]);
+  }
+  metaRows = metaRows.concat([
     ["原始標題", detail.origTitle || movie.titleEn || "—"],
     ["原始語言", langMap[detail.origLang] || detail.origLang || "—"],
     ["製片國家", formatCountryList(detail.countries)],
     ["電影成本", detail.budget ? "$" + detail.budget.toLocaleString() : "—"],
     ["票房收入", detail.revenue ? "$" + detail.revenue.toLocaleString() : "—"]
-  ];
+  ]);
   var metaHTML = "";
   for (var mr = 0; mr < metaRows.length; mr++) metaHTML += '<div class="meta-row"><span class="meta-key">' + metaRows[mr][0] + '</span><span class="meta-val">' + escHtml(metaRows[mr][1]) + '</span></div>';
   var heroImage = detail.backdrop || movie.backdrop || movie.poster || "";
