@@ -365,18 +365,29 @@ function updateActiveFiltersBadge() {
   updateMobileActiveBar();
 }
 
+function compareByPopularityDesc(a, b) {
+  var diff = (parseFloat(b.popularity) || 0) - (parseFloat(a.popularity) || 0);
+  if (diff !== 0) return diff;
+  return (a.titleZh || a.titleEn || "").localeCompare(b.titleZh || b.titleEn || "", "zh-Hant-TW");
+}
+
+function withPopularityTiebreak(primary, a, b) {
+  return primary || compareByPopularityDesc(a, b);
+}
+
 function sortMovies(skipRender) {
   tabSortState[currentTab] = document.getElementById("sort-select").value;
   ["now","soon"].forEach(function(t) {
     var v = tabSortState[t];
     filtered[t] = filtered[t].slice().sort(function(a, b) {
-      if (v === "date_desc") return b.releaseDate > a.releaseDate ? 1 : -1;
-      if (v === "date_asc") return a.releaseDate > b.releaseDate ? 1 : -1;
-      if (v === "tmdb_desc") return (parseFloat(b.voteAverage)||0) - (parseFloat(a.voteAverage)||0);
-      if (v === "tmdb_asc") return (parseFloat(a.voteAverage)||0) - (parseFloat(b.voteAverage)||0);
-      if (v === "imdb_desc") return (parseFloat(b.imdb)||0) - (parseFloat(a.imdb)||0);
-      if (v === "imdb_asc") return (parseFloat(a.imdb)||0) - (parseFloat(b.imdb)||0);
-      return 0;
+      var primary = 0;
+      if (v === "date_desc") primary = (b.releaseDate || "").localeCompare(a.releaseDate || "");
+      else if (v === "date_asc") primary = (a.releaseDate || "").localeCompare(b.releaseDate || "");
+      else if (v === "tmdb_desc") primary = (parseFloat(b.voteAverage)||0) - (parseFloat(a.voteAverage)||0);
+      else if (v === "tmdb_asc") primary = (parseFloat(a.voteAverage)||0) - (parseFloat(b.voteAverage)||0);
+      else if (v === "imdb_desc") primary = (parseFloat(b.imdb)||0) - (parseFloat(a.imdb)||0);
+      else if (v === "imdb_asc") primary = (parseFloat(a.imdb)||0) - (parseFloat(b.imdb)||0);
+      return withPopularityTiebreak(primary, a, b);
     });
   });
   if (!skipRender) renderGrids();
