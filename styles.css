@@ -103,6 +103,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 
 #detail-modal { position: fixed; inset: 0; z-index: 60; display: none; overflow: hidden; background: #0a0a0f; --modal-swipe-offset: 0px; --modal-swipe-progress: 0; }
 #detail-modal.open { display: block; }
+#detail-modal.modal-opening { will-change: transform; }
 .modal-backdrop { display: none; }
 .modal-scroll { position: relative; width: 100%; height: 100%; overflow-y: auto; background: transparent; -webkit-overflow-scrolling: touch; overscroll-behavior-y: contain; }
 .modal-inner { position: relative; max-width: 896px; margin: 0 auto; min-height: 100vh; z-index: 1; }

@@ -30,7 +30,7 @@
 <meta name="theme-color" content="#0a0a0f"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="styles.css?v=11"/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-15QHSQT4KF"></script>
 <script>
@@ -220,10 +220,10 @@
 </footer>
 </main>
 
-<script src="app.js?v=10"></script>
+<script src="app.js?v=11"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js?v=10', { updateViaCache: 'none' })
+    navigator.serviceWorker.register('sw.js?v=11', { updateViaCache: 'none' })
       .then(registration => registration.update())
       .catch(err => console.warn('[SW] register failed:', err));
   }
