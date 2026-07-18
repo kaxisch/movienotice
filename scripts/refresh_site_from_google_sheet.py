@@ -22,6 +22,8 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 MOVIE_DATA_FILE = ROOT_DIR / "data" / "movie-data.json"
 MANUAL_RELEASES_FILE = ROOT_DIR / "data" / "manual-releases.json"
 WHITELIST_FILE = ROOT_DIR / "data" / "tw-whitelist.json"
+NOW_ATMOVIES_MISS_LIMIT = 3
+SOON_ATMOVIES_MISS_LIMIT = 5
 
 
 def log(message):
@@ -55,7 +57,7 @@ def load_sheet_candidates():
         return []
     response = service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
-        range=quote_sheet_range(CANDIDATES_SHEET_TITLE, "A:H"),
+        range=quote_sheet_range(CANDIDATES_SHEET_TITLE, "A:L"),
     ).execute()
     values = response.get("values", [])
     if not values:
@@ -118,6 +120,31 @@ def load_manual_ids():
         return [item.get("tmdb_id") for item in json.load(f) if item.get("tmdb_id")]
 
 
+def sheet_value_is_true(value):
+    return str(value or "").strip().lower() in {"1", "true", "yes", "y"}
+
+
+def atmovies_miss_count(candidate):
+    try:
+        return max(0, int(candidate.get("consecutive_misses", 0) or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def should_hide_for_atmovies_absence(candidate, release_date, today, manual_ids):
+    """只對曾在開眼出現的非人工電影套用連續缺席隱藏規則。"""
+    tmdb_id = candidate.get("tmdb_id")
+    if tmdb_id in manual_ids:
+        return False
+    if not sheet_value_is_true(candidate.get("ever_seen_atmovies")):
+        return False
+    if sheet_value_is_true(candidate.get("atmovies_present")):
+        return False
+    misses = atmovies_miss_count(candidate)
+    limit = NOW_ATMOVIES_MISS_LIMIT if release_date <= today else SOON_ATMOVIES_MISS_LIMIT
+    return misses >= limit
+
+
 def build_verified_output(candidates):
     candidate_by_id = {item["tmdb_id"]: item for item in candidates}
     ordered_ids = list(candidate_by_id)
@@ -131,7 +158,8 @@ def build_verified_output(candidates):
             ordered_ids.append(tmdb_id)
             candidate_by_id[tmdb_id] = {"tmdb_id": tmdb_id}
 
-    retained_ids = load_current_site_ids() + load_current_whitelist_ids() + load_manual_ids()
+    manual_ids = set(load_manual_ids())
+    retained_ids = load_current_site_ids() + load_current_whitelist_ids() + list(manual_ids)
     for tmdb_id in retained_ids:
         if tmdb_id not in candidate_by_id:
             ordered_ids.append(tmdb_id)
@@ -161,6 +189,12 @@ def build_verified_output(candidates):
         release_date = weekly.parse_iso_date(tw_date)
 
         source = candidate_by_id[tmdb_id]
+        if should_hide_for_atmovies_absence(source, release_date, today, manual_ids):
+            log(
+                f"  Hidden TMDB {tmdb_id}: absent from Atmovies for "
+                f"{atmovies_miss_count(source)} consecutive successful audits"
+            )
+            continue
         verified.append({
             "tmdb_id": tmdb_id,
             "tmdb_url": weekly.tmdb_movie_url(tmdb_id),

@@ -568,7 +568,9 @@ def tmdb_candidate_match_diagnostics(movie, candidate, score):
         year_gap = abs(candidate_year - target_year)
         if year_gap >= 2:
             reasons.append(f"開眼年份 {target_year} / TMDB 年份 {candidate_year}")
-    if title_en and en_title_score < 0.55:
+    # TMDB 的 original_title 常是日文、韓文等原語片名，不一定是開眼列出的
+    # 國際英文片名。英文相似度偏低不能單獨視為可疑；中文也偏低時才提醒。
+    if title_en and en_title_score < 0.55 and zh_title_score < 0.45:
         reasons.append(f"英文片名相似度偏低 {en_title_score:.2f}")
     if title_zh and zh_title_score < 0.45:
         reasons.append(f"中文片名相似度偏低 {zh_title_score:.2f}")

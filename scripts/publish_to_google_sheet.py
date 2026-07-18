@@ -22,6 +22,11 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
 CANDIDATES_FILE = DATA_DIR / "atmovies-candidates.json"
 CANDIDATES_SHEET_TITLE = "_candidates"
+CANDIDATE_HEADERS = [
+    "tmdb_id", "source_bucket", "title_zh", "title_en",
+    "release_date_tw", "atmovies_id", "atmovies_url", "tmdb_title",
+    "ever_seen_atmovies", "atmovies_present", "consecutive_misses", "last_seen_atmovies",
+]
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -118,28 +123,85 @@ def load_tsv_rows(tsv_path):
     return rows
 
 
-def load_candidate_rows(path=CANDIDATES_FILE):
+def load_candidate_items(path=CANDIDATES_FILE):
     if not path.exists():
         return []
     with open(path, "r", encoding="utf-8") as f:
         payload = json.load(f)
-    rows = [[
-        "tmdb_id", "source_bucket", "title_zh", "title_en",
-        "release_date_tw", "atmovies_id", "atmovies_url", "tmdb_title",
-    ]]
-    for item in payload.get("candidates", []):
-        if not item.get("tmdb_id"):
-            continue
-        rows.append([
-            item.get("tmdb_id"),
-            item.get("source_bucket", ""),
-            item.get("title_zh", ""),
-            item.get("title_en", ""),
-            item.get("release_date_tw", ""),
-            item.get("atmovies_id", ""),
-            item.get("atmovies_url", ""),
-            item.get("tmdb_title", ""),
-        ])
+    return [item for item in payload.get("candidates", []) if item.get("tmdb_id")]
+
+
+def sheet_rows_to_items(values):
+    if not values:
+        return []
+    headers = values[0]
+    return [
+        {headers[index]: value for index, value in enumerate(row) if index < len(headers)}
+        for row in values[1:]
+        if row
+    ]
+
+
+def is_sheet_true(value, default=False):
+    if value in (None, ""):
+        return default
+    return str(value).strip().lower() in {"1", "true", "yes", "y"}
+
+
+def merge_candidate_presence(current_items, previous_items, run_date):
+    """合併本次開眼候選與前次私人狀態；只有成功發布的稽核才會累加缺席。"""
+    current_by_id = {str(item["tmdb_id"]): dict(item) for item in current_items if item.get("tmdb_id")}
+    previous_by_id = {str(item.get("tmdb_id", "")): dict(item) for item in previous_items if item.get("tmdb_id")}
+
+    previous_present_count = sum(
+        1 for item in previous_by_id.values()
+        if is_sheet_true(item.get("atmovies_present"), default=True)
+    )
+    if previous_present_count >= 20 and len(current_by_id) < previous_present_count * 0.5:
+        raise RuntimeError(
+            f"Current Atmovies candidate count {len(current_by_id)} is below 50% "
+            f"of previous present count {previous_present_count}; presence state was not updated"
+        )
+
+    merged = []
+    for tmdb_id in sorted(set(previous_by_id) | set(current_by_id), key=lambda value: int(value)):
+        previous = previous_by_id.get(tmdb_id, {})
+        current = current_by_id.get(tmdb_id)
+        if current:
+            item = {**previous, **current}
+            item.update({
+                "ever_seen_atmovies": True,
+                "atmovies_present": True,
+                "consecutive_misses": 0,
+                "last_seen_atmovies": run_date,
+            })
+        else:
+            item = dict(previous)
+            try:
+                misses = int(item.get("consecutive_misses", 0) or 0)
+            except (TypeError, ValueError):
+                misses = 0
+            item.update({
+                "ever_seen_atmovies": True,
+                "atmovies_present": False,
+                "consecutive_misses": misses + 1,
+            })
+        item["tmdb_id"] = int(tmdb_id)
+        merged.append(item)
+    return merged
+
+
+def candidate_items_to_rows(items):
+    rows = [CANDIDATE_HEADERS]
+    for item in sorted(
+        items,
+        key=lambda value: (
+            not is_sheet_true(value.get("atmovies_present")),
+            value.get("release_date_tw", ""),
+            int(value.get("tmdb_id", 0)),
+        ),
+    ):
+        rows.append([item.get(header, "") for header in CANDIDATE_HEADERS])
     return rows
 
 
@@ -248,6 +310,14 @@ def get_sheet_values(sheets_service, spreadsheet_id, title):
     response = sheets_service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
         range=quote_sheet_range(title, "A1:A1"),
+    ).execute()
+    return response.get("values", [])
+
+
+def get_all_sheet_values(sheets_service, spreadsheet_id, title):
+    response = sheets_service.spreadsheets().values().get(
+        spreadsheetId=spreadsheet_id,
+        range=quote_sheet_range(title, "A:Z"),
     ).execute()
     return response.get("values", [])
 
@@ -397,8 +467,17 @@ def publish():
     write_rows(sheets_service, spreadsheet_id, run_date, rows)
     format_sheet(sheets_service, spreadsheet_id, sheet_id, len(rows[0]))
 
-    candidate_rows = load_candidate_rows()
-    if candidate_rows:
+    current_candidate_items = load_candidate_items()
+    if current_candidate_items:
+        metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
+        existing_candidate_sheet = sheet_by_title(metadata, CANDIDATES_SHEET_TITLE)
+        previous_candidate_items = []
+        if existing_candidate_sheet:
+            previous_candidate_items = sheet_rows_to_items(
+                get_all_sheet_values(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
+            )
+        candidate_items = merge_candidate_presence(current_candidate_items, previous_candidate_items, run_date)
+        candidate_rows = candidate_items_to_rows(candidate_items)
         candidate_sheet_id = ensure_date_sheet(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
         write_rows(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE, candidate_rows)
         format_sheet(sheets_service, spreadsheet_id, candidate_sheet_id, len(candidate_rows[0]))
