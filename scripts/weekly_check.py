@@ -794,7 +794,7 @@ def parse_watch_platforms(payload):
 
 def parse_cast(payload):
     out = []
-    for item in payload.get("credits", {}).get("cast", [])[:8]:
+    for item in payload.get("credits", {}).get("cast", [])[:15]:
         out.append({
             "name": item.get("name", ""),
             "char": item.get("character", ""),
