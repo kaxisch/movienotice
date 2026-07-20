@@ -14,7 +14,10 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 16px 64px; max-width: 1440px; margin: 0 auto; }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
 .nav-logo img { display: block; width: auto; height: 40px; }
-.nav-logo span { color: rgba(255,255,255,0.72); font-size: 14px; font-weight: 300; letter-spacing: 0.04em; white-space: nowrap; position: relative; top: 3px; left: -6px; }
+.nav-copy { display: flex; align-items: center; gap: 8px; margin-left: -6px; white-space: nowrap; transform: translateY(3px); }
+.nav-name { color: #EDECD6; font-size: 14px; font-weight: 300; line-height: 1.15; letter-spacing: 0.04em; }
+.nav-separator { color: rgba(255,255,255,0.65); font-size: 13px; font-weight: 200; line-height: 1; }
+.nav-tagline { color: rgba(255,255,255,0.65); font-size: 14px; font-weight: 300; line-height: 1.15; letter-spacing: 0.03em; }
 .nav-refresh-btn { display: flex; align-items: center; gap: 6px; padding: 8px 12px; border: none; background: transparent; color: rgba(255,255,255,0.7); cursor: pointer; border-radius: 999px; transition: background 0.2s, color 0.2s; font-size: 14px; font-weight: 300; font-family: 'Manrope', sans-serif; }
 .nav-refresh-btn#data-status { gap: 4px; }
 .nav-refresh-btn .data-status-icon { font-size: 13px; color: rgba(255,255,255,0.55); }
@@ -198,7 +201,13 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   #mobile-search-toggle:hover { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.8); }
 }
 @media(max-width:768px){
-  .nav-inner { padding: 14px 20px; }
+  .nav-inner { padding: 14px 16px; }
+  .nav-logo { gap: 4px; }
+  .nav-logo img { height: 30px; }
+  .nav-copy { gap: 5px; margin-left: -4px; transform: translateY(2px); }
+  .nav-name { font-size: 11px; letter-spacing: 0.01em; }
+  .nav-separator { font-size: 10px; }
+  .nav-tagline { font-size: 11px; letter-spacing: 0.01em; }
   .footer-status-wrap { margin-top: 24px; }
 }
 /* Mobile: search/filter toggle button */
@@ -214,7 +223,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 #mobile-search-wrap { display: none; position: relative; width: 100%; margin-bottom: 16px; }
 #mobile-search-wrap .tab-search { width: 100%; }
 @media(max-width:768px){
-  .nav-inner { padding: 14px 20px; }
+  .nav-inner { padding: 14px 16px; }
   .tab-bar-inner { padding: 0 20px; }
   .content-area { padding: 28px 20px; }
   footer { padding-left: 20px !important; padding-right: 20px !important; }
