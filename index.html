@@ -30,7 +30,7 @@
 <meta name="theme-color" content="#0a0a0f"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css?v=12"/>
+<link rel="stylesheet" href="styles.css?v=13"/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-15QHSQT4KF"></script>
 <script>
@@ -88,10 +88,31 @@
 <div id="tab-bar">
   <div class="tab-bar-inner">
     <div class="tabs">
-      <button class="tab-btn" id="tab-now" onclick="switchTab('now')">現正熱映</button>
-      <button class="tab-btn" id="tab-soon" onclick="switchTab('soon')">即將上映</button>
-      <span id="movie-count" style="margin-left:0px; color:#888; font-size:13px; align-self:flex-end; padding-bottom:7px;"></span>
-      <div id="tab-indicator"></div>
+      <div class="tab-list" role="tablist" aria-label="電影上映狀態">
+        <button class="tab-btn" id="tab-now" role="tab" aria-controls="content-now" onclick="switchTab('now')">現正熱映</button>
+        <button class="tab-btn" id="tab-soon" role="tab" aria-controls="content-soon" onclick="switchTab('soon')">即將上映</button>
+        <div id="tab-indicator"></div>
+      </div>
+      <div class="site-info-wrap">
+        <button id="site-info-btn" class="site-info-btn" type="button" aria-label="查看電影數量與更新時間" aria-expanded="false" aria-controls="site-info-panel" onclick="toggleSiteInfo(event)">
+          <span class="material-symbols-outlined" aria-hidden="true">info</span>
+        </button>
+        <div id="site-info-panel" class="site-info-panel" role="dialog" aria-label="網站資料資訊" hidden>
+          <div class="site-info-row">
+            <span>現正熱映</span>
+            <span id="info-count-now" class="site-info-value">0 部</span>
+          </div>
+          <div class="site-info-row">
+            <span>即將上映</span>
+            <span id="info-count-soon" class="site-info-value">0 部</span>
+          </div>
+          <div class="site-info-divider"></div>
+          <div class="site-info-updated" aria-live="polite">
+            <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+            <span id="info-update-time">載入資料中</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="filter-row">
       <button id="mobile-search-toggle" onclick="toggleFilter()">
@@ -212,22 +233,15 @@
   </div>
 </div>
 
-<div class="content-area footer-status-wrap">
-  <div id="data-status" class="nav-refresh-btn footer-status" aria-live="polite">
-    <span class="material-symbols-outlined data-status-icon">schedule</span>
-    <span class="refresh-label">載入資料中</span>
-  </div>
-</div>
-
 <footer style="padding:40px 64px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:-8px;">
   <p style="color:rgba(255,255,255,0.3);font-size:12px;font-weight:300">MovieNotice · 資料來源 TMDB、OMDb（含 IMDb、爛番茄、Metacritic 評分）· made by Axis Chang</p>
 </footer>
 </main>
 
-<script src="app.js?v=11"></script>
+<script src="app.js?v=12"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js?v=11', { updateViaCache: 'none' })
+    navigator.serviceWorker.register('sw.js?v=12', { updateViaCache: 'none' })
       .then(registration => registration.update())
       .catch(err => console.warn('[SW] register failed:', err));
   }

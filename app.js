@@ -151,12 +151,31 @@ function formatUpdateTime(isoString) {
 }
 function updateDataStatus(generatedAt) {
   movieDataMeta.generated_at = generatedAt || "";
-  var statusEl = document.getElementById("data-status");
-  if (!statusEl) return;
-  var label = statusEl.querySelector(".refresh-label");
-  if (!label) return;
   var formatted = formatUpdateTime(generatedAt);
-  label.textContent = formatted ? "更新於 " + formatted : "靜態資料模式";
+  var updateTime = document.getElementById("info-update-time");
+  if (updateTime) updateTime.textContent = formatted ? "更新於 " + formatted : "靜態資料模式";
+  var nowCount = document.getElementById("info-count-now");
+  var soonCount = document.getElementById("info-count-soon");
+  if (nowCount) nowCount.textContent = (allMovies.now ? allMovies.now.length : 0) + " 部";
+  if (soonCount) soonCount.textContent = (allMovies.soon ? allMovies.soon.length : 0) + " 部";
+}
+
+function closeSiteInfo() {
+  var panel = document.getElementById("site-info-panel");
+  var button = document.getElementById("site-info-btn");
+  if (!panel || !button || panel.hidden) return;
+  panel.hidden = true;
+  button.setAttribute("aria-expanded", "false");
+}
+
+function toggleSiteInfo(event) {
+  if (event) event.stopPropagation();
+  var panel = document.getElementById("site-info-panel");
+  var button = document.getElementById("site-info-btn");
+  if (!panel || !button) return;
+  var willOpen = panel.hidden;
+  panel.hidden = !willOpen;
+  button.setAttribute("aria-expanded", willOpen ? "true" : "false");
 }
 function saveCache(data) {
   try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data: data })); } catch(e) {}
@@ -331,8 +350,6 @@ function renderGrids() {
     if (filtered[t].length === 0) empty.classList.add("show"); else empty.classList.remove("show");
   });
   scrollToResults();
-  var countEl = document.getElementById("movie-count");
-  if (countEl && filtered) countEl.textContent = (filtered[currentTab] ? filtered[currentTab].length : 0) + " 部";
 }
 
 function applyFilters(skipRender) {
@@ -516,8 +533,9 @@ var tabFadeSeq = 0;
 function activateTabContent(t) {
   document.querySelectorAll(".tab-content").forEach(function(el) { el.classList.remove("active"); });
   document.getElementById("content-" + t).classList.add("active");
-  var countEl = document.getElementById("movie-count");
-  if (countEl && filtered) countEl.textContent = (filtered[t] ? filtered[t].length : 0) + " 部";
+  document.querySelectorAll(".tab-btn").forEach(function(el) {
+    el.setAttribute("aria-selected", el.id === "tab-" + t ? "true" : "false");
+  });
 }
 
 function isTabBarPinned() {
@@ -969,9 +987,22 @@ function playTrailer(key) {
   }
 }
 function closeTrailer() { document.getElementById("trailer-iframe").src = ""; document.getElementById("trailer-modal").classList.remove("open"); }
-document.addEventListener("keydown", function(e) { if (e.key === "Escape") { closeModal(); closeTrailer(); } });
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") {
+    var infoWasOpen = document.getElementById("site-info-panel") && !document.getElementById("site-info-panel").hidden;
+    closeSiteInfo();
+    if (infoWasOpen) {
+      var infoButton = document.getElementById("site-info-btn");
+      if (infoButton) infoButton.focus();
+    }
+    closeModal();
+    closeTrailer();
+  }
+});
 
 document.addEventListener("click", function(e) {
+  var infoPanel = document.getElementById("site-info-panel");
+  if (infoPanel && !infoPanel.hidden && !e.target.closest(".site-info-wrap")) closeSiteInfo();
   var panel = document.getElementById("filter-panel");
   if (panel.style.display !== "block") return;
   if (panel.contains(e.target)) return;
