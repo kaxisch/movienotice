@@ -235,7 +235,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
   .tabs { grid-template-columns: 1fr auto; }
   .tab-list { grid-column: 1; }
   .site-info-wrap { grid-column: 2; grid-row: 1; padding-bottom: 4px; }
-  .site-info-panel { right: 0; width: min(250px, calc(100vw - 40px)); }
+  .site-info-panel { right: 0; width: min(200px, calc(100vw - 40px)); }
   .content-area { padding: 28px 20px; }
   footer { padding-left: 20px !important; padding-right: 20px !important; }
   .modal-hero-info { padding: 16px 20px; }
