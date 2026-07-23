@@ -22,7 +22,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 MOVIE_DATA_FILE = ROOT_DIR / "data" / "movie-data.json"
 MANUAL_RELEASES_FILE = ROOT_DIR / "data" / "manual-releases.json"
 WHITELIST_FILE = ROOT_DIR / "data" / "tw-whitelist.json"
-NOW_ATMOVIES_MISS_LIMIT = 3
+NOW_ATMOVIES_MISS_LIMIT = 2
 SOON_ATMOVIES_MISS_LIMIT = 5
 
 

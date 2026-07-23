@@ -196,8 +196,8 @@ def candidate_items_to_rows(items):
     for item in sorted(
         items,
         key=lambda value: (
-            not is_sheet_true(value.get("atmovies_present")),
-            value.get("release_date_tw", ""),
+            not bool(value.get("release_date_tw")),
+            value.get("release_date_tw") or "",
             int(value.get("tmdb_id", 0)),
         ),
     ):

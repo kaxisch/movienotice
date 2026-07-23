@@ -42,6 +42,19 @@ class CandidatePresenceTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             publish.merge_candidate_presence(current, previous, "2026-07-18")
 
+    def test_candidate_rows_sort_by_release_date_with_missing_dates_last(self):
+        items = [
+            {"tmdb_id": 303, "release_date_tw": ""},
+            {"tmdb_id": 202, "release_date_tw": "2026-08-01", "atmovies_present": False},
+            {"tmdb_id": 101, "release_date_tw": "2026-07-25", "atmovies_present": True},
+            {"tmdb_id": 102, "release_date_tw": "2026-07-25", "atmovies_present": False},
+        ]
+
+        rows = publish.candidate_items_to_rows(items)
+        tmdb_id_index = publish.CANDIDATE_HEADERS.index("tmdb_id")
+
+        self.assertEqual([row[tmdb_id_index] for row in rows[1:]], [101, 102, 202, 303])
+
 
 class RefreshVisibilityTests(unittest.TestCase):
     TODAY = date(2026, 7, 18)
@@ -54,10 +67,10 @@ class RefreshVisibilityTests(unittest.TestCase):
             "consecutive_misses": misses,
         }
 
-    def test_now_movie_hides_on_third_miss(self):
+    def test_now_movie_hides_on_second_miss(self):
         release_date = date(2026, 7, 17)
-        self.assertFalse(refresh.should_hide_for_atmovies_absence(self.candidate(2), release_date, self.TODAY, set()))
-        self.assertTrue(refresh.should_hide_for_atmovies_absence(self.candidate(3), release_date, self.TODAY, set()))
+        self.assertFalse(refresh.should_hide_for_atmovies_absence(self.candidate(1), release_date, self.TODAY, set()))
+        self.assertTrue(refresh.should_hide_for_atmovies_absence(self.candidate(2), release_date, self.TODAY, set()))
 
     def test_soon_movie_hides_on_fifth_miss(self):
         release_date = date(2026, 8, 7)
