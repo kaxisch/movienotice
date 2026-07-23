@@ -101,16 +101,20 @@ def load_current_whitelist_ids():
 
 
 def load_current_site_ids():
+    return list(load_current_site_movies())
+
+
+def load_current_site_movies():
     if not MOVIE_DATA_FILE.exists():
-        return []
+        return {}
     with open(MOVIE_DATA_FILE, "r", encoding="utf-8") as f:
         payload = json.load(f)
-    return [
-        movie.get("id")
+    return {
+        movie["id"]: movie
         for bucket in ("now", "soon")
         for movie in payload.get("movies", {}).get(bucket, [])
         if movie.get("id")
-    ]
+    }
 
 
 def load_manual_ids():
@@ -168,14 +172,20 @@ def build_verified_output(candidates):
     past_cutoff = today - timedelta(days=weekly.NOW_LOOKBACK_DAYS)
     future_cutoff = today + timedelta(days=weekly.SOON_WINDOW_DAYS)
     verified = []
+    transient_failure_ids = set()
 
     for index, tmdb_id in enumerate(ordered_ids, 1):
         log(f"TMDB candidate [{index}/{len(ordered_ids)}] {tmdb_id}")
         movie = weekly.tmdb_movie(tmdb_id)
         if not movie:
-            log(f"  Excluded TMDB {tmdb_id}: movie details could not be loaded")
+            transient_failure_ids.add(tmdb_id)
+            log(f"  Retaining previous TMDB {tmdb_id}: movie details could not be loaded")
             continue
         release_results = weekly.tmdb_release_dates(tmdb_id)
+        if release_results is None:
+            transient_failure_ids.add(tmdb_id)
+            log(f"  Retaining previous TMDB {tmdb_id}: release_dates could not be loaded")
+            continue
         theatrical_releases = weekly.extract_tw_theatrical_releases_from_results(release_results)
         eligible_releases = weekly.releases_in_window(theatrical_releases, past_cutoff, future_cutoff)
         if not eligible_releases:
@@ -222,18 +232,23 @@ def build_verified_output(candidates):
         "tmdb_not_found": [],
         "tmdb_date_mismatch": [],
         "tmdb_match_suspicious": [],
-    }, generated_at
+    }, generated_at, transient_failure_ids
 
 
 def main():
     load_environment()
     candidates = load_sheet_candidates()
     log(f"Loaded {len(candidates)} candidates from Google Sheet")
-    output, generated_at = build_verified_output(candidates)
+    output, generated_at, transient_failure_ids = build_verified_output(candidates)
     if verified_signature(output) == current_whitelist_signature():
         log("No TMDB Taiwan theatrical date changes; refreshing full site metadata anyway")
     weekly.write_tw_whitelist(output)
-    path, payload = weekly.export_static_movie_data(output, generated_at)
+    path, payload = weekly.export_static_movie_data(
+        output,
+        generated_at,
+        previous_movies=load_current_site_movies(),
+        transient_failure_ids=transient_failure_ids,
+    )
     log(
         f"Wrote {path}: now={payload['summary']['now_count']} "
         f"soon={payload['summary']['soon_count']}"
