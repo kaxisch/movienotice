@@ -9,6 +9,7 @@ sys.path.insert(0, str(ROOT_DIR / "scripts"))
 
 import publish_to_google_sheet as publish
 import refresh_site_from_google_sheet as refresh
+import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
@@ -86,6 +87,33 @@ class RefreshVisibilityTests(unittest.TestCase):
                 self.candidate(9, ever_seen=False), release_date, self.TODAY, set()
             )
         )
+
+    def test_transient_tmdb_failure_retains_previously_verified_movie(self):
+        movies = {"now": [], "soon": []}
+        existing_ids = set()
+        previous = {
+            101: {
+                "id": 101,
+                "releaseDate": "2026-07-17",
+                "twReleaseDateVerified": True,
+            }
+        }
+
+        retained = weekly.retain_previous_static_movie(movies, existing_ids, previous, 101, self.TODAY)
+
+        self.assertTrue(retained)
+        self.assertEqual([movie["id"] for movie in movies["now"]], [101])
+
+    def test_unverified_or_out_of_window_movie_is_not_retained(self):
+        movies = {"now": [], "soon": []}
+        existing_ids = set()
+        previous = {
+            101: {"id": 101, "releaseDate": "2026-07-17", "twReleaseDateVerified": False},
+            202: {"id": 202, "releaseDate": "2025-01-01", "twReleaseDateVerified": True},
+        }
+
+        self.assertFalse(weekly.retain_previous_static_movie(movies, existing_ids, previous, 101, self.TODAY))
+        self.assertFalse(weekly.retain_previous_static_movie(movies, existing_ids, previous, 202, self.TODAY))
 
 
 if __name__ == "__main__":

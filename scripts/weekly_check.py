@@ -30,6 +30,8 @@ ATMOVIES_NOW_BASE = "http://www.atmovies.com.tw/movie/now/1/"
 ATMOVIES_NEXT_INDEX = "http://www.atmovies.com.tw/movie/next/"
 TMDB_BASE = "https://api.themoviedb.org/3"
 TMDB_DELAY = 0.3
+TMDB_RETRY_ATTEMPTS = 3
+TMDB_RETRY_DELAY = 1
 SCRAPE_DELAY = 2
 TSV_LOOKBACK_DAYS = 14
 
@@ -636,19 +638,32 @@ def choose_tmdb_match(movie):
     return candidate
 
 
+def tmdb_get_json(path, params, timeout, label):
+    """取得 TMDB JSON；暫時性網路問題會重試，失敗時回傳 None。"""
+    last_error = None
+    for attempt in range(1, TMDB_RETRY_ATTEMPTS + 1):
+        try:
+            response = requests.get(f"{TMDB_BASE}{path}", params=params, timeout=timeout)
+            response.raise_for_status()
+            return response.json()
+        except Exception as error:
+            last_error = error
+            if attempt < TMDB_RETRY_ATTEMPTS:
+                log(f"  TMDB {label} retry {attempt}/{TMDB_RETRY_ATTEMPTS} after error: {error}")
+                time.sleep(TMDB_RETRY_DELAY * attempt)
+    log(f"  TMDB {label} failed after {TMDB_RETRY_ATTEMPTS} attempts: {last_error}")
+    return None
+
+
 def tmdb_release_dates(tmdb_id):
-    """查 release_dates"""
-    try:
-        r = requests.get(
-            f"{TMDB_BASE}/movie/{tmdb_id}/release_dates",
-            params={"api_key": TMDB_API_KEY},
-            timeout=15,
-        )
-        r.raise_for_status()
-        return r.json().get("results", [])
-    except Exception as e:
-        log(f"  TMDB release_dates failed for id={tmdb_id}: {e}")
-        return []
+    """查 release_dates；無法取得資料時回傳 None，空清單代表成功但沒有結果。"""
+    payload = tmdb_get_json(
+        f"/movie/{tmdb_id}/release_dates",
+        {"api_key": TMDB_API_KEY},
+        15,
+        f"release_dates for id={tmdb_id}",
+    )
+    return payload.get("results", []) if payload is not None else None
 
 
 def extract_tw_theatrical_date_from_results(release_results):
@@ -705,17 +720,12 @@ def load_tmdb_overrides():
 
 def tmdb_movie(tmdb_id):
     """直接用 TMDB ID 取單片資料"""
-    try:
-        r = requests.get(
-            f"{TMDB_BASE}/movie/{tmdb_id}",
-            params={"api_key": TMDB_API_KEY, "language": "zh-TW", "region": "TW"},
-            timeout=15,
-        )
-        r.raise_for_status()
-        return r.json()
-    except Exception as e:
-        log(f"  TMDB movie fetch failed for id={tmdb_id}: {e}")
-        return None
+    return tmdb_get_json(
+        f"/movie/{tmdb_id}",
+        {"api_key": TMDB_API_KEY, "language": "zh-TW", "region": "TW"},
+        15,
+        f"movie fetch for id={tmdb_id}",
+    )
 
 
 def tmdb_movie_url(tmdb_id):
@@ -725,22 +735,17 @@ def tmdb_movie_url(tmdb_id):
 
 def tmdb_movie_full(tmdb_id):
     """抓前端完整顯示用的 TMDB 單片資料"""
-    try:
-        r = requests.get(
-            f"{TMDB_BASE}/movie/{tmdb_id}",
-            params={
-                "api_key": TMDB_API_KEY,
-                "language": "zh-TW",
-                "region": "TW",
-                "append_to_response": "videos,credits,watch/providers,release_dates,external_ids",
-            },
-            timeout=20,
-        )
-        r.raise_for_status()
-        return r.json()
-    except Exception as e:
-        log(f"  TMDB full movie fetch failed for id={tmdb_id}: {e}")
-        return None
+    return tmdb_get_json(
+        f"/movie/{tmdb_id}",
+        {
+            "api_key": TMDB_API_KEY,
+            "language": "zh-TW",
+            "region": "TW",
+            "append_to_response": "videos,credits,watch/providers,release_dates,external_ids",
+        },
+        20,
+        f"full movie fetch for id={tmdb_id}",
+    )
 
 
 def tmdb_discover(path, params, max_pages):
@@ -1009,7 +1014,34 @@ def fetch_supplemental_soon_candidates(today_local):
     return dedup_discover_results(tw_results)
 
 
-def export_static_movie_data(output, generated_at_local):
+def fallback_bucket_for_previous_movie(movie, today_local):
+    release_date = parse_iso_date(movie.get("releaseDate", ""))
+    if not release_date:
+        return ""
+    if today_local - timedelta(days=NOW_LOOKBACK_DAYS) <= release_date <= today_local:
+        return "now"
+    if today_local + timedelta(days=1) <= release_date <= today_local + timedelta(days=SOON_WINDOW_DAYS):
+        return "soon"
+    return ""
+
+
+def retain_previous_static_movie(movies, existing_ids, previous_movies, tmdb_id, today_local):
+    """TMDB 暫時失敗時保留上次已驗證資料，不把網路錯誤當成下架訊號。"""
+    if tmdb_id in existing_ids:
+        return False
+    previous = previous_movies.get(tmdb_id)
+    if not previous or not previous.get("twReleaseDateVerified"):
+        return False
+    bucket = fallback_bucket_for_previous_movie(previous, today_local)
+    if not bucket:
+        return False
+    movies[bucket].append(previous)
+    existing_ids.add(tmdb_id)
+    log(f"  Retained previous site movie TMDB {tmdb_id} after temporary TMDB failure")
+    return True
+
+
+def export_static_movie_data(output, generated_at_local, previous_movies=None, transient_failure_ids=None):
     """輸出前端使用的完整靜態資料，避免瀏覽器直接打第三方 API"""
     movies = {"now": [], "soon": []}
     today_local = generated_at_local.date()
@@ -1017,6 +1049,8 @@ def export_static_movie_data(output, generated_at_local):
     # release_dates payload contains a Taiwan theatrical date.
     records = [(record, True) for record in output["tmdb_has_tw_date"]]
     existing_ids = set()
+    previous_movies = previous_movies or {}
+    transient_failure_ids = transient_failure_ids if transient_failure_ids is not None else set()
 
     for idx, (record, tmdb_has_tw_date) in enumerate(records, 1):
         tmdb_id = record.get("tmdb_id")
@@ -1025,6 +1059,8 @@ def export_static_movie_data(output, generated_at_local):
         log(f"Static export [{idx}/{len(records)}] TMDB {tmdb_id}")
         payload = tmdb_movie_full(tmdb_id)
         if not payload:
+            transient_failure_ids.add(tmdb_id)
+            retain_previous_static_movie(movies, existing_ids, previous_movies, tmdb_id, today_local)
             continue
         ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
         movie = build_static_movie(record, payload, ratings)
@@ -1041,6 +1077,9 @@ def export_static_movie_data(output, generated_at_local):
         existing_ids.add(movie["id"])
         movies[bucket].append(movie)
         time.sleep(TMDB_DELAY)
+
+    for tmdb_id in sorted(transient_failure_ids):
+        retain_previous_static_movie(movies, existing_ids, previous_movies, tmdb_id, today_local)
 
     manual_releases = load_manual_releases()
     for idx, manual in enumerate(manual_releases, 1):
@@ -1314,7 +1353,7 @@ def main():
         tmdb_primary_release_date = result.get("release_date", "")
         tmdb_year = (result.get("release_date") or "")[:4]
 
-        release_results = tmdb_release_dates(tmdb_id)
+        release_results = tmdb_release_dates(tmdb_id) or []
         time.sleep(TMDB_DELAY)
         tmdb_tw_release_date = extract_tw_theatrical_date_from_results(release_results)
 
