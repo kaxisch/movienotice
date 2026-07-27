@@ -238,10 +238,10 @@
 </footer>
 </main>
 
-<script src="app.js?v=12"></script>
+<script src="app.js?v=13"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js?v=12', { updateViaCache: 'none' })
+    navigator.serviceWorker.register('sw.js?v=13', { updateViaCache: 'none' })
       .then(registration => registration.update())
       .catch(err => console.warn('[SW] register failed:', err));
   }

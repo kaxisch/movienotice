@@ -105,6 +105,35 @@ function shiftedLocalDate(n) {
 function today() { return shiftedLocalDate(0); }
 function daysAgo(n) { return shiftedLocalDate(-n); }
 function daysLater(n) { return shiftedLocalDate(n); }
+function taipeiToday() {
+  var parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(new Date());
+  var values = {};
+  parts.forEach(function(part) { values[part.type] = part.value; });
+  return values.year + "-" + values.month + "-" + values.day;
+}
+function taipeiWeekRange() {
+  var currentDate = taipeiToday();
+  var current = new Date(currentDate + "T00:00:00Z");
+  var sunday = new Date(current);
+  sunday.setUTCDate(current.getUTCDate() - current.getUTCDay());
+  var saturday = new Date(sunday);
+  saturday.setUTCDate(sunday.getUTCDate() + 6);
+  return {
+    start: sunday.toISOString().slice(0, 10),
+    end: saturday.toISOString().slice(0, 10)
+  };
+}
+function isThisWeekRelease(movie) {
+  var releaseDate = movie && movie.releaseDate;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(releaseDate || "")) return false;
+  var week = taipeiWeekRange();
+  return releaseDate >= week.start && releaseDate <= week.end;
+}
 function dateYear(s) { return s ? parseInt(s.slice(0, 4), 10) : 0; }
 function dateDiffDays(a, b) {
   if (!a || !b) return 0;
@@ -277,8 +306,9 @@ function cardHTML(m, showRatings) {
   }
   metaHTML += '</div>';
   var href = escHtml(movieDetailHref(m));
+  var thisWeekLabel = isThisWeekRelease(m) ? '<span class="this-week-ribbon">本週上映</span>' : '';
   return '<a class="movie-card movie-link fade-in" id="card-' + m.id + '" href="' + href + '" onclick="return openMovieLink(event,' + m.id + ')">' +
-    '<div class="card-img-wrap">' + imgHTML +
+    '<div class="card-img-wrap">' + imgHTML + thisWeekLabel +
     '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(normalizeGenreList(m.genre).slice(0,2).join(' / ')) + '</span></div></div>' +
     '<div class="card-info"><p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn +
     '<div class="card-spacer"></div>' + metaHTML + '</div></a>';
@@ -327,9 +357,10 @@ function listRowHTML(m, showRatings) {
     if (m.voteAverage) badgesHTML += '<span class="badge-tmdb">TMDB ' + tmdbScore(m.voteAverage) + '</span>';
   }
   var href = escHtml(movieDetailHref(m));
+  var thisWeekLabel = isThisWeekRelease(m) ? '<span class="this-week-list-label">本週上映</span>' : '';
   return '<a class="list-item movie-link fade-in" id="card-' + m.id + '" href="' + href + '" onclick="return openMovieLink(event,' + m.id + ')">' +
     imgHTML +
-    '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatReleaseDates(m) + '</p>' : '') + '</div>' +
+    '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + thisWeekLabel + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatReleaseDates(m) + '</p>' : '') + '</div>' +
     '<div class="list-badges">' + badgesHTML + '</div>' +
     '</a>';
 }
@@ -1088,6 +1119,16 @@ function loadData(forceRefresh) {
 function refreshData() { loadData(true); }
 switchTab(currentTab);
 loadData(false);
+
+(function refreshWeekLabelsAtBoundary() {
+  var displayedWeekStart = taipeiWeekRange().start;
+  setInterval(function() {
+    var currentWeekStart = taipeiWeekRange().start;
+    if (currentWeekStart === displayedWeekStart) return;
+    displayedWeekStart = currentWeekStart;
+    renderGrids();
+  }, 60 * 1000);
+})();
 
 (function() {
   var TABS = ['now', 'soon'];
