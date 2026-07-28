@@ -1,12 +1,230 @@
 {
-  "generated_at": "2026-07-28T23:04:02.122341+08:00",
+  "generated_at": "2026-07-29T01:05:53.941184+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 61,
-    "soon_count": 51
+    "now_count": 62,
+    "soon_count": 50
   },
   "movies": {
     "now": [
+      {
+        "id": 969681,
+        "titleZh": "蜘蛛人：重生日",
+        "titleEn": "Spider-Man: Brand New Day",
+        "releaseDate": "2026-07-29",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-07-29",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/kbvNLChuMl2nyAzPZvqkD8hZGZn.jpg",
+        "voteAverage": "8.3",
+        "genre": [
+          "科幻",
+          "動作",
+          "冒險"
+        ],
+        "duration": 145,
+        "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "trailerKey": "Upn2ejyAvnM",
+        "cast": [
+          {
+            "name": "湯姆·霍蘭德",
+            "char": "Peter Parker / Spider-Man",
+            "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+          },
+          {
+            "name": "千黛亞",
+            "char": "MJ",
+            "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+          },
+          {
+            "name": "薩迪·辛克",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/m9OyHAyOx56Pm3JruEBqh4p9XeX.jpg"
+          },
+          {
+            "name": "雅各布·貝塔隆",
+            "char": "Ned Leeds",
+            "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
+          },
+          {
+            "name": "強·柏恩瑟",
+            "char": "Frank Castle / Punisher",
+            "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
+          },
+          {
+            "name": "Tramell Tillman",
+            "char": "Bill Metzger",
+            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+          },
+          {
+            "name": "麥可·曼杜",
+            "char": "Mac Gargan",
+            "photo": "https://image.tmdb.org/t/p/w500/gvM2wG66bjEpiirdeQdyG9EzUfv.jpg"
+          },
+          {
+            "name": "馬克·魯法洛",
+            "char": "Bruce Banner / Hulk",
+            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+          },
+          {
+            "name": "Liza Colón-Zayas",
+            "char": "Detective Jean DeWolff",
+            "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
+          },
+          {
+            "name": "Marvin Jones III",
+            "char": "Lonnie Lincoln / Tombstone",
+            "photo": "https://image.tmdb.org/t/p/w500/nS4X8TP3idFsxDdV9UqTRbz585g.jpg"
+          },
+          {
+            "name": "Eman Esfandi",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/lrDfNC81vTkFW9WApEDiC1euHZn.jpg"
+          },
+          {
+            "name": "Zabryna Guevara",
+            "char": "Sheila Rivera",
+            "photo": "https://image.tmdb.org/t/p/w500/7NlCmTZoauvyqjNdzTZv2auwOXg.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "德斯汀·丹尼爾·克雷頓",
+            "job": "Director"
+          },
+          {
+            "name": "Erik Sommers",
+            "job": "Writer"
+          },
+          {
+            "name": "Chris McKenna",
+            "job": "Writer"
+          }
+        ],
+        "budget": 275000000,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Spider-Man: Brand New Day",
+        "platforms": [],
+        "popularity": 271.502,
+        "imdbId": "tt22084616",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 145,
+          "genres": [
+            "科幻",
+            "動作",
+            "冒險"
+          ],
+          "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
+          "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/kbvNLChuMl2nyAzPZvqkD8hZGZn.jpg",
+          "voteAverage": "8.3",
+          "trailerKey": "Upn2ejyAvnM",
+          "imdbId": "tt22084616",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "湯姆·霍蘭德",
+              "char": "Peter Parker / Spider-Man",
+              "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+            },
+            {
+              "name": "千黛亞",
+              "char": "MJ",
+              "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+            },
+            {
+              "name": "薩迪·辛克",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/m9OyHAyOx56Pm3JruEBqh4p9XeX.jpg"
+            },
+            {
+              "name": "雅各布·貝塔隆",
+              "char": "Ned Leeds",
+              "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
+            },
+            {
+              "name": "強·柏恩瑟",
+              "char": "Frank Castle / Punisher",
+              "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
+            },
+            {
+              "name": "Tramell Tillman",
+              "char": "Bill Metzger",
+              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+            },
+            {
+              "name": "麥可·曼杜",
+              "char": "Mac Gargan",
+              "photo": "https://image.tmdb.org/t/p/w500/gvM2wG66bjEpiirdeQdyG9EzUfv.jpg"
+            },
+            {
+              "name": "馬克·魯法洛",
+              "char": "Bruce Banner / Hulk",
+              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+            },
+            {
+              "name": "Liza Colón-Zayas",
+              "char": "Detective Jean DeWolff",
+              "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
+            },
+            {
+              "name": "Marvin Jones III",
+              "char": "Lonnie Lincoln / Tombstone",
+              "photo": "https://image.tmdb.org/t/p/w500/nS4X8TP3idFsxDdV9UqTRbz585g.jpg"
+            },
+            {
+              "name": "Eman Esfandi",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/lrDfNC81vTkFW9WApEDiC1euHZn.jpg"
+            },
+            {
+              "name": "Zabryna Guevara",
+              "char": "Sheila Rivera",
+              "photo": "https://image.tmdb.org/t/p/w500/7NlCmTZoauvyqjNdzTZv2auwOXg.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "德斯汀·丹尼爾·克雷頓",
+              "job": "Director"
+            },
+            {
+              "name": "Erik Sommers",
+              "job": "Writer"
+            },
+            {
+              "name": "Chris McKenna",
+              "job": "Writer"
+            }
+          ],
+          "budget": 275000000,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Spider-Man: Brand New Day",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/969681?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 1182861,
         "titleZh": "這年夏天，愛之尋謎",
@@ -368,11 +586,11 @@
         ],
         "crew": [
           {
-            "name": "Shea Wageman",
+            "name": "Steve Ball",
             "job": "Writer"
           },
           {
-            "name": "Steve Ball",
+            "name": "Shea Wageman",
             "job": "Writer"
           },
           {
@@ -493,11 +711,11 @@
           ],
           "crew": [
             {
-              "name": "Shea Wageman",
+              "name": "Steve Ball",
               "job": "Writer"
             },
             {
-              "name": "Steve Ball",
+              "name": "Shea Wageman",
               "job": "Writer"
             },
             {
@@ -7309,7 +7527,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/1vhjC7Ra5C6BPeZskeMz0WUmrnr.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
         "voteAverage": "7.4",
         "genre": [
           "動畫",
@@ -7440,7 +7658,7 @@
           ],
           "synopsis": "伴隨著時代演進、以科技入侵作為主題，玩具們將陷入 3C 危機，胡迪、巴斯光年此生最強勁敵現身，讓人愛不釋手的閃亮亮玩具登場，全新角色「莉莉板」，一款高科技、青蛙造型的智慧平板玩具，有了這個新寶貝，誰還需要玩具呢？他們將面臨史上最大的挑戰。",
           "poster": "https://image.tmdb.org/t/p/w500/1vhjC7Ra5C6BPeZskeMz0WUmrnr.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
           "voteAverage": "7.4",
           "trailerKey": "r0MhS0IpUts",
           "imdbId": "tt29355505",
@@ -13674,224 +13892,6 @@
     ],
     "soon": [
       {
-        "id": 969681,
-        "titleZh": "蜘蛛人：重生日",
-        "titleEn": "Spider-Man: Brand New Day",
-        "releaseDate": "2026-07-29",
-        "twTheatricalReleases": [
-          {
-            "date": "2026-07-29",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/kbvNLChuMl2nyAzPZvqkD8hZGZn.jpg",
-        "voteAverage": "8.1",
-        "genre": [
-          "科幻",
-          "動作",
-          "冒險"
-        ],
-        "duration": 145,
-        "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "trailerKey": "Upn2ejyAvnM",
-        "cast": [
-          {
-            "name": "湯姆·霍蘭德",
-            "char": "Peter Parker / Spider-Man",
-            "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
-          },
-          {
-            "name": "千黛亞",
-            "char": "MJ",
-            "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
-          },
-          {
-            "name": "薩迪·辛克",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/m9OyHAyOx56Pm3JruEBqh4p9XeX.jpg"
-          },
-          {
-            "name": "雅各布·貝塔隆",
-            "char": "Ned Leeds",
-            "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
-          },
-          {
-            "name": "強·柏恩瑟",
-            "char": "Frank Castle / Punisher",
-            "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
-          },
-          {
-            "name": "Tramell Tillman",
-            "char": "Bill Metzger",
-            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
-          },
-          {
-            "name": "麥可·曼杜",
-            "char": "Mac Gargan",
-            "photo": "https://image.tmdb.org/t/p/w500/gvM2wG66bjEpiirdeQdyG9EzUfv.jpg"
-          },
-          {
-            "name": "馬克·魯法洛",
-            "char": "Bruce Banner / Hulk",
-            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
-          },
-          {
-            "name": "Liza Colón-Zayas",
-            "char": "Detective Jean DeWolff",
-            "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
-          },
-          {
-            "name": "Marvin Jones III",
-            "char": "Lonnie Lincoln / Tombstone",
-            "photo": "https://image.tmdb.org/t/p/w500/nS4X8TP3idFsxDdV9UqTRbz585g.jpg"
-          },
-          {
-            "name": "Eman Esfandi",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/lrDfNC81vTkFW9WApEDiC1euHZn.jpg"
-          },
-          {
-            "name": "Zabryna Guevara",
-            "char": "Sheila Rivera",
-            "photo": "https://image.tmdb.org/t/p/w500/7NlCmTZoauvyqjNdzTZv2auwOXg.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "德斯汀·丹尼爾·克雷頓",
-            "job": "Director"
-          },
-          {
-            "name": "Erik Sommers",
-            "job": "Writer"
-          },
-          {
-            "name": "Chris McKenna",
-            "job": "Writer"
-          }
-        ],
-        "budget": 275000000,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Spider-Man: Brand New Day",
-        "platforms": [],
-        "popularity": 271.502,
-        "imdbId": "tt22084616",
-        "countries": [
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 145,
-          "genres": [
-            "科幻",
-            "動作",
-            "冒險"
-          ],
-          "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
-          "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/kbvNLChuMl2nyAzPZvqkD8hZGZn.jpg",
-          "voteAverage": "8.1",
-          "trailerKey": "Upn2ejyAvnM",
-          "imdbId": "tt22084616",
-          "countries": [
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "湯姆·霍蘭德",
-              "char": "Peter Parker / Spider-Man",
-              "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
-            },
-            {
-              "name": "千黛亞",
-              "char": "MJ",
-              "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
-            },
-            {
-              "name": "薩迪·辛克",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/m9OyHAyOx56Pm3JruEBqh4p9XeX.jpg"
-            },
-            {
-              "name": "雅各布·貝塔隆",
-              "char": "Ned Leeds",
-              "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
-            },
-            {
-              "name": "強·柏恩瑟",
-              "char": "Frank Castle / Punisher",
-              "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
-            },
-            {
-              "name": "Tramell Tillman",
-              "char": "Bill Metzger",
-              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
-            },
-            {
-              "name": "麥可·曼杜",
-              "char": "Mac Gargan",
-              "photo": "https://image.tmdb.org/t/p/w500/gvM2wG66bjEpiirdeQdyG9EzUfv.jpg"
-            },
-            {
-              "name": "馬克·魯法洛",
-              "char": "Bruce Banner / Hulk",
-              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
-            },
-            {
-              "name": "Liza Colón-Zayas",
-              "char": "Detective Jean DeWolff",
-              "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
-            },
-            {
-              "name": "Marvin Jones III",
-              "char": "Lonnie Lincoln / Tombstone",
-              "photo": "https://image.tmdb.org/t/p/w500/nS4X8TP3idFsxDdV9UqTRbz585g.jpg"
-            },
-            {
-              "name": "Eman Esfandi",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/lrDfNC81vTkFW9WApEDiC1euHZn.jpg"
-            },
-            {
-              "name": "Zabryna Guevara",
-              "char": "Sheila Rivera",
-              "photo": "https://image.tmdb.org/t/p/w500/7NlCmTZoauvyqjNdzTZv2auwOXg.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "德斯汀·丹尼爾·克雷頓",
-              "job": "Director"
-            },
-            {
-              "name": "Erik Sommers",
-              "job": "Writer"
-            },
-            {
-              "name": "Chris McKenna",
-              "job": "Writer"
-            }
-          ],
-          "budget": 275000000,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Spider-Man: Brand New Day",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/969681?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1391149,
         "titleZh": "天魔村",
         "titleEn": "Waktu Maghrib 2",
@@ -14241,6 +14241,16 @@
             "name": "鈴代紗弓",
             "char": "Futaba (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/7wEX0bXCs2djnp0dKsCqmMKZpZV.jpg"
+          },
+          {
+            "name": "大木咲繪子",
+            "char": "Mermaid (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/zmjFPl8uPSoCILFASp5sOjWUxmL.jpg"
+          },
+          {
+            "name": "七瀨彩夏",
+            "char": "Mermaid (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/9eKNKMFFhbtG74V3OOiVKEgm1ul.jpg"
           }
         ],
         "crew": [
@@ -14341,6 +14351,16 @@
               "name": "鈴代紗弓",
               "char": "Futaba (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/7wEX0bXCs2djnp0dKsCqmMKZpZV.jpg"
+            },
+            {
+              "name": "大木咲繪子",
+              "char": "Mermaid (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/zmjFPl8uPSoCILFASp5sOjWUxmL.jpg"
+            },
+            {
+              "name": "七瀨彩夏",
+              "char": "Mermaid (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/9eKNKMFFhbtG74V3OOiVKEgm1ul.jpg"
             }
           ],
           "crew": [
@@ -17468,7 +17488,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/m4omNoYEwqwOlqFYXdWNOoOM7lv.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
-        "voteAverage": "6.5",
+        "voteAverage": "6.6",
         "genre": [
           "恐怖",
           "愛情"
@@ -17592,7 +17612,7 @@
           "synopsis": "父親過世後，納伊姆與母親搬到一座保守的宗教小鎮，試圖展開全新生活。在這裡，他結識了俊美少年萊恩，一段無法見容於世的戀情悄然萌芽。然而，當納伊姆意外撞見萊恩與牧師之子杭特難以啟齒的秘密後，他因為心生嫉妒而揭發真相。杭特的父母隨即請來驅魔師，企圖透過驅逐同性慾望的儀式來「矯正」兩人。沒想到，這場儀式非但沒有帶來救贖，反而誘發出詭異的超自然力量……",
           "poster": "https://image.tmdb.org/t/p/w500/m4omNoYEwqwOlqFYXdWNOoOM7lv.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
-          "voteAverage": "6.5",
+          "voteAverage": "6.6",
           "trailerKey": "mio7Rpj45KQ",
           "imdbId": "tt39143902",
           "countries": [
@@ -20782,12 +20802,12 @@
             "job": "Writer"
           },
           {
-            "name": "Michael Spierig",
+            "name": "Peter Spierig",
             "job": "Director"
           },
           {
-            "name": "Scott Mann",
-            "job": "Writer"
+            "name": "Michael Spierig",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -20865,12 +20885,12 @@
               "job": "Writer"
             },
             {
-              "name": "Michael Spierig",
+              "name": "Peter Spierig",
               "job": "Director"
             },
             {
-              "name": "Scott Mann",
-              "job": "Writer"
+              "name": "Michael Spierig",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -22842,7 +22862,7 @@
           "家庭",
           "奇幻"
         ],
-        "duration": 109,
+        "duration": "",
         "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神秘的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
         "imdb": "",
         "rt": "",
@@ -22931,7 +22951,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": 109,
+          "duration": "",
           "genres": [
             "冒險",
             "動畫",
