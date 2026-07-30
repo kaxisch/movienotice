@@ -1,12 +1,506 @@
 {
-  "generated_at": "2026-07-30T22:53:33.152282+08:00",
+  "generated_at": "2026-07-31T01:07:06.662354+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 54,
-    "soon_count": 51
+    "now_count": 56,
+    "soon_count": 49
   },
   "movies": {
     "now": [
+      {
+        "id": 1391149,
+        "titleZh": "天魔村",
+        "titleEn": "Waktu Maghrib 2",
+        "releaseDate": "2026-07-31",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-07-31",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/aYqzI4EJYcjfrlyVcOKhArEHlT8.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mmvRoSRZ0D6g4gvmJPQUgP9fd9G.jpg",
+        "voteAverage": "5.9",
+        "genre": [
+          "恐怖",
+          "懸疑",
+          "驚悚"
+        ],
+        "duration": 107,
+        "synopsis": "一場足球比賽的衝突，讓一名落敗的替補球員憤怒詛咒對手，沒想到竟真的引來潛藏在森林的惡靈「烏姆西比揚」。當祂附身在其中一名孩子身上，一場無法停止的死亡詛咒也隨之展開……",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "trailerKey": "_Wo_aPKkexA",
+        "cast": [
+          {
+            "name": "Omar Daniel",
+            "char": "Adi",
+            "photo": "https://image.tmdb.org/t/p/w500/y7DDQq0bJHL38updUHIl9xfrVCk.jpg"
+          },
+          {
+            "name": "Anantya Rezky Kirana",
+            "char": "Wulan",
+            "photo": "https://image.tmdb.org/t/p/w500/nPXzgUS4f5yyRiERv6X3NcMjHPI.jpg"
+          },
+          {
+            "name": "Sulthan Hamonangan",
+            "char": "Yogo",
+            "photo": "https://image.tmdb.org/t/p/w500/zY4t9gyvxGvZxvQ3IKLeIVmEUuZ.jpg"
+          },
+          {
+            "name": "Ghazi Alhabsy",
+            "char": "Dewo",
+            "photo": "https://image.tmdb.org/t/p/w500/sYbVeubEgsRdrZPeV2sOIviCE1y.jpg"
+          },
+          {
+            "name": "Muzakki Ramdhan",
+            "char": "Endro",
+            "photo": "https://image.tmdb.org/t/p/w500/v4rSgXl2nQftb1K7ZoflFSaywKT.jpg"
+          },
+          {
+            "name": "Sadana Agung",
+            "char": "Hansip",
+            "photo": "https://image.tmdb.org/t/p/w500/iWDfZKgQRHpgCDFDewNeawDdCZD.jpg"
+          },
+          {
+            "name": "Nopek",
+            "char": "Joko",
+            "photo": "https://image.tmdb.org/t/p/w500/9zoMbF3EWYyRV19rdmwy1uZNS1H.jpg"
+          },
+          {
+            "name": "Fita Anggriani",
+            "char": "Ayu",
+            "photo": "https://image.tmdb.org/t/p/w500/i2qb77jhcOTObgfErw1lxWFAq4r.jpg"
+          },
+          {
+            "name": "Bagas Pratama Saputra",
+            "char": "Amir",
+            "photo": null
+          },
+          {
+            "name": "Maychelina Anis",
+            "char": "Surti",
+            "photo": null
+          },
+          {
+            "name": "Bonifasius Jose Mariano",
+            "char": "Jin Ummu Sibyan",
+            "photo": "https://image.tmdb.org/t/p/w500/fnzW0Z2WJoQhILHVsv0sMbalLCz.jpg"
+          },
+          {
+            "name": "Buyung Ispramadi",
+            "char": "Drajat",
+            "photo": null
+          },
+          {
+            "name": "Brydden Fablo Escobar",
+            "char": "Anas",
+            "photo": null
+          },
+          {
+            "name": "Sebastian Axel Mada",
+            "char": "Anton",
+            "photo": null
+          },
+          {
+            "name": "Rakka Nathan Azuranota",
+            "char": "Adit",
+            "photo": null
+          },
+          {
+            "name": "Fauzi Putra Istihadi",
+            "char": "Gembus",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Sidharta Tata",
+            "job": "Director"
+          },
+          {
+            "name": "Sidharta Tata",
+            "job": "Writer"
+          },
+          {
+            "name": "Khalid Kashogi",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 128794,
+        "status": "Released",
+        "origLang": "id",
+        "origTitle": "Waktu Maghrib 2",
+        "platforms": [],
+        "popularity": 1.919,
+        "imdbId": "tt35682998",
+        "countries": [
+          "Indonesia"
+        ],
+        "detail": {
+          "duration": 107,
+          "genres": [
+            "恐怖",
+            "懸疑",
+            "驚悚"
+          ],
+          "synopsis": "一場足球比賽的衝突，讓一名落敗的替補球員憤怒詛咒對手，沒想到竟真的引來潛藏在森林的惡靈「烏姆西比揚」。當祂附身在其中一名孩子身上，一場無法停止的死亡詛咒也隨之展開……",
+          "poster": "https://image.tmdb.org/t/p/w500/aYqzI4EJYcjfrlyVcOKhArEHlT8.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/mmvRoSRZ0D6g4gvmJPQUgP9fd9G.jpg",
+          "voteAverage": "5.9",
+          "trailerKey": "_Wo_aPKkexA",
+          "imdbId": "tt35682998",
+          "countries": [
+            "Indonesia"
+          ],
+          "cast": [
+            {
+              "name": "Omar Daniel",
+              "char": "Adi",
+              "photo": "https://image.tmdb.org/t/p/w500/y7DDQq0bJHL38updUHIl9xfrVCk.jpg"
+            },
+            {
+              "name": "Anantya Rezky Kirana",
+              "char": "Wulan",
+              "photo": "https://image.tmdb.org/t/p/w500/nPXzgUS4f5yyRiERv6X3NcMjHPI.jpg"
+            },
+            {
+              "name": "Sulthan Hamonangan",
+              "char": "Yogo",
+              "photo": "https://image.tmdb.org/t/p/w500/zY4t9gyvxGvZxvQ3IKLeIVmEUuZ.jpg"
+            },
+            {
+              "name": "Ghazi Alhabsy",
+              "char": "Dewo",
+              "photo": "https://image.tmdb.org/t/p/w500/sYbVeubEgsRdrZPeV2sOIviCE1y.jpg"
+            },
+            {
+              "name": "Muzakki Ramdhan",
+              "char": "Endro",
+              "photo": "https://image.tmdb.org/t/p/w500/v4rSgXl2nQftb1K7ZoflFSaywKT.jpg"
+            },
+            {
+              "name": "Sadana Agung",
+              "char": "Hansip",
+              "photo": "https://image.tmdb.org/t/p/w500/iWDfZKgQRHpgCDFDewNeawDdCZD.jpg"
+            },
+            {
+              "name": "Nopek",
+              "char": "Joko",
+              "photo": "https://image.tmdb.org/t/p/w500/9zoMbF3EWYyRV19rdmwy1uZNS1H.jpg"
+            },
+            {
+              "name": "Fita Anggriani",
+              "char": "Ayu",
+              "photo": "https://image.tmdb.org/t/p/w500/i2qb77jhcOTObgfErw1lxWFAq4r.jpg"
+            },
+            {
+              "name": "Bagas Pratama Saputra",
+              "char": "Amir",
+              "photo": null
+            },
+            {
+              "name": "Maychelina Anis",
+              "char": "Surti",
+              "photo": null
+            },
+            {
+              "name": "Bonifasius Jose Mariano",
+              "char": "Jin Ummu Sibyan",
+              "photo": "https://image.tmdb.org/t/p/w500/fnzW0Z2WJoQhILHVsv0sMbalLCz.jpg"
+            },
+            {
+              "name": "Buyung Ispramadi",
+              "char": "Drajat",
+              "photo": null
+            },
+            {
+              "name": "Brydden Fablo Escobar",
+              "char": "Anas",
+              "photo": null
+            },
+            {
+              "name": "Sebastian Axel Mada",
+              "char": "Anton",
+              "photo": null
+            },
+            {
+              "name": "Rakka Nathan Azuranota",
+              "char": "Adit",
+              "photo": null
+            },
+            {
+              "name": "Fauzi Putra Istihadi",
+              "char": "Gembus",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Sidharta Tata",
+              "job": "Director"
+            },
+            {
+              "name": "Sidharta Tata",
+              "job": "Writer"
+            },
+            {
+              "name": "Khalid Kashogi",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 128794,
+          "status": "Released",
+          "origLang": "id",
+          "origTitle": "Waktu Maghrib 2",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1391149?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1586876,
+        "titleZh": "劇場版 吉伊卡哇 人魚島的秘密",
+        "titleEn": "映畫ちいかわ 人魚の島のひみつ",
+        "releaseDate": "2026-07-31",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-07-31",
+            "language": "ja"
+          },
+          {
+            "date": "2026-08-07",
+            "language": "zh"
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/AuScmbIwpqa12bwhorWEdo9LZX.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/6efIfUaOqYKKWI5sSCilvqLIpeL.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "家庭",
+          "冒險",
+          "奇幻"
+        ],
+        "duration": 100,
+        "synopsis": "某天，當吉伊卡哇與小八貓在廣場休息時，兔兔突然臉上貼著一張傳單現身。小八貓確認傳單後發現，那是一張寫著「特別島嶼邀請函」的招待券。傳單上寫著：「在島上完成簡單的討伐即可獲得 100 倍報酬」、「限定島嶼拉麵與甜點，甜的鹹的全都實質免費」。被這些誘人條件吸引，吉伊卡哇一行人決定前往島嶼合宿。雖然海獺對傳單內容感到懷疑，但仍一同搭船出發。然而，在登陸島嶼後，等待著吉伊卡哇他們的究竟是……！？",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "trailerKey": "Dm5dsOdXFfg",
+        "cast": [
+          {
+            "name": "青木遙",
+            "char": "Chiikawa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/pksykdAshBZyzzdzILVRHIg6eX6.jpg"
+          },
+          {
+            "name": "田中誠人",
+            "char": "Hachiware (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/h4Bkm5UGMn12FedY5g11Y77I2rK.jpg"
+          },
+          {
+            "name": "小澤亞李",
+            "char": "Usagi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jrj6cIjnkk1FwJiSLIpGtUf8hWd.jpg"
+          },
+          {
+            "name": "井口裕香",
+            "char": "Momonga (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/38ZjRGBLD4lvfU3mSMyIBCIq85D.jpg"
+          },
+          {
+            "name": "淺井孝行",
+            "char": "Kurimanju (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/lSEZJVLKKuR5RRhYOdQFm55yEI2.jpg"
+          },
+          {
+            "name": "內田雄馬",
+            "char": "Rakko (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg"
+          },
+          {
+            "name": "島袋美由利",
+            "char": "Shisa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/rjhyRM2hn1deQG1V6cwC8AEEKNT.jpg"
+          },
+          {
+            "name": "春海百乃",
+            "char": "Furuhonya (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/1tr2x8WEaSRGa8E0MoqVyXgxDD4.jpg"
+          },
+          {
+            "name": "最上嗣生",
+            "char": "Shimajiro (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/gy1ovkyhWBN9RdIEP7pB5rSNDpD.jpg"
+          },
+          {
+            "name": "鈴木實裡",
+            "char": "Siren (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jfxpGS6Bbc1PPsF2EVKXNEbzOsZ.jpg"
+          },
+          {
+            "name": "寺澤百花",
+            "char": "Hitoha (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/lLS7b6k1653tiVwbi6pq9JXzMBW.jpg"
+          },
+          {
+            "name": "鈴代紗弓",
+            "char": "Futaba (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/7wEX0bXCs2djnp0dKsCqmMKZpZV.jpg"
+          },
+          {
+            "name": "大木咲繪子",
+            "char": "Mermaid (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/zmjFPl8uPSoCILFASp5sOjWUxmL.jpg"
+          },
+          {
+            "name": "七瀨彩夏",
+            "char": "Mermaid (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/9eKNKMFFhbtG74V3OOiVKEgm1ul.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "及川啟",
+            "job": "Director"
+          },
+          {
+            "name": "ナガノ",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "映畫ちいかわ 人魚の島のひみつ",
+        "platforms": [],
+        "popularity": 5.788,
+        "imdbId": "tt39026173",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "動畫",
+            "家庭",
+            "冒險",
+            "奇幻"
+          ],
+          "synopsis": "某天，當吉伊卡哇與小八貓在廣場休息時，兔兔突然臉上貼著一張傳單現身。小八貓確認傳單後發現，那是一張寫著「特別島嶼邀請函」的招待券。傳單上寫著：「在島上完成簡單的討伐即可獲得 100 倍報酬」、「限定島嶼拉麵與甜點，甜的鹹的全都實質免費」。被這些誘人條件吸引，吉伊卡哇一行人決定前往島嶼合宿。雖然海獺對傳單內容感到懷疑，但仍一同搭船出發。然而，在登陸島嶼後，等待著吉伊卡哇他們的究竟是……！？",
+          "poster": "https://image.tmdb.org/t/p/w500/AuScmbIwpqa12bwhorWEdo9LZX.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/6efIfUaOqYKKWI5sSCilvqLIpeL.jpg",
+          "voteAverage": "",
+          "trailerKey": "Dm5dsOdXFfg",
+          "imdbId": "tt39026173",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "青木遙",
+              "char": "Chiikawa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/pksykdAshBZyzzdzILVRHIg6eX6.jpg"
+            },
+            {
+              "name": "田中誠人",
+              "char": "Hachiware (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/h4Bkm5UGMn12FedY5g11Y77I2rK.jpg"
+            },
+            {
+              "name": "小澤亞李",
+              "char": "Usagi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jrj6cIjnkk1FwJiSLIpGtUf8hWd.jpg"
+            },
+            {
+              "name": "井口裕香",
+              "char": "Momonga (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/38ZjRGBLD4lvfU3mSMyIBCIq85D.jpg"
+            },
+            {
+              "name": "淺井孝行",
+              "char": "Kurimanju (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/lSEZJVLKKuR5RRhYOdQFm55yEI2.jpg"
+            },
+            {
+              "name": "內田雄馬",
+              "char": "Rakko (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg"
+            },
+            {
+              "name": "島袋美由利",
+              "char": "Shisa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/rjhyRM2hn1deQG1V6cwC8AEEKNT.jpg"
+            },
+            {
+              "name": "春海百乃",
+              "char": "Furuhonya (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/1tr2x8WEaSRGa8E0MoqVyXgxDD4.jpg"
+            },
+            {
+              "name": "最上嗣生",
+              "char": "Shimajiro (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/gy1ovkyhWBN9RdIEP7pB5rSNDpD.jpg"
+            },
+            {
+              "name": "鈴木實裡",
+              "char": "Siren (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jfxpGS6Bbc1PPsF2EVKXNEbzOsZ.jpg"
+            },
+            {
+              "name": "寺澤百花",
+              "char": "Hitoha (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/lLS7b6k1653tiVwbi6pq9JXzMBW.jpg"
+            },
+            {
+              "name": "鈴代紗弓",
+              "char": "Futaba (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/7wEX0bXCs2djnp0dKsCqmMKZpZV.jpg"
+            },
+            {
+              "name": "大木咲繪子",
+              "char": "Mermaid (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/zmjFPl8uPSoCILFASp5sOjWUxmL.jpg"
+            },
+            {
+              "name": "七瀨彩夏",
+              "char": "Mermaid (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/9eKNKMFFhbtG74V3OOiVKEgm1ul.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "及川啟",
+              "job": "Director"
+            },
+            {
+              "name": "ナガノ",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "映畫ちいかわ 人魚の島のひみつ",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1586876?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 969681,
         "titleZh": "蜘蛛人：重生日",
@@ -1132,16 +1626,16 @@
         ],
         "crew": [
           {
-            "name": "Jeffrey Hylton",
-            "job": "Writer"
+            "name": "Waldemar Fast",
+            "job": "Director"
           },
           {
             "name": "Kirstie Falkous",
             "job": "Writer"
           },
           {
-            "name": "Waldemar Fast",
-            "job": "Director"
+            "name": "Jeffrey Hylton",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -1253,16 +1747,16 @@
           ],
           "crew": [
             {
-              "name": "Jeffrey Hylton",
-              "job": "Writer"
+              "name": "Waldemar Fast",
+              "job": "Director"
             },
             {
               "name": "Kirstie Falkous",
               "job": "Writer"
             },
             {
-              "name": "Waldemar Fast",
-              "job": "Director"
+              "name": "Jeffrey Hylton",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -2177,11 +2671,11 @@
         ],
         "crew": [
           {
-            "name": "Antoine Schoumsky",
+            "name": "Sara Wikler",
             "job": "Screenplay"
           },
           {
-            "name": "Sara Wikler",
+            "name": "Antoine Schoumsky",
             "job": "Screenplay"
           },
           {
@@ -2295,11 +2789,11 @@
           ],
           "crew": [
             {
-              "name": "Antoine Schoumsky",
+              "name": "Sara Wikler",
               "job": "Screenplay"
             },
             {
-              "name": "Sara Wikler",
+              "name": "Antoine Schoumsky",
               "job": "Screenplay"
             },
             {
@@ -6461,7 +6955,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/rJbcrmogANaj9CEMDUjauUdnq9f.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
         "voteAverage": "6.7",
         "genre": [
           "動作",
@@ -6586,7 +7080,7 @@
           ],
           "synopsis": "故事描述當一個出乎意料且殘酷無情的敵人逼近家園時，卡拉佐艾爾（也就是超少女）被迫與一位意想不到的同伴聯手合作，共同踏上一場跨越星際的復仇與正義冒險旅程。",
           "poster": "https://image.tmdb.org/t/p/w500/rJbcrmogANaj9CEMDUjauUdnq9f.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
           "voteAverage": "6.7",
           "trailerKey": "uA8KldCIjt4",
           "imdbId": "tt8814476",
@@ -7874,7 +8368,12 @@
         "status": "Released",
         "origLang": "en",
         "origTitle": "Disclosure Day",
-        "platforms": [],
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
         "popularity": 438.6074,
         "imdbId": "tt15047880",
         "countries": [
@@ -7992,7 +8491,12 @@
           "status": "Released",
           "origLang": "en",
           "origTitle": "Disclosure Day",
-          "platforms": []
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1275779?language=zh-TW",
         "atmoviesId": "",
@@ -12056,500 +12560,6 @@
     ],
     "soon": [
       {
-        "id": 1391149,
-        "titleZh": "天魔村",
-        "titleEn": "Waktu Maghrib 2",
-        "releaseDate": "2026-07-31",
-        "twTheatricalReleases": [
-          {
-            "date": "2026-07-31",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/aYqzI4EJYcjfrlyVcOKhArEHlT8.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/mmvRoSRZ0D6g4gvmJPQUgP9fd9G.jpg",
-        "voteAverage": "5.9",
-        "genre": [
-          "恐怖",
-          "懸疑",
-          "驚悚"
-        ],
-        "duration": 107,
-        "synopsis": "一場足球比賽的衝突，讓一名落敗的替補球員憤怒詛咒對手，沒想到竟真的引來潛藏在森林的惡靈「烏姆西比揚」。當祂附身在其中一名孩子身上，一場無法停止的死亡詛咒也隨之展開……",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "trailerKey": "_Wo_aPKkexA",
-        "cast": [
-          {
-            "name": "Omar Daniel",
-            "char": "Adi",
-            "photo": "https://image.tmdb.org/t/p/w500/y7DDQq0bJHL38updUHIl9xfrVCk.jpg"
-          },
-          {
-            "name": "Anantya Rezky Kirana",
-            "char": "Wulan",
-            "photo": "https://image.tmdb.org/t/p/w500/nPXzgUS4f5yyRiERv6X3NcMjHPI.jpg"
-          },
-          {
-            "name": "Sulthan Hamonangan",
-            "char": "Yogo",
-            "photo": "https://image.tmdb.org/t/p/w500/zY4t9gyvxGvZxvQ3IKLeIVmEUuZ.jpg"
-          },
-          {
-            "name": "Ghazi Alhabsy",
-            "char": "Dewo",
-            "photo": "https://image.tmdb.org/t/p/w500/sYbVeubEgsRdrZPeV2sOIviCE1y.jpg"
-          },
-          {
-            "name": "Muzakki Ramdhan",
-            "char": "Endro",
-            "photo": "https://image.tmdb.org/t/p/w500/v4rSgXl2nQftb1K7ZoflFSaywKT.jpg"
-          },
-          {
-            "name": "Sadana Agung",
-            "char": "Hansip",
-            "photo": "https://image.tmdb.org/t/p/w500/iWDfZKgQRHpgCDFDewNeawDdCZD.jpg"
-          },
-          {
-            "name": "Nopek",
-            "char": "Joko",
-            "photo": "https://image.tmdb.org/t/p/w500/9zoMbF3EWYyRV19rdmwy1uZNS1H.jpg"
-          },
-          {
-            "name": "Fita Anggriani",
-            "char": "Ayu",
-            "photo": "https://image.tmdb.org/t/p/w500/i2qb77jhcOTObgfErw1lxWFAq4r.jpg"
-          },
-          {
-            "name": "Bagas Pratama Saputra",
-            "char": "Amir",
-            "photo": null
-          },
-          {
-            "name": "Maychelina Anis",
-            "char": "Surti",
-            "photo": null
-          },
-          {
-            "name": "Bonifasius Jose Mariano",
-            "char": "Jin Ummu Sibyan",
-            "photo": "https://image.tmdb.org/t/p/w500/fnzW0Z2WJoQhILHVsv0sMbalLCz.jpg"
-          },
-          {
-            "name": "Buyung Ispramadi",
-            "char": "Drajat",
-            "photo": null
-          },
-          {
-            "name": "Brydden Fablo Escobar",
-            "char": "Anas",
-            "photo": null
-          },
-          {
-            "name": "Sebastian Axel Mada",
-            "char": "Anton",
-            "photo": null
-          },
-          {
-            "name": "Rakka Nathan Azuranota",
-            "char": "Adit",
-            "photo": null
-          },
-          {
-            "name": "Fauzi Putra Istihadi",
-            "char": "Gembus",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Sidharta Tata",
-            "job": "Director"
-          },
-          {
-            "name": "Sidharta Tata",
-            "job": "Writer"
-          },
-          {
-            "name": "Khalid Kashogi",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 128794,
-        "status": "Released",
-        "origLang": "id",
-        "origTitle": "Waktu Maghrib 2",
-        "platforms": [],
-        "popularity": 1.919,
-        "imdbId": "tt35682998",
-        "countries": [
-          "Indonesia"
-        ],
-        "detail": {
-          "duration": 107,
-          "genres": [
-            "恐怖",
-            "懸疑",
-            "驚悚"
-          ],
-          "synopsis": "一場足球比賽的衝突，讓一名落敗的替補球員憤怒詛咒對手，沒想到竟真的引來潛藏在森林的惡靈「烏姆西比揚」。當祂附身在其中一名孩子身上，一場無法停止的死亡詛咒也隨之展開……",
-          "poster": "https://image.tmdb.org/t/p/w500/aYqzI4EJYcjfrlyVcOKhArEHlT8.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/mmvRoSRZ0D6g4gvmJPQUgP9fd9G.jpg",
-          "voteAverage": "5.9",
-          "trailerKey": "_Wo_aPKkexA",
-          "imdbId": "tt35682998",
-          "countries": [
-            "Indonesia"
-          ],
-          "cast": [
-            {
-              "name": "Omar Daniel",
-              "char": "Adi",
-              "photo": "https://image.tmdb.org/t/p/w500/y7DDQq0bJHL38updUHIl9xfrVCk.jpg"
-            },
-            {
-              "name": "Anantya Rezky Kirana",
-              "char": "Wulan",
-              "photo": "https://image.tmdb.org/t/p/w500/nPXzgUS4f5yyRiERv6X3NcMjHPI.jpg"
-            },
-            {
-              "name": "Sulthan Hamonangan",
-              "char": "Yogo",
-              "photo": "https://image.tmdb.org/t/p/w500/zY4t9gyvxGvZxvQ3IKLeIVmEUuZ.jpg"
-            },
-            {
-              "name": "Ghazi Alhabsy",
-              "char": "Dewo",
-              "photo": "https://image.tmdb.org/t/p/w500/sYbVeubEgsRdrZPeV2sOIviCE1y.jpg"
-            },
-            {
-              "name": "Muzakki Ramdhan",
-              "char": "Endro",
-              "photo": "https://image.tmdb.org/t/p/w500/v4rSgXl2nQftb1K7ZoflFSaywKT.jpg"
-            },
-            {
-              "name": "Sadana Agung",
-              "char": "Hansip",
-              "photo": "https://image.tmdb.org/t/p/w500/iWDfZKgQRHpgCDFDewNeawDdCZD.jpg"
-            },
-            {
-              "name": "Nopek",
-              "char": "Joko",
-              "photo": "https://image.tmdb.org/t/p/w500/9zoMbF3EWYyRV19rdmwy1uZNS1H.jpg"
-            },
-            {
-              "name": "Fita Anggriani",
-              "char": "Ayu",
-              "photo": "https://image.tmdb.org/t/p/w500/i2qb77jhcOTObgfErw1lxWFAq4r.jpg"
-            },
-            {
-              "name": "Bagas Pratama Saputra",
-              "char": "Amir",
-              "photo": null
-            },
-            {
-              "name": "Maychelina Anis",
-              "char": "Surti",
-              "photo": null
-            },
-            {
-              "name": "Bonifasius Jose Mariano",
-              "char": "Jin Ummu Sibyan",
-              "photo": "https://image.tmdb.org/t/p/w500/fnzW0Z2WJoQhILHVsv0sMbalLCz.jpg"
-            },
-            {
-              "name": "Buyung Ispramadi",
-              "char": "Drajat",
-              "photo": null
-            },
-            {
-              "name": "Brydden Fablo Escobar",
-              "char": "Anas",
-              "photo": null
-            },
-            {
-              "name": "Sebastian Axel Mada",
-              "char": "Anton",
-              "photo": null
-            },
-            {
-              "name": "Rakka Nathan Azuranota",
-              "char": "Adit",
-              "photo": null
-            },
-            {
-              "name": "Fauzi Putra Istihadi",
-              "char": "Gembus",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Sidharta Tata",
-              "job": "Director"
-            },
-            {
-              "name": "Sidharta Tata",
-              "job": "Writer"
-            },
-            {
-              "name": "Khalid Kashogi",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 128794,
-          "status": "Released",
-          "origLang": "id",
-          "origTitle": "Waktu Maghrib 2",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1391149?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1586876,
-        "titleZh": "劇場版 吉伊卡哇 人魚島的秘密",
-        "titleEn": "映畫ちいかわ 人魚の島のひみつ",
-        "releaseDate": "2026-07-31",
-        "twTheatricalReleases": [
-          {
-            "date": "2026-07-31",
-            "language": "ja"
-          },
-          {
-            "date": "2026-08-07",
-            "language": "zh"
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/AuScmbIwpqa12bwhorWEdo9LZX.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/6efIfUaOqYKKWI5sSCilvqLIpeL.jpg",
-        "voteAverage": "",
-        "genre": [
-          "動畫",
-          "家庭",
-          "冒險",
-          "奇幻"
-        ],
-        "duration": 100,
-        "synopsis": "某天，當吉伊卡哇與小八貓在廣場休息時，兔兔突然臉上貼著一張傳單現身。小八貓確認傳單後發現，那是一張寫著「特別島嶼邀請函」的招待券。傳單上寫著：「在島上完成簡單的討伐即可獲得 100 倍報酬」、「限定島嶼拉麵與甜點，甜的鹹的全都實質免費」。被這些誘人條件吸引，吉伊卡哇一行人決定前往島嶼合宿。雖然海獺對傳單內容感到懷疑，但仍一同搭船出發。然而，在登陸島嶼後，等待著吉伊卡哇他們的究竟是……！？",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "trailerKey": "Dm5dsOdXFfg",
-        "cast": [
-          {
-            "name": "青木遙",
-            "char": "Chiikawa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/pksykdAshBZyzzdzILVRHIg6eX6.jpg"
-          },
-          {
-            "name": "田中誠人",
-            "char": "Hachiware (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/h4Bkm5UGMn12FedY5g11Y77I2rK.jpg"
-          },
-          {
-            "name": "小澤亞李",
-            "char": "Usagi (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/jrj6cIjnkk1FwJiSLIpGtUf8hWd.jpg"
-          },
-          {
-            "name": "井口裕香",
-            "char": "Momonga (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/38ZjRGBLD4lvfU3mSMyIBCIq85D.jpg"
-          },
-          {
-            "name": "淺井孝行",
-            "char": "Kurimanju (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/lSEZJVLKKuR5RRhYOdQFm55yEI2.jpg"
-          },
-          {
-            "name": "內田雄馬",
-            "char": "Rakko (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg"
-          },
-          {
-            "name": "島袋美由利",
-            "char": "Shisa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/rjhyRM2hn1deQG1V6cwC8AEEKNT.jpg"
-          },
-          {
-            "name": "春海百乃",
-            "char": "Furuhonya (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/1tr2x8WEaSRGa8E0MoqVyXgxDD4.jpg"
-          },
-          {
-            "name": "最上嗣生",
-            "char": "Shimajiro (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/gy1ovkyhWBN9RdIEP7pB5rSNDpD.jpg"
-          },
-          {
-            "name": "鈴木實裡",
-            "char": "Siren (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/jfxpGS6Bbc1PPsF2EVKXNEbzOsZ.jpg"
-          },
-          {
-            "name": "寺澤百花",
-            "char": "Hitoha (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/lLS7b6k1653tiVwbi6pq9JXzMBW.jpg"
-          },
-          {
-            "name": "鈴代紗弓",
-            "char": "Futaba (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/7wEX0bXCs2djnp0dKsCqmMKZpZV.jpg"
-          },
-          {
-            "name": "大木咲繪子",
-            "char": "Mermaid (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/zmjFPl8uPSoCILFASp5sOjWUxmL.jpg"
-          },
-          {
-            "name": "七瀨彩夏",
-            "char": "Mermaid (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/9eKNKMFFhbtG74V3OOiVKEgm1ul.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "及川啟",
-            "job": "Director"
-          },
-          {
-            "name": "ナガノ",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "映畫ちいかわ 人魚の島のひみつ",
-        "platforms": [],
-        "popularity": 5.788,
-        "imdbId": "tt39026173",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 100,
-          "genres": [
-            "動畫",
-            "家庭",
-            "冒險",
-            "奇幻"
-          ],
-          "synopsis": "某天，當吉伊卡哇與小八貓在廣場休息時，兔兔突然臉上貼著一張傳單現身。小八貓確認傳單後發現，那是一張寫著「特別島嶼邀請函」的招待券。傳單上寫著：「在島上完成簡單的討伐即可獲得 100 倍報酬」、「限定島嶼拉麵與甜點，甜的鹹的全都實質免費」。被這些誘人條件吸引，吉伊卡哇一行人決定前往島嶼合宿。雖然海獺對傳單內容感到懷疑，但仍一同搭船出發。然而，在登陸島嶼後，等待著吉伊卡哇他們的究竟是……！？",
-          "poster": "https://image.tmdb.org/t/p/w500/AuScmbIwpqa12bwhorWEdo9LZX.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/6efIfUaOqYKKWI5sSCilvqLIpeL.jpg",
-          "voteAverage": "",
-          "trailerKey": "Dm5dsOdXFfg",
-          "imdbId": "tt39026173",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "青木遙",
-              "char": "Chiikawa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/pksykdAshBZyzzdzILVRHIg6eX6.jpg"
-            },
-            {
-              "name": "田中誠人",
-              "char": "Hachiware (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/h4Bkm5UGMn12FedY5g11Y77I2rK.jpg"
-            },
-            {
-              "name": "小澤亞李",
-              "char": "Usagi (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/jrj6cIjnkk1FwJiSLIpGtUf8hWd.jpg"
-            },
-            {
-              "name": "井口裕香",
-              "char": "Momonga (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/38ZjRGBLD4lvfU3mSMyIBCIq85D.jpg"
-            },
-            {
-              "name": "淺井孝行",
-              "char": "Kurimanju (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/lSEZJVLKKuR5RRhYOdQFm55yEI2.jpg"
-            },
-            {
-              "name": "內田雄馬",
-              "char": "Rakko (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg"
-            },
-            {
-              "name": "島袋美由利",
-              "char": "Shisa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/rjhyRM2hn1deQG1V6cwC8AEEKNT.jpg"
-            },
-            {
-              "name": "春海百乃",
-              "char": "Furuhonya (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/1tr2x8WEaSRGa8E0MoqVyXgxDD4.jpg"
-            },
-            {
-              "name": "最上嗣生",
-              "char": "Shimajiro (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/gy1ovkyhWBN9RdIEP7pB5rSNDpD.jpg"
-            },
-            {
-              "name": "鈴木實裡",
-              "char": "Siren (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/jfxpGS6Bbc1PPsF2EVKXNEbzOsZ.jpg"
-            },
-            {
-              "name": "寺澤百花",
-              "char": "Hitoha (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/lLS7b6k1653tiVwbi6pq9JXzMBW.jpg"
-            },
-            {
-              "name": "鈴代紗弓",
-              "char": "Futaba (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/7wEX0bXCs2djnp0dKsCqmMKZpZV.jpg"
-            },
-            {
-              "name": "大木咲繪子",
-              "char": "Mermaid (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/zmjFPl8uPSoCILFASp5sOjWUxmL.jpg"
-            },
-            {
-              "name": "七瀨彩夏",
-              "char": "Mermaid (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/9eKNKMFFhbtG74V3OOiVKEgm1ul.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "及川啟",
-              "job": "Director"
-            },
-            {
-              "name": "ナガノ",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "映畫ちいかわ 人魚の島のひみつ",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1586876?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1166170,
         "titleZh": "陰錯陽差愛上你",
         "titleEn": "L’Âme Idéale",
@@ -14240,11 +14250,11 @@
         "imdb": "",
         "rt": "",
         "mc": "",
-        "trailerKey": null,
+        "trailerKey": "R8QgX2bwgSM",
         "cast": [
           {
             "name": "嚴正化",
-            "char": "Lee Mi-young",
+            "char": "Lee Mi-yeong",
             "photo": "https://image.tmdb.org/t/p/w500/m2FWdLDVttcMrKcAjMKQx6Zhtfj.jpg"
           },
           {
@@ -14259,7 +14269,7 @@
           },
           {
             "name": "裵正楠",
-            "char": "Jeong Hyeon-min",
+            "char": "Jeong Hyun-min",
             "photo": "https://image.tmdb.org/t/p/w500/m4DnODpzR5850HZZTnNQyPwyhQQ.jpg"
           },
           {
@@ -14309,7 +14319,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/xDbrWXB9yb5aEdt4peVy8OWNP2Y.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ddrLCUT8hqSlEICTTbdlFYB5q4a.jpg",
           "voteAverage": "",
-          "trailerKey": null,
+          "trailerKey": "R8QgX2bwgSM",
           "imdbId": "tt43669175",
           "countries": [
             "South Korea"
@@ -14317,7 +14327,7 @@
           "cast": [
             {
               "name": "嚴正化",
-              "char": "Lee Mi-young",
+              "char": "Lee Mi-yeong",
               "photo": "https://image.tmdb.org/t/p/w500/m2FWdLDVttcMrKcAjMKQx6Zhtfj.jpg"
             },
             {
@@ -14332,7 +14342,7 @@
             },
             {
               "name": "裵正楠",
-              "char": "Jeong Hyeon-min",
+              "char": "Jeong Hyun-min",
               "photo": "https://image.tmdb.org/t/p/w500/m4DnODpzR5850HZZTnNQyPwyhQQ.jpg"
             },
             {
