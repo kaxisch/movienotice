@@ -11,7 +11,7 @@ import csv
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -21,12 +21,20 @@ from dotenv import load_dotenv
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
 CANDIDATES_FILE = DATA_DIR / "atmovies-candidates.json"
+MOVIE_DATA_FILE = DATA_DIR / "movie-data.json"
+WHITELIST_FILE = DATA_DIR / "tw-whitelist.json"
+MANUAL_RELEASES_FILE = DATA_DIR / "manual-releases.json"
 CANDIDATES_SHEET_TITLE = "_candidates"
 CANDIDATE_HEADERS = [
     "tmdb_id", "source_bucket", "title_zh", "title_en",
-    "release_date_tw", "atmovies_id", "atmovies_url", "tmdb_title",
+    "release_date_tw", "tmdb_tw_release_date", "atmovies_id", "atmovies_url", "tmdb_title",
     "ever_seen_atmovies", "atmovies_present", "consecutive_misses", "last_seen_atmovies",
+    "last_audit_date",
 ]
+CANDIDATE_RETENTION_DAYS = 180
+ATMOVIES_HANDOFF_DAYS = 60
+NOW_ATMOVIES_MISS_LIMIT = 2
+SOON_ATMOVIES_MISS_LIMIT = 5
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -174,6 +182,7 @@ def merge_candidate_presence(current_items, previous_items, run_date):
                 "atmovies_present": True,
                 "consecutive_misses": 0,
                 "last_seen_atmovies": run_date,
+                "last_audit_date": run_date,
             })
         else:
             item = dict(previous)
@@ -181,14 +190,120 @@ def merge_candidate_presence(current_items, previous_items, run_date):
                 misses = int(item.get("consecutive_misses", 0) or 0)
             except (TypeError, ValueError):
                 misses = 0
+            last_audit_date = str(item.get("last_audit_date", "") or "").strip()
+            if last_audit_date != run_date:
+                misses += 1
             item.update({
-                "ever_seen_atmovies": True,
+                "ever_seen_atmovies": is_sheet_true(item.get("ever_seen_atmovies"), default=False),
                 "atmovies_present": False,
-                "consecutive_misses": misses + 1,
+                "consecutive_misses": misses,
+                "last_audit_date": run_date,
             })
         item["tmdb_id"] = int(tmdb_id)
         merged.append(item)
     return merged
+
+
+def seed_site_handoff_candidates(previous_items, movie_payload, run_date, manual_ids):
+    """將已進入上映前 60 天、但尚無候選狀態的公開電影交給開眼稽核追蹤。"""
+    audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
+    handoff_cutoff = audit_date + timedelta(days=ATMOVIES_HANDOFF_DAYS)
+    existing_ids = {
+        int(item.get("tmdb_id"))
+        for item in previous_items
+        if item.get("tmdb_id")
+    }
+    seeded = [dict(item) for item in previous_items]
+    for bucket in ("now", "soon"):
+        for movie in movie_payload.get("movies", {}).get(bucket, []):
+            try:
+                tmdb_id = int(movie.get("id"))
+                release_date = datetime.strptime(str(movie.get("releaseDate", "")), "%Y-%m-%d").date()
+            except (TypeError, ValueError):
+                continue
+            if tmdb_id in existing_ids or tmdb_id in manual_ids or release_date > handoff_cutoff:
+                continue
+            seeded.append({
+                "tmdb_id": tmdb_id,
+                "source_bucket": "now" if release_date <= audit_date else "next",
+                "title_zh": movie.get("titleZh", ""),
+                "title_en": movie.get("titleEn", ""),
+                "release_date_tw": movie.get("releaseDate", ""),
+                "tmdb_tw_release_date": movie.get("releaseDate", ""),
+                "tmdb_title": movie.get("titleZh", ""),
+                "ever_seen_atmovies": False,
+                "atmovies_present": False,
+                "consecutive_misses": 0,
+                "last_seen_atmovies": "",
+                "last_audit_date": "",
+            })
+            existing_ids.add(tmdb_id)
+    return seeded
+
+
+def candidate_miss_limit(item, run_date):
+    try:
+        release_date = datetime.strptime(str(item.get("tmdb_tw_release_date", "")), "%Y-%m-%d").date()
+        audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return None
+    return NOW_ATMOVIES_MISS_LIMIT if release_date <= audit_date else SOON_ATMOVIES_MISS_LIMIT
+
+
+def prune_retired_candidates(items, run_date, published_ids, whitelist_ids, manual_ids):
+    """只清除已隱藏、已離開公開日期範圍且沒有其他保留依據的私人候選狀態。"""
+    audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
+    cutoff = audit_date - timedelta(days=CANDIDATE_RETENTION_DAYS)
+    protected_ids = {int(value) for value in published_ids | whitelist_ids | manual_ids if value}
+    retained = []
+    for item in items:
+        try:
+            tmdb_id = int(item.get("tmdb_id", 0))
+            release_date = datetime.strptime(str(item.get("tmdb_tw_release_date", "")), "%Y-%m-%d").date()
+            misses = int(item.get("consecutive_misses", 0) or 0)
+        except (TypeError, ValueError):
+            retained.append(item)
+            continue
+        miss_limit = candidate_miss_limit(item, run_date)
+        can_remove = (
+            not is_sheet_true(item.get("atmovies_present"), default=False)
+            and miss_limit is not None
+            and misses >= miss_limit
+            and tmdb_id not in protected_ids
+            and release_date < cutoff
+        )
+        if not can_remove:
+            retained.append(item)
+    return retained
+
+
+def load_json_ids(path, kind):
+    if not path.exists():
+        return set()
+    with open(path, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+    if kind == "movies":
+        values = [movie.get("id") for bucket in ("now", "soon") for movie in payload.get("movies", {}).get(bucket, [])]
+    elif kind == "whitelist":
+        values = payload.get("tmdb_ids", [])
+    elif kind == "manual":
+        values = [item.get("tmdb_id") for item in payload if isinstance(item, dict)]
+    else:
+        raise ValueError(f"Unknown id source kind: {kind}")
+    ids = set()
+    for value in values:
+        try:
+            ids.add(int(value))
+        except (TypeError, ValueError):
+            continue
+    return ids
+
+
+def load_json_payload(path, default):
+    if not path.exists():
+        return default
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def candidate_items_to_rows(items):
@@ -476,7 +591,21 @@ def publish():
             previous_candidate_items = sheet_rows_to_items(
                 get_all_sheet_values(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
             )
+        manual_ids = load_json_ids(MANUAL_RELEASES_FILE, "manual")
+        previous_candidate_items = seed_site_handoff_candidates(
+            previous_candidate_items,
+            load_json_payload(MOVIE_DATA_FILE, {"movies": {}}),
+            run_date,
+            manual_ids,
+        )
         candidate_items = merge_candidate_presence(current_candidate_items, previous_candidate_items, run_date)
+        candidate_items = prune_retired_candidates(
+            candidate_items,
+            run_date,
+            load_json_ids(MOVIE_DATA_FILE, "movies"),
+            load_json_ids(WHITELIST_FILE, "whitelist"),
+            manual_ids,
+        )
         candidate_rows = candidate_items_to_rows(candidate_items)
         candidate_sheet_id = ensure_date_sheet(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
         write_rows(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE, candidate_rows)

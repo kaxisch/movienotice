@@ -57,7 +57,7 @@ def load_sheet_candidates():
         return []
     response = service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
-        range=quote_sheet_range(CANDIDATES_SHEET_TITLE, "A:L"),
+        range=quote_sheet_range(CANDIDATES_SHEET_TITLE, "A:Z"),
     ).execute()
     values = response.get("values", [])
     if not values:
@@ -136,11 +136,9 @@ def atmovies_miss_count(candidate):
 
 
 def should_hide_for_atmovies_absence(candidate, release_date, today, manual_ids):
-    """只對曾在開眼出現的非人工電影套用連續缺席隱藏規則。"""
+    """對已進入開眼接手範圍的非人工電影套用連續缺席隱藏規則。"""
     tmdb_id = candidate.get("tmdb_id")
     if tmdb_id in manual_ids:
-        return False
-    if not sheet_value_is_true(candidate.get("ever_seen_atmovies")):
         return False
     if sheet_value_is_true(candidate.get("atmovies_present")):
         return False

@@ -1278,6 +1278,7 @@ def export_atmovies_candidates(output, generated_at_local):
             "title_zh": movie.get("title_zh", ""),
             "title_en": movie.get("title_en", ""),
             "release_date_tw": movie.get("release_date_tw", ""),
+            "tmdb_tw_release_date": movie.get("tmdb_tw_release_date", ""),
             "screen_count": movie.get("screen_count", 0),
             "atmovies_id": movie.get("atmovies_id", ""),
             "atmovies_url": movie.get("atmovies_url", ""),
