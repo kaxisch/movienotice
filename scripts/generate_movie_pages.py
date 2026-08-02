@@ -302,6 +302,8 @@ def write_sitemap(movies):
     today = date.today().isoformat()
     urls = [
         ("https://movienotice.pages.dev/", "daily", "1.0"),
+        ("https://movienotice.pages.dev/privacy.html", "yearly", "0.3"),
+        ("https://movienotice.pages.dev/terms.html", "yearly", "0.3"),
         *[(movie_url(movie), "weekly", "0.8") for movie in movies],
     ]
     body = "\n".join(

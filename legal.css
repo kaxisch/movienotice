@@ -1,0 +1,31 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --bg: #0a0a0f; }
+html { background: var(--bg); }
+body { min-height: 100vh; background: var(--bg); color: #fff; font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Noto Sans TC', sans-serif; font-weight: 300; }
+.legal-header { border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(10,10,15,0.95); }
+.legal-header-inner { max-width: 920px; margin: 0 auto; padding: 16px 24px; }
+.legal-brand { display: inline-flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; }
+.legal-brand img { display: block; width: auto; height: 34px; }
+.legal-brand span { color: rgba(255,255,255,0.55); font-size: 12px; }
+.legal-main { position: relative; max-width: 760px; min-height: calc(100vh - 180px); margin: 0 auto; padding: 72px 24px 88px; }
+.legal-main::before { content: ''; position: fixed; z-index: -1; width: 520px; height: 520px; top: 40px; right: -260px; border-radius: 50%; background: radial-gradient(circle, rgba(220,170,20,0.1), transparent 68%); filter: blur(30px); }
+.legal-kicker { margin-bottom: 12px; color: rgba(255,255,255,0.35); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+h1 { margin-bottom: 12px; font-size: clamp(30px, 6vw, 46px); font-weight: 200; letter-spacing: 0.01em; }
+.legal-updated { margin-bottom: 48px; color: rgba(255,255,255,0.38); font-size: 12px; }
+.legal-intro { margin-bottom: 42px; color: rgba(255,255,255,0.72); font-size: 16px; line-height: 1.9; }
+.legal-section { margin-top: 36px; }
+.legal-section h2 { margin-bottom: 12px; color: rgba(255,255,255,0.9); font-size: 17px; font-weight: 400; }
+.legal-section p, .legal-section li { color: rgba(255,255,255,0.62); font-size: 14px; line-height: 1.9; }
+.legal-section p + p { margin-top: 12px; }
+.legal-section ul { padding-left: 20px; }
+.legal-section a { color: rgba(255,255,255,0.78); text-underline-offset: 3px; }
+.legal-footer { padding: 28px 24px 36px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
+.legal-footer nav { display: flex; justify-content: center; gap: 10px; color: rgba(255,255,255,0.2); font-size: 11px; }
+.legal-footer a { color: rgba(255,255,255,0.34); text-decoration: none; }
+.legal-footer a:hover, .legal-footer a:focus-visible { color: rgba(255,255,255,0.65); }
+@media (max-width: 600px) {
+  .legal-header-inner { padding: 14px 18px; }
+  .legal-brand img { height: 30px; }
+  .legal-main { padding: 52px 20px 72px; }
+  .legal-updated { margin-bottom: 36px; }
+}

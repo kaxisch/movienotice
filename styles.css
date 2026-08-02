@@ -192,6 +192,12 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 #error-banner { display: none; margin-bottom: 24px; background: var(--glass-bg); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 16px; font-size: 14px; color: rgba(255,255,255,0.6); }
 #error-banner.show { display: block; }
 
+.site-footer { padding: 40px 64px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; margin-top: -8px; }
+.site-footer p { color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 300; }
+.footer-links { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 10px; color: rgba(255,255,255,0.22); font-size: 11px; }
+.footer-links a { color: rgba(255,255,255,0.32); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover, .footer-links a:focus-visible { color: rgba(255,255,255,0.65); }
+
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 .fade-in { animation: fadeIn 0.4s ease forwards; }

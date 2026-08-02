@@ -84,7 +84,7 @@ The workflow writes the generated `data/YYYY-MM-DD.tsv` into Google Sheets. It d
 - Spreadsheet: `movienotice_weekly`
 - Worksheet per run: `YYYY-MM-DD`
 - Columns: `類別`, `台灣中文片名`, `台灣上映日期`, `原文片名`, `連結`, `原上映日期`, `備註`
-- Private refresh candidates: `_candidates` (replaced on every audit)
+- Private refresh candidates: `_candidates` (merged on every successful audit so absence history is retained)
 
 The sheet includes these review categories:
 
@@ -96,7 +96,7 @@ The sheet includes these review categories:
 
 ## 7. Refresh the public website from TMDB
 
-The weekly audit replaces a private `_candidates` worksheet with the latest matched TMDB IDs. **Refresh Website from TMDB** runs automatically every three hours and can also be run manually. It reads `_candidates`, the currently published movie IDs, and `manual-releases.json`; it never crawls Atmovies. Movies remain published while their TMDB Taiwan theatrical date is within the configured display window, even if Atmovies temporarily removes them. The workflow publishes only TMDB fields, validates the result, and commits the regenerated website data to `main`.
+The weekly audit merges the latest matched TMDB IDs into a private `_candidates` worksheet. Previously seen movies remain in that state table when absent; only one miss can be recorded per distinct successful audit date. TMDB Discover supplies early candidates only while they are 61–180 days from release. Once a published movie enters the 60-day window, the next successful Atmovies audit automatically creates or takes over its candidate state. **Refresh Website from TMDB** runs automatically every three hours and can also be run manually. It reads `_candidates`, the currently published movie IDs, and `manual-releases.json`; it never crawls Atmovies. A currently showing movie is hidden after two distinct successful audits without an Atmovies appearance, while an upcoming movie is hidden after five. Hidden candidate state is retained until the verified TMDB Taiwan theatrical date is more than 180 days old and the movie is no longer published, whitelisted, or manually retained. The workflow publishes only TMDB fields, validates the result, and commits the regenerated website data to `main`.
 
 `data/manual-releases.json` stores confirmed theatrical releases that should stay visible
 even when they are not currently listed by Atmovies. These rows are deduplicated by TMDB ID,
