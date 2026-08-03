@@ -83,6 +83,7 @@ OMDB_API_KEYS = [
     for item in os.environ.get("OMDB_API_KEYS", "").split(",")
     if item.strip()
 ]
+MDBLIST_API_KEY = os.environ.get("MDBLIST_API_KEY", "").strip()
 if not TMDB_API_KEY:
     print("ERROR: TMDB_API_KEY not set in .env", file=sys.stderr)
     sys.exit(1)
@@ -837,7 +838,7 @@ def pick_trailer_key(payload):
 
 def parse_omdb_ratings(imdb_id):
     if not imdb_id or not OMDB_API_KEYS:
-        return {"imdb": "", "rt": "", "mc": ""}
+        return {"imdb": {"value": "", "votes": 0}, "rt": {"value": "", "votes": 0}, "mc": {"value": "", "votes": 0}}
     for key in OMDB_API_KEYS:
         try:
             r = requests.get(
@@ -858,10 +859,145 @@ def parse_omdb_ratings(imdb_id):
                     break
             mc = data.get("Metascore", "")
             mc = mc if mc and mc != "N/A" else ""
-            return {"imdb": imdb, "rt": rt, "mc": mc}
+            try:
+                imdb_votes = int((data.get("imdbVotes") or "0").replace(",", ""))
+            except ValueError:
+                imdb_votes = 0
+            return {
+                "imdb": {"value": imdb, "votes": imdb_votes},
+                "rt": {"value": rt, "votes": 0},
+                "mc": {"value": mc, "votes": 0},
+            }
         except Exception:
             continue
-    return {"imdb": "", "rt": "", "mc": ""}
+    return {"imdb": {"value": "", "votes": 0}, "rt": {"value": "", "votes": 0}, "mc": {"value": "", "votes": 0}}
+
+
+def format_rating_value(field, score):
+    try:
+        score = float(score)
+    except (TypeError, ValueError):
+        return ""
+    maximum = 10 if field == "imdb" else 100
+    if not 0 <= score <= maximum:
+        return ""
+    formatted = str(int(score)) if score.is_integer() else f"{score:.1f}".rstrip("0").rstrip(".")
+    return f"{formatted}%" if field == "rt" else formatted
+
+
+def parse_mdblist_ratings(payload):
+    """解析 MDBList 評分；Tomatoes 僅指專業影評，不採用 Popcorn 觀眾分數。"""
+    source_fields = {"imdb": "imdb", "tomatoes": "rt", "metacritic": "mc"}
+    out = {field: {"value": "", "votes": 0} for field in ("imdb", "rt", "mc")}
+    for item in payload.get("ratings", []):
+        field = source_fields.get(item.get("source"))
+        if not field:
+            continue
+        value = format_rating_value(field, item.get("score"))
+        if not value:
+            continue
+        try:
+            votes = int(item.get("votes") or 0)
+        except (TypeError, ValueError):
+            votes = 0
+        out[field] = {"value": value, "votes": votes}
+    return out
+
+
+def fetch_mdblist_ratings(imdb_id):
+    empty = {field: {"value": "", "votes": 0} for field in ("imdb", "rt", "mc")}
+    if not imdb_id or not MDBLIST_API_KEY:
+        return empty
+    try:
+        r = requests.get(
+            f"https://api.mdblist.com/imdb/movie/{imdb_id}",
+            params={"apikey": MDBLIST_API_KEY},
+            timeout=15,
+        )
+        r.raise_for_status()
+        return parse_mdblist_ratings(r.json())
+    except Exception as exc:
+        log(f"  MDBList rating lookup failed for {imdb_id}: {type(exc).__name__}")
+        return empty
+
+
+def numeric_rating(value):
+    try:
+        return float(str(value).rstrip("%"))
+    except (TypeError, ValueError):
+        return None
+
+
+def rating_metadata(field, value, source, votes, previous, checked_at):
+    old_meta = (previous.get("ratingMeta") or {}).get(field, {}) if previous else {}
+    last_changed = old_meta.get("lastChanged", "")
+    if not previous or previous.get(field, "") != value:
+        last_changed = checked_at
+    return {"source": source, "votes": votes or 0, "lastChanged": last_changed or checked_at}
+
+
+def choose_external_rating(field, omdb_item, mdblist_item, previous, checked_at):
+    omdb_value = omdb_item.get("value", "")
+    mdblist_value = mdblist_item.get("value", "")
+    previous_value = previous.get(field, "") if previous else ""
+
+    if field == "imdb" and omdb_value and mdblist_value:
+        chosen_source = "mdblist" if mdblist_item.get("votes", 0) > omdb_item.get("votes", 0) else "omdb"
+    elif field in {"rt", "mc"} and omdb_value and mdblist_value:
+        difference = abs(numeric_rating(omdb_value) - numeric_rating(mdblist_value))
+        if difference > 15:
+            log(
+                f"  Rating conflict {field}: OMDb={omdb_value}, MDBList={mdblist_value}; "
+                "retaining previous value or using OMDb"
+            )
+            if previous_value:
+                old_meta = (previous.get("ratingMeta") or {}).get(field, {})
+                return previous_value, rating_metadata(
+                    field,
+                    previous_value,
+                    old_meta.get("source", "previous"),
+                    old_meta.get("votes", 0),
+                    previous,
+                    checked_at,
+                )
+            chosen_source = "omdb"
+        else:
+            chosen_source = "mdblist"
+    elif mdblist_value:
+        chosen_source = "mdblist"
+    elif omdb_value:
+        chosen_source = "omdb"
+    elif previous_value:
+        old_meta = (previous.get("ratingMeta") or {}).get(field, {})
+        return previous_value, rating_metadata(
+            field,
+            previous_value,
+            old_meta.get("source", "previous"),
+            old_meta.get("votes", 0),
+            previous,
+            checked_at,
+        )
+    else:
+        return "", {}
+
+    chosen = mdblist_item if chosen_source == "mdblist" else omdb_item
+    return chosen["value"], rating_metadata(
+        field, chosen["value"], chosen_source, chosen.get("votes", 0), previous, checked_at
+    )
+
+
+def parse_external_ratings(imdb_id, previous=None, checked_at=""):
+    """同時查詢兩個彙整來源，逐項選擇較新或較可靠的有效評分。"""
+    omdb = parse_omdb_ratings(imdb_id)
+    mdblist = fetch_mdblist_ratings(imdb_id)
+    ratings = {"meta": {}}
+    for field in ("imdb", "rt", "mc"):
+        ratings[field], meta = choose_external_rating(
+            field, omdb[field], mdblist[field], previous or {}, checked_at
+        )
+        if meta:
+            ratings["meta"][field] = meta
+    return ratings
 
 
 def classify_release_bucket(record, release_date, today_local, tmdb_has_tw_date=True):
@@ -934,6 +1070,7 @@ def build_static_movie(record, payload, ratings):
         "imdb": ratings.get("imdb", ""),
         "rt": ratings.get("rt", ""),
         "mc": ratings.get("mc", ""),
+        "ratingMeta": ratings.get("meta", {}),
         "trailerKey": detail["trailerKey"],
         "cast": cast,
         "crew": crew,
@@ -1062,7 +1199,11 @@ def export_static_movie_data(output, generated_at_local, previous_movies=None, t
             transient_failure_ids.add(tmdb_id)
             retain_previous_static_movie(movies, existing_ids, previous_movies, tmdb_id, today_local)
             continue
-        ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
+        ratings = parse_external_ratings(
+            payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""),
+            previous_movies.get(tmdb_id),
+            generated_at_local.isoformat(),
+        )
         movie = build_static_movie(record, payload, ratings)
         if not should_keep_static_movie(movie, record):
             continue
@@ -1110,7 +1251,11 @@ def export_static_movie_data(output, generated_at_local, previous_movies=None, t
             "atmovies_url": manual.get("atmovies_url", ""),
             "source_bucket": "manual",
         }
-        ratings = parse_omdb_ratings(payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""))
+        ratings = parse_external_ratings(
+            payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""),
+            previous_movies.get(tmdb_id),
+            generated_at_local.isoformat(),
+        )
         movie = build_static_movie(record, payload, ratings)
         if not should_keep_static_movie(movie, record):
             continue
