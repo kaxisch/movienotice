@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T12:10:40.615106+08:00",
+  "generated_at": "2026-08-03T17:48:24.046684+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 44,
@@ -33,6 +33,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "_Wo_aPKkexA",
         "cast": [
           {
@@ -296,6 +297,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "Dm5dsOdXFfg",
         "cast": [
           {
@@ -380,7 +382,7 @@
           }
         ],
         "budget": 0,
-        "revenue": 0,
+        "revenue": 13673117,
         "status": "Released",
         "origLang": "ja",
         "origTitle": "映畫ちいかわ 人魚の島のひみつ",
@@ -490,7 +492,7 @@
             }
           ],
           "budget": 0,
-          "revenue": 0,
+          "revenue": 13673117,
           "status": "Released",
           "origLang": "ja",
           "origTitle": "映畫ちいかわ 人魚の島のひみつ",
@@ -525,8 +527,25 @@
         "duration": 145,
         "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
         "imdb": "8.2",
-        "rt": "",
+        "rt": "90%",
         "mc": "66",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 99527,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 313,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 56,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "Upn2ejyAvnM",
         "cast": [
           {
@@ -535,19 +554,19 @@
             "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
           },
           {
+            "name": "薩迪·辛克",
+            "char": "Jean Grey",
+            "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+          },
+          {
+            "name": "Tramell Tillman",
+            "char": "William 'Bill' Metzger",
+            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+          },
+          {
             "name": "千黛亞",
             "char": "MJ",
             "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
-          },
-          {
-            "name": "馬克·魯法洛",
-            "char": "Bruce Banner / Hulk",
-            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
-          },
-          {
-            "name": "強·柏恩瑟",
-            "char": "Frank Castle / Punisher",
-            "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
           },
           {
             "name": "雅各布·貝塔隆",
@@ -555,9 +574,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
           },
           {
-            "name": "薩迪·辛克",
-            "char": "Jean Grey",
-            "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            "name": "強·柏恩瑟",
+            "char": "Frank Castle / Punisher",
+            "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
+          },
+          {
+            "name": "馬克·魯法洛",
+            "char": "Bruce Banner / Hulk",
+            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
           },
           {
             "name": "佛蘿倫絲·普伊",
@@ -568,11 +592,6 @@
             "name": "Liza Colón-Zayas",
             "char": "Detective Jean DeWolff",
             "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
-          },
-          {
-            "name": "Tramell Tillman",
-            "char": "William 'Bill' Metzger",
-            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
           },
           {
             "name": "瑪麗莎·託梅",
@@ -630,7 +649,7 @@
         "origLang": "en",
         "origTitle": "Spider-Man: Brand New Day",
         "platforms": [],
-        "popularity": 2054.3173,
+        "popularity": 1946.0445,
         "imdbId": "tt22084616",
         "countries": [
           "United States of America"
@@ -658,19 +677,19 @@
               "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
             },
             {
+              "name": "薩迪·辛克",
+              "char": "Jean Grey",
+              "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            },
+            {
+              "name": "Tramell Tillman",
+              "char": "William 'Bill' Metzger",
+              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+            },
+            {
               "name": "千黛亞",
               "char": "MJ",
               "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
-            },
-            {
-              "name": "馬克·魯法洛",
-              "char": "Bruce Banner / Hulk",
-              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
-            },
-            {
-              "name": "強·柏恩瑟",
-              "char": "Frank Castle / Punisher",
-              "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
             },
             {
               "name": "雅各布·貝塔隆",
@@ -678,9 +697,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
             },
             {
-              "name": "薩迪·辛克",
-              "char": "Jean Grey",
-              "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+              "name": "強·柏恩瑟",
+              "char": "Frank Castle / Punisher",
+              "photo": "https://image.tmdb.org/t/p/w500/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg"
+            },
+            {
+              "name": "馬克·魯法洛",
+              "char": "Bruce Banner / Hulk",
+              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
             },
             {
               "name": "佛蘿倫絲·普伊",
@@ -691,11 +715,6 @@
               "name": "Liza Colón-Zayas",
               "char": "Detective Jean DeWolff",
               "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
-            },
-            {
-              "name": "Tramell Tillman",
-              "char": "William 'Bill' Metzger",
-              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
             },
             {
               "name": "瑪麗莎·託梅",
@@ -781,8 +800,25 @@
         "duration": 112,
         "synopsis": "獨自長大的女孩成年後，為了取得家人簽名以申請獎學金，踏上旅程跨海尋找未曾謀面的祖父母。家族成員熱情接待他，卻不樂意多談他死於愛滋的雙親，他只好自行深入絕美港都，嘗試拼湊至親身影。",
         "imdb": "7.0",
-        "rt": "",
-        "mc": "75",
+        "rt": "92%",
+        "mc": "78",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 345,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 83,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 18,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -1033,8 +1069,20 @@
         "duration": 92,
         "synopsis": "害羞內向的九歲男孩丹尼，總喜歡和心愛的狗狗查理一起沉浸在天馬行空的想像世界裡。某天，查理意外遭到外星人綁架，竟神奇獲得超能力，化身為「超能汪汪」，成為全球矚目的超級英雄！而隔壁心懷嫉妒的邪惡貓咪普迪竟也獲得超能力，並誓言擊敗查理、征服人類！當世介面臨前所未有的危機，丹尼與查理不僅得攜手對抗邪惡勢力，更必須重新找回彼此的信任與勇氣。",
         "imdb": "5.3",
-        "rt": "",
+        "rt": "38%",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 440,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 16,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "JE0sYVNXFOw",
         "cast": [
           {
@@ -1293,6 +1341,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -1379,11 +1428,11 @@
         "crew": [
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -1500,11 +1549,11 @@
           "crew": [
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -1546,6 +1595,13 @@
         "imdb": "5.8",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 875,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "3rd8VWM-O20",
         "cast": [
           {
@@ -1626,16 +1682,16 @@
         ],
         "crew": [
           {
-            "name": "Waldemar Fast",
-            "job": "Director"
+            "name": "Jeffrey Hylton",
+            "job": "Writer"
           },
           {
             "name": "Kirstie Falkous",
             "job": "Writer"
           },
           {
-            "name": "Jeffrey Hylton",
-            "job": "Writer"
+            "name": "Waldemar Fast",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -1747,16 +1803,16 @@
           ],
           "crew": [
             {
-              "name": "Waldemar Fast",
-              "job": "Director"
+              "name": "Jeffrey Hylton",
+              "job": "Writer"
             },
             {
               "name": "Kirstie Falkous",
               "job": "Writer"
             },
             {
-              "name": "Jeffrey Hylton",
-              "job": "Writer"
+              "name": "Waldemar Fast",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -1795,6 +1851,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -1868,7 +1925,7 @@
         "origLang": "ja",
         "origTitle": "Shambhala Story",
         "platforms": [],
-        "popularity": 1.1438,
+        "popularity": 0.8805,
         "imdbId": "tt37989601",
         "countries": [
           "Japan",
@@ -1992,8 +2049,20 @@
         "duration": 126,
         "synopsis": "在不久的未來，建築師甲本音音與身為工程公司第二代老闆的丈夫甲本健介，將外型和兩年前過世的兒子．翔一樣的類人形機器人，接到家中一起生活。類人形機器人到家裡的那天，音音開心地迎接和翔擁有同樣笑容和聲音的他，但健介則無法掩飾自己的疑惑，露出僵硬的表情。一家人的時間漸漸動了起來，但後來發生出乎意料的情況，夫妻倆對於兒子的死各自所抱持的想法也逐漸顯露。而身為類人形機器人的翔開始暗中和類人形機器人的朋友們有了聯絡……",
         "imdb": "",
-        "rt": "",
-        "mc": "",
+        "rt": "39%",
+        "mc": "51",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 57,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 21,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "bkriqAw-xes",
         "cast": [
           {
@@ -2201,6 +2270,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -2255,7 +2325,7 @@
         "origLang": "ja",
         "origTitle": "未來",
         "platforms": [],
-        "popularity": 1.1765,
+        "popularity": 0.981,
         "imdbId": "tt41986879",
         "countries": [
           "Japan"
@@ -2361,6 +2431,13 @@
         "imdb": "6.6",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 669,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "_pEaDAMIDgw",
         "cast": [
           {
@@ -2436,12 +2513,12 @@
         ],
         "crew": [
           {
-            "name": "花田十輝",
-            "job": "Screenplay"
-          },
-          {
             "name": "石立太一",
             "job": "Director"
+          },
+          {
+            "name": "花田十輝",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -2450,7 +2527,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 境界の彼方 -I'll Be Here- 過去篇",
         "platforms": [],
-        "popularity": 1.3907,
+        "popularity": 1.1245,
         "imdbId": "tt4531412",
         "countries": [
           "Japan"
@@ -2547,12 +2624,12 @@
           ],
           "crew": [
             {
-              "name": "花田十輝",
-              "job": "Screenplay"
-            },
-            {
               "name": "石立太一",
               "job": "Director"
+            },
+            {
+              "name": "花田十輝",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -2596,6 +2673,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "9M9HjR0CrM0",
         "cast": [
           {
@@ -2689,7 +2767,7 @@
         "origLang": "fr",
         "origTitle": "Les Légendaires",
         "platforms": [],
-        "popularity": 3.5621,
+        "popularity": 3.4762,
         "imdbId": "tt35659725",
         "countries": [
           "Belgium",
@@ -2837,6 +2915,13 @@
         "imdb": "7.8",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 209,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -3074,7 +3159,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/pQ7YpJJqa2Qxrjh0LCdiQxBdQ3P.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
-        "voteAverage": "8.0",
+        "voteAverage": "7.9",
         "genre": [
           "冒險",
           "動作",
@@ -3083,8 +3168,25 @@
         "duration": 173,
         "synopsis": "改編自荷馬同名史詩。奧德修斯在特洛伊戰爭後歷經艱險返鄉。",
         "imdb": "8.5",
-        "rt": "",
+        "rt": "94%",
         "mc": "88",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 318348,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 467,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 62,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "2rzJuAIj0VI",
         "cast": [
           {
@@ -3179,12 +3281,12 @@
           }
         ],
         "budget": 250000000,
-        "revenue": 683184575,
+        "revenue": 911397415,
         "status": "Released",
         "origLang": "en",
         "origTitle": "The Odyssey",
         "platforms": [],
-        "popularity": 1177.1048,
+        "popularity": 1207.1844,
         "imdbId": "tt33764258",
         "countries": [
           "United Kingdom",
@@ -3200,7 +3302,7 @@
           "synopsis": "改編自荷馬同名史詩。奧德修斯在特洛伊戰爭後歷經艱險返鄉。",
           "poster": "https://image.tmdb.org/t/p/w500/pQ7YpJJqa2Qxrjh0LCdiQxBdQ3P.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
-          "voteAverage": "8.0",
+          "voteAverage": "7.9",
           "trailerKey": "2rzJuAIj0VI",
           "imdbId": "tt33764258",
           "countries": [
@@ -3300,7 +3402,7 @@
             }
           ],
           "budget": 250000000,
-          "revenue": 683184575,
+          "revenue": 911397415,
           "status": "Released",
           "origLang": "en",
           "origTitle": "The Odyssey",
@@ -3337,6 +3439,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "j7X55j4EpdA",
         "cast": [
           {
@@ -3511,8 +3614,15 @@
         "duration": 105,
         "synopsis": "母親過世之後，為了尋求內心的平靜，艾倫決定搬到鄉下小鎮生活。受到親戚的委託，艾倫收留了飽受精神疾病困擾的表弟溫斯羅普。隨著家中越來越常出現詭異的事件，艾倫意識到一股強大的超自然力量盯上了溫斯羅普，她決定不惜一切保護他。",
         "imdb": "",
-        "rt": "",
+        "rt": "29%",
         "mc": "",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 21,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "X8uzr2ngwb0",
         "cast": [
           {
@@ -3764,6 +3874,13 @@
         "imdb": "7.5",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 18,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "09UafNko6FU",
         "cast": [
           {
@@ -3973,7 +4090,19 @@
         "synopsis": "《海洋奇緣》真人版，由艾美獎及東尼獎雙項贏家熱門音樂劇《漢米爾頓》導演湯瑪斯凱爾執導，電影敘述海洋公主莫娜遠渡重洋、與莫逆之交毛伊攜手拯救族人，除了巨石強森以真面目再度飾演廣受喜愛的毛伊，在前導預告中光以背面現身即令影迷興奮不已，莫娜則由萬中選一的耀眼新星凱薩琳拉加阿雅（Catherine Lagaʻaia）初登大銀幕、一展驚豔歌喉！",
         "imdb": "",
         "rt": "31%",
-        "mc": "",
+        "mc": "42",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 191,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 40,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "S1_X0mQeaxw",
         "cast": [
           {
@@ -4229,8 +4358,20 @@
         "duration": 110,
         "synopsis": "丈夫過世後，一位女子前往婆家偏僻的宅邸尋求慰藉。然而，婆家的成員卻一個個變成了惡靈，使原本再正常不過的聚會，淪為一場地獄般的家庭聚會。女子這時才發現，她生前許下的誓言……即使在死後依然有效。",
         "imdb": "",
-        "rt": "",
-        "mc": "",
+        "rt": "71%",
+        "mc": "54",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 198,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 36,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "dyJuL8yOKF4",
         "cast": [
           {
@@ -4334,7 +4475,7 @@
         "origLang": "en",
         "origTitle": "Evil Dead Burn",
         "platforms": [],
-        "popularity": 48.3143,
+        "popularity": 45.9765,
         "imdbId": "tt31170389",
         "countries": [
           "United States of America"
@@ -4487,6 +4628,23 @@
         "imdb": "7.3",
         "rt": "92%",
         "mc": "76",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 10037,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 195,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 42,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "u1DvSXHO9w8",
         "cast": [
           {
@@ -4748,6 +4906,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "t1xLVsUPm-c",
         "cast": [
           {
@@ -4802,7 +4961,7 @@
         "origLang": "ja",
         "origTitle": "映畫ドラえもん 新・のび太の海底鬼巖城",
         "platforms": [],
-        "popularity": 12.0112,
+        "popularity": 12.1507,
         "imdbId": "tt38201958",
         "countries": [
           "Japan"
@@ -4908,6 +5067,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "3BEQ-kZ_lZA",
         "cast": [],
         "crew": [
@@ -4994,6 +5154,23 @@
         "imdb": "7.4",
         "rt": "87%",
         "mc": "60",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 109420,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 89,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "i_Gf__er02c",
         "cast": [
           {
@@ -5242,8 +5419,25 @@
         "duration": 92,
         "synopsis": "《嗜殺路人甲》三部曲最終章，將前兩集累積的恐懼與創傷推向終極高潮。歷經連續數日血腥追殺後，唯一生還者瑪雅早已不是最初那個誤闖詭異小鎮的普通女孩。  當她親手殺死麵具殺手雪莉後，這場獵殺不再只是單純逃亡，而是演變成一場關於復仇、人性與靈魂墮落的最終對決。面具殺手葛雷戈裡帶著更強烈的執念步步逼近，而瑪雅也逐漸被黑暗吞噬，從獵物蛻變為反擊者。  當復仇與求生的界線越來越模糊，她必須面對最殘酷的問題：自己究竟是在活下去，還是已經成為和對方一樣的人？",
         "imdb": "4.1",
-        "rt": "21%",
+        "rt": "18%",
         "mc": "19",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 5027,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 57,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -5503,6 +5697,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "7a2lHWk2eoA",
         "cast": [
           {
@@ -5761,8 +5956,25 @@
         "duration": 90,
         "synopsis": "延續2024年暑假全球票房大賣、笑聲不斷的年度最強喜劇片《神偷奶爸4》熱潮，照明娛樂再度擴充套件其既歡樂又瘋狂的 動畫宇宙，帶來影史最賣座動畫系列的全新篇章《小小兵&大怪獸》。故事講述小小兵是如何征服好萊塢、成為電影巨星、失去一切、放出怪獸大鬧全世界，然後團結起來試圖從他們才剛造成的超級大災難中拯救全世界。",
         "imdb": "6.6",
-        "rt": "",
-        "mc": "69",
+        "rt": "89%",
+        "mc": "70",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 6852,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 177,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 30,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "zSKcIHTN3tM",
         "cast": [
           {
@@ -6021,6 +6233,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "DQr-PJAyF2M",
         "cast": [
           {
@@ -6270,6 +6483,13 @@
         "imdb": "6.5",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 176,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "sosJyyjUL6I",
         "cast": [
           {
@@ -6522,6 +6742,23 @@
         "imdb": "7.5",
         "rt": "92%",
         "mc": "73",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 40356,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 317,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 54,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "r0MhS0IpUts",
         "cast": [
           {
@@ -6779,8 +7016,25 @@
         "duration": 86,
         "synopsis": "為了促進經濟發展，政府在偏遠地區為 80 歲以上的老人建立了隔離安養院，確保他們衣食無憂地度過晚年。77 歲的德蕾莎一生在亞馬遜的穆裡蒂村度過，直到某天接到政府的命令，因為年齡門檻下修，要求她搬遷到隔離區。距離轉移的日子只剩幾天，德蕾莎決定挑戰命運，踏上穿越亞馬遜的旅程，實現她人生的最後一個願望：搭飛機。在躲避政府追捕的過程中，德蕾莎穿梭於亞馬遜的河流之間，卻未曾想過這趟旅程將遠比她想像的更加不可思議。",
         "imdb": "7.1",
-        "rt": "",
-        "mc": "83",
+        "rt": "98%",
+        "mc": "78",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 3192,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 54,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 16,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -7034,15 +7288,32 @@
         "poster": "https://image.tmdb.org/t/p/w500/93xtN8BmdVNkLfHnVD2xhmypnl7.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/asD57THSyXt4SC7SwVpe4R0xjRC.jpg",
-        "voteAverage": "7.0",
+        "voteAverage": "6.9",
         "genre": [
           "恐怖"
         ],
         "duration": 108,
         "synopsis": "性格孤僻、不近人情的小說家歐姆鮑曼，帶著父母骨灰，來到偏遠陰鬱的愛爾蘭鄉間，重返父母曾經最幸福的地方。他入住父母當年度蜜月的古老旅館，卻被旅館員工告知，這間旅館流傳著一則禁忌傳說，有一位古老女巫長期徘徊在「蜜月套房」，而那間套房早就被封鎖列為禁區。歐姆起初不以為意，但旅館開始出現離奇失蹤事件……",
         "imdb": "7.3",
-        "rt": "",
+        "rt": "90%",
         "mc": "76",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 16522,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 201,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 32,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "qLC2gCGoyOc",
         "cast": [
           {
@@ -7117,7 +7388,7 @@
         "origLang": "en",
         "origTitle": "Hokum",
         "platforms": [],
-        "popularity": 30.4313,
+        "popularity": 33.2985,
         "imdbId": "tt35672862",
         "countries": [
           "United States of America",
@@ -7133,7 +7404,7 @@
           "synopsis": "性格孤僻、不近人情的小說家歐姆鮑曼，帶著父母骨灰，來到偏遠陰鬱的愛爾蘭鄉間，重返父母曾經最幸福的地方。他入住父母當年度蜜月的古老旅館，卻被旅館員工告知，這間旅館流傳著一則禁忌傳說，有一位古老女巫長期徘徊在「蜜月套房」，而那間套房早就被封鎖列為禁區。歐姆起初不以為意，但旅館開始出現離奇失蹤事件……",
           "poster": "https://image.tmdb.org/t/p/w500/93xtN8BmdVNkLfHnVD2xhmypnl7.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/asD57THSyXt4SC7SwVpe4R0xjRC.jpg",
-          "voteAverage": "7.0",
+          "voteAverage": "6.9",
           "trailerKey": "qLC2gCGoyOc",
           "imdbId": "tt35672862",
           "countries": [
@@ -7245,6 +7516,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "oCH8qt2yxTY",
         "cast": [],
         "crew": [
@@ -7320,8 +7592,25 @@
         "duration": 145,
         "synopsis": "如果你發現我們從來都不是宇宙中唯一的生命，如果有人證明給你看，你會感到恐懼嗎？真相屬於七十億人類，我們正在逼近……揭密日。",
         "imdb": "6.5",
-        "rt": "",
+        "rt": "79%",
         "mc": "74",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 121418,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 428,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 63,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "K5WlVB_mlwY",
         "cast": [
           {
@@ -7581,6 +7870,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "wB-_u0HtSP0",
         "cast": [
           {
@@ -7680,7 +7970,7 @@
         "origLang": "id",
         "origTitle": "Ghost in the Cell",
         "platforms": [],
-        "popularity": 11.8149,
+        "popularity": 10.2204,
         "imdbId": "tt9000310",
         "countries": [
           "Indonesia",
@@ -7831,8 +8121,25 @@
         "duration": 113,
         "synopsis": "女兒在街頭被拐走，店主探尋一個複雜的犯罪網路，不擇手段要將女兒救回來。他唯一的盟友是一名記者。這兩個來自不同背景的人物必須學會相互信任、合作，運用自己不為人知的過去所賦予的格鬥技能。",
         "imdb": "7.7",
-        "rt": "98%",
-        "mc": "87",
+        "rt": "97%",
+        "mc": "85",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 991,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 151,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 21,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "u5VwBo85ewE",
         "cast": [
           {
@@ -7936,7 +8243,7 @@
         "origLang": "zh",
         "origTitle": "火遮眼",
         "platforms": [],
-        "popularity": 110.9402,
+        "popularity": 110.8701,
         "imdbId": "tt33311069",
         "countries": [
           "Hong Kong",
@@ -8092,6 +8399,23 @@
         "imdb": "7.1",
         "rt": "97%",
         "mc": "90",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 20929,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 200,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 36,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -8178,11 +8502,11 @@
         "crew": [
           {
             "name": "Eva Victor",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Eva Victor",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 1500000,
@@ -8300,11 +8624,11 @@
           "crew": [
             {
               "name": "Eva Victor",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Eva Victor",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 1500000,
@@ -8347,8 +8671,25 @@
         "duration": 111,
         "synopsis": "一個深夜，一間傢俱展示行內，電視忽然閃過詭異畫面。緊接著，地下室燈光開始閃爍，牆面無預警出現一扇詭異的門，門的背後，竟是一個從未存在過的空間。陰暗黃光壟罩、空氣潮濕封閉，錯綜複雜的格局不斷延伸。這裡沒有出口，也沒有盡頭，彷彿墜入一座無限擴張的異度迷宮……",
         "imdb": "7.0",
-        "rt": "",
+        "rt": "87%",
         "mc": "77",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 100148,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 301,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 46,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "iZzg1J6OvhQ",
         "cast": [
           {
@@ -8599,8 +8940,25 @@
         "duration": 123,
         "synopsis": "首爾市中心一棟摩天大樓發生原因不明的集體感染事件，起初如野獸般爬行的感染者逐漸進化，開始以雙腳步行並能分辨人類，進而成群結隊地攻擊倖存者。生物工程師權世貞和倖存者們，尋找聲稱已在自己體內注射疫苗的徐英哲，並前往救難隊所在的頂樓。然而愈往上走，情況愈難以預測，徐英哲竟利用感染者阻擋倖存者們的去路……",
         "imdb": "7.3",
-        "rt": "",
-        "mc": "52",
+        "rt": "69%",
+        "mc": "57",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 357,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 39,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 9,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "UY_Em4ow3Ok",
         "cast": [
           {
@@ -8859,6 +9217,13 @@
         "imdb": "9.6",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 55,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "pxggmfhwVHg",
         "cast": [
           {
@@ -8958,7 +9323,7 @@
         "origLang": "ja",
         "origTitle": "新劇場版 銀魂 -吉原大炎上-",
         "platforms": [],
-        "popularity": 2.856,
+        "popularity": 2.2331,
         "imdbId": "tt37931873",
         "countries": [
           "Japan"
@@ -9107,6 +9472,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "8GWP0ctLrz8",
         "cast": [
           {
@@ -9195,6 +9561,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "9MZJPH5G9V0",
         "cast": [],
         "crew": [
@@ -9271,6 +9638,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -9437,6 +9805,23 @@
         "imdb": "7.1",
         "rt": "80%",
         "mc": "60",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 1816,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 8,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "InZ5liyTGB4",
         "cast": [
           {
@@ -9684,6 +10069,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "zle51sJN4es",
         "cast": [
           {
@@ -9813,6 +10199,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "2WfYzm9jRdc",
         "cast": [
           {
@@ -9916,7 +10303,7 @@
         "origLang": "fr",
         "origTitle": "L’Âme Idéale",
         "platforms": [],
-        "popularity": 2.1082,
+        "popularity": 1.9029,
         "imdbId": "tt35526093",
         "countries": [
           "France"
@@ -10068,7 +10455,19 @@
         "synopsis": "在印度北部一個小村莊裡，兩位兒時好友渴望成為警察，以此重拾長期被剝奪的尊嚴。然而，隨著他們一步步接近夢想，日益增長的絕望威脅著他們彼此之間的紐帶。",
         "imdb": "",
         "rt": "97%",
-        "mc": "",
+        "mc": "85",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 31,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 6,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "25phUSei-Ss",
         "cast": [
           {
@@ -10320,6 +10719,23 @@
         "imdb": "7.9",
         "rt": "94%",
         "mc": "77",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 291494,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 309,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 37,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "Br2TbABzovU",
         "cast": [
           {
@@ -10410,6 +10826,10 @@
           },
           {
             "name": "柯瑞·巴克",
+            "job": "Director"
+          },
+          {
+            "name": "Farhan Rana Rajpoot",
             "job": "Director"
           }
         ],
@@ -10531,6 +10951,10 @@
             {
               "name": "柯瑞·巴克",
               "job": "Director"
+            },
+            {
+              "name": "Farhan Rana Rajpoot",
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -10571,6 +10995,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -10720,6 +11145,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "tjAF3U8jjE8",
         "cast": [
           {
@@ -10774,7 +11200,7 @@
         "origLang": "zh",
         "origTitle": "Last Night in Taipei",
         "platforms": [],
-        "popularity": 0.9657,
+        "popularity": 1.2659,
         "imdbId": "tt38162481",
         "countries": [
           "Taiwan",
@@ -10881,6 +11307,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "pnjYxnn9Xm4",
         "cast": [
           {
@@ -10920,7 +11347,7 @@
         "origLang": "ja",
         "origTitle": "クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
         "platforms": [],
-        "popularity": 16.7653,
+        "popularity": 18.7276,
         "imdbId": "tt41293342",
         "countries": [
           "Japan"
@@ -11011,6 +11438,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "7VRW1By_eRE",
         "cast": [
           {
@@ -11090,7 +11518,7 @@
         "origLang": "ja",
         "origTitle": "君は映畫",
         "platforms": [],
-        "popularity": 1.905,
+        "popularity": 1.3246,
         "imdbId": "tt39715372",
         "countries": [
           "Japan"
@@ -11220,6 +11648,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "R-ALz2RwZ5Q",
         "cast": [
           {
@@ -11391,6 +11820,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "lgMgwGUc9_I",
         "cast": [
           {
@@ -11490,7 +11920,7 @@
         "origLang": "en",
         "origTitle": "The End of Oak Street",
         "platforms": [],
-        "popularity": 34.1349,
+        "popularity": 34.1594,
         "imdbId": "tt27165187",
         "countries": [
           "United States of America"
@@ -11640,6 +12070,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "R8QgX2bwgSM",
         "cast": [
           {
@@ -11798,6 +12229,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "VPUquxx20jw",
         "cast": [
           {
@@ -12046,7 +12478,24 @@
         "synopsis": "「超拖」樂團雙人組有夠會拖，兩個懷著成名夢的好友，為了登上表演舞臺，每天在破公寓談鋼琴練肖話，還找紀錄片團隊貼身側拍。只是十七年過去，少年變大叔，卻連場地預約電話都還沒打。他們以為只要幹場大事，例如跳下電視塔，成為話題，自然會被注意到。當計劃再度挫屎，習慣言聽計從的那個開始意識到，多年搭檔可能才是拖垮人生的雷包，於是打算拆夥落跑。誰知竟把箱型車開成時光機，陰錯陽差將所有人帶回十七年前的那一天！",
         "imdb": "8.0",
         "rt": "96%",
-        "mc": "78",
+        "mc": "80",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 5802,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 120,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 26,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -12306,6 +12755,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "-juvWuW6hLg",
         "cast": [
           {
@@ -12567,6 +13017,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -12703,6 +13154,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "h2vu0k5b7vc",
         "cast": [
           {
@@ -12870,6 +13322,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "0pIKTDz689U",
         "cast": [
           {
@@ -13133,6 +13586,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -13232,7 +13686,7 @@
         "origLang": "ja",
         "origTitle": "てっぺんの向こうにあなたがいる",
         "platforms": [],
-        "popularity": 1.8964,
+        "popularity": 1.5909,
         "imdbId": "tt37969835",
         "countries": [
           "Japan"
@@ -13379,6 +13833,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -13624,8 +14079,25 @@
         "duration": 88,
         "synopsis": "父親過世後，納伊姆與母親搬到一座保守的宗教小鎮，試圖展開全新生活。在這裡，他結識了俊美少年萊恩，一段無法見容於世的戀情悄然萌芽。然而，當納伊姆意外撞見萊恩與牧師之子杭特難以啟齒的秘密後，他因為心生嫉妒而揭發真相。杭特的父母隨即請來驅魔師，企圖透過驅逐同性慾望的儀式來「矯正」兩人。沒想到，這場儀式非但沒有帶來救贖，反而誘發出詭異的超自然力量……",
         "imdb": "5.3",
-        "rt": "",
+        "rt": "92%",
         "mc": "83",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 896,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 153,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 27,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "mio7Rpj45KQ",
         "cast": [
           {
@@ -13717,6 +14189,10 @@
           {
             "name": "Adrian Chiarella",
             "job": "Writer"
+          },
+          {
+            "name": "Farhan Rana Rajpoot",
+            "job": "Director"
           }
         ],
         "budget": 3500000,
@@ -13725,7 +14201,7 @@
         "origLang": "en",
         "origTitle": "Leviticus",
         "platforms": [],
-        "popularity": 168.5217,
+        "popularity": 196.1728,
         "imdbId": "tt39143902",
         "countries": [
           "Australia",
@@ -13837,6 +14313,10 @@
             {
               "name": "Adrian Chiarella",
               "job": "Writer"
+            },
+            {
+              "name": "Farhan Rana Rajpoot",
+              "job": "Director"
             }
           ],
           "budget": 3500000,
@@ -13875,6 +14355,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "JDQbvobNVeM",
         "cast": [
           {
@@ -13895,7 +14376,7 @@
         "origLang": "zh",
         "origTitle": "終戰那一天",
         "platforms": [],
-        "popularity": 0.5078,
+        "popularity": 0.5824,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -13964,6 +14445,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "NfocDa8yXOk",
         "cast": [
           {
@@ -14212,6 +14694,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "coy7TQSchmw",
         "cast": [
           {
@@ -14281,7 +14764,7 @@
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
         "platforms": [],
-        "popularity": 12.9836,
+        "popularity": 12.3271,
         "imdbId": "tt32393988",
         "countries": [
           "Australia",
@@ -14392,7 +14875,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ccoEJ4Rxk9rb5cIrrkpPQDn39MP.jpg",
-        "voteAverage": "6.4",
+        "voteAverage": "6.7",
         "genre": [
           "喜劇",
           "愛情",
@@ -14403,6 +14886,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "lIl2WzFiF0A",
         "cast": [
           {
@@ -14502,7 +14986,7 @@
         "origLang": "en",
         "origTitle": "One Night Only",
         "platforms": [],
-        "popularity": 14.4946,
+        "popularity": 14.7795,
         "imdbId": "tt37853455",
         "countries": [
           "United States of America"
@@ -14517,7 +15001,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ccoEJ4Rxk9rb5cIrrkpPQDn39MP.jpg",
-          "voteAverage": "6.4",
+          "voteAverage": "6.7",
           "trailerKey": "lIl2WzFiF0A",
           "imdbId": "tt37853455",
           "countries": [
@@ -14655,6 +15139,13 @@
         "imdb": "7.3",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 1232,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -14754,7 +15245,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 境界の彼方 -I'll Be Here- 未來篇",
         "platforms": [],
-        "popularity": 1.1714,
+        "popularity": 1.0861,
         "imdbId": "tt4539114",
         "countries": [
           "Japan"
@@ -14906,6 +15397,13 @@
         "imdb": "6.3",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 383,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -15164,6 +15662,18 @@
         "imdb": "6.7",
         "rt": "73%",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 2189,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -15419,6 +15929,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -15567,6 +16078,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "5I3Tal6CXB0",
         "cast": [
           {
@@ -15727,6 +16239,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "n4_gVXzDiwQ",
         "cast": [
           {
@@ -15953,6 +16466,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "VFi8IQOT4Gw",
         "cast": [
           {
@@ -16056,7 +16570,7 @@
         "origLang": "zh",
         "origTitle": "網紅老爸",
         "platforms": [],
-        "popularity": 1.5333,
+        "popularity": 1.7036,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -16207,8 +16721,25 @@
         "duration": 107,
         "synopsis": "",
         "imdb": "7.8",
-        "rt": "",
+        "rt": "97%",
         "mc": "82",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 3560,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 259,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 47,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -16272,7 +16803,7 @@
         "origLang": "en",
         "origTitle": "The Invite",
         "platforms": [],
-        "popularity": 33.4646,
+        "popularity": 30.6158,
         "imdbId": "tt14173636",
         "countries": [
           "United States of America"
@@ -16385,6 +16916,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -16631,8 +17163,25 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」訊息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。此時，增援部隊因為大規模野火全面撤離，對外通訊也徹底中斷，讓整個小鎮宛如孤島。為了保護留下來的老人與居民，他與警員只能死守最後防線。另一方面，深入山區追蹤猛獸行蹤的鎮民們，卻反過來成為被獵殺的目標。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難…。",
         "imdb": "7.0",
-        "rt": "",
+        "rt": "77%",
         "mc": "68",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 678,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 44,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 19,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": "HZkGZqypnBM",
         "cast": [
           {
@@ -16881,6 +17430,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "tjRoaBhq-F4",
         "cast": [
           {
@@ -16930,12 +17480,12 @@
             "job": "Writer"
           },
           {
-            "name": "Peter Spierig",
+            "name": "Michael Spierig",
             "job": "Director"
           },
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Scott Mann",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -16944,7 +17494,7 @@
         "origLang": "en",
         "origTitle": "Fall 2: Deadpoint",
         "platforms": [],
-        "popularity": 46.8058,
+        "popularity": 49.4204,
         "imdbId": "tt31192372",
         "countries": [
           "United Kingdom",
@@ -17013,12 +17563,12 @@
               "job": "Writer"
             },
             {
-              "name": "Peter Spierig",
+              "name": "Michael Spierig",
               "job": "Director"
             },
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Scott Mann",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -17057,6 +17607,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -17273,6 +17824,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -17468,6 +18020,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "6CFZLN46-Xw",
         "cast": [
           {
@@ -17522,7 +18075,7 @@
         "origLang": "zh",
         "origTitle": "怎麼可能我家的祖先是你家的鬼",
         "platforms": [],
-        "popularity": 0.394,
+        "popularity": 0.406,
         "imdbId": "tt43560584",
         "countries": [
           "Taiwan"
@@ -17626,6 +18179,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "p-SvGIzank8",
         "cast": [
           {
@@ -17767,6 +18321,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "fmMoGBw0Dkk",
         "cast": [
           {
@@ -17835,7 +18390,7 @@
         "origLang": "en",
         "origTitle": "Practical Magic 2",
         "platforms": [],
-        "popularity": 4.6297,
+        "popularity": 4.7969,
         "imdbId": "tt32588798",
         "countries": [
           "United States of America"
@@ -17955,6 +18510,23 @@
         "imdb": "7.5",
         "rt": "98%",
         "mc": "67",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 6388,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 57,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -18211,6 +18783,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "ad3giJ30GOw",
         "cast": [
           {
@@ -18284,7 +18857,7 @@
         "origLang": "ja",
         "origTitle": "ルックバック",
         "platforms": [],
-        "popularity": 1.396,
+        "popularity": 1.3165,
         "imdbId": "tt39094605",
         "countries": [
           "Japan"
@@ -18407,6 +18980,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "_859MXf3s4M",
         "cast": [
           {
@@ -18557,6 +19131,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -18714,6 +19289,13 @@
         "imdb": "8.0",
         "rt": "",
         "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 8,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -18931,8 +19513,20 @@
         "duration": 147,
         "synopsis": "",
         "imdb": "",
-        "rt": "",
-        "mc": "",
+        "rt": "96%",
+        "mc": "79",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 46,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 15,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
         "trailerKey": null,
         "cast": [
           {
@@ -19032,7 +19626,7 @@
         "origLang": "ja",
         "origTitle": "黒牢城",
         "platforms": [],
-        "popularity": 4.4579,
+        "popularity": 4.4204,
         "imdbId": "tt39602215",
         "countries": [
           "Japan"
@@ -19184,6 +19778,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "CUIZ7ciID7Y",
         "cast": [
           {
@@ -19218,7 +19813,7 @@
         "origLang": "en",
         "origTitle": "Heart of the Beast",
         "platforms": [],
-        "popularity": 8.0797,
+        "popularity": 8.4493,
         "imdbId": "tt7526136",
         "countries": [
           "United States of America"
@@ -19307,6 +19902,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "WII6-Ss-kTM",
         "cast": [
           {
@@ -19515,6 +20111,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "sCs4ZEhwyjA",
         "cast": [
           {
@@ -19730,6 +20327,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "O33qqsXTZPc",
         "cast": [
           {
@@ -19907,6 +20505,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": null,
         "cast": [
           {
@@ -20006,6 +20605,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "vR-RQWBeraY",
         "cast": [
           {
@@ -20109,7 +20709,7 @@
         "origLang": "en",
         "origTitle": "Street Fighter",
         "platforms": [],
-        "popularity": 7.8553,
+        "popularity": 7.7375,
         "imdbId": "tt27419420",
         "countries": [
           "Japan",
@@ -20265,6 +20865,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "OzAbE61Yk6g",
         "cast": [
           {
@@ -20368,7 +20969,7 @@
         "origLang": "en",
         "origTitle": "The Hunger Games: Sunrise on the Reaping",
         "platforms": [],
-        "popularity": 8.5902,
+        "popularity": 8.3014,
         "imdbId": "tt32558705",
         "countries": [
           "United States of America"
@@ -20522,6 +21123,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "ouOu_Xyh6GE",
         "cast": [
           {
@@ -20710,6 +21312,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "wY8n1ExAN-s",
         "cast": [
           {
@@ -20786,11 +21389,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -20803,7 +21406,7 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 14.2502,
+        "popularity": 13.9021,
         "imdbId": "tt31378509",
         "countries": [
           "United States of America"
@@ -20898,11 +21501,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
@@ -20947,6 +21550,7 @@
         "imdb": "",
         "rt": "",
         "mc": "",
+        "ratingMeta": {},
         "trailerKey": "ZpmJZRRGK6o",
         "cast": [
           {
