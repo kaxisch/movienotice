@@ -39,6 +39,7 @@ jobs:
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           OMDB_API_KEYS: ${{ secrets.OMDB_API_KEYS }}
+          MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
         run: python3 scripts/refresh_site_from_google_sheet.py
