@@ -34,7 +34,7 @@ CANDIDATE_HEADERS = [
     "last_audit_date",
 ]
 RERELEASE_HEADERS = [
-    "tmdb_id", "title_zh", "title_en", "cinema_release_date", "tmdb_tw_release_date",
+    "tmdb_id", "title_zh", "title_en", "cinema_release_date", "atmovies_original_date", "tmdb_tw_release_date",
     "tmdb_url", "tmdb_primary_release_date", "present_sources", "source_urls", "cinema_status",
     "tmdb_date_status", "rerelease_present", "consecutive_misses", "hidden",
     "first_seen", "last_seen", "last_audit_date",

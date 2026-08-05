@@ -10,7 +10,7 @@ import sys
 import json
 import time
 import difflib
-from datetime import datetime, timezone, timedelta
+from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
 
 import requests
@@ -451,7 +451,7 @@ def title_similarity(a, b):
     return difflib.SequenceMatcher(None, a_norm, b_norm).ratio()
 
 
-def tmdb_search(title, year=None):
+def tmdb_search(title, year=None, region=True):
     """用片名搜 TMDB,回傳候選清單"""
     if not title:
         return []
@@ -459,8 +459,9 @@ def tmdb_search(title, year=None):
         "api_key": TMDB_API_KEY,
         "query": title,
         "language": "zh-TW",
-        "region": "TW",
     }
+    if region:
+        params["region"] = "TW"
     if year:
         params["year"] = year
     try:
@@ -655,11 +656,31 @@ def choose_rerelease_tmdb_match(movie):
             for result in tmdb_search(query, year=cinema_year):
                 candidates[result["id"]] = result
             time.sleep(TMDB_DELAY)
-        for result in tmdb_search(query):
+        # 重映判定需要電影最初上映日；帶 region=TW 時 TMDB 可能把
+        # release_date 改成多年後的台灣影展／重映日期（例如《壞痞子》）。
+        for result in tmdb_search(query, region=False):
             candidates[result["id"]] = result
         time.sleep(TMDB_DELAY)
     if not candidates:
         return None
+
+    def series_title_key(value):
+        """影城常加上「劇場版」，TMDB 台灣片名則可能省略。"""
+        return normalize_title_key(value).replace("劇場版", "")
+
+    def subtitle_key(value):
+        """系列電影常只在冒號後的副標題一致。"""
+        parts = re.split(r"[：:]", strip_rerelease_labels(value or ""), maxsplit=1)
+        return normalize_title_key(parts[-1]) if len(parts) > 1 else ""
+
+    exact_zh_matches = sum(
+        1
+        for candidate in candidates.values()
+        if normalize_title_key(title_zh) in {
+            normalize_title_key(candidate.get("title")),
+            normalize_title_key(candidate.get("original_title")),
+        }
+    )
 
     def rerelease_score(candidate):
         candidate_title = candidate.get("title") or ""
@@ -671,15 +692,28 @@ def choose_rerelease_tmdb_match(movie):
             score += 80
         if title_en and en_score == 1:
             score += 60
+        candidate_series_keys = {
+            series_title_key(candidate.get("title")),
+            series_title_key(candidate.get("original_title")),
+        }
+        if series_title_key(title_zh) and series_title_key(title_zh) in candidate_series_keys:
+            score += 60
+        requested_subtitle = subtitle_key(title_zh)
+        candidate_subtitles = {subtitle_key(candidate_title), subtitle_key(candidate_original)}
+        if requested_subtitle and len(requested_subtitle) >= 4 and any(
+            value and (requested_subtitle in value or value in requested_subtitle)
+            for value in candidate_subtitles
+        ):
+            score += 60
         # 沒有「重映／修復版」等明確標記時，可能是與舊片同名的全新電影。
         # 此時應優先配對本次影城上映年份，再由後續台灣院線日期確認是否真為重映。
         release_date = candidate.get("release_date") or ""
         candidate_year = int(release_date[:4]) if len(release_date) >= 4 and release_date[:4].isdigit() else None
-        if cinema_year and candidate_year and not marked_rerelease:
-            if candidate_year == cinema_year:
-                score += 100
-            else:
-                score -= min(100, abs(candidate_year - cinema_year) * 8)
+        if (
+            cinema_year and candidate_year and not marked_rerelease
+            and exact_zh_matches > 1 and candidate_year == cinema_year
+        ):
+            score += 100
         return score
 
     best = max(candidates.values(), key=rerelease_score)
@@ -691,6 +725,22 @@ def choose_rerelease_tmdb_match(movie):
     result["_match_score"] = score
     log(f"  TMDB rerelease match: {result.get('title', '')} (id={result['id']}, score={score:.1f})")
     return result
+
+
+def is_stale_atmovies_release_date(value, audit_date, min_age_days=365):
+    """開眼仍列於本期片單、但顯示至少一年前日期時，視為舊片候選。"""
+    try:
+        return date.fromisoformat(value) <= audit_date - timedelta(days=min_age_days)
+    except (TypeError, ValueError):
+        return False
+
+
+def is_known_old_atmovies_movie(movie):
+    """開眼日期雖已更新，但 TMDB 原始上映日至少早一年時仍是重映候選。"""
+    from cinema_rereleases import is_confirmed_rerelease
+
+    tmdb_movie = {"release_date": movie.get("tmdb_primary_release_date", "")}
+    return is_confirmed_rerelease(movie, tmdb_movie, movie.get("tmdb_tw_releases", []))
 
 
 def tmdb_get_json(path, params, timeout, label):
@@ -1563,7 +1613,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             "tmdb_title": result.get("title") or result.get("original_title", ""),
             "tmdb_primary_release_date": result.get("release_date", ""),
             "tmdb_url": tmdb_movie_url(result["id"]),
-            "cinema_dates": [], "atmovies_dates": [], "sources": [], "source_urls": [], "statuses": [],
+            "cinema_dates": [], "atmovies_original_dates": [], "sources": [], "source_urls": [], "statuses": [],
             "tw_releases": tw_releases,
         })
         for value in movie.get("sources", []):
@@ -1578,18 +1628,28 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         if movie.get("release_date_tw"):
             item["cinema_dates"].append(movie["release_date_tw"])
 
-    # 開眼本身也屬於重映聯集，但只挑出有明確重映跡象或較早台灣院線日的舊片。
-    for movie in atmovies_output.get("tmdb_has_tw_date", []) + atmovies_output.get("missing_tw_date", []):
+    # 開眼本期首輪／近期上映若仍列出至少一年前的日期，代表舊片重新進入院線片單。
+    # 開眼舊日期只保留供稽核，不可當成本次重映日期。
+    atmovies_movies = (
+        atmovies_output.get("tmdb_has_tw_date", [])
+        + atmovies_output.get("missing_tw_date", [])
+        + atmovies_output.get("tmdb_not_found", [])
+    )
+    for movie in atmovies_movies:
         movie = dict(movie)
-        cinema_date = movie.get("release_date_tw", "")
+        atmovies_original_date = movie.get("release_date_tw", "")
         tmdb_date = movie.get("tmdb_tw_release_date", "")
         marked_rerelease = has_rerelease_marker(movie.get("title_zh"), movie.get("title_en"))
-        earlier_releases = [{"date": tmdb_date}] if tmdb_date else []
-        if not marked_rerelease and not is_confirmed_rerelease(movie, movie, earlier_releases):
+        old_atmovies_listing = is_stale_atmovies_release_date(
+            atmovies_original_date, generated_at_local.date()
+        )
+        known_old_movie = is_known_old_atmovies_movie(movie)
+        if not marked_rerelease and not old_atmovies_listing and not known_old_movie:
             continue
-        if marked_rerelease:
+        if marked_rerelease or old_atmovies_listing or known_old_movie:
             rematched = choose_rerelease_tmdb_match(movie)
             if not rematched:
+                review_rows.append({**movie, "audit_category": "重映－TMDB配對待確認"})
                 continue
             rematched_releases = tmdb_release_dates(rematched["id"])
             time.sleep(TMDB_DELAY)
@@ -1613,20 +1673,22 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             "tmdb_title": movie.get("tmdb_title", ""),
             "tmdb_primary_release_date": movie.get("tmdb_primary_release_date", ""),
             "tmdb_url": movie.get("tmdb_url", ""),
-            "cinema_dates": [], "atmovies_dates": [], "sources": [], "source_urls": [], "statuses": [],
+            "cinema_dates": [], "atmovies_original_dates": [], "sources": [], "source_urls": [], "statuses": [],
             "tw_releases": movie.get("tmdb_tw_releases") or ([{"date": tmdb_date, "language": ""}] if tmdb_date else []),
         })
         for field, value in (("sources", "atmovies"), ("source_urls", movie.get("atmovies_url")), ("statuses", movie.get("source_bucket"))):
             if value and value not in item[field]:
                 item[field].append(value)
-        if cinema_date:
-            item["atmovies_dates"].append(cinema_date)
+        if known_old_movie and not old_atmovies_listing and atmovies_original_date:
+            item["cinema_dates"].append(atmovies_original_date)
+        elif atmovies_original_date and atmovies_original_date not in item["atmovies_original_dates"]:
+            item["atmovies_original_dates"].append(atmovies_original_date)
 
     candidates = []
     for item in matched.values():
         cinema_dates = item.pop("cinema_dates")
-        atmovies_dates = item.pop("atmovies_dates")
-        date_counts = Counter(cinema_dates or atmovies_dates)
+        atmovies_original_dates = item.pop("atmovies_original_dates")
+        date_counts = Counter(cinema_dates)
         cinema_date = sorted(date_counts, key=lambda value: (-date_counts[value], value))[0] if date_counts else ""
         tw_releases = item.pop("tw_releases")
         status = tmdb_date_status(cinema_date, tw_releases)
@@ -1637,6 +1699,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             **item,
             "candidate_type": "rerelease",
             "cinema_release_date": cinema_date,
+            "atmovies_original_date": sorted(atmovies_original_dates)[-1] if atmovies_original_dates else "",
             "tmdb_tw_release_date": cinema_date if status == "confirmed" else "",
             "present_sources": ",".join(sorted(sources)),
             "source_urls": "\n".join(source_urls),
@@ -1663,6 +1726,7 @@ def append_rerelease_tsv_rows(rows, rerelease_audit):
             "confirmed": "重映－TMDB已確認",
             "missing": "重映－待補TMDB日期",
             "mismatch": "重映－TMDB日期不一致",
+            "pending": "重映－上映日期待確認",
         }.get(status, "重映－TMDB配對待確認")
         rows.append([
             category,
