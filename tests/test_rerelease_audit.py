@@ -59,6 +59,7 @@ class CinemaParserTests(unittest.TestCase):
         self.assertFalse(cinema.is_confirmed_rerelease(movie, {}, []))
         self.assertTrue(cinema.is_confirmed_rerelease(movie, {}, [{"date": "2001-01-01"}]))
         self.assertFalse(cinema.is_confirmed_rerelease(movie, {}, [{"date": "2026-07-01"}]))
+        self.assertTrue(cinema.is_confirmed_rerelease(movie, {"release_date": "1986-11-26"}, []))
         marked = {"title_zh": "普通舊片（4K修復版）", "release_date_tw": "2026-08-05"}
         self.assertTrue(cinema.is_confirmed_rerelease(marked, {}, []))
 
@@ -102,6 +103,67 @@ class CinemaParserTests(unittest.TestCase):
             "release_date_tw": "2026-08-07",
         })
         self.assertEqual(result["id"], 1591675)
+
+    @patch("weekly_check.time.sleep")
+    @patch("weekly_check.tmdb_search")
+    def test_theatrical_edition_word_does_not_block_old_movie_match(self, tmdb_search, _sleep):
+        tmdb_search.return_value = [{
+            "id": 44728,
+            "title": "航海王：被詛咒的聖劍",
+            "original_title": "ONE PIECE 呪われた聖剣",
+            "release_date": "2004-03-06",
+        }]
+        result = weekly.choose_rerelease_tmdb_match({
+            "title_zh": "航海王劇場版：被詛咒的聖劍",
+            "release_date_tw": "2026-08-14",
+        })
+        self.assertEqual(result["id"], 44728)
+
+    @patch("weekly_check.time.sleep")
+    @patch("weekly_check.tmdb_search")
+    def test_franchise_subtitle_can_match_longer_tmdb_title(self, tmdb_search, _sleep):
+        tmdb_search.return_value = [{
+            "id": 260916,
+            "title": "航海王電影：阿拉巴斯坦戰記 沙漠王女與海賊們",
+            "original_title": "ONE PIECE エピソードオブアラバスタ",
+            "release_date": "2007-03-03",
+        }]
+        result = weekly.choose_rerelease_tmdb_match({
+            "title_zh": "航海王：阿拉巴斯坦戰記",
+            "release_date_tw": "2008-09-19",
+        })
+        self.assertEqual(result["id"], 260916)
+
+    def test_missing_current_date_is_pending_not_tmdb_mismatch(self):
+        self.assertEqual(cinema.tmdb_date_status("", [{"date": "2005-01-28"}]), "pending")
+
+    @patch("weekly_check.time.sleep")
+    @patch("weekly_check.tmdb_search")
+    def test_rerelease_search_uses_global_primary_date(self, tmdb_search, _sleep):
+        tmdb_search.return_value = [{
+            "id": 64131,
+            "title": "壞痞子",
+            "original_title": "Mauvais Sang",
+            "release_date": "1986-11-26",
+        }]
+        weekly.choose_rerelease_tmdb_match({
+            "title_zh": "壞痞子",
+            "release_date_tw": "2026-07-31",
+        })
+        self.assertTrue(any(call.kwargs.get("region") is False for call in tmdb_search.call_args_list))
+
+    def test_atmovies_old_date_is_a_private_rerelease_candidate_signal(self):
+        self.assertTrue(weekly.is_stale_atmovies_release_date("2005-01-28", date(2026, 8, 6)))
+        self.assertFalse(weekly.is_stale_atmovies_release_date("2026-07-31", date(2026, 8, 6)))
+        self.assertFalse(weekly.is_stale_atmovies_release_date("", date(2026, 8, 6)))
+
+    def test_updated_atmovies_date_still_recognizes_old_tmdb_movie(self):
+        self.assertTrue(weekly.is_known_old_atmovies_movie({
+            "title_zh": "空之境界劇場版：終章",
+            "release_date_tw": "2026-06-17",
+            "tmdb_primary_release_date": "2010-12-28",
+            "tmdb_tw_releases": [],
+        }))
 
 
 class RereleasePresenceTests(unittest.TestCase):
