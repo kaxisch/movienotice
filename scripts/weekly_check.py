@@ -673,6 +673,10 @@ def choose_rerelease_tmdb_match(movie):
         parts = re.split(r"[：:]", strip_rerelease_labels(value or ""), maxsplit=1)
         return normalize_title_key(parts[-1]) if len(parts) > 1 else ""
 
+    def franchise_key(value):
+        parts = re.split(r"[：:]", strip_rerelease_labels(value or ""), maxsplit=1)
+        return normalize_title_key(parts[0]).replace("劇場版", "")
+
     exact_zh_matches = sum(
         1
         for candidate in candidates.values()
@@ -703,6 +707,13 @@ def choose_rerelease_tmdb_match(movie):
         if requested_subtitle and len(requested_subtitle) >= 4 and any(
             value and (requested_subtitle in value or value in requested_subtitle)
             for value in candidate_subtitles
+        ):
+            score += 60
+        requested_franchise = franchise_key(title_zh)
+        candidate_franchises = {franchise_key(candidate_title), franchise_key(candidate_original)}
+        if requested_subtitle and len(requested_subtitle) >= 2 and requested_subtitle in candidate_subtitles and any(
+            value and (requested_franchise in value or value in requested_franchise)
+            for value in candidate_franchises
         ):
             score += 60
         # 沒有「重映／修復版」等明確標記時，可能是與舊片同名的全新電影。
