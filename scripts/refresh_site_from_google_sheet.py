@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 import weekly_check as weekly
 from publish_to_google_sheet import (
     CANDIDATES_SHEET_TITLE,
+    RERELEASES_SHEET_TITLE,
     load_service_account_credentials,
     quote_sheet_range,
 )
@@ -54,15 +55,24 @@ def load_sheet_candidates():
     }
     if CANDIDATES_SHEET_TITLE not in titles:
         log(f"Google Sheet worksheet {CANDIDATES_SHEET_TITLE} does not exist yet; retaining current site IDs")
-        return []
+        candidates = []
+    else:
+        candidates = load_candidate_worksheet(service, spreadsheet_id, CANDIDATES_SHEET_TITLE, "atmovies")
+    if RERELEASES_SHEET_TITLE in titles:
+        candidates.extend(
+            load_candidate_worksheet(service, spreadsheet_id, RERELEASES_SHEET_TITLE, "rerelease")
+        )
+    return candidates
+
+
+def load_candidate_worksheet(service, spreadsheet_id, title, candidate_kind):
     response = service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
-        range=quote_sheet_range(CANDIDATES_SHEET_TITLE, "A:Z"),
+        range=quote_sheet_range(title, "A:Z"),
     ).execute()
     values = response.get("values", [])
     if not values:
-        raise RuntimeError(f"Google Sheet worksheet {CANDIDATES_SHEET_TITLE} is empty")
-
+        raise RuntimeError(f"Google Sheet worksheet {title} is empty")
     headers = values[0]
     candidates = []
     for row in values[1:]:
@@ -71,6 +81,7 @@ def load_sheet_candidates():
             item["tmdb_id"] = int(item.get("tmdb_id", ""))
         except (TypeError, ValueError):
             continue
+        item["candidate_kind"] = candidate_kind
         candidates.append(item)
     return candidates
 
@@ -147,6 +158,10 @@ def should_hide_for_atmovies_absence(candidate, release_date, today, manual_ids)
     return misses >= limit
 
 
+def should_hide_rerelease(candidate):
+    return sheet_value_is_true(candidate.get("hidden"))
+
+
 def build_verified_output(candidates):
     candidate_by_id = {item["tmdb_id"]: item for item in candidates}
     ordered_ids = list(candidate_by_id)
@@ -193,11 +208,24 @@ def build_verified_output(candidates):
                 f"{past_cutoff.isoformat()}..{future_cutoff.isoformat()} (available: {available_dates})"
             )
             continue
-        tw_date = eligible_releases[0]["date"]
+        source = candidate_by_id[tmdb_id]
+        if source.get("candidate_kind") == "rerelease":
+            cinema_date = str(source.get("cinema_release_date", "") or "")
+            exact_releases = [item for item in eligible_releases if item.get("date") == cinema_date]
+            if not exact_releases:
+                log(f"  Excluded rerelease TMDB {tmdb_id}: TW type 3 does not match cinema date {cinema_date}")
+                continue
+            if should_hide_rerelease(source):
+                log(f"  Hidden rerelease TMDB {tmdb_id}: absent from all four sources for two audits")
+                continue
+            tw_date = cinema_date
+        else:
+            tw_date = eligible_releases[0]["date"]
         release_date = weekly.parse_iso_date(tw_date)
 
-        source = candidate_by_id[tmdb_id]
-        if should_hide_for_atmovies_absence(source, release_date, today, manual_ids):
+        if source.get("candidate_kind") != "rerelease" and should_hide_for_atmovies_absence(
+            source, release_date, today, manual_ids
+        ):
             log(
                 f"  Hidden TMDB {tmdb_id}: absent from Atmovies for "
                 f"{atmovies_miss_count(source)} consecutive successful audits"

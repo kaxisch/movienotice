@@ -21,16 +21,25 @@ from dotenv import load_dotenv
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
 CANDIDATES_FILE = DATA_DIR / "atmovies-candidates.json"
+RERELEASE_CANDIDATES_FILE = DATA_DIR / "rerelease-candidates.json"
 MOVIE_DATA_FILE = DATA_DIR / "movie-data.json"
 WHITELIST_FILE = DATA_DIR / "tw-whitelist.json"
 MANUAL_RELEASES_FILE = DATA_DIR / "manual-releases.json"
 CANDIDATES_SHEET_TITLE = "_candidates"
+RERELEASES_SHEET_TITLE = "_rereleases"
 CANDIDATE_HEADERS = [
     "tmdb_id", "source_bucket", "title_zh", "title_en",
     "release_date_tw", "tmdb_tw_release_date", "atmovies_id", "atmovies_url", "tmdb_title",
     "ever_seen_atmovies", "atmovies_present", "consecutive_misses", "last_seen_atmovies",
     "last_audit_date",
 ]
+RERELEASE_HEADERS = [
+    "tmdb_id", "title_zh", "title_en", "cinema_release_date", "tmdb_tw_release_date",
+    "tmdb_url", "tmdb_primary_release_date", "present_sources", "source_urls", "cinema_status",
+    "tmdb_date_status", "rerelease_present", "consecutive_misses", "hidden",
+    "first_seen", "last_seen", "last_audit_date",
+]
+RERELEASE_MISS_LIMIT = 2
 CANDIDATE_RETENTION_DAYS = 180
 ATMOVIES_HANDOFF_DAYS = 60
 NOW_ATMOVIES_MISS_LIMIT = 2
@@ -139,6 +148,15 @@ def load_candidate_items(path=CANDIDATES_FILE):
     return [item for item in payload.get("candidates", []) if item.get("tmdb_id")]
 
 
+def load_rerelease_audit(path=RERELEASE_CANDIDATES_FILE):
+    if not path.exists():
+        return None
+    with open(path, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+    payload["candidates"] = [item for item in payload.get("candidates", []) if item.get("tmdb_id")]
+    return payload
+
+
 def sheet_rows_to_items(values):
     if not values:
         return []
@@ -199,6 +217,44 @@ def merge_candidate_presence(current_items, previous_items, run_date):
                 "consecutive_misses": misses,
                 "last_audit_date": run_date,
             })
+        item["tmdb_id"] = int(tmdb_id)
+        merged.append(item)
+    return merged
+
+
+def merge_rerelease_presence(current_items, previous_items, run_date, audit_complete):
+    """合併四來源重映聯集；只有四來源完整成功且全缺席才累加。"""
+    current_by_id = {str(item["tmdb_id"]): dict(item) for item in current_items if item.get("tmdb_id")}
+    previous_by_id = {str(item.get("tmdb_id", "")): dict(item) for item in previous_items if item.get("tmdb_id")}
+    merged = []
+    for tmdb_id in sorted(set(previous_by_id) | set(current_by_id), key=lambda value: int(value)):
+        previous = previous_by_id.get(tmdb_id, {})
+        current = current_by_id.get(tmdb_id)
+        if current:
+            item = {**previous, **current}
+            item.update({
+                "rerelease_present": True,
+                "consecutive_misses": 0,
+                "hidden": False,
+                "first_seen": previous.get("first_seen") or run_date,
+                "last_seen": run_date,
+                "last_audit_date": run_date,
+            })
+        else:
+            item = dict(previous)
+            if audit_complete:
+                try:
+                    misses = int(item.get("consecutive_misses", 0) or 0)
+                except (TypeError, ValueError):
+                    misses = 0
+                if str(item.get("last_audit_date", "") or "") != run_date:
+                    misses += 1
+                item.update({
+                    "rerelease_present": False,
+                    "consecutive_misses": misses,
+                    "hidden": misses >= RERELEASE_MISS_LIMIT,
+                    "last_audit_date": run_date,
+                })
         item["tmdb_id"] = int(tmdb_id)
         merged.append(item)
     return merged
@@ -317,6 +373,20 @@ def candidate_items_to_rows(items):
         ),
     ):
         rows.append([item.get(header, "") for header in CANDIDATE_HEADERS])
+    return rows
+
+
+def rerelease_items_to_rows(items):
+    rows = [RERELEASE_HEADERS]
+    for item in sorted(
+        items,
+        key=lambda value: (
+            not bool(value.get("cinema_release_date")),
+            value.get("cinema_release_date") or "",
+            int(value.get("tmdb_id", 0)),
+        ),
+    ):
+        rows.append([item.get(header, "") for header in RERELEASE_HEADERS])
     return rows
 
 
@@ -611,6 +681,27 @@ def publish():
         write_rows(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE, candidate_rows)
         format_sheet(sheets_service, spreadsheet_id, candidate_sheet_id, len(candidate_rows[0]))
         log(f"Wrote {len(candidate_rows) - 1} refresh candidates to worksheet {CANDIDATES_SHEET_TITLE}.")
+
+    rerelease_audit = load_rerelease_audit()
+    if rerelease_audit is not None:
+        metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
+        existing_rerelease_sheet = sheet_by_title(metadata, RERELEASES_SHEET_TITLE)
+        previous_rerelease_items = []
+        if existing_rerelease_sheet:
+            previous_rerelease_items = sheet_rows_to_items(
+                get_all_sheet_values(sheets_service, spreadsheet_id, RERELEASES_SHEET_TITLE)
+            )
+        rerelease_items = merge_rerelease_presence(
+            rerelease_audit.get("candidates", []),
+            previous_rerelease_items,
+            run_date,
+            bool(rerelease_audit.get("audit_complete")),
+        )
+        rerelease_rows = rerelease_items_to_rows(rerelease_items)
+        rerelease_sheet_id = ensure_date_sheet(sheets_service, spreadsheet_id, RERELEASES_SHEET_TITLE)
+        write_rows(sheets_service, spreadsheet_id, RERELEASES_SHEET_TITLE, rerelease_rows)
+        format_sheet(sheets_service, spreadsheet_id, rerelease_sheet_id, len(rerelease_rows[0]))
+        log(f"Wrote {len(rerelease_rows) - 1} rerelease candidates to worksheet {RERELEASES_SHEET_TITLE}.")
 
     metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
     spreadsheet_url = metadata.get("spreadsheetUrl") or spreadsheet.get("webViewLink", "")
