@@ -134,6 +134,21 @@ class CinemaParserTests(unittest.TestCase):
         })
         self.assertEqual(result["id"], 260916)
 
+    @patch("weekly_check.time.sleep")
+    @patch("weekly_check.tmdb_search")
+    def test_short_subtitle_matches_same_franchise_with_chapter_label(self, tmdb_search, _sleep):
+        tmdb_search.return_value = [{
+            "id": 47747,
+            "title": "空之境界 第八章：終章",
+            "original_title": "劇場版 空の境界 終章",
+            "release_date": "2010-12-18",
+        }]
+        result = weekly.choose_rerelease_tmdb_match({
+            "title_zh": "空之境界劇場版：終章",
+            "release_date_tw": "2026-06-17",
+        })
+        self.assertEqual(result["id"], 47747)
+
     def test_missing_current_date_is_pending_not_tmdb_mismatch(self):
         self.assertEqual(cinema.tmdb_date_status("", [{"date": "2005-01-28"}]), "pending")
 
