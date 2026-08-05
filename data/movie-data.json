@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T22:59:17.508925+08:00",
+  "generated_at": "2026-08-06T01:06:59.825883+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 40,
@@ -1168,11 +1168,11 @@
         ],
         "crew": [
           {
-            "name": "Shea Wageman",
+            "name": "Steve Ball",
             "job": "Writer"
           },
           {
-            "name": "Steve Ball",
+            "name": "Shea Wageman",
             "job": "Writer"
           },
           {
@@ -1293,11 +1293,11 @@
           ],
           "crew": [
             {
-              "name": "Shea Wageman",
+              "name": "Steve Ball",
               "job": "Writer"
             },
             {
-              "name": "Steve Ball",
+              "name": "Shea Wageman",
               "job": "Writer"
             },
             {
@@ -1682,16 +1682,16 @@
         ],
         "crew": [
           {
-            "name": "Waldemar Fast",
-            "job": "Director"
+            "name": "Jeffrey Hylton",
+            "job": "Writer"
           },
           {
             "name": "Kirstie Falkous",
             "job": "Writer"
           },
           {
-            "name": "Jeffrey Hylton",
-            "job": "Writer"
+            "name": "Waldemar Fast",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -1803,16 +1803,16 @@
           ],
           "crew": [
             {
-              "name": "Waldemar Fast",
-              "job": "Director"
+              "name": "Jeffrey Hylton",
+              "job": "Writer"
             },
             {
               "name": "Kirstie Falkous",
               "job": "Writer"
             },
             {
-              "name": "Jeffrey Hylton",
-              "job": "Writer"
+              "name": "Waldemar Fast",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -4351,7 +4351,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ifwgHdNobcGGSnL3neGH4n5Y4WB.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
-        "voteAverage": "7.7",
+        "voteAverage": "7.8",
         "genre": [
           "恐怖",
           "驚悚"
@@ -4490,7 +4490,7 @@
           "synopsis": "丈夫過世後，一位女子前往婆家偏僻的宅邸尋求慰藉。然而，婆家的成員卻一個個變成了惡靈，使原本再正常不過的聚會，淪為一場地獄般的家庭聚會。女子這時才發現，她生前許下的誓言……即使在死後依然有效。",
           "poster": "https://image.tmdb.org/t/p/w500/ifwgHdNobcGGSnL3neGH4n5Y4WB.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
-          "voteAverage": "7.7",
+          "voteAverage": "7.8",
           "trailerKey": "dyJuL8yOKF4",
           "imdbId": "tt31170389",
           "countries": [
@@ -5127,6 +5127,151 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1706919?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 316880,
+        "titleZh": "魯冰花",
+        "titleEn": "魯冰花",
+        "releaseDate": "2026-07-08",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-07-08",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wzdxGWOwjo9RkOQ118f8FzBiUcX.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/b5DHrc92QvfECJPnIPOeakKJbS1.jpg",
+        "voteAverage": "8.3",
+        "genre": [
+          "劇情",
+          "家庭"
+        ],
+        "duration": 100,
+        "synopsis": "描述魯冰花盛開的時候，郭雲天從大城市調到偏鄉小學擔任美術教師，發現學童阿明擁有極高繪畫天份，卻因家境貧窮遭勢利教師、校長抵制，無法參與比賽。",
+        "imdb": "8.3",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 428,
+            "lastChanged": "2026-08-06T01:06:59.825883+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "黃坤玄",
+            "char": "Ah-Ming",
+            "photo": "https://image.tmdb.org/t/p/w500/2N1zEtU8PAhTFjONa2aG0AEtWjn.jpg"
+          },
+          {
+            "name": "李淑楨",
+            "char": "Cha-Mey",
+            "photo": "https://image.tmdb.org/t/p/w500/4WmJEbxU12tQjpmZtR3XMu5T4H7.jpg"
+          },
+          {
+            "name": "陳松勇",
+            "char": "The mayor",
+            "photo": "https://image.tmdb.org/t/p/w500/b6VqPvebGjTViMqPqgM5myaQtNh.jpg"
+          },
+          {
+            "name": "Han Yu",
+            "char": "Art teacher (Mr. Kuo)",
+            "photo": "https://image.tmdb.org/t/p/w500/eUwZdTPuJM6eaqqDS46JEeq57ts.jpg"
+          },
+          {
+            "name": "林義雄",
+            "char": "Father (Ku, Shi-sung)",
+            "photo": "https://image.tmdb.org/t/p/w500/w2AigKllqr4x8HdQGJX60Zg8vzR.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "吳念真",
+            "job": "Writer"
+          },
+          {
+            "name": "Yang Li-kuo",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "魯冰花",
+        "platforms": [],
+        "popularity": 1.2323,
+        "imdbId": "tt0097791",
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "劇情",
+            "家庭"
+          ],
+          "synopsis": "描述魯冰花盛開的時候，郭雲天從大城市調到偏鄉小學擔任美術教師，發現學童阿明擁有極高繪畫天份，卻因家境貧窮遭勢利教師、校長抵制，無法參與比賽。",
+          "poster": "https://image.tmdb.org/t/p/w500/wzdxGWOwjo9RkOQ118f8FzBiUcX.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/b5DHrc92QvfECJPnIPOeakKJbS1.jpg",
+          "voteAverage": "8.3",
+          "trailerKey": null,
+          "imdbId": "tt0097791",
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "黃坤玄",
+              "char": "Ah-Ming",
+              "photo": "https://image.tmdb.org/t/p/w500/2N1zEtU8PAhTFjONa2aG0AEtWjn.jpg"
+            },
+            {
+              "name": "李淑楨",
+              "char": "Cha-Mey",
+              "photo": "https://image.tmdb.org/t/p/w500/4WmJEbxU12tQjpmZtR3XMu5T4H7.jpg"
+            },
+            {
+              "name": "陳松勇",
+              "char": "The mayor",
+              "photo": "https://image.tmdb.org/t/p/w500/b6VqPvebGjTViMqPqgM5myaQtNh.jpg"
+            },
+            {
+              "name": "Han Yu",
+              "char": "Art teacher (Mr. Kuo)",
+              "photo": "https://image.tmdb.org/t/p/w500/eUwZdTPuJM6eaqqDS46JEeq57ts.jpg"
+            },
+            {
+              "name": "林義雄",
+              "char": "Father (Ku, Shi-sung)",
+              "photo": "https://image.tmdb.org/t/p/w500/w2AigKllqr4x8HdQGJX60Zg8vzR.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "吳念真",
+              "job": "Writer"
+            },
+            {
+              "name": "Yang Li-kuo",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "魯冰花",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/316880?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -7553,11 +7698,11 @@
         "crew": [
           {
             "name": "Eva Victor",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Eva Victor",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 1500000,
@@ -7675,11 +7820,11 @@
           "crew": [
             {
               "name": "Eva Victor",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Eva Victor",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 1500000,
@@ -9008,135 +9153,6 @@
           ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/49258?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1649882,
-        "titleZh": "巧虎電影：勇氣之歌",
-        "titleEn": "映畫しまじろう しまじろうと ゆうきのうた",
-        "releaseDate": "2026-02-06",
-        "twTheatricalReleases": [
-          {
-            "date": "2026-02-06",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/tV4pp3fzaX6e9SDVcrQT1ObvxKt.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/nuuicBn3xbIewqPtCs6ODUTGrlS.jpg",
-        "voteAverage": "",
-        "genre": [
-          "奇幻",
-          "冒險",
-          "家庭",
-          "動畫"
-        ],
-        "duration": "",
-        "synopsis": "巧虎和莫莉不小心掉進「魔法包包」的奇幻世界！他們必須鼓起勇氣，相信自己、相信朋友，才能回到現實世界，完成「海特船長」的特別演出。在充滿魔法與驚喜的旅程中，一起成為巧虎冒險的小英雄！",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "zle51sJN4es",
-        "cast": [
-          {
-            "name": "南央美",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vDSjFbxQgd8xUhfKWnfn06ClDom.jpg"
-          },
-          {
-            "name": "高橋美紀",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "山崎たくみ",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/wq8K3No0DUJsTCWDqparegOlGL6.jpg"
-          },
-          {
-            "name": "鈴木真仁",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/mhkQ9DCjUvfR7U9v2229O5W5pWq.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "河村友宏",
-            "job": "Director"
-          },
-          {
-            "name": "ピエール杉浦",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "映畫しまじろう しまじろうと ゆうきのうた",
-        "platforms": [],
-        "popularity": 0.5137,
-        "imdbId": null,
-        "countries": [],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "奇幻",
-            "冒險",
-            "家庭",
-            "動畫"
-          ],
-          "synopsis": "巧虎和莫莉不小心掉進「魔法包包」的奇幻世界！他們必須鼓起勇氣，相信自己、相信朋友，才能回到現實世界，完成「海特船長」的特別演出。在充滿魔法與驚喜的旅程中，一起成為巧虎冒險的小英雄！",
-          "poster": "https://image.tmdb.org/t/p/w500/tV4pp3fzaX6e9SDVcrQT1ObvxKt.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/nuuicBn3xbIewqPtCs6ODUTGrlS.jpg",
-          "voteAverage": "",
-          "trailerKey": "zle51sJN4es",
-          "imdbId": null,
-          "countries": [],
-          "cast": [
-            {
-              "name": "南央美",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vDSjFbxQgd8xUhfKWnfn06ClDom.jpg"
-            },
-            {
-              "name": "高橋美紀",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "山崎たくみ",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/wq8K3No0DUJsTCWDqparegOlGL6.jpg"
-            },
-            {
-              "name": "鈴木真仁",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/mhkQ9DCjUvfR7U9v2229O5W5pWq.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "河村友宏",
-              "job": "Director"
-            },
-            {
-              "name": "ピエール杉浦",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "映畫しまじろう しまじろうと ゆうきのうた",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1649882?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -14208,12 +14224,12 @@
         ],
         "crew": [
           {
-            "name": "花田十輝",
-            "job": "Screenplay"
-          },
-          {
             "name": "石立太一",
             "job": "Director"
+          },
+          {
+            "name": "花田十輝",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -14329,12 +14345,12 @@
           ],
           "crew": [
             {
-              "name": "花田十輝",
-              "job": "Screenplay"
-            },
-            {
               "name": "石立太一",
               "job": "Director"
+            },
+            {
+              "name": "花田十輝",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -17162,11 +17178,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -17235,11 +17251,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
