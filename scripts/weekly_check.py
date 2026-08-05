@@ -1534,6 +1534,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
 
     matched = {}
     review_rows = []
+    rejected_source_urls = set()
     tmdb_processing_complete = True
     for index, movie in enumerate(merge_raw_movies(cinema_movies), 1):
         if is_promotional_screening(movie.get("title_zh"), movie.get("title_en")) and not has_rerelease_marker(
@@ -1553,6 +1554,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             continue
         tw_releases = extract_tw_theatrical_releases_from_results(release_results)
         if not is_confirmed_rerelease(movie, result, tw_releases):
+            rejected_source_urls.update(url for url in movie.get("source_urls", []) if url)
             continue
         item = matched.setdefault(result["id"], {
             "tmdb_id": result["id"],
@@ -1648,6 +1650,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         "audit_complete": all(source_health.values()) and tmdb_processing_complete,
         "tmdb_processing_complete": tmdb_processing_complete,
         "source_health": source_health,
+        "rejected_source_urls": sorted(rejected_source_urls),
         "candidates": sorted(candidates, key=lambda item: (item.get("cinema_release_date", ""), item["tmdb_id"])),
         "review_rows": review_rows,
     }

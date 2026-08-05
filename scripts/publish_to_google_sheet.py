@@ -222,10 +222,24 @@ def merge_candidate_presence(current_items, previous_items, run_date):
     return merged
 
 
-def merge_rerelease_presence(current_items, previous_items, run_date, audit_complete):
-    """合併四來源重映聯集；只有四來源完整成功且全缺席才累加。"""
+def merge_rerelease_presence(
+    current_items, previous_items, run_date, audit_complete, rejected_source_urls=None
+):
+    """合併四來源重映聯集；已確認為一般新片的舊錯配可立即淘汰。"""
+    rejected_source_urls = set(rejected_source_urls or [])
     current_by_id = {str(item["tmdb_id"]): dict(item) for item in current_items if item.get("tmdb_id")}
-    previous_by_id = {str(item.get("tmdb_id", "")): dict(item) for item in previous_items if item.get("tmdb_id")}
+    previous_by_id = {}
+    for item in previous_items:
+        if not item.get("tmdb_id"):
+            continue
+        item_urls = {
+            url.strip()
+            for url in str(item.get("source_urls", "") or "").replace(" | ", "\n").splitlines()
+            if url.strip()
+        }
+        if item_urls & rejected_source_urls:
+            continue
+        previous_by_id[str(item["tmdb_id"])] = dict(item)
     merged = []
     for tmdb_id in sorted(set(previous_by_id) | set(current_by_id), key=lambda value: int(value)):
         previous = previous_by_id.get(tmdb_id, {})
@@ -696,6 +710,7 @@ def publish():
             previous_rerelease_items,
             run_date,
             bool(rerelease_audit.get("audit_complete")),
+            rerelease_audit.get("rejected_source_urls", []),
         )
         rerelease_rows = rerelease_items_to_rows(rerelease_items)
         rerelease_sheet_id = ensure_date_sheet(sheets_service, spreadsheet_id, RERELEASES_SHEET_TITLE)
