@@ -89,6 +89,20 @@ class CinemaParserTests(unittest.TestCase):
         })
         self.assertEqual(result["id"], 372058)
 
+    @patch("weekly_check.time.sleep")
+    @patch("weekly_check.tmdb_search")
+    def test_unmarked_same_title_prefers_new_movie_from_cinema_year(self, tmdb_search, _sleep):
+        tmdb_search.return_value = [
+            {"id": 100001, "title": "驀然回首", "original_title": "Look Back", "release_date": "2024-06-28"},
+            {"id": 1591675, "title": "驀然回首", "original_title": "Look Back", "release_date": "2026-08-07"},
+        ]
+        result = weekly.choose_rerelease_tmdb_match({
+            "title_zh": "驀然回首",
+            "title_en": "Look Back",
+            "release_date_tw": "2026-08-07",
+        })
+        self.assertEqual(result["id"], 1591675)
+
 
 class RereleasePresenceTests(unittest.TestCase):
     def previous(self, misses=0, audit_date="2026-08-01"):

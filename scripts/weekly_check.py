@@ -641,13 +641,20 @@ def choose_tmdb_match(movie):
 
 
 def choose_rerelease_tmdb_match(movie):
-    """重映片以原始片名配對，不拿本次重映年份限制 TMDB 原始年份。"""
-    from cinema_rereleases import strip_rerelease_labels
+    """配對影城候選；明確重映標記才忽略本次上映年份。"""
+    from cinema_rereleases import has_rerelease_marker, strip_rerelease_labels
 
     title_zh = strip_rerelease_labels(movie.get("title_zh")) or movie.get("title_zh", "")
     title_en = strip_rerelease_labels(movie.get("title_en")) or movie.get("title_en", "")
+    marked_rerelease = has_rerelease_marker(movie.get("title_zh"), movie.get("title_en"))
+    cinema_date = movie.get("release_date_tw", "")
+    cinema_year = int(cinema_date[:4]) if len(cinema_date) >= 4 and cinema_date[:4].isdigit() else None
     candidates = {}
     for query in dict.fromkeys(value for value in (title_zh, title_en) if value):
+        if cinema_year and not marked_rerelease:
+            for result in tmdb_search(query, year=cinema_year):
+                candidates[result["id"]] = result
+            time.sleep(TMDB_DELAY)
         for result in tmdb_search(query):
             candidates[result["id"]] = result
         time.sleep(TMDB_DELAY)
@@ -664,6 +671,15 @@ def choose_rerelease_tmdb_match(movie):
             score += 80
         if title_en and en_score == 1:
             score += 60
+        # 沒有「重映／修復版」等明確標記時，可能是與舊片同名的全新電影。
+        # 此時應優先配對本次影城上映年份，再由後續台灣院線日期確認是否真為重映。
+        release_date = candidate.get("release_date") or ""
+        candidate_year = int(release_date[:4]) if len(release_date) >= 4 and release_date[:4].isdigit() else None
+        if cinema_year and candidate_year and not marked_rerelease:
+            if candidate_year == cinema_year:
+                score += 100
+            else:
+                score -= min(100, abs(candidate_year - cinema_year) * 8)
         return score
 
     best = max(candidates.values(), key=rerelease_score)
