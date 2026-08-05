@@ -120,6 +120,15 @@ class RereleasePresenceTests(unittest.TestCase):
         self.assertEqual(merged[0]["consecutive_misses"], "1")
         self.assertEqual(merged[0]["hidden"], "FALSE")
 
+    def test_confirmed_new_movie_removes_previous_wrong_rerelease_match(self):
+        previous = self.previous()
+        previous[0]["source_urls"] = "https://www.showtimes.com.tw/programs/look-back/"
+        merged = publish.merge_rerelease_presence(
+            [], previous, "2026-08-05", False,
+            ["https://www.showtimes.com.tw/programs/look-back/"],
+        )
+        self.assertEqual(merged, [])
+
     def test_two_complete_absences_hide_and_same_date_does_not_double_count(self):
         first = publish.merge_rerelease_presence([], self.previous(), "2026-08-05", True)
         self.assertEqual(first[0]["consecutive_misses"], 1)
