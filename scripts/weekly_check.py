@@ -39,6 +39,7 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
 OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
 OVERRIDES_FILE = OUTPUT_DIR / "tmdb-overrides.json"
 ATMOVIES_CANDIDATES_FILE = OUTPUT_DIR / "atmovies-candidates.json"
+RERELEASE_CANDIDATES_FILE = OUTPUT_DIR / "rerelease-candidates.json"
 MOVIE_DATA_FILE = OUTPUT_DIR / "movie-data.json"
 MANUAL_RELEASES_FILE = OUTPUT_DIR / "manual-releases.json"
 IMG_W = "https://image.tmdb.org/t/p/w500"
@@ -637,6 +638,43 @@ def choose_tmdb_match(movie):
         best["score"],
     )
     return candidate
+
+
+def choose_rerelease_tmdb_match(movie):
+    """重映片以原始片名配對，不拿本次重映年份限制 TMDB 原始年份。"""
+    from cinema_rereleases import strip_rerelease_labels
+
+    title_zh = strip_rerelease_labels(movie.get("title_zh")) or movie.get("title_zh", "")
+    title_en = strip_rerelease_labels(movie.get("title_en")) or movie.get("title_en", "")
+    candidates = {}
+    for query in dict.fromkeys(value for value in (title_zh, title_en) if value):
+        for result in tmdb_search(query):
+            candidates[result["id"]] = result
+        time.sleep(TMDB_DELAY)
+    if not candidates:
+        return None
+
+    def rerelease_score(candidate):
+        candidate_title = candidate.get("title") or ""
+        candidate_original = candidate.get("original_title") or ""
+        zh_score = max(title_similarity(title_zh, candidate_title), title_similarity(title_zh, candidate_original))
+        en_score = max(title_similarity(title_en, candidate_title), title_similarity(title_en, candidate_original)) if title_en else 0
+        score = zh_score * 60 + en_score * 45
+        if zh_score == 1:
+            score += 80
+        if title_en and en_score == 1:
+            score += 60
+        return score
+
+    best = max(candidates.values(), key=rerelease_score)
+    score = rerelease_score(best)
+    if score < 70:
+        log(f"  TMDB rerelease match uncertain: {title_zh} score={score:.1f}")
+        return None
+    result = dict(best)
+    result["_match_score"] = score
+    log(f"  TMDB rerelease match: {result.get('title', '')} (id={result['id']}, score={score:.1f})")
+    return result
 
 
 def tmdb_get_json(path, params, timeout, label):
@@ -1345,10 +1383,13 @@ def append_tmdb_match_suspicious_tsv_rows(rows, output, generated_at_local):
         ])
 
 
-def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
+def export_google_sheets_tsv(output, generated_at_local, movie_data=None, rerelease_audit=None):
     """輸出給 Google Sheets 用的 TSV"""
     tsv_path = OUTPUT_DIR / f"{generated_at_local.date().isoformat()}.tsv"
-    rows = [["類別", "台灣中文片名", "台灣上映日期", "原文片名", "連結", "原上映日期", "備註"]]
+    rows = [[
+        "類別", "台灣中文片名", "台灣上映日期", "原文片名", "TMDB連結",
+        "原上映日期", "備註", "發現來源", "來源連結",
+    ]]
 
     append_tmdb_date_mismatch_tsv_rows(rows, output, generated_at_local)
 
@@ -1406,11 +1447,227 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None):
             "",
         ])
 
+    if rerelease_audit:
+        append_rerelease_tsv_rows(rows, rerelease_audit)
+
     with open(tsv_path, "w", encoding="utf-8", newline="") as f:
         for row in rows:
             f.write("\t".join(str(cell) for cell in row) + "\n")
 
     return tsv_path
+
+
+def build_rerelease_audit(atmovies_output, generated_at_local):
+    """以開眼及三家影城聯集建立私人重映候選；個別影城失敗不阻斷開眼稽核。"""
+    from collections import Counter
+    from cinema_rereleases import (
+        SOURCE_URLS,
+        fetch_html,
+        has_rerelease_marker,
+        is_confirmed_rerelease,
+        is_promotional_screening,
+        merge_raw_movies,
+        parse_ambassador,
+        parse_ambassador_release_date,
+        parse_showtime,
+        parse_vieshow,
+        tmdb_date_status,
+        vieshow_page_count,
+    )
+
+    source_health = {"atmovies": True, "vieshow": False, "showtime": False, "ambassador": False}
+    cinema_movies = []
+
+    try:
+        for status, source_key in (("now", "vieshow_now"), ("soon", "vieshow_soon")):
+            base_url = SOURCE_URLS[source_key]
+            first_html = fetch_html(base_url, USER_AGENT)
+            cinema_movies.extend(parse_vieshow(first_html, status, base_url))
+            for page in range(2, vieshow_page_count(first_html) + 1):
+                time.sleep(SCRAPE_DELAY)
+                page_url = f"{base_url}?p={page}" if "?" not in base_url else f"{base_url}&p={page}"
+                html = fetch_html(page_url, USER_AGENT)
+                cinema_movies.extend(parse_vieshow(html, status, page_url))
+        source_health["vieshow"] = True
+    except Exception as error:
+        log(f"Cinema audit warning: VieShow failed: {error}")
+
+    try:
+        html = fetch_html(SOURCE_URLS["showtime"], USER_AGENT)
+        cinema_movies.extend(parse_showtime(html, generated_at_local.date()))
+        source_health["showtime"] = True
+    except Exception as error:
+        log(f"Cinema audit warning: Showtime failed: {error}")
+
+    try:
+        html = fetch_html(SOURCE_URLS["ambassador"], USER_AGENT)
+        ambassador_movies = parse_ambassador(html)
+        for movie in ambassador_movies:
+            if movie.get("status") != "now":
+                continue
+            time.sleep(TMDB_DELAY)
+            detail_html = fetch_html(movie["source_url"], USER_AGENT)
+            release_date = parse_ambassador_release_date(detail_html)
+            if not release_date:
+                raise ValueError(f"國賓詳細頁缺少上映日期：{movie['source_url']}")
+            movie["release_date_tw"] = release_date
+        cinema_movies.extend(ambassador_movies)
+        source_health["ambassador"] = True
+    except Exception as error:
+        log(f"Cinema audit warning: Ambassador failed: {error}")
+
+    matched = {}
+    review_rows = []
+    tmdb_processing_complete = True
+    for index, movie in enumerate(merge_raw_movies(cinema_movies), 1):
+        if is_promotional_screening(movie.get("title_zh"), movie.get("title_en")) and not has_rerelease_marker(
+            movie.get("title_zh"), movie.get("title_en")
+        ):
+            continue
+        log(f"Cinema TMDB match [{index}] {movie.get('title_zh', '')}")
+        result = choose_rerelease_tmdb_match(movie)
+        if not result or float(result.get("_match_score", 0) or 0) < 55:
+            if has_rerelease_marker(movie.get("title_zh"), movie.get("title_en")):
+                review_rows.append({**movie, "audit_category": "重映－TMDB配對待確認"})
+            continue
+        release_results = tmdb_release_dates(result["id"])
+        time.sleep(TMDB_DELAY)
+        if release_results is None:
+            tmdb_processing_complete = False
+            continue
+        tw_releases = extract_tw_theatrical_releases_from_results(release_results)
+        if not is_confirmed_rerelease(movie, result, tw_releases):
+            continue
+        item = matched.setdefault(result["id"], {
+            "tmdb_id": result["id"],
+            "title_zh": result.get("title") or movie.get("title_zh", ""),
+            "title_en": result.get("original_title") or movie.get("title_en", ""),
+            "tmdb_title": result.get("title") or result.get("original_title", ""),
+            "tmdb_primary_release_date": result.get("release_date", ""),
+            "tmdb_url": tmdb_movie_url(result["id"]),
+            "cinema_dates": [], "atmovies_dates": [], "sources": [], "source_urls": [], "statuses": [],
+            "tw_releases": tw_releases,
+        })
+        for value in movie.get("sources", []):
+            if value not in item["sources"]:
+                item["sources"].append(value)
+        for value in movie.get("source_urls", []):
+            if value not in item["source_urls"]:
+                item["source_urls"].append(value)
+        for value in movie.get("statuses", []):
+            if value not in item["statuses"]:
+                item["statuses"].append(value)
+        if movie.get("release_date_tw"):
+            item["cinema_dates"].append(movie["release_date_tw"])
+
+    # 開眼本身也屬於重映聯集，但只挑出有明確重映跡象或較早台灣院線日的舊片。
+    for movie in atmovies_output.get("tmdb_has_tw_date", []) + atmovies_output.get("missing_tw_date", []):
+        movie = dict(movie)
+        cinema_date = movie.get("release_date_tw", "")
+        tmdb_date = movie.get("tmdb_tw_release_date", "")
+        marked_rerelease = has_rerelease_marker(movie.get("title_zh"), movie.get("title_en"))
+        earlier_releases = [{"date": tmdb_date}] if tmdb_date else []
+        if not marked_rerelease and not is_confirmed_rerelease(movie, movie, earlier_releases):
+            continue
+        if marked_rerelease:
+            rematched = choose_rerelease_tmdb_match(movie)
+            if not rematched:
+                continue
+            rematched_releases = tmdb_release_dates(rematched["id"])
+            time.sleep(TMDB_DELAY)
+            if rematched_releases is None:
+                tmdb_processing_complete = False
+                continue
+            movie.update({
+                "tmdb_id": rematched["id"],
+                "tmdb_title": rematched.get("title") or rematched.get("original_title", ""),
+                "tmdb_primary_release_date": rematched.get("release_date", ""),
+                "tmdb_url": tmdb_movie_url(rematched["id"]),
+                "tmdb_tw_releases": extract_tw_theatrical_releases_from_results(rematched_releases),
+            })
+        tmdb_id = movie.get("tmdb_id")
+        if not tmdb_id:
+            continue
+        item = matched.setdefault(tmdb_id, {
+            "tmdb_id": tmdb_id,
+            "title_zh": movie.get("title_zh", ""),
+            "title_en": movie.get("title_en", ""),
+            "tmdb_title": movie.get("tmdb_title", ""),
+            "tmdb_primary_release_date": movie.get("tmdb_primary_release_date", ""),
+            "tmdb_url": movie.get("tmdb_url", ""),
+            "cinema_dates": [], "atmovies_dates": [], "sources": [], "source_urls": [], "statuses": [],
+            "tw_releases": movie.get("tmdb_tw_releases") or ([{"date": tmdb_date, "language": ""}] if tmdb_date else []),
+        })
+        for field, value in (("sources", "atmovies"), ("source_urls", movie.get("atmovies_url")), ("statuses", movie.get("source_bucket"))):
+            if value and value not in item[field]:
+                item[field].append(value)
+        if cinema_date:
+            item["atmovies_dates"].append(cinema_date)
+
+    candidates = []
+    for item in matched.values():
+        cinema_dates = item.pop("cinema_dates")
+        atmovies_dates = item.pop("atmovies_dates")
+        date_counts = Counter(cinema_dates or atmovies_dates)
+        cinema_date = sorted(date_counts, key=lambda value: (-date_counts[value], value))[0] if date_counts else ""
+        tw_releases = item.pop("tw_releases")
+        status = tmdb_date_status(cinema_date, tw_releases)
+        sources = item.pop("sources")
+        source_urls = item.pop("source_urls")
+        statuses = item.pop("statuses")
+        candidates.append({
+            **item,
+            "candidate_type": "rerelease",
+            "cinema_release_date": cinema_date,
+            "tmdb_tw_release_date": cinema_date if status == "confirmed" else "",
+            "present_sources": ",".join(sorted(sources)),
+            "source_urls": "\n".join(source_urls),
+            "cinema_status": ",".join(sorted(statuses)),
+            "tmdb_date_status": status,
+            "rerelease_present": True,
+        })
+
+    return {
+        "generated_at": generated_at_local.isoformat(),
+        "audit_complete": all(source_health.values()) and tmdb_processing_complete,
+        "tmdb_processing_complete": tmdb_processing_complete,
+        "source_health": source_health,
+        "candidates": sorted(candidates, key=lambda item: (item.get("cinema_release_date", ""), item["tmdb_id"])),
+        "review_rows": review_rows,
+    }
+
+
+def append_rerelease_tsv_rows(rows, rerelease_audit):
+    for movie in rerelease_audit.get("candidates", []):
+        status = movie.get("tmdb_date_status")
+        category = {
+            "confirmed": "重映－TMDB已確認",
+            "missing": "重映－待補TMDB日期",
+            "mismatch": "重映－TMDB日期不一致",
+        }.get(status, "重映－TMDB配對待確認")
+        rows.append([
+            category,
+            movie.get("title_zh", ""),
+            movie.get("cinema_release_date", ""),
+            movie.get("title_en", ""),
+            movie.get("tmdb_url", ""),
+            movie.get("tmdb_primary_release_date", ""),
+            "四來源聯集；公開前仍須 TMDB 台灣院線日期完全相符",
+            movie.get("present_sources", ""),
+            movie.get("source_urls", "").replace("\n", " | "),
+        ])
+    for movie in rerelease_audit.get("review_rows", []):
+        rows.append([
+            movie.get("audit_category", "重映－TMDB配對待確認"),
+            movie.get("title_zh", ""),
+            movie.get("release_date_tw", ""),
+            movie.get("title_en", ""),
+            "",
+            "",
+            "請人工確認 TMDB 配對",
+            ",".join(movie.get("sources", [])),
+            " | ".join(movie.get("source_urls", [])),
+        ])
 
 
 def export_atmovies_candidates(output, generated_at_local):
@@ -1559,9 +1816,15 @@ def main():
     log(f"\nOutput written to: {OUTPUT_FILE}")
 
     # The crawler is audit-only. Public data is rebuilt separately from TMDB.
+    rerelease_audit = build_rerelease_audit(output, generated_at_local)
+    write_traditional_json(RERELEASE_CANDIDATES_FILE, rerelease_audit)
+    log(
+        f"Rerelease audit: {len(rerelease_audit['candidates'])} candidates; "
+        f"complete={rerelease_audit['audit_complete']}"
+    )
     candidates_path = export_atmovies_candidates(output, generated_at_local)
     log(f"Private refresh candidates written to: {candidates_path}")
-    tsv_path = export_google_sheets_tsv(output, generated_at_local)
+    tsv_path = export_google_sheets_tsv(output, generated_at_local, rerelease_audit=rerelease_audit)
     log(f"Google Sheets TSV written to: {tsv_path}")
 
 
