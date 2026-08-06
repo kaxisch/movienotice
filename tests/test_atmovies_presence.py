@@ -241,6 +241,38 @@ class RefreshVisibilityTests(unittest.TestCase):
             "consecutive_misses": misses,
         }
 
+    def test_pending_rerelease_does_not_override_verified_atmovies_candidate(self):
+        candidates = [
+            {
+                "tmdb_id": 45580,
+                "candidate_kind": "atmovies",
+                "tmdb_tw_release_date": "2026-07-31",
+            },
+            {
+                "tmdb_id": 45580,
+                "candidate_kind": "rerelease",
+                "cinema_release_date": "",
+            },
+        ]
+
+        indexed = refresh.index_candidates_by_tmdb_id(candidates)
+
+        self.assertEqual(indexed[45580]["candidate_kind"], "atmovies")
+
+    def test_dated_rerelease_overrides_regular_candidate(self):
+        candidates = [
+            {"tmdb_id": 101, "candidate_kind": "atmovies"},
+            {
+                "tmdb_id": 101,
+                "candidate_kind": "rerelease",
+                "cinema_release_date": "2026-08-07",
+            },
+        ]
+
+        indexed = refresh.index_candidates_by_tmdb_id(candidates)
+
+        self.assertEqual(indexed[101]["candidate_kind"], "rerelease")
+
     def test_now_movie_hides_on_second_miss(self):
         self.assertEqual(publish.NOW_ATMOVIES_MISS_LIMIT, refresh.NOW_ATMOVIES_MISS_LIMIT)
         release_date = date(2026, 7, 17)

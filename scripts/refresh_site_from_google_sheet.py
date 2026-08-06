@@ -162,6 +162,32 @@ def should_hide_rerelease(candidate):
     return sheet_value_is_true(candidate.get("hidden"))
 
 
+def index_candidates_by_tmdb_id(candidates):
+    """同片重複時：有本次日期的重映候選優先，待確認重映不得蓋掉一般候選。"""
+    indexed = {}
+    for candidate in candidates:
+        tmdb_id = candidate["tmdb_id"]
+        previous = indexed.get(tmdb_id)
+        if previous is None:
+            indexed[tmdb_id] = candidate
+            continue
+        candidate_is_dated_rerelease = (
+            candidate.get("candidate_kind") == "rerelease"
+            and bool(str(candidate.get("cinema_release_date", "") or "").strip())
+        )
+        previous_is_dated_rerelease = (
+            previous.get("candidate_kind") == "rerelease"
+            and bool(str(previous.get("cinema_release_date", "") or "").strip())
+        )
+        if candidate_is_dated_rerelease or (
+            not previous_is_dated_rerelease
+            and previous.get("candidate_kind") == "rerelease"
+            and candidate.get("candidate_kind") != "rerelease"
+        ):
+            indexed[tmdb_id] = candidate
+    return indexed
+
+
 def allows_continuous_theatrical_run(candidate, release_date, today):
     """已發布且未達下架門檻的電影可持續上映，不受 180 天期限影響。"""
     if candidate.get("candidate_kind") == "rerelease" or release_date > today:
@@ -182,7 +208,7 @@ def allows_continuous_theatrical_run(candidate, release_date, today):
 
 
 def build_verified_output(candidates):
-    candidate_by_id = {item["tmdb_id"]: item for item in candidates}
+    candidate_by_id = index_candidates_by_tmdb_id(candidates)
     ordered_ids = list(candidate_by_id)
 
     today = datetime.now(timezone(timedelta(hours=8))).date()
