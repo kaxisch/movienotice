@@ -325,14 +325,12 @@ def parse_now(html_pages):
                 if screen_match:
                     screen_count = int(screen_match.group(1))
 
-            # 如果沒抓到日期,跳過這部
-            if not release_date_tw:
-                continue
-
             movies.append({
                 "title_zh": title_zh,
                 "title_en": title_en,
-                "release_date_tw": release_date_tw,
+                # 開眼偶爾省略仍在上映電影的日期（例如《外賣》）；
+                # 保留候選，後續仍須由 TMDB TW theatrical type 3 補值並驗證。
+                "release_date_tw": release_date_tw or "",
                 "screen_count": screen_count,
                 "atmovies_id": movie_id,
                 "atmovies_url": f"http://www.atmovies.com.tw{href}",
@@ -644,6 +642,15 @@ def choose_tmdb_match(movie):
 def choose_rerelease_tmdb_match(movie):
     """配對影城候選；明確重映標記才忽略本次上映年份。"""
     from cinema_rereleases import has_rerelease_marker, strip_rerelease_labels
+
+    override = load_tmdb_overrides().get(movie.get("atmovies_id", ""))
+    if override and override.get("tmdb_id"):
+        result = tmdb_movie(override["tmdb_id"])
+        if result:
+            result = dict(result)
+            result["_match_score"] = 1000
+            log(f"  TMDB rerelease override: {movie.get('atmovies_id')} -> {result['id']}")
+            return result
 
     title_zh = strip_rerelease_labels(movie.get("title_zh")) or movie.get("title_zh", "")
     title_en = strip_rerelease_labels(movie.get("title_en")) or movie.get("title_en", "")
