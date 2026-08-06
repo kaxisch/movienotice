@@ -46,6 +46,7 @@ IMG_W = "https://image.tmdb.org/t/p/w500"
 IMG_BG = "https://image.tmdb.org/t/p/w1280"
 NOW_LOOKBACK_DAYS = 180
 SOON_WINDOW_DAYS = 180
+RERELEASE_ABSENCE_REQUIRED_SOURCES = ("atmovies", "showtime", "ambassador")
 GENRE_MAP = {
     "动作": "動作",
     "冒险": "冒險",
@@ -759,6 +760,14 @@ def is_known_old_atmovies_movie(movie):
 
     tmdb_movie = {"release_date": movie.get("tmdb_primary_release_date", "")}
     return is_confirmed_rerelease(movie, tmdb_movie, movie.get("tmdb_tw_releases", []))
+
+
+def rerelease_absence_audit_complete(source_health, tmdb_processing_complete):
+    """威秀 403 不影響缺席稽核；開眼、秀泰、國賓與 TMDB 必須成功。"""
+    return bool(tmdb_processing_complete) and all(
+        source_health.get(source) is True
+        for source in RERELEASE_ABSENCE_REQUIRED_SOURCES
+    )
 
 
 def tmdb_get_json(path, params, timeout, label):
@@ -1730,7 +1739,9 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
 
     return {
         "generated_at": generated_at_local.isoformat(),
-        "audit_complete": all(source_health.values()) and tmdb_processing_complete,
+        "audit_complete": rerelease_absence_audit_complete(
+            source_health, tmdb_processing_complete
+        ),
         "tmdb_processing_complete": tmdb_processing_complete,
         "source_health": source_health,
         "rejected_source_urls": sorted(rejected_source_urls),
