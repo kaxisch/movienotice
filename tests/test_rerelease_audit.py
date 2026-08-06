@@ -15,6 +15,26 @@ import weekly_check as weekly
 
 
 class CinemaParserTests(unittest.TestCase):
+    @patch("weekly_check.tmdb_movie")
+    @patch("weekly_check.load_tmdb_overrides")
+    def test_rerelease_match_honors_atmovies_override(self, overrides, tmdb_movie):
+        overrides.return_value = {"fsjp31415228": {"tmdb_id": 45580}}
+        tmdb_movie.return_value = {
+            "id": 45580,
+            "title": "樂與路",
+            "original_title": "ソラニン",
+            "release_date": "2010-04-03",
+        }
+
+        result = weekly.choose_rerelease_tmdb_match({
+            "atmovies_id": "fsjp31415228",
+            "title_zh": "手拉你",
+            "title_en": "Solanin",
+            "release_date_tw": "2010-08-13",
+        })
+
+        self.assertEqual(result["id"], 45580)
+
     def test_ambassador_parser_reads_both_statuses_and_dates(self):
         html = """
         <div class="movie-list"><div class="cell"><div class="title">

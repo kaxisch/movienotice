@@ -13,6 +13,21 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_now_movie_without_atmovies_date_is_retained_for_tmdb_verification(self):
+        html = """
+        <article class="filmList">
+          <div class="filmTitle"><a href="/movie/ften20391483/">外賣(4K數位紀念版) Take Out</a></div>
+          <div class="runtime">片長：88分 上映廳數 (2)</div>
+        </article>
+        """
+
+        movies = weekly.parse_now([html])
+
+        self.assertEqual(len(movies), 1)
+        self.assertEqual(movies[0]["atmovies_id"], "ften20391483")
+        self.assertEqual(movies[0]["release_date_tw"], "")
+        self.assertEqual(movies[0]["screen_count"], 2)
+
     def test_missing_candidates_increment_and_seen_candidates_reset(self):
         previous = [
             {"tmdb_id": "101", "title_zh": "仍在開眼", "atmovies_present": "FALSE", "consecutive_misses": "2"},
