@@ -162,6 +162,25 @@ def should_hide_rerelease(candidate):
     return sheet_value_is_true(candidate.get("hidden"))
 
 
+def allows_continuous_theatrical_run(candidate, release_date, today):
+    """已發布且未達下架門檻的電影可持續上映，不受 180 天期限影響。"""
+    if candidate.get("candidate_kind") == "rerelease" or release_date > today:
+        return False
+    if sheet_value_is_true(candidate.get("reappeared_after_hidden")):
+        return False
+    if atmovies_miss_count(candidate) >= NOW_ATMOVIES_MISS_LIMIT:
+        return False
+    if sheet_value_is_true(candidate.get("ever_published")):
+        return True
+    # 舊欄位遷移：只接回剛跨過舊 180 天界線、且本次仍在開眼的電影。
+    # 下一次週稽核會把它標記為 ever_published，避免永久依賴此相容條件。
+    return (
+        "ever_published" not in candidate
+        and sheet_value_is_true(candidate.get("atmovies_present"))
+        and release_date >= today - timedelta(days=365)
+    )
+
+
 def build_verified_output(candidates):
     candidate_by_id = {item["tmdb_id"]: item for item in candidates}
     ordered_ids = list(candidate_by_id)
@@ -201,6 +220,16 @@ def build_verified_output(candidates):
             continue
         theatrical_releases = weekly.extract_tw_theatrical_releases_from_results(release_results)
         eligible_releases = weekly.releases_in_window(theatrical_releases, past_cutoff, future_cutoff)
+        source = candidate_by_id[tmdb_id]
+        source_date = weekly.parse_iso_date(source.get("tmdb_tw_release_date", ""))
+        continuous_run = bool(
+            source_date and allows_continuous_theatrical_run(source, source_date, today)
+        )
+        if not eligible_releases and continuous_run:
+            eligible_releases = [
+                item for item in theatrical_releases
+                if item.get("date") == source_date.isoformat()
+            ]
         if not eligible_releases:
             available_dates = ", ".join(item["date"] for item in theatrical_releases) or "none"
             log(
@@ -208,7 +237,6 @@ def build_verified_output(candidates):
                 f"{past_cutoff.isoformat()}..{future_cutoff.isoformat()} (available: {available_dates})"
             )
             continue
-        source = candidate_by_id[tmdb_id]
         if source.get("candidate_kind") == "rerelease":
             cinema_date = str(source.get("cinema_release_date", "") or "")
             exact_releases = [item for item in eligible_releases if item.get("date") == cinema_date]
@@ -245,6 +273,7 @@ def build_verified_output(candidates):
             "atmovies_id": source.get("atmovies_id", ""),
             "atmovies_url": source.get("atmovies_url", ""),
             "source_bucket": "now" if release_date <= today else "next",
+            "continuous_run": continuous_run,
         })
         time.sleep(weekly.TMDB_DELAY)
 

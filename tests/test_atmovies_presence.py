@@ -71,6 +71,32 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(merged[0]["consecutive_misses"], 2)
         self.assertEqual(merged[0]["last_audit_date"], "2026-07-22")
 
+    def test_return_after_hide_starts_new_run(self):
+        previous = [{
+            "tmdb_id": "202",
+            "tmdb_tw_release_date": "2026-02-06",
+            "consecutive_misses": "2",
+            "run_generation": "1",
+            "run_started_at": "2026-02-06",
+            "ever_published": "TRUE",
+        }]
+        current = [{"tmdb_id": 202, "tmdb_tw_release_date": "2026-02-06"}]
+
+        merged = publish.merge_candidate_presence(current, previous, "2026-08-08")
+
+        self.assertEqual(merged[0]["run_generation"], 2)
+        self.assertEqual(merged[0]["run_started_at"], "2026-08-08")
+        self.assertTrue(merged[0]["reappeared_after_hidden"])
+
+    def test_current_site_movie_is_marked_as_ever_published(self):
+        items = [{"tmdb_id": 101}, {"tmdb_id": 202, "ever_published": False}]
+        payload = {"movies": {"now": [{"id": 202}], "soon": []}}
+
+        marked = publish.mark_published_candidates(items, payload)
+
+        self.assertNotIn("ever_published", marked[0])
+        self.assertTrue(marked[1]["ever_published"])
+
     def test_candidate_rows_sort_by_release_date_with_missing_dates_last(self):
         items = [
             {"tmdb_id": 303, "release_date_tw": ""},
@@ -217,6 +243,49 @@ class RefreshVisibilityTests(unittest.TestCase):
         self.assertFalse(refresh.should_hide_for_atmovies_absence(self.candidate(9, present=True), release_date, self.TODAY, set()))
         self.assertFalse(refresh.should_hide_for_atmovies_absence(self.candidate(9), release_date, self.TODAY, {101}))
 
+    def test_published_continuous_run_can_exceed_180_days(self):
+        candidate = self.candidate(0, present=True)
+        candidate["ever_published"] = True
+        release_date = date(2026, 1, 1)
+
+        self.assertTrue(refresh.allows_continuous_theatrical_run(candidate, release_date, self.TODAY))
+        self.assertEqual(
+            weekly.classify_release_bucket(
+                {"source_bucket": "now", "continuous_run": True},
+                release_date,
+                self.TODAY,
+                True,
+            ),
+            "now",
+        )
+
+    def test_old_unpublished_candidate_cannot_use_old_tmdb_date(self):
+        candidate = self.candidate(0, present=True)
+        candidate["ever_published"] = False
+
+        self.assertFalse(
+            refresh.allows_continuous_theatrical_run(candidate, date(2015, 1, 9), self.TODAY)
+        )
+
+    def test_reappeared_hidden_movie_must_wait_for_rerelease_date(self):
+        candidate = self.candidate(0, present=True)
+        candidate.update({"ever_published": True, "reappeared_after_hidden": True})
+
+        self.assertFalse(
+            refresh.allows_continuous_theatrical_run(candidate, date(2026, 1, 1), self.TODAY)
+        )
+
+    def test_legacy_row_just_past_cutoff_can_be_migrated_once(self):
+        candidate = self.candidate(0, present=True)
+        candidate.pop("ever_published", None)
+
+        self.assertTrue(
+            refresh.allows_continuous_theatrical_run(candidate, date(2026, 1, 18), self.TODAY)
+        )
+        self.assertFalse(
+            refresh.allows_continuous_theatrical_run(candidate, date(2025, 1, 1), self.TODAY)
+        )
+
     def test_handed_off_tmdb_movie_hides_even_if_never_seen_atmovies(self):
         release_date = date(2026, 7, 17)
         self.assertTrue(
@@ -241,7 +310,7 @@ class RefreshVisibilityTests(unittest.TestCase):
         self.assertTrue(retained)
         self.assertEqual([movie["id"] for movie in movies["now"]], [101])
 
-    def test_unverified_or_out_of_window_movie_is_not_retained(self):
+    def test_unverified_movie_is_not_retained_but_previous_long_run_is(self):
         movies = {"now": [], "soon": []}
         existing_ids = set()
         previous = {
@@ -250,7 +319,7 @@ class RefreshVisibilityTests(unittest.TestCase):
         }
 
         self.assertFalse(weekly.retain_previous_static_movie(movies, existing_ids, previous, 101, self.TODAY))
-        self.assertFalse(weekly.retain_previous_static_movie(movies, existing_ids, previous, 202, self.TODAY))
+        self.assertTrue(weekly.retain_previous_static_movie(movies, existing_ids, previous, 202, self.TODAY))
 
 
 if __name__ == "__main__":
