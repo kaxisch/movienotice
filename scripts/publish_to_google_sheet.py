@@ -32,7 +32,7 @@ CANDIDATE_HEADERS = [
     "release_date_tw", "tmdb_tw_release_date", "atmovies_id", "atmovies_url", "tmdb_title",
     "ever_seen_atmovies", "atmovies_present", "consecutive_misses", "last_seen_atmovies",
     "last_audit_date", "ever_published", "run_generation", "run_started_at",
-    "reappeared_after_hidden",
+    "reappeared_after_hidden", "handoff_started_at",
 ]
 RERELEASE_HEADERS = [
     "tmdb_id", "title_zh", "title_en", "cinema_release_date", "atmovies_original_date", "tmdb_tw_release_date",
@@ -194,12 +194,16 @@ def merge_candidate_presence(current_items, previous_items, run_date):
     for tmdb_id in sorted(set(previous_by_id) | set(current_by_id), key=lambda value: int(value)):
         previous = previous_by_id.get(tmdb_id, {})
         current = current_by_id.get(tmdb_id)
+        handoff_phase = candidate_handoff_phase(current or previous, run_date)
+        previous_handoff = str(previous.get("handoff_started_at", "") or "").strip()
         if current:
             item = {**previous, **current}
             miss_limit = candidate_miss_limit(previous, run_date) if previous else None
             try:
                 previous_misses = int(previous.get("consecutive_misses", 0) or 0)
             except (TypeError, ValueError):
+                previous_misses = 0
+            if previous_handoff == "pending" and handoff_phase == "handoff":
                 previous_misses = 0
             reappeared = bool(previous) and miss_limit is not None and previous_misses >= miss_limit
             try:
@@ -221,6 +225,11 @@ def merge_candidate_presence(current_items, previous_items, run_date):
                     reappeared
                     or is_sheet_true(previous.get("reappeared_after_hidden"), default=False)
                 ),
+                "handoff_started_at": (
+                    "pending" if handoff_phase == "far"
+                    else run_date if handoff_phase == "handoff" and previous_handoff == "pending"
+                    else previous_handoff or (run_date if handoff_phase == "handoff" else "")
+                ),
             })
         else:
             item = dict(previous)
@@ -228,18 +237,43 @@ def merge_candidate_presence(current_items, previous_items, run_date):
                 misses = int(item.get("consecutive_misses", 0) or 0)
             except (TypeError, ValueError):
                 misses = 0
+            if handoff_phase == "far":
+                misses = 0
+            elif handoff_phase == "handoff" and previous_handoff == "pending":
+                misses = 0
             last_audit_date = str(item.get("last_audit_date", "") or "").strip()
-            if last_audit_date != run_date:
+            if handoff_phase != "far" and last_audit_date != run_date:
                 misses += 1
             item.update({
                 "ever_seen_atmovies": is_sheet_true(item.get("ever_seen_atmovies"), default=False),
                 "atmovies_present": False,
                 "consecutive_misses": misses,
                 "last_audit_date": run_date,
+                "handoff_started_at": (
+                    "pending" if handoff_phase == "far"
+                    else run_date if handoff_phase == "handoff" and previous_handoff == "pending"
+                    else previous_handoff or (run_date if handoff_phase == "handoff" else "")
+                ),
             })
         item["tmdb_id"] = int(tmdb_id)
         merged.append(item)
     return merged
+
+
+def candidate_handoff_phase(item, run_date):
+    """回傳 now、handoff（上映前 60 天內）或 far（61 天以上）。"""
+    try:
+        release_date = datetime.strptime(
+            str(item.get("tmdb_tw_release_date", "")), "%Y-%m-%d"
+        ).date()
+        audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return ""
+    if release_date <= audit_date:
+        return "now"
+    if release_date > audit_date + timedelta(days=ATMOVIES_HANDOFF_DAYS):
+        return "far"
+    return "handoff"
 
 
 def mark_published_candidates(items, movie_payload):
@@ -347,6 +381,7 @@ def seed_site_handoff_candidates(previous_items, movie_payload, run_date, manual
                 "run_generation": 1,
                 "run_started_at": run_date,
                 "reappeared_after_hidden": False,
+                "handoff_started_at": run_date,
             })
             existing_ids.add(tmdb_id)
     return seeded

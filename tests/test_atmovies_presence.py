@@ -86,6 +86,33 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(merged[0]["consecutive_misses"], 2)
         self.assertEqual(merged[0]["last_audit_date"], "2026-07-22")
 
+    def test_far_future_candidate_clears_old_misses(self):
+        previous = [{
+            "tmdb_id": "1437511",
+            "tmdb_tw_release_date": "2026-11-13",
+            "consecutive_misses": "8",
+            "last_audit_date": "2026-08-02",
+        }]
+
+        merged = publish.merge_candidate_presence([], previous, "2026-08-06")
+
+        self.assertEqual(merged[0]["consecutive_misses"], 0)
+        self.assertEqual(merged[0]["handoff_started_at"], "pending")
+
+    def test_first_audit_after_entering_sixty_days_starts_fresh(self):
+        previous = [{
+            "tmdb_id": "1437511",
+            "tmdb_tw_release_date": "2026-11-13",
+            "consecutive_misses": "8",
+            "last_audit_date": "2026-09-08",
+            "handoff_started_at": "pending",
+        }]
+
+        merged = publish.merge_candidate_presence([], previous, "2026-09-14")
+
+        self.assertEqual(merged[0]["consecutive_misses"], 1)
+        self.assertEqual(merged[0]["handoff_started_at"], "2026-09-14")
+
     def test_return_after_hide_starts_new_run(self):
         previous = [{
             "tmdb_id": "202",
@@ -284,6 +311,13 @@ class RefreshVisibilityTests(unittest.TestCase):
         release_date = date(2026, 8, 7)
         self.assertFalse(refresh.should_hide_for_atmovies_absence(self.candidate(4), release_date, self.TODAY, set()))
         self.assertTrue(refresh.should_hide_for_atmovies_absence(self.candidate(5), release_date, self.TODAY, set()))
+
+    def test_far_future_movie_ignores_old_misses(self):
+        self.assertFalse(
+            refresh.should_hide_for_atmovies_absence(
+                self.candidate(8), date(2026, 11, 13), date(2026, 8, 6), set()
+            )
+        )
 
     def test_present_and_manual_movies_are_not_hidden(self):
         release_date = date(2026, 7, 17)
