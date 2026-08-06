@@ -50,8 +50,6 @@ def validate_movie(movie, bucket, index, reference_date, errors):
     if not release_date:
         errors.append(f"{label} has invalid releaseDate: {movie.get('releaseDate')!r}")
     elif reference_date:
-        if release_date < reference_date - timedelta(days=180):
-            errors.append(f"{label} releaseDate is more than 180 days old")
         if release_date > reference_date + timedelta(days=180):
             errors.append(f"{label} releaseDate is more than 180 days ahead")
         if bucket == "now" and release_date > reference_date:
@@ -73,8 +71,8 @@ def validate_movie(movie, bucket, index, reference_date, errors):
             errors.append(f"{label} releaseDate must match the earliest listed theatrical release")
         if reference_date and all(date is not None for date in dates):
             for theatrical_date in dates:
-                if not reference_date - timedelta(days=180) <= theatrical_date <= reference_date + timedelta(days=180):
-                    errors.append(f"{label} has a theatrical release outside the 180-day display window")
+                if theatrical_date > reference_date + timedelta(days=180):
+                    errors.append(f"{label} has a theatrical release beyond the 180-day future window")
                     break
     if movie.get("sourceBucket") != "tmdb":
         errors.append(f"{label} sourceBucket must be 'tmdb'")

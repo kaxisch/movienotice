@@ -31,7 +31,8 @@ CANDIDATE_HEADERS = [
     "tmdb_id", "source_bucket", "title_zh", "title_en",
     "release_date_tw", "tmdb_tw_release_date", "atmovies_id", "atmovies_url", "tmdb_title",
     "ever_seen_atmovies", "atmovies_present", "consecutive_misses", "last_seen_atmovies",
-    "last_audit_date",
+    "last_audit_date", "ever_published", "run_generation", "run_started_at",
+    "reappeared_after_hidden",
 ]
 RERELEASE_HEADERS = [
     "tmdb_id", "title_zh", "title_en", "cinema_release_date", "atmovies_original_date", "tmdb_tw_release_date",
@@ -195,12 +196,31 @@ def merge_candidate_presence(current_items, previous_items, run_date):
         current = current_by_id.get(tmdb_id)
         if current:
             item = {**previous, **current}
+            miss_limit = candidate_miss_limit(previous, run_date) if previous else None
+            try:
+                previous_misses = int(previous.get("consecutive_misses", 0) or 0)
+            except (TypeError, ValueError):
+                previous_misses = 0
+            reappeared = bool(previous) and miss_limit is not None and previous_misses >= miss_limit
+            try:
+                generation = max(1, int(previous.get("run_generation", 1) or 1))
+            except (TypeError, ValueError):
+                generation = 1
+            if reappeared:
+                generation += 1
             item.update({
                 "ever_seen_atmovies": True,
                 "atmovies_present": True,
                 "consecutive_misses": 0,
                 "last_seen_atmovies": run_date,
                 "last_audit_date": run_date,
+                "ever_published": is_sheet_true(previous.get("ever_published"), default=False),
+                "run_generation": generation,
+                "run_started_at": run_date if reappeared else previous.get("run_started_at") or run_date,
+                "reappeared_after_hidden": (
+                    reappeared
+                    or is_sheet_true(previous.get("reappeared_after_hidden"), default=False)
+                ),
             })
         else:
             item = dict(previous)
@@ -220,6 +240,23 @@ def merge_candidate_presence(current_items, previous_items, run_date):
         item["tmdb_id"] = int(tmdb_id)
         merged.append(item)
     return merged
+
+
+def mark_published_candidates(items, movie_payload):
+    """保存曾公開狀態，讓長期連續上映不受固定天數下架。"""
+    published_ids = {
+        int(movie.get("id"))
+        for bucket in ("now", "soon")
+        for movie in movie_payload.get("movies", {}).get(bucket, [])
+        if movie.get("id")
+    }
+    marked = []
+    for item in items:
+        copy = dict(item)
+        if int(copy.get("tmdb_id", 0) or 0) in published_ids:
+            copy["ever_published"] = True
+        marked.append(copy)
+    return marked
 
 
 def merge_rerelease_presence(
@@ -306,6 +343,10 @@ def seed_site_handoff_candidates(previous_items, movie_payload, run_date, manual
                 "consecutive_misses": 0,
                 "last_seen_atmovies": "",
                 "last_audit_date": "",
+                "ever_published": True,
+                "run_generation": 1,
+                "run_started_at": run_date,
+                "reappeared_after_hidden": False,
             })
             existing_ids.add(tmdb_id)
     return seeded
@@ -676,12 +717,14 @@ def publish():
                 get_all_sheet_values(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
             )
         manual_ids = load_json_ids(MANUAL_RELEASES_FILE, "manual")
+        movie_payload = load_json_payload(MOVIE_DATA_FILE, {"movies": {}})
         previous_candidate_items = seed_site_handoff_candidates(
             previous_candidate_items,
-            load_json_payload(MOVIE_DATA_FILE, {"movies": {}}),
+            movie_payload,
             run_date,
             manual_ids,
         )
+        previous_candidate_items = mark_published_candidates(previous_candidate_items, movie_payload)
         candidate_items = merge_candidate_presence(current_candidate_items, previous_candidate_items, run_date)
         candidate_items = prune_retired_candidates(
             candidate_items,

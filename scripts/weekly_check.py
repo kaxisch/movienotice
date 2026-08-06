@@ -1126,8 +1126,10 @@ def classify_release_bucket(record, release_date, today_local, tmdb_has_tw_date=
             return "soon"
         return ""
     if record.get("source_bucket") == "now":
-        now_cutoff = today_local - timedelta(days=NOW_LOOKBACK_DAYS)
-        if tmdb_has_tw_date and now_cutoff <= release_date <= today_local:
+        if tmdb_has_tw_date and release_date <= today_local and (
+            record.get("continuous_run")
+            or release_date >= today_local - timedelta(days=NOW_LOOKBACK_DAYS)
+        ):
             return "now"
         return ""
     if today_local + timedelta(days=1) <= release_date <= today_local + timedelta(days=SOON_WINDOW_DAYS):
@@ -1270,7 +1272,7 @@ def fallback_bucket_for_previous_movie(movie, today_local):
     release_date = parse_iso_date(movie.get("releaseDate", ""))
     if not release_date:
         return ""
-    if today_local - timedelta(days=NOW_LOOKBACK_DAYS) <= release_date <= today_local:
+    if release_date <= today_local:
         return "now"
     if today_local + timedelta(days=1) <= release_date <= today_local + timedelta(days=SOON_WINDOW_DAYS):
         return "soon"
