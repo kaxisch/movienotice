@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T22:52:40.112639+08:00",
+  "generated_at": "2026-08-06T22:58:38.190888+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 48,
@@ -2928,11 +2928,11 @@
         "crew": [
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -3049,11 +3049,11 @@
           "crew": [
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -7182,7 +7182,7 @@
           },
           {
             "name": "西恩·貝克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 3000,
@@ -7303,7 +7303,7 @@
             },
             {
               "name": "西恩·貝克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 3000,
@@ -14845,6 +14845,11 @@
             "photo": "https://image.tmdb.org/t/p/w500/jZxcxDEyIeg9x3zvycnnOatCgdf.jpg"
           },
           {
+            "name": "史努比狗狗",
+            "char": "Snoop Dogg",
+            "photo": "https://image.tmdb.org/t/p/w500/rbxBK2m6fEq0oHeMoBUMVYkJEdJ.jpg"
+          },
+          {
             "name": "Rodrigo Fernandez-Stoll",
             "char": "Mr. Hamlin",
             "photo": "https://image.tmdb.org/t/p/w500/n7Py821noR7f7y99Rad2yOKhLtB.jpg"
@@ -14858,11 +14863,6 @@
             "name": "Lochlan Ray Miller",
             "char": "Boy with Pennies #1",
             "photo": "https://image.tmdb.org/t/p/w500/yHgvyIz2sFcUl8HuoqJe6GQc6bF.jpg"
-          },
-          {
-            "name": "Lorenzo Antonucci",
-            "char": "Terry",
-            "photo": "https://image.tmdb.org/t/p/w500/rUPpfC8HwWdwB8NNP1m1zLPIhlH.jpg"
           }
         ],
         "crew": [
@@ -14976,6 +14976,11 @@
               "photo": "https://image.tmdb.org/t/p/w500/jZxcxDEyIeg9x3zvycnnOatCgdf.jpg"
             },
             {
+              "name": "史努比狗狗",
+              "char": "Snoop Dogg",
+              "photo": "https://image.tmdb.org/t/p/w500/rbxBK2m6fEq0oHeMoBUMVYkJEdJ.jpg"
+            },
+            {
               "name": "Rodrigo Fernandez-Stoll",
               "char": "Mr. Hamlin",
               "photo": "https://image.tmdb.org/t/p/w500/n7Py821noR7f7y99Rad2yOKhLtB.jpg"
@@ -14989,11 +14994,6 @@
               "name": "Lochlan Ray Miller",
               "char": "Boy with Pennies #1",
               "photo": "https://image.tmdb.org/t/p/w500/yHgvyIz2sFcUl8HuoqJe6GQc6bF.jpg"
-            },
-            {
-              "name": "Lorenzo Antonucci",
-              "char": "Terry",
-              "photo": "https://image.tmdb.org/t/p/w500/rUPpfC8HwWdwB8NNP1m1zLPIhlH.jpg"
             }
           ],
           "crew": [
@@ -22265,12 +22265,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -22320,12 +22320,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 0,
