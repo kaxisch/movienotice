@@ -202,6 +202,26 @@ class CinemaParserTests(unittest.TestCase):
 
 
 class RereleasePresenceTests(unittest.TestCase):
+    def test_vieshow_403_does_not_block_complete_absence_audit(self):
+        health = {
+            "atmovies": True,
+            "showtime": True,
+            "ambassador": True,
+            "vieshow": False,
+        }
+        self.assertTrue(weekly.rerelease_absence_audit_complete(health, True))
+
+    def test_required_source_or_tmdb_failure_blocks_absence_audit(self):
+        health = {
+            "atmovies": True,
+            "showtime": False,
+            "ambassador": True,
+            "vieshow": False,
+        }
+        self.assertFalse(weekly.rerelease_absence_audit_complete(health, True))
+        health["showtime"] = True
+        self.assertFalse(weekly.rerelease_absence_audit_complete(health, False))
+
     def previous(self, misses=0, audit_date="2026-08-01"):
         return [{
             "tmdb_id": "101",
