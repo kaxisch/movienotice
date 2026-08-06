@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-06T19:50:29.677284+08:00",
+  "generated_at": "2026-08-06T22:52:40.112639+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 48,
-    "soon_count": 62
+    "soon_count": 63
   },
   "movies": {
     "now": [
@@ -2928,11 +2928,11 @@
         "crew": [
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -3049,11 +3049,11 @@
           "crew": [
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -7182,7 +7182,7 @@
           },
           {
             "name": "西恩·貝克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 3000,
@@ -7303,7 +7303,7 @@
             },
             {
               "name": "西恩·貝克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 3000,
@@ -13742,11 +13742,11 @@
         ],
         "crew": [
           {
-            "name": "冨岡淳広",
+            "name": "大塚隆史",
             "job": "Screenplay"
           },
           {
-            "name": "大塚隆史",
+            "name": "冨岡淳広",
             "job": "Screenplay"
           },
           {
@@ -13866,11 +13866,11 @@
           ],
           "crew": [
             {
-              "name": "冨岡淳広",
+              "name": "大塚隆史",
               "job": "Screenplay"
             },
             {
-              "name": "大塚隆史",
+              "name": "冨岡淳広",
               "job": "Screenplay"
             },
             {
@@ -14845,11 +14845,6 @@
             "photo": "https://image.tmdb.org/t/p/w500/jZxcxDEyIeg9x3zvycnnOatCgdf.jpg"
           },
           {
-            "name": "史努比狗狗",
-            "char": "Snoop Dogg",
-            "photo": "https://image.tmdb.org/t/p/w500/rbxBK2m6fEq0oHeMoBUMVYkJEdJ.jpg"
-          },
-          {
             "name": "Rodrigo Fernandez-Stoll",
             "char": "Mr. Hamlin",
             "photo": "https://image.tmdb.org/t/p/w500/n7Py821noR7f7y99Rad2yOKhLtB.jpg"
@@ -14863,6 +14858,11 @@
             "name": "Lochlan Ray Miller",
             "char": "Boy with Pennies #1",
             "photo": "https://image.tmdb.org/t/p/w500/yHgvyIz2sFcUl8HuoqJe6GQc6bF.jpg"
+          },
+          {
+            "name": "Lorenzo Antonucci",
+            "char": "Terry",
+            "photo": "https://image.tmdb.org/t/p/w500/rUPpfC8HwWdwB8NNP1m1zLPIhlH.jpg"
           }
         ],
         "crew": [
@@ -14976,11 +14976,6 @@
               "photo": "https://image.tmdb.org/t/p/w500/jZxcxDEyIeg9x3zvycnnOatCgdf.jpg"
             },
             {
-              "name": "史努比狗狗",
-              "char": "Snoop Dogg",
-              "photo": "https://image.tmdb.org/t/p/w500/rbxBK2m6fEq0oHeMoBUMVYkJEdJ.jpg"
-            },
-            {
               "name": "Rodrigo Fernandez-Stoll",
               "char": "Mr. Hamlin",
               "photo": "https://image.tmdb.org/t/p/w500/n7Py821noR7f7y99Rad2yOKhLtB.jpg"
@@ -14994,6 +14989,11 @@
               "name": "Lochlan Ray Miller",
               "char": "Boy with Pennies #1",
               "photo": "https://image.tmdb.org/t/p/w500/yHgvyIz2sFcUl8HuoqJe6GQc6bF.jpg"
+            },
+            {
+              "name": "Lorenzo Antonucci",
+              "char": "Terry",
+              "photo": "https://image.tmdb.org/t/p/w500/rUPpfC8HwWdwB8NNP1m1zLPIhlH.jpg"
             }
           ],
           "crew": [
@@ -22265,12 +22265,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -22320,12 +22320,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -23507,6 +23507,255 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1437511,
+        "titleZh": "搶銀行先修班",
+        "titleEn": "How to Rob a Bank",
+        "releaseDate": "2026-11-13",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-13",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/xghtLO90cQPybH85aw1C3bZ2P3.jpg",
+        "voteAverage": "",
+        "genre": [
+          "犯罪",
+          "驚悚"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "尼可拉斯·霍特",
+            "char": "Ryan",
+            "photo": "https://image.tmdb.org/t/p/w500/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg"
+          },
+          {
+            "name": "柔伊·克拉維茲",
+            "char": "Reagan Gardner",
+            "photo": "https://image.tmdb.org/t/p/w500/n0mhAgmY6eJQmA7kaugsTZEJgHo.jpg"
+          },
+          {
+            "name": "澤井杏奈",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/6uFaCOupDTPRnTiedveTUvjOikC.jpg"
+          },
+          {
+            "name": "Rhenzy Feliz",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/9YPe3GgyWjG4D0GnTx9KzfvnO0L.jpg"
+          },
+          {
+            "name": "彼得·戴維森",
+            "char": "Vince",
+            "photo": "https://image.tmdb.org/t/p/w500/f3kubnZu3KgMniExcq9nJy8RwjW.jpg"
+          },
+          {
+            "name": "約翰·C·賴利",
+            "char": "Agent West",
+            "photo": "https://image.tmdb.org/t/p/w500/iDQ8w4qcxU3le5ZWoCKpHs1QNok.jpg"
+          },
+          {
+            "name": "克利斯汀·史萊特",
+            "char": "Walton",
+            "photo": "https://image.tmdb.org/t/p/w500/6ww3uweEEXMlvtNjTlgBHxLErPF.jpg"
+          },
+          {
+            "name": "Tati Gabrielle",
+            "char": "Skyler",
+            "photo": "https://image.tmdb.org/t/p/w500/txZTL1HkPVxliTilbjlwR51VIt6.jpg"
+          },
+          {
+            "name": "英·馬齊諾",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/cRuVRx1DMe2hBkz5pssVqdpCtaQ.jpg"
+          },
+          {
+            "name": "Michael Gandolfini",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/949lN8eoD3oXx1TmpjzmPQvt2TI.jpg"
+          },
+          {
+            "name": "Sam Lerner",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/tHTUqTxciQIEdQYdaKWPorWyRbm.jpg"
+          },
+          {
+            "name": "Thomas C. Stuhr",
+            "char": "Virginia Bank Teller",
+            "photo": "https://image.tmdb.org/t/p/w500/xQRC2fdX1bd8u6LujxUPPa1WCz6.jpg"
+          },
+          {
+            "name": "Gloria Laino",
+            "char": "Mimi Contreras",
+            "photo": "https://image.tmdb.org/t/p/w500/ll7ALAcxgo0DhFsDqNcwmPb4Bw3.jpg"
+          },
+          {
+            "name": "Johnna Leary",
+            "char": "Protester 29",
+            "photo": null
+          },
+          {
+            "name": "Ryan Beatrice",
+            "char": "CORE Protestor",
+            "photo": null
+          },
+          {
+            "name": "Andy S. Allen",
+            "char": "Bank Manager",
+            "photo": "https://image.tmdb.org/t/p/w500/6IOQRMGkcpD2hY9hQ0uDu2EgGuF.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "大衛·雷奇",
+            "job": "Director"
+          },
+          {
+            "name": "Mark Bianculli",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "en",
+        "origTitle": "How to Rob a Bank",
+        "platforms": [],
+        "popularity": 4.5348,
+        "imdbId": "tt35866986",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "犯罪",
+            "驚悚"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/xghtLO90cQPybH85aw1C3bZ2P3.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt35866986",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "尼可拉斯·霍特",
+              "char": "Ryan",
+              "photo": "https://image.tmdb.org/t/p/w500/pXm8GWTm9eIA8pUGOjvmYjlxamu.jpg"
+            },
+            {
+              "name": "柔伊·克拉維茲",
+              "char": "Reagan Gardner",
+              "photo": "https://image.tmdb.org/t/p/w500/n0mhAgmY6eJQmA7kaugsTZEJgHo.jpg"
+            },
+            {
+              "name": "澤井杏奈",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/6uFaCOupDTPRnTiedveTUvjOikC.jpg"
+            },
+            {
+              "name": "Rhenzy Feliz",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/9YPe3GgyWjG4D0GnTx9KzfvnO0L.jpg"
+            },
+            {
+              "name": "彼得·戴維森",
+              "char": "Vince",
+              "photo": "https://image.tmdb.org/t/p/w500/f3kubnZu3KgMniExcq9nJy8RwjW.jpg"
+            },
+            {
+              "name": "約翰·C·賴利",
+              "char": "Agent West",
+              "photo": "https://image.tmdb.org/t/p/w500/iDQ8w4qcxU3le5ZWoCKpHs1QNok.jpg"
+            },
+            {
+              "name": "克利斯汀·史萊特",
+              "char": "Walton",
+              "photo": "https://image.tmdb.org/t/p/w500/6ww3uweEEXMlvtNjTlgBHxLErPF.jpg"
+            },
+            {
+              "name": "Tati Gabrielle",
+              "char": "Skyler",
+              "photo": "https://image.tmdb.org/t/p/w500/txZTL1HkPVxliTilbjlwR51VIt6.jpg"
+            },
+            {
+              "name": "英·馬齊諾",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/cRuVRx1DMe2hBkz5pssVqdpCtaQ.jpg"
+            },
+            {
+              "name": "Michael Gandolfini",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/949lN8eoD3oXx1TmpjzmPQvt2TI.jpg"
+            },
+            {
+              "name": "Sam Lerner",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/tHTUqTxciQIEdQYdaKWPorWyRbm.jpg"
+            },
+            {
+              "name": "Thomas C. Stuhr",
+              "char": "Virginia Bank Teller",
+              "photo": "https://image.tmdb.org/t/p/w500/xQRC2fdX1bd8u6LujxUPPa1WCz6.jpg"
+            },
+            {
+              "name": "Gloria Laino",
+              "char": "Mimi Contreras",
+              "photo": "https://image.tmdb.org/t/p/w500/ll7ALAcxgo0DhFsDqNcwmPb4Bw3.jpg"
+            },
+            {
+              "name": "Johnna Leary",
+              "char": "Protester 29",
+              "photo": null
+            },
+            {
+              "name": "Ryan Beatrice",
+              "char": "CORE Protestor",
+              "photo": null
+            },
+            {
+              "name": "Andy S. Allen",
+              "char": "Bank Manager",
+              "photo": "https://image.tmdb.org/t/p/w500/6IOQRMGkcpD2hY9hQ0uDu2EgGuF.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "大衛·雷奇",
+              "job": "Director"
+            },
+            {
+              "name": "Mark Bianculli",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "en",
+          "origTitle": "How to Rob a Bank",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1437511?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1300968,
         "titleZh": "飢餓遊戲：黎明收割",
         "titleEn": "The Hunger Games: Sunrise on the Reaping",
@@ -24056,11 +24305,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -24168,11 +24417,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
