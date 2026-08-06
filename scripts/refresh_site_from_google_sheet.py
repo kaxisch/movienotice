@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 
 import weekly_check as weekly
 from publish_to_google_sheet import (
+    ATMOVIES_HANDOFF_DAYS,
     CANDIDATES_SHEET_TITLE,
     RERELEASES_SHEET_TITLE,
     load_service_account_credentials,
@@ -150,6 +151,8 @@ def should_hide_for_atmovies_absence(candidate, release_date, today, manual_ids)
     """對已進入開眼接手範圍的非人工電影套用連續缺席隱藏規則。"""
     tmdb_id = candidate.get("tmdb_id")
     if tmdb_id in manual_ids:
+        return False
+    if release_date > today + timedelta(days=ATMOVIES_HANDOFF_DAYS):
         return False
     if sheet_value_is_true(candidate.get("atmovies_present")):
         return False
