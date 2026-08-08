@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-08T23:59:53.677701+08:00",
+  "generated_at": "2026-08-09T03:10:31.998424+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 59,
-    "soon_count": 56
+    "soon_count": 57
   },
   "movies": {
     "now": [
@@ -9587,15 +9587,15 @@
         ],
         "crew": [
           {
+            "name": "鄒時擎",
+            "job": "Writer"
+          },
+          {
+            "name": "鄒時擎",
+            "job": "Director"
+          },
+          {
             "name": "西恩·貝克",
-            "job": "Director"
-          },
-          {
-            "name": "鄒時擎",
-            "job": "Director"
-          },
-          {
-            "name": "鄒時擎",
             "job": "Writer"
           }
         ],
@@ -9708,15 +9708,15 @@
           ],
           "crew": [
             {
+              "name": "鄒時擎",
+              "job": "Writer"
+            },
+            {
+              "name": "鄒時擎",
+              "job": "Director"
+            },
+            {
               "name": "西恩·貝克",
-              "job": "Director"
-            },
-            {
-              "name": "鄒時擎",
-              "job": "Director"
-            },
-            {
-              "name": "鄒時擎",
               "job": "Writer"
             }
           ],
@@ -17615,12 +17615,12 @@
         ],
         "crew": [
           {
-            "name": "石立太一",
-            "job": "Director"
-          },
-          {
             "name": "花田十輝",
             "job": "Screenplay"
+          },
+          {
+            "name": "石立太一",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -17736,12 +17736,12 @@
           ],
           "crew": [
             {
-              "name": "石立太一",
-              "job": "Director"
-            },
-            {
               "name": "花田十輝",
               "job": "Screenplay"
+            },
+            {
+              "name": "石立太一",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -25854,6 +25854,227 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1003596?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1384758,
+        "titleZh": "冰原歷險記6：沸常危機",
+        "titleEn": "Ice Age: Boiling Point",
+        "releaseDate": "2027-02-05",
+        "twTheatricalReleases": [
+          {
+            "date": "2027-02-05",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/2vdKs8xgngUXRS3YEoxhWNTdW6.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pJfMliqzzVzTU634zpYDMfYNX6c.jpg",
+        "voteAverage": "",
+        "genre": [
+          "冒險",
+          "動畫",
+          "喜劇",
+          "家庭"
+        ],
+        "duration": "",
+        "synopsis": "觀眾所熟悉的經典角色曼尼、狄亞哥、喜德、巴克以及艾莉全數回歸，將與執著於橡實的鼠奎特、可愛搗蛋的負鼠兄弟可拉鼠與愛迪及小鼠奎特再度集結。這次，冰原歷險記家族從火山口猛烈噴發而出，意外闖入充滿恐龍與熔岩危機的瘋狂世界，踏上前往神秘「失落世界」未知角落的驚險旅程，迎接前所未見的挑戰與爆笑冒險。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "NsUbanX2a-k",
+        "cast": [
+          {
+            "name": "Ray Romano",
+            "char": "Manny (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/zWT03QvuVYySlrjmHCojKrNYjoC.jpg"
+          },
+          {
+            "name": "丹尼斯·利瑞",
+            "char": "Diego (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/tAOziVWQBnrW9eR442M6g9SQkmA.jpg"
+          },
+          {
+            "name": "約翰·李古查摩",
+            "char": "Sid (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg"
+          },
+          {
+            "name": "賽門·佩吉",
+            "char": "Buck (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jw8bEEoTOithyNf0qxu4Zt1yaKp.jpg"
+          },
+          {
+            "name": "拉蒂法皇后",
+            "char": "Ellie (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/AeNoPcSWTsl1mOxiyXAKjVnzrwl.jpg"
+          },
+          {
+            "name": "西恩·威廉·史考特",
+            "char": "Crash (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/mKc2YXdh8d4U2jYDwpLWaOY6Jwg.jpg"
+          },
+          {
+            "name": "Josh Peck",
+            "char": "Eddie (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qoapD8slSdb550o1JEoepv1SvT0.jpg"
+          },
+          {
+            "name": "珍妮弗·洛佩茲",
+            "char": "Shira (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/go2wwj8NGLYqKr7MdqbG3nLWICX.jpg"
+          },
+          {
+            "name": "Jessie J",
+            "char": "Brooke (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/lqiz3yApHYzo6zKNuoJDq2B7JVq.jpg"
+          },
+          {
+            "name": "琪琪·帕瑪",
+            "char": "Peaches (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/x3eFVQVw4vOCJByLlkBnMMwEnG7.jpg"
+          },
+          {
+            "name": "Chris Wedge",
+            "char": "Scrat (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/mB0lfkbJEQ6lNsGgIcCMszAZYbu.jpg"
+          },
+          {
+            "name": "凱莉·華格倫",
+            "char": "Baby Scrat (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/kc0BOnSdzCfq8w9qoNVEm5K12x1.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "John Donkin",
+            "job": "Director"
+          },
+          {
+            "name": "Michael J. Wilson",
+            "job": "Writer"
+          },
+          {
+            "name": "Michael Berg",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "en",
+        "origTitle": "Ice Age: Boiling Point",
+        "platforms": [],
+        "popularity": 8.1847,
+        "imdbId": "tt34512981",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "冒險",
+            "動畫",
+            "喜劇",
+            "家庭"
+          ],
+          "synopsis": "觀眾所熟悉的經典角色曼尼、狄亞哥、喜德、巴克以及艾莉全數回歸，將與執著於橡實的鼠奎特、可愛搗蛋的負鼠兄弟可拉鼠與愛迪及小鼠奎特再度集結。這次，冰原歷險記家族從火山口猛烈噴發而出，意外闖入充滿恐龍與熔岩危機的瘋狂世界，踏上前往神秘「失落世界」未知角落的驚險旅程，迎接前所未見的挑戰與爆笑冒險。",
+          "poster": "https://image.tmdb.org/t/p/w500/2vdKs8xgngUXRS3YEoxhWNTdW6.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pJfMliqzzVzTU634zpYDMfYNX6c.jpg",
+          "voteAverage": "",
+          "trailerKey": "NsUbanX2a-k",
+          "imdbId": "tt34512981",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "Ray Romano",
+              "char": "Manny (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/zWT03QvuVYySlrjmHCojKrNYjoC.jpg"
+            },
+            {
+              "name": "丹尼斯·利瑞",
+              "char": "Diego (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/tAOziVWQBnrW9eR442M6g9SQkmA.jpg"
+            },
+            {
+              "name": "約翰·李古查摩",
+              "char": "Sid (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg"
+            },
+            {
+              "name": "賽門·佩吉",
+              "char": "Buck (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jw8bEEoTOithyNf0qxu4Zt1yaKp.jpg"
+            },
+            {
+              "name": "拉蒂法皇后",
+              "char": "Ellie (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/AeNoPcSWTsl1mOxiyXAKjVnzrwl.jpg"
+            },
+            {
+              "name": "西恩·威廉·史考特",
+              "char": "Crash (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/mKc2YXdh8d4U2jYDwpLWaOY6Jwg.jpg"
+            },
+            {
+              "name": "Josh Peck",
+              "char": "Eddie (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qoapD8slSdb550o1JEoepv1SvT0.jpg"
+            },
+            {
+              "name": "珍妮弗·洛佩茲",
+              "char": "Shira (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/go2wwj8NGLYqKr7MdqbG3nLWICX.jpg"
+            },
+            {
+              "name": "Jessie J",
+              "char": "Brooke (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/lqiz3yApHYzo6zKNuoJDq2B7JVq.jpg"
+            },
+            {
+              "name": "琪琪·帕瑪",
+              "char": "Peaches (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/x3eFVQVw4vOCJByLlkBnMMwEnG7.jpg"
+            },
+            {
+              "name": "Chris Wedge",
+              "char": "Scrat (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/mB0lfkbJEQ6lNsGgIcCMszAZYbu.jpg"
+            },
+            {
+              "name": "凱莉·華格倫",
+              "char": "Baby Scrat (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/kc0BOnSdzCfq8w9qoNVEm5K12x1.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "John Donkin",
+              "job": "Director"
+            },
+            {
+              "name": "Michael J. Wilson",
+              "job": "Writer"
+            },
+            {
+              "name": "Michael Berg",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "en",
+          "origTitle": "Ice Age: Boiling Point",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1384758?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
