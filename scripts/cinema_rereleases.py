@@ -13,6 +13,11 @@ SOURCE_URLS = {
     "vieshow_soon": "https://www.vscinemas.com.tw/film/coming.aspx",
     "showtime": "https://www.showtimes.com.tw/programs/",
     "ambassador": "https://www.ambassador.com.tw/home/MovieList?Type=1",
+    "spot_huashan_now": "https://www.spot-hs.org.tw/movie/nowplaying.html",
+    "spot_huashan_soon": "https://www.spot-hs.org.tw/movie/comingsoon.html",
+    "wonderful_now": "https://wonderful.movie.com.tw/movie/index?type=online",
+    "wonderful_soon": "https://wonderful.movie.com.tw/movie/index?type=upcoming",
+    "eslite": "https://meet.eslite.com/tw/tc/gallery/201803020001",
 }
 RERELEASE_PATTERN = re.compile(
     r"重映|重新上映|重返(?:大)?銀幕|經典重現|(?:數位|數字|4k|2k)\s*(?:經典)?修復(?:版)?",
@@ -135,6 +140,110 @@ def parse_showtime(html, today=None):
         })
     if len(movies) < 5:
         raise ValueError(f"秀泰片單數量異常：{len(movies)}")
+    return movies
+
+
+def parse_spot_huashan(html, status="now", page_url=None):
+    """解析光點華山現正放映或即將上映片單。"""
+    page_url = page_url or SOURCE_URLS["spot_huashan_now"]
+    soup = BeautifulSoup(html, "html.parser")
+    movies = []
+    for card in soup.select("div.nowplayingdiv"):
+        anchor = card.select_one("a[href]")
+        title = card.select_one(".nowplayingtext_title")
+        english = card.select_one(".nowplayingtext_eng")
+        date_node = card.select_one(".nowplayingtext6")
+        match = re.search(
+            r"(20\d{2})/(\d{1,2})/(\d{1,2})",
+            date_node.get_text(" ", strip=True) if date_node else "",
+        )
+        if not anchor or not title or not match:
+            continue
+        movies.append({
+            "title_zh": title.get_text(" ", strip=True),
+            "title_en": english.get_text(" ", strip=True) if english else "",
+            "release_date_tw": (
+                f"{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
+            ),
+            "status": status,
+            "source": "spot_huashan",
+            "source_url": urljoin(page_url, anchor.get("href", "")),
+        })
+    if len(movies) < 5:
+        raise ValueError(f"光點華山片單數量異常：{len(movies)}")
+    return movies
+
+
+def parse_wonderful(html, status="now", page_url=None):
+    """解析台北真善美劇院現正上映或即將上映片單。"""
+    page_url = page_url or SOURCE_URLS["wonderful_now"]
+    soup = BeautifulSoup(html, "html.parser")
+    movies = []
+    for card in soup.select("ul.movie_list a.poster_wrap[href]"):
+        title = card.select_one(".movie_title")
+        time_node = card.select_one(".time")
+        match = re.search(
+            r"(20\d{2})/(\d{1,2})/(\d{1,2})",
+            time_node.get_text(" ", strip=True) if time_node else "",
+        )
+        if not title or not match:
+            continue
+        movies.append({
+            "title_zh": title.get_text(" ", strip=True),
+            "title_en": "",
+            "release_date_tw": (
+                f"{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
+            ),
+            "status": status,
+            "source": "wonderful",
+            "source_url": urljoin(page_url, card.get("href", "")),
+        })
+    if len(movies) < 5:
+        raise ValueError(f"真善美片單數量異常：{len(movies)}")
+    return movies
+
+
+def parse_eslite(html, today=None):
+    """解析誠品電影院官方活動列表中的電影上映日期。"""
+    today = today or date.today()
+    soup = BeautifulSoup(html, "html.parser")
+    movies = []
+    seen = set()
+    for anchor in soup.select("a[href*='/artshow/']"):
+        href = urljoin(SOURCE_URLS["eslite"], anchor.get("href", ""))
+        if href in seen:
+            continue
+        container = anchor
+        for parent in anchor.parents:
+            if getattr(parent, "name", None) not in {"li", "article", "div"}:
+                continue
+            if re.search(r"上映日期\s*[|∣：:]?\s*20\d{2}", parent.get_text(" ", strip=True)):
+                container = parent
+                break
+        text_value = container.get_text(" ", strip=True)
+        match = re.search(r"上映日期\s*[|∣：:]?\s*(20\d{2})[年/]\s*(\d{1,2})[月/]\s*(\d{1,2})日?", text_value)
+        if not match:
+            continue
+        image = anchor.select_one("img[alt]")
+        title = (image.get("alt", "").strip() if image else "") or anchor.get_text(" ", strip=True)
+        title = re.sub(r"\s*上映日期.*$", "", title).strip()
+        if not title:
+            continue
+        seen.add(href)
+        movies.append({
+            "title_zh": title,
+            "title_en": "",
+            "release_date_tw": (
+                f"{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
+            ),
+            "status": "soon" if date.fromisoformat(
+                f"{match.group(1)}-{int(match.group(2)):02d}-{int(match.group(3)):02d}"
+            ) > today else "now",
+            "source": "eslite",
+            "source_url": href,
+        })
+    if len(movies) < 5:
+        raise ValueError(f"誠品電影院片單數量異常：{len(movies)}")
     return movies
 
 
