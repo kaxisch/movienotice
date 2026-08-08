@@ -301,6 +301,7 @@ def build_verified_output(candidates):
             "title_en": movie.get("original_title", ""),
             "atmovies_id": source.get("atmovies_id", ""),
             "atmovies_url": source.get("atmovies_url", ""),
+            "candidate_kind": source.get("candidate_kind", ""),
             "source_bucket": "now" if release_date <= today else "next",
             "continuous_run": continuous_run,
         })

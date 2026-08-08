@@ -1247,7 +1247,12 @@ def should_keep_static_movie(movie, record):
     release_date = parse_iso_date(movie.get("releaseDate", ""))
     if not release_date:
         return False
-    if record.get("source_bucket") != "manual" and not record.get("atmovies_id") and movie.get("platforms"):
+    if (
+        record.get("source_bucket") != "manual"
+        and record.get("candidate_kind") != "rerelease"
+        and not record.get("atmovies_id")
+        and movie.get("platforms")
+    ):
         return False
     duration = movie.get("duration") or 0
     if duration and duration <= 60:
