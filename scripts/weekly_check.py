@@ -650,13 +650,26 @@ def choose_rerelease_tmdb_match(movie):
     """配對影城候選；明確重映標記才忽略本次上映年份。"""
     from cinema_rereleases import has_rerelease_marker, strip_rerelease_labels
 
-    override = load_tmdb_overrides().get(movie.get("atmovies_id", ""))
+    overrides = load_tmdb_overrides()
+    override = overrides.get(movie.get("atmovies_id", ""))
+    if not override:
+        requested_title_keys = {
+            normalize_title_key(movie.get("title_zh")),
+            normalize_title_key(movie.get("title_en")),
+        } - {""}
+        override = next((
+            value for value in overrides.values()
+            if requested_title_keys.intersection(
+                normalize_title_key(title) for title in value.get("source_titles", [])
+            )
+        ), None)
     if override and override.get("tmdb_id"):
         result = tmdb_movie(override["tmdb_id"])
         if result:
             result = dict(result)
             result["_match_score"] = 1000
-            log(f"  TMDB rerelease override: {movie.get('atmovies_id')} -> {result['id']}")
+            source_key = movie.get("atmovies_id") or movie.get("title_zh") or movie.get("title_en")
+            log(f"  TMDB rerelease override: {source_key} -> {result['id']}")
             return result
 
     title_zh = strip_rerelease_labels(movie.get("title_zh")) or movie.get("title_zh", "")

@@ -35,6 +35,26 @@ class CinemaParserTests(unittest.TestCase):
 
         self.assertEqual(result["id"], 45580)
 
+    @patch("weekly_check.tmdb_movie")
+    @patch("weekly_check.load_tmdb_overrides")
+    def test_rerelease_match_honors_cross_cinema_title_override(self, overrides, tmdb_movie):
+        overrides.return_value = {
+            "fsjp31415228": {"tmdb_id": 45580, "source_titles": ["手拉你", "SOLANIN"]}
+        }
+        tmdb_movie.return_value = {
+            "id": 45580,
+            "title": "樂與路",
+            "original_title": "ソラニン",
+            "release_date": "2010-04-03",
+        }
+
+        result = weekly.choose_rerelease_tmdb_match({
+            "title_zh": "SOLANIN",
+            "release_date_tw": "2026-07-31",
+        })
+
+        self.assertEqual(result["id"], 45580)
+
     def test_ambassador_parser_reads_both_statuses_and_dates(self):
         html = """
         <div class="movie-list"><div class="cell"><div class="title">
