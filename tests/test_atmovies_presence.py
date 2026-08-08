@@ -300,6 +300,20 @@ class RefreshVisibilityTests(unittest.TestCase):
 
         self.assertEqual(indexed[101]["candidate_kind"], "rerelease")
 
+    def test_verified_rerelease_is_not_filtered_as_streaming_only_without_atmovies_id(self):
+        movie = {
+            "releaseDate": "2026-07-24",
+            "platforms": ["Some streaming platform"],
+            "duration": 123,
+        }
+        record = {
+            "candidate_kind": "rerelease",
+            "source_bucket": "now",
+            "atmovies_id": "",
+        }
+
+        self.assertTrue(weekly.should_keep_static_movie(movie, record))
+
     def test_now_movie_hides_on_second_miss(self):
         self.assertEqual(publish.NOW_ATMOVIES_MISS_LIMIT, refresh.NOW_ATMOVIES_MISS_LIMIT)
         release_date = date(2026, 7, 17)
