@@ -1588,7 +1588,6 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         merge_raw_movies,
         parse_ambassador,
         parse_ambassador_release_date,
-        parse_eslite,
         parse_spot_huashan,
         parse_showtime,
         parse_wonderful,
@@ -1604,7 +1603,6 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         "ambassador": False,
         "spot_huashan": False,
         "wonderful": False,
-        "eslite": False,
     }
     cinema_movies = []
 
@@ -1663,13 +1661,6 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         source_health["wonderful"] = True
     except Exception as error:
         log(f"Cinema audit warning: Wonderful failed: {error}")
-
-    try:
-        html = fetch_html(SOURCE_URLS["eslite"], USER_AGENT)
-        cinema_movies.extend(parse_eslite(html, generated_at_local.date()))
-        source_health["eslite"] = True
-    except Exception as error:
-        log(f"Cinema audit warning: Eslite failed: {error}")
 
     matched = {}
     review_rows = []
