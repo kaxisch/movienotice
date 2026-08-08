@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-08T18:06:00.120195+08:00",
+  "generated_at": "2026-08-08T21:30:16.257800+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 58,
+    "now_count": 59,
     "soon_count": 56
   },
   "movies": {
@@ -280,6 +280,287 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/374205?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 481432,
+        "titleZh": "幸福的拉札洛",
+        "titleEn": "Lazzaro felice",
+        "releaseDate": "2026-08-07",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-07",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/jwPwk6csZnDLrgvNuDR76LDv7op.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zTnpY0BXP6ytvV4ZMsAmsIEDmNM.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "劇情",
+          "奇幻"
+        ],
+        "duration": 128,
+        "synopsis": "故事描述拉扎洛是一位內心單純的年輕農民在一個與世隔絕的義大利小城內生活，與個性驕縱的莊園少爺坦奎迪從僱傭關係意外結為好友。某天，坦奎迪自導自演了一場無聊的綁架鬧劇，沒料到卻在這鬧劇中衍生出另一場意外，讓拉扎洛穿越時空到多年以後，他要如何面對毫無所知的新世界呢？",
+        "imdb": "7.5",
+        "rt": "91%",
+        "mc": "87",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 22420,
+            "lastChanged": "2026-08-08T21:30:16.257800+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 92,
+            "lastChanged": "2026-08-08T21:30:16.257800+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 27,
+            "lastChanged": "2026-08-08T21:30:16.257800+08:00"
+          }
+        },
+        "trailerKey": "ZT2xv-rZ-eM",
+        "cast": [
+          {
+            "name": "Adriano Tardiolo",
+            "char": "Lazzaro",
+            "photo": "https://image.tmdb.org/t/p/w500/dBZlZ3QDPaNmhhjhO5gwHmet2KE.jpg"
+          },
+          {
+            "name": "Agnese Graziani",
+            "char": "Antonia (young)",
+            "photo": "https://image.tmdb.org/t/p/w500/dhHTy7jIUfPXpMzm6WnIVtt1nmA.jpg"
+          },
+          {
+            "name": "Luca Chikovani",
+            "char": "Tancredi (young)",
+            "photo": "https://image.tmdb.org/t/p/w500/9i3Ixe0tXIw5GhxPGaXwI2WMbYk.jpg"
+          },
+          {
+            "name": "艾芭·羅爾瓦雀",
+            "char": "Antonia",
+            "photo": "https://image.tmdb.org/t/p/w500/swffcvnDnj5966fdLSnXOMY186.jpg"
+          },
+          {
+            "name": "Sergi López",
+            "char": "Ultimo",
+            "photo": "https://image.tmdb.org/t/p/w500/n3HcmUflYYaHUiQmzaayi0yqcRf.jpg"
+          },
+          {
+            "name": "Tommaso Ragno",
+            "char": "Tancredi",
+            "photo": "https://image.tmdb.org/t/p/w500/jxCSg7hYjhilnYpTjXCFjGox5v6.jpg"
+          },
+          {
+            "name": "Natalino Balasso",
+            "char": "Nicola",
+            "photo": "https://image.tmdb.org/t/p/w500/fbPLujBl9KrUt7cBj3bOokP1gYA.jpg"
+          },
+          {
+            "name": "尼科萊塔·布拉斯基",
+            "char": "Marchesa Alfonsina De Luna",
+            "photo": "https://image.tmdb.org/t/p/w500/9IeE3Iz9HXZVTrvhjSCKlR4FLxB.jpg"
+          },
+          {
+            "name": "Carlo Massimino",
+            "char": "Pippo",
+            "photo": null
+          },
+          {
+            "name": "Daria Pascal Attolini",
+            "char": "Maria Grazia (Adult)",
+            "photo": null
+          },
+          {
+            "name": "Maddalena Baiocco",
+            "char": "Stefania",
+            "photo": null
+          },
+          {
+            "name": "Giulia Caccavello",
+            "char": "Teresa",
+            "photo": null
+          },
+          {
+            "name": "Annunziata Capretto",
+            "char": "Natalina anziana",
+            "photo": null
+          },
+          {
+            "name": "Alessandro Genovesi",
+            "char": "Maresciallo",
+            "photo": "https://image.tmdb.org/t/p/w500/agk2QJ41GBBr7MPif03yGIc9x7L.jpg"
+          },
+          {
+            "name": "Davide Denci",
+            "char": "Appuntato",
+            "photo": null
+          },
+          {
+            "name": "Edoardo Montalto",
+            "char": "Pippo (young)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "艾莉絲·羅爾瓦雀",
+            "job": "Writer"
+          },
+          {
+            "name": "艾莉絲·羅爾瓦雀",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "it",
+        "origTitle": "Lazzaro felice",
+        "platforms": [
+          {
+            "name": "MUBI",
+            "logo": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg"
+          }
+        ],
+        "popularity": 3.1936,
+        "imdbId": "tt6752992",
+        "countries": [
+          "France",
+          "Germany",
+          "Italy",
+          "Switzerland"
+        ],
+        "detail": {
+          "duration": 128,
+          "genres": [
+            "劇情",
+            "奇幻"
+          ],
+          "synopsis": "故事描述拉扎洛是一位內心單純的年輕農民在一個與世隔絕的義大利小城內生活，與個性驕縱的莊園少爺坦奎迪從僱傭關係意外結為好友。某天，坦奎迪自導自演了一場無聊的綁架鬧劇，沒料到卻在這鬧劇中衍生出另一場意外，讓拉扎洛穿越時空到多年以後，他要如何面對毫無所知的新世界呢？",
+          "poster": "https://image.tmdb.org/t/p/w500/jwPwk6csZnDLrgvNuDR76LDv7op.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/zTnpY0BXP6ytvV4ZMsAmsIEDmNM.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": "ZT2xv-rZ-eM",
+          "imdbId": "tt6752992",
+          "countries": [
+            "France",
+            "Germany",
+            "Italy",
+            "Switzerland"
+          ],
+          "cast": [
+            {
+              "name": "Adriano Tardiolo",
+              "char": "Lazzaro",
+              "photo": "https://image.tmdb.org/t/p/w500/dBZlZ3QDPaNmhhjhO5gwHmet2KE.jpg"
+            },
+            {
+              "name": "Agnese Graziani",
+              "char": "Antonia (young)",
+              "photo": "https://image.tmdb.org/t/p/w500/dhHTy7jIUfPXpMzm6WnIVtt1nmA.jpg"
+            },
+            {
+              "name": "Luca Chikovani",
+              "char": "Tancredi (young)",
+              "photo": "https://image.tmdb.org/t/p/w500/9i3Ixe0tXIw5GhxPGaXwI2WMbYk.jpg"
+            },
+            {
+              "name": "艾芭·羅爾瓦雀",
+              "char": "Antonia",
+              "photo": "https://image.tmdb.org/t/p/w500/swffcvnDnj5966fdLSnXOMY186.jpg"
+            },
+            {
+              "name": "Sergi López",
+              "char": "Ultimo",
+              "photo": "https://image.tmdb.org/t/p/w500/n3HcmUflYYaHUiQmzaayi0yqcRf.jpg"
+            },
+            {
+              "name": "Tommaso Ragno",
+              "char": "Tancredi",
+              "photo": "https://image.tmdb.org/t/p/w500/jxCSg7hYjhilnYpTjXCFjGox5v6.jpg"
+            },
+            {
+              "name": "Natalino Balasso",
+              "char": "Nicola",
+              "photo": "https://image.tmdb.org/t/p/w500/fbPLujBl9KrUt7cBj3bOokP1gYA.jpg"
+            },
+            {
+              "name": "尼科萊塔·布拉斯基",
+              "char": "Marchesa Alfonsina De Luna",
+              "photo": "https://image.tmdb.org/t/p/w500/9IeE3Iz9HXZVTrvhjSCKlR4FLxB.jpg"
+            },
+            {
+              "name": "Carlo Massimino",
+              "char": "Pippo",
+              "photo": null
+            },
+            {
+              "name": "Daria Pascal Attolini",
+              "char": "Maria Grazia (Adult)",
+              "photo": null
+            },
+            {
+              "name": "Maddalena Baiocco",
+              "char": "Stefania",
+              "photo": null
+            },
+            {
+              "name": "Giulia Caccavello",
+              "char": "Teresa",
+              "photo": null
+            },
+            {
+              "name": "Annunziata Capretto",
+              "char": "Natalina anziana",
+              "photo": null
+            },
+            {
+              "name": "Alessandro Genovesi",
+              "char": "Maresciallo",
+              "photo": "https://image.tmdb.org/t/p/w500/agk2QJ41GBBr7MPif03yGIc9x7L.jpg"
+            },
+            {
+              "name": "Davide Denci",
+              "char": "Appuntato",
+              "photo": null
+            },
+            {
+              "name": "Edoardo Montalto",
+              "char": "Pippo (young)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "艾莉絲·羅爾瓦雀",
+              "job": "Writer"
+            },
+            {
+              "name": "艾莉絲·羅爾瓦雀",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "it",
+          "origTitle": "Lazzaro felice",
+          "platforms": [
+            {
+              "name": "MUBI",
+              "logo": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/481432?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -7084,7 +7365,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 481,
+            "votes": 486,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
@@ -14607,7 +14888,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/upNeU9FNGAvdhnoThvv64Z0MWKn.jpg",
-        "voteAverage": "7.2",
+        "voteAverage": "7.6",
         "genre": [
           "冒險",
           "動畫",
@@ -14740,7 +15021,7 @@
           "synopsis": "飛船被捲入一場神秘風暴，汪汪隊的狗狗們於是迫降在一座充滿恐龍的未知熱帶小島，並遇見了受困在小島多年、精通所有恐龍知識的狗狗雷克斯。汪汪隊的死對頭韓丁納市長覬覦小島的天然資源，便展開魯莽的開採行動，卻意外引發了休眠火山的大爆發。汪汪隊因此必須展開前所未有、風險升級的恐龍級救援任務，在這座小島上的一切滅絕之前阻止韓丁納。",
           "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/upNeU9FNGAvdhnoThvv64Z0MWKn.jpg",
-          "voteAverage": "7.2",
+          "voteAverage": "7.6",
           "trailerKey": "-juvWuW6hLg",
           "imdbId": "tt29356163",
           "countries": [
@@ -21655,7 +21936,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/ycnfDX7shszJ0xqUEONt9RnDwhK.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/uA8ytJv17alSiREcUthbYAdiPCX.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
         "voteAverage": "",
@@ -21751,7 +22032,7 @@
             "喜劇"
           ],
           "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/ycnfDX7shszJ0xqUEONt9RnDwhK.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/uA8ytJv17alSiREcUthbYAdiPCX.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
           "voteAverage": "",
           "trailerKey": "fmMoGBw0Dkk",
@@ -21847,7 +22128,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ajeiriNRFPLESjGZ0vdp4MVardZ.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/e5LTUuIumJCgeoAApfCXhKUZ1UH.jpg",
-        "voteAverage": "7.8",
+        "voteAverage": "7.7",
         "genre": [
           "劇情",
           "歷史",
@@ -21993,7 +22274,7 @@
           "synopsis": "1936年，巴勒斯坦村莊起來反抗英國殖民統治，優素福在耶路撒冷和鄉間老家之間奔波，當時局勢動盪加劇，英國也正處於一個關鍵時刻。",
           "poster": "https://image.tmdb.org/t/p/w500/ajeiriNRFPLESjGZ0vdp4MVardZ.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/e5LTUuIumJCgeoAApfCXhKUZ1UH.jpg",
-          "voteAverage": "7.8",
+          "voteAverage": "7.7",
           "trailerKey": null,
           "imdbId": "tt29271622",
           "countries": [
