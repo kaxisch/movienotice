@@ -46,7 +46,13 @@ IMG_W = "https://image.tmdb.org/t/p/w500"
 IMG_BG = "https://image.tmdb.org/t/p/w1280"
 NOW_LOOKBACK_DAYS = 180
 SOON_WINDOW_DAYS = 180
-RERELEASE_ABSENCE_REQUIRED_SOURCES = ("atmovies", "showtime", "ambassador")
+RERELEASE_ABSENCE_REQUIRED_SOURCES = (
+    "atmovies",
+    "showtime",
+    "ambassador",
+    "spot_huashan",
+    "wonderful",
+)
 GENRE_MAP = {
     "动作": "動作",
     "冒险": "冒險",
@@ -1564,13 +1570,24 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         merge_raw_movies,
         parse_ambassador,
         parse_ambassador_release_date,
+        parse_eslite,
+        parse_spot_huashan,
         parse_showtime,
+        parse_wonderful,
         parse_vieshow,
         tmdb_date_status,
         vieshow_page_count,
     )
 
-    source_health = {"atmovies": True, "vieshow": False, "showtime": False, "ambassador": False}
+    source_health = {
+        "atmovies": True,
+        "vieshow": False,
+        "showtime": False,
+        "ambassador": False,
+        "spot_huashan": False,
+        "wonderful": False,
+        "eslite": False,
+    }
     cinema_movies = []
 
     try:
@@ -1610,6 +1627,31 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         source_health["ambassador"] = True
     except Exception as error:
         log(f"Cinema audit warning: Ambassador failed: {error}")
+
+    try:
+        for status, source_key in (("now", "spot_huashan_now"), ("soon", "spot_huashan_soon")):
+            page_url = SOURCE_URLS[source_key]
+            html = fetch_html(page_url, USER_AGENT)
+            cinema_movies.extend(parse_spot_huashan(html, status, page_url))
+        source_health["spot_huashan"] = True
+    except Exception as error:
+        log(f"Cinema audit warning: Spot Huashan failed: {error}")
+
+    try:
+        for status, source_key in (("now", "wonderful_now"), ("soon", "wonderful_soon")):
+            page_url = SOURCE_URLS[source_key]
+            html = fetch_html(page_url, USER_AGENT)
+            cinema_movies.extend(parse_wonderful(html, status, page_url))
+        source_health["wonderful"] = True
+    except Exception as error:
+        log(f"Cinema audit warning: Wonderful failed: {error}")
+
+    try:
+        html = fetch_html(SOURCE_URLS["eslite"], USER_AGENT)
+        cinema_movies.extend(parse_eslite(html, generated_at_local.date()))
+        source_health["eslite"] = True
+    except Exception as error:
+        log(f"Cinema audit warning: Eslite failed: {error}")
 
     matched = {}
     review_rows = []

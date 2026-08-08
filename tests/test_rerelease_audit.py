@@ -74,6 +74,75 @@ class CinemaParserTests(unittest.TestCase):
         )
         self.assertEqual([movie["status"] for movie in movies[:3]], ["now", "now", "soon"])
 
+    def test_spot_huashan_parser_reads_current_rerelease_dates(self):
+        cards = "".join(
+            f'''<div class="nowplayingdiv"><a href="movie202607/movie{index}.html">
+              <div class="nowplayingtext_title">{title}</div>
+              <div class="nowplayingtext_eng">{english}</div>
+              <div class="nowplayingtext6">{release_date}起</div>
+            </a></div>'''
+            for index, (title, english, release_date) in enumerate([
+                ("SOLANIN", "", "2026/7/31"),
+                ("蜂蜜之夏", "The Wonders", "2026/7/24"),
+                ("電影三", "Movie Three", "2026/8/1"),
+                ("電影四", "Movie Four", "2026/8/2"),
+                ("電影五", "Movie Five", "2026/8/3"),
+            ])
+        )
+        movies = cinema.parse_spot_huashan(cards)
+        self.assertEqual(movies[0]["release_date_tw"], "2026-07-31")
+        self.assertEqual(movies[0]["source"], "spot_huashan")
+        self.assertEqual(movies[1]["title_en"], "The Wonders")
+        self.assertEqual(movies[1]["release_date_tw"], "2026-07-24")
+
+        upcoming = cinema.parse_spot_huashan(cards, "soon", "https://www.spot-hs.org.tw/movie/comingsoon.html")
+        self.assertTrue(all(movie["status"] == "soon" for movie in upcoming))
+
+    def test_wonderful_parser_reads_current_release_dates(self):
+        cards = "".join(
+            f'''<li><a class="poster_wrap" href="/movie/inner?id={index}">
+              <p class="movie_title">{title}</p>
+              <p class="time">{release_date} 上　　映</p>
+            </a></li>'''
+            for index, (title, release_date) in enumerate([
+                ("壞痞子4K修復版", "2026/07/31"),
+                ("電影二", "2026/08/01"),
+                ("電影三", "2026/08/02"),
+                ("電影四", "2026/08/03"),
+                ("電影五", "2026/08/04"),
+            ])
+        )
+        movies = cinema.parse_wonderful(f'<ul class="movie_list">{cards}</ul>')
+        self.assertEqual(movies[0]["title_zh"], "壞痞子4K修復版")
+        self.assertEqual(movies[0]["release_date_tw"], "2026-07-31")
+        self.assertEqual(movies[0]["source"], "wonderful")
+
+        upcoming = cinema.parse_wonderful(
+            f'<ul class="movie_list">{cards}</ul>',
+            "soon",
+            "https://wonderful.movie.com.tw/movie/index?type=upcoming",
+        )
+        self.assertTrue(all(movie["status"] == "soon" for movie in upcoming))
+
+    def test_eslite_parser_reads_official_activity_release_dates(self):
+        cards = "".join(
+            f'''<div class="movie-card"><a href="/tw/tc/artshow/{index}">
+              <img alt="{title}"></a><p>上映日期 | {release_date}</p></div>'''
+            for index, (title, release_date) in enumerate([
+                ("蜂蜜之夏 The Wonders", "2026年7月24日"),
+                ("電影二", "2026/08/01"),
+                ("電影三", "2026/08/02"),
+                ("電影四", "2026/08/03"),
+                ("電影五", "2026/08/04"),
+            ])
+        )
+        movies = cinema.parse_eslite(cards, date(2026, 7, 31))
+        self.assertEqual(movies[0]["title_zh"], "蜂蜜之夏 The Wonders")
+        self.assertEqual(movies[0]["release_date_tw"], "2026-07-24")
+        self.assertEqual(movies[0]["source"], "eslite")
+        self.assertEqual(movies[0]["status"], "now")
+        self.assertEqual(movies[1]["status"], "soon")
+
     def test_rerelease_requires_marker_or_earlier_tw_theatrical_date(self):
         movie = {"title_zh": "普通舊片", "release_date_tw": "2026-08-05"}
         self.assertFalse(cinema.is_confirmed_rerelease(movie, {}, []))
@@ -208,6 +277,9 @@ class RereleasePresenceTests(unittest.TestCase):
             "showtime": True,
             "ambassador": True,
             "vieshow": False,
+            "spot_huashan": True,
+            "wonderful": True,
+            "eslite": True,
         }
         self.assertTrue(weekly.rerelease_absence_audit_complete(health, True))
 
@@ -217,10 +289,25 @@ class RereleasePresenceTests(unittest.TestCase):
             "showtime": False,
             "ambassador": True,
             "vieshow": False,
+            "spot_huashan": True,
+            "wonderful": True,
+            "eslite": True,
         }
         self.assertFalse(weekly.rerelease_absence_audit_complete(health, True))
         health["showtime"] = True
         self.assertFalse(weekly.rerelease_absence_audit_complete(health, False))
+
+    def test_eslite_failure_does_not_block_stable_source_absence_audit(self):
+        health = {
+            "atmovies": True,
+            "showtime": True,
+            "ambassador": True,
+            "vieshow": False,
+            "spot_huashan": True,
+            "wonderful": True,
+            "eslite": False,
+        }
+        self.assertTrue(weekly.rerelease_absence_audit_complete(health, True))
 
     def previous(self, misses=0, audit_date="2026-08-01"):
         return [{
