@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T00:01:42.227190+08:00",
+  "generated_at": "2026-08-10T03:18:52.149928+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 59,
@@ -412,11 +412,11 @@
         "crew": [
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -541,11 +541,11 @@
           "crew": [
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -664,15 +664,15 @@
         ],
         "crew": [
           {
+            "name": "Василий Ровенский",
+            "job": "Screenplay"
+          },
+          {
             "name": "Эльвира Буштец",
             "job": "Screenplay"
           },
           {
             "name": "Федор Деревянский",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Василий Ровенский",
             "job": "Screenplay"
           }
         ],
@@ -777,15 +777,15 @@
           ],
           "crew": [
             {
+              "name": "Василий Ровенский",
+              "job": "Screenplay"
+            },
+            {
               "name": "Эльвира Буштец",
               "job": "Screenplay"
             },
             {
               "name": "Федор Деревянский",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Василий Ровенский",
               "job": "Screenplay"
             }
           ],
@@ -5084,11 +5084,11 @@
         ],
         "crew": [
           {
-            "name": "Steve Ball",
+            "name": "Shea Wageman",
             "job": "Writer"
           },
           {
-            "name": "Shea Wageman",
+            "name": "Steve Ball",
             "job": "Writer"
           },
           {
@@ -5209,11 +5209,11 @@
           ],
           "crew": [
             {
-              "name": "Steve Ball",
+              "name": "Shea Wageman",
               "job": "Writer"
             },
             {
-              "name": "Shea Wageman",
+              "name": "Steve Ball",
               "job": "Writer"
             },
             {
@@ -5344,11 +5344,11 @@
         "crew": [
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -5465,11 +5465,11 @@
           "crew": [
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -8682,7 +8682,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/ifwgHdNobcGGSnL3neGH4n5Y4WB.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
         "voteAverage": "7.9",
         "genre": [
           "恐怖"
@@ -8757,14 +8757,19 @@
             "photo": "https://image.tmdb.org/t/p/w500/fAIXv88uXtJp1dH5qoMpsZxn8w1.jpg"
           },
           {
+            "name": "Alain Chabat",
+            "char": "Alice's Father (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xRjymE6LIJd0useKWN2R1WgKDRy.jpg"
+          },
+          {
+            "name": "Michael Hurst",
+            "char": "Benjamin Price (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/tBYX46fSi8jtp196U8L7Vd37KZW.jpg"
+          },
+          {
             "name": "Tapiwa Soropa",
             "char": "Server (Mike)",
             "photo": "https://image.tmdb.org/t/p/w500/uJzIrzQzt50PAx74MpJ1Tzqes2g.jpg"
-          },
-          {
-            "name": "Lara Macgregor",
-            "char": "Manager",
-            "photo": "https://image.tmdb.org/t/p/w500/j9YK2pAWU2klaCZcRpYDmWEnS2o.jpg"
           },
           {
             "name": "Shyamal Singh",
@@ -8772,14 +8777,9 @@
             "photo": "https://image.tmdb.org/t/p/w500/fbK6qvArrDNuyA8ASSNS11HnUqf.jpg"
           },
           {
-            "name": "Keagan Carr Fransch",
-            "char": "Firefighter",
-            "photo": null
-          },
-          {
-            "name": "Justin Benn",
-            "char": "Taxi Driver",
-            "photo": null
+            "name": "Lara Macgregor",
+            "char": "Manager",
+            "photo": "https://image.tmdb.org/t/p/w500/j9YK2pAWU2klaCZcRpYDmWEnS2o.jpg"
           },
           {
             "name": "Coco White",
@@ -8819,7 +8819,7 @@
           ],
           "synopsis": "丈夫過世後，一位女子前往婆家偏僻的宅邸尋求慰藉。然而，婆家的成員卻一個個變成了惡靈，使原本再正常不過的聚會，淪為一場地獄般的家庭聚會。女子這時才發現，她生前許下的誓言……即使在死後依然有效。",
           "poster": "https://image.tmdb.org/t/p/w500/ifwgHdNobcGGSnL3neGH4n5Y4WB.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
           "voteAverage": "7.9",
           "trailerKey": "dyJuL8yOKF4",
           "imdbId": "tt31170389",
@@ -8878,14 +8878,19 @@
               "photo": "https://image.tmdb.org/t/p/w500/fAIXv88uXtJp1dH5qoMpsZxn8w1.jpg"
             },
             {
+              "name": "Alain Chabat",
+              "char": "Alice's Father (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xRjymE6LIJd0useKWN2R1WgKDRy.jpg"
+            },
+            {
+              "name": "Michael Hurst",
+              "char": "Benjamin Price (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/tBYX46fSi8jtp196U8L7Vd37KZW.jpg"
+            },
+            {
               "name": "Tapiwa Soropa",
               "char": "Server (Mike)",
               "photo": "https://image.tmdb.org/t/p/w500/uJzIrzQzt50PAx74MpJ1Tzqes2g.jpg"
-            },
-            {
-              "name": "Lara Macgregor",
-              "char": "Manager",
-              "photo": "https://image.tmdb.org/t/p/w500/j9YK2pAWU2klaCZcRpYDmWEnS2o.jpg"
             },
             {
               "name": "Shyamal Singh",
@@ -8893,14 +8898,9 @@
               "photo": "https://image.tmdb.org/t/p/w500/fbK6qvArrDNuyA8ASSNS11HnUqf.jpg"
             },
             {
-              "name": "Keagan Carr Fransch",
-              "char": "Firefighter",
-              "photo": null
-            },
-            {
-              "name": "Justin Benn",
-              "char": "Taxi Driver",
-              "photo": null
+              "name": "Lara Macgregor",
+              "char": "Manager",
+              "photo": "https://image.tmdb.org/t/p/w500/j9YK2pAWU2klaCZcRpYDmWEnS2o.jpg"
             },
             {
               "name": "Coco White",
@@ -9596,7 +9596,7 @@
           },
           {
             "name": "西恩·貝克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 3000,
@@ -9717,7 +9717,7 @@
             },
             {
               "name": "西恩·貝克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 3000,
@@ -11448,7 +11448,7 @@
           },
           {
             "name": "喬許奧康納",
-            "char": "Daniel Kellner",
+            "char": "Dr. Daniel Kellner",
             "photo": "https://image.tmdb.org/t/p/w500/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
           },
           {
@@ -11457,14 +11457,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/z6wxnkqSTnzO1tcBui0ss7ehdm9.jpg"
           },
           {
-            "name": "科爾曼·多明戈",
-            "char": "Hugo Wakefield",
-            "photo": "https://image.tmdb.org/t/p/w500/t0cgfvtA7Thxnrtj5baRi656zlc.jpg"
-          },
-          {
             "name": "伊芙·休森",
             "char": "Jane Blakenship",
             "photo": "https://image.tmdb.org/t/p/w500/1OlMfQrXEujIPTBUWt3AM0J0hJa.jpg"
+          },
+          {
+            "name": "科爾曼·多明戈",
+            "char": "Hugo Wakefield",
+            "photo": "https://image.tmdb.org/t/p/w500/t0cgfvtA7Thxnrtj5baRi656zlc.jpg"
           },
           {
             "name": "懷特·羅素",
@@ -11472,29 +11472,24 @@
             "photo": "https://image.tmdb.org/t/p/w500/zIldBzXdBWskPZB7x35G2hYEVDo.jpg"
           },
           {
-            "name": "Elizabeth Marvel",
-            "char": "Sister Maura",
-            "photo": "https://image.tmdb.org/t/p/w500/zJaDO2YI0XHeUDB5onVSgAVrvg2.jpg"
-          },
-          {
             "name": "Henry Lloyd-Hughes",
             "char": "Casper Boyd",
             "photo": "https://image.tmdb.org/t/p/w500/m8zSYF7KmQS0x0o7wnWSuWLc0LW.jpg"
           },
           {
-            "name": "Courtney Grace",
-            "char": "NBC Anchor",
-            "photo": "https://image.tmdb.org/t/p/w500/hYt3QKqpmU6NYjIKZ3Cb3H6OARq.jpg"
+            "name": "Elizabeth Marvel",
+            "char": "Sister Maura",
+            "photo": "https://image.tmdb.org/t/p/w500/zJaDO2YI0XHeUDB5onVSgAVrvg2.jpg"
           },
           {
-            "name": "Jeremy Shamos",
-            "char": "Claypool",
-            "photo": "https://image.tmdb.org/t/p/w500/4nEMfWgNBdBhzdzNGCOHyW941EC.jpg"
+            "name": "Hettienne Park",
+            "char": "Serena",
+            "photo": "https://image.tmdb.org/t/p/w500/c5fZeiKZ6magmPWbLJkSjKm5oUX.jpg"
           },
           {
-            "name": "麥克·加斯頓",
-            "char": "General Dobbs",
-            "photo": "https://image.tmdb.org/t/p/w500/lXhqiW4J1n9bnbfwz0Kdf2sjGLU.jpg"
+            "name": "Tommy Martinez",
+            "char": "Santiago",
+            "photo": "https://image.tmdb.org/t/p/w500/hPPWLxCSoehYnDaOrC6O0HxXPjT.jpg"
           },
           {
             "name": "Gabby Beans",
@@ -11502,24 +11497,29 @@
             "photo": "https://image.tmdb.org/t/p/w500/3njrvTJttrEIVNv5DjoP1OlBP5D.jpg"
           },
           {
-            "name": "Elliot Villar",
-            "char": "Agent Diaz",
-            "photo": "https://image.tmdb.org/t/p/w500/x230qsDMMmMRqarkEoPwhC0u8KY.jpg"
+            "name": "Jeremy Shamos",
+            "char": "Claypool",
+            "photo": "https://image.tmdb.org/t/p/w500/4nEMfWgNBdBhzdzNGCOHyW941EC.jpg"
           },
           {
-            "name": "Noah Robbins",
-            "char": "Agent Munsey",
-            "photo": "https://image.tmdb.org/t/p/w500/ddbhyhPmLutdjWSFgF9kRTSsjYH.jpg"
+            "name": "Brandon Wilson",
+            "char": "Nathan Twining",
+            "photo": "https://image.tmdb.org/t/p/w500/apeJ3clonOwQ5SOUGUOKCTw3KFJ.jpg"
           },
           {
-            "name": "Clarke Thorell",
-            "char": "KCXE Anchor",
-            "photo": "https://image.tmdb.org/t/p/w500/zEmWslWGYKwkOhnhusXOGaGEPbY.jpg"
+            "name": "Priyanka Kedia",
+            "char": "Grace Zhao",
+            "photo": "https://image.tmdb.org/t/p/w500/trd4RCbywJ76wW5RoZbhKkt3kiP.jpg"
           },
           {
-            "name": "Elizabeth Stanley",
-            "char": "KCXE Anchor",
-            "photo": "https://image.tmdb.org/t/p/w500/oGwqS8XubWXxw6w9g1lSHvTJ5Xr.jpg"
+            "name": "Lora Lee Gayer",
+            "char": "Terri",
+            "photo": null
+          },
+          {
+            "name": "Lance Hoyt",
+            "char": "Red Wrestler",
+            "photo": "https://image.tmdb.org/t/p/w500/vbwEJg7xzzG81dnWTK7M5FsYcgx.jpg"
           }
         ],
         "crew": [
@@ -11571,7 +11571,7 @@
             },
             {
               "name": "喬許奧康納",
-              "char": "Daniel Kellner",
+              "char": "Dr. Daniel Kellner",
               "photo": "https://image.tmdb.org/t/p/w500/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
             },
             {
@@ -11580,14 +11580,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/z6wxnkqSTnzO1tcBui0ss7ehdm9.jpg"
             },
             {
-              "name": "科爾曼·多明戈",
-              "char": "Hugo Wakefield",
-              "photo": "https://image.tmdb.org/t/p/w500/t0cgfvtA7Thxnrtj5baRi656zlc.jpg"
-            },
-            {
               "name": "伊芙·休森",
               "char": "Jane Blakenship",
               "photo": "https://image.tmdb.org/t/p/w500/1OlMfQrXEujIPTBUWt3AM0J0hJa.jpg"
+            },
+            {
+              "name": "科爾曼·多明戈",
+              "char": "Hugo Wakefield",
+              "photo": "https://image.tmdb.org/t/p/w500/t0cgfvtA7Thxnrtj5baRi656zlc.jpg"
             },
             {
               "name": "懷特·羅素",
@@ -11595,29 +11595,24 @@
               "photo": "https://image.tmdb.org/t/p/w500/zIldBzXdBWskPZB7x35G2hYEVDo.jpg"
             },
             {
-              "name": "Elizabeth Marvel",
-              "char": "Sister Maura",
-              "photo": "https://image.tmdb.org/t/p/w500/zJaDO2YI0XHeUDB5onVSgAVrvg2.jpg"
-            },
-            {
               "name": "Henry Lloyd-Hughes",
               "char": "Casper Boyd",
               "photo": "https://image.tmdb.org/t/p/w500/m8zSYF7KmQS0x0o7wnWSuWLc0LW.jpg"
             },
             {
-              "name": "Courtney Grace",
-              "char": "NBC Anchor",
-              "photo": "https://image.tmdb.org/t/p/w500/hYt3QKqpmU6NYjIKZ3Cb3H6OARq.jpg"
+              "name": "Elizabeth Marvel",
+              "char": "Sister Maura",
+              "photo": "https://image.tmdb.org/t/p/w500/zJaDO2YI0XHeUDB5onVSgAVrvg2.jpg"
             },
             {
-              "name": "Jeremy Shamos",
-              "char": "Claypool",
-              "photo": "https://image.tmdb.org/t/p/w500/4nEMfWgNBdBhzdzNGCOHyW941EC.jpg"
+              "name": "Hettienne Park",
+              "char": "Serena",
+              "photo": "https://image.tmdb.org/t/p/w500/c5fZeiKZ6magmPWbLJkSjKm5oUX.jpg"
             },
             {
-              "name": "麥克·加斯頓",
-              "char": "General Dobbs",
-              "photo": "https://image.tmdb.org/t/p/w500/lXhqiW4J1n9bnbfwz0Kdf2sjGLU.jpg"
+              "name": "Tommy Martinez",
+              "char": "Santiago",
+              "photo": "https://image.tmdb.org/t/p/w500/hPPWLxCSoehYnDaOrC6O0HxXPjT.jpg"
             },
             {
               "name": "Gabby Beans",
@@ -11625,24 +11620,29 @@
               "photo": "https://image.tmdb.org/t/p/w500/3njrvTJttrEIVNv5DjoP1OlBP5D.jpg"
             },
             {
-              "name": "Elliot Villar",
-              "char": "Agent Diaz",
-              "photo": "https://image.tmdb.org/t/p/w500/x230qsDMMmMRqarkEoPwhC0u8KY.jpg"
+              "name": "Jeremy Shamos",
+              "char": "Claypool",
+              "photo": "https://image.tmdb.org/t/p/w500/4nEMfWgNBdBhzdzNGCOHyW941EC.jpg"
             },
             {
-              "name": "Noah Robbins",
-              "char": "Agent Munsey",
-              "photo": "https://image.tmdb.org/t/p/w500/ddbhyhPmLutdjWSFgF9kRTSsjYH.jpg"
+              "name": "Brandon Wilson",
+              "char": "Nathan Twining",
+              "photo": "https://image.tmdb.org/t/p/w500/apeJ3clonOwQ5SOUGUOKCTw3KFJ.jpg"
             },
             {
-              "name": "Clarke Thorell",
-              "char": "KCXE Anchor",
-              "photo": "https://image.tmdb.org/t/p/w500/zEmWslWGYKwkOhnhusXOGaGEPbY.jpg"
+              "name": "Priyanka Kedia",
+              "char": "Grace Zhao",
+              "photo": "https://image.tmdb.org/t/p/w500/trd4RCbywJ76wW5RoZbhKkt3kiP.jpg"
             },
             {
-              "name": "Elizabeth Stanley",
-              "char": "KCXE Anchor",
-              "photo": "https://image.tmdb.org/t/p/w500/oGwqS8XubWXxw6w9g1lSHvTJ5Xr.jpg"
+              "name": "Lora Lee Gayer",
+              "char": "Terri",
+              "photo": null
+            },
+            {
+              "name": "Lance Hoyt",
+              "char": "Red Wrestler",
+              "photo": "https://image.tmdb.org/t/p/w500/vbwEJg7xzzG81dnWTK7M5FsYcgx.jpg"
             }
           ],
           "crew": [
@@ -13966,12 +13966,12 @@
           },
           {
             "name": "厲雲",
-            "char": "Cruise Magician",
+            "char": "Ji-hoon",
             "photo": "https://image.tmdb.org/t/p/w500/y2QVVNdV0PqWfvhuPT0hvdWOouP.jpg"
           },
           {
             "name": "樸昣奏",
-            "char": "Seon-ah",
+            "char": "Sun-ah",
             "photo": "https://image.tmdb.org/t/p/w500/2loUUZGfslGkGComTUMp6ON2Kuc.jpg"
           },
           {
@@ -14039,12 +14039,12 @@
             },
             {
               "name": "厲雲",
-              "char": "Cruise Magician",
+              "char": "Ji-hoon",
               "photo": "https://image.tmdb.org/t/p/w500/y2QVVNdV0PqWfvhuPT0hvdWOouP.jpg"
             },
             {
               "name": "樸昣奏",
-              "char": "Seon-ah",
+              "char": "Sun-ah",
               "photo": "https://image.tmdb.org/t/p/w500/2loUUZGfslGkGComTUMp6ON2Kuc.jpg"
             },
             {
@@ -15463,7 +15463,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-        "voteAverage": "5.3",
+        "voteAverage": "5.2",
         "genre": [
           "恐怖"
         ],
@@ -15603,7 +15603,7 @@
           "synopsis": "美麗的小鎮出現了一位神秘的冰淇淋小販，他供應的美味冰品讓孩子們瘋狂，全鎮因此失控！",
           "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-          "voteAverage": "5.3",
+          "voteAverage": "5.2",
           "trailerKey": "0pIKTDz689U",
           "imdbId": "tt36893729",
           "countries": [
@@ -17033,7 +17033,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-        "voteAverage": "7.1",
+        "voteAverage": "7.2",
         "genre": [
           "喜劇",
           "愛情"
@@ -17168,7 +17168,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-          "voteAverage": "7.1",
+          "voteAverage": "7.2",
           "trailerKey": "lIl2WzFiF0A",
           "imdbId": "tt37853455",
           "countries": [
@@ -17621,12 +17621,12 @@
         ],
         "crew": [
           {
-            "name": "石立太一",
-            "job": "Director"
-          },
-          {
             "name": "花田十輝",
             "job": "Screenplay"
+          },
+          {
+            "name": "石立太一",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -17742,12 +17742,12 @@
           ],
           "crew": [
             {
-              "name": "石立太一",
-              "job": "Director"
-            },
-            {
               "name": "花田十輝",
               "job": "Screenplay"
+            },
+            {
+              "name": "石立太一",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -17880,14 +17880,14 @@
         "crew": [
           {
             "name": "Philippe Lacheau",
+            "job": "Director"
+          },
+          {
+            "name": "Pierre Dudan",
             "job": "Writer"
           },
           {
             "name": "Philippe Lacheau",
-            "job": "Director"
-          },
-          {
-            "name": "Pierre Lacheau",
             "job": "Writer"
           }
         ],
@@ -18004,14 +18004,14 @@
           "crew": [
             {
               "name": "Philippe Lacheau",
+              "job": "Director"
+            },
+            {
+              "name": "Pierre Dudan",
               "job": "Writer"
             },
             {
               "name": "Philippe Lacheau",
-              "job": "Director"
-            },
-            {
-              "name": "Pierre Lacheau",
               "job": "Writer"
             }
           ],
