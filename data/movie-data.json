@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T06:10:51.093702+08:00",
+  "generated_at": "2026-08-11T10:38:21.572940+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 59,
@@ -430,7 +430,7 @@
             "logo": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg"
           }
         ],
-        "popularity": 3.2124,
+        "popularity": 3.8319,
         "imdbId": "tt6752992",
         "countries": [
           "France",
@@ -1204,7 +1204,7 @@
         "origLang": "hi",
         "origTitle": "होमबाउंड",
         "platforms": [],
-        "popularity": 2.3906,
+        "popularity": 2.5906,
         "imdbId": "tt26733325",
         "countries": [
           "India",
@@ -1459,11 +1459,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
@@ -1579,11 +1579,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
@@ -1829,7 +1829,7 @@
         "origLang": "zh",
         "origTitle": "Last Night in Taipei",
         "platforms": [],
-        "popularity": 1.3063,
+        "popularity": 1.2133,
         "imdbId": "tt38162481",
         "countries": [
           "Taiwan",
@@ -1976,7 +1976,7 @@
         "origLang": "ja",
         "origTitle": "クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
         "platforms": [],
-        "popularity": 27.2927,
+        "popularity": 28.0693,
         "imdbId": "tt41293342",
         "countries": [
           "Japan"
@@ -2798,12 +2798,12 @@
         ],
         "crew": [
           {
-            "name": "三木孝浩",
-            "job": "Director"
-          },
-          {
             "name": "髙橋泉",
             "job": "Screenplay"
+          },
+          {
+            "name": "三木孝浩",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -2917,12 +2917,12 @@
           ],
           "crew": [
             {
-              "name": "三木孝浩",
-              "job": "Director"
-            },
-            {
               "name": "髙橋泉",
               "job": "Screenplay"
+            },
+            {
+              "name": "三木孝浩",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -3966,19 +3966,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
           },
           {
-            "name": "薩迪·辛克",
-            "char": "Jean Grey",
-            "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
-          },
-          {
-            "name": "Tramell Tillman",
-            "char": "William 'Bill' Metzger",
-            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
-          },
-          {
             "name": "千黛亞",
             "char": "MJ",
             "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+          },
+          {
+            "name": "馬克·魯法洛",
+            "char": "Bruce Banner / Hulk",
+            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
           },
           {
             "name": "強·柏恩瑟",
@@ -3991,9 +3986,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
           },
           {
-            "name": "馬克·魯法洛",
-            "char": "Bruce Banner / Hulk",
-            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+            "name": "薩迪·辛克",
+            "char": "Jean Grey",
+            "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+          },
+          {
+            "name": "佛蘿倫絲·普伊",
+            "char": "Yelena Belova / Black Widow",
+            "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
           },
           {
             "name": "Liza Colón-Zayas",
@@ -4001,9 +4001,9 @@
             "photo": "https://image.tmdb.org/t/p/w500/qBb5eYEoZAlStrRXvsFlKukKJG8.jpg"
           },
           {
-            "name": "佛蘿倫絲·普伊",
-            "char": "Yelena Belova / Black Widow",
-            "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+            "name": "Tramell Tillman",
+            "char": "William 'Bill' Metzger",
+            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
           },
           {
             "name": "瑪麗莎·託梅",
@@ -4089,19 +4089,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
             },
             {
-              "name": "薩迪·辛克",
-              "char": "Jean Grey",
-              "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
-            },
-            {
-              "name": "Tramell Tillman",
-              "char": "William 'Bill' Metzger",
-              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
-            },
-            {
               "name": "千黛亞",
               "char": "MJ",
               "photo": "https://image.tmdb.org/t/p/w500/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg"
+            },
+            {
+              "name": "馬克·魯法洛",
+              "char": "Bruce Banner / Hulk",
+              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
             },
             {
               "name": "強·柏恩瑟",
@@ -4114,9 +4109,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
             },
             {
-              "name": "馬克·魯法洛",
-              "char": "Bruce Banner / Hulk",
-              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+              "name": "薩迪·辛克",
+              "char": "Jean Grey",
+              "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            },
+            {
+              "name": "佛蘿倫絲·普伊",
+              "char": "Yelena Belova / Black Widow",
+              "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
             },
             {
               "name": "Liza Colón-Zayas",
@@ -4124,9 +4124,9 @@
               "photo": "https://image.tmdb.org/t/p/w500/qBb5eYEoZAlStrRXvsFlKukKJG8.jpg"
             },
             {
-              "name": "佛蘿倫絲·普伊",
-              "char": "Yelena Belova / Black Widow",
-              "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+              "name": "Tramell Tillman",
+              "char": "William 'Bill' Metzger",
+              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
             },
             {
               "name": "瑪麗莎·託梅",
@@ -4315,7 +4315,7 @@
             "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
           }
         ],
-        "popularity": 3.1117,
+        "popularity": 2.74,
         "imdbId": "tt3044244",
         "countries": [
           "Germany",
@@ -4834,7 +4834,7 @@
         "origLang": "es",
         "origTitle": "Romería",
         "platforms": [],
-        "popularity": 4.2775,
+        "popularity": 4.6491,
         "imdbId": "tt32538648",
         "countries": [
           "Spain",
@@ -5598,16 +5598,16 @@
         ],
         "crew": [
           {
-            "name": "Waldemar Fast",
-            "job": "Director"
+            "name": "Jeffrey Hylton",
+            "job": "Writer"
           },
           {
             "name": "Kirstie Falkous",
             "job": "Writer"
           },
           {
-            "name": "Jeffrey Hylton",
-            "job": "Writer"
+            "name": "Waldemar Fast",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -5719,16 +5719,16 @@
           ],
           "crew": [
             {
-              "name": "Waldemar Fast",
-              "job": "Director"
+              "name": "Jeffrey Hylton",
+              "job": "Writer"
             },
             {
               "name": "Kirstie Falkous",
               "job": "Writer"
             },
             {
-              "name": "Jeffrey Hylton",
-              "job": "Writer"
+              "name": "Waldemar Fast",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5841,7 +5841,7 @@
         "origLang": "ja",
         "origTitle": "Shambhala Story",
         "platforms": [],
-        "popularity": 1.1905,
+        "popularity": 1.24,
         "imdbId": "tt37989601",
         "countries": [
           "Japan",
@@ -6058,7 +6058,7 @@
         "origLang": "ja",
         "origTitle": "箱の中の羊",
         "platforms": [],
-        "popularity": 5.0506,
+        "popularity": 4.8094,
         "imdbId": "tt38551209",
         "countries": [
           "Japan"
@@ -6241,7 +6241,7 @@
         "origLang": "ja",
         "origTitle": "未來",
         "platforms": [],
-        "popularity": 1.2935,
+        "popularity": 1.421,
         "imdbId": "tt41986879",
         "countries": [
           "Japan"
@@ -6463,7 +6463,7 @@
         "origLang": "ja",
         "origTitle": "ONE PIECE FILM RED",
         "platforms": [],
-        "popularity": 6.7136,
+        "popularity": 7.942,
         "imdbId": "tt16183464",
         "countries": [
           "Japan"
@@ -6700,12 +6700,12 @@
         ],
         "crew": [
           {
-            "name": "石立太一",
-            "job": "Director"
-          },
-          {
             "name": "花田十輝",
             "job": "Screenplay"
+          },
+          {
+            "name": "石立太一",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -6811,12 +6811,12 @@
           ],
           "crew": [
             {
-              "name": "石立太一",
-              "job": "Director"
-            },
-            {
               "name": "花田十輝",
               "job": "Screenplay"
+            },
+            {
+              "name": "石立太一",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -6954,7 +6954,7 @@
         "origLang": "fr",
         "origTitle": "Les Légendaires",
         "platforms": [],
-        "popularity": 3.8949,
+        "popularity": 3.7363,
         "imdbId": "tt35659725",
         "countries": [
           "Belgium",
@@ -7473,7 +7473,7 @@
         "origLang": "en",
         "origTitle": "The Odyssey",
         "platforms": [],
-        "popularity": 884.5903,
+        "popularity": 758.9909,
         "imdbId": "tt33764258",
         "countries": [
           "United Kingdom",
@@ -8147,7 +8147,7 @@
         "origLang": "ja",
         "origTitle": "人はなぜラブレターを書くのか",
         "platforms": [],
-        "popularity": 1.2326,
+        "popularity": 1.3165,
         "imdbId": "tt41936211",
         "countries": [
           "Japan"
@@ -8327,7 +8327,7 @@
         "origLang": "zh",
         "origTitle": "魯冰花",
         "platforms": [],
-        "popularity": 1.635,
+        "popularity": 1.8837,
         "imdbId": "tt0097791",
         "countries": [
           "Taiwan"
@@ -9293,7 +9293,7 @@
         "origLang": "ja",
         "origTitle": "映畫ドラえもん 新・のび太の海底鬼巖城",
         "platforms": [],
-        "popularity": 10.8049,
+        "popularity": 10.7089,
         "imdbId": "tt38201958",
         "countries": [
           "Japan"
@@ -9605,7 +9605,7 @@
         "origLang": "zh",
         "origTitle": "Take Out",
         "platforms": [],
-        "popularity": 2.0906,
+        "popularity": 1.9588,
         "imdbId": "tt0391483",
         "countries": [
           "United States of America"
@@ -10273,7 +10273,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ul0dWExN1UXn5ktN7x4KKp5ISNr.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
-        "voteAverage": "6.4",
+        "voteAverage": "6.3",
         "genre": [
           "冒險",
           "動畫",
@@ -10316,24 +10316,24 @@
             "photo": "https://image.tmdb.org/t/p/w500/3tJe8t90lrcQzXj9cRcpW9wmj2c.jpg"
           },
           {
-            "name": "艾莉森·珍妮",
-            "char": "Olivia (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
-          },
-          {
             "name": "克里斯多夫·華茲",
             "char": "Max (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/jMvLGCVXLaBqjRLf5olyvEucZob.jpg"
           },
           {
-            "name": "傑夫·布里吉",
-            "char": "Frank / Elwood (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
+            "name": "艾莉森·珍妮",
+            "char": "Olivia (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
           },
           {
             "name": "傑西艾森柏格",
             "char": "Dort (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/yYhwWRcxDHTn63gSEF1vnDAD7cD.jpg"
+          },
+          {
+            "name": "傑夫·布里吉",
+            "char": "Frank / Elwood (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
           },
           {
             "name": "柔伊·德區",
@@ -10406,7 +10406,7 @@
         "origLang": "en",
         "origTitle": "Minions & Monsters",
         "platforms": [],
-        "popularity": 274.7199,
+        "popularity": 255.0252,
         "imdbId": "tt32890033",
         "countries": [
           "United States of America"
@@ -10423,7 +10423,7 @@
           "synopsis": "延續2024年暑假全球票房大賣、笑聲不斷的年度最強喜劇片《神偷奶爸4》熱潮，照明娛樂再度擴充套件其既歡樂又瘋狂的 動畫宇宙，帶來影史最賣座動畫系列的全新篇章《小小兵&大怪獸》。故事講述小小兵是如何征服好萊塢、成為電影巨星、失去一切、放出怪獸大鬧全世界，然後團結起來試圖從他們才剛造成的超級大災難中拯救全世界。",
           "poster": "https://image.tmdb.org/t/p/w500/ul0dWExN1UXn5ktN7x4KKp5ISNr.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
-          "voteAverage": "6.4",
+          "voteAverage": "6.3",
           "trailerKey": "zSKcIHTN3tM",
           "imdbId": "tt32890033",
           "countries": [
@@ -10441,24 +10441,24 @@
               "photo": "https://image.tmdb.org/t/p/w500/3tJe8t90lrcQzXj9cRcpW9wmj2c.jpg"
             },
             {
-              "name": "艾莉森·珍妮",
-              "char": "Olivia (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
-            },
-            {
               "name": "克里斯多夫·華茲",
               "char": "Max (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/jMvLGCVXLaBqjRLf5olyvEucZob.jpg"
             },
             {
-              "name": "傑夫·布里吉",
-              "char": "Frank / Elwood (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
+              "name": "艾莉森·珍妮",
+              "char": "Olivia (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
             },
             {
               "name": "傑西艾森柏格",
               "char": "Dort (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/yYhwWRcxDHTn63gSEF1vnDAD7cD.jpg"
+            },
+            {
+              "name": "傑夫·布里吉",
+              "char": "Frank / Elwood (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
             },
             {
               "name": "柔伊·德區",
@@ -13237,7 +13237,7 @@
         "origLang": "es",
         "origTitle": "Ídolos",
         "platforms": [],
-        "popularity": 4.5151,
+        "popularity": 3.8535,
         "imdbId": "tt27590933",
         "countries": [
           "Spain",
@@ -14200,7 +14200,7 @@
         "origLang": "ja",
         "origTitle": "ブルーロック",
         "platforms": [],
-        "popularity": 5.5685,
+        "popularity": 5.5144,
         "imdbId": "tt39400168",
         "countries": [
           "Japan"
@@ -14639,7 +14639,7 @@
             "lastChanged": "2026-08-09T10:38:03.783105+08:00"
           }
         },
-        "trailerKey": null,
+        "trailerKey": "gVI8kzhK-Lo",
         "cast": [
           {
             "name": "Matt Johnson",
@@ -14758,7 +14758,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/sm5TGX8WbnCd9Uo26cLyTxVwA1n.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/gYxOlYtLvGNrzYm6kQBcY5mqKja.jpg",
           "voteAverage": "7.5",
-          "trailerKey": null,
+          "trailerKey": "gVI8kzhK-Lo",
           "imdbId": "tt35522483",
           "countries": [
             "Canada"
@@ -15202,7 +15202,7 @@
         "origLang": "ru",
         "origTitle": "Коты Эрмитажа 2. Тайна египетского зала",
         "platforms": [],
-        "popularity": 2.4985,
+        "popularity": 2.7124,
         "imdbId": "tt30224625",
         "countries": [
           "Russia"
@@ -15463,7 +15463,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-        "voteAverage": "5.3",
+        "voteAverage": "5.4",
         "genre": [
           "恐怖"
         ],
@@ -15587,7 +15587,7 @@
           }
         ],
         "budget": 5500000,
-        "revenue": 1000000,
+        "revenue": 3670000,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Ice Cream Man",
@@ -15608,7 +15608,7 @@
           "synopsis": "美麗的小鎮出現了一位神秘的冰淇淋小販，他供應的美味冰品讓孩子們瘋狂，全鎮因此失控！",
           "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-          "voteAverage": "5.3",
+          "voteAverage": "5.4",
           "trailerKey": "0pIKTDz689U",
           "imdbId": "tt36893729",
           "countries": [
@@ -15714,7 +15714,7 @@
             }
           ],
           "budget": 5500000,
-          "revenue": 1000000,
+          "revenue": 3670000,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Ice Cream Man",
@@ -16096,7 +16096,7 @@
         "origLang": "ja",
         "origTitle": "禍禍女",
         "platforms": [],
-        "popularity": 2.2761,
+        "popularity": 2.58,
         "imdbId": "tt38263629",
         "countries": [
           "Japan"
@@ -16527,11 +16527,11 @@
         ],
         "budget": 0,
         "revenue": 0,
-        "status": "Post Production",
+        "status": "Released",
         "origLang": "zh",
         "origTitle": "終戰那一天",
         "platforms": [],
-        "popularity": 0.848,
+        "popularity": 0.8976,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -16565,7 +16565,7 @@
           ],
           "budget": 0,
           "revenue": 0,
-          "status": "Post Production",
+          "status": "Released",
           "origLang": "zh",
           "origTitle": "終戰那一天",
           "platforms": []
@@ -17631,12 +17631,12 @@
         ],
         "crew": [
           {
-            "name": "石立太一",
-            "job": "Director"
-          },
-          {
             "name": "花田十輝",
             "job": "Screenplay"
+          },
+          {
+            "name": "石立太一",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -17645,7 +17645,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 境界の彼方 -I'll Be Here- 未來篇",
         "platforms": [],
-        "popularity": 2.3219,
+        "popularity": 2.2094,
         "imdbId": "tt4539114",
         "countries": [
           "Japan"
@@ -17752,12 +17752,12 @@
           ],
           "crew": [
             {
-              "name": "石立太一",
-              "job": "Director"
-            },
-            {
               "name": "花田十輝",
               "job": "Screenplay"
+            },
+            {
+              "name": "石立太一",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -17893,11 +17893,11 @@
             "job": "Writer"
           },
           {
-            "name": "Pierre Lacheau",
-            "job": "Writer"
+            "name": "Philippe Lacheau",
+            "job": "Director"
           },
           {
-            "name": "Pierre Dudan",
+            "name": "Pierre Lacheau",
             "job": "Writer"
           }
         ],
@@ -18017,11 +18017,11 @@
               "job": "Writer"
             },
             {
-              "name": "Pierre Lacheau",
-              "job": "Writer"
+              "name": "Philippe Lacheau",
+              "job": "Director"
             },
             {
-              "name": "Pierre Dudan",
+              "name": "Pierre Lacheau",
               "job": "Writer"
             }
           ],
@@ -18177,7 +18177,7 @@
         "origLang": "it",
         "origTitle": "Diamanti",
         "platforms": [],
-        "popularity": 3.8651,
+        "popularity": 3.7493,
         "imdbId": "tt32810496",
         "countries": [
           "Italy"
@@ -18654,7 +18654,7 @@
         "origLang": "ja",
         "origTitle": "ミーツ・ザ・ワールド",
         "platforms": [],
-        "popularity": 1.5502,
+        "popularity": 1.6549,
         "imdbId": "tt38755605",
         "countries": [
           "Japan"
@@ -19515,7 +19515,7 @@
         "origLang": "zh",
         "origTitle": "網紅老爸",
         "platforms": [],
-        "popularity": 1.363,
+        "popularity": 1.5457,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -20220,7 +20220,7 @@
         "origLang": "ja",
         "origTitle": "最終楽章 響け！ユーフォニアム 前編",
         "platforms": [],
-        "popularity": 1.6591,
+        "popularity": 1.6483,
         "imdbId": "tt39123182",
         "countries": [
           "Japan"
@@ -20929,11 +20929,11 @@
         ],
         "crew": [
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Jonathan Frank",
+            "job": "Writer"
           },
           {
-            "name": "Peter Spierig",
+            "name": "Michael Spierig",
             "job": "Director"
           },
           {
@@ -21012,11 +21012,11 @@
           ],
           "crew": [
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Jonathan Frank",
+              "job": "Writer"
             },
             {
-              "name": "Peter Spierig",
+              "name": "Michael Spierig",
               "job": "Director"
             },
             {
@@ -21659,7 +21659,7 @@
         "origLang": "fr",
         "origTitle": "Pour le plaisir",
         "platforms": [],
-        "popularity": 1.9194,
+        "popularity": 2.0511,
         "imdbId": "tt38607784",
         "countries": [
           "France"
@@ -21854,7 +21854,7 @@
         "origLang": "de",
         "origTitle": "Der verlorene Mann",
         "platforms": [],
-        "popularity": 2.3615,
+        "popularity": 2.5056,
         "imdbId": "tt39602467",
         "countries": [
           "Germany"
@@ -21972,7 +21972,7 @@
           "劇情",
           "喜劇"
         ],
-        "duration": "",
+        "duration": 110,
         "synopsis": "",
         "imdb": "",
         "rt": "",
@@ -22052,7 +22052,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": "",
+          "duration": 110,
           "genres": [
             "奇幻",
             "劇情",
@@ -22282,7 +22282,7 @@
         "origLang": "en",
         "origTitle": "Palestine 36",
         "platforms": [],
-        "popularity": 3.5286,
+        "popularity": 3.4976,
         "imdbId": "tt29271622",
         "countries": [
           "Palestinian Territory",
@@ -23467,7 +23467,7 @@
         "origLang": "en",
         "origTitle": "Heart of the Beast",
         "platforms": [],
-        "popularity": 11.4043,
+        "popularity": 11.2577,
         "imdbId": "tt7526136",
         "countries": [
           "United States of America"
@@ -25083,7 +25083,7 @@
         "origLang": "en",
         "origTitle": "The Hunger Games: Sunrise on the Reaping",
         "platforms": [],
-        "popularity": 9.1411,
+        "popularity": 8.8208,
         "imdbId": "tt32558705",
         "countries": [
           "United States of America"
@@ -25503,11 +25503,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -25520,7 +25520,7 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 16.9694,
+        "popularity": 17.4949,
         "imdbId": "tt31378509",
         "countries": [
           "United States of America"
@@ -25615,11 +25615,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
@@ -26008,7 +26008,7 @@
         "origLang": "en",
         "origTitle": "Ice Age: Boiling Point",
         "platforms": [],
-        "popularity": 8.1195,
+        "popularity": 7.4631,
         "imdbId": "tt34512981",
         "countries": [
           "United States of America"
