@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-12T11:07:42.143140+08:00",
+  "generated_at": "2026-08-12T11:39:03.770805+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 50,
-    "soon_count": 53
+    "now_count": 51,
+    "soon_count": 54
   },
   "movies": {
     "now": [
@@ -3083,6 +3083,165 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1722720,
+        "titleZh": "ATEEZ: LIGHT THE WAY IN CINEMAS",
+        "titleEn": "ATEEZ: LIGHT THE WAY IN CINEMAS",
+        "releaseDate": "2026-08-07",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-07",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/raY91P5jziALAAutHoAM73i8jwr.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/1jXZhIJTvzzpUqCr9rYU4P49EPS.jpg",
+        "voteAverage": "6.0",
+        "genre": [
+          "音樂"
+        ],
+        "duration": 65,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "홍중",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "성화",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/AuPmbMz5Tq0hYPglhxpdS7iFwRJ.jpg"
+          },
+          {
+            "name": "윤호",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/pXSphxiARUfJBurrGXITRkbIB0L.jpg"
+          },
+          {
+            "name": "여상",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "산",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "민기",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "우영",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/l7kUAXhy4NJsSwAf68b9D86TAd.jpg"
+          },
+          {
+            "name": "종호",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/lO1044BvDdiaFr5YVctDBugMtdo.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Kim Ji-ae",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "ATEEZ: LIGHT THE WAY IN CINEMAS",
+        "platforms": [],
+        "popularity": 1.5383,
+        "imdbId": "tt43619348",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 65,
+          "genres": [
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/raY91P5jziALAAutHoAM73i8jwr.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/1jXZhIJTvzzpUqCr9rYU4P49EPS.jpg",
+          "voteAverage": "6.0",
+          "trailerKey": null,
+          "imdbId": "tt43619348",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "홍중",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "성화",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/AuPmbMz5Tq0hYPglhxpdS7iFwRJ.jpg"
+            },
+            {
+              "name": "윤호",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/pXSphxiARUfJBurrGXITRkbIB0L.jpg"
+            },
+            {
+              "name": "여상",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "산",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "민기",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "우영",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/l7kUAXhy4NJsSwAf68b9D86TAd.jpg"
+            },
+            {
+              "name": "종호",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/lO1044BvDdiaFr5YVctDBugMtdo.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Kim Ji-ae",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "ATEEZ: LIGHT THE WAY IN CINEMAS",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1722720?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 45580,
         "titleZh": "手拉你 Solanin",
         "titleEn": "ソラニン",
@@ -4201,7 +4360,7 @@
         "origLang": "ja",
         "origTitle": "映畫ちいかわ 人魚の島のひみつ",
         "platforms": [],
-        "popularity": 6.1658,
+        "popularity": 6.1086,
         "imdbId": "tt39026173",
         "countries": [
           "Japan"
@@ -4717,7 +4876,7 @@
             "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
           }
         ],
-        "popularity": 2.74,
+        "popularity": 2.8547,
         "imdbId": "tt3044244",
         "countries": [
           "Germany",
@@ -12985,7 +13144,7 @@
         "origLang": "ja",
         "origTitle": "てっぺんの向こうにあなたがいる",
         "platforms": [],
-        "popularity": 2.8285,
+        "popularity": 2.5602,
         "imdbId": "tt37969835",
         "countries": [
           "Japan"
@@ -18481,6 +18640,189 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1621964,
+        "titleZh": "天鵝與蝙蝠",
+        "titleEn": "白鳥とコウモリ",
+        "releaseDate": "2026-09-04",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/jIEyBR9gCrDMEQ7UcxWmJVj2zDi.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
+        "voteAverage": "",
+        "genre": [
+          "犯罪",
+          "劇情",
+          "家庭",
+          "懸疑"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "松村北斗",
+            "char": "Kuraki Kazuma",
+            "photo": "https://image.tmdb.org/t/p/w500/rtdHPwvoSel4m4CbJwZgcfnFsA0.jpg"
+          },
+          {
+            "name": "今田美櫻",
+            "char": "Shiraishi Mirei",
+            "photo": "https://image.tmdb.org/t/p/w500/wfFkcT2eATLO95JbSXAmUonCTrP.jpg"
+          },
+          {
+            "name": "三浦友和",
+            "char": "Kuraki Tatsuro",
+            "photo": "https://image.tmdb.org/t/p/w500/2tKusMF6dzGOfH7MM73FCsJzRoJ.jpg"
+          },
+          {
+            "name": "柄本佑",
+            "char": "Godai Tsutomu",
+            "photo": "https://image.tmdb.org/t/p/w500/bWFDE4bXUQxmyUey6sA5S84A3vG.jpg"
+          },
+          {
+            "name": "前原滉",
+            "char": "Nakamachi",
+            "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
+          },
+          {
+            "name": "Shikan Nakamura VIII",
+            "char": "Shiraishi Kensuke",
+            "photo": "https://image.tmdb.org/t/p/w500/ynUYolvgkAG5ozgf3ylIdJEu4Mk.jpg"
+          },
+          {
+            "name": "井川遙",
+            "char": "Asaba Orie",
+            "photo": "https://image.tmdb.org/t/p/w500/vmXd5rOa5YiIbQM01JNHYW3w58W.jpg"
+          },
+          {
+            "name": "吉田羊",
+            "char": "Shiraishi Ayako",
+            "photo": "https://image.tmdb.org/t/p/w500/3grR0n3XfGyv6nSB35LjjvKfmCI.jpg"
+          },
+          {
+            "name": "風吹純",
+            "char": "Asaba Yoko",
+            "photo": "https://image.tmdb.org/t/p/w500/uHF9NdKrG1bN7GwZB7PI21Rkdv8.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "岸善幸",
+            "job": "Director"
+          },
+          {
+            "name": "向井康介",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "In Production",
+        "origLang": "ja",
+        "origTitle": "白鳥とコウモリ",
+        "platforms": [],
+        "popularity": 1.5613,
+        "imdbId": null,
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "犯罪",
+            "劇情",
+            "家庭",
+            "懸疑"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/jIEyBR9gCrDMEQ7UcxWmJVj2zDi.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "松村北斗",
+              "char": "Kuraki Kazuma",
+              "photo": "https://image.tmdb.org/t/p/w500/rtdHPwvoSel4m4CbJwZgcfnFsA0.jpg"
+            },
+            {
+              "name": "今田美櫻",
+              "char": "Shiraishi Mirei",
+              "photo": "https://image.tmdb.org/t/p/w500/wfFkcT2eATLO95JbSXAmUonCTrP.jpg"
+            },
+            {
+              "name": "三浦友和",
+              "char": "Kuraki Tatsuro",
+              "photo": "https://image.tmdb.org/t/p/w500/2tKusMF6dzGOfH7MM73FCsJzRoJ.jpg"
+            },
+            {
+              "name": "柄本佑",
+              "char": "Godai Tsutomu",
+              "photo": "https://image.tmdb.org/t/p/w500/bWFDE4bXUQxmyUey6sA5S84A3vG.jpg"
+            },
+            {
+              "name": "前原滉",
+              "char": "Nakamachi",
+              "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
+            },
+            {
+              "name": "Shikan Nakamura VIII",
+              "char": "Shiraishi Kensuke",
+              "photo": "https://image.tmdb.org/t/p/w500/ynUYolvgkAG5ozgf3ylIdJEu4Mk.jpg"
+            },
+            {
+              "name": "井川遙",
+              "char": "Asaba Orie",
+              "photo": "https://image.tmdb.org/t/p/w500/vmXd5rOa5YiIbQM01JNHYW3w58W.jpg"
+            },
+            {
+              "name": "吉田羊",
+              "char": "Shiraishi Ayako",
+              "photo": "https://image.tmdb.org/t/p/w500/3grR0n3XfGyv6nSB35LjjvKfmCI.jpg"
+            },
+            {
+              "name": "風吹純",
+              "char": "Asaba Yoko",
+              "photo": "https://image.tmdb.org/t/p/w500/uHF9NdKrG1bN7GwZB7PI21Rkdv8.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "岸善幸",
+              "job": "Director"
+            },
+            {
+              "name": "向井康介",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "In Production",
+          "origLang": "ja",
+          "origTitle": "白鳥とコウモリ",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1621964?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1509612,
         "titleZh": "最後的作業",
         "titleEn": "마지막 숙제",
@@ -20891,7 +21233,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/2upfBtX4LgTcEuLI6bZuWlVv3U3.jpg",
         "voteAverage": "",
         "genre": [
           "懸疑",
@@ -20967,7 +21309,7 @@
         "origLang": "en",
         "origTitle": "Verity",
         "platforms": [],
-        "popularity": 7.0865,
+        "popularity": 11.6226,
         "imdbId": "tt32261958",
         "countries": [
           "United States of America"
@@ -20980,7 +21322,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/2upfBtX4LgTcEuLI6bZuWlVv3U3.jpg",
           "voteAverage": "",
           "trailerKey": "O33qqsXTZPc",
           "imdbId": "tt32261958",
