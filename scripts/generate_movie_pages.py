@@ -16,8 +16,212 @@ SITE_URL = "https://movienotice.pages.dev"
 SITE_NAME = "MovieNotice 電影佈告欄"
 
 MOVIE_PAGE_CSS_PATH = ROOT / "movie-page.css"
-MOVIE_PAGE_CSS = """
+LEGACY_MOVIE_PAGE_CSS = """
 *{box-sizing:border-box}body{margin:0;background:#0a0a0f;color:#fff;font-family:Manrope,-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;font-weight:300}.page-bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 90% 10%,rgba(220,170,20,.16),transparent 38%),radial-gradient(circle at 0 85%,rgba(30,72,240,.13),transparent 42%),#0a0a0f}.material-symbols-outlined{font-family:'Material Symbols Outlined'!important;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;font-weight:normal;font-style:normal;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal}.topbar{position:sticky;top:0;z-index:10;background:rgba(10,10,15,.9);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(18px)}.topbar-inner{max-width:1040px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}.brand img{height:34px;width:auto}.brand span{color:rgba(255,255,255,.68);font-size:13px}.back-link{color:rgba(255,255,255,.58);font-size:13px;text-decoration:none}.hero{position:relative;min-height:520px;display:flex;align-items:flex-end;overflow:hidden}.hero-media{position:absolute;inset:0}.hero-media img{width:100%;height:100%;object-fit:cover;opacity:.46}.hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#0a0a0f 0%,rgba(10,10,15,.82) 28%,rgba(10,10,15,.18) 100%)}.hero-content{position:relative;width:100%;max-width:1040px;margin:0 auto;padding:96px 24px 42px}.genre-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.genre-tag{font-size:12px;color:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:4px 10px;background:rgba(255,255,255,.06)}h1{font-size:clamp(34px,6vw,68px);line-height:1.02;margin:0 0 12px;font-weight:300;letter-spacing:0}.subtitle{margin:0;color:rgba(255,255,255,.68);font-size:15px}.ratings{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:22px;margin-bottom:20px}.rating-divider{width:1px;height:12px;background:rgba(255,255,255,.3)}.rating-item{display:flex;align-items:center;gap:4px;font-size:13px;color:rgba(255,255,255,.5)}.rating-item .star{font-size:13px;color:rgba(255,255,255,.6);font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24}.rating-item .val{color:#fff}.trailer-link{display:inline-flex;align-items:center;gap:6px;margin-top:0;padding:6px 18px 6px 8px;background:rgba(255,255,255,.20);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.4);border-radius:999px;color:#fff;font-size:14px;font-weight:400;text-decoration:none;transition:background .2s}.trailer-link:hover{background:rgba(255,255,255,.25)}.content{max-width:1040px;margin:0 auto;padding:34px 24px 72px}.synopsis{font-size:17px;line-height:1.9;color:rgba(255,255,255,.8);margin:0 0 34px}.crew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:16px;margin-bottom:34px}.crew-name,.cast-name{margin:0;color:#fff;font-size:14px}.crew-role,.cast-char{margin:4px 0 0;color:rgba(255,255,255,.52);font-size:12px}.section-label{margin:0 0 14px;color:rgba(255,255,255,.42);font-size:12px;text-transform:uppercase;letter-spacing:.1em}.cast-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));column-gap:16px;row-gap:32px;margin-bottom:36px}.cast-photo,.cast-no-photo{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.cast-card{min-width:0}.cast-name{margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cast-char{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta-panel{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}.meta-row{display:flex;gap:16px;margin-bottom:12px}.meta-row:last-child{margin-bottom:0}.meta-key{font-size:14px;color:rgba(255,255,255,.65);width:80px;flex-shrink:0;padding-top:2px}.meta-val{font-size:14px;color:#fff}@media(max-width:720px){.topbar-inner{padding:12px 18px}.brand img{height:30px}.brand span{display:none}.hero{min-height:470px}.hero-content{padding:82px 20px 34px}.content{padding:28px 20px 58px}.cast-row{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:12px;row-gap:28px}.synopsis{font-size:15px}.meta-row{align-items:flex-start}.meta-val{text-align:left}}
+"""
+
+MOVIE_PAGE_CSS = r"""
+:root {
+  --paper: #fcfcfb;
+  --ink: #191712;
+  --muted: #57534a;
+  --line: rgba(25, 23, 18, .25);
+  --ornament-dot: #c3c3c2;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+}
+.page-bg { display: none; }
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 56px;
+  background: rgba(252, 252, 251, .94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.topbar-inner {
+  width: 100%;
+  max-width: 1040px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand { min-width: 0; display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; }
+.brand img { width: auto; height: 34px; }
+.brand span { color: #4b422f; font-size: 12px; letter-spacing: .04em; transform: translateY(1px); }
+.back-link {
+  flex-shrink: 0;
+  color: #6b675e;
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition: color .18s ease;
+}
+.back-link:hover { color: var(--ink); }
+.back-link::before { content: '←'; margin-right: 6px; }
+.hero { position: relative; height: 480px; overflow: hidden; }
+.hero-media { position: absolute; inset: 0; background: #d7d5cf; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.hero-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(25, 23, 18, .16) 24%, rgba(25, 23, 18, .9) 100%);
+}
+.hero-content {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  max-width: 1040px;
+  padding: 24px 32px;
+  transform: translateX(-50%);
+}
+.genre-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 10px; }
+.genre-tag {
+  padding: 2px 10px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .45);
+  border-radius: 0;
+  font-size: 10px;
+  letter-spacing: .05em;
+}
+h1 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-family: 'Crimson Pro', 'Noto Serif TC', serif;
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.subtitle { margin: 0; color: rgba(255, 255, 255, .65); font-size: 14px; }
+.original-title { font-family: 'Lora', serif; font-style: italic; font-weight: 400; }
+.ratings { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 18px 0 20px; }
+.rating-divider { width: 1px; height: 12px; background: rgba(255, 255, 255, .3); }
+.rating-item { display: flex; align-items: center; gap: 4px; color: rgba(255, 255, 255, .55); font-size: 13px; }
+.rating-item .star { color: rgba(255, 255, 255, .65); font-size: 13px; font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.rating-item .val { color: #fff; }
+.trailer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 18px 6px 8px;
+  color: #fff;
+  background: rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 14px;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+.trailer-link:hover { background: rgba(255, 255, 255, .28); }
+.content { width: 100%; max-width: 1040px; margin: 0 auto; padding: 32px 32px 72px; }
+.content > * + * { margin-top: 32px; }
+.synopsis {
+  margin: 0;
+  color: var(--muted);
+  font-family: 'Crimson Pro', 'Noto Serif TC', serif;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.crew-grid,
+.meta-panel {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(25, 23, 18, .36);
+  box-shadow: inset 0 0 0 5px var(--paper), inset 0 0 0 6px var(--line);
+}
+.crew-grid::after,
+.meta-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle 5px at 6px 6px, var(--ornament-dot) 0 1.5px, var(--paper) 1.5px 5px, transparent 5px),
+    radial-gradient(circle 5px at 50% 6px, var(--ornament-dot) 0 1.5px, var(--paper) 1.5px 5px, transparent 5px),
+    radial-gradient(circle 5px at calc(100% - 6px) 6px, var(--ornament-dot) 0 1.5px, var(--paper) 1.5px 5px, transparent 5px),
+    radial-gradient(circle 5px at 6px calc(100% - 6px), var(--ornament-dot) 0 1.5px, var(--paper) 1.5px 5px, transparent 5px),
+    radial-gradient(circle 5px at 50% calc(100% - 6px), var(--ornament-dot) 0 1.5px, var(--paper) 1.5px 5px, transparent 5px),
+    radial-gradient(circle 5px at calc(100% - 6px) calc(100% - 6px), var(--ornament-dot) 0 1.5px, var(--paper) 1.5px 5px, transparent 5px);
+}
+.crew-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 26px;
+}
+.crew-name, .cast-name { margin: 0; color: var(--muted); font-size: 14px; font-weight: 400; }
+.crew-grid > div { min-width: 0; }
+.crew-name { overflow-wrap: anywhere; }
+.crew-role { margin: 4px 0 0; color: #9a968d; font-size: 12px; }
+.cast-char { margin: 4px 0 0; color: #9a968d; font-family: 'Lora', serif; font-size: 12px; font-style: normal; }
+.detail-section { margin-top: 48px !important; }
+.section-label { margin: 0 0 18px; color: var(--muted); font-family: 'Noto Serif TC', serif; font-size: 16px; letter-spacing: .06em; }
+.cast-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 24px 16px; }
+.cast-card { min-width: 0; text-align: center; }
+.cast-photo, .cast-no-photo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(25, 23, 18, .16);
+  object-fit: cover;
+}
+.cast-no-photo { display: flex; align-items: center; justify-content: center; color: rgba(25, 23, 18, .25); background: rgba(25, 23, 18, .05); border: 1px solid var(--line); }
+.cast-no-photo .material-symbols-outlined { width: 24px; height: 24px; font-size: 24px; line-height: 24px; }
+.cast-name { font-size: 13px; line-height: 1.3; }
+.cast-char { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meta-panel {
+  padding: 26px;
+}
+.meta-row { display: flex; gap: 16px; margin-bottom: 12px; }
+.meta-row:last-child { margin-bottom: 0; }
+.meta-key { width: 80px; flex-shrink: 0; padding-top: 2px; color: #8a867d; font-size: 13px; }
+.meta-val { color: #36332d; font-size: 13px; }
+
+@media (max-width: 720px) {
+  .topbar { height: 56px; }
+  .topbar-inner { padding: 0 20px; }
+  .brand img { height: 30px; }
+  .brand span { display: none; }
+  .hero { height: 45vh; min-height: 300px; }
+  .hero-content { padding: 24px 20px; }
+  .content { padding: 32px 20px 58px; }
+  .crew-grid { grid-template-columns: repeat(2, 1fr); }
+  .cast-row { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
+  .cast-row::-webkit-scrollbar { display: none; }
+  .cast-card { width: 80px; flex: 0 0 80px; }
+  .meta-row { align-items: flex-start; }
+}
 """
 
 LANG_MAP = {
@@ -185,14 +389,13 @@ def render_movie_page(movie, generated_at):
     hero_image = detail.get("backdrop") or movie.get("backdrop") or movie.get("poster") or ""
     poster = detail.get("poster") or movie.get("poster") or hero_image
     genres = normalize_genres(movie, detail)
-    subtitle = " · ".join(
-        part
-        for part in [
-            title_en,
-            format_release_dates(movie),
-            f"{detail.get('duration')}分鐘" if detail.get("duration") else "",
-        ]
-        if part
+    subtitle_meta = " · ".join(
+        part for part in [format_release_dates(movie), f"{detail.get('duration')}分鐘" if detail.get("duration") else ""] if part
+    )
+    subtitle = (
+        (f'<span class="original-title">{h(title_en)}</span>' if title_en else "")
+        + (" · " if title_en and subtitle_meta else "")
+        + h(subtitle_meta)
     )
     genre_tags = "".join(f'<span class="genre-tag">{h(genre)}</span>' for genre in genres[:3])
     rating_parts = []
@@ -213,7 +416,7 @@ def render_movie_page(movie, generated_at):
         + (
             f'<img class="cast-photo" src="{h(person.get("photo"))}" alt="{h(person.get("name"))}" loading="lazy"/>'
             if person.get("photo")
-            else '<div class="cast-no-photo">person</div>'
+            else '<div class="cast-no-photo"><span class="material-symbols-outlined" aria-hidden="true">person</span></div>'
         )
         + f'<p class="cast-name">{h(person.get("name"))}</p><p class="cast-char">{h(person.get("char"))}</p></div>'
         for person in cast
@@ -265,21 +468,21 @@ def render_movie_page(movie, generated_at):
 <link rel="icon" href="../../favicon.ico?v=10" sizes="32x32"/>
 <link rel="icon" href="../../favicon.svg?v=10" type="image/svg+xml" sizes="any"/>
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css"/>
+<link rel="stylesheet" href="../../movie-page.css?v=17"/>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>
 <body>
 <div class="page-bg"></div>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span>電影佈告欄</span></a><a class="back-link" href="../../">回電影列表</a></div></header>
 <main>
-<section class="hero"><div class="hero-media">{hero_media}</div><div class="hero-content"><div class="genre-tags">{genre_tags}</div><h1>{h(title_zh)}</h1><p class="subtitle">{h(subtitle)}</p><div class="ratings">{ratings_html}</div>{trailer_html}</div></section>
+<section class="hero"><div class="hero-media">{hero_media}</div><div class="hero-content"><div class="genre-tags">{genre_tags}</div><h1>{h(title_zh)}</h1><p class="subtitle">{subtitle}</p><div class="ratings">{ratings_html}</div>{trailer_html}</div></section>
 <section class="content">
 {f'<p class="synopsis">{h(detail.get("synopsis") or movie.get("synopsis"))}</p>' if (detail.get("synopsis") or movie.get("synopsis")) else ''}
 {f'<div class="crew-grid">{crew_html}</div>' if crew_html else ''}
-{f'<div><p class="section-label">主要演員</p><div class="cast-row">{cast_html}</div></div>' if cast_html else ''}
-<div><p class="section-label">其他資訊</p><div class="meta-panel">{render_meta_panel(movie, detail)}</div></div>
+{f'<div class="detail-section"><p class="section-label">主要演員</p><div class="cast-row">{cast_html}</div></div>' if cast_html else ''}
+<div class="detail-section"><p class="section-label">其他資訊</p><div class="meta-panel">{render_meta_panel(movie, detail)}</div></div>
 </section>
 </main>
 </body>

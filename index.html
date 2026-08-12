@@ -27,10 +27,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="電影佈告欄"/>
 <link rel="manifest" href="manifest.webmanifest?v=10"/>
-<meta name="theme-color" content="#0a0a0f"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<meta name="theme-color" content="#fcfcfb"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&family=Lato:wght@300;400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css?v=14"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css?v=99"/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-15QHSQT4KF"></script>
 <script>
@@ -80,6 +81,16 @@
       </div>
     </div>
   </div>
+  <div id="release-ticker" class="release-ticker" role="region" aria-label="本週上映電影" aria-live="off">
+    <div id="release-ticker-track" class="release-ticker-track">
+      <div class="release-ticker-group">
+        <span class="release-ticker-label">本週上映</span>
+        <span class="release-ticker-dot" aria-hidden="true">·</span>
+        <span class="release-ticker-title">載入中</span>
+        <span class="release-ticker-dot" aria-hidden="true">·</span>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main id="main-content">
@@ -116,11 +127,11 @@
     </div>
     <div class="filter-row">
       <button id="mobile-search-toggle" onclick="toggleFilter()">
-        <span class="material-symbols-outlined" style="font-size:18px">search</span>尋找
+        <span class="material-symbols-rounded" style="font-size:18px">search</span>尋找
       </button>
       <div class="filter-left-group">
         <div class="tab-search-wrap">
-          <span class="material-symbols-outlined search-icon-abs" style="font-size:18px;color:rgba(255,255,255,0.4)">search</span>
+          <span class="material-symbols-rounded search-icon-abs" style="font-size:18px;color:rgba(255,255,255,0.4)">search</span>
           <input id="tab-search" class="tab-search" type="text" placeholder="搜尋電影..."/>
           <button class="search-clear-btn" id="tab-search-clear" onclick="clearSearch()"><span class="material-symbols-outlined" style="font-size:18px">cancel</span></button>
         </div>
@@ -139,7 +150,7 @@
       <div class="filter-right-group">
         <div class="divider-v filter-desktop-divider"></div>
         <button class="filter-btn" onclick="toggleFilter(this)">
-          <span class="material-symbols-outlined" style="font-size:16px">tune</span>篩選
+          <span class="material-symbols-outlined" style="font-size:18px">tune</span>篩選
         </button>
         <div class="active-filters-display">
           <span id="active-filters-text" class="active-filters-text"></span>
@@ -154,7 +165,9 @@
           <span class="material-symbols-outlined" style="font-size:20px">grid_view</span>
         </button>
         <button id="btn-view-list" class="view-btn" onclick="setView('list')" title="列表模式">
-          <span class="material-symbols-outlined" style="font-size:20px">view_list</span>
+          <svg class="view-list-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill="currentColor" d="M2.5 3.5h2v2h-2v-2ZM7 3.5h10.5v2H7v-2ZM2.5 9h2v2h-2V9ZM7 9h10.5v2H7V9Zm-4.5 5.5h2v2h-2v-2Zm4.5 0h10.5v2H7v-2Z"/>
+          </svg>
         </button>
       </div>
     </div>
@@ -166,7 +179,7 @@
     </div>
     <div id="filter-panel">
       <div id="mobile-search-wrap" class="tab-search-wrap">
-        <span class="material-symbols-outlined search-icon-abs" style="font-size:18px;color:rgba(255,255,255,0.4)">search</span>
+        <span class="material-symbols-rounded search-icon-abs" style="font-size:18px;color:rgba(255,255,255,0.4)">search</span>
         <input id="mobile-tab-search" class="tab-search" type="text" placeholder="搜尋電影..."/>
         <button class="search-clear-btn" id="mobile-search-clear" onclick="clearMobileSearch()"><span class="material-symbols-outlined" style="font-size:18px">cancel</span></button>
       </div>
@@ -209,20 +222,6 @@
   </div>
 </div>
 
-<div id="detail-modal">
-  <div class="modal-backdrop" onclick="closeModal()"></div>
-  <div class="modal-scroll">
-    <div id="modal-bg-fill"></div>
-    <div id="modal-hero-slot"></div>
-    <div class="modal-inner">
-      <button class="modal-close" onclick="closeModal()">
-        <span class="material-symbols-outlined" style="font-size:20px;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24">close</span>
-      </button>
-      <div id="modal-content"></div>
-    </div>
-  </div>
-</div>
-
 <div id="trailer-modal">
   <div class="trailer-backdrop" onclick="closeTrailer()"></div>
   <div class="trailer-wrap">
@@ -243,10 +242,10 @@
 </footer>
 </main>
 
-<script src="app.js?v=13"></script>
+<script src="app.js?v=24"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js?v=13', { updateViaCache: 'none' })
+    navigator.serviceWorker.register('sw.js?v=14', { updateViaCache: 'none' })
       .then(registration => registration.update())
       .catch(err => console.warn('[SW] register failed:', err));
   }
