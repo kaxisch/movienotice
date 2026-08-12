@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-12T13:17:25.620307+08:00",
+  "generated_at": "2026-08-12T16:02:36.352311+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 51,
+    "now_count": 52,
     "soon_count": 54
   },
   "movies": {
@@ -22,7 +22,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/yJxLZruKq4iodYteRk1WaKKoXV1.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.5",
         "genre": [
           "科幻",
           "懸疑",
@@ -120,11 +120,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 80000000,
@@ -133,7 +133,7 @@
         "origLang": "en",
         "origTitle": "The End of Oak Street",
         "platforms": [],
-        "popularity": 67.0169,
+        "popularity": 81.1343,
         "imdbId": "tt27165187",
         "countries": [
           "United States of America"
@@ -148,7 +148,7 @@
           "synopsis": "當一場神秘的宇宙事件，撕裂了寧靜的橡樹街社群後，整個社群竟被傳送到未知之地，普拉特一家人很快就發現：生存關鍵取決於當一家人置身於難以辨認的環境時，是否能夠緊密團結在一起。",
           "poster": "https://image.tmdb.org/t/p/w500/yJxLZruKq4iodYteRk1WaKKoXV1.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.5",
           "trailerKey": "lgMgwGUc9_I",
           "imdbId": "tt27165187",
           "countries": [
@@ -239,11 +239,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 80000000,
@@ -662,6 +662,167 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1623376?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1728113,
+        "titleZh": "KATSEYE: WILD HEARTS",
+        "titleEn": "KATSEYE: WILD HEARTS",
+        "releaseDate": "2026-08-12",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-12",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/2iMiErHxi3prW3J2ZjFiChfhptt.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/q6Iq6wutoM7AqekJ831ycBOqCxp.jpg",
+        "voteAverage": "",
+        "genre": [
+          "紀錄",
+          "音樂"
+        ],
+        "duration": 80,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "索菲亞·拉弗爾特扎",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/7dWyJeJZvQq1o3CSq1QjE5l1I0F.jpg"
+          },
+          {
+            "name": "Daniela Avanzini",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/rQk1qi9hOyUDkhFe1TwJ0iXmSbo.jpg"
+          },
+          {
+            "name": "Lara Raj",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/isAMyUTgkx2Hkm8kdexo1bdnvuT.jpg"
+          },
+          {
+            "name": "Megan Skiendiel",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/48QuK6Y99OJL6TytiUWCrQ2vMv.jpg"
+          },
+          {
+            "name": "정윤채",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/uYx5RvlNyRIP4Pa9Zg52hLUcJTk.jpg"
+          },
+          {
+            "name": "曼儂·班納曼",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/j9ZwVimrccPPobWeaNGakfhPmm8.jpg"
+          },
+          {
+            "name": "Sohey Sugihara",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/prw64pC4HnRB1NBg0INopa0F0Nu.jpg"
+          },
+          {
+            "name": "Grant Gilmore",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/s0wzdaedt7F1mJFBaZt49pzVGFl.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Nadia Hallgren",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "KATSEYE: WILD HEARTS",
+        "platforms": [],
+        "popularity": 5.1288,
+        "imdbId": "tt43657324",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 80,
+          "genres": [
+            "紀錄",
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/2iMiErHxi3prW3J2ZjFiChfhptt.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/q6Iq6wutoM7AqekJ831ycBOqCxp.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt43657324",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "索菲亞·拉弗爾特扎",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/7dWyJeJZvQq1o3CSq1QjE5l1I0F.jpg"
+            },
+            {
+              "name": "Daniela Avanzini",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/rQk1qi9hOyUDkhFe1TwJ0iXmSbo.jpg"
+            },
+            {
+              "name": "Lara Raj",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/isAMyUTgkx2Hkm8kdexo1bdnvuT.jpg"
+            },
+            {
+              "name": "Megan Skiendiel",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/48QuK6Y99OJL6TytiUWCrQ2vMv.jpg"
+            },
+            {
+              "name": "정윤채",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/uYx5RvlNyRIP4Pa9Zg52hLUcJTk.jpg"
+            },
+            {
+              "name": "曼儂·班納曼",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/j9ZwVimrccPPobWeaNGakfhPmm8.jpg"
+            },
+            {
+              "name": "Sohey Sugihara",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/prw64pC4HnRB1NBg0INopa0F0Nu.jpg"
+            },
+            {
+              "name": "Grant Gilmore",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/s0wzdaedt7F1mJFBaZt49pzVGFl.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Nadia Hallgren",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "KATSEYE: WILD HEARTS",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1728113?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -1323,15 +1484,15 @@
         ],
         "crew": [
           {
-            "name": "Василий Ровенский",
-            "job": "Screenplay"
-          },
-          {
             "name": "Эльвира Буштец",
             "job": "Screenplay"
           },
           {
             "name": "Федор Деревянский",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Василий Ровенский",
             "job": "Screenplay"
           }
         ],
@@ -1350,7 +1511,7 @@
             "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
           }
         ],
-        "popularity": 3.0211,
+        "popularity": 2.9866,
         "imdbId": "tt24069962",
         "countries": [
           "Russia"
@@ -1436,15 +1597,15 @@
           ],
           "crew": [
             {
-              "name": "Василий Ровенский",
-              "job": "Screenplay"
-            },
-            {
               "name": "Эльвира Буштец",
               "job": "Screenplay"
             },
             {
               "name": "Федор Деревянский",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Василий Ровенский",
               "job": "Screenplay"
             }
           ],
@@ -1599,7 +1760,7 @@
         "origLang": "fr",
         "origTitle": "L’Âme Idéale",
         "platforms": [],
-        "popularity": 2.5942,
+        "popularity": 2.7504,
         "imdbId": "tt35526093",
         "countries": [
           "France"
@@ -2126,12 +2287,12 @@
           }
         ],
         "budget": 750000,
-        "revenue": 488117950,
+        "revenue": 488144940,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Obsession",
         "platforms": [],
-        "popularity": 278.4755,
+        "popularity": 262.6154,
         "imdbId": "tt37287335",
         "countries": [
           "United States of America",
@@ -2246,7 +2407,7 @@
             }
           ],
           "budget": 750000,
-          "revenue": 488117950,
+          "revenue": 488144940,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Obsession",
@@ -2635,7 +2796,7 @@
         "origLang": "ja",
         "origTitle": "クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
         "platforms": [],
-        "popularity": 28.0693,
+        "popularity": 29.4135,
         "imdbId": "tt41293342",
         "countries": [
           "Japan"
@@ -2997,7 +3158,7 @@
         "origLang": "vi",
         "origTitle": "Phí Phông: Quỷ Máu Rừng Thiêng",
         "platforms": [],
-        "popularity": 3.0161,
+        "popularity": 2.7465,
         "imdbId": null,
         "countries": [
           "Vietnam"
@@ -3855,7 +4016,7 @@
         "origLang": "fr",
         "origTitle": "Mauvais Sang",
         "platforms": [],
-        "popularity": 3.1609,
+        "popularity": 2.9602,
         "imdbId": "tt0091497",
         "countries": [
           "France"
@@ -4622,7 +4783,7 @@
         "origLang": "en",
         "origTitle": "Spider-Man: Brand New Day",
         "platforms": [],
-        "popularity": 1310.798,
+        "popularity": 1146.6141,
         "imdbId": "tt22084616",
         "countries": [
           "United States of America"
@@ -5645,11 +5806,11 @@
         ],
         "crew": [
           {
-            "name": "Shea Wageman",
+            "name": "Steve Ball",
             "job": "Writer"
           },
           {
-            "name": "Steve Ball",
+            "name": "Shea Wageman",
             "job": "Writer"
           },
           {
@@ -5663,7 +5824,7 @@
         "origLang": "en",
         "origTitle": "Charlie the Wonderdog",
         "platforms": [],
-        "popularity": 4.6064,
+        "popularity": 4.3661,
         "imdbId": "tt29612071",
         "countries": [
           "Canada"
@@ -5770,11 +5931,11 @@
           ],
           "crew": [
             {
-              "name": "Shea Wageman",
+              "name": "Steve Ball",
               "job": "Writer"
             },
             {
-              "name": "Steve Ball",
+              "name": "Shea Wageman",
               "job": "Writer"
             },
             {
@@ -5822,29 +5983,14 @@
         "trailerKey": null,
         "cast": [
           {
+            "name": "Caolán O'Gorman",
+            "char": "Alec",
+            "photo": null
+          },
+          {
             "name": "安德魯·霍華",
             "char": "Dylan",
             "photo": "https://image.tmdb.org/t/p/w500/kba1JeCUYHufjB933G5xPRhO8lV.jpg"
-          },
-          {
-            "name": "Lyndsey Marshal",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/rhgtb80RXEIwL2LFw9L1nMxoRxd.jpg"
-          },
-          {
-            "name": "Juliet Aubrey",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/puwE4ofyI8OWXXjpoJNyGASdFiR.jpg"
-          },
-          {
-            "name": "Kate Kennedy",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/xrPSWHnBVeLxK8i1dLVcOzphx0T.jpg"
-          },
-          {
-            "name": "Anton Valensi",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/hU2IY4iXYwibgbZXSk0u8p1VfBF.jpg"
           },
           {
             "name": "Alessa Savage",
@@ -5852,38 +5998,53 @@
             "photo": "https://image.tmdb.org/t/p/w500/6JaOBrcvVoN76ZXu1YObROx8FzD.jpg"
           },
           {
-            "name": "Hana Hrzic",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/lmjW0seUNSvdoby9TVHzLLriny0.jpg"
-          },
-          {
-            "name": "Helena Braithwaite",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/pdfiwPWYAKUQ0YEWYZeOgNGoUao.jpg"
-          },
-          {
             "name": "Safiya Benaddi",
             "char": "Nina",
             "photo": "https://image.tmdb.org/t/p/w500/3poU2h8wx1L9C3cKxs8nAlHir5p.jpg"
           },
           {
+            "name": "Lyndsey Marshal",
+            "char": "Julia",
+            "photo": "https://image.tmdb.org/t/p/w500/rhgtb80RXEIwL2LFw9L1nMxoRxd.jpg"
+          },
+          {
+            "name": "Kate Kennedy",
+            "char": "Cecile",
+            "photo": "https://image.tmdb.org/t/p/w500/xrPSWHnBVeLxK8i1dLVcOzphx0T.jpg"
+          },
+          {
             "name": "卡麥隆·金",
-            "char": "",
+            "char": "Jamie",
             "photo": "https://image.tmdb.org/t/p/w500/4dRumrrYMpjZ09h0DN3iZtIHawr.jpg"
           },
           {
-            "name": "Caolán O'Gorman",
-            "char": "Alec",
-            "photo": null
+            "name": "Hana Hrzic",
+            "char": "Amy",
+            "photo": "https://image.tmdb.org/t/p/w500/lmjW0seUNSvdoby9TVHzLLriny0.jpg"
+          },
+          {
+            "name": "Helena Braithwaite",
+            "char": "Rose",
+            "photo": "https://image.tmdb.org/t/p/w500/pdfiwPWYAKUQ0YEWYZeOgNGoUao.jpg"
+          },
+          {
+            "name": "Juliet Aubrey",
+            "char": "Mrs. Bennett",
+            "photo": "https://image.tmdb.org/t/p/w500/puwE4ofyI8OWXXjpoJNyGASdFiR.jpg"
+          },
+          {
+            "name": "Anton Valensi",
+            "char": "Salesman",
+            "photo": "https://image.tmdb.org/t/p/w500/hU2IY4iXYwibgbZXSk0u8p1VfBF.jpg"
           },
           {
             "name": "Dave Macrae",
-            "char": "",
+            "char": "Maths teacher",
             "photo": "https://image.tmdb.org/t/p/w500/zMH9UNTXOFoP5R3zdcGN0KXCCjh.jpg"
           },
           {
             "name": "Buddy Skelton",
-            "char": "",
+            "char": "Aidan",
             "photo": "https://image.tmdb.org/t/p/w500/7AbqNBgwdLky4sSmKARAhNlmWDg.jpg"
           },
           {
@@ -5943,29 +6104,14 @@
           ],
           "cast": [
             {
+              "name": "Caolán O'Gorman",
+              "char": "Alec",
+              "photo": null
+            },
+            {
               "name": "安德魯·霍華",
               "char": "Dylan",
               "photo": "https://image.tmdb.org/t/p/w500/kba1JeCUYHufjB933G5xPRhO8lV.jpg"
-            },
-            {
-              "name": "Lyndsey Marshal",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/rhgtb80RXEIwL2LFw9L1nMxoRxd.jpg"
-            },
-            {
-              "name": "Juliet Aubrey",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/puwE4ofyI8OWXXjpoJNyGASdFiR.jpg"
-            },
-            {
-              "name": "Kate Kennedy",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/xrPSWHnBVeLxK8i1dLVcOzphx0T.jpg"
-            },
-            {
-              "name": "Anton Valensi",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/hU2IY4iXYwibgbZXSk0u8p1VfBF.jpg"
             },
             {
               "name": "Alessa Savage",
@@ -5973,38 +6119,53 @@
               "photo": "https://image.tmdb.org/t/p/w500/6JaOBrcvVoN76ZXu1YObROx8FzD.jpg"
             },
             {
-              "name": "Hana Hrzic",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/lmjW0seUNSvdoby9TVHzLLriny0.jpg"
-            },
-            {
-              "name": "Helena Braithwaite",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/pdfiwPWYAKUQ0YEWYZeOgNGoUao.jpg"
-            },
-            {
               "name": "Safiya Benaddi",
               "char": "Nina",
               "photo": "https://image.tmdb.org/t/p/w500/3poU2h8wx1L9C3cKxs8nAlHir5p.jpg"
             },
             {
+              "name": "Lyndsey Marshal",
+              "char": "Julia",
+              "photo": "https://image.tmdb.org/t/p/w500/rhgtb80RXEIwL2LFw9L1nMxoRxd.jpg"
+            },
+            {
+              "name": "Kate Kennedy",
+              "char": "Cecile",
+              "photo": "https://image.tmdb.org/t/p/w500/xrPSWHnBVeLxK8i1dLVcOzphx0T.jpg"
+            },
+            {
               "name": "卡麥隆·金",
-              "char": "",
+              "char": "Jamie",
               "photo": "https://image.tmdb.org/t/p/w500/4dRumrrYMpjZ09h0DN3iZtIHawr.jpg"
             },
             {
-              "name": "Caolán O'Gorman",
-              "char": "Alec",
-              "photo": null
+              "name": "Hana Hrzic",
+              "char": "Amy",
+              "photo": "https://image.tmdb.org/t/p/w500/lmjW0seUNSvdoby9TVHzLLriny0.jpg"
+            },
+            {
+              "name": "Helena Braithwaite",
+              "char": "Rose",
+              "photo": "https://image.tmdb.org/t/p/w500/pdfiwPWYAKUQ0YEWYZeOgNGoUao.jpg"
+            },
+            {
+              "name": "Juliet Aubrey",
+              "char": "Mrs. Bennett",
+              "photo": "https://image.tmdb.org/t/p/w500/puwE4ofyI8OWXXjpoJNyGASdFiR.jpg"
+            },
+            {
+              "name": "Anton Valensi",
+              "char": "Salesman",
+              "photo": "https://image.tmdb.org/t/p/w500/hU2IY4iXYwibgbZXSk0u8p1VfBF.jpg"
             },
             {
               "name": "Dave Macrae",
-              "char": "",
+              "char": "Maths teacher",
               "photo": "https://image.tmdb.org/t/p/w500/zMH9UNTXOFoP5R3zdcGN0KXCCjh.jpg"
             },
             {
               "name": "Buddy Skelton",
-              "char": "",
+              "char": "Aidan",
               "photo": "https://image.tmdb.org/t/p/w500/7AbqNBgwdLky4sSmKARAhNlmWDg.jpg"
             },
             {
@@ -6360,7 +6521,7 @@
         "origLang": "ja",
         "origTitle": "箱の中の羊",
         "platforms": [],
-        "popularity": 4.8094,
+        "popularity": 5.0163,
         "imdbId": "tt38551209",
         "countries": [
           "Japan"
@@ -6745,7 +6906,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 境界の彼方 -I'll Be Here- 過去篇",
         "platforms": [],
-        "popularity": 1.6985,
+        "popularity": 1.725,
         "imdbId": "tt4531412",
         "countries": [
           "Japan"
@@ -6992,7 +7153,7 @@
         "origLang": "ko",
         "origTitle": "세계의 주인",
         "platforms": [],
-        "popularity": 2.5867,
+        "popularity": 2.5416,
         "imdbId": "tt37661885",
         "countries": [
           "South Korea"
@@ -7257,7 +7418,7 @@
         "origLang": "en",
         "origTitle": "The Odyssey",
         "platforms": [],
-        "popularity": 758.9909,
+        "popularity": 819.0049,
         "imdbId": "tt33764258",
         "countries": [
           "United Kingdom",
@@ -7693,7 +7854,7 @@
         "origLang": "en",
         "origTitle": "Lockbox",
         "platforms": [],
-        "popularity": 13.4187,
+        "popularity": 12.0286,
         "imdbId": "tt37369064",
         "countries": [
           "United States of America",
@@ -8322,7 +8483,7 @@
         "origLang": "en",
         "origTitle": "Moana",
         "platforms": [],
-        "popularity": 244.3586,
+        "popularity": 229.5025,
         "imdbId": "tt27419466",
         "countries": [
           "United States of America"
@@ -8591,7 +8752,7 @@
         "origLang": "en",
         "origTitle": "Evil Dead Burn",
         "platforms": [],
-        "popularity": 281.5826,
+        "popularity": 270.5983,
         "imdbId": "tt31170389",
         "countries": [
           "United States of America"
@@ -9077,7 +9238,7 @@
         "origLang": "ja",
         "origTitle": "映畫ドラえもん 新・のび太の海底鬼巖城",
         "platforms": [],
-        "popularity": 10.7089,
+        "popularity": 10.1307,
         "imdbId": "tt38201958",
         "countries": [
           "Japan"
@@ -9202,7 +9363,7 @@
         "origLang": "ja",
         "origTitle": "The Ghost in the Shell",
         "platforms": [],
-        "popularity": 2.919,
+        "popularity": 2.7626,
         "imdbId": "",
         "countries": [
           "Japan"
@@ -9386,7 +9547,7 @@
         "origLang": "en",
         "origTitle": "Following",
         "platforms": [],
-        "popularity": 7.3133,
+        "popularity": 6.6472,
         "imdbId": "tt0154506",
         "countries": [
           "United Kingdom",
@@ -9924,7 +10085,7 @@
         "origLang": "ja",
         "origTitle": "名探偵コナン ハイウェイの墮天使",
         "platforms": [],
-        "popularity": 17.7737,
+        "popularity": 18.0552,
         "imdbId": "tt39123115",
         "countries": [
           "Japan"
@@ -10366,7 +10527,7 @@
         "origLang": "en",
         "origTitle": "Agatha's Almanac",
         "platforms": [],
-        "popularity": 0.7708,
+        "popularity": 0.6931,
         "imdbId": "tt35932393",
         "countries": [
           "Canada"
@@ -10419,7 +10580,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/pO60beDIqmCmrHVyeV301aW4Muh.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
-        "voteAverage": "7.4",
+        "voteAverage": "7.5",
         "genre": [
           "科幻",
           "驚悚"
@@ -10550,7 +10711,7 @@
             "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
           }
         ],
-        "popularity": 264.7086,
+        "popularity": 246.4077,
         "imdbId": "tt15047880",
         "countries": [
           "United States of America"
@@ -10564,7 +10725,7 @@
           "synopsis": "如果你發現我們從來都不是宇宙中唯一的生命，如果有人證明給你看，你會感到恐懼嗎？真相屬於七十億人類，我們正在逼近……揭密日。",
           "poster": "https://image.tmdb.org/t/p/w500/pO60beDIqmCmrHVyeV301aW4Muh.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
-          "voteAverage": "7.4",
+          "voteAverage": "7.5",
           "trailerKey": "K5WlVB_mlwY",
           "imdbId": "tt15047880",
           "countries": [
@@ -10816,12 +10977,12 @@
           }
         ],
         "budget": 10000000,
-        "revenue": 395038510,
+        "revenue": 393958092,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Backrooms",
         "platforms": [],
-        "popularity": 189.0097,
+        "popularity": 176.1763,
         "imdbId": "tt26657236",
         "countries": [
           "United States of America",
@@ -10937,7 +11098,7 @@
             }
           ],
           "budget": 10000000,
-          "revenue": 395038510,
+          "revenue": 393958092,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Backrooms",
@@ -11352,7 +11513,7 @@
         "origLang": "es",
         "origTitle": "Ídolos",
         "platforms": [],
-        "popularity": 3.8535,
+        "popularity": 4.2216,
         "imdbId": "tt27590933",
         "countries": [
           "Spain",
@@ -11549,7 +11710,7 @@
         "origLang": "ja",
         "origTitle": "映畫しまじろう しまじろうと ゆうきのうた",
         "platforms": [],
-        "popularity": 1.1462,
+        "popularity": 1.1706,
         "imdbId": null,
         "countries": [],
         "detail": {
@@ -12297,7 +12458,7 @@
         "origLang": "en",
         "origTitle": "PAW Patrol: The Dino Movie",
         "platforms": [],
-        "popularity": 32.9966,
+        "popularity": 31.4277,
         "imdbId": "tt29356163",
         "countries": [
           "Canada",
@@ -12797,6 +12958,11 @@
             "photo": "https://image.tmdb.org/t/p/w500/ytbrQ4R1iiRD3I0qdAddVfgooD7.jpg"
           },
           {
+            "name": "Kole Parks",
+            "char": "Benji",
+            "photo": "https://image.tmdb.org/t/p/w500/aDfVA0VYWtaFyzKrc6xyoBV0Gcd.jpg"
+          },
+          {
             "name": "Shiloh O’Reilly",
             "char": "Tommy",
             "photo": "https://image.tmdb.org/t/p/w500/ogT1ycS4CoOassN1GeCaS7qVcgO.jpg"
@@ -12860,11 +13026,6 @@
             "name": "Lochlan Ray Miller",
             "char": "Boy with Pennies #1",
             "photo": "https://image.tmdb.org/t/p/w500/yHgvyIz2sFcUl8HuoqJe6GQc6bF.jpg"
-          },
-          {
-            "name": "Lorenzo Antonucci",
-            "char": "Terry",
-            "photo": "https://image.tmdb.org/t/p/w500/rUPpfC8HwWdwB8NNP1m1zLPIhlH.jpg"
           }
         ],
         "crew": [
@@ -12887,7 +13048,7 @@
         "origLang": "en",
         "origTitle": "Ice Cream Man",
         "platforms": [],
-        "popularity": 52.2967,
+        "popularity": 49.1756,
         "imdbId": "tt36893729",
         "countries": [
           "United States of America",
@@ -12922,6 +13083,11 @@
               "name": "Charlie Zeltzer",
               "char": "Jared",
               "photo": "https://image.tmdb.org/t/p/w500/ytbrQ4R1iiRD3I0qdAddVfgooD7.jpg"
+            },
+            {
+              "name": "Kole Parks",
+              "char": "Benji",
+              "photo": "https://image.tmdb.org/t/p/w500/aDfVA0VYWtaFyzKrc6xyoBV0Gcd.jpg"
             },
             {
               "name": "Shiloh O’Reilly",
@@ -12987,11 +13153,6 @@
               "name": "Lochlan Ray Miller",
               "char": "Boy with Pennies #1",
               "photo": "https://image.tmdb.org/t/p/w500/yHgvyIz2sFcUl8HuoqJe6GQc6bF.jpg"
-            },
-            {
-              "name": "Lorenzo Antonucci",
-              "char": "Terry",
-              "photo": "https://image.tmdb.org/t/p/w500/rUPpfC8HwWdwB8NNP1m1zLPIhlH.jpg"
             }
           ],
           "crew": [
@@ -13391,7 +13552,7 @@
         "origLang": "ja",
         "origTitle": "禍禍女",
         "platforms": [],
-        "popularity": 2.58,
+        "popularity": 2.3941,
         "imdbId": "tt38263629",
         "countries": [
           "Japan"
@@ -13655,7 +13816,7 @@
         "origLang": "en",
         "origTitle": "Leviticus",
         "platforms": [],
-        "popularity": 147.6612,
+        "popularity": 135.9428,
         "imdbId": "tt39143902",
         "countries": [
           "Australia",
@@ -13994,7 +14155,7 @@
         "origLang": "en",
         "origTitle": "Mutiny",
         "platforms": [],
-        "popularity": 14.9966,
+        "popularity": 16.4574,
         "imdbId": "tt32338669",
         "countries": [
           "United Kingdom",
@@ -14459,7 +14620,7 @@
         "origLang": "en",
         "origTitle": "One Night Only",
         "platforms": [],
-        "popularity": 26.0609,
+        "popularity": 26.9857,
         "imdbId": "tt37853455",
         "countries": [
           "United States of America"
@@ -15185,14 +15346,14 @@
         "crew": [
           {
             "name": "Philippe Lacheau",
-            "job": "Director"
-          },
-          {
-            "name": "Pierre Dudan",
             "job": "Writer"
           },
           {
             "name": "Philippe Lacheau",
+            "job": "Director"
+          },
+          {
+            "name": "Pierre Lacheau",
             "job": "Writer"
           }
         ],
@@ -15202,7 +15363,7 @@
         "origLang": "fr",
         "origTitle": "Marsupilami",
         "platforms": [],
-        "popularity": 8.7763,
+        "popularity": 7.9782,
         "imdbId": "tt33029380",
         "countries": [
           "France",
@@ -15309,14 +15470,14 @@
           "crew": [
             {
               "name": "Philippe Lacheau",
-              "job": "Director"
-            },
-            {
-              "name": "Pierre Dudan",
               "job": "Writer"
             },
             {
               "name": "Philippe Lacheau",
+              "job": "Director"
+            },
+            {
+              "name": "Pierre Lacheau",
               "job": "Writer"
             }
           ],
@@ -15472,7 +15633,7 @@
         "origLang": "it",
         "origTitle": "Diamanti",
         "platforms": [],
-        "popularity": 3.7493,
+        "popularity": 3.9355,
         "imdbId": "tt32810496",
         "countries": [
           "Italy"
@@ -15615,7 +15776,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ekj77L05ff5J64objwGrVnSipXB.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.4",
         "genre": [
           "劇情",
           "喜劇"
@@ -15745,7 +15906,7 @@
         "origLang": "en",
         "origTitle": "Tony",
         "platforms": [],
-        "popularity": 19.6957,
+        "popularity": 20.9459,
         "imdbId": "tt33095251",
         "countries": [
           "United States of America",
@@ -15760,7 +15921,7 @@
           "synopsis": "19歲的東尼一心嚮往成為作家，在1975年夏天，為了初戀南西踏入美國鱈魚角普洛文斯敦一間濱海餐廳的廚房打工洗碗。在餐廳老闆「主廚」嚴厲卻真誠的調教下，對料理一竅不通的東尼，逐漸蛻變成對美食充滿狂熱的年輕廚師；而闖蕩江湖的夥伴沙爾則帶著他一頭栽進酒精、菸草與放縱交織的世界。在這個瘋狂而炙熱的夏天，東尼第一次嚐到了未來的滋味——那些關於愛、背叛、友情與自我認同的碰撞，讓他第一次明白自己想要成為什麼樣的人。這份熾熱的初心，正是日後撼動全球美食界傳奇名廚的最初起點。",
           "poster": "https://image.tmdb.org/t/p/w500/ekj77L05ff5J64objwGrVnSipXB.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.4",
           "trailerKey": "uZKn0KB0fPU",
           "imdbId": "tt33095251",
           "countries": [
@@ -16564,11 +16725,11 @@
         ],
         "budget": 0,
         "revenue": 0,
-        "status": "Post Production",
+        "status": "Released",
         "origLang": "zh",
         "origTitle": "粽邪4：坤蒂拉娜",
         "platforms": [],
-        "popularity": 10.2109,
+        "popularity": 8.7865,
         "imdbId": "tt38633224",
         "countries": [
           "Taiwan"
@@ -16672,7 +16833,7 @@
           ],
           "budget": 0,
           "revenue": 0,
-          "status": "Post Production",
+          "status": "Released",
           "origLang": "zh",
           "origTitle": "粽邪4：坤蒂拉娜",
           "platforms": []
@@ -17069,7 +17230,7 @@
         "origLang": "ja",
         "origTitle": "ONE PIECE FILM STRONG WORLD",
         "platforms": [],
-        "popularity": 5.3955,
+        "popularity": 6.5634,
         "imdbId": "tt1485763",
         "countries": [
           "Japan"
@@ -17251,7 +17412,7 @@
           },
           {
             "name": "潘妮洛普·克魯茲",
-            "char": "Pina",
+            "char": "Piña",
             "photo": "https://image.tmdb.org/t/p/w500/n5SFgmvJSENQt8poE4qYacUnKOi.jpg"
           },
           {
@@ -17334,7 +17495,7 @@
             },
             {
               "name": "潘妮洛普·克魯茲",
-              "char": "Pina",
+              "char": "Piña",
               "photo": "https://image.tmdb.org/t/p/w500/n5SFgmvJSENQt8poE4qYacUnKOi.jpg"
             },
             {
@@ -18398,11 +18559,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -18471,11 +18632,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -18931,7 +19092,7 @@
         "origLang": "ko",
         "origTitle": "마지막 숙제",
         "platforms": [],
-        "popularity": 0.9359,
+        "popularity": 0.9361,
         "imdbId": "tt34539004",
         "countries": [
           "South Korea"
@@ -19051,7 +19212,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/2cWdr2n7VNrLEAer6hMPASIP7Px.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/kXXJolECFUepsYvMTKwgXT9WcMf.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
         "voteAverage": "6.3",
@@ -19137,7 +19298,7 @@
         "origLang": "fr",
         "origTitle": "Pour le plaisir",
         "platforms": [],
-        "popularity": 2.0511,
+        "popularity": 2.1564,
         "imdbId": "tt38607784",
         "countries": [
           "France"
@@ -19148,7 +19309,7 @@
             "喜劇"
           ],
           "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/2cWdr2n7VNrLEAer6hMPASIP7Px.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/kXXJolECFUepsYvMTKwgXT9WcMf.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
           "voteAverage": "6.3",
           "trailerKey": null,
@@ -19524,7 +19685,7 @@
         "origLang": "en",
         "origTitle": "Practical Magic 2",
         "platforms": [],
-        "popularity": 6.9239,
+        "popularity": 7.9293,
         "imdbId": "tt32588798",
         "countries": [
           "United States of America"
@@ -20162,7 +20323,7 @@
         "origLang": "en",
         "origTitle": "Resident Evil",
         "platforms": [],
-        "popularity": 8.9135,
+        "popularity": 9.5295,
         "imdbId": "tt35538033",
         "countries": [
           "United States of America",
@@ -20533,7 +20694,7 @@
         "origLang": "ja",
         "origTitle": "黒牢城",
         "platforms": [],
-        "popularity": 5.0738,
+        "popularity": 4.9841,
         "imdbId": "tt39602215",
         "countries": [
           "Japan"
@@ -20706,12 +20867,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -20720,7 +20881,7 @@
         "origLang": "en",
         "origTitle": "Heart of the Beast",
         "platforms": [],
-        "popularity": 11.2577,
+        "popularity": 12.058,
         "imdbId": "tt7526136",
         "countries": [
           "United States of America"
@@ -20761,12 +20922,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22336,7 +22497,7 @@
         "origLang": "en",
         "origTitle": "The Hunger Games: Sunrise on the Reaping",
         "platforms": [],
-        "popularity": 8.8208,
+        "popularity": 9.3332,
         "imdbId": "tt32558705",
         "countries": [
           "United States of America"
@@ -22773,7 +22934,7 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 17.4949,
+        "popularity": 17.4662,
         "imdbId": "tt31378509",
         "countries": [
           "United States of America"
