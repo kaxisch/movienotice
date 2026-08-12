@@ -16,7 +16,6 @@ var searchDebounce = null;
 var mobilePanelOpen = false;
 var tabSortState = { now: "date_desc", soon: "date_asc" };
 var currentView = 'card';
-var currentModalMovieId = null;
 
 var countryMap = {
   "US":"美國","GB":"英國","FR":"法國","DE":"德國","IT":"義大利","JP":"日本","KR":"韓國",
@@ -133,6 +132,69 @@ function isThisWeekRelease(movie) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(releaseDate || "")) return false;
   var week = taipeiWeekRange();
   return releaseDate >= week.start && releaseDate <= week.end;
+}
+function buildReleaseTickerGroup(titles, isDuplicate) {
+  var group = document.createElement("div");
+  group.className = "release-ticker-group";
+  if (isDuplicate) group.setAttribute("aria-hidden", "true");
+
+  var label = document.createElement("span");
+  label.className = "release-ticker-label";
+  label.textContent = "本週上映";
+  group.appendChild(label);
+
+  titles.forEach(function(title) {
+    var dot = document.createElement("span");
+    dot.className = "release-ticker-dot";
+    dot.setAttribute("aria-hidden", "true");
+    dot.textContent = "·";
+    group.appendChild(dot);
+
+    var titleNode = document.createElement("span");
+    titleNode.className = "release-ticker-title";
+    titleNode.textContent = title;
+    group.appendChild(titleNode);
+  });
+
+  var trailingDot = document.createElement("span");
+  trailingDot.className = "release-ticker-dot";
+  trailingDot.setAttribute("aria-hidden", "true");
+  trailingDot.textContent = "·";
+  group.appendChild(trailingDot);
+  return group;
+}
+function updateReleaseTicker() {
+  var ticker = document.getElementById("release-ticker");
+  var track = document.getElementById("release-ticker-track");
+  if (!ticker || !track) return;
+
+  var seen = {};
+  var movies = (allMovies.now || []).concat(allMovies.soon || []).filter(isThisWeekRelease);
+  movies.sort(function(a, b) {
+    return (a.releaseDate || "").localeCompare(b.releaseDate || "") ||
+      compareByPopularityDesc(a, b);
+  });
+  var titles = movies.map(function(movie) { return movie.titleZh || movie.titleEn || ""; }).filter(function(title) {
+    var key = normalizeTitleKey(title);
+    if (!key || seen[key]) return false;
+    seen[key] = true;
+    return true;
+  });
+
+  track.replaceChildren();
+  if (!titles.length) {
+    ticker.classList.add("is-empty");
+    ticker.setAttribute("aria-label", "本週上映電影：敬請期待");
+    track.appendChild(buildReleaseTickerGroup(["敬請期待"], false));
+    return;
+  }
+
+  ticker.classList.remove("is-empty");
+  ticker.setAttribute("aria-label", "本週上映電影：" + titles.join("、"));
+  track.appendChild(buildReleaseTickerGroup(titles, false));
+  track.appendChild(buildReleaseTickerGroup(titles, true));
+  var characterCount = titles.join("").length + titles.length * 3;
+  track.style.setProperty("--ticker-duration", Math.max(36, characterCount * 0.5) + "s");
 }
 function dateYear(s) { return s ? parseInt(s.slice(0, 4), 10) : 0; }
 function dateDiffDays(a, b) {
@@ -274,15 +336,6 @@ function findMovieInLists(id) {
   return found;
 }
 
-function openMovieLink(event, id) {
-  if (event && (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) {
-    return true;
-  }
-  if (event) event.preventDefault();
-  openModal(id);
-  return false;
-}
-
 function cardHTML(m, showRatings) {
   var cardImage = m.poster || m.backdrop || "";
   var useBackdropImage = !!(!m.poster && m.backdrop) || !!m.posterIsBackdrop;
@@ -299,7 +352,7 @@ function cardHTML(m, showRatings) {
     var mcStyle = m.mc ? '' : ' style="display:none"';
     metaHTML += '<div class="card-badges">';
     metaHTML += '<span class="badge-imdb" id="imdb-' + m.id + '"' + imdbStyle + '>IMDb<span>' + escHtml(m.imdb || '') + '</span></span>';
-    metaHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#e08a82', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
+    metaHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#c04a40', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
     metaHTML += '<span class="badge-mc" id="mc-' + m.id + '"' + mcStyle + '>MT<span>' + escHtml(m.mc || '') + '</span></span>';
     if (m.voteAverage) metaHTML += '<span class="badge-tmdb">TMDB ' + tmdbScore(m.voteAverage) + '</span>';
     metaHTML += '</div>';
@@ -307,9 +360,11 @@ function cardHTML(m, showRatings) {
   metaHTML += '</div>';
   var href = escHtml(movieDetailHref(m));
   var thisWeekLabel = isThisWeekRelease(m) ? '<span class="this-week-ribbon">本週上映</span>' : '';
-  return '<a class="movie-card movie-link fade-in" id="card-' + m.id + '" href="' + href + '" onclick="return openMovieLink(event,' + m.id + ')">' +
-    '<div class="card-img-wrap">' + imgHTML + thisWeekLabel +
+  return '<a class="movie-card movie-link fade-in" id="card-' + m.id + '" href="' + href + '">' +
+    '<div class="card-img-wrap"><div class="card-poster-clip">' + imgHTML + thisWeekLabel +
     '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(normalizeGenreList(m.genre).slice(0,2).join(' / ')) + '</span></div></div>' +
+    '<span class="card-corner card-corner-tl" aria-hidden="true"></span><span class="card-corner card-corner-tr" aria-hidden="true"></span>' +
+    '<span class="card-corner card-corner-bl" aria-hidden="true"></span><span class="card-corner card-corner-br" aria-hidden="true"></span></div>' +
     '<div class="card-info"><p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn +
     '<div class="card-spacer"></div>' + metaHTML + '</div></a>';
 }
@@ -345,20 +400,23 @@ function listRowHTML(m, showRatings) {
   if (m.titleEn && m.titleEn !== m.titleZh) subtitleParts.push(m.titleEn);
   var displayGenres = normalizeGenreList(m.genre);
   if (displayGenres.length > 0) subtitleParts.push(displayGenres.slice(0, 2).join(' / '));
-  var subtitleHTML = subtitleParts.length ? '<p class="list-subtitle">' + escHtml(subtitleParts.join(' · ')) + '</p>' : '';
+  var subtitleHTML = subtitleParts.length ? '<p class="list-subtitle">' +
+    (m.titleEn && m.titleEn !== m.titleZh ? '<span class="original-title">' + escHtml(m.titleEn) + '</span>' : '') +
+    (m.titleEn && m.titleEn !== m.titleZh && displayGenres.length > 0 ? ' · ' : '') +
+    (displayGenres.length > 0 ? escHtml(displayGenres.slice(0, 2).join(' / ')) : '') + '</p>' : '';
   var badgesHTML = '';
   if (showRatings) {
     var imdbStyle = m.imdb ? '' : ' style="display:none"';
     var rtStyle = m.rt ? '' : ' style="display:none"';
     var mcStyle = m.mc ? '' : ' style="display:none"';
     badgesHTML += '<span class="badge-imdb" id="imdb-' + m.id + '"' + imdbStyle + '>IMDb<span>' + escHtml(m.imdb || '') + '</span></span>';
-    badgesHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#e08a82', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
+    badgesHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#c04a40', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
     badgesHTML += '<span class="badge-mc" id="mc-' + m.id + '"' + mcStyle + '>MT<span>' + escHtml(m.mc || '') + '</span></span>';
     if (m.voteAverage) badgesHTML += '<span class="badge-tmdb">TMDB ' + tmdbScore(m.voteAverage) + '</span>';
   }
   var href = escHtml(movieDetailHref(m));
   var thisWeekLabel = isThisWeekRelease(m) ? '<span class="this-week-list-label">本週上映</span>' : '';
-  return '<a class="list-item movie-link fade-in" id="card-' + m.id + '" href="' + href + '" onclick="return openMovieLink(event,' + m.id + ')">' +
+  return '<a class="list-item movie-link fade-in" id="card-' + m.id + '" href="' + href + '">' +
     imgHTML +
     '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + thisWeekLabel + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatReleaseDates(m) + '</p>' : '') + '</div>' +
     '<div class="list-badges">' + badgesHTML + '</div>' +
@@ -959,6 +1017,9 @@ function renderModal(movie, detail, imdbRating) {
   if (detail.origTitle) subtitleParts.push(detail.origTitle);
   if (movie.releaseDate) subtitleParts.push(formatReleaseDates(movie, "、"));
   if (detail.duration) subtitleParts.push(detail.duration + "分鐘");
+  var modalSubtitleHTML = (detail.origTitle ? '<span class="original-title">' + escHtml(detail.origTitle) + '</span>' : '') +
+    (detail.origTitle && subtitleParts.length > 1 ? ' · ' : '') +
+    escHtml(subtitleParts.slice(detail.origTitle ? 1 : 0).join(' · '));
   var metaRows = [];
   if (Array.isArray(movie.twTheatricalReleases) && movie.twTheatricalReleases.length > 1) {
     metaRows.push(["台灣上映", formatReleaseDates(movie, "、")]);
@@ -989,16 +1050,16 @@ function renderModal(movie, detail, imdbRating) {
     '<div class="modal-hero-info">' +
     '<div class="modal-info-group"><div class="modal-genre-tags">' + genreTags + '</div>' +
     '<h2 class="modal-title">' + escHtml(movie.titleZh || detail.origTitle || "—") + '</h2>' +
-    '<p class="modal-subtitle">' + escHtml(subtitleParts.join(' · ')) + '</p>' +
+    '<p class="modal-subtitle">' + modalSubtitleHTML + '</p>' +
     '</div>' +
     (ratingsHTML ? '<div class="modal-ratings">' + ratingsHTML + '</div>' : '') +
     (trailerKey ? '<button class="btn-trailer" onclick="playTrailer(\'' + trailerKey + '\')"><span class="material-symbols-outlined" style="font-size:22px">play_arrow</span>播放預告</button>' : '') +
     '</div></div><div class="modal-body">' +
     (detail.synopsis ? '<p class="modal-synopsis">' + escHtml(detail.synopsis) + '</p>' : '') +
     (crewHTML ? '<div class="crew-grid">' + crewHTML + '</div>' : '') +
-    (castHTML ? '<div><p class="section-label">主要演員</p><div class="cast-row">' + castHTML + '</div></div>' : '') +
+    (castHTML ? '<div class="detail-section"><p class="section-label">主要演員</p><div class="cast-row">' + castHTML + '</div></div>' : '') +
     (platformHTML ? '<div><p class="section-label">收看平台</p><div class="platform-row">' + platformHTML + '</div></div>' : '') +
-    '<div><p class="section-label">其他資訊</p><div class="meta-panel">' + metaHTML + '</div>' +
+    '<div class="detail-section"><p class="section-label">其他資訊</p><div class="meta-panel">' + metaHTML + '</div>' +
     '<div class="modal-detail-link-row"><a class="modal-detail-link" href="' + escHtml(detailHref) + '" aria-label="開啟獨立電影頁面" title="開啟獨立電影頁面">' +
     '<span class="material-symbols-outlined" style="font-size:18px">open_in_new</span></a></div></div></div></div>';
   document.getElementById("modal-hero-slot").innerHTML = bgHTML;
@@ -1026,7 +1087,6 @@ document.addEventListener("keydown", function(e) {
       var infoButton = document.getElementById("site-info-btn");
       if (infoButton) infoButton.focus();
     }
-    closeModal();
     closeTrailer();
   }
 });
@@ -1042,7 +1102,6 @@ document.addEventListener("click", function(e) {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  initModalSwipe();
   requestAnimationFrame(function() { moveTabIndicator(currentTab); });
   bindSearchInput(document.getElementById("tab-search"));
   var mSearch = document.getElementById("mobile-tab-search");
@@ -1086,6 +1145,7 @@ function applyLoadedMoviePayload(payload) {
   sortMovies();
   buildGenreFilters();
   updateDataStatus(payload.generated_at || "");
+  updateReleaseTicker();
   return payload;
 }
 
@@ -1127,6 +1187,7 @@ loadData(false);
     if (currentWeekStart === displayedWeekStart) return;
     displayedWeekStart = currentWeekStart;
     renderGrids();
+    updateReleaseTicker();
   }, 60 * 1000);
 })();
 
@@ -1139,7 +1200,6 @@ loadData(false);
   }, { passive: true });
   document.addEventListener('touchend', function(e) {
     if (window.innerWidth > 768) return;
-    if (document.getElementById('detail-modal').classList.contains('open')) return;
     var dx = e.changedTouches[0].clientX - startX;
     var dy = e.changedTouches[0].clientY - startY;
     if (Math.abs(dx) < 50 || Math.abs(dx) <= Math.abs(dy)) return;
