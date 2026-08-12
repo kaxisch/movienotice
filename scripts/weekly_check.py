@@ -33,6 +33,8 @@ TMDB_DELAY = 0.3
 TMDB_RETRY_ATTEMPTS = 3
 TMDB_RETRY_DELAY = 1
 SCRAPE_DELAY = 2
+ATMOVIES_RETRY_ATTEMPTS = 3
+ATMOVIES_RETRY_DELAY = 2
 TSV_LOOKBACK_DAYS = 14
 
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data"
@@ -159,11 +161,28 @@ def split_atmovies_title(full_title):
 
 
 def fetch_atmovies(url):
-    """抓開眼頁面 HTML"""
+    """抓開眼頁面 HTML；暫時性錯誤會有限次數退避重試。"""
     log(f"Fetching {url}")
     headers = {"User-Agent": USER_AGENT}
-    r = requests.get(url, headers=headers, timeout=30)
-    r.raise_for_status()
+    for attempt in range(1, ATMOVIES_RETRY_ATTEMPTS + 1):
+        try:
+            r = requests.get(url, headers=headers, timeout=30)
+            r.raise_for_status()
+            break
+        except requests.exceptions.RequestException as error:
+            status_code = getattr(getattr(error, "response", None), "status_code", None)
+            retryable = status_code == 429 or (status_code is not None and status_code >= 500)
+            retryable = retryable or isinstance(
+                error,
+                (requests.exceptions.ConnectionError, requests.exceptions.Timeout),
+            )
+            if not retryable or attempt == ATMOVIES_RETRY_ATTEMPTS:
+                raise
+            log(
+                f"  Atmovies retry {attempt}/{ATMOVIES_RETRY_ATTEMPTS} "
+                f"after temporary error: {error}"
+            )
+            time.sleep(ATMOVIES_RETRY_DELAY * attempt)
 
     raw_bytes = r.content
 
