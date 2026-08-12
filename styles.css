@@ -646,7 +646,7 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
   color: var(--ink);
   font-family: 'Crimson Pro','Noto Serif TC',serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0;
 }
 .card-title-en { color: #403d36; font-family: 'Lora',serif; font-size: 13px; font-style: italic; font-weight: 400; letter-spacing: .04em; text-transform: none; }
@@ -709,6 +709,9 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
   .filter-btn:hover, .sort-wrap:hover, #mobile-search-toggle:hover { color: var(--ink); background: transparent; }
   .sort-wrap:hover, .sort-wrap:hover .sort-select { color: var(--ink); }
   .view-btn:not(.active):hover { color: var(--muted); background: rgba(25,23,18,.08); }
+}
+@media(max-width:1024px) {
+  .nav-copy { transform: translateY(0); }
 }
 @media(max-width:768px) {
   .nav-inner { padding: 12px 20px; }

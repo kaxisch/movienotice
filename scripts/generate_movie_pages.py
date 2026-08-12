@@ -38,6 +38,34 @@ body {
   color: var(--ink);
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 1024px) and (pointer: coarse) {
+  body.movie-page-entering {
+    animation: movie-page-enter .3s cubic-bezier(.22, .61, .36, 1) both;
+  }
+  body.movie-page-swiping {
+    overflow: hidden;
+    will-change: transform;
+    box-shadow: -12px 0 28px rgba(25, 23, 18, .18);
+  }
+  body.movie-page-snap-back {
+    transition: transform .22s cubic-bezier(.22, .61, .36, 1);
+  }
+  body.movie-page-exiting {
+    transition: transform .2s ease-out;
+  }
+}
+
+@keyframes movie-page-enter {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.movie-page-entering { animation: none; }
 }
 .page-bg { display: none; }
 .material-symbols-outlined {
@@ -70,9 +98,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.brand { min-width: 0; display: flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; }
-.brand img { width: auto; height: 34px; }
-.brand span { color: #4b422f; font-size: 12px; letter-spacing: .04em; transform: translateY(1px); }
+.brand { min-width: 0; display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+.brand img { display: block; width: auto; height: 40px; }
+.brand .nav-copy { display: flex; align-items: baseline; margin-left: -6px; white-space: nowrap; transform: translateY(3px); }
+.brand .nav-name { color: #4b422f; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 500; line-height: 1.15; letter-spacing: .04em; }
 .back-link {
   flex-shrink: 0;
   color: #6b675e;
@@ -147,7 +176,7 @@ h1 {
 .content > * + * { margin-top: 32px; }
 .synopsis {
   margin: 0;
-  color: var(--muted);
+  color: #403d36;
   font-family: 'Crimson Pro', 'Noto Serif TC', serif;
   font-size: 18px;
   line-height: 1.9;
@@ -183,9 +212,9 @@ h1 {
 .crew-grid > div { min-width: 0; }
 .crew-name { overflow-wrap: anywhere; }
 .crew-role { margin: 4px 0 0; color: #9a968d; font-size: 12px; }
-.cast-char { margin: 4px 0 0; color: #9a968d; font-family: 'Lora', serif; font-size: 12px; font-style: normal; }
+.cast-char { margin: 4px 0 0; color: #777168; font-family: 'Lora', serif; font-size: 12px; font-style: normal; }
 .detail-section { margin-top: 48px !important; }
-.section-label { margin: 0 0 18px; color: var(--muted); font-family: 'Noto Serif TC', serif; font-size: 16px; letter-spacing: .06em; }
+.section-label { margin: 0 0 18px; color: var(--muted); font-family: 'Noto Serif TC', serif; font-size: 16px; font-weight: 600; letter-spacing: .06em; }
 .cast-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 24px 16px; }
 .cast-card { min-width: 0; text-align: center; }
 .cast-photo, .cast-no-photo {
@@ -205,17 +234,22 @@ h1 {
 }
 .meta-row { display: flex; gap: 16px; margin-bottom: 12px; }
 .meta-row:last-child { margin-bottom: 0; }
-.meta-key { width: 80px; flex-shrink: 0; padding-top: 2px; color: #8a867d; font-size: 13px; }
+.meta-key { width: 80px; flex-shrink: 0; padding-top: 2px; color: #625e56; font-size: 13px; }
 .meta-val { color: #36332d; font-size: 13px; }
+
+@media (max-width: 1024px) {
+  .content { padding-bottom: 96px; }
+}
 
 @media (max-width: 720px) {
   .topbar { height: 56px; }
   .topbar-inner { padding: 0 20px; }
+  .brand { gap: 4px; }
   .brand img { height: 30px; }
-  .brand span { display: none; }
+  .brand .nav-copy { margin-left: -4px; transform: translateY(0); }
   .hero { height: 45vh; min-height: 300px; }
   .hero-content { padding: 24px 20px; }
-  .content { padding: 32px 20px 58px; }
+  .content { padding: 32px 20px 96px; }
   .crew-grid { grid-template-columns: repeat(2, 1fr); }
   .cast-row { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
   .cast-row::-webkit-scrollbar { display: none; }
@@ -470,12 +504,13 @@ def render_movie_page(movie, generated_at):
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css?v=17"/>
+<link rel="stylesheet" href="../../movie-page.css?v=21"/>
+<script src="../../movie-page.js?v=2" defer></script>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>
-<body>
+<body class="movie-page-entering">
 <div class="page-bg"></div>
-<header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span>電影佈告欄</span></a><a class="back-link" href="../../">回電影列表</a></div></header>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span class="nav-copy"><span class="nav-name">電影佈告欄</span></span></a><a class="back-link" href="../../">返回</a></div></header>
 <main>
 <section class="hero"><div class="hero-media">{hero_media}</div><div class="hero-content"><div class="genre-tags">{genre_tags}</div><h1>{h(title_zh)}</h1><p class="subtitle">{subtitle}</p><div class="ratings">{ratings_html}</div>{trailer_html}</div></section>
 <section class="content">
