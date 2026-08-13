@@ -94,7 +94,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .card-img-wrap:hover img { transform: scale(1.08); }
 .card-hover-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); opacity: 0; transition: opacity 0.3s; display: flex; flex-direction: column; justify-content: flex-end; padding: 12px; }
 .card-img-wrap:hover .card-hover-overlay { opacity: 1; }
-.this-week-ribbon { position: absolute; top: 9px; left: -40px; display: flex; align-items: center; justify-content: center; width: 124px; height: 26px; padding: 0; background: #ffe735; color: #171500; font-size: 12px; line-height: 1; font-weight: 500; text-align: center; transform: translateZ(0) rotate(-45deg); transform-origin: center; backface-visibility: hidden; -webkit-font-smoothing: antialiased; will-change: transform; box-shadow: 0 1px 2px rgba(0,0,0,0.18); z-index: 2; }
+.this-week-ribbon { position: absolute; top: 8px; left: -41px; display: flex; align-items: center; justify-content: center; width: 124px; height: 26px; padding: 0; background: #ffe735; color: #171500; font-size: 12px; line-height: 1; font-weight: 500; text-align: center; transform: translateZ(0) rotate(-45deg); transform-origin: center; backface-visibility: hidden; -webkit-font-smoothing: antialiased; will-change: transform; box-shadow: 0 1px 2px rgba(0,0,0,0.18); z-index: 2; }
 .movie-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 24px; row-gap: 56px; }
 @media(min-width:768px){ .movie-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
 @media(min-width:1024px){ .movie-grid { grid-template-columns: repeat(5, minmax(0,1fr)); } }
@@ -283,7 +283,7 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .list-title { font-size: 14px; font-weight: 300; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .list-subtitle { font-size: 11px; color: rgba(255,255,255,0.45); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
 .list-date { font-size: 11px; line-height: 1.45; color: rgba(255,255,255,0.45); margin-top: 3px; }
-.this-week-list-label { display: inline-flex; margin-top: 4px; padding: 2px 6px; border-radius: 4px; background: #ffe735; color: #171500; font-size: 10px; line-height: 1.2; font-weight: 500; }
+.this-week-list-label { display: inline-flex; margin-top: 4px; padding: 2px 6px; border-radius: 0; background: #ffe735; color: #171500; font-size: 10px; line-height: 1.2; font-weight: 500; }
 .list-badges { display: flex; align-items: center; gap: 4px; flex-shrink: 0; margin-left: 8px; }
 @media(max-width:600px){
   .list-title { font-size: 16px; }
@@ -570,7 +570,7 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
 .tab-list { gap: 36px; }
 .tab-btn {
   color: #625e56;
-  padding: 18px 0 13px;
+  padding: 20px 0 15px;
   font-family: 'Lato','Noto Sans TC',sans-serif !important;
   font-size: 15px;
   font-weight: 400;
@@ -591,9 +591,9 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
 .site-info-divider { margin: 8px 0 9px; background: var(--line); }
 .site-info-updated .material-symbols-outlined { font-size: 14px; }
 
-.filter-row { height: 58px; padding: 0; border-top: 1px solid var(--line); }
+.filter-row { height: 46px; padding: 0; border-top: 1px solid var(--line); }
 #filter-panel { border-top: 1px solid var(--line); }
-.tab-search { color: var(--ink); background: rgba(25,23,18,.055); border: 0; border-radius: 0; padding: 10px 32px 10px 36px; font-size: 13px; font-weight: 400; letter-spacing: .06em; }
+.tab-search { color: var(--ink); background: rgba(25,23,18,.055); border: 0; border-radius: 0; padding: 8px 32px 8px 36px; font-size: 13px; font-weight: 400; letter-spacing: .06em; }
 .search-icon-abs { left: 10px; }
 .tab-search::placeholder { color: #7d786e; }
 .tab-search:focus { background: rgba(25,23,18,.085); box-shadow: none; }
@@ -613,6 +613,7 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
 .clear-active-btn, .close-filter-btn { color: var(--muted); background: transparent; border-color: var(--line); border-radius: 0; }
 .clear-active-btn { border-radius: 50%; }
 .clear-active-btn:hover, .close-filter-btn:hover { color: var(--paper); background: var(--ink); }
+.close-filter-btn:hover, .close-filter-btn:active { color: var(--paper); background: #4b422f; border-color: #4b422f; }
 .clear-active-btn:hover { background: #4b422f; }
 .clear-active-btn {
   width: 18px;
