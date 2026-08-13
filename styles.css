@@ -572,8 +572,8 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
   color: #625e56;
   padding: 18px 0 13px;
   font-family: 'Lato','Noto Sans TC',sans-serif !important;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   letter-spacing: .06em;
   text-transform: uppercase;
   text-shadow: none;
@@ -591,7 +591,7 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
 .site-info-divider { margin: 8px 0 9px; background: var(--line); }
 .site-info-updated .material-symbols-outlined { font-size: 14px; }
 
-.filter-row { height: 54px; padding: 0; border-top: 1px solid var(--line); }
+.filter-row { height: 58px; padding: 0; border-top: 1px solid var(--line); }
 #filter-panel { border-top: 1px solid var(--line); }
 .tab-search { color: var(--ink); background: rgba(25,23,18,.055); border: 0; border-radius: 0; padding: 10px 32px 10px 36px; font-size: 13px; font-weight: 400; letter-spacing: .06em; }
 .search-icon-abs { left: 10px; }
