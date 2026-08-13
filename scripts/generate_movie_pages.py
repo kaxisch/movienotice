@@ -164,7 +164,7 @@ h1 {
   color: #fff;
   background: rgba(255, 255, 255, .2);
   border: 1px solid rgba(255, 255, 255, .4);
-  border-radius: 999px;
+  border-radius: 0;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   font-size: 14px;
@@ -208,10 +208,11 @@ h1 {
   gap: 16px;
   padding: 26px;
 }
-.crew-name, .cast-name { margin: 0; color: var(--muted); font-size: 14px; font-weight: 400; }
+.crew-name, .cast-name { margin: 0; color: #4b4840; font-size: 14px; font-weight: 500; }
+.cast-name { color: #403d36; }
 .crew-grid > div { min-width: 0; }
 .crew-name { overflow-wrap: anywhere; }
-.crew-role { margin: 4px 0 0; color: #9a968d; font-size: 12px; }
+.crew-role { margin: 4px 0 0; color: #777168; font-size: 12px; }
 .cast-char { margin: 4px 0 0; color: #777168; font-family: 'Lora', serif; font-size: 12px; font-style: normal; }
 .detail-section { margin-top: 48px !important; }
 .section-label { margin: 0 0 18px; color: var(--muted); font-family: 'Noto Serif TC', serif; font-size: 16px; font-weight: 600; letter-spacing: .06em; }
@@ -502,9 +503,9 @@ def render_movie_page(movie, generated_at):
 <link rel="icon" href="../../favicon.ico?v=10" sizes="32x32"/>
 <link rel="icon" href="../../favicon.svg?v=10" type="image/svg+xml" sizes="any"/>
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;500;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css?v=21"/>
+<link rel="stylesheet" href="../../movie-page.css?v=23"/>
 <script src="../../movie-page.js?v=2" defer></script>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>

@@ -352,7 +352,7 @@ function cardHTML(m, showRatings) {
     var mcStyle = m.mc ? '' : ' style="display:none"';
     metaHTML += '<div class="card-badges">';
     metaHTML += '<span class="badge-imdb" id="imdb-' + m.id + '"' + imdbStyle + '><span class="badge-source">IMDb</span><span>' + escHtml(m.imdb || '') + '</span></span>';
-    metaHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#9a716d', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
+    metaHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#a36b66', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
     metaHTML += '<span class="badge-mc" id="mc-' + m.id + '"' + mcStyle + '><span class="badge-source">MT</span><span>' + escHtml(m.mc || '') + '</span></span>';
     if (m.voteAverage) metaHTML += '<span class="badge-tmdb"><span class="badge-source">TMDB</span><span>' + tmdbScore(m.voteAverage) + '</span></span>';
     metaHTML += '</div>';
@@ -410,7 +410,7 @@ function listRowHTML(m, showRatings) {
     var rtStyle = m.rt ? '' : ' style="display:none"';
     var mcStyle = m.mc ? '' : ' style="display:none"';
     badgesHTML += '<span class="badge-imdb" id="imdb-' + m.id + '"' + imdbStyle + '><span class="badge-source">IMDb</span><span>' + escHtml(m.imdb || '') + '</span></span>';
-    badgesHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#9a716d', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
+    badgesHTML += '<span class="badge-rt" id="rt-' + m.id + '"' + rtStyle + '>' + rtIconSvg('#a36b66', 'flex-shrink:0;vertical-align:middle;margin-right:2px') + '<span>' + escHtml(m.rt || '') + '</span></span>';
     badgesHTML += '<span class="badge-mc" id="mc-' + m.id + '"' + mcStyle + '><span class="badge-source">MT</span><span>' + escHtml(m.mc || '') + '</span></span>';
     if (m.voteAverage) badgesHTML += '<span class="badge-tmdb"><span class="badge-source">TMDB</span><span>' + tmdbScore(m.voteAverage) + '</span></span>';
   }
