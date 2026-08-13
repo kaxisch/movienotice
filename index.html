@@ -28,10 +28,10 @@
 <meta name="apple-mobile-web-app-title" content="電影佈告欄"/>
 <link rel="manifest" href="manifest.webmanifest?v=10"/>
 <meta name="theme-color" content="#fcfcfb"/>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&family=Lato:wght@300;400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&family=Lato:wght@300;400;500;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css?v=99"/>
+<link rel="stylesheet" href="styles.css?v=117"/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-15QHSQT4KF"></script>
 <script>
@@ -78,16 +78,6 @@
         <span class="nav-name">電影佈告欄</span>
         <span class="nav-separator" aria-hidden="true">|</span>
         <span class="nav-tagline">台灣上映電影情報</span>
-      </div>
-    </div>
-  </div>
-  <div id="release-ticker" class="release-ticker" role="region" aria-label="本週上映電影" aria-live="off">
-    <div id="release-ticker-track" class="release-ticker-track">
-      <div class="release-ticker-group">
-        <span class="release-ticker-label">本週上映</span>
-        <span class="release-ticker-dot" aria-hidden="true">·</span>
-        <span class="release-ticker-title">載入中</span>
-        <span class="release-ticker-dot" aria-hidden="true">·</span>
       </div>
     </div>
   </div>
@@ -156,7 +146,7 @@
           <span id="active-filters-text" class="active-filters-text"></span>
         </div>
         <button id="clear-all-filters-btn" class="clear-active-btn" onclick="clearFilters()">
-          <span class="material-symbols-outlined" style="font-size:14px">close</span>
+          <span class="material-symbols-outlined" style="font-size:18px">cancel</span>
         </button>
       </div>
       <div class="view-toggle">
@@ -174,7 +164,7 @@
     <div id="mobile-active-bar">
       <span id="mobile-active-bar-text"></span>
       <button class="clear-active-btn" onclick="clearFilters()">
-        <span class="material-symbols-outlined" style="font-size:14px">close</span>
+        <span class="material-symbols-outlined" style="font-size:18px">cancel</span>
       </button>
     </div>
     <div id="filter-panel">
@@ -206,6 +196,17 @@
           <span class="material-symbols-outlined" style="font-size:20px">keyboard_arrow_up</span>
         </button>
       </div>
+    </div>
+  </div>
+</div>
+
+<div id="release-ticker" class="release-ticker" role="region" aria-label="本週上映電影" aria-live="off">
+  <div id="release-ticker-track" class="release-ticker-track">
+    <div class="release-ticker-group">
+      <span class="release-ticker-label">本週上映</span>
+      <span class="release-ticker-dot" aria-hidden="true">·</span>
+      <span class="release-ticker-title">載入中</span>
+      <span class="release-ticker-dot" aria-hidden="true">·</span>
     </div>
   </div>
 </div>
@@ -242,7 +243,7 @@
 </footer>
 </main>
 
-<script src="app.js?v=24"></script>
+<script src="app.js?v=25"></script>
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js?v=14', { updateViaCache: 'none' })

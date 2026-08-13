@@ -141,7 +141,7 @@ h1 {
   color: #fff;
   background: rgba(255, 255, 255, .2);
   border: 1px solid rgba(255, 255, 255, .4);
-  border-radius: 999px;
+  border-radius: 0;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   font-size: 14px;
@@ -185,10 +185,11 @@ h1 {
   gap: 16px;
   padding: 26px;
 }
-.crew-name, .cast-name { margin: 0; color: var(--muted); font-size: 14px; font-weight: 400; }
+.crew-name, .cast-name { margin: 0; color: #4b4840; font-size: 14px; font-weight: 500; }
+.cast-name { color: #403d36; }
 .crew-grid > div { min-width: 0; }
 .crew-name { overflow-wrap: anywhere; }
-.crew-role { margin: 4px 0 0; color: #9a968d; font-size: 12px; }
+.crew-role { margin: 4px 0 0; color: #777168; font-size: 12px; }
 .cast-char { margin: 4px 0 0; color: #777168; font-family: 'Lora', serif; font-size: 12px; font-style: normal; }
 .detail-section { margin-top: 48px !important; }
 .section-label { margin: 0 0 18px; color: var(--muted); font-family: 'Noto Serif TC', serif; font-size: 16px; font-weight: 600; letter-spacing: .06em; }
