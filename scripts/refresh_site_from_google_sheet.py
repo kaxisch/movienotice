@@ -273,7 +273,7 @@ def build_verified_output(candidates):
                 log(f"  Excluded rerelease TMDB {tmdb_id}: TW type 3 does not match cinema date {cinema_date}")
                 continue
             if should_hide_rerelease(source):
-                log(f"  Hidden rerelease TMDB {tmdb_id}: absent from all four sources for two audits")
+                log(f"  Hidden rerelease TMDB {tmdb_id}: absent from all required sources in one complete audit")
                 continue
             tw_date = cinema_date
         else:

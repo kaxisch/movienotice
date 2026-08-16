@@ -386,8 +386,17 @@ def rating_items(movie, detail):
     if movie.get("mc"):
         items.append(("MT", movie.get("mc")))
     if detail.get("voteAverage"):
-        items.append(("TMDB", detail.get("voteAverage")))
+        items.append(("TMDB", format_tmdb_score(detail.get("voteAverage"))))
     return items
+
+
+def format_tmdb_score(value):
+    """將 TMDB 的十分制分數轉成與 TMDB 網站一致的百分比。"""
+    try:
+        score = float(value)
+    except (TypeError, ValueError):
+        return ""
+    return f"{int(score * 10 + 0.5)}%"
 
 
 def format_country_list(countries):

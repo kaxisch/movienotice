@@ -40,7 +40,7 @@ RERELEASE_HEADERS = [
     "tmdb_date_status", "rerelease_present", "consecutive_misses", "hidden",
     "first_seen", "last_seen", "last_audit_date",
 ]
-RERELEASE_MISS_LIMIT = 2
+RERELEASE_MISS_LIMIT = 1
 CANDIDATE_RETENTION_DAYS = 180
 ATMOVIES_HANDOFF_DAYS = 60
 NOW_ATMOVIES_MISS_LIMIT = 2
@@ -296,7 +296,7 @@ def mark_published_candidates(items, movie_payload):
 def merge_rerelease_presence(
     current_items, previous_items, run_date, audit_complete, rejected_source_urls=None
 ):
-    """合併四來源重映聯集；已確認為一般新片的舊錯配可立即淘汰。"""
+    """合併重映來源聯集；一次完整稽核全來源缺席即隱藏。"""
     rejected_source_urls = set(rejected_source_urls or [])
     current_by_id = {str(item["tmdb_id"]): dict(item) for item in current_items if item.get("tmdb_id")}
     previous_by_id = {}
