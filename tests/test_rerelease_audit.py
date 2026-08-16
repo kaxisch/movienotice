@@ -353,15 +353,13 @@ class RereleasePresenceTests(unittest.TestCase):
         )
         self.assertEqual(merged, [])
 
-    def test_two_complete_absences_hide_and_same_date_does_not_double_count(self):
+    def test_one_complete_absence_hides_and_same_date_does_not_double_count(self):
         first = publish.merge_rerelease_presence([], self.previous(), "2026-08-05", True)
         self.assertEqual(first[0]["consecutive_misses"], 1)
-        self.assertFalse(first[0]["hidden"])
+        self.assertTrue(first[0]["hidden"])
         same_date = publish.merge_rerelease_presence([], first, "2026-08-05", True)
         self.assertEqual(same_date[0]["consecutive_misses"], 1)
-        second = publish.merge_rerelease_presence([], same_date, "2026-08-08", True)
-        self.assertEqual(second[0]["consecutive_misses"], 2)
-        self.assertTrue(second[0]["hidden"])
+        self.assertTrue(same_date[0]["hidden"])
 
     def test_any_present_source_restores_candidate(self):
         current = [{"tmdb_id": 101, "present_sources": "showtime", "rerelease_present": True}]
