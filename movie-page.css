@@ -20,9 +20,6 @@ body {
 }
 
 @media (max-width: 1024px) and (pointer: coarse) {
-  body.movie-page-entering {
-    animation: movie-page-enter .3s cubic-bezier(.22, .61, .36, 1) both;
-  }
   body.movie-page-swiping {
     overflow: hidden;
     will-change: transform;
@@ -34,15 +31,6 @@ body {
   body.movie-page-exiting {
     transition: transform .2s ease-out;
   }
-}
-
-@keyframes movie-page-enter {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body.movie-page-entering { animation: none; }
 }
 .page-bg { display: none; }
 .material-symbols-outlined {

@@ -43,9 +43,6 @@ body {
 }
 
 @media (max-width: 1024px) and (pointer: coarse) {
-  body.movie-page-entering {
-    animation: movie-page-enter .3s cubic-bezier(.22, .61, .36, 1) both;
-  }
   body.movie-page-swiping {
     overflow: hidden;
     will-change: transform;
@@ -57,15 +54,6 @@ body {
   body.movie-page-exiting {
     transition: transform .2s ease-out;
   }
-}
-
-@keyframes movie-page-enter {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body.movie-page-entering { animation: none; }
 }
 .page-bg { display: none; }
 .material-symbols-outlined {
@@ -514,11 +502,11 @@ def render_movie_page(movie, generated_at):
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;500;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css?v=23"/>
-<script src="../../movie-page.js?v=2" defer></script>
+<link rel="stylesheet" href="../../movie-page.css?v=24"/>
+<script src="../../movie-page.js?v=3" defer></script>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>
-<body class="movie-page-entering">
+<body>
 <div class="page-bg"></div>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span class="nav-copy"><span class="nav-name">電影佈告欄</span></span></a><a class="back-link" href="../../">返回</a></div></header>
 <main>
