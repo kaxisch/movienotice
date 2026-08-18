@@ -423,7 +423,7 @@ function listRowHTML(m, showRatings) {
     '</a>';
 }
 
-function renderGrids() {
+function renderGrids(options) {
   ["now","soon"].forEach(function(t) {
     var html = "";
     var gridEl = document.getElementById("grid-" + t);
@@ -438,7 +438,7 @@ function renderGrids() {
     var empty = document.getElementById("empty-" + t);
     if (filtered[t].length === 0) empty.classList.add("show"); else empty.classList.remove("show");
   });
-  scrollToResults();
+  if (!options || !options.preserveViewport) scrollToResults();
 }
 
 function applyFilters(skipRender) {
@@ -490,7 +490,7 @@ function withPopularityTiebreak(primary, a, b) {
   return primary || compareByPopularityDesc(a, b);
 }
 
-function sortMovies(skipRender) {
+function sortMovies(skipRender, preserveViewport) {
   tabSortState[currentTab] = document.getElementById("sort-select").value;
   ["now","soon"].forEach(function(t) {
     var v = tabSortState[t];
@@ -505,7 +505,7 @@ function sortMovies(skipRender) {
       return withPopularityTiebreak(primary, a, b);
     });
   });
-  if (!skipRender) renderGrids();
+  if (!skipRender) renderGrids({ preserveViewport: !!preserveViewport });
 }
 
 function setClearBtn(id, val) {
@@ -632,6 +632,44 @@ function isTabBarPinned() {
   if (!tabBar) return false;
   return tabBar.getBoundingClientRect().top <= 0;
 }
+
+function holdPinnedTabBarForMobileReturn() {
+  if (!window.matchMedia("(max-width: 1024px) and (pointer: coarse)").matches) return;
+  if (!isTabBarPinned()) return;
+  var tabBar = document.getElementById("tab-bar");
+  if (!tabBar) return;
+  document.body.style.setProperty("--return-tab-bar-height", tabBar.offsetHeight + "px");
+  document.body.classList.add("mobile-return-pinned");
+}
+
+document.addEventListener("touchstart", function(event) {
+  if (event.target.closest(".movie-card .card-info")) return;
+  if (event.target.closest(".movie-link")) holdPinnedTabBarForMobileReturn();
+}, { passive: true, capture: true });
+
+var mobileReturnSettling = false;
+
+function releaseMobileReturnPinAtPageTop() {
+  if (mobileReturnSettling || !document.body.classList.contains("mobile-return-pinned")) return;
+  var navbar = document.getElementById("navbar");
+  var releaseAt = navbar ? navbar.offsetHeight : 0;
+  if ((window.scrollY || window.pageYOffset || 0) > releaseAt) return;
+  document.body.classList.remove("mobile-return-pinned");
+  document.body.style.removeProperty("--return-tab-bar-height");
+}
+
+window.addEventListener("pageshow", function() {
+  if (!document.body.classList.contains("mobile-return-pinned")) return;
+  mobileReturnSettling = true;
+  // WebKit can finish restoring scroll after pageshow. Once it settles, keep
+  // the fixed bar for a restored scrolled page and release it only near top.
+  window.setTimeout(function() {
+    mobileReturnSettling = false;
+    releaseMobileReturnPinAtPageTop();
+  }, 400);
+});
+
+window.addEventListener("scroll", releaseMobileReturnPinAtPageTop, { passive: true });
 
 function jumpToContentTop(keepTabBarPinned) {
   if (!keepTabBarPinned) return;
@@ -1092,6 +1130,12 @@ document.addEventListener("keydown", function(e) {
 });
 
 document.addEventListener("click", function(e) {
+  var mobileCardInfo = e.target.closest(".movie-card .card-info");
+  if (mobileCardInfo && window.matchMedia("(max-width: 1024px) and (pointer: coarse)").matches) {
+    e.preventDefault();
+    return;
+  }
+  if (e.target.closest(".movie-link")) holdPinnedTabBarForMobileReturn();
   var infoPanel = document.getElementById("site-info-panel");
   if (infoPanel && !infoPanel.hidden && !e.target.closest(".site-info-wrap")) closeSiteInfo();
   var panel = document.getElementById("filter-panel");
@@ -1142,7 +1186,9 @@ function applyLoadedMoviePayload(payload) {
   allMovies = payload.movies || { now: [], soon: [] };
   rebucketMoviesByReleaseDate();
   filtered = { now: allMovies.now.slice(), soon: allMovies.soon.slice() };
-  sortMovies();
+  // Loading fresh data can finish while Safari is restoring a page from its
+  // back-forward cache. Do not compete with the restored scroll position.
+  sortMovies(false, true);
   buildGenreFilters();
   updateDataStatus(payload.generated_at || "");
   updateReleaseTicker();
@@ -1186,7 +1232,7 @@ loadData(false);
     var currentWeekStart = taipeiWeekRange().start;
     if (currentWeekStart === displayedWeekStart) return;
     displayedWeekStart = currentWeekStart;
-    renderGrids();
+    renderGrids({ preserveViewport: true });
     updateReleaseTicker();
   }, 60 * 1000);
 })();

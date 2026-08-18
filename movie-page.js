@@ -12,11 +12,6 @@
   var tracking = false;
   var dragging = false;
 
-  body.classList.add('movie-page-entering');
-  body.addEventListener('animationend', function () {
-    body.classList.remove('movie-page-entering');
-  }, { once: true });
-
   // iPhone and iPad already provide an interactive edge-swipe history gesture.
   // Let the browser reveal the previous page instead of stacking a second drag
   // animation over it. This also covers iPadOS devices reporting as Macintosh.
@@ -69,7 +64,6 @@
       }
       if (deltaX < 10 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
       dragging = true;
-      body.classList.remove('movie-page-entering');
       body.classList.add('movie-page-swiping');
     }
 
