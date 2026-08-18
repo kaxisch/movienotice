@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T18:02:26.155662+08:00",
+  "generated_at": "2026-08-18T21:27:42.487380+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 57,
@@ -1157,7 +1157,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-        "voteAverage": "5.1",
+        "voteAverage": "5.0",
         "genre": [
           "恐怖"
         ],
@@ -1303,7 +1303,7 @@
           "synopsis": "美麗的小鎮出現了一位神秘的冰淇淋小販，他供應的美味冰品讓孩子們瘋狂，全鎮因此失控！",
           "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-          "voteAverage": "5.1",
+          "voteAverage": "5.0",
           "trailerKey": "0pIKTDz689U",
           "imdbId": "tt36893729",
           "countries": [
@@ -3819,15 +3819,15 @@
         ],
         "crew": [
           {
+            "name": "Василий Ровенский",
+            "job": "Screenplay"
+          },
+          {
             "name": "Эльвира Буштец",
             "job": "Screenplay"
           },
           {
             "name": "Федор Деревянский",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Василий Ровенский",
             "job": "Screenplay"
           }
         ],
@@ -3932,15 +3932,15 @@
           ],
           "crew": [
             {
+              "name": "Василий Ровенский",
+              "job": "Screenplay"
+            },
+            {
               "name": "Эльвира Буштец",
               "job": "Screenplay"
             },
             {
               "name": "Федор Деревянский",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Василий Ровенский",
               "job": "Screenplay"
             }
           ],
@@ -7113,7 +7113,7 @@
           }
         ],
         "budget": 225000000,
-        "revenue": 2021831670,
+        "revenue": 2022543660,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Spider-Man: Brand New Day",
@@ -7236,7 +7236,7 @@
             }
           ],
           "budget": 225000000,
-          "revenue": 2021831670,
+          "revenue": 2022543660,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Spider-Man: Brand New Day",
@@ -8690,12 +8690,12 @@
         ],
         "crew": [
           {
-            "name": "花田十輝",
-            "job": "Screenplay"
-          },
-          {
             "name": "石立太一",
             "job": "Director"
+          },
+          {
+            "name": "花田十輝",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -8801,12 +8801,12 @@
           ],
           "crew": [
             {
-              "name": "花田十輝",
-              "job": "Screenplay"
-            },
-            {
               "name": "石立太一",
               "job": "Director"
+            },
+            {
+              "name": "花田十輝",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -10151,7 +10151,7 @@
           }
         ],
         "budget": 20000000,
-        "revenue": 66772865,
+        "revenue": 71433538,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Evil Dead Burn",
@@ -10272,7 +10272,7 @@
             }
           ],
           "budget": 20000000,
-          "revenue": 66772865,
+          "revenue": 71433538,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Evil Dead Burn",
@@ -11086,7 +11086,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/1vhjC7Ra5C6BPeZskeMz0WUmrnr.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
-        "voteAverage": "7.4",
+        "voteAverage": "7.5",
         "genre": [
           "動畫",
           "家庭",
@@ -11213,11 +11213,16 @@
           }
         ],
         "budget": 250000000,
-        "revenue": 1114768651,
+        "revenue": 1115340965,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Toy Story 5",
-        "platforms": [],
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
         "popularity": 266.4324,
         "imdbId": "tt29355505",
         "countries": [
@@ -11234,7 +11239,7 @@
           "synopsis": "伴隨著時代演進、以科技入侵作為主題，玩具們將陷入 3C 危機，胡迪、巴斯光年此生最強勁敵現身，讓人愛不釋手的閃亮亮玩具登場，全新角色「莉莉板」，一款高科技、青蛙造型的智慧平板玩具，有了這個新寶貝，誰還需要玩具呢？他們將面臨史上最大的挑戰。",
           "poster": "https://image.tmdb.org/t/p/w500/1vhjC7Ra5C6BPeZskeMz0WUmrnr.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
-          "voteAverage": "7.4",
+          "voteAverage": "7.5",
           "trailerKey": "r0MhS0IpUts",
           "imdbId": "tt29355505",
           "countries": [
@@ -11337,11 +11342,16 @@
             }
           ],
           "budget": 250000000,
-          "revenue": 1114768651,
+          "revenue": 1115340965,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Toy Story 5",
-          "platforms": []
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1084244?language=zh-TW",
         "atmoviesId": "",
@@ -12862,7 +12872,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
-        "voteAverage": "",
+        "voteAverage": "9.0",
         "genre": [
           "動作",
           "驚悚"
@@ -12986,7 +12996,7 @@
           "synopsis": "目睹億萬富翁企業家老闆在面前遭到殺害後，柯爾李德被誣陷為兇手，他被迫展開逃亡，同時要在過程中設法揭發一樁國際陰謀。",
           "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
-          "voteAverage": "",
+          "voteAverage": "9.0",
           "trailerKey": "NfocDa8yXOk",
           "imdbId": "tt32338669",
           "countries": [
@@ -13111,7 +13121,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-        "voteAverage": "",
+        "voteAverage": "10.0",
         "genre": [
           "恐怖",
           "驚悚"
@@ -13210,7 +13220,7 @@
           "synopsis": "在自己的童年老家撫養女兒的年輕母親潔瑪，意外發現自己能夠進入「陰深處」，這個位於《陰兒房》宇宙核心、充滿迷失靈魂的煉獄空間。當邪惡力量開始接近她時，潔瑪逐漸察覺自己擁有一項足以改變一切的能力，她不僅能進入陰深處，甚至能將其中的存在帶回現實世界。一旦惡靈察覺這股力量，人類世界也將淪為牠們的遊樂場。",
           "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-          "voteAverage": "",
+          "voteAverage": "10.0",
           "trailerKey": "coy7TQSchmw",
           "imdbId": "tt32393988",
           "countries": [
@@ -17277,16 +17287,16 @@
         ],
         "crew": [
           {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
             "name": "Eskil Vogt",
             "job": "Screenplay"
           },
           {
             "name": "Joachim Trier",
             "job": "Screenplay"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -17393,16 +17403,16 @@
           ],
           "crew": [
             {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
               "name": "Eskil Vogt",
               "job": "Screenplay"
             },
             {
               "name": "Joachim Trier",
               "job": "Screenplay"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -19233,7 +19243,7 @@
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": "tjRoaBhq-F4",
+        "trailerKey": "9spjI5Y0jPg",
         "cast": [
           {
             "name": "Harriet Slater",
@@ -19311,7 +19321,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
           "voteAverage": "",
-          "trailerKey": "tjRoaBhq-F4",
+          "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
             "United Kingdom",
@@ -25280,7 +25290,7 @@
           {
             "name": "Jay Duplass",
             "char": "Russ",
-            "photo": "https://image.tmdb.org/t/p/w500/eUY0JDlqzf5pE9pmdvv4IPU3NYn.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/h6vXPsTTT3DjKWfQ23A1Lbv1Zfw.jpg"
           },
           {
             "name": "迪辰·拉克曼",
@@ -25393,7 +25403,7 @@
             {
               "name": "Jay Duplass",
               "char": "Russ",
-              "photo": "https://image.tmdb.org/t/p/w500/eUY0JDlqzf5pE9pmdvv4IPU3NYn.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/h6vXPsTTT3DjKWfQ23A1Lbv1Zfw.jpg"
             },
             {
               "name": "迪辰·拉克曼",
