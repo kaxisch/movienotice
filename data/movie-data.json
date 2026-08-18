@@ -1,12 +1,725 @@
 {
-  "generated_at": "2026-08-19T00:01:20.118074+08:00",
+  "generated_at": "2026-08-19T03:10:13.032781+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 57,
+    "now_count": 60,
     "soon_count": 66
   },
   "movies": {
     "now": [
+      {
+        "id": 1288445,
+        "titleZh": "玩命航線",
+        "titleEn": "Mutiny",
+        "releaseDate": "2026-08-19",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-19",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
+        "voteAverage": "9.0",
+        "genre": [
+          "動作",
+          "驚悚"
+        ],
+        "duration": 95,
+        "synopsis": "目睹億萬富翁企業家老闆在面前遭到殺害後，柯爾李德被誣陷為兇手，他被迫展開逃亡，同時要在過程中設法揭發一樁國際陰謀。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "NfocDa8yXOk",
+        "cast": [
+          {
+            "name": "傑森·史塔森",
+            "char": "Cole Reed",
+            "photo": "https://image.tmdb.org/t/p/w500/pXGSq2UpcDE2NMF8LR56QZf5U1q.jpg"
+          },
+          {
+            "name": "安娜貝爾・華麗絲",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/2ZmO2Zz9TcR0rmSJHOkivcu0heR.jpg"
+          },
+          {
+            "name": "Roland Møller",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bF7wrJ5mrIhSwyi6ylhyQWj9BoN.jpg"
+          },
+          {
+            "name": "Arnas Fedaravičius",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/7WfcGugvkuPqEzu0cUJBeJPt1lD.jpg"
+          },
+          {
+            "name": "Adrian Lester",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/xyRB9aykTFtI42Ce8xFKZDCsHYd.jpg"
+          },
+          {
+            "name": "Jason Wong",
+            "char": "Taran",
+            "photo": "https://image.tmdb.org/t/p/w500/tt3D1PAoB8Yf4jPCovnhlP4pvL3.jpg"
+          },
+          {
+            "name": "Ramon Tikaram",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/wtBLiI8tzeqPLMB9uswkyFhChva.jpg"
+          },
+          {
+            "name": "Lee Charles",
+            "char": "Padraig",
+            "photo": "https://image.tmdb.org/t/p/w500/hPcEeF8mG9PiOJmnduVjq9yH9jD.jpg"
+          },
+          {
+            "name": "Ben Cartwright",
+            "char": "Lieutenant Underwood",
+            "photo": "https://image.tmdb.org/t/p/w500/et81kCfsFf4kHCPgLfg96eX9Bok.jpg"
+          },
+          {
+            "name": "查尼爾·庫拉",
+            "char": "Kameron",
+            "photo": "https://image.tmdb.org/t/p/w500/b6TmM2wcVntDMJGZWQM3ftshhIi.jpg"
+          },
+          {
+            "name": "Steven Blades",
+            "char": "Commander Tully",
+            "photo": "https://image.tmdb.org/t/p/w500/sTHhPX0woMGrEAu4dnrQHK5NSYd.jpg"
+          },
+          {
+            "name": "Tom Christian",
+            "char": "Bertus",
+            "photo": "https://image.tmdb.org/t/p/w500/iI7CamrahYTLKBLBjsi9xmBIJ74.jpg"
+          },
+          {
+            "name": "Rumi Sutton",
+            "char": "SENG",
+            "photo": null
+          },
+          {
+            "name": "Jessica Wai Sum Tong",
+            "char": "Office Worker",
+            "photo": null
+          },
+          {
+            "name": "Caroline Glass",
+            "char": "International Business Woman & Dinner Guest",
+            "photo": "https://image.tmdb.org/t/p/w500/zzW8gDIddN0rD7BrddDm74h6Hnm.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Jean-François Richet",
+            "job": "Director"
+          },
+          {
+            "name": "Lindsay Michel",
+            "job": "Screenplay"
+          },
+          {
+            "name": "J.P. Davis",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Mutiny",
+        "platforms": [],
+        "popularity": 26.3598,
+        "imdbId": "tt32338669",
+        "countries": [
+          "United Kingdom",
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 95,
+          "genres": [
+            "動作",
+            "驚悚"
+          ],
+          "synopsis": "目睹億萬富翁企業家老闆在面前遭到殺害後，柯爾李德被誣陷為兇手，他被迫展開逃亡，同時要在過程中設法揭發一樁國際陰謀。",
+          "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
+          "voteAverage": "9.0",
+          "trailerKey": "NfocDa8yXOk",
+          "imdbId": "tt32338669",
+          "countries": [
+            "United Kingdom",
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "傑森·史塔森",
+              "char": "Cole Reed",
+              "photo": "https://image.tmdb.org/t/p/w500/pXGSq2UpcDE2NMF8LR56QZf5U1q.jpg"
+            },
+            {
+              "name": "安娜貝爾・華麗絲",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/2ZmO2Zz9TcR0rmSJHOkivcu0heR.jpg"
+            },
+            {
+              "name": "Roland Møller",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bF7wrJ5mrIhSwyi6ylhyQWj9BoN.jpg"
+            },
+            {
+              "name": "Arnas Fedaravičius",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/7WfcGugvkuPqEzu0cUJBeJPt1lD.jpg"
+            },
+            {
+              "name": "Adrian Lester",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/xyRB9aykTFtI42Ce8xFKZDCsHYd.jpg"
+            },
+            {
+              "name": "Jason Wong",
+              "char": "Taran",
+              "photo": "https://image.tmdb.org/t/p/w500/tt3D1PAoB8Yf4jPCovnhlP4pvL3.jpg"
+            },
+            {
+              "name": "Ramon Tikaram",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/wtBLiI8tzeqPLMB9uswkyFhChva.jpg"
+            },
+            {
+              "name": "Lee Charles",
+              "char": "Padraig",
+              "photo": "https://image.tmdb.org/t/p/w500/hPcEeF8mG9PiOJmnduVjq9yH9jD.jpg"
+            },
+            {
+              "name": "Ben Cartwright",
+              "char": "Lieutenant Underwood",
+              "photo": "https://image.tmdb.org/t/p/w500/et81kCfsFf4kHCPgLfg96eX9Bok.jpg"
+            },
+            {
+              "name": "查尼爾·庫拉",
+              "char": "Kameron",
+              "photo": "https://image.tmdb.org/t/p/w500/b6TmM2wcVntDMJGZWQM3ftshhIi.jpg"
+            },
+            {
+              "name": "Steven Blades",
+              "char": "Commander Tully",
+              "photo": "https://image.tmdb.org/t/p/w500/sTHhPX0woMGrEAu4dnrQHK5NSYd.jpg"
+            },
+            {
+              "name": "Tom Christian",
+              "char": "Bertus",
+              "photo": "https://image.tmdb.org/t/p/w500/iI7CamrahYTLKBLBjsi9xmBIJ74.jpg"
+            },
+            {
+              "name": "Rumi Sutton",
+              "char": "SENG",
+              "photo": null
+            },
+            {
+              "name": "Jessica Wai Sum Tong",
+              "char": "Office Worker",
+              "photo": null
+            },
+            {
+              "name": "Caroline Glass",
+              "char": "International Business Woman & Dinner Guest",
+              "photo": "https://image.tmdb.org/t/p/w500/zzW8gDIddN0rD7BrddDm74h6Hnm.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Jean-François Richet",
+              "job": "Director"
+            },
+            {
+              "name": "Lindsay Michel",
+              "job": "Screenplay"
+            },
+            {
+              "name": "J.P. Davis",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Mutiny",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1288445?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1291595,
+        "titleZh": "陰兒房：穿越陰深處",
+        "titleEn": "Insidious: Out of the Further",
+        "releaseDate": "2026-08-19",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-19",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
+        "voteAverage": "5.5",
+        "genre": [
+          "恐怖",
+          "驚悚"
+        ],
+        "duration": 106,
+        "synopsis": "在自己的童年老家撫養女兒的年輕母親潔瑪，意外發現自己能夠進入「陰深處」，這個位於《陰兒房》宇宙核心、充滿迷失靈魂的煉獄空間。當邪惡力量開始接近她時，潔瑪逐漸察覺自己擁有一項足以改變一切的能力，她不僅能進入陰深處，甚至能將其中的存在帶回現實世界。一旦惡靈察覺這股力量，人類世界也將淪為牠們的遊樂場。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "coy7TQSchmw",
+        "cast": [
+          {
+            "name": "愛蜜莉亞·伊芙",
+            "char": "Gemma",
+            "photo": "https://image.tmdb.org/t/p/w500/tae6mUhWxNs82IVgWlarxPKbVL8.jpg"
+          },
+          {
+            "name": "Island Austin",
+            "char": "Maya",
+            "photo": "https://image.tmdb.org/t/p/w500/663fMDrygvPYcV4L567iHVzEfXD.jpg"
+          },
+          {
+            "name": "Lin Shaye",
+            "char": "Elise Rainier",
+            "photo": "https://image.tmdb.org/t/p/w500/aL87Za52elH81zMiXQn5C7AXAeg.jpg"
+          },
+          {
+            "name": "Sam Spruell",
+            "char": "Cyrus",
+            "photo": "https://image.tmdb.org/t/p/w500/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
+          },
+          {
+            "name": "Brandon Perea",
+            "char": "Nick",
+            "photo": "https://image.tmdb.org/t/p/w500/hEzljVgsho0Uwd8tg7AGB5Uy3Lr.jpg"
+          },
+          {
+            "name": "Maisie Richardson-Sellers",
+            "char": "Clare",
+            "photo": "https://image.tmdb.org/t/p/w500/kYqqlIllubeg36H93RCNEzUSO5j.jpg"
+          },
+          {
+            "name": "Joseph Lopez",
+            "char": "Lester",
+            "photo": "https://image.tmdb.org/t/p/w500/tmhwEUByCT6iXlxmJvpTsX97Css.jpg"
+          },
+          {
+            "name": "Laura Gordon",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/7Gro37r1iqm4Wiyf2QlvMPgSeza.jpg"
+          },
+          {
+            "name": "Charli Penton",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/1zHWlcfqZ8rwlNAb70k5XbitBUI.jpg"
+          },
+          {
+            "name": "Taylor Bogrand",
+            "char": "Doll Girl",
+            "photo": null
+          },
+          {
+            "name": "Ben Keller",
+            "char": "Young Lester",
+            "photo": "https://image.tmdb.org/t/p/w500/r6nRGBCYpJMa2iMJAhXCyyh16Xq.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Jacob Chase",
+            "job": "Director"
+          },
+          {
+            "name": "Jacob Chase",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Insidious: Out of the Further",
+        "platforms": [],
+        "popularity": 26.2117,
+        "imdbId": "tt32393988",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 106,
+          "genres": [
+            "恐怖",
+            "驚悚"
+          ],
+          "synopsis": "在自己的童年老家撫養女兒的年輕母親潔瑪，意外發現自己能夠進入「陰深處」，這個位於《陰兒房》宇宙核心、充滿迷失靈魂的煉獄空間。當邪惡力量開始接近她時，潔瑪逐漸察覺自己擁有一項足以改變一切的能力，她不僅能進入陰深處，甚至能將其中的存在帶回現實世界。一旦惡靈察覺這股力量，人類世界也將淪為牠們的遊樂場。",
+          "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
+          "voteAverage": "5.5",
+          "trailerKey": "coy7TQSchmw",
+          "imdbId": "tt32393988",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "愛蜜莉亞·伊芙",
+              "char": "Gemma",
+              "photo": "https://image.tmdb.org/t/p/w500/tae6mUhWxNs82IVgWlarxPKbVL8.jpg"
+            },
+            {
+              "name": "Island Austin",
+              "char": "Maya",
+              "photo": "https://image.tmdb.org/t/p/w500/663fMDrygvPYcV4L567iHVzEfXD.jpg"
+            },
+            {
+              "name": "Lin Shaye",
+              "char": "Elise Rainier",
+              "photo": "https://image.tmdb.org/t/p/w500/aL87Za52elH81zMiXQn5C7AXAeg.jpg"
+            },
+            {
+              "name": "Sam Spruell",
+              "char": "Cyrus",
+              "photo": "https://image.tmdb.org/t/p/w500/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
+            },
+            {
+              "name": "Brandon Perea",
+              "char": "Nick",
+              "photo": "https://image.tmdb.org/t/p/w500/hEzljVgsho0Uwd8tg7AGB5Uy3Lr.jpg"
+            },
+            {
+              "name": "Maisie Richardson-Sellers",
+              "char": "Clare",
+              "photo": "https://image.tmdb.org/t/p/w500/kYqqlIllubeg36H93RCNEzUSO5j.jpg"
+            },
+            {
+              "name": "Joseph Lopez",
+              "char": "Lester",
+              "photo": "https://image.tmdb.org/t/p/w500/tmhwEUByCT6iXlxmJvpTsX97Css.jpg"
+            },
+            {
+              "name": "Laura Gordon",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/7Gro37r1iqm4Wiyf2QlvMPgSeza.jpg"
+            },
+            {
+              "name": "Charli Penton",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/1zHWlcfqZ8rwlNAb70k5XbitBUI.jpg"
+            },
+            {
+              "name": "Taylor Bogrand",
+              "char": "Doll Girl",
+              "photo": null
+            },
+            {
+              "name": "Ben Keller",
+              "char": "Young Lester",
+              "photo": "https://image.tmdb.org/t/p/w500/r6nRGBCYpJMa2iMJAhXCyyh16Xq.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Jacob Chase",
+              "job": "Director"
+            },
+            {
+              "name": "Jacob Chase",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Insidious: Out of the Further",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1291595?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1433367,
+        "titleZh": "一夜限定",
+        "titleEn": "One Night Only",
+        "releaseDate": "2026-08-19",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-19",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
+        "voteAverage": "6.8",
+        "genre": [
+          "喜劇",
+          "愛情"
+        ],
+        "duration": 102,
+        "synopsis": "",
+        "imdb": "6.4",
+        "rt": "46%",
+        "mc": "42",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 1318,
+            "lastChanged": "2026-08-19T03:10:13.032781+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 160,
+            "lastChanged": "2026-08-19T03:10:13.032781+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 33,
+            "lastChanged": "2026-08-19T03:10:13.032781+08:00"
+          }
+        },
+        "trailerKey": "lIl2WzFiF0A",
+        "cast": [
+          {
+            "name": "莫妮卡·巴巴羅",
+            "char": "Allie",
+            "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+          },
+          {
+            "name": "卡倫·透納",
+            "char": "Owen",
+            "photo": "https://image.tmdb.org/t/p/w500/1QqpyYbX6zyyrtlKAJLbKM4B4k9.jpg"
+          },
+          {
+            "name": "瑪雅·霍克",
+            "char": "Malika",
+            "photo": "https://image.tmdb.org/t/p/w500/evjbbHM1bzA6Ma5Ptjwa4WkYkkj.jpg"
+          },
+          {
+            "name": "King Princess",
+            "char": "Jacinta",
+            "photo": "https://image.tmdb.org/t/p/w500/hQFDqQj5fmprYGOsKZMVRLCPJFd.jpg"
+          },
+          {
+            "name": "摩莉·倫華",
+            "char": "Linda",
+            "photo": "https://image.tmdb.org/t/p/w500/eXRphPiX18t8C3nCoOuxQFNegqP.jpg"
+          },
+          {
+            "name": "LeVar Burton",
+            "char": "Rick",
+            "photo": "https://image.tmdb.org/t/p/w500/tC74tISKpFGmJkrw24MMLix5nNa.jpg"
+          },
+          {
+            "name": "Charlie Gillespie",
+            "char": "Ezra Stone",
+            "photo": "https://image.tmdb.org/t/p/w500/wFNpaCIveZ5DXCCJhproXWdKlEi.jpg"
+          },
+          {
+            "name": "昆塔莎·斯溫德爾",
+            "char": "Arya",
+            "photo": "https://image.tmdb.org/t/p/w500/3rWuQThPernDgpluR1Q8xDgg3Tu.jpg"
+          },
+          {
+            "name": "Mateo Ray Garcia",
+            "char": "Troy",
+            "photo": "https://image.tmdb.org/t/p/w500/jWq8QHb5eURJ4rHnujmFhsC7x3w.jpg"
+          },
+          {
+            "name": "歐基瑞特·歐諾多溫",
+            "char": "Tejan",
+            "photo": "https://image.tmdb.org/t/p/w500/kxPzTxYuPInFY08o0H3KZahf7lX.jpg"
+          },
+          {
+            "name": "朱莉亞·福克斯",
+            "char": "Skye",
+            "photo": "https://image.tmdb.org/t/p/w500/cuRGm9ySxto57ifv3tSAYhOLAYA.jpg"
+          },
+          {
+            "name": "Este Haim",
+            "char": "Aura",
+            "photo": "https://image.tmdb.org/t/p/w500/aUVgUkRK980y030GMCNFsvRP9Vh.jpg"
+          },
+          {
+            "name": "Ziwe",
+            "char": "Bethia",
+            "photo": "https://image.tmdb.org/t/p/w500/fLvuKhWMVeYU7raHTfpXcbVOcl1.jpg"
+          },
+          {
+            "name": "Ben Marshall",
+            "char": "Patrick Brunson",
+            "photo": "https://image.tmdb.org/t/p/w500/kLUG2GlueUOoSrKHlqhuS3yUnDc.jpg"
+          },
+          {
+            "name": "尼古拉斯·布朗",
+            "char": "Woodrow K. Mullhand. CFP",
+            "photo": "https://image.tmdb.org/t/p/w500/b2I6bZptuld3pjlVkYIy4DtMKGg.jpg"
+          },
+          {
+            "name": "Michelle Hurd",
+            "char": "Detective Vanessa Bryan Brown",
+            "photo": "https://image.tmdb.org/t/p/w500/cdFf791CMSWvCNH1wksf32oPT2e.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "威爾·古勒",
+            "job": "Director"
+          },
+          {
+            "name": "Travis Braun",
+            "job": "Writer"
+          }
+        ],
+        "budget": 25000000,
+        "revenue": 12128065,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "One Night Only",
+        "platforms": [],
+        "popularity": 27.4011,
+        "imdbId": "tt37853455",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 102,
+          "genres": [
+            "喜劇",
+            "愛情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
+          "voteAverage": "6.8",
+          "trailerKey": "lIl2WzFiF0A",
+          "imdbId": "tt37853455",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "莫妮卡·巴巴羅",
+              "char": "Allie",
+              "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+            },
+            {
+              "name": "卡倫·透納",
+              "char": "Owen",
+              "photo": "https://image.tmdb.org/t/p/w500/1QqpyYbX6zyyrtlKAJLbKM4B4k9.jpg"
+            },
+            {
+              "name": "瑪雅·霍克",
+              "char": "Malika",
+              "photo": "https://image.tmdb.org/t/p/w500/evjbbHM1bzA6Ma5Ptjwa4WkYkkj.jpg"
+            },
+            {
+              "name": "King Princess",
+              "char": "Jacinta",
+              "photo": "https://image.tmdb.org/t/p/w500/hQFDqQj5fmprYGOsKZMVRLCPJFd.jpg"
+            },
+            {
+              "name": "摩莉·倫華",
+              "char": "Linda",
+              "photo": "https://image.tmdb.org/t/p/w500/eXRphPiX18t8C3nCoOuxQFNegqP.jpg"
+            },
+            {
+              "name": "LeVar Burton",
+              "char": "Rick",
+              "photo": "https://image.tmdb.org/t/p/w500/tC74tISKpFGmJkrw24MMLix5nNa.jpg"
+            },
+            {
+              "name": "Charlie Gillespie",
+              "char": "Ezra Stone",
+              "photo": "https://image.tmdb.org/t/p/w500/wFNpaCIveZ5DXCCJhproXWdKlEi.jpg"
+            },
+            {
+              "name": "昆塔莎·斯溫德爾",
+              "char": "Arya",
+              "photo": "https://image.tmdb.org/t/p/w500/3rWuQThPernDgpluR1Q8xDgg3Tu.jpg"
+            },
+            {
+              "name": "Mateo Ray Garcia",
+              "char": "Troy",
+              "photo": "https://image.tmdb.org/t/p/w500/jWq8QHb5eURJ4rHnujmFhsC7x3w.jpg"
+            },
+            {
+              "name": "歐基瑞特·歐諾多溫",
+              "char": "Tejan",
+              "photo": "https://image.tmdb.org/t/p/w500/kxPzTxYuPInFY08o0H3KZahf7lX.jpg"
+            },
+            {
+              "name": "朱莉亞·福克斯",
+              "char": "Skye",
+              "photo": "https://image.tmdb.org/t/p/w500/cuRGm9ySxto57ifv3tSAYhOLAYA.jpg"
+            },
+            {
+              "name": "Este Haim",
+              "char": "Aura",
+              "photo": "https://image.tmdb.org/t/p/w500/aUVgUkRK980y030GMCNFsvRP9Vh.jpg"
+            },
+            {
+              "name": "Ziwe",
+              "char": "Bethia",
+              "photo": "https://image.tmdb.org/t/p/w500/fLvuKhWMVeYU7raHTfpXcbVOcl1.jpg"
+            },
+            {
+              "name": "Ben Marshall",
+              "char": "Patrick Brunson",
+              "photo": "https://image.tmdb.org/t/p/w500/kLUG2GlueUOoSrKHlqhuS3yUnDc.jpg"
+            },
+            {
+              "name": "尼古拉斯·布朗",
+              "char": "Woodrow K. Mullhand. CFP",
+              "photo": "https://image.tmdb.org/t/p/w500/b2I6bZptuld3pjlVkYIy4DtMKGg.jpg"
+            },
+            {
+              "name": "Michelle Hurd",
+              "char": "Detective Vanessa Bryan Brown",
+              "photo": "https://image.tmdb.org/t/p/w500/cdFf791CMSWvCNH1wksf32oPT2e.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "威爾·古勒",
+              "job": "Director"
+            },
+            {
+              "name": "Travis Braun",
+              "job": "Writer"
+            }
+          ],
+          "budget": 25000000,
+          "revenue": 12128065,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "One Night Only",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1433367?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 568012,
         "titleZh": "航海王：奪寶爭霸戰",
@@ -579,10 +1292,15 @@
         ],
         "duration": 88,
         "synopsis": "飛船被捲入一場神秘風暴，汪汪隊的狗狗們於是迫降在一座充滿恐龍的未知熱帶小島，並遇見了受困在小島多年、精通所有恐龍知識的狗狗雷克斯。汪汪隊的死對頭韓丁納市長覬覦小島的天然資源，便展開魯莽的開採行動，卻意外引發了休眠火山的大爆發。汪汪隊因此必須展開前所未有、風險升級的恐龍級救援任務，在這座小島上的一切滅絕之前阻止韓丁納。",
-        "imdb": "",
+        "imdb": "6.2",
         "rt": "82%",
         "mc": "47",
         "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 1038,
+            "lastChanged": "2026-08-19T03:10:13.032781+08:00"
+          },
           "rt": {
             "source": "mdblist",
             "votes": 28,
@@ -3567,11 +4285,11 @@
         "crew": [
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -3696,11 +4414,11 @@
           "crew": [
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5855,12 +6573,12 @@
         ],
         "crew": [
           {
-            "name": "三木孝浩",
-            "job": "Director"
-          },
-          {
             "name": "髙橋泉",
             "job": "Screenplay"
+          },
+          {
+            "name": "三木孝浩",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -5974,12 +6692,12 @@
           ],
           "crew": [
             {
-              "name": "三木孝浩",
-              "job": "Director"
-            },
-            {
               "name": "髙橋泉",
               "job": "Screenplay"
+            },
+            {
+              "name": "三木孝浩",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -6996,7 +7714,7 @@
         "duration": 145,
         "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
         "imdb": "8.1",
-        "rt": "89%",
+        "rt": "90%",
         "mc": "66",
         "ratingMeta": {
           "imdb": {
@@ -7006,8 +7724,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 416,
-            "lastChanged": "2026-08-16T21:14:03.228672+08:00"
+            "votes": 421,
+            "lastChanged": "2026-08-19T03:10:13.032781+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -7020,7 +7738,7 @@
           {
             "name": "湯姆·霍蘭德",
             "char": "Peter Parker / Spider-Man",
-            "photo": "https://image.tmdb.org/t/p/w500/l6zPRmg8NI7Y65G5GUqwvjxFdsx.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/vgtNBR3KCrOyatvtb4ldSybO9OY.jpg"
           },
           {
             "name": "千黛亞",
@@ -7143,7 +7861,7 @@
             {
               "name": "湯姆·霍蘭德",
               "char": "Peter Parker / Spider-Man",
-              "photo": "https://image.tmdb.org/t/p/w500/l6zPRmg8NI7Y65G5GUqwvjxFdsx.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/vgtNBR3KCrOyatvtb4ldSybO9OY.jpg"
             },
             {
               "name": "千黛亞",
@@ -7354,11 +8072,11 @@
         "crew": [
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -7460,11 +8178,11 @@
           "crew": [
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -7863,11 +8581,11 @@
         "crew": [
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Muriel d'Ansembourg",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -7985,11 +8703,11 @@
           "crew": [
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Muriel d'Ansembourg",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -9127,7 +9845,7 @@
           {
             "name": "湯姆·霍蘭德",
             "char": "Telemachus",
-            "photo": "https://image.tmdb.org/t/p/w500/l6zPRmg8NI7Y65G5GUqwvjxFdsx.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/vgtNBR3KCrOyatvtb4ldSybO9OY.jpg"
           },
           {
             "name": "安·海瑟薇",
@@ -9248,7 +9966,7 @@
             {
               "name": "湯姆·霍蘭德",
               "char": "Telemachus",
-              "photo": "https://image.tmdb.org/t/p/w500/l6zPRmg8NI7Y65G5GUqwvjxFdsx.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/vgtNBR3KCrOyatvtb4ldSybO9OY.jpg"
             },
             {
               "name": "安·海瑟薇",
@@ -11972,7 +12690,7 @@
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
-            "votes": 9054,
+            "votes": 10630,
             "lastChanged": "2026-08-10T10:55:40.980084+08:00"
           },
           "rt": {
@@ -13743,11 +14461,11 @@
             "job": "Writer"
           },
           {
-            "name": "Philippe Lacheau",
-            "job": "Director"
+            "name": "Pierre Lacheau",
+            "job": "Writer"
           },
           {
-            "name": "Pierre Lacheau",
+            "name": "Pierre Dudan",
             "job": "Writer"
           }
         ],
@@ -13867,11 +14585,11 @@
               "job": "Writer"
             },
             {
-              "name": "Philippe Lacheau",
-              "job": "Director"
+              "name": "Pierre Lacheau",
+              "job": "Writer"
             },
             {
-              "name": "Pierre Lacheau",
+              "name": "Pierre Dudan",
               "job": "Writer"
             }
           ],
@@ -20659,7 +21377,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/4PfWwT2ebFNVFCjLcr158YFAt7z.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
         "voteAverage": "",
         "genre": [
           "愛情",
@@ -20756,7 +21474,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/4PfWwT2ebFNVFCjLcr158YFAt7z.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
           "voteAverage": "",
           "trailerKey": "fmMoGBw0Dkk",
           "imdbId": "tt32588798",
@@ -26310,11 +27028,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -26422,11 +27140,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
