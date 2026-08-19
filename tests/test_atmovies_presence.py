@@ -1,6 +1,6 @@
 import sys
 import unittest
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 
@@ -361,6 +361,47 @@ class RefreshVisibilityTests(unittest.TestCase):
         }
 
         self.assertTrue(weekly.should_keep_static_movie(movie, record))
+
+    @patch.object(refresh.time, "sleep")
+    @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
+    @patch.object(refresh, "load_current_site_ids", return_value=[])
+    @patch.object(refresh, "load_manual_ids", return_value=[])
+    @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
+    def test_rerelease_outputs_only_release_records_matching_the_cinema_date(
+        self,
+        _supplemental,
+        _manual_ids,
+        _site_ids,
+        _whitelist_ids,
+        _sleep,
+    ):
+        today = datetime.now(timezone(timedelta(hours=8))).date()
+        premiere_date = (today + timedelta(days=1)).isoformat()
+        cinema_date = (today + timedelta(days=2)).isoformat()
+        candidate = {
+            "tmdb_id": 101,
+            "candidate_kind": "rerelease",
+            "cinema_release_date": cinema_date,
+        }
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 1, "release_date": f"{premiere_date}T00:00:00.000Z"},
+                {"type": 2, "release_date": f"{cinema_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with patch.object(weekly, "tmdb_movie", return_value={
+            "id": 101,
+            "title": "測試重映片",
+            "original_title": "Test Rerelease",
+            "release_date": "2000-01-01",
+        }), patch.object(weekly, "tmdb_release_dates", return_value=release_results):
+            output, _, _ = refresh.build_verified_output([candidate])
+
+        record = output["tmdb_has_tw_date"][0]
+        self.assertEqual(record["tmdb_tw_release_date"], cinema_date)
+        self.assertEqual(record["tmdb_tw_release_dates"], [{"date": cinema_date, "language": ""}])
 
     def test_now_movie_hides_on_second_miss(self):
         self.assertEqual(publish.NOW_ATMOVIES_MISS_LIMIT, refresh.NOW_ATMOVIES_MISS_LIMIT)
