@@ -186,6 +186,39 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(merged[0]["consecutive_misses"], 2)
         self.assertEqual(merged[0]["last_audit_date"], "2026-07-22")
 
+    def test_incomplete_cross_cinema_audit_does_not_increment_missing_count(self):
+        previous = [{
+            "tmdb_id": "202",
+            "atmovies_present": "FALSE",
+            "consecutive_misses": "0",
+            "last_audit_date": "2026-07-18",
+        }]
+
+        merged = publish.merge_candidate_presence(
+            [], previous, "2026-07-22", audit_complete=False
+        )
+
+        self.assertEqual(merged[0]["consecutive_misses"], 0)
+        self.assertEqual(merged[0]["last_audit_date"], "2026-07-18")
+        self.assertFalse(merged[0]["absence_audit_complete"])
+
+    def test_other_cinema_presence_resets_absence_without_atmovies(self):
+        previous = [{
+            "tmdb_id": "202",
+            "atmovies_present": "FALSE",
+            "consecutive_misses": "1",
+            "last_audit_date": "2026-07-18",
+        }]
+
+        merged = publish.merge_candidate_presence(
+            [], previous, "2026-07-22", {"202": ["showtime"]}, True
+        )
+
+        self.assertFalse(merged[0]["atmovies_present"])
+        self.assertTrue(merged[0]["cinema_present"])
+        self.assertEqual(merged[0]["present_sources"], "showtime")
+        self.assertEqual(merged[0]["consecutive_misses"], 0)
+
     def test_far_future_candidate_clears_old_misses(self):
         previous = [{
             "tmdb_id": "1437511",
@@ -455,17 +488,27 @@ class RefreshVisibilityTests(unittest.TestCase):
         self.assertEqual(record["tmdb_tw_release_date"], cinema_date)
         self.assertEqual(record["tmdb_tw_release_dates"], [{"date": cinema_date, "language": ""}])
 
-    def test_now_movie_hides_on_second_miss(self):
+    def test_now_movie_hides_after_one_complete_all_source_absence(self):
         self.assertEqual(publish.NOW_ATMOVIES_MISS_LIMIT, refresh.NOW_ATMOVIES_MISS_LIMIT)
         release_date = date(2026, 7, 17)
-        self.assertFalse(refresh.should_hide_for_atmovies_absence(self.candidate(1), release_date, self.TODAY, set()))
-        self.assertTrue(refresh.should_hide_for_atmovies_absence(self.candidate(2), release_date, self.TODAY, set()))
+        candidate = self.candidate(1)
+        candidate["absence_audit_complete"] = True
+        self.assertTrue(refresh.should_hide_for_atmovies_absence(candidate, release_date, self.TODAY, set()))
 
-    def test_soon_movie_hides_on_fifth_miss(self):
+    def test_soon_movie_hides_after_one_complete_all_source_absence(self):
         self.assertEqual(publish.SOON_ATMOVIES_MISS_LIMIT, refresh.SOON_ATMOVIES_MISS_LIMIT)
         release_date = date(2026, 8, 7)
-        self.assertFalse(refresh.should_hide_for_atmovies_absence(self.candidate(4), release_date, self.TODAY, set()))
-        self.assertTrue(refresh.should_hide_for_atmovies_absence(self.candidate(5), release_date, self.TODAY, set()))
+        candidate = self.candidate(1)
+        candidate["absence_audit_complete"] = True
+        self.assertTrue(refresh.should_hide_for_atmovies_absence(candidate, release_date, self.TODAY, set()))
+
+    def test_incomplete_audit_or_other_cinema_presence_does_not_hide(self):
+        release_date = date(2026, 7, 17)
+        incomplete = self.candidate(1)
+        self.assertFalse(refresh.should_hide_for_atmovies_absence(incomplete, release_date, self.TODAY, set()))
+        present = self.candidate(1)
+        present.update({"absence_audit_complete": True, "cinema_present": True})
+        self.assertFalse(refresh.should_hide_for_atmovies_absence(present, release_date, self.TODAY, set()))
 
     def test_far_future_movie_ignores_old_misses(self):
         self.assertFalse(
@@ -526,7 +569,8 @@ class RefreshVisibilityTests(unittest.TestCase):
         release_date = date(2026, 7, 17)
         self.assertTrue(
             refresh.should_hide_for_atmovies_absence(
-                self.candidate(2, ever_seen=False), release_date, self.TODAY, set()
+                {**self.candidate(1, ever_seen=False), "absence_audit_complete": True},
+                release_date, self.TODAY, set()
             )
         )
 

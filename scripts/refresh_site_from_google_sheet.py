@@ -24,8 +24,8 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 MOVIE_DATA_FILE = ROOT_DIR / "data" / "movie-data.json"
 MANUAL_RELEASES_FILE = ROOT_DIR / "data" / "manual-releases.json"
 WHITELIST_FILE = ROOT_DIR / "data" / "tw-whitelist.json"
-NOW_ATMOVIES_MISS_LIMIT = 2
-SOON_ATMOVIES_MISS_LIMIT = 5
+NOW_ATMOVIES_MISS_LIMIT = 1
+SOON_ATMOVIES_MISS_LIMIT = 1
 
 
 def log(message):
@@ -148,13 +148,18 @@ def atmovies_miss_count(candidate):
 
 
 def should_hide_for_atmovies_absence(candidate, release_date, today, manual_ids):
-    """對已進入開眼接手範圍的非人工電影套用連續缺席隱藏規則。"""
+    """對已進入院線稽核範圍的非人工電影套用全來源缺席隱藏規則。"""
     tmdb_id = candidate.get("tmdb_id")
     if tmdb_id in manual_ids:
         return False
     if release_date > today + timedelta(days=ATMOVIES_HANDOFF_DAYS):
         return False
-    if sheet_value_is_true(candidate.get("atmovies_present")):
+    if (
+        sheet_value_is_true(candidate.get("atmovies_present"))
+        or sheet_value_is_true(candidate.get("cinema_present"))
+    ):
+        return False
+    if not sheet_value_is_true(candidate.get("absence_audit_complete")):
         return False
     misses = atmovies_miss_count(candidate)
     limit = NOW_ATMOVIES_MISS_LIMIT if release_date <= today else SOON_ATMOVIES_MISS_LIMIT
@@ -197,7 +202,10 @@ def allows_continuous_theatrical_run(candidate, release_date, today):
         return False
     if sheet_value_is_true(candidate.get("reappeared_after_hidden")):
         return False
-    if atmovies_miss_count(candidate) >= NOW_ATMOVIES_MISS_LIMIT:
+    if (
+        sheet_value_is_true(candidate.get("absence_audit_complete"))
+        and atmovies_miss_count(candidate) >= NOW_ATMOVIES_MISS_LIMIT
+    ):
         return False
     if sheet_value_is_true(candidate.get("ever_published")):
         return True
