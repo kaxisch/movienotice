@@ -32,7 +32,8 @@ CANDIDATE_HEADERS = [
     "release_date_tw", "tmdb_tw_release_date", "atmovies_id", "atmovies_url", "tmdb_title",
     "ever_seen_atmovies", "atmovies_present", "consecutive_misses", "last_seen_atmovies",
     "last_audit_date", "ever_published", "run_generation", "run_started_at",
-    "reappeared_after_hidden", "handoff_started_at",
+    "reappeared_after_hidden", "handoff_started_at", "cinema_present",
+    "present_sources", "absence_audit_complete",
 ]
 RERELEASE_HEADERS = [
     "tmdb_id", "title_zh", "title_en", "cinema_release_date", "atmovies_original_date", "tmdb_tw_release_date",
@@ -43,8 +44,8 @@ RERELEASE_HEADERS = [
 RERELEASE_MISS_LIMIT = 1
 CANDIDATE_RETENTION_DAYS = 180
 ATMOVIES_HANDOFF_DAYS = 60
-NOW_ATMOVIES_MISS_LIMIT = 2
-SOON_ATMOVIES_MISS_LIMIT = 5
+NOW_ATMOVIES_MISS_LIMIT = 1
+SOON_ATMOVIES_MISS_LIMIT = 1
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -175,8 +176,14 @@ def is_sheet_true(value, default=False):
     return str(value).strip().lower() in {"1", "true", "yes", "y"}
 
 
-def merge_candidate_presence(current_items, previous_items, run_date):
-    """合併本次開眼候選與前次私人狀態；只有成功發布的稽核才會累加缺席。"""
+def merge_candidate_presence(
+    current_items, previous_items, run_date, cinema_presence=None, audit_complete=True
+):
+    """合併本次跨院線候選；只有完整稽核確認全來源缺席才累加缺席。"""
+    cinema_presence = {
+        str(tmdb_id): sorted(set(sources))
+        for tmdb_id, sources in (cinema_presence or {}).items()
+    }
     current_by_id = {str(item["tmdb_id"]): dict(item) for item in current_items if item.get("tmdb_id")}
     previous_by_id = {str(item.get("tmdb_id", "")): dict(item) for item in previous_items if item.get("tmdb_id")}
 
@@ -194,6 +201,7 @@ def merge_candidate_presence(current_items, previous_items, run_date):
     for tmdb_id in sorted(set(previous_by_id) | set(current_by_id), key=lambda value: int(value)):
         previous = previous_by_id.get(tmdb_id, {})
         current = current_by_id.get(tmdb_id)
+        cinema_sources = cinema_presence.get(tmdb_id, [])
         handoff_phase = candidate_handoff_phase(current or previous, run_date)
         previous_handoff = str(previous.get("handoff_started_at", "") or "").strip()
         if current:
@@ -230,6 +238,37 @@ def merge_candidate_presence(current_items, previous_items, run_date):
                     else run_date if handoff_phase == "handoff" and previous_handoff == "pending"
                     else previous_handoff or (run_date if handoff_phase == "handoff" else "")
                 ),
+                "cinema_present": bool(cinema_sources),
+                "present_sources": ",".join(["atmovies", *cinema_sources]),
+                "absence_audit_complete": bool(audit_complete),
+            })
+        elif cinema_sources:
+            item = dict(previous)
+            miss_limit = candidate_miss_limit(previous, run_date)
+            try:
+                previous_misses = int(previous.get("consecutive_misses", 0) or 0)
+            except (TypeError, ValueError):
+                previous_misses = 0
+            reappeared = miss_limit is not None and previous_misses >= miss_limit
+            try:
+                generation = max(1, int(previous.get("run_generation", 1) or 1))
+            except (TypeError, ValueError):
+                generation = 1
+            if reappeared:
+                generation += 1
+            item.update({
+                "atmovies_present": False,
+                "cinema_present": True,
+                "present_sources": ",".join(cinema_sources),
+                "consecutive_misses": 0,
+                "last_audit_date": run_date,
+                "absence_audit_complete": bool(audit_complete),
+                "run_generation": generation,
+                "run_started_at": run_date if reappeared else previous.get("run_started_at") or run_date,
+                "reappeared_after_hidden": (
+                    reappeared
+                    or is_sheet_true(previous.get("reappeared_after_hidden"), default=False)
+                ),
             })
         else:
             item = dict(previous)
@@ -242,13 +281,16 @@ def merge_candidate_presence(current_items, previous_items, run_date):
             elif handoff_phase == "handoff" and previous_handoff == "pending":
                 misses = 0
             last_audit_date = str(item.get("last_audit_date", "") or "").strip()
-            if handoff_phase != "far" and last_audit_date != run_date:
+            if audit_complete and handoff_phase != "far" and last_audit_date != run_date:
                 misses += 1
             item.update({
                 "ever_seen_atmovies": is_sheet_true(item.get("ever_seen_atmovies"), default=False),
                 "atmovies_present": False,
+                "cinema_present": False,
+                "present_sources": "",
                 "consecutive_misses": misses,
-                "last_audit_date": run_date,
+                "last_audit_date": run_date if audit_complete else last_audit_date,
+                "absence_audit_complete": bool(audit_complete),
                 "handoff_started_at": (
                     "pending" if handoff_phase == "far"
                     else run_date if handoff_phase == "handoff" and previous_handoff == "pending"
@@ -742,6 +784,7 @@ def publish():
     write_rows(sheets_service, spreadsheet_id, run_date, rows)
     format_sheet(sheets_service, spreadsheet_id, sheet_id, len(rows[0]))
 
+    rerelease_audit = load_rerelease_audit()
     current_candidate_items = load_candidate_items()
     if current_candidate_items:
         metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
@@ -760,7 +803,16 @@ def publish():
             manual_ids,
         )
         previous_candidate_items = mark_published_candidates(previous_candidate_items, movie_payload)
-        candidate_items = merge_candidate_presence(current_candidate_items, previous_candidate_items, run_date)
+        cinema_presence = (
+            rerelease_audit.get("cinema_presence", {}) if rerelease_audit is not None else {}
+        )
+        candidate_items = merge_candidate_presence(
+            current_candidate_items,
+            previous_candidate_items,
+            run_date,
+            cinema_presence,
+            bool(rerelease_audit and rerelease_audit.get("audit_complete")),
+        )
         candidate_items = prune_retired_candidates(
             candidate_items,
             run_date,
@@ -774,7 +826,6 @@ def publish():
         format_sheet(sheets_service, spreadsheet_id, candidate_sheet_id, len(candidate_rows[0]))
         log(f"Wrote {len(candidate_rows) - 1} refresh candidates to worksheet {CANDIDATES_SHEET_TITLE}.")
 
-    rerelease_audit = load_rerelease_audit()
     if rerelease_audit is not None:
         metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
         existing_rerelease_sheet = sheet_by_title(metadata, RERELEASES_SHEET_TITLE)

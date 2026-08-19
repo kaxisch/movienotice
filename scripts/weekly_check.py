@@ -1709,6 +1709,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         log(f"Cinema audit warning: Wonderful failed: {error}")
 
     matched = {}
+    cinema_presence = {}
     review_rows = []
     rejected_source_urls = set()
     tmdb_processing_complete = True
@@ -1723,6 +1724,10 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             if has_rerelease_marker(movie.get("title_zh"), movie.get("title_en")):
                 review_rows.append({**movie, "audit_category": "重映－TMDB配對待確認"})
             continue
+        presence_sources = cinema_presence.setdefault(str(result["id"]), [])
+        for source in movie.get("sources", []):
+            if source not in presence_sources:
+                presence_sources.append(source)
         release_results = tmdb_release_dates(result["id"])
         time.sleep(TMDB_DELAY)
         if release_results is None:
@@ -1841,6 +1846,9 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         ),
         "tmdb_processing_complete": tmdb_processing_complete,
         "source_health": source_health,
+        "cinema_presence": {
+            tmdb_id: sorted(sources) for tmdb_id, sources in cinema_presence.items()
+        },
         "rejected_source_urls": sorted(rejected_source_urls),
         "candidates": sorted(candidates, key=lambda item: (item.get("cinema_release_date", ""), item["tmdb_id"])),
         "review_rows": review_rows,
