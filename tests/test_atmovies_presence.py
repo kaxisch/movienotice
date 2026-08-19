@@ -202,6 +202,29 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(merged[0]["last_audit_date"], "2026-07-18")
         self.assertFalse(merged[0]["absence_audit_complete"])
 
+    def test_incomplete_audit_does_not_resurrect_candidate_hidden_by_complete_audit(self):
+        previous = [{
+            "tmdb_id": "202",
+            "tmdb_tw_release_date": "2026-07-17",
+            "atmovies_present": "FALSE",
+            "cinema_present": "FALSE",
+            "consecutive_misses": "1",
+            "last_audit_date": "2026-07-18",
+            "absence_audit_complete": "TRUE",
+        }]
+
+        merged = publish.merge_candidate_presence(
+            [], previous, "2026-07-22", audit_complete=False
+        )
+
+        self.assertEqual(merged[0]["consecutive_misses"], 1)
+        self.assertTrue(merged[0]["absence_audit_complete"])
+        self.assertTrue(
+            refresh.should_hide_for_atmovies_absence(
+                merged[0], date(2026, 7, 17), date(2026, 7, 22), set()
+            )
+        )
+
     def test_other_cinema_presence_resets_absence_without_atmovies(self):
         previous = [{
             "tmdb_id": "202",
@@ -509,6 +532,30 @@ class RefreshVisibilityTests(unittest.TestCase):
         present = self.candidate(1)
         present.update({"absence_audit_complete": True, "cinema_present": True})
         self.assertFalse(refresh.should_hide_for_atmovies_absence(present, release_date, self.TODAY, set()))
+
+    def test_legacy_hidden_candidates_stay_hidden_without_new_audit_column(self):
+        now_date = date(2026, 7, 17)
+        soon_date = date(2026, 8, 7)
+        self.assertFalse(
+            refresh.should_hide_for_atmovies_absence(
+                self.candidate(1), now_date, self.TODAY, set()
+            )
+        )
+        self.assertTrue(
+            refresh.should_hide_for_atmovies_absence(
+                self.candidate(2), now_date, self.TODAY, set()
+            )
+        )
+        self.assertFalse(
+            refresh.should_hide_for_atmovies_absence(
+                self.candidate(4), soon_date, self.TODAY, set()
+            )
+        )
+        self.assertTrue(
+            refresh.should_hide_for_atmovies_absence(
+                self.candidate(5), soon_date, self.TODAY, set()
+            )
+        )
 
     def test_far_future_movie_ignores_old_misses(self):
         self.assertFalse(
