@@ -2,6 +2,7 @@ import sys
 import unittest
 from datetime import date
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -13,6 +14,53 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_tmdb_tw_cinema_release_accepts_premiere_limited_and_theatrical(self):
+        releases = weekly.extract_tw_theatrical_releases_from_results([
+            {
+                "iso_3166_1": "TW",
+                "release_dates": [
+                    {"type": 1, "release_date": "2026-09-01T00:00:00.000Z", "iso_639_1": "zh"},
+                    {"type": 2, "release_date": "2026-09-02T00:00:00.000Z", "iso_639_1": "zh"},
+                    {"type": 3, "release_date": "2026-09-03T00:00:00.000Z", "iso_639_1": "zh"},
+                ],
+            }
+        ])
+
+        self.assertEqual(
+            [item["date"] for item in releases],
+            ["2026-09-01", "2026-09-02", "2026-09-03"],
+        )
+
+    def test_tmdb_tw_cinema_release_rejects_home_and_non_taiwan_dates(self):
+        releases = weekly.extract_tw_theatrical_releases_from_results([
+            {
+                "iso_3166_1": "TW",
+                "release_dates": [
+                    {"type": 4, "release_date": "2026-09-04T00:00:00.000Z"},
+                    {"type": 5, "release_date": "2026-09-05T00:00:00.000Z"},
+                    {"type": 6, "release_date": "2026-09-06T00:00:00.000Z"},
+                ],
+            },
+            {
+                "iso_3166_1": "US",
+                "release_dates": [
+                    {"type": 1, "release_date": "2026-09-01T00:00:00.000Z"},
+                    {"type": 2, "release_date": "2026-09-02T00:00:00.000Z"},
+                    {"type": 3, "release_date": "2026-09-03T00:00:00.000Z"},
+                ],
+            },
+        ])
+
+        self.assertEqual(releases, [])
+
+    @patch.object(weekly, "tmdb_discover", return_value=[])
+    def test_far_future_discover_uses_all_cinema_release_types(self, tmdb_discover):
+        weekly.fetch_supplemental_soon_candidates(date(2026, 8, 19))
+
+        params = tmdb_discover.call_args.args[1]
+        self.assertEqual(params["region"], "TW")
+        self.assertEqual(params["with_release_type"], "1|2|3")
+
     def test_now_movie_without_atmovies_date_is_retained_for_tmdb_verification(self):
         html = """
         <article class="filmList">

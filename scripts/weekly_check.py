@@ -355,7 +355,7 @@ def parse_now(html_pages):
                 "title_zh": title_zh,
                 "title_en": title_en,
                 # 開眼偶爾省略仍在上映電影的日期（例如《外賣》）；
-                # 保留候選，後續仍須由 TMDB TW theatrical type 3 補值並驗證。
+                # 保留候選，後續仍須由 TMDB TW 首映、有限上映或一般院線日期補值並驗證。
                 "release_date_tw": release_date_tw or "",
                 "screen_count": screen_count,
                 "atmovies_id": movie_id,
@@ -842,15 +842,19 @@ def extract_tw_theatrical_date_from_results(release_results):
     return theatrical[-1]["date"] if theatrical else ""
 
 
+TMDB_CINEMA_RELEASE_TYPES = {1, 2, 3}
+TMDB_CINEMA_RELEASE_TYPE_FILTER = "1|2|3"
+
+
 def extract_tw_theatrical_releases_from_results(release_results):
-    """取出台灣 type 3 上映紀錄，依日期由早到晚排列並去除重複項目。"""
+    """取出台灣首映、有限上映及一般院線紀錄，依日期排序並去除重複項目。"""
     releases = []
     seen = set()
     for entry in release_results:
         if entry.get("iso_3166_1") != "TW":
             continue
         for item in entry.get("release_dates", []):
-            if item.get("type") != 3:
+            if item.get("type") not in TMDB_CINEMA_RELEASE_TYPES:
                 continue
             release_date = item.get("release_date", "")[:10]
             if not parse_iso_date(release_date):
@@ -1308,7 +1312,7 @@ def fetch_supplemental_soon_candidates(today_local):
     """補抓開眼視窗外（第 61～180 天）的台灣院線候選片。
 
     Discover 只負責找候選 ID；公開前仍須逐片以 release_dates 驗證
-    Taiwan theatrical (type 3) 日期。
+    Taiwan cinema release (types 1, 2, 3) 日期。
     """
     far_future_start = (today_local + timedelta(days=61)).isoformat()
     far_future_end = (today_local + timedelta(days=SOON_WINDOW_DAYS)).isoformat()
@@ -1319,7 +1323,7 @@ def fetch_supplemental_soon_candidates(today_local):
             "release_date.gte": far_future_start,
             "release_date.lte": far_future_end,
             "sort_by": "release_date.asc",
-            "with_release_type": "3",
+            "with_release_type": TMDB_CINEMA_RELEASE_TYPE_FILTER,
             "region": "TW",
         },
         20,

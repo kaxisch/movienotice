@@ -326,7 +326,7 @@ def is_confirmed_rerelease(movie, tmdb_movie, tw_releases):
         return True
 
     # 私人重映稽核也要收錄 TMDB 尚未建立台灣舊院線日期的舊電影。
-    # 公開網站仍由 Refresh 以本次 TW theatrical type 3 日期嚴格把關。
+    # 公開網站仍由 Refresh 以本次 TW 首映、有限上映或一般院線日期嚴格把關。
     try:
         original_release_date = date.fromisoformat(tmdb_movie.get("release_date", ""))
     except (AttributeError, TypeError, ValueError):
