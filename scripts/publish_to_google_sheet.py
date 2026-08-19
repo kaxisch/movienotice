@@ -46,6 +46,8 @@ CANDIDATE_RETENTION_DAYS = 180
 ATMOVIES_HANDOFF_DAYS = 60
 NOW_ATMOVIES_MISS_LIMIT = 1
 SOON_ATMOVIES_MISS_LIMIT = 1
+LEGACY_NOW_ATMOVIES_MISS_LIMIT = 2
+LEGACY_SOON_ATMOVIES_MISS_LIMIT = 5
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -240,7 +242,10 @@ def merge_candidate_presence(
                 ),
                 "cinema_present": bool(cinema_sources),
                 "present_sources": ",".join(["atmovies", *cinema_sources]),
-                "absence_audit_complete": bool(audit_complete),
+                "absence_audit_complete": (
+                    True if audit_complete
+                    else is_sheet_true(previous.get("absence_audit_complete"), default=False)
+                ),
             })
         elif cinema_sources:
             item = dict(previous)
@@ -262,7 +267,10 @@ def merge_candidate_presence(
                 "present_sources": ",".join(cinema_sources),
                 "consecutive_misses": 0,
                 "last_audit_date": run_date,
-                "absence_audit_complete": bool(audit_complete),
+                "absence_audit_complete": (
+                    True if audit_complete
+                    else is_sheet_true(previous.get("absence_audit_complete"), default=False)
+                ),
                 "run_generation": generation,
                 "run_started_at": run_date if reappeared else previous.get("run_started_at") or run_date,
                 "reappeared_after_hidden": (
@@ -290,7 +298,10 @@ def merge_candidate_presence(
                 "present_sources": "",
                 "consecutive_misses": misses,
                 "last_audit_date": run_date if audit_complete else last_audit_date,
-                "absence_audit_complete": bool(audit_complete),
+                "absence_audit_complete": (
+                    True if audit_complete
+                    else is_sheet_true(previous.get("absence_audit_complete"), default=False)
+                ),
                 "handoff_started_at": (
                     "pending" if handoff_phase == "far"
                     else run_date if handoff_phase == "handoff" and previous_handoff == "pending"
@@ -435,7 +446,13 @@ def candidate_miss_limit(item, run_date):
         audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
     except (TypeError, ValueError):
         return None
-    return NOW_ATMOVIES_MISS_LIMIT if release_date <= audit_date else SOON_ATMOVIES_MISS_LIMIT
+    if is_sheet_true(item.get("absence_audit_complete"), default=False):
+        return NOW_ATMOVIES_MISS_LIMIT if release_date <= audit_date else SOON_ATMOVIES_MISS_LIMIT
+    return (
+        LEGACY_NOW_ATMOVIES_MISS_LIMIT
+        if release_date <= audit_date
+        else LEGACY_SOON_ATMOVIES_MISS_LIMIT
+    )
 
 
 def prune_retired_candidates(items, run_date, published_ids, whitelist_ids, manual_ids):
