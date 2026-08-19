@@ -266,6 +266,7 @@ def build_verified_output(candidates):
                 f"{past_cutoff.isoformat()}..{future_cutoff.isoformat()} (available: {available_dates})"
             )
             continue
+        selected_releases = eligible_releases
         if source.get("candidate_kind") == "rerelease":
             cinema_date = str(source.get("cinema_release_date", "") or "")
             exact_releases = [item for item in eligible_releases if item.get("date") == cinema_date]
@@ -275,6 +276,7 @@ def build_verified_output(candidates):
                     f"does not match cinema date {cinema_date}"
                 )
                 continue
+            selected_releases = exact_releases
             if should_hide_rerelease(source):
                 log(f"  Hidden rerelease TMDB {tmdb_id}: absent from all required sources in one complete audit")
                 continue
@@ -298,7 +300,7 @@ def build_verified_output(candidates):
             "tmdb_primary_release_date": movie.get("release_date", ""),
             "tmdb_release_year": (movie.get("release_date") or "")[:4],
             "tmdb_tw_release_date": tw_date,
-            "tmdb_tw_release_dates": eligible_releases,
+            "tmdb_tw_release_dates": selected_releases,
             "release_date_tw": tw_date,
             "title_zh": movie.get("title") or movie.get("original_title", ""),
             "title_en": movie.get("original_title", ""),
