@@ -844,6 +844,7 @@ def extract_tw_theatrical_date_from_results(release_results):
 
 TMDB_CINEMA_RELEASE_TYPES = {1, 2, 3}
 TMDB_CINEMA_RELEASE_TYPE_FILTER = "1|2|3"
+PUBLIC_MULTI_DATE_MOVIE_IDS = {1586876}  # 《劇場版 吉伊卡哇》日文版與中文版相差一週
 
 
 def extract_tw_theatrical_releases_from_results(release_results):
@@ -867,6 +868,19 @@ def extract_tw_theatrical_releases_from_results(release_results):
             releases.append({"date": release_date, "language": language})
     releases.sort(key=lambda item: (item["date"], item["language"]))
     return releases
+
+
+def select_public_tw_theatrical_releases(tmdb_id, releases):
+    """公開資料通常只保留最新日期；明確核准的多版本電影保留各語言日期。"""
+    if not releases:
+        return []
+    try:
+        normalized_id = int(tmdb_id)
+    except (TypeError, ValueError):
+        normalized_id = 0
+    if normalized_id in PUBLIC_MULTI_DATE_MOVIE_IDS:
+        return list(releases)
+    return [releases[-1]]
 
 
 def releases_in_window(releases, start_date, end_date):
@@ -1349,6 +1363,14 @@ def retain_previous_static_movie(movies, existing_ids, previous_movies, tmdb_id,
     previous = previous_movies.get(tmdb_id)
     if not previous or not previous.get("twReleaseDateVerified"):
         return False
+    previous = dict(previous)
+    previous_releases = select_public_tw_theatrical_releases(
+        tmdb_id,
+        previous.get("twTheatricalReleases") or [],
+    )
+    if previous_releases:
+        previous["twTheatricalReleases"] = previous_releases
+        previous["releaseDate"] = previous_releases[0]["date"]
     bucket = fallback_bucket_for_previous_movie(previous, today_local)
     if not bucket:
         return False
@@ -1416,6 +1438,7 @@ def export_static_movie_data(output, generated_at_local, previous_movies=None, t
             today_local - timedelta(days=NOW_LOOKBACK_DAYS),
             today_local + timedelta(days=SOON_WINDOW_DAYS),
         )
+        theatrical_releases = select_public_tw_theatrical_releases(tmdb_id, theatrical_releases)
         if not theatrical_releases:
             continue
         release_date_tw = theatrical_releases[0]["date"]
