@@ -262,7 +262,7 @@ def build_verified_output(candidates):
         if not eligible_releases:
             available_dates = ", ".join(item["date"] for item in theatrical_releases) or "none"
             log(
-                f"  Excluded TMDB {tmdb_id}: no Taiwan theatrical type 3 date inside "
+                f"  Excluded TMDB {tmdb_id}: no Taiwan cinema release type 1, 2, or 3 date inside "
                 f"{past_cutoff.isoformat()}..{future_cutoff.isoformat()} (available: {available_dates})"
             )
             continue
@@ -270,7 +270,10 @@ def build_verified_output(candidates):
             cinema_date = str(source.get("cinema_release_date", "") or "")
             exact_releases = [item for item in eligible_releases if item.get("date") == cinema_date]
             if not exact_releases:
-                log(f"  Excluded rerelease TMDB {tmdb_id}: TW type 3 does not match cinema date {cinema_date}")
+                log(
+                    f"  Excluded rerelease TMDB {tmdb_id}: TW cinema release type 1, 2, or 3 "
+                    f"does not match cinema date {cinema_date}"
+                )
                 continue
             if should_hide_rerelease(source):
                 log(f"  Hidden rerelease TMDB {tmdb_id}: absent from all required sources in one complete audit")
