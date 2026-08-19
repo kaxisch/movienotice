@@ -266,7 +266,6 @@ def build_verified_output(candidates):
                 f"{past_cutoff.isoformat()}..{future_cutoff.isoformat()} (available: {available_dates})"
             )
             continue
-        selected_releases = eligible_releases
         if source.get("candidate_kind") == "rerelease":
             cinema_date = str(source.get("cinema_release_date", "") or "")
             exact_releases = [item for item in eligible_releases if item.get("date") == cinema_date]
@@ -282,7 +281,8 @@ def build_verified_output(candidates):
                 continue
             tw_date = cinema_date
         else:
-            tw_date = eligible_releases[0]["date"]
+            selected_releases = weekly.select_public_tw_theatrical_releases(tmdb_id, eligible_releases)
+            tw_date = selected_releases[0]["date"]
         release_date = weekly.parse_iso_date(tw_date)
 
         if source.get("candidate_kind") != "rerelease" and should_hide_for_atmovies_absence(

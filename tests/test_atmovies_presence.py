@@ -61,6 +61,58 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(params["region"], "TW")
         self.assertEqual(params["with_release_type"], "1|2|3")
 
+    def test_public_release_selection_keeps_only_latest_date(self):
+        releases = [
+            {"date": "2026-06-26", "language": ""},
+            {"date": "2026-08-16", "language": ""},
+            {"date": "2026-09-04", "language": ""},
+        ]
+
+        self.assertEqual(
+            weekly.select_public_tw_theatrical_releases(1193673, releases),
+            [{"date": "2026-09-04", "language": ""}],
+        )
+
+    def test_chiikawa_keeps_japanese_and_chinese_release_dates(self):
+        releases = [
+            {"date": "2026-07-31", "language": "ja"},
+            {"date": "2026-08-07", "language": "zh"},
+        ]
+
+        self.assertEqual(
+            weekly.select_public_tw_theatrical_releases(1586876, releases),
+            releases,
+        )
+
+    def test_transient_tmdb_failure_normalizes_previous_movie_to_latest_date(self):
+        previous = {
+            101: {
+                "id": 101,
+                "releaseDate": "2026-08-16",
+                "twReleaseDateVerified": True,
+                "twTheatricalReleases": [
+                    {"date": "2026-08-16", "language": ""},
+                    {"date": "2026-09-04", "language": ""},
+                ],
+            }
+        }
+        movies = {"now": [], "soon": []}
+
+        retained = weekly.retain_previous_static_movie(
+            movies,
+            set(),
+            previous,
+            101,
+            date(2026, 8, 19),
+        )
+
+        self.assertTrue(retained)
+        self.assertEqual(movies["soon"][0]["releaseDate"], "2026-09-04")
+        self.assertEqual(
+            movies["soon"][0]["twTheatricalReleases"],
+            [{"date": "2026-09-04", "language": ""}],
+        )
+
     def test_now_movie_without_atmovies_date_is_retained_for_tmdb_verification(self):
         html = """
         <article class="filmList">
