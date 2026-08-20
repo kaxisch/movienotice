@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T10:05:08.444659+08:00",
+  "generated_at": "2026-08-20T12:19:03.772082+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 57,
@@ -225,7 +225,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
-        "voteAverage": "8.1",
+        "voteAverage": "7.8",
         "genre": [
           "動作",
           "驚悚"
@@ -233,9 +233,20 @@
         "duration": 95,
         "synopsis": "目睹億萬富翁企業家老闆在面前遭到殺害後，柯爾李德被誣陷為兇手，他被迫展開逃亡，同時要在過程中設法揭發一樁國際陰謀。",
         "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
+        "rt": "49%",
+        "mc": "55",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 37,
+            "lastChanged": "2026-08-20T12:19:03.772082+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 13,
+            "lastChanged": "2026-08-20T12:19:03.772082+08:00"
+          }
+        },
         "trailerKey": "NfocDa8yXOk",
         "cast": [
           {
@@ -334,7 +345,7 @@
         "origLang": "en",
         "origTitle": "Mutiny",
         "platforms": [],
-        "popularity": 30.1536,
+        "popularity": 84.6787,
         "imdbId": "tt32338669",
         "countries": [
           "United Kingdom",
@@ -349,7 +360,7 @@
           "synopsis": "目睹億萬富翁企業家老闆在面前遭到殺害後，柯爾李德被誣陷為兇手，他被迫展開逃亡，同時要在過程中設法揭發一樁國際陰謀。",
           "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
-          "voteAverage": "8.1",
+          "voteAverage": "7.8",
           "trailerKey": "NfocDa8yXOk",
           "imdbId": "tt32338669",
           "countries": [
@@ -474,7 +485,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-        "voteAverage": "5.5",
+        "voteAverage": "5.8",
         "genre": [
           "恐怖",
           "驚悚"
@@ -559,7 +570,7 @@
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
         "platforms": [],
-        "popularity": 34.7375,
+        "popularity": 46.5651,
         "imdbId": "tt32393988",
         "countries": [
           "United States of America"
@@ -573,7 +584,7 @@
           "synopsis": "在自己的童年老家撫養女兒的年輕母親潔瑪，意外發現自己能夠進入「陰深處」，這個位於《陰兒房》宇宙核心、充滿迷失靈魂的煉獄空間。當邪惡力量開始接近她時，潔瑪逐漸察覺自己擁有一項足以改變一切的能力，她不僅能進入陰深處，甚至能將其中的存在帶回現實世界。一旦惡靈察覺這股力量，人類世界也將淪為牠們的遊樂場。",
           "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-          "voteAverage": "5.5",
+          "voteAverage": "5.8",
           "trailerKey": "coy7TQSchmw",
           "imdbId": "tt32393988",
           "countries": [
@@ -1488,7 +1499,7 @@
         "origLang": "en",
         "origTitle": "Nirvanna the Band the Show the Movie",
         "platforms": [],
-        "popularity": 5.8553,
+        "popularity": 5.5777,
         "imdbId": "tt35522483",
         "countries": [
           "Canada"
@@ -2613,7 +2624,7 @@
         "origLang": "ja",
         "origTitle": "てっぺんの向こうにあなたがいる",
         "platforms": [],
-        "popularity": 3.3109,
+        "popularity": 3.2509,
         "imdbId": "tt37969835",
         "countries": [
           "Japan"
@@ -3463,11 +3474,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 80000000,
@@ -3476,7 +3487,7 @@
         "origLang": "en",
         "origTitle": "The End of Oak Street",
         "platforms": [],
-        "popularity": 217.1636,
+        "popularity": 202.1509,
         "imdbId": "tt27165187",
         "countries": [
           "United States of America"
@@ -3582,11 +3593,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 80000000,
@@ -4120,7 +4131,7 @@
         "origLang": "en",
         "origTitle": "KATSEYE: WILD HEARTS",
         "platforms": [],
-        "popularity": 10.4577,
+        "popularity": 9.3109,
         "imdbId": "tt43657324",
         "countries": [
           "United States of America"
@@ -5427,7 +5438,7 @@
         "origLang": "hi",
         "origTitle": "होमबाउंड",
         "platforms": [],
-        "popularity": 2.5583,
+        "popularity": 1.8993,
         "imdbId": "tt26733325",
         "countries": [
           "India",
@@ -5695,7 +5706,7 @@
         "origLang": "en",
         "origTitle": "Obsession",
         "platforms": [],
-        "popularity": 238.3554,
+        "popularity": 232.9651,
         "imdbId": "tt37287335",
         "countries": [
           "United States of America",
@@ -6937,7 +6948,7 @@
         "origLang": "ja",
         "origTitle": "ソラニン",
         "platforms": [],
-        "popularity": 1.1063,
+        "popularity": 1.208,
         "imdbId": "tt1415228",
         "countries": [
           "Japan"
@@ -7665,7 +7676,7 @@
         "origLang": "ja",
         "origTitle": "映畫ちいかわ 人魚の島のひみつ",
         "platforms": [],
-        "popularity": 9.0745,
+        "popularity": 8.8921,
         "imdbId": "tt39026173",
         "countries": [
           "Japan"
@@ -7795,7 +7806,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
         "voteAverage": "7.9",
         "genre": [
           "科幻",
@@ -7922,12 +7933,12 @@
           }
         ],
         "budget": 225000000,
-        "revenue": 2022543660,
+        "revenue": 2030051866,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Spider-Man: Brand New Day",
         "platforms": [],
-        "popularity": 1872.4338,
+        "popularity": 1875.3748,
         "imdbId": "tt22084616",
         "countries": [
           "United States of America"
@@ -7941,7 +7952,7 @@
           ],
           "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
           "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
           "voteAverage": "7.9",
           "trailerKey": "Upn2ejyAvnM",
           "imdbId": "tt22084616",
@@ -8045,7 +8056,7 @@
             }
           ],
           "budget": 225000000,
-          "revenue": 2022543660,
+          "revenue": 2030051866,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Spider-Man: Brand New Day",
@@ -9580,7 +9591,7 @@
         "origLang": "ja",
         "origTitle": "未來",
         "platforms": [],
-        "popularity": 0.9689,
+        "popularity": 0.8591,
         "imdbId": "tt41986879",
         "countries": [
           "Japan"
@@ -9788,7 +9799,7 @@
         "origLang": "ko",
         "origTitle": "세계의 주인",
         "platforms": [],
-        "popularity": 1.8714,
+        "popularity": 1.5658,
         "imdbId": "tt37661885",
         "countries": [
           "South Korea"
@@ -10467,7 +10478,7 @@
         "origLang": "en",
         "origTitle": "Moana",
         "platforms": [],
-        "popularity": 178.6083,
+        "popularity": 194.8449,
         "imdbId": "tt27419466",
         "countries": [
           "United States of America"
@@ -10945,7 +10956,7 @@
         "origLang": "ja",
         "origTitle": "映畫ドラえもん 新・のび太の海底鬼巖城",
         "platforms": [],
-        "popularity": 10.7495,
+        "popularity": 10.6387,
         "imdbId": "tt38201958",
         "countries": [
           "Japan"
@@ -11096,7 +11107,7 @@
           {
             "name": "傑西艾森柏格",
             "char": "Dort (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/yYhwWRcxDHTn63gSEF1vnDAD7cD.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/2ojZrkt5rdkUi857WSeCatxXdGS.jpg"
           },
           {
             "name": "傑夫·布里吉",
@@ -11221,7 +11232,7 @@
             {
               "name": "傑西艾森柏格",
               "char": "Dort (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/yYhwWRcxDHTn63gSEF1vnDAD7cD.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/2ojZrkt5rdkUi857WSeCatxXdGS.jpg"
             },
             {
               "name": "傑夫·布里吉",
@@ -11971,7 +11982,7 @@
         "origLang": "zh",
         "origTitle": "腎上腺-母侵",
         "platforms": [],
-        "popularity": 0.8443,
+        "popularity": 0.908,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -12236,7 +12247,7 @@
         "origLang": "ko",
         "origTitle": "군체",
         "platforms": [],
-        "popularity": 300.1541,
+        "popularity": 292.2132,
         "imdbId": "tt34385135",
         "countries": [
           "South Korea"
@@ -12758,7 +12769,7 @@
         "origLang": "ja",
         "origTitle": "映畫しまじろう しまじろうと ゆうきのうた",
         "platforms": [],
-        "popularity": 0.6056,
+        "popularity": 0.5629,
         "imdbId": null,
         "countries": [],
         "detail": {
@@ -13218,7 +13229,7 @@
         "origLang": "ja",
         "origTitle": "ワンピース カラクリ城のメカ巨兵",
         "platforms": [],
-        "popularity": 3.6057,
+        "popularity": 3.4995,
         "imdbId": "tt1059950",
         "countries": [
           "Japan"
@@ -14521,7 +14532,7 @@
         "origLang": "cn",
         "origTitle": "一個部門的誕生",
         "platforms": [],
-        "popularity": 1.2134,
+        "popularity": 1.1595,
         "imdbId": "tt35111865",
         "countries": [
           "Hong Kong",
@@ -14722,7 +14733,7 @@
         "origLang": "ja",
         "origTitle": "ミーツ・ザ・ワールド",
         "platforms": [],
-        "popularity": 0.9077,
+        "popularity": 0.8044,
         "imdbId": "tt38755605",
         "countries": [
           "Japan"
@@ -16039,7 +16050,7 @@
         "origLang": "zh",
         "origTitle": "網紅老爸",
         "platforms": [],
-        "popularity": 0.952,
+        "popularity": 1.0828,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -17873,7 +17884,7 @@
         "origLang": "ko",
         "origTitle": "그녀가 돌아온 날",
         "platforms": [],
-        "popularity": 1.849,
+        "popularity": 2.0279,
         "imdbId": "tt39368030",
         "countries": [
           "South Korea"
@@ -18606,7 +18617,7 @@
         "origLang": "ko",
         "origTitle": "호프",
         "platforms": [],
-        "popularity": 19.1258,
+        "popularity": 18.0158,
         "imdbId": "tt27369017",
         "countries": [
           "South Korea"
@@ -19577,7 +19588,7 @@
         "origLang": "de",
         "origTitle": "Der verlorene Mann",
         "platforms": [],
-        "popularity": 2.2967,
+        "popularity": 2.6284,
         "imdbId": "tt39602467",
         "countries": [
           "Germany"
@@ -20339,7 +20350,7 @@
         "origLang": "ko",
         "origTitle": "경주기행",
         "platforms": [],
-        "popularity": 1.6141,
+        "popularity": 1.3276,
         "imdbId": "tt38814489",
         "countries": [
           "South Korea"
@@ -21304,7 +21315,7 @@
         "origLang": "en",
         "origTitle": "Resident Evil",
         "platforms": [],
-        "popularity": 11.3749,
+        "popularity": 12.4421,
         "imdbId": "tt35538033",
         "countries": [
           "United States of America",
@@ -21907,7 +21918,7 @@
         "origLang": "ko",
         "origTitle": "와인드업: 더 무비",
         "platforms": [],
-        "popularity": 1.4261,
+        "popularity": 1.4099,
         "imdbId": "tt43672139",
         "countries": [
           "South Korea"
@@ -22065,7 +22076,7 @@
         "origLang": "ja",
         "origTitle": "死ねばいいのに",
         "platforms": [],
-        "popularity": 0.6587,
+        "popularity": 0.6485,
         "imdbId": "tt42477970",
         "countries": [
           "Japan"
@@ -22189,12 +22200,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -22242,12 +22253,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22388,7 +22399,7 @@
         "origLang": "en",
         "origTitle": "Primetime",
         "platforms": [],
-        "popularity": 5.6015,
+        "popularity": 5.4882,
         "imdbId": "tt34206385",
         "countries": [
           "United States of America"
@@ -23272,7 +23283,7 @@
         "origLang": "en",
         "origTitle": "Digger",
         "platforms": [],
-        "popularity": 8.5193,
+        "popularity": 8.8123,
         "imdbId": "tt31450459",
         "countries": [
           "United States of America"
@@ -23474,7 +23485,7 @@
         "origLang": "en",
         "origTitle": "Verity",
         "platforms": [],
-        "popularity": 11.7413,
+        "popularity": 11.0055,
         "imdbId": "tt32261958",
         "countries": [
           "United States of America"
@@ -23802,7 +23813,7 @@
         "origLang": "fr",
         "origTitle": "En nous",
         "platforms": [],
-        "popularity": 1.7616,
+        "popularity": 1.6557,
         "imdbId": "tt37964027",
         "countries": [
           "France"
@@ -24654,7 +24665,7 @@
         "origLang": "en",
         "origTitle": "Street Fighter",
         "platforms": [],
-        "popularity": 6.6223,
+        "popularity": 6.8736,
         "imdbId": "tt27419420",
         "countries": [
           "Japan",
@@ -25505,7 +25516,7 @@
         "origLang": "en",
         "origTitle": "How to Rob a Bank",
         "platforms": [],
-        "popularity": 4.4793,
+        "popularity": 4.6718,
         "imdbId": "tt35866986",
         "countries": [
           "United States of America"
