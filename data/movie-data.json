@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-22T12:10:10.070395+08:00",
+  "generated_at": "2026-08-22T12:51:04.479173+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 59,
-    "soon_count": 58
+    "now_count": 60,
+    "soon_count": 59
   },
   "movies": {
     "now": [
@@ -264,6 +264,267 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/125217?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 489552,
+        "titleZh": "藝妓日記",
+        "titleEn": "女は二度生まれる",
+        "releaseDate": "2026-08-22",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-22",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/umwlWVeNJRkc69QpdZbn4N4U4KQ.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/e97RcYlJMzytQW8ZvB8sHrOcYim.jpg",
+        "voteAverage": "7.5",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 99,
+        "synopsis": "",
+        "imdb": "7.3",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 205,
+            "lastChanged": "2026-08-22T12:51:04.479173+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "若尾文子",
+            "char": "Koen",
+            "photo": "https://image.tmdb.org/t/p/w500/imIbdUeVdmsmNbGpN3gqOK5Z6tF.jpg"
+          },
+          {
+            "name": "藤巻潤",
+            "char": "Maki",
+            "photo": "https://image.tmdb.org/t/p/w500/9nNGHkv2gmzwdjJQ5p0W9W9YVvJ.jpg"
+          },
+          {
+            "name": "フランキー堺",
+            "char": "Nozaki",
+            "photo": "https://image.tmdb.org/t/p/w500/5mwIPkudcnoqHsxKmj6miUNeTdI.jpg"
+          },
+          {
+            "name": "山村聰",
+            "char": "Kiyomasa Tsutsui",
+            "photo": "https://image.tmdb.org/t/p/w500/norRWkMGfj3OGT42hKdQ5FvSBG2.jpg"
+          },
+          {
+            "name": "山茶花究",
+            "char": "Yajima",
+            "photo": "https://image.tmdb.org/t/p/w500/cd3ZT9lYG8JqodN9WF93V3e2IUM.jpg"
+          },
+          {
+            "name": "山岡久乃",
+            "char": "Tsutsui Keiko",
+            "photo": "https://image.tmdb.org/t/p/w500/wd0VSytwik52x0J7gCJoq9UpKUL.jpg"
+          },
+          {
+            "name": "Mayumi Kurata",
+            "char": "Ginko",
+            "photo": "https://image.tmdb.org/t/p/w500/sOaZRjNltsU6kVtkv7zjx3gIYFr.jpg"
+          },
+          {
+            "name": "村田知栄子",
+            "char": "Kazuko",
+            "photo": "https://image.tmdb.org/t/p/w500/A0APsqYGGH655ySzRrhkUTlOfeq.jpg"
+          },
+          {
+            "name": "高野通子",
+            "char": "Toshiko",
+            "photo": "https://image.tmdb.org/t/p/w500/ir8q3N6Z1yxmZc0k9rE3MGaSzML.jpg"
+          },
+          {
+            "name": "江波杏子",
+            "char": "Yamawaki Satoko",
+            "photo": "https://image.tmdb.org/t/p/w500/2Nb2mHgYipK3O3esGCgeu9Tdc3N.jpg"
+          },
+          {
+            "name": "紺野ユカ",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/dzFVjp6yRlPucPPae5ThEUqSDau.jpg"
+          },
+          {
+            "name": "Keiko Yamauchi",
+            "char": "Toki Kana",
+            "photo": null
+          },
+          {
+            "name": "仁木多鶴子",
+            "char": "Nozaki's wife",
+            "photo": "https://image.tmdb.org/t/p/w500/xkx2j6U27OSstumCtKAx68bmb2B.jpg"
+          },
+          {
+            "name": "高見國一",
+            "char": "Kouhei",
+            "photo": "https://image.tmdb.org/t/p/w500/UG3JRE6zlLr2HQT74oYrAKZUfo.jpg"
+          },
+          {
+            "name": "菅原通済",
+            "char": "Shimazaki",
+            "photo": "https://image.tmdb.org/t/p/w500/wbIv7iVhZNEC6FiZzyhbHR5xcpC.jpg"
+          },
+          {
+            "name": "潮萬太郎",
+            "char": "Sakurada",
+            "photo": "https://image.tmdb.org/t/p/w500/fJe08E79EomoITdKRDoSgB0Lyec.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "井手俊郎",
+            "job": "Screenplay"
+          },
+          {
+            "name": "川島雄三",
+            "job": "Screenplay"
+          },
+          {
+            "name": "川島雄三",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "女は二度生まれる",
+        "platforms": [],
+        "popularity": 1.0003,
+        "imdbId": "tt0219228",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 99,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/umwlWVeNJRkc69QpdZbn4N4U4KQ.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/e97RcYlJMzytQW8ZvB8sHrOcYim.jpg",
+          "voteAverage": "7.5",
+          "trailerKey": null,
+          "imdbId": "tt0219228",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "若尾文子",
+              "char": "Koen",
+              "photo": "https://image.tmdb.org/t/p/w500/imIbdUeVdmsmNbGpN3gqOK5Z6tF.jpg"
+            },
+            {
+              "name": "藤巻潤",
+              "char": "Maki",
+              "photo": "https://image.tmdb.org/t/p/w500/9nNGHkv2gmzwdjJQ5p0W9W9YVvJ.jpg"
+            },
+            {
+              "name": "フランキー堺",
+              "char": "Nozaki",
+              "photo": "https://image.tmdb.org/t/p/w500/5mwIPkudcnoqHsxKmj6miUNeTdI.jpg"
+            },
+            {
+              "name": "山村聰",
+              "char": "Kiyomasa Tsutsui",
+              "photo": "https://image.tmdb.org/t/p/w500/norRWkMGfj3OGT42hKdQ5FvSBG2.jpg"
+            },
+            {
+              "name": "山茶花究",
+              "char": "Yajima",
+              "photo": "https://image.tmdb.org/t/p/w500/cd3ZT9lYG8JqodN9WF93V3e2IUM.jpg"
+            },
+            {
+              "name": "山岡久乃",
+              "char": "Tsutsui Keiko",
+              "photo": "https://image.tmdb.org/t/p/w500/wd0VSytwik52x0J7gCJoq9UpKUL.jpg"
+            },
+            {
+              "name": "Mayumi Kurata",
+              "char": "Ginko",
+              "photo": "https://image.tmdb.org/t/p/w500/sOaZRjNltsU6kVtkv7zjx3gIYFr.jpg"
+            },
+            {
+              "name": "村田知栄子",
+              "char": "Kazuko",
+              "photo": "https://image.tmdb.org/t/p/w500/A0APsqYGGH655ySzRrhkUTlOfeq.jpg"
+            },
+            {
+              "name": "高野通子",
+              "char": "Toshiko",
+              "photo": "https://image.tmdb.org/t/p/w500/ir8q3N6Z1yxmZc0k9rE3MGaSzML.jpg"
+            },
+            {
+              "name": "江波杏子",
+              "char": "Yamawaki Satoko",
+              "photo": "https://image.tmdb.org/t/p/w500/2Nb2mHgYipK3O3esGCgeu9Tdc3N.jpg"
+            },
+            {
+              "name": "紺野ユカ",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/dzFVjp6yRlPucPPae5ThEUqSDau.jpg"
+            },
+            {
+              "name": "Keiko Yamauchi",
+              "char": "Toki Kana",
+              "photo": null
+            },
+            {
+              "name": "仁木多鶴子",
+              "char": "Nozaki's wife",
+              "photo": "https://image.tmdb.org/t/p/w500/xkx2j6U27OSstumCtKAx68bmb2B.jpg"
+            },
+            {
+              "name": "高見國一",
+              "char": "Kouhei",
+              "photo": "https://image.tmdb.org/t/p/w500/UG3JRE6zlLr2HQT74oYrAKZUfo.jpg"
+            },
+            {
+              "name": "菅原通済",
+              "char": "Shimazaki",
+              "photo": "https://image.tmdb.org/t/p/w500/wbIv7iVhZNEC6FiZzyhbHR5xcpC.jpg"
+            },
+            {
+              "name": "潮萬太郎",
+              "char": "Sakurada",
+              "photo": "https://image.tmdb.org/t/p/w500/fJe08E79EomoITdKRDoSgB0Lyec.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "井手俊郎",
+              "job": "Screenplay"
+            },
+            {
+              "name": "川島雄三",
+              "job": "Screenplay"
+            },
+            {
+              "name": "川島雄三",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "女は二度生まれる",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/489552?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -1711,7 +1972,7 @@
         "origLang": "en",
         "origTitle": "Tony",
         "platforms": [],
-        "popularity": 14.5912,
+        "popularity": 12.4632,
         "imdbId": "tt33095251",
         "countries": [
           "United States of America",
@@ -4044,7 +4305,7 @@
         "origLang": "zh",
         "origTitle": "極樂",
         "platforms": [],
-        "popularity": 1.1258,
+        "popularity": 1.3658,
         "imdbId": "tt38453153",
         "countries": [
           "Taiwan"
@@ -4535,7 +4796,7 @@
         "origLang": "en",
         "origTitle": "Nirvanna the Band the Show the Movie",
         "platforms": [],
-        "popularity": 5.7854,
+        "popularity": 5.8287,
         "imdbId": "tt35522483",
         "countries": [
           "Canada"
@@ -5011,7 +5272,7 @@
         "origLang": "ru",
         "origTitle": "Коты Эрмитажа 2. Тайна египетского зала",
         "platforms": [],
-        "popularity": 2.4678,
+        "popularity": 2.8687,
         "imdbId": "tt30224625",
         "countries": [
           "Russia"
@@ -5401,7 +5662,7 @@
         "origLang": "en",
         "origTitle": "Ice Cream Man",
         "platforms": [],
-        "popularity": 20.2391,
+        "popularity": 20.8337,
         "imdbId": "tt36893729",
         "countries": [
           "United States of America",
@@ -6778,7 +7039,7 @@
         "origLang": "ko",
         "origTitle": "오케이 마담 2",
         "platforms": [],
-        "popularity": 3.8585,
+        "popularity": 3.848,
         "imdbId": "tt43669175",
         "countries": [
           "South Korea"
@@ -7297,7 +7558,7 @@
             "logo": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg"
           }
         ],
-        "popularity": 3.4755,
+        "popularity": 3.7416,
         "imdbId": "tt6752992",
         "countries": [
           "France",
@@ -10920,7 +11181,7 @@
         "origLang": "ja",
         "origTitle": "Shambhala Story",
         "platforms": [],
-        "popularity": 1.0453,
+        "popularity": 1.1238,
         "imdbId": "tt37989601",
         "countries": [
           "Japan",
@@ -14405,7 +14666,7 @@
       },
       {
         "id": 9323,
-        "titleZh": "攻殻機動隊 / GHOST IN THE SHELL",
+        "titleZh": "攻殼機動隊 / GHOST IN THE SHELL",
         "titleEn": "GHOST IN THE SHELL",
         "releaseDate": "2026-08-28",
         "twTheatricalReleases": [
@@ -16110,7 +16371,7 @@
         "origLang": "ko",
         "origTitle": "그녀가 돌아온 날",
         "platforms": [],
-        "popularity": 1.6434,
+        "popularity": 2.1806,
         "imdbId": "tt39368030",
         "countries": [
           "South Korea"
@@ -17336,7 +17597,7 @@
         "origLang": "en",
         "origTitle": "Fall 2: Deadpoint",
         "platforms": [],
-        "popularity": 27.6973,
+        "popularity": 27.5151,
         "imdbId": "tt31192372",
         "countries": [
           "United Kingdom",
@@ -18094,7 +18355,7 @@
         "origLang": "de",
         "origTitle": "Der verlorene Mann",
         "platforms": [],
-        "popularity": 2.3371,
+        "popularity": 2.9557,
         "imdbId": "tt39602467",
         "countries": [
           "Germany"
@@ -18856,7 +19117,7 @@
         "origLang": "ko",
         "origTitle": "경주기행",
         "platforms": [],
-        "popularity": 2.1477,
+        "popularity": 2.9594,
         "imdbId": "tt38814489",
         "countries": [
           "South Korea"
@@ -19033,7 +19294,7 @@
         "origLang": "en",
         "origTitle": "Practical Magic 2",
         "platforms": [],
-        "popularity": 11.8716,
+        "popularity": 10.527,
         "imdbId": "tt32588798",
         "countries": [
           "United States of America"
@@ -19478,7 +19739,7 @@
         "origLang": "zh",
         "origTitle": "大仙尪仔",
         "platforms": [],
-        "popularity": 0.3542,
+        "popularity": 0.6752,
         "imdbId": "tt43659346",
         "countries": [
           "Taiwan"
@@ -19655,7 +19916,7 @@
         "origLang": "ja",
         "origTitle": "ルックバック",
         "platforms": [],
-        "popularity": 1.8207,
+        "popularity": 1.245,
         "imdbId": "tt39094605",
         "countries": [
           "Japan"
@@ -20825,7 +21086,7 @@
         "origLang": "en",
         "origTitle": "Heart of the Beast",
         "platforms": [],
-        "popularity": 12.0987,
+        "popularity": 13.2992,
         "imdbId": "tt7526136",
         "countries": [
           "United States of America"
@@ -21398,6 +21659,175 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1705721,
+        "titleZh": "5秒で完全犯罪を生成する方法",
+        "titleEn": "5秒で完全犯罪を生成する方法",
+        "releaseDate": "2026-09-24",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/vOB30BbJLvioZwLcvEzBixatY9L.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/rCf3g362OAWDGnYnaJ79wagpEFN.jpg",
+        "voteAverage": "",
+        "genre": [
+          "犯罪",
+          "驚悚"
+        ],
+        "duration": 107,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "重岡大毅",
+            "char": "Wataru",
+            "photo": "https://image.tmdb.org/t/p/w500/l5SNN6WCTeu1SWKdY4FfDxWtFhC.jpg"
+          },
+          {
+            "name": "原菜乃華",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/gbK8GbkeOvd1ZdYoxkEajYvXFjI.jpg"
+          },
+          {
+            "name": "田中美奈實",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/a4owLLPAec6N6cO5UWf8Uq5SsaI.jpg"
+          },
+          {
+            "name": "伊藤歩",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/9uc0XnA8nAcCYInxUq5nkNSHc7N.jpg"
+          },
+          {
+            "name": "黒田大輔",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bBwirsQ3ZvH1hNeNXXJGrpm3Ocu.jpg"
+          },
+          {
+            "name": "森岡龍",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/7KkATZAj5qna9G1F5yO5Cd2dF2K.jpg"
+          },
+          {
+            "name": "九十九黃助",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "石丸幹二",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zdGPW5lk8UgQlJUzjc4Usj7BONJ.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "近藤亮太",
+            "job": "Director"
+          },
+          {
+            "name": "岡田道尚",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "5秒で完全犯罪を生成する方法",
+        "platforms": [],
+        "popularity": 0.8655,
+        "imdbId": "tt42864901",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 107,
+          "genres": [
+            "犯罪",
+            "驚悚"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/vOB30BbJLvioZwLcvEzBixatY9L.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/rCf3g362OAWDGnYnaJ79wagpEFN.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt42864901",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "重岡大毅",
+              "char": "Wataru",
+              "photo": "https://image.tmdb.org/t/p/w500/l5SNN6WCTeu1SWKdY4FfDxWtFhC.jpg"
+            },
+            {
+              "name": "原菜乃華",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/gbK8GbkeOvd1ZdYoxkEajYvXFjI.jpg"
+            },
+            {
+              "name": "田中美奈實",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/a4owLLPAec6N6cO5UWf8Uq5SsaI.jpg"
+            },
+            {
+              "name": "伊藤歩",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/9uc0XnA8nAcCYInxUq5nkNSHc7N.jpg"
+            },
+            {
+              "name": "黒田大輔",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bBwirsQ3ZvH1hNeNXXJGrpm3Ocu.jpg"
+            },
+            {
+              "name": "森岡龍",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/7KkATZAj5qna9G1F5yO5Cd2dF2K.jpg"
+            },
+            {
+              "name": "九十九黃助",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "石丸幹二",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zdGPW5lk8UgQlJUzjc4Usj7BONJ.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "近藤亮太",
+              "job": "Director"
+            },
+            {
+              "name": "岡田道尚",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "5秒で完全犯罪を生成する方法",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1705721?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1465063,
         "titleZh": "誤闖遺忘島",
         "titleEn": "Forgotten Island",
@@ -21504,7 +21934,7 @@
         "origLang": "en",
         "origTitle": "Forgotten Island",
         "platforms": [],
-        "popularity": 11.7344,
+        "popularity": 12.8384,
         "imdbId": "tt36583977",
         "countries": [
           "United States of America"
@@ -23484,7 +23914,7 @@
         "origLang": "en",
         "origTitle": "Whalefall",
         "platforms": [],
-        "popularity": 6.2006,
+        "popularity": 6.8261,
         "imdbId": "tt28535715",
         "countries": [
           "United States of America"
@@ -25066,7 +25496,7 @@
         "origLang": "en",
         "origTitle": "Avengers: Doomsday",
         "platforms": [],
-        "popularity": 121.9952,
+        "popularity": 117.7267,
         "imdbId": "tt21357150",
         "countries": [
           "United States of America"
