@@ -14,6 +14,13 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_taiwan_title_override_replaces_japanese_shell_character(self):
+        self.assertEqual(
+            weekly.tmdb_title_override(9323),
+            "攻殼機動隊 / GHOST IN THE SHELL",
+        )
+        self.assertNotIn("殻", weekly.tmdb_title_override(9323))
+
     def test_tmdb_tw_cinema_release_accepts_premiere_limited_and_theatrical(self):
         releases = weekly.extract_tw_theatrical_releases_from_results([
             {

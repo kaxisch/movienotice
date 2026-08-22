@@ -906,6 +906,14 @@ def load_tmdb_overrides():
         return {}
 
 
+def tmdb_title_override(tmdb_id):
+    """回傳指定 TMDB 電影的持久台灣片名覆寫。"""
+    for override in load_tmdb_overrides().values():
+        if override.get("tmdb_id") == tmdb_id and override.get("title_zh"):
+            return str(override["title_zh"]).strip()
+    return ""
+
+
 def tmdb_movie(tmdb_id):
     """直接用 TMDB ID 取單片資料"""
     return tmdb_get_json(
@@ -1211,7 +1219,12 @@ def classify_release_bucket(record, release_date, today_local, tmdb_has_tw_date=
 
 def build_static_movie(record, payload, ratings):
     tmdb_id = record["tmdb_id"]
-    title_zh = payload.get("title") or payload.get("original_title") or ""
+    title_zh = (
+        tmdb_title_override(tmdb_id)
+        or payload.get("title")
+        or payload.get("original_title")
+        or ""
+    )
     release_date = record.get("tmdb_tw_release_date") or extract_tw_theatrical_date(payload)
     theatrical_releases = record.get("tmdb_tw_release_dates") or []
     poster = f"{IMG_W}{payload['poster_path']}" if payload.get("poster_path") else ""
