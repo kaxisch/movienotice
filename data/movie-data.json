@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-22T10:40:14.417526+08:00",
+  "generated_at": "2026-08-22T10:44:38.301819+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 57,
+    "now_count": 58,
     "soon_count": 58
   },
   "movies": {
@@ -1450,7 +1450,7 @@
         "origLang": "en",
         "origTitle": "Tony",
         "platforms": [],
-        "popularity": 14.5912,
+        "popularity": 12.4632,
         "imdbId": "tt33095251",
         "countries": [
           "United States of America",
@@ -6244,11 +6244,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 80000000,
@@ -6363,11 +6363,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 80000000,
@@ -8425,7 +8425,7 @@
         "origLang": "zh",
         "origTitle": "Last Night in Taipei",
         "platforms": [],
-        "popularity": 0.9877,
+        "popularity": 0.7782,
         "imdbId": "tt38162481",
         "countries": [
           "Taiwan",
@@ -13287,6 +13287,107 @@
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1276474,
+        "titleZh": "國有器官",
+        "titleEn": "State Organs: Unmasking Transplant Abuse in China",
+        "releaseDate": "2024-10-01",
+        "twTheatricalReleases": [
+          {
+            "date": "2024-10-01",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/1yvZePbNUvaLqlVeGXmZx80SOKn.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zNVtuHqTPzlfR5ugj1z3eklZIHD.jpg",
+        "voteAverage": "2.0",
+        "genre": [
+          "紀錄"
+        ],
+        "duration": 74,
+        "synopsis": "二十年前，兩個年輕人在中共對法輪功的迫害政策中，神秘失蹤，他們的家人開始了一段堅難的歷程，尋找他們的下落。影片透過大量第一手證詞和獨家採訪，真實呈現了中共以強制摘取器官的方式 ，對法輪功學員實施的群體滅絕，以及中國民眾在暴政下的互助守望，和對信仰的迴歸。",
+        "imdb": "6.6",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 295,
+            "lastChanged": "2026-08-22T10:44:38.301819+08:00"
+          }
+        },
+        "trailerKey": "Zo6A-qnVkBI",
+        "cast": [],
+        "crew": [
+          {
+            "name": "Raymond Zhang",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "State Organs: Unmasking Transplant Abuse in China",
+        "platforms": [
+          {
+            "name": "Catchplay",
+            "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 0.2894,
+        "imdbId": "tt33395194",
+        "countries": [
+          "Canada"
+        ],
+        "detail": {
+          "duration": 74,
+          "genres": [
+            "紀錄"
+          ],
+          "synopsis": "二十年前，兩個年輕人在中共對法輪功的迫害政策中，神秘失蹤，他們的家人開始了一段堅難的歷程，尋找他們的下落。影片透過大量第一手證詞和獨家採訪，真實呈現了中共以強制摘取器官的方式 ，對法輪功學員實施的群體滅絕，以及中國民眾在暴政下的互助守望，和對信仰的迴歸。",
+          "poster": "https://image.tmdb.org/t/p/w500/1yvZePbNUvaLqlVeGXmZx80SOKn.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/zNVtuHqTPzlfR5ugj1z3eklZIHD.jpg",
+          "voteAverage": "2.0",
+          "trailerKey": "Zo6A-qnVkBI",
+          "imdbId": "tt33395194",
+          "countries": [
+            "Canada"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "Raymond Zhang",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "State Organs: Unmasking Transplant Abuse in China",
+          "platforms": [
+            {
+              "name": "Catchplay",
+              "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1276474?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
       }
     ],
     "soon": [
@@ -16944,12 +17045,12 @@
             "job": "Writer"
           },
           {
-            "name": "Peter Spierig",
+            "name": "Michael Spierig",
             "job": "Director"
           },
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Scott Mann",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -17027,12 +17128,12 @@
               "job": "Writer"
             },
             {
-              "name": "Peter Spierig",
+              "name": "Michael Spierig",
               "job": "Director"
             },
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Scott Mann",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -19881,7 +19982,7 @@
         "origLang": "es",
         "origTitle": "Pacífico",
         "platforms": [],
-        "popularity": 5.122,
+        "popularity": 4.809,
         "imdbId": "tt4634974",
         "countries": [
           "Argentina",
@@ -22475,7 +22576,7 @@
         "origLang": "ja",
         "origTitle": "映畫 すみっコぐらし 空の王國とふたりのコ",
         "platforms": [],
-        "popularity": 0.8355,
+        "popularity": 0.3827,
         "imdbId": "tt38859765",
         "countries": [
           "Japan"
