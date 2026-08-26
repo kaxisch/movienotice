@@ -1331,7 +1331,13 @@ def should_keep_static_movie(movie, record):
     ):
         return False
     duration = movie.get("duration") or 0
-    if duration and duration <= 60:
+    if (
+        duration
+        and duration <= 60
+        and record.get("source_bucket") != "manual"
+        and record.get("candidate_kind") != "rerelease"
+        and not record.get("atmovies_id")
+    ):
         return False
     return True
 
