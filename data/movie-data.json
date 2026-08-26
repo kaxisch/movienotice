@@ -1,12 +1,747 @@
 {
-  "generated_at": "2026-08-26T21:37:31.722805+08:00",
+  "generated_at": "2026-08-27T05:09:15.944346+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 57,
-    "soon_count": 72
+    "now_count": 60,
+    "soon_count": 69
   },
   "movies": {
     "now": [
+      {
+        "id": 1384216,
+        "titleZh": "寂地",
+        "titleEn": "The Dog Stars",
+        "releaseDate": "2026-08-27",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-27",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/mhCYb5x6NW2jK6yoJPtQqZAYPO2.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
+        "voteAverage": "6.9",
+        "genre": [
+          "科幻",
+          "冒險",
+          "驚悚"
+        ],
+        "duration": 119,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "5I3Tal6CXB0",
+        "cast": [
+          {
+            "name": "雅各·艾洛迪",
+            "char": "Hig",
+            "photo": "https://image.tmdb.org/t/p/w500/9FGS8AGjVNtpWuUeoipYWR23sRZ.jpg"
+          },
+          {
+            "name": "瑪格麗特·庫利",
+            "char": "Cima",
+            "photo": "https://image.tmdb.org/t/p/w500/2H3VZ2Gjh0X4jeTc3a7ir3dzRGo.jpg"
+          },
+          {
+            "name": "喬許·布洛林",
+            "char": "Bangley",
+            "photo": "https://image.tmdb.org/t/p/w500/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+          },
+          {
+            "name": "蓋·皮爾斯",
+            "char": "Pops",
+            "photo": "https://image.tmdb.org/t/p/w500/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg"
+          },
+          {
+            "name": "艾莉森·珍妮",
+            "char": "Darlene",
+            "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
+          },
+          {
+            "name": "黃凱旋",
+            "char": "Aaron",
+            "photo": "https://image.tmdb.org/t/p/w500/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
+          },
+          {
+            "name": "Ewen Bremner",
+            "char": "Crossbow Hunter",
+            "photo": "https://image.tmdb.org/t/p/w500/u80rtfJRqCg4qKcdEPmYv8IkCvu.jpg"
+          },
+          {
+            "name": "James Craze",
+            "char": "Logan",
+            "photo": "https://image.tmdb.org/t/p/w500/stLoQ1f6H7h2qS27AkogQZhNJVG.jpg"
+          },
+          {
+            "name": "Sam Spruell",
+            "char": "John",
+            "photo": "https://image.tmdb.org/t/p/w500/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
+          },
+          {
+            "name": "Sai Bennett",
+            "char": "Melissa",
+            "photo": "https://image.tmdb.org/t/p/w500/65YqXx9anAp7fwQNUn4YS8KPhOb.jpg"
+          },
+          {
+            "name": "Sebastian Rokison-Woodall",
+            "char": "Ben",
+            "photo": null
+          },
+          {
+            "name": "Alara-Star Khan",
+            "char": "Matilda",
+            "photo": "https://image.tmdb.org/t/p/w500/9GFBpG1EWmd1mG33YU15E2fGXIB.jpg"
+          },
+          {
+            "name": "Daisy Kakkar",
+            "char": "Mennonite Woman",
+            "photo": null
+          },
+          {
+            "name": "Brendan O'Rourke",
+            "char": "Bar Man - Grand Junction",
+            "photo": null
+          },
+          {
+            "name": "Jean Michael Sinisterra Munoz",
+            "char": "Semi-Naked Monster / Fuddled Brain",
+            "photo": null
+          },
+          {
+            "name": "Mario Alberto Estrada Sanchez",
+            "char": "Semi-Naked Monster / Fuddled Brain",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "雷利·史考特",
+            "job": "Director"
+          },
+          {
+            "name": "馬克·L·史密斯",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 110000000,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "The Dog Stars",
+        "platforms": [],
+        "popularity": 44.9791,
+        "imdbId": "tt21285562",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 119,
+          "genres": [
+            "科幻",
+            "冒險",
+            "驚悚"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/mhCYb5x6NW2jK6yoJPtQqZAYPO2.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
+          "voteAverage": "6.9",
+          "trailerKey": "5I3Tal6CXB0",
+          "imdbId": "tt21285562",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "雅各·艾洛迪",
+              "char": "Hig",
+              "photo": "https://image.tmdb.org/t/p/w500/9FGS8AGjVNtpWuUeoipYWR23sRZ.jpg"
+            },
+            {
+              "name": "瑪格麗特·庫利",
+              "char": "Cima",
+              "photo": "https://image.tmdb.org/t/p/w500/2H3VZ2Gjh0X4jeTc3a7ir3dzRGo.jpg"
+            },
+            {
+              "name": "喬許·布洛林",
+              "char": "Bangley",
+              "photo": "https://image.tmdb.org/t/p/w500/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+            },
+            {
+              "name": "蓋·皮爾斯",
+              "char": "Pops",
+              "photo": "https://image.tmdb.org/t/p/w500/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg"
+            },
+            {
+              "name": "艾莉森·珍妮",
+              "char": "Darlene",
+              "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
+            },
+            {
+              "name": "黃凱旋",
+              "char": "Aaron",
+              "photo": "https://image.tmdb.org/t/p/w500/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
+            },
+            {
+              "name": "Ewen Bremner",
+              "char": "Crossbow Hunter",
+              "photo": "https://image.tmdb.org/t/p/w500/u80rtfJRqCg4qKcdEPmYv8IkCvu.jpg"
+            },
+            {
+              "name": "James Craze",
+              "char": "Logan",
+              "photo": "https://image.tmdb.org/t/p/w500/stLoQ1f6H7h2qS27AkogQZhNJVG.jpg"
+            },
+            {
+              "name": "Sam Spruell",
+              "char": "John",
+              "photo": "https://image.tmdb.org/t/p/w500/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
+            },
+            {
+              "name": "Sai Bennett",
+              "char": "Melissa",
+              "photo": "https://image.tmdb.org/t/p/w500/65YqXx9anAp7fwQNUn4YS8KPhOb.jpg"
+            },
+            {
+              "name": "Sebastian Rokison-Woodall",
+              "char": "Ben",
+              "photo": null
+            },
+            {
+              "name": "Alara-Star Khan",
+              "char": "Matilda",
+              "photo": "https://image.tmdb.org/t/p/w500/9GFBpG1EWmd1mG33YU15E2fGXIB.jpg"
+            },
+            {
+              "name": "Daisy Kakkar",
+              "char": "Mennonite Woman",
+              "photo": null
+            },
+            {
+              "name": "Brendan O'Rourke",
+              "char": "Bar Man - Grand Junction",
+              "photo": null
+            },
+            {
+              "name": "Jean Michael Sinisterra Munoz",
+              "char": "Semi-Naked Monster / Fuddled Brain",
+              "photo": null
+            },
+            {
+              "name": "Mario Alberto Estrada Sanchez",
+              "char": "Semi-Naked Monster / Fuddled Brain",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "雷利·史考特",
+              "job": "Director"
+            },
+            {
+              "name": "馬克·L·史密斯",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 110000000,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "The Dog Stars",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1384216?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1433568,
+        "titleZh": "粽邪4：坤蒂拉娜",
+        "titleEn": "粽邪4：坤蒂拉娜",
+        "releaseDate": "2026-08-27",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-27",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/6u8F23BammMeCWLvWITbFM2Nwbe.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/2VDV1ZBHV1PKKBcWjRRCydZO1YR.jpg",
+        "voteAverage": "",
+        "genre": [
+          "驚悚",
+          "懸疑",
+          "恐怖"
+        ],
+        "duration": "",
+        "synopsis": "印尼靈異網紅馬蒂直播一場禁忌驅魔儀式，意外喚醒傳說女鬼「坤蒂拉娜」。遠在臺灣的Mila觀看直播後情緒失控，隔日離奇慘死，印尼商店老闆亦上吊身亡，玉蘭更遭邪靈附身，失去一魄。為查明真相，Mila之子振宏帶著母親骨灰返鄉，卻一步步捲入古老詛咒。隨著死亡接連發生，他們才發現，這場由仇恨引發的恐怖儀式，早已無法停止⋯⋯。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "n4_gVXzDiwQ",
+        "cast": [
+          {
+            "name": "陳博正",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
+          },
+          {
+            "name": "許安植",
+            "char": "Jia-min",
+            "photo": "https://image.tmdb.org/t/p/w500/z67nVT1oA4VUEgs16UiTMfa5vrn.jpg"
+          },
+          {
+            "name": "陳雪甄",
+            "char": "Yu-Lan",
+            "photo": "https://image.tmdb.org/t/p/w500/oPX3EwNONcSsUHoOaEeieyaNS2n.jpg"
+          },
+          {
+            "name": "劉國劭",
+            "char": "A-Guai",
+            "photo": "https://image.tmdb.org/t/p/w500/jy1nhGgNqoBPn6uzoYq7v5JR6z3.jpg"
+          },
+          {
+            "name": "胡語恆",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/cSUKHm9CW0M1FFO6hGFkqJoaE71.jpg"
+          },
+          {
+            "name": "Ferry Salim",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/hw6a3N6DsXENVHAH9FJtA538r79.jpg"
+          },
+          {
+            "name": "Rana Audi Marissa",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/2D46HwMI0TglH1KbAGNw4o1pRav.jpg"
+          },
+          {
+            "name": "Fandy Christian",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/wMWlWOYoSm8NLWiwQsuEXzeAb10.jpg"
+          },
+          {
+            "name": "Dito Darmawan",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/p9OKKLFP7q9wX3ZBMhB9oKxXbw1.jpg"
+          },
+          {
+            "name": "Andovi da Lopez",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/fMVEXB58es2EtRxdLxDweQpoPv9.jpg"
+          },
+          {
+            "name": "Kiara McKenna",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/ysz0i2JMD4aEftUd3Orc4z3cjjn.jpg"
+          },
+          {
+            "name": "李康生",
+            "char": "Huo-ge",
+            "photo": "https://image.tmdb.org/t/p/w500/bxUJSEeJZICNakqlItJKv79Kyt5.jpg"
+          },
+          {
+            "name": "Yessica Tamara",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "廖士涵",
+            "job": "Director"
+          },
+          {
+            "name": "高鳴晟",
+            "job": "Writer"
+          },
+          {
+            "name": "黃致凱",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "粽邪4：坤蒂拉娜",
+        "platforms": [],
+        "popularity": 9.9045,
+        "imdbId": "tt38633224",
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "驚悚",
+            "懸疑",
+            "恐怖"
+          ],
+          "synopsis": "印尼靈異網紅馬蒂直播一場禁忌驅魔儀式，意外喚醒傳說女鬼「坤蒂拉娜」。遠在臺灣的Mila觀看直播後情緒失控，隔日離奇慘死，印尼商店老闆亦上吊身亡，玉蘭更遭邪靈附身，失去一魄。為查明真相，Mila之子振宏帶著母親骨灰返鄉，卻一步步捲入古老詛咒。隨著死亡接連發生，他們才發現，這場由仇恨引發的恐怖儀式，早已無法停止⋯⋯。",
+          "poster": "https://image.tmdb.org/t/p/w500/6u8F23BammMeCWLvWITbFM2Nwbe.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/2VDV1ZBHV1PKKBcWjRRCydZO1YR.jpg",
+          "voteAverage": "",
+          "trailerKey": "n4_gVXzDiwQ",
+          "imdbId": "tt38633224",
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "陳博正",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
+            },
+            {
+              "name": "許安植",
+              "char": "Jia-min",
+              "photo": "https://image.tmdb.org/t/p/w500/z67nVT1oA4VUEgs16UiTMfa5vrn.jpg"
+            },
+            {
+              "name": "陳雪甄",
+              "char": "Yu-Lan",
+              "photo": "https://image.tmdb.org/t/p/w500/oPX3EwNONcSsUHoOaEeieyaNS2n.jpg"
+            },
+            {
+              "name": "劉國劭",
+              "char": "A-Guai",
+              "photo": "https://image.tmdb.org/t/p/w500/jy1nhGgNqoBPn6uzoYq7v5JR6z3.jpg"
+            },
+            {
+              "name": "胡語恆",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/cSUKHm9CW0M1FFO6hGFkqJoaE71.jpg"
+            },
+            {
+              "name": "Ferry Salim",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/hw6a3N6DsXENVHAH9FJtA538r79.jpg"
+            },
+            {
+              "name": "Rana Audi Marissa",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/2D46HwMI0TglH1KbAGNw4o1pRav.jpg"
+            },
+            {
+              "name": "Fandy Christian",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/wMWlWOYoSm8NLWiwQsuEXzeAb10.jpg"
+            },
+            {
+              "name": "Dito Darmawan",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/p9OKKLFP7q9wX3ZBMhB9oKxXbw1.jpg"
+            },
+            {
+              "name": "Andovi da Lopez",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/fMVEXB58es2EtRxdLxDweQpoPv9.jpg"
+            },
+            {
+              "name": "Kiara McKenna",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/ysz0i2JMD4aEftUd3Orc4z3cjjn.jpg"
+            },
+            {
+              "name": "李康生",
+              "char": "Huo-ge",
+              "photo": "https://image.tmdb.org/t/p/w500/bxUJSEeJZICNakqlItJKv79Kyt5.jpg"
+            },
+            {
+              "name": "Yessica Tamara",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "廖士涵",
+              "job": "Director"
+            },
+            {
+              "name": "高鳴晟",
+              "job": "Writer"
+            },
+            {
+              "name": "黃致凱",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "粽邪4：坤蒂拉娜",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1433568?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1532968,
+        "titleZh": "網紅老爸",
+        "titleEn": "網紅老爸",
+        "releaseDate": "2026-08-27",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-27",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/p9QLCtwefV6vw3QjtLl9bHrNDF2.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "喜劇"
+        ],
+        "duration": "",
+        "synopsis": "網紅小兔事業停滯，正苦尋突破，卻迎來出獄的黑道父親天哥。父女重逢，價值觀衝突不斷；天哥意外成為爆紅網紅，引發小弟金達妒恨與叛變。幫派內鬥升溫，小兔形象也因父親身分曝光而崩壞。面對黑白兩難，天哥在「好老大」與「好爸爸」間抉擇，最終以真情化解誤會，尋回親情與自我。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "VFi8IQOT4Gw",
+        "cast": [
+          {
+            "name": "王識賢",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/hZMiRV1xZ5xJU6toqzWhknSReW3.jpg"
+          },
+          {
+            "name": "陳怡佳",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "懷秋",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/pmISvBFZr86DebIwI4FZ5n2ux43.jpg"
+          },
+          {
+            "name": "羅志祥",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/2xjQMc7uLJjpKCpHMV6YcPzoHxM.jpg"
+          },
+          {
+            "name": "孫鵬",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/y1aqaTJA5yIcdMVQCknmyanTr24.jpg"
+          },
+          {
+            "name": "阿 Ben",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/A2SDYx5mNN79b8nIxKkE0ZCZK8J.jpg"
+          },
+          {
+            "name": "柯宇森",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "張家慧",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/uHYxCxLR72loaXgOgOrLnP9jUtW.jpg"
+          },
+          {
+            "name": "林真亦",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/4Uo7GQafahjlR0HuRB4dUco7qFk.jpg"
+          },
+          {
+            "name": "林道禹",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bc5TzA9JIrI4wjbk0c3lCu3OiDV.jpg"
+          },
+          {
+            "name": "王宣",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/eh2ENRMxUX48mNY0sdKeqf9xwmF.jpg"
+          },
+          {
+            "name": "傅雷",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/f7POqdwxGJDBlX3sCRG3CLiUpo6.jpg"
+          },
+          {
+            "name": "周明宇",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/vVzcHbVw1afqroPXEC6yzKJB6Pj.jpg"
+          },
+          {
+            "name": "潘俊佳",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/xVS3K2w0VvCszzCCbGy2FebnDmT.jpg"
+          },
+          {
+            "name": "賀瓏",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/cD3mTBoiEAUn30JVmXaD4WW6o1J.jpg"
+          },
+          {
+            "name": "怡岑",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/sAjV6vkNCbApqIwdqHfFm43EzLI.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "範揚仲",
+            "job": "Director"
+          },
+          {
+            "name": "劉蕊瑄",
+            "job": "Writer"
+          },
+          {
+            "name": "張威縯",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "網紅老爸",
+        "platforms": [],
+        "popularity": 1.4948,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "喜劇"
+          ],
+          "synopsis": "網紅小兔事業停滯，正苦尋突破，卻迎來出獄的黑道父親天哥。父女重逢，價值觀衝突不斷；天哥意外成為爆紅網紅，引發小弟金達妒恨與叛變。幫派內鬥升溫，小兔形象也因父親身分曝光而崩壞。面對黑白兩難，天哥在「好老大」與「好爸爸」間抉擇，最終以真情化解誤會，尋回親情與自我。",
+          "poster": "https://image.tmdb.org/t/p/w500/p9QLCtwefV6vw3QjtLl9bHrNDF2.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": "VFi8IQOT4Gw",
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "王識賢",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/hZMiRV1xZ5xJU6toqzWhknSReW3.jpg"
+            },
+            {
+              "name": "陳怡佳",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "懷秋",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/pmISvBFZr86DebIwI4FZ5n2ux43.jpg"
+            },
+            {
+              "name": "羅志祥",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/2xjQMc7uLJjpKCpHMV6YcPzoHxM.jpg"
+            },
+            {
+              "name": "孫鵬",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/y1aqaTJA5yIcdMVQCknmyanTr24.jpg"
+            },
+            {
+              "name": "阿 Ben",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/A2SDYx5mNN79b8nIxKkE0ZCZK8J.jpg"
+            },
+            {
+              "name": "柯宇森",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "張家慧",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/uHYxCxLR72loaXgOgOrLnP9jUtW.jpg"
+            },
+            {
+              "name": "林真亦",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/4Uo7GQafahjlR0HuRB4dUco7qFk.jpg"
+            },
+            {
+              "name": "林道禹",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bc5TzA9JIrI4wjbk0c3lCu3OiDV.jpg"
+            },
+            {
+              "name": "王宣",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/eh2ENRMxUX48mNY0sdKeqf9xwmF.jpg"
+            },
+            {
+              "name": "傅雷",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/f7POqdwxGJDBlX3sCRG3CLiUpo6.jpg"
+            },
+            {
+              "name": "周明宇",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/vVzcHbVw1afqroPXEC6yzKJB6Pj.jpg"
+            },
+            {
+              "name": "潘俊佳",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/xVS3K2w0VvCszzCCbGy2FebnDmT.jpg"
+            },
+            {
+              "name": "賀瓏",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/cD3mTBoiEAUn30JVmXaD4WW6o1J.jpg"
+            },
+            {
+              "name": "怡岑",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/sAjV6vkNCbApqIwdqHfFm43EzLI.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "範揚仲",
+              "job": "Director"
+            },
+            {
+              "name": "劉蕊瑄",
+              "job": "Writer"
+            },
+            {
+              "name": "張威縯",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "網紅老爸",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1532968?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 212162,
         "titleZh": "魔法少女小圓 新編 叛逆的物語",
@@ -1062,7 +1797,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/inYi87aRpfPqcwbBkhouzIWiy6L.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/qGPJ9AvOUpbpZjM6R7yqBDs4gsk.jpg",
-        "voteAverage": "6.4",
+        "voteAverage": "6.3",
         "genre": [
           "冒險",
           "喜劇"
@@ -1168,11 +1903,11 @@
             "job": "Writer"
           },
           {
-            "name": "Pierre Lacheau",
-            "job": "Writer"
+            "name": "Philippe Lacheau",
+            "job": "Director"
           },
           {
-            "name": "Pierre Dudan",
+            "name": "Pierre Lacheau",
             "job": "Writer"
           }
         ],
@@ -1197,7 +1932,7 @@
           "synopsis": "大衛受命從南美洲帶回一個神秘包裹，裡頭竟然是一隻小長尾豹。一切開始失控，這隻可愛的稀有生物讓整趟豪華大郵輪旅程陷入混亂！",
           "poster": "https://image.tmdb.org/t/p/w500/inYi87aRpfPqcwbBkhouzIWiy6L.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/qGPJ9AvOUpbpZjM6R7yqBDs4gsk.jpg",
-          "voteAverage": "6.4",
+          "voteAverage": "6.3",
           "trailerKey": "5E9Q828zse8",
           "imdbId": "tt33029380",
           "countries": [
@@ -1292,11 +2027,11 @@
               "job": "Writer"
             },
             {
-              "name": "Pierre Lacheau",
-              "job": "Writer"
+              "name": "Philippe Lacheau",
+              "job": "Director"
             },
             {
-              "name": "Pierre Dudan",
+              "name": "Pierre Lacheau",
               "job": "Writer"
             }
           ],
@@ -3701,7 +4436,7 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 62207464,
+        "revenue": 64671844,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
@@ -3819,7 +4554,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 62207464,
+          "revenue": 64671844,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Insidious: Out of the Further",
@@ -3845,7 +4580,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-        "voteAverage": "6.9",
+        "voteAverage": "6.8",
         "genre": [
           "喜劇",
           "愛情"
@@ -3985,7 +4720,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-          "voteAverage": "6.9",
+          "voteAverage": "6.8",
           "trailerKey": "lIl2WzFiF0A",
           "imdbId": "tt37853455",
           "countries": [
@@ -4932,7 +5667,7 @@
           }
         ],
         "budget": 40000000,
-        "revenue": 69000000,
+        "revenue": 106000000,
         "status": "Released",
         "origLang": "en",
         "origTitle": "PAW Patrol: The Dino Movie",
@@ -5057,7 +5792,7 @@
             }
           ],
           "budget": 40000000,
-          "revenue": 69000000,
+          "revenue": 106000000,
           "status": "Released",
           "origLang": "en",
           "origTitle": "PAW Patrol: The Dino Movie",
@@ -5397,7 +6132,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-        "voteAverage": "5.0",
+        "voteAverage": "4.9",
         "genre": [
           "恐怖"
         ],
@@ -5543,7 +6278,7 @@
           "synopsis": "美麗的小鎮出現了一位神秘的冰淇淋小販，他供應的美味冰品讓孩子們瘋狂，全鎮因此失控！",
           "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-          "voteAverage": "5.0",
+          "voteAverage": "4.9",
           "trailerKey": "0pIKTDz689U",
           "imdbId": "tt36893729",
           "countries": [
@@ -9805,7 +10540,7 @@
           }
         ],
         "budget": 225000000,
-        "revenue": 2219901026,
+        "revenue": 2229465513,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Spider-Man: Brand New Day",
@@ -9928,7 +10663,7 @@
             }
           ],
           "budget": 225000000,
-          "revenue": 2219901026,
+          "revenue": 2229465513,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Spider-Man: Brand New Day",
@@ -10593,6 +11328,10 @@
           {
             "name": "克里斯多夫·諾蘭",
             "job": "Writer"
+          },
+          {
+            "name": "Homer",
+            "job": "Writer"
           }
         ],
         "budget": 250000000,
@@ -10713,6 +11452,10 @@
             },
             {
               "name": "克里斯多夫·諾蘭",
+              "job": "Writer"
+            },
+            {
+              "name": "Homer",
               "job": "Writer"
             }
           ],
@@ -12931,741 +13674,6 @@
     ],
     "soon": [
       {
-        "id": 1384216,
-        "titleZh": "寂地",
-        "titleEn": "The Dog Stars",
-        "releaseDate": "2026-08-27",
-        "twTheatricalReleases": [
-          {
-            "date": "2026-08-27",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/mhCYb5x6NW2jK6yoJPtQqZAYPO2.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
-        "voteAverage": "6.9",
-        "genre": [
-          "科幻",
-          "冒險",
-          "驚悚"
-        ],
-        "duration": 119,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "5I3Tal6CXB0",
-        "cast": [
-          {
-            "name": "雅各·艾洛迪",
-            "char": "Hig",
-            "photo": "https://image.tmdb.org/t/p/w500/9FGS8AGjVNtpWuUeoipYWR23sRZ.jpg"
-          },
-          {
-            "name": "瑪格麗特·庫利",
-            "char": "Cima",
-            "photo": "https://image.tmdb.org/t/p/w500/2H3VZ2Gjh0X4jeTc3a7ir3dzRGo.jpg"
-          },
-          {
-            "name": "喬許·布洛林",
-            "char": "Bangley",
-            "photo": "https://image.tmdb.org/t/p/w500/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
-          },
-          {
-            "name": "蓋·皮爾斯",
-            "char": "Pops",
-            "photo": "https://image.tmdb.org/t/p/w500/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg"
-          },
-          {
-            "name": "艾莉森·珍妮",
-            "char": "Darlene",
-            "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
-          },
-          {
-            "name": "黃凱旋",
-            "char": "Aaron",
-            "photo": "https://image.tmdb.org/t/p/w500/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
-          },
-          {
-            "name": "Ewen Bremner",
-            "char": "Crossbow Hunter",
-            "photo": "https://image.tmdb.org/t/p/w500/u80rtfJRqCg4qKcdEPmYv8IkCvu.jpg"
-          },
-          {
-            "name": "James Craze",
-            "char": "Logan",
-            "photo": "https://image.tmdb.org/t/p/w500/stLoQ1f6H7h2qS27AkogQZhNJVG.jpg"
-          },
-          {
-            "name": "Sam Spruell",
-            "char": "John",
-            "photo": "https://image.tmdb.org/t/p/w500/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
-          },
-          {
-            "name": "Sai Bennett",
-            "char": "Melissa",
-            "photo": "https://image.tmdb.org/t/p/w500/65YqXx9anAp7fwQNUn4YS8KPhOb.jpg"
-          },
-          {
-            "name": "Sebastian Rokison-Woodall",
-            "char": "Ben",
-            "photo": null
-          },
-          {
-            "name": "Alara-Star Khan",
-            "char": "Matilda",
-            "photo": "https://image.tmdb.org/t/p/w500/9GFBpG1EWmd1mG33YU15E2fGXIB.jpg"
-          },
-          {
-            "name": "Daisy Kakkar",
-            "char": "Mennonite Woman",
-            "photo": null
-          },
-          {
-            "name": "Brendan O'Rourke",
-            "char": "Bar Man - Grand Junction",
-            "photo": null
-          },
-          {
-            "name": "Jean Michael Sinisterra Munoz",
-            "char": "Semi-Naked Monster / Fuddled Brain",
-            "photo": null
-          },
-          {
-            "name": "Mario Alberto Estrada Sanchez",
-            "char": "Semi-Naked Monster / Fuddled Brain",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "雷利·史考特",
-            "job": "Director"
-          },
-          {
-            "name": "馬克·L·史密斯",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 110000000,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "The Dog Stars",
-        "platforms": [],
-        "popularity": 44.9791,
-        "imdbId": "tt21285562",
-        "countries": [
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 119,
-          "genres": [
-            "科幻",
-            "冒險",
-            "驚悚"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/mhCYb5x6NW2jK6yoJPtQqZAYPO2.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
-          "voteAverage": "6.9",
-          "trailerKey": "5I3Tal6CXB0",
-          "imdbId": "tt21285562",
-          "countries": [
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "雅各·艾洛迪",
-              "char": "Hig",
-              "photo": "https://image.tmdb.org/t/p/w500/9FGS8AGjVNtpWuUeoipYWR23sRZ.jpg"
-            },
-            {
-              "name": "瑪格麗特·庫利",
-              "char": "Cima",
-              "photo": "https://image.tmdb.org/t/p/w500/2H3VZ2Gjh0X4jeTc3a7ir3dzRGo.jpg"
-            },
-            {
-              "name": "喬許·布洛林",
-              "char": "Bangley",
-              "photo": "https://image.tmdb.org/t/p/w500/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
-            },
-            {
-              "name": "蓋·皮爾斯",
-              "char": "Pops",
-              "photo": "https://image.tmdb.org/t/p/w500/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg"
-            },
-            {
-              "name": "艾莉森·珍妮",
-              "char": "Darlene",
-              "photo": "https://image.tmdb.org/t/p/w500/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg"
-            },
-            {
-              "name": "黃凱旋",
-              "char": "Aaron",
-              "photo": "https://image.tmdb.org/t/p/w500/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
-            },
-            {
-              "name": "Ewen Bremner",
-              "char": "Crossbow Hunter",
-              "photo": "https://image.tmdb.org/t/p/w500/u80rtfJRqCg4qKcdEPmYv8IkCvu.jpg"
-            },
-            {
-              "name": "James Craze",
-              "char": "Logan",
-              "photo": "https://image.tmdb.org/t/p/w500/stLoQ1f6H7h2qS27AkogQZhNJVG.jpg"
-            },
-            {
-              "name": "Sam Spruell",
-              "char": "John",
-              "photo": "https://image.tmdb.org/t/p/w500/nTyK3HlqdlJZqjpwTVf4Xo5LkYw.jpg"
-            },
-            {
-              "name": "Sai Bennett",
-              "char": "Melissa",
-              "photo": "https://image.tmdb.org/t/p/w500/65YqXx9anAp7fwQNUn4YS8KPhOb.jpg"
-            },
-            {
-              "name": "Sebastian Rokison-Woodall",
-              "char": "Ben",
-              "photo": null
-            },
-            {
-              "name": "Alara-Star Khan",
-              "char": "Matilda",
-              "photo": "https://image.tmdb.org/t/p/w500/9GFBpG1EWmd1mG33YU15E2fGXIB.jpg"
-            },
-            {
-              "name": "Daisy Kakkar",
-              "char": "Mennonite Woman",
-              "photo": null
-            },
-            {
-              "name": "Brendan O'Rourke",
-              "char": "Bar Man - Grand Junction",
-              "photo": null
-            },
-            {
-              "name": "Jean Michael Sinisterra Munoz",
-              "char": "Semi-Naked Monster / Fuddled Brain",
-              "photo": null
-            },
-            {
-              "name": "Mario Alberto Estrada Sanchez",
-              "char": "Semi-Naked Monster / Fuddled Brain",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "雷利·史考特",
-              "job": "Director"
-            },
-            {
-              "name": "馬克·L·史密斯",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 110000000,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "The Dog Stars",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1384216?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1433568,
-        "titleZh": "粽邪4：坤蒂拉娜",
-        "titleEn": "粽邪4：坤蒂拉娜",
-        "releaseDate": "2026-08-27",
-        "twTheatricalReleases": [
-          {
-            "date": "2026-08-27",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/6u8F23BammMeCWLvWITbFM2Nwbe.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/2VDV1ZBHV1PKKBcWjRRCydZO1YR.jpg",
-        "voteAverage": "",
-        "genre": [
-          "驚悚",
-          "懸疑",
-          "恐怖"
-        ],
-        "duration": "",
-        "synopsis": "印尼靈異網紅馬蒂直播一場禁忌驅魔儀式，意外喚醒傳說女鬼「坤蒂拉娜」。遠在臺灣的Mila觀看直播後情緒失控，隔日離奇慘死，印尼商店老闆亦上吊身亡，玉蘭更遭邪靈附身，失去一魄。為查明真相，Mila之子振宏帶著母親骨灰返鄉，卻一步步捲入古老詛咒。隨著死亡接連發生，他們才發現，這場由仇恨引發的恐怖儀式，早已無法停止⋯⋯。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "n4_gVXzDiwQ",
-        "cast": [
-          {
-            "name": "陳博正",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
-          },
-          {
-            "name": "許安植",
-            "char": "Jia-min",
-            "photo": "https://image.tmdb.org/t/p/w500/z67nVT1oA4VUEgs16UiTMfa5vrn.jpg"
-          },
-          {
-            "name": "陳雪甄",
-            "char": "Yu-Lan",
-            "photo": "https://image.tmdb.org/t/p/w500/oPX3EwNONcSsUHoOaEeieyaNS2n.jpg"
-          },
-          {
-            "name": "劉國劭",
-            "char": "A-Guai",
-            "photo": "https://image.tmdb.org/t/p/w500/jy1nhGgNqoBPn6uzoYq7v5JR6z3.jpg"
-          },
-          {
-            "name": "胡語恆",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/cSUKHm9CW0M1FFO6hGFkqJoaE71.jpg"
-          },
-          {
-            "name": "Ferry Salim",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/hw6a3N6DsXENVHAH9FJtA538r79.jpg"
-          },
-          {
-            "name": "Rana Audi Marissa",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/2D46HwMI0TglH1KbAGNw4o1pRav.jpg"
-          },
-          {
-            "name": "Fandy Christian",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/wMWlWOYoSm8NLWiwQsuEXzeAb10.jpg"
-          },
-          {
-            "name": "Dito Darmawan",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/p9OKKLFP7q9wX3ZBMhB9oKxXbw1.jpg"
-          },
-          {
-            "name": "Andovi da Lopez",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/fMVEXB58es2EtRxdLxDweQpoPv9.jpg"
-          },
-          {
-            "name": "Kiara McKenna",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/ysz0i2JMD4aEftUd3Orc4z3cjjn.jpg"
-          },
-          {
-            "name": "李康生",
-            "char": "Huo-ge",
-            "photo": "https://image.tmdb.org/t/p/w500/bxUJSEeJZICNakqlItJKv79Kyt5.jpg"
-          },
-          {
-            "name": "Yessica Tamara",
-            "char": "",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "廖士涵",
-            "job": "Director"
-          },
-          {
-            "name": "高鳴晟",
-            "job": "Writer"
-          },
-          {
-            "name": "黃致凱",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "粽邪4：坤蒂拉娜",
-        "platforms": [],
-        "popularity": 9.9045,
-        "imdbId": "tt38633224",
-        "countries": [
-          "Taiwan"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "驚悚",
-            "懸疑",
-            "恐怖"
-          ],
-          "synopsis": "印尼靈異網紅馬蒂直播一場禁忌驅魔儀式，意外喚醒傳說女鬼「坤蒂拉娜」。遠在臺灣的Mila觀看直播後情緒失控，隔日離奇慘死，印尼商店老闆亦上吊身亡，玉蘭更遭邪靈附身，失去一魄。為查明真相，Mila之子振宏帶著母親骨灰返鄉，卻一步步捲入古老詛咒。隨著死亡接連發生，他們才發現，這場由仇恨引發的恐怖儀式，早已無法停止⋯⋯。",
-          "poster": "https://image.tmdb.org/t/p/w500/6u8F23BammMeCWLvWITbFM2Nwbe.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/2VDV1ZBHV1PKKBcWjRRCydZO1YR.jpg",
-          "voteAverage": "",
-          "trailerKey": "n4_gVXzDiwQ",
-          "imdbId": "tt38633224",
-          "countries": [
-            "Taiwan"
-          ],
-          "cast": [
-            {
-              "name": "陳博正",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
-            },
-            {
-              "name": "許安植",
-              "char": "Jia-min",
-              "photo": "https://image.tmdb.org/t/p/w500/z67nVT1oA4VUEgs16UiTMfa5vrn.jpg"
-            },
-            {
-              "name": "陳雪甄",
-              "char": "Yu-Lan",
-              "photo": "https://image.tmdb.org/t/p/w500/oPX3EwNONcSsUHoOaEeieyaNS2n.jpg"
-            },
-            {
-              "name": "劉國劭",
-              "char": "A-Guai",
-              "photo": "https://image.tmdb.org/t/p/w500/jy1nhGgNqoBPn6uzoYq7v5JR6z3.jpg"
-            },
-            {
-              "name": "胡語恆",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/cSUKHm9CW0M1FFO6hGFkqJoaE71.jpg"
-            },
-            {
-              "name": "Ferry Salim",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/hw6a3N6DsXENVHAH9FJtA538r79.jpg"
-            },
-            {
-              "name": "Rana Audi Marissa",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/2D46HwMI0TglH1KbAGNw4o1pRav.jpg"
-            },
-            {
-              "name": "Fandy Christian",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/wMWlWOYoSm8NLWiwQsuEXzeAb10.jpg"
-            },
-            {
-              "name": "Dito Darmawan",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/p9OKKLFP7q9wX3ZBMhB9oKxXbw1.jpg"
-            },
-            {
-              "name": "Andovi da Lopez",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/fMVEXB58es2EtRxdLxDweQpoPv9.jpg"
-            },
-            {
-              "name": "Kiara McKenna",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/ysz0i2JMD4aEftUd3Orc4z3cjjn.jpg"
-            },
-            {
-              "name": "李康生",
-              "char": "Huo-ge",
-              "photo": "https://image.tmdb.org/t/p/w500/bxUJSEeJZICNakqlItJKv79Kyt5.jpg"
-            },
-            {
-              "name": "Yessica Tamara",
-              "char": "",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "廖士涵",
-              "job": "Director"
-            },
-            {
-              "name": "高鳴晟",
-              "job": "Writer"
-            },
-            {
-              "name": "黃致凱",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "粽邪4：坤蒂拉娜",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1433568?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1532968,
-        "titleZh": "網紅老爸",
-        "titleEn": "網紅老爸",
-        "releaseDate": "2026-08-27",
-        "twTheatricalReleases": [
-          {
-            "date": "2026-08-27",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/p9QLCtwefV6vw3QjtLl9bHrNDF2.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": null,
-        "voteAverage": "",
-        "genre": [
-          "喜劇"
-        ],
-        "duration": "",
-        "synopsis": "網紅小兔事業停滯，正苦尋突破，卻迎來出獄的黑道父親天哥。父女重逢，價值觀衝突不斷；天哥意外成為爆紅網紅，引發小弟金達妒恨與叛變。幫派內鬥升溫，小兔形象也因父親身分曝光而崩壞。面對黑白兩難，天哥在「好老大」與「好爸爸」間抉擇，最終以真情化解誤會，尋回親情與自我。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "VFi8IQOT4Gw",
-        "cast": [
-          {
-            "name": "王識賢",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/hZMiRV1xZ5xJU6toqzWhknSReW3.jpg"
-          },
-          {
-            "name": "陳怡佳",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "懷秋",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/pmISvBFZr86DebIwI4FZ5n2ux43.jpg"
-          },
-          {
-            "name": "羅志祥",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/2xjQMc7uLJjpKCpHMV6YcPzoHxM.jpg"
-          },
-          {
-            "name": "孫鵬",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/y1aqaTJA5yIcdMVQCknmyanTr24.jpg"
-          },
-          {
-            "name": "阿 Ben",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/A2SDYx5mNN79b8nIxKkE0ZCZK8J.jpg"
-          },
-          {
-            "name": "柯宇森",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "張家慧",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/uHYxCxLR72loaXgOgOrLnP9jUtW.jpg"
-          },
-          {
-            "name": "林真亦",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/4Uo7GQafahjlR0HuRB4dUco7qFk.jpg"
-          },
-          {
-            "name": "林道禹",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/bc5TzA9JIrI4wjbk0c3lCu3OiDV.jpg"
-          },
-          {
-            "name": "王宣",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/eh2ENRMxUX48mNY0sdKeqf9xwmF.jpg"
-          },
-          {
-            "name": "傅雷",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/f7POqdwxGJDBlX3sCRG3CLiUpo6.jpg"
-          },
-          {
-            "name": "周明宇",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vVzcHbVw1afqroPXEC6yzKJB6Pj.jpg"
-          },
-          {
-            "name": "潘俊佳",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/xVS3K2w0VvCszzCCbGy2FebnDmT.jpg"
-          },
-          {
-            "name": "賀瓏",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/cD3mTBoiEAUn30JVmXaD4WW6o1J.jpg"
-          },
-          {
-            "name": "怡岑",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/sAjV6vkNCbApqIwdqHfFm43EzLI.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "範揚仲",
-            "job": "Director"
-          },
-          {
-            "name": "劉蕊瑄",
-            "job": "Writer"
-          },
-          {
-            "name": "張威縯",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "網紅老爸",
-        "platforms": [],
-        "popularity": 1.4948,
-        "imdbId": null,
-        "countries": [
-          "Taiwan"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "喜劇"
-          ],
-          "synopsis": "網紅小兔事業停滯，正苦尋突破，卻迎來出獄的黑道父親天哥。父女重逢，價值觀衝突不斷；天哥意外成為爆紅網紅，引發小弟金達妒恨與叛變。幫派內鬥升溫，小兔形象也因父親身分曝光而崩壞。面對黑白兩難，天哥在「好老大」與「好爸爸」間抉擇，最終以真情化解誤會，尋回親情與自我。",
-          "poster": "https://image.tmdb.org/t/p/w500/p9QLCtwefV6vw3QjtLl9bHrNDF2.jpg",
-          "backdrop": null,
-          "voteAverage": "",
-          "trailerKey": "VFi8IQOT4Gw",
-          "imdbId": null,
-          "countries": [
-            "Taiwan"
-          ],
-          "cast": [
-            {
-              "name": "王識賢",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/hZMiRV1xZ5xJU6toqzWhknSReW3.jpg"
-            },
-            {
-              "name": "陳怡佳",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "懷秋",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/pmISvBFZr86DebIwI4FZ5n2ux43.jpg"
-            },
-            {
-              "name": "羅志祥",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/2xjQMc7uLJjpKCpHMV6YcPzoHxM.jpg"
-            },
-            {
-              "name": "孫鵬",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/y1aqaTJA5yIcdMVQCknmyanTr24.jpg"
-            },
-            {
-              "name": "阿 Ben",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/A2SDYx5mNN79b8nIxKkE0ZCZK8J.jpg"
-            },
-            {
-              "name": "柯宇森",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "張家慧",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/uHYxCxLR72loaXgOgOrLnP9jUtW.jpg"
-            },
-            {
-              "name": "林真亦",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/4Uo7GQafahjlR0HuRB4dUco7qFk.jpg"
-            },
-            {
-              "name": "林道禹",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/bc5TzA9JIrI4wjbk0c3lCu3OiDV.jpg"
-            },
-            {
-              "name": "王宣",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/eh2ENRMxUX48mNY0sdKeqf9xwmF.jpg"
-            },
-            {
-              "name": "傅雷",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/f7POqdwxGJDBlX3sCRG3CLiUpo6.jpg"
-            },
-            {
-              "name": "周明宇",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vVzcHbVw1afqroPXEC6yzKJB6Pj.jpg"
-            },
-            {
-              "name": "潘俊佳",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/xVS3K2w0VvCszzCCbGy2FebnDmT.jpg"
-            },
-            {
-              "name": "賀瓏",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/cD3mTBoiEAUn30JVmXaD4WW6o1J.jpg"
-            },
-            {
-              "name": "怡岑",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/sAjV6vkNCbApqIwdqHfFm43EzLI.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "範揚仲",
-              "job": "Director"
-            },
-            {
-              "name": "劉蕊瑄",
-              "job": "Writer"
-            },
-            {
-              "name": "張威縯",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "網紅老爸",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1532968?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 9323,
         "titleZh": "攻殼機動隊 / GHOST IN THE SHELL",
         "titleEn": "GHOST IN THE SHELL",
@@ -14748,15 +14756,15 @@
         ],
         "crew": [
           {
+            "name": "單丹丹",
+            "job": "Writer"
+          },
+          {
             "name": "李闊",
             "job": "Director"
           },
           {
-            "name": "單丹丹",
-            "job": "Director"
-          },
-          {
-            "name": "單丹丹",
+            "name": "李闊",
             "job": "Writer"
           }
         ],
@@ -14860,15 +14868,15 @@
           ],
           "crew": [
             {
+              "name": "單丹丹",
+              "job": "Writer"
+            },
+            {
               "name": "李闊",
               "job": "Director"
             },
             {
-              "name": "單丹丹",
-              "job": "Director"
-            },
-            {
-              "name": "單丹丹",
+              "name": "李闊",
               "job": "Writer"
             }
           ],
@@ -17631,12 +17639,12 @@
             "job": "Writer"
           },
           {
-            "name": "Peter Spierig",
+            "name": "Michael Spierig",
             "job": "Director"
           },
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Scott Mann",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -17714,12 +17722,12 @@
               "job": "Writer"
             },
             {
-              "name": "Peter Spierig",
+              "name": "Michael Spierig",
               "job": "Director"
             },
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Scott Mann",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -19457,7 +19465,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wE6syT1vv6W24iLGfhR4kQHnIDN.jpg",
         "voteAverage": "",
         "genre": [
           "愛情",
@@ -19552,7 +19560,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/wE6syT1vv6W24iLGfhR4kQHnIDN.jpg",
           "voteAverage": "",
           "trailerKey": "fmMoGBw0Dkk",
           "imdbId": "tt32588798",
@@ -21563,17 +21571,17 @@
           {
             "name": "쟈니",
             "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/rfbshYYaNggXAOslrvI97wxG4eO.jpg"
+            "photo": null
           },
           {
             "name": "태용",
             "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/jUwPULKYInH6xdbVU1XGOzitLYt.jpg"
+            "photo": null
           },
           {
             "name": "유타",
             "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/bpG17CsrRhYofypP7KBDyfG0jho.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/kCDHhUi7GPSjBqbrwBATzXo8kUL.jpg"
           },
           {
             "name": "在玹",
@@ -21583,7 +21591,7 @@
           {
             "name": "해찬",
             "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/s37bCyFQAMsAzevWUe2a8xa3Fck.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/pC1qftBqkV16d1Xt7t4tpJbbSp4.jpg"
           }
         ],
         "crew": [
@@ -21625,17 +21633,17 @@
             {
               "name": "쟈니",
               "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/rfbshYYaNggXAOslrvI97wxG4eO.jpg"
+              "photo": null
             },
             {
               "name": "태용",
               "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/jUwPULKYInH6xdbVU1XGOzitLYt.jpg"
+              "photo": null
             },
             {
               "name": "유타",
               "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/bpG17CsrRhYofypP7KBDyfG0jho.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/kCDHhUi7GPSjBqbrwBATzXo8kUL.jpg"
             },
             {
               "name": "在玹",
@@ -21645,7 +21653,7 @@
             {
               "name": "해찬",
               "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/s37bCyFQAMsAzevWUe2a8xa3Fck.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/pC1qftBqkV16d1Xt7t4tpJbbSp4.jpg"
             }
           ],
           "crew": [
@@ -25859,12 +25867,12 @@
         ],
         "crew": [
           {
-            "name": "塔伊加·維迪提",
-            "job": "Director"
-          },
-          {
             "name": "Dahvi Waller",
             "job": "Screenplay"
+          },
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Director"
           },
           {
             "name": "塔伊加·維迪提",
@@ -25956,12 +25964,12 @@
           ],
           "crew": [
             {
-              "name": "塔伊加·維迪提",
-              "job": "Director"
-            },
-            {
               "name": "Dahvi Waller",
               "job": "Screenplay"
+            },
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Director"
             },
             {
               "name": "塔伊加·維迪提",
