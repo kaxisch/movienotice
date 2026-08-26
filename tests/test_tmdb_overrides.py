@@ -36,6 +36,35 @@ class TmdbOverrideTests(unittest.TestCase):
 
         self.assertEqual(override["tmdb_id"], 1196840)
 
+    def test_tomorrow_concert_uses_confirmed_atmovies_override(self):
+        overrides = {
+            "ftko99799079": {
+                "tmdb_id": 1741921,
+                "title_zh": "TOMORROW X TOGETHER VR CONCERT : ENDLESS RIDE",
+            }
+        }
+
+        override = find_tmdb_override(
+            {"atmovies_id": "ftko99799079", "title_zh": "TOMORROW"}, overrides
+        )
+
+        self.assertEqual(override["tmdb_id"], 1741921)
+
+    def test_love_not_comedy_uses_confirmed_atmovies_override(self):
+        overrides = {
+            "fjjp43653895": {
+                "tmdb_id": 1701409,
+                "title_zh": "LOVE ≠ COMEDY",
+            }
+        }
+
+        override = find_tmdb_override(
+            {"atmovies_id": "fjjp43653895", "title_zh": "LOVE ≠ COMEDY"},
+            overrides,
+        )
+
+        self.assertEqual(override["tmdb_id"], 1701409)
+
     @patch("scripts.weekly_check.load_tmdb_overrides")
     def test_uses_persistent_title_override(self, load_overrides):
         load_overrides.return_value = {

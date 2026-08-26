@@ -161,6 +161,12 @@ def split_atmovies_title(full_title):
     if not full_title:
         return "", ""
 
+    # 全英文片名不是「中文片名＋英文片名」。若直接套用下方規則，第一個
+    # 單字會被誤切成中文片名，例如 TOMORROW… 只剩 TOMORROW、
+    # NCT 127… 只剩 NCT，連帶降低 TMDB 配對準確度。
+    if not re.search(r"[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]", full_title):
+        return full_title, ""
+
     match = re.match(
         r"^(?P<title_zh>.+?)\s+(?P<title_en>[A-Za-z0-9][A-Za-z0-9\s\-–—:：'\"!?,.&／/·・()\[\]{}]+)$",
         full_title,

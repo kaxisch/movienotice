@@ -187,7 +187,25 @@ def merge_candidate_presence(
         for tmdb_id, sources in (cinema_presence or {}).items()
     }
     current_by_id = {str(item["tmdb_id"]): dict(item) for item in current_items if item.get("tmdb_id")}
-    previous_by_id = {str(item.get("tmdb_id", "")): dict(item) for item in previous_items if item.get("tmdb_id")}
+    current_id_by_atmovies = {
+        str(item.get("atmovies_id", "")).strip(): str(item["tmdb_id"])
+        for item in current_items
+        if item.get("tmdb_id") and str(item.get("atmovies_id", "")).strip()
+    }
+    previous_by_id = {}
+    migrated_previous = {}
+    for item in previous_items:
+        if not item.get("tmdb_id"):
+            continue
+        tmdb_id = str(item["tmdb_id"])
+        atmovies_id = str(item.get("atmovies_id", "")).strip()
+        current_tmdb_id = current_id_by_atmovies.get(atmovies_id)
+        if current_tmdb_id and current_tmdb_id != tmdb_id:
+            migrated_previous.setdefault(current_tmdb_id, dict(item))
+            continue
+        previous_by_id[tmdb_id] = dict(item)
+    for tmdb_id, item in migrated_previous.items():
+        previous_by_id.setdefault(tmdb_id, item)
 
     previous_present_count = sum(
         1 for item in previous_by_id.values()
