@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-26T18:09:51.282515+08:00",
+  "generated_at": "2026-08-26T21:37:31.722805+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 57,
-    "soon_count": 71
+    "soon_count": 72
   },
   "movies": {
     "now": [
@@ -4366,11 +4366,11 @@
         ],
         "crew": [
           {
-            "name": "大塚隆史",
+            "name": "冨岡淳広",
             "job": "Screenplay"
           },
           {
-            "name": "冨岡淳広",
+            "name": "大塚隆史",
             "job": "Screenplay"
           },
           {
@@ -4490,11 +4490,11 @@
           ],
           "crew": [
             {
-              "name": "大塚隆史",
+              "name": "冨岡淳広",
               "job": "Screenplay"
             },
             {
-              "name": "冨岡淳広",
+              "name": "大塚隆史",
               "job": "Screenplay"
             },
             {
@@ -20382,12 +20382,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -20499,12 +20499,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -21541,7 +21541,7 @@
         "twTheatricalReleases": [
           {
             "date": "2026-09-20",
-            "language": ""
+            "language": "ko"
           }
         ],
         "twReleaseDateVerified": true,
@@ -21586,7 +21586,20 @@
             "photo": "https://image.tmdb.org/t/p/w500/s37bCyFQAMsAzevWUe2a8xa3Fck.jpg"
           }
         ],
-        "crew": [],
+        "crew": [
+          {
+            "name": "Kyung Chan Kim",
+            "job": "Director"
+          },
+          {
+            "name": "Doyeon Kim",
+            "job": "Director"
+          },
+          {
+            "name": "Soyoung Park",
+            "job": "Director"
+          }
+        ],
         "budget": 0,
         "revenue": 0,
         "status": "In Production",
@@ -21635,7 +21648,20 @@
               "photo": "https://image.tmdb.org/t/p/w500/s37bCyFQAMsAzevWUe2a8xa3Fck.jpg"
             }
           ],
-          "crew": [],
+          "crew": [
+            {
+              "name": "Kyung Chan Kim",
+              "job": "Director"
+            },
+            {
+              "name": "Doyeon Kim",
+              "job": "Director"
+            },
+            {
+              "name": "Soyoung Park",
+              "job": "Director"
+            }
+          ],
           "budget": 0,
           "revenue": 0,
           "status": "In Production",
@@ -25747,6 +25773,209 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1400940?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 858035,
+        "titleZh": "克拉拉與太陽",
+        "titleEn": "Klara and the Sun",
+        "releaseDate": "2026-10-23",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-23",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/1ZwcLnQMFvoAEbnGOsXJplgic6.jpg",
+        "voteAverage": "",
+        "genre": [
+          "科幻",
+          "劇情",
+          "喜劇"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "RCuBTTOLtIg",
+        "cast": [
+          {
+            "name": "珍娜·奧特嘉",
+            "char": "Klara",
+            "photo": "https://image.tmdb.org/t/p/w500/cV4x7jNmsGLdKZn5I6xVF3Ltnmg.jpg"
+          },
+          {
+            "name": "Mia Tharia",
+            "char": "Josie",
+            "photo": "https://image.tmdb.org/t/p/w500/oHb6lb5swU8U4JPEGfbUY5vkW5y.jpg"
+          },
+          {
+            "name": "艾美·亞當斯",
+            "char": "Chrissie",
+            "photo": "https://image.tmdb.org/t/p/w500/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+          },
+          {
+            "name": "娜塔莎·雷昂",
+            "char": "Manager",
+            "photo": "https://image.tmdb.org/t/p/w500/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
+          },
+          {
+            "name": "Aran Murphy",
+            "char": "Rick",
+            "photo": "https://image.tmdb.org/t/p/w500/gXwVwAY791aYZXkdSjLaRwYY37l.jpg"
+          },
+          {
+            "name": "Rachel House",
+            "char": "Melania",
+            "photo": "https://image.tmdb.org/t/p/w500/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
+          },
+          {
+            "name": "史蒂夫·布希密",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+          },
+          {
+            "name": "Davida McKenzie",
+            "char": "Simone",
+            "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
+          },
+          {
+            "name": "Harry Greenwood",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bTTjxIacR1a9GPVx2SkieZYHvbF.jpg"
+          },
+          {
+            "name": "Anastasiia Aksiuta",
+            "char": "AF-1",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Director"
+          },
+          {
+            "name": "Dahvi Waller",
+            "job": "Screenplay"
+          },
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "en",
+        "origTitle": "Klara and the Sun",
+        "platforms": [],
+        "popularity": 4.1215,
+        "imdbId": "tt14371256",
+        "countries": [
+          "New Zealand",
+          "United Kingdom",
+          "United States of America"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "科幻",
+            "劇情",
+            "喜劇"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/1ZwcLnQMFvoAEbnGOsXJplgic6.jpg",
+          "voteAverage": "",
+          "trailerKey": "RCuBTTOLtIg",
+          "imdbId": "tt14371256",
+          "countries": [
+            "New Zealand",
+            "United Kingdom",
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "珍娜·奧特嘉",
+              "char": "Klara",
+              "photo": "https://image.tmdb.org/t/p/w500/cV4x7jNmsGLdKZn5I6xVF3Ltnmg.jpg"
+            },
+            {
+              "name": "Mia Tharia",
+              "char": "Josie",
+              "photo": "https://image.tmdb.org/t/p/w500/oHb6lb5swU8U4JPEGfbUY5vkW5y.jpg"
+            },
+            {
+              "name": "艾美·亞當斯",
+              "char": "Chrissie",
+              "photo": "https://image.tmdb.org/t/p/w500/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+            },
+            {
+              "name": "娜塔莎·雷昂",
+              "char": "Manager",
+              "photo": "https://image.tmdb.org/t/p/w500/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
+            },
+            {
+              "name": "Aran Murphy",
+              "char": "Rick",
+              "photo": "https://image.tmdb.org/t/p/w500/gXwVwAY791aYZXkdSjLaRwYY37l.jpg"
+            },
+            {
+              "name": "Rachel House",
+              "char": "Melania",
+              "photo": "https://image.tmdb.org/t/p/w500/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
+            },
+            {
+              "name": "史蒂夫·布希密",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+            },
+            {
+              "name": "Davida McKenzie",
+              "char": "Simone",
+              "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
+            },
+            {
+              "name": "Harry Greenwood",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bTTjxIacR1a9GPVx2SkieZYHvbF.jpg"
+            },
+            {
+              "name": "Anastasiia Aksiuta",
+              "char": "AF-1",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Director"
+            },
+            {
+              "name": "Dahvi Waller",
+              "job": "Screenplay"
+            },
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "en",
+          "origTitle": "Klara and the Sun",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/858035?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
