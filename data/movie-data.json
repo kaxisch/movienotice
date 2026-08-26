@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-26T17:28:24.077069+08:00",
+  "generated_at": "2026-08-26T18:09:51.282515+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 57,
-    "soon_count": 69
+    "soon_count": 71
   },
   "movies": {
     "now": [
@@ -318,8 +318,8 @@
             "lastChanged": "2026-08-12T22:03:18.770486+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 25,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T22:03:18.770486+08:00"
           }
         },
@@ -906,12 +906,12 @@
         ],
         "crew": [
           {
-            "name": "石立太一",
-            "job": "Director"
-          },
-          {
             "name": "花田十輝",
             "job": "Screenplay"
+          },
+          {
+            "name": "石立太一",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -1027,12 +1027,12 @@
           ],
           "crew": [
             {
-              "name": "石立太一",
-              "job": "Director"
-            },
-            {
               "name": "花田十輝",
               "job": "Screenplay"
+            },
+            {
+              "name": "石立太一",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -1617,8 +1617,8 @@
             "lastChanged": "2026-08-26T00:11:51.592220+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 50,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-08T10:31:29.092386+08:00"
           }
         },
@@ -2281,8 +2281,8 @@
         "mc": "85",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 82,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-05T15:29:54.157693+08:00"
           },
           "mc": {
@@ -3124,13 +3124,13 @@
             "lastChanged": "2026-08-19T15:23:52.566887+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 336,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-19T15:23:52.566887+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 48,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-19T15:23:52.566887+08:00"
           }
         },
@@ -3602,8 +3602,8 @@
             "lastChanged": "2026-08-25T05:58:27.192616+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 25,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-25T05:58:27.192616+08:00"
           }
         },
@@ -3854,7 +3854,7 @@
         "synopsis": "",
         "imdb": "6.4",
         "rt": "46%",
-        "mc": "42",
+        "mc": "43",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -3867,9 +3867,9 @@
             "lastChanged": "2026-08-19T03:10:13.032781+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 33,
-            "lastChanged": "2026-08-23T10:12:25.564126+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-26T18:09:51.282515+08:00"
           }
         },
         "trailerKey": "lIl2WzFiF0A",
@@ -4276,8 +4276,8 @@
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 16,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           }
         },
@@ -4539,7 +4539,7 @@
         "synopsis": "「超拖」樂團雙人組有夠會拖，兩個懷著成名夢的好友，為了登上表演舞臺，每天在破公寓談鋼琴練肖話，還找紀錄片團隊貼身側拍。只是十七年過去，少年變大叔，卻連場地預約電話都還沒打。他們以為只要幹場大事，例如跳下電視塔，成為話題，自然會被注意到。當計劃再度挫屎，習慣言聽計從的那個開始意識到，多年搭檔可能才是拖垮人生的雷包，於是打算拆夥落跑。誰知竟把箱型車開成時光機，陰錯陽差將所有人帶回十七年前的那一天！",
         "imdb": "8.0",
         "rt": "95%",
-        "mc": "80",
+        "mc": "78",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -4547,14 +4547,14 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 125,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 26,
-            "lastChanged": "2026-08-23T10:12:25.564126+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-26T18:09:51.282515+08:00"
           }
         },
         "trailerKey": "gVI8kzhK-Lo",
@@ -4829,8 +4829,8 @@
             "lastChanged": "2026-08-22T15:15:11.355059+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 4,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-16T03:01:03.289398+08:00"
           }
         },
@@ -5405,7 +5405,7 @@
         "synopsis": "美麗的小鎮出現了一位神秘的冰淇淋小販，他供應的美味冰品讓孩子們瘋狂，全鎮因此失控！",
         "imdb": "3.8",
         "rt": "26%",
-        "mc": "33",
+        "mc": "34",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -5418,9 +5418,9 @@
             "lastChanged": "2026-08-25T00:07:37.587943+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 20,
-            "lastChanged": "2026-08-23T10:12:25.564126+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-26T18:09:51.282515+08:00"
           }
         },
         "trailerKey": "0pIKTDz689U",
@@ -6192,8 +6192,8 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 27,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -6544,13 +6544,13 @@
             "lastChanged": "2026-08-22T12:10:10.070395+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 289,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-22T12:10:10.070395+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 52,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           }
         },
@@ -7308,13 +7308,13 @@
             "lastChanged": "2026-08-08T21:30:16.257800+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 92,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-08T21:30:16.257800+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 27,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-08T21:30:16.257800+08:00"
           }
         },
@@ -7842,8 +7842,8 @@
         "mc": "85",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 31,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
@@ -8110,13 +8110,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 320,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 38,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -9702,8 +9702,8 @@
             "lastChanged": "2026-08-19T03:10:13.032781+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 56,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -9972,13 +9972,13 @@
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 120,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           }
         },
@@ -10497,8 +10497,8 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 63,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -10902,8 +10902,8 @@
         "mc": "42",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 195,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
@@ -11348,8 +11348,8 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 30,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-09T10:38:03.783105+08:00"
           }
         },
@@ -12058,13 +12058,13 @@
             "lastChanged": "2026-08-22T12:10:10.070395+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 322,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 55,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -13698,13 +13698,13 @@
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 62,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 14,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           }
         },
@@ -14222,13 +14222,13 @@
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 73,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 23,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           }
         },
@@ -14490,8 +14490,8 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 47,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -14648,6 +14648,243 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1196840,
+        "titleZh": "銀河寫手",
+        "titleEn": "銀河寫手",
+        "releaseDate": "2026-08-28",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-28",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4hzwmEGkSJygsgUQraPIYoJWGEj.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/nXqFdCq5Xjniie1QnnPFpkLXzQn.jpg",
+        "voteAverage": "5.3",
+        "genre": [
+          "喜劇",
+          "劇情"
+        ],
+        "duration": 103,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Song Muzi",
+            "char": "Zhang Liaoyi",
+            "photo": "https://image.tmdb.org/t/p/w500/i9KaDxU9vxcXb57wOBv3MrYUiR7.jpg"
+          },
+          {
+            "name": "合文俊",
+            "char": "Sun Tan",
+            "photo": "https://image.tmdb.org/t/p/w500/ut8kR4SEqHPRMvDbHffmT6PvMTo.jpg"
+          },
+          {
+            "name": "Fei Li",
+            "char": "Hai Chong",
+            "photo": "https://image.tmdb.org/t/p/w500/rG3QJSnFhZ4QK2362waXPhOhadp.jpg"
+          },
+          {
+            "name": "Li Wenru",
+            "char": "Zhou Keke",
+            "photo": "https://image.tmdb.org/t/p/w500/y4nVAZwWdji8EO2IFV8qO5KFwJM.jpg"
+          },
+          {
+            "name": "Xiaoliang Song",
+            "char": "Cai Laoban",
+            "photo": "https://image.tmdb.org/t/p/w500/mz6lojmQ9Bk53eLLn0iyht8m6rU.jpg"
+          },
+          {
+            "name": "張皓森",
+            "char": "Da Liu",
+            "photo": "https://image.tmdb.org/t/p/w500/pluJ4QzWSMtcvFfGDEtyjbF50YG.jpg"
+          },
+          {
+            "name": "Moran Liu",
+            "char": "Xiao Rui",
+            "photo": "https://image.tmdb.org/t/p/w500/pcTXYJOnyvSU01vrzhIl4L4D50K.jpg"
+          },
+          {
+            "name": "Youyi Qi",
+            "char": "Bei Le",
+            "photo": null
+          },
+          {
+            "name": "Bai Zhiqiang",
+            "char": "Shi Ge",
+            "photo": null
+          },
+          {
+            "name": "Lai Wei",
+            "char": "Zheng Fei",
+            "photo": null
+          },
+          {
+            "name": "李闊",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/nZoLZjPKOTXtY0NzRajqbVmA5Np.jpg"
+          },
+          {
+            "name": "單丹丹",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/fQbzgbviBNJXItVrTLpEqu4IDOM.jpg"
+          },
+          {
+            "name": "尹思淇",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "沈騰",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/h9l1fHqty8EdCqDWNWjO5tp48xZ.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "李闊",
+            "job": "Director"
+          },
+          {
+            "name": "單丹丹",
+            "job": "Director"
+          },
+          {
+            "name": "單丹丹",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 580000,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "銀河寫手",
+        "platforms": [],
+        "popularity": 0.996,
+        "imdbId": "tt28350761",
+        "countries": [
+          "China"
+        ],
+        "detail": {
+          "duration": 103,
+          "genres": [
+            "喜劇",
+            "劇情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/4hzwmEGkSJygsgUQraPIYoJWGEj.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/nXqFdCq5Xjniie1QnnPFpkLXzQn.jpg",
+          "voteAverage": "5.3",
+          "trailerKey": null,
+          "imdbId": "tt28350761",
+          "countries": [
+            "China"
+          ],
+          "cast": [
+            {
+              "name": "Song Muzi",
+              "char": "Zhang Liaoyi",
+              "photo": "https://image.tmdb.org/t/p/w500/i9KaDxU9vxcXb57wOBv3MrYUiR7.jpg"
+            },
+            {
+              "name": "合文俊",
+              "char": "Sun Tan",
+              "photo": "https://image.tmdb.org/t/p/w500/ut8kR4SEqHPRMvDbHffmT6PvMTo.jpg"
+            },
+            {
+              "name": "Fei Li",
+              "char": "Hai Chong",
+              "photo": "https://image.tmdb.org/t/p/w500/rG3QJSnFhZ4QK2362waXPhOhadp.jpg"
+            },
+            {
+              "name": "Li Wenru",
+              "char": "Zhou Keke",
+              "photo": "https://image.tmdb.org/t/p/w500/y4nVAZwWdji8EO2IFV8qO5KFwJM.jpg"
+            },
+            {
+              "name": "Xiaoliang Song",
+              "char": "Cai Laoban",
+              "photo": "https://image.tmdb.org/t/p/w500/mz6lojmQ9Bk53eLLn0iyht8m6rU.jpg"
+            },
+            {
+              "name": "張皓森",
+              "char": "Da Liu",
+              "photo": "https://image.tmdb.org/t/p/w500/pluJ4QzWSMtcvFfGDEtyjbF50YG.jpg"
+            },
+            {
+              "name": "Moran Liu",
+              "char": "Xiao Rui",
+              "photo": "https://image.tmdb.org/t/p/w500/pcTXYJOnyvSU01vrzhIl4L4D50K.jpg"
+            },
+            {
+              "name": "Youyi Qi",
+              "char": "Bei Le",
+              "photo": null
+            },
+            {
+              "name": "Bai Zhiqiang",
+              "char": "Shi Ge",
+              "photo": null
+            },
+            {
+              "name": "Lai Wei",
+              "char": "Zheng Fei",
+              "photo": null
+            },
+            {
+              "name": "李闊",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/nZoLZjPKOTXtY0NzRajqbVmA5Np.jpg"
+            },
+            {
+              "name": "單丹丹",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/fQbzgbviBNJXItVrTLpEqu4IDOM.jpg"
+            },
+            {
+              "name": "尹思淇",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "沈騰",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/h9l1fHqty8EdCqDWNWjO5tp48xZ.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "李闊",
+              "job": "Director"
+            },
+            {
+              "name": "單丹丹",
+              "job": "Director"
+            },
+            {
+              "name": "單丹丹",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 580000,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "銀河寫手",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1196840?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1283671,
         "titleZh": "世界末日愛上你",
         "titleEn": "Amour Apocalypse",
@@ -14675,8 +14912,8 @@
         "mc": "",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 24,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           }
         },
@@ -15310,6 +15547,265 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1449433?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1454800,
+        "titleZh": "大風殺",
+        "titleEn": "大風殺",
+        "releaseDate": "2026-08-28",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-28",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/hcIDYqrSXo7CFSiXdxgG6eeN8rq.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mINSxREmed7uTom1HiradrnwYoP.jpg",
+        "voteAverage": "7.3",
+        "genre": [
+          "劇情",
+          "犯罪",
+          "懸疑"
+        ],
+        "duration": 131,
+        "synopsis": "1995年，全面禁槍政策實施的前一年，棄鎮忙崖的平靜被打破。藏匿巨額寶藏的悍匪大哥北山（辛柏青 飾）越獄出逃，43名窮兇極惡的匪徒從四面八方齊聚於此，隨大哥北山一道用武力封鎖忙崖，整座小鎮陷入了斷油斷通訊的絕境！悍匪要錢也要命，忙崖槍聲四起，巨大沙暴也即將席捲而來。“夜貓子”夏然（白客 飾）和另外兩位民警面臨著1把槍對陣88把槍的天崩開局，匪幫內部亦上演“黑吃黑”大戲。群匪環伺，風沙蔽日，命懸一線，如何破局？",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "白客",
+            "char": "Xia Ran",
+            "photo": "https://image.tmdb.org/t/p/w500/jzR0XXpzWDoOCA7gVuuX6GjkEeD.jpg"
+          },
+          {
+            "name": "辛柏青",
+            "char": "Bei Shan",
+            "photo": "https://image.tmdb.org/t/p/w500/tuecnWeqbJhDtb4bwhqoKY6WFTi.jpg"
+          },
+          {
+            "name": "郎月婷",
+            "char": "Li Hong",
+            "photo": "https://image.tmdb.org/t/p/w500/bdyJhQrIG7ai9B2Tp2kD2M0F32X.jpg"
+          },
+          {
+            "name": "耿樂",
+            "char": "Qu Maduo",
+            "photo": "https://image.tmdb.org/t/p/w500/tyqtorVkTRu1ZFQsnEccwMZEf4Y.jpg"
+          },
+          {
+            "name": "Sun Ning",
+            "char": "Jian Ning",
+            "photo": "https://image.tmdb.org/t/p/w500/oKKHYR6yCkfEisckawmDFZGE01F.jpg"
+          },
+          {
+            "name": "李曉川",
+            "char": "Zuo Luo",
+            "photo": "https://image.tmdb.org/t/p/w500/fZsYNxScTTS839toNNBCg7uzRAw.jpg"
+          },
+          {
+            "name": "張本煜",
+            "char": "Accountant",
+            "photo": "https://image.tmdb.org/t/p/w500/6PI1v4TYN7lDFRzjL1iz8V45P2t.jpg"
+          },
+          {
+            "name": "卓傑澤仁",
+            "char": "Duo Jie",
+            "photo": "https://image.tmdb.org/t/p/w500/bRRUQlwKg7vJdQrxZE5tQOJwGA8.jpg"
+          },
+          {
+            "name": "Sang Mingsheng",
+            "char": "Hui Lv",
+            "photo": "https://image.tmdb.org/t/p/w500/aRBBIysufVqASD7wTvBPMpO3FTs.jpg"
+          },
+          {
+            "name": "Li Haotian",
+            "char": "Da Tou",
+            "photo": "https://image.tmdb.org/t/p/w500/iHEaS5bmGumVx59RvLiG2puYFmN.jpg"
+          },
+          {
+            "name": "Leon Li",
+            "char": "She Tou",
+            "photo": "https://image.tmdb.org/t/p/w500/60yVHWnpSW5vcEi1prqwOIREqwu.jpg"
+          },
+          {
+            "name": "李延",
+            "char": "Liu Wu",
+            "photo": "https://image.tmdb.org/t/p/w500/cwkcg4ALKxlRJFhtn8Hz1eVGyoS.jpg"
+          },
+          {
+            "name": "Xue Xuchun",
+            "char": "Ma Xiaozhi",
+            "photo": "https://image.tmdb.org/t/p/w500/mg2jyOQDA8nHCxqUmXXyHI2V9xY.jpg"
+          },
+          {
+            "name": "Li Sibo",
+            "char": "Yan Peng",
+            "photo": "https://image.tmdb.org/t/p/w500/3TmdJTzUMPkjlL7ga4isQpr67BC.jpg"
+          },
+          {
+            "name": "王藝禪",
+            "char": "Luo Lan",
+            "photo": null
+          },
+          {
+            "name": "王一通",
+            "char": "Gang Beng",
+            "photo": "https://image.tmdb.org/t/p/w500/ptehnWmMOgguxCSDbxcdauRF9rx.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "張琪",
+            "job": "Director"
+          },
+          {
+            "name": "孫悅",
+            "job": "Writer"
+          },
+          {
+            "name": "張琪",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "大風殺",
+        "platforms": [],
+        "popularity": 1.8454,
+        "imdbId": "tt36375652",
+        "countries": [
+          "China"
+        ],
+        "detail": {
+          "duration": 131,
+          "genres": [
+            "劇情",
+            "犯罪",
+            "懸疑"
+          ],
+          "synopsis": "1995年，全面禁槍政策實施的前一年，棄鎮忙崖的平靜被打破。藏匿巨額寶藏的悍匪大哥北山（辛柏青 飾）越獄出逃，43名窮兇極惡的匪徒從四面八方齊聚於此，隨大哥北山一道用武力封鎖忙崖，整座小鎮陷入了斷油斷通訊的絕境！悍匪要錢也要命，忙崖槍聲四起，巨大沙暴也即將席捲而來。“夜貓子”夏然（白客 飾）和另外兩位民警面臨著1把槍對陣88把槍的天崩開局，匪幫內部亦上演“黑吃黑”大戲。群匪環伺，風沙蔽日，命懸一線，如何破局？",
+          "poster": "https://image.tmdb.org/t/p/w500/hcIDYqrSXo7CFSiXdxgG6eeN8rq.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/mINSxREmed7uTom1HiradrnwYoP.jpg",
+          "voteAverage": "7.3",
+          "trailerKey": null,
+          "imdbId": "tt36375652",
+          "countries": [
+            "China"
+          ],
+          "cast": [
+            {
+              "name": "白客",
+              "char": "Xia Ran",
+              "photo": "https://image.tmdb.org/t/p/w500/jzR0XXpzWDoOCA7gVuuX6GjkEeD.jpg"
+            },
+            {
+              "name": "辛柏青",
+              "char": "Bei Shan",
+              "photo": "https://image.tmdb.org/t/p/w500/tuecnWeqbJhDtb4bwhqoKY6WFTi.jpg"
+            },
+            {
+              "name": "郎月婷",
+              "char": "Li Hong",
+              "photo": "https://image.tmdb.org/t/p/w500/bdyJhQrIG7ai9B2Tp2kD2M0F32X.jpg"
+            },
+            {
+              "name": "耿樂",
+              "char": "Qu Maduo",
+              "photo": "https://image.tmdb.org/t/p/w500/tyqtorVkTRu1ZFQsnEccwMZEf4Y.jpg"
+            },
+            {
+              "name": "Sun Ning",
+              "char": "Jian Ning",
+              "photo": "https://image.tmdb.org/t/p/w500/oKKHYR6yCkfEisckawmDFZGE01F.jpg"
+            },
+            {
+              "name": "李曉川",
+              "char": "Zuo Luo",
+              "photo": "https://image.tmdb.org/t/p/w500/fZsYNxScTTS839toNNBCg7uzRAw.jpg"
+            },
+            {
+              "name": "張本煜",
+              "char": "Accountant",
+              "photo": "https://image.tmdb.org/t/p/w500/6PI1v4TYN7lDFRzjL1iz8V45P2t.jpg"
+            },
+            {
+              "name": "卓傑澤仁",
+              "char": "Duo Jie",
+              "photo": "https://image.tmdb.org/t/p/w500/bRRUQlwKg7vJdQrxZE5tQOJwGA8.jpg"
+            },
+            {
+              "name": "Sang Mingsheng",
+              "char": "Hui Lv",
+              "photo": "https://image.tmdb.org/t/p/w500/aRBBIysufVqASD7wTvBPMpO3FTs.jpg"
+            },
+            {
+              "name": "Li Haotian",
+              "char": "Da Tou",
+              "photo": "https://image.tmdb.org/t/p/w500/iHEaS5bmGumVx59RvLiG2puYFmN.jpg"
+            },
+            {
+              "name": "Leon Li",
+              "char": "She Tou",
+              "photo": "https://image.tmdb.org/t/p/w500/60yVHWnpSW5vcEi1prqwOIREqwu.jpg"
+            },
+            {
+              "name": "李延",
+              "char": "Liu Wu",
+              "photo": "https://image.tmdb.org/t/p/w500/cwkcg4ALKxlRJFhtn8Hz1eVGyoS.jpg"
+            },
+            {
+              "name": "Xue Xuchun",
+              "char": "Ma Xiaozhi",
+              "photo": "https://image.tmdb.org/t/p/w500/mg2jyOQDA8nHCxqUmXXyHI2V9xY.jpg"
+            },
+            {
+              "name": "Li Sibo",
+              "char": "Yan Peng",
+              "photo": "https://image.tmdb.org/t/p/w500/3TmdJTzUMPkjlL7ga4isQpr67BC.jpg"
+            },
+            {
+              "name": "王藝禪",
+              "char": "Luo Lan",
+              "photo": null
+            },
+            {
+              "name": "王一通",
+              "char": "Gang Beng",
+              "photo": "https://image.tmdb.org/t/p/w500/ptehnWmMOgguxCSDbxcdauRF9rx.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "張琪",
+              "job": "Director"
+            },
+            {
+              "name": "孫悅",
+              "job": "Writer"
+            },
+            {
+              "name": "張琪",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "大風殺",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1454800?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -16356,8 +16852,8 @@
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           }
         },
@@ -16832,8 +17328,8 @@
             "lastChanged": "2026-08-26T03:11:26.296988+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 19,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -19169,13 +19665,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 60,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -21441,12 +21937,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -21494,12 +21990,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
