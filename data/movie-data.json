@@ -1,12 +1,287 @@
 {
-  "generated_at": "2026-08-26T10:41:06.866057+08:00",
+  "generated_at": "2026-08-26T11:20:40.169539+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 53,
-    "soon_count": 61
+    "now_count": 54,
+    "soon_count": 64
   },
   "movies": {
     "now": [
+      {
+        "id": 212162,
+        "titleZh": "魔法少女小圓 新編 叛逆的物語",
+        "titleEn": "劇場版 魔法少女まどか☆マギカ[新編]叛逆の物語",
+        "releaseDate": "2026-08-21",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-21",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/mbFong623jN1FtxsUwcHKv3rtHS.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/tjWDJoTul5wn6BpnMH4ZWVcFWfx.jpg",
+        "voteAverage": "7.8",
+        "genre": [
+          "懸疑",
+          "動畫",
+          "奇幻"
+        ],
+        "duration": 117,
+        "synopsis": "鹿目圓，本來是一位擁有幸福日常生活的平凡人，直至為瞭解放殘酷命運連鎖的那天，她賭上身心去改變世界法則，拯救一眾魔法少女。因為極度思念而奇蹟般儲存相關記憶的少女，曉美焰，在重組後的世界繼續戰鬥，並一直盼望彼此帶著值得懷緬的歡笑，再次相遇[105]。  鹿目圓的付出，改變了整個世界。而新世界中的魔法少女，所面臨的，是希望？還是絕望？",
+        "imdb": "7.9",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 4773,
+            "lastChanged": "2026-08-26T11:20:40.169539+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "悠木碧",
+            "char": "Madoka Kaname (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+          },
+          {
+            "name": "齋藤千和",
+            "char": "Homura Akemi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jxWuA4K0ZPkOQMeIgLlzaHSkgiV.jpg"
+          },
+          {
+            "name": "喜多村英梨",
+            "char": "Sayaka Miki (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/AioVwYxfpr9zMEQPamI6j9JqXVn.jpg"
+          },
+          {
+            "name": "水橋香織",
+            "char": "Mami Tomoe (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/eDhVZ9en7T4lvsQ99OkRizroSQd.jpg"
+          },
+          {
+            "name": "野中藍",
+            "char": "Kyoko Sakura (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/gEZVaoDeVK04HCmv0dJr6MGO9Se.jpg"
+          },
+          {
+            "name": "阿澄佳奈",
+            "char": "Nagisa Momoe (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/5GroiCPTO6PcYaZQXTGWltoT1kq.jpg"
+          },
+          {
+            "name": "加藤英美里",
+            "char": "Kyubey (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/m0zqjeg65sEe5TTy4mKqgwXVipI.jpg"
+          },
+          {
+            "name": "後藤邑子",
+            "char": "Junko Kaname (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/1VqFJ6oLDQAtSZHHj675QBTDqFD.jpg"
+          },
+          {
+            "name": "巖永哲哉",
+            "char": "Tomohisa Kaname (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/4IG4sg8dFOizFboBCfeftDzYslU.jpg"
+          },
+          {
+            "name": "吉田聖子",
+            "char": "Kyousuke Kamijou (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/yGRYD1AbgTEXcNP0xUSk8pzFyC3.jpg"
+          },
+          {
+            "name": "新谷良子",
+            "char": "Hitomi Shizuki (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jKdvT4CEWgP0YfREgZI960vsC1A.jpg"
+          },
+          {
+            "name": "巖男潤子",
+            "char": "Kazuko Satome (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/bKyMLT1MgDTnXafsq2ur32VMwY5.jpg"
+          },
+          {
+            "name": "松岡禎丞",
+            "char": "Nakazawa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ugDwdWEXnmv43jcbnfAi4XwiQ8C.jpg"
+          },
+          {
+            "name": "赤崎千夏",
+            "char": "School Girl (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/nYYs30FgGrgr3uOiQ4ASmRpFca2.jpg"
+          },
+          {
+            "name": "五十嵐裕美",
+            "char": "School Girl (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/rVQfafFKUWZMNxqGYlHc2EPyNhc.jpg"
+          },
+          {
+            "name": "上田麗奈",
+            "char": "School Girl (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "宮本幸裕",
+            "job": "Director"
+          },
+          {
+            "name": "虛淵玄",
+            "job": "Screenplay"
+          },
+          {
+            "name": "新房昭之",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 12947880,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "劇場版 魔法少女まどか☆マギカ[新編]叛逆の物語",
+        "platforms": [
+          {
+            "name": "Catchplay",
+            "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+          }
+        ],
+        "popularity": 4.0666,
+        "imdbId": "tt2457282",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 117,
+          "genres": [
+            "懸疑",
+            "動畫",
+            "奇幻"
+          ],
+          "synopsis": "鹿目圓，本來是一位擁有幸福日常生活的平凡人，直至為瞭解放殘酷命運連鎖的那天，她賭上身心去改變世界法則，拯救一眾魔法少女。因為極度思念而奇蹟般儲存相關記憶的少女，曉美焰，在重組後的世界繼續戰鬥，並一直盼望彼此帶著值得懷緬的歡笑，再次相遇[105]。  鹿目圓的付出，改變了整個世界。而新世界中的魔法少女，所面臨的，是希望？還是絕望？",
+          "poster": "https://image.tmdb.org/t/p/w500/mbFong623jN1FtxsUwcHKv3rtHS.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/tjWDJoTul5wn6BpnMH4ZWVcFWfx.jpg",
+          "voteAverage": "7.8",
+          "trailerKey": null,
+          "imdbId": "tt2457282",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "悠木碧",
+              "char": "Madoka Kaname (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+            },
+            {
+              "name": "齋藤千和",
+              "char": "Homura Akemi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jxWuA4K0ZPkOQMeIgLlzaHSkgiV.jpg"
+            },
+            {
+              "name": "喜多村英梨",
+              "char": "Sayaka Miki (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/AioVwYxfpr9zMEQPamI6j9JqXVn.jpg"
+            },
+            {
+              "name": "水橋香織",
+              "char": "Mami Tomoe (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/eDhVZ9en7T4lvsQ99OkRizroSQd.jpg"
+            },
+            {
+              "name": "野中藍",
+              "char": "Kyoko Sakura (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/gEZVaoDeVK04HCmv0dJr6MGO9Se.jpg"
+            },
+            {
+              "name": "阿澄佳奈",
+              "char": "Nagisa Momoe (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/5GroiCPTO6PcYaZQXTGWltoT1kq.jpg"
+            },
+            {
+              "name": "加藤英美里",
+              "char": "Kyubey (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/m0zqjeg65sEe5TTy4mKqgwXVipI.jpg"
+            },
+            {
+              "name": "後藤邑子",
+              "char": "Junko Kaname (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/1VqFJ6oLDQAtSZHHj675QBTDqFD.jpg"
+            },
+            {
+              "name": "巖永哲哉",
+              "char": "Tomohisa Kaname (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/4IG4sg8dFOizFboBCfeftDzYslU.jpg"
+            },
+            {
+              "name": "吉田聖子",
+              "char": "Kyousuke Kamijou (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/yGRYD1AbgTEXcNP0xUSk8pzFyC3.jpg"
+            },
+            {
+              "name": "新谷良子",
+              "char": "Hitomi Shizuki (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jKdvT4CEWgP0YfREgZI960vsC1A.jpg"
+            },
+            {
+              "name": "巖男潤子",
+              "char": "Kazuko Satome (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/bKyMLT1MgDTnXafsq2ur32VMwY5.jpg"
+            },
+            {
+              "name": "松岡禎丞",
+              "char": "Nakazawa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ugDwdWEXnmv43jcbnfAi4XwiQ8C.jpg"
+            },
+            {
+              "name": "赤崎千夏",
+              "char": "School Girl (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/nYYs30FgGrgr3uOiQ4ASmRpFca2.jpg"
+            },
+            {
+              "name": "五十嵐裕美",
+              "char": "School Girl (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/rVQfafFKUWZMNxqGYlHc2EPyNhc.jpg"
+            },
+            {
+              "name": "上田麗奈",
+              "char": "School Girl (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "宮本幸裕",
+              "job": "Director"
+            },
+            {
+              "name": "虛淵玄",
+              "job": "Screenplay"
+            },
+            {
+              "name": "新房昭之",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 12947880,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "劇場版 魔法少女まどか☆マギカ[新編]叛逆の物語",
+          "platforms": [
+            {
+              "name": "Catchplay",
+              "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/212162?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 12197,
         "titleZh": "愛重奏",
@@ -156,7 +431,7 @@
             "logo": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg"
           }
         ],
-        "popularity": 2.0292,
+        "popularity": 1.9981,
         "imdbId": "tt0827517",
         "countries": [
           "Norway"
@@ -907,7 +1182,7 @@
         "origLang": "fr",
         "origTitle": "Marsupilami",
         "platforms": [],
-        "popularity": 11.0646,
+        "popularity": 10.872,
         "imdbId": "tt33029380",
         "countries": [
           "France",
@@ -2577,7 +2852,7 @@
         "origLang": "ja",
         "origTitle": "映畫キミとアイドルプリキュア♪お待たせ！キミに屆けるキラッキライブ！",
         "platforms": [],
-        "popularity": 1.3042,
+        "popularity": 1.5164,
         "imdbId": "tt36607192",
         "countries": [
           "Japan"
@@ -5910,7 +6185,7 @@
         "origLang": "en",
         "origTitle": "Leviticus",
         "platforms": [],
-        "popularity": 71.6766,
+        "popularity": 68.8409,
         "imdbId": "tt39143902",
         "countries": [
           "Australia",
@@ -6254,11 +6529,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 80000000,
@@ -6373,11 +6648,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 80000000,
@@ -7301,7 +7576,7 @@
         "origLang": "fr",
         "origTitle": "L’Âme Idéale",
         "platforms": [],
-        "popularity": 2.5226,
+        "popularity": 3.2211,
         "imdbId": "tt35526093",
         "countries": [
           "France"
@@ -7565,7 +7840,7 @@
         "origLang": "hi",
         "origTitle": "होमबाउंड",
         "platforms": [],
-        "popularity": 3.6921,
+        "popularity": 3.0659,
         "imdbId": "tt26733325",
         "countries": [
           "India",
@@ -10418,7 +10693,7 @@
         "origLang": "zh",
         "origTitle": "魯冰花",
         "platforms": [],
-        "popularity": 1.5715,
+        "popularity": 1.7217,
         "imdbId": "tt0097791",
         "countries": [
           "Taiwan"
@@ -15019,7 +15294,7 @@
         "origLang": "ko",
         "origTitle": "그녀가 돌아온 날",
         "platforms": [],
-        "popularity": 2.1378,
+        "popularity": 2.0299,
         "imdbId": "tt39368030",
         "countries": [
           "South Korea"
@@ -15611,6 +15886,286 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 71883,
+        "titleZh": "超時空甩尾",
+        "titleEn": "レッドライン",
+        "releaseDate": "2026-09-04",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/pTMurNQfneGDaplyHfwrcKxlG4s.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hpiEAclfvNJOYPEIhmVewK3n77c.jpg",
+        "voteAverage": "7.5",
+        "genre": [
+          "動畫",
+          "動作",
+          "科幻"
+        ],
+        "duration": 102,
+        "synopsis": "在傳統四輪車輛被空氣動力車取代的時代，有著五年一度決定宇宙最快，為了獲勝即使使用武器也沒關係的賽事『REDLINE』。其最新一屆的的舉辦地選在了史上最險惡的星球「機界」，好戰的機界軍將車手視為是侵入者而出動了，受到了猛烈攻擊幹擾的賽事其結果將會是……",
+        "imdb": "7.5",
+        "rt": "70%",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 20380,
+            "lastChanged": "2026-08-26T11:20:40.169539+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 10,
+            "lastChanged": "2026-08-26T11:20:40.169539+08:00"
+          }
+        },
+        "trailerKey": "Ac95HNpLvr4",
+        "cast": [
+          {
+            "name": "木村拓哉",
+            "char": "JP (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
+          },
+          {
+            "name": "蒼井優",
+            "char": "Sonoshee McLaren (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+          },
+          {
+            "name": "淺野忠信",
+            "char": "Frisbee (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg"
+          },
+          {
+            "name": "青野武",
+            "char": "Old Man Mole (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
+          },
+          {
+            "name": "我修院達也",
+            "char": "Lynchman (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/fLqIdkShknsJmZy4EfBWuWyHN4C.jpg"
+          },
+          {
+            "name": "石塚運昇",
+            "char": "Colonel Volton (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/nmj1vTrJc0zvuUYqxSyWXmIGBlP.jpg"
+          },
+          {
+            "name": "三宅健太",
+            "char": "Little Deyzuna (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
+          },
+          {
+            "name": "森下能幸",
+            "char": "Shinkai (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/yG5wnn8UrvZ1qelNpit6Lnba0xC.jpg"
+          },
+          {
+            "name": "長島茂",
+            "char": "Inuki Boss (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/70OZtKOHEGvbuMQAbQ01cGxrUDO.jpg"
+          },
+          {
+            "name": "岡田義徳",
+            "char": "Johnny Boy (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/sAKmrT8MKckGjx2lHhEWvsUqyPP.jpg"
+          },
+          {
+            "name": "津田寛治",
+            "char": "Trava (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg"
+          },
+          {
+            "name": "堀內賢雄",
+            "char": "Titan (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qIsrjSbtdhmmUdd3xvpDHNWRuJp.jpg"
+          },
+          {
+            "name": "郷裡大輔",
+            "char": "Gori-Rider (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/g5OeBa8Rww8VNZiJuU7RhZxodwc.jpg"
+          },
+          {
+            "name": "轟木一騎",
+            "char": "Todoroki (voice)",
+            "photo": null
+          },
+          {
+            "name": "石井康嗣",
+            "char": "Machine Head (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ao882dlS1ERrar6iq0qedBVBAhH.jpg"
+          },
+          {
+            "name": "廣田行生",
+            "char": "Roboworld President (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "小池健",
+            "job": "Director"
+          },
+          {
+            "name": "榎戸洋司",
+            "job": "Screenplay"
+          },
+          {
+            "name": "櫻井大樹",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "レッドライン",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 3.8949,
+        "imdbId": "tt1483797",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 102,
+          "genres": [
+            "動畫",
+            "動作",
+            "科幻"
+          ],
+          "synopsis": "在傳統四輪車輛被空氣動力車取代的時代，有著五年一度決定宇宙最快，為了獲勝即使使用武器也沒關係的賽事『REDLINE』。其最新一屆的的舉辦地選在了史上最險惡的星球「機界」，好戰的機界軍將車手視為是侵入者而出動了，受到了猛烈攻擊幹擾的賽事其結果將會是……",
+          "poster": "https://image.tmdb.org/t/p/w500/pTMurNQfneGDaplyHfwrcKxlG4s.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/hpiEAclfvNJOYPEIhmVewK3n77c.jpg",
+          "voteAverage": "7.5",
+          "trailerKey": "Ac95HNpLvr4",
+          "imdbId": "tt1483797",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "木村拓哉",
+              "char": "JP (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
+            },
+            {
+              "name": "蒼井優",
+              "char": "Sonoshee McLaren (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+            },
+            {
+              "name": "淺野忠信",
+              "char": "Frisbee (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg"
+            },
+            {
+              "name": "青野武",
+              "char": "Old Man Mole (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
+            },
+            {
+              "name": "我修院達也",
+              "char": "Lynchman (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/fLqIdkShknsJmZy4EfBWuWyHN4C.jpg"
+            },
+            {
+              "name": "石塚運昇",
+              "char": "Colonel Volton (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/nmj1vTrJc0zvuUYqxSyWXmIGBlP.jpg"
+            },
+            {
+              "name": "三宅健太",
+              "char": "Little Deyzuna (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
+            },
+            {
+              "name": "森下能幸",
+              "char": "Shinkai (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/yG5wnn8UrvZ1qelNpit6Lnba0xC.jpg"
+            },
+            {
+              "name": "長島茂",
+              "char": "Inuki Boss (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/70OZtKOHEGvbuMQAbQ01cGxrUDO.jpg"
+            },
+            {
+              "name": "岡田義徳",
+              "char": "Johnny Boy (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/sAKmrT8MKckGjx2lHhEWvsUqyPP.jpg"
+            },
+            {
+              "name": "津田寛治",
+              "char": "Trava (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg"
+            },
+            {
+              "name": "堀內賢雄",
+              "char": "Titan (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qIsrjSbtdhmmUdd3xvpDHNWRuJp.jpg"
+            },
+            {
+              "name": "郷裡大輔",
+              "char": "Gori-Rider (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/g5OeBa8Rww8VNZiJuU7RhZxodwc.jpg"
+            },
+            {
+              "name": "轟木一騎",
+              "char": "Todoroki (voice)",
+              "photo": null
+            },
+            {
+              "name": "石井康嗣",
+              "char": "Machine Head (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ao882dlS1ERrar6iq0qedBVBAhH.jpg"
+            },
+            {
+              "name": "廣田行生",
+              "char": "Roboworld President (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "小池健",
+              "job": "Director"
+            },
+            {
+              "name": "榎戸洋司",
+              "job": "Screenplay"
+            },
+            {
+              "name": "櫻井大樹",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "レッドライン",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/71883?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 822653,
         "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
         "titleEn": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
@@ -15943,7 +16498,7 @@
         "origLang": "ko",
         "origTitle": "호프",
         "platforms": [],
-        "popularity": 17.0648,
+        "popularity": 21.1954,
         "imdbId": "tt27369017",
         "countries": [
           "South Korea"
@@ -18493,7 +19048,7 @@
         "origLang": "zh",
         "origTitle": "大仙尪仔",
         "platforms": [],
-        "popularity": 0.6385,
+        "popularity": 0.7305,
         "imdbId": "tt43659346",
         "countries": [
           "Taiwan"
@@ -19274,7 +19829,7 @@
         "origLang": "es",
         "origTitle": "Pacífico",
         "platforms": [],
-        "popularity": 4.339,
+        "popularity": 5.2357,
         "imdbId": "tt4634974",
         "countries": [
           "Argentina",
@@ -19681,6 +20236,222 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1651166?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1701409,
+        "titleZh": "LOVE ≠ COMEDY",
+        "titleEn": "ラブ≠コメディ",
+        "releaseDate": "2026-09-18",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/jHbs2rUKr6qOqT2Rt5Q9Kt8F2TK.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "愛情",
+          "喜劇"
+        ],
+        "duration": 134,
+        "synopsis": "人氣演員神崎麗司被稱為「360度零死角美男」，主演過多部愛情喜劇。在麗司迎來30歲之際，他希望能透過富有內涵的作品，以演員的身分獲得評價，但他仍不停收到正統愛喜劇的邀約。當麗司得知這次的對手演員是偶像團體成員南風美里時感到十分抗拒，但沒想到與她的相遇竟讓麗司的人生有了巨大轉變……",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "-7aMtmQha80",
+        "cast": [
+          {
+            "name": "中島健人",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/gKs2ondJ9iXtsgdxzjKASODQLS3.jpg"
+          },
+          {
+            "name": "長濱禰留",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/yBoBWNt1CMSFf82uC6DKdZ6ba0L.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "紙谷楓",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "ラブ≠コメディ",
+        "platforms": [],
+        "popularity": 0.9882,
+        "imdbId": "tt43653895",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 134,
+          "genres": [
+            "愛情",
+            "喜劇"
+          ],
+          "synopsis": "人氣演員神崎麗司被稱為「360度零死角美男」，主演過多部愛情喜劇。在麗司迎來30歲之際，他希望能透過富有內涵的作品，以演員的身分獲得評價，但他仍不停收到正統愛喜劇的邀約。當麗司得知這次的對手演員是偶像團體成員南風美里時感到十分抗拒，但沒想到與她的相遇竟讓麗司的人生有了巨大轉變……",
+          "poster": "https://image.tmdb.org/t/p/w500/jHbs2rUKr6qOqT2Rt5Q9Kt8F2TK.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": "-7aMtmQha80",
+          "imdbId": "tt43653895",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "中島健人",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/gKs2ondJ9iXtsgdxzjKASODQLS3.jpg"
+            },
+            {
+              "name": "長濱禰留",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/yBoBWNt1CMSFf82uC6DKdZ6ba0L.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "紙谷楓",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "ラブ≠コメディ",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1701409?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1740257,
+        "titleZh": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+        "titleEn": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+        "releaseDate": "2026-09-20",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-20",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
+        "voteAverage": "",
+        "genre": [
+          "音樂"
+        ],
+        "duration": 255,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "쟈니",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/rfbshYYaNggXAOslrvI97wxG4eO.jpg"
+          },
+          {
+            "name": "태용",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/jUwPULKYInH6xdbVU1XGOzitLYt.jpg"
+          },
+          {
+            "name": "유타",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/bpG17CsrRhYofypP7KBDyfG0jho.jpg"
+          },
+          {
+            "name": "在玹",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/rOKDkDCIUcoPdzhOrRbuWK1zJN3.jpg"
+          },
+          {
+            "name": "해찬",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/s37bCyFQAMsAzevWUe2a8xa3Fck.jpg"
+          }
+        ],
+        "crew": [],
+        "budget": 0,
+        "revenue": 0,
+        "status": "In Production",
+        "origLang": "ko",
+        "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+        "platforms": [],
+        "popularity": 1.0916,
+        "imdbId": "tt44568569",
+        "countries": [],
+        "detail": {
+          "duration": 255,
+          "genres": [
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt44568569",
+          "countries": [],
+          "cast": [
+            {
+              "name": "쟈니",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/rfbshYYaNggXAOslrvI97wxG4eO.jpg"
+            },
+            {
+              "name": "태용",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/jUwPULKYInH6xdbVU1XGOzitLYt.jpg"
+            },
+            {
+              "name": "유타",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/bpG17CsrRhYofypP7KBDyfG0jho.jpg"
+            },
+            {
+              "name": "在玹",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/rOKDkDCIUcoPdzhOrRbuWK1zJN3.jpg"
+            },
+            {
+              "name": "해찬",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/s37bCyFQAMsAzevWUe2a8xa3Fck.jpg"
+            }
+          ],
+          "crew": [],
+          "budget": 0,
+          "revenue": 0,
+          "status": "In Production",
+          "origLang": "ko",
+          "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1740257?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -20784,7 +21555,7 @@
         "origLang": "en",
         "origTitle": "LINKIN PARK: UNSHATTER",
         "platforms": [],
-        "popularity": 2.4546,
+        "popularity": 2.3005,
         "imdbId": "tt43442522",
         "countries": [
           "United States of America",
@@ -21185,7 +21956,7 @@
         "origLang": "en",
         "origTitle": "Verity",
         "platforms": [],
-        "popularity": 7.7351,
+        "popularity": 8.7105,
         "imdbId": "tt32261958",
         "countries": [
           "United States of America"
@@ -24139,11 +24910,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Brian K. Vaughan",
@@ -24251,11 +25022,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Brian K. Vaughan",
