@@ -669,19 +669,7 @@ def choose_rerelease_tmdb_match(movie):
     """配對影城候選；明確重映標記才忽略本次上映年份。"""
     from cinema_rereleases import has_rerelease_marker, strip_rerelease_labels
 
-    overrides = load_tmdb_overrides()
-    override = overrides.get(movie.get("atmovies_id", ""))
-    if not override:
-        requested_title_keys = {
-            normalize_title_key(movie.get("title_zh")),
-            normalize_title_key(movie.get("title_en")),
-        } - {""}
-        override = next((
-            value for value in overrides.values()
-            if requested_title_keys.intersection(
-                normalize_title_key(title) for title in value.get("source_titles", [])
-            )
-        ), None)
+    override = find_tmdb_override(movie)
     if override and override.get("tmdb_id"):
         result = tmdb_movie(override["tmdb_id"])
         if result:
@@ -904,6 +892,25 @@ def load_tmdb_overrides():
     except Exception as e:
         log(f"  Failed to load overrides: {e}")
         return {}
+
+
+def find_tmdb_override(movie, overrides=None):
+    """依來源 ID 或人工確認過的片名尋找 TMDB 覆寫。"""
+    overrides = overrides if overrides is not None else load_tmdb_overrides()
+    override = overrides.get(movie.get("atmovies_id", ""))
+    if override:
+        return override
+
+    requested_title_keys = {
+        normalize_title_key(movie.get("title_zh")),
+        normalize_title_key(movie.get("title_en")),
+    } - {""}
+    return next((
+        value for value in overrides.values()
+        if requested_title_keys.intersection(
+            normalize_title_key(title) for title in value.get("source_titles", [])
+        )
+    ), None)
 
 
 def tmdb_title_override(tmdb_id):
@@ -1970,7 +1977,7 @@ def main():
 
     for i, movie in enumerate(unique, 1):
         log(f"[{i}/{len(unique)}] {movie['title_zh']} ({movie['release_date_tw']})")
-        override = tmdb_overrides.get(movie["atmovies_id"])
+        override = find_tmdb_override(movie, tmdb_overrides)
         if override and override.get("tmdb_id"):
             override_id = override["tmdb_id"]
             log(f"  TMDB override: {movie['atmovies_id']} -> {override_id}")
