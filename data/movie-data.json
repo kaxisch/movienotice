@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-26T15:30:21.745375+08:00",
+  "generated_at": "2026-08-26T17:28:24.077069+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 56,
-    "soon_count": 67
+    "now_count": 57,
+    "soon_count": 69
   },
   "movies": {
     "now": [
@@ -3318,17 +3318,17 @@
         "duration": 95,
         "synopsis": "目睹億萬富翁企業家老闆在面前遭到殺害後，柯爾李德被誣陷為兇手，他被迫展開逃亡，同時要在過程中設法揭發一樁國際陰謀。",
         "imdb": "",
-        "rt": "51%",
+        "rt": "50%",
         "mc": "52",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 91,
-            "lastChanged": "2026-08-22T10:04:09.255354+08:00"
+            "votes": 101,
+            "lastChanged": "2026-08-26T17:28:24.077069+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 24,
+            "votes": 25,
             "lastChanged": "2026-08-22T10:04:09.255354+08:00"
           }
         },
@@ -11952,6 +11952,79 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1480621,
+        "titleZh": "傑克與孤鳥",
+        "titleEn": "Jack & Flo",
+        "releaseDate": "2026-06-19",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-06-19",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/59SEsefg4woVk6UG8AudNT2rfi9.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "冒險"
+        ],
+        "duration": 14,
+        "synopsis": "傑克獨居在遺世獨立的懸崖小島上，四周盡是無垠海洋。盛年時期的他，曾經是守望燈塔的管理員，而今，他享受著平靜而簡單的生活，在島上他的住房周圍，傑克只有一座燈塔和一棵小樹作伴，彷彿整個世界只剩下他一個人存在。 某一天，當他坐在懸崖邊釣魚時，意外遇見一隻受困在這座小島的鵜鶘，一段友誼就此展開，也悄然改變了傑剋日復一日的生活。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "Amaury Campion",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Jack & Flo",
+        "platforms": [],
+        "popularity": 0.4867,
+        "imdbId": null,
+        "countries": [],
+        "detail": {
+          "duration": 14,
+          "genres": [
+            "冒險"
+          ],
+          "synopsis": "傑克獨居在遺世獨立的懸崖小島上，四周盡是無垠海洋。盛年時期的他，曾經是守望燈塔的管理員，而今，他享受著平靜而簡單的生活，在島上他的住房周圍，傑克只有一座燈塔和一棵小樹作伴，彷彿整個世界只剩下他一個人存在。 某一天，當他坐在懸崖邊釣魚時，意外遇見一隻受困在這座小島的鵜鶘，一段友誼就此展開，也悄然改變了傑剋日復一日的生活。",
+          "poster": "https://image.tmdb.org/t/p/w500/59SEsefg4woVk6UG8AudNT2rfi9.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [],
+          "cast": [],
+          "crew": [
+            {
+              "name": "Amaury Campion",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Jack & Flo",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1480621?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1084244,
         "titleZh": "玩具總動員5",
         "titleEn": "Toy Story 5",
@@ -14485,7 +14558,7 @@
         "origLang": "en",
         "origTitle": "The Invite",
         "platforms": [],
-        "popularity": 60.822,
+        "popularity": 58.2172,
         "imdbId": "tt14173636",
         "countries": [
           "United States of America"
@@ -17076,7 +17149,7 @@
         "origLang": "en",
         "origTitle": "Fall 2: Deadpoint",
         "platforms": [],
-        "popularity": 27.7888,
+        "popularity": 28.3391,
         "imdbId": "tt31192372",
         "countries": [
           "United Kingdom",
@@ -19723,8 +19796,8 @@
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 6,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           }
         },
@@ -21075,6 +21148,249 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1740257?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1598667,
+        "titleZh": "危險關係—Lesley Manville版(英國國家劇院現場)",
+        "titleEn": "National Theatre Live: Les Liaisons Dangereuses",
+        "releaseDate": "2026-09-22",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-22",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
+        "voteAverage": "",
+        "genre": [
+          "劇情",
+          "愛情",
+          "喜劇"
+        ],
+        "duration": 179,
+        "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Aidan Turner",
+            "char": "Vicomte de Valmont",
+            "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
+          },
+          {
+            "name": "萊斯利·曼維爾",
+            "char": "Marquise de Merteuil",
+            "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
+          },
+          {
+            "name": "莫妮卡·巴巴羅",
+            "char": "Madame de Tourvel",
+            "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+          },
+          {
+            "name": "Darragh Hand",
+            "char": "Chevalier Danceny",
+            "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
+          },
+          {
+            "name": "Cat Simmons",
+            "char": "Madame de Volanges",
+            "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
+          },
+          {
+            "name": "Hannah van der Westhuysen",
+            "char": "Cécile Volanges",
+            "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
+          },
+          {
+            "name": "Ali Goldsmith",
+            "char": "Major-Domo / Dancer",
+            "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
+          },
+          {
+            "name": "Gabrielle Drake",
+            "char": "Madame de Rosemonde",
+            "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
+          },
+          {
+            "name": "Nandi Bhebhe",
+            "char": "Julie / Understudy Madame de Tourvel",
+            "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
+          },
+          {
+            "name": "Sharif Afifi",
+            "char": "Azolan / Understudy Vicomte de Valmont",
+            "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
+          },
+          {
+            "name": "Curtis Angus",
+            "char": "Father Anselm / Dancer",
+            "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
+          },
+          {
+            "name": "Ishmail Aaron",
+            "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
+            "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
+          },
+          {
+            "name": "Charlotte Avery",
+            "char": "Ensemble / Understudy Marquise de Merteuil",
+            "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
+          },
+          {
+            "name": "Lucia Chocarro",
+            "char": "Émile",
+            "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
+          },
+          {
+            "name": "Liz Ewing",
+            "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
+            "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
+          },
+          {
+            "name": "Georges Hann",
+            "char": "Dancer",
+            "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Marianne Elliott",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
+        "platforms": [],
+        "popularity": 1.6408,
+        "imdbId": "tt40258746",
+        "countries": [
+          "United Kingdom"
+        ],
+        "detail": {
+          "duration": 179,
+          "genres": [
+            "劇情",
+            "愛情",
+            "喜劇"
+          ],
+          "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
+          "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt40258746",
+          "countries": [
+            "United Kingdom"
+          ],
+          "cast": [
+            {
+              "name": "Aidan Turner",
+              "char": "Vicomte de Valmont",
+              "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
+            },
+            {
+              "name": "萊斯利·曼維爾",
+              "char": "Marquise de Merteuil",
+              "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
+            },
+            {
+              "name": "莫妮卡·巴巴羅",
+              "char": "Madame de Tourvel",
+              "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+            },
+            {
+              "name": "Darragh Hand",
+              "char": "Chevalier Danceny",
+              "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
+            },
+            {
+              "name": "Cat Simmons",
+              "char": "Madame de Volanges",
+              "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
+            },
+            {
+              "name": "Hannah van der Westhuysen",
+              "char": "Cécile Volanges",
+              "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
+            },
+            {
+              "name": "Ali Goldsmith",
+              "char": "Major-Domo / Dancer",
+              "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
+            },
+            {
+              "name": "Gabrielle Drake",
+              "char": "Madame de Rosemonde",
+              "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
+            },
+            {
+              "name": "Nandi Bhebhe",
+              "char": "Julie / Understudy Madame de Tourvel",
+              "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
+            },
+            {
+              "name": "Sharif Afifi",
+              "char": "Azolan / Understudy Vicomte de Valmont",
+              "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
+            },
+            {
+              "name": "Curtis Angus",
+              "char": "Father Anselm / Dancer",
+              "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
+            },
+            {
+              "name": "Ishmail Aaron",
+              "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
+              "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
+            },
+            {
+              "name": "Charlotte Avery",
+              "char": "Ensemble / Understudy Marquise de Merteuil",
+              "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
+            },
+            {
+              "name": "Lucia Chocarro",
+              "char": "Émile",
+              "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
+            },
+            {
+              "name": "Liz Ewing",
+              "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
+              "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
+            },
+            {
+              "name": "Georges Hann",
+              "char": "Dancer",
+              "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Marianne Elliott",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1598667?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -22691,7 +23007,7 @@
         "synopsis": "俄羅斯教師秘密記錄在烏俄戰爭期間，小鎮學校成了徵兵中心的過程，帶出教育工作者在軍事化背景下面臨的道德困境。",
         "imdb": "7.9",
         "rt": "100%",
-        "mc": "80",
+        "mc": "79",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -22699,14 +23015,14 @@
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 52,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-08-23T10:12:25.564126+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-26T17:28:24.077069+08:00"
           }
         },
         "trailerKey": "CLNG8B60APk",
@@ -23336,7 +23652,7 @@
         "origLang": "ja",
         "origTitle": "映畫 すみっコぐらし 空の王國とふたりのコ",
         "platforms": [],
-        "popularity": 0.8236,
+        "popularity": 0.8389,
         "imdbId": "tt38859765",
         "countries": [
           "Japan"
@@ -24539,6 +24855,153 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1729116?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1507563,
+        "titleZh": "華倫夫人的職業",
+        "titleEn": "National Theatre Live: Mrs. Warren's Profession",
+        "releaseDate": "2026-10-20",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-20",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 114,
+        "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Imelda Staunton",
+            "char": "Mrs Peggy Warren",
+            "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
+          },
+          {
+            "name": "貝希·卡特",
+            "char": "Vivie Warren",
+            "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
+          },
+          {
+            "name": "Kevin Doyle",
+            "char": "Reverend Samuel Gardner",
+            "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
+          },
+          {
+            "name": "Robert Glenister",
+            "char": "Sir George Crofts",
+            "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
+          },
+          {
+            "name": "Reuben Joseph",
+            "char": "Frank Gardner",
+            "photo": null
+          },
+          {
+            "name": "Sid Sigar",
+            "char": "Mr. Praed",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Dominic Cooke",
+            "job": "Director"
+          },
+          {
+            "name": "George Bernard Shaw",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "National Theatre Live: Mrs. Warren's Profession",
+        "platforms": [],
+        "popularity": 1.2703,
+        "imdbId": "tt37511195",
+        "countries": [
+          "United Kingdom"
+        ],
+        "detail": {
+          "duration": 114,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
+          "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt37511195",
+          "countries": [
+            "United Kingdom"
+          ],
+          "cast": [
+            {
+              "name": "Imelda Staunton",
+              "char": "Mrs Peggy Warren",
+              "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
+            },
+            {
+              "name": "貝希·卡特",
+              "char": "Vivie Warren",
+              "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
+            },
+            {
+              "name": "Kevin Doyle",
+              "char": "Reverend Samuel Gardner",
+              "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
+            },
+            {
+              "name": "Robert Glenister",
+              "char": "Sir George Crofts",
+              "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
+            },
+            {
+              "name": "Reuben Joseph",
+              "char": "Frank Gardner",
+              "photo": null
+            },
+            {
+              "name": "Sid Sigar",
+              "char": "Mr. Praed",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Dominic Cooke",
+              "job": "Director"
+            },
+            {
+              "name": "George Bernard Shaw",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "National Theatre Live: Mrs. Warren's Profession",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1507563?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
