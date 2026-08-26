@@ -135,6 +135,22 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(movies[0]["release_date_tw"], "")
         self.assertEqual(movies[0]["screen_count"], 2)
 
+    def test_short_movie_with_atmovies_cinema_evidence_is_kept(self):
+        movie = {"releaseDate": "2026-08-21", "duration": 45, "platforms": []}
+        record = {
+            "source_bucket": "now",
+            "candidate_kind": "atmovies",
+            "atmovies_id": "ftko99799079",
+        }
+
+        self.assertTrue(weekly.should_keep_static_movie(movie, record))
+
+    def test_short_tmdb_only_discovery_without_cinema_evidence_is_excluded(self):
+        movie = {"releaseDate": "2026-11-01", "duration": 45, "platforms": []}
+        record = {"source_bucket": "next", "candidate_kind": ""}
+
+        self.assertFalse(weekly.should_keep_static_movie(movie, record))
+
     def test_missing_candidates_increment_and_seen_candidates_reset(self):
         previous = [
             {"tmdb_id": "101", "title_zh": "仍在開眼", "atmovies_present": "FALSE", "consecutive_misses": "2"},
