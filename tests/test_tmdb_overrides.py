@@ -2,7 +2,11 @@ import unittest
 
 from unittest.mock import patch
 
-from scripts.weekly_check import find_tmdb_override, tmdb_title_override
+from scripts.weekly_check import (
+    find_tmdb_override,
+    tmdb_title_override,
+    to_traditional_text,
+)
 
 
 class TmdbOverrideTests(unittest.TestCase):
@@ -39,6 +43,9 @@ class TmdbOverrideTests(unittest.TestCase):
         }
 
         self.assertEqual(tmdb_title_override(1400940), "泥面人")
+
+    def test_traditional_conversion_preserves_manual_title_wording(self):
+        self.assertEqual(to_traditional_text("泥面人"), "泥面人")
 
 
 if __name__ == "__main__":

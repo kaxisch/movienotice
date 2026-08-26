@@ -103,6 +103,7 @@ if OpenCC is None:
     sys.exit(1)
 
 TRADITIONAL_CONVERTER = OpenCC("s2twp")
+TRADITIONAL_PROTECTED_TERMS = ("泥面人",)
 
 
 def log(msg):
@@ -110,7 +111,19 @@ def log(msg):
 
 
 def to_traditional_text(value):
-    return TRADITIONAL_CONVERTER.convert(value) if isinstance(value, str) else value
+    if not isinstance(value, str):
+        return value
+    protected = value
+    placeholders = {}
+    for index, term in enumerate(TRADITIONAL_PROTECTED_TERMS):
+        placeholder = f"__MOVIENOTICE_PROTECTED_{index}__"
+        if term in protected:
+            protected = protected.replace(term, placeholder)
+            placeholders[placeholder] = term
+    converted = TRADITIONAL_CONVERTER.convert(protected)
+    for placeholder, term in placeholders.items():
+        converted = converted.replace(placeholder, term)
+    return converted
 
 
 def to_traditional_data(value):
