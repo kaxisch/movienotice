@@ -155,6 +155,37 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(by_id[202]["consecutive_misses"], 1)
         self.assertTrue(by_id[303]["ever_seen_atmovies"])
 
+    def test_corrected_tmdb_match_replaces_old_candidate_for_same_atmovies_id(self):
+        previous = [
+            {
+                "tmdb_id": "1700944",
+                "title_zh": "LOVE ≠",
+                "atmovies_id": "fjjp43653895",
+                "ever_seen_atmovies": "TRUE",
+                "atmovies_present": "TRUE",
+            },
+            {
+                "tmdb_id": "1701409",
+                "title_zh": "LOVE ≠ COMEDY",
+                "atmovies_id": "fjjp43653895",
+                "ever_published": "TRUE",
+                "atmovies_present": "FALSE",
+            },
+        ]
+        current = [{
+            "tmdb_id": 1701409,
+            "title_zh": "LOVE ≠ COMEDY",
+            "title_en": "Love Not Comedy",
+            "atmovies_id": "fjjp43653895",
+        }]
+
+        merged = publish.merge_candidate_presence(current, previous, "2026-08-29")
+
+        self.assertEqual([item["tmdb_id"] for item in merged], [1701409])
+        self.assertEqual(merged[0]["title_zh"], "LOVE ≠ COMEDY")
+        self.assertTrue(merged[0]["atmovies_present"])
+        self.assertTrue(merged[0]["ever_published"])
+
     def test_abnormally_small_audit_does_not_update_presence(self):
         previous = [
             {"tmdb_id": str(index), "atmovies_present": "TRUE"}
