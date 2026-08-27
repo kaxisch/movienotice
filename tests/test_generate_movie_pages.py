@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.generate_movie_pages import format_tmdb_score, rating_items
+from scripts.generate_movie_pages import format_tmdb_score, rating_items, slugify
 
 
 class GenerateMoviePagesRatingTests(unittest.TestCase):
@@ -17,6 +17,50 @@ class GenerateMoviePagesRatingTests(unittest.TestCase):
                 {"voteAverage": "7.2"},
             ),
             [("IMDb", "8.1"), ("RT", "94%"), ("MT", "77"), ("TMDB", "72%")],
+        )
+
+
+class GenerateMoviePagesSlugTests(unittest.TestCase):
+    def test_uses_english_title_when_available(self):
+        self.assertEqual(
+            slugify({"id": 1400940, "titleEn": "Clayface", "titleZh": "泥面人"}),
+            "1400940-clayface",
+        )
+
+    def test_falls_back_when_original_title_has_no_ascii_slug(self):
+        self.assertEqual(
+            slugify({
+                "id": 1701409,
+                "titleEn": "ラブ≠コメディ",
+                "titleZh": "LOVE ≠ COMEDY",
+            }),
+            "1701409-love-comedy",
+        )
+
+    def test_uses_movie_when_no_title_has_ascii_characters(self):
+        self.assertEqual(
+            slugify({"id": 1, "titleEn": "電影", "titleZh": "電影"}),
+            "1-movie",
+        )
+
+    def test_ignores_single_latin_character_inside_cjk_title(self):
+        self.assertEqual(
+            slugify({
+                "id": 1542261,
+                "titleEn": "映畫ドラえもん 新・のび太の海底鬼巖城",
+                "titleZh": "電影哆啦A夢：新‧大雄的海底鬼巖城",
+            }),
+            "1542261-movie",
+        )
+
+    def test_ignores_number_inside_non_latin_title(self):
+        self.assertEqual(
+            slugify({
+                "id": 1264821,
+                "titleEn": "Коты Эрмитажа 2. Тайна египетского зала",
+                "titleZh": "喵喵博物館2：埃及寶藏",
+            }),
+            "1264821-movie",
         )
 
 
