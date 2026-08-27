@@ -296,10 +296,26 @@ def format_date(value):
 
 
 def slugify(movie):
-    title = movie.get("titleEn") or movie.get("origTitle") or movie.get("titleZh") or "movie"
-    slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
-    if not slug:
-        slug = "movie"
+    slug = ""
+    for title in (
+        movie.get("titleEn"),
+        movie.get("origTitle"),
+        movie.get("titleZh"),
+    ):
+        if not title:
+            continue
+        has_cjk = bool(re.search(r"[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]", title))
+        ascii_letter_count = len(re.findall(r"[a-z]", title.lower()))
+        if has_cjk and ascii_letter_count < 3:
+            continue
+        if ascii_letter_count == 0 and any(
+            char.isalpha() and not char.isascii() for char in title
+        ):
+            continue
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        if slug:
+            break
+    slug = slug or "movie"
     return f"{movie.get('id')}-{slug}"
 
 
