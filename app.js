@@ -1017,8 +1017,23 @@ function openModal(id) {
 }
 
 function movieDetailSlug(movie, detail) {
-  var title = (movie && (movie.titleEn || movie.origTitle || movie.titleZh)) || (detail && detail.origTitle) || "movie";
-  var slug = String(title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  var titles = [
+    movie && movie.titleEn,
+    movie && movie.origTitle,
+    movie && movie.titleZh,
+    detail && detail.origTitle
+  ];
+  var slug = "";
+  for (var i = 0; i < titles.length; i++) {
+    if (!titles[i]) continue;
+    var title = String(titles[i]);
+    var hasCjk = /[\u3400-\u9fff\u3040-\u30ff\uac00-\ud7af]/.test(title);
+    var asciiLetters = (title.toLowerCase().match(/[a-z]/g) || []).length;
+    if (hasCjk && asciiLetters < 3) continue;
+    if (asciiLetters === 0 && /[^\x00-\x7f]/.test(title.replace(/[^\p{L}]/gu, ""))) continue;
+    slug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+    if (slug) break;
+  }
   if (!slug) slug = "movie";
   return String(movie.id) + "-" + slug;
 }
