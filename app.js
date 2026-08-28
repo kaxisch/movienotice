@@ -17,26 +17,6 @@ var mobilePanelOpen = false;
 var tabSortState = { now: "date_desc", soon: "date_asc" };
 var currentView = 'card';
 
-var countryMap = {
-  "US":"美國","GB":"英國","FR":"法國","DE":"德國","IT":"義大利","JP":"日本","KR":"韓國",
-  "CN":"中國","HK":"香港","TW":"台灣","AU":"澳洲","CA":"加拿大","ES":"西班牙","IN":"印度",
-  "NZ":"紐西蘭","IE":"愛爾蘭","NL":"荷蘭","BE":"比利時","SE":"瑞典","DK":"丹麥","NO":"挪威",
-  "FI":"芬蘭","RU":"俄羅斯","MX":"墨西哥","BR":"巴西","AR":"阿根廷","TH":"泰國","SG":"新加坡",
-  "ZA":"南非","AT":"奧地利","CH":"瑞士","PL":"波蘭","CZ":"捷克","HU":"匈牙利","PT":"葡萄牙",
-  "GR":"希臘","IL":"以色列","TR":"土耳其","MY":"馬來西亞","ID":"印尼","PH":"菲律賓","VN":"越南",
-  "United States of America":"美國","Japan":"日本","United Kingdom":"英國","Taiwan":"台灣",
-  "France":"法國","Canada":"加拿大","Netherlands":"荷蘭","South Korea":"韓國","Germany":"德國",
-  "Thailand":"泰國","Hong Kong":"香港","Mexico":"墨西哥","Saudi Arabia":"沙烏地阿拉伯",
-  "Spain":"西班牙","Belgium":"比利時","Ireland":"愛爾蘭","United Arab Emirates":"阿拉伯聯合大公國",
-  "Brazil":"巴西","Chile":"智利","China":"中國","Tunisia":"突尼西亞","Cyprus":"賽普勒斯",
-  "Italy":"義大利","Palestinian Territory":"巴勒斯坦","Indonesia":"印尼","Hungary":"匈牙利",
-  "Turkey":"土耳其","Greece":"希臘","Sweden":"瑞典","Philippines":"菲律賓","India":"印度"
-};
-function formatCountryList(countries) {
-  if (!countries || !countries.length) return "—";
-  return countries.map(function(country) { return countryMap[country] || country; }).join(" · ");
-}
-
 var genreMap = {
   "动作":"動作","冒险":"冒險","喜剧":"喜劇","犯罪":"犯罪","纪录片":"紀錄片",
   "剧情":"劇情","家庭":"家庭","奇幻":"奇幻","历史":"歷史","恐怖":"恐怖",
@@ -102,7 +82,6 @@ function shiftedLocalDate(n) {
   return formatLocalDate(d);
 }
 function today() { return shiftedLocalDate(0); }
-function daysAgo(n) { return shiftedLocalDate(-n); }
 function daysLater(n) { return shiftedLocalDate(n); }
 function taipeiToday() {
   var parts = new Intl.DateTimeFormat("en-CA", {
@@ -196,24 +175,8 @@ function updateReleaseTicker() {
   var characterCount = titles.join("").length + titles.length * 3;
   track.style.setProperty("--ticker-duration", Math.max(36, characterCount * 0.5) + "s");
 }
-function dateYear(s) { return s ? parseInt(s.slice(0, 4), 10) : 0; }
-function dateDiffDays(a, b) {
-  if (!a || !b) return 0;
-  var ad = new Date(a + "T00:00:00Z");
-  var bd = new Date(b + "T00:00:00Z");
-  return Math.round(Math.abs(ad - bd) / 86400000);
-}
 function normalizeTitleKey(text) {
   return String(text || "").toLowerCase().trim().replace(/[\s\-–—:：'"!?,.&／/·・()\[\]{}]+/g, "");
-}
-function isLikelyTmdbMismatch(whitelistDate, primaryReleaseDate, twTheatricalDate) {
-  if (!whitelistDate) return false;
-  if (primaryReleaseDate) {
-    var yearGap = Math.abs(dateYear(primaryReleaseDate) - dateYear(whitelistDate));
-    if (yearGap > 2) return true;
-  }
-  if (twTheatricalDate && dateDiffDays(twTheatricalDate, whitelistDate) > 120) return true;
-  return false;
 }
 function formatDate(d) {
   if (!d) return "";
@@ -283,31 +246,6 @@ function escHtml(s) {
   return String(s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 }
 
-function getDetail(id) {
-  var movie = findMovieInLists(id);
-  if (!movie) return Promise.resolve({});
-  if (movie.detail) return Promise.resolve(movie.detail);
-  return Promise.resolve({
-    duration: movie.duration || "",
-    genres: movie.genre || [],
-    synopsis: movie.synopsis || "",
-    poster: movie.poster || null,
-    backdrop: movie.backdrop || null,
-    voteAverage: movie.voteAverage || "",
-    trailerKey: movie.trailerKey || null,
-    imdbId: movie.imdbId || "",
-    countries: movie.countries || [],
-    cast: movie.cast || [],
-    crew: movie.crew || [],
-    budget: movie.budget || 0,
-    revenue: movie.revenue || 0,
-    status: movie.status || "",
-    origLang: movie.origLang || "",
-    origTitle: movie.origTitle || "",
-    platforms: movie.platforms || []
-  });
-}
-
 function rebucketMoviesByReleaseDate() {
   var rebucketed = { now: [], soon: [] };
   var seen = {};
@@ -323,17 +261,6 @@ function rebucketMoviesByReleaseDate() {
     });
   });
   allMovies = rebucketed;
-}
-
-function findMovieInLists(id) {
-  var found = null;
-  ["now","soon"].forEach(function(t) {
-    if (found) return;
-    for (var i = 0; i < allMovies[t].length; i++) {
-      if (allMovies[t][i].id === id) { found = allMovies[t][i]; break; }
-    }
-  });
-  return found;
 }
 
 function cardHTML(m, showRatings) {
@@ -714,308 +641,6 @@ function switchTab(t) {
   }, 160);
 }
 
-var modalSwipeState = {
-  tracking: false,
-  active: false,
-  pointerId: null,
-  startX: 0,
-  startY: 0,
-  deltaX: 0,
-  deltaY: 0,
-  lastX: 0,
-  lastTime: 0,
-  velocityX: 0,
-  closing: false
-};
-var lockedBodyScrollY = 0;
-var modalVerticalTouchState = {
-  active: false,
-  pointerId: null,
-  startY: 0,
-  lastY: 0
-};
-
-function isTouchModalViewport() {
-  return window.matchMedia("(max-width: 1024px)").matches;
-}
-
-function resetModalSwipe() {
-  modalSwipeState.tracking = false;
-  modalSwipeState.active = false;
-  modalSwipeState.pointerId = null;
-  modalSwipeState.startX = 0;
-  modalSwipeState.startY = 0;
-  modalSwipeState.deltaX = 0;
-  modalSwipeState.deltaY = 0;
-  modalSwipeState.lastX = 0;
-  modalSwipeState.lastTime = 0;
-  modalSwipeState.velocityX = 0;
-  modalSwipeState.closing = false;
-  var modal = document.getElementById("detail-modal");
-  if (!modal) return;
-  modal.classList.remove("modal-opening");
-  modal.classList.remove("swiping");
-  modal.classList.remove("swipe-closing");
-  modal.style.removeProperty("transform");
-  modal.style.removeProperty("transition");
-  modal.style.removeProperty("--modal-swipe-offset");
-  modal.style.removeProperty("--modal-swipe-progress");
-}
-
-function animateModalOpen(modal) {
-  if (!isTouchModalViewport()) return;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  modal.classList.add("modal-opening");
-  modal.style.setProperty("transition", "none");
-  modal.style.setProperty("transform", "translate3d(100vw,0,0)");
-  void modal.offsetWidth;
-  window.requestAnimationFrame(function() {
-    modal.style.setProperty("transition", "transform 0.32s cubic-bezier(.22,.8,.36,1)");
-    modal.style.setProperty("transform", "translate3d(0,0,0)");
-  });
-  window.setTimeout(function() {
-    modal.classList.remove("modal-opening");
-    modal.style.removeProperty("transform");
-    modal.style.removeProperty("transition");
-  }, 340);
-}
-
-function lockBodyScroll() {
-  lockedBodyScrollY = window.scrollY || window.pageYOffset || 0;
-  document.documentElement.style.overflow = "hidden";
-  document.documentElement.style.overscrollBehavior = "none";
-  document.body.style.position = "fixed";
-  document.body.style.top = -lockedBodyScrollY + "px";
-  document.body.style.left = "0";
-  document.body.style.right = "0";
-  document.body.style.width = "100%";
-  document.body.style.overflow = "hidden";
-}
-
-function unlockBodyScroll() {
-  document.documentElement.style.overflow = "";
-  document.documentElement.style.overscrollBehavior = "";
-  document.body.style.position = "";
-  document.body.style.top = "";
-  document.body.style.left = "";
-  document.body.style.right = "";
-  document.body.style.width = "";
-  document.body.style.overflow = "";
-  window.scrollTo(0, lockedBodyScrollY || 0);
-}
-
-function finishSwipeClose() {
-  currentModalMovieId = null;
-  var modal = document.getElementById("detail-modal");
-  if (modal) modal.classList.remove("open");
-  resetModalSwipe();
-  unlockBodyScroll();
-}
-
-function animateModalSwipeClose() {
-  var modal = document.getElementById("detail-modal");
-  if (!modal || modalSwipeState.closing) return;
-  modalSwipeState.closing = true;
-  modal.classList.remove("swiping");
-  modal.classList.add("swipe-closing");
-  modal.style.setProperty("--modal-swipe-progress", "0");
-  window.requestAnimationFrame(function() {
-    modal.style.setProperty("--modal-swipe-offset", window.innerWidth + "px");
-  });
-  window.setTimeout(finishSwipeClose, 240);
-}
-
-function buildModalHeroSlot(imageUrl) {
-  if (!imageUrl) return "";
-  return '<img src="' + escHtml(imageUrl) + '" style="position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;object-position:top center;opacity:1;filter:blur(30px);will-change:transform"/>' +
-    '<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.08) 44%,rgba(0,0,0,0.30) 58%,rgba(0,0,0,0.70) 79%,rgba(0,0,0,0.94) 100%)"></div>';
-}
-
-function buildModalLoadingState(movie) {
-  var heroImage = movie && (movie.backdrop || movie.poster) ? (movie.backdrop || movie.poster) : "";
-  var title = movie && (movie.titleZh || movie.titleEn) ? (movie.titleZh || movie.titleEn) : "載入中";
-  var subtitle = [];
-  if (movie && movie.releaseDate) subtitle.push(formatReleaseDates(movie, "、"));
-  if (movie && movie.duration) subtitle.push(movie.duration + "分鐘");
-  return {
-    heroSlot: buildModalHeroSlot(heroImage),
-    content: '<div class="fade-in"><div class="modal-hero"><div class="modal-hero-media">' +
-      (heroImage
-        ? '<img class="modal-hero-img" src="' + escHtml(heroImage) + '" fetchpriority="high" decoding="async"/>'
-        : '<div style="width:100%;height:100%" class="skeleton"></div>') +
-      '</div><div class="modal-hero-fade"></div><div class="modal-hero-info"><div class="modal-info-group">' +
-      '<h2 class="modal-title">' + escHtml(title) + '</h2>' +
-      '<p class="modal-subtitle">' + escHtml(subtitle.join(' · ') || "載入詳細資訊中") + '</p>' +
-      '</div></div></div><div class="modal-body"><div style="display:flex;align-items:center;justify-content:center;min-height:180px"><div class="skeleton" style="width:64px;height:64px;border-radius:50%"></div></div></div></div>'
-  };
-}
-
-function shouldPreventModalOverscroll(modalScroll, deltaY) {
-  var maxScrollTop = modalScroll.scrollHeight - modalScroll.clientHeight;
-  var atTop = modalScroll.scrollTop <= 0;
-  var atBottom = modalScroll.scrollTop >= maxScrollTop - 1;
-  return (atTop && deltaY > 0) || (atBottom && deltaY < 0);
-}
-
-function initModalSwipe() {
-  var modal = document.getElementById("detail-modal");
-  var modalScroll = modal ? modal.querySelector(".modal-scroll") : null;
-  if (!modal || !modalScroll) return;
-
-  modalScroll.addEventListener("touchstart", function(e) {
-    if (!isTouchModalViewport() || !modal.classList.contains("open")) return;
-    if (modal.classList.contains("modal-opening")) return;
-    if (e.touches.length !== 1) return;
-    var verticalTouch = e.touches[0];
-    modalVerticalTouchState.active = true;
-    modalVerticalTouchState.pointerId = verticalTouch.identifier;
-    modalVerticalTouchState.startY = verticalTouch.clientY;
-    modalVerticalTouchState.lastY = verticalTouch.clientY;
-    if (e.target.closest(".cast-row")) return;
-    var touch = e.touches[0];
-    if (modalSwipeState.closing) return;
-    modalSwipeState.tracking = true;
-    modalSwipeState.active = false;
-    modalSwipeState.pointerId = touch.identifier;
-    modalSwipeState.startX = touch.clientX;
-    modalSwipeState.startY = touch.clientY;
-    modalSwipeState.deltaX = 0;
-    modalSwipeState.deltaY = 0;
-    modalSwipeState.lastX = touch.clientX;
-    modalSwipeState.lastTime = Date.now();
-    modalSwipeState.velocityX = 0;
-  }, { passive: true });
-
-  modal.addEventListener("touchmove", function(e) {
-    if (!isTouchModalViewport() || !modal.classList.contains("open")) return;
-    if (!modalVerticalTouchState.active) return;
-    var verticalTouch = null;
-    for (var i = 0; i < e.touches.length; i++) {
-      if (e.touches[i].identifier === modalVerticalTouchState.pointerId) {
-        verticalTouch = e.touches[i];
-        break;
-      }
-    }
-    if (!verticalTouch) return;
-    var deltaYFromLast = verticalTouch.clientY - modalVerticalTouchState.lastY;
-    modalVerticalTouchState.lastY = verticalTouch.clientY;
-    if (shouldPreventModalOverscroll(modalScroll, deltaYFromLast)) {
-      e.preventDefault();
-    }
-  }, { passive: false });
-
-  modalScroll.addEventListener("touchmove", function(e) {
-    if (!isTouchModalViewport() || !modal.classList.contains("open")) return;
-    var verticalTouch = null;
-    for (var vt = 0; vt < e.touches.length; vt++) {
-      if (e.touches[vt].identifier === modalVerticalTouchState.pointerId) {
-        verticalTouch = e.touches[vt];
-        break;
-      }
-    }
-    if (verticalTouch) {
-      var deltaYFromLast = verticalTouch.clientY - modalVerticalTouchState.lastY;
-      if (shouldPreventModalOverscroll(modalScroll, deltaYFromLast)) {
-        e.preventDefault();
-      }
-    }
-    if (!modalSwipeState.tracking || !isTouchModalViewport() || !modal.classList.contains("open")) return;
-    var touch = null;
-    for (var i = 0; i < e.touches.length; i++) {
-      if (e.touches[i].identifier === modalSwipeState.pointerId) {
-        touch = e.touches[i];
-        break;
-      }
-    }
-    if (!touch) return;
-    var now = Date.now();
-    var dt = Math.max(now - modalSwipeState.lastTime, 16);
-    modalSwipeState.velocityX = (touch.clientX - modalSwipeState.lastX) / dt;
-    modalSwipeState.lastX = touch.clientX;
-    modalSwipeState.lastTime = now;
-    modalSwipeState.deltaX = touch.clientX - modalSwipeState.startX;
-    modalSwipeState.deltaY = touch.clientY - modalSwipeState.startY;
-    if (!modalSwipeState.active) {
-      if (modalSwipeState.deltaX <= 0) return;
-      if (Math.abs(modalSwipeState.deltaY) > Math.abs(modalSwipeState.deltaX)) return;
-      if (modalSwipeState.deltaX < 12) return;
-      modalSwipeState.active = true;
-      modal.classList.add("swiping");
-    }
-    if (modalSwipeState.deltaX <= 0) {
-      modal.style.setProperty("--modal-swipe-offset", "0px");
-      modal.style.setProperty("--modal-swipe-progress", "0");
-      return;
-    }
-    if (Math.abs(modalSwipeState.deltaY) > Math.abs(modalSwipeState.deltaX)) {
-      modal.style.setProperty("--modal-swipe-offset", "0px");
-      modal.style.setProperty("--modal-swipe-progress", "0");
-      return;
-    }
-    e.preventDefault();
-    var easedOffset = modalSwipeState.deltaX * 0.16;
-    var clampedOffset = Math.min(easedOffset, 48);
-    modal.style.setProperty("--modal-swipe-offset", clampedOffset + "px");
-    modal.style.setProperty("--modal-swipe-progress", "0");
-  }, { passive: false });
-
-  function finishSwipe() {
-    if (!modalSwipeState.tracking) return;
-    modalSwipeState.tracking = false;
-    if (!modalSwipeState.active) {
-      modalSwipeState.pointerId = null;
-      return;
-    }
-    var shouldClose =
-      Math.abs(modalSwipeState.deltaX) > Math.abs(modalSwipeState.deltaY) * 1.15 &&
-      (modalSwipeState.deltaX > 26 || (modalSwipeState.deltaX > 14 && modalSwipeState.velocityX > 0.35));
-    modalSwipeState.active = false;
-    modalSwipeState.pointerId = null;
-    if (shouldClose) {
-      animateModalSwipeClose();
-      return;
-    }
-    modal.classList.remove("swiping");
-    modal.style.setProperty("--modal-swipe-offset", "0px");
-    modal.style.setProperty("--modal-swipe-progress", "0");
-  }
-
-  modalScroll.addEventListener("touchend", finishSwipe);
-  modalScroll.addEventListener("touchend", function() {
-    modalVerticalTouchState.active = false;
-    modalVerticalTouchState.pointerId = null;
-  });
-  modalScroll.addEventListener("touchcancel", function() {
-    modalVerticalTouchState.active = false;
-    modalVerticalTouchState.pointerId = null;
-    resetModalSwipe();
-  });
-}
-
-function openModal(id) {
-  if (!id) return;
-  var modal = document.getElementById("detail-modal");
-  var modalScroll = modal.querySelector(".modal-scroll");
-  var movie = null;
-  ["now","soon"].forEach(function(t) { allMovies[t].forEach(function(m) { if (m.id === id) movie = m; }); });
-  if (!movie) movie = {};
-  currentModalMovieId = id;
-  resetModalSwipe();
-  modal.classList.add("open");
-  animateModalOpen(modal);
-  lockBodyScroll();
-  if (modalScroll) modalScroll.scrollTop = 0;
-  var loadingState = buildModalLoadingState(movie);
-  document.getElementById("modal-hero-slot").innerHTML = loadingState.heroSlot;
-  document.getElementById("modal-content").innerHTML = loadingState.content;
-  getDetail(id).then(function(detail) {
-    if (currentModalMovieId !== id || !modal.classList.contains("open")) return;
-    var imdbRating = movie.imdb || "";
-    renderModal(movie, detail, imdbRating);
-    if (modalScroll) modalScroll.scrollTop = 0;
-  });
-}
-
 function movieDetailSlug(movie, detail) {
   var titles = [
     movie && movie.titleEn,
@@ -1042,96 +667,6 @@ function movieDetailHref(movie, detail) {
   return "movies/" + encodeURIComponent(movieDetailSlug(movie, detail)) + "/";
 }
 
-function renderModal(movie, detail, imdbRating) {
-  var trailerKey = detail.trailerKey || movie.trailerKey;
-  var langMap = {en:"英語",zh:"中文",ja:"日語",ko:"韓語",fr:"法語",es:"西班牙語",de:"德語",it:"義大利語",th:"泰語",hi:"印地語",tl:"菲律賓語",ar:"阿拉伯語",id:"印尼語",pt:"葡萄牙語",tr:"土耳其語"};
-  var genres = normalizeGenreList(detail.genres || movie.genre || []);
-  var genreTags = "";
-  for (var i = 0; i < Math.min(genres.length,3); i++) genreTags += '<span class="modal-genre-tag">' + escHtml(genres[i]) + '</span>';
-  var cast = detail.cast || []; var castHTML = "";
-  for (var c = 0; c < cast.length; c++) {
-    castHTML += '<div class="cast-card">';
-    if (cast[c].photo) castHTML += '<img class="cast-photo" src="' + escHtml(cast[c].photo) + '" loading="lazy"/>';
-    else castHTML += '<div class="cast-no-photo"><span class="material-symbols-outlined">person</span></div>';
-    castHTML += '<p class="cast-name">' + escHtml(cast[c].name) + '</p><p class="cast-char">' + escHtml(cast[c].char) + '</p></div>';
-  }
-  var crew = detail.crew || []; var crewHTML = "";
-  for (var cr = 0; cr < crew.length; cr++) {
-    var rl = crew[cr].job === "Director" ? "導演" : crew[cr].job === "Screenplay" ? "編劇" : "製作人";
-    crewHTML += '<div><p class="crew-name">' + escHtml(crew[cr].name) + '</p><p class="crew-role">' + rl + '</p></div>';
-  }
-  var platforms = detail.platforms || []; var platformHTML = "";
-  for (var p = 0; p < platforms.length; p++) {
-    platformHTML += '<div class="platform-tag">';
-    if (platforms[p].logo) platformHTML += '<img class="platform-logo" src="https://image.tmdb.org/t/p/w92' + platforms[p].logo + '"/>';
-    platformHTML += '<span class="platform-name">' + escHtml(platforms[p].name) + '</span></div>';
-  }
-  var subtitleParts = [];
-  if (detail.origTitle) subtitleParts.push(detail.origTitle);
-  if (movie.releaseDate) subtitleParts.push(formatReleaseDates(movie, "、"));
-  if (detail.duration) subtitleParts.push(detail.duration + "分鐘");
-  var modalSubtitleHTML = (detail.origTitle ? '<span class="original-title">' + escHtml(detail.origTitle) + '</span>' : '') +
-    (detail.origTitle && subtitleParts.length > 1 ? ' · ' : '') +
-    escHtml(subtitleParts.slice(detail.origTitle ? 1 : 0).join(' · '));
-  var metaRows = [];
-  if (Array.isArray(movie.twTheatricalReleases) && movie.twTheatricalReleases.length > 1) {
-    metaRows.push(["台灣上映", formatReleaseDates(movie, "、")]);
-  }
-  metaRows = metaRows.concat([
-    ["原始標題", detail.origTitle || movie.titleEn || "—"],
-    ["原始語言", langMap[detail.origLang] || detail.origLang || "—"],
-    ["製片國家", formatCountryList(detail.countries)],
-    ["電影成本", detail.budget ? "$" + detail.budget.toLocaleString() : "—"],
-    ["票房收入", detail.revenue ? "$" + detail.revenue.toLocaleString() : "—"]
-  ]);
-  var metaHTML = "";
-  for (var mr = 0; mr < metaRows.length; mr++) metaHTML += '<div class="meta-row"><span class="meta-key">' + metaRows[mr][0] + '</span><span class="meta-val">' + escHtml(metaRows[mr][1]) + '</span></div>';
-  var heroImage = detail.backdrop || movie.backdrop || movie.poster || "";
-  var bdHTML = heroImage ? '<img class="modal-hero-img" src="' + escHtml(heroImage) + '" fetchpriority="high" decoding="async"/>' : '<div style="width:100%;height:100%;background:rgba(255,255,255,0.05)"></div>';
-  var rtRating = movie.rt || "";
-  var mcRating = movie.mc || "";
-  var ratingItems = [];
-  if (imdbRating) ratingItems.push('<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>IMDb <span class="val">' + escHtml(imdbRating) + '</span></span>');
-  if (rtRating) ratingItems.push('<span class="modal-rating-item">' + rtIconSvg('rgba(255,255,255,0.6)') + ' RT <span class="val">' + escHtml(rtRating) + '</span></span>');
-  if (mcRating) ratingItems.push('<span class="modal-rating-item"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="6" cy="6" r="5.3" stroke="rgba(255,255,255,0.6)" stroke-width="0.9"/><text x="6" y="8.2" text-anchor="middle" font-size="7.5" font-family="sans-serif" fill="rgba(255,255,255,0.6)">m</text></svg> MT <span class="val">' + escHtml(mcRating) + '</span></span>');
-  if (detail.voteAverage) ratingItems.push('<span class="modal-rating-item"><span class="material-symbols-outlined star">star</span>TMDB <span class="val">' + tmdbScore(detail.voteAverage) + '</span></span>');
-  var ratingsHTML = ratingItems.join('<span class="modal-rating-divider"></span>');
-  var detailHref = movieDetailHref(movie, detail);
-  var bgHTML = buildModalHeroSlot(heroImage);
-  var html = '<div class="fade-in"><div class="modal-hero"><div class="modal-hero-media">' + bdHTML +
-    '</div><div class="modal-hero-fade"></div>' +
-    '<div class="modal-hero-info">' +
-    '<div class="modal-info-group"><div class="modal-genre-tags">' + genreTags + '</div>' +
-    '<h2 class="modal-title">' + escHtml(movie.titleZh || detail.origTitle || "—") + '</h2>' +
-    '<p class="modal-subtitle">' + modalSubtitleHTML + '</p>' +
-    '</div>' +
-    (ratingsHTML ? '<div class="modal-ratings">' + ratingsHTML + '</div>' : '') +
-    (trailerKey ? '<button class="btn-trailer" onclick="playTrailer(\'' + trailerKey + '\')"><span class="material-symbols-outlined" style="font-size:22px">play_arrow</span>播放預告</button>' : '') +
-    '</div></div><div class="modal-body">' +
-    (detail.synopsis ? '<p class="modal-synopsis">' + escHtml(detail.synopsis) + '</p>' : '') +
-    (crewHTML ? '<div class="crew-grid">' + crewHTML + '</div>' : '') +
-    (castHTML ? '<div class="detail-section"><p class="section-label">主要演員</p><div class="cast-row">' + castHTML + '</div></div>' : '') +
-    (platformHTML ? '<div><p class="section-label">收看平台</p><div class="platform-row">' + platformHTML + '</div></div>' : '') +
-    '<div class="detail-section"><p class="section-label">其他資訊</p><div class="meta-panel">' + metaHTML + '</div>' +
-    '<div class="modal-detail-link-row"><a class="modal-detail-link" href="' + escHtml(detailHref) + '" aria-label="開啟獨立電影頁面" title="開啟獨立電影頁面">' +
-    '<span class="material-symbols-outlined" style="font-size:18px">open_in_new</span></a></div></div></div></div>';
-  document.getElementById("modal-hero-slot").innerHTML = bgHTML;
-  document.getElementById("modal-content").innerHTML = html;
-}
-
-function closeModal() {
-  finishSwipeClose();
-}
-function playTrailer(key) {
-  var isLocal = location.protocol === "file:";
-  if (isLocal) {
-    window.open("https://www.youtube.com/watch?v=" + key, "_blank");
-  } else {
-    document.getElementById("trailer-iframe").src = "https://www.youtube-nocookie.com/embed/" + key + "?autoplay=1&rel=0";
-    document.getElementById("trailer-modal").classList.add("open");
-  }
-}
-function closeTrailer() { document.getElementById("trailer-iframe").src = ""; document.getElementById("trailer-modal").classList.remove("open"); }
 document.addEventListener("keydown", function(e) {
   if (e.key === "Escape") {
     var infoWasOpen = document.getElementById("site-info-panel") && !document.getElementById("site-info-panel").hidden;
@@ -1140,7 +675,6 @@ document.addEventListener("keydown", function(e) {
       var infoButton = document.getElementById("site-info-btn");
       if (infoButton) infoButton.focus();
     }
-    closeTrailer();
   }
 });
 
