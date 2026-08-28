@@ -17,11 +17,15 @@ from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 from candidate_policy import (
+    ATMOVIES_HANDOFF_DAYS,
+    CANDIDATE_RETENTION_DAYS,
     LEGACY_NOW_ATMOVIES_MISS_LIMIT,
     LEGACY_SOON_ATMOVIES_MISS_LIMIT,
     NOW_ATMOVIES_MISS_LIMIT,
+    RERELEASE_MISS_LIMIT,
     SOON_ATMOVIES_MISS_LIMIT,
-    absence_miss_limit,
+    candidate_handoff_phase,
+    candidate_miss_limit,
     sheet_value_is_true,
 )
 
@@ -49,9 +53,6 @@ RERELEASE_HEADERS = [
     "tmdb_date_status", "rerelease_present", "consecutive_misses", "hidden",
     "first_seen", "last_seen", "last_audit_date",
 ]
-RERELEASE_MISS_LIMIT = 1
-CANDIDATE_RETENTION_DAYS = 180
-ATMOVIES_HANDOFF_DAYS = 60
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -333,22 +334,6 @@ def merge_candidate_presence(
     return merged
 
 
-def candidate_handoff_phase(item, run_date):
-    """回傳 now、handoff（上映前 60 天內）或 far（61 天以上）。"""
-    try:
-        release_date = datetime.strptime(
-            str(item.get("tmdb_tw_release_date", "")), "%Y-%m-%d"
-        ).date()
-        audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
-    except (TypeError, ValueError):
-        return ""
-    if release_date <= audit_date:
-        return "now"
-    if release_date > audit_date + timedelta(days=ATMOVIES_HANDOFF_DAYS):
-        return "far"
-    return "handoff"
-
-
 def mark_published_candidates(items, movie_payload):
     """保存曾公開狀態，讓長期連續上映不受固定天數下架。"""
     published_ids = {
@@ -458,15 +443,6 @@ def seed_site_handoff_candidates(previous_items, movie_payload, run_date, manual
             })
             existing_ids.add(tmdb_id)
     return seeded
-
-
-def candidate_miss_limit(item, run_date):
-    try:
-        release_date = datetime.strptime(str(item.get("tmdb_tw_release_date", "")), "%Y-%m-%d").date()
-        audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
-    except (TypeError, ValueError):
-        return None
-    return absence_miss_limit(item, release_date, audit_date)
 
 
 def prune_retired_candidates(items, run_date, published_ids, whitelist_ids, manual_ids):

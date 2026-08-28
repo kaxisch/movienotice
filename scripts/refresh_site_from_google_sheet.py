@@ -14,13 +14,17 @@ from candidate_policy import (
     LEGACY_SOON_ATMOVIES_MISS_LIMIT,
     NOW_ATMOVIES_MISS_LIMIT,
     SOON_ATMOVIES_MISS_LIMIT,
-    absence_miss_limit,
+    allows_continuous_theatrical_run,
+    candidate_priority as shared_candidate_priority,
+    nonnegative_miss_count,
+    rerelease_can_override_regular,
+    rerelease_is_hidden,
     sheet_value_is_true as shared_sheet_value_is_true,
+    should_hide_for_absence,
 )
 
 import weekly_check as weekly
 from publish_to_google_sheet import (
-    ATMOVIES_HANDOFF_DAYS,
     CANDIDATES_SHEET_TITLE,
     RERELEASES_SHEET_TITLE,
     load_service_account_credentials,
@@ -147,44 +151,21 @@ def sheet_value_is_true(value):
 
 
 def atmovies_miss_count(candidate):
-    try:
-        return max(0, int(candidate.get("consecutive_misses", 0) or 0))
-    except (TypeError, ValueError):
-        return 0
+    return nonnegative_miss_count(candidate)
 
 
 def should_hide_for_atmovies_absence(candidate, release_date, today, manual_ids):
     """對已進入院線稽核範圍的非人工電影套用全來源缺席隱藏規則。"""
-    tmdb_id = candidate.get("tmdb_id")
-    if tmdb_id in manual_ids:
-        return False
-    if release_date > today + timedelta(days=ATMOVIES_HANDOFF_DAYS):
-        return False
-    if (
-        sheet_value_is_true(candidate.get("atmovies_present"))
-        or sheet_value_is_true(candidate.get("cinema_present"))
-    ):
-        return False
-    misses = atmovies_miss_count(candidate)
-    limit = absence_miss_limit(candidate, release_date, today)
-    return misses >= limit
+    return should_hide_for_absence(candidate, release_date, today, manual_ids)
 
 
 def should_hide_rerelease(candidate):
-    return sheet_value_is_true(candidate.get("hidden"))
+    return rerelease_is_hidden(candidate)
 
 
 def rerelease_can_override_regular_candidate(candidate):
     """Only a currently visible, date-verified rerelease may replace a regular candidate."""
-    if candidate.get("candidate_kind") != "rerelease" or should_hide_rerelease(candidate):
-        return False
-    cinema_date = str(candidate.get("cinema_release_date", "") or "").strip()
-    tmdb_date = str(candidate.get("tmdb_tw_release_date", "") or "").strip()
-    return (
-        bool(cinema_date)
-        and candidate.get("tmdb_date_status") == "confirmed"
-        and tmdb_date == cinema_date
-    )
+    return rerelease_can_override_regular(candidate)
 
 
 def index_candidates_by_tmdb_id(candidates):
@@ -196,38 +177,11 @@ def index_candidates_by_tmdb_id(candidates):
         if previous is None:
             indexed[tmdb_id] = candidate
             continue
-        candidate_priority = (
-            2 if rerelease_can_override_regular_candidate(candidate)
-            else 0 if candidate.get("candidate_kind") == "rerelease"
-            else 1
-        )
-        previous_priority = (
-            2 if rerelease_can_override_regular_candidate(previous)
-            else 0 if previous.get("candidate_kind") == "rerelease"
-            else 1
-        )
-        if candidate_priority > previous_priority:
+        current_priority = shared_candidate_priority(candidate)
+        previous_priority = shared_candidate_priority(previous)
+        if current_priority > previous_priority:
             indexed[tmdb_id] = candidate
     return indexed
-
-
-def allows_continuous_theatrical_run(candidate, release_date, today):
-    """已發布且未達下架門檻的電影可持續上映，不受 180 天期限影響。"""
-    if candidate.get("candidate_kind") == "rerelease" or release_date > today:
-        return False
-    if sheet_value_is_true(candidate.get("reappeared_after_hidden")):
-        return False
-    if atmovies_miss_count(candidate) >= absence_miss_limit(candidate, release_date, today):
-        return False
-    if sheet_value_is_true(candidate.get("ever_published")):
-        return True
-    # 舊欄位遷移：只接回剛跨過舊 180 天界線、且本次仍在開眼的電影。
-    # 下一次週稽核會把它標記為 ever_published，避免永久依賴此相容條件。
-    return (
-        "ever_published" not in candidate
-        and sheet_value_is_true(candidate.get("atmovies_present"))
-        and release_date >= today - timedelta(days=365)
-    )
 
 
 def build_verified_output(candidates):
