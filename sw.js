@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'movienotice-v15';
+const CACHE_VERSION = 'movienotice-v16';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const POSTER_CACHE = `${CACHE_VERSION}-posters`;
 
@@ -10,6 +10,8 @@ const STATIC_ASSETS = [
   './privacy.html',
   './terms.html',
   './movie-page.css',
+  './app-data.js',
+  './app-ui.js',
   './app.js',
   './manifest.webmanifest?v=10',
   './logo.svg?v=10',

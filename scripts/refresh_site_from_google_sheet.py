@@ -9,6 +9,14 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
+from candidate_policy import (
+    LEGACY_NOW_ATMOVIES_MISS_LIMIT,
+    LEGACY_SOON_ATMOVIES_MISS_LIMIT,
+    NOW_ATMOVIES_MISS_LIMIT,
+    SOON_ATMOVIES_MISS_LIMIT,
+    absence_miss_limit,
+    sheet_value_is_true as shared_sheet_value_is_true,
+)
 
 import weekly_check as weekly
 from publish_to_google_sheet import (
@@ -24,10 +32,6 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 MOVIE_DATA_FILE = ROOT_DIR / "data" / "movie-data.json"
 MANUAL_RELEASES_FILE = ROOT_DIR / "data" / "manual-releases.json"
 WHITELIST_FILE = ROOT_DIR / "data" / "tw-whitelist.json"
-NOW_ATMOVIES_MISS_LIMIT = 1
-SOON_ATMOVIES_MISS_LIMIT = 1
-LEGACY_NOW_ATMOVIES_MISS_LIMIT = 2
-LEGACY_SOON_ATMOVIES_MISS_LIMIT = 5
 
 
 def log(message):
@@ -139,7 +143,7 @@ def load_manual_ids():
 
 
 def sheet_value_is_true(value):
-    return str(value or "").strip().lower() in {"1", "true", "yes", "y"}
+    return shared_sheet_value_is_true(value)
 
 
 def atmovies_miss_count(candidate):
@@ -147,17 +151,6 @@ def atmovies_miss_count(candidate):
         return max(0, int(candidate.get("consecutive_misses", 0) or 0))
     except (TypeError, ValueError):
         return 0
-
-
-def absence_miss_limit(candidate, release_date, today):
-    """舊列沿用原門檻；完成新制跨院線稽核後才切換為一次缺席。"""
-    if sheet_value_is_true(candidate.get("absence_audit_complete")):
-        return NOW_ATMOVIES_MISS_LIMIT if release_date <= today else SOON_ATMOVIES_MISS_LIMIT
-    return (
-        LEGACY_NOW_ATMOVIES_MISS_LIMIT
-        if release_date <= today
-        else LEGACY_SOON_ATMOVIES_MISS_LIMIT
-    )
 
 
 def should_hide_for_atmovies_absence(candidate, release_date, today, manual_ids):
@@ -181,8 +174,21 @@ def should_hide_rerelease(candidate):
     return sheet_value_is_true(candidate.get("hidden"))
 
 
+def rerelease_can_override_regular_candidate(candidate):
+    """Only a currently visible, date-verified rerelease may replace a regular candidate."""
+    if candidate.get("candidate_kind") != "rerelease" or should_hide_rerelease(candidate):
+        return False
+    cinema_date = str(candidate.get("cinema_release_date", "") or "").strip()
+    tmdb_date = str(candidate.get("tmdb_tw_release_date", "") or "").strip()
+    return (
+        bool(cinema_date)
+        and candidate.get("tmdb_date_status") == "confirmed"
+        and tmdb_date == cinema_date
+    )
+
+
 def index_candidates_by_tmdb_id(candidates):
-    """同片重複時：有本次日期的重映候選優先，待確認重映不得蓋掉一般候選。"""
+    """同片重複時，只有已驗證且未隱藏的重映候選可蓋掉一般候選。"""
     indexed = {}
     for candidate in candidates:
         tmdb_id = candidate["tmdb_id"]
@@ -190,19 +196,17 @@ def index_candidates_by_tmdb_id(candidates):
         if previous is None:
             indexed[tmdb_id] = candidate
             continue
-        candidate_is_dated_rerelease = (
-            candidate.get("candidate_kind") == "rerelease"
-            and bool(str(candidate.get("cinema_release_date", "") or "").strip())
+        candidate_priority = (
+            2 if rerelease_can_override_regular_candidate(candidate)
+            else 0 if candidate.get("candidate_kind") == "rerelease"
+            else 1
         )
-        previous_is_dated_rerelease = (
-            previous.get("candidate_kind") == "rerelease"
-            and bool(str(previous.get("cinema_release_date", "") or "").strip())
+        previous_priority = (
+            2 if rerelease_can_override_regular_candidate(previous)
+            else 0 if previous.get("candidate_kind") == "rerelease"
+            else 1
         )
-        if candidate_is_dated_rerelease or (
-            not previous_is_dated_rerelease
-            and previous.get("candidate_kind") == "rerelease"
-            and candidate.get("candidate_kind") != "rerelease"
-        ):
+        if candidate_priority > previous_priority:
             indexed[tmdb_id] = candidate
     return indexed
 

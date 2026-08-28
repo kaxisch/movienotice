@@ -496,19 +496,63 @@ class RefreshVisibilityTests(unittest.TestCase):
 
         self.assertEqual(indexed[45580]["candidate_kind"], "atmovies")
 
-    def test_dated_rerelease_overrides_regular_candidate(self):
+    def test_confirmed_dated_rerelease_overrides_regular_candidate(self):
         candidates = [
             {"tmdb_id": 101, "candidate_kind": "atmovies"},
             {
                 "tmdb_id": 101,
                 "candidate_kind": "rerelease",
                 "cinema_release_date": "2026-08-07",
+                "tmdb_tw_release_date": "2026-08-07",
+                "tmdb_date_status": "confirmed",
+                "hidden": False,
             },
         ]
 
         indexed = refresh.index_candidates_by_tmdb_id(candidates)
 
         self.assertEqual(indexed[101]["candidate_kind"], "rerelease")
+
+    def test_hidden_unverified_rerelease_does_not_override_present_regular_candidate(self):
+        candidates = [
+            {
+                "tmdb_id": 1621964,
+                "candidate_kind": "atmovies",
+                "tmdb_tw_release_date": "2026-09-04",
+                "atmovies_present": True,
+                "consecutive_misses": 0,
+            },
+            {
+                "tmdb_id": 1621964,
+                "candidate_kind": "rerelease",
+                "cinema_release_date": "2026-09-04",
+                "tmdb_tw_release_date": "",
+                "tmdb_date_status": "missing",
+                "rerelease_present": False,
+                "hidden": True,
+            },
+        ]
+
+        indexed = refresh.index_candidates_by_tmdb_id(candidates)
+
+        self.assertEqual(indexed[1621964]["candidate_kind"], "atmovies")
+
+    def test_mismatched_rerelease_date_does_not_override_regular_candidate(self):
+        candidates = [
+            {"tmdb_id": 101, "candidate_kind": "atmovies"},
+            {
+                "tmdb_id": 101,
+                "candidate_kind": "rerelease",
+                "cinema_release_date": "2026-08-07",
+                "tmdb_tw_release_date": "2026-08-14",
+                "tmdb_date_status": "mismatch",
+                "hidden": False,
+            },
+        ]
+
+        indexed = refresh.index_candidates_by_tmdb_id(candidates)
+
+        self.assertEqual(indexed[101]["candidate_kind"], "atmovies")
 
     def test_verified_rerelease_is_not_filtered_as_streaming_only_without_atmovies_id(self):
         movie = {
