@@ -16,6 +16,14 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
+from candidate_policy import (
+    LEGACY_NOW_ATMOVIES_MISS_LIMIT,
+    LEGACY_SOON_ATMOVIES_MISS_LIMIT,
+    NOW_ATMOVIES_MISS_LIMIT,
+    SOON_ATMOVIES_MISS_LIMIT,
+    absence_miss_limit,
+    sheet_value_is_true,
+)
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -44,10 +52,6 @@ RERELEASE_HEADERS = [
 RERELEASE_MISS_LIMIT = 1
 CANDIDATE_RETENTION_DAYS = 180
 ATMOVIES_HANDOFF_DAYS = 60
-NOW_ATMOVIES_MISS_LIMIT = 1
-SOON_ATMOVIES_MISS_LIMIT = 1
-LEGACY_NOW_ATMOVIES_MISS_LIMIT = 2
-LEGACY_SOON_ATMOVIES_MISS_LIMIT = 5
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -173,9 +177,7 @@ def sheet_rows_to_items(values):
 
 
 def is_sheet_true(value, default=False):
-    if value in (None, ""):
-        return default
-    return str(value).strip().lower() in {"1", "true", "yes", "y"}
+    return sheet_value_is_true(value, default=default)
 
 
 def merge_candidate_presence(
@@ -464,13 +466,7 @@ def candidate_miss_limit(item, run_date):
         audit_date = datetime.strptime(run_date, "%Y-%m-%d").date()
     except (TypeError, ValueError):
         return None
-    if is_sheet_true(item.get("absence_audit_complete"), default=False):
-        return NOW_ATMOVIES_MISS_LIMIT if release_date <= audit_date else SOON_ATMOVIES_MISS_LIMIT
-    return (
-        LEGACY_NOW_ATMOVIES_MISS_LIMIT
-        if release_date <= audit_date
-        else LEGACY_SOON_ATMOVIES_MISS_LIMIT
-    )
+    return absence_miss_limit(item, release_date, audit_date)
 
 
 def prune_retired_candidates(items, run_date, published_ids, whitelist_ids, manual_ids):

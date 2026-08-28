@@ -233,10 +233,12 @@
 </footer>
 </main>
 
-<script src="app.js?v=30"></script>
+<script src="app-data.js?v=1"></script>
+<script src="app-ui.js?v=1"></script>
+<script src="app.js?v=31"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js?v=15', { updateViaCache: 'none' })
+    navigator.serviceWorker.register('sw.js?v=16', { updateViaCache: 'none' })
       .then(registration => registration.update())
       .catch(err => console.warn('[SW] register failed:', err));
   }
