@@ -285,9 +285,12 @@ function cardHTML(m, showRatings) {
   }
   metaHTML += '</div>';
   var href = escHtml(movieDetailHref(m));
-  var thisWeekLabel = isThisWeekRelease(m) ? '<span class="this-week-ribbon">本週上映</span>' : '';
+  var isThisWeek = isThisWeekRelease(m);
+  var releaseLabel = m.isRerelease
+    ? '<span class="this-week-ribbon rerelease-ribbon">' + (isThisWeek ? '本週重映' : '經典重映') + '</span>'
+    : (isThisWeek ? '<span class="this-week-ribbon">本週上映</span>' : '');
   return '<a class="movie-card movie-link fade-in" id="card-' + m.id + '" href="' + href + '">' +
-    '<div class="card-img-wrap"><div class="card-poster-clip">' + imgHTML + thisWeekLabel +
+    '<div class="card-img-wrap"><div class="card-poster-clip">' + imgHTML + releaseLabel +
     '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(normalizeGenreList(m.genre).slice(0,2).join(' / ')) + '</span></div></div>' +
     '<span class="card-corner card-corner-tl" aria-hidden="true"></span><span class="card-corner card-corner-tr" aria-hidden="true"></span>' +
     '<span class="card-corner card-corner-bl" aria-hidden="true"></span><span class="card-corner card-corner-br" aria-hidden="true"></span></div>' +

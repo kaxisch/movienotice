@@ -562,11 +562,12 @@ button, input, select { font-family: 'Lato','Noto Sans TC',sans-serif !important
   filter: drop-shadow(0 1px 1px rgba(25,23,18,.22));
   pointer-events: none;
 }
-.card-corner-tr { display: block; top: 0; right: 0; clip-path: polygon(0 0,100% 0,100% 100%); }
-.card-corner-bl { display: block; bottom: 0; left: 0; clip-path: polygon(0 0,0 100%,100% 100%); }
+.card-corner-tl { display: block; top: 0; left: 0; clip-path: polygon(0 0,100% 0,0 100%); }
+.card-corner-br { display: block; right: 0; bottom: 0; clip-path: polygon(100% 0,100% 100%,0 100%); }
 .card-img-wrap:hover { border-color: transparent; box-shadow: none; }
 .card-hover-overlay { background: linear-gradient(to top,rgba(25,23,18,.82),transparent); }
 .this-week-ribbon, .this-week-list-label { color: var(--paper); background: #a18a45; }
+.this-week-ribbon.rerelease-ribbon { background: #496b96; }
 .card-title, .list-title {
   color: var(--ink);
   font-family: 'Crimson Pro','Noto Serif TC',serif;
