@@ -40,6 +40,19 @@ class CandidatePresenceTests(unittest.TestCase):
 
         self.assertFalse(movie["isRerelease"])
 
+    def test_static_movie_does_not_mark_unverified_cinema_candidate_as_rerelease(self):
+        movie = weekly.build_static_movie(
+            {
+                "tmdb_id": 103,
+                "tmdb_tw_release_date": "2026-08-21",
+                "candidate_kind": "cinema",
+            },
+            {"title": "院線電影", "original_title": "Cinema", "genres": []},
+            {},
+        )
+
+        self.assertFalse(movie["isRerelease"])
+
     def test_taiwan_title_override_replaces_japanese_shell_character(self):
         self.assertEqual(
             weekly.tmdb_title_override(9323),
@@ -531,6 +544,7 @@ class RefreshVisibilityTests(unittest.TestCase):
                 "cinema_release_date": "2026-08-07",
                 "tmdb_tw_release_date": "2026-08-07",
                 "tmdb_date_status": "confirmed",
+                "rerelease_verified": True,
                 "rerelease_present": True,
                 "hidden": False,
             },
@@ -539,6 +553,49 @@ class RefreshVisibilityTests(unittest.TestCase):
         indexed = refresh.index_candidates_by_tmdb_id(candidates)
 
         self.assertEqual(indexed[101]["candidate_kind"], "rerelease")
+
+    def test_unverified_rerelease_row_becomes_visible_cinema_candidate(self):
+        candidate = {
+            "rerelease_present": "TRUE",
+            "rerelease_verified": "FALSE",
+        }
+
+        self.assertEqual(refresh.classify_rerelease_candidate(candidate), "cinema")
+
+    def test_verified_rerelease_row_keeps_rerelease_kind(self):
+        candidate = {
+            "rerelease_present": "TRUE",
+            "rerelease_verified": "TRUE",
+        }
+
+        self.assertEqual(refresh.classify_rerelease_candidate(candidate), "rerelease")
+
+    def test_absent_rerelease_row_is_history_only(self):
+        candidate = {
+            "rerelease_present": "FALSE",
+            "rerelease_verified": "TRUE",
+        }
+
+        self.assertEqual(refresh.classify_rerelease_candidate(candidate), "rerelease_history")
+
+    def test_unverified_rerelease_cannot_override_regular_candidate(self):
+        candidates = [
+            {"tmdb_id": 101, "candidate_kind": "atmovies"},
+            {
+                "tmdb_id": 101,
+                "candidate_kind": "rerelease",
+                "cinema_release_date": "2026-08-07",
+                "tmdb_tw_release_date": "2026-08-07",
+                "tmdb_date_status": "confirmed",
+                "rerelease_verified": False,
+                "rerelease_present": True,
+                "hidden": False,
+            },
+        ]
+
+        indexed = refresh.index_candidates_by_tmdb_id(candidates)
+
+        self.assertEqual(indexed[101]["candidate_kind"], "atmovies")
 
     def test_historical_absent_rerelease_does_not_override_regular_candidate(self):
         candidates = [
@@ -635,6 +692,7 @@ class RefreshVisibilityTests(unittest.TestCase):
             "cinema_release_date": cinema_date,
             "tmdb_tw_release_date": cinema_date,
             "tmdb_date_status": "confirmed",
+            "rerelease_verified": True,
             "rerelease_present": True,
         }
         release_results = [{
