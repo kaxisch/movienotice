@@ -1,0 +1,45 @@
+name: Weekly Audit Watchdog
+
+on:
+  schedule:
+    # 08:07 and 09:07 Asia/Taipei every Wednesday and Saturday.
+    - cron: "7 0,1 * * 3,6"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  check-and-retry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Check today's complete audit marker
+        id: audit
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
+        run: python3 scripts/check_weekly_audit_status.py
+
+      - name: Dispatch missed weekly audit
+        if: steps.audit.outputs.completed != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "No complete audit marker for ${{ steps.audit.outputs.audit_date }}; dispatching recovery run."
+          gh workflow run weekly-check.yml --ref main
