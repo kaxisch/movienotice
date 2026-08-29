@@ -172,6 +172,11 @@ def index_candidates_by_tmdb_id(candidates):
     """同片重複時，只有已驗證且未隱藏的重映候選可蓋掉一般候選。"""
     indexed = {}
     for candidate in candidates:
+        if (
+            candidate.get("candidate_kind") == "rerelease"
+            and not rerelease_can_override_regular_candidate(candidate)
+        ):
+            continue
         tmdb_id = candidate["tmdb_id"]
         previous = indexed.get(tmdb_id)
         if previous is None:

@@ -531,6 +531,7 @@ class RefreshVisibilityTests(unittest.TestCase):
                 "cinema_release_date": "2026-08-07",
                 "tmdb_tw_release_date": "2026-08-07",
                 "tmdb_date_status": "confirmed",
+                "rerelease_present": True,
                 "hidden": False,
             },
         ]
@@ -538,6 +539,24 @@ class RefreshVisibilityTests(unittest.TestCase):
         indexed = refresh.index_candidates_by_tmdb_id(candidates)
 
         self.assertEqual(indexed[101]["candidate_kind"], "rerelease")
+
+    def test_historical_absent_rerelease_does_not_override_regular_candidate(self):
+        candidates = [
+            {"tmdb_id": 101, "candidate_kind": "atmovies"},
+            {
+                "tmdb_id": 101,
+                "candidate_kind": "rerelease",
+                "cinema_release_date": "2026-08-07",
+                "tmdb_tw_release_date": "2026-08-07",
+                "tmdb_date_status": "confirmed",
+                "rerelease_present": False,
+                "hidden": False,
+            },
+        ]
+
+        indexed = refresh.index_candidates_by_tmdb_id(candidates)
+
+        self.assertEqual(indexed[101]["candidate_kind"], "atmovies")
 
     def test_hidden_unverified_rerelease_does_not_override_present_regular_candidate(self):
         candidates = [
@@ -614,6 +633,9 @@ class RefreshVisibilityTests(unittest.TestCase):
             "tmdb_id": 101,
             "candidate_kind": "rerelease",
             "cinema_release_date": cinema_date,
+            "tmdb_tw_release_date": cinema_date,
+            "tmdb_date_status": "confirmed",
+            "rerelease_present": True,
         }
         release_results = [{
             "iso_3166_1": "TW",
