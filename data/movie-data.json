@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-29T22:46:56.690015+08:00",
+  "generated_at": "2026-08-29T23:34:02.047115+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 73,
-    "soon_count": 73
+    "soon_count": 74
   },
   "movies": {
     "now": [
@@ -12,7 +12,7 @@
         "titleZh": "航海王：強者天下",
         "titleEn": "ONE PIECE FILM STRONG WORLD",
         "releaseDate": "2026-08-28",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -540,7 +540,7 @@
         "titleZh": "八月三十一日，我在奧斯陸",
         "titleEn": "Oslo, 31. august",
         "releaseDate": "2026-08-28",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -925,12 +925,12 @@
         ],
         "crew": [
           {
-            "name": "Steve Kloves",
-            "job": "Screenplay"
-          },
-          {
             "name": "Chris Columbus",
             "job": "Director"
+          },
+          {
+            "name": "Steve Kloves",
+            "job": "Screenplay"
           }
         ],
         "budget": 125000000,
@@ -1054,12 +1054,12 @@
           ],
           "crew": [
             {
-              "name": "Steve Kloves",
-              "job": "Screenplay"
-            },
-            {
               "name": "Chris Columbus",
               "job": "Director"
+            },
+            {
+              "name": "Steve Kloves",
+              "job": "Screenplay"
             }
           ],
           "budget": 125000000,
@@ -4479,7 +4479,7 @@
         "titleZh": "魔法少女小圓 新編 叛逆的物語",
         "titleEn": "劇場版 魔法少女まどか☆マギカ[新編]叛逆の物語",
         "releaseDate": "2026-08-21",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -4755,7 +4755,7 @@
         "titleZh": "愛重奏",
         "titleEn": "Reprise",
         "releaseDate": "2026-08-21",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -5037,7 +5037,7 @@
         "titleZh": "航海王：機關城的鋼鐵巨兵",
         "titleEn": "ワンピース カラクリ城のメカ巨兵",
         "releaseDate": "2026-08-21",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -5261,7 +5261,7 @@
         "titleZh": "劇場版 境界的彼方－I'LL BE HERE－未來篇",
         "titleEn": "劇場版 境界の彼方 -I'll Be Here- 未來篇",
         "releaseDate": "2026-08-21",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -16933,8 +16933,8 @@
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           }
         },
@@ -17181,6 +17181,298 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 660120,
+        "titleZh": "世界上最爛的人",
+        "titleEn": "Verdens verste menneske",
+        "releaseDate": "2026-09-04",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "劇情",
+          "愛情",
+          "喜劇"
+        ],
+        "duration": 128,
+        "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
+        "imdb": "7.7",
+        "rt": "96%",
+        "mc": "91",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 126525,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
+          },
+          "mc": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
+          }
+        },
+        "trailerKey": "odV6vEvHZMk",
+        "cast": [
+          {
+            "name": "蕾娜特·萊茵斯薇",
+            "char": "Julie",
+            "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+          },
+          {
+            "name": "Anders Danielsen Lie",
+            "char": "Aksel",
+            "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
+          },
+          {
+            "name": "Herbert Nordrum",
+            "char": "Eivind",
+            "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
+          },
+          {
+            "name": "Hans Olav Brenner",
+            "char": "Ole Magnus",
+            "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
+          },
+          {
+            "name": "Helene Bjørnebye",
+            "char": "Karianne",
+            "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
+          },
+          {
+            "name": "Vidar Sandem",
+            "char": "Per Harald",
+            "photo": null
+          },
+          {
+            "name": "Maria Grazia Di Meo",
+            "char": "Sunniva",
+            "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
+          },
+          {
+            "name": "Lasse Gretland",
+            "char": "Kristoffer",
+            "photo": null
+          },
+          {
+            "name": "Karen Røise Kielland",
+            "char": "Tone",
+            "photo": null
+          },
+          {
+            "name": "Marianne Krogh",
+            "char": "Eva",
+            "photo": null
+          },
+          {
+            "name": "Thea Stabell",
+            "char": "Åse",
+            "photo": null
+          },
+          {
+            "name": "Deniz Kaya",
+            "char": "Adil",
+            "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
+          },
+          {
+            "name": "Eia Skjønsberg",
+            "char": "Synne",
+            "photo": null
+          },
+          {
+            "name": "Ruby Dagnall",
+            "char": "Young Actor",
+            "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
+          },
+          {
+            "name": "Torgny Amdam",
+            "char": "Director",
+            "photo": null
+          },
+          {
+            "name": "Rebekka Jynge",
+            "char": "Marthe Refstad",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
+            "name": "Joachim Trier",
+            "job": "Writer"
+          },
+          {
+            "name": "Eskil Vogt",
+            "job": "Writer"
+          }
+        ],
+        "budget": 5000000,
+        "revenue": 12687507,
+        "status": "Released",
+        "origLang": "no",
+        "origTitle": "Verdens verste menneske",
+        "platforms": [
+          {
+            "name": "Netflix",
+            "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          }
+        ],
+        "popularity": 12.9569,
+        "imdbId": "tt10370710",
+        "countries": [
+          "Norway",
+          "Sweden",
+          "Denmark",
+          "France"
+        ],
+        "detail": {
+          "duration": 128,
+          "genres": [
+            "劇情",
+            "愛情",
+            "喜劇"
+          ],
+          "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
+          "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": "odV6vEvHZMk",
+          "imdbId": "tt10370710",
+          "countries": [
+            "Norway",
+            "Sweden",
+            "Denmark",
+            "France"
+          ],
+          "cast": [
+            {
+              "name": "蕾娜特·萊茵斯薇",
+              "char": "Julie",
+              "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+            },
+            {
+              "name": "Anders Danielsen Lie",
+              "char": "Aksel",
+              "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
+            },
+            {
+              "name": "Herbert Nordrum",
+              "char": "Eivind",
+              "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
+            },
+            {
+              "name": "Hans Olav Brenner",
+              "char": "Ole Magnus",
+              "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
+            },
+            {
+              "name": "Helene Bjørnebye",
+              "char": "Karianne",
+              "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
+            },
+            {
+              "name": "Vidar Sandem",
+              "char": "Per Harald",
+              "photo": null
+            },
+            {
+              "name": "Maria Grazia Di Meo",
+              "char": "Sunniva",
+              "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
+            },
+            {
+              "name": "Lasse Gretland",
+              "char": "Kristoffer",
+              "photo": null
+            },
+            {
+              "name": "Karen Røise Kielland",
+              "char": "Tone",
+              "photo": null
+            },
+            {
+              "name": "Marianne Krogh",
+              "char": "Eva",
+              "photo": null
+            },
+            {
+              "name": "Thea Stabell",
+              "char": "Åse",
+              "photo": null
+            },
+            {
+              "name": "Deniz Kaya",
+              "char": "Adil",
+              "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
+            },
+            {
+              "name": "Eia Skjønsberg",
+              "char": "Synne",
+              "photo": null
+            },
+            {
+              "name": "Ruby Dagnall",
+              "char": "Young Actor",
+              "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
+            },
+            {
+              "name": "Torgny Amdam",
+              "char": "Director",
+              "photo": null
+            },
+            {
+              "name": "Rebekka Jynge",
+              "char": "Marthe Refstad",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
+              "name": "Joachim Trier",
+              "job": "Writer"
+            },
+            {
+              "name": "Eskil Vogt",
+              "job": "Writer"
+            }
+          ],
+          "budget": 5000000,
+          "revenue": 12687507,
+          "status": "Released",
+          "origLang": "no",
+          "origTitle": "Verdens verste menneske",
+          "platforms": [
+            {
+              "name": "Netflix",
+              "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/660120?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 822653,
         "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
         "titleEn": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
@@ -17411,8 +17703,8 @@
             "lastChanged": "2026-08-29T06:36:09.407475+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 19,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -18245,7 +18537,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/rGx8QTKwvsWLc1TUU82xya0DVvj.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/kZFNCW9Mqcexd3IacN2fWtrNtv2.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/rs4d4EaonSqsrhXCB7p80Y83YAf.jpg",
         "voteAverage": "6.2",
@@ -18342,7 +18634,7 @@
             "劇情"
           ],
           "synopsis": "藝術家漢娜與退休牧師伯恩德相伴多年，婚姻安穩得近乎停滯。某日，漢娜二十年前離婚的前夫庫爾特突然現身家門；罹患失智症的他，忘了兩人早已分開，也打亂夫妻井然有序的日常。從尷尬同住到重新靠近，三人在記憶逐漸褪色、關係不斷錯位之中，被迫面對愛、責任與陪伴的另一種可能。",
-          "poster": "https://image.tmdb.org/t/p/w500/rGx8QTKwvsWLc1TUU82xya0DVvj.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/kZFNCW9Mqcexd3IacN2fWtrNtv2.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/rs4d4EaonSqsrhXCB7p80Y83YAf.jpg",
           "voteAverage": "6.2",
           "trailerKey": null,
@@ -19525,7 +19817,7 @@
         "duration": 98,
         "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
         "imdb": "7.8",
-        "rt": "96%",
+        "rt": "98%",
         "mc": "87",
         "ratingMeta": {
           "imdb": {
@@ -19534,13 +19826,13 @@
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 57,
-            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           }
         },
@@ -19822,13 +20114,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 55,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -20112,13 +20404,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 61,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -20401,13 +20693,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 36,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -20688,8 +20980,8 @@
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 6,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           }
         },
@@ -21563,13 +21855,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 60,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -22399,13 +22691,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 152,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 31,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -22881,13 +23173,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 90,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -24241,11 +24533,11 @@
         "crew": [
           {
             "name": "張艾嘉",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "張艾嘉",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -24314,11 +24606,11 @@
           "crew": [
             {
               "name": "張艾嘉",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "張艾嘉",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -24744,13 +25036,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 40,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 18,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -27078,7 +27370,7 @@
         "synopsis": "俄羅斯教師秘密記錄在烏俄戰爭期間，小鎮學校成了徵兵中心的過程，帶出教育工作者在軍事化背景下面臨的道德困境。",
         "imdb": "7.9",
         "rt": "100%",
-        "mc": "80",
+        "mc": "79",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -27086,14 +27378,14 @@
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 52,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-08-27T09:03:18.221880+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           }
         },
         "trailerKey": "CLNG8B60APk",
