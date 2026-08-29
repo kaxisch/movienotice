@@ -815,6 +815,19 @@ def is_stale_atmovies_release_date(value, audit_date, min_age_days=365):
         return False
 
 
+def infer_current_tmdb_theatrical_date(tw_releases, audit_date):
+    """從已驗證的 TW 院線日期補本輪日期，不沿用多年以前的舊日期。"""
+    earliest = audit_date - timedelta(days=NOW_LOOKBACK_DAYS)
+    latest = audit_date + timedelta(days=SOON_WINDOW_DAYS)
+    dates = {
+        parsed
+        for release in (tw_releases or [])
+        if (parsed := parse_iso_date(release.get("date")))
+        and earliest <= parsed <= latest
+    }
+    return max(dates).isoformat() if dates else ""
+
+
 def is_known_old_atmovies_movie(movie):
     """開眼日期雖已更新，但 TMDB 原始上映日至少早一年時仍是重映候選。"""
     from cinema_rereleases import is_confirmed_rerelease
@@ -1883,6 +1896,10 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         date_counts = Counter(cinema_dates)
         cinema_date = sorted(date_counts, key=lambda value: (-date_counts[value], value))[0] if date_counts else ""
         tw_releases = item.pop("tw_releases")
+        if not cinema_date and "atmovies" in item["sources"]:
+            cinema_date = infer_current_tmdb_theatrical_date(
+                tw_releases, generated_at_local.date()
+            )
         status = tmdb_date_status(cinema_date, tw_releases)
         sources = item.pop("sources")
         source_urls = item.pop("source_urls")

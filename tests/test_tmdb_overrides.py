@@ -4,6 +4,7 @@ from unittest.mock import patch
 
 from scripts.weekly_check import (
     find_tmdb_override,
+    load_tmdb_overrides,
     tmdb_title_override,
     to_traditional_text,
 )
@@ -75,6 +76,27 @@ class TmdbOverrideTests(unittest.TestCase):
 
     def test_traditional_conversion_preserves_manual_title_wording(self):
         self.assertEqual(to_traditional_text("泥面人"), "泥面人")
+
+    def test_user_confirmed_matches_are_persistent(self):
+        overrides = load_tmdb_overrides()
+        expected = {
+            "粽邪4": 1433568,
+            "劇場版 境界的彼方 -I'LL BE HERE- 未來篇": 333622,
+            "極限攀登1": 1280454,
+            "藝妓日記": 489552,
+            "書店裡的影像詩：生活不在他方": 1678745,
+            "幕末太陽傳": 125217,
+            "雁之寺": 333361,
+            "Look Back": 1591675,
+            "白色情迷 經典數位修復": 109,
+            "紅色情深 經典數位修復": 110,
+            "攻殼機動隊1995": 9323,
+        }
+        for title, tmdb_id in expected.items():
+            with self.subTest(title=title):
+                override = find_tmdb_override({"title_zh": title}, overrides)
+                self.assertIsNotNone(override)
+                self.assertEqual(override["tmdb_id"], tmdb_id)
 
 
 if __name__ == "__main__":
