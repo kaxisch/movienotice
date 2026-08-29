@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-29T22:03:55.290760+08:00",
+  "generated_at": "2026-08-29T22:46:56.690015+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 73,
-    "soon_count": 74
+    "soon_count": 73
   },
   "movies": {
     "now": [
@@ -12,7 +12,7 @@
         "titleZh": "航海王：強者天下",
         "titleEn": "ONE PIECE FILM STRONG WORLD",
         "releaseDate": "2026-08-28",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -540,7 +540,7 @@
         "titleZh": "八月三十一日，我在奧斯陸",
         "titleEn": "Oslo, 31. august",
         "releaseDate": "2026-08-28",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -798,6 +798,292 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 671,
+        "titleZh": "哈利波特：神秘的魔法石",
+        "titleEn": "Harry Potter and the Philosopher's Stone",
+        "releaseDate": "2026-08-28",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-28",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/iGLY7oD6yMcGmBGD4aOsKvknce2.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
+        "voteAverage": "7.9",
+        "genre": [
+          "冒險",
+          "奇幻"
+        ],
+        "duration": 152,
+        "synopsis": "一直認為自己只是個平凡孤兒的哈利波特，意外發現自己身懷魔法，因為被邪惡巫師殺害的父母都曾是優秀的魔法師。他因緣際會地進入霍格華茲魔法學院學習各種魔法，並在魁地奇球賽中展示了與生俱來的才華，最後哈利、榮恩與妙麗三位好朋友得一同破壞福爾得摩特奪取點金石的計畫，阻止邪惡陰謀的發生……",
+        "imdb": "7.7",
+        "rt": "80%",
+        "mc": "65",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 944457,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 201,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 37,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          }
+        },
+        "trailerKey": "ibRcSCRAyTA",
+        "cast": [
+          {
+            "name": "丹尼爾·雷德克里夫",
+            "char": "Harry Potter",
+            "photo": "https://image.tmdb.org/t/p/w500/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+          },
+          {
+            "name": "魯伯特·葛林特",
+            "char": "Ron Weasley",
+            "photo": "https://image.tmdb.org/t/p/w500/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+          },
+          {
+            "name": "艾瑪·華森",
+            "char": "Hermione Granger",
+            "photo": "https://image.tmdb.org/t/p/w500/mf0OANvWYSzU1d8yggrhyw8IbIz.jpg"
+          },
+          {
+            "name": "理查德·哈里斯",
+            "char": "Albus Dumbledore",
+            "photo": "https://image.tmdb.org/t/p/w500/lCvcVMuxrg1f5A8OMqY9AqkkcZR.jpg"
+          },
+          {
+            "name": "湯姆·費爾頓",
+            "char": "Draco Malfoy",
+            "photo": "https://image.tmdb.org/t/p/w500/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
+          },
+          {
+            "name": "艾倫·瑞克曼",
+            "char": "Severus Snape",
+            "photo": "https://image.tmdb.org/t/p/w500/7tADZs4ILE93oJ5pAh6mKQFEq2m.jpg"
+          },
+          {
+            "name": "Robbie Coltrane",
+            "char": "Hagrid",
+            "photo": "https://image.tmdb.org/t/p/w500/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg"
+          },
+          {
+            "name": "瑪姬·史密斯",
+            "char": "Professor McGonagall",
+            "photo": "https://image.tmdb.org/t/p/w500/hjoWy2WB7RayROumynH3wuCa9aL.jpg"
+          },
+          {
+            "name": "Richard Griffiths",
+            "char": "Uncle Vernon Dursley",
+            "photo": "https://image.tmdb.org/t/p/w500/j4dwpPT91cRkx0yMGu76jORKNfX.jpg"
+          },
+          {
+            "name": "Ian Hart",
+            "char": "Professor Quirrell / Voldemort (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xMC8aPDwhEZcjRHEFcgytSr3BzM.jpg"
+          },
+          {
+            "name": "費歐娜·蕭",
+            "char": "Aunt Petunia Dursley",
+            "photo": "https://image.tmdb.org/t/p/w500/8X7fZybxtwh2nTvYk6kjRYo9RIY.jpg"
+          },
+          {
+            "name": "約翰·赫特",
+            "char": "Mr Ollivander",
+            "photo": "https://image.tmdb.org/t/p/w500/bjNSzt1d7uK3q5PbtFXUJrRt4qg.jpg"
+          },
+          {
+            "name": "David Bradley",
+            "char": "Mr Filch",
+            "photo": "https://image.tmdb.org/t/p/w500/znpkwHitb3pcaJbUmgDqG0YenYp.jpg"
+          },
+          {
+            "name": "馬修·路易斯",
+            "char": "Neville Longbottom",
+            "photo": "https://image.tmdb.org/t/p/w500/aPQCLK2gxWOallsFoEwjb1p9lWE.jpg"
+          },
+          {
+            "name": "Sean Biggerstaff",
+            "char": "Oliver Wood",
+            "photo": "https://image.tmdb.org/t/p/w500/6g9cQWg3ikD3xboDtyF8qKdpmgl.jpg"
+          },
+          {
+            "name": "Warwick Davis",
+            "char": "Goblin Bank Teller / Professor Flitwick / Griphook (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/vUwjgAYcBEcCv0OVAN00qUUXX3V.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Steve Kloves",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Chris Columbus",
+            "job": "Director"
+          }
+        ],
+        "budget": 125000000,
+        "revenue": 1029374615,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Harry Potter and the Philosopher's Stone",
+        "platforms": [
+          {
+            "name": "HBO Max",
+            "logo": "/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 48.0349,
+        "imdbId": "tt0241527",
+        "countries": [
+          "United Kingdom",
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 152,
+          "genres": [
+            "冒險",
+            "奇幻"
+          ],
+          "synopsis": "一直認為自己只是個平凡孤兒的哈利波特，意外發現自己身懷魔法，因為被邪惡巫師殺害的父母都曾是優秀的魔法師。他因緣際會地進入霍格華茲魔法學院學習各種魔法，並在魁地奇球賽中展示了與生俱來的才華，最後哈利、榮恩與妙麗三位好朋友得一同破壞福爾得摩特奪取點金石的計畫，阻止邪惡陰謀的發生……",
+          "poster": "https://image.tmdb.org/t/p/w500/iGLY7oD6yMcGmBGD4aOsKvknce2.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
+          "voteAverage": "7.9",
+          "trailerKey": "ibRcSCRAyTA",
+          "imdbId": "tt0241527",
+          "countries": [
+            "United Kingdom",
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "丹尼爾·雷德克里夫",
+              "char": "Harry Potter",
+              "photo": "https://image.tmdb.org/t/p/w500/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+            },
+            {
+              "name": "魯伯特·葛林特",
+              "char": "Ron Weasley",
+              "photo": "https://image.tmdb.org/t/p/w500/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+            },
+            {
+              "name": "艾瑪·華森",
+              "char": "Hermione Granger",
+              "photo": "https://image.tmdb.org/t/p/w500/mf0OANvWYSzU1d8yggrhyw8IbIz.jpg"
+            },
+            {
+              "name": "理查德·哈里斯",
+              "char": "Albus Dumbledore",
+              "photo": "https://image.tmdb.org/t/p/w500/lCvcVMuxrg1f5A8OMqY9AqkkcZR.jpg"
+            },
+            {
+              "name": "湯姆·費爾頓",
+              "char": "Draco Malfoy",
+              "photo": "https://image.tmdb.org/t/p/w500/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
+            },
+            {
+              "name": "艾倫·瑞克曼",
+              "char": "Severus Snape",
+              "photo": "https://image.tmdb.org/t/p/w500/7tADZs4ILE93oJ5pAh6mKQFEq2m.jpg"
+            },
+            {
+              "name": "Robbie Coltrane",
+              "char": "Hagrid",
+              "photo": "https://image.tmdb.org/t/p/w500/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg"
+            },
+            {
+              "name": "瑪姬·史密斯",
+              "char": "Professor McGonagall",
+              "photo": "https://image.tmdb.org/t/p/w500/hjoWy2WB7RayROumynH3wuCa9aL.jpg"
+            },
+            {
+              "name": "Richard Griffiths",
+              "char": "Uncle Vernon Dursley",
+              "photo": "https://image.tmdb.org/t/p/w500/j4dwpPT91cRkx0yMGu76jORKNfX.jpg"
+            },
+            {
+              "name": "Ian Hart",
+              "char": "Professor Quirrell / Voldemort (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xMC8aPDwhEZcjRHEFcgytSr3BzM.jpg"
+            },
+            {
+              "name": "費歐娜·蕭",
+              "char": "Aunt Petunia Dursley",
+              "photo": "https://image.tmdb.org/t/p/w500/8X7fZybxtwh2nTvYk6kjRYo9RIY.jpg"
+            },
+            {
+              "name": "約翰·赫特",
+              "char": "Mr Ollivander",
+              "photo": "https://image.tmdb.org/t/p/w500/bjNSzt1d7uK3q5PbtFXUJrRt4qg.jpg"
+            },
+            {
+              "name": "David Bradley",
+              "char": "Mr Filch",
+              "photo": "https://image.tmdb.org/t/p/w500/znpkwHitb3pcaJbUmgDqG0YenYp.jpg"
+            },
+            {
+              "name": "馬修·路易斯",
+              "char": "Neville Longbottom",
+              "photo": "https://image.tmdb.org/t/p/w500/aPQCLK2gxWOallsFoEwjb1p9lWE.jpg"
+            },
+            {
+              "name": "Sean Biggerstaff",
+              "char": "Oliver Wood",
+              "photo": "https://image.tmdb.org/t/p/w500/6g9cQWg3ikD3xboDtyF8qKdpmgl.jpg"
+            },
+            {
+              "name": "Warwick Davis",
+              "char": "Goblin Bank Teller / Professor Flitwick / Griphook (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/vUwjgAYcBEcCv0OVAN00qUUXX3V.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Steve Kloves",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Chris Columbus",
+              "job": "Director"
+            }
+          ],
+          "budget": 125000000,
+          "revenue": 1029374615,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Harry Potter and the Philosopher's Stone",
+          "platforms": [
+            {
+              "name": "HBO Max",
+              "logo": "/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/671?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 950028,
         "titleZh": "開放性邀請",
         "titleEn": "The Invite",
@@ -998,7 +1284,7 @@
         "titleZh": "銀河寫手",
         "titleEn": "銀河寫手",
         "releaseDate": "2026-08-28",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -1236,7 +1522,7 @@
         "titleZh": "世界末日愛上你",
         "titleEn": "Amour Apocalypse",
         "releaseDate": "2026-08-28",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -1494,7 +1780,7 @@
         "titleZh": "小鯊鯊出門去：大城市的小夥伴",
         "titleEn": "映畫 おでかけ子ザメ とかいのおともだち",
         "releaseDate": "2026-08-28",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -1906,7 +2192,7 @@
         "titleZh": "大風殺",
         "titleEn": "大風殺",
         "releaseDate": "2026-08-28",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -2911,292 +3197,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1559189?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 671,
-        "titleZh": "哈利波特：神秘的魔法石",
-        "titleEn": "Harry Potter and the Philosopher's Stone",
-        "releaseDate": "2026-08-28",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-08-28",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/iGLY7oD6yMcGmBGD4aOsKvknce2.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
-        "voteAverage": "7.9",
-        "genre": [
-          "冒險",
-          "奇幻"
-        ],
-        "duration": 152,
-        "synopsis": "一直認為自己只是個平凡孤兒的哈利波特，意外發現自己身懷魔法，因為被邪惡巫師殺害的父母都曾是優秀的魔法師。他因緣際會地進入霍格華茲魔法學院學習各種魔法，並在魁地奇球賽中展示了與生俱來的才華，最後哈利、榮恩與妙麗三位好朋友得一同破壞福爾得摩特奪取點金石的計畫，阻止邪惡陰謀的發生……",
-        "imdb": "7.7",
-        "rt": "80%",
-        "mc": "65",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 944457,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 201,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 37,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          }
-        },
-        "trailerKey": "ibRcSCRAyTA",
-        "cast": [
-          {
-            "name": "丹尼爾·雷德克里夫",
-            "char": "Harry Potter",
-            "photo": "https://image.tmdb.org/t/p/w500/uUFfo8RANo7tuckB6AZAnESne55.jpg"
-          },
-          {
-            "name": "魯伯特·葛林特",
-            "char": "Ron Weasley",
-            "photo": "https://image.tmdb.org/t/p/w500/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
-          },
-          {
-            "name": "艾瑪·華森",
-            "char": "Hermione Granger",
-            "photo": "https://image.tmdb.org/t/p/w500/mf0OANvWYSzU1d8yggrhyw8IbIz.jpg"
-          },
-          {
-            "name": "理查德·哈里斯",
-            "char": "Albus Dumbledore",
-            "photo": "https://image.tmdb.org/t/p/w500/lCvcVMuxrg1f5A8OMqY9AqkkcZR.jpg"
-          },
-          {
-            "name": "湯姆·費爾頓",
-            "char": "Draco Malfoy",
-            "photo": "https://image.tmdb.org/t/p/w500/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
-          },
-          {
-            "name": "艾倫·瑞克曼",
-            "char": "Severus Snape",
-            "photo": "https://image.tmdb.org/t/p/w500/7tADZs4ILE93oJ5pAh6mKQFEq2m.jpg"
-          },
-          {
-            "name": "Robbie Coltrane",
-            "char": "Hagrid",
-            "photo": "https://image.tmdb.org/t/p/w500/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg"
-          },
-          {
-            "name": "瑪姬·史密斯",
-            "char": "Professor McGonagall",
-            "photo": "https://image.tmdb.org/t/p/w500/hjoWy2WB7RayROumynH3wuCa9aL.jpg"
-          },
-          {
-            "name": "Richard Griffiths",
-            "char": "Uncle Vernon Dursley",
-            "photo": "https://image.tmdb.org/t/p/w500/j4dwpPT91cRkx0yMGu76jORKNfX.jpg"
-          },
-          {
-            "name": "Ian Hart",
-            "char": "Professor Quirrell / Voldemort (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/xMC8aPDwhEZcjRHEFcgytSr3BzM.jpg"
-          },
-          {
-            "name": "費歐娜·蕭",
-            "char": "Aunt Petunia Dursley",
-            "photo": "https://image.tmdb.org/t/p/w500/8X7fZybxtwh2nTvYk6kjRYo9RIY.jpg"
-          },
-          {
-            "name": "約翰·赫特",
-            "char": "Mr Ollivander",
-            "photo": "https://image.tmdb.org/t/p/w500/bjNSzt1d7uK3q5PbtFXUJrRt4qg.jpg"
-          },
-          {
-            "name": "David Bradley",
-            "char": "Mr Filch",
-            "photo": "https://image.tmdb.org/t/p/w500/znpkwHitb3pcaJbUmgDqG0YenYp.jpg"
-          },
-          {
-            "name": "馬修·路易斯",
-            "char": "Neville Longbottom",
-            "photo": "https://image.tmdb.org/t/p/w500/aPQCLK2gxWOallsFoEwjb1p9lWE.jpg"
-          },
-          {
-            "name": "Sean Biggerstaff",
-            "char": "Oliver Wood",
-            "photo": "https://image.tmdb.org/t/p/w500/6g9cQWg3ikD3xboDtyF8qKdpmgl.jpg"
-          },
-          {
-            "name": "Warwick Davis",
-            "char": "Goblin Bank Teller / Professor Flitwick / Griphook (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/vUwjgAYcBEcCv0OVAN00qUUXX3V.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Steve Kloves",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Chris Columbus",
-            "job": "Director"
-          }
-        ],
-        "budget": 125000000,
-        "revenue": 1029374615,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Harry Potter and the Philosopher's Stone",
-        "platforms": [
-          {
-            "name": "HBO Max",
-            "logo": "/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          },
-          {
-            "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-          }
-        ],
-        "popularity": 48.0349,
-        "imdbId": "tt0241527",
-        "countries": [
-          "United Kingdom",
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 152,
-          "genres": [
-            "冒險",
-            "奇幻"
-          ],
-          "synopsis": "一直認為自己只是個平凡孤兒的哈利波特，意外發現自己身懷魔法，因為被邪惡巫師殺害的父母都曾是優秀的魔法師。他因緣際會地進入霍格華茲魔法學院學習各種魔法，並在魁地奇球賽中展示了與生俱來的才華，最後哈利、榮恩與妙麗三位好朋友得一同破壞福爾得摩特奪取點金石的計畫，阻止邪惡陰謀的發生……",
-          "poster": "https://image.tmdb.org/t/p/w500/iGLY7oD6yMcGmBGD4aOsKvknce2.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
-          "voteAverage": "7.9",
-          "trailerKey": "ibRcSCRAyTA",
-          "imdbId": "tt0241527",
-          "countries": [
-            "United Kingdom",
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "丹尼爾·雷德克里夫",
-              "char": "Harry Potter",
-              "photo": "https://image.tmdb.org/t/p/w500/uUFfo8RANo7tuckB6AZAnESne55.jpg"
-            },
-            {
-              "name": "魯伯特·葛林特",
-              "char": "Ron Weasley",
-              "photo": "https://image.tmdb.org/t/p/w500/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
-            },
-            {
-              "name": "艾瑪·華森",
-              "char": "Hermione Granger",
-              "photo": "https://image.tmdb.org/t/p/w500/mf0OANvWYSzU1d8yggrhyw8IbIz.jpg"
-            },
-            {
-              "name": "理查德·哈里斯",
-              "char": "Albus Dumbledore",
-              "photo": "https://image.tmdb.org/t/p/w500/lCvcVMuxrg1f5A8OMqY9AqkkcZR.jpg"
-            },
-            {
-              "name": "湯姆·費爾頓",
-              "char": "Draco Malfoy",
-              "photo": "https://image.tmdb.org/t/p/w500/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
-            },
-            {
-              "name": "艾倫·瑞克曼",
-              "char": "Severus Snape",
-              "photo": "https://image.tmdb.org/t/p/w500/7tADZs4ILE93oJ5pAh6mKQFEq2m.jpg"
-            },
-            {
-              "name": "Robbie Coltrane",
-              "char": "Hagrid",
-              "photo": "https://image.tmdb.org/t/p/w500/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg"
-            },
-            {
-              "name": "瑪姬·史密斯",
-              "char": "Professor McGonagall",
-              "photo": "https://image.tmdb.org/t/p/w500/hjoWy2WB7RayROumynH3wuCa9aL.jpg"
-            },
-            {
-              "name": "Richard Griffiths",
-              "char": "Uncle Vernon Dursley",
-              "photo": "https://image.tmdb.org/t/p/w500/j4dwpPT91cRkx0yMGu76jORKNfX.jpg"
-            },
-            {
-              "name": "Ian Hart",
-              "char": "Professor Quirrell / Voldemort (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/xMC8aPDwhEZcjRHEFcgytSr3BzM.jpg"
-            },
-            {
-              "name": "費歐娜·蕭",
-              "char": "Aunt Petunia Dursley",
-              "photo": "https://image.tmdb.org/t/p/w500/8X7fZybxtwh2nTvYk6kjRYo9RIY.jpg"
-            },
-            {
-              "name": "約翰·赫特",
-              "char": "Mr Ollivander",
-              "photo": "https://image.tmdb.org/t/p/w500/bjNSzt1d7uK3q5PbtFXUJrRt4qg.jpg"
-            },
-            {
-              "name": "David Bradley",
-              "char": "Mr Filch",
-              "photo": "https://image.tmdb.org/t/p/w500/znpkwHitb3pcaJbUmgDqG0YenYp.jpg"
-            },
-            {
-              "name": "馬修·路易斯",
-              "char": "Neville Longbottom",
-              "photo": "https://image.tmdb.org/t/p/w500/aPQCLK2gxWOallsFoEwjb1p9lWE.jpg"
-            },
-            {
-              "name": "Sean Biggerstaff",
-              "char": "Oliver Wood",
-              "photo": "https://image.tmdb.org/t/p/w500/6g9cQWg3ikD3xboDtyF8qKdpmgl.jpg"
-            },
-            {
-              "name": "Warwick Davis",
-              "char": "Goblin Bank Teller / Professor Flitwick / Griphook (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/vUwjgAYcBEcCv0OVAN00qUUXX3V.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Steve Kloves",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Chris Columbus",
-              "job": "Director"
-            }
-          ],
-          "budget": 125000000,
-          "revenue": 1029374615,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Harry Potter and the Philosopher's Stone",
-          "platforms": [
-            {
-              "name": "HBO Max",
-              "logo": "/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-            },
-            {
-              "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/671?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -4755,7 +4755,7 @@
         "titleZh": "愛重奏",
         "titleEn": "Reprise",
         "releaseDate": "2026-08-21",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -5037,7 +5037,7 @@
         "titleZh": "航海王：機關城的鋼鐵巨兵",
         "titleEn": "ワンピース カラクリ城のメカ巨兵",
         "releaseDate": "2026-08-21",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -5261,7 +5261,7 @@
         "titleZh": "劇場版 境界的彼方－I'LL BE HERE－未來篇",
         "titleEn": "劇場版 境界の彼方 -I'll Be Here- 未來篇",
         "releaseDate": "2026-08-21",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -5789,7 +5789,7 @@
         "titleZh": "18顆鑽石",
         "titleEn": "Diamanti",
         "releaseDate": "2026-08-21",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-21",
@@ -11564,7 +11564,7 @@
         "titleZh": "幸福的拉札洛",
         "titleEn": "Lazzaro felice",
         "releaseDate": "2026-08-07",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-07",
@@ -15484,7 +15484,7 @@
         "titleZh": "迷幻死藤水",
         "titleEn": "Ayahuasca: Kosmik Journey",
         "releaseDate": "2026-06-19",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-06-19",
@@ -16642,7 +16642,7 @@
         "titleZh": "航海王：祭典男爵與神秘島",
         "titleEn": "ワンピース the movie オマツリ男爵と秘密の島",
         "releaseDate": "2026-09-04",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-09-04",
@@ -17823,7 +17823,7 @@
         "titleZh": "最後的作業",
         "titleEn": "마지막 숙제",
         "releaseDate": "2026-09-04",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-09-04",
@@ -18939,298 +18939,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 660120,
-        "titleZh": "世界上最爛的人",
-        "titleEn": "Verdens verste menneske",
-        "releaseDate": "2026-09-04",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
-        "voteAverage": "7.4",
-        "genre": [
-          "劇情",
-          "愛情",
-          "喜劇"
-        ],
-        "duration": 128,
-        "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
-        "imdb": "7.7",
-        "rt": "96%",
-        "mc": "91",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 126525,
-            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
-          },
-          "rt": {
-            "source": "omdb",
-            "votes": 0,
-            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 47,
-            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
-          }
-        },
-        "trailerKey": "odV6vEvHZMk",
-        "cast": [
-          {
-            "name": "蕾娜特·萊茵斯薇",
-            "char": "Julie",
-            "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
-          },
-          {
-            "name": "Anders Danielsen Lie",
-            "char": "Aksel",
-            "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
-          },
-          {
-            "name": "Herbert Nordrum",
-            "char": "Eivind",
-            "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
-          },
-          {
-            "name": "Hans Olav Brenner",
-            "char": "Ole Magnus",
-            "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
-          },
-          {
-            "name": "Helene Bjørnebye",
-            "char": "Karianne",
-            "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
-          },
-          {
-            "name": "Vidar Sandem",
-            "char": "Per Harald",
-            "photo": null
-          },
-          {
-            "name": "Maria Grazia Di Meo",
-            "char": "Sunniva",
-            "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
-          },
-          {
-            "name": "Lasse Gretland",
-            "char": "Kristoffer",
-            "photo": null
-          },
-          {
-            "name": "Karen Røise Kielland",
-            "char": "Tone",
-            "photo": null
-          },
-          {
-            "name": "Marianne Krogh",
-            "char": "Eva",
-            "photo": null
-          },
-          {
-            "name": "Thea Stabell",
-            "char": "Åse",
-            "photo": null
-          },
-          {
-            "name": "Deniz Kaya",
-            "char": "Adil",
-            "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
-          },
-          {
-            "name": "Eia Skjønsberg",
-            "char": "Synne",
-            "photo": null
-          },
-          {
-            "name": "Ruby Dagnall",
-            "char": "Young Actor",
-            "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
-          },
-          {
-            "name": "Torgny Amdam",
-            "char": "Director",
-            "photo": null
-          },
-          {
-            "name": "Rebekka Jynge",
-            "char": "Marthe Refstad",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Writer"
-          },
-          {
-            "name": "Eskil Vogt",
-            "job": "Writer"
-          }
-        ],
-        "budget": 5000000,
-        "revenue": 12687507,
-        "status": "Released",
-        "origLang": "no",
-        "origTitle": "Verdens verste menneske",
-        "platforms": [
-          {
-            "name": "Netflix",
-            "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          }
-        ],
-        "popularity": 12.9569,
-        "imdbId": "tt10370710",
-        "countries": [
-          "Norway",
-          "Sweden",
-          "Denmark",
-          "France"
-        ],
-        "detail": {
-          "duration": 128,
-          "genres": [
-            "劇情",
-            "愛情",
-            "喜劇"
-          ],
-          "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
-          "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
-          "voteAverage": "7.4",
-          "trailerKey": "odV6vEvHZMk",
-          "imdbId": "tt10370710",
-          "countries": [
-            "Norway",
-            "Sweden",
-            "Denmark",
-            "France"
-          ],
-          "cast": [
-            {
-              "name": "蕾娜特·萊茵斯薇",
-              "char": "Julie",
-              "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
-            },
-            {
-              "name": "Anders Danielsen Lie",
-              "char": "Aksel",
-              "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
-            },
-            {
-              "name": "Herbert Nordrum",
-              "char": "Eivind",
-              "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
-            },
-            {
-              "name": "Hans Olav Brenner",
-              "char": "Ole Magnus",
-              "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
-            },
-            {
-              "name": "Helene Bjørnebye",
-              "char": "Karianne",
-              "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
-            },
-            {
-              "name": "Vidar Sandem",
-              "char": "Per Harald",
-              "photo": null
-            },
-            {
-              "name": "Maria Grazia Di Meo",
-              "char": "Sunniva",
-              "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
-            },
-            {
-              "name": "Lasse Gretland",
-              "char": "Kristoffer",
-              "photo": null
-            },
-            {
-              "name": "Karen Røise Kielland",
-              "char": "Tone",
-              "photo": null
-            },
-            {
-              "name": "Marianne Krogh",
-              "char": "Eva",
-              "photo": null
-            },
-            {
-              "name": "Thea Stabell",
-              "char": "Åse",
-              "photo": null
-            },
-            {
-              "name": "Deniz Kaya",
-              "char": "Adil",
-              "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
-            },
-            {
-              "name": "Eia Skjønsberg",
-              "char": "Synne",
-              "photo": null
-            },
-            {
-              "name": "Ruby Dagnall",
-              "char": "Young Actor",
-              "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
-            },
-            {
-              "name": "Torgny Amdam",
-              "char": "Director",
-              "photo": null
-            },
-            {
-              "name": "Rebekka Jynge",
-              "char": "Marthe Refstad",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Writer"
-            },
-            {
-              "name": "Eskil Vogt",
-              "job": "Writer"
-            }
-          ],
-          "budget": 5000000,
-          "revenue": 12687507,
-          "status": "Released",
-          "origLang": "no",
-          "origTitle": "Verdens verste menneske",
-          "platforms": [
-            {
-              "name": "Netflix",
-              "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/660120?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1620001,
         "titleZh": "吾子吾弟",
         "titleEn": "National Theatre Live: All My Sons",
@@ -19593,7 +19301,7 @@
         "titleZh": "驀然回首",
         "titleEn": "ルックバック",
         "releaseDate": "2026-09-11",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-09-11",
@@ -19790,6 +19498,1160 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1591675?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 108,
+        "titleZh": "藍色情挑",
+        "titleEn": "Trois couleurs : Bleu",
+        "releaseDate": "2026-09-11",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-11",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/21Bs8d41XHBplkLt8iZLvW4s3gn.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/nAyUVvcdOKHmukdgGHZ7xR5er1q.jpg",
+        "voteAverage": "7.6",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 98,
+        "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
+        "imdb": "7.8",
+        "rt": "96%",
+        "mc": "87",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 118266,
+            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 57,
+            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
+          }
+        },
+        "trailerKey": "u7oVxA3PGvE",
+        "cast": [
+          {
+            "name": "茱麗葉畢諾許",
+            "char": "Julie",
+            "photo": "https://image.tmdb.org/t/p/w500/htdZZIroEyJaeHQAUTqokNfkPgl.jpg"
+          },
+          {
+            "name": "Benoît Régent",
+            "char": "Olivier",
+            "photo": "https://image.tmdb.org/t/p/w500/hSCNZq6w24lJUTJpRNyiVTtQ9lL.jpg"
+          },
+          {
+            "name": "Florence Pernel",
+            "char": "Sandrine",
+            "photo": "https://image.tmdb.org/t/p/w500/fqrv9hguDX9xtjlQnZuABOVSoka.jpg"
+          },
+          {
+            "name": "Charlotte Véry",
+            "char": "Lucille",
+            "photo": "https://image.tmdb.org/t/p/w500/mTAW8qpzhvwvqTxxMU3bWKtNGDL.jpg"
+          },
+          {
+            "name": "海倫文森",
+            "char": "Journalist",
+            "photo": "https://image.tmdb.org/t/p/w500/lJJ9WjZJI6cVCpFTsXoHqSDW23v.jpg"
+          },
+          {
+            "name": "Philippe Volter",
+            "char": "Real Estate Agent",
+            "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
+          },
+          {
+            "name": "Claude Duneton",
+            "char": "Doctor",
+            "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
+          },
+          {
+            "name": "Hugues Quester",
+            "char": "Patrice (Julie's Husband)",
+            "photo": "https://image.tmdb.org/t/p/w500/sBLiQG9ihExsM1qMV51RRaOe0kG.jpg"
+          },
+          {
+            "name": "Emmanuelle Riva",
+            "char": "Mother",
+            "photo": "https://image.tmdb.org/t/p/w500/80BOlvNwozJI1xZJGycJb9tBwvQ.jpg"
+          },
+          {
+            "name": "Florence Vignon",
+            "char": "The Copyist",
+            "photo": "https://image.tmdb.org/t/p/w500/uSjOZ4nUgSWPH1cSBgZcuGtd8Wi.jpg"
+          },
+          {
+            "name": "Daniel Martin",
+            "char": "The Downstairs Neighbour",
+            "photo": "https://image.tmdb.org/t/p/w500/fUalx2UASfEKzJ3AKHEa51ys9L.jpg"
+          },
+          {
+            "name": "Jacek Ostaszewski",
+            "char": "The Flutist",
+            "photo": null
+          },
+          {
+            "name": "Catherine Therouenne",
+            "char": "The Neighbour",
+            "photo": null
+          },
+          {
+            "name": "Yann Trégouët",
+            "char": "Antoine",
+            "photo": "https://image.tmdb.org/t/p/w500/4if4KgfqLh3HF2eAetXONbeXvgT.jpg"
+          },
+          {
+            "name": "Alain Ollivier",
+            "char": "The Lawyer",
+            "photo": "https://image.tmdb.org/t/p/w500/dhlpM3HfC3dvNY0QCE5UKJgwv1x.jpg"
+          },
+          {
+            "name": "Isabelle Sadoyan",
+            "char": "Maid",
+            "photo": "https://image.tmdb.org/t/p/w500/A6rXj06ynTG1earh524gkkoJYBF.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Krzysztof Piesiewicz",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 1527572,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Trois couleurs : Bleu",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 5.4793,
+        "imdbId": "tt0108394",
+        "countries": [
+          "France",
+          "Poland",
+          "Switzerland"
+        ],
+        "detail": {
+          "duration": 98,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
+          "poster": "https://image.tmdb.org/t/p/w500/21Bs8d41XHBplkLt8iZLvW4s3gn.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/nAyUVvcdOKHmukdgGHZ7xR5er1q.jpg",
+          "voteAverage": "7.6",
+          "trailerKey": "u7oVxA3PGvE",
+          "imdbId": "tt0108394",
+          "countries": [
+            "France",
+            "Poland",
+            "Switzerland"
+          ],
+          "cast": [
+            {
+              "name": "茱麗葉畢諾許",
+              "char": "Julie",
+              "photo": "https://image.tmdb.org/t/p/w500/htdZZIroEyJaeHQAUTqokNfkPgl.jpg"
+            },
+            {
+              "name": "Benoît Régent",
+              "char": "Olivier",
+              "photo": "https://image.tmdb.org/t/p/w500/hSCNZq6w24lJUTJpRNyiVTtQ9lL.jpg"
+            },
+            {
+              "name": "Florence Pernel",
+              "char": "Sandrine",
+              "photo": "https://image.tmdb.org/t/p/w500/fqrv9hguDX9xtjlQnZuABOVSoka.jpg"
+            },
+            {
+              "name": "Charlotte Véry",
+              "char": "Lucille",
+              "photo": "https://image.tmdb.org/t/p/w500/mTAW8qpzhvwvqTxxMU3bWKtNGDL.jpg"
+            },
+            {
+              "name": "海倫文森",
+              "char": "Journalist",
+              "photo": "https://image.tmdb.org/t/p/w500/lJJ9WjZJI6cVCpFTsXoHqSDW23v.jpg"
+            },
+            {
+              "name": "Philippe Volter",
+              "char": "Real Estate Agent",
+              "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
+            },
+            {
+              "name": "Claude Duneton",
+              "char": "Doctor",
+              "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
+            },
+            {
+              "name": "Hugues Quester",
+              "char": "Patrice (Julie's Husband)",
+              "photo": "https://image.tmdb.org/t/p/w500/sBLiQG9ihExsM1qMV51RRaOe0kG.jpg"
+            },
+            {
+              "name": "Emmanuelle Riva",
+              "char": "Mother",
+              "photo": "https://image.tmdb.org/t/p/w500/80BOlvNwozJI1xZJGycJb9tBwvQ.jpg"
+            },
+            {
+              "name": "Florence Vignon",
+              "char": "The Copyist",
+              "photo": "https://image.tmdb.org/t/p/w500/uSjOZ4nUgSWPH1cSBgZcuGtd8Wi.jpg"
+            },
+            {
+              "name": "Daniel Martin",
+              "char": "The Downstairs Neighbour",
+              "photo": "https://image.tmdb.org/t/p/w500/fUalx2UASfEKzJ3AKHEa51ys9L.jpg"
+            },
+            {
+              "name": "Jacek Ostaszewski",
+              "char": "The Flutist",
+              "photo": null
+            },
+            {
+              "name": "Catherine Therouenne",
+              "char": "The Neighbour",
+              "photo": null
+            },
+            {
+              "name": "Yann Trégouët",
+              "char": "Antoine",
+              "photo": "https://image.tmdb.org/t/p/w500/4if4KgfqLh3HF2eAetXONbeXvgT.jpg"
+            },
+            {
+              "name": "Alain Ollivier",
+              "char": "The Lawyer",
+              "photo": "https://image.tmdb.org/t/p/w500/dhlpM3HfC3dvNY0QCE5UKJgwv1x.jpg"
+            },
+            {
+              "name": "Isabelle Sadoyan",
+              "char": "Maid",
+              "photo": "https://image.tmdb.org/t/p/w500/A6rXj06ynTG1earh524gkkoJYBF.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Krzysztof Piesiewicz",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 1527572,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Trois couleurs : Bleu",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/108?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 109,
+        "titleZh": "白色情迷",
+        "titleEn": "Trois couleurs : Blanc",
+        "releaseDate": "2026-09-11",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-11",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/abxrKqKkmGtENHD2ZU9nomj8EeU.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "喜劇",
+          "劇情",
+          "懸疑"
+        ],
+        "duration": 92,
+        "synopsis": "遠離家鄉的卡洛有一位美麗的妻子多明妮嘉，他深愛她，但是反倒令多明妮嘉倍感壓力，一心想離開他。忍無可忍後，多明妮嘉因丈夫無法履行婚姻義務訴求離婚。被拋棄的卡洛輾轉回到家鄉波蘭，卻意外成了大富翁，開始一連串對妻子的報復。他偽裝死亡，引誘前妻到波蘭憑弔他，藉機與前妻重修舊好後，最後成功陷害她入獄。",
+        "imdb": "7.6",
+        "rt": "91%",
+        "mc": "91",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 85094,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 55,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "齊伯尼·查馬修瓦斯基",
+            "char": "Karol Karol",
+            "photo": "https://image.tmdb.org/t/p/w500/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg"
+          },
+          {
+            "name": "茱莉·蝶兒",
+            "char": "Dominique",
+            "photo": "https://image.tmdb.org/t/p/w500/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg"
+          },
+          {
+            "name": "Janusz Gajos",
+            "char": "Mikołaj",
+            "photo": "https://image.tmdb.org/t/p/w500/6JMVmicFJvsSsRkOpgqV2cetre.jpg"
+          },
+          {
+            "name": "Jerzy Stuhr",
+            "char": "Jurek",
+            "photo": "https://image.tmdb.org/t/p/w500/xzkvKrdITQm8BzYLF8o0xhG3fdA.jpg"
+          },
+          {
+            "name": "Grzegorz Warchoł",
+            "char": "Elegant",
+            "photo": "https://image.tmdb.org/t/p/w500/wu33kWXWxcJt4y360KnuPjbZ9gh.jpg"
+          },
+          {
+            "name": "Jerzy Nowak",
+            "char": "Old Peasant",
+            "photo": "https://image.tmdb.org/t/p/w500/d4FLYnKTAJdjtfbi5TiRmosLjwr.jpg"
+          },
+          {
+            "name": "Aleksander Bardini",
+            "char": "Notary",
+            "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
+          },
+          {
+            "name": "Cezary Harasimowicz",
+            "char": "Inspector",
+            "photo": "https://image.tmdb.org/t/p/w500/rHbmU9MLHDeQ1DOpu9vyvkN7NPx.jpg"
+          },
+          {
+            "name": "Jerzy Trela",
+            "char": "Monsieur Bronek",
+            "photo": "https://image.tmdb.org/t/p/w500/rem3V2py3o6eaaR4KQTvClVKX6n.jpg"
+          },
+          {
+            "name": "Cezary Pazura",
+            "char": "Exchange Office Owner",
+            "photo": "https://image.tmdb.org/t/p/w500/l1XAe6DKyAUXzqSgErl3BDeSF8r.jpg"
+          },
+          {
+            "name": "Michel Lisowski",
+            "char": "Interpreter",
+            "photo": null
+          },
+          {
+            "name": "Piotr Machalica",
+            "char": "Man under the Exchange Office",
+            "photo": "https://image.tmdb.org/t/p/w500/xoXFSBm3AH09f4S576md2yKl0Cm.jpg"
+          },
+          {
+            "name": "Barbara Dziekan",
+            "char": "Mrs. Ewa",
+            "photo": "https://image.tmdb.org/t/p/w500/4EAg2Pcn1rtcU8Um8xitNVEqRuW.jpg"
+          },
+          {
+            "name": "Marzena Trybała",
+            "char": "Mariott Employee",
+            "photo": "https://image.tmdb.org/t/p/w500/oR7LRnQeHaPD4TMoYDHA6hM5b2e.jpg"
+          },
+          {
+            "name": "Philippe Morier-Genoud",
+            "char": "Judge",
+            "photo": "https://image.tmdb.org/t/p/w500/vMGXntjEzXx7n1gyWi11I2urB9k.jpg"
+          },
+          {
+            "name": "Francis Coffinet",
+            "char": "Bank Clerk",
+            "photo": "https://image.tmdb.org/t/p/w500/6s8qwFqOQskwgHhxvSSHTLraAlz.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Krzysztof Piesiewicz",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 1273525,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Trois couleurs : Blanc",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 5.8223,
+        "imdbId": "tt0111507",
+        "countries": [
+          "France",
+          "Poland",
+          "Switzerland"
+        ],
+        "detail": {
+          "duration": 92,
+          "genres": [
+            "喜劇",
+            "劇情",
+            "懸疑"
+          ],
+          "synopsis": "遠離家鄉的卡洛有一位美麗的妻子多明妮嘉，他深愛她，但是反倒令多明妮嘉倍感壓力，一心想離開他。忍無可忍後，多明妮嘉因丈夫無法履行婚姻義務訴求離婚。被拋棄的卡洛輾轉回到家鄉波蘭，卻意外成了大富翁，開始一連串對妻子的報復。他偽裝死亡，引誘前妻到波蘭憑弔他，藉機與前妻重修舊好後，最後成功陷害她入獄。",
+          "poster": "https://image.tmdb.org/t/p/w500/abxrKqKkmGtENHD2ZU9nomj8EeU.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": null,
+          "imdbId": "tt0111507",
+          "countries": [
+            "France",
+            "Poland",
+            "Switzerland"
+          ],
+          "cast": [
+            {
+              "name": "齊伯尼·查馬修瓦斯基",
+              "char": "Karol Karol",
+              "photo": "https://image.tmdb.org/t/p/w500/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg"
+            },
+            {
+              "name": "茱莉·蝶兒",
+              "char": "Dominique",
+              "photo": "https://image.tmdb.org/t/p/w500/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg"
+            },
+            {
+              "name": "Janusz Gajos",
+              "char": "Mikołaj",
+              "photo": "https://image.tmdb.org/t/p/w500/6JMVmicFJvsSsRkOpgqV2cetre.jpg"
+            },
+            {
+              "name": "Jerzy Stuhr",
+              "char": "Jurek",
+              "photo": "https://image.tmdb.org/t/p/w500/xzkvKrdITQm8BzYLF8o0xhG3fdA.jpg"
+            },
+            {
+              "name": "Grzegorz Warchoł",
+              "char": "Elegant",
+              "photo": "https://image.tmdb.org/t/p/w500/wu33kWXWxcJt4y360KnuPjbZ9gh.jpg"
+            },
+            {
+              "name": "Jerzy Nowak",
+              "char": "Old Peasant",
+              "photo": "https://image.tmdb.org/t/p/w500/d4FLYnKTAJdjtfbi5TiRmosLjwr.jpg"
+            },
+            {
+              "name": "Aleksander Bardini",
+              "char": "Notary",
+              "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
+            },
+            {
+              "name": "Cezary Harasimowicz",
+              "char": "Inspector",
+              "photo": "https://image.tmdb.org/t/p/w500/rHbmU9MLHDeQ1DOpu9vyvkN7NPx.jpg"
+            },
+            {
+              "name": "Jerzy Trela",
+              "char": "Monsieur Bronek",
+              "photo": "https://image.tmdb.org/t/p/w500/rem3V2py3o6eaaR4KQTvClVKX6n.jpg"
+            },
+            {
+              "name": "Cezary Pazura",
+              "char": "Exchange Office Owner",
+              "photo": "https://image.tmdb.org/t/p/w500/l1XAe6DKyAUXzqSgErl3BDeSF8r.jpg"
+            },
+            {
+              "name": "Michel Lisowski",
+              "char": "Interpreter",
+              "photo": null
+            },
+            {
+              "name": "Piotr Machalica",
+              "char": "Man under the Exchange Office",
+              "photo": "https://image.tmdb.org/t/p/w500/xoXFSBm3AH09f4S576md2yKl0Cm.jpg"
+            },
+            {
+              "name": "Barbara Dziekan",
+              "char": "Mrs. Ewa",
+              "photo": "https://image.tmdb.org/t/p/w500/4EAg2Pcn1rtcU8Um8xitNVEqRuW.jpg"
+            },
+            {
+              "name": "Marzena Trybała",
+              "char": "Mariott Employee",
+              "photo": "https://image.tmdb.org/t/p/w500/oR7LRnQeHaPD4TMoYDHA6hM5b2e.jpg"
+            },
+            {
+              "name": "Philippe Morier-Genoud",
+              "char": "Judge",
+              "photo": "https://image.tmdb.org/t/p/w500/vMGXntjEzXx7n1gyWi11I2urB9k.jpg"
+            },
+            {
+              "name": "Francis Coffinet",
+              "char": "Bank Clerk",
+              "photo": "https://image.tmdb.org/t/p/w500/6s8qwFqOQskwgHhxvSSHTLraAlz.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Krzysztof Piesiewicz",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 1273525,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Trois couleurs : Blanc",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/109?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 110,
+        "titleZh": "紅色情深",
+        "titleEn": "Trois couleurs : Rouge",
+        "releaseDate": "2026-09-11",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-11",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/9rnoQFrmdBwqAAEWvmBWY2tGNFs.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pZcoSJUb3Lgr9Rzg2shg1PtTBP9.jpg",
+        "voteAverage": "7.9",
+        "genre": [
+          "劇情",
+          "懸疑",
+          "愛情"
+        ],
+        "duration": 100,
+        "synopsis": "波蘭電影大師奇士勞斯基逝世20週年紀念修復【藍白紅三部曲】第三部，由伊蓮雅各、尚皮耶羅利與尚路易坦帝尼昂主演。一名模特兒與極度不信任人、喜愛竊聽鄰居電話的退休法官，意外發展出一段特殊的關係。",
+        "imdb": "8.1",
+        "rt": "100%",
+        "mc": "100",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 116330,
+            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 61,
+            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "伊蓮·雅各",
+            "char": "Valentine",
+            "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
+          },
+          {
+            "name": "尚-路易·特罕狄釀",
+            "char": "The Judge",
+            "photo": "https://image.tmdb.org/t/p/w500/wn6owr4wvkeaEvlsPtwXSldFGEW.jpg"
+          },
+          {
+            "name": "Frédérique Feder",
+            "char": "Karin",
+            "photo": "https://image.tmdb.org/t/p/w500/vHCAJPYuFb2JJeX18yVo8hJmQeY.jpg"
+          },
+          {
+            "name": "Jean-Pierre Lorit",
+            "char": "Auguste",
+            "photo": "https://image.tmdb.org/t/p/w500/xP0IO3ZEAUmriWN36pAqeExloDK.jpg"
+          },
+          {
+            "name": "Samuel Le Bihan",
+            "char": "Photographer",
+            "photo": "https://image.tmdb.org/t/p/w500/jN4hwWfhFaE8v5TGiS6cg9HKOxe.jpg"
+          },
+          {
+            "name": "Marion Stalens",
+            "char": "Veterinarian",
+            "photo": "https://image.tmdb.org/t/p/w500/8AEcShsEooBHYwneHUHyL65mtxO.jpg"
+          },
+          {
+            "name": "Teco Celio",
+            "char": "Bartender",
+            "photo": "https://image.tmdb.org/t/p/w500/5PUIFW0JvgoaLX1ndyJbSeBdQF0.jpg"
+          },
+          {
+            "name": "Bernard Escalon",
+            "char": "Record Dealer",
+            "photo": "https://image.tmdb.org/t/p/w500/hRifAJBIuQEd6xUhvVkYm4tiZOy.jpg"
+          },
+          {
+            "name": "Jean Schlegel",
+            "char": "Neighbor",
+            "photo": null
+          },
+          {
+            "name": "Elżbieta Jasińska",
+            "char": "Woman",
+            "photo": "https://image.tmdb.org/t/p/w500/hcM2a714AjQXejIkhOqY30QcZQw.jpg"
+          },
+          {
+            "name": "Paul Vermeulen",
+            "char": "Karin's Friend",
+            "photo": null
+          },
+          {
+            "name": "Jean-Marie Daunas",
+            "char": "Theater Keeper",
+            "photo": null
+          },
+          {
+            "name": "Roland Carey",
+            "char": "Dealer",
+            "photo": "https://image.tmdb.org/t/p/w500/jynPOZGBo9ANYHPmTvs4ygFWTWk.jpg"
+          },
+          {
+            "name": "Brigitte Raul",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Leo Ramseyer",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Nader Farman",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Krzysztof Piesiewicz",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 4127033,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Trois couleurs : Rouge",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 5.8292,
+        "imdbId": "tt0111495",
+        "countries": [
+          "France",
+          "Poland",
+          "Switzerland"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "劇情",
+            "懸疑",
+            "愛情"
+          ],
+          "synopsis": "波蘭電影大師奇士勞斯基逝世20週年紀念修復【藍白紅三部曲】第三部，由伊蓮雅各、尚皮耶羅利與尚路易坦帝尼昂主演。一名模特兒與極度不信任人、喜愛竊聽鄰居電話的退休法官，意外發展出一段特殊的關係。",
+          "poster": "https://image.tmdb.org/t/p/w500/9rnoQFrmdBwqAAEWvmBWY2tGNFs.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pZcoSJUb3Lgr9Rzg2shg1PtTBP9.jpg",
+          "voteAverage": "7.9",
+          "trailerKey": null,
+          "imdbId": "tt0111495",
+          "countries": [
+            "France",
+            "Poland",
+            "Switzerland"
+          ],
+          "cast": [
+            {
+              "name": "伊蓮·雅各",
+              "char": "Valentine",
+              "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
+            },
+            {
+              "name": "尚-路易·特罕狄釀",
+              "char": "The Judge",
+              "photo": "https://image.tmdb.org/t/p/w500/wn6owr4wvkeaEvlsPtwXSldFGEW.jpg"
+            },
+            {
+              "name": "Frédérique Feder",
+              "char": "Karin",
+              "photo": "https://image.tmdb.org/t/p/w500/vHCAJPYuFb2JJeX18yVo8hJmQeY.jpg"
+            },
+            {
+              "name": "Jean-Pierre Lorit",
+              "char": "Auguste",
+              "photo": "https://image.tmdb.org/t/p/w500/xP0IO3ZEAUmriWN36pAqeExloDK.jpg"
+            },
+            {
+              "name": "Samuel Le Bihan",
+              "char": "Photographer",
+              "photo": "https://image.tmdb.org/t/p/w500/jN4hwWfhFaE8v5TGiS6cg9HKOxe.jpg"
+            },
+            {
+              "name": "Marion Stalens",
+              "char": "Veterinarian",
+              "photo": "https://image.tmdb.org/t/p/w500/8AEcShsEooBHYwneHUHyL65mtxO.jpg"
+            },
+            {
+              "name": "Teco Celio",
+              "char": "Bartender",
+              "photo": "https://image.tmdb.org/t/p/w500/5PUIFW0JvgoaLX1ndyJbSeBdQF0.jpg"
+            },
+            {
+              "name": "Bernard Escalon",
+              "char": "Record Dealer",
+              "photo": "https://image.tmdb.org/t/p/w500/hRifAJBIuQEd6xUhvVkYm4tiZOy.jpg"
+            },
+            {
+              "name": "Jean Schlegel",
+              "char": "Neighbor",
+              "photo": null
+            },
+            {
+              "name": "Elżbieta Jasińska",
+              "char": "Woman",
+              "photo": "https://image.tmdb.org/t/p/w500/hcM2a714AjQXejIkhOqY30QcZQw.jpg"
+            },
+            {
+              "name": "Paul Vermeulen",
+              "char": "Karin's Friend",
+              "photo": null
+            },
+            {
+              "name": "Jean-Marie Daunas",
+              "char": "Theater Keeper",
+              "photo": null
+            },
+            {
+              "name": "Roland Carey",
+              "char": "Dealer",
+              "photo": "https://image.tmdb.org/t/p/w500/jynPOZGBo9ANYHPmTvs4ygFWTWk.jpg"
+            },
+            {
+              "name": "Brigitte Raul",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Leo Ramseyer",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Nader Farman",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Krzysztof Piesiewicz",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 4127033,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Trois couleurs : Rouge",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/110?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1600,
+        "titleZh": "雙面薇若妮卡",
+        "titleEn": "La Double Vie de Véronique",
+        "releaseDate": "2026-09-11",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-11",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/7JlDGWMTeutU8HMfFmrVHJVCv60.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/vjsFyeCf5W5rxCFpS9MIAEZJkIG.jpg",
+        "voteAverage": "7.5",
+        "genre": [
+          "劇情",
+          "奇幻"
+        ],
+        "duration": 98,
+        "synopsis": "波蘭的維若妮卡與法國的薇若妮卡互不相識，卻都擁有音樂天賦，年齡相仿、長相相似，甚至都有致命的心臟宿疾。神秘難解的命運將她們彼此緊密維繫，彷彿同樣的靈魂一生為二，互相交換死生蛻變。她們不僅是幾乎一模一樣的人，還是冥冥中能夠互相感應的人。波蘭的維若妮卡曾對自己的父親說：「我有種奇特的感覺，我在這世上並不是孤單一人的。」；法國的薇若妮卡也說著類似的話：「我覺得自己好像同時活在兩個地方，總該知道自己該做什麼。」所有的一切似乎都暗示著，這兩條生命彼此平行依存，卻未曾真正相遇。",
+        "imdb": "7.6",
+        "rt": "86%",
+        "mc": "86",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 56355,
+            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 36,
+            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 10,
+            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "伊蓮·雅各",
+            "char": "Weronika / Véronique",
+            "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
+          },
+          {
+            "name": "Halina Gryglaszewska",
+            "char": "Auntie",
+            "photo": "https://image.tmdb.org/t/p/w500/sx6WP8WhHsiRJKBavxYSxiEgXz7.jpg"
+          },
+          {
+            "name": "Philippe Volter",
+            "char": "Alexandre Fabbri",
+            "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
+          },
+          {
+            "name": "Guillaume de Tonquédec",
+            "char": "Serge",
+            "photo": "https://image.tmdb.org/t/p/w500/7QaSXmd5ejhrnypPH4BgiFVgcbP.jpg"
+          },
+          {
+            "name": "Kalina Jędrusik",
+            "char": "Crazy Woman",
+            "photo": "https://image.tmdb.org/t/p/w500/kdBsBNm2hbzKnejkNfJ9spNyKUg.jpg"
+          },
+          {
+            "name": "Aleksander Bardini",
+            "char": "Conductor",
+            "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
+          },
+          {
+            "name": "Władysław Kowalski",
+            "char": "Weronika's Father",
+            "photo": "https://image.tmdb.org/t/p/w500/tjPV7qMmVUvKaHBPG3Imlx2w0KX.jpg"
+          },
+          {
+            "name": "Jerzy Gudejko",
+            "char": "Antek",
+            "photo": "https://image.tmdb.org/t/p/w500/gRtUVcIuQOnngorj609shEBZosU.jpg"
+          },
+          {
+            "name": "Janusz Sterninski",
+            "char": "Lawyer",
+            "photo": null
+          },
+          {
+            "name": "Sandrine Dumas",
+            "char": "Catherine",
+            "photo": "https://image.tmdb.org/t/p/w500/2zgcukScZ9jqtdHhdREf9PmPn08.jpg"
+          },
+          {
+            "name": "Louis Ducreux",
+            "char": "Professor",
+            "photo": "https://image.tmdb.org/t/p/w500/rTgfxPZn9a2pPpXcP9PGeiPpMHB.jpg"
+          },
+          {
+            "name": "Claude Duneton",
+            "char": "Véronique's Father",
+            "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
+          },
+          {
+            "name": "Lorraine Evanoff",
+            "char": "Claude",
+            "photo": "https://image.tmdb.org/t/p/w500/yK6cfhLfvfemR0v0qvnrxezHB4U.jpg"
+          },
+          {
+            "name": "Gilles Gaston-Dreyfus",
+            "char": "Jean-Pierre",
+            "photo": "https://image.tmdb.org/t/p/w500/gqXFUdM162eGPRz9zYbGSx6b1qv.jpg"
+          },
+          {
+            "name": "Alain Frérot",
+            "char": "Factor",
+            "photo": "https://image.tmdb.org/t/p/w500/zVNKKRmaVWHOJmSpSm82HmF2IQP.jpg"
+          },
+          {
+            "name": "Youssef Hamid",
+            "char": "Cheminot",
+            "photo": "https://image.tmdb.org/t/p/w500/8Vn1flCfZn8HFsrHEsvywanxSZa.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
+          },
+          {
+            "name": "Krzysztof Piesiewicz",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 1999955,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "La Double Vie de Véronique",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 4.7731,
+        "imdbId": "tt0101765",
+        "countries": [
+          "France",
+          "Norway",
+          "Poland"
+        ],
+        "detail": {
+          "duration": 98,
+          "genres": [
+            "劇情",
+            "奇幻"
+          ],
+          "synopsis": "波蘭的維若妮卡與法國的薇若妮卡互不相識，卻都擁有音樂天賦，年齡相仿、長相相似，甚至都有致命的心臟宿疾。神秘難解的命運將她們彼此緊密維繫，彷彿同樣的靈魂一生為二，互相交換死生蛻變。她們不僅是幾乎一模一樣的人，還是冥冥中能夠互相感應的人。波蘭的維若妮卡曾對自己的父親說：「我有種奇特的感覺，我在這世上並不是孤單一人的。」；法國的薇若妮卡也說著類似的話：「我覺得自己好像同時活在兩個地方，總該知道自己該做什麼。」所有的一切似乎都暗示著，這兩條生命彼此平行依存，卻未曾真正相遇。",
+          "poster": "https://image.tmdb.org/t/p/w500/7JlDGWMTeutU8HMfFmrVHJVCv60.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/vjsFyeCf5W5rxCFpS9MIAEZJkIG.jpg",
+          "voteAverage": "7.5",
+          "trailerKey": null,
+          "imdbId": "tt0101765",
+          "countries": [
+            "France",
+            "Norway",
+            "Poland"
+          ],
+          "cast": [
+            {
+              "name": "伊蓮·雅各",
+              "char": "Weronika / Véronique",
+              "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
+            },
+            {
+              "name": "Halina Gryglaszewska",
+              "char": "Auntie",
+              "photo": "https://image.tmdb.org/t/p/w500/sx6WP8WhHsiRJKBavxYSxiEgXz7.jpg"
+            },
+            {
+              "name": "Philippe Volter",
+              "char": "Alexandre Fabbri",
+              "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
+            },
+            {
+              "name": "Guillaume de Tonquédec",
+              "char": "Serge",
+              "photo": "https://image.tmdb.org/t/p/w500/7QaSXmd5ejhrnypPH4BgiFVgcbP.jpg"
+            },
+            {
+              "name": "Kalina Jędrusik",
+              "char": "Crazy Woman",
+              "photo": "https://image.tmdb.org/t/p/w500/kdBsBNm2hbzKnejkNfJ9spNyKUg.jpg"
+            },
+            {
+              "name": "Aleksander Bardini",
+              "char": "Conductor",
+              "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
+            },
+            {
+              "name": "Władysław Kowalski",
+              "char": "Weronika's Father",
+              "photo": "https://image.tmdb.org/t/p/w500/tjPV7qMmVUvKaHBPG3Imlx2w0KX.jpg"
+            },
+            {
+              "name": "Jerzy Gudejko",
+              "char": "Antek",
+              "photo": "https://image.tmdb.org/t/p/w500/gRtUVcIuQOnngorj609shEBZosU.jpg"
+            },
+            {
+              "name": "Janusz Sterninski",
+              "char": "Lawyer",
+              "photo": null
+            },
+            {
+              "name": "Sandrine Dumas",
+              "char": "Catherine",
+              "photo": "https://image.tmdb.org/t/p/w500/2zgcukScZ9jqtdHhdREf9PmPn08.jpg"
+            },
+            {
+              "name": "Louis Ducreux",
+              "char": "Professor",
+              "photo": "https://image.tmdb.org/t/p/w500/rTgfxPZn9a2pPpXcP9PGeiPpMHB.jpg"
+            },
+            {
+              "name": "Claude Duneton",
+              "char": "Véronique's Father",
+              "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
+            },
+            {
+              "name": "Lorraine Evanoff",
+              "char": "Claude",
+              "photo": "https://image.tmdb.org/t/p/w500/yK6cfhLfvfemR0v0qvnrxezHB4U.jpg"
+            },
+            {
+              "name": "Gilles Gaston-Dreyfus",
+              "char": "Jean-Pierre",
+              "photo": "https://image.tmdb.org/t/p/w500/gqXFUdM162eGPRz9zYbGSx6b1qv.jpg"
+            },
+            {
+              "name": "Alain Frérot",
+              "char": "Factor",
+              "photo": "https://image.tmdb.org/t/p/w500/zVNKKRmaVWHOJmSpSm82HmF2IQP.jpg"
+            },
+            {
+              "name": "Youssef Hamid",
+              "char": "Cheminot",
+              "photo": "https://image.tmdb.org/t/p/w500/8Vn1flCfZn8HFsrHEsvywanxSZa.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
+            },
+            {
+              "name": "Krzysztof Piesiewicz",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 1999955,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "La Double Vie de Véronique",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1600?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -21094,1160 +21956,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 108,
-        "titleZh": "藍色情挑",
-        "titleEn": "Trois couleurs : Bleu",
-        "releaseDate": "2026-09-11",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-11",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/21Bs8d41XHBplkLt8iZLvW4s3gn.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/nAyUVvcdOKHmukdgGHZ7xR5er1q.jpg",
-        "voteAverage": "7.6",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 98,
-        "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
-        "imdb": "7.8",
-        "rt": "96%",
-        "mc": "87",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 118266,
-            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 57,
-            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 11,
-            "lastChanged": "2026-08-29T15:20:47.756750+08:00"
-          }
-        },
-        "trailerKey": "u7oVxA3PGvE",
-        "cast": [
-          {
-            "name": "茱麗葉畢諾許",
-            "char": "Julie",
-            "photo": "https://image.tmdb.org/t/p/w500/htdZZIroEyJaeHQAUTqokNfkPgl.jpg"
-          },
-          {
-            "name": "Benoît Régent",
-            "char": "Olivier",
-            "photo": "https://image.tmdb.org/t/p/w500/hSCNZq6w24lJUTJpRNyiVTtQ9lL.jpg"
-          },
-          {
-            "name": "Florence Pernel",
-            "char": "Sandrine",
-            "photo": "https://image.tmdb.org/t/p/w500/fqrv9hguDX9xtjlQnZuABOVSoka.jpg"
-          },
-          {
-            "name": "Charlotte Véry",
-            "char": "Lucille",
-            "photo": "https://image.tmdb.org/t/p/w500/mTAW8qpzhvwvqTxxMU3bWKtNGDL.jpg"
-          },
-          {
-            "name": "海倫文森",
-            "char": "Journalist",
-            "photo": "https://image.tmdb.org/t/p/w500/lJJ9WjZJI6cVCpFTsXoHqSDW23v.jpg"
-          },
-          {
-            "name": "Philippe Volter",
-            "char": "Real Estate Agent",
-            "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
-          },
-          {
-            "name": "Claude Duneton",
-            "char": "Doctor",
-            "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
-          },
-          {
-            "name": "Hugues Quester",
-            "char": "Patrice (Julie's Husband)",
-            "photo": "https://image.tmdb.org/t/p/w500/sBLiQG9ihExsM1qMV51RRaOe0kG.jpg"
-          },
-          {
-            "name": "Emmanuelle Riva",
-            "char": "Mother",
-            "photo": "https://image.tmdb.org/t/p/w500/80BOlvNwozJI1xZJGycJb9tBwvQ.jpg"
-          },
-          {
-            "name": "Florence Vignon",
-            "char": "The Copyist",
-            "photo": "https://image.tmdb.org/t/p/w500/uSjOZ4nUgSWPH1cSBgZcuGtd8Wi.jpg"
-          },
-          {
-            "name": "Daniel Martin",
-            "char": "The Downstairs Neighbour",
-            "photo": "https://image.tmdb.org/t/p/w500/fUalx2UASfEKzJ3AKHEa51ys9L.jpg"
-          },
-          {
-            "name": "Jacek Ostaszewski",
-            "char": "The Flutist",
-            "photo": null
-          },
-          {
-            "name": "Catherine Therouenne",
-            "char": "The Neighbour",
-            "photo": null
-          },
-          {
-            "name": "Yann Trégouët",
-            "char": "Antoine",
-            "photo": "https://image.tmdb.org/t/p/w500/4if4KgfqLh3HF2eAetXONbeXvgT.jpg"
-          },
-          {
-            "name": "Alain Ollivier",
-            "char": "The Lawyer",
-            "photo": "https://image.tmdb.org/t/p/w500/dhlpM3HfC3dvNY0QCE5UKJgwv1x.jpg"
-          },
-          {
-            "name": "Isabelle Sadoyan",
-            "char": "Maid",
-            "photo": "https://image.tmdb.org/t/p/w500/A6rXj06ynTG1earh524gkkoJYBF.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Krzysztof Piesiewicz",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 1527572,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "Trois couleurs : Bleu",
-        "platforms": [
-          {
-            "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-          }
-        ],
-        "popularity": 5.4793,
-        "imdbId": "tt0108394",
-        "countries": [
-          "France",
-          "Poland",
-          "Switzerland"
-        ],
-        "detail": {
-          "duration": 98,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
-          "poster": "https://image.tmdb.org/t/p/w500/21Bs8d41XHBplkLt8iZLvW4s3gn.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/nAyUVvcdOKHmukdgGHZ7xR5er1q.jpg",
-          "voteAverage": "7.6",
-          "trailerKey": "u7oVxA3PGvE",
-          "imdbId": "tt0108394",
-          "countries": [
-            "France",
-            "Poland",
-            "Switzerland"
-          ],
-          "cast": [
-            {
-              "name": "茱麗葉畢諾許",
-              "char": "Julie",
-              "photo": "https://image.tmdb.org/t/p/w500/htdZZIroEyJaeHQAUTqokNfkPgl.jpg"
-            },
-            {
-              "name": "Benoît Régent",
-              "char": "Olivier",
-              "photo": "https://image.tmdb.org/t/p/w500/hSCNZq6w24lJUTJpRNyiVTtQ9lL.jpg"
-            },
-            {
-              "name": "Florence Pernel",
-              "char": "Sandrine",
-              "photo": "https://image.tmdb.org/t/p/w500/fqrv9hguDX9xtjlQnZuABOVSoka.jpg"
-            },
-            {
-              "name": "Charlotte Véry",
-              "char": "Lucille",
-              "photo": "https://image.tmdb.org/t/p/w500/mTAW8qpzhvwvqTxxMU3bWKtNGDL.jpg"
-            },
-            {
-              "name": "海倫文森",
-              "char": "Journalist",
-              "photo": "https://image.tmdb.org/t/p/w500/lJJ9WjZJI6cVCpFTsXoHqSDW23v.jpg"
-            },
-            {
-              "name": "Philippe Volter",
-              "char": "Real Estate Agent",
-              "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
-            },
-            {
-              "name": "Claude Duneton",
-              "char": "Doctor",
-              "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
-            },
-            {
-              "name": "Hugues Quester",
-              "char": "Patrice (Julie's Husband)",
-              "photo": "https://image.tmdb.org/t/p/w500/sBLiQG9ihExsM1qMV51RRaOe0kG.jpg"
-            },
-            {
-              "name": "Emmanuelle Riva",
-              "char": "Mother",
-              "photo": "https://image.tmdb.org/t/p/w500/80BOlvNwozJI1xZJGycJb9tBwvQ.jpg"
-            },
-            {
-              "name": "Florence Vignon",
-              "char": "The Copyist",
-              "photo": "https://image.tmdb.org/t/p/w500/uSjOZ4nUgSWPH1cSBgZcuGtd8Wi.jpg"
-            },
-            {
-              "name": "Daniel Martin",
-              "char": "The Downstairs Neighbour",
-              "photo": "https://image.tmdb.org/t/p/w500/fUalx2UASfEKzJ3AKHEa51ys9L.jpg"
-            },
-            {
-              "name": "Jacek Ostaszewski",
-              "char": "The Flutist",
-              "photo": null
-            },
-            {
-              "name": "Catherine Therouenne",
-              "char": "The Neighbour",
-              "photo": null
-            },
-            {
-              "name": "Yann Trégouët",
-              "char": "Antoine",
-              "photo": "https://image.tmdb.org/t/p/w500/4if4KgfqLh3HF2eAetXONbeXvgT.jpg"
-            },
-            {
-              "name": "Alain Ollivier",
-              "char": "The Lawyer",
-              "photo": "https://image.tmdb.org/t/p/w500/dhlpM3HfC3dvNY0QCE5UKJgwv1x.jpg"
-            },
-            {
-              "name": "Isabelle Sadoyan",
-              "char": "Maid",
-              "photo": "https://image.tmdb.org/t/p/w500/A6rXj06ynTG1earh524gkkoJYBF.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Krzysztof Piesiewicz",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 1527572,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "Trois couleurs : Bleu",
-          "platforms": [
-            {
-              "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/108?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 109,
-        "titleZh": "白色情迷",
-        "titleEn": "Trois couleurs : Blanc",
-        "releaseDate": "2026-09-11",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-11",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/abxrKqKkmGtENHD2ZU9nomj8EeU.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
-        "voteAverage": "7.4",
-        "genre": [
-          "喜劇",
-          "劇情",
-          "懸疑"
-        ],
-        "duration": 92,
-        "synopsis": "遠離家鄉的卡洛有一位美麗的妻子多明妮嘉，他深愛她，但是反倒令多明妮嘉倍感壓力，一心想離開他。忍無可忍後，多明妮嘉因丈夫無法履行婚姻義務訴求離婚。被拋棄的卡洛輾轉回到家鄉波蘭，卻意外成了大富翁，開始一連串對妻子的報復。他偽裝死亡，引誘前妻到波蘭憑弔他，藉機與前妻重修舊好後，最後成功陷害她入獄。",
-        "imdb": "7.6",
-        "rt": "91%",
-        "mc": "91",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 85094,
-            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 55,
-            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 11,
-            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "齊伯尼·查馬修瓦斯基",
-            "char": "Karol Karol",
-            "photo": "https://image.tmdb.org/t/p/w500/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg"
-          },
-          {
-            "name": "茱莉·蝶兒",
-            "char": "Dominique",
-            "photo": "https://image.tmdb.org/t/p/w500/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg"
-          },
-          {
-            "name": "Janusz Gajos",
-            "char": "Mikołaj",
-            "photo": "https://image.tmdb.org/t/p/w500/6JMVmicFJvsSsRkOpgqV2cetre.jpg"
-          },
-          {
-            "name": "Jerzy Stuhr",
-            "char": "Jurek",
-            "photo": "https://image.tmdb.org/t/p/w500/xzkvKrdITQm8BzYLF8o0xhG3fdA.jpg"
-          },
-          {
-            "name": "Grzegorz Warchoł",
-            "char": "Elegant",
-            "photo": "https://image.tmdb.org/t/p/w500/wu33kWXWxcJt4y360KnuPjbZ9gh.jpg"
-          },
-          {
-            "name": "Jerzy Nowak",
-            "char": "Old Peasant",
-            "photo": "https://image.tmdb.org/t/p/w500/d4FLYnKTAJdjtfbi5TiRmosLjwr.jpg"
-          },
-          {
-            "name": "Aleksander Bardini",
-            "char": "Notary",
-            "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
-          },
-          {
-            "name": "Cezary Harasimowicz",
-            "char": "Inspector",
-            "photo": "https://image.tmdb.org/t/p/w500/rHbmU9MLHDeQ1DOpu9vyvkN7NPx.jpg"
-          },
-          {
-            "name": "Jerzy Trela",
-            "char": "Monsieur Bronek",
-            "photo": "https://image.tmdb.org/t/p/w500/rem3V2py3o6eaaR4KQTvClVKX6n.jpg"
-          },
-          {
-            "name": "Cezary Pazura",
-            "char": "Exchange Office Owner",
-            "photo": "https://image.tmdb.org/t/p/w500/l1XAe6DKyAUXzqSgErl3BDeSF8r.jpg"
-          },
-          {
-            "name": "Michel Lisowski",
-            "char": "Interpreter",
-            "photo": null
-          },
-          {
-            "name": "Piotr Machalica",
-            "char": "Man under the Exchange Office",
-            "photo": "https://image.tmdb.org/t/p/w500/xoXFSBm3AH09f4S576md2yKl0Cm.jpg"
-          },
-          {
-            "name": "Barbara Dziekan",
-            "char": "Mrs. Ewa",
-            "photo": "https://image.tmdb.org/t/p/w500/4EAg2Pcn1rtcU8Um8xitNVEqRuW.jpg"
-          },
-          {
-            "name": "Marzena Trybała",
-            "char": "Mariott Employee",
-            "photo": "https://image.tmdb.org/t/p/w500/oR7LRnQeHaPD4TMoYDHA6hM5b2e.jpg"
-          },
-          {
-            "name": "Philippe Morier-Genoud",
-            "char": "Judge",
-            "photo": "https://image.tmdb.org/t/p/w500/vMGXntjEzXx7n1gyWi11I2urB9k.jpg"
-          },
-          {
-            "name": "Francis Coffinet",
-            "char": "Bank Clerk",
-            "photo": "https://image.tmdb.org/t/p/w500/6s8qwFqOQskwgHhxvSSHTLraAlz.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Krzysztof Piesiewicz",
-            "job": "Screenplay"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 1273525,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "Trois couleurs : Blanc",
-        "platforms": [
-          {
-            "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-          }
-        ],
-        "popularity": 5.8223,
-        "imdbId": "tt0111507",
-        "countries": [
-          "France",
-          "Poland",
-          "Switzerland"
-        ],
-        "detail": {
-          "duration": 92,
-          "genres": [
-            "喜劇",
-            "劇情",
-            "懸疑"
-          ],
-          "synopsis": "遠離家鄉的卡洛有一位美麗的妻子多明妮嘉，他深愛她，但是反倒令多明妮嘉倍感壓力，一心想離開他。忍無可忍後，多明妮嘉因丈夫無法履行婚姻義務訴求離婚。被拋棄的卡洛輾轉回到家鄉波蘭，卻意外成了大富翁，開始一連串對妻子的報復。他偽裝死亡，引誘前妻到波蘭憑弔他，藉機與前妻重修舊好後，最後成功陷害她入獄。",
-          "poster": "https://image.tmdb.org/t/p/w500/abxrKqKkmGtENHD2ZU9nomj8EeU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
-          "voteAverage": "7.4",
-          "trailerKey": null,
-          "imdbId": "tt0111507",
-          "countries": [
-            "France",
-            "Poland",
-            "Switzerland"
-          ],
-          "cast": [
-            {
-              "name": "齊伯尼·查馬修瓦斯基",
-              "char": "Karol Karol",
-              "photo": "https://image.tmdb.org/t/p/w500/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg"
-            },
-            {
-              "name": "茱莉·蝶兒",
-              "char": "Dominique",
-              "photo": "https://image.tmdb.org/t/p/w500/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg"
-            },
-            {
-              "name": "Janusz Gajos",
-              "char": "Mikołaj",
-              "photo": "https://image.tmdb.org/t/p/w500/6JMVmicFJvsSsRkOpgqV2cetre.jpg"
-            },
-            {
-              "name": "Jerzy Stuhr",
-              "char": "Jurek",
-              "photo": "https://image.tmdb.org/t/p/w500/xzkvKrdITQm8BzYLF8o0xhG3fdA.jpg"
-            },
-            {
-              "name": "Grzegorz Warchoł",
-              "char": "Elegant",
-              "photo": "https://image.tmdb.org/t/p/w500/wu33kWXWxcJt4y360KnuPjbZ9gh.jpg"
-            },
-            {
-              "name": "Jerzy Nowak",
-              "char": "Old Peasant",
-              "photo": "https://image.tmdb.org/t/p/w500/d4FLYnKTAJdjtfbi5TiRmosLjwr.jpg"
-            },
-            {
-              "name": "Aleksander Bardini",
-              "char": "Notary",
-              "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
-            },
-            {
-              "name": "Cezary Harasimowicz",
-              "char": "Inspector",
-              "photo": "https://image.tmdb.org/t/p/w500/rHbmU9MLHDeQ1DOpu9vyvkN7NPx.jpg"
-            },
-            {
-              "name": "Jerzy Trela",
-              "char": "Monsieur Bronek",
-              "photo": "https://image.tmdb.org/t/p/w500/rem3V2py3o6eaaR4KQTvClVKX6n.jpg"
-            },
-            {
-              "name": "Cezary Pazura",
-              "char": "Exchange Office Owner",
-              "photo": "https://image.tmdb.org/t/p/w500/l1XAe6DKyAUXzqSgErl3BDeSF8r.jpg"
-            },
-            {
-              "name": "Michel Lisowski",
-              "char": "Interpreter",
-              "photo": null
-            },
-            {
-              "name": "Piotr Machalica",
-              "char": "Man under the Exchange Office",
-              "photo": "https://image.tmdb.org/t/p/w500/xoXFSBm3AH09f4S576md2yKl0Cm.jpg"
-            },
-            {
-              "name": "Barbara Dziekan",
-              "char": "Mrs. Ewa",
-              "photo": "https://image.tmdb.org/t/p/w500/4EAg2Pcn1rtcU8Um8xitNVEqRuW.jpg"
-            },
-            {
-              "name": "Marzena Trybała",
-              "char": "Mariott Employee",
-              "photo": "https://image.tmdb.org/t/p/w500/oR7LRnQeHaPD4TMoYDHA6hM5b2e.jpg"
-            },
-            {
-              "name": "Philippe Morier-Genoud",
-              "char": "Judge",
-              "photo": "https://image.tmdb.org/t/p/w500/vMGXntjEzXx7n1gyWi11I2urB9k.jpg"
-            },
-            {
-              "name": "Francis Coffinet",
-              "char": "Bank Clerk",
-              "photo": "https://image.tmdb.org/t/p/w500/6s8qwFqOQskwgHhxvSSHTLraAlz.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Krzysztof Piesiewicz",
-              "job": "Screenplay"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 1273525,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "Trois couleurs : Blanc",
-          "platforms": [
-            {
-              "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/109?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 110,
-        "titleZh": "紅色情深",
-        "titleEn": "Trois couleurs : Rouge",
-        "releaseDate": "2026-09-11",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-11",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/9rnoQFrmdBwqAAEWvmBWY2tGNFs.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/pZcoSJUb3Lgr9Rzg2shg1PtTBP9.jpg",
-        "voteAverage": "7.9",
-        "genre": [
-          "劇情",
-          "懸疑",
-          "愛情"
-        ],
-        "duration": 100,
-        "synopsis": "波蘭電影大師奇士勞斯基逝世20週年紀念修復【藍白紅三部曲】第三部，由伊蓮雅各、尚皮耶羅利與尚路易坦帝尼昂主演。一名模特兒與極度不信任人、喜愛竊聽鄰居電話的退休法官，意外發展出一段特殊的關係。",
-        "imdb": "8.1",
-        "rt": "100%",
-        "mc": "100",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 116330,
-            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 61,
-            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 11,
-            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "伊蓮·雅各",
-            "char": "Valentine",
-            "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
-          },
-          {
-            "name": "尚-路易·特罕狄釀",
-            "char": "The Judge",
-            "photo": "https://image.tmdb.org/t/p/w500/wn6owr4wvkeaEvlsPtwXSldFGEW.jpg"
-          },
-          {
-            "name": "Frédérique Feder",
-            "char": "Karin",
-            "photo": "https://image.tmdb.org/t/p/w500/vHCAJPYuFb2JJeX18yVo8hJmQeY.jpg"
-          },
-          {
-            "name": "Jean-Pierre Lorit",
-            "char": "Auguste",
-            "photo": "https://image.tmdb.org/t/p/w500/xP0IO3ZEAUmriWN36pAqeExloDK.jpg"
-          },
-          {
-            "name": "Samuel Le Bihan",
-            "char": "Photographer",
-            "photo": "https://image.tmdb.org/t/p/w500/jN4hwWfhFaE8v5TGiS6cg9HKOxe.jpg"
-          },
-          {
-            "name": "Marion Stalens",
-            "char": "Veterinarian",
-            "photo": "https://image.tmdb.org/t/p/w500/8AEcShsEooBHYwneHUHyL65mtxO.jpg"
-          },
-          {
-            "name": "Teco Celio",
-            "char": "Bartender",
-            "photo": "https://image.tmdb.org/t/p/w500/5PUIFW0JvgoaLX1ndyJbSeBdQF0.jpg"
-          },
-          {
-            "name": "Bernard Escalon",
-            "char": "Record Dealer",
-            "photo": "https://image.tmdb.org/t/p/w500/hRifAJBIuQEd6xUhvVkYm4tiZOy.jpg"
-          },
-          {
-            "name": "Jean Schlegel",
-            "char": "Neighbor",
-            "photo": null
-          },
-          {
-            "name": "Elżbieta Jasińska",
-            "char": "Woman",
-            "photo": "https://image.tmdb.org/t/p/w500/hcM2a714AjQXejIkhOqY30QcZQw.jpg"
-          },
-          {
-            "name": "Paul Vermeulen",
-            "char": "Karin's Friend",
-            "photo": null
-          },
-          {
-            "name": "Jean-Marie Daunas",
-            "char": "Theater Keeper",
-            "photo": null
-          },
-          {
-            "name": "Roland Carey",
-            "char": "Dealer",
-            "photo": "https://image.tmdb.org/t/p/w500/jynPOZGBo9ANYHPmTvs4ygFWTWk.jpg"
-          },
-          {
-            "name": "Brigitte Raul",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Leo Ramseyer",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Nader Farman",
-            "char": "",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Krzysztof Piesiewicz",
-            "job": "Screenplay"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 4127033,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "Trois couleurs : Rouge",
-        "platforms": [
-          {
-            "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-          }
-        ],
-        "popularity": 5.8292,
-        "imdbId": "tt0111495",
-        "countries": [
-          "France",
-          "Poland",
-          "Switzerland"
-        ],
-        "detail": {
-          "duration": 100,
-          "genres": [
-            "劇情",
-            "懸疑",
-            "愛情"
-          ],
-          "synopsis": "波蘭電影大師奇士勞斯基逝世20週年紀念修復【藍白紅三部曲】第三部，由伊蓮雅各、尚皮耶羅利與尚路易坦帝尼昂主演。一名模特兒與極度不信任人、喜愛竊聽鄰居電話的退休法官，意外發展出一段特殊的關係。",
-          "poster": "https://image.tmdb.org/t/p/w500/9rnoQFrmdBwqAAEWvmBWY2tGNFs.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/pZcoSJUb3Lgr9Rzg2shg1PtTBP9.jpg",
-          "voteAverage": "7.9",
-          "trailerKey": null,
-          "imdbId": "tt0111495",
-          "countries": [
-            "France",
-            "Poland",
-            "Switzerland"
-          ],
-          "cast": [
-            {
-              "name": "伊蓮·雅各",
-              "char": "Valentine",
-              "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
-            },
-            {
-              "name": "尚-路易·特罕狄釀",
-              "char": "The Judge",
-              "photo": "https://image.tmdb.org/t/p/w500/wn6owr4wvkeaEvlsPtwXSldFGEW.jpg"
-            },
-            {
-              "name": "Frédérique Feder",
-              "char": "Karin",
-              "photo": "https://image.tmdb.org/t/p/w500/vHCAJPYuFb2JJeX18yVo8hJmQeY.jpg"
-            },
-            {
-              "name": "Jean-Pierre Lorit",
-              "char": "Auguste",
-              "photo": "https://image.tmdb.org/t/p/w500/xP0IO3ZEAUmriWN36pAqeExloDK.jpg"
-            },
-            {
-              "name": "Samuel Le Bihan",
-              "char": "Photographer",
-              "photo": "https://image.tmdb.org/t/p/w500/jN4hwWfhFaE8v5TGiS6cg9HKOxe.jpg"
-            },
-            {
-              "name": "Marion Stalens",
-              "char": "Veterinarian",
-              "photo": "https://image.tmdb.org/t/p/w500/8AEcShsEooBHYwneHUHyL65mtxO.jpg"
-            },
-            {
-              "name": "Teco Celio",
-              "char": "Bartender",
-              "photo": "https://image.tmdb.org/t/p/w500/5PUIFW0JvgoaLX1ndyJbSeBdQF0.jpg"
-            },
-            {
-              "name": "Bernard Escalon",
-              "char": "Record Dealer",
-              "photo": "https://image.tmdb.org/t/p/w500/hRifAJBIuQEd6xUhvVkYm4tiZOy.jpg"
-            },
-            {
-              "name": "Jean Schlegel",
-              "char": "Neighbor",
-              "photo": null
-            },
-            {
-              "name": "Elżbieta Jasińska",
-              "char": "Woman",
-              "photo": "https://image.tmdb.org/t/p/w500/hcM2a714AjQXejIkhOqY30QcZQw.jpg"
-            },
-            {
-              "name": "Paul Vermeulen",
-              "char": "Karin's Friend",
-              "photo": null
-            },
-            {
-              "name": "Jean-Marie Daunas",
-              "char": "Theater Keeper",
-              "photo": null
-            },
-            {
-              "name": "Roland Carey",
-              "char": "Dealer",
-              "photo": "https://image.tmdb.org/t/p/w500/jynPOZGBo9ANYHPmTvs4ygFWTWk.jpg"
-            },
-            {
-              "name": "Brigitte Raul",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Leo Ramseyer",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Nader Farman",
-              "char": "",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Krzysztof Piesiewicz",
-              "job": "Screenplay"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 4127033,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "Trois couleurs : Rouge",
-          "platforms": [
-            {
-              "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/110?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1600,
-        "titleZh": "雙面薇若妮卡",
-        "titleEn": "La Double Vie de Véronique",
-        "releaseDate": "2026-09-11",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-11",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/7JlDGWMTeutU8HMfFmrVHJVCv60.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/vjsFyeCf5W5rxCFpS9MIAEZJkIG.jpg",
-        "voteAverage": "7.5",
-        "genre": [
-          "劇情",
-          "奇幻"
-        ],
-        "duration": 98,
-        "synopsis": "波蘭的維若妮卡與法國的薇若妮卡互不相識，卻都擁有音樂天賦，年齡相仿、長相相似，甚至都有致命的心臟宿疾。神秘難解的命運將她們彼此緊密維繫，彷彿同樣的靈魂一生為二，互相交換死生蛻變。她們不僅是幾乎一模一樣的人，還是冥冥中能夠互相感應的人。波蘭的維若妮卡曾對自己的父親說：「我有種奇特的感覺，我在這世上並不是孤單一人的。」；法國的薇若妮卡也說著類似的話：「我覺得自己好像同時活在兩個地方，總該知道自己該做什麼。」所有的一切似乎都暗示著，這兩條生命彼此平行依存，卻未曾真正相遇。",
-        "imdb": "7.6",
-        "rt": "86%",
-        "mc": "86",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 56355,
-            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 36,
-            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 10,
-            "lastChanged": "2026-08-29T22:03:55.290760+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "伊蓮·雅各",
-            "char": "Weronika / Véronique",
-            "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
-          },
-          {
-            "name": "Halina Gryglaszewska",
-            "char": "Auntie",
-            "photo": "https://image.tmdb.org/t/p/w500/sx6WP8WhHsiRJKBavxYSxiEgXz7.jpg"
-          },
-          {
-            "name": "Philippe Volter",
-            "char": "Alexandre Fabbri",
-            "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
-          },
-          {
-            "name": "Guillaume de Tonquédec",
-            "char": "Serge",
-            "photo": "https://image.tmdb.org/t/p/w500/7QaSXmd5ejhrnypPH4BgiFVgcbP.jpg"
-          },
-          {
-            "name": "Kalina Jędrusik",
-            "char": "Crazy Woman",
-            "photo": "https://image.tmdb.org/t/p/w500/kdBsBNm2hbzKnejkNfJ9spNyKUg.jpg"
-          },
-          {
-            "name": "Aleksander Bardini",
-            "char": "Conductor",
-            "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
-          },
-          {
-            "name": "Władysław Kowalski",
-            "char": "Weronika's Father",
-            "photo": "https://image.tmdb.org/t/p/w500/tjPV7qMmVUvKaHBPG3Imlx2w0KX.jpg"
-          },
-          {
-            "name": "Jerzy Gudejko",
-            "char": "Antek",
-            "photo": "https://image.tmdb.org/t/p/w500/gRtUVcIuQOnngorj609shEBZosU.jpg"
-          },
-          {
-            "name": "Janusz Sterninski",
-            "char": "Lawyer",
-            "photo": null
-          },
-          {
-            "name": "Sandrine Dumas",
-            "char": "Catherine",
-            "photo": "https://image.tmdb.org/t/p/w500/2zgcukScZ9jqtdHhdREf9PmPn08.jpg"
-          },
-          {
-            "name": "Louis Ducreux",
-            "char": "Professor",
-            "photo": "https://image.tmdb.org/t/p/w500/rTgfxPZn9a2pPpXcP9PGeiPpMHB.jpg"
-          },
-          {
-            "name": "Claude Duneton",
-            "char": "Véronique's Father",
-            "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
-          },
-          {
-            "name": "Lorraine Evanoff",
-            "char": "Claude",
-            "photo": "https://image.tmdb.org/t/p/w500/yK6cfhLfvfemR0v0qvnrxezHB4U.jpg"
-          },
-          {
-            "name": "Gilles Gaston-Dreyfus",
-            "char": "Jean-Pierre",
-            "photo": "https://image.tmdb.org/t/p/w500/gqXFUdM162eGPRz9zYbGSx6b1qv.jpg"
-          },
-          {
-            "name": "Alain Frérot",
-            "char": "Factor",
-            "photo": "https://image.tmdb.org/t/p/w500/zVNKKRmaVWHOJmSpSm82HmF2IQP.jpg"
-          },
-          {
-            "name": "Youssef Hamid",
-            "char": "Cheminot",
-            "photo": "https://image.tmdb.org/t/p/w500/8Vn1flCfZn8HFsrHEsvywanxSZa.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
-          },
-          {
-            "name": "Krzysztof Piesiewicz",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 1999955,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "La Double Vie de Véronique",
-        "platforms": [
-          {
-            "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-          }
-        ],
-        "popularity": 4.7731,
-        "imdbId": "tt0101765",
-        "countries": [
-          "France",
-          "Norway",
-          "Poland"
-        ],
-        "detail": {
-          "duration": 98,
-          "genres": [
-            "劇情",
-            "奇幻"
-          ],
-          "synopsis": "波蘭的維若妮卡與法國的薇若妮卡互不相識，卻都擁有音樂天賦，年齡相仿、長相相似，甚至都有致命的心臟宿疾。神秘難解的命運將她們彼此緊密維繫，彷彿同樣的靈魂一生為二，互相交換死生蛻變。她們不僅是幾乎一模一樣的人，還是冥冥中能夠互相感應的人。波蘭的維若妮卡曾對自己的父親說：「我有種奇特的感覺，我在這世上並不是孤單一人的。」；法國的薇若妮卡也說著類似的話：「我覺得自己好像同時活在兩個地方，總該知道自己該做什麼。」所有的一切似乎都暗示著，這兩條生命彼此平行依存，卻未曾真正相遇。",
-          "poster": "https://image.tmdb.org/t/p/w500/7JlDGWMTeutU8HMfFmrVHJVCv60.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/vjsFyeCf5W5rxCFpS9MIAEZJkIG.jpg",
-          "voteAverage": "7.5",
-          "trailerKey": null,
-          "imdbId": "tt0101765",
-          "countries": [
-            "France",
-            "Norway",
-            "Poland"
-          ],
-          "cast": [
-            {
-              "name": "伊蓮·雅各",
-              "char": "Weronika / Véronique",
-              "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
-            },
-            {
-              "name": "Halina Gryglaszewska",
-              "char": "Auntie",
-              "photo": "https://image.tmdb.org/t/p/w500/sx6WP8WhHsiRJKBavxYSxiEgXz7.jpg"
-            },
-            {
-              "name": "Philippe Volter",
-              "char": "Alexandre Fabbri",
-              "photo": "https://image.tmdb.org/t/p/w500/64YFCcB1D6FfPV7WE8OTEf2WP2V.jpg"
-            },
-            {
-              "name": "Guillaume de Tonquédec",
-              "char": "Serge",
-              "photo": "https://image.tmdb.org/t/p/w500/7QaSXmd5ejhrnypPH4BgiFVgcbP.jpg"
-            },
-            {
-              "name": "Kalina Jędrusik",
-              "char": "Crazy Woman",
-              "photo": "https://image.tmdb.org/t/p/w500/kdBsBNm2hbzKnejkNfJ9spNyKUg.jpg"
-            },
-            {
-              "name": "Aleksander Bardini",
-              "char": "Conductor",
-              "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
-            },
-            {
-              "name": "Władysław Kowalski",
-              "char": "Weronika's Father",
-              "photo": "https://image.tmdb.org/t/p/w500/tjPV7qMmVUvKaHBPG3Imlx2w0KX.jpg"
-            },
-            {
-              "name": "Jerzy Gudejko",
-              "char": "Antek",
-              "photo": "https://image.tmdb.org/t/p/w500/gRtUVcIuQOnngorj609shEBZosU.jpg"
-            },
-            {
-              "name": "Janusz Sterninski",
-              "char": "Lawyer",
-              "photo": null
-            },
-            {
-              "name": "Sandrine Dumas",
-              "char": "Catherine",
-              "photo": "https://image.tmdb.org/t/p/w500/2zgcukScZ9jqtdHhdREf9PmPn08.jpg"
-            },
-            {
-              "name": "Louis Ducreux",
-              "char": "Professor",
-              "photo": "https://image.tmdb.org/t/p/w500/rTgfxPZn9a2pPpXcP9PGeiPpMHB.jpg"
-            },
-            {
-              "name": "Claude Duneton",
-              "char": "Véronique's Father",
-              "photo": "https://image.tmdb.org/t/p/w500/9rXxZtykBGKc7On67xkkxlFlLWf.jpg"
-            },
-            {
-              "name": "Lorraine Evanoff",
-              "char": "Claude",
-              "photo": "https://image.tmdb.org/t/p/w500/yK6cfhLfvfemR0v0qvnrxezHB4U.jpg"
-            },
-            {
-              "name": "Gilles Gaston-Dreyfus",
-              "char": "Jean-Pierre",
-              "photo": "https://image.tmdb.org/t/p/w500/gqXFUdM162eGPRz9zYbGSx6b1qv.jpg"
-            },
-            {
-              "name": "Alain Frérot",
-              "char": "Factor",
-              "photo": "https://image.tmdb.org/t/p/w500/zVNKKRmaVWHOJmSpSm82HmF2IQP.jpg"
-            },
-            {
-              "name": "Youssef Hamid",
-              "char": "Cheminot",
-              "photo": "https://image.tmdb.org/t/p/w500/8Vn1flCfZn8HFsrHEsvywanxSZa.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
-            },
-            {
-              "name": "Krzysztof Piesiewicz",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 1999955,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "La Double Vie de Véronique",
-          "platforms": [
-            {
-              "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1600?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1423191,
         "titleZh": "惡靈古堡：爆發夜",
         "titleEn": "Resident Evil",
@@ -22404,7 +22112,7 @@
         "titleZh": "航海王：死亡盡頭大冒險",
         "titleEn": "ワンピース デッドエンドの冒険",
         "releaseDate": "2026-09-18",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-09-18",
@@ -22658,6 +22366,298 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 837335,
+        "titleZh": "盜墓奇美拉",
+        "titleEn": "La chimera",
+        "releaseDate": "2026-09-18",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/1T2zxXHcyMF3JSSOF1vDlvQHedo.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ovtTn2GkzOYsMvAVWl6Bt0jN4Ye.jpg",
+        "voteAverage": "7.3",
+        "genre": [
+          "劇情",
+          "奇幻",
+          "喜劇"
+        ],
+        "duration": 131,
+        "synopsis": "來自英國的考古學家阿圖，擁有能感應地下珍貴寶物的特殊能力，他曾深愛莊園女主人的女兒貝妮亞米娜，最終卻失去了摯愛。剛從監獄放出來、狼狽落魄的他，回到貝妮亞米娜的義大利家鄉，終日魂不守舍，希望能與她再次相遇。此時一位盜墓小賊找上他尋找墓穴的寶藏，但阿圖想尋找的，卻是死亡之外的東西。",
+        "imdb": "7.3",
+        "rt": "95%",
+        "mc": "91",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 19932,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 152,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 31,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          }
+        },
+        "trailerKey": "MblFuXKUdZg",
+        "cast": [
+          {
+            "name": "喬許奧康納",
+            "char": "Arthur",
+            "photo": "https://image.tmdb.org/t/p/w500/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
+          },
+          {
+            "name": "Carol Duarte",
+            "char": "Italia",
+            "photo": "https://image.tmdb.org/t/p/w500/eDkJXH8mBCH45VPWbI3LKluc2vd.jpg"
+          },
+          {
+            "name": "艾芭·羅爾瓦雀",
+            "char": "Spartaco",
+            "photo": "https://image.tmdb.org/t/p/w500/swffcvnDnj5966fdLSnXOMY186.jpg"
+          },
+          {
+            "name": "伊莎貝拉·羅塞里尼",
+            "char": "Flora",
+            "photo": "https://image.tmdb.org/t/p/w500/z0zojT6nwDxi35HMcXlVpBfuBAU.jpg"
+          },
+          {
+            "name": "Vincenzo Nemolato",
+            "char": "Pirro",
+            "photo": "https://image.tmdb.org/t/p/w500/wTFAFh5UKCPse91IX3QrMcwSRjx.jpg"
+          },
+          {
+            "name": "Lou Roy-Lecollinet",
+            "char": "Melodie",
+            "photo": "https://image.tmdb.org/t/p/w500/8ATTKbxquBwk15iWPlAToN1WYx4.jpg"
+          },
+          {
+            "name": "Giuliano Mantovani",
+            "char": "Jerry",
+            "photo": null
+          },
+          {
+            "name": "Gian Piero Capretto",
+            "char": "Mario",
+            "photo": null
+          },
+          {
+            "name": "Melchiorre Pala",
+            "char": "Melchiorre",
+            "photo": null
+          },
+          {
+            "name": "Ramona Fiorini",
+            "char": "Fabiana",
+            "photo": "https://image.tmdb.org/t/p/w500/jMneKkqao51iKbnRpXOm6g09wjS.jpg"
+          },
+          {
+            "name": "Luca Gargiullo",
+            "char": "The Dock Worker",
+            "photo": null
+          },
+          {
+            "name": "Yile Yara Vianello",
+            "char": "Beniamina",
+            "photo": "https://image.tmdb.org/t/p/w500/oqmoWSIlF2eikiGv42rmqEVNi6a.jpg"
+          },
+          {
+            "name": "Barbara Chiesa",
+            "char": "Nella",
+            "photo": "https://image.tmdb.org/t/p/w500/6MmCaik4MzPNHf10HyOAUOUQcej.jpg"
+          },
+          {
+            "name": "Elisabetta Perotto",
+            "char": "Vera",
+            "photo": null
+          },
+          {
+            "name": "Chiara Pazzaglia",
+            "char": "Rossa",
+            "photo": null
+          },
+          {
+            "name": "Francesca Carrain",
+            "char": "Sista",
+            "photo": "https://image.tmdb.org/t/p/w500/jXIGXubO1AiAbTboYyOiOT34N9i.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "艾莉絲·羅爾瓦雀",
+            "job": "Director"
+          },
+          {
+            "name": "艾莉絲·羅爾瓦雀",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 4933288,
+        "status": "Released",
+        "origLang": "it",
+        "origTitle": "La chimera",
+        "platforms": [
+          {
+            "name": "Catchplay",
+            "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 5.505,
+        "imdbId": "tt14561712",
+        "countries": [
+          "Italy",
+          "France",
+          "Switzerland",
+          "Turkey"
+        ],
+        "detail": {
+          "duration": 131,
+          "genres": [
+            "劇情",
+            "奇幻",
+            "喜劇"
+          ],
+          "synopsis": "來自英國的考古學家阿圖，擁有能感應地下珍貴寶物的特殊能力，他曾深愛莊園女主人的女兒貝妮亞米娜，最終卻失去了摯愛。剛從監獄放出來、狼狽落魄的他，回到貝妮亞米娜的義大利家鄉，終日魂不守舍，希望能與她再次相遇。此時一位盜墓小賊找上他尋找墓穴的寶藏，但阿圖想尋找的，卻是死亡之外的東西。",
+          "poster": "https://image.tmdb.org/t/p/w500/1T2zxXHcyMF3JSSOF1vDlvQHedo.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/ovtTn2GkzOYsMvAVWl6Bt0jN4Ye.jpg",
+          "voteAverage": "7.3",
+          "trailerKey": "MblFuXKUdZg",
+          "imdbId": "tt14561712",
+          "countries": [
+            "Italy",
+            "France",
+            "Switzerland",
+            "Turkey"
+          ],
+          "cast": [
+            {
+              "name": "喬許奧康納",
+              "char": "Arthur",
+              "photo": "https://image.tmdb.org/t/p/w500/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
+            },
+            {
+              "name": "Carol Duarte",
+              "char": "Italia",
+              "photo": "https://image.tmdb.org/t/p/w500/eDkJXH8mBCH45VPWbI3LKluc2vd.jpg"
+            },
+            {
+              "name": "艾芭·羅爾瓦雀",
+              "char": "Spartaco",
+              "photo": "https://image.tmdb.org/t/p/w500/swffcvnDnj5966fdLSnXOMY186.jpg"
+            },
+            {
+              "name": "伊莎貝拉·羅塞里尼",
+              "char": "Flora",
+              "photo": "https://image.tmdb.org/t/p/w500/z0zojT6nwDxi35HMcXlVpBfuBAU.jpg"
+            },
+            {
+              "name": "Vincenzo Nemolato",
+              "char": "Pirro",
+              "photo": "https://image.tmdb.org/t/p/w500/wTFAFh5UKCPse91IX3QrMcwSRjx.jpg"
+            },
+            {
+              "name": "Lou Roy-Lecollinet",
+              "char": "Melodie",
+              "photo": "https://image.tmdb.org/t/p/w500/8ATTKbxquBwk15iWPlAToN1WYx4.jpg"
+            },
+            {
+              "name": "Giuliano Mantovani",
+              "char": "Jerry",
+              "photo": null
+            },
+            {
+              "name": "Gian Piero Capretto",
+              "char": "Mario",
+              "photo": null
+            },
+            {
+              "name": "Melchiorre Pala",
+              "char": "Melchiorre",
+              "photo": null
+            },
+            {
+              "name": "Ramona Fiorini",
+              "char": "Fabiana",
+              "photo": "https://image.tmdb.org/t/p/w500/jMneKkqao51iKbnRpXOm6g09wjS.jpg"
+            },
+            {
+              "name": "Luca Gargiullo",
+              "char": "The Dock Worker",
+              "photo": null
+            },
+            {
+              "name": "Yile Yara Vianello",
+              "char": "Beniamina",
+              "photo": "https://image.tmdb.org/t/p/w500/oqmoWSIlF2eikiGv42rmqEVNi6a.jpg"
+            },
+            {
+              "name": "Barbara Chiesa",
+              "char": "Nella",
+              "photo": "https://image.tmdb.org/t/p/w500/6MmCaik4MzPNHf10HyOAUOUQcej.jpg"
+            },
+            {
+              "name": "Elisabetta Perotto",
+              "char": "Vera",
+              "photo": null
+            },
+            {
+              "name": "Chiara Pazzaglia",
+              "char": "Rossa",
+              "photo": null
+            },
+            {
+              "name": "Francesca Carrain",
+              "char": "Sista",
+              "photo": "https://image.tmdb.org/t/p/w500/jXIGXubO1AiAbTboYyOiOT34N9i.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "艾莉絲·羅爾瓦雀",
+              "job": "Director"
+            },
+            {
+              "name": "艾莉絲·羅爾瓦雀",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 4933288,
+          "status": "Released",
+          "origLang": "it",
+          "origTitle": "La chimera",
+          "platforms": [
+            {
+              "name": "Catchplay",
+              "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/837335?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 890216,
         "titleZh": "獵殺荒島",
         "titleEn": "Pacífico",
@@ -22843,6 +22843,276 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/890216?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1255718,
+        "titleZh": "臥底情劫",
+        "titleEn": "Plainclothes",
+        "releaseDate": "2026-09-18",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/oYfxkd9SmmiMrtntWMusNrJ5mKb.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/yMpLgrUs5AILPQwXO2eMtgEEar0.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "劇情",
+          "愛情",
+          "犯罪"
+        ],
+        "duration": 97,
+        "synopsis": "1990年代，同志運動風起雲湧，酷兒認同卻仍被視為禁忌。前景看好的便衣警察盧卡斯，被指派負責於公廁臥底，引誘男同性戀者暴露身分好將其逮捕，卻意外被目標安德魯深深吸引。他無法自拔地沉溺於溫柔鄉，在職責和慾望之間，陷入天人交戰。新年將至，家庭派對上，一封不知去向的信、一名不速之客的出現，迫使盧卡斯直面深深埋藏的過去……",
+        "imdb": "7.1",
+        "rt": "82%",
+        "mc": "65",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 3949,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 90,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 13,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          }
+        },
+        "trailerKey": "906IBcCQMjA",
+        "cast": [
+          {
+            "name": "湯姆·布萊斯",
+            "char": "Lucas",
+            "photo": "https://image.tmdb.org/t/p/w500/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg"
+          },
+          {
+            "name": "Russell Tovey",
+            "char": "Andrew",
+            "photo": "https://image.tmdb.org/t/p/w500/p1hNveDVY6vT5FDT0zJXDnZsDw.jpg"
+          },
+          {
+            "name": "艾美·芙賽斯",
+            "char": "Emily",
+            "photo": "https://image.tmdb.org/t/p/w500/q9ZSgZZrNDavLsbrRQPTJLFGG53.jpg"
+          },
+          {
+            "name": "Maria Dizzia",
+            "char": "Marie",
+            "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
+          },
+          {
+            "name": "Christian Cooke",
+            "char": "Ron",
+            "photo": "https://image.tmdb.org/t/p/w500/pqIqDP4HuRLc60KR8QMTHWhIJNq.jpg"
+          },
+          {
+            "name": "Gabe Fazio",
+            "char": "Uncle Paul",
+            "photo": "https://image.tmdb.org/t/p/w500/xxJMg2Gu04O1ZY7KD95IGheNVG1.jpg"
+          },
+          {
+            "name": "John Bedford Lloyd",
+            "char": "Lt. Sollars",
+            "photo": "https://image.tmdb.org/t/p/w500/tyNDFeQgf2dyjBZtRAskz1lZG1I.jpg"
+          },
+          {
+            "name": "Sam Asa Brownstein",
+            "char": "Christian",
+            "photo": "https://image.tmdb.org/t/p/w500/axleCRM24p36aUUcGd5vyWJv3Vd.jpg"
+          },
+          {
+            "name": "Darius Fraser",
+            "char": "Jeff",
+            "photo": "https://image.tmdb.org/t/p/w500/x7iTK4q6CD11AtFjrpBymsFGIaF.jpg"
+          },
+          {
+            "name": "Alessandra Ford Balazs",
+            "char": "Jessie",
+            "photo": "https://image.tmdb.org/t/p/w500/fFF92ebqJbzRQuIJF6RsDhd6MGh.jpg"
+          },
+          {
+            "name": "Joseph Emmi",
+            "char": "Gus",
+            "photo": null
+          },
+          {
+            "name": "Luke Burke",
+            "char": "Ben",
+            "photo": null
+          },
+          {
+            "name": "Marlene Mancini",
+            "char": "Nonna",
+            "photo": null
+          },
+          {
+            "name": "Henry Stockwell",
+            "char": "Man in Bathroom #1",
+            "photo": null
+          },
+          {
+            "name": "Ben Anderson",
+            "char": "Man in Bathroom #2",
+            "photo": null
+          },
+          {
+            "name": "Jason Ngo",
+            "char": "Man in Bathroom #3",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Carmen Emmi",
+            "job": "Director"
+          },
+          {
+            "name": "Carmen Emmi",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Plainclothes",
+        "platforms": [],
+        "popularity": 3.6378,
+        "imdbId": "tt27550504",
+        "countries": [
+          "United Kingdom",
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 97,
+          "genres": [
+            "劇情",
+            "愛情",
+            "犯罪"
+          ],
+          "synopsis": "1990年代，同志運動風起雲湧，酷兒認同卻仍被視為禁忌。前景看好的便衣警察盧卡斯，被指派負責於公廁臥底，引誘男同性戀者暴露身分好將其逮捕，卻意外被目標安德魯深深吸引。他無法自拔地沉溺於溫柔鄉，在職責和慾望之間，陷入天人交戰。新年將至，家庭派對上，一封不知去向的信、一名不速之客的出現，迫使盧卡斯直面深深埋藏的過去……",
+          "poster": "https://image.tmdb.org/t/p/w500/oYfxkd9SmmiMrtntWMusNrJ5mKb.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/yMpLgrUs5AILPQwXO2eMtgEEar0.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": "906IBcCQMjA",
+          "imdbId": "tt27550504",
+          "countries": [
+            "United Kingdom",
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "湯姆·布萊斯",
+              "char": "Lucas",
+              "photo": "https://image.tmdb.org/t/p/w500/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg"
+            },
+            {
+              "name": "Russell Tovey",
+              "char": "Andrew",
+              "photo": "https://image.tmdb.org/t/p/w500/p1hNveDVY6vT5FDT0zJXDnZsDw.jpg"
+            },
+            {
+              "name": "艾美·芙賽斯",
+              "char": "Emily",
+              "photo": "https://image.tmdb.org/t/p/w500/q9ZSgZZrNDavLsbrRQPTJLFGG53.jpg"
+            },
+            {
+              "name": "Maria Dizzia",
+              "char": "Marie",
+              "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
+            },
+            {
+              "name": "Christian Cooke",
+              "char": "Ron",
+              "photo": "https://image.tmdb.org/t/p/w500/pqIqDP4HuRLc60KR8QMTHWhIJNq.jpg"
+            },
+            {
+              "name": "Gabe Fazio",
+              "char": "Uncle Paul",
+              "photo": "https://image.tmdb.org/t/p/w500/xxJMg2Gu04O1ZY7KD95IGheNVG1.jpg"
+            },
+            {
+              "name": "John Bedford Lloyd",
+              "char": "Lt. Sollars",
+              "photo": "https://image.tmdb.org/t/p/w500/tyNDFeQgf2dyjBZtRAskz1lZG1I.jpg"
+            },
+            {
+              "name": "Sam Asa Brownstein",
+              "char": "Christian",
+              "photo": "https://image.tmdb.org/t/p/w500/axleCRM24p36aUUcGd5vyWJv3Vd.jpg"
+            },
+            {
+              "name": "Darius Fraser",
+              "char": "Jeff",
+              "photo": "https://image.tmdb.org/t/p/w500/x7iTK4q6CD11AtFjrpBymsFGIaF.jpg"
+            },
+            {
+              "name": "Alessandra Ford Balazs",
+              "char": "Jessie",
+              "photo": "https://image.tmdb.org/t/p/w500/fFF92ebqJbzRQuIJF6RsDhd6MGh.jpg"
+            },
+            {
+              "name": "Joseph Emmi",
+              "char": "Gus",
+              "photo": null
+            },
+            {
+              "name": "Luke Burke",
+              "char": "Ben",
+              "photo": null
+            },
+            {
+              "name": "Marlene Mancini",
+              "char": "Nonna",
+              "photo": null
+            },
+            {
+              "name": "Henry Stockwell",
+              "char": "Man in Bathroom #1",
+              "photo": null
+            },
+            {
+              "name": "Ben Anderson",
+              "char": "Man in Bathroom #2",
+              "photo": null
+            },
+            {
+              "name": "Jason Ngo",
+              "char": "Man in Bathroom #3",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Carmen Emmi",
+              "job": "Director"
+            },
+            {
+              "name": "Carmen Emmi",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Plainclothes",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1255718?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -23494,568 +23764,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 837335,
-        "titleZh": "盜墓奇美拉",
-        "titleEn": "La chimera",
-        "releaseDate": "2026-09-18",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-18",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/1T2zxXHcyMF3JSSOF1vDlvQHedo.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/ovtTn2GkzOYsMvAVWl6Bt0jN4Ye.jpg",
-        "voteAverage": "7.3",
-        "genre": [
-          "劇情",
-          "奇幻",
-          "喜劇"
-        ],
-        "duration": 131,
-        "synopsis": "來自英國的考古學家阿圖，擁有能感應地下珍貴寶物的特殊能力，他曾深愛莊園女主人的女兒貝妮亞米娜，最終卻失去了摯愛。剛從監獄放出來、狼狽落魄的他，回到貝妮亞米娜的義大利家鄉，終日魂不守舍，希望能與她再次相遇。此時一位盜墓小賊找上他尋找墓穴的寶藏，但阿圖想尋找的，卻是死亡之外的東西。",
-        "imdb": "7.3",
-        "rt": "95%",
-        "mc": "91",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 19932,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 152,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 31,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          }
-        },
-        "trailerKey": "MblFuXKUdZg",
-        "cast": [
-          {
-            "name": "喬許奧康納",
-            "char": "Arthur",
-            "photo": "https://image.tmdb.org/t/p/w500/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
-          },
-          {
-            "name": "Carol Duarte",
-            "char": "Italia",
-            "photo": "https://image.tmdb.org/t/p/w500/eDkJXH8mBCH45VPWbI3LKluc2vd.jpg"
-          },
-          {
-            "name": "艾芭·羅爾瓦雀",
-            "char": "Spartaco",
-            "photo": "https://image.tmdb.org/t/p/w500/swffcvnDnj5966fdLSnXOMY186.jpg"
-          },
-          {
-            "name": "伊莎貝拉·羅塞里尼",
-            "char": "Flora",
-            "photo": "https://image.tmdb.org/t/p/w500/z0zojT6nwDxi35HMcXlVpBfuBAU.jpg"
-          },
-          {
-            "name": "Vincenzo Nemolato",
-            "char": "Pirro",
-            "photo": "https://image.tmdb.org/t/p/w500/wTFAFh5UKCPse91IX3QrMcwSRjx.jpg"
-          },
-          {
-            "name": "Lou Roy-Lecollinet",
-            "char": "Melodie",
-            "photo": "https://image.tmdb.org/t/p/w500/8ATTKbxquBwk15iWPlAToN1WYx4.jpg"
-          },
-          {
-            "name": "Giuliano Mantovani",
-            "char": "Jerry",
-            "photo": null
-          },
-          {
-            "name": "Gian Piero Capretto",
-            "char": "Mario",
-            "photo": null
-          },
-          {
-            "name": "Melchiorre Pala",
-            "char": "Melchiorre",
-            "photo": null
-          },
-          {
-            "name": "Ramona Fiorini",
-            "char": "Fabiana",
-            "photo": "https://image.tmdb.org/t/p/w500/jMneKkqao51iKbnRpXOm6g09wjS.jpg"
-          },
-          {
-            "name": "Luca Gargiullo",
-            "char": "The Dock Worker",
-            "photo": null
-          },
-          {
-            "name": "Yile Yara Vianello",
-            "char": "Beniamina",
-            "photo": "https://image.tmdb.org/t/p/w500/oqmoWSIlF2eikiGv42rmqEVNi6a.jpg"
-          },
-          {
-            "name": "Barbara Chiesa",
-            "char": "Nella",
-            "photo": "https://image.tmdb.org/t/p/w500/6MmCaik4MzPNHf10HyOAUOUQcej.jpg"
-          },
-          {
-            "name": "Elisabetta Perotto",
-            "char": "Vera",
-            "photo": null
-          },
-          {
-            "name": "Chiara Pazzaglia",
-            "char": "Rossa",
-            "photo": null
-          },
-          {
-            "name": "Francesca Carrain",
-            "char": "Sista",
-            "photo": "https://image.tmdb.org/t/p/w500/jXIGXubO1AiAbTboYyOiOT34N9i.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "艾莉絲·羅爾瓦雀",
-            "job": "Director"
-          },
-          {
-            "name": "艾莉絲·羅爾瓦雀",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 4933288,
-        "status": "Released",
-        "origLang": "it",
-        "origTitle": "La chimera",
-        "platforms": [
-          {
-            "name": "Catchplay",
-            "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
-          },
-          {
-            "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-          }
-        ],
-        "popularity": 5.505,
-        "imdbId": "tt14561712",
-        "countries": [
-          "Italy",
-          "France",
-          "Switzerland",
-          "Turkey"
-        ],
-        "detail": {
-          "duration": 131,
-          "genres": [
-            "劇情",
-            "奇幻",
-            "喜劇"
-          ],
-          "synopsis": "來自英國的考古學家阿圖，擁有能感應地下珍貴寶物的特殊能力，他曾深愛莊園女主人的女兒貝妮亞米娜，最終卻失去了摯愛。剛從監獄放出來、狼狽落魄的他，回到貝妮亞米娜的義大利家鄉，終日魂不守舍，希望能與她再次相遇。此時一位盜墓小賊找上他尋找墓穴的寶藏，但阿圖想尋找的，卻是死亡之外的東西。",
-          "poster": "https://image.tmdb.org/t/p/w500/1T2zxXHcyMF3JSSOF1vDlvQHedo.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/ovtTn2GkzOYsMvAVWl6Bt0jN4Ye.jpg",
-          "voteAverage": "7.3",
-          "trailerKey": "MblFuXKUdZg",
-          "imdbId": "tt14561712",
-          "countries": [
-            "Italy",
-            "France",
-            "Switzerland",
-            "Turkey"
-          ],
-          "cast": [
-            {
-              "name": "喬許奧康納",
-              "char": "Arthur",
-              "photo": "https://image.tmdb.org/t/p/w500/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
-            },
-            {
-              "name": "Carol Duarte",
-              "char": "Italia",
-              "photo": "https://image.tmdb.org/t/p/w500/eDkJXH8mBCH45VPWbI3LKluc2vd.jpg"
-            },
-            {
-              "name": "艾芭·羅爾瓦雀",
-              "char": "Spartaco",
-              "photo": "https://image.tmdb.org/t/p/w500/swffcvnDnj5966fdLSnXOMY186.jpg"
-            },
-            {
-              "name": "伊莎貝拉·羅塞里尼",
-              "char": "Flora",
-              "photo": "https://image.tmdb.org/t/p/w500/z0zojT6nwDxi35HMcXlVpBfuBAU.jpg"
-            },
-            {
-              "name": "Vincenzo Nemolato",
-              "char": "Pirro",
-              "photo": "https://image.tmdb.org/t/p/w500/wTFAFh5UKCPse91IX3QrMcwSRjx.jpg"
-            },
-            {
-              "name": "Lou Roy-Lecollinet",
-              "char": "Melodie",
-              "photo": "https://image.tmdb.org/t/p/w500/8ATTKbxquBwk15iWPlAToN1WYx4.jpg"
-            },
-            {
-              "name": "Giuliano Mantovani",
-              "char": "Jerry",
-              "photo": null
-            },
-            {
-              "name": "Gian Piero Capretto",
-              "char": "Mario",
-              "photo": null
-            },
-            {
-              "name": "Melchiorre Pala",
-              "char": "Melchiorre",
-              "photo": null
-            },
-            {
-              "name": "Ramona Fiorini",
-              "char": "Fabiana",
-              "photo": "https://image.tmdb.org/t/p/w500/jMneKkqao51iKbnRpXOm6g09wjS.jpg"
-            },
-            {
-              "name": "Luca Gargiullo",
-              "char": "The Dock Worker",
-              "photo": null
-            },
-            {
-              "name": "Yile Yara Vianello",
-              "char": "Beniamina",
-              "photo": "https://image.tmdb.org/t/p/w500/oqmoWSIlF2eikiGv42rmqEVNi6a.jpg"
-            },
-            {
-              "name": "Barbara Chiesa",
-              "char": "Nella",
-              "photo": "https://image.tmdb.org/t/p/w500/6MmCaik4MzPNHf10HyOAUOUQcej.jpg"
-            },
-            {
-              "name": "Elisabetta Perotto",
-              "char": "Vera",
-              "photo": null
-            },
-            {
-              "name": "Chiara Pazzaglia",
-              "char": "Rossa",
-              "photo": null
-            },
-            {
-              "name": "Francesca Carrain",
-              "char": "Sista",
-              "photo": "https://image.tmdb.org/t/p/w500/jXIGXubO1AiAbTboYyOiOT34N9i.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "艾莉絲·羅爾瓦雀",
-              "job": "Director"
-            },
-            {
-              "name": "艾莉絲·羅爾瓦雀",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 4933288,
-          "status": "Released",
-          "origLang": "it",
-          "origTitle": "La chimera",
-          "platforms": [
-            {
-              "name": "Catchplay",
-              "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
-            },
-            {
-              "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/837335?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1255718,
-        "titleZh": "臥底情劫",
-        "titleEn": "Plainclothes",
-        "releaseDate": "2026-09-18",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-18",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/oYfxkd9SmmiMrtntWMusNrJ5mKb.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/yMpLgrUs5AILPQwXO2eMtgEEar0.jpg",
-        "voteAverage": "7.4",
-        "genre": [
-          "劇情",
-          "愛情",
-          "犯罪"
-        ],
-        "duration": 97,
-        "synopsis": "1990年代，同志運動風起雲湧，酷兒認同卻仍被視為禁忌。前景看好的便衣警察盧卡斯，被指派負責於公廁臥底，引誘男同性戀者暴露身分好將其逮捕，卻意外被目標安德魯深深吸引。他無法自拔地沉溺於溫柔鄉，在職責和慾望之間，陷入天人交戰。新年將至，家庭派對上，一封不知去向的信、一名不速之客的出現，迫使盧卡斯直面深深埋藏的過去……",
-        "imdb": "7.1",
-        "rt": "82%",
-        "mc": "65",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 3949,
-            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 90,
-            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
-          }
-        },
-        "trailerKey": "906IBcCQMjA",
-        "cast": [
-          {
-            "name": "湯姆·布萊斯",
-            "char": "Lucas",
-            "photo": "https://image.tmdb.org/t/p/w500/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg"
-          },
-          {
-            "name": "Russell Tovey",
-            "char": "Andrew",
-            "photo": "https://image.tmdb.org/t/p/w500/p1hNveDVY6vT5FDT0zJXDnZsDw.jpg"
-          },
-          {
-            "name": "艾美·芙賽斯",
-            "char": "Emily",
-            "photo": "https://image.tmdb.org/t/p/w500/q9ZSgZZrNDavLsbrRQPTJLFGG53.jpg"
-          },
-          {
-            "name": "Maria Dizzia",
-            "char": "Marie",
-            "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
-          },
-          {
-            "name": "Christian Cooke",
-            "char": "Ron",
-            "photo": "https://image.tmdb.org/t/p/w500/pqIqDP4HuRLc60KR8QMTHWhIJNq.jpg"
-          },
-          {
-            "name": "Gabe Fazio",
-            "char": "Uncle Paul",
-            "photo": "https://image.tmdb.org/t/p/w500/xxJMg2Gu04O1ZY7KD95IGheNVG1.jpg"
-          },
-          {
-            "name": "John Bedford Lloyd",
-            "char": "Lt. Sollars",
-            "photo": "https://image.tmdb.org/t/p/w500/tyNDFeQgf2dyjBZtRAskz1lZG1I.jpg"
-          },
-          {
-            "name": "Sam Asa Brownstein",
-            "char": "Christian",
-            "photo": "https://image.tmdb.org/t/p/w500/axleCRM24p36aUUcGd5vyWJv3Vd.jpg"
-          },
-          {
-            "name": "Darius Fraser",
-            "char": "Jeff",
-            "photo": "https://image.tmdb.org/t/p/w500/x7iTK4q6CD11AtFjrpBymsFGIaF.jpg"
-          },
-          {
-            "name": "Alessandra Ford Balazs",
-            "char": "Jessie",
-            "photo": "https://image.tmdb.org/t/p/w500/fFF92ebqJbzRQuIJF6RsDhd6MGh.jpg"
-          },
-          {
-            "name": "Joseph Emmi",
-            "char": "Gus",
-            "photo": null
-          },
-          {
-            "name": "Luke Burke",
-            "char": "Ben",
-            "photo": null
-          },
-          {
-            "name": "Marlene Mancini",
-            "char": "Nonna",
-            "photo": null
-          },
-          {
-            "name": "Henry Stockwell",
-            "char": "Man in Bathroom #1",
-            "photo": null
-          },
-          {
-            "name": "Ben Anderson",
-            "char": "Man in Bathroom #2",
-            "photo": null
-          },
-          {
-            "name": "Jason Ngo",
-            "char": "Man in Bathroom #3",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Carmen Emmi",
-            "job": "Director"
-          },
-          {
-            "name": "Carmen Emmi",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Plainclothes",
-        "platforms": [],
-        "popularity": 3.6378,
-        "imdbId": "tt27550504",
-        "countries": [
-          "United Kingdom",
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 97,
-          "genres": [
-            "劇情",
-            "愛情",
-            "犯罪"
-          ],
-          "synopsis": "1990年代，同志運動風起雲湧，酷兒認同卻仍被視為禁忌。前景看好的便衣警察盧卡斯，被指派負責於公廁臥底，引誘男同性戀者暴露身分好將其逮捕，卻意外被目標安德魯深深吸引。他無法自拔地沉溺於溫柔鄉，在職責和慾望之間，陷入天人交戰。新年將至，家庭派對上，一封不知去向的信、一名不速之客的出現，迫使盧卡斯直面深深埋藏的過去……",
-          "poster": "https://image.tmdb.org/t/p/w500/oYfxkd9SmmiMrtntWMusNrJ5mKb.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/yMpLgrUs5AILPQwXO2eMtgEEar0.jpg",
-          "voteAverage": "7.4",
-          "trailerKey": "906IBcCQMjA",
-          "imdbId": "tt27550504",
-          "countries": [
-            "United Kingdom",
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "湯姆·布萊斯",
-              "char": "Lucas",
-              "photo": "https://image.tmdb.org/t/p/w500/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg"
-            },
-            {
-              "name": "Russell Tovey",
-              "char": "Andrew",
-              "photo": "https://image.tmdb.org/t/p/w500/p1hNveDVY6vT5FDT0zJXDnZsDw.jpg"
-            },
-            {
-              "name": "艾美·芙賽斯",
-              "char": "Emily",
-              "photo": "https://image.tmdb.org/t/p/w500/q9ZSgZZrNDavLsbrRQPTJLFGG53.jpg"
-            },
-            {
-              "name": "Maria Dizzia",
-              "char": "Marie",
-              "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
-            },
-            {
-              "name": "Christian Cooke",
-              "char": "Ron",
-              "photo": "https://image.tmdb.org/t/p/w500/pqIqDP4HuRLc60KR8QMTHWhIJNq.jpg"
-            },
-            {
-              "name": "Gabe Fazio",
-              "char": "Uncle Paul",
-              "photo": "https://image.tmdb.org/t/p/w500/xxJMg2Gu04O1ZY7KD95IGheNVG1.jpg"
-            },
-            {
-              "name": "John Bedford Lloyd",
-              "char": "Lt. Sollars",
-              "photo": "https://image.tmdb.org/t/p/w500/tyNDFeQgf2dyjBZtRAskz1lZG1I.jpg"
-            },
-            {
-              "name": "Sam Asa Brownstein",
-              "char": "Christian",
-              "photo": "https://image.tmdb.org/t/p/w500/axleCRM24p36aUUcGd5vyWJv3Vd.jpg"
-            },
-            {
-              "name": "Darius Fraser",
-              "char": "Jeff",
-              "photo": "https://image.tmdb.org/t/p/w500/x7iTK4q6CD11AtFjrpBymsFGIaF.jpg"
-            },
-            {
-              "name": "Alessandra Ford Balazs",
-              "char": "Jessie",
-              "photo": "https://image.tmdb.org/t/p/w500/fFF92ebqJbzRQuIJF6RsDhd6MGh.jpg"
-            },
-            {
-              "name": "Joseph Emmi",
-              "char": "Gus",
-              "photo": null
-            },
-            {
-              "name": "Luke Burke",
-              "char": "Ben",
-              "photo": null
-            },
-            {
-              "name": "Marlene Mancini",
-              "char": "Nonna",
-              "photo": null
-            },
-            {
-              "name": "Henry Stockwell",
-              "char": "Man in Bathroom #1",
-              "photo": null
-            },
-            {
-              "name": "Ben Anderson",
-              "char": "Man in Bathroom #2",
-              "photo": null
-            },
-            {
-              "name": "Jason Ngo",
-              "char": "Man in Bathroom #3",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Carmen Emmi",
-              "job": "Director"
-            },
-            {
-              "name": "Carmen Emmi",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Plainclothes",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1255718?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1740257,
         "titleZh": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
         "titleEn": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
@@ -24193,250 +23901,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1740257?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1598667,
-        "titleZh": "危險關係—Lesley Manville版(英國國家劇院現場)",
-        "titleEn": "National Theatre Live: Les Liaisons Dangereuses",
-        "releaseDate": "2026-09-22",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-22",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
-        "voteAverage": "",
-        "genre": [
-          "劇情",
-          "愛情",
-          "喜劇"
-        ],
-        "duration": 179,
-        "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Aidan Turner",
-            "char": "Vicomte de Valmont",
-            "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
-          },
-          {
-            "name": "萊斯利·曼維爾",
-            "char": "Marquise de Merteuil",
-            "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
-          },
-          {
-            "name": "莫妮卡·巴巴羅",
-            "char": "Madame de Tourvel",
-            "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
-          },
-          {
-            "name": "Darragh Hand",
-            "char": "Chevalier Danceny",
-            "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
-          },
-          {
-            "name": "Cat Simmons",
-            "char": "Madame de Volanges",
-            "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
-          },
-          {
-            "name": "Hannah van der Westhuysen",
-            "char": "Cécile Volanges",
-            "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
-          },
-          {
-            "name": "Ali Goldsmith",
-            "char": "Major-Domo / Dancer",
-            "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
-          },
-          {
-            "name": "Gabrielle Drake",
-            "char": "Madame de Rosemonde",
-            "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
-          },
-          {
-            "name": "Nandi Bhebhe",
-            "char": "Julie / Understudy Madame de Tourvel",
-            "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
-          },
-          {
-            "name": "Sharif Afifi",
-            "char": "Azolan / Understudy Vicomte de Valmont",
-            "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
-          },
-          {
-            "name": "Curtis Angus",
-            "char": "Father Anselm / Dancer",
-            "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
-          },
-          {
-            "name": "Ishmail Aaron",
-            "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
-            "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
-          },
-          {
-            "name": "Charlotte Avery",
-            "char": "Ensemble / Understudy Marquise de Merteuil",
-            "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
-          },
-          {
-            "name": "Lucia Chocarro",
-            "char": "Émile",
-            "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
-          },
-          {
-            "name": "Liz Ewing",
-            "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
-            "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
-          },
-          {
-            "name": "Georges Hann",
-            "char": "Dancer",
-            "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Marianne Elliott",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
-        "platforms": [],
-        "popularity": 1.7153,
-        "imdbId": "tt40258746",
-        "countries": [
-          "United Kingdom"
-        ],
-        "detail": {
-          "duration": 179,
-          "genres": [
-            "劇情",
-            "愛情",
-            "喜劇"
-          ],
-          "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
-          "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt40258746",
-          "countries": [
-            "United Kingdom"
-          ],
-          "cast": [
-            {
-              "name": "Aidan Turner",
-              "char": "Vicomte de Valmont",
-              "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
-            },
-            {
-              "name": "萊斯利·曼維爾",
-              "char": "Marquise de Merteuil",
-              "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
-            },
-            {
-              "name": "莫妮卡·巴巴羅",
-              "char": "Madame de Tourvel",
-              "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
-            },
-            {
-              "name": "Darragh Hand",
-              "char": "Chevalier Danceny",
-              "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
-            },
-            {
-              "name": "Cat Simmons",
-              "char": "Madame de Volanges",
-              "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
-            },
-            {
-              "name": "Hannah van der Westhuysen",
-              "char": "Cécile Volanges",
-              "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
-            },
-            {
-              "name": "Ali Goldsmith",
-              "char": "Major-Domo / Dancer",
-              "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
-            },
-            {
-              "name": "Gabrielle Drake",
-              "char": "Madame de Rosemonde",
-              "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
-            },
-            {
-              "name": "Nandi Bhebhe",
-              "char": "Julie / Understudy Madame de Tourvel",
-              "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
-            },
-            {
-              "name": "Sharif Afifi",
-              "char": "Azolan / Understudy Vicomte de Valmont",
-              "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
-            },
-            {
-              "name": "Curtis Angus",
-              "char": "Father Anselm / Dancer",
-              "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
-            },
-            {
-              "name": "Ishmail Aaron",
-              "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
-              "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
-            },
-            {
-              "name": "Charlotte Avery",
-              "char": "Ensemble / Understudy Marquise de Merteuil",
-              "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
-            },
-            {
-              "name": "Lucia Chocarro",
-              "char": "Émile",
-              "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
-            },
-            {
-              "name": "Liz Ewing",
-              "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
-              "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
-            },
-            {
-              "name": "Georges Hann",
-              "char": "Dancer",
-              "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Marianne Elliott",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1598667?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -24999,6 +24463,516 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/374566?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1598667,
+        "titleZh": "危險關係—Lesley Manville版(英國國家劇院現場)",
+        "titleEn": "National Theatre Live: Les Liaisons Dangereuses",
+        "releaseDate": "2026-09-22",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-22",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
+        "voteAverage": "",
+        "genre": [
+          "劇情",
+          "愛情",
+          "喜劇"
+        ],
+        "duration": 179,
+        "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Aidan Turner",
+            "char": "Vicomte de Valmont",
+            "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
+          },
+          {
+            "name": "萊斯利·曼維爾",
+            "char": "Marquise de Merteuil",
+            "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
+          },
+          {
+            "name": "莫妮卡·巴巴羅",
+            "char": "Madame de Tourvel",
+            "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+          },
+          {
+            "name": "Darragh Hand",
+            "char": "Chevalier Danceny",
+            "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
+          },
+          {
+            "name": "Cat Simmons",
+            "char": "Madame de Volanges",
+            "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
+          },
+          {
+            "name": "Hannah van der Westhuysen",
+            "char": "Cécile Volanges",
+            "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
+          },
+          {
+            "name": "Ali Goldsmith",
+            "char": "Major-Domo / Dancer",
+            "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
+          },
+          {
+            "name": "Gabrielle Drake",
+            "char": "Madame de Rosemonde",
+            "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
+          },
+          {
+            "name": "Nandi Bhebhe",
+            "char": "Julie / Understudy Madame de Tourvel",
+            "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
+          },
+          {
+            "name": "Sharif Afifi",
+            "char": "Azolan / Understudy Vicomte de Valmont",
+            "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
+          },
+          {
+            "name": "Curtis Angus",
+            "char": "Father Anselm / Dancer",
+            "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
+          },
+          {
+            "name": "Ishmail Aaron",
+            "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
+            "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
+          },
+          {
+            "name": "Charlotte Avery",
+            "char": "Ensemble / Understudy Marquise de Merteuil",
+            "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
+          },
+          {
+            "name": "Lucia Chocarro",
+            "char": "Émile",
+            "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
+          },
+          {
+            "name": "Liz Ewing",
+            "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
+            "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
+          },
+          {
+            "name": "Georges Hann",
+            "char": "Dancer",
+            "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Marianne Elliott",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
+        "platforms": [],
+        "popularity": 1.7153,
+        "imdbId": "tt40258746",
+        "countries": [
+          "United Kingdom"
+        ],
+        "detail": {
+          "duration": 179,
+          "genres": [
+            "劇情",
+            "愛情",
+            "喜劇"
+          ],
+          "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
+          "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt40258746",
+          "countries": [
+            "United Kingdom"
+          ],
+          "cast": [
+            {
+              "name": "Aidan Turner",
+              "char": "Vicomte de Valmont",
+              "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
+            },
+            {
+              "name": "萊斯利·曼維爾",
+              "char": "Marquise de Merteuil",
+              "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
+            },
+            {
+              "name": "莫妮卡·巴巴羅",
+              "char": "Madame de Tourvel",
+              "photo": "https://image.tmdb.org/t/p/w500/nxkFcvDIC4tC3st1K1BJXJm1F2h.jpg"
+            },
+            {
+              "name": "Darragh Hand",
+              "char": "Chevalier Danceny",
+              "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
+            },
+            {
+              "name": "Cat Simmons",
+              "char": "Madame de Volanges",
+              "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
+            },
+            {
+              "name": "Hannah van der Westhuysen",
+              "char": "Cécile Volanges",
+              "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
+            },
+            {
+              "name": "Ali Goldsmith",
+              "char": "Major-Domo / Dancer",
+              "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
+            },
+            {
+              "name": "Gabrielle Drake",
+              "char": "Madame de Rosemonde",
+              "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
+            },
+            {
+              "name": "Nandi Bhebhe",
+              "char": "Julie / Understudy Madame de Tourvel",
+              "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
+            },
+            {
+              "name": "Sharif Afifi",
+              "char": "Azolan / Understudy Vicomte de Valmont",
+              "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
+            },
+            {
+              "name": "Curtis Angus",
+              "char": "Father Anselm / Dancer",
+              "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
+            },
+            {
+              "name": "Ishmail Aaron",
+              "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
+              "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
+            },
+            {
+              "name": "Charlotte Avery",
+              "char": "Ensemble / Understudy Marquise de Merteuil",
+              "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
+            },
+            {
+              "name": "Lucia Chocarro",
+              "char": "Émile",
+              "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
+            },
+            {
+              "name": "Liz Ewing",
+              "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
+              "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
+            },
+            {
+              "name": "Georges Hann",
+              "char": "Dancer",
+              "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Marianne Elliott",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1598667?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 16664,
+        "titleZh": "青春電幻物語",
+        "titleEn": "リリイ・シュシュのすべて",
+        "releaseDate": "2026-09-24",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/1sDlfRHu4DaGaV54WAs90Ki8etL.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wTWy7b1SKslcNn1GDah6S7MQa5p.jpg",
+        "voteAverage": "7.5",
+        "genre": [
+          "劇情",
+          "犯罪"
+        ],
+        "duration": 146,
+        "synopsis": "現實的生活是痛苦的，但至少我有音樂、還有虛擬的網路世界！逃避現實生活的日本少年蓮見，歌手莉莉的音樂是他心靈的慰藉，而「莉莉狂」的BBS站臺，更是他寄託青春的世界，只是當虛擬與現實的世界一同崩解時，除了導向青春的死亡，還剩下什麼？巖井俊二藉由王菲的靈感所發展而成的電影，大膽解剖日本青少年的網路文化與音樂狂潮，超越一貫的純美浪漫，詩一般的影像與文字譜下少年的私語心曲。",
+        "imdb": "7.5",
+        "rt": "70%",
+        "mc": "73",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 13075,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 40,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 18,
+            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "市原隼人",
+            "char": "Yūichi Hasumi",
+            "photo": "https://image.tmdb.org/t/p/w500/78ACMc1I37krWbGRlH7OHZFiSUt.jpg"
+          },
+          {
+            "name": "忍成修吾",
+            "char": "Shūsuke Hoshino",
+            "photo": "https://image.tmdb.org/t/p/w500/hPTMNflp04XpPurQE5SiKTswaCT.jpg"
+          },
+          {
+            "name": "蒼井優",
+            "char": "Shiori Tsuda",
+            "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+          },
+          {
+            "name": "伊藤歩",
+            "char": "Yōko Kuno",
+            "photo": "https://image.tmdb.org/t/p/w500/9uc0XnA8nAcCYInxUq5nkNSHc7N.jpg"
+          },
+          {
+            "name": "高橋一生",
+            "char": "Ikeda-senpai",
+            "photo": "https://image.tmdb.org/t/p/w500/o5V869FSj4cCS0gnpHrlbX3xV9v.jpg"
+          },
+          {
+            "name": "勝地涼",
+            "char": "Shioske Terawaki",
+            "photo": "https://image.tmdb.org/t/p/w500/tVQo2qd93fdYBl6lc9STDhEI6x1.jpg"
+          },
+          {
+            "name": "大澤隆夫",
+            "char": "Tabito Takao",
+            "photo": "https://image.tmdb.org/t/p/w500/nxSOEoENPw6NIYOckna94WICPAE.jpg"
+          },
+          {
+            "name": "西村和泉",
+            "char": "Masashi Tadano",
+            "photo": "https://image.tmdb.org/t/p/w500/3WaXxMtg8xNcuzxORFXNAvoJpGZ.jpg"
+          },
+          {
+            "name": "松田一沙",
+            "char": "Sumika Kanzaki",
+            "photo": null
+          },
+          {
+            "name": "細山田隆人",
+            "char": "Kentarō Sasaki",
+            "photo": "https://image.tmdb.org/t/p/w500/f9eCthQ6fz20rUTck3Ryr3HuZRe.jpg"
+          },
+          {
+            "name": "阿部知代",
+            "char": "Shizuko Hasumi",
+            "photo": null
+          },
+          {
+            "name": "稲森いずみ",
+            "char": "Izumi Hoshino",
+            "photo": "https://image.tmdb.org/t/p/w500/5e2eA6HRXss3SjZUu1EHyEdBFbx.jpg"
+          },
+          {
+            "name": "市川実和子",
+            "char": "Shimabukuro",
+            "photo": "https://image.tmdb.org/t/p/w500/hUXo4wdz9joyexfMhan1fzU2t.jpg"
+          },
+          {
+            "name": "伴杏裡",
+            "char": "Noriko Izawa",
+            "photo": "https://image.tmdb.org/t/p/w500/rvz8hCzAO2Ihx039JF5ji6p4OZp.jpg"
+          },
+          {
+            "name": "馬場喬子",
+            "char": "School Nurse",
+            "photo": null
+          },
+          {
+            "name": "田中要次",
+            "char": "Teru Onda",
+            "photo": "https://image.tmdb.org/t/p/w500/752oL9YrUumjrqbhdj4GNJ938x3.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "巖井俊二",
+            "job": "Director"
+          },
+          {
+            "name": "巖井俊二",
+            "job": "Writer"
+          }
+        ],
+        "budget": 1250000,
+        "revenue": 6776921,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "リリイ・シュシュのすべて",
+        "platforms": [],
+        "popularity": 7.3267,
+        "imdbId": "tt0297721",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 146,
+          "genres": [
+            "劇情",
+            "犯罪"
+          ],
+          "synopsis": "現實的生活是痛苦的，但至少我有音樂、還有虛擬的網路世界！逃避現實生活的日本少年蓮見，歌手莉莉的音樂是他心靈的慰藉，而「莉莉狂」的BBS站臺，更是他寄託青春的世界，只是當虛擬與現實的世界一同崩解時，除了導向青春的死亡，還剩下什麼？巖井俊二藉由王菲的靈感所發展而成的電影，大膽解剖日本青少年的網路文化與音樂狂潮，超越一貫的純美浪漫，詩一般的影像與文字譜下少年的私語心曲。",
+          "poster": "https://image.tmdb.org/t/p/w500/1sDlfRHu4DaGaV54WAs90Ki8etL.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/wTWy7b1SKslcNn1GDah6S7MQa5p.jpg",
+          "voteAverage": "7.5",
+          "trailerKey": null,
+          "imdbId": "tt0297721",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "市原隼人",
+              "char": "Yūichi Hasumi",
+              "photo": "https://image.tmdb.org/t/p/w500/78ACMc1I37krWbGRlH7OHZFiSUt.jpg"
+            },
+            {
+              "name": "忍成修吾",
+              "char": "Shūsuke Hoshino",
+              "photo": "https://image.tmdb.org/t/p/w500/hPTMNflp04XpPurQE5SiKTswaCT.jpg"
+            },
+            {
+              "name": "蒼井優",
+              "char": "Shiori Tsuda",
+              "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+            },
+            {
+              "name": "伊藤歩",
+              "char": "Yōko Kuno",
+              "photo": "https://image.tmdb.org/t/p/w500/9uc0XnA8nAcCYInxUq5nkNSHc7N.jpg"
+            },
+            {
+              "name": "高橋一生",
+              "char": "Ikeda-senpai",
+              "photo": "https://image.tmdb.org/t/p/w500/o5V869FSj4cCS0gnpHrlbX3xV9v.jpg"
+            },
+            {
+              "name": "勝地涼",
+              "char": "Shioske Terawaki",
+              "photo": "https://image.tmdb.org/t/p/w500/tVQo2qd93fdYBl6lc9STDhEI6x1.jpg"
+            },
+            {
+              "name": "大澤隆夫",
+              "char": "Tabito Takao",
+              "photo": "https://image.tmdb.org/t/p/w500/nxSOEoENPw6NIYOckna94WICPAE.jpg"
+            },
+            {
+              "name": "西村和泉",
+              "char": "Masashi Tadano",
+              "photo": "https://image.tmdb.org/t/p/w500/3WaXxMtg8xNcuzxORFXNAvoJpGZ.jpg"
+            },
+            {
+              "name": "松田一沙",
+              "char": "Sumika Kanzaki",
+              "photo": null
+            },
+            {
+              "name": "細山田隆人",
+              "char": "Kentarō Sasaki",
+              "photo": "https://image.tmdb.org/t/p/w500/f9eCthQ6fz20rUTck3Ryr3HuZRe.jpg"
+            },
+            {
+              "name": "阿部知代",
+              "char": "Shizuko Hasumi",
+              "photo": null
+            },
+            {
+              "name": "稲森いずみ",
+              "char": "Izumi Hoshino",
+              "photo": "https://image.tmdb.org/t/p/w500/5e2eA6HRXss3SjZUu1EHyEdBFbx.jpg"
+            },
+            {
+              "name": "市川実和子",
+              "char": "Shimabukuro",
+              "photo": "https://image.tmdb.org/t/p/w500/hUXo4wdz9joyexfMhan1fzU2t.jpg"
+            },
+            {
+              "name": "伴杏裡",
+              "char": "Noriko Izawa",
+              "photo": "https://image.tmdb.org/t/p/w500/rvz8hCzAO2Ihx039JF5ji6p4OZp.jpg"
+            },
+            {
+              "name": "馬場喬子",
+              "char": "School Nurse",
+              "photo": null
+            },
+            {
+              "name": "田中要次",
+              "char": "Teru Onda",
+              "photo": "https://image.tmdb.org/t/p/w500/752oL9YrUumjrqbhdj4GNJ938x3.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "巖井俊二",
+              "job": "Director"
+            },
+            {
+              "name": "巖井俊二",
+              "job": "Writer"
+            }
+          ],
+          "budget": 1250000,
+          "revenue": 6776921,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "リリイ・シュシュのすべて",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/16664?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -26104,272 +26078,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1705721?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 16664,
-        "titleZh": "青春電幻物語",
-        "titleEn": "リリイ・シュシュのすべて",
-        "releaseDate": "2026-09-24",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-24",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/1sDlfRHu4DaGaV54WAs90Ki8etL.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/wTWy7b1SKslcNn1GDah6S7MQa5p.jpg",
-        "voteAverage": "7.5",
-        "genre": [
-          "劇情",
-          "犯罪"
-        ],
-        "duration": 146,
-        "synopsis": "現實的生活是痛苦的，但至少我有音樂、還有虛擬的網路世界！逃避現實生活的日本少年蓮見，歌手莉莉的音樂是他心靈的慰藉，而「莉莉狂」的BBS站臺，更是他寄託青春的世界，只是當虛擬與現實的世界一同崩解時，除了導向青春的死亡，還剩下什麼？巖井俊二藉由王菲的靈感所發展而成的電影，大膽解剖日本青少年的網路文化與音樂狂潮，超越一貫的純美浪漫，詩一般的影像與文字譜下少年的私語心曲。",
-        "imdb": "7.5",
-        "rt": "70%",
-        "mc": "73",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 13075,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 40,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 18,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "市原隼人",
-            "char": "Yūichi Hasumi",
-            "photo": "https://image.tmdb.org/t/p/w500/78ACMc1I37krWbGRlH7OHZFiSUt.jpg"
-          },
-          {
-            "name": "忍成修吾",
-            "char": "Shūsuke Hoshino",
-            "photo": "https://image.tmdb.org/t/p/w500/hPTMNflp04XpPurQE5SiKTswaCT.jpg"
-          },
-          {
-            "name": "蒼井優",
-            "char": "Shiori Tsuda",
-            "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
-          },
-          {
-            "name": "伊藤歩",
-            "char": "Yōko Kuno",
-            "photo": "https://image.tmdb.org/t/p/w500/9uc0XnA8nAcCYInxUq5nkNSHc7N.jpg"
-          },
-          {
-            "name": "高橋一生",
-            "char": "Ikeda-senpai",
-            "photo": "https://image.tmdb.org/t/p/w500/o5V869FSj4cCS0gnpHrlbX3xV9v.jpg"
-          },
-          {
-            "name": "勝地涼",
-            "char": "Shioske Terawaki",
-            "photo": "https://image.tmdb.org/t/p/w500/tVQo2qd93fdYBl6lc9STDhEI6x1.jpg"
-          },
-          {
-            "name": "大澤隆夫",
-            "char": "Tabito Takao",
-            "photo": "https://image.tmdb.org/t/p/w500/nxSOEoENPw6NIYOckna94WICPAE.jpg"
-          },
-          {
-            "name": "西村和泉",
-            "char": "Masashi Tadano",
-            "photo": "https://image.tmdb.org/t/p/w500/3WaXxMtg8xNcuzxORFXNAvoJpGZ.jpg"
-          },
-          {
-            "name": "松田一沙",
-            "char": "Sumika Kanzaki",
-            "photo": null
-          },
-          {
-            "name": "細山田隆人",
-            "char": "Kentarō Sasaki",
-            "photo": "https://image.tmdb.org/t/p/w500/f9eCthQ6fz20rUTck3Ryr3HuZRe.jpg"
-          },
-          {
-            "name": "阿部知代",
-            "char": "Shizuko Hasumi",
-            "photo": null
-          },
-          {
-            "name": "稲森いずみ",
-            "char": "Izumi Hoshino",
-            "photo": "https://image.tmdb.org/t/p/w500/5e2eA6HRXss3SjZUu1EHyEdBFbx.jpg"
-          },
-          {
-            "name": "市川実和子",
-            "char": "Shimabukuro",
-            "photo": "https://image.tmdb.org/t/p/w500/hUXo4wdz9joyexfMhan1fzU2t.jpg"
-          },
-          {
-            "name": "伴杏裡",
-            "char": "Noriko Izawa",
-            "photo": "https://image.tmdb.org/t/p/w500/rvz8hCzAO2Ihx039JF5ji6p4OZp.jpg"
-          },
-          {
-            "name": "馬場喬子",
-            "char": "School Nurse",
-            "photo": null
-          },
-          {
-            "name": "田中要次",
-            "char": "Teru Onda",
-            "photo": "https://image.tmdb.org/t/p/w500/752oL9YrUumjrqbhdj4GNJ938x3.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "巖井俊二",
-            "job": "Director"
-          },
-          {
-            "name": "巖井俊二",
-            "job": "Writer"
-          }
-        ],
-        "budget": 1250000,
-        "revenue": 6776921,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "リリイ・シュシュのすべて",
-        "platforms": [],
-        "popularity": 7.3267,
-        "imdbId": "tt0297721",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 146,
-          "genres": [
-            "劇情",
-            "犯罪"
-          ],
-          "synopsis": "現實的生活是痛苦的，但至少我有音樂、還有虛擬的網路世界！逃避現實生活的日本少年蓮見，歌手莉莉的音樂是他心靈的慰藉，而「莉莉狂」的BBS站臺，更是他寄託青春的世界，只是當虛擬與現實的世界一同崩解時，除了導向青春的死亡，還剩下什麼？巖井俊二藉由王菲的靈感所發展而成的電影，大膽解剖日本青少年的網路文化與音樂狂潮，超越一貫的純美浪漫，詩一般的影像與文字譜下少年的私語心曲。",
-          "poster": "https://image.tmdb.org/t/p/w500/1sDlfRHu4DaGaV54WAs90Ki8etL.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/wTWy7b1SKslcNn1GDah6S7MQa5p.jpg",
-          "voteAverage": "7.5",
-          "trailerKey": null,
-          "imdbId": "tt0297721",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "市原隼人",
-              "char": "Yūichi Hasumi",
-              "photo": "https://image.tmdb.org/t/p/w500/78ACMc1I37krWbGRlH7OHZFiSUt.jpg"
-            },
-            {
-              "name": "忍成修吾",
-              "char": "Shūsuke Hoshino",
-              "photo": "https://image.tmdb.org/t/p/w500/hPTMNflp04XpPurQE5SiKTswaCT.jpg"
-            },
-            {
-              "name": "蒼井優",
-              "char": "Shiori Tsuda",
-              "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
-            },
-            {
-              "name": "伊藤歩",
-              "char": "Yōko Kuno",
-              "photo": "https://image.tmdb.org/t/p/w500/9uc0XnA8nAcCYInxUq5nkNSHc7N.jpg"
-            },
-            {
-              "name": "高橋一生",
-              "char": "Ikeda-senpai",
-              "photo": "https://image.tmdb.org/t/p/w500/o5V869FSj4cCS0gnpHrlbX3xV9v.jpg"
-            },
-            {
-              "name": "勝地涼",
-              "char": "Shioske Terawaki",
-              "photo": "https://image.tmdb.org/t/p/w500/tVQo2qd93fdYBl6lc9STDhEI6x1.jpg"
-            },
-            {
-              "name": "大澤隆夫",
-              "char": "Tabito Takao",
-              "photo": "https://image.tmdb.org/t/p/w500/nxSOEoENPw6NIYOckna94WICPAE.jpg"
-            },
-            {
-              "name": "西村和泉",
-              "char": "Masashi Tadano",
-              "photo": "https://image.tmdb.org/t/p/w500/3WaXxMtg8xNcuzxORFXNAvoJpGZ.jpg"
-            },
-            {
-              "name": "松田一沙",
-              "char": "Sumika Kanzaki",
-              "photo": null
-            },
-            {
-              "name": "細山田隆人",
-              "char": "Kentarō Sasaki",
-              "photo": "https://image.tmdb.org/t/p/w500/f9eCthQ6fz20rUTck3Ryr3HuZRe.jpg"
-            },
-            {
-              "name": "阿部知代",
-              "char": "Shizuko Hasumi",
-              "photo": null
-            },
-            {
-              "name": "稲森いずみ",
-              "char": "Izumi Hoshino",
-              "photo": "https://image.tmdb.org/t/p/w500/5e2eA6HRXss3SjZUu1EHyEdBFbx.jpg"
-            },
-            {
-              "name": "市川実和子",
-              "char": "Shimabukuro",
-              "photo": "https://image.tmdb.org/t/p/w500/hUXo4wdz9joyexfMhan1fzU2t.jpg"
-            },
-            {
-              "name": "伴杏裡",
-              "char": "Noriko Izawa",
-              "photo": "https://image.tmdb.org/t/p/w500/rvz8hCzAO2Ihx039JF5ji6p4OZp.jpg"
-            },
-            {
-              "name": "馬場喬子",
-              "char": "School Nurse",
-              "photo": null
-            },
-            {
-              "name": "田中要次",
-              "char": "Teru Onda",
-              "photo": "https://image.tmdb.org/t/p/w500/752oL9YrUumjrqbhdj4GNJ938x3.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "巖井俊二",
-              "job": "Director"
-            },
-            {
-              "name": "巖井俊二",
-              "job": "Writer"
-            }
-          ],
-          "budget": 1250000,
-          "revenue": 6776921,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "リリイ・シュシュのすべて",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/16664?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
