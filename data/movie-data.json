@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-29T16:52:04.363481+08:00",
+  "generated_at": "2026-08-29T19:08:18.572103+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 73,
-    "soon_count": 67
+    "soon_count": 72
   },
   "movies": {
     "now": [
@@ -7542,7 +7542,7 @@
       },
       {
         "id": 333361,
-        "titleZh": "雁の寺",
+        "titleZh": "雁之寺",
         "titleEn": "雁の寺",
         "releaseDate": "2026-08-21",
         "twTheatricalReleases": [
@@ -12181,11 +12181,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -12301,11 +12301,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -18887,8 +18887,8 @@
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 249,
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           },
           "mc": {
@@ -19827,12 +19827,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -19944,12 +19944,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -21280,6 +21280,295 @@
           ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/108?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 109,
+        "titleZh": "白色情迷",
+        "titleEn": "Trois couleurs : Blanc",
+        "releaseDate": "2026-09-11",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-11",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/abxrKqKkmGtENHD2ZU9nomj8EeU.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "喜劇",
+          "劇情",
+          "懸疑"
+        ],
+        "duration": 92,
+        "synopsis": "遠離家鄉的卡洛有一位美麗的妻子多明妮嘉，他深愛她，但是反倒令多明妮嘉倍感壓力，一心想離開他。忍無可忍後，多明妮嘉因丈夫無法履行婚姻義務訴求離婚。被拋棄的卡洛輾轉回到家鄉波蘭，卻意外成了大富翁，開始一連串對妻子的報復。他偽裝死亡，引誘前妻到波蘭憑弔他，藉機與前妻重修舊好後，最後成功陷害她入獄。",
+        "imdb": "7.6",
+        "rt": "91%",
+        "mc": "91",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 85094,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 55,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "齊伯尼·查馬修瓦斯基",
+            "char": "Karol Karol",
+            "photo": "https://image.tmdb.org/t/p/w500/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg"
+          },
+          {
+            "name": "茱莉·蝶兒",
+            "char": "Dominique",
+            "photo": "https://image.tmdb.org/t/p/w500/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg"
+          },
+          {
+            "name": "Janusz Gajos",
+            "char": "Mikołaj",
+            "photo": "https://image.tmdb.org/t/p/w500/6JMVmicFJvsSsRkOpgqV2cetre.jpg"
+          },
+          {
+            "name": "Jerzy Stuhr",
+            "char": "Jurek",
+            "photo": "https://image.tmdb.org/t/p/w500/xzkvKrdITQm8BzYLF8o0xhG3fdA.jpg"
+          },
+          {
+            "name": "Grzegorz Warchoł",
+            "char": "Elegant",
+            "photo": "https://image.tmdb.org/t/p/w500/wu33kWXWxcJt4y360KnuPjbZ9gh.jpg"
+          },
+          {
+            "name": "Jerzy Nowak",
+            "char": "Old Peasant",
+            "photo": "https://image.tmdb.org/t/p/w500/d4FLYnKTAJdjtfbi5TiRmosLjwr.jpg"
+          },
+          {
+            "name": "Aleksander Bardini",
+            "char": "Notary",
+            "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
+          },
+          {
+            "name": "Cezary Harasimowicz",
+            "char": "Inspector",
+            "photo": "https://image.tmdb.org/t/p/w500/rHbmU9MLHDeQ1DOpu9vyvkN7NPx.jpg"
+          },
+          {
+            "name": "Jerzy Trela",
+            "char": "Monsieur Bronek",
+            "photo": "https://image.tmdb.org/t/p/w500/rem3V2py3o6eaaR4KQTvClVKX6n.jpg"
+          },
+          {
+            "name": "Cezary Pazura",
+            "char": "Exchange Office Owner",
+            "photo": "https://image.tmdb.org/t/p/w500/l1XAe6DKyAUXzqSgErl3BDeSF8r.jpg"
+          },
+          {
+            "name": "Michel Lisowski",
+            "char": "Interpreter",
+            "photo": null
+          },
+          {
+            "name": "Piotr Machalica",
+            "char": "Man under the Exchange Office",
+            "photo": "https://image.tmdb.org/t/p/w500/xoXFSBm3AH09f4S576md2yKl0Cm.jpg"
+          },
+          {
+            "name": "Barbara Dziekan",
+            "char": "Mrs. Ewa",
+            "photo": "https://image.tmdb.org/t/p/w500/4EAg2Pcn1rtcU8Um8xitNVEqRuW.jpg"
+          },
+          {
+            "name": "Marzena Trybała",
+            "char": "Mariott Employee",
+            "photo": "https://image.tmdb.org/t/p/w500/oR7LRnQeHaPD4TMoYDHA6hM5b2e.jpg"
+          },
+          {
+            "name": "Philippe Morier-Genoud",
+            "char": "Judge",
+            "photo": "https://image.tmdb.org/t/p/w500/vMGXntjEzXx7n1gyWi11I2urB9k.jpg"
+          },
+          {
+            "name": "Francis Coffinet",
+            "char": "Bank Clerk",
+            "photo": "https://image.tmdb.org/t/p/w500/6s8qwFqOQskwgHhxvSSHTLraAlz.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Krzysztof Piesiewicz",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 1273525,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Trois couleurs : Blanc",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 5.8223,
+        "imdbId": "tt0111507",
+        "countries": [
+          "France",
+          "Poland",
+          "Switzerland"
+        ],
+        "detail": {
+          "duration": 92,
+          "genres": [
+            "喜劇",
+            "劇情",
+            "懸疑"
+          ],
+          "synopsis": "遠離家鄉的卡洛有一位美麗的妻子多明妮嘉，他深愛她，但是反倒令多明妮嘉倍感壓力，一心想離開他。忍無可忍後，多明妮嘉因丈夫無法履行婚姻義務訴求離婚。被拋棄的卡洛輾轉回到家鄉波蘭，卻意外成了大富翁，開始一連串對妻子的報復。他偽裝死亡，引誘前妻到波蘭憑弔他，藉機與前妻重修舊好後，最後成功陷害她入獄。",
+          "poster": "https://image.tmdb.org/t/p/w500/abxrKqKkmGtENHD2ZU9nomj8EeU.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": null,
+          "imdbId": "tt0111507",
+          "countries": [
+            "France",
+            "Poland",
+            "Switzerland"
+          ],
+          "cast": [
+            {
+              "name": "齊伯尼·查馬修瓦斯基",
+              "char": "Karol Karol",
+              "photo": "https://image.tmdb.org/t/p/w500/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg"
+            },
+            {
+              "name": "茱莉·蝶兒",
+              "char": "Dominique",
+              "photo": "https://image.tmdb.org/t/p/w500/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg"
+            },
+            {
+              "name": "Janusz Gajos",
+              "char": "Mikołaj",
+              "photo": "https://image.tmdb.org/t/p/w500/6JMVmicFJvsSsRkOpgqV2cetre.jpg"
+            },
+            {
+              "name": "Jerzy Stuhr",
+              "char": "Jurek",
+              "photo": "https://image.tmdb.org/t/p/w500/xzkvKrdITQm8BzYLF8o0xhG3fdA.jpg"
+            },
+            {
+              "name": "Grzegorz Warchoł",
+              "char": "Elegant",
+              "photo": "https://image.tmdb.org/t/p/w500/wu33kWXWxcJt4y360KnuPjbZ9gh.jpg"
+            },
+            {
+              "name": "Jerzy Nowak",
+              "char": "Old Peasant",
+              "photo": "https://image.tmdb.org/t/p/w500/d4FLYnKTAJdjtfbi5TiRmosLjwr.jpg"
+            },
+            {
+              "name": "Aleksander Bardini",
+              "char": "Notary",
+              "photo": "https://image.tmdb.org/t/p/w500/v816A7dBF8OFMyuofAYvBo9maZr.jpg"
+            },
+            {
+              "name": "Cezary Harasimowicz",
+              "char": "Inspector",
+              "photo": "https://image.tmdb.org/t/p/w500/rHbmU9MLHDeQ1DOpu9vyvkN7NPx.jpg"
+            },
+            {
+              "name": "Jerzy Trela",
+              "char": "Monsieur Bronek",
+              "photo": "https://image.tmdb.org/t/p/w500/rem3V2py3o6eaaR4KQTvClVKX6n.jpg"
+            },
+            {
+              "name": "Cezary Pazura",
+              "char": "Exchange Office Owner",
+              "photo": "https://image.tmdb.org/t/p/w500/l1XAe6DKyAUXzqSgErl3BDeSF8r.jpg"
+            },
+            {
+              "name": "Michel Lisowski",
+              "char": "Interpreter",
+              "photo": null
+            },
+            {
+              "name": "Piotr Machalica",
+              "char": "Man under the Exchange Office",
+              "photo": "https://image.tmdb.org/t/p/w500/xoXFSBm3AH09f4S576md2yKl0Cm.jpg"
+            },
+            {
+              "name": "Barbara Dziekan",
+              "char": "Mrs. Ewa",
+              "photo": "https://image.tmdb.org/t/p/w500/4EAg2Pcn1rtcU8Um8xitNVEqRuW.jpg"
+            },
+            {
+              "name": "Marzena Trybała",
+              "char": "Mariott Employee",
+              "photo": "https://image.tmdb.org/t/p/w500/oR7LRnQeHaPD4TMoYDHA6hM5b2e.jpg"
+            },
+            {
+              "name": "Philippe Morier-Genoud",
+              "char": "Judge",
+              "photo": "https://image.tmdb.org/t/p/w500/vMGXntjEzXx7n1gyWi11I2urB9k.jpg"
+            },
+            {
+              "name": "Francis Coffinet",
+              "char": "Bank Clerk",
+              "photo": "https://image.tmdb.org/t/p/w500/6s8qwFqOQskwgHhxvSSHTLraAlz.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Krzysztof Piesiewicz",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 1273525,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Trois couleurs : Blanc",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/109?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -22815,6 +23104,275 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1255718,
+        "titleZh": "臥底情劫",
+        "titleEn": "Plainclothes",
+        "releaseDate": "2026-09-18",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/oYfxkd9SmmiMrtntWMusNrJ5mKb.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/yMpLgrUs5AILPQwXO2eMtgEEar0.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "劇情",
+          "愛情",
+          "犯罪"
+        ],
+        "duration": 97,
+        "synopsis": "1990年代，同志運動風起雲湧，酷兒認同卻仍被視為禁忌。前景看好的便衣警察盧卡斯，被指派負責於公廁臥底，引誘男同性戀者暴露身分好將其逮捕，卻意外被目標安德魯深深吸引。他無法自拔地沉溺於溫柔鄉，在職責和慾望之間，陷入天人交戰。新年將至，家庭派對上，一封不知去向的信、一名不速之客的出現，迫使盧卡斯直面深深埋藏的過去……",
+        "imdb": "7.1",
+        "rt": "82%",
+        "mc": "65",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 3949,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 90,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 13,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          }
+        },
+        "trailerKey": "906IBcCQMjA",
+        "cast": [
+          {
+            "name": "湯姆·布萊斯",
+            "char": "Lucas",
+            "photo": "https://image.tmdb.org/t/p/w500/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg"
+          },
+          {
+            "name": "Russell Tovey",
+            "char": "Andrew",
+            "photo": "https://image.tmdb.org/t/p/w500/p1hNveDVY6vT5FDT0zJXDnZsDw.jpg"
+          },
+          {
+            "name": "艾美·芙賽斯",
+            "char": "Emily",
+            "photo": "https://image.tmdb.org/t/p/w500/q9ZSgZZrNDavLsbrRQPTJLFGG53.jpg"
+          },
+          {
+            "name": "Maria Dizzia",
+            "char": "Marie",
+            "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
+          },
+          {
+            "name": "Christian Cooke",
+            "char": "Ron",
+            "photo": "https://image.tmdb.org/t/p/w500/pqIqDP4HuRLc60KR8QMTHWhIJNq.jpg"
+          },
+          {
+            "name": "Gabe Fazio",
+            "char": "Uncle Paul",
+            "photo": "https://image.tmdb.org/t/p/w500/xxJMg2Gu04O1ZY7KD95IGheNVG1.jpg"
+          },
+          {
+            "name": "John Bedford Lloyd",
+            "char": "Lt. Sollars",
+            "photo": "https://image.tmdb.org/t/p/w500/tyNDFeQgf2dyjBZtRAskz1lZG1I.jpg"
+          },
+          {
+            "name": "Sam Asa Brownstein",
+            "char": "Christian",
+            "photo": "https://image.tmdb.org/t/p/w500/axleCRM24p36aUUcGd5vyWJv3Vd.jpg"
+          },
+          {
+            "name": "Darius Fraser",
+            "char": "Jeff",
+            "photo": "https://image.tmdb.org/t/p/w500/x7iTK4q6CD11AtFjrpBymsFGIaF.jpg"
+          },
+          {
+            "name": "Alessandra Ford Balazs",
+            "char": "Jessie",
+            "photo": "https://image.tmdb.org/t/p/w500/fFF92ebqJbzRQuIJF6RsDhd6MGh.jpg"
+          },
+          {
+            "name": "Joseph Emmi",
+            "char": "Gus",
+            "photo": null
+          },
+          {
+            "name": "Luke Burke",
+            "char": "Ben",
+            "photo": null
+          },
+          {
+            "name": "Marlene Mancini",
+            "char": "Nonna",
+            "photo": null
+          },
+          {
+            "name": "Henry Stockwell",
+            "char": "Man in Bathroom #1",
+            "photo": null
+          },
+          {
+            "name": "Ben Anderson",
+            "char": "Man in Bathroom #2",
+            "photo": null
+          },
+          {
+            "name": "Jason Ngo",
+            "char": "Man in Bathroom #3",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Carmen Emmi",
+            "job": "Director"
+          },
+          {
+            "name": "Carmen Emmi",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Plainclothes",
+        "platforms": [],
+        "popularity": 3.6378,
+        "imdbId": "tt27550504",
+        "countries": [
+          "United Kingdom",
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 97,
+          "genres": [
+            "劇情",
+            "愛情",
+            "犯罪"
+          ],
+          "synopsis": "1990年代，同志運動風起雲湧，酷兒認同卻仍被視為禁忌。前景看好的便衣警察盧卡斯，被指派負責於公廁臥底，引誘男同性戀者暴露身分好將其逮捕，卻意外被目標安德魯深深吸引。他無法自拔地沉溺於溫柔鄉，在職責和慾望之間，陷入天人交戰。新年將至，家庭派對上，一封不知去向的信、一名不速之客的出現，迫使盧卡斯直面深深埋藏的過去……",
+          "poster": "https://image.tmdb.org/t/p/w500/oYfxkd9SmmiMrtntWMusNrJ5mKb.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/yMpLgrUs5AILPQwXO2eMtgEEar0.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": "906IBcCQMjA",
+          "imdbId": "tt27550504",
+          "countries": [
+            "United Kingdom",
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "湯姆·布萊斯",
+              "char": "Lucas",
+              "photo": "https://image.tmdb.org/t/p/w500/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg"
+            },
+            {
+              "name": "Russell Tovey",
+              "char": "Andrew",
+              "photo": "https://image.tmdb.org/t/p/w500/p1hNveDVY6vT5FDT0zJXDnZsDw.jpg"
+            },
+            {
+              "name": "艾美·芙賽斯",
+              "char": "Emily",
+              "photo": "https://image.tmdb.org/t/p/w500/q9ZSgZZrNDavLsbrRQPTJLFGG53.jpg"
+            },
+            {
+              "name": "Maria Dizzia",
+              "char": "Marie",
+              "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
+            },
+            {
+              "name": "Christian Cooke",
+              "char": "Ron",
+              "photo": "https://image.tmdb.org/t/p/w500/pqIqDP4HuRLc60KR8QMTHWhIJNq.jpg"
+            },
+            {
+              "name": "Gabe Fazio",
+              "char": "Uncle Paul",
+              "photo": "https://image.tmdb.org/t/p/w500/xxJMg2Gu04O1ZY7KD95IGheNVG1.jpg"
+            },
+            {
+              "name": "John Bedford Lloyd",
+              "char": "Lt. Sollars",
+              "photo": "https://image.tmdb.org/t/p/w500/tyNDFeQgf2dyjBZtRAskz1lZG1I.jpg"
+            },
+            {
+              "name": "Sam Asa Brownstein",
+              "char": "Christian",
+              "photo": "https://image.tmdb.org/t/p/w500/axleCRM24p36aUUcGd5vyWJv3Vd.jpg"
+            },
+            {
+              "name": "Darius Fraser",
+              "char": "Jeff",
+              "photo": "https://image.tmdb.org/t/p/w500/x7iTK4q6CD11AtFjrpBymsFGIaF.jpg"
+            },
+            {
+              "name": "Alessandra Ford Balazs",
+              "char": "Jessie",
+              "photo": "https://image.tmdb.org/t/p/w500/fFF92ebqJbzRQuIJF6RsDhd6MGh.jpg"
+            },
+            {
+              "name": "Joseph Emmi",
+              "char": "Gus",
+              "photo": null
+            },
+            {
+              "name": "Luke Burke",
+              "char": "Ben",
+              "photo": null
+            },
+            {
+              "name": "Marlene Mancini",
+              "char": "Nonna",
+              "photo": null
+            },
+            {
+              "name": "Henry Stockwell",
+              "char": "Man in Bathroom #1",
+              "photo": null
+            },
+            {
+              "name": "Ben Anderson",
+              "char": "Man in Bathroom #2",
+              "photo": null
+            },
+            {
+              "name": "Jason Ngo",
+              "char": "Man in Bathroom #3",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Carmen Emmi",
+              "job": "Director"
+            },
+            {
+              "name": "Carmen Emmi",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Plainclothes",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1255718?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1740257,
         "titleZh": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
         "titleEn": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
@@ -23199,6 +23757,267 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 176654,
+        "titleZh": "再見阿郎",
+        "titleEn": "再見阿郎",
+        "releaseDate": "2026-09-22",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-22",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/5Xhftj4K4y0iiF0VicnAOW8pSQr.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 97,
+        "synopsis": "",
+        "imdb": "7.4",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 11,
+            "lastChanged": "2026-08-29T19:08:18.572103+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "張美瑤",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/vCGDaQIZcFSxQdT0L3TYdl20cAV.jpg"
+          },
+          {
+            "name": "柯俊雄",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zU95c8Vp7wVwF5T41UE0l0Fmdzr.jpg"
+          },
+          {
+            "name": "Chu Jing",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zARyA4uJNabZy9cBydfIrnIgaHe.jpg"
+          },
+          {
+            "name": "Wu Chia-Chi",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/b3GBtaPzPhMv3voUPQBkhnA5bpH.jpg"
+          },
+          {
+            "name": "Lee Hsiang",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "孫越",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/6XDg8HRINPMIYNivtfeT2wiS5Oq.jpg"
+          },
+          {
+            "name": "葛小寶",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/g9aUTYxGdfikbbaFAawQVqyB9Et.jpg"
+          },
+          {
+            "name": "韓甦",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/sgcyhBIlO3ic7SPMhguFoZocXo3.jpg"
+          },
+          {
+            "name": "Tao Shu",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "崔福生",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/aOyZ20QFxMAVPU3WbG7bnfvIf49.jpg"
+          },
+          {
+            "name": "Yu Chuan",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/ipX3VLR8WVqBEY2kKgxc3GbHcwz.jpg"
+          },
+          {
+            "name": "Kao Hain Chih",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zi5RF6BDZghSpuTmaODQM2Tdn05.jpg"
+          },
+          {
+            "name": "費雲",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/jqIwCuRhnDujxaxmWnQlu4Jfd7Q.jpg"
+          },
+          {
+            "name": "Yu Wang",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Tai Liang",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/vdBfVbaK4EsSPq4rccH2S4UnIoz.jpg"
+          },
+          {
+            "name": "Tsu Po-lin",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/nJp1R9MgwSIipuhK40BKnWy472E.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Liu Wei-Bin",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Yung-hsiang Chang",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Pai Ching-jui",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "再見阿郎",
+        "platforms": [],
+        "popularity": 0.8149,
+        "imdbId": "tt1111842",
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 97,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/5Xhftj4K4y0iiF0VicnAOW8pSQr.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt1111842",
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "張美瑤",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/vCGDaQIZcFSxQdT0L3TYdl20cAV.jpg"
+            },
+            {
+              "name": "柯俊雄",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zU95c8Vp7wVwF5T41UE0l0Fmdzr.jpg"
+            },
+            {
+              "name": "Chu Jing",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zARyA4uJNabZy9cBydfIrnIgaHe.jpg"
+            },
+            {
+              "name": "Wu Chia-Chi",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/b3GBtaPzPhMv3voUPQBkhnA5bpH.jpg"
+            },
+            {
+              "name": "Lee Hsiang",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "孫越",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/6XDg8HRINPMIYNivtfeT2wiS5Oq.jpg"
+            },
+            {
+              "name": "葛小寶",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/g9aUTYxGdfikbbaFAawQVqyB9Et.jpg"
+            },
+            {
+              "name": "韓甦",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/sgcyhBIlO3ic7SPMhguFoZocXo3.jpg"
+            },
+            {
+              "name": "Tao Shu",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "崔福生",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/aOyZ20QFxMAVPU3WbG7bnfvIf49.jpg"
+            },
+            {
+              "name": "Yu Chuan",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/ipX3VLR8WVqBEY2kKgxc3GbHcwz.jpg"
+            },
+            {
+              "name": "Kao Hain Chih",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zi5RF6BDZghSpuTmaODQM2Tdn05.jpg"
+            },
+            {
+              "name": "費雲",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/jqIwCuRhnDujxaxmWnQlu4Jfd7Q.jpg"
+            },
+            {
+              "name": "Yu Wang",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Tai Liang",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/vdBfVbaK4EsSPq4rccH2S4UnIoz.jpg"
+            },
+            {
+              "name": "Tsu Po-lin",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/nJp1R9MgwSIipuhK40BKnWy472E.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Liu Wei-Bin",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Yung-hsiang Chang",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Pai Ching-jui",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "再見阿郎",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/176654?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 255796,
         "titleZh": "今天不回家",
         "titleEn": "今天不回家",
@@ -23271,11 +24090,11 @@
         "crew": [
           {
             "name": "張艾嘉",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "張艾嘉",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -23344,11 +24163,11 @@
           "crew": [
             {
               "name": "張艾嘉",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "張艾嘉",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -23741,7 +24560,7 @@
         "origLang": "en",
         "origTitle": "Primetime",
         "platforms": [],
-        "popularity": 7.1164,
+        "popularity": 6.9415,
         "imdbId": "tt34206385",
         "countries": [
           "United States of America"
@@ -24071,6 +24890,95 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1377237?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1404169,
+        "titleZh": "親愛的星上人",
+        "titleEn": "Space Cadet",
+        "releaseDate": "2026-09-24",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/zv6l9di3R8CwEnp9HO9UJsWken7.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/xprL040VY3rZYxuanOpJB0gNVx1.jpg",
+        "voteAverage": "6.8",
+        "genre": [
+          "動畫",
+          "家庭",
+          "科幻"
+        ],
+        "duration": 86,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "Kid Koala",
+            "job": "Director"
+          },
+          {
+            "name": "Mylène Chollet",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Space Cadet",
+        "platforms": [],
+        "popularity": 2.8178,
+        "imdbId": "tt26446095",
+        "countries": [
+          "Canada"
+        ],
+        "detail": {
+          "duration": 86,
+          "genres": [
+            "動畫",
+            "家庭",
+            "科幻"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/zv6l9di3R8CwEnp9HO9UJsWken7.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/xprL040VY3rZYxuanOpJB0gNVx1.jpg",
+          "voteAverage": "6.8",
+          "trailerKey": null,
+          "imdbId": "tt26446095",
+          "countries": [
+            "Canada"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "Kid Koala",
+              "job": "Director"
+            },
+            {
+              "name": "Mylène Chollet",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Space Cadet",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1404169?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -25171,6 +26079,165 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1388805?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 961214,
+        "titleZh": "復活男",
+        "titleEn": "부활남: 더 레드",
+        "releaseDate": "2026-10-01",
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-01",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/kiDd05NykJBIoEvJPSG5SOd7qc6.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動作",
+          "奇幻"
+        ],
+        "duration": 102,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "u9QiOd43D_g",
+        "cast": [
+          {
+            "name": "具教煥",
+            "char": "Seok-hwan",
+            "photo": "https://image.tmdb.org/t/p/w500/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
+          },
+          {
+            "name": "申承浩",
+            "char": "Black",
+            "photo": "https://image.tmdb.org/t/p/w500/6Ca6UNuwVmHPIVGIPQuChOp7oJp.jpg"
+          },
+          {
+            "name": "姜基榮",
+            "char": "Young-ha",
+            "photo": "https://image.tmdb.org/t/p/w500/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
+          },
+          {
+            "name": "김시아",
+            "char": "Ye-rin",
+            "photo": "https://image.tmdb.org/t/p/w500/2kh2hTeABBIyVwPEgRVij1Ldcil.jpg"
+          },
+          {
+            "name": "金成鈴",
+            "char": "Mi-joo",
+            "photo": "https://image.tmdb.org/t/p/w500/sPB8ySlzfJWNedISwugRWEBABIY.jpg"
+          },
+          {
+            "name": "김인우",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zseVjncNOROGqZbJozlMTgFHeeI.jpg"
+          },
+          {
+            "name": "황근형",
+            "char": "Bully 4",
+            "photo": "https://image.tmdb.org/t/p/w500/7OPetSlFQRVHzmvbJ4TYO4ZTjNP.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "백",
+            "job": "Director"
+          },
+          {
+            "name": "박성신",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "In Production",
+        "origLang": "ko",
+        "origTitle": "부활남: 더 레드",
+        "platforms": [],
+        "popularity": 2.1605,
+        "imdbId": "tt29452783",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 102,
+          "genres": [
+            "動作",
+            "奇幻"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/nLsyRK3SmtdIftozpCd8sGQMRGD.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/kiDd05NykJBIoEvJPSG5SOd7qc6.jpg",
+          "voteAverage": "",
+          "trailerKey": "u9QiOd43D_g",
+          "imdbId": "tt29452783",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "具教煥",
+              "char": "Seok-hwan",
+              "photo": "https://image.tmdb.org/t/p/w500/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
+            },
+            {
+              "name": "申承浩",
+              "char": "Black",
+              "photo": "https://image.tmdb.org/t/p/w500/6Ca6UNuwVmHPIVGIPQuChOp7oJp.jpg"
+            },
+            {
+              "name": "姜基榮",
+              "char": "Young-ha",
+              "photo": "https://image.tmdb.org/t/p/w500/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
+            },
+            {
+              "name": "김시아",
+              "char": "Ye-rin",
+              "photo": "https://image.tmdb.org/t/p/w500/2kh2hTeABBIyVwPEgRVij1Ldcil.jpg"
+            },
+            {
+              "name": "金成鈴",
+              "char": "Mi-joo",
+              "photo": "https://image.tmdb.org/t/p/w500/sPB8ySlzfJWNedISwugRWEBABIY.jpg"
+            },
+            {
+              "name": "김인우",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zseVjncNOROGqZbJozlMTgFHeeI.jpg"
+            },
+            {
+              "name": "황근형",
+              "char": "Bully 4",
+              "photo": "https://image.tmdb.org/t/p/w500/7OPetSlFQRVHzmvbJ4TYO4ZTjNP.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "백",
+              "job": "Director"
+            },
+            {
+              "name": "박성신",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "In Production",
+          "origLang": "ko",
+          "origTitle": "부활남: 더 레드",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/961214?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
