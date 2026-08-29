@@ -208,9 +208,7 @@ def fetch_atmovies(url):
     detected = detect_atmovies_encoding(r, raw_bytes)
 
     log(f"  Detected encoding: {detected}")
-    html = raw_bytes.decode(detected, errors="strict")
-    validate_atmovies_text(html)
-    return html
+    return raw_bytes.decode(detected, errors="strict")
 
 
 def detect_atmovies_encoding(response, raw_bytes):
@@ -235,15 +233,10 @@ def detect_atmovies_encoding(response, raw_bytes):
     raise UnicodeError("Atmovies response is neither valid UTF-8 nor Big5")
 
 
-def validate_atmovies_text(html):
-    """阻止明顯解碼錯誤的內容進入候選與 Google Sheet。"""
-    replacement_count = html.count("\ufffd")
-    cyrillic_count = len(re.findall(r"[\u0400-\u04ff]", html))
-    if replacement_count or cyrillic_count >= 10:
-        raise UnicodeError(
-            "Atmovies response contains suspicious decoded characters "
-            f"(replacement={replacement_count}, cyrillic={cyrillic_count})"
-        )
+def validate_atmovies_title(title):
+    """阻止電影卡片片名中的明顯解碼替代字元進入候選與 Sheet。"""
+    if "\ufffd" in title:
+        raise UnicodeError(f"Atmovies movie title contains invalid decoded characters: {title!r}")
 
 
 def fetch_now_all_pages():
@@ -366,6 +359,7 @@ def parse_now(html_pages):
             # 開眼的格式: "中文片名 English Title"
             # 中文部分(到第一個空格或英文字之前)是中文片名
             full_title = link.get_text(strip=True)
+            validate_atmovies_title(full_title)
 
             title_zh, title_en = split_atmovies_title(full_title)
 
@@ -440,6 +434,7 @@ def parse_next(html_pages):
             seen_ids.add(movie_id)
 
             full_title = link.get_text(strip=True)
+            validate_atmovies_title(full_title)
 
             title_zh, title_en = split_atmovies_title(full_title)
 

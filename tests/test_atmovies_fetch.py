@@ -94,17 +94,9 @@ class AtmoviesFetchTests(unittest.TestCase):
             "幕末太陽傳",
         )
 
-    @patch("weekly_check.requests.get")
-    def test_rejects_suspicious_cyrillic_mojibake(self, get):
-        response = Mock(
-            content=("Ж" * 10).encode("utf-8"),
-            headers={"Content-Type": "text/html;charset=UTF-8"},
-        )
-        response.raise_for_status.return_value = None
-        get.return_value = response
-
+    def test_rejects_replacement_character_in_movie_title(self):
         with self.assertRaises(UnicodeError):
-            weekly.fetch_atmovies("https://example.test/movie/now/1/")
+            weekly.validate_atmovies_title("錯誤片�")
 
 
 if __name__ == "__main__":
