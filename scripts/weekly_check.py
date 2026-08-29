@@ -828,14 +828,6 @@ def infer_current_tmdb_theatrical_date(tw_releases, audit_date):
     return max(dates).isoformat() if dates else ""
 
 
-def is_known_old_atmovies_movie(movie):
-    """開眼日期雖已更新，但 TMDB 原始上映日至少早一年時仍是重映候選。"""
-    from cinema_rereleases import is_confirmed_rerelease
-
-    tmdb_movie = {"release_date": movie.get("tmdb_primary_release_date", "")}
-    return is_confirmed_rerelease(movie, tmdb_movie, movie.get("tmdb_tw_releases", []))
-
-
 def rerelease_absence_audit_complete(source_health, tmdb_processing_complete):
     """威秀 403 不影響缺席稽核；開眼、秀泰、國賓與 TMDB 必須成功。"""
     return bool(tmdb_processing_complete) and all(
@@ -1849,10 +1841,9 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         old_atmovies_listing = is_stale_atmovies_release_date(
             atmovies_original_date, generated_at_local.date()
         )
-        known_old_movie = is_known_old_atmovies_movie(movie)
-        if not marked_rerelease and not old_atmovies_listing and not known_old_movie:
+        if not marked_rerelease and not old_atmovies_listing:
             continue
-        if marked_rerelease or old_atmovies_listing or known_old_movie:
+        if marked_rerelease or old_atmovies_listing:
             rematched = choose_rerelease_tmdb_match(movie)
             if not rematched:
                 review_rows.append({**movie, "audit_category": "重映－TMDB配對待確認"})
@@ -1862,12 +1853,29 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             if rematched_releases is None:
                 tmdb_processing_complete = False
                 continue
+            rematched_tw_releases = extract_tw_theatrical_releases_from_results(rematched_releases)
+            current_tmdb_date = infer_current_tmdb_theatrical_date(
+                rematched_tw_releases, generated_at_local.date()
+            )
+            validation_movie = {
+                **movie,
+                "release_date_tw": current_tmdb_date,
+            }
+            if not is_confirmed_rerelease(
+                validation_movie, rematched, rematched_tw_releases
+            ):
+                rejected_source_urls.update(
+                    url for url in movie.get("source_urls", []) if url
+                )
+                if movie.get("atmovies_url"):
+                    rejected_source_urls.add(movie["atmovies_url"])
+                continue
             movie.update({
                 "tmdb_id": rematched["id"],
                 "tmdb_title": rematched.get("title") or rematched.get("original_title", ""),
                 "tmdb_primary_release_date": rematched.get("release_date", ""),
                 "tmdb_url": tmdb_movie_url(rematched["id"]),
-                "tmdb_tw_releases": extract_tw_theatrical_releases_from_results(rematched_releases),
+                "tmdb_tw_releases": rematched_tw_releases,
             })
         tmdb_id = movie.get("tmdb_id")
         if not tmdb_id:
@@ -1885,9 +1893,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         for field, value in (("sources", "atmovies"), ("source_urls", movie.get("atmovies_url")), ("statuses", movie.get("source_bucket"))):
             if value and value not in item[field]:
                 item[field].append(value)
-        if known_old_movie and not old_atmovies_listing and atmovies_original_date:
-            item["cinema_dates"].append(atmovies_original_date)
-        elif atmovies_original_date and atmovies_original_date not in item["atmovies_original_dates"]:
+        if atmovies_original_date and atmovies_original_date not in item["atmovies_original_dates"]:
             item["atmovies_original_dates"].append(atmovies_original_date)
 
     candidates = []
