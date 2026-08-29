@@ -205,24 +205,45 @@ def fetch_atmovies(url):
 
     raw_bytes = r.content
 
-    # 先從 HTML head 抓 meta charset
-    detected = None
-    head_chunk = raw_bytes[:2048].decode("ascii", errors="ignore").lower()
-    if "charset=utf-8" in head_chunk:
-        detected = "utf-8"
-    elif "charset=big5" in head_chunk:
-        detected = "big5-hkscs"
-
-    # 沒抓到就讓 chardet 偵測
-    if not detected:
-        detected = r.apparent_encoding or "utf-8"
+    detected = detect_atmovies_encoding(r, raw_bytes)
 
     log(f"  Detected encoding: {detected}")
+    html = raw_bytes.decode(detected, errors="strict")
+    validate_atmovies_text(html)
+    return html
 
-    try:
-        return raw_bytes.decode(detected, errors="replace")
-    except LookupError:
-        return raw_bytes.decode("utf-8", errors="replace")
+
+def detect_atmovies_encoding(response, raw_bytes):
+    """只接受開眼實際使用的 UTF-8／Big5，避免 chardet 誤判為西里爾編碼。"""
+    content_type = str(getattr(response, "headers", {}).get("Content-Type", ""))
+    head_chunk = raw_bytes[:4096].decode("ascii", errors="ignore")
+    declared = re.search(
+        r"charset\s*=\s*[\"']?\s*(utf-?8|big5(?:-hkscs)?)",
+        f"{content_type}\n{head_chunk}",
+        flags=re.IGNORECASE,
+    )
+    if declared:
+        value = declared.group(1).lower().replace("_", "-")
+        return "utf-8" if value in {"utf8", "utf-8"} else "big5-hkscs"
+
+    for encoding in ("utf-8", "big5-hkscs"):
+        try:
+            raw_bytes.decode(encoding, errors="strict")
+            return encoding
+        except UnicodeDecodeError:
+            continue
+    raise UnicodeError("Atmovies response is neither valid UTF-8 nor Big5")
+
+
+def validate_atmovies_text(html):
+    """阻止明顯解碼錯誤的內容進入候選與 Google Sheet。"""
+    replacement_count = html.count("\ufffd")
+    cyrillic_count = len(re.findall(r"[\u0400-\u04ff]", html))
+    if replacement_count or cyrillic_count >= 10:
+        raise UnicodeError(
+            "Atmovies response contains suspicious decoded characters "
+            f"(replacement={replacement_count}, cyrillic={cyrillic_count})"
+        )
 
 
 def fetch_now_all_pages():

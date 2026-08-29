@@ -20,7 +20,10 @@ class AtmoviesFetchTests(unittest.TestCase):
         failed.raise_for_status.side_effect = requests.exceptions.HTTPError(
             "502 Bad Gateway", response=Mock(status_code=502)
         )
-        succeeded = Mock(content=b'<meta charset=utf-8>ok', apparent_encoding="utf-8")
+        succeeded = Mock(
+            content=b'<meta charset=utf-8>ok',
+            headers={"Content-Type": "text/html"},
+        )
         succeeded.raise_for_status.return_value = None
         get.side_effect = [failed, succeeded]
 
@@ -61,6 +64,47 @@ class AtmoviesFetchTests(unittest.TestCase):
 
         get.assert_called_once()
         sleep.assert_not_called()
+
+    @patch("weekly_check.requests.get")
+    def test_honors_quoted_utf8_meta_instead_of_wrong_apparent_encoding(self, get):
+        response = Mock(
+            content='<meta charset="UTF-8" /><h1>現正上映</h1>'.encode("utf-8"),
+            headers={"Content-Type": "text/html"},
+            apparent_encoding="ptcp154",
+        )
+        response.raise_for_status.return_value = None
+        get.return_value = response
+
+        result = weekly.fetch_atmovies("https://example.test/movie/now/1/")
+
+        self.assertIn("現正上映", result)
+
+    @patch("weekly_check.requests.get")
+    def test_honors_utf8_http_content_type(self, get):
+        response = Mock(
+            content="幕末太陽傳".encode("utf-8"),
+            headers={"Content-Type": "text/html;charset=UTF-8"},
+            apparent_encoding="ptcp154",
+        )
+        response.raise_for_status.return_value = None
+        get.return_value = response
+
+        self.assertEqual(
+            weekly.fetch_atmovies("https://example.test/movie/now/1/"),
+            "幕末太陽傳",
+        )
+
+    @patch("weekly_check.requests.get")
+    def test_rejects_suspicious_cyrillic_mojibake(self, get):
+        response = Mock(
+            content=("Ж" * 10).encode("utf-8"),
+            headers={"Content-Type": "text/html;charset=UTF-8"},
+        )
+        response.raise_for_status.return_value = None
+        get.return_value = response
+
+        with self.assertRaises(UnicodeError):
+            weekly.fetch_atmovies("https://example.test/movie/now/1/")
 
 
 if __name__ == "__main__":
