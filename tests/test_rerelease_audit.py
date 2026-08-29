@@ -281,6 +281,21 @@ class CinemaParserTests(unittest.TestCase):
         self.assertFalse(weekly.is_stale_atmovies_release_date("2026-07-31", date(2026, 8, 6)))
         self.assertFalse(weekly.is_stale_atmovies_release_date("", date(2026, 8, 6)))
 
+    def test_missing_cinema_date_uses_recent_verified_tw_theatrical_date(self):
+        releases = [{"date": "2018-11-03"}, {"date": "2026-08-21"}]
+        self.assertEqual(
+            weekly.infer_current_tmdb_theatrical_date(releases, date(2026, 8, 29)),
+            "2026-08-21",
+        )
+
+    def test_missing_cinema_date_does_not_reuse_ancient_tmdb_date(self):
+        self.assertEqual(
+            weekly.infer_current_tmdb_theatrical_date(
+                [{"date": "1995-11-18"}], date(2026, 8, 29)
+            ),
+            "",
+        )
+
     def test_updated_atmovies_date_still_recognizes_old_tmdb_movie(self):
         self.assertTrue(weekly.is_known_old_atmovies_movie({
             "title_zh": "空之境界劇場版：終章",
