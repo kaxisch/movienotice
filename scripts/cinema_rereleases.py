@@ -307,6 +307,7 @@ def merge_raw_movies(movies):
 
 
 def is_confirmed_rerelease(movie, tmdb_movie, tw_releases):
+    """只以明確標記或更早的台灣院線日期確認重映。"""
     cinema_date = movie.get("release_date_tw", "")
     if has_rerelease_marker(movie.get("title_zh"), movie.get("title_en")):
         return True
@@ -322,16 +323,7 @@ def is_confirmed_rerelease(movie, tmdb_movie, tw_releases):
             continue
         if release_date <= old_release_cutoff:
             earlier_tw_dates.append(release_date)
-    if earlier_tw_dates:
-        return True
-
-    # 私人重映稽核也要收錄 TMDB 尚未建立台灣舊院線日期的舊電影。
-    # 公開網站仍由 Refresh 以本次 TW 首映、有限上映或一般院線日期嚴格把關。
-    try:
-        original_release_date = date.fromisoformat(tmdb_movie.get("release_date", ""))
-    except (AttributeError, TypeError, ValueError):
-        return False
-    return original_release_date <= old_release_cutoff
+    return bool(earlier_tw_dates)
 
 
 def tmdb_date_status(cinema_date, tw_releases):

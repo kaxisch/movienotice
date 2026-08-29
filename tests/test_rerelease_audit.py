@@ -168,7 +168,7 @@ class CinemaParserTests(unittest.TestCase):
         self.assertFalse(cinema.is_confirmed_rerelease(movie, {}, []))
         self.assertTrue(cinema.is_confirmed_rerelease(movie, {}, [{"date": "2001-01-01"}]))
         self.assertFalse(cinema.is_confirmed_rerelease(movie, {}, [{"date": "2026-07-01"}]))
-        self.assertTrue(cinema.is_confirmed_rerelease(movie, {"release_date": "1986-11-26"}, []))
+        self.assertFalse(cinema.is_confirmed_rerelease(movie, {"release_date": "1986-11-26"}, []))
         marked = {"title_zh": "普通舊片（4K修復版）", "release_date_tw": "2026-08-05"}
         self.assertTrue(cinema.is_confirmed_rerelease(marked, {}, []))
 
@@ -296,13 +296,19 @@ class CinemaParserTests(unittest.TestCase):
             "",
         )
 
-    def test_updated_atmovies_date_still_recognizes_old_tmdb_movie(self):
-        self.assertTrue(weekly.is_known_old_atmovies_movie({
-            "title_zh": "空之境界劇場版：終章",
-            "release_date_tw": "2026-06-17",
-            "tmdb_primary_release_date": "2010-12-28",
-            "tmdb_tw_releases": [],
-        }))
+    def test_old_global_release_without_earlier_tw_date_is_not_rerelease(self):
+        self.assertFalse(cinema.is_confirmed_rerelease(
+            {"title_zh": "銀河寫手", "release_date_tw": "2026-08-28"},
+            {"release_date": "2024-03-30"},
+            [{"date": "2026-08-28"}],
+        ))
+
+    def test_look_back_animation_date_does_not_mark_live_action_as_rerelease(self):
+        self.assertFalse(cinema.is_confirmed_rerelease(
+            {"title_zh": "驀然回首(2024)", "release_date_tw": "2026-09-11"},
+            {"id": 1591675, "release_date": "2026-09-11"},
+            [{"date": "2026-09-11"}],
+        ))
 
 
 class RereleasePresenceTests(unittest.TestCase):
