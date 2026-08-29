@@ -95,6 +95,8 @@ def rerelease_can_override_regular(candidate):
         return False
     if not sheet_value_is_true(candidate.get("rerelease_present")):
         return False
+    if not sheet_value_is_true(candidate.get("rerelease_verified")):
+        return False
     cinema_date = str(candidate.get("cinema_release_date", "") or "").strip()
     tmdb_date = str(candidate.get("tmdb_tw_release_date", "") or "").strip()
     return (

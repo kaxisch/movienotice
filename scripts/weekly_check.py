@@ -42,6 +42,7 @@ OUTPUT_FILE = OUTPUT_DIR / "missing-tw-dates.json"
 OVERRIDES_FILE = OUTPUT_DIR / "tmdb-overrides.json"
 ATMOVIES_CANDIDATES_FILE = OUTPUT_DIR / "atmovies-candidates.json"
 RERELEASE_CANDIDATES_FILE = OUTPUT_DIR / "rerelease-candidates.json"
+RERELEASE_OVERRIDES_FILE = OUTPUT_DIR / "rerelease-overrides.json"
 MOVIE_DATA_FILE = OUTPUT_DIR / "movie-data.json"
 MANUAL_RELEASES_FILE = OUTPUT_DIR / "manual-releases.json"
 IMG_W = "https://image.tmdb.org/t/p/w500"
@@ -934,6 +935,20 @@ def load_tmdb_overrides():
         return {}
 
 
+def load_manual_rerelease_ids():
+    """載入已由站主確認為台灣重映的 TMDB ID。"""
+    if not RERELEASE_OVERRIDES_FILE.exists():
+        return set()
+    try:
+        with open(RERELEASE_OVERRIDES_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        values = data.get("confirmed_tmdb_ids", []) if isinstance(data, dict) else []
+        return {int(value) for value in values}
+    except (OSError, TypeError, ValueError, json.JSONDecodeError) as error:
+        log(f"  Failed to load rerelease overrides: {error}")
+        return set()
+
+
 def find_tmdb_override(movie, overrides=None):
     """依來源 ID 或人工確認過的片名尋找 TMDB 覆寫。"""
     overrides = overrides if overrides is not None else load_tmdb_overrides()
@@ -1780,6 +1795,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
     review_rows = []
     rejected_source_urls = set()
     tmdb_processing_complete = True
+    manual_rerelease_ids = load_manual_rerelease_ids()
     for index, movie in enumerate(merge_raw_movies(cinema_movies), 1):
         if is_promotional_screening(movie.get("title_zh"), movie.get("title_en")) and not has_rerelease_marker(
             movie.get("title_zh"), movie.get("title_en")
@@ -1801,9 +1817,10 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             tmdb_processing_complete = False
             continue
         tw_releases = extract_tw_theatrical_releases_from_results(release_results)
-        if not is_confirmed_rerelease(movie, result, tw_releases):
-            rejected_source_urls.update(url for url in movie.get("source_urls", []) if url)
-            continue
+        rerelease_verified = (
+            result["id"] in manual_rerelease_ids
+            or is_confirmed_rerelease(movie, result, tw_releases)
+        )
         item = matched.setdefault(result["id"], {
             "tmdb_id": result["id"],
             "title_zh": result.get("title") or movie.get("title_zh", ""),
@@ -1813,7 +1830,9 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             "tmdb_url": tmdb_movie_url(result["id"]),
             "cinema_dates": [], "atmovies_original_dates": [], "sources": [], "source_urls": [], "statuses": [],
             "tw_releases": tw_releases,
+            "rerelease_verified": False,
         })
+        item["rerelease_verified"] = item["rerelease_verified"] or rerelease_verified
         for value in movie.get("sources", []):
             if value not in item["sources"]:
                 item["sources"].append(value)
@@ -1921,6 +1940,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             "source_urls": "\n".join(source_urls),
             "cinema_status": ",".join(sorted(statuses)),
             "tmdb_date_status": status,
+            "rerelease_verified": bool(item.pop("rerelease_verified", False)),
             "rerelease_present": True,
         })
 

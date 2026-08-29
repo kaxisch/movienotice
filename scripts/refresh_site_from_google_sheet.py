@@ -76,6 +76,15 @@ def load_sheet_candidates():
     return candidates
 
 
+def classify_rerelease_candidate(item):
+    """重映證據不足時仍保留為一般院線候選，但不加重映標籤。"""
+    if not shared_sheet_value_is_true(item.get("rerelease_present")):
+        return "rerelease_history"
+    if shared_sheet_value_is_true(item.get("rerelease_verified")):
+        return "rerelease"
+    return "cinema"
+
+
 def load_candidate_worksheet(service, spreadsheet_id, title, candidate_kind):
     response = service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
@@ -92,7 +101,10 @@ def load_candidate_worksheet(service, spreadsheet_id, title, candidate_kind):
             item["tmdb_id"] = int(item.get("tmdb_id", ""))
         except (TypeError, ValueError):
             continue
-        item["candidate_kind"] = candidate_kind
+        if candidate_kind == "rerelease":
+            item["candidate_kind"] = classify_rerelease_candidate(item)
+        else:
+            item["candidate_kind"] = candidate_kind
         candidates.append(item)
     return candidates
 
@@ -172,6 +184,8 @@ def index_candidates_by_tmdb_id(candidates):
     """同片重複時，只有已驗證且未隱藏的重映候選可蓋掉一般候選。"""
     indexed = {}
     for candidate in candidates:
+        if candidate.get("candidate_kind") == "rerelease_history":
+            continue
         if (
             candidate.get("candidate_kind") == "rerelease"
             and not rerelease_can_override_regular_candidate(candidate)
@@ -245,17 +259,17 @@ def build_verified_output(candidates):
                 f"{past_cutoff.isoformat()}..{future_cutoff.isoformat()} (available: {available_dates})"
             )
             continue
-        if source.get("candidate_kind") == "rerelease":
+        if source.get("candidate_kind") in {"rerelease", "cinema"}:
             cinema_date = str(source.get("cinema_release_date", "") or "")
             exact_releases = [item for item in eligible_releases if item.get("date") == cinema_date]
             if not exact_releases:
                 log(
-                    f"  Excluded rerelease TMDB {tmdb_id}: TW cinema release type 1, 2, or 3 "
+                    f"  Excluded cinema candidate TMDB {tmdb_id}: TW cinema release type 1, 2, or 3 "
                     f"does not match cinema date {cinema_date}"
                 )
                 continue
             selected_releases = exact_releases
-            if should_hide_rerelease(source):
+            if source.get("candidate_kind") == "rerelease" and should_hide_rerelease(source):
                 log(f"  Hidden rerelease TMDB {tmdb_id}: absent from all required sources in one complete audit")
                 continue
             tw_date = cinema_date

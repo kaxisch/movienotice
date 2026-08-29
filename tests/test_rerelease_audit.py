@@ -15,6 +15,10 @@ import weekly_check as weekly
 
 
 class CinemaParserTests(unittest.TestCase):
+    def test_manual_rerelease_override_contains_confirmed_movies(self):
+        confirmed_ids = weekly.load_manual_rerelease_ids()
+        self.assertTrue({12197, 311056, 333622, 41498, 44730, 75233, 481432, 660120}.issubset(confirmed_ids))
+
     @patch("weekly_check.tmdb_movie")
     @patch("weekly_check.load_tmdb_overrides")
     def test_rerelease_match_honors_atmovies_override(self, overrides, tmdb_movie):

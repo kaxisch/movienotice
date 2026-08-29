@@ -287,7 +287,7 @@ function cardHTML(m, showRatings) {
   var href = escHtml(movieDetailHref(m));
   var isThisWeek = isThisWeekRelease(m);
   var releaseLabel = m.isRerelease
-    ? '<span class="this-week-ribbon rerelease-ribbon">' + (isThisWeek ? '本週重映' : '經典重映') + '</span>'
+    ? '<span class="this-week-ribbon rerelease-ribbon">' + (isThisWeek ? '本週重映' : '重映') + '</span>'
     : (isThisWeek ? '<span class="this-week-ribbon">本週上映</span>' : '');
   return '<a class="movie-card movie-link fade-in" id="card-' + m.id + '" href="' + href + '">' +
     '<div class="card-img-wrap"><div class="card-poster-clip">' + imgHTML + releaseLabel +
@@ -344,10 +344,13 @@ function listRowHTML(m, showRatings) {
     if (m.voteAverage) badgesHTML += '<span class="badge-tmdb"><span class="badge-source">TMDB</span><span>' + tmdbScore(m.voteAverage) + '</span></span>';
   }
   var href = escHtml(movieDetailHref(m));
-  var thisWeekLabel = isThisWeekRelease(m) ? '<span class="this-week-list-label">本週上映</span>' : '';
+  var releaseLabels = '';
+  if (isThisWeekRelease(m)) releaseLabels += '<span class="this-week-list-label">本週上映</span>';
+  if (m.isRerelease) releaseLabels += '<span class="this-week-list-label rerelease-list-label">重映</span>';
+  var releaseLabelsHTML = releaseLabels ? '<div class="list-release-labels">' + releaseLabels + '</div>' : '';
   return '<a class="list-item movie-link fade-in" id="card-' + m.id + '" href="' + href + '">' +
     imgHTML +
-    '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + thisWeekLabel + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatReleaseDates(m) + '</p>' : '') + '</div>' +
+    '<div class="list-info"><p class="list-title">' + escHtml(m.titleZh) + '</p>' + releaseLabelsHTML + subtitleHTML + (m.releaseDate ? '<p class="list-date">' + formatReleaseDates(m) + '</p>' : '') + '</div>' +
     '<div class="list-badges">' + badgesHTML + '</div>' +
     '</a>';
 }
