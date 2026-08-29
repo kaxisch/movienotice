@@ -1315,6 +1315,7 @@ def build_static_movie(record, payload, ratings):
         "titleZh": title_zh,
         "titleEn": payload.get("original_title") or record.get("title_en", ""),
         "releaseDate": release_date,
+        "isRerelease": record.get("candidate_kind") == "rerelease",
         "twTheatricalReleases": theatrical_releases,
         "twReleaseDateVerified": bool(release_date),
         "poster": poster or backdrop or None,

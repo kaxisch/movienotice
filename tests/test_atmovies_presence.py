@@ -14,6 +14,32 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_static_movie_exports_verified_rerelease_status(self):
+        movie = weekly.build_static_movie(
+            {
+                "tmdb_id": 101,
+                "tmdb_tw_release_date": "2026-08-21",
+                "candidate_kind": "rerelease",
+            },
+            {"title": "重映電影", "original_title": "Rerelease", "genres": []},
+            {},
+        )
+
+        self.assertTrue(movie["isRerelease"])
+
+    def test_static_movie_does_not_mark_regular_release_as_rerelease(self):
+        movie = weekly.build_static_movie(
+            {
+                "tmdb_id": 102,
+                "tmdb_tw_release_date": "2026-08-21",
+                "candidate_kind": "atmovies",
+            },
+            {"title": "一般電影", "original_title": "Regular", "genres": []},
+            {},
+        )
+
+        self.assertFalse(movie["isRerelease"])
+
     def test_taiwan_title_override_replaces_japanese_shell_character(self):
         self.assertEqual(
             weekly.tmdb_title_override(9323),
