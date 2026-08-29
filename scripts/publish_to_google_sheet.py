@@ -39,6 +39,7 @@ WHITELIST_FILE = DATA_DIR / "tw-whitelist.json"
 MANUAL_RELEASES_FILE = DATA_DIR / "manual-releases.json"
 CANDIDATES_SHEET_TITLE = "_candidates"
 RERELEASES_SHEET_TITLE = "_rereleases"
+AUDIT_STATUS_SHEET_TITLE = "_audit_status"
 CANDIDATE_HEADERS = [
     "tmdb_id", "source_bucket", "title_zh", "title_en",
     "release_date_tw", "tmdb_tw_release_date", "atmovies_id", "atmovies_url", "tmdb_title",
@@ -53,6 +54,7 @@ RERELEASE_HEADERS = [
     "tmdb_date_status", "rerelease_present", "consecutive_misses", "hidden",
     "first_seen", "last_seen", "last_audit_date",
 ]
+AUDIT_STATUS_HEADERS = ["audit_date", "completed_at", "audit_complete"]
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
     "https://www.googleapis.com/auth/spreadsheets",
@@ -853,6 +855,27 @@ def publish():
         write_rows(sheets_service, spreadsheet_id, RERELEASES_SHEET_TITLE, rerelease_rows)
         format_sheet(sheets_service, spreadsheet_id, rerelease_sheet_id, len(rerelease_rows[0]))
         log(f"Wrote {len(rerelease_rows) - 1} rerelease candidates to worksheet {RERELEASES_SHEET_TITLE}.")
+
+    audit_complete = bool(rerelease_audit and rerelease_audit.get("audit_complete"))
+    audit_status_rows = [
+        AUDIT_STATUS_HEADERS,
+        [run_date, datetime.now(ZoneInfo("Asia/Taipei")).isoformat(), audit_complete],
+    ]
+    audit_status_sheet_id = ensure_date_sheet(
+        sheets_service, spreadsheet_id, AUDIT_STATUS_SHEET_TITLE
+    )
+    write_rows(
+        sheets_service, spreadsheet_id, AUDIT_STATUS_SHEET_TITLE, audit_status_rows
+    )
+    format_sheet(
+        sheets_service,
+        spreadsheet_id,
+        audit_status_sheet_id,
+        len(AUDIT_STATUS_HEADERS),
+    )
+    log(
+        f"Recorded audit status for {run_date}: complete={audit_complete}."
+    )
 
     metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
     spreadsheet_url = metadata.get("spreadsheetUrl") or spreadsheet.get("webViewLink", "")
