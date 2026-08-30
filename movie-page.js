@@ -1,6 +1,63 @@
 (function () {
   'use strict';
 
+  var shareButton = document.querySelector('.share-button');
+  if (shareButton) {
+    function showShareSnackbar(message) {
+      var previous = document.querySelector('.share-snackbar');
+      if (previous) previous.remove();
+      var snackbar = document.createElement('div');
+      snackbar.className = 'share-snackbar';
+      snackbar.setAttribute('role', 'status');
+      snackbar.setAttribute('aria-live', 'polite');
+      snackbar.textContent = message;
+      shareButton.parentElement.appendChild(snackbar);
+      window.requestAnimationFrame(function () {
+        snackbar.classList.add('show');
+      });
+      window.setTimeout(function () {
+        snackbar.classList.remove('show');
+        window.setTimeout(function () { snackbar.remove(); }, 340);
+      }, 2000);
+    }
+
+    function copyPageUrl() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        return navigator.clipboard.writeText(window.location.href);
+      }
+      var input = document.createElement('textarea');
+      input.value = window.location.href;
+      input.setAttribute('readonly', '');
+      input.style.position = 'fixed';
+      input.style.opacity = '0';
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      input.remove();
+      return Promise.resolve();
+    }
+
+    shareButton.addEventListener('click', function () {
+      var title = document.querySelector('h1');
+      var shareData = {
+        title: title ? title.textContent + '｜MovieNotice 電影佈告欄' : document.title,
+        url: window.location.href
+      };
+      var mobileShare = window.matchMedia('(max-width: 1024px) and (pointer: coarse)').matches;
+      if (mobileShare && navigator.share) {
+        navigator.share(shareData).catch(function (error) {
+          if (error && error.name !== 'AbortError') showShareSnackbar('分享失敗');
+        });
+        return;
+      }
+      copyPageUrl().then(function () {
+        showShareSnackbar('已複製');
+      }).catch(function () {
+        showShareSnackbar('複製失敗');
+      });
+    });
+  }
+
   var mobileTouch = window.matchMedia('(max-width: 1024px) and (pointer: coarse)');
   if (!mobileTouch.matches) return;
 

@@ -74,6 +74,7 @@ body {
   -webkit-backdrop-filter: blur(14px);
 }
 .topbar-inner {
+  position: relative;
   width: 100%;
   max-width: 1040px;
   height: 100%;
@@ -87,16 +88,47 @@ body {
 .brand img { display: block; width: auto; height: 40px; }
 .brand .nav-copy { display: flex; align-items: baseline; margin-left: -6px; white-space: nowrap; transform: translateY(3px); }
 .brand .nav-name { color: #4b422f; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 500; line-height: 1.15; letter-spacing: .04em; }
-.back-link {
+.share-button {
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: transparent;
   color: #6b675e;
   font-size: 12px;
   letter-spacing: .04em;
-  text-decoration: none;
+  cursor: pointer;
   transition: color .18s ease;
 }
-.back-link:hover { color: var(--ink); }
-.back-link::before { content: '←'; margin-right: 6px; }
+.share-button .material-symbols-outlined { color: currentColor; font-size: 17px; }
+.share-button .share-label { color: currentColor; }
+.share-button:hover { color: var(--ink); }
+.share-button:focus-visible { outline: 1px solid var(--ink); outline-offset: 5px; }
+.share-snackbar {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 8px);
+  right: 32px;
+  padding: 8px 12px;
+  color: #625e56;
+  background: #f1efe9;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
+  text-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity .32s ease, transform .32s ease;
+  pointer-events: none;
+}
+.share-snackbar.show { opacity: 1; transform: translateY(0); }
+@media (max-width: 600px) { .share-snackbar { right: 20px; } }
 .hero { position: relative; height: 480px; overflow: hidden; }
 .hero-media { position: absolute; inset: 0; background: #d7d5cf; }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
@@ -515,13 +547,13 @@ def render_movie_page(movie, generated_at):
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;500;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css?v=24"/>
-<script src="../../movie-page.js?v=3" defer></script>
+<link rel="stylesheet" href="../../movie-page.css?v=25"/>
+<script src="../../movie-page.js?v=4" defer></script>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>
 <body>
 <div class="page-bg"></div>
-<header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span class="nav-copy"><span class="nav-name">電影佈告欄</span></span></a><a class="back-link" href="../../">返回</a></div></header>
+<header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span class="nav-copy"><span class="nav-name">電影佈告欄</span></span></a><button class="share-button" type="button" aria-label="分享這部電影"><span class="material-symbols-outlined" aria-hidden="true">share</span><span class="share-label">分享</span></button></div></header>
 <main>
 <section class="hero"><div class="hero-media">{hero_media}</div><div class="hero-content"><div class="genre-tags">{genre_tags}</div><h1>{h(title_zh)}</h1><p class="subtitle">{subtitle}</p><div class="ratings">{ratings_html}</div>{trailer_html}</div></section>
 <section class="content">
