@@ -75,6 +75,26 @@ function applyLoadedMoviePayload(payload) {
   return payload;
 }
 
+function showDataLoadError(error) {
+  var errBanner = document.getElementById("error-banner");
+  errBanner.replaceChildren();
+
+  var message = document.createElement("span");
+  message.className = "error-banner-message";
+  message.textContent = "⚠️ 資料載入失敗：" + error.message;
+
+  var retryButton = document.createElement("button");
+  retryButton.type = "button";
+  retryButton.className = "error-retry-btn";
+  retryButton.textContent = "重新載入資料";
+  retryButton.addEventListener("click", function() {
+    loadData(true);
+  });
+
+  errBanner.append(message, retryButton);
+  errBanner.classList.add("show");
+}
+
 function loadData(forceRefresh) {
   var errBanner = document.getElementById("error-banner");
   errBanner.classList.remove("show");
@@ -93,8 +113,7 @@ function loadData(forceRefresh) {
     payload = applyLoadedMoviePayload(payload);
     saveCache(payload);
   }).catch(function(e) {
-    errBanner.textContent = "⚠️ 資料載入失敗：" + e.message;
-    errBanner.classList.add("show");
+    showDataLoadError(e);
     var fallback = cached || loadCache();
     if (fallback) {
       applyLoadedMoviePayload(fallback);
