@@ -1894,6 +1894,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             item["atmovies_original_dates"].append(atmovies_original_date)
 
     candidates = []
+    regular_candidates = []
     for item in matched.values():
         cinema_dates = item.pop("cinema_dates")
         atmovies_original_dates = item.pop("atmovies_original_dates")
@@ -1908,7 +1909,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         sources = item.pop("sources")
         source_urls = item.pop("source_urls")
         statuses = item.pop("statuses")
-        candidates.append({
+        candidate = {
             **item,
             "candidate_type": "rerelease",
             "cinema_release_date": cinema_date,
@@ -1920,7 +1921,33 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             "tmdb_date_status": status,
             "rerelease_verified": bool(item.pop("rerelease_verified", False)),
             "rerelease_present": True,
-        })
+        }
+        if candidate["rerelease_verified"]:
+            candidates.append(candidate)
+        elif status == "confirmed":
+            statuses = set(filter(None, candidate.get("cinema_status", "").split(",")))
+            regular_candidates.append({
+                "tmdb_id": candidate["tmdb_id"],
+                "source_bucket": "now" if "now" in statuses else "next",
+                "title_zh": candidate.get("title_zh", ""),
+                "title_en": candidate.get("title_en", ""),
+                "release_date_tw": cinema_date,
+                "tmdb_tw_release_date": cinema_date,
+                "tmdb_title": candidate.get("tmdb_title", ""),
+            })
+        else:
+            review_rows.append({
+                "title_zh": candidate.get("title_zh", ""),
+                "title_en": candidate.get("title_en", ""),
+                "release_date_tw": cinema_date,
+                "sources": candidate.get("present_sources", "").split(","),
+                "source_urls": candidate.get("source_urls", "").splitlines(),
+                "audit_category": {
+                    "missing": "院線候選－待補TMDB日期",
+                    "mismatch": "院線候選－TMDB日期不一致",
+                    "pending": "院線候選－上映日期待確認",
+                }.get(status, "院線候選－TMDB配對待確認"),
+            })
 
     return {
         "generated_at": generated_at_local.isoformat(),
@@ -1932,6 +1959,10 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         "cinema_presence": {
             tmdb_id: sorted(sources) for tmdb_id, sources in cinema_presence.items()
         },
+        "regular_candidates": sorted(
+            regular_candidates,
+            key=lambda item: (item.get("tmdb_tw_release_date", ""), item["tmdb_id"]),
+        ),
         "rejected_source_urls": sorted(rejected_source_urls),
         "candidates": sorted(candidates, key=lambda item: (item.get("cinema_release_date", ""), item["tmdb_id"])),
         "review_rows": review_rows,
