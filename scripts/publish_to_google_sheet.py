@@ -184,12 +184,18 @@ def is_sheet_true(value, default=False):
 
 
 def merge_candidate_presence(
-    current_items, previous_items, run_date, cinema_presence=None, audit_complete=True
+    current_items, previous_items, run_date, cinema_presence=None, audit_complete=True,
+    cinema_candidates=None,
 ):
     """合併本次跨院線候選；只有完整稽核確認全來源缺席才累加缺席。"""
     cinema_presence = {
         str(tmdb_id): sorted(set(sources))
         for tmdb_id, sources in (cinema_presence or {}).items()
+    }
+    cinema_candidates_by_id = {
+        str(item["tmdb_id"]): dict(item)
+        for item in (cinema_candidates or [])
+        if item.get("tmdb_id")
     }
     current_by_id = {str(item["tmdb_id"]): dict(item) for item in current_items if item.get("tmdb_id")}
     current_id_by_atmovies = {
@@ -223,7 +229,8 @@ def merge_candidate_presence(
         )
 
     merged = []
-    for tmdb_id in sorted(set(previous_by_id) | set(current_by_id), key=lambda value: int(value)):
+    all_ids = set(previous_by_id) | set(current_by_id) | set(cinema_candidates_by_id)
+    for tmdb_id in sorted(all_ids, key=lambda value: int(value)):
         previous = previous_by_id.get(tmdb_id, {})
         current = current_by_id.get(tmdb_id)
         cinema_sources = cinema_presence.get(tmdb_id, [])
@@ -271,7 +278,7 @@ def merge_candidate_presence(
                 ),
             })
         elif cinema_sources:
-            item = dict(previous)
+            item = {**previous, **cinema_candidates_by_id.get(tmdb_id, {})}
             miss_limit = candidate_miss_limit(previous, run_date)
             try:
                 previous_misses = int(previous.get("consecutive_misses", 0) or 0)
@@ -362,6 +369,12 @@ def merge_rerelease_presence(
     previous_by_id = {}
     for item in previous_items:
         if not item.get("tmdb_id"):
+            continue
+        # 舊版曾把影城發現的一般新片寫入重映表；沒有重映證據的舊列不再保留。
+        if (
+            "rerelease_verified" in item
+            and not is_sheet_true(item.get("rerelease_verified"), default=False)
+        ):
             continue
         item_urls = {
             url.strip()
@@ -795,7 +808,10 @@ def publish():
 
     rerelease_audit = load_rerelease_audit()
     current_candidate_items = load_candidate_items()
-    if current_candidate_items:
+    cinema_candidates = (
+        rerelease_audit.get("regular_candidates", []) if rerelease_audit is not None else []
+    )
+    if current_candidate_items or cinema_candidates:
         metadata = get_spreadsheet_metadata(sheets_service, spreadsheet_id)
         existing_candidate_sheet = sheet_by_title(metadata, CANDIDATES_SHEET_TITLE)
         previous_candidate_items = []
@@ -821,6 +837,7 @@ def publish():
             run_date,
             cinema_presence,
             bool(rerelease_audit and rerelease_audit.get("audit_complete")),
+            cinema_candidates,
         )
         candidate_items = prune_retired_candidates(
             candidate_items,

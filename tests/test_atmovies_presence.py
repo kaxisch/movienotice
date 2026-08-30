@@ -335,6 +335,41 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(merged[0]["present_sources"], "showtime")
         self.assertEqual(merged[0]["consecutive_misses"], 0)
 
+    def test_new_regular_cinema_movie_is_added_to_candidates(self):
+        cinema_candidate = {
+            "tmdb_id": 303,
+            "source_bucket": "next",
+            "title_zh": "首次上映新片",
+            "tmdb_tw_release_date": "2026-08-14",
+        }
+
+        merged = publish.merge_candidate_presence(
+            [],
+            [],
+            "2026-08-01",
+            {"303": ["ambassador", "showtime"]},
+            True,
+            [cinema_candidate],
+        )
+
+        self.assertEqual(len(merged), 1)
+        self.assertEqual(merged[0]["title_zh"], "首次上映新片")
+        self.assertFalse(merged[0]["atmovies_present"])
+        self.assertTrue(merged[0]["cinema_present"])
+        self.assertEqual(merged[0]["present_sources"], "ambassador,showtime")
+
+    def test_unverified_legacy_rerelease_row_is_removed(self):
+        previous = [{
+            "tmdb_id": 404,
+            "title_zh": "其實是首次上映",
+            "rerelease_verified": "FALSE",
+            "rerelease_present": "TRUE",
+        }]
+
+        merged = publish.merge_rerelease_presence([], previous, "2026-08-01", True)
+
+        self.assertEqual(merged, [])
+
     def test_far_future_candidate_clears_old_misses(self):
         previous = [{
             "tmdb_id": "1437511",
