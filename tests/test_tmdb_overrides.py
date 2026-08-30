@@ -1,4 +1,7 @@
+import json
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 from unittest.mock import patch
 
@@ -6,7 +9,7 @@ from scripts.weekly_check import (
     find_tmdb_override,
     load_tmdb_overrides,
     tmdb_title_override,
-    to_traditional_text,
+    write_json,
 )
 
 
@@ -74,8 +77,14 @@ class TmdbOverrideTests(unittest.TestCase):
 
         self.assertEqual(tmdb_title_override(1400940), "泥面人")
 
-    def test_traditional_conversion_preserves_manual_title_wording(self):
-        self.assertEqual(to_traditional_text("泥面人"), "泥面人")
+    def test_json_writer_preserves_source_wording_without_opencc_conversion(self):
+        with TemporaryDirectory() as directory:
+            output_path = Path(directory) / "output.json"
+            write_json(output_path, {"synopsis": "猛烈攻擊干擾", "title": "泥面人"})
+            written = json.loads(output_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(written["synopsis"], "猛烈攻擊干擾")
+        self.assertEqual(written["title"], "泥面人")
 
     def test_user_confirmed_matches_are_persistent(self):
         overrides = load_tmdb_overrides()
