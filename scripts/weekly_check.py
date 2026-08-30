@@ -16,10 +16,6 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-try:
-    from opencc import OpenCC
-except ImportError:
-    OpenCC = None
 
 # 設定區塊
 CONTACT_EMAIL = "quietcron@gmail.com"
@@ -99,47 +95,14 @@ if not TMDB_API_KEY:
     print("ERROR: TMDB_API_KEY not set in .env", file=sys.stderr)
     sys.exit(1)
 
-if OpenCC is None:
-    print("ERROR: opencc-python-reimplemented not installed. Run: pip install -r scripts/requirements.txt", file=sys.stderr)
-    sys.exit(1)
-
-TRADITIONAL_CONVERTER = OpenCC("s2twp")
-TRADITIONAL_PROTECTED_TERMS = ("泥面人",)
-
-
 def log(msg):
     print(msg, file=sys.stderr)
 
 
-def to_traditional_text(value):
-    if not isinstance(value, str):
-        return value
-    protected = value
-    placeholders = {}
-    for index, term in enumerate(TRADITIONAL_PROTECTED_TERMS):
-        placeholder = f"__MOVIENOTICE_PROTECTED_{index}__"
-        if term in protected:
-            protected = protected.replace(term, placeholder)
-            placeholders[placeholder] = term
-    converted = TRADITIONAL_CONVERTER.convert(protected)
-    for placeholder, term in placeholders.items():
-        converted = converted.replace(placeholder, term)
-    return converted
-
-
-def to_traditional_data(value):
-    if isinstance(value, str):
-        return to_traditional_text(value)
-    if isinstance(value, list):
-        return [to_traditional_data(item) for item in value]
-    if isinstance(value, dict):
-        return {key: to_traditional_data(item) for key, item in value.items()}
-    return value
-
-
-def write_traditional_json(path, payload):
+def write_json(path, payload):
+    """保留來源原文寫入 JSON，避免對已是繁體的內容再次機械轉換。"""
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(to_traditional_data(payload), f, ensure_ascii=False, indent=2)
+        json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
 def parse_iso_date(value):
@@ -949,6 +912,16 @@ def load_manual_rerelease_ids():
         return set()
 
 
+def is_verified_rerelease(movie, tmdb_movie_result, tw_releases, manual_ids):
+    """人工確認與自動證據共用同一判斷，所有候選路徑都必須套用。"""
+    from cinema_rereleases import is_confirmed_rerelease
+
+    return (
+        tmdb_movie_result["id"] in manual_ids
+        or is_confirmed_rerelease(movie, tmdb_movie_result, tw_releases)
+    )
+
+
 def find_tmdb_override(movie, overrides=None):
     """依來源 ID 或人工確認過的片名尋找 TMDB 覆寫。"""
     overrides = overrides if overrides is not None else load_tmdb_overrides()
@@ -1564,7 +1537,7 @@ def export_static_movie_data(output, generated_at_local, previous_movies=None, t
         "movies": movies,
     }
 
-    write_traditional_json(MOVIE_DATA_FILE, payload)
+    write_json(MOVIE_DATA_FILE, payload)
 
     return MOVIE_DATA_FILE, payload
 
@@ -1817,9 +1790,8 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             tmdb_processing_complete = False
             continue
         tw_releases = extract_tw_theatrical_releases_from_results(release_results)
-        rerelease_verified = (
-            result["id"] in manual_rerelease_ids
-            or is_confirmed_rerelease(movie, result, tw_releases)
+        rerelease_verified = is_verified_rerelease(
+            movie, result, tw_releases, manual_rerelease_ids
         )
         item = matched.setdefault(result["id"], {
             "tmdb_id": result["id"],
@@ -1880,9 +1852,13 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
                 **movie,
                 "release_date_tw": current_tmdb_date,
             }
-            if not is_confirmed_rerelease(
-                validation_movie, rematched, rematched_tw_releases
-            ):
+            rerelease_verified = is_verified_rerelease(
+                validation_movie,
+                rematched,
+                rematched_tw_releases,
+                manual_rerelease_ids,
+            )
+            if not rerelease_verified:
                 rejected_source_urls.update(
                     url for url in movie.get("source_urls", []) if url
                 )
@@ -1908,7 +1884,9 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             "tmdb_url": movie.get("tmdb_url", ""),
             "cinema_dates": [], "atmovies_original_dates": [], "sources": [], "source_urls": [], "statuses": [],
             "tw_releases": movie.get("tmdb_tw_releases") or ([{"date": tmdb_date, "language": ""}] if tmdb_date else []),
+            "rerelease_verified": False,
         })
+        item["rerelease_verified"] = item["rerelease_verified"] or rerelease_verified
         for field, value in (("sources", "atmovies"), ("source_urls", movie.get("atmovies_url")), ("statuses", movie.get("source_bucket"))):
             if value and value not in item[field]:
                 item[field].append(value)
@@ -2021,7 +1999,7 @@ def export_atmovies_candidates(output, generated_at_local):
         "candidates": candidates,
     }
 
-    write_traditional_json(ATMOVIES_CANDIDATES_FILE, payload)
+    write_json(ATMOVIES_CANDIDATES_FILE, payload)
 
     return ATMOVIES_CANDIDATES_FILE
 
@@ -2127,7 +2105,7 @@ def main():
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    write_traditional_json(OUTPUT_FILE, output)
+    write_json(OUTPUT_FILE, output)
 
     log("")
     log("=== Summary ===")
@@ -2141,7 +2119,7 @@ def main():
 
     # The crawler is audit-only. Public data is rebuilt separately from TMDB.
     rerelease_audit = build_rerelease_audit(output, generated_at_local)
-    write_traditional_json(RERELEASE_CANDIDATES_FILE, rerelease_audit)
+    write_json(RERELEASE_CANDIDATES_FILE, rerelease_audit)
     log(
         f"Rerelease audit: {len(rerelease_audit['candidates'])} candidates; "
         f"complete={rerelease_audit['audit_complete']}"
@@ -2175,7 +2153,7 @@ def write_tw_whitelist(output):
     # 去重並排序
     whitelist_data["tmdb_ids"] = sorted(set(whitelist_data["tmdb_ids"]))
 
-    write_traditional_json(whitelist_path, whitelist_data)
+    write_json(whitelist_path, whitelist_data)
     log(f"Whitelist written to: {whitelist_path} ({len(whitelist_data['tmdb_ids'])} ids)")
     return whitelist_path, whitelist_data
 

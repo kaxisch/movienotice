@@ -19,6 +19,14 @@ class CinemaParserTests(unittest.TestCase):
         confirmed_ids = weekly.load_manual_rerelease_ids()
         self.assertTrue({12197, 311056, 333622, 41498, 44730, 75233, 481432, 660120}.issubset(confirmed_ids))
 
+    def test_manual_confirmation_applies_without_automatic_rerelease_evidence(self):
+        self.assertTrue(weekly.is_verified_rerelease(
+            {"title_zh": "幸福的拉札洛", "release_date_tw": "2026-08-07"},
+            {"id": 481432, "release_date": "2018-05-31"},
+            [{"date": "2026-08-07"}],
+            {481432},
+        ))
+
     @patch("weekly_check.tmdb_movie")
     @patch("weekly_check.load_tmdb_overrides")
     def test_rerelease_match_honors_atmovies_override(self, overrides, tmdb_movie):
