@@ -101,6 +101,9 @@ class TmdbOverrideTests(unittest.TestCase):
             "白色情迷 經典數位修復": 109,
             "紅色情深 經典數位修復": 110,
             "攻殼機動隊1995": 9323,
+            "人吶，為什麼要跑步？": 1758564,
+            "洲崎樂園 赤信號": 125222,
+            "安詳之獸": 125253,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
