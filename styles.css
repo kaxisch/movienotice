@@ -119,6 +119,10 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .empty-msg.show { display: block; }
 #error-banner { display: none; margin-bottom: 24px; background: var(--glass-bg); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 16px; font-size: 14px; color: rgba(255,255,255,0.6); }
 #error-banner.show { display: block; }
+.error-banner-message { display: block; overflow-wrap: anywhere; }
+.error-retry-btn { margin-top: 12px; min-height: 44px; border: 1px solid #4b422f; border-radius: 0; padding: 9px 14px; color: #4b422f; background: transparent; font: inherit; font-weight: 700; cursor: pointer; touch-action: manipulation; }
+.error-retry-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.error-retry-btn:active { opacity: .65; }
 
 .site-footer { padding: 40px 64px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; margin-top: -8px; }
 .site-footer p { color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 300; }

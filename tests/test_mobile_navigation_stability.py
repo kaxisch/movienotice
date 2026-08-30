@@ -22,6 +22,14 @@ class MobileNavigationStabilityTests(unittest.TestCase):
         self.assertIn("'./app-data.js'", service_worker)
         self.assertIn("'./app-ui.js'", service_worker)
 
+    def test_data_load_error_has_in_app_retry_control(self):
+        script = (ROOT / "app.js").read_text()
+        styles = (ROOT / "styles.css").read_text()
+
+        self.assertIn('retryButton.textContent = "重新載入資料"', script)
+        self.assertIn("loadData(true)", script)
+        self.assertIn("min-height: 44px", styles)
+
     def test_movie_page_has_no_mobile_entry_transform(self):
         generator = (ROOT / "scripts" / "generate_movie_pages.py").read_text()
         script = (ROOT / "movie-page.js").read_text()
