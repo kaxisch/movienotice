@@ -131,6 +131,7 @@ body {
 @media (max-width: 600px) { .share-snackbar { right: 20px; } }
 .hero { position: relative; height: 480px; overflow: hidden; }
 .hero-media { position: absolute; inset: 0; background: #d7d5cf; }
+.hero-media picture { display: block; width: 100%; height: 100%; }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
 .hero-media::after {
   content: '';
@@ -464,6 +465,7 @@ def render_movie_page(movie, generated_at):
     description = description_for(movie, detail)
     url = movie_url(movie)
     hero_image = detail.get("backdrop") or movie.get("backdrop") or movie.get("poster") or ""
+    hero_image_original = hero_image.replace("/w1280/", "/original/")
     poster = detail.get("poster") or movie.get("poster") or hero_image
     genres = normalize_genres(movie, detail)
     subtitle_meta = " · ".join(
@@ -522,7 +524,17 @@ def render_movie_page(movie, generated_at):
     json_ld = {k: v for k, v in json_ld.items() if v}
 
     fallback_bg = "rgba(255,255,255,0.05)"
-    hero_media = f'<img src="{h(hero_image)}" alt="{h(title_zh)}" fetchpriority="high" decoding="async"/>' if hero_image else f'<div style="width:100%;height:100%;background:{fallback_bg}"></div>'
+    if hero_image and hero_image_original != hero_image:
+        hero_media = (
+            '<picture>'
+            f'<source media="(min-width: 1281px), (min-width: 900px) and (min-resolution: 1.5dppx)" srcset="{h(hero_image_original)}"/>'
+            f'<img src="{h(hero_image)}" alt="{h(title_zh)}" fetchpriority="high" decoding="async"/>'
+            '</picture>'
+        )
+    elif hero_image:
+        hero_media = f'<img src="{h(hero_image)}" alt="{h(title_zh)}" fetchpriority="high" decoding="async"/>'
+    else:
+        hero_media = f'<div style="width:100%;height:100%;background:{fallback_bg}"></div>'
     return f"""<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -547,7 +559,7 @@ def render_movie_page(movie, generated_at):
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;500;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css?v=25"/>
+<link rel="stylesheet" href="../../movie-page.css?v=26"/>
 <script src="../../movie-page.js?v=4" defer></script>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>

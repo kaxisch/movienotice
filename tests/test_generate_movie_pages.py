@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.generate_movie_pages import format_tmdb_score, rating_items, slugify
+from scripts.generate_movie_pages import format_tmdb_score, rating_items, render_movie_page, slugify
 
 
 class GenerateMoviePagesRatingTests(unittest.TestCase):
@@ -21,6 +21,18 @@ class GenerateMoviePagesRatingTests(unittest.TestCase):
 
 
 class GenerateMoviePagesSlugTests(unittest.TestCase):
+    def test_hero_uses_original_tmdb_backdrop_on_high_resolution_displays(self):
+        page = render_movie_page({
+            "id": 1,
+            "titleZh": "測試電影",
+            "releaseDate": "2026-08-30",
+            "backdrop": "https://image.tmdb.org/t/p/w1280/example.jpg",
+        }, "2026-08-30T00:00:00+08:00")
+
+        self.assertIn("/original/example.jpg", page)
+        self.assertIn("min-resolution: 1.5dppx", page)
+        self.assertIn("/w1280/example.jpg", page)
+
     def test_uses_english_title_when_available(self):
         self.assertEqual(
             slugify({"id": 1400940, "titleEn": "Clayface", "titleZh": "泥面人"}),
