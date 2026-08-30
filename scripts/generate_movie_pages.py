@@ -465,7 +465,7 @@ def render_movie_page(movie, generated_at):
     description = description_for(movie, detail)
     url = movie_url(movie)
     hero_image = detail.get("backdrop") or movie.get("backdrop") or movie.get("poster") or ""
-    hero_image_original = hero_image.replace("/w1280/", "/original/")
+    hero_image_original = re.sub(r"/w(?:500|1280)/", "/original/", hero_image, count=1)
     poster = detail.get("poster") or movie.get("poster") or hero_image
     genres = normalize_genres(movie, detail)
     subtitle_meta = " · ".join(

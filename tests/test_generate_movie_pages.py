@@ -33,6 +33,18 @@ class GenerateMoviePagesSlugTests(unittest.TestCase):
         self.assertIn("min-resolution: 1.5dppx", page)
         self.assertIn("/w1280/example.jpg", page)
 
+    def test_poster_fallback_uses_original_tmdb_image_on_high_resolution_displays(self):
+        page = render_movie_page({
+            "id": 2,
+            "titleZh": "只有直式海報的電影",
+            "releaseDate": "2026-10-02",
+            "poster": "https://image.tmdb.org/t/p/w500/poster.jpg",
+            "backdrop": None,
+        }, "2026-08-30T00:00:00+08:00")
+
+        self.assertIn("/original/poster.jpg", page)
+        self.assertIn("/w500/poster.jpg", page)
+
     def test_uses_english_title_when_available(self):
         self.assertEqual(
             slugify({"id": 1400940, "titleEn": "Clayface", "titleZh": "泥面人"}),
