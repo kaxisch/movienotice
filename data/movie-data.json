@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T00:57:16.950879+08:00",
+  "generated_at": "2026-08-31T05:30:00.870961+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 69,
@@ -830,13 +830,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 201,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 37,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -1099,7 +1099,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/fYvFr8hmabWNNMa7PXZSGMfA9gY.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
-        "voteAverage": "7.3",
+        "voteAverage": "7.2",
         "genre": [
           "喜劇",
           "劇情",
@@ -1122,8 +1122,8 @@
             "lastChanged": "2026-08-28T20:10:43.018005+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 47,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -1205,7 +1205,7 @@
           "synopsis": "一對婚姻早已失去熱情的夫妻，今晩將與樓上的神秘鄰居共進晩餐，沒想到他們卻提出了大膽又吸引人的邀約。隨著夜色漸深，那些壓抑已久的不滿與埋藏心底的慾望將一觸即發.．．",
           "poster": "https://image.tmdb.org/t/p/w500/fYvFr8hmabWNNMa7PXZSGMfA9gY.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
-          "voteAverage": "7.3",
+          "voteAverage": "7.2",
           "trailerKey": null,
           "imdbId": "tt14173636",
           "countries": [
@@ -1381,15 +1381,15 @@
         ],
         "crew": [
           {
+            "name": "單丹丹",
+            "job": "Writer"
+          },
+          {
             "name": "李闊",
             "job": "Director"
           },
           {
-            "name": "單丹丹",
-            "job": "Director"
-          },
-          {
-            "name": "單丹丹",
+            "name": "李闊",
             "job": "Writer"
           }
         ],
@@ -1493,15 +1493,15 @@
           ],
           "crew": [
             {
+              "name": "單丹丹",
+              "job": "Writer"
+            },
+            {
               "name": "李闊",
               "job": "Director"
             },
             {
-              "name": "單丹丹",
-              "job": "Director"
-            },
-            {
-              "name": "單丹丹",
+              "name": "李闊",
               "job": "Writer"
             }
           ],
@@ -1546,8 +1546,8 @@
         "mc": "",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 24,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           }
         },
@@ -2969,7 +2969,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6jrxLGrgYVK50oOJNxlU2znlsKw.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/z78KItNfTtzCFCrxQPG5T8Hn7hJ.jpg",
-        "voteAverage": "7.0",
+        "voteAverage": "6.8",
         "genre": [
           "劇情"
         ],
@@ -3091,7 +3091,7 @@
           "synopsis": "歌舞伎町街頭，離家少女闖入一群邊緣青年共築的烏托邦。他們以愛情旅館為家，收容每一個破碎的靈魂。在自由的新樂園裡，藍色特調下肚便能望見滿天星斗，短暫忘卻家庭陰霾，但成長的代價也隨之而來。逃亡究竟是美好新生開局，抑或是毀滅的序曲？",
           "poster": "https://image.tmdb.org/t/p/w500/6jrxLGrgYVK50oOJNxlU2znlsKw.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/z78KItNfTtzCFCrxQPG5T8Hn7hJ.jpg",
-          "voteAverage": "7.0",
+          "voteAverage": "6.8",
           "trailerKey": null,
           "imdbId": "tt39150067",
           "countries": [
@@ -4071,11 +4071,11 @@
             "job": "Director"
           },
           {
-            "name": "寺田信義",
+            "name": "井手俊郎",
             "job": "Screenplay"
           },
           {
-            "name": "井手俊郎",
+            "name": "寺田信義",
             "job": "Screenplay"
           }
         ],
@@ -4192,11 +4192,11 @@
               "job": "Director"
             },
             {
-              "name": "寺田信義",
+              "name": "井手俊郎",
               "job": "Screenplay"
             },
             {
-              "name": "井手俊郎",
+              "name": "寺田信義",
               "job": "Screenplay"
             }
           ],
@@ -5801,7 +5801,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ekj77L05ff5J64objwGrVnSipXB.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
-        "voteAverage": "7.4",
+        "voteAverage": "7.5",
         "genre": [
           "劇情",
           "喜劇"
@@ -5946,7 +5946,7 @@
           "synopsis": "19歲的東尼一心嚮往成為作家，在1975年夏天，為了初戀南西踏入美國鱈魚角普洛文斯敦一間濱海餐廳的廚房打工洗碗。在餐廳老闆「主廚」嚴厲卻真誠的調教下，對料理一竅不通的東尼，逐漸蛻變成對美食充滿狂熱的年輕廚師；而闖蕩江湖的夥伴沙爾則帶著他一頭栽進酒精、菸草與放縱交織的世界。在這個瘋狂而炙熱的夏天，東尼第一次嚐到了未來的滋味——那些關於愛、背叛、友情與自我認同的碰撞，讓他第一次明白自己想要成為什麼樣的人。這份熾熱的初心，正是日後撼動全球美食界傳奇名廚的最初起點。",
           "poster": "https://image.tmdb.org/t/p/w500/ekj77L05ff5J64objwGrVnSipXB.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
-          "voteAverage": "7.4",
+          "voteAverage": "7.5",
           "trailerKey": "uZKn0KB0fPU",
           "imdbId": "tt33095251",
           "countries": [
@@ -6490,8 +6490,8 @@
         "mc": "85",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 82,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-05T15:29:54.157693+08:00"
           },
           "mc": {
@@ -7333,7 +7333,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 108,
+            "votes": 112,
             "lastChanged": "2026-08-28T23:13:24.239674+08:00"
           },
           "mc": {
@@ -7712,7 +7712,7 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 71004721,
+        "revenue": 110230107,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
@@ -7830,7 +7830,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 71004721,
+          "revenue": 110230107,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Insidious: Out of the Further",
@@ -7857,7 +7857,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-        "voteAverage": "6.9",
+        "voteAverage": "6.8",
         "genre": [
           "喜劇",
           "愛情"
@@ -7997,7 +7997,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/uhropHIrmO583I4izEJru849Gpi.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-          "voteAverage": "6.9",
+          "voteAverage": "6.8",
           "trailerKey": "lIl2WzFiF0A",
           "imdbId": "tt37853455",
           "countries": [
@@ -11421,11 +11421,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -11541,11 +11541,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -13035,7 +13035,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 120,
+            "votes": 121,
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           },
           "mc": {
@@ -16047,8 +16047,8 @@
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           }
         },
@@ -16333,8 +16333,8 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 47,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           }
         },
@@ -16809,8 +16809,8 @@
             "lastChanged": "2026-08-29T06:36:09.407475+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 19,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -17054,7 +17054,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
-        "voteAverage": "4.5",
+        "voteAverage": "5.6",
         "genre": [
           "驚悚"
         ],
@@ -17141,7 +17141,7 @@
           "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
-          "voteAverage": "4.5",
+          "voteAverage": "5.6",
           "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
@@ -18923,7 +18923,7 @@
         "duration": 98,
         "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
         "imdb": "7.8",
-        "rt": "96%",
+        "rt": "98%",
         "mc": "87",
         "ratingMeta": {
           "imdb": {
@@ -18932,13 +18932,13 @@
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 57,
-            "lastChanged": "2026-08-30T13:47:15.044868+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-31T05:30:00.870961+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           }
         },
@@ -19220,13 +19220,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 55,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -19510,13 +19510,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 61,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -19799,13 +19799,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 36,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -19895,11 +19895,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -20026,11 +20026,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -20086,8 +20086,8 @@
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 6,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           }
         },
@@ -20589,7 +20589,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/A58FVNOQ9qXxt0vdKGQ9kCo17El.jpg",
-        "voteAverage": "8.0",
+        "voteAverage": "9.0",
         "genre": [
           "劇情",
           "懸疑",
@@ -20625,8 +20625,23 @@
             "photo": "https://image.tmdb.org/t/p/w500/uTZMewSjjx4MxDYAaZrhbl1fAGX.jpg"
           },
           {
+            "name": "卞約漢",
+            "char": "Baek Sang-hyun",
+            "photo": "https://image.tmdb.org/t/p/w500/5kOBQYbgBTAf8nVzgx0ecCsJ1pW.jpg"
+          },
+          {
+            "name": "황현정",
+            "char": "Gyeong-ju",
+            "photo": "https://image.tmdb.org/t/p/w500/7bpJcgnnlNEky1DV7PG6NJjWnLw.jpg"
+          },
+          {
+            "name": "金學善",
+            "char": "Mu-il",
+            "photo": "https://image.tmdb.org/t/p/w500/4SKruoQKCk3k0umArclsDftwuTM.jpg"
+          },
+          {
             "name": "金榮成",
-            "char": "Jang-ju's husband",
+            "char": "Seok-man",
             "photo": "https://image.tmdb.org/t/p/w500/slqUy6zlmG4nhl3shaZzDsY91MA.jpg"
           },
           {
@@ -20635,9 +20650,39 @@
             "photo": "https://image.tmdb.org/t/p/w500/rKvFve8ZOPBpY9qNFAgxgHWM3oE.jpg"
           },
           {
-            "name": "卞約漢",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/5kOBQYbgBTAf8nVzgx0ecCsJ1pW.jpg"
+            "name": "金正英",
+            "char": "Detective Nam",
+            "photo": "https://image.tmdb.org/t/p/w500/sJVUh3dzF1dgItQDPbWsZAsnfzL.jpg"
+          },
+          {
+            "name": "정애화",
+            "char": "Restaurant owner",
+            "photo": "https://image.tmdb.org/t/p/w500/aVbDwsoncmkt1RwMlI4TTZQU27v.jpg"
+          },
+          {
+            "name": "姜愛心",
+            "char": "Ok-sil's old neighbor",
+            "photo": "https://image.tmdb.org/t/p/w500/mnUozozJf3VUpgi91ysfyxlRqs1.jpg"
+          },
+          {
+            "name": "남미정",
+            "char": "Cho Pil-rye",
+            "photo": "https://image.tmdb.org/t/p/w500/3khEPr2t7Qnh3mnynkI4nPUmpG.jpg"
+          },
+          {
+            "name": "황재열",
+            "char": "Detective Kim",
+            "photo": "https://image.tmdb.org/t/p/w500/cyEibdvqNRurcNC63gqDSvX1qzE.jpg"
+          },
+          {
+            "name": "김대한",
+            "char": "Big",
+            "photo": "https://image.tmdb.org/t/p/w500/eMq2on2tsA0WwpJgyXwbljFtuKB.jpg"
+          },
+          {
+            "name": "엄준기",
+            "char": "Jo-man",
+            "photo": "https://image.tmdb.org/t/p/w500/iJMzw2DFvny6wUSPhHM6IkGDGZO.jpg"
           }
         ],
         "crew": [
@@ -20672,7 +20717,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/A58FVNOQ9qXxt0vdKGQ9kCo17El.jpg",
-          "voteAverage": "8.0",
+          "voteAverage": "9.0",
           "trailerKey": null,
           "imdbId": "tt38814489",
           "countries": [
@@ -20700,8 +20745,23 @@
               "photo": "https://image.tmdb.org/t/p/w500/uTZMewSjjx4MxDYAaZrhbl1fAGX.jpg"
             },
             {
+              "name": "卞約漢",
+              "char": "Baek Sang-hyun",
+              "photo": "https://image.tmdb.org/t/p/w500/5kOBQYbgBTAf8nVzgx0ecCsJ1pW.jpg"
+            },
+            {
+              "name": "황현정",
+              "char": "Gyeong-ju",
+              "photo": "https://image.tmdb.org/t/p/w500/7bpJcgnnlNEky1DV7PG6NJjWnLw.jpg"
+            },
+            {
+              "name": "金學善",
+              "char": "Mu-il",
+              "photo": "https://image.tmdb.org/t/p/w500/4SKruoQKCk3k0umArclsDftwuTM.jpg"
+            },
+            {
               "name": "金榮成",
-              "char": "Jang-ju's husband",
+              "char": "Seok-man",
               "photo": "https://image.tmdb.org/t/p/w500/slqUy6zlmG4nhl3shaZzDsY91MA.jpg"
             },
             {
@@ -20710,9 +20770,39 @@
               "photo": "https://image.tmdb.org/t/p/w500/rKvFve8ZOPBpY9qNFAgxgHWM3oE.jpg"
             },
             {
-              "name": "卞約漢",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/5kOBQYbgBTAf8nVzgx0ecCsJ1pW.jpg"
+              "name": "金正英",
+              "char": "Detective Nam",
+              "photo": "https://image.tmdb.org/t/p/w500/sJVUh3dzF1dgItQDPbWsZAsnfzL.jpg"
+            },
+            {
+              "name": "정애화",
+              "char": "Restaurant owner",
+              "photo": "https://image.tmdb.org/t/p/w500/aVbDwsoncmkt1RwMlI4TTZQU27v.jpg"
+            },
+            {
+              "name": "姜愛心",
+              "char": "Ok-sil's old neighbor",
+              "photo": "https://image.tmdb.org/t/p/w500/mnUozozJf3VUpgi91ysfyxlRqs1.jpg"
+            },
+            {
+              "name": "남미정",
+              "char": "Cho Pil-rye",
+              "photo": "https://image.tmdb.org/t/p/w500/3khEPr2t7Qnh3mnynkI4nPUmpG.jpg"
+            },
+            {
+              "name": "황재열",
+              "char": "Detective Kim",
+              "photo": "https://image.tmdb.org/t/p/w500/cyEibdvqNRurcNC63gqDSvX1qzE.jpg"
+            },
+            {
+              "name": "김대한",
+              "char": "Big",
+              "photo": "https://image.tmdb.org/t/p/w500/eMq2on2tsA0WwpJgyXwbljFtuKB.jpg"
+            },
+            {
+              "name": "엄준기",
+              "char": "Jo-man",
+              "photo": "https://image.tmdb.org/t/p/w500/iJMzw2DFvny6wUSPhHM6IkGDGZO.jpg"
             }
           ],
           "crew": [
@@ -20961,13 +21051,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 60,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -21875,13 +21965,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 152,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 31,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -22357,13 +22447,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 90,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -23263,13 +23353,13 @@
         "duration": 127,
         "synopsis": "波蘭代表奧斯卡角逐最佳國際影片的電影，聚焦作家弗朗茨・卡夫卡的生平與創作。影片以細膩的敘事與詩意影像，呈現卡夫卡的孤寂、內心掙扎與創作靈感的源泉。透過對歷史與人性的深刻刻畫，影片帶領觀眾探索文學巨匠的內心世界。2025多倫多影展將首映此片，呈現波蘭電影的獨特藝術魅力。",
         "imdb": "",
-        "rt": "75%",
+        "rt": "71%",
         "mc": "64",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 59,
-            "lastChanged": "2026-08-30T19:20:34.481628+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-31T05:30:00.870961+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -24487,13 +24577,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 40,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 18,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -24767,12 +24857,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -24820,12 +24910,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -26831,7 +26921,7 @@
         "synopsis": "俄羅斯教師祕密記錄在烏俄戰爭期間，小鎮學校成了徵兵中心的過程，帶出教育工作者在軍事化背景下面臨的道德困境。",
         "imdb": "7.9",
         "rt": "100%",
-        "mc": "80",
+        "mc": "79",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -26839,14 +26929,14 @@
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 52,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-08-30T13:47:15.044868+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-31T05:30:00.870961+08:00"
           }
         },
         "trailerKey": "CLNG8B60APk",
@@ -29252,12 +29342,12 @@
         ],
         "crew": [
           {
-            "name": "Dahvi Waller",
-            "job": "Screenplay"
-          },
-          {
             "name": "塔伊加·維迪提",
             "job": "Director"
+          },
+          {
+            "name": "Dahvi Waller",
+            "job": "Screenplay"
           },
           {
             "name": "塔伊加·維迪提",
@@ -29349,12 +29439,12 @@
           ],
           "crew": [
             {
-              "name": "Dahvi Waller",
-              "job": "Screenplay"
-            },
-            {
               "name": "塔伊加·維迪提",
               "job": "Director"
+            },
+            {
+              "name": "Dahvi Waller",
+              "job": "Screenplay"
             },
             {
               "name": "塔伊加·維迪提",
