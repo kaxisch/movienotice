@@ -38,6 +38,19 @@ class MobileNavigationStabilityTests(unittest.TestCase):
         self.assertNotIn("movie-page-entering", script)
         self.assertIn("<body>", generator)
 
+    def test_movie_page_uses_share_control_with_clipboard_fallback(self):
+        generator = (ROOT / "scripts" / "generate_movie_pages.py").read_text()
+        script = (ROOT / "movie-page.js").read_text()
+
+        self.assertIn('class="share-button"', generator)
+        self.assertNotIn('class="back-link"', generator)
+        self.assertIn("(max-width: 1024px) and (pointer: coarse)", script)
+        self.assertIn("if (mobileShare && navigator.share)", script)
+        self.assertIn("navigator.share(shareData)", script)
+        self.assertIn("navigator.clipboard.writeText(window.location.href)", script)
+        self.assertIn("showShareSnackbar('已複製')", script)
+        self.assertIn("}, 2000)", script)
+
     def test_mobile_cards_do_not_replay_entrance_animation(self):
         styles = (ROOT / "styles.css").read_text()
 
