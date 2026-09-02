@@ -4,6 +4,21 @@ from scripts.weekly_check import tmdb_candidate_match_diagnostics
 
 
 class TmdbMatchDiagnosticsTests(unittest.TestCase):
+    def test_bilingual_source_title_with_exact_chinese_prefix_is_not_suspicious(self):
+        movie = {
+            "title_zh": "人吶，為什麼要跑步？ Hit the Road Now！",
+            "release_date_tw": "2026-10-02",
+        }
+        candidate = {
+            "title": "人吶，為什麼要跑步？",
+            "original_title": "人吶，為什麼要跑步？",
+            "release_date": "2026-10-02",
+        }
+
+        reasons = tmdb_candidate_match_diagnostics(movie, candidate, 60.0)
+
+        self.assertEqual(reasons, [])
+
     def test_low_english_similarity_alone_is_not_suspicious(self):
         movie = {
             "title_zh": "國有器官",
