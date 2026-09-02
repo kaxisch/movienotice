@@ -2,7 +2,7 @@ import sys
 import unittest
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -14,6 +14,59 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    @patch.object(refresh.time, "sleep")
+    def test_google_sheets_503_is_retried(self, sleep):
+        error = RuntimeError("service unavailable")
+        error.resp = Mock(status=503)
+        request = Mock()
+        request.execute.side_effect = [error, {"sheets": []}]
+
+        result = refresh.execute_google_sheets_request(request, "metadata read")
+
+        self.assertEqual(result, {"sheets": []})
+        self.assertEqual(request.execute.call_count, 2)
+        sleep.assert_called_once_with(refresh.GOOGLE_SHEETS_RETRY_DELAY)
+
+    @patch.object(refresh.time, "sleep")
+    def test_google_sheets_connection_error_is_retried(self, sleep):
+        request = Mock()
+        request.execute.side_effect = [ConnectionResetError("connection reset"), {"values": []}]
+
+        result = refresh.execute_google_sheets_request(request, "worksheet read")
+
+        self.assertEqual(result, {"values": []})
+        self.assertEqual(request.execute.call_count, 2)
+        sleep.assert_called_once_with(refresh.GOOGLE_SHEETS_RETRY_DELAY)
+
+    @patch.object(refresh.time, "sleep")
+    def test_google_sheets_permanent_error_is_not_retried(self, sleep):
+        error = RuntimeError("forbidden")
+        error.resp = Mock(status=403)
+        request = Mock()
+        request.execute.side_effect = error
+
+        with self.assertRaises(RuntimeError):
+            refresh.execute_google_sheets_request(request, "metadata read")
+
+        request.execute.assert_called_once_with()
+        sleep.assert_not_called()
+
+    @patch.object(refresh.time, "sleep")
+    def test_google_sheets_transient_error_is_raised_after_retries_are_exhausted(self, sleep):
+        error = RuntimeError("service unavailable")
+        error.resp = Mock(status=503)
+        request = Mock()
+        request.execute.side_effect = error
+
+        with self.assertRaises(RuntimeError):
+            refresh.execute_google_sheets_request(request, "metadata read")
+
+        self.assertEqual(request.execute.call_count, refresh.GOOGLE_SHEETS_RETRY_ATTEMPTS)
+        self.assertEqual(
+            [call.args[0] for call in sleep.call_args_list],
+            [2, 4, 8],
+        )
+
     def test_static_movie_exports_verified_rerelease_status(self):
         movie = weekly.build_static_movie(
             {

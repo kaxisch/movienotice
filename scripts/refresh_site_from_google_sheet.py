@@ -36,6 +36,9 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 MOVIE_DATA_FILE = ROOT_DIR / "data" / "movie-data.json"
 MANUAL_RELEASES_FILE = ROOT_DIR / "data" / "manual-releases.json"
 WHITELIST_FILE = ROOT_DIR / "data" / "tw-whitelist.json"
+GOOGLE_SHEETS_RETRY_ATTEMPTS = 4
+GOOGLE_SHEETS_RETRY_DELAY = 2
+GOOGLE_SHEETS_TRANSIENT_STATUS_CODES = {429, 500, 502, 503, 504}
 
 
 def log(message):
@@ -47,6 +50,29 @@ def load_environment():
     load_dotenv(Path(__file__).resolve().parent / ".env")
 
 
+def is_transient_google_sheets_error(error):
+    status = getattr(getattr(error, "resp", None), "status", None)
+    return status in GOOGLE_SHEETS_TRANSIENT_STATUS_CODES or isinstance(
+        error, (TimeoutError, ConnectionError, OSError)
+    )
+
+
+def execute_google_sheets_request(request, operation):
+    """重試 Google Sheets 的暫時性限流、服務異常與連線錯誤。"""
+    for attempt in range(1, GOOGLE_SHEETS_RETRY_ATTEMPTS + 1):
+        try:
+            return request.execute()
+        except Exception as error:
+            if not is_transient_google_sheets_error(error) or attempt >= GOOGLE_SHEETS_RETRY_ATTEMPTS:
+                raise
+            delay = GOOGLE_SHEETS_RETRY_DELAY * (2 ** (attempt - 1))
+            log(
+                f"Google Sheets temporary failure during {operation}; "
+                f"retry {attempt}/{GOOGLE_SHEETS_RETRY_ATTEMPTS - 1} in {delay}s: {error}"
+            )
+            time.sleep(delay)
+
+
 def load_sheet_candidates():
     spreadsheet_id = os.environ.get("GOOGLE_SPREADSHEET_ID", "").strip()
     if not spreadsheet_id:
@@ -56,10 +82,10 @@ def load_sheet_candidates():
     from googleapiclient.discovery import build
 
     service = build("sheets", "v4", credentials=credentials, cache_discovery=False)
-    metadata = service.spreadsheets().get(
+    metadata = execute_google_sheets_request(service.spreadsheets().get(
         spreadsheetId=spreadsheet_id,
         fields="sheets(properties(title))",
-    ).execute()
+    ), "spreadsheet metadata read")
     titles = {
         sheet.get("properties", {}).get("title", "")
         for sheet in metadata.get("sheets", [])
@@ -86,10 +112,10 @@ def classify_rerelease_candidate(item):
 
 
 def load_candidate_worksheet(service, spreadsheet_id, title, candidate_kind):
-    response = service.spreadsheets().values().get(
+    response = execute_google_sheets_request(service.spreadsheets().values().get(
         spreadsheetId=spreadsheet_id,
         range=quote_sheet_range(title, "A:Z"),
-    ).execute()
+    ), f"worksheet {title} read")
     values = response.get("values", [])
     if not values:
         raise RuntimeError(f"Google Sheet worksheet {title} is empty")
