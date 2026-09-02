@@ -15,6 +15,25 @@ import weekly_check as weekly
 
 
 class CinemaParserTests(unittest.TestCase):
+    def test_review_tsv_row_preserves_matched_tmdb_fields(self):
+        rows = []
+        weekly.append_rerelease_tsv_rows(rows, {
+            "candidates": [],
+            "review_rows": [{
+                "audit_category": "院線候選－TMDB日期不一致",
+                "title_zh": "測試電影",
+                "title_en": "Test Movie",
+                "release_date_tw": "2026-09-04",
+                "tmdb_url": "https://www.themoviedb.org/movie/123?language=zh-TW",
+                "tmdb_primary_release_date": "2025-01-02",
+                "sources": ["showtime"],
+                "source_urls": ["https://example.com/movie"],
+            }],
+        })
+
+        self.assertEqual(rows[0][4], "https://www.themoviedb.org/movie/123?language=zh-TW")
+        self.assertEqual(rows[0][5], "2025-01-02")
+
     def test_manual_rerelease_override_contains_confirmed_movies(self):
         confirmed_ids = weekly.load_manual_rerelease_ids()
         self.assertTrue({12197, 311056, 333622, 41498, 44730, 75233, 481432, 660120}.issubset(confirmed_ids))

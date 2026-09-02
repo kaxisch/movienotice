@@ -581,6 +581,19 @@ def tmdb_candidate_match_diagnostics(movie, candidate, score):
         title_similarity(title_zh, candidate_title),
         title_similarity(title_zh, candidate_original),
     )
+    # 影城有時把「中文片名＋英文片名」全部放在中文片名欄位。若 TMDB 中文片名
+    # 完整位於開頭，且剩餘內容純為拉丁字母／數字，視為完整中文命中，避免把
+    # 正確配對誤列為可疑。
+    title_zh_norm = normalize_title_key(title_zh)
+    for tmdb_title in (candidate_title, candidate_original):
+        tmdb_title_norm = normalize_title_key(tmdb_title)
+        if not tmdb_title_norm or not title_zh_norm.startswith(tmdb_title_norm):
+            continue
+        suffix = title_zh_norm[len(tmdb_title_norm):]
+        suffix_letters = re.sub(r"[\W_]+", "", suffix)
+        if suffix_letters and re.fullmatch(r"[a-z0-9]+", suffix_letters, flags=re.IGNORECASE):
+            zh_title_score = 1.0
+            break
     en_title_score = max(
         title_similarity(title_en, candidate_title),
         title_similarity(title_en, candidate_original),
@@ -1937,6 +1950,9 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             })
         else:
             review_rows.append({
+                "tmdb_id": candidate.get("tmdb_id"),
+                "tmdb_url": candidate.get("tmdb_url", ""),
+                "tmdb_primary_release_date": candidate.get("tmdb_primary_release_date", ""),
                 "title_zh": candidate.get("title_zh", ""),
                 "title_en": candidate.get("title_en", ""),
                 "release_date_tw": cinema_date,
@@ -1995,8 +2011,8 @@ def append_rerelease_tsv_rows(rows, rerelease_audit):
             movie.get("title_zh", ""),
             movie.get("release_date_tw", ""),
             movie.get("title_en", ""),
-            "",
-            "",
+            movie.get("tmdb_url", ""),
+            movie.get("tmdb_primary_release_date", ""),
             "請人工確認 TMDB 配對",
             ",".join(movie.get("sources", [])),
             " | ".join(movie.get("source_urls", [])),
