@@ -1,6 +1,6 @@
 import unittest
 
-from scripts.weekly_check import tmdb_candidate_match_diagnostics
+from scripts.weekly_check import score_tmdb_candidate, tmdb_candidate_match_diagnostics
 
 
 class TmdbMatchDiagnosticsTests(unittest.TestCase):
@@ -15,8 +15,10 @@ class TmdbMatchDiagnosticsTests(unittest.TestCase):
             "release_date": "2026-10-02",
         }
 
-        reasons = tmdb_candidate_match_diagnostics(movie, candidate, 60.0)
+        score = score_tmdb_candidate(movie, candidate)
+        reasons = tmdb_candidate_match_diagnostics(movie, candidate, score)
 
+        self.assertGreaterEqual(score, 55)
         self.assertEqual(reasons, [])
 
     def test_low_english_similarity_alone_is_not_suspicious(self):

@@ -474,6 +474,19 @@ def title_similarity(a, b):
     return difflib.SequenceMatcher(None, a_norm, b_norm).ratio()
 
 
+def title_has_latin_suffix_after_exact_match(source_title, matched_title):
+    """來源片名為完整命中片名再附加英文／數字片名時，視為完整命中。"""
+    source_norm = normalize_title_key(source_title)
+    matched_norm = normalize_title_key(matched_title)
+    if not matched_norm or not source_norm.startswith(matched_norm):
+        return False
+    suffix_letters = re.sub(r"[\W_]+", "", source_norm[len(matched_norm):])
+    return bool(
+        suffix_letters
+        and re.fullmatch(r"[a-z0-9]+", suffix_letters, flags=re.IGNORECASE)
+    )
+
+
 def tmdb_search(title, year=None, region=True):
     """用片名搜 TMDB,回傳候選清單"""
     if not title:
@@ -512,6 +525,11 @@ def score_tmdb_candidate(movie, candidate):
         title_similarity(title_zh, candidate_title),
         title_similarity(title_zh, candidate_original),
     )
+    if any(
+        title_has_latin_suffix_after_exact_match(title_zh, tmdb_title)
+        for tmdb_title in (candidate_title, candidate_original)
+    ):
+        zh_title_score = 1.0
     en_title_score = max(
         title_similarity(title_en, candidate_title),
         title_similarity(title_en, candidate_original),
@@ -584,16 +602,11 @@ def tmdb_candidate_match_diagnostics(movie, candidate, score):
     # 影城有時把「中文片名＋英文片名」全部放在中文片名欄位。若 TMDB 中文片名
     # 完整位於開頭，且剩餘內容純為拉丁字母／數字，視為完整中文命中，避免把
     # 正確配對誤列為可疑。
-    title_zh_norm = normalize_title_key(title_zh)
-    for tmdb_title in (candidate_title, candidate_original):
-        tmdb_title_norm = normalize_title_key(tmdb_title)
-        if not tmdb_title_norm or not title_zh_norm.startswith(tmdb_title_norm):
-            continue
-        suffix = title_zh_norm[len(tmdb_title_norm):]
-        suffix_letters = re.sub(r"[\W_]+", "", suffix)
-        if suffix_letters and re.fullmatch(r"[a-z0-9]+", suffix_letters, flags=re.IGNORECASE):
-            zh_title_score = 1.0
-            break
+    if any(
+        title_has_latin_suffix_after_exact_match(title_zh, tmdb_title)
+        for tmdb_title in (candidate_title, candidate_original)
+    ):
+        zh_title_score = 1.0
     en_title_score = max(
         title_similarity(title_en, candidate_title),
         title_similarity(title_en, candidate_original),
