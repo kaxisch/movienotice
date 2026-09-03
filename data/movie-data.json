@@ -1,12 +1,2636 @@
 {
-  "generated_at": "2026-09-03T19:40:55.771626+08:00",
+  "generated_at": "2026-09-04T00:40:08.589662+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 65,
-    "soon_count": 83
+    "now_count": 77,
+    "soon_count": 71
   },
   "movies": {
     "now": [
+      {
+        "id": 44729,
+        "titleZh": "航海王：祭典男爵與神祕島",
+        "titleEn": "ワンピース the movie オマツリ男爵と秘密の島",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/5cwR2CNYpibjKPBA9imMBEQSNeH.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/xGJBLsiY0quc2pOcCH1MdnF5P8.jpg",
+        "voteAverage": "7.2",
+        "genre": [
+          "動作",
+          "動畫",
+          "喜劇",
+          "冒險",
+          "奇幻"
+        ],
+        "duration": 91,
+        "synopsis": "前進梅利號在「偉大的航路」中行駛著，突然魯夫發現了漂浮在汪洋大海中的玻璃瓶，瓶中放著一張描繪著花、寶箱和彈塗魚的狂歡島的地圖！與地圖一起放在瓶中的信上寫著：『你是從偉大航路裡的一億人中被選中的幸運的海賊』。這散發出巨臭的紙張令大家極其反胃，但魯夫卻是眼睛發亮，一副非去冒險不可、沒有人能阻止的了的表情。  一行人好不容易到達了目的地，卻發現這只是非常平凡的島嶼，正感到失望之際，突然間，一座光輝燦爛的主題公園伴隨著威嚴的進行曲出現在魯夫等人面前，更帶來頭上生滿葉子的海賊歌唱團。而在主題公園中央破地而出的，是擁有巨大身軀、肩膀上長著花的不可思議的男人---狂歡男爵。男爵對魯夫說：「我將會賜予你神秘的寶物，但是，有個條件…」。這所謂的條件，就是能夠通過男爵提出的地獄般試煉。地獄般的狂歡島！？完全被冒險沖昏了頭的魯夫毫不思考地接受了男爵的試煉…到底，等待著魯夫們的試煉是什麼？所謂的秘寶又是什麼！？",
+        "imdb": "7.2",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 3722,
+            "lastChanged": "2026-08-15T15:09:36.097690+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "田中真弓",
+            "char": "Monkey D. Luffy (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/by4t1tYtEXsfbFj9TvOjozBmQla.jpg"
+          },
+          {
+            "name": "中井和哉",
+            "char": "Roronoa Zoro (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/cOHSa0FBrG3u9P6g8A56sInkvod.jpg"
+          },
+          {
+            "name": "岡村明美",
+            "char": "Nami (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qEwVfsrA23SCzRZMSlghw2sHctQ.jpg"
+          },
+          {
+            "name": "山口勝平",
+            "char": "Usopp (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/mJyxKRZxLv9D7LH5KcNSkjSKYOB.jpg"
+          },
+          {
+            "name": "平田廣明",
+            "char": "Sanji (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/mMWEdlssJm3TVuXW4Wb7pQeX20Z.jpg"
+          },
+          {
+            "name": "大谷育江",
+            "char": "Tony Tony Chopper (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/my8LBLQ4MsK4hRz1PAATIqtieaI.jpg"
+          },
+          {
+            "name": "山口由里子",
+            "char": "Nico Robin (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/14hV8oOMkZddPpvdpVSODRwVPgv.jpg"
+          },
+          {
+            "name": "大塚明夫",
+            "char": "Baron Omatsuri (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
+          },
+          {
+            "name": "草尾毅",
+            "char": "Muchigoro (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/gDiYLUdl9zXXJmhE0bAuB1Jm3FJ.jpg"
+          },
+          {
+            "name": "青野武",
+            "char": "Kerojii (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
+          },
+          {
+            "name": "佐藤正治",
+            "char": "Keroshot (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/lSmnhprafAe4RI27AZMzDpQ3Rjz.jpg"
+          },
+          {
+            "name": "八奈見乗児",
+            "char": "Kerodeek (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/khkGvegnYvx50pAEF1lms7ZKBqy.jpg"
+          },
+          {
+            "name": "山本圭子",
+            "char": "Keroko (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/4w3OVUdjzN0EpIij0gDYvnbOXx.jpg"
+          },
+          {
+            "name": "永井杏",
+            "char": "Daisy (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/9PTldNonMGxNHaWm2yBCJEab5jE.jpg"
+          },
+          {
+            "name": "池松壮亮",
+            "char": "DJ Gappa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/mNhgUAKfHdKQXhbhbAhKcRUHy30.jpg"
+          },
+          {
+            "name": "大本眞基子",
+            "char": "Rosa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ffaYHdV7JOM6ngvpzhc34xxbdBW.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "細田守",
+            "job": "Director"
+          },
+          {
+            "name": "伊藤正宏",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 10494545,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "ワンピース the movie オマツリ男爵と秘密の島",
+        "platforms": [],
+        "popularity": 5.7491,
+        "imdbId": "tt1018764",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 91,
+          "genres": [
+            "動作",
+            "動畫",
+            "喜劇",
+            "冒險",
+            "奇幻"
+          ],
+          "synopsis": "前進梅利號在「偉大的航路」中行駛著，突然魯夫發現了漂浮在汪洋大海中的玻璃瓶，瓶中放著一張描繪著花、寶箱和彈塗魚的狂歡島的地圖！與地圖一起放在瓶中的信上寫著：『你是從偉大航路裡的一億人中被選中的幸運的海賊』。這散發出巨臭的紙張令大家極其反胃，但魯夫卻是眼睛發亮，一副非去冒險不可、沒有人能阻止的了的表情。  一行人好不容易到達了目的地，卻發現這只是非常平凡的島嶼，正感到失望之際，突然間，一座光輝燦爛的主題公園伴隨著威嚴的進行曲出現在魯夫等人面前，更帶來頭上生滿葉子的海賊歌唱團。而在主題公園中央破地而出的，是擁有巨大身軀、肩膀上長著花的不可思議的男人---狂歡男爵。男爵對魯夫說：「我將會賜予你神秘的寶物，但是，有個條件…」。這所謂的條件，就是能夠通過男爵提出的地獄般試煉。地獄般的狂歡島！？完全被冒險沖昏了頭的魯夫毫不思考地接受了男爵的試煉…到底，等待著魯夫們的試煉是什麼？所謂的秘寶又是什麼！？",
+          "poster": "https://image.tmdb.org/t/p/w500/5cwR2CNYpibjKPBA9imMBEQSNeH.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/xGJBLsiY0quc2pOcCH1MdnF5P8.jpg",
+          "voteAverage": "7.2",
+          "trailerKey": null,
+          "imdbId": "tt1018764",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "田中真弓",
+              "char": "Monkey D. Luffy (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/by4t1tYtEXsfbFj9TvOjozBmQla.jpg"
+            },
+            {
+              "name": "中井和哉",
+              "char": "Roronoa Zoro (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/cOHSa0FBrG3u9P6g8A56sInkvod.jpg"
+            },
+            {
+              "name": "岡村明美",
+              "char": "Nami (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qEwVfsrA23SCzRZMSlghw2sHctQ.jpg"
+            },
+            {
+              "name": "山口勝平",
+              "char": "Usopp (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/mJyxKRZxLv9D7LH5KcNSkjSKYOB.jpg"
+            },
+            {
+              "name": "平田廣明",
+              "char": "Sanji (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/mMWEdlssJm3TVuXW4Wb7pQeX20Z.jpg"
+            },
+            {
+              "name": "大谷育江",
+              "char": "Tony Tony Chopper (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/my8LBLQ4MsK4hRz1PAATIqtieaI.jpg"
+            },
+            {
+              "name": "山口由里子",
+              "char": "Nico Robin (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/14hV8oOMkZddPpvdpVSODRwVPgv.jpg"
+            },
+            {
+              "name": "大塚明夫",
+              "char": "Baron Omatsuri (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
+            },
+            {
+              "name": "草尾毅",
+              "char": "Muchigoro (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/gDiYLUdl9zXXJmhE0bAuB1Jm3FJ.jpg"
+            },
+            {
+              "name": "青野武",
+              "char": "Kerojii (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
+            },
+            {
+              "name": "佐藤正治",
+              "char": "Keroshot (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/lSmnhprafAe4RI27AZMzDpQ3Rjz.jpg"
+            },
+            {
+              "name": "八奈見乗児",
+              "char": "Kerodeek (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/khkGvegnYvx50pAEF1lms7ZKBqy.jpg"
+            },
+            {
+              "name": "山本圭子",
+              "char": "Keroko (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/4w3OVUdjzN0EpIij0gDYvnbOXx.jpg"
+            },
+            {
+              "name": "永井杏",
+              "char": "Daisy (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/9PTldNonMGxNHaWm2yBCJEab5jE.jpg"
+            },
+            {
+              "name": "池松壮亮",
+              "char": "DJ Gappa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/mNhgUAKfHdKQXhbhbAhKcRUHy30.jpg"
+            },
+            {
+              "name": "大本眞基子",
+              "char": "Rosa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ffaYHdV7JOM6ngvpzhc34xxbdBW.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "細田守",
+              "job": "Director"
+            },
+            {
+              "name": "伊藤正宏",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 10494545,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "ワンピース the movie オマツリ男爵と秘密の島",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/44729?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 71883,
+        "titleZh": "超時空甩尾",
+        "titleEn": "レッドライン",
+        "releaseDate": "2026-09-04",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/pTMurNQfneGDaplyHfwrcKxlG4s.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hpiEAclfvNJOYPEIhmVewK3n77c.jpg",
+        "voteAverage": "7.5",
+        "genre": [
+          "動畫",
+          "動作",
+          "科幻"
+        ],
+        "duration": 102,
+        "synopsis": "在傳統四輪車輛被空氣動力車取代的時代，有著五年一度決定宇宙最快，為了獲勝即使使用武器也沒關係的賽事『REDLINE』。其最新一屆的的舉辦地選在了史上最險惡的星球「機界」，好戰的機界軍將車手視為是侵入者而出動了，受到了猛烈攻擊干擾的賽事其結果將會是……",
+        "imdb": "7.5",
+        "rt": "70%",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 20380,
+            "lastChanged": "2026-08-26T11:20:40.169539+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 10,
+            "lastChanged": "2026-08-26T11:20:40.169539+08:00"
+          }
+        },
+        "trailerKey": "Ac95HNpLvr4",
+        "cast": [
+          {
+            "name": "木村拓哉",
+            "char": "JP (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
+          },
+          {
+            "name": "蒼井優",
+            "char": "Sonoshee McLaren (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+          },
+          {
+            "name": "淺野忠信",
+            "char": "Frisbee (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg"
+          },
+          {
+            "name": "青野武",
+            "char": "Old Man Mole (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
+          },
+          {
+            "name": "我修院達也",
+            "char": "Lynchman (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/fLqIdkShknsJmZy4EfBWuWyHN4C.jpg"
+          },
+          {
+            "name": "石塚運昇",
+            "char": "Colonel Volton (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/nmj1vTrJc0zvuUYqxSyWXmIGBlP.jpg"
+          },
+          {
+            "name": "三宅健太",
+            "char": "Little Deyzuna (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
+          },
+          {
+            "name": "森下能幸",
+            "char": "Shinkai (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/yG5wnn8UrvZ1qelNpit6Lnba0xC.jpg"
+          },
+          {
+            "name": "長島茂",
+            "char": "Inuki Boss (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/70OZtKOHEGvbuMQAbQ01cGxrUDO.jpg"
+          },
+          {
+            "name": "岡田義徳",
+            "char": "Johnny Boy (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/sAKmrT8MKckGjx2lHhEWvsUqyPP.jpg"
+          },
+          {
+            "name": "津田寛治",
+            "char": "Trava (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg"
+          },
+          {
+            "name": "堀內賢雄",
+            "char": "Titan (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qIsrjSbtdhmmUdd3xvpDHNWRuJp.jpg"
+          },
+          {
+            "name": "郷里大輔",
+            "char": "Gori-Rider (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/g5OeBa8Rww8VNZiJuU7RhZxodwc.jpg"
+          },
+          {
+            "name": "轟木一騎",
+            "char": "Todoroki (voice)",
+            "photo": null
+          },
+          {
+            "name": "石井康嗣",
+            "char": "Machine Head (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ao882dlS1ERrar6iq0qedBVBAhH.jpg"
+          },
+          {
+            "name": "廣田行生",
+            "char": "Roboworld President (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "小池健",
+            "job": "Director"
+          },
+          {
+            "name": "榎戸洋司",
+            "job": "Screenplay"
+          },
+          {
+            "name": "櫻井大樹",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "レッドライン",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+          }
+        ],
+        "popularity": 3.8846,
+        "imdbId": "tt1483797",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 102,
+          "genres": [
+            "動畫",
+            "動作",
+            "科幻"
+          ],
+          "synopsis": "在傳統四輪車輛被空氣動力車取代的時代，有著五年一度決定宇宙最快，為了獲勝即使使用武器也沒關係的賽事『REDLINE』。其最新一屆的的舉辦地選在了史上最險惡的星球「機界」，好戰的機界軍將車手視為是侵入者而出動了，受到了猛烈攻擊干擾的賽事其結果將會是……",
+          "poster": "https://image.tmdb.org/t/p/w500/pTMurNQfneGDaplyHfwrcKxlG4s.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/hpiEAclfvNJOYPEIhmVewK3n77c.jpg",
+          "voteAverage": "7.5",
+          "trailerKey": "Ac95HNpLvr4",
+          "imdbId": "tt1483797",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "木村拓哉",
+              "char": "JP (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
+            },
+            {
+              "name": "蒼井優",
+              "char": "Sonoshee McLaren (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+            },
+            {
+              "name": "淺野忠信",
+              "char": "Frisbee (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg"
+            },
+            {
+              "name": "青野武",
+              "char": "Old Man Mole (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
+            },
+            {
+              "name": "我修院達也",
+              "char": "Lynchman (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/fLqIdkShknsJmZy4EfBWuWyHN4C.jpg"
+            },
+            {
+              "name": "石塚運昇",
+              "char": "Colonel Volton (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/nmj1vTrJc0zvuUYqxSyWXmIGBlP.jpg"
+            },
+            {
+              "name": "三宅健太",
+              "char": "Little Deyzuna (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
+            },
+            {
+              "name": "森下能幸",
+              "char": "Shinkai (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/yG5wnn8UrvZ1qelNpit6Lnba0xC.jpg"
+            },
+            {
+              "name": "長島茂",
+              "char": "Inuki Boss (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/70OZtKOHEGvbuMQAbQ01cGxrUDO.jpg"
+            },
+            {
+              "name": "岡田義徳",
+              "char": "Johnny Boy (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/sAKmrT8MKckGjx2lHhEWvsUqyPP.jpg"
+            },
+            {
+              "name": "津田寛治",
+              "char": "Trava (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg"
+            },
+            {
+              "name": "堀內賢雄",
+              "char": "Titan (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qIsrjSbtdhmmUdd3xvpDHNWRuJp.jpg"
+            },
+            {
+              "name": "郷里大輔",
+              "char": "Gori-Rider (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/g5OeBa8Rww8VNZiJuU7RhZxodwc.jpg"
+            },
+            {
+              "name": "轟木一騎",
+              "char": "Todoroki (voice)",
+              "photo": null
+            },
+            {
+              "name": "石井康嗣",
+              "char": "Machine Head (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ao882dlS1ERrar6iq0qedBVBAhH.jpg"
+            },
+            {
+              "name": "廣田行生",
+              "char": "Roboworld President (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "小池健",
+              "job": "Director"
+            },
+            {
+              "name": "榎戸洋司",
+              "job": "Screenplay"
+            },
+            {
+              "name": "櫻井大樹",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "レッドライン",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/71883?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 660120,
+        "titleZh": "世界上最爛的人",
+        "titleEn": "Verdens verste menneske",
+        "releaseDate": "2026-09-04",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "劇情",
+          "愛情",
+          "喜劇"
+        ],
+        "duration": 128,
+        "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
+        "imdb": "7.7",
+        "rt": "96%",
+        "mc": "91",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 126525,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 47,
+            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
+          }
+        },
+        "trailerKey": "odV6vEvHZMk",
+        "cast": [
+          {
+            "name": "蕾娜特·萊茵斯薇",
+            "char": "Julie",
+            "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+          },
+          {
+            "name": "Anders Danielsen Lie",
+            "char": "Aksel",
+            "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
+          },
+          {
+            "name": "Herbert Nordrum",
+            "char": "Eivind",
+            "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
+          },
+          {
+            "name": "Hans Olav Brenner",
+            "char": "Ole Magnus",
+            "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
+          },
+          {
+            "name": "Helene Bjørnebye",
+            "char": "Karianne",
+            "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
+          },
+          {
+            "name": "Vidar Sandem",
+            "char": "Per Harald",
+            "photo": null
+          },
+          {
+            "name": "Maria Grazia Di Meo",
+            "char": "Sunniva",
+            "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
+          },
+          {
+            "name": "Lasse Gretland",
+            "char": "Kristoffer",
+            "photo": null
+          },
+          {
+            "name": "Karen Røise Kielland",
+            "char": "Tone",
+            "photo": null
+          },
+          {
+            "name": "Marianne Krogh",
+            "char": "Eva",
+            "photo": null
+          },
+          {
+            "name": "Thea Stabell",
+            "char": "Åse",
+            "photo": null
+          },
+          {
+            "name": "Deniz Kaya",
+            "char": "Adil",
+            "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
+          },
+          {
+            "name": "Eia Skjønsberg",
+            "char": "Synne",
+            "photo": null
+          },
+          {
+            "name": "Ruby Dagnall",
+            "char": "Young Actor",
+            "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
+          },
+          {
+            "name": "Torgny Amdam",
+            "char": "Director",
+            "photo": null
+          },
+          {
+            "name": "Rebekka Jynge",
+            "char": "Marthe Refstad",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
+            "name": "Joachim Trier",
+            "job": "Writer"
+          },
+          {
+            "name": "Eskil Vogt",
+            "job": "Writer"
+          }
+        ],
+        "budget": 5000000,
+        "revenue": 12687507,
+        "status": "Released",
+        "origLang": "no",
+        "origTitle": "Verdens verste menneske",
+        "platforms": [
+          {
+            "name": "Netflix",
+            "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          }
+        ],
+        "popularity": 12.6462,
+        "imdbId": "tt10370710",
+        "countries": [
+          "Norway",
+          "Sweden",
+          "Denmark",
+          "France"
+        ],
+        "detail": {
+          "duration": 128,
+          "genres": [
+            "劇情",
+            "愛情",
+            "喜劇"
+          ],
+          "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
+          "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": "odV6vEvHZMk",
+          "imdbId": "tt10370710",
+          "countries": [
+            "Norway",
+            "Sweden",
+            "Denmark",
+            "France"
+          ],
+          "cast": [
+            {
+              "name": "蕾娜特·萊茵斯薇",
+              "char": "Julie",
+              "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+            },
+            {
+              "name": "Anders Danielsen Lie",
+              "char": "Aksel",
+              "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
+            },
+            {
+              "name": "Herbert Nordrum",
+              "char": "Eivind",
+              "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
+            },
+            {
+              "name": "Hans Olav Brenner",
+              "char": "Ole Magnus",
+              "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
+            },
+            {
+              "name": "Helene Bjørnebye",
+              "char": "Karianne",
+              "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
+            },
+            {
+              "name": "Vidar Sandem",
+              "char": "Per Harald",
+              "photo": null
+            },
+            {
+              "name": "Maria Grazia Di Meo",
+              "char": "Sunniva",
+              "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
+            },
+            {
+              "name": "Lasse Gretland",
+              "char": "Kristoffer",
+              "photo": null
+            },
+            {
+              "name": "Karen Røise Kielland",
+              "char": "Tone",
+              "photo": null
+            },
+            {
+              "name": "Marianne Krogh",
+              "char": "Eva",
+              "photo": null
+            },
+            {
+              "name": "Thea Stabell",
+              "char": "Åse",
+              "photo": null
+            },
+            {
+              "name": "Deniz Kaya",
+              "char": "Adil",
+              "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
+            },
+            {
+              "name": "Eia Skjønsberg",
+              "char": "Synne",
+              "photo": null
+            },
+            {
+              "name": "Ruby Dagnall",
+              "char": "Young Actor",
+              "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
+            },
+            {
+              "name": "Torgny Amdam",
+              "char": "Director",
+              "photo": null
+            },
+            {
+              "name": "Rebekka Jynge",
+              "char": "Marthe Refstad",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
+              "name": "Joachim Trier",
+              "job": "Writer"
+            },
+            {
+              "name": "Eskil Vogt",
+              "job": "Writer"
+            }
+          ],
+          "budget": 5000000,
+          "revenue": 12687507,
+          "status": "Released",
+          "origLang": "no",
+          "origTitle": "Verdens verste menneske",
+          "platforms": [
+            {
+              "name": "Netflix",
+              "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/660120?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 822653,
+        "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+        "titleEn": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/x2xLnSgaMN2ODozYBzCdV5mKmyO.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/tkEdEvqnSpfy1m2hjfre1c9JKKs.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "劇情",
+          "懸疑",
+          "奇幻"
+        ],
+        "duration": 120,
+        "synopsis": "為了不再失去小圓的焰變成了「惡魔」，進而改寫了世界。然而焰看似將一切掌握在手中，卻因為一個突如其來的存在，即將把這份扭曲的日常終結……",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "itg5-UEf0t0",
+        "cast": [
+          {
+            "name": "悠木碧",
+            "char": "Madoka Kaname (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+          },
+          {
+            "name": "齋藤千和",
+            "char": "Homura Akemi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jxWuA4K0ZPkOQMeIgLlzaHSkgiV.jpg"
+          },
+          {
+            "name": "水橋香織",
+            "char": "Mami Tomoe (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/eDhVZ9en7T4lvsQ99OkRizroSQd.jpg"
+          },
+          {
+            "name": "喜多村英梨",
+            "char": "Sayaka Miki (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/AioVwYxfpr9zMEQPamI6j9JqXVn.jpg"
+          },
+          {
+            "name": "野中藍",
+            "char": "Kyoko Sakura (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/gEZVaoDeVK04HCmv0dJr6MGO9Se.jpg"
+          },
+          {
+            "name": "阿澄佳奈",
+            "char": "Nagisa Momoe (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/5GroiCPTO6PcYaZQXTGWltoT1kq.jpg"
+          },
+          {
+            "name": "加藤英美里",
+            "char": "Kyubey (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/m0zqjeg65sEe5TTy4mKqgwXVipI.jpg"
+          },
+          {
+            "name": "若山詩音",
+            "char": "Shichōka (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/b697ggFreuliEfl4TjLgxhJCQXr.jpg"
+          },
+          {
+            "name": "黑澤朋世",
+            "char": "Selma Therese (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/eSRnva88YVcUXlDHdVrhier2SGU.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "虛淵玄",
+            "job": "Screenplay"
+          },
+          {
+            "name": "宮本幸裕",
+            "job": "Director"
+          },
+          {
+            "name": "新房昭之",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+        "platforms": [],
+        "popularity": 45.646,
+        "imdbId": "tt14523706",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 120,
+          "genres": [
+            "動畫",
+            "劇情",
+            "懸疑",
+            "奇幻"
+          ],
+          "synopsis": "為了不再失去小圓的焰變成了「惡魔」，進而改寫了世界。然而焰看似將一切掌握在手中，卻因為一個突如其來的存在，即將把這份扭曲的日常終結……",
+          "poster": "https://image.tmdb.org/t/p/w500/x2xLnSgaMN2ODozYBzCdV5mKmyO.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/tkEdEvqnSpfy1m2hjfre1c9JKKs.jpg",
+          "voteAverage": "",
+          "trailerKey": "itg5-UEf0t0",
+          "imdbId": "tt14523706",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "悠木碧",
+              "char": "Madoka Kaname (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+            },
+            {
+              "name": "齋藤千和",
+              "char": "Homura Akemi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jxWuA4K0ZPkOQMeIgLlzaHSkgiV.jpg"
+            },
+            {
+              "name": "水橋香織",
+              "char": "Mami Tomoe (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/eDhVZ9en7T4lvsQ99OkRizroSQd.jpg"
+            },
+            {
+              "name": "喜多村英梨",
+              "char": "Sayaka Miki (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/AioVwYxfpr9zMEQPamI6j9JqXVn.jpg"
+            },
+            {
+              "name": "野中藍",
+              "char": "Kyoko Sakura (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/gEZVaoDeVK04HCmv0dJr6MGO9Se.jpg"
+            },
+            {
+              "name": "阿澄佳奈",
+              "char": "Nagisa Momoe (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/5GroiCPTO6PcYaZQXTGWltoT1kq.jpg"
+            },
+            {
+              "name": "加藤英美里",
+              "char": "Kyubey (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/m0zqjeg65sEe5TTy4mKqgwXVipI.jpg"
+            },
+            {
+              "name": "若山詩音",
+              "char": "Shichōka (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/b697ggFreuliEfl4TjLgxhJCQXr.jpg"
+            },
+            {
+              "name": "黑澤朋世",
+              "char": "Selma Therese (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/eSRnva88YVcUXlDHdVrhier2SGU.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "虛淵玄",
+              "job": "Screenplay"
+            },
+            {
+              "name": "宮本幸裕",
+              "job": "Director"
+            },
+            {
+              "name": "新房昭之",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/822653?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1058424,
+        "titleZh": "希望：末日血戰",
+        "titleEn": "호프",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/tV2njcRac6rQsXjvomyDjPmcGvQ.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/o1UvmHqE2fh0Z62wls5bdrNtBN2.jpg",
+        "voteAverage": "8.3",
+        "genre": [
+          "科幻",
+          "懸疑",
+          "動作"
+        ],
+        "duration": 157,
+        "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
+        "imdb": "7.0",
+        "rt": "78%",
+        "mc": "68",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 678,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 54,
+            "lastChanged": "2026-09-03T19:40:55.771626+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 19,
+            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+          }
+        },
+        "trailerKey": "HZkGZqypnBM",
+        "cast": [
+          {
+            "name": "黃晸玟",
+            "char": "Go Bum-seok",
+            "photo": "https://image.tmdb.org/t/p/w500/hKF1uh0iEfuZlBE79CXPw415qyn.jpg"
+          },
+          {
+            "name": "趙寅成",
+            "char": "Go Sung-ki",
+            "photo": "https://image.tmdb.org/t/p/w500/69gbyFI0ET0l0dyjKChlx1Zx269.jpg"
+          },
+          {
+            "name": "鄭好娟",
+            "char": "Lim Sung-ae",
+            "photo": "https://image.tmdb.org/t/p/w500/AfQFFyGeG9xOQnEJb1Ash1RomkP.jpg"
+          },
+          {
+            "name": "艾莉西亞·薇坎德",
+            "char": "J'aur",
+            "photo": "https://image.tmdb.org/t/p/w500/lZu8qiTwiQIN96cuptgqMCCaUtg.jpg"
+          },
+          {
+            "name": "麥可法斯賓達",
+            "char": "Ma'veyyo",
+            "photo": "https://image.tmdb.org/t/p/w500/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
+          },
+          {
+            "name": "Taylor Russell",
+            "char": "Ai'dovor",
+            "photo": "https://image.tmdb.org/t/p/w500/wxY9vztrc69MolSJ1LDNg7sEADU.jpg"
+          },
+          {
+            "name": "卡麥隆·布瑞頓",
+            "char": "Va'migere",
+            "photo": "https://image.tmdb.org/t/p/w500/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg"
+          },
+          {
+            "name": "이상희",
+            "char": "Nak-yeon",
+            "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
+          },
+          {
+            "name": "音文碩",
+            "char": "Yang-bae",
+            "photo": "https://image.tmdb.org/t/p/w500/niV5OXu1cgKnlIU1Iamp1BVeCdT.jpg"
+          },
+          {
+            "name": "임현식",
+            "char": "Hae-sul",
+            "photo": "https://image.tmdb.org/t/p/w500/syQMfT7qchOwKDMXc3vQB57v1ZL.jpg"
+          },
+          {
+            "name": "黃石正",
+            "char": "Head of Health Center",
+            "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
+          },
+          {
+            "name": "한우열",
+            "char": "Wan-seob",
+            "photo": "https://image.tmdb.org/t/p/w500/xFZ7vSyvxcHDSuhg6G0MXpNsjcT.jpg"
+          },
+          {
+            "name": "주광현",
+            "char": "Byeong-jun",
+            "photo": "https://image.tmdb.org/t/p/w500/9wyb07dlA5IEGcmvHy61OLLvWuI.jpg"
+          },
+          {
+            "name": "오두원",
+            "char": "Heung-sik",
+            "photo": "https://image.tmdb.org/t/p/w500/sF19as2CTDbmU64oUAbILH5KRn4.jpg"
+          },
+          {
+            "name": "유준홍",
+            "char": "Cheong-san",
+            "photo": "https://image.tmdb.org/t/p/w500/n4EhRXDStUHZcShb97XmL36g9wA.jpg"
+          },
+          {
+            "name": "徐範植",
+            "char": "Hyun-ho",
+            "photo": "https://image.tmdb.org/t/p/w500/48iqXOCqTXAI3ukXGqBURWqpW0v.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "나홍진",
+            "job": "Director"
+          },
+          {
+            "name": "나홍진",
+            "job": "Writer"
+          }
+        ],
+        "budget": 40000000,
+        "revenue": 33800000,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "호프",
+        "platforms": [],
+        "popularity": 27.5424,
+        "imdbId": "tt27369017",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 157,
+          "genres": [
+            "科幻",
+            "懸疑",
+            "動作"
+          ],
+          "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
+          "poster": "https://image.tmdb.org/t/p/w500/tV2njcRac6rQsXjvomyDjPmcGvQ.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/o1UvmHqE2fh0Z62wls5bdrNtBN2.jpg",
+          "voteAverage": "8.3",
+          "trailerKey": "HZkGZqypnBM",
+          "imdbId": "tt27369017",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "黃晸玟",
+              "char": "Go Bum-seok",
+              "photo": "https://image.tmdb.org/t/p/w500/hKF1uh0iEfuZlBE79CXPw415qyn.jpg"
+            },
+            {
+              "name": "趙寅成",
+              "char": "Go Sung-ki",
+              "photo": "https://image.tmdb.org/t/p/w500/69gbyFI0ET0l0dyjKChlx1Zx269.jpg"
+            },
+            {
+              "name": "鄭好娟",
+              "char": "Lim Sung-ae",
+              "photo": "https://image.tmdb.org/t/p/w500/AfQFFyGeG9xOQnEJb1Ash1RomkP.jpg"
+            },
+            {
+              "name": "艾莉西亞·薇坎德",
+              "char": "J'aur",
+              "photo": "https://image.tmdb.org/t/p/w500/lZu8qiTwiQIN96cuptgqMCCaUtg.jpg"
+            },
+            {
+              "name": "麥可法斯賓達",
+              "char": "Ma'veyyo",
+              "photo": "https://image.tmdb.org/t/p/w500/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
+            },
+            {
+              "name": "Taylor Russell",
+              "char": "Ai'dovor",
+              "photo": "https://image.tmdb.org/t/p/w500/wxY9vztrc69MolSJ1LDNg7sEADU.jpg"
+            },
+            {
+              "name": "卡麥隆·布瑞頓",
+              "char": "Va'migere",
+              "photo": "https://image.tmdb.org/t/p/w500/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg"
+            },
+            {
+              "name": "이상희",
+              "char": "Nak-yeon",
+              "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
+            },
+            {
+              "name": "音文碩",
+              "char": "Yang-bae",
+              "photo": "https://image.tmdb.org/t/p/w500/niV5OXu1cgKnlIU1Iamp1BVeCdT.jpg"
+            },
+            {
+              "name": "임현식",
+              "char": "Hae-sul",
+              "photo": "https://image.tmdb.org/t/p/w500/syQMfT7qchOwKDMXc3vQB57v1ZL.jpg"
+            },
+            {
+              "name": "黃石正",
+              "char": "Head of Health Center",
+              "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
+            },
+            {
+              "name": "한우열",
+              "char": "Wan-seob",
+              "photo": "https://image.tmdb.org/t/p/w500/xFZ7vSyvxcHDSuhg6G0MXpNsjcT.jpg"
+            },
+            {
+              "name": "주광현",
+              "char": "Byeong-jun",
+              "photo": "https://image.tmdb.org/t/p/w500/9wyb07dlA5IEGcmvHy61OLLvWuI.jpg"
+            },
+            {
+              "name": "오두원",
+              "char": "Heung-sik",
+              "photo": "https://image.tmdb.org/t/p/w500/sF19as2CTDbmU64oUAbILH5KRn4.jpg"
+            },
+            {
+              "name": "유준홍",
+              "char": "Cheong-san",
+              "photo": "https://image.tmdb.org/t/p/w500/n4EhRXDStUHZcShb97XmL36g9wA.jpg"
+            },
+            {
+              "name": "徐範植",
+              "char": "Hyun-ho",
+              "photo": "https://image.tmdb.org/t/p/w500/48iqXOCqTXAI3ukXGqBURWqpW0v.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "나홍진",
+              "job": "Director"
+            },
+            {
+              "name": "나홍진",
+              "job": "Writer"
+            }
+          ],
+          "budget": 40000000,
+          "revenue": 33800000,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "호프",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1058424?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1101412,
+        "titleZh": "墜2",
+        "titleEn": "Fall 2: Deadpoint",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
+        "voteAverage": "6.0",
+        "genre": [
+          "驚悚"
+        ],
+        "duration": 98,
+        "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
+        "imdb": "",
+        "rt": "46%",
+        "mc": "54",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 13,
+            "lastChanged": "2026-09-03T19:40:55.771626+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 6,
+            "lastChanged": "2026-09-03T19:40:55.771626+08:00"
+          }
+        },
+        "trailerKey": "9spjI5Y0jPg",
+        "cast": [
+          {
+            "name": "Harriet Slater",
+            "char": "Jax",
+            "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
+          },
+          {
+            "name": "Arsema Thomas",
+            "char": "Luce",
+            "photo": "https://image.tmdb.org/t/p/w500/gIsQlGmik9KYbJ086QgFTpvPAUP.jpg"
+          },
+          {
+            "name": "湯姆·布蘭妮",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg"
+          },
+          {
+            "name": "Einar Haraldsson",
+            "char": "Joe",
+            "photo": "https://image.tmdb.org/t/p/w500/fj6fMfpn1ROaMNhS2UUuHLuoGSi.jpg"
+          },
+          {
+            "name": "Juju Journey Brener",
+            "char": "Young Jax",
+            "photo": "https://image.tmdb.org/t/p/w500/huLe5YUe2ks6mmg1MUA1MGLwqV7.jpg"
+          },
+          {
+            "name": "Jordan Coleman",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
+          },
+          {
+            "name": "Alexandra Bartlett",
+            "char": "Nearby Climber",
+            "photo": null
+          },
+          {
+            "name": "Andrey Kasushkin",
+            "char": "Smuggler",
+            "photo": null
+          },
+          {
+            "name": "Virginia Gardner",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
+          },
+          {
+            "name": "Grace Caroline Currey",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Jonathan Frank",
+            "job": "Writer"
+          },
+          {
+            "name": "Peter Spierig",
+            "job": "Director"
+          },
+          {
+            "name": "Michael Spierig",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Fall 2: Deadpoint",
+        "platforms": [],
+        "popularity": 51.7971,
+        "imdbId": "tt31192372",
+        "countries": [
+          "United Kingdom",
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 98,
+          "genres": [
+            "驚悚"
+          ],
+          "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
+          "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
+          "voteAverage": "6.0",
+          "trailerKey": "9spjI5Y0jPg",
+          "imdbId": "tt31192372",
+          "countries": [
+            "United Kingdom",
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "Harriet Slater",
+              "char": "Jax",
+              "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
+            },
+            {
+              "name": "Arsema Thomas",
+              "char": "Luce",
+              "photo": "https://image.tmdb.org/t/p/w500/gIsQlGmik9KYbJ086QgFTpvPAUP.jpg"
+            },
+            {
+              "name": "湯姆·布蘭妮",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg"
+            },
+            {
+              "name": "Einar Haraldsson",
+              "char": "Joe",
+              "photo": "https://image.tmdb.org/t/p/w500/fj6fMfpn1ROaMNhS2UUuHLuoGSi.jpg"
+            },
+            {
+              "name": "Juju Journey Brener",
+              "char": "Young Jax",
+              "photo": "https://image.tmdb.org/t/p/w500/huLe5YUe2ks6mmg1MUA1MGLwqV7.jpg"
+            },
+            {
+              "name": "Jordan Coleman",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
+            },
+            {
+              "name": "Alexandra Bartlett",
+              "char": "Nearby Climber",
+              "photo": null
+            },
+            {
+              "name": "Andrey Kasushkin",
+              "char": "Smuggler",
+              "photo": null
+            },
+            {
+              "name": "Virginia Gardner",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
+            },
+            {
+              "name": "Grace Caroline Currey",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Jonathan Frank",
+              "job": "Writer"
+            },
+            {
+              "name": "Peter Spierig",
+              "job": "Director"
+            },
+            {
+              "name": "Michael Spierig",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Fall 2: Deadpoint",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1101412?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1509612,
+        "titleZh": "最後的作業",
+        "titleEn": "마지막 숙제",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
+        "voteAverage": "5.5",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 109,
+        "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "嚴泰雄",
+            "char": "Kim Yeong-nam",
+            "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
+          },
+          {
+            "name": "박상면",
+            "char": "Vice Principal",
+            "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
+          },
+          {
+            "name": "전수경",
+            "char": "Principal",
+            "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
+          },
+          {
+            "name": "윤현숙",
+            "char": "PTA President",
+            "photo": null
+          },
+          {
+            "name": "최이나",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "남대협",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "홍정민",
+            "char": "Eun-bi",
+            "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
+          },
+          {
+            "name": "이재준",
+            "char": "Joon-soo",
+            "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
+          },
+          {
+            "name": "조재영",
+            "char": "Chang-il",
+            "photo": null
+          },
+          {
+            "name": "임한빈",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
+          },
+          {
+            "name": "한창민",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
+          },
+          {
+            "name": "도연",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "이성종",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "이정철",
+            "job": "Director"
+          },
+          {
+            "name": "최석환",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "마지막 숙제",
+        "platforms": [],
+        "popularity": 0.8131,
+        "imdbId": "tt34539004",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 109,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
+          "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
+          "voteAverage": "5.5",
+          "trailerKey": null,
+          "imdbId": "tt34539004",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "嚴泰雄",
+              "char": "Kim Yeong-nam",
+              "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
+            },
+            {
+              "name": "박상면",
+              "char": "Vice Principal",
+              "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
+            },
+            {
+              "name": "전수경",
+              "char": "Principal",
+              "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
+            },
+            {
+              "name": "윤현숙",
+              "char": "PTA President",
+              "photo": null
+            },
+            {
+              "name": "최이나",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "남대협",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "홍정민",
+              "char": "Eun-bi",
+              "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
+            },
+            {
+              "name": "이재준",
+              "char": "Joon-soo",
+              "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
+            },
+            {
+              "name": "조재영",
+              "char": "Chang-il",
+              "photo": null
+            },
+            {
+              "name": "임한빈",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
+            },
+            {
+              "name": "한창민",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
+            },
+            {
+              "name": "도연",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "이성종",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "이정철",
+              "job": "Director"
+            },
+            {
+              "name": "최석환",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "마지막 숙제",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1509612?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1516724,
+        "titleZh": "今晚我想來點棒的",
+        "titleEn": "Pour le plaisir",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
+        "voteAverage": "6.3",
+        "genre": [
+          "喜劇"
+        ],
+        "duration": 95,
+        "synopsis": "芬妮和發明家湯姆結婚二十年，婚姻幸福美滿，但芬妮有個令她煩惱的小祕密：她從未體驗過性高潮！得知此事的湯姆既生氣又沮喪，但深愛芬妮的他決定運用長才，要設計出一個能讓女性獲得快感的劃時代情趣玩具！",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "O6S_WKOIOoA",
+        "cast": [
+          {
+            "name": "Alexandra Lamy",
+            "char": "Fanny",
+            "photo": "https://image.tmdb.org/t/p/w500/m52fdEhVo6sBjEhgyM6bqFwC1HA.jpg"
+          },
+          {
+            "name": "François Cluzet",
+            "char": "Thomas",
+            "photo": "https://image.tmdb.org/t/p/w500/f6PO7Lkrem1N4UmklxHro2k6Jto.jpg"
+          },
+          {
+            "name": "Mitty Hazanavicius",
+            "char": "Elsa",
+            "photo": "https://image.tmdb.org/t/p/w500/4WzOf2T2NOlgG1t9k8SNMCfyhth.jpg"
+          },
+          {
+            "name": "Delphine Baril",
+            "char": "Pauline",
+            "photo": "https://image.tmdb.org/t/p/w500/571fTrSLspp8xPGkwwBUpKhl884.jpg"
+          },
+          {
+            "name": "François-Xavier Demaison",
+            "char": "Serge",
+            "photo": "https://image.tmdb.org/t/p/w500/u2WWC1YAJuZLLk6Ho4IzhNAozqe.jpg"
+          },
+          {
+            "name": "Reem Kherici",
+            "char": "Caroline",
+            "photo": "https://image.tmdb.org/t/p/w500/nfOOJB41gb0aFrPxfyF3u3i4HZn.jpg"
+          },
+          {
+            "name": "Kyan Khojandi",
+            "char": "Pierre",
+            "photo": "https://image.tmdb.org/t/p/w500/e2XcdnMz6hCVz4skEZXjsEr9A72.jpg"
+          },
+          {
+            "name": "Camille Aumont Carnel",
+            "char": "Camille",
+            "photo": null
+          },
+          {
+            "name": "François Bureloup",
+            "char": "Le gyneco",
+            "photo": "https://image.tmdb.org/t/p/w500/d9I0Qspe7U7V0VO1yMntaRvSG39.jpg"
+          },
+          {
+            "name": "Huguette Lacheau",
+            "char": "Odile",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Reem Kherici",
+            "job": "Director"
+          },
+          {
+            "name": "Reem Kherici",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Gari Kikoïne",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 7164147,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Pour le plaisir",
+        "platforms": [],
+        "popularity": 3.248,
+        "imdbId": "tt38607784",
+        "countries": [
+          "France"
+        ],
+        "detail": {
+          "duration": 95,
+          "genres": [
+            "喜劇"
+          ],
+          "synopsis": "芬妮和發明家湯姆結婚二十年，婚姻幸福美滿，但芬妮有個令她煩惱的小祕密：她從未體驗過性高潮！得知此事的湯姆既生氣又沮喪，但深愛芬妮的他決定運用長才，要設計出一個能讓女性獲得快感的劃時代情趣玩具！",
+          "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
+          "voteAverage": "6.3",
+          "trailerKey": "O6S_WKOIOoA",
+          "imdbId": "tt38607784",
+          "countries": [
+            "France"
+          ],
+          "cast": [
+            {
+              "name": "Alexandra Lamy",
+              "char": "Fanny",
+              "photo": "https://image.tmdb.org/t/p/w500/m52fdEhVo6sBjEhgyM6bqFwC1HA.jpg"
+            },
+            {
+              "name": "François Cluzet",
+              "char": "Thomas",
+              "photo": "https://image.tmdb.org/t/p/w500/f6PO7Lkrem1N4UmklxHro2k6Jto.jpg"
+            },
+            {
+              "name": "Mitty Hazanavicius",
+              "char": "Elsa",
+              "photo": "https://image.tmdb.org/t/p/w500/4WzOf2T2NOlgG1t9k8SNMCfyhth.jpg"
+            },
+            {
+              "name": "Delphine Baril",
+              "char": "Pauline",
+              "photo": "https://image.tmdb.org/t/p/w500/571fTrSLspp8xPGkwwBUpKhl884.jpg"
+            },
+            {
+              "name": "François-Xavier Demaison",
+              "char": "Serge",
+              "photo": "https://image.tmdb.org/t/p/w500/u2WWC1YAJuZLLk6Ho4IzhNAozqe.jpg"
+            },
+            {
+              "name": "Reem Kherici",
+              "char": "Caroline",
+              "photo": "https://image.tmdb.org/t/p/w500/nfOOJB41gb0aFrPxfyF3u3i4HZn.jpg"
+            },
+            {
+              "name": "Kyan Khojandi",
+              "char": "Pierre",
+              "photo": "https://image.tmdb.org/t/p/w500/e2XcdnMz6hCVz4skEZXjsEr9A72.jpg"
+            },
+            {
+              "name": "Camille Aumont Carnel",
+              "char": "Camille",
+              "photo": null
+            },
+            {
+              "name": "François Bureloup",
+              "char": "Le gyneco",
+              "photo": "https://image.tmdb.org/t/p/w500/d9I0Qspe7U7V0VO1yMntaRvSG39.jpg"
+            },
+            {
+              "name": "Huguette Lacheau",
+              "char": "Odile",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Reem Kherici",
+              "job": "Director"
+            },
+            {
+              "name": "Reem Kherici",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Gari Kikoïne",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 7164147,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Pour le plaisir",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1516724?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1530193,
+        "titleZh": "愛在記憶褪色時",
+        "titleEn": "Der verlorene Mann",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/kZFNCW9Mqcexd3IacN2fWtrNtv2.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/rs4d4EaonSqsrhXCB7p80Y83YAf.jpg",
+        "voteAverage": "6.2",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 100,
+        "synopsis": "藝術家漢娜與退休牧師伯恩德相伴多年，婚姻安穩得近乎停滯。某日，漢娜二十年前離婚的前夫庫爾特突然現身家門；罹患失智症的他，忘了兩人早已分開，也打亂夫妻井然有序的日常。從尷尬同住到重新靠近，三人在記憶逐漸褪色、關係不斷錯位之中，被迫面對愛、責任與陪伴的另一種可能。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Dagmar Manzel",
+            "char": "Hanne",
+            "photo": "https://image.tmdb.org/t/p/w500/eCG8xLUcMbmnYJUXBRnUCldw1zf.jpg"
+          },
+          {
+            "name": "Harald Krassnitzer",
+            "char": "Kurt",
+            "photo": "https://image.tmdb.org/t/p/w500/6TDRB8wDTG4OCUCX9drkEeAwYVR.jpg"
+          },
+          {
+            "name": "August Zirner",
+            "char": "Bernd",
+            "photo": "https://image.tmdb.org/t/p/w500/lYBV75sY8P8BWyvItcOSDiYxQV0.jpg"
+          },
+          {
+            "name": "Lene Dax",
+            "char": "Samira",
+            "photo": null
+          },
+          {
+            "name": "Dionne Wudu",
+            "char": "Ines",
+            "photo": null
+          },
+          {
+            "name": "Marion Freundorfer",
+            "char": "Heike",
+            "photo": null
+          },
+          {
+            "name": "Catalina Navarro Kirner",
+            "char": "Frau Engel",
+            "photo": "https://image.tmdb.org/t/p/w500/buL14n7dvKYZVV815ikIsEMOpCs.jpg"
+          },
+          {
+            "name": "Ewa Patricia Klosowski",
+            "char": "Frau Slansky",
+            "photo": null
+          },
+          {
+            "name": "Jessica Stautz",
+            "char": "Polizistin",
+            "photo": "https://image.tmdb.org/t/p/w500/e8TbtyZgwx9LWHTmioGYEVgapIy.jpg"
+          },
+          {
+            "name": "Sara Sukarie",
+            "char": "Dr. Lena Mai",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Welf Reinhart",
+            "job": "Director"
+          },
+          {
+            "name": "Tünde Sautier",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Welf Reinhart",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "de",
+        "origTitle": "Der verlorene Mann",
+        "platforms": [],
+        "popularity": 2.717,
+        "imdbId": "tt39602467",
+        "countries": [
+          "Germany"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "藝術家漢娜與退休牧師伯恩德相伴多年，婚姻安穩得近乎停滯。某日，漢娜二十年前離婚的前夫庫爾特突然現身家門；罹患失智症的他，忘了兩人早已分開，也打亂夫妻井然有序的日常。從尷尬同住到重新靠近，三人在記憶逐漸褪色、關係不斷錯位之中，被迫面對愛、責任與陪伴的另一種可能。",
+          "poster": "https://image.tmdb.org/t/p/w500/kZFNCW9Mqcexd3IacN2fWtrNtv2.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/rs4d4EaonSqsrhXCB7p80Y83YAf.jpg",
+          "voteAverage": "6.2",
+          "trailerKey": null,
+          "imdbId": "tt39602467",
+          "countries": [
+            "Germany"
+          ],
+          "cast": [
+            {
+              "name": "Dagmar Manzel",
+              "char": "Hanne",
+              "photo": "https://image.tmdb.org/t/p/w500/eCG8xLUcMbmnYJUXBRnUCldw1zf.jpg"
+            },
+            {
+              "name": "Harald Krassnitzer",
+              "char": "Kurt",
+              "photo": "https://image.tmdb.org/t/p/w500/6TDRB8wDTG4OCUCX9drkEeAwYVR.jpg"
+            },
+            {
+              "name": "August Zirner",
+              "char": "Bernd",
+              "photo": "https://image.tmdb.org/t/p/w500/lYBV75sY8P8BWyvItcOSDiYxQV0.jpg"
+            },
+            {
+              "name": "Lene Dax",
+              "char": "Samira",
+              "photo": null
+            },
+            {
+              "name": "Dionne Wudu",
+              "char": "Ines",
+              "photo": null
+            },
+            {
+              "name": "Marion Freundorfer",
+              "char": "Heike",
+              "photo": null
+            },
+            {
+              "name": "Catalina Navarro Kirner",
+              "char": "Frau Engel",
+              "photo": "https://image.tmdb.org/t/p/w500/buL14n7dvKYZVV815ikIsEMOpCs.jpg"
+            },
+            {
+              "name": "Ewa Patricia Klosowski",
+              "char": "Frau Slansky",
+              "photo": null
+            },
+            {
+              "name": "Jessica Stautz",
+              "char": "Polizistin",
+              "photo": "https://image.tmdb.org/t/p/w500/e8TbtyZgwx9LWHTmioGYEVgapIy.jpg"
+            },
+            {
+              "name": "Sara Sukarie",
+              "char": "Dr. Lena Mai",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Welf Reinhart",
+              "job": "Director"
+            },
+            {
+              "name": "Tünde Sautier",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Welf Reinhart",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "de",
+          "origTitle": "Der verlorene Mann",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1530193?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1564172,
+        "titleZh": "我的爸爸是死刑犯",
+        "titleEn": "我的爸爸是死刑犯",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/b29dMsx7bcwzV9x80Z1azHnronS.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/8LR7v6QZsBaRuC3GqSJtIDKT0p6.jpg",
+        "voteAverage": "",
+        "genre": [
+          "紀錄"
+        ],
+        "duration": 111,
+        "synopsis": "2002年，鄭宜修的父親鄭武松殺了他的母親，他同時成了被害與加害者家屬。死刑早已定讞，父親迄今卻仍在獄中等待行刑。多年來，每逢台灣發生重大刑案，「亂世用重典」聲浪高漲，鄭宜修總是心情翻騰。殺母罪人或骨肉至親、該死或不該死，至極兩難在他心底衝撞。這個下午，他遇見另外兩位極刑犯的子女。三人背景迥異，卻因悲劇牽起共同生命經歷，他們漫談生活過往，也聊起難為外人道的長年陰影：缺席父親，與待決的死刑。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "bWBW10o0MeE",
+        "cast": [],
+        "crew": [
+          {
+            "name": "李家驊",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "我的爸爸是死刑犯",
+        "platforms": [],
+        "popularity": 1.3129,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 111,
+          "genres": [
+            "紀錄"
+          ],
+          "synopsis": "2002年，鄭宜修的父親鄭武松殺了他的母親，他同時成了被害與加害者家屬。死刑早已定讞，父親迄今卻仍在獄中等待行刑。多年來，每逢台灣發生重大刑案，「亂世用重典」聲浪高漲，鄭宜修總是心情翻騰。殺母罪人或骨肉至親、該死或不該死，至極兩難在他心底衝撞。這個下午，他遇見另外兩位極刑犯的子女。三人背景迥異，卻因悲劇牽起共同生命經歷，他們漫談生活過往，也聊起難為外人道的長年陰影：缺席父親，與待決的死刑。",
+          "poster": "https://image.tmdb.org/t/p/w500/b29dMsx7bcwzV9x80Z1azHnronS.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/8LR7v6QZsBaRuC3GqSJtIDKT0p6.jpg",
+          "voteAverage": "",
+          "trailerKey": "bWBW10o0MeE",
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "李家驊",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "我的爸爸是死刑犯",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1564172?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1621964,
+        "titleZh": "天鵝與蝙蝠",
+        "titleEn": "白鳥とコウモリ",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/rjRI3z3lFepMlxk9ScUvlfNxrR3.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
+        "voteAverage": "",
+        "genre": [
+          "犯罪",
+          "劇情",
+          "家庭",
+          "懸疑"
+        ],
+        "duration": "",
+        "synopsis": "善良的律師白石健介被殺害了，隨著嫌犯倉木達郎俯首認罪，這起案件應該有了結果才對，但嫌犯的兒子倉木和真與被害人的女兒白石美令，都各自對自己父親的言行舉止感到疑惑。當嫌犯的兒子和被害人的女兒攜手合作時，那個「真相」竟開始動搖……",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "kPhEXOEKQ6A",
+        "cast": [
+          {
+            "name": "松村北斗",
+            "char": "Kuraki Kazuma",
+            "photo": "https://image.tmdb.org/t/p/w500/rtdHPwvoSel4m4CbJwZgcfnFsA0.jpg"
+          },
+          {
+            "name": "今田美櫻",
+            "char": "Shiraishi Mirei",
+            "photo": "https://image.tmdb.org/t/p/w500/1RiNJI6v9rBvATZ59m0CAZCFOpI.jpg"
+          },
+          {
+            "name": "三浦友和",
+            "char": "Kuraki Tatsuro",
+            "photo": "https://image.tmdb.org/t/p/w500/2tKusMF6dzGOfH7MM73FCsJzRoJ.jpg"
+          },
+          {
+            "name": "柄本佑",
+            "char": "Godai Tsutomu",
+            "photo": "https://image.tmdb.org/t/p/w500/bWFDE4bXUQxmyUey6sA5S84A3vG.jpg"
+          },
+          {
+            "name": "前原滉",
+            "char": "Nakamachi",
+            "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
+          },
+          {
+            "name": "Shikan Nakamura VIII",
+            "char": "Shiraishi Kensuke",
+            "photo": "https://image.tmdb.org/t/p/w500/ynUYolvgkAG5ozgf3ylIdJEu4Mk.jpg"
+          },
+          {
+            "name": "井川遥",
+            "char": "Asaba Orie",
+            "photo": "https://image.tmdb.org/t/p/w500/vmXd5rOa5YiIbQM01JNHYW3w58W.jpg"
+          },
+          {
+            "name": "吉田羊",
+            "char": "Shiraishi Ayako",
+            "photo": "https://image.tmdb.org/t/p/w500/3grR0n3XfGyv6nSB35LjjvKfmCI.jpg"
+          },
+          {
+            "name": "風吹純",
+            "char": "Asaba Yoko",
+            "photo": "https://image.tmdb.org/t/p/w500/uHF9NdKrG1bN7GwZB7PI21Rkdv8.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "岸善幸",
+            "job": "Director"
+          },
+          {
+            "name": "向井康介",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "白鳥とコウモリ",
+        "platforms": [],
+        "popularity": 1.3696,
+        "imdbId": null,
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "犯罪",
+            "劇情",
+            "家庭",
+            "懸疑"
+          ],
+          "synopsis": "善良的律師白石健介被殺害了，隨著嫌犯倉木達郎俯首認罪，這起案件應該有了結果才對，但嫌犯的兒子倉木和真與被害人的女兒白石美令，都各自對自己父親的言行舉止感到疑惑。當嫌犯的兒子和被害人的女兒攜手合作時，那個「真相」竟開始動搖……",
+          "poster": "https://image.tmdb.org/t/p/w500/rjRI3z3lFepMlxk9ScUvlfNxrR3.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
+          "voteAverage": "",
+          "trailerKey": "kPhEXOEKQ6A",
+          "imdbId": null,
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "松村北斗",
+              "char": "Kuraki Kazuma",
+              "photo": "https://image.tmdb.org/t/p/w500/rtdHPwvoSel4m4CbJwZgcfnFsA0.jpg"
+            },
+            {
+              "name": "今田美櫻",
+              "char": "Shiraishi Mirei",
+              "photo": "https://image.tmdb.org/t/p/w500/1RiNJI6v9rBvATZ59m0CAZCFOpI.jpg"
+            },
+            {
+              "name": "三浦友和",
+              "char": "Kuraki Tatsuro",
+              "photo": "https://image.tmdb.org/t/p/w500/2tKusMF6dzGOfH7MM73FCsJzRoJ.jpg"
+            },
+            {
+              "name": "柄本佑",
+              "char": "Godai Tsutomu",
+              "photo": "https://image.tmdb.org/t/p/w500/bWFDE4bXUQxmyUey6sA5S84A3vG.jpg"
+            },
+            {
+              "name": "前原滉",
+              "char": "Nakamachi",
+              "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
+            },
+            {
+              "name": "Shikan Nakamura VIII",
+              "char": "Shiraishi Kensuke",
+              "photo": "https://image.tmdb.org/t/p/w500/ynUYolvgkAG5ozgf3ylIdJEu4Mk.jpg"
+            },
+            {
+              "name": "井川遥",
+              "char": "Asaba Orie",
+              "photo": "https://image.tmdb.org/t/p/w500/vmXd5rOa5YiIbQM01JNHYW3w58W.jpg"
+            },
+            {
+              "name": "吉田羊",
+              "char": "Shiraishi Ayako",
+              "photo": "https://image.tmdb.org/t/p/w500/3grR0n3XfGyv6nSB35LjjvKfmCI.jpg"
+            },
+            {
+              "name": "風吹純",
+              "char": "Asaba Yoko",
+              "photo": "https://image.tmdb.org/t/p/w500/uHF9NdKrG1bN7GwZB7PI21Rkdv8.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "岸善幸",
+              "job": "Director"
+            },
+            {
+              "name": "向井康介",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "白鳥とコウモリ",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1621964?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1677118,
+        "titleZh": "超人力霸王．起源",
+        "titleEn": "THE ORIGIN OF ULTRAMAN",
+        "releaseDate": "2026-09-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/qqDn5zPaHnqBWsWo8rx8yYUW57x.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/yvLN3JRt877C7IQmtzGtL01aTqK.jpg",
+        "voteAverage": "",
+        "genre": [
+          "紀錄"
+        ],
+        "duration": 105,
+        "synopsis": "由坎城金棕櫚名導是枝裕和親自企劃，以細膩的人文視角，深度探索日本流行文化中「英雄」與「怪獸」的起源，以及創作者潛藏於影像中的創作哲學。深入剖析《超人力霸王》獨一無二的世界觀：即使主角是英雄，每一隻怪獸也都擁有完整且充滿悲劇色彩的生命故事；同時細緻解析角色設計中蘊含的現代美學，並聚焦「特攝之神」圓谷英二及其團隊卓越的創意理念與精湛工藝，帶領觀眾重新追溯《超人力霸王》如何一步步走向世界，成為跨越一甲子、影響數代人的全球文化傳奇。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "hPTAbYgbtWU",
+        "cast": [
+          {
+            "name": "吉勒摩·戴托羅",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/cWvt8FdPAH0j3QtLzAN1j7ZJJrr.jpg"
+          },
+          {
+            "name": "是枝裕和",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/9Quu2Jo5ItVgs8V1YPCaLEHc8y1.jpg"
+          },
+          {
+            "name": "小島秀夫",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/jdBQjI91OFngDXMayXAP7fG0E7V.jpg"
+          },
+          {
+            "name": "庵野秀明",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/AfV9h1RW6uALpx751APdUoX8ONc.jpg"
+          },
+          {
+            "name": "樋口真嗣",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/xSEJ6JtRQQGpNwGruTjjYSzzN88.jpg"
+          },
+          {
+            "name": "尼可拉斯·溫丁·黑芬",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/o1PZZaqPbYt6f6e8PJkES73QKTG.jpg"
+          },
+          {
+            "name": "Shannon Tindle",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/zx2m6MTo7VAAwg6Jv5JIV36qu7I.jpg"
+          },
+          {
+            "name": "John Aoshima",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/hf3M06Zoe6cyidzUNvFxJOqcg0k.jpg"
+          },
+          {
+            "name": "成田浬",
+            "char": "Self",
+            "photo": null
+          },
+          {
+            "name": "Pat Cadigan",
+            "char": "Self",
+            "photo": null
+          },
+          {
+            "name": "清水節",
+            "char": "Self",
+            "photo": null
+          },
+          {
+            "name": "Noi Sawaragi",
+            "char": "Self",
+            "photo": null
+          },
+          {
+            "name": "Hidenori Okada",
+            "char": "Self",
+            "photo": null
+          },
+          {
+            "name": "黒部進",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/iMRdCBvpP7KPpb9EVNFWcAoEyL2.jpg"
+          },
+          {
+            "name": "桜井浩子",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/lSLY1Z9aZikNj4rqORoaIVoaz3w.jpg"
+          },
+          {
+            "name": "毒蝮三太夫",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/460Wofq48QIV2RUB4HTOCDFfNMu.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "中村裕",
+            "job": "Director"
+          },
+          {
+            "name": "吉田一貴",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "THE ORIGIN OF ULTRAMAN",
+        "platforms": [],
+        "popularity": 2.2067,
+        "imdbId": "tt43564240",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 105,
+          "genres": [
+            "紀錄"
+          ],
+          "synopsis": "由坎城金棕櫚名導是枝裕和親自企劃，以細膩的人文視角，深度探索日本流行文化中「英雄」與「怪獸」的起源，以及創作者潛藏於影像中的創作哲學。深入剖析《超人力霸王》獨一無二的世界觀：即使主角是英雄，每一隻怪獸也都擁有完整且充滿悲劇色彩的生命故事；同時細緻解析角色設計中蘊含的現代美學，並聚焦「特攝之神」圓谷英二及其團隊卓越的創意理念與精湛工藝，帶領觀眾重新追溯《超人力霸王》如何一步步走向世界，成為跨越一甲子、影響數代人的全球文化傳奇。",
+          "poster": "https://image.tmdb.org/t/p/w500/qqDn5zPaHnqBWsWo8rx8yYUW57x.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/yvLN3JRt877C7IQmtzGtL01aTqK.jpg",
+          "voteAverage": "",
+          "trailerKey": "hPTAbYgbtWU",
+          "imdbId": "tt43564240",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "吉勒摩·戴托羅",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/cWvt8FdPAH0j3QtLzAN1j7ZJJrr.jpg"
+            },
+            {
+              "name": "是枝裕和",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/9Quu2Jo5ItVgs8V1YPCaLEHc8y1.jpg"
+            },
+            {
+              "name": "小島秀夫",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/jdBQjI91OFngDXMayXAP7fG0E7V.jpg"
+            },
+            {
+              "name": "庵野秀明",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/AfV9h1RW6uALpx751APdUoX8ONc.jpg"
+            },
+            {
+              "name": "樋口真嗣",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/xSEJ6JtRQQGpNwGruTjjYSzzN88.jpg"
+            },
+            {
+              "name": "尼可拉斯·溫丁·黑芬",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/o1PZZaqPbYt6f6e8PJkES73QKTG.jpg"
+            },
+            {
+              "name": "Shannon Tindle",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/zx2m6MTo7VAAwg6Jv5JIV36qu7I.jpg"
+            },
+            {
+              "name": "John Aoshima",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/hf3M06Zoe6cyidzUNvFxJOqcg0k.jpg"
+            },
+            {
+              "name": "成田浬",
+              "char": "Self",
+              "photo": null
+            },
+            {
+              "name": "Pat Cadigan",
+              "char": "Self",
+              "photo": null
+            },
+            {
+              "name": "清水節",
+              "char": "Self",
+              "photo": null
+            },
+            {
+              "name": "Noi Sawaragi",
+              "char": "Self",
+              "photo": null
+            },
+            {
+              "name": "Hidenori Okada",
+              "char": "Self",
+              "photo": null
+            },
+            {
+              "name": "黒部進",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/iMRdCBvpP7KPpb9EVNFWcAoEyL2.jpg"
+            },
+            {
+              "name": "桜井浩子",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/lSLY1Z9aZikNj4rqORoaIVoaz3w.jpg"
+            },
+            {
+              "name": "毒蝮三太夫",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/460Wofq48QIV2RUB4HTOCDFfNMu.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "中村裕",
+              "job": "Director"
+            },
+            {
+              "name": "吉田一貴",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "THE ORIGIN OF ULTRAMAN",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1677118?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 41498,
         "titleZh": "航海王：強者天下",
@@ -2661,7 +5285,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/w78CkDQHkcAX1EnAgl3CP38nnq.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/lBWfbmUj9Jw0EM1OYtDXr0B5FPW.jpg",
-        "voteAverage": "6.8",
+        "voteAverage": "7.0",
         "genre": [
           "驚悚",
           "犯罪"
@@ -2785,7 +5409,7 @@
           "synopsis": "犯罪天才傑克計畫製造一場假死騙局，好跟妻子諾拉共同詐領3000萬美元保險金，還打算陷害妻子的年輕情夫查德成為殺害自己的兇手。然而，早已受夠傑克的諾拉心中另有盤算，她要真的殺死傑克，並獨吞這筆鉅款。這對爾虞我詐的夫妻，究竟誰能夠笑到最後？",
           "poster": "https://image.tmdb.org/t/p/w500/w78CkDQHkcAX1EnAgl3CP38nnq.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/lBWfbmUj9Jw0EM1OYtDXr0B5FPW.jpg",
-          "voteAverage": "6.8",
+          "voteAverage": "7.0",
           "trailerKey": "qxedNwL7OHo",
           "imdbId": "tt36948232",
           "countries": [
@@ -3440,11 +6064,11 @@
         "crew": [
           {
             "name": "押山清高",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "押山清高",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -3563,11 +6187,11 @@
           "crew": [
             {
               "name": "押山清高",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "押山清高",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5231,12 +7855,12 @@
         ],
         "crew": [
           {
-            "name": "石立太一",
-            "job": "Director"
-          },
-          {
             "name": "花田十輝",
             "job": "Screenplay"
+          },
+          {
+            "name": "石立太一",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -5352,12 +7976,12 @@
           ],
           "crew": [
             {
-              "name": "石立太一",
-              "job": "Director"
-            },
-            {
               "name": "花田十輝",
               "job": "Screenplay"
+            },
+            {
+              "name": "石立太一",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5943,7 +8567,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 212,
+            "votes": 217,
             "lastChanged": "2026-09-01T16:54:18.546062+08:00"
           },
           "mc": {
@@ -7836,7 +10460,7 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 111851527,
+        "revenue": 112526552,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
@@ -7954,7 +10578,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 111851527,
+          "revenue": 112526552,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Insidious: Out of the Further",
@@ -11036,11 +13660,11 @@
         "crew": [
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -11165,11 +13789,11 @@
           "crew": [
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -12705,7 +15329,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/re9VGdZlwTrzo9G5mQ0Ywtus6uU.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/8x9iKH8kWA0zdkgNdpAew7OstYe.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mMtUybQ6hL24FXo0F3Z4j2KG7kZ.jpg",
         "voteAverage": "8.5",
         "genre": [
           "動畫",
@@ -12847,7 +15471,7 @@
           ],
           "synopsis": "住在深山小鎮的女高中生宮水三葉，夢見自己變成東京男高中生。憧憬著都市生活的三葉，總在夢中盡情享受都市生活。而住在東京的男高中生立花瀧，則夢見了自己成為深山小鎮的女高中生。原來他們兩人的身心竟然都對調了，知道彼此存在後的瀧和三葉，終於知道了意外的真相……",
           "poster": "https://image.tmdb.org/t/p/w500/re9VGdZlwTrzo9G5mQ0Ywtus6uU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/8x9iKH8kWA0zdkgNdpAew7OstYe.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/mMtUybQ6hL24FXo0F3Z4j2KG7kZ.jpg",
           "voteAverage": "8.5",
           "trailerKey": "kkBdOiaDmRc",
           "imdbId": "tt5311514",
@@ -15272,2630 +17896,6 @@
     ],
     "soon": [
       {
-        "id": 44729,
-        "titleZh": "航海王：祭典男爵與神祕島",
-        "titleEn": "ワンピース the movie オマツリ男爵と秘密の島",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/5cwR2CNYpibjKPBA9imMBEQSNeH.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/xGJBLsiY0quc2pOcCH1MdnF5P8.jpg",
-        "voteAverage": "7.2",
-        "genre": [
-          "動作",
-          "動畫",
-          "喜劇",
-          "冒險",
-          "奇幻"
-        ],
-        "duration": 91,
-        "synopsis": "前進梅利號在「偉大的航路」中行駛著，突然魯夫發現了漂浮在汪洋大海中的玻璃瓶，瓶中放著一張描繪著花、寶箱和彈塗魚的狂歡島的地圖！與地圖一起放在瓶中的信上寫著：『你是從偉大航路裡的一億人中被選中的幸運的海賊』。這散發出巨臭的紙張令大家極其反胃，但魯夫卻是眼睛發亮，一副非去冒險不可、沒有人能阻止的了的表情。  一行人好不容易到達了目的地，卻發現這只是非常平凡的島嶼，正感到失望之際，突然間，一座光輝燦爛的主題公園伴隨著威嚴的進行曲出現在魯夫等人面前，更帶來頭上生滿葉子的海賊歌唱團。而在主題公園中央破地而出的，是擁有巨大身軀、肩膀上長著花的不可思議的男人---狂歡男爵。男爵對魯夫說：「我將會賜予你神秘的寶物，但是，有個條件…」。這所謂的條件，就是能夠通過男爵提出的地獄般試煉。地獄般的狂歡島！？完全被冒險沖昏了頭的魯夫毫不思考地接受了男爵的試煉…到底，等待著魯夫們的試煉是什麼？所謂的秘寶又是什麼！？",
-        "imdb": "7.2",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 3722,
-            "lastChanged": "2026-08-15T15:09:36.097690+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "田中真弓",
-            "char": "Monkey D. Luffy (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/by4t1tYtEXsfbFj9TvOjozBmQla.jpg"
-          },
-          {
-            "name": "中井和哉",
-            "char": "Roronoa Zoro (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/cOHSa0FBrG3u9P6g8A56sInkvod.jpg"
-          },
-          {
-            "name": "岡村明美",
-            "char": "Nami (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/qEwVfsrA23SCzRZMSlghw2sHctQ.jpg"
-          },
-          {
-            "name": "山口勝平",
-            "char": "Usopp (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/mJyxKRZxLv9D7LH5KcNSkjSKYOB.jpg"
-          },
-          {
-            "name": "平田廣明",
-            "char": "Sanji (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/mMWEdlssJm3TVuXW4Wb7pQeX20Z.jpg"
-          },
-          {
-            "name": "大谷育江",
-            "char": "Tony Tony Chopper (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/my8LBLQ4MsK4hRz1PAATIqtieaI.jpg"
-          },
-          {
-            "name": "山口由里子",
-            "char": "Nico Robin (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/14hV8oOMkZddPpvdpVSODRwVPgv.jpg"
-          },
-          {
-            "name": "大塚明夫",
-            "char": "Baron Omatsuri (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
-          },
-          {
-            "name": "草尾毅",
-            "char": "Muchigoro (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/gDiYLUdl9zXXJmhE0bAuB1Jm3FJ.jpg"
-          },
-          {
-            "name": "青野武",
-            "char": "Kerojii (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
-          },
-          {
-            "name": "佐藤正治",
-            "char": "Keroshot (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/lSmnhprafAe4RI27AZMzDpQ3Rjz.jpg"
-          },
-          {
-            "name": "八奈見乗児",
-            "char": "Kerodeek (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/khkGvegnYvx50pAEF1lms7ZKBqy.jpg"
-          },
-          {
-            "name": "山本圭子",
-            "char": "Keroko (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/4w3OVUdjzN0EpIij0gDYvnbOXx.jpg"
-          },
-          {
-            "name": "永井杏",
-            "char": "Daisy (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/9PTldNonMGxNHaWm2yBCJEab5jE.jpg"
-          },
-          {
-            "name": "池松壮亮",
-            "char": "DJ Gappa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/mNhgUAKfHdKQXhbhbAhKcRUHy30.jpg"
-          },
-          {
-            "name": "大本眞基子",
-            "char": "Rosa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/ffaYHdV7JOM6ngvpzhc34xxbdBW.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "細田守",
-            "job": "Director"
-          },
-          {
-            "name": "伊藤正宏",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 10494545,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "ワンピース the movie オマツリ男爵と秘密の島",
-        "platforms": [],
-        "popularity": 5.7491,
-        "imdbId": "tt1018764",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 91,
-          "genres": [
-            "動作",
-            "動畫",
-            "喜劇",
-            "冒險",
-            "奇幻"
-          ],
-          "synopsis": "前進梅利號在「偉大的航路」中行駛著，突然魯夫發現了漂浮在汪洋大海中的玻璃瓶，瓶中放著一張描繪著花、寶箱和彈塗魚的狂歡島的地圖！與地圖一起放在瓶中的信上寫著：『你是從偉大航路裡的一億人中被選中的幸運的海賊』。這散發出巨臭的紙張令大家極其反胃，但魯夫卻是眼睛發亮，一副非去冒險不可、沒有人能阻止的了的表情。  一行人好不容易到達了目的地，卻發現這只是非常平凡的島嶼，正感到失望之際，突然間，一座光輝燦爛的主題公園伴隨著威嚴的進行曲出現在魯夫等人面前，更帶來頭上生滿葉子的海賊歌唱團。而在主題公園中央破地而出的，是擁有巨大身軀、肩膀上長著花的不可思議的男人---狂歡男爵。男爵對魯夫說：「我將會賜予你神秘的寶物，但是，有個條件…」。這所謂的條件，就是能夠通過男爵提出的地獄般試煉。地獄般的狂歡島！？完全被冒險沖昏了頭的魯夫毫不思考地接受了男爵的試煉…到底，等待著魯夫們的試煉是什麼？所謂的秘寶又是什麼！？",
-          "poster": "https://image.tmdb.org/t/p/w500/5cwR2CNYpibjKPBA9imMBEQSNeH.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/xGJBLsiY0quc2pOcCH1MdnF5P8.jpg",
-          "voteAverage": "7.2",
-          "trailerKey": null,
-          "imdbId": "tt1018764",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "田中真弓",
-              "char": "Monkey D. Luffy (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/by4t1tYtEXsfbFj9TvOjozBmQla.jpg"
-            },
-            {
-              "name": "中井和哉",
-              "char": "Roronoa Zoro (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/cOHSa0FBrG3u9P6g8A56sInkvod.jpg"
-            },
-            {
-              "name": "岡村明美",
-              "char": "Nami (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/qEwVfsrA23SCzRZMSlghw2sHctQ.jpg"
-            },
-            {
-              "name": "山口勝平",
-              "char": "Usopp (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/mJyxKRZxLv9D7LH5KcNSkjSKYOB.jpg"
-            },
-            {
-              "name": "平田廣明",
-              "char": "Sanji (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/mMWEdlssJm3TVuXW4Wb7pQeX20Z.jpg"
-            },
-            {
-              "name": "大谷育江",
-              "char": "Tony Tony Chopper (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/my8LBLQ4MsK4hRz1PAATIqtieaI.jpg"
-            },
-            {
-              "name": "山口由里子",
-              "char": "Nico Robin (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/14hV8oOMkZddPpvdpVSODRwVPgv.jpg"
-            },
-            {
-              "name": "大塚明夫",
-              "char": "Baron Omatsuri (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
-            },
-            {
-              "name": "草尾毅",
-              "char": "Muchigoro (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/gDiYLUdl9zXXJmhE0bAuB1Jm3FJ.jpg"
-            },
-            {
-              "name": "青野武",
-              "char": "Kerojii (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
-            },
-            {
-              "name": "佐藤正治",
-              "char": "Keroshot (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/lSmnhprafAe4RI27AZMzDpQ3Rjz.jpg"
-            },
-            {
-              "name": "八奈見乗児",
-              "char": "Kerodeek (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/khkGvegnYvx50pAEF1lms7ZKBqy.jpg"
-            },
-            {
-              "name": "山本圭子",
-              "char": "Keroko (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/4w3OVUdjzN0EpIij0gDYvnbOXx.jpg"
-            },
-            {
-              "name": "永井杏",
-              "char": "Daisy (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/9PTldNonMGxNHaWm2yBCJEab5jE.jpg"
-            },
-            {
-              "name": "池松壮亮",
-              "char": "DJ Gappa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/mNhgUAKfHdKQXhbhbAhKcRUHy30.jpg"
-            },
-            {
-              "name": "大本眞基子",
-              "char": "Rosa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/ffaYHdV7JOM6ngvpzhc34xxbdBW.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "細田守",
-              "job": "Director"
-            },
-            {
-              "name": "伊藤正宏",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 10494545,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "ワンピース the movie オマツリ男爵と秘密の島",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/44729?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 71883,
-        "titleZh": "超時空甩尾",
-        "titleEn": "レッドライン",
-        "releaseDate": "2026-09-04",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/pTMurNQfneGDaplyHfwrcKxlG4s.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/hpiEAclfvNJOYPEIhmVewK3n77c.jpg",
-        "voteAverage": "7.5",
-        "genre": [
-          "動畫",
-          "動作",
-          "科幻"
-        ],
-        "duration": 102,
-        "synopsis": "在傳統四輪車輛被空氣動力車取代的時代，有著五年一度決定宇宙最快，為了獲勝即使使用武器也沒關係的賽事『REDLINE』。其最新一屆的的舉辦地選在了史上最險惡的星球「機界」，好戰的機界軍將車手視為是侵入者而出動了，受到了猛烈攻擊干擾的賽事其結果將會是……",
-        "imdb": "7.5",
-        "rt": "70%",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 20380,
-            "lastChanged": "2026-08-26T11:20:40.169539+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 10,
-            "lastChanged": "2026-08-26T11:20:40.169539+08:00"
-          }
-        },
-        "trailerKey": "Ac95HNpLvr4",
-        "cast": [
-          {
-            "name": "木村拓哉",
-            "char": "JP (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
-          },
-          {
-            "name": "蒼井優",
-            "char": "Sonoshee McLaren (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
-          },
-          {
-            "name": "淺野忠信",
-            "char": "Frisbee (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg"
-          },
-          {
-            "name": "青野武",
-            "char": "Old Man Mole (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
-          },
-          {
-            "name": "我修院達也",
-            "char": "Lynchman (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/fLqIdkShknsJmZy4EfBWuWyHN4C.jpg"
-          },
-          {
-            "name": "石塚運昇",
-            "char": "Colonel Volton (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/nmj1vTrJc0zvuUYqxSyWXmIGBlP.jpg"
-          },
-          {
-            "name": "三宅健太",
-            "char": "Little Deyzuna (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
-          },
-          {
-            "name": "森下能幸",
-            "char": "Shinkai (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/yG5wnn8UrvZ1qelNpit6Lnba0xC.jpg"
-          },
-          {
-            "name": "長島茂",
-            "char": "Inuki Boss (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/70OZtKOHEGvbuMQAbQ01cGxrUDO.jpg"
-          },
-          {
-            "name": "岡田義徳",
-            "char": "Johnny Boy (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/sAKmrT8MKckGjx2lHhEWvsUqyPP.jpg"
-          },
-          {
-            "name": "津田寛治",
-            "char": "Trava (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg"
-          },
-          {
-            "name": "堀內賢雄",
-            "char": "Titan (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/qIsrjSbtdhmmUdd3xvpDHNWRuJp.jpg"
-          },
-          {
-            "name": "郷里大輔",
-            "char": "Gori-Rider (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/g5OeBa8Rww8VNZiJuU7RhZxodwc.jpg"
-          },
-          {
-            "name": "轟木一騎",
-            "char": "Todoroki (voice)",
-            "photo": null
-          },
-          {
-            "name": "石井康嗣",
-            "char": "Machine Head (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/ao882dlS1ERrar6iq0qedBVBAhH.jpg"
-          },
-          {
-            "name": "廣田行生",
-            "char": "Roboworld President (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "小池健",
-            "job": "Director"
-          },
-          {
-            "name": "榎戸洋司",
-            "job": "Screenplay"
-          },
-          {
-            "name": "櫻井大樹",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "レッドライン",
-        "platforms": [
-          {
-            "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-          }
-        ],
-        "popularity": 3.8846,
-        "imdbId": "tt1483797",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 102,
-          "genres": [
-            "動畫",
-            "動作",
-            "科幻"
-          ],
-          "synopsis": "在傳統四輪車輛被空氣動力車取代的時代，有著五年一度決定宇宙最快，為了獲勝即使使用武器也沒關係的賽事『REDLINE』。其最新一屆的的舉辦地選在了史上最險惡的星球「機界」，好戰的機界軍將車手視為是侵入者而出動了，受到了猛烈攻擊干擾的賽事其結果將會是……",
-          "poster": "https://image.tmdb.org/t/p/w500/pTMurNQfneGDaplyHfwrcKxlG4s.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/hpiEAclfvNJOYPEIhmVewK3n77c.jpg",
-          "voteAverage": "7.5",
-          "trailerKey": "Ac95HNpLvr4",
-          "imdbId": "tt1483797",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "木村拓哉",
-              "char": "JP (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/sswCg8kvFsgSaVJwcIKKe4K7jOe.jpg"
-            },
-            {
-              "name": "蒼井優",
-              "char": "Sonoshee McLaren (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
-            },
-            {
-              "name": "淺野忠信",
-              "char": "Frisbee (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg"
-            },
-            {
-              "name": "青野武",
-              "char": "Old Man Mole (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/e3IaulH39g31sTIZuiUsXXc5iZj.jpg"
-            },
-            {
-              "name": "我修院達也",
-              "char": "Lynchman (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/fLqIdkShknsJmZy4EfBWuWyHN4C.jpg"
-            },
-            {
-              "name": "石塚運昇",
-              "char": "Colonel Volton (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/nmj1vTrJc0zvuUYqxSyWXmIGBlP.jpg"
-            },
-            {
-              "name": "三宅健太",
-              "char": "Little Deyzuna (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
-            },
-            {
-              "name": "森下能幸",
-              "char": "Shinkai (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/yG5wnn8UrvZ1qelNpit6Lnba0xC.jpg"
-            },
-            {
-              "name": "長島茂",
-              "char": "Inuki Boss (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/70OZtKOHEGvbuMQAbQ01cGxrUDO.jpg"
-            },
-            {
-              "name": "岡田義徳",
-              "char": "Johnny Boy (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/sAKmrT8MKckGjx2lHhEWvsUqyPP.jpg"
-            },
-            {
-              "name": "津田寛治",
-              "char": "Trava (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/eMydsUZjDuo9oS1asKI1I6cbpvL.jpg"
-            },
-            {
-              "name": "堀內賢雄",
-              "char": "Titan (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/qIsrjSbtdhmmUdd3xvpDHNWRuJp.jpg"
-            },
-            {
-              "name": "郷里大輔",
-              "char": "Gori-Rider (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/g5OeBa8Rww8VNZiJuU7RhZxodwc.jpg"
-            },
-            {
-              "name": "轟木一騎",
-              "char": "Todoroki (voice)",
-              "photo": null
-            },
-            {
-              "name": "石井康嗣",
-              "char": "Machine Head (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/ao882dlS1ERrar6iq0qedBVBAhH.jpg"
-            },
-            {
-              "name": "廣田行生",
-              "char": "Roboworld President (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "小池健",
-              "job": "Director"
-            },
-            {
-              "name": "榎戸洋司",
-              "job": "Screenplay"
-            },
-            {
-              "name": "櫻井大樹",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "レッドライン",
-          "platforms": [
-            {
-              "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/71883?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 660120,
-        "titleZh": "世界上最爛的人",
-        "titleEn": "Verdens verste menneske",
-        "releaseDate": "2026-09-04",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
-        "voteAverage": "7.4",
-        "genre": [
-          "劇情",
-          "愛情",
-          "喜劇"
-        ],
-        "duration": 128,
-        "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
-        "imdb": "7.7",
-        "rt": "96%",
-        "mc": "91",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 126525,
-            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 249,
-            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 47,
-            "lastChanged": "2026-08-29T23:34:02.047115+08:00"
-          }
-        },
-        "trailerKey": "odV6vEvHZMk",
-        "cast": [
-          {
-            "name": "蕾娜特·萊茵斯薇",
-            "char": "Julie",
-            "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
-          },
-          {
-            "name": "Anders Danielsen Lie",
-            "char": "Aksel",
-            "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
-          },
-          {
-            "name": "Herbert Nordrum",
-            "char": "Eivind",
-            "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
-          },
-          {
-            "name": "Hans Olav Brenner",
-            "char": "Ole Magnus",
-            "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
-          },
-          {
-            "name": "Helene Bjørnebye",
-            "char": "Karianne",
-            "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
-          },
-          {
-            "name": "Vidar Sandem",
-            "char": "Per Harald",
-            "photo": null
-          },
-          {
-            "name": "Maria Grazia Di Meo",
-            "char": "Sunniva",
-            "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
-          },
-          {
-            "name": "Lasse Gretland",
-            "char": "Kristoffer",
-            "photo": null
-          },
-          {
-            "name": "Karen Røise Kielland",
-            "char": "Tone",
-            "photo": null
-          },
-          {
-            "name": "Marianne Krogh",
-            "char": "Eva",
-            "photo": null
-          },
-          {
-            "name": "Thea Stabell",
-            "char": "Åse",
-            "photo": null
-          },
-          {
-            "name": "Deniz Kaya",
-            "char": "Adil",
-            "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
-          },
-          {
-            "name": "Eia Skjønsberg",
-            "char": "Synne",
-            "photo": null
-          },
-          {
-            "name": "Ruby Dagnall",
-            "char": "Young Actor",
-            "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
-          },
-          {
-            "name": "Torgny Amdam",
-            "char": "Director",
-            "photo": null
-          },
-          {
-            "name": "Rebekka Jynge",
-            "char": "Marthe Refstad",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
-          },
-          {
-            "name": "Eskil Vogt",
-            "job": "Writer"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Writer"
-          }
-        ],
-        "budget": 5000000,
-        "revenue": 12687507,
-        "status": "Released",
-        "origLang": "no",
-        "origTitle": "Verdens verste menneske",
-        "platforms": [
-          {
-            "name": "Netflix",
-            "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          }
-        ],
-        "popularity": 12.6462,
-        "imdbId": "tt10370710",
-        "countries": [
-          "Norway",
-          "Sweden",
-          "Denmark",
-          "France"
-        ],
-        "detail": {
-          "duration": 128,
-          "genres": [
-            "劇情",
-            "愛情",
-            "喜劇"
-          ],
-          "synopsis": "即將滿30歲的茱莉，人生總是一團亂。已經糟蹋了許多天份的她，對生活不安現狀，對未來仍在摸索，就連一直想跟她定下來的當紅漫畫家男友艾克索也受波及。某天晚上，她闖進一個不知名的派對，意外邂逅年輕迷人的小鮮肉艾文。很快地，她甩了年紀大她許多的艾克索，不顧一切跳進另一段新的關係裡，渴望能為自己帶來新的轉變。隨著日子繼續前進，不斷交織的衝動和遺憾卻也終將讓她意識到，那些人生中曾經做出的抉擇早已離她遠去……",
-          "poster": "https://image.tmdb.org/t/p/w500/zY1IjcQDBdPnna7V3MlrSX5d9m4.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
-          "voteAverage": "7.4",
-          "trailerKey": "odV6vEvHZMk",
-          "imdbId": "tt10370710",
-          "countries": [
-            "Norway",
-            "Sweden",
-            "Denmark",
-            "France"
-          ],
-          "cast": [
-            {
-              "name": "蕾娜特·萊茵斯薇",
-              "char": "Julie",
-              "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
-            },
-            {
-              "name": "Anders Danielsen Lie",
-              "char": "Aksel",
-              "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
-            },
-            {
-              "name": "Herbert Nordrum",
-              "char": "Eivind",
-              "photo": "https://image.tmdb.org/t/p/w500/wMT9o2WNfLGE4dD8Rkt2Rem4Ljt.jpg"
-            },
-            {
-              "name": "Hans Olav Brenner",
-              "char": "Ole Magnus",
-              "photo": "https://image.tmdb.org/t/p/w500/b1KniLUbYuys1U7CXMpIYSrOhXI.jpg"
-            },
-            {
-              "name": "Helene Bjørnebye",
-              "char": "Karianne",
-              "photo": "https://image.tmdb.org/t/p/w500/skJrpDchAL0eF7KsuW8AiH0k5rr.jpg"
-            },
-            {
-              "name": "Vidar Sandem",
-              "char": "Per Harald",
-              "photo": null
-            },
-            {
-              "name": "Maria Grazia Di Meo",
-              "char": "Sunniva",
-              "photo": "https://image.tmdb.org/t/p/w500/fMMDZFxF9fZLgKhZHdZuHaytNk9.jpg"
-            },
-            {
-              "name": "Lasse Gretland",
-              "char": "Kristoffer",
-              "photo": null
-            },
-            {
-              "name": "Karen Røise Kielland",
-              "char": "Tone",
-              "photo": null
-            },
-            {
-              "name": "Marianne Krogh",
-              "char": "Eva",
-              "photo": null
-            },
-            {
-              "name": "Thea Stabell",
-              "char": "Åse",
-              "photo": null
-            },
-            {
-              "name": "Deniz Kaya",
-              "char": "Adil",
-              "photo": "https://image.tmdb.org/t/p/w500/p34LLqd9EGzXhtI7qX7MKlQ0wgT.jpg"
-            },
-            {
-              "name": "Eia Skjønsberg",
-              "char": "Synne",
-              "photo": null
-            },
-            {
-              "name": "Ruby Dagnall",
-              "char": "Young Actor",
-              "photo": "https://image.tmdb.org/t/p/w500/AbXowCj9VYpPhdDujhadds0vSsX.jpg"
-            },
-            {
-              "name": "Torgny Amdam",
-              "char": "Director",
-              "photo": null
-            },
-            {
-              "name": "Rebekka Jynge",
-              "char": "Marthe Refstad",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
-            },
-            {
-              "name": "Eskil Vogt",
-              "job": "Writer"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Writer"
-            }
-          ],
-          "budget": 5000000,
-          "revenue": 12687507,
-          "status": "Released",
-          "origLang": "no",
-          "origTitle": "Verdens verste menneske",
-          "platforms": [
-            {
-              "name": "Netflix",
-              "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/660120?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 822653,
-        "titleZh": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
-        "titleEn": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/x2xLnSgaMN2ODozYBzCdV5mKmyO.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/tkEdEvqnSpfy1m2hjfre1c9JKKs.jpg",
-        "voteAverage": "",
-        "genre": [
-          "動畫",
-          "劇情",
-          "懸疑",
-          "奇幻"
-        ],
-        "duration": 120,
-        "synopsis": "為了不再失去小圓的焰變成了「惡魔」，進而改寫了世界。然而焰看似將一切掌握在手中，卻因為一個突如其來的存在，即將把這份扭曲的日常終結……",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "itg5-UEf0t0",
-        "cast": [
-          {
-            "name": "悠木碧",
-            "char": "Madoka Kaname (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
-          },
-          {
-            "name": "齋藤千和",
-            "char": "Homura Akemi (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/jxWuA4K0ZPkOQMeIgLlzaHSkgiV.jpg"
-          },
-          {
-            "name": "水橋香織",
-            "char": "Mami Tomoe (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/eDhVZ9en7T4lvsQ99OkRizroSQd.jpg"
-          },
-          {
-            "name": "喜多村英梨",
-            "char": "Sayaka Miki (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/AioVwYxfpr9zMEQPamI6j9JqXVn.jpg"
-          },
-          {
-            "name": "野中藍",
-            "char": "Kyoko Sakura (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/gEZVaoDeVK04HCmv0dJr6MGO9Se.jpg"
-          },
-          {
-            "name": "阿澄佳奈",
-            "char": "Nagisa Momoe (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/5GroiCPTO6PcYaZQXTGWltoT1kq.jpg"
-          },
-          {
-            "name": "加藤英美里",
-            "char": "Kyubey (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/m0zqjeg65sEe5TTy4mKqgwXVipI.jpg"
-          },
-          {
-            "name": "若山詩音",
-            "char": "Shichōka (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/b697ggFreuliEfl4TjLgxhJCQXr.jpg"
-          },
-          {
-            "name": "黑澤朋世",
-            "char": "Selma Therese (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/eSRnva88YVcUXlDHdVrhier2SGU.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "虛淵玄",
-            "job": "Screenplay"
-          },
-          {
-            "name": "宮本幸裕",
-            "job": "Director"
-          },
-          {
-            "name": "新房昭之",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-        "platforms": [],
-        "popularity": 45.646,
-        "imdbId": "tt14523706",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 120,
-          "genres": [
-            "動畫",
-            "劇情",
-            "懸疑",
-            "奇幻"
-          ],
-          "synopsis": "為了不再失去小圓的焰變成了「惡魔」，進而改寫了世界。然而焰看似將一切掌握在手中，卻因為一個突如其來的存在，即將把這份扭曲的日常終結……",
-          "poster": "https://image.tmdb.org/t/p/w500/x2xLnSgaMN2ODozYBzCdV5mKmyO.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/tkEdEvqnSpfy1m2hjfre1c9JKKs.jpg",
-          "voteAverage": "",
-          "trailerKey": "itg5-UEf0t0",
-          "imdbId": "tt14523706",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "悠木碧",
-              "char": "Madoka Kaname (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
-            },
-            {
-              "name": "齋藤千和",
-              "char": "Homura Akemi (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/jxWuA4K0ZPkOQMeIgLlzaHSkgiV.jpg"
-            },
-            {
-              "name": "水橋香織",
-              "char": "Mami Tomoe (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/eDhVZ9en7T4lvsQ99OkRizroSQd.jpg"
-            },
-            {
-              "name": "喜多村英梨",
-              "char": "Sayaka Miki (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/AioVwYxfpr9zMEQPamI6j9JqXVn.jpg"
-            },
-            {
-              "name": "野中藍",
-              "char": "Kyoko Sakura (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/gEZVaoDeVK04HCmv0dJr6MGO9Se.jpg"
-            },
-            {
-              "name": "阿澄佳奈",
-              "char": "Nagisa Momoe (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/5GroiCPTO6PcYaZQXTGWltoT1kq.jpg"
-            },
-            {
-              "name": "加藤英美里",
-              "char": "Kyubey (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/m0zqjeg65sEe5TTy4mKqgwXVipI.jpg"
-            },
-            {
-              "name": "若山詩音",
-              "char": "Shichōka (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/b697ggFreuliEfl4TjLgxhJCQXr.jpg"
-            },
-            {
-              "name": "黑澤朋世",
-              "char": "Selma Therese (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/eSRnva88YVcUXlDHdVrhier2SGU.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "虛淵玄",
-              "job": "Screenplay"
-            },
-            {
-              "name": "宮本幸裕",
-              "job": "Director"
-            },
-            {
-              "name": "新房昭之",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/822653?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1058424,
-        "titleZh": "希望：末日血戰",
-        "titleEn": "호프",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/tV2njcRac6rQsXjvomyDjPmcGvQ.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/o1UvmHqE2fh0Z62wls5bdrNtBN2.jpg",
-        "voteAverage": "8.3",
-        "genre": [
-          "科幻",
-          "懸疑",
-          "動作"
-        ],
-        "duration": 157,
-        "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
-        "imdb": "7.0",
-        "rt": "78%",
-        "mc": "68",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 678,
-            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 54,
-            "lastChanged": "2026-09-03T19:40:55.771626+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 19,
-            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
-          }
-        },
-        "trailerKey": "HZkGZqypnBM",
-        "cast": [
-          {
-            "name": "黃晸玟",
-            "char": "Go Bum-seok",
-            "photo": "https://image.tmdb.org/t/p/w500/hKF1uh0iEfuZlBE79CXPw415qyn.jpg"
-          },
-          {
-            "name": "趙寅成",
-            "char": "Go Sung-ki",
-            "photo": "https://image.tmdb.org/t/p/w500/69gbyFI0ET0l0dyjKChlx1Zx269.jpg"
-          },
-          {
-            "name": "鄭好娟",
-            "char": "Lim Sung-ae",
-            "photo": "https://image.tmdb.org/t/p/w500/AfQFFyGeG9xOQnEJb1Ash1RomkP.jpg"
-          },
-          {
-            "name": "艾莉西亞·薇坎德",
-            "char": "J'aur",
-            "photo": "https://image.tmdb.org/t/p/w500/lZu8qiTwiQIN96cuptgqMCCaUtg.jpg"
-          },
-          {
-            "name": "麥可法斯賓達",
-            "char": "Ma'veyyo",
-            "photo": "https://image.tmdb.org/t/p/w500/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
-          },
-          {
-            "name": "Taylor Russell",
-            "char": "Ai'dovor",
-            "photo": "https://image.tmdb.org/t/p/w500/wxY9vztrc69MolSJ1LDNg7sEADU.jpg"
-          },
-          {
-            "name": "卡麥隆·布瑞頓",
-            "char": "Va'migere",
-            "photo": "https://image.tmdb.org/t/p/w500/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg"
-          },
-          {
-            "name": "이상희",
-            "char": "Nak-yeon",
-            "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
-          },
-          {
-            "name": "音文碩",
-            "char": "Yang-bae",
-            "photo": "https://image.tmdb.org/t/p/w500/niV5OXu1cgKnlIU1Iamp1BVeCdT.jpg"
-          },
-          {
-            "name": "임현식",
-            "char": "Hae-sul",
-            "photo": "https://image.tmdb.org/t/p/w500/syQMfT7qchOwKDMXc3vQB57v1ZL.jpg"
-          },
-          {
-            "name": "黃石正",
-            "char": "Head of Health Center",
-            "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
-          },
-          {
-            "name": "한우열",
-            "char": "Wan-seob",
-            "photo": "https://image.tmdb.org/t/p/w500/xFZ7vSyvxcHDSuhg6G0MXpNsjcT.jpg"
-          },
-          {
-            "name": "주광현",
-            "char": "Byeong-jun",
-            "photo": "https://image.tmdb.org/t/p/w500/9wyb07dlA5IEGcmvHy61OLLvWuI.jpg"
-          },
-          {
-            "name": "오두원",
-            "char": "Heung-sik",
-            "photo": "https://image.tmdb.org/t/p/w500/sF19as2CTDbmU64oUAbILH5KRn4.jpg"
-          },
-          {
-            "name": "유준홍",
-            "char": "Cheong-san",
-            "photo": "https://image.tmdb.org/t/p/w500/n4EhRXDStUHZcShb97XmL36g9wA.jpg"
-          },
-          {
-            "name": "徐範植",
-            "char": "Hyun-ho",
-            "photo": "https://image.tmdb.org/t/p/w500/48iqXOCqTXAI3ukXGqBURWqpW0v.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "나홍진",
-            "job": "Director"
-          },
-          {
-            "name": "나홍진",
-            "job": "Writer"
-          }
-        ],
-        "budget": 40000000,
-        "revenue": 33800000,
-        "status": "Released",
-        "origLang": "ko",
-        "origTitle": "호프",
-        "platforms": [],
-        "popularity": 27.5424,
-        "imdbId": "tt27369017",
-        "countries": [
-          "South Korea"
-        ],
-        "detail": {
-          "duration": 157,
-          "genres": [
-            "科幻",
-            "懸疑",
-            "動作"
-          ],
-          "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
-          "poster": "https://image.tmdb.org/t/p/w500/tV2njcRac6rQsXjvomyDjPmcGvQ.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/o1UvmHqE2fh0Z62wls5bdrNtBN2.jpg",
-          "voteAverage": "8.3",
-          "trailerKey": "HZkGZqypnBM",
-          "imdbId": "tt27369017",
-          "countries": [
-            "South Korea"
-          ],
-          "cast": [
-            {
-              "name": "黃晸玟",
-              "char": "Go Bum-seok",
-              "photo": "https://image.tmdb.org/t/p/w500/hKF1uh0iEfuZlBE79CXPw415qyn.jpg"
-            },
-            {
-              "name": "趙寅成",
-              "char": "Go Sung-ki",
-              "photo": "https://image.tmdb.org/t/p/w500/69gbyFI0ET0l0dyjKChlx1Zx269.jpg"
-            },
-            {
-              "name": "鄭好娟",
-              "char": "Lim Sung-ae",
-              "photo": "https://image.tmdb.org/t/p/w500/AfQFFyGeG9xOQnEJb1Ash1RomkP.jpg"
-            },
-            {
-              "name": "艾莉西亞·薇坎德",
-              "char": "J'aur",
-              "photo": "https://image.tmdb.org/t/p/w500/lZu8qiTwiQIN96cuptgqMCCaUtg.jpg"
-            },
-            {
-              "name": "麥可法斯賓達",
-              "char": "Ma'veyyo",
-              "photo": "https://image.tmdb.org/t/p/w500/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
-            },
-            {
-              "name": "Taylor Russell",
-              "char": "Ai'dovor",
-              "photo": "https://image.tmdb.org/t/p/w500/wxY9vztrc69MolSJ1LDNg7sEADU.jpg"
-            },
-            {
-              "name": "卡麥隆·布瑞頓",
-              "char": "Va'migere",
-              "photo": "https://image.tmdb.org/t/p/w500/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg"
-            },
-            {
-              "name": "이상희",
-              "char": "Nak-yeon",
-              "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
-            },
-            {
-              "name": "音文碩",
-              "char": "Yang-bae",
-              "photo": "https://image.tmdb.org/t/p/w500/niV5OXu1cgKnlIU1Iamp1BVeCdT.jpg"
-            },
-            {
-              "name": "임현식",
-              "char": "Hae-sul",
-              "photo": "https://image.tmdb.org/t/p/w500/syQMfT7qchOwKDMXc3vQB57v1ZL.jpg"
-            },
-            {
-              "name": "黃石正",
-              "char": "Head of Health Center",
-              "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
-            },
-            {
-              "name": "한우열",
-              "char": "Wan-seob",
-              "photo": "https://image.tmdb.org/t/p/w500/xFZ7vSyvxcHDSuhg6G0MXpNsjcT.jpg"
-            },
-            {
-              "name": "주광현",
-              "char": "Byeong-jun",
-              "photo": "https://image.tmdb.org/t/p/w500/9wyb07dlA5IEGcmvHy61OLLvWuI.jpg"
-            },
-            {
-              "name": "오두원",
-              "char": "Heung-sik",
-              "photo": "https://image.tmdb.org/t/p/w500/sF19as2CTDbmU64oUAbILH5KRn4.jpg"
-            },
-            {
-              "name": "유준홍",
-              "char": "Cheong-san",
-              "photo": "https://image.tmdb.org/t/p/w500/n4EhRXDStUHZcShb97XmL36g9wA.jpg"
-            },
-            {
-              "name": "徐範植",
-              "char": "Hyun-ho",
-              "photo": "https://image.tmdb.org/t/p/w500/48iqXOCqTXAI3ukXGqBURWqpW0v.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "나홍진",
-              "job": "Director"
-            },
-            {
-              "name": "나홍진",
-              "job": "Writer"
-            }
-          ],
-          "budget": 40000000,
-          "revenue": 33800000,
-          "status": "Released",
-          "origLang": "ko",
-          "origTitle": "호프",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1058424?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1101412,
-        "titleZh": "墜2",
-        "titleEn": "Fall 2: Deadpoint",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
-        "voteAverage": "6.0",
-        "genre": [
-          "驚悚"
-        ],
-        "duration": 98,
-        "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
-        "imdb": "",
-        "rt": "46%",
-        "mc": "54",
-        "ratingMeta": {
-          "rt": {
-            "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-09-03T19:40:55.771626+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 6,
-            "lastChanged": "2026-09-03T19:40:55.771626+08:00"
-          }
-        },
-        "trailerKey": "9spjI5Y0jPg",
-        "cast": [
-          {
-            "name": "Harriet Slater",
-            "char": "Jax",
-            "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
-          },
-          {
-            "name": "Arsema Thomas",
-            "char": "Luce",
-            "photo": "https://image.tmdb.org/t/p/w500/gIsQlGmik9KYbJ086QgFTpvPAUP.jpg"
-          },
-          {
-            "name": "湯姆·布蘭妮",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg"
-          },
-          {
-            "name": "Einar Haraldsson",
-            "char": "Joe",
-            "photo": "https://image.tmdb.org/t/p/w500/fj6fMfpn1ROaMNhS2UUuHLuoGSi.jpg"
-          },
-          {
-            "name": "Juju Journey Brener",
-            "char": "Young Jax",
-            "photo": "https://image.tmdb.org/t/p/w500/huLe5YUe2ks6mmg1MUA1MGLwqV7.jpg"
-          },
-          {
-            "name": "Jordan Coleman",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
-          },
-          {
-            "name": "Alexandra Bartlett",
-            "char": "Nearby Climber",
-            "photo": null
-          },
-          {
-            "name": "Andrey Kasushkin",
-            "char": "Smuggler",
-            "photo": null
-          },
-          {
-            "name": "Virginia Gardner",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
-          },
-          {
-            "name": "Grace Caroline Currey",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Jonathan Frank",
-            "job": "Writer"
-          },
-          {
-            "name": "Peter Spierig",
-            "job": "Director"
-          },
-          {
-            "name": "Michael Spierig",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Fall 2: Deadpoint",
-        "platforms": [],
-        "popularity": 51.7971,
-        "imdbId": "tt31192372",
-        "countries": [
-          "United Kingdom",
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 98,
-          "genres": [
-            "驚悚"
-          ],
-          "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
-          "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
-          "voteAverage": "6.0",
-          "trailerKey": "9spjI5Y0jPg",
-          "imdbId": "tt31192372",
-          "countries": [
-            "United Kingdom",
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "Harriet Slater",
-              "char": "Jax",
-              "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
-            },
-            {
-              "name": "Arsema Thomas",
-              "char": "Luce",
-              "photo": "https://image.tmdb.org/t/p/w500/gIsQlGmik9KYbJ086QgFTpvPAUP.jpg"
-            },
-            {
-              "name": "湯姆·布蘭妮",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg"
-            },
-            {
-              "name": "Einar Haraldsson",
-              "char": "Joe",
-              "photo": "https://image.tmdb.org/t/p/w500/fj6fMfpn1ROaMNhS2UUuHLuoGSi.jpg"
-            },
-            {
-              "name": "Juju Journey Brener",
-              "char": "Young Jax",
-              "photo": "https://image.tmdb.org/t/p/w500/huLe5YUe2ks6mmg1MUA1MGLwqV7.jpg"
-            },
-            {
-              "name": "Jordan Coleman",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
-            },
-            {
-              "name": "Alexandra Bartlett",
-              "char": "Nearby Climber",
-              "photo": null
-            },
-            {
-              "name": "Andrey Kasushkin",
-              "char": "Smuggler",
-              "photo": null
-            },
-            {
-              "name": "Virginia Gardner",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
-            },
-            {
-              "name": "Grace Caroline Currey",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Jonathan Frank",
-              "job": "Writer"
-            },
-            {
-              "name": "Peter Spierig",
-              "job": "Director"
-            },
-            {
-              "name": "Michael Spierig",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Fall 2: Deadpoint",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1101412?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1509612,
-        "titleZh": "最後的作業",
-        "titleEn": "마지막 숙제",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
-        "voteAverage": "5.5",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 109,
-        "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "嚴泰雄",
-            "char": "Kim Yeong-nam",
-            "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
-          },
-          {
-            "name": "박상면",
-            "char": "Vice Principal",
-            "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
-          },
-          {
-            "name": "전수경",
-            "char": "Principal",
-            "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
-          },
-          {
-            "name": "윤현숙",
-            "char": "PTA President",
-            "photo": null
-          },
-          {
-            "name": "최이나",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "남대협",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "홍정민",
-            "char": "Eun-bi",
-            "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
-          },
-          {
-            "name": "이재준",
-            "char": "Joon-soo",
-            "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
-          },
-          {
-            "name": "조재영",
-            "char": "Chang-il",
-            "photo": null
-          },
-          {
-            "name": "임한빈",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
-          },
-          {
-            "name": "한창민",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
-          },
-          {
-            "name": "도연",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "이성종",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "이정철",
-            "job": "Director"
-          },
-          {
-            "name": "최석환",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ko",
-        "origTitle": "마지막 숙제",
-        "platforms": [],
-        "popularity": 0.8131,
-        "imdbId": "tt34539004",
-        "countries": [
-          "South Korea"
-        ],
-        "detail": {
-          "duration": 109,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
-          "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
-          "voteAverage": "5.5",
-          "trailerKey": null,
-          "imdbId": "tt34539004",
-          "countries": [
-            "South Korea"
-          ],
-          "cast": [
-            {
-              "name": "嚴泰雄",
-              "char": "Kim Yeong-nam",
-              "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
-            },
-            {
-              "name": "박상면",
-              "char": "Vice Principal",
-              "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
-            },
-            {
-              "name": "전수경",
-              "char": "Principal",
-              "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
-            },
-            {
-              "name": "윤현숙",
-              "char": "PTA President",
-              "photo": null
-            },
-            {
-              "name": "최이나",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "남대협",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "홍정민",
-              "char": "Eun-bi",
-              "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
-            },
-            {
-              "name": "이재준",
-              "char": "Joon-soo",
-              "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
-            },
-            {
-              "name": "조재영",
-              "char": "Chang-il",
-              "photo": null
-            },
-            {
-              "name": "임한빈",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
-            },
-            {
-              "name": "한창민",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
-            },
-            {
-              "name": "도연",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "이성종",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "이정철",
-              "job": "Director"
-            },
-            {
-              "name": "최석환",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ko",
-          "origTitle": "마지막 숙제",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1509612?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1516724,
-        "titleZh": "今晚我想來點棒的",
-        "titleEn": "Pour le plaisir",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
-        "voteAverage": "6.3",
-        "genre": [
-          "喜劇"
-        ],
-        "duration": 95,
-        "synopsis": "芬妮和發明家湯姆結婚二十年，婚姻幸福美滿，但芬妮有個令她煩惱的小祕密：她從未體驗過性高潮！得知此事的湯姆既生氣又沮喪，但深愛芬妮的他決定運用長才，要設計出一個能讓女性獲得快感的劃時代情趣玩具！",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "O6S_WKOIOoA",
-        "cast": [
-          {
-            "name": "Alexandra Lamy",
-            "char": "Fanny",
-            "photo": "https://image.tmdb.org/t/p/w500/m52fdEhVo6sBjEhgyM6bqFwC1HA.jpg"
-          },
-          {
-            "name": "François Cluzet",
-            "char": "Thomas",
-            "photo": "https://image.tmdb.org/t/p/w500/f6PO7Lkrem1N4UmklxHro2k6Jto.jpg"
-          },
-          {
-            "name": "Mitty Hazanavicius",
-            "char": "Elsa",
-            "photo": "https://image.tmdb.org/t/p/w500/4WzOf2T2NOlgG1t9k8SNMCfyhth.jpg"
-          },
-          {
-            "name": "Delphine Baril",
-            "char": "Pauline",
-            "photo": "https://image.tmdb.org/t/p/w500/571fTrSLspp8xPGkwwBUpKhl884.jpg"
-          },
-          {
-            "name": "François-Xavier Demaison",
-            "char": "Serge",
-            "photo": "https://image.tmdb.org/t/p/w500/u2WWC1YAJuZLLk6Ho4IzhNAozqe.jpg"
-          },
-          {
-            "name": "Reem Kherici",
-            "char": "Caroline",
-            "photo": "https://image.tmdb.org/t/p/w500/nfOOJB41gb0aFrPxfyF3u3i4HZn.jpg"
-          },
-          {
-            "name": "Kyan Khojandi",
-            "char": "Pierre",
-            "photo": "https://image.tmdb.org/t/p/w500/e2XcdnMz6hCVz4skEZXjsEr9A72.jpg"
-          },
-          {
-            "name": "Camille Aumont Carnel",
-            "char": "Camille",
-            "photo": null
-          },
-          {
-            "name": "François Bureloup",
-            "char": "Le gyneco",
-            "photo": "https://image.tmdb.org/t/p/w500/d9I0Qspe7U7V0VO1yMntaRvSG39.jpg"
-          },
-          {
-            "name": "Huguette Lacheau",
-            "char": "Odile",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Reem Kherici",
-            "job": "Director"
-          },
-          {
-            "name": "Reem Kherici",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Gari Kikoïne",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 7164147,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "Pour le plaisir",
-        "platforms": [],
-        "popularity": 3.248,
-        "imdbId": "tt38607784",
-        "countries": [
-          "France"
-        ],
-        "detail": {
-          "duration": 95,
-          "genres": [
-            "喜劇"
-          ],
-          "synopsis": "芬妮和發明家湯姆結婚二十年，婚姻幸福美滿，但芬妮有個令她煩惱的小祕密：她從未體驗過性高潮！得知此事的湯姆既生氣又沮喪，但深愛芬妮的他決定運用長才，要設計出一個能讓女性獲得快感的劃時代情趣玩具！",
-          "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
-          "voteAverage": "6.3",
-          "trailerKey": "O6S_WKOIOoA",
-          "imdbId": "tt38607784",
-          "countries": [
-            "France"
-          ],
-          "cast": [
-            {
-              "name": "Alexandra Lamy",
-              "char": "Fanny",
-              "photo": "https://image.tmdb.org/t/p/w500/m52fdEhVo6sBjEhgyM6bqFwC1HA.jpg"
-            },
-            {
-              "name": "François Cluzet",
-              "char": "Thomas",
-              "photo": "https://image.tmdb.org/t/p/w500/f6PO7Lkrem1N4UmklxHro2k6Jto.jpg"
-            },
-            {
-              "name": "Mitty Hazanavicius",
-              "char": "Elsa",
-              "photo": "https://image.tmdb.org/t/p/w500/4WzOf2T2NOlgG1t9k8SNMCfyhth.jpg"
-            },
-            {
-              "name": "Delphine Baril",
-              "char": "Pauline",
-              "photo": "https://image.tmdb.org/t/p/w500/571fTrSLspp8xPGkwwBUpKhl884.jpg"
-            },
-            {
-              "name": "François-Xavier Demaison",
-              "char": "Serge",
-              "photo": "https://image.tmdb.org/t/p/w500/u2WWC1YAJuZLLk6Ho4IzhNAozqe.jpg"
-            },
-            {
-              "name": "Reem Kherici",
-              "char": "Caroline",
-              "photo": "https://image.tmdb.org/t/p/w500/nfOOJB41gb0aFrPxfyF3u3i4HZn.jpg"
-            },
-            {
-              "name": "Kyan Khojandi",
-              "char": "Pierre",
-              "photo": "https://image.tmdb.org/t/p/w500/e2XcdnMz6hCVz4skEZXjsEr9A72.jpg"
-            },
-            {
-              "name": "Camille Aumont Carnel",
-              "char": "Camille",
-              "photo": null
-            },
-            {
-              "name": "François Bureloup",
-              "char": "Le gyneco",
-              "photo": "https://image.tmdb.org/t/p/w500/d9I0Qspe7U7V0VO1yMntaRvSG39.jpg"
-            },
-            {
-              "name": "Huguette Lacheau",
-              "char": "Odile",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Reem Kherici",
-              "job": "Director"
-            },
-            {
-              "name": "Reem Kherici",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Gari Kikoïne",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 7164147,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "Pour le plaisir",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1516724?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1530193,
-        "titleZh": "愛在記憶褪色時",
-        "titleEn": "Der verlorene Mann",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/kZFNCW9Mqcexd3IacN2fWtrNtv2.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/rs4d4EaonSqsrhXCB7p80Y83YAf.jpg",
-        "voteAverage": "6.2",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 100,
-        "synopsis": "藝術家漢娜與退休牧師伯恩德相伴多年，婚姻安穩得近乎停滯。某日，漢娜二十年前離婚的前夫庫爾特突然現身家門；罹患失智症的他，忘了兩人早已分開，也打亂夫妻井然有序的日常。從尷尬同住到重新靠近，三人在記憶逐漸褪色、關係不斷錯位之中，被迫面對愛、責任與陪伴的另一種可能。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Dagmar Manzel",
-            "char": "Hanne",
-            "photo": "https://image.tmdb.org/t/p/w500/eCG8xLUcMbmnYJUXBRnUCldw1zf.jpg"
-          },
-          {
-            "name": "Harald Krassnitzer",
-            "char": "Kurt",
-            "photo": "https://image.tmdb.org/t/p/w500/6TDRB8wDTG4OCUCX9drkEeAwYVR.jpg"
-          },
-          {
-            "name": "August Zirner",
-            "char": "Bernd",
-            "photo": "https://image.tmdb.org/t/p/w500/lYBV75sY8P8BWyvItcOSDiYxQV0.jpg"
-          },
-          {
-            "name": "Lene Dax",
-            "char": "Samira",
-            "photo": null
-          },
-          {
-            "name": "Dionne Wudu",
-            "char": "Ines",
-            "photo": null
-          },
-          {
-            "name": "Marion Freundorfer",
-            "char": "Heike",
-            "photo": null
-          },
-          {
-            "name": "Catalina Navarro Kirner",
-            "char": "Frau Engel",
-            "photo": "https://image.tmdb.org/t/p/w500/buL14n7dvKYZVV815ikIsEMOpCs.jpg"
-          },
-          {
-            "name": "Ewa Patricia Klosowski",
-            "char": "Frau Slansky",
-            "photo": null
-          },
-          {
-            "name": "Jessica Stautz",
-            "char": "Polizistin",
-            "photo": "https://image.tmdb.org/t/p/w500/e8TbtyZgwx9LWHTmioGYEVgapIy.jpg"
-          },
-          {
-            "name": "Sara Sukarie",
-            "char": "Dr. Lena Mai",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Welf Reinhart",
-            "job": "Director"
-          },
-          {
-            "name": "Tünde Sautier",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Welf Reinhart",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "de",
-        "origTitle": "Der verlorene Mann",
-        "platforms": [],
-        "popularity": 2.717,
-        "imdbId": "tt39602467",
-        "countries": [
-          "Germany"
-        ],
-        "detail": {
-          "duration": 100,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "藝術家漢娜與退休牧師伯恩德相伴多年，婚姻安穩得近乎停滯。某日，漢娜二十年前離婚的前夫庫爾特突然現身家門；罹患失智症的他，忘了兩人早已分開，也打亂夫妻井然有序的日常。從尷尬同住到重新靠近，三人在記憶逐漸褪色、關係不斷錯位之中，被迫面對愛、責任與陪伴的另一種可能。",
-          "poster": "https://image.tmdb.org/t/p/w500/kZFNCW9Mqcexd3IacN2fWtrNtv2.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/rs4d4EaonSqsrhXCB7p80Y83YAf.jpg",
-          "voteAverage": "6.2",
-          "trailerKey": null,
-          "imdbId": "tt39602467",
-          "countries": [
-            "Germany"
-          ],
-          "cast": [
-            {
-              "name": "Dagmar Manzel",
-              "char": "Hanne",
-              "photo": "https://image.tmdb.org/t/p/w500/eCG8xLUcMbmnYJUXBRnUCldw1zf.jpg"
-            },
-            {
-              "name": "Harald Krassnitzer",
-              "char": "Kurt",
-              "photo": "https://image.tmdb.org/t/p/w500/6TDRB8wDTG4OCUCX9drkEeAwYVR.jpg"
-            },
-            {
-              "name": "August Zirner",
-              "char": "Bernd",
-              "photo": "https://image.tmdb.org/t/p/w500/lYBV75sY8P8BWyvItcOSDiYxQV0.jpg"
-            },
-            {
-              "name": "Lene Dax",
-              "char": "Samira",
-              "photo": null
-            },
-            {
-              "name": "Dionne Wudu",
-              "char": "Ines",
-              "photo": null
-            },
-            {
-              "name": "Marion Freundorfer",
-              "char": "Heike",
-              "photo": null
-            },
-            {
-              "name": "Catalina Navarro Kirner",
-              "char": "Frau Engel",
-              "photo": "https://image.tmdb.org/t/p/w500/buL14n7dvKYZVV815ikIsEMOpCs.jpg"
-            },
-            {
-              "name": "Ewa Patricia Klosowski",
-              "char": "Frau Slansky",
-              "photo": null
-            },
-            {
-              "name": "Jessica Stautz",
-              "char": "Polizistin",
-              "photo": "https://image.tmdb.org/t/p/w500/e8TbtyZgwx9LWHTmioGYEVgapIy.jpg"
-            },
-            {
-              "name": "Sara Sukarie",
-              "char": "Dr. Lena Mai",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Welf Reinhart",
-              "job": "Director"
-            },
-            {
-              "name": "Tünde Sautier",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Welf Reinhart",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "de",
-          "origTitle": "Der verlorene Mann",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1530193?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1564172,
-        "titleZh": "我的爸爸是死刑犯",
-        "titleEn": "我的爸爸是死刑犯",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/b29dMsx7bcwzV9x80Z1azHnronS.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/8LR7v6QZsBaRuC3GqSJtIDKT0p6.jpg",
-        "voteAverage": "",
-        "genre": [
-          "紀錄"
-        ],
-        "duration": 111,
-        "synopsis": "2002年，鄭宜修的父親鄭武松殺了他的母親，他同時成了被害與加害者家屬。死刑早已定讞，父親迄今卻仍在獄中等待行刑。多年來，每逢台灣發生重大刑案，「亂世用重典」聲浪高漲，鄭宜修總是心情翻騰。殺母罪人或骨肉至親、該死或不該死，至極兩難在他心底衝撞。這個下午，他遇見另外兩位極刑犯的子女。三人背景迥異，卻因悲劇牽起共同生命經歷，他們漫談生活過往，也聊起難為外人道的長年陰影：缺席父親，與待決的死刑。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "bWBW10o0MeE",
-        "cast": [],
-        "crew": [
-          {
-            "name": "李家驊",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "我的爸爸是死刑犯",
-        "platforms": [],
-        "popularity": 1.3129,
-        "imdbId": null,
-        "countries": [
-          "Taiwan"
-        ],
-        "detail": {
-          "duration": 111,
-          "genres": [
-            "紀錄"
-          ],
-          "synopsis": "2002年，鄭宜修的父親鄭武松殺了他的母親，他同時成了被害與加害者家屬。死刑早已定讞，父親迄今卻仍在獄中等待行刑。多年來，每逢台灣發生重大刑案，「亂世用重典」聲浪高漲，鄭宜修總是心情翻騰。殺母罪人或骨肉至親、該死或不該死，至極兩難在他心底衝撞。這個下午，他遇見另外兩位極刑犯的子女。三人背景迥異，卻因悲劇牽起共同生命經歷，他們漫談生活過往，也聊起難為外人道的長年陰影：缺席父親，與待決的死刑。",
-          "poster": "https://image.tmdb.org/t/p/w500/b29dMsx7bcwzV9x80Z1azHnronS.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/8LR7v6QZsBaRuC3GqSJtIDKT0p6.jpg",
-          "voteAverage": "",
-          "trailerKey": "bWBW10o0MeE",
-          "imdbId": null,
-          "countries": [
-            "Taiwan"
-          ],
-          "cast": [],
-          "crew": [
-            {
-              "name": "李家驊",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "我的爸爸是死刑犯",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1564172?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1621964,
-        "titleZh": "天鵝與蝙蝠",
-        "titleEn": "白鳥とコウモリ",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/rjRI3z3lFepMlxk9ScUvlfNxrR3.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
-        "voteAverage": "",
-        "genre": [
-          "犯罪",
-          "劇情",
-          "家庭",
-          "懸疑"
-        ],
-        "duration": "",
-        "synopsis": "善良的律師白石健介被殺害了，隨著嫌犯倉木達郎俯首認罪，這起案件應該有了結果才對，但嫌犯的兒子倉木和真與被害人的女兒白石美令，都各自對自己父親的言行舉止感到疑惑。當嫌犯的兒子和被害人的女兒攜手合作時，那個「真相」竟開始動搖……",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "kPhEXOEKQ6A",
-        "cast": [
-          {
-            "name": "松村北斗",
-            "char": "Kuraki Kazuma",
-            "photo": "https://image.tmdb.org/t/p/w500/rtdHPwvoSel4m4CbJwZgcfnFsA0.jpg"
-          },
-          {
-            "name": "今田美櫻",
-            "char": "Shiraishi Mirei",
-            "photo": "https://image.tmdb.org/t/p/w500/1RiNJI6v9rBvATZ59m0CAZCFOpI.jpg"
-          },
-          {
-            "name": "三浦友和",
-            "char": "Kuraki Tatsuro",
-            "photo": "https://image.tmdb.org/t/p/w500/2tKusMF6dzGOfH7MM73FCsJzRoJ.jpg"
-          },
-          {
-            "name": "柄本佑",
-            "char": "Godai Tsutomu",
-            "photo": "https://image.tmdb.org/t/p/w500/bWFDE4bXUQxmyUey6sA5S84A3vG.jpg"
-          },
-          {
-            "name": "前原滉",
-            "char": "Nakamachi",
-            "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
-          },
-          {
-            "name": "Shikan Nakamura VIII",
-            "char": "Shiraishi Kensuke",
-            "photo": "https://image.tmdb.org/t/p/w500/ynUYolvgkAG5ozgf3ylIdJEu4Mk.jpg"
-          },
-          {
-            "name": "井川遥",
-            "char": "Asaba Orie",
-            "photo": "https://image.tmdb.org/t/p/w500/vmXd5rOa5YiIbQM01JNHYW3w58W.jpg"
-          },
-          {
-            "name": "吉田羊",
-            "char": "Shiraishi Ayako",
-            "photo": "https://image.tmdb.org/t/p/w500/3grR0n3XfGyv6nSB35LjjvKfmCI.jpg"
-          },
-          {
-            "name": "風吹純",
-            "char": "Asaba Yoko",
-            "photo": "https://image.tmdb.org/t/p/w500/uHF9NdKrG1bN7GwZB7PI21Rkdv8.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "岸善幸",
-            "job": "Director"
-          },
-          {
-            "name": "向井康介",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "白鳥とコウモリ",
-        "platforms": [],
-        "popularity": 1.3696,
-        "imdbId": null,
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "犯罪",
-            "劇情",
-            "家庭",
-            "懸疑"
-          ],
-          "synopsis": "善良的律師白石健介被殺害了，隨著嫌犯倉木達郎俯首認罪，這起案件應該有了結果才對，但嫌犯的兒子倉木和真與被害人的女兒白石美令，都各自對自己父親的言行舉止感到疑惑。當嫌犯的兒子和被害人的女兒攜手合作時，那個「真相」竟開始動搖……",
-          "poster": "https://image.tmdb.org/t/p/w500/rjRI3z3lFepMlxk9ScUvlfNxrR3.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
-          "voteAverage": "",
-          "trailerKey": "kPhEXOEKQ6A",
-          "imdbId": null,
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "松村北斗",
-              "char": "Kuraki Kazuma",
-              "photo": "https://image.tmdb.org/t/p/w500/rtdHPwvoSel4m4CbJwZgcfnFsA0.jpg"
-            },
-            {
-              "name": "今田美櫻",
-              "char": "Shiraishi Mirei",
-              "photo": "https://image.tmdb.org/t/p/w500/1RiNJI6v9rBvATZ59m0CAZCFOpI.jpg"
-            },
-            {
-              "name": "三浦友和",
-              "char": "Kuraki Tatsuro",
-              "photo": "https://image.tmdb.org/t/p/w500/2tKusMF6dzGOfH7MM73FCsJzRoJ.jpg"
-            },
-            {
-              "name": "柄本佑",
-              "char": "Godai Tsutomu",
-              "photo": "https://image.tmdb.org/t/p/w500/bWFDE4bXUQxmyUey6sA5S84A3vG.jpg"
-            },
-            {
-              "name": "前原滉",
-              "char": "Nakamachi",
-              "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
-            },
-            {
-              "name": "Shikan Nakamura VIII",
-              "char": "Shiraishi Kensuke",
-              "photo": "https://image.tmdb.org/t/p/w500/ynUYolvgkAG5ozgf3ylIdJEu4Mk.jpg"
-            },
-            {
-              "name": "井川遥",
-              "char": "Asaba Orie",
-              "photo": "https://image.tmdb.org/t/p/w500/vmXd5rOa5YiIbQM01JNHYW3w58W.jpg"
-            },
-            {
-              "name": "吉田羊",
-              "char": "Shiraishi Ayako",
-              "photo": "https://image.tmdb.org/t/p/w500/3grR0n3XfGyv6nSB35LjjvKfmCI.jpg"
-            },
-            {
-              "name": "風吹純",
-              "char": "Asaba Yoko",
-              "photo": "https://image.tmdb.org/t/p/w500/uHF9NdKrG1bN7GwZB7PI21Rkdv8.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "岸善幸",
-              "job": "Director"
-            },
-            {
-              "name": "向井康介",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "白鳥とコウモリ",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1621964?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1677118,
-        "titleZh": "超人力霸王．起源",
-        "titleEn": "THE ORIGIN OF ULTRAMAN",
-        "releaseDate": "2026-09-04",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/qqDn5zPaHnqBWsWo8rx8yYUW57x.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/yvLN3JRt877C7IQmtzGtL01aTqK.jpg",
-        "voteAverage": "",
-        "genre": [
-          "紀錄"
-        ],
-        "duration": 105,
-        "synopsis": "由坎城金棕櫚名導是枝裕和親自企劃，以細膩的人文視角，深度探索日本流行文化中「英雄」與「怪獸」的起源，以及創作者潛藏於影像中的創作哲學。深入剖析《超人力霸王》獨一無二的世界觀：即使主角是英雄，每一隻怪獸也都擁有完整且充滿悲劇色彩的生命故事；同時細緻解析角色設計中蘊含的現代美學，並聚焦「特攝之神」圓谷英二及其團隊卓越的創意理念與精湛工藝，帶領觀眾重新追溯《超人力霸王》如何一步步走向世界，成為跨越一甲子、影響數代人的全球文化傳奇。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "hPTAbYgbtWU",
-        "cast": [
-          {
-            "name": "吉勒摩·戴托羅",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/cWvt8FdPAH0j3QtLzAN1j7ZJJrr.jpg"
-          },
-          {
-            "name": "是枝裕和",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/9Quu2Jo5ItVgs8V1YPCaLEHc8y1.jpg"
-          },
-          {
-            "name": "小島秀夫",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/jdBQjI91OFngDXMayXAP7fG0E7V.jpg"
-          },
-          {
-            "name": "庵野秀明",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/AfV9h1RW6uALpx751APdUoX8ONc.jpg"
-          },
-          {
-            "name": "樋口真嗣",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/xSEJ6JtRQQGpNwGruTjjYSzzN88.jpg"
-          },
-          {
-            "name": "尼可拉斯·溫丁·黑芬",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/o1PZZaqPbYt6f6e8PJkES73QKTG.jpg"
-          },
-          {
-            "name": "Shannon Tindle",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/zx2m6MTo7VAAwg6Jv5JIV36qu7I.jpg"
-          },
-          {
-            "name": "John Aoshima",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/hf3M06Zoe6cyidzUNvFxJOqcg0k.jpg"
-          },
-          {
-            "name": "成田浬",
-            "char": "Self",
-            "photo": null
-          },
-          {
-            "name": "Pat Cadigan",
-            "char": "Self",
-            "photo": null
-          },
-          {
-            "name": "清水節",
-            "char": "Self",
-            "photo": null
-          },
-          {
-            "name": "Noi Sawaragi",
-            "char": "Self",
-            "photo": null
-          },
-          {
-            "name": "Hidenori Okada",
-            "char": "Self",
-            "photo": null
-          },
-          {
-            "name": "黒部進",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/iMRdCBvpP7KPpb9EVNFWcAoEyL2.jpg"
-          },
-          {
-            "name": "桜井浩子",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/lSLY1Z9aZikNj4rqORoaIVoaz3w.jpg"
-          },
-          {
-            "name": "毒蝮三太夫",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/460Wofq48QIV2RUB4HTOCDFfNMu.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "中村裕",
-            "job": "Director"
-          },
-          {
-            "name": "吉田一貴",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "THE ORIGIN OF ULTRAMAN",
-        "platforms": [],
-        "popularity": 2.2067,
-        "imdbId": "tt43564240",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 105,
-          "genres": [
-            "紀錄"
-          ],
-          "synopsis": "由坎城金棕櫚名導是枝裕和親自企劃，以細膩的人文視角，深度探索日本流行文化中「英雄」與「怪獸」的起源，以及創作者潛藏於影像中的創作哲學。深入剖析《超人力霸王》獨一無二的世界觀：即使主角是英雄，每一隻怪獸也都擁有完整且充滿悲劇色彩的生命故事；同時細緻解析角色設計中蘊含的現代美學，並聚焦「特攝之神」圓谷英二及其團隊卓越的創意理念與精湛工藝，帶領觀眾重新追溯《超人力霸王》如何一步步走向世界，成為跨越一甲子、影響數代人的全球文化傳奇。",
-          "poster": "https://image.tmdb.org/t/p/w500/qqDn5zPaHnqBWsWo8rx8yYUW57x.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/yvLN3JRt877C7IQmtzGtL01aTqK.jpg",
-          "voteAverage": "",
-          "trailerKey": "hPTAbYgbtWU",
-          "imdbId": "tt43564240",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "吉勒摩·戴托羅",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/cWvt8FdPAH0j3QtLzAN1j7ZJJrr.jpg"
-            },
-            {
-              "name": "是枝裕和",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/9Quu2Jo5ItVgs8V1YPCaLEHc8y1.jpg"
-            },
-            {
-              "name": "小島秀夫",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/jdBQjI91OFngDXMayXAP7fG0E7V.jpg"
-            },
-            {
-              "name": "庵野秀明",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/AfV9h1RW6uALpx751APdUoX8ONc.jpg"
-            },
-            {
-              "name": "樋口真嗣",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/xSEJ6JtRQQGpNwGruTjjYSzzN88.jpg"
-            },
-            {
-              "name": "尼可拉斯·溫丁·黑芬",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/o1PZZaqPbYt6f6e8PJkES73QKTG.jpg"
-            },
-            {
-              "name": "Shannon Tindle",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/zx2m6MTo7VAAwg6Jv5JIV36qu7I.jpg"
-            },
-            {
-              "name": "John Aoshima",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/hf3M06Zoe6cyidzUNvFxJOqcg0k.jpg"
-            },
-            {
-              "name": "成田浬",
-              "char": "Self",
-              "photo": null
-            },
-            {
-              "name": "Pat Cadigan",
-              "char": "Self",
-              "photo": null
-            },
-            {
-              "name": "清水節",
-              "char": "Self",
-              "photo": null
-            },
-            {
-              "name": "Noi Sawaragi",
-              "char": "Self",
-              "photo": null
-            },
-            {
-              "name": "Hidenori Okada",
-              "char": "Self",
-              "photo": null
-            },
-            {
-              "name": "黒部進",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/iMRdCBvpP7KPpb9EVNFWcAoEyL2.jpg"
-            },
-            {
-              "name": "桜井浩子",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/lSLY1Z9aZikNj4rqORoaIVoaz3w.jpg"
-            },
-            {
-              "name": "毒蝮三太夫",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/460Wofq48QIV2RUB4HTOCDFfNMu.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "中村裕",
-              "job": "Director"
-            },
-            {
-              "name": "吉田一貴",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "THE ORIGIN OF ULTRAMAN",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1677118?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1620001,
         "titleZh": "吾子吾弟",
         "titleEn": "National Theatre Live: All My Sons",
@@ -18161,11 +18161,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -18234,11 +18234,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -18381,11 +18381,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -18511,11 +18511,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -19248,11 +19248,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -19379,11 +19379,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -19529,12 +19529,12 @@
         ],
         "crew": [
           {
-            "name": "加藤祐司",
-            "job": "Writer"
-          },
-          {
             "name": "相米慎二",
             "job": "Director"
+          },
+          {
+            "name": "加藤祐司",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -19646,12 +19646,12 @@
           ],
           "crew": [
             {
-              "name": "加藤祐司",
-              "job": "Writer"
-            },
-            {
               "name": "相米慎二",
               "job": "Director"
+            },
+            {
+              "name": "加藤祐司",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -23874,11 +23874,11 @@
         ],
         "crew": [
           {
-            "name": "Yung-hsiang Chang",
+            "name": "Liu Wei-Bin",
             "job": "Screenplay"
           },
           {
-            "name": "Liu Wei-Bin",
+            "name": "Yung-hsiang Chang",
             "job": "Screenplay"
           },
           {
@@ -23995,11 +23995,11 @@
           ],
           "crew": [
             {
-              "name": "Yung-hsiang Chang",
+              "name": "Liu Wei-Bin",
               "job": "Screenplay"
             },
             {
-              "name": "Liu Wei-Bin",
+              "name": "Yung-hsiang Chang",
               "job": "Screenplay"
             },
             {
@@ -30128,7 +30128,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/xghtLO90cQPybH85aw1C3bZ2P3.jpg",
-        "voteAverage": "",
+        "voteAverage": "10.0",
         "genre": [
           "犯罪",
           "驚悚"
@@ -30252,7 +30252,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/xghtLO90cQPybH85aw1C3bZ2P3.jpg",
-          "voteAverage": "",
+          "voteAverage": "10.0",
           "trailerKey": null,
           "imdbId": "tt35866986",
           "countries": [
