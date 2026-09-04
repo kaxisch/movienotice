@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T05:18:16.679185+08:00",
+  "generated_at": "2026-09-04T07:32:23.065491+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 77,
@@ -303,8 +303,8 @@
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           }
         },
@@ -584,13 +584,13 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 249,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 47,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           }
         },
@@ -1073,8 +1073,8 @@
             "lastChanged": "2026-09-04T05:18:16.679185+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 19,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -1343,52 +1343,82 @@
         "cast": [
           {
             "name": "Harriet Slater",
-            "char": "Jax",
+            "char": "Jax Hunter",
             "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
           },
           {
             "name": "Arsema Thomas",
             "char": "Luce",
-            "photo": "https://image.tmdb.org/t/p/w500/gIsQlGmik9KYbJ086QgFTpvPAUP.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/lvzhZIbkWIVLSRHsOICs9o37g2I.jpg"
           },
           {
             "name": "湯姆·布蘭妮",
-            "char": "",
+            "char": "Jon Platt",
             "photo": "https://image.tmdb.org/t/p/w500/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg"
           },
           {
+            "name": "Virginia Gardner",
+            "char": "Shiloh Hunter",
+            "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
+          },
+          {
+            "name": "สหจักร บุญธนกิจ",
+            "char": "Thai Barman",
+            "photo": "https://image.tmdb.org/t/p/w500/a36MI02S0f11bJZjBoxkZTsUDAK.jpg"
+          },
+          {
+            "name": "Korakod Yensuk",
+            "char": "Large Woman",
+            "photo": null
+          },
+          {
+            "name": "Jordan Coleman",
+            "char": "Luce",
+            "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
+          },
+          {
+            "name": "Maryna Bennett",
+            "char": "Female Teenager",
+            "photo": "https://image.tmdb.org/t/p/w500/alqr0Hx7kgLZ38QvwdQKFIA8Y8l.jpg"
+          },
+          {
+            "name": "Noen Perez",
+            "char": "Male Teenager",
+            "photo": "https://image.tmdb.org/t/p/w500/aokiUcwDJlZcTditvVfkRaSLG98.jpg"
+          },
+          {
+            "name": "Nattapon Sukphiam",
+            "char": "Thai Climber 1",
+            "photo": null
+          },
+          {
+            "name": "Charlie Ruedpokanon",
+            "char": "Thai Climber 2",
+            "photo": "https://image.tmdb.org/t/p/w500/rzZ5WGsuXmnb1tIoPTPQvOJuArn.jpg"
+          },
+          {
             "name": "Einar Haraldsson",
-            "char": "Joe",
+            "char": "Joe (uncredited)",
             "photo": "https://image.tmdb.org/t/p/w500/fj6fMfpn1ROaMNhS2UUuHLuoGSi.jpg"
           },
           {
             "name": "Juju Journey Brener",
-            "char": "Young Jax",
+            "char": "Young Jax (uncredited)",
             "photo": "https://image.tmdb.org/t/p/w500/huLe5YUe2ks6mmg1MUA1MGLwqV7.jpg"
           },
           {
-            "name": "Jordan Coleman",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
-          },
-          {
             "name": "Alexandra Bartlett",
-            "char": "Nearby Climber",
+            "char": "Nearby Climber (uncredited)",
             "photo": null
           },
           {
             "name": "Andrey Kasushkin",
-            "char": "Smuggler",
+            "char": "Smuggler (uncredited)",
             "photo": null
           },
           {
-            "name": "Virginia Gardner",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
-          },
-          {
             "name": "Grace Caroline Currey",
-            "char": "",
+            "char": "Becky Connor (uncredited)",
             "photo": "https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
           }
         ],
@@ -1436,52 +1466,82 @@
           "cast": [
             {
               "name": "Harriet Slater",
-              "char": "Jax",
+              "char": "Jax Hunter",
               "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
             },
             {
               "name": "Arsema Thomas",
               "char": "Luce",
-              "photo": "https://image.tmdb.org/t/p/w500/gIsQlGmik9KYbJ086QgFTpvPAUP.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/lvzhZIbkWIVLSRHsOICs9o37g2I.jpg"
             },
             {
               "name": "湯姆·布蘭妮",
-              "char": "",
+              "char": "Jon Platt",
               "photo": "https://image.tmdb.org/t/p/w500/qSe3SuZHVPR5AMOuOAGxLdD6kYv.jpg"
             },
             {
+              "name": "Virginia Gardner",
+              "char": "Shiloh Hunter",
+              "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
+            },
+            {
+              "name": "สหจักร บุญธนกิจ",
+              "char": "Thai Barman",
+              "photo": "https://image.tmdb.org/t/p/w500/a36MI02S0f11bJZjBoxkZTsUDAK.jpg"
+            },
+            {
+              "name": "Korakod Yensuk",
+              "char": "Large Woman",
+              "photo": null
+            },
+            {
+              "name": "Jordan Coleman",
+              "char": "Luce",
+              "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
+            },
+            {
+              "name": "Maryna Bennett",
+              "char": "Female Teenager",
+              "photo": "https://image.tmdb.org/t/p/w500/alqr0Hx7kgLZ38QvwdQKFIA8Y8l.jpg"
+            },
+            {
+              "name": "Noen Perez",
+              "char": "Male Teenager",
+              "photo": "https://image.tmdb.org/t/p/w500/aokiUcwDJlZcTditvVfkRaSLG98.jpg"
+            },
+            {
+              "name": "Nattapon Sukphiam",
+              "char": "Thai Climber 1",
+              "photo": null
+            },
+            {
+              "name": "Charlie Ruedpokanon",
+              "char": "Thai Climber 2",
+              "photo": "https://image.tmdb.org/t/p/w500/rzZ5WGsuXmnb1tIoPTPQvOJuArn.jpg"
+            },
+            {
               "name": "Einar Haraldsson",
-              "char": "Joe",
+              "char": "Joe (uncredited)",
               "photo": "https://image.tmdb.org/t/p/w500/fj6fMfpn1ROaMNhS2UUuHLuoGSi.jpg"
             },
             {
               "name": "Juju Journey Brener",
-              "char": "Young Jax",
+              "char": "Young Jax (uncredited)",
               "photo": "https://image.tmdb.org/t/p/w500/huLe5YUe2ks6mmg1MUA1MGLwqV7.jpg"
             },
             {
-              "name": "Jordan Coleman",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/57FrMe016RyMHm8WDL2mK7P0bmS.jpg"
-            },
-            {
               "name": "Alexandra Bartlett",
-              "char": "Nearby Climber",
+              "char": "Nearby Climber (uncredited)",
               "photo": null
             },
             {
               "name": "Andrey Kasushkin",
-              "char": "Smuggler",
+              "char": "Smuggler (uncredited)",
               "photo": null
             },
             {
-              "name": "Virginia Gardner",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/1DnNysK267b0te48KCkUlTKoTzj.jpg"
-            },
-            {
               "name": "Grace Caroline Currey",
-              "char": "",
+              "char": "Becky Connor (uncredited)",
               "photo": "https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg"
             }
           ],
@@ -2923,13 +2983,13 @@
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 62,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 14,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           }
         },
@@ -3191,13 +3251,13 @@
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 73,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 23,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           }
         },
@@ -3454,13 +3514,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 201,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 37,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -3746,8 +3806,8 @@
             "lastChanged": "2026-08-28T20:10:43.018005+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 47,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -4170,8 +4230,8 @@
         "mc": "",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 24,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           }
         },
@@ -5968,13 +6028,13 @@
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 6,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           }
         },
@@ -7265,8 +7325,8 @@
             "lastChanged": "2026-08-12T22:03:18.770486+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 25,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T22:03:18.770486+08:00"
           }
         },
@@ -8571,8 +8631,8 @@
             "lastChanged": "2026-09-01T16:54:18.546062+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 51,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-08T10:31:29.092386+08:00"
           }
         },
@@ -9238,8 +9298,8 @@
         "mc": "85",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 82,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-05T15:29:54.157693+08:00"
           },
           "mc": {
@@ -10361,8 +10421,8 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-25T05:58:27.192616+08:00"
           }
         },
@@ -10614,7 +10674,7 @@
         "synopsis": "",
         "imdb": "6.4",
         "rt": "44%",
-        "mc": "42",
+        "mc": "43",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -10627,9 +10687,9 @@
             "lastChanged": "2026-08-29T12:47:06.964153+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 36,
-            "lastChanged": "2026-08-31T14:03:02.404815+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-04T07:32:23.065491+08:00"
           }
         },
         "trailerKey": "lIl2WzFiF0A",
@@ -11029,7 +11089,7 @@
         "synopsis": "「超拖」樂團雙人組有夠會拖，兩個懷著成名夢的好友，為了登上表演舞台，每天在破公寓談鋼琴練肖話，還找紀錄片團隊貼身側拍。只是十七年過去，少年變大叔，卻連場地預約電話都還沒打。他們以為只要幹場大事，例如跳下電視塔，成為話題，自然會被注意到。當計劃再度挫屎，習慣言聽計從的那個開始意識到，多年搭檔可能才是拖垮人生的雷包，於是打算拆夥落跑。誰知竟把箱型車開成時光機，陰錯陽差將所有人帶回十七年前的那一天！",
         "imdb": "8.0",
         "rt": "95%",
-        "mc": "80",
+        "mc": "78",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -11037,14 +11097,14 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 126,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 26,
-            "lastChanged": "2026-08-31T14:03:02.404815+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-04T07:32:23.065491+08:00"
           }
         },
         "trailerKey": "gVI8kzhK-Lo",
@@ -11295,7 +11355,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-        "voteAverage": "7.1",
+        "voteAverage": "7.0",
         "genre": [
           "動畫",
           "冒險",
@@ -11320,8 +11380,8 @@
             "lastChanged": "2026-08-31T14:03:02.404815+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 4,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-16T03:01:03.289398+08:00"
           }
         },
@@ -11445,7 +11505,7 @@
           "synopsis": "飛船被捲入一場神祕風暴，汪汪隊的狗狗們於是迫降在一座充滿恐龍的未知熱帶小島，並遇見了受困在小島多年、精通所有恐龍知識的狗狗雷克斯。汪汪隊的死對頭韓丁納市長覬覦小島的天然資源，便展開魯莽的開採行動，卻意外引發了休眠火山的大爆發。汪汪隊因此必須展開前所未有、風險升級的恐龍級救援任務，在這座小島上的一切滅絕之前阻止韓丁納。",
           "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-          "voteAverage": "7.1",
+          "voteAverage": "7.0",
           "trailerKey": "-juvWuW6hLg",
           "imdbId": "tt29356163",
           "countries": [
@@ -11900,7 +11960,7 @@
         "synopsis": "美麗的小鎮出現了一位神祕的冰淇淋小販，他供應的美味冰品讓孩子們瘋狂，全鎮因此失控！",
         "imdb": "3.8",
         "rt": "26%",
-        "mc": "33",
+        "mc": "34",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -11913,9 +11973,9 @@
             "lastChanged": "2026-08-25T00:07:37.587943+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 20,
-            "lastChanged": "2026-08-31T14:03:02.404815+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-04T07:32:23.065491+08:00"
           }
         },
         "trailerKey": "0pIKTDz689U",
@@ -12443,8 +12503,8 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 27,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -12797,13 +12857,13 @@
             "lastChanged": "2026-08-22T12:10:10.070395+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 317,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-22T12:10:10.070395+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 52,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           }
         },
@@ -13564,13 +13624,13 @@
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 92,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 27,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           }
         },
@@ -13660,11 +13720,11 @@
         "crew": [
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -13789,11 +13849,11 @@
           "crew": [
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -13840,8 +13900,8 @@
         "mc": "85",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 31,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
@@ -14109,13 +14169,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 322,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 38,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -14205,11 +14265,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -14325,11 +14385,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -15077,8 +15137,8 @@
             "lastChanged": "2026-08-27T22:36:32.469597+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 56,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -15348,13 +15408,13 @@
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 121,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-06T04:12:54.683546+08:00"
           }
         },
@@ -15597,7 +15657,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/d7MiRRamaAe58DacYEo2ZgziBBv.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
         "voteAverage": "8.0",
         "genre": [
           "冒險",
@@ -15621,8 +15681,8 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 63,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -15740,7 +15800,7 @@
           ],
           "synopsis": "講述奧德修斯在特洛伊戰爭後歷經艱險返鄉，途中遭遇獨眼巨人、女妖與女巫，最終與妻子重逢的傳奇旅程。",
           "poster": "https://image.tmdb.org/t/p/w500/d7MiRRamaAe58DacYEo2ZgziBBv.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
           "voteAverage": "8.0",
           "trailerKey": "2rzJuAIj0VI",
           "imdbId": "tt33764258",
@@ -16028,8 +16088,8 @@
         "mc": "42",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 197,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
@@ -16476,8 +16536,8 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 30,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-09T10:38:03.783105+08:00"
           }
         },
@@ -17020,13 +17080,13 @@
             "lastChanged": "2026-08-22T12:10:10.070395+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 324,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 55,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -18276,7 +18336,7 @@
         "duration": 98,
         "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
         "imdb": "7.8",
-        "rt": "96%",
+        "rt": "98%",
         "mc": "87",
         "ratingMeta": {
           "imdb": {
@@ -18285,13 +18345,13 @@
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 57,
-            "lastChanged": "2026-08-31T14:03:02.404815+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-04T07:32:23.065491+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           }
         },
@@ -18573,13 +18633,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 55,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -18863,13 +18923,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 61,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -19152,13 +19212,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 36,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -19248,11 +19308,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -19379,11 +19439,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -19439,8 +19499,8 @@
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 6,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           }
         },
@@ -19529,12 +19589,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -19646,12 +19706,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -20219,8 +20279,8 @@
             "lastChanged": "2026-09-03T01:35:38.728747+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 35,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-03T01:35:38.728747+08:00"
           }
         },
@@ -20682,13 +20742,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 60,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -21166,10 +21226,6 @@
           {
             "name": "是枝裕和",
             "job": "Writer"
-          },
-          {
-            "name": "是枝裕和",
-            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -21262,10 +21318,6 @@
             {
               "name": "是枝裕和",
               "job": "Writer"
-            },
-            {
-              "name": "是枝裕和",
-              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -21984,13 +22036,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 152,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 31,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -22456,13 +22508,13 @@
         "duration": 127,
         "synopsis": "年輕的卡夫卡，白天是保險公司職員，在保守的社會、動盪的經濟與戰爭陰影步步逼近的時代，他一邊應付工作與家庭，一邊努力替自己的文字留下一席之地。從19世紀末的布拉格出發，沿著卡夫卡短暫的人生，追尋他如何一步步成為現代文學巨人，重新認識這位早在一百年前就把「厭世」書寫成藝術的大文豪。",
         "imdb": "",
-        "rt": "75%",
+        "rt": "71%",
         "mc": "64",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 59,
-            "lastChanged": "2026-08-31T14:03:02.404815+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-04T07:32:23.065491+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -22733,13 +22785,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 90,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -24596,13 +24648,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 40,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 18,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -27128,7 +27180,7 @@
         "synopsis": "俄羅斯教師祕密記錄在烏俄戰爭期間，小鎮學校成了徵兵中心的過程，帶出教育工作者在軍事化背景下面臨的道德困境。",
         "imdb": "7.9",
         "rt": "100%",
-        "mc": "80",
+        "mc": "79",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -27136,14 +27188,14 @@
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 52,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-08-31T14:03:02.404815+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-04T07:32:23.065491+08:00"
           }
         },
         "trailerKey": "CLNG8B60APk",
