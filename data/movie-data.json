@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-05T00:35:24.072087+08:00",
+  "generated_at": "2026-09-05T05:01:33.835992+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 77,
-    "soon_count": 71
+    "soon_count": 72
   },
   "movies": {
     "now": [
@@ -584,8 +584,8 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 249,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
@@ -699,7 +699,7 @@
         "platforms": [
           {
             "name": "Netflix",
-            "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+            "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
           }
         ],
         "popularity": 14.9048,
@@ -833,7 +833,7 @@
           "platforms": [
             {
               "name": "Netflix",
-              "logo": "/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+              "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
             }
           ]
         },
@@ -1060,7 +1060,7 @@
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "7.0",
         "rt": "76%",
-        "mc": "67",
+        "mc": "68",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -1074,8 +1074,8 @@
           },
           "mc": {
             "source": "mdblist",
-            "votes": 21,
-            "lastChanged": "2026-09-04T13:02:31.420954+08:00"
+            "votes": 23,
+            "lastChanged": "2026-09-05T05:01:33.835992+08:00"
           }
         },
         "trailerKey": "HZkGZqypnBM",
@@ -1318,7 +1318,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/aBtS3yCWReAen3OefxBXedbArFI.jpg",
-        "voteAverage": "6.0",
+        "voteAverage": "5.7",
         "genre": [
           "驚悚"
         ],
@@ -1456,7 +1456,7 @@
           "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/aBtS3yCWReAen3OefxBXedbArFI.jpg",
-          "voteAverage": "6.0",
+          "voteAverage": "5.7",
           "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
@@ -3336,16 +3336,16 @@
         ],
         "crew": [
           {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
             "name": "Eskil Vogt",
             "job": "Screenplay"
           },
           {
             "name": "Joachim Trier",
             "job": "Screenplay"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -3356,7 +3356,7 @@
         "platforms": [
           {
             "name": "Catchplay",
-            "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+            "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
           }
         ],
         "popularity": 4.5667,
@@ -3452,16 +3452,16 @@
           ],
           "crew": [
             {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
               "name": "Eskil Vogt",
               "job": "Screenplay"
             },
             {
               "name": "Joachim Trier",
               "job": "Screenplay"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -3472,7 +3472,7 @@
           "platforms": [
             {
               "name": "Catchplay",
-              "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+              "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
             }
           ]
         },
@@ -4635,7 +4635,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6MeOQiciVhuoGLpuN6Plyesrz2h.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/kmFZZDT3WGGGJ8MelXRyvu1LXFx.jpg",
-        "voteAverage": "",
+        "voteAverage": "8.0",
         "genre": [
           "動畫",
           "劇情",
@@ -4761,7 +4761,7 @@
           "synopsis": "北宇治高中三年級學生、成為管樂社社長的黃前久美子，對於會有什麼樣的新社員加入、身為社長是否能讓大家團結一心，以及是否能實現獲得「全國大賽金獎」的願望——這些都讓她內心既期待又不安，身為社長的她每天都十分忙碌。某日，來自全國大賽常勝學校的轉學生黑江真由，突然出現在久美子面前，她所吹奏的樂器是和久美子一樣的粗管上低音號……",
           "poster": "https://image.tmdb.org/t/p/w500/6MeOQiciVhuoGLpuN6Plyesrz2h.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/kmFZZDT3WGGGJ8MelXRyvu1LXFx.jpg",
-          "voteAverage": "",
+          "voteAverage": "8.0",
           "trailerKey": null,
           "imdbId": "tt39123182",
           "countries": [
@@ -6130,11 +6130,11 @@
         "crew": [
           {
             "name": "押山清高",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "押山清高",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -6253,11 +6253,11 @@
           "crew": [
             {
               "name": "押山清高",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "押山清高",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -6292,7 +6292,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/mhCYb5x6NW2jK6yoJPtQqZAYPO2.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/yhCHnkidQdR3lksbdyFxduRXFPK.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
         "voteAverage": "6.7",
         "genre": [
           "科幻",
@@ -6434,7 +6434,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/mhCYb5x6NW2jK6yoJPtQqZAYPO2.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/yhCHnkidQdR3lksbdyFxduRXFPK.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
           "voteAverage": "6.7",
           "trailerKey": "5I3Tal6CXB0",
           "imdbId": "tt21285562",
@@ -7446,7 +7446,7 @@
         "platforms": [
           {
             "name": "MUBI",
-            "logo": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg"
+            "logo": "/k7iSlvgWzZuO4zU5PcBjhABMuia.png"
           }
         ],
         "popularity": 1.9709,
@@ -7572,7 +7572,7 @@
           "platforms": [
             {
               "name": "MUBI",
-              "logo": "/x570VpH2C9EKDf1riP83rYc5dnL.jpg"
+              "logo": "/k7iSlvgWzZuO4zU5PcBjhABMuia.png"
             }
           ]
         },
@@ -8187,14 +8187,14 @@
         "crew": [
           {
             "name": "Philippe Lacheau",
-            "job": "Writer"
-          },
-          {
-            "name": "Pierre Lacheau",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Pierre Dudan",
+            "job": "Writer"
+          },
+          {
+            "name": "Philippe Lacheau",
             "job": "Writer"
           }
         ],
@@ -8312,14 +8312,14 @@
           "crew": [
             {
               "name": "Philippe Lacheau",
-              "job": "Writer"
-            },
-            {
-              "name": "Pierre Lacheau",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Pierre Dudan",
+              "job": "Writer"
+            },
+            {
+              "name": "Philippe Lacheau",
               "job": "Writer"
             }
           ],
@@ -10684,7 +10684,7 @@
         "duration": 102,
         "synopsis": "",
         "imdb": "6.4",
-        "rt": "44%",
+        "rt": "43%",
         "mc": "42",
         "ratingMeta": {
           "imdb": {
@@ -10694,8 +10694,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 187,
-            "lastChanged": "2026-08-29T12:47:06.964153+08:00"
+            "votes": 190,
+            "lastChanged": "2026-09-05T05:01:33.835992+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -11962,7 +11962,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-        "voteAverage": "4.7",
+        "voteAverage": "4.6",
         "genre": [
           "恐怖",
           "喜劇"
@@ -12110,7 +12110,7 @@
           "synopsis": "美麗的小鎮出現了一位神祕的冰淇淋小販，他供應的美味冰品讓孩子們瘋狂，全鎮因此失控！",
           "poster": "https://image.tmdb.org/t/p/w500/lf89jx4ob718OZAMvxWoxwkIf1O.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-          "voteAverage": "4.7",
+          "voteAverage": "4.6",
           "trailerKey": "0pIKTDz689U",
           "imdbId": "tt36893729",
           "countries": [
@@ -12856,7 +12856,7 @@
           "懸疑",
           "驚悚"
         ],
-        "duration": 99,
+        "duration": 100,
         "synopsis": "當一場神祕的宇宙事件，撕裂了寧靜的橡樹街社區後，整個社區竟被傳送到未知之地，普拉特一家人很快就發現：生存關鍵取決於當一家人置身於難以辨認的環境時，是否能夠緊密團結在一起。",
         "imdb": "6.6",
         "rt": "86%",
@@ -12964,11 +12964,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 80000000,
@@ -12983,7 +12983,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": 99,
+          "duration": 100,
           "genres": [
             "科幻",
             "懸疑",
@@ -13083,11 +13083,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 80000000,
@@ -16085,7 +16085,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/tAjwKOQHHRgtMpt1sR28sIFWrO5.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-        "voteAverage": "6.1",
+        "voteAverage": "6.2",
         "genre": [
           "家庭",
           "奇幻",
@@ -16228,7 +16228,7 @@
           "synopsis": "《海洋奇緣》真人版，由艾美獎及東尼獎雙項贏家熱門音樂劇《漢米爾頓》導演湯瑪斯凱爾執導，電影敘述海洋公主莫娜遠渡重洋、與莫逆之交毛伊攜手拯救族人，除了巨石強森以真面目再度飾演廣受喜愛的毛伊，在前導預告中光以背面現身即令影迷興奮不已，莫娜則由萬中選一的耀眼新星凱薩琳拉加阿雅（Catherine Lagaʻaia）初登大銀幕、一展驚豔歌喉！",
           "poster": "https://image.tmdb.org/t/p/w500/tAjwKOQHHRgtMpt1sR28sIFWrO5.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-          "voteAverage": "6.1",
+          "voteAverage": "6.2",
           "trailerKey": "S1_X0mQeaxw",
           "imdbId": "tt27419466",
           "countries": [
@@ -17206,7 +17206,7 @@
         "platforms": [
           {
             "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
         "popularity": 181.7712,
@@ -17335,7 +17335,7 @@
           "platforms": [
             {
               "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
             }
           ]
         },
@@ -18759,7 +18759,7 @@
         "platforms": [
           {
             "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
         "popularity": 6.796,
@@ -18891,7 +18891,7 @@
           "platforms": [
             {
               "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
             }
           ]
         },
@@ -19030,11 +19030,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -19162,11 +19162,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -19319,11 +19319,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -19450,11 +19450,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -20572,12 +20572,12 @@
           {
             "name": "喬伊·金",
             "char": "Kylie Owens",
-            "photo": "https://image.tmdb.org/t/p/w500/phKZYVBOXhhWcKDobxydanCI21B.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/94c69mPYSK9jFsAEu0OKB7Qs684.jpg"
           },
           {
             "name": "麥茜·威廉士",
             "char": "Antonia Owens",
-            "photo": "https://image.tmdb.org/t/p/w500/5RjD4dDpRDAhalFtvcUj7zdLWYB.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/zk1rlBVci2fmnFhMezaPpa4kwZF.jpg"
           },
           {
             "name": "索洛·馬里達納",
@@ -20660,12 +20660,12 @@
             {
               "name": "喬伊·金",
               "char": "Kylie Owens",
-              "photo": "https://image.tmdb.org/t/p/w500/phKZYVBOXhhWcKDobxydanCI21B.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/94c69mPYSK9jFsAEu0OKB7Qs684.jpg"
             },
             {
               "name": "麥茜·威廉士",
               "char": "Antonia Owens",
-              "photo": "https://image.tmdb.org/t/p/w500/5RjD4dDpRDAhalFtvcUj7zdLWYB.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/zk1rlBVci2fmnFhMezaPpa4kwZF.jpg"
             },
             {
               "name": "索洛·馬里達納",
@@ -22158,11 +22158,11 @@
         "platforms": [
           {
             "name": "Catchplay",
-            "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+            "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
           },
           {
             "name": "Apple TV Store",
-            "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
         "popularity": 5.3354,
@@ -22292,11 +22292,11 @@
           "platforms": [
             {
               "name": "Catchplay",
-              "logo": "/9qSVItdgkVHH3Rrl9db2yRWsgBq.jpg"
+              "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
             },
             {
               "name": "Apple TV Store",
-              "logo": "/SPnB1qiCkYfirS2it3hZORwGVn.jpg"
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
             }
           ]
         },
@@ -22327,7 +22327,7 @@
           "科幻"
         ],
         "duration": 105,
-        "synopsis": "",
+        "synopsis": "一場突如其來的意外，讓一群踏上冒險的年輕旅人，被迫受困於太平洋深處的一座神祕荒島。在那片陽光照不到的陰暗叢林中，潛伏著一個被人類隱瞞、封印了數個世紀的遠古邪靈。隨著夜幕降臨，無情的獵殺遊戲正式啟動，古老的詛咒將這群年輕人拖入無邊夢魘。面對超越常理的未知恐怖，他們必須在理智崩潰前，拚死找出逃離這座死亡禁地的方法。",
         "imdb": "",
         "rt": "",
         "mc": "",
@@ -22412,7 +22412,7 @@
             "恐怖",
             "科幻"
           ],
-          "synopsis": "",
+          "synopsis": "一場突如其來的意外，讓一群踏上冒險的年輕旅人，被迫受困於太平洋深處的一座神祕荒島。在那片陽光照不到的陰暗叢林中，潛伏著一個被人類隱瞞、封印了數個世紀的遠古邪靈。隨著夜幕降臨，無情的獵殺遊戲正式啟動，古老的詛咒將這群年輕人拖入無邊夢魘。面對超越常理的未知恐怖，他們必須在理智崩潰前，拚死找出逃離這座死亡禁地的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/nB1Hq2Gz8Q5lUQAGDHNdXbyfoIF.jpg",
           "backdrop": null,
           "voteAverage": "",
@@ -23937,11 +23937,11 @@
         ],
         "crew": [
           {
-            "name": "Yung-hsiang Chang",
+            "name": "Liu Wei-Bin",
             "job": "Screenplay"
           },
           {
-            "name": "Liu Wei-Bin",
+            "name": "Yung-hsiang Chang",
             "job": "Screenplay"
           },
           {
@@ -24058,11 +24058,11 @@
           ],
           "crew": [
             {
-              "name": "Yung-hsiang Chang",
+              "name": "Liu Wei-Bin",
               "job": "Screenplay"
             },
             {
-              "name": "Liu Wei-Bin",
+              "name": "Yung-hsiang Chang",
               "job": "Screenplay"
             },
             {
@@ -24156,11 +24156,11 @@
         "crew": [
           {
             "name": "張艾嘉",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "張艾嘉",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -24229,11 +24229,11 @@
           "crew": [
             {
               "name": "張艾嘉",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "張艾嘉",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -26213,11 +26213,11 @@
         "backdrop": "https://image.tmdb.org/t/p/w1280/qhWwvo77nXAdiWuL4eP7JXLWErs.jpg",
         "voteAverage": "",
         "genre": [
-          "冒險",
           "動畫",
+          "冒險",
+          "奇幻",
           "喜劇",
-          "家庭",
-          "奇幻"
+          "家庭"
         ],
         "duration": 109,
         "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
@@ -26321,11 +26321,11 @@
         "detail": {
           "duration": 109,
           "genres": [
-            "冒險",
             "動畫",
+            "冒險",
+            "奇幻",
             "喜劇",
-            "家庭",
-            "奇幻"
+            "家庭"
           ],
           "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
@@ -30191,7 +30191,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/xghtLO90cQPybH85aw1C3bZ2P3.jpg",
-        "voteAverage": "10.0",
+        "voteAverage": "",
         "genre": [
           "犯罪",
           "驚悚"
@@ -30297,7 +30297,7 @@
         ],
         "budget": 0,
         "revenue": 0,
-        "status": "Released",
+        "status": "Post Production",
         "origLang": "en",
         "origTitle": "How to Rob a Bank",
         "platforms": [],
@@ -30315,7 +30315,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/xghtLO90cQPybH85aw1C3bZ2P3.jpg",
-          "voteAverage": "10.0",
+          "voteAverage": "",
           "trailerKey": null,
           "imdbId": "tt35866986",
           "countries": [
@@ -30415,7 +30415,7 @@
           ],
           "budget": 0,
           "revenue": 0,
-          "status": "Released",
+          "status": "Post Production",
           "origLang": "en",
           "origTitle": "How to Rob a Bank",
           "platforms": []
@@ -31032,7 +31032,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/wWwKURKR0fCav2tnoDfmsPZlmEM.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/nubnNXuMArUhiDW1nUevGsG65x9.jpg",
         "voteAverage": "",
         "genre": [
           "喜劇",
@@ -31126,7 +31126,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/wWwKURKR0fCav2tnoDfmsPZlmEM.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/nubnNXuMArUhiDW1nUevGsG65x9.jpg",
           "voteAverage": "",
           "trailerKey": "ouOu_Xyh6GE",
           "imdbId": "tt34966140",
@@ -31203,6 +31203,188 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1400336?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1758055,
+        "titleZh": "高寮大劫",
+        "titleEn": "高寮大劫",
+        "releaseDate": "2026-12-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-12-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": null,
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "犯罪",
+          "劇情"
+        ],
+        "duration": "",
+        "synopsis": "改編自台灣轟動一時的高雄監獄挾持事件。講述 6 名囚犯為了抗議司法不公，策劃了一場大膽的越獄與挾持人質行動。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "李銘順",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/8QvDvbUxkwhbrWHr3Po6liw1jAX.jpg"
+          },
+          {
+            "name": "鄭人碩",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/g4LRyvuiNpDcS7E7I8pH6de062e.jpg"
+          },
+          {
+            "name": "王陽明",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/nQOR7SgqYD4JcdEcTWEERsQcgnm.jpg"
+          },
+          {
+            "name": "高捷",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/i8YxYsAxMKAq6xUgMLS6sAxMCaM.jpg"
+          },
+          {
+            "name": "金介文",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/lZWdwrjVBlkWoRcm9PrNUBQgmLX.jpg"
+          },
+          {
+            "name": "陳以文",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/svFlxUu5ItDWYvDRR1JNrRZFHAU.jpg"
+          },
+          {
+            "name": "金士傑",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/pQZBMC8ed97f5MNWb64SOlahxGs.jpg"
+          },
+          {
+            "name": "李宗霖",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/r0S88LjQXCrBpw45bktYyupbJFr.jpg"
+          },
+          {
+            "name": "九孔",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/eGk2ixDt6db9vIdUc0P8TB3tvbJ.jpg"
+          },
+          {
+            "name": "林暉閔",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/ydzzbaJyTkOV4C1t69ShK1gQerq.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "黃朝亮",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "zh",
+        "origTitle": "高寮大劫",
+        "platforms": [],
+        "popularity": 0.5415,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "犯罪",
+            "劇情"
+          ],
+          "synopsis": "改編自台灣轟動一時的高雄監獄挾持事件。講述 6 名囚犯為了抗議司法不公，策劃了一場大膽的越獄與挾持人質行動。",
+          "poster": null,
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "李銘順",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/8QvDvbUxkwhbrWHr3Po6liw1jAX.jpg"
+            },
+            {
+              "name": "鄭人碩",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/g4LRyvuiNpDcS7E7I8pH6de062e.jpg"
+            },
+            {
+              "name": "王陽明",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/nQOR7SgqYD4JcdEcTWEERsQcgnm.jpg"
+            },
+            {
+              "name": "高捷",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/i8YxYsAxMKAq6xUgMLS6sAxMCaM.jpg"
+            },
+            {
+              "name": "金介文",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/lZWdwrjVBlkWoRcm9PrNUBQgmLX.jpg"
+            },
+            {
+              "name": "陳以文",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/svFlxUu5ItDWYvDRR1JNrRZFHAU.jpg"
+            },
+            {
+              "name": "金士傑",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/pQZBMC8ed97f5MNWb64SOlahxGs.jpg"
+            },
+            {
+              "name": "李宗霖",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/r0S88LjQXCrBpw45bktYyupbJFr.jpg"
+            },
+            {
+              "name": "九孔",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/eGk2ixDt6db9vIdUc0P8TB3tvbJ.jpg"
+            },
+            {
+              "name": "林暉閔",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/ydzzbaJyTkOV4C1t69ShK1gQerq.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "黃朝亮",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "zh",
+          "origTitle": "高寮大劫",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1758055?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -31743,7 +31925,7 @@
           {
             "name": "安東尼·麥基",
             "char": "Sam Wilson / Captain America",
-            "photo": "https://image.tmdb.org/t/p/w500/eZSIDrtTzhvabyjrmIITQLsjx8h.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/vecvTm7SimizluJkyIwBxeLbvRm.jpg"
           },
           {
             "name": "佛蘿倫絲·普伊",
@@ -31866,7 +32048,7 @@
             {
               "name": "安東尼·麥基",
               "char": "Sam Wilson / Captain America",
-              "photo": "https://image.tmdb.org/t/p/w500/eZSIDrtTzhvabyjrmIITQLsjx8h.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/vecvTm7SimizluJkyIwBxeLbvRm.jpg"
             },
             {
               "name": "佛蘿倫絲·普伊",
