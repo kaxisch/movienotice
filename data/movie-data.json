@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T01:34:21.417100+08:00",
+  "generated_at": "2026-09-06T01:59:11.290046+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 66,
@@ -150,7 +150,7 @@
         "titleZh": "鯨魚馬戲團",
         "titleEn": "Werckmeister harmóniák",
         "releaseDate": "2026-09-05",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-09-05",
@@ -3744,16 +3744,16 @@
         ],
         "crew": [
           {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
             "name": "Eskil Vogt",
             "job": "Screenplay"
           },
           {
             "name": "Joachim Trier",
             "job": "Screenplay"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -3860,16 +3860,16 @@
           ],
           "crew": [
             {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
               "name": "Eskil Vogt",
               "job": "Screenplay"
             },
             {
               "name": "Joachim Trier",
               "job": "Screenplay"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -3990,8 +3990,8 @@
             "job": "Director"
           }
         ],
-        "budget": 6000000,
-        "revenue": 51750814,
+        "budget": 12000000,
+        "revenue": 55482264,
         "status": "Released",
         "origLang": "en",
         "origTitle": "The Invite",
@@ -4073,8 +4073,8 @@
               "job": "Director"
             }
           ],
-          "budget": 6000000,
-          "revenue": 51750814,
+          "budget": 12000000,
+          "revenue": 55482264,
           "status": "Released",
           "origLang": "en",
           "origTitle": "The Invite",
@@ -11479,7 +11479,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/66iXxqnBzsjSnmamIkWcVRCz8zX.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/5DVu86dq8afvR0Wp4eXsRsxgGa6.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ddrLCUT8hqSlEICTTbdlFYB5q4a.jpg",
         "voteAverage": "",
@@ -11604,7 +11604,7 @@
             "喜劇"
           ],
           "synopsis": "麻花捲店倒閉危機、丈夫失業、女兒正值叛逆期……生活已經夠混亂了，沒想到連豪華遊輪之旅都不得安寧！當昔日王牌特務重出江湖，這趟假期，將變成最失控的爆笑救援行動！",
-          "poster": "https://image.tmdb.org/t/p/w500/66iXxqnBzsjSnmamIkWcVRCz8zX.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/5DVu86dq8afvR0Wp4eXsRsxgGa6.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ddrLCUT8hqSlEICTTbdlFYB5q4a.jpg",
           "voteAverage": "",
           "trailerKey": "R8QgX2bwgSM",
@@ -12640,11 +12640,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -12760,11 +12760,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -15807,11 +15807,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -15880,11 +15880,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -23060,12 +23060,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -23113,12 +23113,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 0,
