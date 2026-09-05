@@ -106,6 +106,11 @@ class TmdbOverrideTests(unittest.TestCase):
             "Fall 2": 1101412,
             "Fall 2: Deadpoint": 1101412,
             "墜2": 1101412,
+            "喵咪總動員": 1425552,
+            "喵迷總動員": 1425552,
+            "Die werckmeistersche Werckmeister harmoniak": 23160,
+            "Werckmeister harmóniák": 23160,
+            "鯨魚馬戲團": 23160,
             "洲崎樂園 赤信號": 125222,
             "安詳之獸": 125253,
         }
