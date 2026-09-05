@@ -1,12 +1,150 @@
 {
-  "generated_at": "2026-09-05T23:32:09.618765+08:00",
+  "generated_at": "2026-09-06T01:34:21.417100+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 65,
+    "now_count": 66,
     "soon_count": 78
   },
   "movies": {
     "now": [
+      {
+        "id": 1758522,
+        "titleZh": "「黑蜥蜴」「Diamond IMPULSE（鑽石衝動）」",
+        "titleEn": "黒蜥蜴 / Diamond IMPULSE",
+        "releaseDate": "2026-09-06",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-06",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/1WU2WTtryFhrryai1Y9C6bF0iWc.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "音樂"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "桜木みなと",
+            "char": "Akechi Kogorou",
+            "photo": "https://image.tmdb.org/t/p/w500/lTfwP8hw5GOriGMs7VS2MEijro6.jpg"
+          },
+          {
+            "name": "Haruno Sakura",
+            "char": "The Black Lizard",
+            "photo": null
+          },
+          {
+            "name": "水美舞斗",
+            "char": "Amamiya Junichi",
+            "photo": "https://image.tmdb.org/t/p/w500/kCBVn9Y9RejzpkWOmynfRjfwkGG.jpg"
+          },
+          {
+            "name": "Yuuma Rin",
+            "char": "Iwase Shoubei",
+            "photo": null
+          },
+          {
+            "name": "松風輝",
+            "char": "Matsukichi",
+            "photo": "https://image.tmdb.org/t/p/w500/p8wyRu0tA8fB24UkCXRFLSJOc6e.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "生田大和",
+            "job": "Director"
+          },
+          {
+            "name": "Yuuichirou Takeda",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "黒蜥蜴 / Diamond IMPULSE",
+        "platforms": [],
+        "popularity": 0.842,
+        "imdbId": null,
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/1WU2WTtryFhrryai1Y9C6bF0iWc.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "桜木みなと",
+              "char": "Akechi Kogorou",
+              "photo": "https://image.tmdb.org/t/p/w500/lTfwP8hw5GOriGMs7VS2MEijro6.jpg"
+            },
+            {
+              "name": "Haruno Sakura",
+              "char": "The Black Lizard",
+              "photo": null
+            },
+            {
+              "name": "水美舞斗",
+              "char": "Amamiya Junichi",
+              "photo": "https://image.tmdb.org/t/p/w500/kCBVn9Y9RejzpkWOmynfRjfwkGG.jpg"
+            },
+            {
+              "name": "Yuuma Rin",
+              "char": "Iwase Shoubei",
+              "photo": null
+            },
+            {
+              "name": "松風輝",
+              "char": "Matsukichi",
+              "photo": "https://image.tmdb.org/t/p/w500/p8wyRu0tA8fB24UkCXRFLSJOc6e.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "生田大和",
+              "job": "Director"
+            },
+            {
+              "name": "Yuuichirou Takeda",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "黒蜥蜴 / Diamond IMPULSE",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1758522?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 23160,
         "titleZh": "鯨魚馬戲團",
@@ -1588,7 +1726,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/aBtS3yCWReAen3OefxBXedbArFI.jpg",
-        "voteAverage": "5.6",
+        "voteAverage": "6.0",
         "genre": [
           "驚悚"
         ],
@@ -1726,7 +1864,7 @@
           "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/aBtS3yCWReAen3OefxBXedbArFI.jpg",
-          "voteAverage": "5.6",
+          "voteAverage": "6.0",
           "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
@@ -15403,144 +15541,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 1758522,
-        "titleZh": "「黑蜥蜴」「Diamond IMPULSE（鑽石衝動）」",
-        "titleEn": "黒蜥蜴 / Diamond IMPULSE",
-        "releaseDate": "2026-09-06",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-06",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/1WU2WTtryFhrryai1Y9C6bF0iWc.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": null,
-        "voteAverage": "",
-        "genre": [
-          "音樂"
-        ],
-        "duration": "",
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "桜木みなと",
-            "char": "Akechi Kogorou",
-            "photo": "https://image.tmdb.org/t/p/w500/lTfwP8hw5GOriGMs7VS2MEijro6.jpg"
-          },
-          {
-            "name": "Haruno Sakura",
-            "char": "The Black Lizard",
-            "photo": null
-          },
-          {
-            "name": "水美舞斗",
-            "char": "Amamiya Junichi",
-            "photo": "https://image.tmdb.org/t/p/w500/kCBVn9Y9RejzpkWOmynfRjfwkGG.jpg"
-          },
-          {
-            "name": "Yuuma Rin",
-            "char": "Iwase Shoubei",
-            "photo": null
-          },
-          {
-            "name": "松風輝",
-            "char": "Matsukichi",
-            "photo": "https://image.tmdb.org/t/p/w500/p8wyRu0tA8fB24UkCXRFLSJOc6e.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "生田大和",
-            "job": "Director"
-          },
-          {
-            "name": "Yuuichirou Takeda",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "黒蜥蜴 / Diamond IMPULSE",
-        "platforms": [],
-        "popularity": 0.842,
-        "imdbId": null,
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "音樂"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/1WU2WTtryFhrryai1Y9C6bF0iWc.jpg",
-          "backdrop": null,
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": null,
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "桜木みなと",
-              "char": "Akechi Kogorou",
-              "photo": "https://image.tmdb.org/t/p/w500/lTfwP8hw5GOriGMs7VS2MEijro6.jpg"
-            },
-            {
-              "name": "Haruno Sakura",
-              "char": "The Black Lizard",
-              "photo": null
-            },
-            {
-              "name": "水美舞斗",
-              "char": "Amamiya Junichi",
-              "photo": "https://image.tmdb.org/t/p/w500/kCBVn9Y9RejzpkWOmynfRjfwkGG.jpg"
-            },
-            {
-              "name": "Yuuma Rin",
-              "char": "Iwase Shoubei",
-              "photo": null
-            },
-            {
-              "name": "松風輝",
-              "char": "Matsukichi",
-              "photo": "https://image.tmdb.org/t/p/w500/p8wyRu0tA8fB24UkCXRFLSJOc6e.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "生田大和",
-              "job": "Director"
-            },
-            {
-              "name": "Yuuichirou Takeda",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "黒蜥蜴 / Diamond IMPULSE",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1758522?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 1620001,
         "titleZh": "吾子吾弟",
@@ -30846,6 +30846,122 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1384758?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1497464,
+        "titleZh": "貓的急轉彎",
+        "titleEn": "Gatto",
+        "releaseDate": "2027-03-05",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-03-05",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/uYfSuEnQbWJc0XVRyi7qvFD2BkT.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/etB2OT0nUknOAPZV7EgbEbt6HJh.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "喜劇",
+          "犯罪",
+          "家庭"
+        ],
+        "duration": "",
+        "synopsis": "故事講述一隻居住在威尼斯、熱愛音樂的黑貓尼祿（Nero，馬克魯法洛獻聲），他欠下當地貓族黑幫老大洛可（勞倫斯費許朋獻聲）的債而陷入困境，於是結識了年輕街頭小提琴家瑪雅（Maya）並成為好友。他們將一同穿梭在隠密運河、屋頂與古老宮殿間，展開一場尋找生命意義的靈魂旅程，而這段友誼最終可能會引領他實現自己的目標。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "YqgvJ1aYIxI",
+        "cast": [
+          {
+            "name": "馬克·魯法洛",
+            "char": "Nero (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+          },
+          {
+            "name": "勞倫斯·費許朋",
+            "char": "Rocco (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+          },
+          {
+            "name": "Enrico Casarosa",
+            "char": "Saverio (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/1Y5cbZQN7fEZcCNCHUANPNfdVQK.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Enrico Casarosa",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "In Production",
+        "origLang": "en",
+        "origTitle": "Gatto",
+        "platforms": [],
+        "popularity": 6.9034,
+        "imdbId": "tt26443610",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫",
+            "喜劇",
+            "犯罪",
+            "家庭"
+          ],
+          "synopsis": "故事講述一隻居住在威尼斯、熱愛音樂的黑貓尼祿（Nero，馬克魯法洛獻聲），他欠下當地貓族黑幫老大洛可（勞倫斯費許朋獻聲）的債而陷入困境，於是結識了年輕街頭小提琴家瑪雅（Maya）並成為好友。他們將一同穿梭在隠密運河、屋頂與古老宮殿間，展開一場尋找生命意義的靈魂旅程，而這段友誼最終可能會引領他實現自己的目標。",
+          "poster": "https://image.tmdb.org/t/p/w500/uYfSuEnQbWJc0XVRyi7qvFD2BkT.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/etB2OT0nUknOAPZV7EgbEbt6HJh.jpg",
+          "voteAverage": "",
+          "trailerKey": "YqgvJ1aYIxI",
+          "imdbId": "tt26443610",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "馬克·魯法洛",
+              "char": "Nero (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+            },
+            {
+              "name": "勞倫斯·費許朋",
+              "char": "Rocco (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+            },
+            {
+              "name": "Enrico Casarosa",
+              "char": "Saverio (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/1Y5cbZQN7fEZcCNCHUANPNfdVQK.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Enrico Casarosa",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "In Production",
+          "origLang": "en",
+          "origTitle": "Gatto",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1497464?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
