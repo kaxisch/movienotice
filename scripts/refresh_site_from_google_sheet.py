@@ -235,7 +235,7 @@ def build_verified_output(candidates):
 
     today = datetime.now(timezone(timedelta(hours=8))).date()
     supplemental = weekly.fetch_supplemental_soon_candidates(today)
-    log(f"Discovered {len(supplemental)} TMDB Taiwan theatrical candidates for days 61-180")
+    log(f"Discovered {len(supplemental)} TMDB Taiwan theatrical candidates for days 0-180")
     for item in supplemental:
         tmdb_id = item.get("id")
         if tmdb_id and tmdb_id not in candidate_by_id:
