@@ -1,12 +1,282 @@
 {
-  "generated_at": "2026-09-05T13:21:37.597453+08:00",
+  "generated_at": "2026-09-05T18:56:09.425318+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 64,
-    "soon_count": 107
+    "now_count": 65,
+    "soon_count": 117
   },
   "movies": {
     "now": [
+      {
+        "id": 23160,
+        "titleZh": "鯨魚馬戲團",
+        "titleEn": "Werckmeister harmóniák",
+        "releaseDate": "2026-09-05",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-05",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/sx3cKSacOGAj7GiU0V3PCy4Eh2j.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pyCUjcPHZrMY125lWpWAxEexe7C.jpg",
+        "voteAverage": "7.9",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 139,
+        "synopsis": "",
+        "imdb": "8.0",
+        "rt": "97%",
+        "mc": "93",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 17374,
+            "lastChanged": "2026-09-05T18:56:09.425318+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 59,
+            "lastChanged": "2026-09-05T18:56:09.425318+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 9,
+            "lastChanged": "2026-09-05T18:56:09.425318+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Lars Rudolph",
+            "char": "János Valuska",
+            "photo": "https://image.tmdb.org/t/p/w500/1C1tHlJpvWmyfnfqjpi5tHDs4jn.jpg"
+          },
+          {
+            "name": "Peter Fitz",
+            "char": "György Eszter",
+            "photo": "https://image.tmdb.org/t/p/w500/uuS2Tbva1PdAeMxFKUjlO1V7eJN.jpg"
+          },
+          {
+            "name": "Hanna Schygulla",
+            "char": "Tünde Eszter",
+            "photo": "https://image.tmdb.org/t/p/w500/hAZVxNCVzYBq3ToWzE01LXK6Oum.jpg"
+          },
+          {
+            "name": "Alfréd Járai",
+            "char": "Lajos Harrer",
+            "photo": "https://image.tmdb.org/t/p/w500/gZgfWedQdgFV69bzCtKwZbQ8Nbo.jpg"
+          },
+          {
+            "name": "Pauer Gyula",
+            "char": "Mr. Hagelmayer",
+            "photo": "https://image.tmdb.org/t/p/w500/radfLB93oMbGoYa4jrDYoqqX3kN.jpg"
+          },
+          {
+            "name": "Derzsi János",
+            "char": "Man In The Broad-Cloth Coat",
+            "photo": "https://image.tmdb.org/t/p/w500/8ER5TWn3Wm0UYiwuXEVTcUZaHD1.jpg"
+          },
+          {
+            "name": "Mihály Kormos",
+            "char": "Factotum",
+            "photo": "https://image.tmdb.org/t/p/w500/pu1nv97NSAj6AyQnXLyKaQMU9Cg.jpg"
+          },
+          {
+            "name": "Putyi Horváth",
+            "char": "Porter",
+            "photo": "https://image.tmdb.org/t/p/w500/9aKiMvr7X69X6mNQdcDZTZ7JnWU.jpg"
+          },
+          {
+            "name": "Éva Almássy Albert",
+            "char": "Aunt Piri",
+            "photo": "https://image.tmdb.org/t/p/w500/bGQtug5lUbvJF1CKDu2REo0C6AW.jpg"
+          },
+          {
+            "name": "Dobai Péter",
+            "char": "Chief Constable",
+            "photo": "https://image.tmdb.org/t/p/w500/3Dla7ONZqgzsbzKIOh6Ly2fntDE.jpg"
+          },
+          {
+            "name": "László feLugossy",
+            "char": "Housepainter",
+            "photo": null
+          },
+          {
+            "name": "Barna Mihók",
+            "char": "Coachman",
+            "photo": "https://image.tmdb.org/t/p/w500/doDU9OLrRiNuNVA3vJzyWLCdwBF.jpg"
+          },
+          {
+            "name": "Bese Sándor",
+            "char": "The Prince",
+            "photo": null
+          },
+          {
+            "name": "Börcsök Enikő",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zbqVGiZT4P2Ez4PxJDFsxZgRuc6.jpg"
+          },
+          {
+            "name": "Irén Szajki",
+            "char": "Mrs. Harrer",
+            "photo": null
+          },
+          {
+            "name": "Barkó György",
+            "char": "Mr. Nadabán",
+            "photo": "https://image.tmdb.org/t/p/w500/wEPSCjvpADV3W0UHkCvMrafJOlk.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Tarr Béla",
+            "job": "Director"
+          },
+          {
+            "name": "Krasznahorkai László",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 64974,
+        "status": "Released",
+        "origLang": "hu",
+        "origTitle": "Werckmeister harmóniák",
+        "platforms": [],
+        "popularity": 5.0586,
+        "imdbId": "tt0249241",
+        "countries": [
+          "France",
+          "Germany",
+          "Hungary",
+          "Italy"
+        ],
+        "detail": {
+          "duration": 139,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/sx3cKSacOGAj7GiU0V3PCy4Eh2j.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pyCUjcPHZrMY125lWpWAxEexe7C.jpg",
+          "voteAverage": "7.9",
+          "trailerKey": null,
+          "imdbId": "tt0249241",
+          "countries": [
+            "France",
+            "Germany",
+            "Hungary",
+            "Italy"
+          ],
+          "cast": [
+            {
+              "name": "Lars Rudolph",
+              "char": "János Valuska",
+              "photo": "https://image.tmdb.org/t/p/w500/1C1tHlJpvWmyfnfqjpi5tHDs4jn.jpg"
+            },
+            {
+              "name": "Peter Fitz",
+              "char": "György Eszter",
+              "photo": "https://image.tmdb.org/t/p/w500/uuS2Tbva1PdAeMxFKUjlO1V7eJN.jpg"
+            },
+            {
+              "name": "Hanna Schygulla",
+              "char": "Tünde Eszter",
+              "photo": "https://image.tmdb.org/t/p/w500/hAZVxNCVzYBq3ToWzE01LXK6Oum.jpg"
+            },
+            {
+              "name": "Alfréd Járai",
+              "char": "Lajos Harrer",
+              "photo": "https://image.tmdb.org/t/p/w500/gZgfWedQdgFV69bzCtKwZbQ8Nbo.jpg"
+            },
+            {
+              "name": "Pauer Gyula",
+              "char": "Mr. Hagelmayer",
+              "photo": "https://image.tmdb.org/t/p/w500/radfLB93oMbGoYa4jrDYoqqX3kN.jpg"
+            },
+            {
+              "name": "Derzsi János",
+              "char": "Man In The Broad-Cloth Coat",
+              "photo": "https://image.tmdb.org/t/p/w500/8ER5TWn3Wm0UYiwuXEVTcUZaHD1.jpg"
+            },
+            {
+              "name": "Mihály Kormos",
+              "char": "Factotum",
+              "photo": "https://image.tmdb.org/t/p/w500/pu1nv97NSAj6AyQnXLyKaQMU9Cg.jpg"
+            },
+            {
+              "name": "Putyi Horváth",
+              "char": "Porter",
+              "photo": "https://image.tmdb.org/t/p/w500/9aKiMvr7X69X6mNQdcDZTZ7JnWU.jpg"
+            },
+            {
+              "name": "Éva Almássy Albert",
+              "char": "Aunt Piri",
+              "photo": "https://image.tmdb.org/t/p/w500/bGQtug5lUbvJF1CKDu2REo0C6AW.jpg"
+            },
+            {
+              "name": "Dobai Péter",
+              "char": "Chief Constable",
+              "photo": "https://image.tmdb.org/t/p/w500/3Dla7ONZqgzsbzKIOh6Ly2fntDE.jpg"
+            },
+            {
+              "name": "László feLugossy",
+              "char": "Housepainter",
+              "photo": null
+            },
+            {
+              "name": "Barna Mihók",
+              "char": "Coachman",
+              "photo": "https://image.tmdb.org/t/p/w500/doDU9OLrRiNuNVA3vJzyWLCdwBF.jpg"
+            },
+            {
+              "name": "Bese Sándor",
+              "char": "The Prince",
+              "photo": null
+            },
+            {
+              "name": "Börcsök Enikő",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zbqVGiZT4P2Ez4PxJDFsxZgRuc6.jpg"
+            },
+            {
+              "name": "Irén Szajki",
+              "char": "Mrs. Harrer",
+              "photo": null
+            },
+            {
+              "name": "Barkó György",
+              "char": "Mr. Nadabán",
+              "photo": "https://image.tmdb.org/t/p/w500/wEPSCjvpADV3W0UHkCvMrafJOlk.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Tarr Béla",
+              "job": "Director"
+            },
+            {
+              "name": "Krasznahorkai László",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 64974,
+          "status": "Released",
+          "origLang": "hu",
+          "origTitle": "Werckmeister harmóniák",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/23160?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 71883,
         "titleZh": "超時空甩尾",
@@ -584,8 +854,8 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 249,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
@@ -1424,16 +1694,16 @@
         ],
         "crew": [
           {
-            "name": "Jonathan Frank",
-            "job": "Writer"
+            "name": "Michael Spierig",
+            "job": "Director"
           },
           {
             "name": "Peter Spierig",
             "job": "Director"
           },
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Scott Mann",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -1547,16 +1817,16 @@
           ],
           "crew": [
             {
-              "name": "Jonathan Frank",
-              "job": "Writer"
+              "name": "Michael Spierig",
+              "job": "Director"
             },
             {
               "name": "Peter Spierig",
               "job": "Director"
             },
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Scott Mann",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -2275,7 +2545,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/rjRI3z3lFepMlxk9ScUvlfNxrR3.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
-        "voteAverage": "",
+        "voteAverage": "7.0",
         "genre": [
           "犯罪",
           "劇情",
@@ -2352,7 +2622,7 @@
         "origLang": "ja",
         "origTitle": "白鳥とコウモリ",
         "platforms": [],
-        "popularity": 1.8614,
+        "popularity": 2.2308,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -2368,7 +2638,7 @@
           "synopsis": "善良的律師白石健介被殺害了，隨著嫌犯倉木達郎俯首認罪，這起案件應該有了結果才對，但嫌犯的兒子倉木和真與被害人的女兒白石美令，都各自對自己父親的言行舉止感到疑惑。當嫌犯的兒子和被害人的女兒攜手合作時，那個「真相」竟開始動搖……",
           "poster": "https://image.tmdb.org/t/p/w500/rjRI3z3lFepMlxk9ScUvlfNxrR3.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/4JN4NfQmqgQW1QrlB8N1RrHzOhS.jpg",
-          "voteAverage": "",
+          "voteAverage": "7.0",
           "trailerKey": "kPhEXOEKQ6A",
           "imdbId": null,
           "countries": [
@@ -3359,7 +3629,7 @@
             "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
           }
         ],
-        "popularity": 4.5667,
+        "popularity": 5.35,
         "imdbId": "tt1736633",
         "countries": [
           "Norway"
@@ -3779,11 +4049,11 @@
         ],
         "crew": [
           {
-            "name": "單丹丹",
+            "name": "李闊",
             "job": "Director"
           },
           {
-            "name": "李闊",
+            "name": "單丹丹",
             "job": "Director"
           },
           {
@@ -3797,7 +4067,7 @@
         "origLang": "zh",
         "origTitle": "银河写手",
         "platforms": [],
-        "popularity": 1.3108,
+        "popularity": 1.9562,
         "imdbId": "tt28350761",
         "countries": [
           "China"
@@ -3891,11 +4161,11 @@
           ],
           "crew": [
             {
-              "name": "單丹丹",
+              "name": "李闊",
               "job": "Director"
             },
             {
-              "name": "李闊",
+              "name": "單丹丹",
               "job": "Director"
             },
             {
@@ -4948,7 +5218,7 @@
         "origLang": "ja",
         "origTitle": "兄を持ち運べるサイズに",
         "platforms": [],
-        "popularity": 1.8448,
+        "popularity": 1.8042,
         "imdbId": "tt38504671",
         "countries": [
           "Japan"
@@ -5175,7 +5445,7 @@
         "origLang": "en",
         "origTitle": "Just Play Dead",
         "platforms": [],
-        "popularity": 72.598,
+        "popularity": 74.3812,
         "imdbId": "tt36948232",
         "countries": [
           "United Kingdom"
@@ -5592,7 +5862,7 @@
         "origLang": "ja",
         "origTitle": "炎上",
         "platforms": [],
-        "popularity": 2.754,
+        "popularity": 2.492,
         "imdbId": "tt39150067",
         "countries": [
           "Japan"
@@ -5844,11 +6114,11 @@
         "crew": [
           {
             "name": "押山清高",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "押山清高",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -5967,11 +6237,11 @@
           "crew": [
             {
               "name": "押山清高",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "押山清高",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -6134,7 +6404,7 @@
         "origLang": "en",
         "origTitle": "The Dog Stars",
         "platforms": [],
-        "popularity": 98.1198,
+        "popularity": 88.2806,
         "imdbId": "tt21285562",
         "countries": [
           "United States of America"
@@ -7909,7 +8179,7 @@
         "origLang": "ja",
         "origTitle": "ミーツ・ザ・ワールド",
         "platforms": [],
-        "popularity": 1.3813,
+        "popularity": 2.9236,
         "imdbId": "tt38755605",
         "countries": [
           "Japan"
@@ -8122,7 +8392,7 @@
         "origLang": "en",
         "origTitle": "My Father's Shadow",
         "platforms": [],
-        "popularity": 2.5613,
+        "popularity": 2.5636,
         "imdbId": "tt35695538",
         "countries": [
           "Nigeria",
@@ -8353,7 +8623,7 @@
         "origLang": "ja",
         "origTitle": "映画ラストマン -FIRST LOVE-",
         "platforms": [],
-        "popularity": 2.3582,
+        "popularity": 2.1601,
         "imdbId": "tt38691555",
         "countries": [
           "Japan"
@@ -9236,7 +9506,7 @@
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
         "platforms": [],
-        "popularity": 63.9586,
+        "popularity": 58.308,
         "imdbId": "tt32393988",
         "countries": [
           "United States of America"
@@ -9773,7 +10043,7 @@
         "origLang": "en",
         "origTitle": "Nirvanna the Band the Show the Movie",
         "platforms": [],
-        "popularity": 6.995,
+        "popularity": 6.3969,
         "imdbId": "tt35522483",
         "countries": [
           "Canada"
@@ -11434,7 +11704,7 @@
         "origLang": "ja",
         "origTitle": "ブルーロック",
         "platforms": [],
-        "popularity": 4.8523,
+        "popularity": 4.7502,
         "imdbId": "tt39400168",
         "countries": [
           "Japan"
@@ -11976,7 +12246,7 @@
         "origLang": "hi",
         "origTitle": "होमबाउंड",
         "platforms": [],
-        "popularity": 3.1547,
+        "popularity": 3.7141,
         "imdbId": "tt26733325",
         "countries": [
           "India",
@@ -12245,7 +12515,7 @@
         "origLang": "en",
         "origTitle": "Obsession",
         "platforms": [],
-        "popularity": 210.2429,
+        "popularity": 207.7466,
         "imdbId": "tt37287335",
         "countries": [
           "United States of America",
@@ -13100,7 +13370,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 427,
+            "votes": 428,
             "lastChanged": "2026-08-27T22:36:32.469597+08:00"
           },
           "mc": {
@@ -13624,7 +13894,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/d7MiRRamaAe58DacYEo2ZgziBBv.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
         "voteAverage": "8.0",
         "genre": [
           "冒險",
@@ -13767,7 +14037,7 @@
           ],
           "synopsis": "講述奧德修斯在特洛伊戰爭後歷經艱險返鄉，途中遭遇獨眼巨人、女妖與女巫，最終與妻子重逢的傳奇旅程。",
           "poster": "https://image.tmdb.org/t/p/w500/d7MiRRamaAe58DacYEo2ZgziBBv.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
           "voteAverage": "8.0",
           "trailerKey": "2rzJuAIj0VI",
           "imdbId": "tt33764258",
@@ -14080,7 +14350,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 180,
+            "votes": 181,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
@@ -14197,7 +14467,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 160.3543,
+        "popularity": 152.749,
         "imdbId": "tt32890033",
         "countries": [
           "United States of America"
@@ -14746,7 +15016,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 181.7712,
+        "popularity": 172.6272,
         "imdbId": "tt29355505",
         "countries": [
           "United States of America"
@@ -15209,7 +15479,7 @@
           {
             "name": "Stevie Raine",
             "char": "Ensemble",
-            "photo": null
+            "photo": "https://image.tmdb.org/t/p/w500/7TqFwyf5YU4A7ZNCxqGkwwh244m.jpg"
           },
           {
             "name": "Charles Dark",
@@ -15233,7 +15503,7 @@
         "origLang": "en",
         "origTitle": "National Theatre Live: All My Sons",
         "platforms": [],
-        "popularity": 2.1697,
+        "popularity": 2.6729,
         "imdbId": "tt39544163",
         "countries": [
           "United Kingdom"
@@ -15301,7 +15571,7 @@
             {
               "name": "Stevie Raine",
               "char": "Ensemble",
-              "photo": null
+              "photo": "https://image.tmdb.org/t/p/w500/7TqFwyf5YU4A7ZNCxqGkwwh244m.jpg"
             },
             {
               "name": "Charles Dark",
@@ -15412,7 +15682,7 @@
         "origLang": "zh",
         "origTitle": "怎麼可能我家的祖先是你家的鬼",
         "platforms": [],
-        "popularity": 0.9008,
+        "popularity": 0.9864,
         "imdbId": "tt43560584",
         "countries": [
           "Taiwan"
@@ -15619,11 +15889,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -15641,7 +15911,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 5.5491,
+        "popularity": 4.7674,
         "imdbId": "tt0108394",
         "countries": [
           "France",
@@ -15749,11 +16019,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -16219,7 +16489,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 8.7214,
+        "popularity": 9.938,
         "imdbId": "tt0111495",
         "countries": [
           "France",
@@ -16767,12 +17037,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -16781,7 +17051,7 @@
         "origLang": "ja",
         "origTitle": "台風クラブ",
         "platforms": [],
-        "popularity": 2.8609,
+        "popularity": 2.8464,
         "imdbId": "tt0088222",
         "countries": [
           "Japan"
@@ -16884,12 +17154,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -17565,7 +17835,7 @@
         "origLang": "en",
         "origTitle": "Power Ballad",
         "platforms": [],
-        "popularity": 9.5204,
+        "popularity": 8.5476,
         "imdbId": "tt32267691",
         "countries": [
           "Ireland",
@@ -17709,10 +17979,10 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/bJbQFamy07IPMxZHcPLKCTY4b6t.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/sbvXPLREf72muvzaR2vtIfmVQWH.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
-        "voteAverage": "3.5",
+        "voteAverage": "5.0",
         "genre": [
           "愛情",
           "奇幻",
@@ -17792,7 +18062,7 @@
         "origLang": "en",
         "origTitle": "Practical Magic 2",
         "platforms": [],
-        "popularity": 22.1773,
+        "popularity": 23.1316,
         "imdbId": "tt32588798",
         "countries": [
           "United States of America"
@@ -17805,9 +18075,9 @@
             "喜劇"
           ],
           "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/bJbQFamy07IPMxZHcPLKCTY4b6t.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/sbvXPLREf72muvzaR2vtIfmVQWH.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
-          "voteAverage": "3.5",
+          "voteAverage": "5.0",
           "trailerKey": "fmMoGBw0Dkk",
           "imdbId": "tt32588798",
           "countries": [
@@ -18029,7 +18299,7 @@
         "origLang": "en",
         "origTitle": "Palestine 36",
         "platforms": [],
-        "popularity": 4.5532,
+        "popularity": 5.1591,
         "imdbId": "tt29271622",
         "countries": [
           "Palestinian Territory",
@@ -18238,7 +18508,7 @@
         "origLang": "zh",
         "origTitle": "大仙尪仔",
         "platforms": [],
-        "popularity": 0.7316,
+        "popularity": 0.6906,
         "imdbId": "tt43659346",
         "countries": [
           "Taiwan"
@@ -19429,7 +19699,7 @@
         "origLang": "en",
         "origTitle": "Resident Evil",
         "platforms": [],
-        "popularity": 38.3658,
+        "popularity": 46.6004,
         "imdbId": "tt35538033",
         "countries": [
           "United States of America",
@@ -19639,7 +19909,7 @@
         "origLang": "ja",
         "origTitle": "ワンピース デッドエンドの冒険",
         "platforms": [],
-        "popularity": 2.8769,
+        "popularity": 3.5994,
         "imdbId": "tt1006926",
         "countries": [
           "Japan"
@@ -20151,7 +20421,7 @@
         "origLang": "es",
         "origTitle": "Pacífico",
         "platforms": [],
-        "popularity": 5.3253,
+        "popularity": 4.9827,
         "imdbId": "tt4634974",
         "countries": [
           "Argentina",
@@ -20656,7 +20926,7 @@
         "origLang": "en",
         "origTitle": "Plainclothes",
         "platforms": [],
-        "popularity": 5.6317,
+        "popularity": 4.3881,
         "imdbId": "tt27550504",
         "countries": [
           "United Kingdom",
@@ -20897,7 +21167,7 @@
         "origLang": "ja",
         "origTitle": "時には懺悔を",
         "platforms": [],
-        "popularity": 3.3879,
+        "popularity": 2.9762,
         "imdbId": "tt36236732",
         "countries": [
           "Japan"
@@ -21005,6 +21275,226 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1410587?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1425552,
+        "titleZh": "喵咪總動員",
+        "titleEn": "Scotty",
+        "releaseDate": "2026-09-18",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/pV4O0DFUwF0gFI7vDT07sqG0gUP.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "冒險",
+          "家庭"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "William Hope",
+            "char": "Richard (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/blKMEeCftWVBPI2hqvzycmdE9nS.jpg"
+          },
+          {
+            "name": "Stuart Milligan",
+            "char": "Hilton (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/gFZCxMayTR1xdS2m16QNbecY3I4.jpg"
+          },
+          {
+            "name": "Phil Cornwell",
+            "char": "Matio (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xZSHsL2uSrvsfARAZhMEN7KYeNd.jpg"
+          },
+          {
+            "name": "Walles Hamonde",
+            "char": "(voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/uoKuXFqmL7uwjJro1runny5N822.jpg"
+          },
+          {
+            "name": "Jay Rincon",
+            "char": "Winston (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/r7rJsxsJjfyN2YYWWaXzliu1zzh.jpg"
+          },
+          {
+            "name": "Dario Coates",
+            "char": "(voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/6AztP2iTkxVNC9ac8ZdAXMVbv71.jpg"
+          },
+          {
+            "name": "Penelope Rawlins",
+            "char": "Kitten Scotty (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/mxwBAqF86GaEtsruteV5EiivWwH.jpg"
+          },
+          {
+            "name": "George Naylor",
+            "char": "(voice)",
+            "photo": null
+          },
+          {
+            "name": "Jessica Claire Preddy",
+            "char": "(voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/uWORG5c9wYTOgQyr1G6sDIeYGW8.jpg"
+          },
+          {
+            "name": "Adam Diggle",
+            "char": "Bruce (voice)",
+            "photo": null
+          },
+          {
+            "name": "Lizzie Wofford",
+            "char": "Emma (voice)",
+            "photo": null
+          },
+          {
+            "name": "Joe Jameson",
+            "char": "Elfie (voice)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Mohammad Pirzadi",
+            "job": "Director"
+          },
+          {
+            "name": "Mohammad Pirzadi",
+            "job": "Writer"
+          },
+          {
+            "name": "Ali Valipouri",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Scotty",
+        "platforms": [],
+        "popularity": 0.6888,
+        "imdbId": "tt31549553",
+        "countries": [
+          "Germany"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫",
+            "冒險",
+            "家庭"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/pV4O0DFUwF0gFI7vDT07sqG0gUP.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt31549553",
+          "countries": [
+            "Germany"
+          ],
+          "cast": [
+            {
+              "name": "William Hope",
+              "char": "Richard (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/blKMEeCftWVBPI2hqvzycmdE9nS.jpg"
+            },
+            {
+              "name": "Stuart Milligan",
+              "char": "Hilton (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/gFZCxMayTR1xdS2m16QNbecY3I4.jpg"
+            },
+            {
+              "name": "Phil Cornwell",
+              "char": "Matio (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xZSHsL2uSrvsfARAZhMEN7KYeNd.jpg"
+            },
+            {
+              "name": "Walles Hamonde",
+              "char": "(voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/uoKuXFqmL7uwjJro1runny5N822.jpg"
+            },
+            {
+              "name": "Jay Rincon",
+              "char": "Winston (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/r7rJsxsJjfyN2YYWWaXzliu1zzh.jpg"
+            },
+            {
+              "name": "Dario Coates",
+              "char": "(voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/6AztP2iTkxVNC9ac8ZdAXMVbv71.jpg"
+            },
+            {
+              "name": "Penelope Rawlins",
+              "char": "Kitten Scotty (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/mxwBAqF86GaEtsruteV5EiivWwH.jpg"
+            },
+            {
+              "name": "George Naylor",
+              "char": "(voice)",
+              "photo": null
+            },
+            {
+              "name": "Jessica Claire Preddy",
+              "char": "(voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/uWORG5c9wYTOgQyr1G6sDIeYGW8.jpg"
+            },
+            {
+              "name": "Adam Diggle",
+              "char": "Bruce (voice)",
+              "photo": null
+            },
+            {
+              "name": "Lizzie Wofford",
+              "char": "Emma (voice)",
+              "photo": null
+            },
+            {
+              "name": "Joe Jameson",
+              "char": "Elfie (voice)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Mohammad Pirzadi",
+              "job": "Director"
+            },
+            {
+              "name": "Mohammad Pirzadi",
+              "job": "Writer"
+            },
+            {
+              "name": "Ali Valipouri",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Scotty",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1425552?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -21168,7 +21658,7 @@
         "origLang": "ko",
         "origTitle": "와인드업: 더 무비",
         "platforms": [],
-        "popularity": 1.8418,
+        "popularity": 1.487,
         "imdbId": "tt43672139",
         "countries": [
           "South Korea"
@@ -21581,7 +22071,7 @@
         "origLang": "ko",
         "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
         "platforms": [],
-        "popularity": 1.18,
+        "popularity": 1.433,
         "imdbId": "tt44568569",
         "countries": [],
         "detail": {
@@ -23296,12 +23786,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -23349,12 +23839,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -23469,7 +23959,7 @@
         "origLang": "fr",
         "origTitle": "À bicyclette !",
         "platforms": [],
-        "popularity": 2.6232,
+        "popularity": 2.6167,
         "imdbId": "tt33298226",
         "countries": [
           "France"
@@ -23928,7 +24418,8 @@
         "popularity": 24.2691,
         "imdbId": "tt31349844",
         "countries": [
-          "United States of America"
+          "United States of America",
+          "Australia"
         ],
         "detail": {
           "duration": 97,
@@ -23944,7 +24435,8 @@
           "trailerKey": "S3Vz0fBz55A",
           "imdbId": "tt31349844",
           "countries": [
-            "United States of America"
+            "United States of America",
+            "Australia"
           ],
           "cast": [
             {
@@ -26797,7 +27289,7 @@
         "origLang": "fr",
         "origTitle": "En nous",
         "platforms": [],
-        "popularity": 2.4928,
+        "popularity": 2.5273,
         "imdbId": "tt37964027",
         "countries": [
           "France"
@@ -26886,7 +27378,7 @@
         "origLang": "zh",
         "origTitle": "遠離祖靈的孩子",
         "platforms": [],
-        "popularity": 0.4122,
+        "popularity": 0.411,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -27003,6 +27495,170 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1746395,
+        "titleZh": "親愛的將軍，你在哪裡？",
+        "titleEn": "Where Are You, Dear General?",
+        "releaseDate": "2026-10-03",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-03",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/x3zThtiOnsxeab3yE5EAZY6TByX.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/sLEVMHdWTAJd5RORvZlLkNnyJUP.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "一名駐守邊境的北韓士兵，他的任務是向邊境另一端施放裝滿垃圾的氣球。在執行任務時，一片從南韓墜落氣球掉落在他腳邊的光碟，改變了一切。他決定撿起這張光碟，這個舉動挑戰了他對真相、權威以及社會規範的認知。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "ליה גינת",
+            "job": "Director"
+          },
+          {
+            "name": "גאיה ברודי",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "he",
+        "origTitle": "Where Are You, Dear General?",
+        "platforms": [],
+        "popularity": 0.4375,
+        "imdbId": null,
+        "countries": [
+          "Israel"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "一名駐守邊境的北韓士兵，他的任務是向邊境另一端施放裝滿垃圾的氣球。在執行任務時，一片從南韓墜落氣球掉落在他腳邊的光碟，改變了一切。他決定撿起這張光碟，這個舉動挑戰了他對真相、權威以及社會規範的認知。",
+          "poster": "https://image.tmdb.org/t/p/w500/x3zThtiOnsxeab3yE5EAZY6TByX.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/sLEVMHdWTAJd5RORvZlLkNnyJUP.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Israel"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "ליה גינת",
+              "job": "Director"
+            },
+            {
+              "name": "גאיה ברודי",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "he",
+          "origTitle": "Where Are You, Dear General?",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1746395?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1746389,
+        "titleZh": "遺忘記憶",
+        "titleEn": "Les choses oubliées",
+        "releaseDate": "2026-10-03",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-03",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wDZzPZuKo7MWyENzKQ1OOTXhzGm.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pIBPkwNbm3S5RtciNupNsSrDuWl.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "透過催眠，重返童年記憶。隨著時間倒流，逐漸揭開那些隱藏在歲月深處、早已被自己遺忘的真實感受……",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "Jules Duclos",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Les choses oubliées",
+        "platforms": [],
+        "popularity": 0.7278,
+        "imdbId": null,
+        "countries": [
+          "France"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "透過催眠，重返童年記憶。隨著時間倒流，逐漸揭開那些隱藏在歲月深處、早已被自己遺忘的真實感受……",
+          "poster": "https://image.tmdb.org/t/p/w500/wDZzPZuKo7MWyENzKQ1OOTXhzGm.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pIBPkwNbm3S5RtciNupNsSrDuWl.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "France"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "Jules Duclos",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Les choses oubliées",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1746389?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1746356,
         "titleZh": "身體檢查",
         "titleEn": "רחב יותר",
@@ -27076,6 +27732,256 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1746356?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1746244,
+        "titleZh": "浮游生物α",
+        "titleEn": "プランクトン α",
+        "releaseDate": "2026-10-03",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-03",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/cuGJ7GYelUD22OR2uKgpg6DvPWf.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/5wOscXiW8VImtEi5yYWct5zUVlA.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "在微觀的生命裏，彷彿疊映着孤獨和某種渴望。那是一種想要歸屬於某處，想要保持更純粹狀態的心緒，輕輕地、柔軟地飄蕩着。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "郭伊妮",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "プランクトン α",
+        "platforms": [],
+        "popularity": 0.5608,
+        "imdbId": null,
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "在微觀的生命裏，彷彿疊映着孤獨和某種渴望。那是一種想要歸屬於某處，想要保持更純粹狀態的心緒，輕輕地、柔軟地飄蕩着。",
+          "poster": "https://image.tmdb.org/t/p/w500/cuGJ7GYelUD22OR2uKgpg6DvPWf.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/5wOscXiW8VImtEi5yYWct5zUVlA.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Japan"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "郭伊妮",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "プランクトン α",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1746244?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1746239,
+        "titleZh": "我的冬日漿果",
+        "titleEn": "冬の実",
+        "releaseDate": "2026-10-03",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-03",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w1280/gLgRKa8h4g7B2IhZVAwxok9Wtdu.jpg",
+        "posterIsBackdrop": true,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/gLgRKa8h4g7B2IhZVAwxok9Wtdu.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "失智的祖母正一點一滴失去她的世界。隨著記憶消退，她的愛也會跟著消失嗎？而總有一天，我心中承載的那位祖母，也會開始煙消雲散嗎？",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "竹原結",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "冬の実",
+        "platforms": [],
+        "popularity": 0.5459,
+        "imdbId": null,
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "失智的祖母正一點一滴失去她的世界。隨著記憶消退，她的愛也會跟著消失嗎？而總有一天，我心中承載的那位祖母，也會開始煙消雲散嗎？",
+          "poster": null,
+          "backdrop": "https://image.tmdb.org/t/p/w1280/gLgRKa8h4g7B2IhZVAwxok9Wtdu.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Japan"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "竹原結",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "冬の実",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1746239?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1746233,
+        "titleZh": "我叫李楊橋",
+        "titleEn": "我叫李杨桥",
+        "releaseDate": "2026-10-03",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-03",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/c36lk1XmD7g2ForR4Gi0xcuanc.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/k4xYeNjXGDG7RXwTx3cRVwSXun7.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "受困地底等待救援的爆破礦工，在幻想與內心獨白為核心，帶領我們深入礦工嚴苛危險的工作環境以及他們的內心世界。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "林千爱",
+            "job": "Director"
+          },
+          {
+            "name": "马艺芊",
+            "job": "Director"
+          },
+          {
+            "name": "陈祉彦",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "我叫李杨桥",
+        "platforms": [],
+        "popularity": 0.6033,
+        "imdbId": null,
+        "countries": [
+          "China"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "受困地底等待救援的爆破礦工，在幻想與內心獨白為核心，帶領我們深入礦工嚴苛危險的工作環境以及他們的內心世界。",
+          "poster": "https://image.tmdb.org/t/p/w500/c36lk1XmD7g2ForR4Gi0xcuanc.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/k4xYeNjXGDG7RXwTx3cRVwSXun7.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "China"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "林千爱",
+              "job": "Director"
+            },
+            {
+              "name": "马艺芊",
+              "job": "Director"
+            },
+            {
+              "name": "陈祉彦",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "我叫李杨桥",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1746233?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -27164,6 +28070,122 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1725079?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1652297,
+        "titleZh": "出格",
+        "titleEn": "Gone Wrong",
+        "releaseDate": "2026-10-03",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-03",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/qDSPh7S8ICqr2tD6arcqVan3Pmf.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lBLYcacB5io3JcfAX1dfZ6JaC73.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "身為一名受困在香港狹小公寓裡的年輕女子，在自己的直播中出現神祕訪客後，將被迫為生存而逃亡。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Victoria Mckay",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Mark Kaczmarek",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Anne-linh JEROME",
+            "job": "Director"
+          },
+          {
+            "name": "Ambre BUTEL",
+            "job": "Director"
+          },
+          {
+            "name": "Juliette HOUËL",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Gone Wrong",
+        "platforms": [],
+        "popularity": 1.5222,
+        "imdbId": null,
+        "countries": [
+          "France"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "身為一名受困在香港狹小公寓裡的年輕女子，在自己的直播中出現神祕訪客後，將被迫為生存而逃亡。",
+          "poster": "https://image.tmdb.org/t/p/w500/qDSPh7S8ICqr2tD6arcqVan3Pmf.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/lBLYcacB5io3JcfAX1dfZ6JaC73.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "France"
+          ],
+          "cast": [
+            {
+              "name": "Victoria Mckay",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Mark Kaczmarek",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Anne-linh JEROME",
+              "job": "Director"
+            },
+            {
+              "name": "Ambre BUTEL",
+              "job": "Director"
+            },
+            {
+              "name": "Juliette HOUËL",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Gone Wrong",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1652297?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -27347,7 +28369,7 @@
         "origLang": "ja",
         "origTitle": "どこよりも遠い場所にいる君へ",
         "platforms": [],
-        "popularity": 1.0471,
+        "popularity": 1.3601,
         "imdbId": "tt43691434",
         "countries": [
           "Japan"
@@ -27704,6 +28726,84 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1746374,
+        "titleZh": "悲傷中的向日葵",
+        "titleEn": "Le Chagrin des tournesols",
+        "releaseDate": "2026-10-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/vEkbQfKN0CXJHWy3Y8dwDwtGZJW.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iG3u7tQ0u3pQEANy7nuSOUQbFLZ.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "分隔多年後，年近七旬的昔日摔角搭檔重聚，騎上摩托車踏上前往兒時故居的最後一段旅程。那些從未說出口的話，終將在途中迸發。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "Léa Krawczyk",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Le Chagrin des tournesols",
+        "platforms": [],
+        "popularity": 1.0435,
+        "imdbId": null,
+        "countries": [
+          "France"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "分隔多年後，年近七旬的昔日摔角搭檔重聚，騎上摩托車踏上前往兒時故居的最後一段旅程。那些從未說出口的話，終將在途中迸發。",
+          "poster": "https://image.tmdb.org/t/p/w500/vEkbQfKN0CXJHWy3Y8dwDwtGZJW.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/iG3u7tQ0u3pQEANy7nuSOUQbFLZ.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "France"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "Léa Krawczyk",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Le Chagrin des tournesols",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1746374?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1746341,
         "titleZh": "小雪",
         "titleEn": "小雪",
@@ -27777,6 +28877,84 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1746341?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1746232,
+        "titleZh": "纖維裡的昨日",
+        "titleEn": "아끼는 옷을 세탁하는 법",
+        "releaseDate": "2026-10-04",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/2WAU4mZWgcOMfquPYEveHJjXOcE.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3FRHuRGR6Nxcos0CG40cYVUXqnK.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫"
+        ],
+        "duration": "",
+        "synopsis": "女孩把逝去的人事物珍藏在寶盒裡。當回憶變得沉重，她終於將那些無法告別的碎片，一一放進洗衣機裡清洗。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "소희연",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "아끼는 옷을 세탁하는 법",
+        "platforms": [],
+        "popularity": 0.4355,
+        "imdbId": null,
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫"
+          ],
+          "synopsis": "女孩把逝去的人事物珍藏在寶盒裡。當回憶變得沉重，她終於將那些無法告別的碎片，一一放進洗衣機裡清洗。",
+          "poster": "https://image.tmdb.org/t/p/w500/2WAU4mZWgcOMfquPYEveHJjXOcE.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/3FRHuRGR6Nxcos0CG40cYVUXqnK.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "소희연",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "아끼는 옷을 세탁하는 법",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1746232?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -28101,7 +29279,7 @@
         "origLang": "it",
         "origTitle": "Spacetime Chronicles",
         "platforms": [],
-        "popularity": 0.6308,
+        "popularity": 0.6552,
         "imdbId": "tt37482911",
         "countries": [
           "Italy"
@@ -28256,7 +29434,7 @@
         "origLang": "ja",
         "origTitle": "映画 えんとつ町のプペル 〜約束の時計台〜",
         "platforms": [],
-        "popularity": 2.3956,
+        "popularity": 2.3036,
         "imdbId": "tt39371353",
         "countries": [
           "Japan"
@@ -28657,7 +29835,7 @@
         "origLang": "fr",
         "origTitle": "La Fille dans les nuages",
         "platforms": [],
-        "popularity": 3.3578,
+        "popularity": 3.1021,
         "imdbId": "tt20259240",
         "countries": [
           "France",
@@ -29678,7 +30856,7 @@
         "origLang": "zh",
         "origTitle": "狂忘警探",
         "platforms": [],
-        "popularity": 3.9875,
+        "popularity": 3.2238,
         "imdbId": "tt38893248",
         "countries": [
           "Taiwan",
@@ -29960,6 +31138,98 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1489932,
+        "titleZh": "Always Lalisa",
+        "titleEn": "Always Lalisa",
+        "releaseDate": "2026-10-12",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-12",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/OqM61w87XqOO3SPZjHRxC75HGI.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
+        "voteAverage": "",
+        "genre": [
+          "紀錄",
+          "音樂"
+        ],
+        "duration": 97,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "ลิซ่า",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/9PHSu2sVY3KY5WJOoWUfqJDFEGg.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Sue Kim",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "en",
+        "origTitle": "Always Lalisa",
+        "platforms": [],
+        "popularity": 2.4796,
+        "imdbId": "tt43696886",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 97,
+          "genres": [
+            "紀錄",
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/OqM61w87XqOO3SPZjHRxC75HGI.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt43696886",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "ลิซ่า",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/9PHSu2sVY3KY5WJOoWUfqJDFEGg.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Sue Kim",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "en",
+          "origTitle": "Always Lalisa",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1489932?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1153576,
         "titleZh": "快打旋風",
         "titleEn": "Street Fighter",
@@ -29974,7 +31244,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/bA6twMcGZtV2cQRQA3ZTMQPJznU.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
         "voteAverage": "",
         "genre": [
           "動作",
@@ -30089,7 +31359,7 @@
         "origLang": "en",
         "origTitle": "Street Fighter",
         "platforms": [],
-        "popularity": 15.6788,
+        "popularity": 15.4448,
         "imdbId": "tt27419420",
         "countries": [
           "Japan",
@@ -30103,7 +31373,7 @@
           ],
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/bA6twMcGZtV2cQRQA3ZTMQPJznU.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
           "voteAverage": "",
           "trailerKey": "vR-RQWBeraY",
           "imdbId": "tt27419420",
@@ -30508,7 +31778,7 @@
         "origLang": "en",
         "origTitle": "Virginia Woolf's Night & Day",
         "platforms": [],
-        "popularity": 2.8984,
+        "popularity": 2.9586,
         "imdbId": "tt27802226",
         "countries": [
           "United Kingdom",
@@ -30817,7 +32087,7 @@
         "origLang": "ja",
         "origTitle": "それいけ！アンパンマン　パンタンと約束の星",
         "platforms": [],
-        "popularity": 0.6752,
+        "popularity": 0.6116,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -31865,7 +33135,7 @@
         "origLang": "en",
         "origTitle": "Clayface",
         "platforms": [],
-        "popularity": 8.2816,
+        "popularity": 8.0684,
         "imdbId": "tt34890576",
         "countries": [
           "United States of America"
@@ -32540,7 +33810,7 @@
         "origLang": "zh",
         "origTitle": "消失的金鳳娜",
         "platforms": [],
-        "popularity": 0.7357,
+        "popularity": 0.7083,
         "imdbId": "tt36958624",
         "countries": [
           "Taiwan"
@@ -33806,7 +35076,7 @@
         "origLang": "en",
         "origTitle": "Hexed",
         "platforms": [],
-        "popularity": 8.3965,
+        "popularity": 7.7435,
         "imdbId": "tt38077943",
         "countries": [
           "United States of America"
@@ -34624,7 +35894,7 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 15.4012,
+        "popularity": 14.5273,
         "imdbId": "tt31378509",
         "countries": [
           "United States of America"
@@ -34790,7 +36060,7 @@
           {
             "name": "佩德羅·帕斯卡",
             "char": "Reed Richards / Mister Fantastic",
-            "photo": "https://image.tmdb.org/t/p/w500/oKcMbVn0NJTNzQt0ClKKvVXkm60.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/9VYK7oxcqhjd5LAH6ZFJ3XzOlID.jpg"
           },
           {
             "name": "保羅路德",
@@ -34913,7 +36183,7 @@
             {
               "name": "佩德羅·帕斯卡",
               "char": "Reed Richards / Mister Fantastic",
-              "photo": "https://image.tmdb.org/t/p/w500/oKcMbVn0NJTNzQt0ClKKvVXkm60.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/9VYK7oxcqhjd5LAH6ZFJ3XzOlID.jpg"
             },
             {
               "name": "保羅路德",
@@ -35114,7 +36384,7 @@
         "origLang": "en",
         "origTitle": "Ice Age: Boiling Point",
         "platforms": [],
-        "popularity": 12.9418,
+        "popularity": 13.0739,
         "imdbId": "tt34512981",
         "countries": [
           "United States of America"
