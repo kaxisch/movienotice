@@ -36,7 +36,7 @@ class CinemaParserTests(unittest.TestCase):
 
     def test_manual_rerelease_override_contains_confirmed_movies(self):
         confirmed_ids = weekly.load_manual_rerelease_ids()
-        self.assertTrue({12197, 311056, 333622, 41498, 44730, 75233, 481432, 660120}.issubset(confirmed_ids))
+        self.assertTrue({12197, 23160, 311056, 333622, 41498, 44730, 75233, 481432, 660120}.issubset(confirmed_ids))
 
     def test_manual_confirmation_applies_without_automatic_rerelease_evidence(self):
         self.assertTrue(weekly.is_verified_rerelease(
