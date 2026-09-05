@@ -1407,8 +1407,8 @@ def fetch_supplemental_soon_candidates(today_local):
     """補抓今天至第 180 天的台灣院線候選片。
 
     Discover 只負責找候選 ID；公開前仍須逐片以 release_dates 驗證
-    Taiwan cinema release (types 1, 2, 3) 日期。距上映 60 天內的新片會先
-    公開，再由下一次完整院線稽核建立候選狀態並接手缺席判定。
+    Taiwan cinema release (types 1, 2, 3) 日期。距上映 60 天內的新片若尚無
+    院線候選狀態，只保留探索結果，不會直接公開。
     """
     discovery_start = today_local.isoformat()
     discovery_end = (today_local + timedelta(days=SOON_WINDOW_DAYS)).isoformat()
