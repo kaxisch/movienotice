@@ -111,6 +111,12 @@ class TmdbOverrideTests(unittest.TestCase):
             "Die werckmeistersche Werckmeister harmoniak": 23160,
             "Werckmeister harmóniák": 23160,
             "鯨魚馬戲團": 23160,
+            "哈姆雷特—Hiran Abeysekera版": 1507580,
+            "Hamlet (2026)": 1507580,
+            "National Theatre Live: Hamlet": 1507580,
+            "「黑蜥蜴」「Diamond IMPULSE（鑽石衝動）」 “Black Lizard” “Diamond IMPULSE”": 1758522,
+            "Diamond IMPULSE（鑽石衝動）": 1758522,
+            "Diamond IMPULSE": 1758522,
             "洲崎樂園 赤信號": 125222,
             "安詳之獸": 125253,
         }
