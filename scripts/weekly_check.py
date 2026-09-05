@@ -1404,19 +1404,20 @@ def dedup_discover_results(items):
 
 
 def fetch_supplemental_soon_candidates(today_local):
-    """補抓開眼視窗外（第 61～180 天）的台灣院線候選片。
+    """補抓今天至第 180 天的台灣院線候選片。
 
     Discover 只負責找候選 ID；公開前仍須逐片以 release_dates 驗證
-    Taiwan cinema release (types 1, 2, 3) 日期。
+    Taiwan cinema release (types 1, 2, 3) 日期。距上映 60 天內的新片會先
+    公開，再由下一次完整院線稽核建立候選狀態並接手缺席判定。
     """
-    far_future_start = (today_local + timedelta(days=61)).isoformat()
-    far_future_end = (today_local + timedelta(days=SOON_WINDOW_DAYS)).isoformat()
+    discovery_start = today_local.isoformat()
+    discovery_end = (today_local + timedelta(days=SOON_WINDOW_DAYS)).isoformat()
 
     tw_results = tmdb_discover(
         "/discover/movie",
         {
-            "release_date.gte": far_future_start,
-            "release_date.lte": far_future_end,
+            "release_date.gte": discovery_start,
+            "release_date.lte": discovery_end,
             "sort_by": "release_date.asc",
             "with_release_type": TMDB_CINEMA_RELEASE_TYPE_FILTER,
             "region": "TW",
