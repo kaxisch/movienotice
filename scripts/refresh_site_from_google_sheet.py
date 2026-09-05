@@ -10,6 +10,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from candidate_policy import (
+    ATMOVIES_HANDOFF_DAYS,
     LEGACY_NOW_ATMOVIES_MISS_LIMIT,
     LEGACY_SOON_ATMOVIES_MISS_LIMIT,
     NOW_ATMOVIES_MISS_LIMIT,
@@ -201,6 +202,15 @@ def should_hide_rerelease(candidate):
     return rerelease_is_hidden(candidate)
 
 
+def should_hold_tmdb_only_near_term_candidate(
+    tmdb_id, release_date, today, sheet_candidate_ids, manual_ids
+):
+    """0～60 天內只有 TMDB 日期、尚無院線候選狀態的電影不得先公開。"""
+    if not release_date or tmdb_id in sheet_candidate_ids or tmdb_id in manual_ids:
+        return False
+    return today <= release_date <= today + timedelta(days=ATMOVIES_HANDOFF_DAYS)
+
+
 def rerelease_can_override_regular_candidate(candidate):
     """Only a currently visible, date-verified rerelease may replace a regular candidate."""
     return rerelease_can_override_regular(candidate)
@@ -231,6 +241,7 @@ def index_candidates_by_tmdb_id(candidates):
 
 def build_verified_output(candidates):
     candidate_by_id = index_candidates_by_tmdb_id(candidates)
+    sheet_candidate_ids = set(candidate_by_id)
     ordered_ids = list(candidate_by_id)
 
     today = datetime.now(timezone(timedelta(hours=8))).date()
@@ -303,6 +314,15 @@ def build_verified_output(candidates):
             selected_releases = weekly.select_public_tw_theatrical_releases(tmdb_id, eligible_releases)
             tw_date = selected_releases[0]["date"]
         release_date = weekly.parse_iso_date(tw_date)
+
+        if should_hold_tmdb_only_near_term_candidate(
+            tmdb_id, release_date, today, sheet_candidate_ids, manual_ids
+        ):
+            log(
+                f"  Held TMDB-only candidate {tmdb_id}: Taiwan cinema date {tw_date} is "
+                "within days 0-60 but no cinema audit candidate exists"
+            )
+            continue
 
         if source.get("candidate_kind") != "rerelease" and should_hide_for_atmovies_absence(
             source, release_date, today, manual_ids
