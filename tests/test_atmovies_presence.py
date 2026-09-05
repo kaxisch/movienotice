@@ -153,10 +153,14 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(releases, [])
 
     @patch.object(weekly, "tmdb_discover", return_value=[])
-    def test_far_future_discover_uses_all_cinema_release_types(self, tmdb_discover):
+    def test_supplemental_discover_covers_today_through_day_180_and_all_cinema_types(
+        self, tmdb_discover
+    ):
         weekly.fetch_supplemental_soon_candidates(date(2026, 8, 19))
 
         params = tmdb_discover.call_args.args[1]
+        self.assertEqual(params["release_date.gte"], "2026-08-19")
+        self.assertEqual(params["release_date.lte"], "2027-02-15")
         self.assertEqual(params["region"], "TW")
         self.assertEqual(params["with_release_type"], "1|2|3")
 
