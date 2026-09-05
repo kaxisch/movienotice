@@ -1,12 +1,282 @@
 {
-  "generated_at": "2026-09-05T20:44:40.668321+08:00",
+  "generated_at": "2026-09-05T21:36:31.443610+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 64,
-    "soon_count": 75
+    "now_count": 65,
+    "soon_count": 77
   },
   "movies": {
     "now": [
+      {
+        "id": 23160,
+        "titleZh": "鯨魚馬戲團",
+        "titleEn": "Werckmeister harmóniák",
+        "releaseDate": "2026-09-05",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-05",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/sx3cKSacOGAj7GiU0V3PCy4Eh2j.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pyCUjcPHZrMY125lWpWAxEexe7C.jpg",
+        "voteAverage": "7.9",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 139,
+        "synopsis": "",
+        "imdb": "8.0",
+        "rt": "97%",
+        "mc": "93",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 17374,
+            "lastChanged": "2026-09-05T21:36:31.443610+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-05T21:36:31.443610+08:00"
+          },
+          "mc": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-05T21:36:31.443610+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Lars Rudolph",
+            "char": "János Valuska",
+            "photo": "https://image.tmdb.org/t/p/w500/1C1tHlJpvWmyfnfqjpi5tHDs4jn.jpg"
+          },
+          {
+            "name": "Peter Fitz",
+            "char": "György Eszter",
+            "photo": "https://image.tmdb.org/t/p/w500/uuS2Tbva1PdAeMxFKUjlO1V7eJN.jpg"
+          },
+          {
+            "name": "Hanna Schygulla",
+            "char": "Tünde Eszter",
+            "photo": "https://image.tmdb.org/t/p/w500/hAZVxNCVzYBq3ToWzE01LXK6Oum.jpg"
+          },
+          {
+            "name": "Alfréd Járai",
+            "char": "Lajos Harrer",
+            "photo": "https://image.tmdb.org/t/p/w500/gZgfWedQdgFV69bzCtKwZbQ8Nbo.jpg"
+          },
+          {
+            "name": "Pauer Gyula",
+            "char": "Mr. Hagelmayer",
+            "photo": "https://image.tmdb.org/t/p/w500/radfLB93oMbGoYa4jrDYoqqX3kN.jpg"
+          },
+          {
+            "name": "Derzsi János",
+            "char": "Man In The Broad-Cloth Coat",
+            "photo": "https://image.tmdb.org/t/p/w500/8ER5TWn3Wm0UYiwuXEVTcUZaHD1.jpg"
+          },
+          {
+            "name": "Mihály Kormos",
+            "char": "Factotum",
+            "photo": "https://image.tmdb.org/t/p/w500/pu1nv97NSAj6AyQnXLyKaQMU9Cg.jpg"
+          },
+          {
+            "name": "Putyi Horváth",
+            "char": "Porter",
+            "photo": "https://image.tmdb.org/t/p/w500/9aKiMvr7X69X6mNQdcDZTZ7JnWU.jpg"
+          },
+          {
+            "name": "Éva Almássy Albert",
+            "char": "Aunt Piri",
+            "photo": "https://image.tmdb.org/t/p/w500/bGQtug5lUbvJF1CKDu2REo0C6AW.jpg"
+          },
+          {
+            "name": "Dobai Péter",
+            "char": "Chief Constable",
+            "photo": "https://image.tmdb.org/t/p/w500/3Dla7ONZqgzsbzKIOh6Ly2fntDE.jpg"
+          },
+          {
+            "name": "László feLugossy",
+            "char": "Housepainter",
+            "photo": null
+          },
+          {
+            "name": "Barna Mihók",
+            "char": "Coachman",
+            "photo": "https://image.tmdb.org/t/p/w500/doDU9OLrRiNuNVA3vJzyWLCdwBF.jpg"
+          },
+          {
+            "name": "Bese Sándor",
+            "char": "The Prince",
+            "photo": null
+          },
+          {
+            "name": "Börcsök Enikő",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zbqVGiZT4P2Ez4PxJDFsxZgRuc6.jpg"
+          },
+          {
+            "name": "Irén Szajki",
+            "char": "Mrs. Harrer",
+            "photo": null
+          },
+          {
+            "name": "Barkó György",
+            "char": "Mr. Nadabán",
+            "photo": "https://image.tmdb.org/t/p/w500/wEPSCjvpADV3W0UHkCvMrafJOlk.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Krasznahorkai László",
+            "job": "Writer"
+          },
+          {
+            "name": "Tarr Béla",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 64974,
+        "status": "Released",
+        "origLang": "hu",
+        "origTitle": "Werckmeister harmóniák",
+        "platforms": [],
+        "popularity": 5.0586,
+        "imdbId": "tt0249241",
+        "countries": [
+          "France",
+          "Germany",
+          "Hungary",
+          "Italy"
+        ],
+        "detail": {
+          "duration": 139,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/sx3cKSacOGAj7GiU0V3PCy4Eh2j.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pyCUjcPHZrMY125lWpWAxEexe7C.jpg",
+          "voteAverage": "7.9",
+          "trailerKey": null,
+          "imdbId": "tt0249241",
+          "countries": [
+            "France",
+            "Germany",
+            "Hungary",
+            "Italy"
+          ],
+          "cast": [
+            {
+              "name": "Lars Rudolph",
+              "char": "János Valuska",
+              "photo": "https://image.tmdb.org/t/p/w500/1C1tHlJpvWmyfnfqjpi5tHDs4jn.jpg"
+            },
+            {
+              "name": "Peter Fitz",
+              "char": "György Eszter",
+              "photo": "https://image.tmdb.org/t/p/w500/uuS2Tbva1PdAeMxFKUjlO1V7eJN.jpg"
+            },
+            {
+              "name": "Hanna Schygulla",
+              "char": "Tünde Eszter",
+              "photo": "https://image.tmdb.org/t/p/w500/hAZVxNCVzYBq3ToWzE01LXK6Oum.jpg"
+            },
+            {
+              "name": "Alfréd Járai",
+              "char": "Lajos Harrer",
+              "photo": "https://image.tmdb.org/t/p/w500/gZgfWedQdgFV69bzCtKwZbQ8Nbo.jpg"
+            },
+            {
+              "name": "Pauer Gyula",
+              "char": "Mr. Hagelmayer",
+              "photo": "https://image.tmdb.org/t/p/w500/radfLB93oMbGoYa4jrDYoqqX3kN.jpg"
+            },
+            {
+              "name": "Derzsi János",
+              "char": "Man In The Broad-Cloth Coat",
+              "photo": "https://image.tmdb.org/t/p/w500/8ER5TWn3Wm0UYiwuXEVTcUZaHD1.jpg"
+            },
+            {
+              "name": "Mihály Kormos",
+              "char": "Factotum",
+              "photo": "https://image.tmdb.org/t/p/w500/pu1nv97NSAj6AyQnXLyKaQMU9Cg.jpg"
+            },
+            {
+              "name": "Putyi Horváth",
+              "char": "Porter",
+              "photo": "https://image.tmdb.org/t/p/w500/9aKiMvr7X69X6mNQdcDZTZ7JnWU.jpg"
+            },
+            {
+              "name": "Éva Almássy Albert",
+              "char": "Aunt Piri",
+              "photo": "https://image.tmdb.org/t/p/w500/bGQtug5lUbvJF1CKDu2REo0C6AW.jpg"
+            },
+            {
+              "name": "Dobai Péter",
+              "char": "Chief Constable",
+              "photo": "https://image.tmdb.org/t/p/w500/3Dla7ONZqgzsbzKIOh6Ly2fntDE.jpg"
+            },
+            {
+              "name": "László feLugossy",
+              "char": "Housepainter",
+              "photo": null
+            },
+            {
+              "name": "Barna Mihók",
+              "char": "Coachman",
+              "photo": "https://image.tmdb.org/t/p/w500/doDU9OLrRiNuNVA3vJzyWLCdwBF.jpg"
+            },
+            {
+              "name": "Bese Sándor",
+              "char": "The Prince",
+              "photo": null
+            },
+            {
+              "name": "Börcsök Enikő",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zbqVGiZT4P2Ez4PxJDFsxZgRuc6.jpg"
+            },
+            {
+              "name": "Irén Szajki",
+              "char": "Mrs. Harrer",
+              "photo": null
+            },
+            {
+              "name": "Barkó György",
+              "char": "Mr. Nadabán",
+              "photo": "https://image.tmdb.org/t/p/w500/wEPSCjvpADV3W0UHkCvMrafJOlk.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Krasznahorkai László",
+              "job": "Writer"
+            },
+            {
+              "name": "Tarr Béla",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 64974,
+          "status": "Released",
+          "origLang": "hu",
+          "origTitle": "Werckmeister harmóniák",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/23160?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 71883,
         "titleZh": "超時空甩尾",
@@ -18771,6 +19041,254 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1507580,
+        "titleZh": "哈姆雷特—Hiran Abeysekera版",
+        "titleEn": "National Theatre Live: Hamlet",
+        "releaseDate": "2026-09-12",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-12",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/g0bgIJHg0qCSkOM0wCTDJG3nKpZ.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/eid7AFjPqVcqsUEkKuOzMsTjwQ5.jpg",
+        "voteAverage": "6.5",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 160,
+        "synopsis": "丹麥王國鬼影幢幢，你可曾窺見端倪？在重重責任與種種疑慮的撕扯中，在至高權力與幾許特權的圍困下，年輕的哈姆雷特王子終將發出那石破天驚的一問——你我都心領神會的永恆詰問。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Hiran Abeysekera",
+            "char": "Hamlet",
+            "photo": "https://image.tmdb.org/t/p/w500/1AcEoZAsUYtRaZCMHE0p9u1xbIs.jpg"
+          },
+          {
+            "name": "阿利斯塔爾·佩特瑞",
+            "char": "Claudius",
+            "photo": "https://image.tmdb.org/t/p/w500/b6KUFhtWtmmTIcs7gL9kZktzJzl.jpg"
+          },
+          {
+            "name": "Geoffrey Streatfeild",
+            "char": "Polonius",
+            "photo": "https://image.tmdb.org/t/p/w500/95ifVdcQFLxNDHZgDyljFPATUuZ.jpg"
+          },
+          {
+            "name": "Ayesha Dharker",
+            "char": "Gertrude",
+            "photo": "https://image.tmdb.org/t/p/w500/6LNt1MmG22qPQxQgRVmoOPfQofQ.jpg"
+          },
+          {
+            "name": "Francesca Mills",
+            "char": "Ophelia",
+            "photo": "https://image.tmdb.org/t/p/w500/iQvDhjHcUzIFYYETimmKq5r0xjH.jpg"
+          },
+          {
+            "name": "Ryan Ellsworth",
+            "char": "Ghost/Player King/First Gravedigger",
+            "photo": "https://image.tmdb.org/t/p/w500/82dIg0CigQo47H06Y54gb7u5lFh.jpg"
+          },
+          {
+            "name": "Tessa Wong",
+            "char": "Horatio",
+            "photo": "https://image.tmdb.org/t/p/w500/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
+          },
+          {
+            "name": "Tom Glenister",
+            "char": "Laertes",
+            "photo": "https://image.tmdb.org/t/p/w500/ud8WGXD27xoF8oBxOL1vHroEAo5.jpg"
+          },
+          {
+            "name": "Phil Cheadle",
+            "char": "Marcellus / Captain",
+            "photo": "https://image.tmdb.org/t/p/w500/4JDkMQsBQ2tEhKjk8bw3dD5u1Wu.jpg"
+          },
+          {
+            "name": "Kiren Kebaili-Dwyer",
+            "char": "Fortinbras",
+            "photo": "https://image.tmdb.org/t/p/w500/6X44DCz89B5nI0sFbPqeb5ZyeY6.jpg"
+          },
+          {
+            "name": "Joe Bolland",
+            "char": "Guildenstern",
+            "photo": null
+          },
+          {
+            "name": "Mary Higgins",
+            "char": "Osric / Voltemand",
+            "photo": "https://image.tmdb.org/t/p/w500/jYQdct2jLldGzxs6PsrzDqbYxQw.jpg"
+          },
+          {
+            "name": "Liz Jadav",
+            "char": "Nurse / Priest",
+            "photo": "https://image.tmdb.org/t/p/w500/ienk34EXxHE7ILVN5GP0XAZ2iwI.jpg"
+          },
+          {
+            "name": "Hari Mackinnon",
+            "char": "Rosencrantz",
+            "photo": null
+          },
+          {
+            "name": "Sophia Papadopoulos",
+            "char": "Cornelius / English Ambassador / Second Gravedigger",
+            "photo": null
+          },
+          {
+            "name": "Siobhan Redmond",
+            "char": "First Player",
+            "photo": "https://image.tmdb.org/t/p/w500/sxWG5sNKmjKgCCGpiK6ZI3sLKyo.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Robert Hastie",
+            "job": "Director"
+          },
+          {
+            "name": "Christine Lalla",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "National Theatre Live: Hamlet",
+        "platforms": [],
+        "popularity": 1.2351,
+        "imdbId": "tt37511206",
+        "countries": [
+          "United Kingdom"
+        ],
+        "detail": {
+          "duration": 160,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "丹麥王國鬼影幢幢，你可曾窺見端倪？在重重責任與種種疑慮的撕扯中，在至高權力與幾許特權的圍困下，年輕的哈姆雷特王子終將發出那石破天驚的一問——你我都心領神會的永恆詰問。",
+          "poster": "https://image.tmdb.org/t/p/w500/g0bgIJHg0qCSkOM0wCTDJG3nKpZ.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/eid7AFjPqVcqsUEkKuOzMsTjwQ5.jpg",
+          "voteAverage": "6.5",
+          "trailerKey": null,
+          "imdbId": "tt37511206",
+          "countries": [
+            "United Kingdom"
+          ],
+          "cast": [
+            {
+              "name": "Hiran Abeysekera",
+              "char": "Hamlet",
+              "photo": "https://image.tmdb.org/t/p/w500/1AcEoZAsUYtRaZCMHE0p9u1xbIs.jpg"
+            },
+            {
+              "name": "阿利斯塔爾·佩特瑞",
+              "char": "Claudius",
+              "photo": "https://image.tmdb.org/t/p/w500/b6KUFhtWtmmTIcs7gL9kZktzJzl.jpg"
+            },
+            {
+              "name": "Geoffrey Streatfeild",
+              "char": "Polonius",
+              "photo": "https://image.tmdb.org/t/p/w500/95ifVdcQFLxNDHZgDyljFPATUuZ.jpg"
+            },
+            {
+              "name": "Ayesha Dharker",
+              "char": "Gertrude",
+              "photo": "https://image.tmdb.org/t/p/w500/6LNt1MmG22qPQxQgRVmoOPfQofQ.jpg"
+            },
+            {
+              "name": "Francesca Mills",
+              "char": "Ophelia",
+              "photo": "https://image.tmdb.org/t/p/w500/iQvDhjHcUzIFYYETimmKq5r0xjH.jpg"
+            },
+            {
+              "name": "Ryan Ellsworth",
+              "char": "Ghost/Player King/First Gravedigger",
+              "photo": "https://image.tmdb.org/t/p/w500/82dIg0CigQo47H06Y54gb7u5lFh.jpg"
+            },
+            {
+              "name": "Tessa Wong",
+              "char": "Horatio",
+              "photo": "https://image.tmdb.org/t/p/w500/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
+            },
+            {
+              "name": "Tom Glenister",
+              "char": "Laertes",
+              "photo": "https://image.tmdb.org/t/p/w500/ud8WGXD27xoF8oBxOL1vHroEAo5.jpg"
+            },
+            {
+              "name": "Phil Cheadle",
+              "char": "Marcellus / Captain",
+              "photo": "https://image.tmdb.org/t/p/w500/4JDkMQsBQ2tEhKjk8bw3dD5u1Wu.jpg"
+            },
+            {
+              "name": "Kiren Kebaili-Dwyer",
+              "char": "Fortinbras",
+              "photo": "https://image.tmdb.org/t/p/w500/6X44DCz89B5nI0sFbPqeb5ZyeY6.jpg"
+            },
+            {
+              "name": "Joe Bolland",
+              "char": "Guildenstern",
+              "photo": null
+            },
+            {
+              "name": "Mary Higgins",
+              "char": "Osric / Voltemand",
+              "photo": "https://image.tmdb.org/t/p/w500/jYQdct2jLldGzxs6PsrzDqbYxQw.jpg"
+            },
+            {
+              "name": "Liz Jadav",
+              "char": "Nurse / Priest",
+              "photo": "https://image.tmdb.org/t/p/w500/ienk34EXxHE7ILVN5GP0XAZ2iwI.jpg"
+            },
+            {
+              "name": "Hari Mackinnon",
+              "char": "Rosencrantz",
+              "photo": null
+            },
+            {
+              "name": "Sophia Papadopoulos",
+              "char": "Cornelius / English Ambassador / Second Gravedigger",
+              "photo": null
+            },
+            {
+              "name": "Siobhan Redmond",
+              "char": "First Player",
+              "photo": "https://image.tmdb.org/t/p/w500/sxWG5sNKmjKgCCGpiK6ZI3sLKyo.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Robert Hastie",
+              "job": "Director"
+            },
+            {
+              "name": "Christine Lalla",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "National Theatre Live: Hamlet",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1507580?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1423191,
         "titleZh": "惡靈古堡：爆發夜",
         "titleEn": "Resident Evil",
@@ -23658,6 +24176,292 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1705721?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 299534,
+        "titleZh": "復仇者聯盟：終局之戰",
+        "titleEn": "Avengers: Endgame",
+        "releaseDate": "2026-09-24",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/fXgoEedB0k5TgaYrBqbY3eZ3DAI.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+        "voteAverage": "8.2",
+        "genre": [
+          "冒險",
+          "科幻",
+          "動作"
+        ],
+        "duration": 181,
+        "synopsis": "接續《復仇者聯盟：無限之戰》為復仇者聯盟系列最終章！薩諾斯彈指間毀滅宇宙一半的生物後，僅存的復仇者們要如何重整旗鼓，背水一戰，為僅存的信念而戰。",
+        "imdb": "8.4",
+        "rt": "94%",
+        "mc": "78",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 1483215,
+            "lastChanged": "2026-09-05T21:36:31.443610+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-05T21:36:31.443610+08:00"
+          },
+          "mc": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-05T21:36:31.443610+08:00"
+          }
+        },
+        "trailerKey": "sN0b8C_TNbg",
+        "cast": [
+          {
+            "name": "小勞勃·道尼",
+            "char": "Tony Stark / Iron Man",
+            "photo": "https://image.tmdb.org/t/p/w500/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+          },
+          {
+            "name": "克里斯·伊凡",
+            "char": "Steve Rogers / Captain America",
+            "photo": "https://image.tmdb.org/t/p/w500/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+          },
+          {
+            "name": "馬克·魯法洛",
+            "char": "Bruce Banner / Hulk",
+            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+          },
+          {
+            "name": "克里斯·漢斯沃",
+            "char": "Thor",
+            "photo": "https://image.tmdb.org/t/p/w500/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+          },
+          {
+            "name": "史嘉蕾·喬韓森",
+            "char": "Natasha Romanoff / Black Widow",
+            "photo": "https://image.tmdb.org/t/p/w500/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+          },
+          {
+            "name": "傑瑞米·雷納",
+            "char": "Clint Barton / Hawkeye",
+            "photo": "https://image.tmdb.org/t/p/w500/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+          },
+          {
+            "name": "喬許·布洛林",
+            "char": "Thanos",
+            "photo": "https://image.tmdb.org/t/p/w500/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+          },
+          {
+            "name": "唐·奇鐸",
+            "char": "James Rhodes / War Machine",
+            "photo": "https://image.tmdb.org/t/p/w500/umhTmcVF26qZKEpSfG1ZNpcbs9D.jpg"
+          },
+          {
+            "name": "保羅路德",
+            "char": "Scott Lang / Ant-Man",
+            "photo": "https://image.tmdb.org/t/p/w500/6jtwNOLKy0LdsRAKwZqgYMAfd5n.jpg"
+          },
+          {
+            "name": "班奈狄克·康柏拜區",
+            "char": "Doctor Strange",
+            "photo": "https://image.tmdb.org/t/p/w500/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+          },
+          {
+            "name": "查德維克·博斯曼",
+            "char": "T'Challa / Black Panther",
+            "photo": "https://image.tmdb.org/t/p/w500/nL16SKfyP1b7Hk6LsuWiqMfbdb8.jpg"
+          },
+          {
+            "name": "布麗·拉森",
+            "char": "Carol Danvers / Captain Marvel",
+            "photo": "https://image.tmdb.org/t/p/w500/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+          },
+          {
+            "name": "湯姆·霍蘭德",
+            "char": "Peter Parker / Spider-Man",
+            "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+          },
+          {
+            "name": "凱倫·吉蘭",
+            "char": "Nebula",
+            "photo": "https://image.tmdb.org/t/p/w500/qYx8CflXVq48nGKX1IJsDrAj0sT.jpg"
+          },
+          {
+            "name": "柔伊莎達娜",
+            "char": "Gamora",
+            "photo": "https://image.tmdb.org/t/p/w500/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg"
+          },
+          {
+            "name": "伊凡潔琳·莉莉",
+            "char": "Hope Van Dyne / Wasp",
+            "photo": "https://image.tmdb.org/t/p/w500/zgztLIWTJZm3vjGU7ezhF8GXESJ.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Stephen McFeely",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Christopher Markus",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Anthony Russo",
+            "job": "Director"
+          }
+        ],
+        "budget": 356000000,
+        "revenue": 2799439100,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Avengers: Endgame",
+        "platforms": [
+          {
+            "name": "Disney Plus",
+            "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+          }
+        ],
+        "popularity": 57.6232,
+        "imdbId": "tt4154796",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 181,
+          "genres": [
+            "冒險",
+            "科幻",
+            "動作"
+          ],
+          "synopsis": "接續《復仇者聯盟：無限之戰》為復仇者聯盟系列最終章！薩諾斯彈指間毀滅宇宙一半的生物後，僅存的復仇者們要如何重整旗鼓，背水一戰，為僅存的信念而戰。",
+          "poster": "https://image.tmdb.org/t/p/w500/fXgoEedB0k5TgaYrBqbY3eZ3DAI.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+          "voteAverage": "8.2",
+          "trailerKey": "sN0b8C_TNbg",
+          "imdbId": "tt4154796",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "小勞勃·道尼",
+              "char": "Tony Stark / Iron Man",
+              "photo": "https://image.tmdb.org/t/p/w500/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+            },
+            {
+              "name": "克里斯·伊凡",
+              "char": "Steve Rogers / Captain America",
+              "photo": "https://image.tmdb.org/t/p/w500/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+            },
+            {
+              "name": "馬克·魯法洛",
+              "char": "Bruce Banner / Hulk",
+              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+            },
+            {
+              "name": "克里斯·漢斯沃",
+              "char": "Thor",
+              "photo": "https://image.tmdb.org/t/p/w500/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+            },
+            {
+              "name": "史嘉蕾·喬韓森",
+              "char": "Natasha Romanoff / Black Widow",
+              "photo": "https://image.tmdb.org/t/p/w500/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+            },
+            {
+              "name": "傑瑞米·雷納",
+              "char": "Clint Barton / Hawkeye",
+              "photo": "https://image.tmdb.org/t/p/w500/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg"
+            },
+            {
+              "name": "喬許·布洛林",
+              "char": "Thanos",
+              "photo": "https://image.tmdb.org/t/p/w500/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+            },
+            {
+              "name": "唐·奇鐸",
+              "char": "James Rhodes / War Machine",
+              "photo": "https://image.tmdb.org/t/p/w500/umhTmcVF26qZKEpSfG1ZNpcbs9D.jpg"
+            },
+            {
+              "name": "保羅路德",
+              "char": "Scott Lang / Ant-Man",
+              "photo": "https://image.tmdb.org/t/p/w500/6jtwNOLKy0LdsRAKwZqgYMAfd5n.jpg"
+            },
+            {
+              "name": "班奈狄克·康柏拜區",
+              "char": "Doctor Strange",
+              "photo": "https://image.tmdb.org/t/p/w500/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+            },
+            {
+              "name": "查德維克·博斯曼",
+              "char": "T'Challa / Black Panther",
+              "photo": "https://image.tmdb.org/t/p/w500/nL16SKfyP1b7Hk6LsuWiqMfbdb8.jpg"
+            },
+            {
+              "name": "布麗·拉森",
+              "char": "Carol Danvers / Captain Marvel",
+              "photo": "https://image.tmdb.org/t/p/w500/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+            },
+            {
+              "name": "湯姆·霍蘭德",
+              "char": "Peter Parker / Spider-Man",
+              "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+            },
+            {
+              "name": "凱倫·吉蘭",
+              "char": "Nebula",
+              "photo": "https://image.tmdb.org/t/p/w500/qYx8CflXVq48nGKX1IJsDrAj0sT.jpg"
+            },
+            {
+              "name": "柔伊莎達娜",
+              "char": "Gamora",
+              "photo": "https://image.tmdb.org/t/p/w500/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg"
+            },
+            {
+              "name": "伊凡潔琳·莉莉",
+              "char": "Hope Van Dyne / Wasp",
+              "photo": "https://image.tmdb.org/t/p/w500/zgztLIWTJZm3vjGU7ezhF8GXESJ.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Stephen McFeely",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Christopher Markus",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Anthony Russo",
+              "job": "Director"
+            }
+          ],
+          "budget": 356000000,
+          "revenue": 2799439100,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Avengers: Endgame",
+          "platforms": [
+            {
+              "name": "Disney Plus",
+              "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/299534?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
