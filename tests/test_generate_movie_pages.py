@@ -33,6 +33,19 @@ class GenerateMoviePagesSlugTests(unittest.TestCase):
         self.assertIn("min-resolution: 1.5dppx", page)
         self.assertIn("/w1280/example.jpg", page)
 
+    def test_hero_places_original_release_year_after_title(self):
+        page = render_movie_page({
+            "id": 23160,
+            "titleZh": "鯨魚馬戲團",
+            "titleEn": "Werckmeister harmóniák",
+            "releaseYear": "2000",
+            "releaseDate": "2026-09-05",
+        }, "2026-09-06T00:00:00+08:00")
+
+        self.assertIn('<h1>鯨魚馬戲團<span class="production-year">（2000）</span></h1>', page)
+        self.assertIn('<span class="original-title">Werckmeister harmóniák</span> · 2026/09/05', page)
+        self.assertNotIn("台灣上映 2026/09/05", page)
+
     def test_poster_fallback_uses_original_tmdb_image_on_high_resolution_displays(self):
         page = render_movie_page({
             "id": 2,

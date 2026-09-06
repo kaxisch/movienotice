@@ -1297,6 +1297,8 @@ def build_static_movie(record, payload, ratings):
     crew = parse_crew(payload)
     vote_average = payload.get("vote_average")
     vote_average = f"{vote_average:.1f}" if isinstance(vote_average, (int, float)) and vote_average > 0 else ""
+    primary_release_date = payload.get("release_date") or record.get("tmdb_primary_release_date", "")
+    release_year = primary_release_date[:4] if re.fullmatch(r"\d{4}-\d{2}-\d{2}", primary_release_date) else ""
     detail = {
         "duration": payload.get("runtime") or "",
         "genres": genres,
@@ -1321,6 +1323,7 @@ def build_static_movie(record, payload, ratings):
         "titleZh": title_zh,
         "titleEn": payload.get("original_title") or record.get("title_en", ""),
         "releaseDate": release_date,
+        "releaseYear": release_year,
         "isRerelease": record.get("candidate_kind") == "rerelease",
         "twTheatricalReleases": theatrical_releases,
         "twReleaseDateVerified": bool(release_date),

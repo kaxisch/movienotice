@@ -167,6 +167,12 @@ h1 {
   font-weight: 400;
   line-height: 1.2;
 }
+.production-year {
+  display: inline-block;
+  color: rgba(255, 255, 255, .68);
+  font-size: .68em;
+  white-space: nowrap;
+}
 .subtitle { margin: 0; color: rgba(255, 255, 255, .65); font-size: 14px; }
 .original-title { font-family: 'Lora', serif; font-style: italic; font-weight: 400; }
 .ratings { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 18px 0 20px; }
@@ -461,6 +467,12 @@ def render_movie_page(movie, generated_at):
     detail = detail_for(movie)
     title_zh = movie.get("titleZh") or detail.get("origTitle") or movie.get("titleEn") or "電影"
     title_en = movie.get("titleEn") or detail.get("origTitle") or ""
+    release_year = str(movie.get("releaseYear") or "").strip()
+    title_year = (
+        f'<span class="production-year">（{h(release_year)}）</span>'
+        if re.fullmatch(r"\d{4}", release_year)
+        else ""
+    )
     page_title = f"《{title_zh}》台灣上映日期、評分、預告、劇情簡介 | {SITE_NAME}"
     description = description_for(movie, detail)
     url = movie_url(movie)
@@ -559,7 +571,7 @@ def render_movie_page(movie, generated_at):
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;500;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css?v=26"/>
+<link rel="stylesheet" href="../../movie-page.css?v=27"/>
 <script src="../../movie-page.js?v=4" defer></script>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>
@@ -567,7 +579,7 @@ def render_movie_page(movie, generated_at):
 <div class="page-bg"></div>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="../../"><img src="../../logo.svg?v=10" alt="MovieNotice 電影佈告欄"/><span class="nav-copy"><span class="nav-name">電影佈告欄</span></span></a><button class="share-button" type="button" aria-label="分享這部電影"><span class="material-symbols-outlined" aria-hidden="true">share</span><span class="share-label">分享</span></button></div></header>
 <main>
-<section class="hero"><div class="hero-media">{hero_media}</div><div class="hero-content"><div class="genre-tags">{genre_tags}</div><h1>{h(title_zh)}</h1><p class="subtitle">{subtitle}</p><div class="ratings">{ratings_html}</div>{trailer_html}</div></section>
+<section class="hero"><div class="hero-media">{hero_media}</div><div class="hero-content"><div class="genre-tags">{genre_tags}</div><h1>{h(title_zh)}{title_year}</h1><p class="subtitle">{subtitle}</p><div class="ratings">{ratings_html}</div>{trailer_html}</div></section>
 <section class="content">
 {f'<p class="synopsis">{h(detail.get("synopsis") or movie.get("synopsis"))}</p>' if (detail.get("synopsis") or movie.get("synopsis")) else ''}
 {f'<div class="crew-grid">{crew_html}</div>' if crew_html else ''}
