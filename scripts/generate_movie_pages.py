@@ -173,6 +173,7 @@ h1 {
   font-size: .68em;
   white-space: nowrap;
 }
+.production-year-value { position: relative; top: -.1em; }
 .subtitle { margin: 0; color: rgba(255, 255, 255, .65); font-size: 14px; }
 .original-title { font-family: 'Lora', serif; font-style: italic; font-weight: 400; }
 .ratings { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 18px 0 20px; }
@@ -469,7 +470,7 @@ def render_movie_page(movie, generated_at):
     title_en = movie.get("titleEn") or detail.get("origTitle") or ""
     release_year = str(movie.get("releaseYear") or "").strip()
     title_year = (
-        f'<span class="production-year">（{h(release_year)}）</span>'
+        f'<span class="production-year">（<span class="production-year-value">{h(release_year)}</span>）</span>'
         if re.fullmatch(r"\d{4}", release_year)
         else ""
     )
@@ -571,7 +572,7 @@ def render_movie_page(movie, generated_at):
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=10"/>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..600;1,300..600&amp;family=Lato:wght@300;400;500;700&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;family=Noto+Serif+TC:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../../movie-page.css?v=27"/>
+<link rel="stylesheet" href="../../movie-page.css?v=28"/>
 <script src="../../movie-page.js?v=4" defer></script>
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False, separators=(",", ":"))}</script>
 </head>

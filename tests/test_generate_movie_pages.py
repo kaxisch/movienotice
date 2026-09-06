@@ -42,7 +42,11 @@ class GenerateMoviePagesSlugTests(unittest.TestCase):
             "releaseDate": "2026-09-05",
         }, "2026-09-06T00:00:00+08:00")
 
-        self.assertIn('<h1>鯨魚馬戲團<span class="production-year">（2000）</span></h1>', page)
+        self.assertIn(
+            '<h1>鯨魚馬戲團<span class="production-year">（'
+            '<span class="production-year-value">2000</span>）</span></h1>',
+            page,
+        )
         self.assertIn('<span class="original-title">Werckmeister harmóniák</span> · 2026/09/05', page)
         self.assertNotIn("台灣上映 2026/09/05", page)
 
