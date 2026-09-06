@@ -80,6 +80,26 @@ class CandidatePresenceTests(unittest.TestCase):
 
         self.assertTrue(movie["isRerelease"])
 
+    def test_static_movie_exports_original_year_instead_of_taiwan_release_year(self):
+        movie = weekly.build_static_movie(
+            {
+                "tmdb_id": 23160,
+                "tmdb_tw_release_date": "2026-09-05",
+                "tmdb_primary_release_date": "2000-05-19",
+                "candidate_kind": "rerelease",
+            },
+            {
+                "title": "鯨魚馬戲團",
+                "original_title": "Werckmeister harmóniák",
+                "release_date": "2000-05-19",
+                "genres": [],
+            },
+            {},
+        )
+
+        self.assertEqual(movie["releaseYear"], "2000")
+        self.assertNotEqual(movie["releaseYear"], movie["releaseDate"][:4])
+
     def test_static_movie_does_not_mark_regular_release_as_rerelease(self):
         movie = weekly.build_static_movie(
             {
