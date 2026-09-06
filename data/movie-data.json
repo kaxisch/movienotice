@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T15:07:40.360632+08:00",
+  "generated_at": "2026-09-06T19:20:00.447084+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 66,
@@ -997,8 +997,8 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 249,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
@@ -1734,7 +1734,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/aBtS3yCWReAen3OefxBXedbArFI.jpg",
-        "voteAverage": "6.0",
+        "voteAverage": "6.5",
         "genre": [
           "驚悚"
         ],
@@ -1872,7 +1872,7 @@
           "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/aBtS3yCWReAen3OefxBXedbArFI.jpg",
-          "voteAverage": "6.0",
+          "voteAverage": "6.5",
           "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
@@ -3761,16 +3761,16 @@
         ],
         "crew": [
           {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
             "name": "Eskil Vogt",
             "job": "Screenplay"
           },
           {
             "name": "Joachim Trier",
             "job": "Screenplay"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -3877,16 +3877,16 @@
           ],
           "crew": [
             {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
               "name": "Eskil Vogt",
               "job": "Screenplay"
             },
             {
               "name": "Joachim Trier",
               "job": "Screenplay"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5380,7 +5380,7 @@
         "origLang": "ja",
         "origTitle": "兄を持ち運べるサイズに",
         "platforms": [],
-        "popularity": 1.8042,
+        "popularity": 1.8618,
         "imdbId": "tt38504671",
         "countries": [
           "Japan"
@@ -5608,7 +5608,7 @@
         "origLang": "en",
         "origTitle": "Just Play Dead",
         "platforms": [],
-        "popularity": 74.3812,
+        "popularity": 69.5375,
         "imdbId": "tt36948232",
         "countries": [
           "United Kingdom"
@@ -11893,7 +11893,7 @@
         "origLang": "ja",
         "origTitle": "ブルーロック",
         "platforms": [],
-        "popularity": 4.7502,
+        "popularity": 4.7604,
         "imdbId": "tt39400168",
         "countries": [
           "Japan"
@@ -12694,11 +12694,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -12814,11 +12814,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -15219,7 +15219,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 172.6272,
+        "popularity": 177.6735,
         "imdbId": "tt29355505",
         "countries": [
           "United States of America"
@@ -16384,16 +16384,16 @@
         ],
         "crew": [
           {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
-          },
-          {
             "name": "Krzysztof Piesiewicz",
             "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -16516,16 +16516,16 @@
           ],
           "crew": [
             {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
-            },
-            {
               "name": "Krzysztof Piesiewicz",
               "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -20310,7 +20310,7 @@
         "origLang": "es",
         "origTitle": "Pacífico",
         "platforms": [],
-        "popularity": 4.9827,
+        "popularity": 5.0461,
         "imdbId": "tt4634974",
         "countries": [
           "Argentina",
@@ -22990,7 +22990,7 @@
         "origLang": "ja",
         "origTitle": "リリイ・シュシュのすべて",
         "platforms": [],
-        "popularity": 6.2658,
+        "popularity": 5.7429,
         "imdbId": "tt0297721",
         "countries": [
           "Japan"
@@ -23162,12 +23162,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -23215,12 +23215,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -23487,12 +23487,12 @@
           },
           {
             "name": "馬修·馬希爾",
-            "char": "",
+            "char": "Xavier Von Erck",
             "photo": "https://image.tmdb.org/t/p/w500/3RPEUaliXJ9lcoL5R5IbcAOwd5D.jpg"
           },
           {
             "name": "波金·伍德賓恩",
-            "char": "",
+            "char": "Cortland Gunn",
             "photo": "https://image.tmdb.org/t/p/w500/pnPyA5pJn94zUzuLWTNkGBNZxza.jpg"
           },
           {
@@ -23517,7 +23517,7 @@
           },
           {
             "name": "Alex Winter",
-            "char": "",
+            "char": "Bill Conradt",
             "photo": "https://image.tmdb.org/t/p/w500/2GM34tP0VZegydEXgCj541udTP9.jpg"
           },
           {
@@ -23606,12 +23606,12 @@
             },
             {
               "name": "馬修·馬希爾",
-              "char": "",
+              "char": "Xavier Von Erck",
               "photo": "https://image.tmdb.org/t/p/w500/3RPEUaliXJ9lcoL5R5IbcAOwd5D.jpg"
             },
             {
               "name": "波金·伍德賓恩",
-              "char": "",
+              "char": "Cortland Gunn",
               "photo": "https://image.tmdb.org/t/p/w500/pnPyA5pJn94zUzuLWTNkGBNZxza.jpg"
             },
             {
@@ -23636,7 +23636,7 @@
             },
             {
               "name": "Alex Winter",
-              "char": "",
+              "char": "Bill Conradt",
               "photo": "https://image.tmdb.org/t/p/w500/2GM34tP0VZegydEXgCj541udTP9.jpg"
             },
             {
@@ -24564,7 +24564,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
@@ -24692,7 +24692,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
@@ -29140,7 +29140,7 @@
         "origLang": "zh",
         "origTitle": "有用的人",
         "platforms": [],
-        "popularity": 1.253,
+        "popularity": 1.2117,
         "imdbId": "tt44934439",
         "countries": [
           "Taiwan"
@@ -29752,7 +29752,7 @@
         "origLang": "en",
         "origTitle": "Focker-in-Law",
         "platforms": [],
-        "popularity": 9.2511,
+        "popularity": 8.4048,
         "imdbId": "tt34966140",
         "countries": [
           "United States of America"
@@ -30641,7 +30641,7 @@
         "origLang": "en",
         "origTitle": "Avengers: Doomsday",
         "platforms": [],
-        "popularity": 51.7731,
+        "popularity": 50.1669,
         "imdbId": "tt21357150",
         "countries": [
           "United States of America"
