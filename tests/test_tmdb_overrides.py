@@ -119,6 +119,12 @@ class TmdbOverrideTests(unittest.TestCase):
             "Diamond IMPULSE": 1758522,
             "洲崎樂園 赤信號": 125222,
             "安詳之獸": 125253,
+            "高年級實習生": 607833,
+            "Perfume“Cold Sleep Perfume“Cold Sleep”-25 years Document-": 1603232,
+            "Perfume \"Cold Sleep\" -25 years Document-": 1603232,
+            "成人童話": 1174128,
+            "LOVE LIVE! 蓮之空女學院學園偶像俱樂部": 1675042,
+            "猛鬼大學4": 1610936,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
