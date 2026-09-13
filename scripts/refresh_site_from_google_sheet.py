@@ -239,6 +239,13 @@ def rerelease_can_override_regular_candidate(candidate):
     return rerelease_can_override_regular(candidate)
 
 
+def public_source_bucket(source, release_date, today):
+    """Only manual entries keep a special bucket; sheet labels are not public buckets."""
+    if source.get("manual_release"):
+        return "manual"
+    return "now" if release_date <= today else "next"
+
+
 def index_candidates_by_tmdb_id(candidates):
     """同片重複時，只有已驗證且未隱藏的重映候選可蓋掉一般候選。"""
     indexed = {}
@@ -277,9 +284,12 @@ def build_verified_output(candidates):
             candidate_by_id[tmdb_id] = {"tmdb_id": tmdb_id}
 
     manual_releases = load_manual_releases()
-    manual_ids = {item["tmdb_id"] for item in manual_releases}
+    all_manual_ids = {item["tmdb_id"] for item in manual_releases}
+    bootstrap_manual_ids = all_manual_ids - sheet_candidate_ids
     for manual in manual_releases:
         tmdb_id = manual["tmdb_id"]
+        if tmdb_id in sheet_candidate_ids:
+            continue
         if tmdb_id not in candidate_by_id:
             ordered_ids.append(tmdb_id)
         candidate_by_id[tmdb_id] = {
@@ -290,7 +300,7 @@ def build_verified_output(candidates):
             "source_bucket": "manual",
             "manual_release": True,
         }
-    retained_ids = load_current_site_ids() + load_current_whitelist_ids() + list(manual_ids)
+    retained_ids = load_current_site_ids() + load_current_whitelist_ids() + list(all_manual_ids)
     for tmdb_id in retained_ids:
         if tmdb_id not in candidate_by_id:
             ordered_ids.append(tmdb_id)
@@ -356,7 +366,7 @@ def build_verified_output(candidates):
         release_date = weekly.parse_iso_date(tw_date)
 
         if should_hold_tmdb_only_near_term_candidate(
-            tmdb_id, release_date, today, sheet_candidate_ids, manual_ids
+            tmdb_id, release_date, today, sheet_candidate_ids, bootstrap_manual_ids
         ):
             log(
                 f"  Held TMDB-only candidate {tmdb_id}: Taiwan cinema date {tw_date} is "
@@ -365,7 +375,7 @@ def build_verified_output(candidates):
             continue
 
         if source.get("candidate_kind") != "rerelease" and should_hide_for_atmovies_absence(
-            source, release_date, today, manual_ids
+            source, release_date, today, bootstrap_manual_ids
         ):
             log(
                 f"  Hidden TMDB {tmdb_id}: absent from Atmovies for "
@@ -387,7 +397,7 @@ def build_verified_output(candidates):
             "atmovies_url": source.get("atmovies_url", ""),
             "candidate_kind": source.get("candidate_kind", ""),
             "cinema_present": source.get("cinema_present", ""),
-            "source_bucket": source.get("source_bucket") or ("now" if release_date <= today else "next"),
+            "source_bucket": public_source_bucket(source, release_date, today),
             "continuous_run": continuous_run,
         })
         time.sleep(weekly.TMDB_DELAY)
