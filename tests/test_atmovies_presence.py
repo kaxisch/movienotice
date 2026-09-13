@@ -14,6 +14,24 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_sheet_bucket_does_not_replace_public_now_or_next_bucket(self):
+        today = date(2026, 9, 13)
+
+        self.assertEqual(
+            refresh.public_source_bucket(
+                {"source_bucket": "coming"}, today + timedelta(days=5), today
+            ),
+            "next",
+        )
+        self.assertEqual(
+            refresh.public_source_bucket(
+                {"source_bucket": "anything", "manual_release": True},
+                today + timedelta(days=5),
+                today,
+            ),
+            "manual",
+        )
+
     @patch.object(refresh.time, "sleep")
     def test_google_sheets_503_is_retried(self, sleep):
         error = RuntimeError("service unavailable")
@@ -670,7 +688,7 @@ class CandidatePresenceTests(unittest.TestCase):
 
         self.assertEqual(seeded, [])
 
-    def test_existing_manual_movie_is_not_seeded_for_handoff(self):
+    def test_existing_manual_movie_is_seeded_for_normal_handoff(self):
         payload = {
             "movies": {
                 "now": [{"id": 606, "titleZh": "人工保留", "releaseDate": "2026-07-17"}],
@@ -680,7 +698,8 @@ class CandidatePresenceTests(unittest.TestCase):
 
         seeded = publish.seed_site_handoff_candidates([], payload, "2026-07-18", {606})
 
-        self.assertEqual(seeded, [])
+        self.assertEqual(len(seeded), 1)
+        self.assertEqual(seeded[0]["tmdb_id"], 606)
 
 
 class RefreshVisibilityTests(unittest.TestCase):
@@ -864,9 +883,16 @@ class RefreshVisibilityTests(unittest.TestCase):
             "atmovies_id": "",
             "cinema_present": "TRUE",
         }
+        atmovies_record_present_without_source_id = {
+            "candidate_kind": "atmovies",
+            "source_bucket": "next",
+            "atmovies_id": "",
+            "atmovies_present": "TRUE",
+        }
 
         self.assertTrue(weekly.should_keep_static_movie(movie, cinema_record))
         self.assertTrue(weekly.should_keep_static_movie(movie, atmovies_record_with_cinema_presence))
+        self.assertTrue(weekly.should_keep_static_movie(movie, atmovies_record_present_without_source_id))
 
     def test_tmdb_only_streaming_candidate_remains_excluded(self):
         movie = {
@@ -1002,6 +1028,53 @@ class RefreshVisibilityTests(unittest.TestCase):
             patch.object(weekly, "tmdb_release_dates", return_value=release_results),
         ):
             output, _, _ = refresh.build_verified_output([])
+
+        self.assertEqual(output["tmdb_has_tw_date"], [])
+
+    @patch.object(refresh.time, "sleep")
+    @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
+    @patch.object(refresh, "load_current_site_ids", return_value=[])
+    @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
+    def test_audit_candidate_takes_over_manual_release_and_can_hide_it(
+        self, _supplemental, _site_ids, _whitelist_ids, _sleep
+    ):
+        release_date = (
+            datetime.now(timezone(timedelta(hours=8))).date() + timedelta(days=2)
+        ).isoformat()
+        candidate = {
+            "tmdb_id": 101,
+            "source_bucket": "next",
+            "release_date_tw": release_date,
+            "tmdb_tw_release_date": release_date,
+            "atmovies_present": False,
+            "cinema_present": False,
+            "consecutive_misses": 1,
+            "absence_audit_complete": True,
+        }
+        manual = {
+            "tmdb_id": 101,
+            "title_zh": "已交接電影",
+            "release_date_tw": release_date,
+            "kind": "regular",
+        }
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 3, "release_date": f"{release_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with (
+            patch.object(refresh, "load_manual_releases", return_value=[manual]),
+            patch.object(weekly, "tmdb_movie", return_value={
+                "id": 101,
+                "title": "已交接電影",
+                "original_title": "Handed Off",
+                "release_date": release_date,
+            }),
+            patch.object(weekly, "tmdb_release_dates", return_value=release_results),
+        ):
+            output, _, _ = refresh.build_verified_output([candidate])
 
         self.assertEqual(output["tmdb_has_tw_date"], [])
 

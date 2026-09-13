@@ -1362,6 +1362,7 @@ def should_keep_static_movie(movie, record):
         return False
     has_cinema_evidence = (
         record.get("candidate_kind") in {"cinema", "rerelease"}
+        or str(record.get("atmovies_present", "")).strip().lower() in {"1", "true", "yes", "y"}
         or str(record.get("cinema_present", "")).strip().lower() in {"1", "true", "yes", "y"}
     )
     if (
@@ -1510,57 +1511,6 @@ def export_static_movie_data(output, generated_at_local, previous_movies=None, t
 
     for tmdb_id in sorted(transient_failure_ids):
         retain_previous_static_movie(movies, existing_ids, previous_movies, tmdb_id, today_local)
-
-    manual_releases = load_manual_releases()
-    for idx, manual in enumerate(manual_releases, 1):
-        tmdb_id = manual.get("tmdb_id")
-        if not tmdb_id or tmdb_id in existing_ids:
-            continue
-        log(f"Manual release [{idx}/{len(manual_releases)}] TMDB {tmdb_id}")
-        payload = tmdb_movie_full(tmdb_id)
-        if not payload:
-            continue
-        theatrical_releases = releases_in_window(
-            extract_tw_theatrical_releases_from_results(payload.get("release_dates", {}).get("results", [])),
-            today_local - timedelta(days=NOW_LOOKBACK_DAYS),
-            today_local + timedelta(days=SOON_WINDOW_DAYS),
-        )
-        manual_date = parse_iso_date(manual.get("release_date_tw", ""))
-        theatrical_releases = [
-            item for item in theatrical_releases
-            if manual_date and item.get("date") == manual_date.isoformat()
-        ]
-        if not theatrical_releases:
-            log(f"  Skipped manual release TMDB {tmdb_id}: TMDB Taiwan cinema date does not match")
-            continue
-        release_date_tw = manual_date.isoformat()
-        record = {
-            "tmdb_id": tmdb_id,
-            "tmdb_title": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
-            "title_zh": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
-            "title_en": manual.get("title_en") or payload.get("original_title") or "",
-            "release_date_tw": release_date_tw,
-            "tmdb_tw_release_date": release_date_tw,
-            "tmdb_tw_release_dates": theatrical_releases,
-            "atmovies_id": manual.get("atmovies_id", ""),
-            "atmovies_url": manual.get("atmovies_url", ""),
-            "source_bucket": "manual",
-            "candidate_kind": "rerelease" if manual.get("kind") == "rerelease" else "cinema",
-        }
-        ratings = parse_external_ratings(
-            payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""),
-            previous_movies.get(tmdb_id),
-            generated_at_local.isoformat(),
-        )
-        movie = build_static_movie(record, payload, ratings)
-        if not should_keep_static_movie(movie, record):
-            continue
-        bucket = classify_release_bucket(record, parse_iso_date(movie.get("releaseDate", "")), today_local)
-        if not bucket:
-            continue
-        existing_ids.add(movie["id"])
-        movies[bucket].append(movie)
-        time.sleep(TMDB_DELAY)
 
     movies["now"].sort(key=lambda item: item.get("releaseDate", ""), reverse=True)
     movies["soon"].sort(key=lambda item: item.get("releaseDate", ""))

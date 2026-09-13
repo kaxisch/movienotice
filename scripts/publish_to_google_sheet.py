@@ -435,7 +435,7 @@ def seed_site_handoff_candidates(previous_items, movie_payload, run_date, manual
                 release_date = datetime.strptime(str(movie.get("releaseDate", "")), "%Y-%m-%d").date()
             except (TypeError, ValueError):
                 continue
-            if tmdb_id in existing_ids or tmdb_id in manual_ids or release_date > handoff_cutoff:
+            if tmdb_id in existing_ids or release_date > handoff_cutoff:
                 continue
             seeded.append({
                 "tmdb_id": tmdb_id,
