@@ -14,6 +14,16 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_manual_release_waits_for_a_newer_audit_before_handoff(self):
+        manual = {"handoff_after_audit_date": "2026-09-12"}
+
+        self.assertTrue(refresh.manual_release_needs_bootstrap(
+            manual, {"last_audit_date": "2026-09-12"}
+        ))
+        self.assertFalse(refresh.manual_release_needs_bootstrap(
+            manual, {"last_audit_date": "2026-09-13"}
+        ))
+
     def test_sheet_bucket_does_not_replace_public_now_or_next_bucket(self):
         today = date(2026, 9, 13)
 
@@ -1064,12 +1074,14 @@ class RefreshVisibilityTests(unittest.TestCase):
             "cinema_present": False,
             "consecutive_misses": 1,
             "absence_audit_complete": True,
+            "last_audit_date": "2026-07-18",
         }
         manual = {
             "tmdb_id": 101,
             "title_zh": "已交接電影",
             "release_date_tw": release_date,
             "kind": "regular",
+            "handoff_after_audit_date": "2026-07-17",
         }
         release_results = [{
             "iso_3166_1": "TW",

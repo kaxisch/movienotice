@@ -208,6 +208,15 @@ def load_manual_ids():
     return [item["tmdb_id"] for item in load_manual_releases()]
 
 
+def manual_release_needs_bootstrap(manual, sheet_candidate):
+    """Only an audit newer than the manual confirmation checkpoint may take over."""
+    if not sheet_candidate:
+        return True
+    checkpoint = str(manual.get("handoff_after_audit_date", "") or "").strip()
+    last_audit_date = str(sheet_candidate.get("last_audit_date", "") or "").strip()
+    return bool(checkpoint and (not last_audit_date or last_audit_date <= checkpoint))
+
+
 def sheet_value_is_true(value):
     return shared_sheet_value_is_true(value)
 
@@ -286,10 +295,13 @@ def build_verified_output(candidates):
     manual_releases = load_manual_releases()
     manual_by_id = {item["tmdb_id"]: item for item in manual_releases}
     all_manual_ids = {item["tmdb_id"] for item in manual_releases}
-    bootstrap_manual_ids = all_manual_ids - sheet_candidate_ids
+    bootstrap_manual_ids = {
+        item["tmdb_id"] for item in manual_releases
+        if manual_release_needs_bootstrap(item, candidate_by_id.get(item["tmdb_id"]))
+    }
     for manual in manual_releases:
         tmdb_id = manual["tmdb_id"]
-        if tmdb_id in sheet_candidate_ids:
+        if tmdb_id not in bootstrap_manual_ids:
             continue
         if tmdb_id not in candidate_by_id:
             ordered_ids.append(tmdb_id)
