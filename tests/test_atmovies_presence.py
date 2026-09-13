@@ -242,7 +242,7 @@ class CandidatePresenceTests(unittest.TestCase):
             patch.object(weekly, "tmdb_release_dates", return_value=release_results),
             patch.object(refresh, "load_current_site_ids", return_value=[]),
             patch.object(refresh, "load_current_whitelist_ids", return_value=[]),
-            patch.object(refresh, "load_manual_ids", return_value=[]),
+            patch.object(refresh, "load_manual_releases", return_value=[]),
             patch.object(refresh.time, "sleep"),
         ):
             output, _, _ = refresh.build_verified_output([])
@@ -886,7 +886,7 @@ class RefreshVisibilityTests(unittest.TestCase):
     @patch.object(refresh.time, "sleep")
     @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
     @patch.object(refresh, "load_current_site_ids", return_value=[])
-    @patch.object(refresh, "load_manual_ids", return_value=[])
+    @patch.object(refresh, "load_manual_releases", return_value=[])
     @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
     def test_rerelease_outputs_only_release_records_matching_the_cinema_date(
         self,
@@ -927,6 +927,83 @@ class RefreshVisibilityTests(unittest.TestCase):
         record = output["tmdb_has_tw_date"][0]
         self.assertEqual(record["tmdb_tw_release_date"], cinema_date)
         self.assertEqual(record["tmdb_tw_release_dates"], [{"date": cinema_date, "language": ""}])
+
+    @patch.object(refresh.time, "sleep")
+    @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
+    @patch.object(refresh, "load_current_site_ids", return_value=[])
+    @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
+    def test_manual_rerelease_skips_audit_presence_but_requires_exact_tmdb_date(
+        self, _supplemental, _site_ids, _whitelist_ids, _sleep
+    ):
+        release_date = (
+            datetime.now(timezone(timedelta(hours=8))).date() + timedelta(days=2)
+        ).isoformat()
+        manual = {
+            "tmdb_id": 101,
+            "title_zh": "人工確認重映片",
+            "release_date_tw": release_date,
+            "kind": "rerelease",
+        }
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 3, "release_date": f"{release_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with (
+            patch.object(refresh, "load_manual_releases", return_value=[manual]),
+            patch.object(weekly, "tmdb_movie", return_value={
+                "id": 101,
+                "title": "人工確認重映片",
+                "original_title": "Manual Rerelease",
+                "release_date": "2000-01-01",
+            }),
+            patch.object(weekly, "tmdb_release_dates", return_value=release_results),
+        ):
+            output, _, _ = refresh.build_verified_output([])
+
+        record = output["tmdb_has_tw_date"][0]
+        self.assertEqual(record["candidate_kind"], "rerelease")
+        self.assertEqual(record["source_bucket"], "manual")
+        self.assertEqual(record["tmdb_tw_release_date"], release_date)
+
+    @patch.object(refresh.time, "sleep")
+    @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
+    @patch.object(refresh, "load_current_site_ids", return_value=[])
+    @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
+    def test_manual_release_waits_when_tmdb_date_does_not_match(
+        self, _supplemental, _site_ids, _whitelist_ids, _sleep
+    ):
+        today = datetime.now(timezone(timedelta(hours=8))).date()
+        requested_date = (today + timedelta(days=2)).isoformat()
+        different_date = (today + timedelta(days=3)).isoformat()
+        manual = {
+            "tmdb_id": 101,
+            "title_zh": "等待同步",
+            "release_date_tw": requested_date,
+            "kind": "regular",
+        }
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 3, "release_date": f"{different_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with (
+            patch.object(refresh, "load_manual_releases", return_value=[manual]),
+            patch.object(weekly, "tmdb_movie", return_value={
+                "id": 101,
+                "title": "等待同步",
+                "original_title": "Pending Sync",
+                "release_date": requested_date,
+            }),
+            patch.object(weekly, "tmdb_release_dates", return_value=release_results),
+        ):
+            output, _, _ = refresh.build_verified_output([])
+
+        self.assertEqual(output["tmdb_has_tw_date"], [])
 
     def test_now_movie_hides_after_one_complete_all_source_absence(self):
         self.assertEqual(publish.NOW_ATMOVIES_MISS_LIMIT, refresh.NOW_ATMOVIES_MISS_LIMIT)

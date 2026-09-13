@@ -1525,10 +1525,15 @@ def export_static_movie_data(output, generated_at_local, previous_movies=None, t
             today_local - timedelta(days=NOW_LOOKBACK_DAYS),
             today_local + timedelta(days=SOON_WINDOW_DAYS),
         )
-        theatrical_releases = select_public_tw_theatrical_releases(tmdb_id, theatrical_releases)
+        manual_date = parse_iso_date(manual.get("release_date_tw", ""))
+        theatrical_releases = [
+            item for item in theatrical_releases
+            if manual_date and item.get("date") == manual_date.isoformat()
+        ]
         if not theatrical_releases:
+            log(f"  Skipped manual release TMDB {tmdb_id}: TMDB Taiwan cinema date does not match")
             continue
-        release_date_tw = theatrical_releases[0]["date"]
+        release_date_tw = manual_date.isoformat()
         record = {
             "tmdb_id": tmdb_id,
             "tmdb_title": manual.get("title_zh") or payload.get("title") or payload.get("original_title") or "",
@@ -1540,6 +1545,7 @@ def export_static_movie_data(output, generated_at_local, previous_movies=None, t
             "atmovies_id": manual.get("atmovies_id", ""),
             "atmovies_url": manual.get("atmovies_url", ""),
             "source_bucket": "manual",
+            "candidate_kind": "rerelease" if manual.get("kind") == "rerelease" else "cinema",
         }
         ratings = parse_external_ratings(
             payload.get("imdb_id") or payload.get("external_ids", {}).get("imdb_id", ""),
