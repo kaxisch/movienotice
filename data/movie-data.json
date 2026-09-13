@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T12:38:29.524894+08:00",
+  "generated_at": "2026-09-13T12:46:12.282606+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 68,
@@ -4289,7 +4289,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 3.208,
+        "popularity": 3.3452,
         "imdbId": "tt1483797",
         "countries": [
           "Japan"
@@ -4458,8 +4458,8 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 249,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
@@ -5316,16 +5316,16 @@
         ],
         "crew": [
           {
-            "name": "Jonathan Frank",
-            "job": "Writer"
+            "name": "Michael Spierig",
+            "job": "Director"
           },
           {
             "name": "Peter Spierig",
             "job": "Director"
           },
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Scott Mann",
+            "job": "Writer"
           }
         ],
         "budget": 3000000,
@@ -5439,16 +5439,16 @@
           ],
           "crew": [
             {
-              "name": "Jonathan Frank",
-              "job": "Writer"
+              "name": "Michael Spierig",
+              "job": "Director"
             },
             {
               "name": "Peter Spierig",
               "job": "Director"
             },
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Scott Mann",
+              "job": "Writer"
             }
           ],
           "budget": 3000000,
@@ -10583,7 +10583,7 @@
         "origLang": "ja",
         "origTitle": "映画キミとアイドルプリキュア♪お待たせ！キミに届けるキラッキライブ！",
         "platforms": [],
-        "popularity": 1.7677,
+        "popularity": 1.5727,
         "imdbId": "tt36607192",
         "countries": [
           "Japan"
@@ -12826,11 +12826,11 @@
         "crew": [
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "艾莉絲·羅爾瓦雀",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -12955,11 +12955,11 @@
           "crew": [
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "艾莉絲·羅爾瓦雀",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -13595,7 +13595,7 @@
         "origLang": "ja",
         "origTitle": "アイカツ！×プリパラ THE MOVIE -出会いのキセキ !-",
         "platforms": [],
-        "popularity": 1.4458,
+        "popularity": 1.5176,
         "imdbId": "tt36635947",
         "countries": [
           "Japan"
@@ -17823,7 +17823,7 @@
         "origLang": "ja",
         "origTitle": "時には懺悔を",
         "platforms": [],
-        "popularity": 2.059,
+        "popularity": 2.3595,
         "imdbId": "tt36236732",
         "countries": [
           "Japan"
@@ -20732,12 +20732,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -20790,12 +20790,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -22717,11 +22717,6 @@
             "name": "Mark Hoppus",
             "char": "Self",
             "photo": "https://image.tmdb.org/t/p/w500/rtA5d1gPIx0u5qmuO4NCzCD24wN.jpg"
-          },
-          {
-            "name": "Chester Bennington",
-            "char": "Self (Archive Footage)",
-            "photo": "https://image.tmdb.org/t/p/w500/ai97tFRBYdEQt3HChQv7mZvL3G5.jpg"
           }
         ],
         "crew": [
@@ -22802,11 +22797,6 @@
               "name": "Mark Hoppus",
               "char": "Self",
               "photo": "https://image.tmdb.org/t/p/w500/rtA5d1gPIx0u5qmuO4NCzCD24wN.jpg"
-            },
-            {
-              "name": "Chester Bennington",
-              "char": "Self (Archive Footage)",
-              "photo": "https://image.tmdb.org/t/p/w500/ai97tFRBYdEQt3HChQv7mZvL3G5.jpg"
             }
           ],
           "crew": [
@@ -24165,7 +24155,7 @@
         "titleEn": "鋼の錬金術師 嘆きの丘（ミロス）の聖なる星",
         "releaseDate": "2026-10-08",
         "releaseYear": "2011",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-10-08",
