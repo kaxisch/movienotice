@@ -178,11 +178,34 @@ def load_current_site_movies():
     }
 
 
-def load_manual_ids():
+def load_manual_releases():
     if not MANUAL_RELEASES_FILE.exists():
         return []
     with open(MANUAL_RELEASES_FILE, "r", encoding="utf-8") as f:
-        return [item.get("tmdb_id") for item in json.load(f) if item.get("tmdb_id")]
+        payload = json.load(f)
+    if not isinstance(payload, list):
+        raise ValueError("manual-releases.json must contain a list")
+
+    releases = []
+    for item in payload:
+        if not isinstance(item, dict) or item.get("enabled", True) is False:
+            continue
+        try:
+            tmdb_id = int(item.get("tmdb_id", ""))
+        except (TypeError, ValueError):
+            raise ValueError("Every enabled manual release must have a numeric tmdb_id")
+        release_date = weekly.parse_iso_date(item.get("release_date_tw", ""))
+        if not release_date:
+            raise ValueError(f"Manual release TMDB {tmdb_id} must have a valid release_date_tw")
+        kind = str(item.get("kind", "regular")).strip().lower()
+        if kind not in {"regular", "rerelease"}:
+            raise ValueError(f"Manual release TMDB {tmdb_id} has invalid kind: {kind}")
+        releases.append({**item, "tmdb_id": tmdb_id, "release_date_tw": release_date.isoformat(), "kind": kind})
+    return releases
+
+
+def load_manual_ids():
+    return [item["tmdb_id"] for item in load_manual_releases()]
 
 
 def sheet_value_is_true(value):
@@ -253,7 +276,20 @@ def build_verified_output(candidates):
             ordered_ids.append(tmdb_id)
             candidate_by_id[tmdb_id] = {"tmdb_id": tmdb_id}
 
-    manual_ids = set(load_manual_ids())
+    manual_releases = load_manual_releases()
+    manual_ids = {item["tmdb_id"] for item in manual_releases}
+    for manual in manual_releases:
+        tmdb_id = manual["tmdb_id"]
+        if tmdb_id not in candidate_by_id:
+            ordered_ids.append(tmdb_id)
+        candidate_by_id[tmdb_id] = {
+            **manual,
+            "candidate_kind": "rerelease" if manual["kind"] == "rerelease" else "cinema",
+            "cinema_release_date": manual["release_date_tw"],
+            "tmdb_tw_release_date": manual["release_date_tw"],
+            "source_bucket": "manual",
+            "manual_release": True,
+        }
     retained_ids = load_current_site_ids() + load_current_whitelist_ids() + list(manual_ids)
     for tmdb_id in retained_ids:
         if tmdb_id not in candidate_by_id:
@@ -306,7 +342,11 @@ def build_verified_output(candidates):
                 )
                 continue
             selected_releases = exact_releases
-            if source.get("candidate_kind") == "rerelease" and should_hide_rerelease(source):
+            if (
+                source.get("candidate_kind") == "rerelease"
+                and not source.get("manual_release")
+                and should_hide_rerelease(source)
+            ):
                 log(f"  Hidden rerelease TMDB {tmdb_id}: absent from all required sources in one complete audit")
                 continue
             tw_date = cinema_date
@@ -347,7 +387,7 @@ def build_verified_output(candidates):
             "atmovies_url": source.get("atmovies_url", ""),
             "candidate_kind": source.get("candidate_kind", ""),
             "cinema_present": source.get("cinema_present", ""),
-            "source_bucket": "now" if release_date <= today else "next",
+            "source_bucket": source.get("source_bucket") or ("now" if release_date <= today else "next"),
             "continuous_run": continuous_run,
         })
         time.sleep(weekly.TMDB_DELAY)
