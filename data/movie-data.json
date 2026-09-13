@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-13T11:29:45.172038+08:00",
+  "generated_at": "2026-09-13T12:38:29.524894+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 67,
-    "soon_count": 73
+    "now_count": 68,
+    "soon_count": 74
   },
   "movies": {
     "now": [
@@ -1218,6 +1218,297 @@
           ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/109?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 110,
+        "titleZh": "紅色情深",
+        "titleEn": "Trois couleurs : Rouge",
+        "releaseDate": "2026-09-11",
+        "releaseYear": "1994",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-11",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/9rnoQFrmdBwqAAEWvmBWY2tGNFs.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pZcoSJUb3Lgr9Rzg2shg1PtTBP9.jpg",
+        "voteAverage": "7.9",
+        "genre": [
+          "劇情",
+          "懸疑",
+          "愛情"
+        ],
+        "duration": 100,
+        "synopsis": "波蘭電影大師奇士勞斯基逝世20週年紀念修復【藍白紅三部曲】第三部，由伊蓮雅各、尚皮耶羅利與尚路易坦帝尼昂主演。一名模特兒與極度不信任人、喜愛竊聽鄰居電話的退休法官，意外發展出一段特殊的關係。",
+        "imdb": "8.1",
+        "rt": "100%",
+        "mc": "100",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 116330,
+            "lastChanged": "2026-09-13T12:38:29.524894+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 61,
+            "lastChanged": "2026-09-13T12:38:29.524894+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 11,
+            "lastChanged": "2026-09-13T12:38:29.524894+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "伊蓮·雅各",
+            "char": "Valentine",
+            "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
+          },
+          {
+            "name": "尚-路易·特罕狄釀",
+            "char": "The Judge",
+            "photo": "https://image.tmdb.org/t/p/w500/wn6owr4wvkeaEvlsPtwXSldFGEW.jpg"
+          },
+          {
+            "name": "Frédérique Feder",
+            "char": "Karin",
+            "photo": "https://image.tmdb.org/t/p/w500/vHCAJPYuFb2JJeX18yVo8hJmQeY.jpg"
+          },
+          {
+            "name": "Jean-Pierre Lorit",
+            "char": "Auguste",
+            "photo": "https://image.tmdb.org/t/p/w500/xP0IO3ZEAUmriWN36pAqeExloDK.jpg"
+          },
+          {
+            "name": "Samuel Le Bihan",
+            "char": "Photographer",
+            "photo": "https://image.tmdb.org/t/p/w500/jN4hwWfhFaE8v5TGiS6cg9HKOxe.jpg"
+          },
+          {
+            "name": "Marion Stalens",
+            "char": "Veterinarian",
+            "photo": "https://image.tmdb.org/t/p/w500/8AEcShsEooBHYwneHUHyL65mtxO.jpg"
+          },
+          {
+            "name": "Teco Celio",
+            "char": "Bartender",
+            "photo": "https://image.tmdb.org/t/p/w500/5PUIFW0JvgoaLX1ndyJbSeBdQF0.jpg"
+          },
+          {
+            "name": "Bernard Escalon",
+            "char": "Record Dealer",
+            "photo": "https://image.tmdb.org/t/p/w500/hRifAJBIuQEd6xUhvVkYm4tiZOy.jpg"
+          },
+          {
+            "name": "Jean Schlegel",
+            "char": "Neighbor",
+            "photo": null
+          },
+          {
+            "name": "Elżbieta Jasińska",
+            "char": "Woman",
+            "photo": "https://image.tmdb.org/t/p/w500/hcM2a714AjQXejIkhOqY30QcZQw.jpg"
+          },
+          {
+            "name": "Paul Vermeulen",
+            "char": "Karin's Friend",
+            "photo": null
+          },
+          {
+            "name": "Jean-Marie Daunas",
+            "char": "Theater Keeper",
+            "photo": null
+          },
+          {
+            "name": "Roland Carey",
+            "char": "Dealer",
+            "photo": "https://image.tmdb.org/t/p/w500/jynPOZGBo9ANYHPmTvs4ygFWTWk.jpg"
+          },
+          {
+            "name": "Brigitte Raul",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Leo Ramseyer",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Nader Farman",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Krzysztof Piesiewicz",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 4127033,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Trois couleurs : Rouge",
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+          }
+        ],
+        "popularity": 4.9721,
+        "imdbId": "tt0111495",
+        "countries": [
+          "France",
+          "Poland",
+          "Switzerland"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "劇情",
+            "懸疑",
+            "愛情"
+          ],
+          "synopsis": "波蘭電影大師奇士勞斯基逝世20週年紀念修復【藍白紅三部曲】第三部，由伊蓮雅各、尚皮耶羅利與尚路易坦帝尼昂主演。一名模特兒與極度不信任人、喜愛竊聽鄰居電話的退休法官，意外發展出一段特殊的關係。",
+          "poster": "https://image.tmdb.org/t/p/w500/9rnoQFrmdBwqAAEWvmBWY2tGNFs.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pZcoSJUb3Lgr9Rzg2shg1PtTBP9.jpg",
+          "voteAverage": "7.9",
+          "trailerKey": null,
+          "imdbId": "tt0111495",
+          "countries": [
+            "France",
+            "Poland",
+            "Switzerland"
+          ],
+          "cast": [
+            {
+              "name": "伊蓮·雅各",
+              "char": "Valentine",
+              "photo": "https://image.tmdb.org/t/p/w500/yDpLjFtglSDlq3pvITr7O5AQfvg.jpg"
+            },
+            {
+              "name": "尚-路易·特罕狄釀",
+              "char": "The Judge",
+              "photo": "https://image.tmdb.org/t/p/w500/wn6owr4wvkeaEvlsPtwXSldFGEW.jpg"
+            },
+            {
+              "name": "Frédérique Feder",
+              "char": "Karin",
+              "photo": "https://image.tmdb.org/t/p/w500/vHCAJPYuFb2JJeX18yVo8hJmQeY.jpg"
+            },
+            {
+              "name": "Jean-Pierre Lorit",
+              "char": "Auguste",
+              "photo": "https://image.tmdb.org/t/p/w500/xP0IO3ZEAUmriWN36pAqeExloDK.jpg"
+            },
+            {
+              "name": "Samuel Le Bihan",
+              "char": "Photographer",
+              "photo": "https://image.tmdb.org/t/p/w500/jN4hwWfhFaE8v5TGiS6cg9HKOxe.jpg"
+            },
+            {
+              "name": "Marion Stalens",
+              "char": "Veterinarian",
+              "photo": "https://image.tmdb.org/t/p/w500/8AEcShsEooBHYwneHUHyL65mtxO.jpg"
+            },
+            {
+              "name": "Teco Celio",
+              "char": "Bartender",
+              "photo": "https://image.tmdb.org/t/p/w500/5PUIFW0JvgoaLX1ndyJbSeBdQF0.jpg"
+            },
+            {
+              "name": "Bernard Escalon",
+              "char": "Record Dealer",
+              "photo": "https://image.tmdb.org/t/p/w500/hRifAJBIuQEd6xUhvVkYm4tiZOy.jpg"
+            },
+            {
+              "name": "Jean Schlegel",
+              "char": "Neighbor",
+              "photo": null
+            },
+            {
+              "name": "Elżbieta Jasińska",
+              "char": "Woman",
+              "photo": "https://image.tmdb.org/t/p/w500/hcM2a714AjQXejIkhOqY30QcZQw.jpg"
+            },
+            {
+              "name": "Paul Vermeulen",
+              "char": "Karin's Friend",
+              "photo": null
+            },
+            {
+              "name": "Jean-Marie Daunas",
+              "char": "Theater Keeper",
+              "photo": null
+            },
+            {
+              "name": "Roland Carey",
+              "char": "Dealer",
+              "photo": "https://image.tmdb.org/t/p/w500/jynPOZGBo9ANYHPmTvs4ygFWTWk.jpg"
+            },
+            {
+              "name": "Brigitte Raul",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Leo Ramseyer",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Nader Farman",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Krzysztof Piesiewicz",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 4127033,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Trois couleurs : Rouge",
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/110?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -2861,7 +3152,7 @@
         "origLang": "zh",
         "origTitle": "大仙尪仔",
         "platforms": [],
-        "popularity": 0.6895,
+        "popularity": 0.8507,
         "imdbId": "tt43659346",
         "countries": [
           "Taiwan"
@@ -3246,7 +3537,7 @@
         "origLang": "th",
         "origTitle": "ผีเข้า",
         "platforms": [],
-        "popularity": 1.261,
+        "popularity": 1.3214,
         "imdbId": "tt42834196",
         "countries": [
           "Thailand"
@@ -4654,7 +4945,7 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
-        "rt": "79%",
+        "rt": "72%",
         "mc": "66",
         "ratingMeta": {
           "imdb": {
@@ -4663,9 +4954,9 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 125,
-            "lastChanged": "2026-09-13T11:29:45.172038+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-13T12:38:29.524894+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -7431,7 +7722,7 @@
         "origLang": "ja",
         "origTitle": "兄を持ち運べるサイズに",
         "platforms": [],
-        "popularity": 1.9524,
+        "popularity": 1.8575,
         "imdbId": "tt38504671",
         "countries": [
           "Japan"
@@ -9605,7 +9896,7 @@
         "origLang": "ja",
         "origTitle": "ミーツ・ザ・ワールド",
         "platforms": [],
-        "popularity": 1.2505,
+        "popularity": 1.2819,
         "imdbId": "tt38755605",
         "countries": [
           "Japan"
@@ -10056,7 +10347,7 @@
         "origLang": "ja",
         "origTitle": "映画ラストマン -FIRST LOVE-",
         "platforms": [],
-        "popularity": 2.0369,
+        "popularity": 2.0154,
         "imdbId": "tt38691555",
         "countries": [
           "Japan"
@@ -11668,7 +11959,7 @@
         "origLang": "en",
         "origTitle": "Leviticus",
         "platforms": [],
-        "popularity": 35.7697,
+        "popularity": 38.6814,
         "imdbId": "tt39143902",
         "countries": [
           "Australia",
@@ -14799,7 +15090,7 @@
         "origLang": "ja",
         "origTitle": "映画ドラえもん 新・のび太の海底鬼岩城",
         "platforms": [],
-        "popularity": 14.1185,
+        "popularity": 13.6648,
         "imdbId": "tt38201958",
         "countries": [
           "Japan"
@@ -17866,6 +18157,85 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1537122,
+        "titleZh": "婚・紗・罩",
+        "titleEn": "婚・紗・罩",
+        "releaseDate": "2026-09-18",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/pKaUEbD2HaowaCEGjSQbiWHoYLH.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/s6LlYO3qssVkxuc1iaUZQxzgKSn.jpg",
+        "voteAverage": "",
+        "genre": [
+          "紀錄"
+        ],
+        "duration": 64,
+        "synopsis": "她是婚紗照迷妹，卻拍出一組失敗的婚紗照，帶著鬱悶踏上追星之旅，只為找答案：「什麼才是好婚紗照？」她走訪「中視新娘世界」創始地，一窺婚紗教父魏朝福的夢幻與現實，理解林聲永的叛逆不羈，也揭開英奇鏡頭下的傷痕。她在他們的故事裡回望自己，看見身為女性在每個人生階段的缺憾，以及那個永遠無法觸碰的完滿。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "_l0UsGipZHs",
+        "cast": [],
+        "crew": [
+          {
+            "name": "陳昱伶",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "婚・紗・罩",
+        "platforms": [],
+        "popularity": 0.426,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 64,
+          "genres": [
+            "紀錄"
+          ],
+          "synopsis": "她是婚紗照迷妹，卻拍出一組失敗的婚紗照，帶著鬱悶踏上追星之旅，只為找答案：「什麼才是好婚紗照？」她走訪「中視新娘世界」創始地，一窺婚紗教父魏朝福的夢幻與現實，理解林聲永的叛逆不羈，也揭開英奇鏡頭下的傷痕。她在他們的故事裡回望自己，看見身為女性在每個人生階段的缺憾，以及那個永遠無法觸碰的完滿。",
+          "poster": "https://image.tmdb.org/t/p/w500/pKaUEbD2HaowaCEGjSQbiWHoYLH.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/s6LlYO3qssVkxuc1iaUZQxzgKSn.jpg",
+          "voteAverage": "",
+          "trailerKey": "_l0UsGipZHs",
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "陳昱伶",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "婚・紗・罩",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1537122?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1617484,
         "titleZh": "夢想出擊",
         "titleEn": "와인드업: 더 무비",
@@ -18022,6 +18392,165 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1617484?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1651166,
+        "titleZh": "怎麼不去死？",
+        "titleEn": "死ねばいいのに",
+        "releaseDate": "2026-09-18",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/3XykUQAmLfzxQTpUTdyueQ7I29D.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zVfM3NcRhPk0m7fVf5pEqeuFtij.jpg",
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 95,
+        "synopsis": "幾個月前，有個叫亞佐美的女人死了。沒想到出現了一個年輕女子沒頭沒腦地四處打探和亞佐美有關的事情。不論是她的男友、她的上司、她的學姐、她的鄰居、她的母親，甚至是負責調查死亡案件的刑警，每個人都被這個女子瘋狂纏上。為了擺脫女子咄咄逼人的質問，所有人都打算用謊言草草打發她，卻反而被自己的謊言逼到無路可退，被迫面對自己內心深處的罪業……這名神秘女子究竟是誰？他的目的是什麼？而亞佐美的死亡又隱藏著什麼秘密？",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "奈緒",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/sctXMVvMId8PMfecbQN8bmHhJtx.jpg"
+          },
+          {
+            "name": "伊東蒼",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/s6ZsLCOs1OTnLg9aAlmpYCEqtRj.jpg"
+          },
+          {
+            "name": "前原滉",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
+          },
+          {
+            "name": "髙橋ひかる",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/imQytMdQOFglEVSiaoP24uZW7uY.jpg"
+          },
+          {
+            "name": "草川拓彌",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/9N4lQ0OP9feKrs8nCL49GpSWk1n.jpg"
+          },
+          {
+            "name": "田畑智子",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/8jtrmUQWICGtcaCbeceLGqteVtq.jpg"
+          },
+          {
+            "name": "平原テツ",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/7896qWHNeZDN8XirYL7fjctvegF.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "金井純一",
+            "job": "Director"
+          },
+          {
+            "name": "喜安浩平",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "死ねばいいのに",
+        "platforms": [],
+        "popularity": 1.3808,
+        "imdbId": "tt42477970",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 95,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "幾個月前，有個叫亞佐美的女人死了。沒想到出現了一個年輕女子沒頭沒腦地四處打探和亞佐美有關的事情。不論是她的男友、她的上司、她的學姐、她的鄰居、她的母親，甚至是負責調查死亡案件的刑警，每個人都被這個女子瘋狂纏上。為了擺脫女子咄咄逼人的質問，所有人都打算用謊言草草打發她，卻反而被自己的謊言逼到無路可退，被迫面對自己內心深處的罪業……這名神秘女子究竟是誰？他的目的是什麼？而亞佐美的死亡又隱藏著什麼秘密？",
+          "poster": "https://image.tmdb.org/t/p/w500/3XykUQAmLfzxQTpUTdyueQ7I29D.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/zVfM3NcRhPk0m7fVf5pEqeuFtij.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt42477970",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "奈緒",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/sctXMVvMId8PMfecbQN8bmHhJtx.jpg"
+            },
+            {
+              "name": "伊東蒼",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/s6ZsLCOs1OTnLg9aAlmpYCEqtRj.jpg"
+            },
+            {
+              "name": "前原滉",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg"
+            },
+            {
+              "name": "髙橋ひかる",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/imQytMdQOFglEVSiaoP24uZW7uY.jpg"
+            },
+            {
+              "name": "草川拓彌",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/9N4lQ0OP9feKrs8nCL49GpSWk1n.jpg"
+            },
+            {
+              "name": "田畑智子",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/8jtrmUQWICGtcaCbeceLGqteVtq.jpg"
+            },
+            {
+              "name": "平原テツ",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/7896qWHNeZDN8XirYL7fjctvegF.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "金井純一",
+              "job": "Director"
+            },
+            {
+              "name": "喜安浩平",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "死ねばいいのに",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1651166?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -19001,7 +19530,7 @@
         "origLang": "zh",
         "origTitle": "寂寞的十七歲",
         "platforms": [],
-        "popularity": 1.1299,
+        "popularity": 1.2119,
         "imdbId": "tt1286561",
         "countries": [
           "Taiwan"
@@ -23636,7 +24165,7 @@
         "titleEn": "鋼の錬金術師 嘆きの丘（ミロス）の聖なる星",
         "releaseDate": "2026-10-08",
         "releaseYear": "2011",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-10-08",
@@ -25874,7 +26403,7 @@
         "origLang": "ja",
         "origTitle": "それいけ！アンパンマン　パンタンと約束の星",
         "platforms": [],
-        "popularity": 0.7168,
+        "popularity": 0.7462,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -26757,235 +27286,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1567233?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1595400,
-        "titleZh": "完美配對謀殺案：真愛",
-        "titleEn": "マッチング TRUE LOVE",
-        "releaseDate": "2026-10-30",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-30",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/kWIqWDagKVlCXxwHzxsmDPJU2ld.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/u3QxCXvIEthHuTix1zruDcTzAIp.jpg",
-        "voteAverage": "",
-        "genre": [
-          "驚悚"
-        ],
-        "duration": "",
-        "synopsis": "在「交友軟體連續殺人事件」兩年後，輪花與吐夢生活逐漸步回正軌，繼續擔任婚禮企劃的輪花，以工作人員的身分參加了時下最流行的南方島嶼配對之旅，未想在旅途中滋長的不是愛苗，而是再次壟罩的死亡陰霾——唯有證明真愛者，才能活著離開。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "佐久間大介",
-            "char": "Tomu Nagayama",
-            "photo": "https://image.tmdb.org/t/p/w500/rcETCiVLmhQdyMcjCje8NvHx4pD.jpg"
-          },
-          {
-            "name": "土屋太鳳",
-            "char": "Rinka Tadashima",
-            "photo": "https://image.tmdb.org/t/p/w500/n2665l3bguzDTm5CnyP99ipU9Z0.jpg"
-          },
-          {
-            "name": "郭東延",
-            "char": "Lee Sung-il",
-            "photo": "https://image.tmdb.org/t/p/w500/klgX8YheSFFXqEdjuCQY5rxTTGa.jpg"
-          },
-          {
-            "name": "豊嶋花",
-            "char": "Aira Ito",
-            "photo": "https://image.tmdb.org/t/p/w500/f8SwSHhkvo64jxpMssh1Vp8BWBM.jpg"
-          },
-          {
-            "name": "倉悠貴",
-            "char": "Aran Nomura",
-            "photo": "https://image.tmdb.org/t/p/w500/dPTlgkUvQXPfc1yZLXSsdF5gOQM.jpg"
-          },
-          {
-            "name": "真飛聖",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/onxwXsi3gCZ3z3tkNqQR1wVG8QZ.jpg"
-          },
-          {
-            "name": "後藤剛範",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/absM8LTJW8L41pDxZBvSwSnFbts.jpg"
-          },
-          {
-            "name": "根矢涼香",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/y0lTyQeUdAKfDDtFIOm09kjAqbU.jpg"
-          },
-          {
-            "name": "冨手麻妙",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/86IWghqQivdYartc7x1I2UWhM7z.jpg"
-          },
-          {
-            "name": "塚田僚一",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/oDvb0HqC1DDeHEoG8IHFr6wOzTG.jpg"
-          },
-          {
-            "name": "Taki Nanami",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vdw2DzZxNDTJlC7FxsUZsUw1ajo.jpg"
-          },
-          {
-            "name": "濱正悟",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/qDuaghEgtzURtZFDVavSigyoZHF.jpg"
-          },
-          {
-            "name": "加藤史帆",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/1hQJYx2aTHmHqddwdxTgpcfhjuu.jpg"
-          },
-          {
-            "name": "花瀨琴音",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/xSimDM5cdwBtVAa7FJ36gFyMC0p.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "内田英治",
-            "job": "Director"
-          },
-          {
-            "name": "内田英治",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Post Production",
-        "origLang": "ja",
-        "origTitle": "マッチング TRUE LOVE",
-        "platforms": [],
-        "popularity": 2.8638,
-        "imdbId": null,
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "驚悚"
-          ],
-          "synopsis": "在「交友軟體連續殺人事件」兩年後，輪花與吐夢生活逐漸步回正軌，繼續擔任婚禮企劃的輪花，以工作人員的身分參加了時下最流行的南方島嶼配對之旅，未想在旅途中滋長的不是愛苗，而是再次壟罩的死亡陰霾——唯有證明真愛者，才能活著離開。",
-          "poster": "https://image.tmdb.org/t/p/w500/kWIqWDagKVlCXxwHzxsmDPJU2ld.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/u3QxCXvIEthHuTix1zruDcTzAIp.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": null,
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "佐久間大介",
-              "char": "Tomu Nagayama",
-              "photo": "https://image.tmdb.org/t/p/w500/rcETCiVLmhQdyMcjCje8NvHx4pD.jpg"
-            },
-            {
-              "name": "土屋太鳳",
-              "char": "Rinka Tadashima",
-              "photo": "https://image.tmdb.org/t/p/w500/n2665l3bguzDTm5CnyP99ipU9Z0.jpg"
-            },
-            {
-              "name": "郭東延",
-              "char": "Lee Sung-il",
-              "photo": "https://image.tmdb.org/t/p/w500/klgX8YheSFFXqEdjuCQY5rxTTGa.jpg"
-            },
-            {
-              "name": "豊嶋花",
-              "char": "Aira Ito",
-              "photo": "https://image.tmdb.org/t/p/w500/f8SwSHhkvo64jxpMssh1Vp8BWBM.jpg"
-            },
-            {
-              "name": "倉悠貴",
-              "char": "Aran Nomura",
-              "photo": "https://image.tmdb.org/t/p/w500/dPTlgkUvQXPfc1yZLXSsdF5gOQM.jpg"
-            },
-            {
-              "name": "真飛聖",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/onxwXsi3gCZ3z3tkNqQR1wVG8QZ.jpg"
-            },
-            {
-              "name": "後藤剛範",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/absM8LTJW8L41pDxZBvSwSnFbts.jpg"
-            },
-            {
-              "name": "根矢涼香",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/y0lTyQeUdAKfDDtFIOm09kjAqbU.jpg"
-            },
-            {
-              "name": "冨手麻妙",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/86IWghqQivdYartc7x1I2UWhM7z.jpg"
-            },
-            {
-              "name": "塚田僚一",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/oDvb0HqC1DDeHEoG8IHFr6wOzTG.jpg"
-            },
-            {
-              "name": "Taki Nanami",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vdw2DzZxNDTJlC7FxsUZsUw1ajo.jpg"
-            },
-            {
-              "name": "濱正悟",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/qDuaghEgtzURtZFDVavSigyoZHF.jpg"
-            },
-            {
-              "name": "加藤史帆",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/1hQJYx2aTHmHqddwdxTgpcfhjuu.jpg"
-            },
-            {
-              "name": "花瀨琴音",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/xSimDM5cdwBtVAa7FJ36gFyMC0p.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "内田英治",
-              "job": "Director"
-            },
-            {
-              "name": "内田英治",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Post Production",
-          "origLang": "ja",
-          "origTitle": "マッチング TRUE LOVE",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1595400?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
