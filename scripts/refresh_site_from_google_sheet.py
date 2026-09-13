@@ -284,6 +284,7 @@ def build_verified_output(candidates):
             candidate_by_id[tmdb_id] = {"tmdb_id": tmdb_id}
 
     manual_releases = load_manual_releases()
+    manual_by_id = {item["tmdb_id"]: item for item in manual_releases}
     all_manual_ids = {item["tmdb_id"] for item in manual_releases}
     bootstrap_manual_ids = all_manual_ids - sheet_candidate_ids
     for manual in manual_releases:
@@ -396,6 +397,10 @@ def build_verified_output(candidates):
             "atmovies_id": source.get("atmovies_id", ""),
             "atmovies_url": source.get("atmovies_url", ""),
             "candidate_kind": source.get("candidate_kind", ""),
+            "is_rerelease": (
+                source.get("candidate_kind") == "rerelease"
+                or manual_by_id.get(tmdb_id, {}).get("kind") == "rerelease"
+            ),
             "cinema_present": source.get("cinema_present", ""),
             "source_bucket": public_source_bucket(source, release_date, today),
             "continuous_run": continuous_run,
