@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:17:50.649403+08:00",
+  "generated_at": "2026-09-15T20:06:01.574807+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 68,
@@ -133,7 +133,7 @@
         "origLang": "en",
         "origTitle": "National Theatre Live: Hamlet",
         "platforms": [],
-        "popularity": 1.0029,
+        "popularity": 0.9967,
         "imdbId": "tt37511206",
         "countries": [
           "United Kingdom"
@@ -1257,13 +1257,13 @@
             "lastChanged": "2026-09-13T12:38:29.524894+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 61,
             "lastChanged": "2026-09-13T12:38:29.524894+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 11,
             "lastChanged": "2026-09-13T12:38:29.524894+08:00"
           }
         },
@@ -1375,7 +1375,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.1273,
+        "popularity": 4.6267,
         "imdbId": "tt0111495",
         "countries": [
           "France",
@@ -1547,13 +1547,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 35,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 10,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -2739,7 +2739,7 @@
         "origLang": "en",
         "origTitle": "Practical Magic 2",
         "platforms": [],
-        "popularity": 86.1043,
+        "popularity": 82.0211,
         "imdbId": "tt32588798",
         "countries": [
           "United States of America"
@@ -3222,7 +3222,7 @@
         "origLang": "zh",
         "origTitle": "大仙尪仔",
         "platforms": [],
-        "popularity": 0.7535,
+        "popularity": 0.868,
         "imdbId": "tt43659346",
         "countries": [
           "Taiwan"
@@ -3313,7 +3313,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/iMseJtWiyjT7gzxb0cUvOKxOtCO.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ceOdqFmZy5kKImbGThuDHuifGpm.jpg",
-        "voteAverage": "8.1",
+        "voteAverage": "7.9",
         "genre": [
           "劇情"
         ],
@@ -3426,7 +3426,7 @@
           "synopsis": "一心以成為漫畫家為目標的兩位少女藤野、京本之間青春動人的故事。",
           "poster": "https://image.tmdb.org/t/p/w500/iMseJtWiyjT7gzxb0cUvOKxOtCO.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ceOdqFmZy5kKImbGThuDHuifGpm.jpg",
-          "voteAverage": "8.1",
+          "voteAverage": "7.9",
           "trailerKey": "ad3giJ30GOw",
           "imdbId": "tt39094466",
           "countries": [
@@ -3607,7 +3607,7 @@
         "origLang": "th",
         "origTitle": "ผีเข้า",
         "platforms": [],
-        "popularity": 1.228,
+        "popularity": 1.5113,
         "imdbId": "tt42834196",
         "countries": [
           "Thailand"
@@ -4359,7 +4359,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 3.5214,
+        "popularity": 4.1577,
         "imdbId": "tt1483797",
         "countries": [
           "Japan"
@@ -4528,13 +4528,13 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 249,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 47,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           }
         },
@@ -5029,8 +5029,8 @@
             "lastChanged": "2026-09-15T13:17:50.649403+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 36,
             "lastChanged": "2026-09-11T13:10:13.974436+08:00"
           }
         },
@@ -5390,12 +5390,12 @@
             "job": "Writer"
           },
           {
-            "name": "Peter Spierig",
+            "name": "Michael Spierig",
             "job": "Director"
           },
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Scott Mann",
+            "job": "Writer"
           }
         ],
         "budget": 3000000,
@@ -5513,12 +5513,12 @@
               "job": "Writer"
             },
             {
-              "name": "Peter Spierig",
+              "name": "Michael Spierig",
               "job": "Director"
             },
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Scott Mann",
+              "job": "Writer"
             }
           ],
           "budget": 3000000,
@@ -5830,7 +5830,7 @@
         "origLang": "de",
         "origTitle": "Der verlorene Mann",
         "platforms": [],
-        "popularity": 2.6379,
+        "popularity": 2.7324,
         "imdbId": "tt39602467",
         "countries": [
           "Germany"
@@ -6317,7 +6317,7 @@
         "origLang": "ja",
         "origTitle": "THE ORIGIN OF ULTRAMAN",
         "platforms": [],
-        "popularity": 1.3514,
+        "popularity": 1.4066,
         "imdbId": "tt43564240",
         "countries": [
           "Japan"
@@ -8339,13 +8339,13 @@
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 26,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 6,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           }
         },
@@ -9762,7 +9762,7 @@
         "origLang": "it",
         "origTitle": "Diamanti",
         "platforms": [],
-        "popularity": 3.0014,
+        "popularity": 3.394,
         "imdbId": "tt32810496",
         "countries": [
           "Italy"
@@ -9966,7 +9966,7 @@
         "origLang": "ja",
         "origTitle": "ミーツ・ザ・ワールド",
         "platforms": [],
-        "popularity": 1.0908,
+        "popularity": 1.3904,
         "imdbId": "tt38755605",
         "countries": [
           "Japan"
@@ -10417,7 +10417,7 @@
         "origLang": "ja",
         "origTitle": "映画ラストマン -FIRST LOVE-",
         "platforms": [],
-        "popularity": 1.858,
+        "popularity": 1.832,
         "imdbId": "tt38691555",
         "countries": [
           "Japan"
@@ -10817,7 +10817,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 119,
+            "votes": 120,
             "lastChanged": "2026-09-02T13:00:47.913519+08:00"
           },
           "mc": {
@@ -11093,13 +11093,13 @@
             "lastChanged": "2026-09-09T13:09:44.762945+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 131,
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 26,
             "lastChanged": "2026-08-25T05:58:27.192616+08:00"
           }
         },
@@ -11197,12 +11197,12 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 155230000,
+        "revenue": 155432482,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
         "platforms": [],
-        "popularity": 45.6179,
+        "popularity": 38.8852,
         "imdbId": "tt32393988",
         "countries": [
           "United States of America"
@@ -11315,7 +11315,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 155230000,
+          "revenue": 155432482,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Insidious: Out of the Further",
@@ -11474,7 +11474,7 @@
         "origLang": "en",
         "origTitle": "Nirvanna the Band the Show the Movie",
         "platforms": [],
-        "popularity": 5.5309,
+        "popularity": 5.1277,
         "imdbId": "tt35522483",
         "countries": [
           "Canada"
@@ -11620,7 +11620,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-        "voteAverage": "7.5",
+        "voteAverage": "7.6",
         "genre": [
           "動畫",
           "冒險",
@@ -11771,7 +11771,7 @@
           "synopsis": "飛船被捲入一場神祕風暴，汪汪隊的狗狗們於是迫降在一座充滿恐龍的未知熱帶小島，並遇見了受困在小島多年、精通所有恐龍知識的狗狗雷克斯。汪汪隊的死對頭韓丁納市長覬覦小島的天然資源，便展開魯莽的開採行動，卻意外引發了休眠火山的大爆發。汪汪隊因此必須展開前所未有、風險升級的恐龍級救援任務，在這座小島上的一切滅絕之前阻止韓丁納。",
           "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-          "voteAverage": "7.5",
+          "voteAverage": "7.6",
           "trailerKey": "-juvWuW6hLg",
           "imdbId": "tt29356163",
           "countries": [
@@ -12202,7 +12202,7 @@
         "origLang": "zh",
         "origTitle": "終戰那一天",
         "platforms": [],
-        "popularity": 0.6608,
+        "popularity": 0.6898,
         "imdbId": "tt44544376",
         "countries": [
           "Taiwan"
@@ -12263,7 +12263,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/yJxLZruKq4iodYteRk1WaKKoXV1.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-        "voteAverage": "6.4",
+        "voteAverage": "6.5",
         "genre": [
           "科幻",
           "懸疑",
@@ -12405,7 +12405,7 @@
           "synopsis": "當一場神祕的宇宙事件，撕裂了寧靜的橡樹街社區後，整個社區竟被傳送到未知之地，普拉特一家人很快就發現：生存關鍵取決於當一家人置身於難以辨認的環境時，是否能夠緊密團結在一起。",
           "poster": "https://image.tmdb.org/t/p/w500/yJxLZruKq4iodYteRk1WaKKoXV1.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-          "voteAverage": "6.4",
+          "voteAverage": "6.5",
           "trailerKey": "lgMgwGUc9_I",
           "imdbId": "tt27165187",
           "countries": [
@@ -12914,7 +12914,7 @@
             "logo": "/k7iSlvgWzZuO4zU5PcBjhABMuia.png"
           }
         ],
-        "popularity": 3.3062,
+        "popularity": 3.5529,
         "imdbId": "tt6752992",
         "countries": [
           "France",
@@ -13082,13 +13082,13 @@
             "lastChanged": "2026-09-11T19:46:40.541539+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 31,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 6,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -13372,7 +13372,7 @@
           {
             "name": "英德·納瓦雷特",
             "char": "Nikki",
-            "photo": "https://image.tmdb.org/t/p/w500/ayKQBpXkjtLWIKOaITO493NTqFk.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/mjzZXDgclbrxWVTiyAnyzlO4Dpl.jpg"
           },
           {
             "name": "庫珀·湯姆林森",
@@ -13492,7 +13492,7 @@
             {
               "name": "英德·納瓦雷特",
               "char": "Nikki",
-              "photo": "https://image.tmdb.org/t/p/w500/ayKQBpXkjtLWIKOaITO493NTqFk.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/mjzZXDgclbrxWVTiyAnyzlO4Dpl.jpg"
             },
             {
               "name": "庫珀·湯姆林森",
@@ -13665,7 +13665,7 @@
         "origLang": "ja",
         "origTitle": "アイカツ！×プリパラ THE MOVIE -出会いのキセキ !-",
         "platforms": [],
-        "popularity": 1.539,
+        "popularity": 1.5754,
         "imdbId": "tt36635947",
         "countries": [
           "Japan"
@@ -14187,12 +14187,12 @@
           {
             "name": "薩迪·辛克",
             "char": "Jean Grey",
-            "photo": "https://image.tmdb.org/t/p/w500/fV0KHJcK3fYX2acMorDUf1Uv9mY.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
           },
           {
             "name": "佛蘿倫絲·普伊",
             "char": "Yelena Belova / Black Widow",
-            "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
           },
           {
             "name": "Liza Colón-Zayas",
@@ -14310,12 +14310,12 @@
             {
               "name": "薩迪·辛克",
               "char": "Jean Grey",
-              "photo": "https://image.tmdb.org/t/p/w500/fV0KHJcK3fYX2acMorDUf1Uv9mY.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
             },
             {
               "name": "佛蘿倫絲·普伊",
               "char": "Yelena Belova / Black Widow",
-              "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
             },
             {
               "name": "Liza Colón-Zayas",
@@ -14802,7 +14802,7 @@
         "origLang": "en",
         "origTitle": "The Odyssey",
         "platforms": [],
-        "popularity": 433.1516,
+        "popularity": 404.6591,
         "imdbId": "tt33764258",
         "countries": [
           "United Kingdom",
@@ -15396,7 +15396,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 130.682,
+        "popularity": 120.6816,
         "imdbId": "tt32890033",
         "countries": [
           "United States of America"
@@ -15810,7 +15810,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8IfNwMFlqggaZ5dcJo8t4QIaSPX.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
-        "voteAverage": "8.4",
+        "voteAverage": "8.3",
         "genre": [
           "動畫",
           "家庭",
@@ -15963,7 +15963,7 @@
           "synopsis": "伴隨著時代演進、以科技入侵作為主題，玩具們將陷入 3C 危機，胡迪、巴斯光年此生最強勁敵現身，讓人愛不釋手的閃亮亮玩具登場，全新角色「莉莉板」，一款高科技、青蛙造型的智慧平板玩具，有了這個新寶貝，誰還需要玩具呢？他們將面臨史上最大的挑戰。",
           "poster": "https://image.tmdb.org/t/p/w500/8IfNwMFlqggaZ5dcJo8t4QIaSPX.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
-          "voteAverage": "8.4",
+          "voteAverage": "8.3",
           "trailerKey": "r0MhS0IpUts",
           "imdbId": "tt29355505",
           "countries": [
@@ -16100,7 +16100,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mRM28tIIm8y0gKy9GKYGwotxuPM.jpg",
         "voteAverage": "9.2",
         "genre": [
           "恐怖",
@@ -16138,6 +16138,16 @@
             "name": "Johnno Wilson",
             "char": "Max",
             "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
+          },
+          {
+            "name": "Shaun W. Loeser",
+            "char": "Puker",
+            "photo": "https://image.tmdb.org/t/p/w500/pMV7kzy7OHk4X93uRGbrdvuFgQB.jpg"
+          },
+          {
+            "name": "Devon Deshaun Stewart",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/qZ5BMtEva7XEEdO3BpB9pCPzqMx.jpg"
           }
         ],
         "crew": [
@@ -16175,7 +16185,7 @@
           ],
           "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
           "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/mRM28tIIm8y0gKy9GKYGwotxuPM.jpg",
           "voteAverage": "9.2",
           "trailerKey": "f6Y2SgaHyCw",
           "imdbId": "tt35538033",
@@ -16209,6 +16219,16 @@
               "name": "Johnno Wilson",
               "char": "Max",
               "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
+            },
+            {
+              "name": "Shaun W. Loeser",
+              "char": "Puker",
+              "photo": "https://image.tmdb.org/t/p/w500/pMV7kzy7OHk4X93uRGbrdvuFgQB.jpg"
+            },
+            {
+              "name": "Devon Deshaun Stewart",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/qZ5BMtEva7XEEdO3BpB9pCPzqMx.jpg"
             }
           ],
           "crew": [
@@ -16885,7 +16905,7 @@
         "origLang": "es",
         "origTitle": "Pacífico",
         "platforms": [],
-        "popularity": 4.3932,
+        "popularity": 4.0897,
         "imdbId": "tt4634974",
         "countries": [
           "Argentina",
@@ -20336,7 +20356,7 @@
         "origLang": "ja",
         "origTitle": "リリイ・シュシュのすべて",
         "platforms": [],
-        "popularity": 6.6904,
+        "popularity": 7.0367,
         "imdbId": "tt0297721",
         "countries": [
           "Japan"
@@ -20598,7 +20618,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
@@ -20613,7 +20633,7 @@
             "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
           }
         ],
-        "popularity": 63.7377,
+        "popularity": 72.3827,
         "imdbId": "tt4154796",
         "countries": [
           "United States of America"
@@ -20726,7 +20746,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
@@ -20800,12 +20820,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -20858,12 +20878,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -20979,7 +20999,7 @@
         "origLang": "fr",
         "origTitle": "À bicyclette !",
         "platforms": [],
-        "popularity": 2.5628,
+        "popularity": 2.8686,
         "imdbId": "tt33298226",
         "countries": [
           "France"
@@ -21386,8 +21406,8 @@
             "lastChanged": "2026-09-13T20:17:03.939686+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 14,
             "lastChanged": "2026-09-13T20:17:03.939686+08:00"
           }
         },
@@ -22550,7 +22570,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-        "voteAverage": "9.0",
+        "voteAverage": "8.8",
         "genre": [
           "動畫",
           "冒險",
@@ -22679,7 +22699,7 @@
           "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-          "voteAverage": "9.0",
+          "voteAverage": "8.8",
           "trailerKey": "WII6-Ss-kTM",
           "imdbId": "tt36583977",
           "countries": [
@@ -23290,7 +23310,7 @@
         "origLang": "en",
         "origTitle": "Digger",
         "platforms": [],
-        "popularity": 18.8933,
+        "popularity": 19.6253,
         "imdbId": "tt31450459",
         "countries": [
           "United States of America"
@@ -24444,7 +24464,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.7129,
+        "popularity": 4.9897,
         "imdbId": "tt1776196",
         "countries": [
           "Japan"
@@ -25304,7 +25324,7 @@
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": null,
+        "trailerKey": "Fn8EAJ0b250",
         "cast": [
           {
             "name": "崔岷植",
@@ -25379,7 +25399,7 @@
         "origLang": "ko",
         "origTitle": "인턴",
         "platforms": [],
-        "popularity": 2.004,
+        "popularity": 2.6541,
         "imdbId": "tt43741215",
         "countries": [
           "South Korea"
@@ -25394,7 +25414,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/fgj9JOqzwvJF1wwg5pgdQptJZpb.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/OroFBNgB2RBzj2X65CweVhhQQG.jpg",
           "voteAverage": "",
-          "trailerKey": null,
+          "trailerKey": "Fn8EAJ0b250",
           "imdbId": "tt43741215",
           "countries": [
             "South Korea"
@@ -25820,7 +25840,7 @@
         "origLang": "en",
         "origTitle": "Whalefall",
         "platforms": [],
-        "popularity": 8.1645,
+        "popularity": 7.8232,
         "imdbId": "tt28535715",
         "countries": [
           "United States of America"
@@ -26031,7 +26051,7 @@
         "origLang": "en",
         "origTitle": "Virginia Woolf's Night & Day",
         "platforms": [],
-        "popularity": 2.9588,
+        "popularity": 3.4234,
         "imdbId": "tt27802226",
         "countries": [
           "United Kingdom",
@@ -26938,12 +26958,12 @@
         ],
         "crew": [
           {
-            "name": "塔伊加·維迪提",
-            "job": "Director"
-          },
-          {
             "name": "Dahvi Waller",
             "job": "Screenplay"
+          },
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Director"
           },
           {
             "name": "塔伊加·維迪提",
@@ -26956,7 +26976,7 @@
         "origLang": "en",
         "origTitle": "Klara and the Sun",
         "platforms": [],
-        "popularity": 3.804,
+        "popularity": 4.2269,
         "imdbId": "tt14371256",
         "countries": [
           "New Zealand",
@@ -27035,12 +27055,12 @@
           ],
           "crew": [
             {
-              "name": "塔伊加·維迪提",
-              "job": "Director"
-            },
-            {
               "name": "Dahvi Waller",
               "job": "Screenplay"
+            },
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Director"
             },
             {
               "name": "塔伊加·維迪提",
@@ -27376,7 +27396,7 @@
         "origLang": "zh",
         "origTitle": "世紀初戀 楊麗花",
         "platforms": [],
-        "popularity": 1.0246,
+        "popularity": 0.9453,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -28887,7 +28907,7 @@
         "origLang": "en",
         "origTitle": "Hexed",
         "platforms": [],
-        "popularity": 7.3796,
+        "popularity": 7.4382,
         "imdbId": "tt38077943",
         "countries": [
           "United States of America"
@@ -29987,7 +30007,7 @@
         "origLang": "en",
         "origTitle": "Avengers: Doomsday",
         "platforms": [],
-        "popularity": 41.8055,
+        "popularity": 40.2246,
         "imdbId": "tt21357150",
         "countries": [
           "United States of America"
@@ -30164,7 +30184,7 @@
           {
             "name": "佛蘿倫絲·普伊",
             "char": "Princess Irulan",
-            "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
           },
           {
             "name": "蕾貝卡·弗格森",
@@ -30276,7 +30296,7 @@
             {
               "name": "佛蘿倫絲·普伊",
               "char": "Princess Irulan",
-              "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
             },
             {
               "name": "蕾貝卡·弗格森",
