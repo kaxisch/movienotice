@@ -336,7 +336,9 @@ def build_verified_output(candidates):
             transient_failure_ids.add(tmdb_id)
             log(f"  Retaining previous TMDB {tmdb_id}: release_dates could not be loaded")
             continue
-        theatrical_releases = weekly.extract_tw_theatrical_releases_from_results(release_results)
+        theatrical_releases = weekly.extract_tw_theatrical_releases_from_results(
+            release_results, tmdb_id
+        )
         eligible_releases = weekly.releases_in_window(theatrical_releases, past_cutoff, future_cutoff)
         source = candidate_by_id[tmdb_id]
         source_date = weekly.parse_iso_date(source.get("tmdb_tw_release_date", ""))

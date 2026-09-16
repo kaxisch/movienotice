@@ -861,6 +861,9 @@ def extract_tw_theatrical_date_from_results(release_results):
 TMDB_CINEMA_RELEASE_TYPES = {1, 2, 3}
 TMDB_CINEMA_RELEASE_TYPE_FILTER = "1|2|3"
 PUBLIC_MULTI_DATE_MOVIE_IDS = {1586876}  # 《劇場版 吉伊卡哇》日文版與中文版相差一週
+TMDB_TW_RELEASE_DATE_CORRECTIONS = {
+    255796: {"2026-09-22": "2026-09-23"},  # 《今天不回家》TMDB 台灣頁顯示 9/23
+}
 
 
 def tmdb_release_date_in_taipei(value):
@@ -878,7 +881,7 @@ def tmdb_release_date_in_taipei(value):
         return fallback if parse_iso_date(fallback) else ""
 
 
-def extract_tw_theatrical_releases_from_results(release_results):
+def extract_tw_theatrical_releases_from_results(release_results, tmdb_id=None):
     """取出台灣首映、有限上映及一般院線紀錄，依日期排序並去除重複項目。"""
     releases = []
     seen = set()
@@ -889,6 +892,11 @@ def extract_tw_theatrical_releases_from_results(release_results):
             if item.get("type") not in TMDB_CINEMA_RELEASE_TYPES:
                 continue
             release_date = tmdb_release_date_in_taipei(item.get("release_date", ""))
+            try:
+                correction = TMDB_TW_RELEASE_DATE_CORRECTIONS.get(int(tmdb_id), {})
+            except (TypeError, ValueError):
+                correction = {}
+            release_date = correction.get(release_date, release_date)
             if not parse_iso_date(release_date):
                 continue
             language = (item.get("iso_639_1") or "").lower()
@@ -1804,7 +1812,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         if release_results is None:
             tmdb_processing_complete = False
             continue
-        tw_releases = extract_tw_theatrical_releases_from_results(release_results)
+        tw_releases = extract_tw_theatrical_releases_from_results(release_results, result["id"])
         rerelease_verified = is_verified_rerelease(
             movie, result, tw_releases, manual_rerelease_ids
         )
@@ -1859,7 +1867,9 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
             if rematched_releases is None:
                 tmdb_processing_complete = False
                 continue
-            rematched_tw_releases = extract_tw_theatrical_releases_from_results(rematched_releases)
+            rematched_tw_releases = extract_tw_theatrical_releases_from_results(
+                rematched_releases, rematched["id"]
+            )
             current_tmdb_date = infer_current_tmdb_theatrical_date(
                 rematched_tw_releases, generated_at_local.date()
             )
