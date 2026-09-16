@@ -192,6 +192,22 @@ class CandidatePresenceTests(unittest.TestCase):
             ["2026-09-01", "2026-09-02", "2026-09-03"],
         )
 
+    def test_tmdb_tw_cinema_release_uses_taipei_calendar_date(self):
+        releases = weekly.extract_tw_theatrical_releases_from_results([
+            {
+                "iso_3166_1": "TW",
+                "release_dates": [
+                    {
+                        "type": 2,
+                        "release_date": "2026-09-22T16:00:00.000Z",
+                        "iso_639_1": "zh",
+                    }
+                ],
+            }
+        ])
+
+        self.assertEqual(releases, [{"date": "2026-09-23", "language": "zh"}])
+
     def test_tmdb_tw_cinema_release_rejects_home_and_non_taiwan_dates(self):
         releases = weekly.extract_tw_theatrical_releases_from_results([
             {
