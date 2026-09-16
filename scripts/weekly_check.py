@@ -863,6 +863,21 @@ TMDB_CINEMA_RELEASE_TYPE_FILTER = "1|2|3"
 PUBLIC_MULTI_DATE_MOVIE_IDS = {1586876}  # 《劇場版 吉伊卡哇》日文版與中文版相差一週
 
 
+def tmdb_release_date_in_taipei(value):
+    """TMDB release_date 是 UTC 時間；台灣上映日應先轉為 UTC+8。"""
+    raw = str(value or "").strip()
+    if not raw:
+        return ""
+    try:
+        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            return parsed.date().isoformat()
+        return parsed.astimezone(timezone(timedelta(hours=8))).date().isoformat()
+    except ValueError:
+        fallback = raw[:10]
+        return fallback if parse_iso_date(fallback) else ""
+
+
 def extract_tw_theatrical_releases_from_results(release_results):
     """取出台灣首映、有限上映及一般院線紀錄，依日期排序並去除重複項目。"""
     releases = []
@@ -873,7 +888,7 @@ def extract_tw_theatrical_releases_from_results(release_results):
         for item in entry.get("release_dates", []):
             if item.get("type") not in TMDB_CINEMA_RELEASE_TYPES:
                 continue
-            release_date = item.get("release_date", "")[:10]
+            release_date = tmdb_release_date_in_taipei(item.get("release_date", ""))
             if not parse_iso_date(release_date):
                 continue
             language = (item.get("iso_639_1") or "").lower()
