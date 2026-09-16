@@ -1,257 +1,181 @@
 {
-  "generated_at": "2026-09-16T20:00:38.210157+08:00",
+  "generated_at": "2026-09-17T00:54:53.523646+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 68,
-    "soon_count": 73
+    "soon_count": 71
   },
   "movies": {
     "now": [
       {
-        "id": 1507580,
-        "titleZh": "哈姆雷特—Hiran Abeysekera版",
-        "titleEn": "National Theatre Live: Hamlet",
-        "releaseDate": "2026-09-12",
+        "id": 1423191,
+        "titleZh": "惡靈古堡：爆發夜",
+        "titleEn": "Resident Evil",
+        "releaseDate": "2026-09-17",
         "releaseYear": "2026",
         "isRerelease": false,
         "twTheatricalReleases": [
           {
-            "date": "2026-09-12",
+            "date": "2026-09-17",
             "language": ""
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/g0bgIJHg0qCSkOM0wCTDJG3nKpZ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/eid7AFjPqVcqsUEkKuOzMsTjwQ5.jpg",
-        "voteAverage": "6.5",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+        "voteAverage": "8.4",
         "genre": [
-          "劇情"
+          "恐怖",
+          "科幻"
         ],
-        "duration": 160,
-        "synopsis": "丹麥王國鬼影幢幢，你可曾窺見端倪？在重重責任與種種疑慮的撕扯中，在至高權力與幾許特權的圍困下，年輕的哈姆雷特王子終將發出那石破天驚的一問——你我都心領神會的永恆詰問。",
+        "duration": 94,
+        "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
         "imdb": "",
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": null,
+        "trailerKey": "f6Y2SgaHyCw",
         "cast": [
           {
-            "name": "Hiran Abeysekera",
-            "char": "Hamlet",
-            "photo": "https://image.tmdb.org/t/p/w500/1AcEoZAsUYtRaZCMHE0p9u1xbIs.jpg"
+            "name": "奧斯汀·亞伯姆",
+            "char": "Bryan",
+            "photo": "https://image.tmdb.org/t/p/w500/gG4KsGZDw3tO2R66cn9VdOo8uSu.jpg"
           },
           {
-            "name": "阿利斯塔爾·佩特瑞",
-            "char": "Claudius",
-            "photo": "https://image.tmdb.org/t/p/w500/b6KUFhtWtmmTIcs7gL9kZktzJzl.jpg"
+            "name": "Zach Cherry",
+            "char": "Dave",
+            "photo": "https://image.tmdb.org/t/p/w500/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg"
           },
           {
-            "name": "Geoffrey Streatfeild",
-            "char": "Polonius",
-            "photo": "https://image.tmdb.org/t/p/w500/95ifVdcQFLxNDHZgDyljFPATUuZ.jpg"
+            "name": "卡莉·瑞斯",
+            "char": "Pauline",
+            "photo": "https://image.tmdb.org/t/p/w500/ruLDXHnKA4aHEQCcFGDAJ7bLTdt.jpg"
           },
           {
-            "name": "Ayesha Dharker",
-            "char": "Gertrude",
-            "photo": "https://image.tmdb.org/t/p/w500/6LNt1MmG22qPQxQgRVmoOPfQofQ.jpg"
+            "name": "保羅·沃爾特·豪澤爾",
+            "char": "Carl",
+            "photo": "https://image.tmdb.org/t/p/w500/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg"
           },
           {
-            "name": "Francesca Mills",
-            "char": "Ophelia",
-            "photo": "https://image.tmdb.org/t/p/w500/iQvDhjHcUzIFYYETimmKq5r0xjH.jpg"
+            "name": "Johnno Wilson",
+            "char": "Max",
+            "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
           },
           {
-            "name": "Ryan Ellsworth",
-            "char": "Ghost/Player King/First Gravedigger",
-            "photo": "https://image.tmdb.org/t/p/w500/82dIg0CigQo47H06Y54gb7u5lFh.jpg"
+            "name": "Shaun W. Loeser",
+            "char": "Puker",
+            "photo": "https://image.tmdb.org/t/p/w500/pMV7kzy7OHk4X93uRGbrdvuFgQB.jpg"
           },
           {
-            "name": "Tessa Wong",
-            "char": "Horatio",
-            "photo": "https://image.tmdb.org/t/p/w500/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
-          },
-          {
-            "name": "Tom Glenister",
-            "char": "Laertes",
-            "photo": "https://image.tmdb.org/t/p/w500/ud8WGXD27xoF8oBxOL1vHroEAo5.jpg"
-          },
-          {
-            "name": "Phil Cheadle",
-            "char": "Marcellus / Captain",
-            "photo": "https://image.tmdb.org/t/p/w500/4JDkMQsBQ2tEhKjk8bw3dD5u1Wu.jpg"
-          },
-          {
-            "name": "Kiren Kebaili-Dwyer",
-            "char": "Fortinbras",
-            "photo": "https://image.tmdb.org/t/p/w500/6X44DCz89B5nI0sFbPqeb5ZyeY6.jpg"
-          },
-          {
-            "name": "Joe Bolland",
-            "char": "Guildenstern",
-            "photo": null
-          },
-          {
-            "name": "Mary Higgins",
-            "char": "Osric / Voltemand",
-            "photo": "https://image.tmdb.org/t/p/w500/jYQdct2jLldGzxs6PsrzDqbYxQw.jpg"
-          },
-          {
-            "name": "Liz Jadav",
-            "char": "Nurse / Priest",
-            "photo": "https://image.tmdb.org/t/p/w500/ienk34EXxHE7ILVN5GP0XAZ2iwI.jpg"
-          },
-          {
-            "name": "Hari Mackinnon",
-            "char": "Rosencrantz",
-            "photo": null
-          },
-          {
-            "name": "Sophia Papadopoulos",
-            "char": "Cornelius / English Ambassador / Second Gravedigger",
-            "photo": null
-          },
-          {
-            "name": "Siobhan Redmond",
-            "char": "First Player",
-            "photo": "https://image.tmdb.org/t/p/w500/sxWG5sNKmjKgCCGpiK6ZI3sLKyo.jpg"
+            "name": "Devon Deshaun Stewart",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/qZ5BMtEva7XEEdO3BpB9pCPzqMx.jpg"
           }
         ],
         "crew": [
           {
-            "name": "Robert Hastie",
+            "name": "札克·克瑞格",
             "job": "Director"
           },
           {
-            "name": "Christine Lalla",
-            "job": "Director"
+            "name": "Shay Hatten",
+            "job": "Writer"
+          },
+          {
+            "name": "札克·克瑞格",
+            "job": "Writer"
           }
         ],
-        "budget": 0,
+        "budget": 80000000,
         "revenue": 0,
         "status": "Released",
         "origLang": "en",
-        "origTitle": "National Theatre Live: Hamlet",
+        "origTitle": "Resident Evil",
         "platforms": [],
-        "popularity": 1.0142,
-        "imdbId": "tt37511206",
+        "popularity": 110.1608,
+        "imdbId": "tt35538033",
         "countries": [
-          "United Kingdom"
+          "United States of America",
+          "Germany",
+          "France"
         ],
         "detail": {
-          "duration": 160,
+          "duration": 94,
           "genres": [
-            "劇情"
+            "恐怖",
+            "科幻"
           ],
-          "synopsis": "丹麥王國鬼影幢幢，你可曾窺見端倪？在重重責任與種種疑慮的撕扯中，在至高權力與幾許特權的圍困下，年輕的哈姆雷特王子終將發出那石破天驚的一問——你我都心領神會的永恆詰問。",
-          "poster": "https://image.tmdb.org/t/p/w500/g0bgIJHg0qCSkOM0wCTDJG3nKpZ.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/eid7AFjPqVcqsUEkKuOzMsTjwQ5.jpg",
-          "voteAverage": "6.5",
-          "trailerKey": null,
-          "imdbId": "tt37511206",
+          "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
+          "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+          "voteAverage": "8.4",
+          "trailerKey": "f6Y2SgaHyCw",
+          "imdbId": "tt35538033",
           "countries": [
-            "United Kingdom"
+            "United States of America",
+            "Germany",
+            "France"
           ],
           "cast": [
             {
-              "name": "Hiran Abeysekera",
-              "char": "Hamlet",
-              "photo": "https://image.tmdb.org/t/p/w500/1AcEoZAsUYtRaZCMHE0p9u1xbIs.jpg"
+              "name": "奧斯汀·亞伯姆",
+              "char": "Bryan",
+              "photo": "https://image.tmdb.org/t/p/w500/gG4KsGZDw3tO2R66cn9VdOo8uSu.jpg"
             },
             {
-              "name": "阿利斯塔爾·佩特瑞",
-              "char": "Claudius",
-              "photo": "https://image.tmdb.org/t/p/w500/b6KUFhtWtmmTIcs7gL9kZktzJzl.jpg"
+              "name": "Zach Cherry",
+              "char": "Dave",
+              "photo": "https://image.tmdb.org/t/p/w500/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg"
             },
             {
-              "name": "Geoffrey Streatfeild",
-              "char": "Polonius",
-              "photo": "https://image.tmdb.org/t/p/w500/95ifVdcQFLxNDHZgDyljFPATUuZ.jpg"
+              "name": "卡莉·瑞斯",
+              "char": "Pauline",
+              "photo": "https://image.tmdb.org/t/p/w500/ruLDXHnKA4aHEQCcFGDAJ7bLTdt.jpg"
             },
             {
-              "name": "Ayesha Dharker",
-              "char": "Gertrude",
-              "photo": "https://image.tmdb.org/t/p/w500/6LNt1MmG22qPQxQgRVmoOPfQofQ.jpg"
+              "name": "保羅·沃爾特·豪澤爾",
+              "char": "Carl",
+              "photo": "https://image.tmdb.org/t/p/w500/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg"
             },
             {
-              "name": "Francesca Mills",
-              "char": "Ophelia",
-              "photo": "https://image.tmdb.org/t/p/w500/iQvDhjHcUzIFYYETimmKq5r0xjH.jpg"
+              "name": "Johnno Wilson",
+              "char": "Max",
+              "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
             },
             {
-              "name": "Ryan Ellsworth",
-              "char": "Ghost/Player King/First Gravedigger",
-              "photo": "https://image.tmdb.org/t/p/w500/82dIg0CigQo47H06Y54gb7u5lFh.jpg"
+              "name": "Shaun W. Loeser",
+              "char": "Puker",
+              "photo": "https://image.tmdb.org/t/p/w500/pMV7kzy7OHk4X93uRGbrdvuFgQB.jpg"
             },
             {
-              "name": "Tessa Wong",
-              "char": "Horatio",
-              "photo": "https://image.tmdb.org/t/p/w500/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
-            },
-            {
-              "name": "Tom Glenister",
-              "char": "Laertes",
-              "photo": "https://image.tmdb.org/t/p/w500/ud8WGXD27xoF8oBxOL1vHroEAo5.jpg"
-            },
-            {
-              "name": "Phil Cheadle",
-              "char": "Marcellus / Captain",
-              "photo": "https://image.tmdb.org/t/p/w500/4JDkMQsBQ2tEhKjk8bw3dD5u1Wu.jpg"
-            },
-            {
-              "name": "Kiren Kebaili-Dwyer",
-              "char": "Fortinbras",
-              "photo": "https://image.tmdb.org/t/p/w500/6X44DCz89B5nI0sFbPqeb5ZyeY6.jpg"
-            },
-            {
-              "name": "Joe Bolland",
-              "char": "Guildenstern",
-              "photo": null
-            },
-            {
-              "name": "Mary Higgins",
-              "char": "Osric / Voltemand",
-              "photo": "https://image.tmdb.org/t/p/w500/jYQdct2jLldGzxs6PsrzDqbYxQw.jpg"
-            },
-            {
-              "name": "Liz Jadav",
-              "char": "Nurse / Priest",
-              "photo": "https://image.tmdb.org/t/p/w500/ienk34EXxHE7ILVN5GP0XAZ2iwI.jpg"
-            },
-            {
-              "name": "Hari Mackinnon",
-              "char": "Rosencrantz",
-              "photo": null
-            },
-            {
-              "name": "Sophia Papadopoulos",
-              "char": "Cornelius / English Ambassador / Second Gravedigger",
-              "photo": null
-            },
-            {
-              "name": "Siobhan Redmond",
-              "char": "First Player",
-              "photo": "https://image.tmdb.org/t/p/w500/sxWG5sNKmjKgCCGpiK6ZI3sLKyo.jpg"
+              "name": "Devon Deshaun Stewart",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/qZ5BMtEva7XEEdO3BpB9pCPzqMx.jpg"
             }
           ],
           "crew": [
             {
-              "name": "Robert Hastie",
+              "name": "札克·克瑞格",
               "job": "Director"
             },
             {
-              "name": "Christine Lalla",
-              "job": "Director"
+              "name": "Shay Hatten",
+              "job": "Writer"
+            },
+            {
+              "name": "札克·克瑞格",
+              "job": "Writer"
             }
           ],
-          "budget": 0,
+          "budget": 80000000,
           "revenue": 0,
           "status": "Released",
           "origLang": "en",
-          "origTitle": "National Theatre Live: Hamlet",
+          "origTitle": "Resident Evil",
           "platforms": []
         },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1507580?language=zh-TW",
+        "tmdbUrl": "https://www.themoviedb.org/movie/1423191?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -571,11 +495,11 @@
         "crew": [
           {
             "name": "Heather Lenz",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Heather Lenz",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -620,11 +544,11 @@
           "crew": [
             {
               "name": "Heather Lenz",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Heather Lenz",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -1228,7 +1152,7 @@
         "titleEn": "Trois couleurs : Rouge",
         "releaseDate": "2026-09-11",
         "releaseYear": "1994",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-09-11",
@@ -3320,7 +3244,7 @@
         "duration": 100,
         "synopsis": "一心以成為漫畫家為目標的兩位少女藤野、京本之間青春動人的故事。",
         "imdb": "8.0",
-        "rt": "88%",
+        "rt": "89%",
         "mc": "73",
         "ratingMeta": {
           "imdb": {
@@ -3330,8 +3254,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 17,
-            "lastChanged": "2026-09-14T21:20:07.180082+08:00"
+            "votes": 19,
+            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -3930,283 +3854,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1193673?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 31414,
-        "titleZh": "撒旦的探戈",
-        "titleEn": "Sátántangó",
-        "releaseDate": "2026-09-06",
-        "releaseYear": "1994",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-06",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/hySy5g6xncM3U1iRsdPgYyahXM0.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/5a4Gmk2HNeefI4Rmwdmbyoy79oy.jpg",
-        "voteAverage": "8.1",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 450,
-        "synopsis": "「片長七小時卻每一分鐘皆雷霆萬鈞，引人入勝。但願在我有生之年，年年都重看一遍。」——蘇珊‧桑塔格 開場八分鐘的推軌鏡頭，已道出此片的史詩氣魄。牛群從牛棚湧出，攝影機隔著一列破舊的農居追蹤，有趣的是牠們一路盲目前衝，一路還試圖交配。塔可夫斯基式的畫面，卻是教人屏息的典型塔爾風格，妙筆一揮預告一個集體農場如何走向滅亡。故事始於傳聞已死的騙子重臨村子，他要騙走農場收入 ，卻給村民認定是大救星。接著上演一個悲劇，然後是一個諷刺故事。全片十二章的結構正如 Krashnahorkai 的原著，啓發自六步踏前、六步退後的探戈舞，不同視角有時重復同一劇情。農場最終的命運暗喻九十年代初共產主義的破產，同時也是人類共同命運的觀照。 全片最精彩兩段，一是擔當敘事者的醫生偷偷記錄村民活動，他蹣跚買醉的跟鏡，成為最感人的觀影存在體驗。另一段女孩虐貓，亦寫下影史上有數的傷感時刻。沒有故弄玄虛，一種交代故事的坦率，讓演員在真實時間存在，讓觀眾隨他們的情態同步呼吸，個中有導演對電影最大的深情與敬意。七個半小時的每個鏡頭，個個都是不朽──沒有想當然的靜止，而是自有一種有機的內在節奏。像小津和德萊葉，塔爾深諳長鏡頭的真諦。這是必須去經歷的，一生難逢的觀影經驗。",
-        "imdb": "8.2",
-        "rt": "100%",
-        "mc": "90",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 13284,
-            "lastChanged": "2026-09-12T19:14:11.656685+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 27,
-            "lastChanged": "2026-09-12T19:14:11.656685+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 11,
-            "lastChanged": "2026-09-12T19:14:11.656685+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Mihály Víg",
-            "char": "Irimiás",
-            "photo": "https://image.tmdb.org/t/p/w500/71v1NmDSD4i8ZJVNIkbvcwzVMs4.jpg"
-          },
-          {
-            "name": "Putyi Horváth",
-            "char": "Petrina",
-            "photo": "https://image.tmdb.org/t/p/w500/9aKiMvr7X69X6mNQdcDZTZ7JnWU.jpg"
-          },
-          {
-            "name": "Székely B. Miklós",
-            "char": "Futaki",
-            "photo": "https://image.tmdb.org/t/p/w500/82IjLmtqqv6sVf8j6vphi0kxBn7.jpg"
-          },
-          {
-            "name": "Erika Bók",
-            "char": "Estike",
-            "photo": null
-          },
-          {
-            "name": "László feLugossy",
-            "char": "Schmidt",
-            "photo": null
-          },
-          {
-            "name": "Alfréd Járai",
-            "char": "Halics",
-            "photo": "https://image.tmdb.org/t/p/w500/gZgfWedQdgFV69bzCtKwZbQ8Nbo.jpg"
-          },
-          {
-            "name": "Derzsi János",
-            "char": "Kráner",
-            "photo": "https://image.tmdb.org/t/p/w500/8ER5TWn3Wm0UYiwuXEVTcUZaHD1.jpg"
-          },
-          {
-            "name": "Irén Szajki",
-            "char": "Kránerné",
-            "photo": null
-          },
-          {
-            "name": "Éva Almássy Albert",
-            "char": "Schmidtné",
-            "photo": "https://image.tmdb.org/t/p/w500/bGQtug5lUbvJF1CKDu2REo0C6AW.jpg"
-          },
-          {
-            "name": "Erzsébet Gaál",
-            "char": "Halicsné",
-            "photo": null
-          },
-          {
-            "name": "Peter Berling",
-            "char": "Orvos",
-            "photo": "https://image.tmdb.org/t/p/w500/oAlkmJ99mC8KfARMiaSDm4kn9nj.jpg"
-          },
-          {
-            "name": "Barkó György",
-            "char": "Iskolaigazgató",
-            "photo": "https://image.tmdb.org/t/p/w500/wEPSCjvpADV3W0UHkCvMrafJOlk.jpg"
-          },
-          {
-            "name": "Zoltán Kamondi",
-            "char": "Kocsmáros",
-            "photo": null
-          },
-          {
-            "name": "Barna Mihók",
-            "char": "Kerekes",
-            "photo": "https://image.tmdb.org/t/p/w500/doDU9OLrRiNuNVA3vJzyWLCdwBF.jpg"
-          },
-          {
-            "name": "Dobai Péter",
-            "char": "Százados",
-            "photo": "https://image.tmdb.org/t/p/w500/3Dla7ONZqgzsbzKIOh6Ly2fntDE.jpg"
-          },
-          {
-            "name": "András Bodnár",
-            "char": "Horgos Sanyi",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Tarr Béla",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Krasznahorkai László",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Tarr Béla",
-            "job": "Director"
-          }
-        ],
-        "budget": 1500000,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "hu",
-        "origTitle": "Sátántangó",
-        "platforms": [],
-        "popularity": 5.3391,
-        "imdbId": "tt0111341",
-        "countries": [
-          "Germany",
-          "Hungary",
-          "Switzerland"
-        ],
-        "detail": {
-          "duration": 450,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "「片長七小時卻每一分鐘皆雷霆萬鈞，引人入勝。但願在我有生之年，年年都重看一遍。」——蘇珊‧桑塔格 開場八分鐘的推軌鏡頭，已道出此片的史詩氣魄。牛群從牛棚湧出，攝影機隔著一列破舊的農居追蹤，有趣的是牠們一路盲目前衝，一路還試圖交配。塔可夫斯基式的畫面，卻是教人屏息的典型塔爾風格，妙筆一揮預告一個集體農場如何走向滅亡。故事始於傳聞已死的騙子重臨村子，他要騙走農場收入 ，卻給村民認定是大救星。接著上演一個悲劇，然後是一個諷刺故事。全片十二章的結構正如 Krashnahorkai 的原著，啓發自六步踏前、六步退後的探戈舞，不同視角有時重復同一劇情。農場最終的命運暗喻九十年代初共產主義的破產，同時也是人類共同命運的觀照。 全片最精彩兩段，一是擔當敘事者的醫生偷偷記錄村民活動，他蹣跚買醉的跟鏡，成為最感人的觀影存在體驗。另一段女孩虐貓，亦寫下影史上有數的傷感時刻。沒有故弄玄虛，一種交代故事的坦率，讓演員在真實時間存在，讓觀眾隨他們的情態同步呼吸，個中有導演對電影最大的深情與敬意。七個半小時的每個鏡頭，個個都是不朽──沒有想當然的靜止，而是自有一種有機的內在節奏。像小津和德萊葉，塔爾深諳長鏡頭的真諦。這是必須去經歷的，一生難逢的觀影經驗。",
-          "poster": "https://image.tmdb.org/t/p/w500/hySy5g6xncM3U1iRsdPgYyahXM0.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/5a4Gmk2HNeefI4Rmwdmbyoy79oy.jpg",
-          "voteAverage": "8.1",
-          "trailerKey": null,
-          "imdbId": "tt0111341",
-          "countries": [
-            "Germany",
-            "Hungary",
-            "Switzerland"
-          ],
-          "cast": [
-            {
-              "name": "Mihály Víg",
-              "char": "Irimiás",
-              "photo": "https://image.tmdb.org/t/p/w500/71v1NmDSD4i8ZJVNIkbvcwzVMs4.jpg"
-            },
-            {
-              "name": "Putyi Horváth",
-              "char": "Petrina",
-              "photo": "https://image.tmdb.org/t/p/w500/9aKiMvr7X69X6mNQdcDZTZ7JnWU.jpg"
-            },
-            {
-              "name": "Székely B. Miklós",
-              "char": "Futaki",
-              "photo": "https://image.tmdb.org/t/p/w500/82IjLmtqqv6sVf8j6vphi0kxBn7.jpg"
-            },
-            {
-              "name": "Erika Bók",
-              "char": "Estike",
-              "photo": null
-            },
-            {
-              "name": "László feLugossy",
-              "char": "Schmidt",
-              "photo": null
-            },
-            {
-              "name": "Alfréd Járai",
-              "char": "Halics",
-              "photo": "https://image.tmdb.org/t/p/w500/gZgfWedQdgFV69bzCtKwZbQ8Nbo.jpg"
-            },
-            {
-              "name": "Derzsi János",
-              "char": "Kráner",
-              "photo": "https://image.tmdb.org/t/p/w500/8ER5TWn3Wm0UYiwuXEVTcUZaHD1.jpg"
-            },
-            {
-              "name": "Irén Szajki",
-              "char": "Kránerné",
-              "photo": null
-            },
-            {
-              "name": "Éva Almássy Albert",
-              "char": "Schmidtné",
-              "photo": "https://image.tmdb.org/t/p/w500/bGQtug5lUbvJF1CKDu2REo0C6AW.jpg"
-            },
-            {
-              "name": "Erzsébet Gaál",
-              "char": "Halicsné",
-              "photo": null
-            },
-            {
-              "name": "Peter Berling",
-              "char": "Orvos",
-              "photo": "https://image.tmdb.org/t/p/w500/oAlkmJ99mC8KfARMiaSDm4kn9nj.jpg"
-            },
-            {
-              "name": "Barkó György",
-              "char": "Iskolaigazgató",
-              "photo": "https://image.tmdb.org/t/p/w500/wEPSCjvpADV3W0UHkCvMrafJOlk.jpg"
-            },
-            {
-              "name": "Zoltán Kamondi",
-              "char": "Kocsmáros",
-              "photo": null
-            },
-            {
-              "name": "Barna Mihók",
-              "char": "Kerekes",
-              "photo": "https://image.tmdb.org/t/p/w500/doDU9OLrRiNuNVA3vJzyWLCdwBF.jpg"
-            },
-            {
-              "name": "Dobai Péter",
-              "char": "Százados",
-              "photo": "https://image.tmdb.org/t/p/w500/3Dla7ONZqgzsbzKIOh6Ly2fntDE.jpg"
-            },
-            {
-              "name": "András Bodnár",
-              "char": "Horgos Sanyi",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Tarr Béla",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Krasznahorkai László",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Tarr Béla",
-              "job": "Director"
-            }
-          ],
-          "budget": 1500000,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "hu",
-          "origTitle": "Sátántangó",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/31414?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -5282,7 +4929,7 @@
         "duration": 98,
         "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
         "imdb": "5.7",
-        "rt": "54%",
+        "rt": "56%",
         "mc": "54",
         "ratingMeta": {
           "imdb": {
@@ -5292,8 +4939,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 50,
-            "lastChanged": "2026-09-14T21:20:07.180082+08:00"
+            "votes": 54,
+            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -5529,6 +5176,231 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1101412?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1509612,
+        "titleZh": "最後的作業",
+        "titleEn": "마지막 숙제",
+        "releaseDate": "2026-09-04",
+        "releaseYear": "2025",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-04",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
+        "voteAverage": "5.5",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 109,
+        "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
+        "imdb": "6.3",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 16,
+            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "嚴泰雄",
+            "char": "Kim Yeong-nam",
+            "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
+          },
+          {
+            "name": "박상면",
+            "char": "Vice Principal",
+            "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
+          },
+          {
+            "name": "전수경",
+            "char": "Principal",
+            "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
+          },
+          {
+            "name": "윤현숙",
+            "char": "PTA President",
+            "photo": null
+          },
+          {
+            "name": "최이나",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "남대협",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "홍정민",
+            "char": "Eun-bi",
+            "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
+          },
+          {
+            "name": "이재준",
+            "char": "Joon-soo",
+            "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
+          },
+          {
+            "name": "조재영",
+            "char": "Chang-il",
+            "photo": null
+          },
+          {
+            "name": "임한빈",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
+          },
+          {
+            "name": "한창민",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
+          },
+          {
+            "name": "도연",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "이성종",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "이정철",
+            "job": "Director"
+          },
+          {
+            "name": "최석환",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "마지막 숙제",
+        "platforms": [],
+        "popularity": 0.8436,
+        "imdbId": "tt34539004",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 109,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
+          "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
+          "voteAverage": "5.5",
+          "trailerKey": null,
+          "imdbId": "tt34539004",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "嚴泰雄",
+              "char": "Kim Yeong-nam",
+              "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
+            },
+            {
+              "name": "박상면",
+              "char": "Vice Principal",
+              "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
+            },
+            {
+              "name": "전수경",
+              "char": "Principal",
+              "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
+            },
+            {
+              "name": "윤현숙",
+              "char": "PTA President",
+              "photo": null
+            },
+            {
+              "name": "최이나",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "남대협",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "홍정민",
+              "char": "Eun-bi",
+              "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
+            },
+            {
+              "name": "이재준",
+              "char": "Joon-soo",
+              "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
+            },
+            {
+              "name": "조재영",
+              "char": "Chang-il",
+              "photo": null
+            },
+            {
+              "name": "임한빈",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
+            },
+            {
+              "name": "한창민",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
+            },
+            {
+              "name": "도연",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "이성종",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "이정철",
+              "job": "Director"
+            },
+            {
+              "name": "최석환",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "마지막 숙제",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1509612?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -9621,11 +9493,11 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1299046,
-        "titleZh": "18顆鑽石",
-        "titleEn": "Diamanti",
+        "id": 1329016,
+        "titleZh": "野生狂廚",
+        "titleEn": "Tony",
         "releaseDate": "2026-08-21",
-        "releaseYear": "2024",
+        "releaseYear": "2026",
         "isRerelease": false,
         "twTheatricalReleases": [
           {
@@ -9634,258 +9506,265 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/akpCptdczXENCLM4vscpq70e0fP.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/ekj77L05ff5J64objwGrVnSipXB.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/pbcKKVPlySkjr1oMCQyNKZBoI5A.jpg",
-        "voteAverage": "7.1",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
+        "voteAverage": "7.6",
         "genre": [
-          "喜劇",
-          "劇情"
+          "劇情",
+          "喜劇"
         ],
-        "duration": 135,
-        "synopsis": "「人可生如蟻而美如神」：一班裁製亮麗戲服的中年裁縫慨嘆自己生如蟻，一名奧斯卡導演拍出她們美如神的生命。導演邀請了 18 位他最熱愛、且在義大利影壇極具分量的女演員，重塑一家高級裁縫工作室色彩斑斕、五味雜陳的過往，追憶70年代一班堅毅溫柔的女裁縫的故事。 一群日常女子拋開小我、互相照顧，照亮平凡生活中超越自我的不平凡，展現她們的獨立、愛慾、掙扎和力量。",
-        "imdb": "6.7",
-        "rt": "69%",
-        "mc": "",
+        "duration": 107,
+        "synopsis": "19歲的東尼一心嚮往成為作家，在1975年夏天，為了初戀南西踏入美國鱈魚角普洛文斯敦一間濱海餐廳的廚房打工洗碗。在餐廳老闆「主廚」嚴厲卻真誠的調教下，對料理一竅不通的東尼，逐漸蛻變成對美食充滿狂熱的年輕廚師；而闖蕩江湖的夥伴沙爾則帶著他一頭栽進酒精、菸草與放縱交織的世界。在這個瘋狂而炙熱的夏天，東尼第一次嚐到了未來的滋味——那些關於愛、背叛、友情與自我認同的碰撞，讓他第一次明白自己想要成為什麼樣的人。這份熾熱的初心，正是日後撼動全球美食界傳奇名廚的最初起點。",
+        "imdb": "7.6",
+        "rt": "93%",
+        "mc": "75",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
-            "votes": 2189,
-            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+            "votes": 8219,
+            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
-            "lastChanged": "2026-08-22T17:55:03.789402+08:00"
+            "source": "mdblist",
+            "votes": 227,
+            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 51,
+            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
           }
         },
-        "trailerKey": "GOxO8XSBJnk",
+        "trailerKey": "uZKn0KB0fPU",
         "cast": [
           {
-            "name": "Luisa Ranieri",
-            "char": "Alberta / Luisa",
-            "photo": "https://image.tmdb.org/t/p/w500/4io9vmxUwdfWvgg6EAncYsbgQYr.jpg"
+            "name": "多明尼克·塞薩",
+            "char": "Tony",
+            "photo": "https://image.tmdb.org/t/p/w500/cTYdhJrye7oTREIkQaLAuLoJ8Rt.jpg"
           },
           {
-            "name": "潔思敏婷卡",
-            "char": "Gabriella / Jasmine",
-            "photo": "https://image.tmdb.org/t/p/w500/idxRGFkuTwxKZZNtDBTY84UzAPd.jpg"
+            "name": "安東尼歐·班德拉斯",
+            "char": "Chef",
+            "photo": "https://image.tmdb.org/t/p/w500/n8YlGookYzgD3cmpMP45BYRNIoh.jpg"
           },
           {
-            "name": "Elena Sofia Ricci",
-            "char": "Elena",
-            "photo": "https://image.tmdb.org/t/p/w500/6SKKF1MWQXydnPJPQwrRE6WO0oW.jpg"
+            "name": "艾蜜莉亞·瓊斯",
+            "char": "Nancy",
+            "photo": "https://image.tmdb.org/t/p/w500/xHzb3lgOAwTl2NoGtc3mmY0u8ii.jpg"
           },
           {
-            "name": "Lunetta Savino",
-            "char": "Eleonora / Lunetta",
-            "photo": "https://image.tmdb.org/t/p/w500/3ZKTuTGF2QoFLrUvQLZ6mRSjtTE.jpg"
+            "name": "萊奧·伍道爾",
+            "char": "Sal",
+            "photo": "https://image.tmdb.org/t/p/w500/yv2JjEVm1jLR44ynkyYfhWP4I6r.jpg"
           },
           {
-            "name": "Vanessa Scalera",
-            "char": "Bianca Vega / Vanessa",
-            "photo": "https://image.tmdb.org/t/p/w500/kwkp4W8iypN1Xqp8AoLYJ5Bwhrt.jpg"
+            "name": "Stavros Halkias",
+            "char": "Stavros",
+            "photo": "https://image.tmdb.org/t/p/w500/9QB7YGMk6O7hRgGWvK0OimTVzl7.jpg"
           },
           {
-            "name": "Kasia Smutniak",
-            "char": "Sofia Volpi / Kasia",
-            "photo": "https://image.tmdb.org/t/p/w500/t7pf7Lsfxzt0QqILBB1mmCbf81U.jpg"
+            "name": "Michael Jibrin",
+            "char": "Tyrone",
+            "photo": "https://image.tmdb.org/t/p/w500/uyaW8ltNwdyRIR906uY1gzt4NE7.jpg"
           },
           {
-            "name": "Milena Vukotić",
-            "char": "Zia Olga / Milena",
-            "photo": "https://image.tmdb.org/t/p/w500/k4dsiarmq3s5kryz7MxSIQcrPRR.jpg"
+            "name": "Monica Raymund",
+            "char": "Mary",
+            "photo": "https://image.tmdb.org/t/p/w500/cG8OzzgiAEOO5q1Jw4pC1cdJf7E.jpg"
           },
           {
-            "name": "Anna Ferzetti",
-            "char": "Paolina / Anna",
-            "photo": "https://image.tmdb.org/t/p/w500/4i70JDgSCCadRA0T0jE2ct7jJcE.jpg"
+            "name": "Rich Sommer",
+            "char": "Pierre",
+            "photo": "https://image.tmdb.org/t/p/w500/cfbJ3nyiyRpSq2mLrbbrbg1k3Dh.jpg"
           },
           {
-            "name": "Geppi Cucciari",
-            "char": "Fausta / Geppi",
-            "photo": "https://image.tmdb.org/t/p/w500/aDU8qjYqrdYSyrHEusBAwmypIGI.jpg"
+            "name": "黛格瑪拉·多明絲姬",
+            "char": "Gladys",
+            "photo": "https://image.tmdb.org/t/p/w500/i1f78OP3G6pksgCcu6AxPgZYEmv.jpg"
           },
           {
-            "name": "Mara Venier",
-            "char": "Silvana / Mara",
-            "photo": "https://image.tmdb.org/t/p/w500/offh2VeyKKGPBRhRVkehVT2e5Hv.jpg"
+            "name": "Liam Fitch",
+            "char": "Christopher",
+            "photo": null
           },
           {
-            "name": "Carla Signoris",
-            "char": "Alida Borghese / Carla",
-            "photo": "https://image.tmdb.org/t/p/w500/xBuapbAceGCzbXBGYp9OQMbLu5O.jpg"
+            "name": "Caroline Portu",
+            "char": "Robin",
+            "photo": "https://image.tmdb.org/t/p/w500/oNlhhmgVoXldGlTHj1r28pfxUO6.jpg"
           },
           {
-            "name": "Aurora Giovinazzo",
-            "char": "Beatrice / Aurora",
-            "photo": "https://image.tmdb.org/t/p/w500/4c4Q1tabrXnZjIXsEhTpVOhVmV1.jpg"
+            "name": "Joe Burns",
+            "char": "Pizza Guy",
+            "photo": "https://image.tmdb.org/t/p/w500/6mKBFEijbJ3lOv7Mi3OE1tQq430.jpg"
           },
           {
-            "name": "Paola Minaccioni",
-            "char": "Nina / Paola",
-            "photo": "https://image.tmdb.org/t/p/w500/1Z81jkVRiONxYHEh3WAYjAHfnHp.jpg"
+            "name": "Allyn Burrows",
+            "char": "Professor Dobson",
+            "photo": null
           },
           {
-            "name": "Sara Bosi",
-            "char": "Giuseppina / Sara",
-            "photo": "https://image.tmdb.org/t/p/w500/hkhvwGpn1CsCmrXRjot9xQ1I5Xz.jpg"
+            "name": "Reece Grover",
+            "char": "Flip",
+            "photo": "https://image.tmdb.org/t/p/w500/FI9cxiyD4iiMY37yaD7EhvILl.jpg"
           },
           {
-            "name": "Loredana Cannata",
-            "char": "Rita",
-            "photo": "https://image.tmdb.org/t/p/w500/vOGrntUNUw3WDAIH3x62NbCcHic.jpg"
+            "name": "Henry Lynch",
+            "char": "Young Man",
+            "photo": null
           },
           {
-            "name": "Nicole Grimaudo",
-            "char": "Carlotta / Nicole",
-            "photo": "https://image.tmdb.org/t/p/w500/1TF2tDGsN8GT0MlhnTdhuB4jo2S.jpg"
+            "name": "Ava Davey-Bissett",
+            "char": "Vicki",
+            "photo": null
           }
         ],
         "crew": [
           {
-            "name": "佛森·歐茲派特",
+            "name": "Matt Johnson",
             "job": "Director"
           },
           {
-            "name": "Carlotta Corradi",
-            "job": "Screenplay"
+            "name": "Matt Johnson",
+            "job": "Writer"
           },
           {
-            "name": "Elisa Casseri",
-            "job": "Screenplay"
+            "name": "Matthew Miller",
+            "job": "Writer"
           }
         ],
         "budget": 0,
-        "revenue": 19674980,
+        "revenue": 15780498,
         "status": "Released",
-        "origLang": "it",
-        "origTitle": "Diamanti",
+        "origLang": "en",
+        "origTitle": "Tony",
         "platforms": [],
-        "popularity": 3.2648,
-        "imdbId": "tt32810496",
+        "popularity": 9.7796,
+        "imdbId": "tt33095251",
         "countries": [
-          "Italy"
+          "United States of America",
+          "Canada"
         ],
         "detail": {
-          "duration": 135,
+          "duration": 107,
           "genres": [
-            "喜劇",
-            "劇情"
+            "劇情",
+            "喜劇"
           ],
-          "synopsis": "「人可生如蟻而美如神」：一班裁製亮麗戲服的中年裁縫慨嘆自己生如蟻，一名奧斯卡導演拍出她們美如神的生命。導演邀請了 18 位他最熱愛、且在義大利影壇極具分量的女演員，重塑一家高級裁縫工作室色彩斑斕、五味雜陳的過往，追憶70年代一班堅毅溫柔的女裁縫的故事。 一群日常女子拋開小我、互相照顧，照亮平凡生活中超越自我的不平凡，展現她們的獨立、愛慾、掙扎和力量。",
-          "poster": "https://image.tmdb.org/t/p/w500/akpCptdczXENCLM4vscpq70e0fP.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/pbcKKVPlySkjr1oMCQyNKZBoI5A.jpg",
-          "voteAverage": "7.1",
-          "trailerKey": "GOxO8XSBJnk",
-          "imdbId": "tt32810496",
+          "synopsis": "19歲的東尼一心嚮往成為作家，在1975年夏天，為了初戀南西踏入美國鱈魚角普洛文斯敦一間濱海餐廳的廚房打工洗碗。在餐廳老闆「主廚」嚴厲卻真誠的調教下，對料理一竅不通的東尼，逐漸蛻變成對美食充滿狂熱的年輕廚師；而闖蕩江湖的夥伴沙爾則帶著他一頭栽進酒精、菸草與放縱交織的世界。在這個瘋狂而炙熱的夏天，東尼第一次嚐到了未來的滋味——那些關於愛、背叛、友情與自我認同的碰撞，讓他第一次明白自己想要成為什麼樣的人。這份熾熱的初心，正是日後撼動全球美食界傳奇名廚的最初起點。",
+          "poster": "https://image.tmdb.org/t/p/w500/ekj77L05ff5J64objwGrVnSipXB.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
+          "voteAverage": "7.6",
+          "trailerKey": "uZKn0KB0fPU",
+          "imdbId": "tt33095251",
           "countries": [
-            "Italy"
+            "United States of America",
+            "Canada"
           ],
           "cast": [
             {
-              "name": "Luisa Ranieri",
-              "char": "Alberta / Luisa",
-              "photo": "https://image.tmdb.org/t/p/w500/4io9vmxUwdfWvgg6EAncYsbgQYr.jpg"
+              "name": "多明尼克·塞薩",
+              "char": "Tony",
+              "photo": "https://image.tmdb.org/t/p/w500/cTYdhJrye7oTREIkQaLAuLoJ8Rt.jpg"
             },
             {
-              "name": "潔思敏婷卡",
-              "char": "Gabriella / Jasmine",
-              "photo": "https://image.tmdb.org/t/p/w500/idxRGFkuTwxKZZNtDBTY84UzAPd.jpg"
+              "name": "安東尼歐·班德拉斯",
+              "char": "Chef",
+              "photo": "https://image.tmdb.org/t/p/w500/n8YlGookYzgD3cmpMP45BYRNIoh.jpg"
             },
             {
-              "name": "Elena Sofia Ricci",
-              "char": "Elena",
-              "photo": "https://image.tmdb.org/t/p/w500/6SKKF1MWQXydnPJPQwrRE6WO0oW.jpg"
+              "name": "艾蜜莉亞·瓊斯",
+              "char": "Nancy",
+              "photo": "https://image.tmdb.org/t/p/w500/xHzb3lgOAwTl2NoGtc3mmY0u8ii.jpg"
             },
             {
-              "name": "Lunetta Savino",
-              "char": "Eleonora / Lunetta",
-              "photo": "https://image.tmdb.org/t/p/w500/3ZKTuTGF2QoFLrUvQLZ6mRSjtTE.jpg"
+              "name": "萊奧·伍道爾",
+              "char": "Sal",
+              "photo": "https://image.tmdb.org/t/p/w500/yv2JjEVm1jLR44ynkyYfhWP4I6r.jpg"
             },
             {
-              "name": "Vanessa Scalera",
-              "char": "Bianca Vega / Vanessa",
-              "photo": "https://image.tmdb.org/t/p/w500/kwkp4W8iypN1Xqp8AoLYJ5Bwhrt.jpg"
+              "name": "Stavros Halkias",
+              "char": "Stavros",
+              "photo": "https://image.tmdb.org/t/p/w500/9QB7YGMk6O7hRgGWvK0OimTVzl7.jpg"
             },
             {
-              "name": "Kasia Smutniak",
-              "char": "Sofia Volpi / Kasia",
-              "photo": "https://image.tmdb.org/t/p/w500/t7pf7Lsfxzt0QqILBB1mmCbf81U.jpg"
+              "name": "Michael Jibrin",
+              "char": "Tyrone",
+              "photo": "https://image.tmdb.org/t/p/w500/uyaW8ltNwdyRIR906uY1gzt4NE7.jpg"
             },
             {
-              "name": "Milena Vukotić",
-              "char": "Zia Olga / Milena",
-              "photo": "https://image.tmdb.org/t/p/w500/k4dsiarmq3s5kryz7MxSIQcrPRR.jpg"
+              "name": "Monica Raymund",
+              "char": "Mary",
+              "photo": "https://image.tmdb.org/t/p/w500/cG8OzzgiAEOO5q1Jw4pC1cdJf7E.jpg"
             },
             {
-              "name": "Anna Ferzetti",
-              "char": "Paolina / Anna",
-              "photo": "https://image.tmdb.org/t/p/w500/4i70JDgSCCadRA0T0jE2ct7jJcE.jpg"
+              "name": "Rich Sommer",
+              "char": "Pierre",
+              "photo": "https://image.tmdb.org/t/p/w500/cfbJ3nyiyRpSq2mLrbbrbg1k3Dh.jpg"
             },
             {
-              "name": "Geppi Cucciari",
-              "char": "Fausta / Geppi",
-              "photo": "https://image.tmdb.org/t/p/w500/aDU8qjYqrdYSyrHEusBAwmypIGI.jpg"
+              "name": "黛格瑪拉·多明絲姬",
+              "char": "Gladys",
+              "photo": "https://image.tmdb.org/t/p/w500/i1f78OP3G6pksgCcu6AxPgZYEmv.jpg"
             },
             {
-              "name": "Mara Venier",
-              "char": "Silvana / Mara",
-              "photo": "https://image.tmdb.org/t/p/w500/offh2VeyKKGPBRhRVkehVT2e5Hv.jpg"
+              "name": "Liam Fitch",
+              "char": "Christopher",
+              "photo": null
             },
             {
-              "name": "Carla Signoris",
-              "char": "Alida Borghese / Carla",
-              "photo": "https://image.tmdb.org/t/p/w500/xBuapbAceGCzbXBGYp9OQMbLu5O.jpg"
+              "name": "Caroline Portu",
+              "char": "Robin",
+              "photo": "https://image.tmdb.org/t/p/w500/oNlhhmgVoXldGlTHj1r28pfxUO6.jpg"
             },
             {
-              "name": "Aurora Giovinazzo",
-              "char": "Beatrice / Aurora",
-              "photo": "https://image.tmdb.org/t/p/w500/4c4Q1tabrXnZjIXsEhTpVOhVmV1.jpg"
+              "name": "Joe Burns",
+              "char": "Pizza Guy",
+              "photo": "https://image.tmdb.org/t/p/w500/6mKBFEijbJ3lOv7Mi3OE1tQq430.jpg"
             },
             {
-              "name": "Paola Minaccioni",
-              "char": "Nina / Paola",
-              "photo": "https://image.tmdb.org/t/p/w500/1Z81jkVRiONxYHEh3WAYjAHfnHp.jpg"
+              "name": "Allyn Burrows",
+              "char": "Professor Dobson",
+              "photo": null
             },
             {
-              "name": "Sara Bosi",
-              "char": "Giuseppina / Sara",
-              "photo": "https://image.tmdb.org/t/p/w500/hkhvwGpn1CsCmrXRjot9xQ1I5Xz.jpg"
+              "name": "Reece Grover",
+              "char": "Flip",
+              "photo": "https://image.tmdb.org/t/p/w500/FI9cxiyD4iiMY37yaD7EhvILl.jpg"
             },
             {
-              "name": "Loredana Cannata",
-              "char": "Rita",
-              "photo": "https://image.tmdb.org/t/p/w500/vOGrntUNUw3WDAIH3x62NbCcHic.jpg"
+              "name": "Henry Lynch",
+              "char": "Young Man",
+              "photo": null
             },
             {
-              "name": "Nicole Grimaudo",
-              "char": "Carlotta / Nicole",
-              "photo": "https://image.tmdb.org/t/p/w500/1TF2tDGsN8GT0MlhnTdhuB4jo2S.jpg"
+              "name": "Ava Davey-Bissett",
+              "char": "Vicki",
+              "photo": null
             }
           ],
           "crew": [
             {
-              "name": "佛森·歐茲派特",
+              "name": "Matt Johnson",
               "job": "Director"
             },
             {
-              "name": "Carlotta Corradi",
-              "job": "Screenplay"
+              "name": "Matt Johnson",
+              "job": "Writer"
             },
             {
-              "name": "Elisa Casseri",
-              "job": "Screenplay"
+              "name": "Matthew Miller",
+              "job": "Writer"
             }
           ],
           "budget": 0,
-          "revenue": 19674980,
+          "revenue": 15780498,
           "status": "Released",
-          "origLang": "it",
-          "origTitle": "Diamanti",
+          "origLang": "en",
+          "origTitle": "Tony",
           "platforms": []
         },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1299046?language=zh-TW",
+        "tmdbUrl": "https://www.themoviedb.org/movie/1329016?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -11620,7 +11499,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.7",
         "genre": [
           "動畫",
           "冒險",
@@ -11771,7 +11650,7 @@
           "synopsis": "飛船被捲入一場神祕風暴，汪汪隊的狗狗們於是迫降在一座充滿恐龍的未知熱帶小島，並遇見了受困在小島多年、精通所有恐龍知識的狗狗雷克斯。汪汪隊的死對頭韓丁納市長覬覦小島的天然資源，便展開魯莽的開採行動，卻意外引發了休眠火山的大爆發。汪汪隊因此必須展開前所未有、風險升級的恐龍級救援任務，在這座小島上的一切滅絕之前阻止韓丁納。",
           "poster": "https://image.tmdb.org/t/p/w500/8Yi6mgiefgd6TDLb9uNlvuNVtlk.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.7",
           "trailerKey": "-juvWuW6hLg",
           "imdbId": "tt29356163",
           "countries": [
@@ -12263,7 +12142,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/yJxLZruKq4iodYteRk1WaKKoXV1.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-        "voteAverage": "6.7",
+        "voteAverage": "6.8",
         "genre": [
           "科幻",
           "懸疑",
@@ -12405,7 +12284,7 @@
           "synopsis": "當一場神祕的宇宙事件，撕裂了寧靜的橡樹街社區後，整個社區竟被傳送到未知之地，普拉特一家人很快就發現：生存關鍵取決於當一家人置身於難以辨認的環境時，是否能夠緊密團結在一起。",
           "poster": "https://image.tmdb.org/t/p/w500/yJxLZruKq4iodYteRk1WaKKoXV1.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-          "voteAverage": "6.7",
+          "voteAverage": "6.8",
           "trailerKey": "lgMgwGUc9_I",
           "imdbId": "tt27165187",
           "countries": [
@@ -16085,181 +15964,6 @@
     ],
     "soon": [
       {
-        "id": 1423191,
-        "titleZh": "惡靈古堡：爆發夜",
-        "titleEn": "Resident Evil",
-        "releaseDate": "2026-09-17",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-17",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-        "voteAverage": "8.4",
-        "genre": [
-          "恐怖",
-          "驚悚",
-          "科幻"
-        ],
-        "duration": 94,
-        "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "f6Y2SgaHyCw",
-        "cast": [
-          {
-            "name": "奧斯汀·亞伯姆",
-            "char": "Bryan",
-            "photo": "https://image.tmdb.org/t/p/w500/gG4KsGZDw3tO2R66cn9VdOo8uSu.jpg"
-          },
-          {
-            "name": "Zach Cherry",
-            "char": "Dave",
-            "photo": "https://image.tmdb.org/t/p/w500/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg"
-          },
-          {
-            "name": "卡莉·瑞斯",
-            "char": "Pauline",
-            "photo": "https://image.tmdb.org/t/p/w500/ruLDXHnKA4aHEQCcFGDAJ7bLTdt.jpg"
-          },
-          {
-            "name": "保羅·沃爾特·豪澤爾",
-            "char": "Carl",
-            "photo": "https://image.tmdb.org/t/p/w500/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg"
-          },
-          {
-            "name": "Johnno Wilson",
-            "char": "Max",
-            "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
-          },
-          {
-            "name": "Shaun W. Loeser",
-            "char": "Puker",
-            "photo": "https://image.tmdb.org/t/p/w500/pMV7kzy7OHk4X93uRGbrdvuFgQB.jpg"
-          },
-          {
-            "name": "Devon Deshaun Stewart",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/qZ5BMtEva7XEEdO3BpB9pCPzqMx.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "札克·克瑞格",
-            "job": "Director"
-          },
-          {
-            "name": "Shay Hatten",
-            "job": "Writer"
-          },
-          {
-            "name": "札克·克瑞格",
-            "job": "Writer"
-          }
-        ],
-        "budget": 80000000,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Resident Evil",
-        "platforms": [],
-        "popularity": 110.1608,
-        "imdbId": "tt35538033",
-        "countries": [
-          "United States of America",
-          "Germany",
-          "France"
-        ],
-        "detail": {
-          "duration": 94,
-          "genres": [
-            "恐怖",
-            "驚悚",
-            "科幻"
-          ],
-          "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
-          "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-          "voteAverage": "8.4",
-          "trailerKey": "f6Y2SgaHyCw",
-          "imdbId": "tt35538033",
-          "countries": [
-            "United States of America",
-            "Germany",
-            "France"
-          ],
-          "cast": [
-            {
-              "name": "奧斯汀·亞伯姆",
-              "char": "Bryan",
-              "photo": "https://image.tmdb.org/t/p/w500/gG4KsGZDw3tO2R66cn9VdOo8uSu.jpg"
-            },
-            {
-              "name": "Zach Cherry",
-              "char": "Dave",
-              "photo": "https://image.tmdb.org/t/p/w500/fT3Wv8ef0Vn0daHWAObCp2Bd4Y.jpg"
-            },
-            {
-              "name": "卡莉·瑞斯",
-              "char": "Pauline",
-              "photo": "https://image.tmdb.org/t/p/w500/ruLDXHnKA4aHEQCcFGDAJ7bLTdt.jpg"
-            },
-            {
-              "name": "保羅·沃爾特·豪澤爾",
-              "char": "Carl",
-              "photo": "https://image.tmdb.org/t/p/w500/hXjjbYg1Ah8mFf5ZcaakyXzDKMx.jpg"
-            },
-            {
-              "name": "Johnno Wilson",
-              "char": "Max",
-              "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
-            },
-            {
-              "name": "Shaun W. Loeser",
-              "char": "Puker",
-              "photo": "https://image.tmdb.org/t/p/w500/pMV7kzy7OHk4X93uRGbrdvuFgQB.jpg"
-            },
-            {
-              "name": "Devon Deshaun Stewart",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/qZ5BMtEva7XEEdO3BpB9pCPzqMx.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "札克·克瑞格",
-              "job": "Director"
-            },
-            {
-              "name": "Shay Hatten",
-              "job": "Writer"
-            },
-            {
-              "name": "札克·克瑞格",
-              "job": "Writer"
-            }
-          ],
-          "budget": 80000000,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Resident Evil",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1423191?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 44727,
         "titleZh": "航海王：死亡盡頭大冒險",
         "titleEn": "ワンピース デッドエンドの冒険",
@@ -19236,11 +18940,11 @@
         ],
         "crew": [
           {
-            "name": "Liu Wei-Bin",
+            "name": "Yung-hsiang Chang",
             "job": "Screenplay"
           },
           {
-            "name": "Yung-hsiang Chang",
+            "name": "Liu Wei-Bin",
             "job": "Screenplay"
           },
           {
@@ -19357,11 +19061,11 @@
           ],
           "crew": [
             {
-              "name": "Liu Wei-Bin",
+              "name": "Yung-hsiang Chang",
               "job": "Screenplay"
             },
             {
-              "name": "Yung-hsiang Chang",
+              "name": "Liu Wei-Bin",
               "job": "Screenplay"
             },
             {
@@ -19387,7 +19091,7 @@
         "titleEn": "今天不回家",
         "releaseDate": "2026-09-22",
         "releaseYear": "1996",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-09-22",
@@ -19456,11 +19160,11 @@
         "crew": [
           {
             "name": "張艾嘉",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "張艾嘉",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -19529,11 +19233,11 @@
           "crew": [
             {
               "name": "張艾嘉",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "張艾嘉",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -27448,235 +27152,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1567233?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1595400,
-        "titleZh": "完美配對謀殺案：真愛",
-        "titleEn": "マッチング TRUE LOVE",
-        "releaseDate": "2026-10-30",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-30",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/kWIqWDagKVlCXxwHzxsmDPJU2ld.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/u3QxCXvIEthHuTix1zruDcTzAIp.jpg",
-        "voteAverage": "",
-        "genre": [
-          "驚悚"
-        ],
-        "duration": "",
-        "synopsis": "在「交友軟體連續殺人事件」兩年後，輪花與吐夢生活逐漸步回正軌，繼續擔任婚禮企劃的輪花，以工作人員的身分參加了時下最流行的南方島嶼配對之旅，未想在旅途中滋長的不是愛苗，而是再次壟罩的死亡陰霾——唯有證明真愛者，才能活著離開。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "佐久間大介",
-            "char": "Tomu Nagayama",
-            "photo": "https://image.tmdb.org/t/p/w500/rcETCiVLmhQdyMcjCje8NvHx4pD.jpg"
-          },
-          {
-            "name": "土屋太鳳",
-            "char": "Rinka Tadashima",
-            "photo": "https://image.tmdb.org/t/p/w500/n2665l3bguzDTm5CnyP99ipU9Z0.jpg"
-          },
-          {
-            "name": "郭東延",
-            "char": "Lee Sung-il",
-            "photo": "https://image.tmdb.org/t/p/w500/klgX8YheSFFXqEdjuCQY5rxTTGa.jpg"
-          },
-          {
-            "name": "豊嶋花",
-            "char": "Aira Ito",
-            "photo": "https://image.tmdb.org/t/p/w500/f8SwSHhkvo64jxpMssh1Vp8BWBM.jpg"
-          },
-          {
-            "name": "倉悠貴",
-            "char": "Aran Nomura",
-            "photo": "https://image.tmdb.org/t/p/w500/epu15K8wGUQh5PtdEte5bIsQAlN.jpg"
-          },
-          {
-            "name": "真飛聖",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/onxwXsi3gCZ3z3tkNqQR1wVG8QZ.jpg"
-          },
-          {
-            "name": "後藤剛範",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/absM8LTJW8L41pDxZBvSwSnFbts.jpg"
-          },
-          {
-            "name": "根矢涼香",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/y0lTyQeUdAKfDDtFIOm09kjAqbU.jpg"
-          },
-          {
-            "name": "冨手麻妙",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/86IWghqQivdYartc7x1I2UWhM7z.jpg"
-          },
-          {
-            "name": "塚田僚一",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/oDvb0HqC1DDeHEoG8IHFr6wOzTG.jpg"
-          },
-          {
-            "name": "Taki Nanami",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vdw2DzZxNDTJlC7FxsUZsUw1ajo.jpg"
-          },
-          {
-            "name": "濱正悟",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/qDuaghEgtzURtZFDVavSigyoZHF.jpg"
-          },
-          {
-            "name": "加藤史帆",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/1hQJYx2aTHmHqddwdxTgpcfhjuu.jpg"
-          },
-          {
-            "name": "花瀨琴音",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/xSimDM5cdwBtVAa7FJ36gFyMC0p.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "内田英治",
-            "job": "Director"
-          },
-          {
-            "name": "内田英治",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Post Production",
-        "origLang": "ja",
-        "origTitle": "マッチング TRUE LOVE",
-        "platforms": [],
-        "popularity": 2.4382,
-        "imdbId": null,
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "驚悚"
-          ],
-          "synopsis": "在「交友軟體連續殺人事件」兩年後，輪花與吐夢生活逐漸步回正軌，繼續擔任婚禮企劃的輪花，以工作人員的身分參加了時下最流行的南方島嶼配對之旅，未想在旅途中滋長的不是愛苗，而是再次壟罩的死亡陰霾——唯有證明真愛者，才能活著離開。",
-          "poster": "https://image.tmdb.org/t/p/w500/kWIqWDagKVlCXxwHzxsmDPJU2ld.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/u3QxCXvIEthHuTix1zruDcTzAIp.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": null,
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "佐久間大介",
-              "char": "Tomu Nagayama",
-              "photo": "https://image.tmdb.org/t/p/w500/rcETCiVLmhQdyMcjCje8NvHx4pD.jpg"
-            },
-            {
-              "name": "土屋太鳳",
-              "char": "Rinka Tadashima",
-              "photo": "https://image.tmdb.org/t/p/w500/n2665l3bguzDTm5CnyP99ipU9Z0.jpg"
-            },
-            {
-              "name": "郭東延",
-              "char": "Lee Sung-il",
-              "photo": "https://image.tmdb.org/t/p/w500/klgX8YheSFFXqEdjuCQY5rxTTGa.jpg"
-            },
-            {
-              "name": "豊嶋花",
-              "char": "Aira Ito",
-              "photo": "https://image.tmdb.org/t/p/w500/f8SwSHhkvo64jxpMssh1Vp8BWBM.jpg"
-            },
-            {
-              "name": "倉悠貴",
-              "char": "Aran Nomura",
-              "photo": "https://image.tmdb.org/t/p/w500/epu15K8wGUQh5PtdEte5bIsQAlN.jpg"
-            },
-            {
-              "name": "真飛聖",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/onxwXsi3gCZ3z3tkNqQR1wVG8QZ.jpg"
-            },
-            {
-              "name": "後藤剛範",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/absM8LTJW8L41pDxZBvSwSnFbts.jpg"
-            },
-            {
-              "name": "根矢涼香",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/y0lTyQeUdAKfDDtFIOm09kjAqbU.jpg"
-            },
-            {
-              "name": "冨手麻妙",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/86IWghqQivdYartc7x1I2UWhM7z.jpg"
-            },
-            {
-              "name": "塚田僚一",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/oDvb0HqC1DDeHEoG8IHFr6wOzTG.jpg"
-            },
-            {
-              "name": "Taki Nanami",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vdw2DzZxNDTJlC7FxsUZsUw1ajo.jpg"
-            },
-            {
-              "name": "濱正悟",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/qDuaghEgtzURtZFDVavSigyoZHF.jpg"
-            },
-            {
-              "name": "加藤史帆",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/1hQJYx2aTHmHqddwdxTgpcfhjuu.jpg"
-            },
-            {
-              "name": "花瀨琴音",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/xSimDM5cdwBtVAa7FJ36gFyMC0p.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "内田英治",
-              "job": "Director"
-            },
-            {
-              "name": "内田英治",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Post Production",
-          "origLang": "ja",
-          "origTitle": "マッチング TRUE LOVE",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1595400?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
