@@ -409,6 +409,34 @@ class CinemaParserTests(unittest.TestCase):
     def test_missing_current_date_is_pending_not_tmdb_mismatch(self):
         self.assertEqual(cinema.tmdb_date_status("", [{"date": "2005-01-28"}]), "pending")
 
+    def test_unverified_cinema_match_is_persisted_without_verified_tmdb_date(self):
+        candidate = {
+            "tmdb_id": 85033,
+            "title_zh": "花神咖啡館",
+            "title_en": "Café de Flore",
+            "tmdb_title": "花神咖啡館",
+            "cinema_status": "soon",
+        }
+
+        persisted = weekly.regular_candidate_from_cinema_match(
+            candidate, "2026-10-02", "missing"
+        )
+
+        self.assertEqual(persisted["tmdb_id"], 85033)
+        self.assertEqual(persisted["release_date_tw"], "2026-10-02")
+        self.assertEqual(persisted["tmdb_tw_release_date"], "")
+        self.assertEqual(persisted["source_bucket"], "next")
+
+    def test_confirmed_cinema_match_keeps_verified_tmdb_date(self):
+        persisted = weekly.regular_candidate_from_cinema_match(
+            {"tmdb_id": 85033, "cinema_status": "now"},
+            "2026-10-02",
+            "confirmed",
+        )
+
+        self.assertEqual(persisted["tmdb_tw_release_date"], "2026-10-02")
+        self.assertEqual(persisted["source_bucket"], "now")
+
     @patch("weekly_check.time.sleep")
     @patch("weekly_check.tmdb_search")
     def test_rerelease_search_uses_global_primary_date(self, tmdb_search, _sleep):

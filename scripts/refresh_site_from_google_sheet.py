@@ -376,8 +376,29 @@ def build_verified_output(candidates):
                 continue
             tw_date = cinema_date
         else:
-            selected_releases = weekly.select_public_tw_theatrical_releases(tmdb_id, eligible_releases)
-            tw_date = selected_releases[0]["date"]
+            observed_cinema_date = str(source.get("release_date_tw", "") or "")
+            waiting_for_tmdb_date = (
+                sheet_value_is_true(source.get("cinema_present"))
+                and observed_cinema_date
+                and not source.get("tmdb_tw_release_date")
+            )
+            if waiting_for_tmdb_date:
+                selected_releases = [
+                    item for item in eligible_releases
+                    if item.get("date") == observed_cinema_date
+                ]
+                if not selected_releases:
+                    log(
+                        f"  Excluded pending cinema candidate TMDB {tmdb_id}: TW cinema release "
+                        f"type 1, 2, or 3 does not match observed cinema date {observed_cinema_date}"
+                    )
+                    continue
+                tw_date = observed_cinema_date
+            else:
+                selected_releases = weekly.select_public_tw_theatrical_releases(
+                    tmdb_id, eligible_releases
+                )
+                tw_date = selected_releases[0]["date"]
         release_date = weekly.parse_iso_date(tw_date)
 
         if should_hold_tmdb_only_near_term_candidate(

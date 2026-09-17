@@ -577,6 +577,30 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertTrue(merged[0]["cinema_present"])
         self.assertEqual(merged[0]["present_sources"], "ambassador,showtime")
 
+    def test_cinema_movie_waiting_for_tmdb_date_is_added_to_candidates(self):
+        cinema_candidate = {
+            "tmdb_id": 85033,
+            "source_bucket": "next",
+            "title_zh": "花神咖啡館",
+            "release_date_tw": "2026-10-02",
+            "tmdb_tw_release_date": "",
+        }
+
+        merged = publish.merge_candidate_presence(
+            [],
+            [],
+            "2026-09-17",
+            {"85033": ["atmovies"]},
+            True,
+            [cinema_candidate],
+        )
+
+        self.assertEqual(len(merged), 1)
+        self.assertEqual(merged[0]["tmdb_id"], 85033)
+        self.assertEqual(merged[0]["release_date_tw"], "2026-10-02")
+        self.assertEqual(merged[0]["tmdb_tw_release_date"], "")
+        self.assertTrue(merged[0]["cinema_present"])
+
     def test_unverified_legacy_rerelease_row_is_removed(self):
         previous = [{
             "tmdb_id": 404,
@@ -1087,6 +1111,88 @@ class RefreshVisibilityTests(unittest.TestCase):
             patch.object(weekly, "tmdb_release_dates", return_value=release_results),
         ):
             output, _, _ = refresh.build_verified_output([])
+
+        self.assertEqual(output["tmdb_has_tw_date"], [])
+
+    @patch.object(refresh.time, "sleep")
+    @patch.object(refresh, "load_manual_releases", return_value=[])
+    @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
+    @patch.object(refresh, "load_current_site_ids", return_value=[])
+    @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
+    def test_pending_cinema_candidate_publishes_after_matching_tmdb_date_arrives(
+        self, _supplemental, _site_ids, _whitelist_ids, _manual, _sleep
+    ):
+        release_date = (
+            datetime.now(timezone(timedelta(hours=8))).date() + timedelta(days=15)
+        ).isoformat()
+        candidate = {
+            "tmdb_id": 85033,
+            "source_bucket": "next",
+            "release_date_tw": release_date,
+            "tmdb_tw_release_date": "",
+            "cinema_present": True,
+            "present_sources": "atmovies",
+            "consecutive_misses": 0,
+        }
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 3, "release_date": f"{release_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with (
+            patch.object(weekly, "tmdb_movie", return_value={
+                "id": 85033,
+                "title": "花神咖啡館",
+                "original_title": "Café de Flore",
+                "release_date": "2011-09-02",
+            }),
+            patch.object(weekly, "tmdb_release_dates", return_value=release_results),
+        ):
+            output, _, _ = refresh.build_verified_output([candidate])
+
+        self.assertEqual(
+            output["tmdb_has_tw_date"][0]["release_date_tw"], release_date
+        )
+
+    @patch.object(refresh.time, "sleep")
+    @patch.object(refresh, "load_manual_releases", return_value=[])
+    @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
+    @patch.object(refresh, "load_current_site_ids", return_value=[])
+    @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
+    def test_pending_cinema_candidate_waits_when_tmdb_date_does_not_match(
+        self, _supplemental, _site_ids, _whitelist_ids, _manual, _sleep
+    ):
+        today = datetime.now(timezone(timedelta(hours=8))).date()
+        observed_date = (today + timedelta(days=15)).isoformat()
+        different_date = (today + timedelta(days=16)).isoformat()
+        candidate = {
+            "tmdb_id": 85033,
+            "source_bucket": "next",
+            "release_date_tw": observed_date,
+            "tmdb_tw_release_date": "",
+            "cinema_present": True,
+            "present_sources": "atmovies",
+            "consecutive_misses": 0,
+        }
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 3, "release_date": f"{different_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with (
+            patch.object(weekly, "tmdb_movie", return_value={
+                "id": 85033,
+                "title": "花神咖啡館",
+                "original_title": "Café de Flore",
+                "release_date": "2011-09-02",
+            }),
+            patch.object(weekly, "tmdb_release_dates", return_value=release_results),
+        ):
+            output, _, _ = refresh.build_verified_output([candidate])
 
         self.assertEqual(output["tmdb_has_tw_date"], [])
 
