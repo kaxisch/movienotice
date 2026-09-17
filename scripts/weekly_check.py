@@ -969,6 +969,20 @@ def is_verified_rerelease(movie, tmdb_movie_result, tw_releases, manual_ids):
     )
 
 
+def regular_candidate_from_cinema_match(candidate, cinema_date, status):
+    """保留院線出現訊號；TMDB 日期僅在完全相符時標記為已驗證。"""
+    statuses = set(filter(None, candidate.get("cinema_status", "").split(",")))
+    return {
+        "tmdb_id": candidate["tmdb_id"],
+        "source_bucket": "now" if "now" in statuses else "next",
+        "title_zh": candidate.get("title_zh", ""),
+        "title_en": candidate.get("title_en", ""),
+        "release_date_tw": cinema_date,
+        "tmdb_tw_release_date": cinema_date if status == "confirmed" else "",
+        "tmdb_title": candidate.get("tmdb_title", ""),
+    }
+
+
 def find_tmdb_override(movie, overrides=None):
     """依來源 ID 或人工確認過的片名尋找 TMDB 覆寫。"""
     overrides = overrides if overrides is not None else load_tmdb_overrides()
@@ -1949,33 +1963,26 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         }
         if candidate["rerelease_verified"]:
             candidates.append(candidate)
-        elif status == "confirmed":
-            statuses = set(filter(None, candidate.get("cinema_status", "").split(",")))
-            regular_candidates.append({
-                "tmdb_id": candidate["tmdb_id"],
-                "source_bucket": "now" if "now" in statuses else "next",
-                "title_zh": candidate.get("title_zh", ""),
-                "title_en": candidate.get("title_en", ""),
-                "release_date_tw": cinema_date,
-                "tmdb_tw_release_date": cinema_date,
-                "tmdb_title": candidate.get("tmdb_title", ""),
-            })
         else:
-            review_rows.append({
-                "tmdb_id": candidate.get("tmdb_id"),
-                "tmdb_url": candidate.get("tmdb_url", ""),
-                "tmdb_primary_release_date": candidate.get("tmdb_primary_release_date", ""),
-                "title_zh": candidate.get("title_zh", ""),
-                "title_en": candidate.get("title_en", ""),
-                "release_date_tw": cinema_date,
-                "sources": candidate.get("present_sources", "").split(","),
-                "source_urls": candidate.get("source_urls", "").splitlines(),
-                "audit_category": {
-                    "missing": "院線候選－待補TMDB日期",
-                    "mismatch": "院線候選－TMDB日期不一致",
-                    "pending": "院線候選－上映日期待確認",
-                }.get(status, "院線候選－TMDB配對待確認"),
-            })
+            regular_candidates.append(
+                regular_candidate_from_cinema_match(candidate, cinema_date, status)
+            )
+            if status != "confirmed":
+                review_rows.append({
+                    "tmdb_id": candidate.get("tmdb_id"),
+                    "tmdb_url": candidate.get("tmdb_url", ""),
+                    "tmdb_primary_release_date": candidate.get("tmdb_primary_release_date", ""),
+                    "title_zh": candidate.get("title_zh", ""),
+                    "title_en": candidate.get("title_en", ""),
+                    "release_date_tw": cinema_date,
+                    "sources": candidate.get("present_sources", "").split(","),
+                    "source_urls": candidate.get("source_urls", "").splitlines(),
+                    "audit_category": {
+                        "missing": "院線候選－待補TMDB日期",
+                        "mismatch": "院線候選－TMDB日期不一致",
+                        "pending": "院線候選－上映日期待確認",
+                    }.get(status, "院線候選－TMDB配對待確認"),
+                })
 
     return {
         "generated_at": generated_at_local.isoformat(),
