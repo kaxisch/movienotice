@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T00:44:23.946566+08:00",
+  "generated_at": "2026-09-19T05:14:57.623584+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 81,
@@ -2815,7 +2815,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-        "voteAverage": "7.8",
+        "voteAverage": "7.7",
         "genre": [
           "恐怖",
           "科幻",
@@ -2824,9 +2824,20 @@
         "duration": 94,
         "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
         "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
+        "rt": "96%",
+        "mc": "81",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 160,
+            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 43,
+            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
+          }
+        },
         "trailerKey": "f6Y2SgaHyCw",
         "cast": [
           {
@@ -2925,7 +2936,7 @@
           }
         ],
         "budget": 75000000,
-        "revenue": 0,
+        "revenue": 8800000,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Resident Evil",
@@ -2947,7 +2958,7 @@
           "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
           "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-          "voteAverage": "7.8",
+          "voteAverage": "7.7",
           "trailerKey": "f6Y2SgaHyCw",
           "imdbId": "tt35538033",
           "countries": [
@@ -3052,7 +3063,7 @@
             }
           ],
           "budget": 75000000,
-          "revenue": 0,
+          "revenue": 8800000,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Resident Evil",
@@ -4159,16 +4170,16 @@
         ],
         "crew": [
           {
+            "name": "Krzysztof Piesiewicz",
+            "job": "Screenplay"
+          },
+          {
             "name": "古茲托夫·奇斯洛夫斯基",
             "job": "Screenplay"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
             "job": "Director"
-          },
-          {
-            "name": "Krzysztof Piesiewicz",
-            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -4291,16 +4302,16 @@
           ],
           "crew": [
             {
+              "name": "Krzysztof Piesiewicz",
+              "job": "Screenplay"
+            },
+            {
               "name": "古茲托夫·奇斯洛夫斯基",
               "job": "Screenplay"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
               "job": "Director"
-            },
-            {
-              "name": "Krzysztof Piesiewicz",
-              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -4732,12 +4743,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -4849,12 +4860,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5420,7 +5431,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/1ZV993SXBBhWucr6AdCNdvWPi29.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
-        "voteAverage": "6.1",
+        "voteAverage": "6.0",
         "genre": [
           "愛情",
           "奇幻",
@@ -5561,7 +5572,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/1ZV993SXBBhWucr6AdCNdvWPi29.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
-          "voteAverage": "6.1",
+          "voteAverage": "6.0",
           "trailerKey": "fmMoGBw0Dkk",
           "imdbId": "tt32588798",
           "countries": [
@@ -6127,7 +6138,7 @@
         "duration": 100,
         "synopsis": "一心以成為漫畫家為目標的兩位少女藤野、京本之間青春動人的故事。",
         "imdb": "8.0",
-        "rt": "89%",
+        "rt": "86%",
         "mc": "73",
         "ratingMeta": {
           "imdb": {
@@ -6137,8 +6148,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 19,
-            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
+            "votes": 21,
+            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -6649,11 +6660,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -6722,11 +6733,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -7420,11 +7431,11 @@
             "job": "Director"
           },
           {
-            "name": "Joachim Trier",
+            "name": "Eskil Vogt",
             "job": "Writer"
           },
           {
-            "name": "Eskil Vogt",
+            "name": "Joachim Trier",
             "job": "Writer"
           }
         ],
@@ -7554,11 +7565,11 @@
               "job": "Director"
             },
             {
-              "name": "Joachim Trier",
+              "name": "Eskil Vogt",
               "job": "Writer"
             },
             {
-              "name": "Eskil Vogt",
+              "name": "Joachim Trier",
               "job": "Writer"
             }
           ],
@@ -7808,7 +7819,7 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
-        "rt": "78%",
+        "rt": "77%",
         "mc": "66",
         "ratingMeta": {
           "imdb": {
@@ -7818,8 +7829,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 147,
-            "lastChanged": "2026-09-19T00:44:23.946566+08:00"
+            "votes": 149,
+            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -8075,7 +8086,7 @@
         "duration": 98,
         "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
         "imdb": "5.7",
-        "rt": "56%",
+        "rt": "54%",
         "mc": "54",
         "ratingMeta": {
           "imdb": {
@@ -8085,8 +8096,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 54,
-            "lastChanged": "2026-09-17T00:54:53.523646+08:00"
+            "votes": 56,
+            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -20852,12 +20863,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -20910,12 +20921,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22253,14 +22264,14 @@
           "懸疑"
         ],
         "duration": 147,
-        "synopsis": "",
+        "synopsis": "荒木村重為了反抗暴虐無道的織田信長，決意展開籠城戰。城堡隨即遭到織田軍重重包圍，整座城陷入孤立無援的境地。然而城內一名少年慘遭殺害，離奇詭異的案件也接連發生。嫌犯無疑是藏在這座宛如「密室」的城堡中。在眾人皆陷入疑神疑鬼、草木皆兵之際，村重決定與被囚禁於地牢裡的「天才軍師」黑田官兵衛聯手，共同挑戰這一連串謎團。",
         "imdb": "",
         "rt": "97%",
         "mc": "84",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 88,
+            "votes": 89,
             "lastChanged": "2026-09-08T19:44:27.052615+08:00"
           },
           "mc": {
@@ -22380,7 +22391,7 @@
             "歷史",
             "懸疑"
           ],
-          "synopsis": "",
+          "synopsis": "荒木村重為了反抗暴虐無道的織田信長，決意展開籠城戰。城堡隨即遭到織田軍重重包圍，整座城陷入孤立無援的境地。然而城內一名少年慘遭殺害，離奇詭異的案件也接連發生。嫌犯無疑是藏在這座宛如「密室」的城堡中。在眾人皆陷入疑神疑鬼、草木皆兵之際，村重決定與被囚禁於地牢裡的「天才軍師」黑田官兵衛聯手，共同挑戰這一連串謎團。",
           "poster": "https://image.tmdb.org/t/p/w500/84YGBLeLcBAgbwntyYmG0u5LqvP.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/pPThPhqsh5bKwJoZDlWd67qCHcc.jpg",
           "voteAverage": "7.9",
@@ -24839,11 +24850,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -24964,11 +24975,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -27906,12 +27917,12 @@
         ],
         "crew": [
           {
-            "name": "Dahvi Waller",
-            "job": "Screenplay"
-          },
-          {
             "name": "塔伊加·維迪提",
             "job": "Director"
+          },
+          {
+            "name": "Dahvi Waller",
+            "job": "Screenplay"
           },
           {
             "name": "塔伊加·維迪提",
@@ -28003,12 +28014,12 @@
           ],
           "crew": [
             {
-              "name": "Dahvi Waller",
-              "job": "Screenplay"
-            },
-            {
               "name": "塔伊加·維迪提",
               "job": "Director"
+            },
+            {
+              "name": "Dahvi Waller",
+              "job": "Screenplay"
             },
             {
               "name": "塔伊加·維迪提",
@@ -30501,7 +30512,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/pbZKFqB4YqWMmxtFHF8BlH2mYo3.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
         "voteAverage": "",
         "genre": [
           "動畫",
@@ -30601,11 +30612,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -30636,7 +30647,7 @@
           ],
           "synopsis": "延續蘇斯博士奇妙又異想天開的傳統，兒童名著《戴帽子的貓》首次以動畫長片的形式躍上大銀幕，這是一場史詩般的瘋狂冒險旅程，充滿創意點子、惡作劇與奇幻魔法。戴帽子的貓接下了迄今最艱鉅的任務：為蓋比和賽巴斯汀這對姊弟加油打氣。對這位闖禍精來說，這可能是他證明自己的最後機會……否則他就會失去他的魔法帽！",
           "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/pbZKFqB4YqWMmxtFHF8BlH2mYo3.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
           "voteAverage": "",
           "trailerKey": "L8j4Xmx7Nvs",
           "imdbId": "tt2321555",
@@ -30728,11 +30739,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
@@ -31541,11 +31552,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Brian K. Vaughan",
@@ -31653,11 +31664,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Brian K. Vaughan",
