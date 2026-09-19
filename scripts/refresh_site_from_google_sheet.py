@@ -255,20 +255,46 @@ def public_source_bucket(source, release_date, today):
     return "now" if release_date <= today else "next"
 
 
+def rerelease_needs_live_date_validation(candidate):
+    """保留已確認身分但仍待 TMDB 本次日期同步的現行重映候選。"""
+    return (
+        candidate.get("candidate_kind") == "rerelease"
+        and not rerelease_is_hidden(candidate)
+        and sheet_value_is_true(candidate.get("rerelease_present"))
+        and sheet_value_is_true(candidate.get("rerelease_verified"))
+        and bool(str(candidate.get("cinema_release_date", "") or "").strip())
+    )
+
+
 def index_candidates_by_tmdb_id(candidates):
-    """同片重複時，只有已驗證且未隱藏的重映候選可蓋掉一般候選。"""
+    """保留待即時驗證的重映；日期吻合前不覆蓋一般院線候選。"""
     indexed = {}
     for candidate in candidates:
         if candidate.get("candidate_kind") == "rerelease_history":
             continue
-        if (
-            candidate.get("candidate_kind") == "rerelease"
-            and not rerelease_can_override_regular_candidate(candidate)
+        confirmed_rerelease = rerelease_can_override_regular_candidate(candidate)
+        pending_rerelease = rerelease_needs_live_date_validation(candidate)
+        if candidate.get("candidate_kind") == "rerelease" and not (
+            confirmed_rerelease or pending_rerelease
         ):
             continue
         tmdb_id = candidate["tmdb_id"]
         previous = indexed.get(tmdb_id)
         if previous is None:
+            indexed[tmdb_id] = candidate
+            continue
+        if pending_rerelease and not confirmed_rerelease:
+            previous = dict(previous)
+            previous["_pending_rerelease_candidate"] = candidate
+            indexed[tmdb_id] = previous
+            continue
+        if (
+            candidate.get("candidate_kind") != "rerelease"
+            and rerelease_needs_live_date_validation(previous)
+            and not rerelease_can_override_regular_candidate(previous)
+        ):
+            candidate = dict(candidate)
+            candidate["_pending_rerelease_candidate"] = previous
             indexed[tmdb_id] = candidate
             continue
         current_priority = shared_candidate_priority(candidate)
@@ -341,6 +367,15 @@ def build_verified_output(candidates):
         )
         eligible_releases = weekly.releases_in_window(theatrical_releases, past_cutoff, future_cutoff)
         source = candidate_by_id[tmdb_id]
+        pending_rerelease = source.get("_pending_rerelease_candidate")
+        if pending_rerelease:
+            pending_cinema_date = str(
+                pending_rerelease.get("cinema_release_date", "") or ""
+            )
+            if any(
+                item.get("date") == pending_cinema_date for item in eligible_releases
+            ):
+                source = pending_rerelease
         source_date = weekly.parse_iso_date(source.get("tmdb_tw_release_date", ""))
         continuous_run = bool(
             source_date and allows_continuous_theatrical_run(source, source_date, today)

@@ -814,6 +814,40 @@ class RefreshVisibilityTests(unittest.TestCase):
 
         self.assertEqual(indexed[45580]["candidate_kind"], "atmovies")
 
+    def test_verified_present_rerelease_waiting_for_tmdb_date_is_retained(self):
+        candidate = {
+            "tmdb_id": 20453,
+            "candidate_kind": "rerelease",
+            "cinema_release_date": "2026-10-02",
+            "tmdb_tw_release_date": "",
+            "tmdb_date_status": "mismatch",
+            "rerelease_verified": True,
+            "rerelease_present": True,
+            "hidden": False,
+        }
+
+        indexed = refresh.index_candidates_by_tmdb_id([candidate])
+
+        self.assertEqual(indexed[20453], candidate)
+
+    def test_pending_verified_rerelease_waits_beside_regular_candidate(self):
+        regular = {"tmdb_id": 20453, "candidate_kind": "atmovies"}
+        rerelease = {
+            "tmdb_id": 20453,
+            "candidate_kind": "rerelease",
+            "cinema_release_date": "2026-10-02",
+            "tmdb_tw_release_date": "",
+            "tmdb_date_status": "mismatch",
+            "rerelease_verified": True,
+            "rerelease_present": True,
+            "hidden": False,
+        }
+
+        indexed = refresh.index_candidates_by_tmdb_id([regular, rerelease])
+
+        self.assertEqual(indexed[20453]["candidate_kind"], "atmovies")
+        self.assertEqual(indexed[20453]["_pending_rerelease_candidate"], rerelease)
+
     def test_confirmed_dated_rerelease_overrides_regular_candidate(self):
         candidates = [
             {"tmdb_id": 101, "candidate_kind": "atmovies"},
@@ -1036,6 +1070,46 @@ class RefreshVisibilityTests(unittest.TestCase):
         record = output["tmdb_has_tw_date"][0]
         self.assertEqual(record["tmdb_tw_release_date"], cinema_date)
         self.assertEqual(record["tmdb_tw_release_dates"], [{"date": cinema_date, "language": ""}])
+
+    @patch.object(refresh.time, "sleep")
+    @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
+    @patch.object(refresh, "load_current_site_ids", return_value=[])
+    @patch.object(refresh, "load_manual_releases", return_value=[])
+    @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
+    def test_pending_rerelease_publishes_when_tmdb_date_later_matches(
+        self, _supplemental, _manual_ids, _site_ids, _whitelist_ids, _sleep
+    ):
+        cinema_date = (
+            datetime.now(timezone(timedelta(hours=8))).date() + timedelta(days=2)
+        ).isoformat()
+        candidate = {
+            "tmdb_id": 20453,
+            "candidate_kind": "rerelease",
+            "cinema_release_date": cinema_date,
+            "tmdb_tw_release_date": "",
+            "tmdb_date_status": "mismatch",
+            "rerelease_verified": True,
+            "rerelease_present": True,
+            "hidden": False,
+        }
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 3, "release_date": f"{cinema_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with patch.object(weekly, "tmdb_movie", return_value={
+            "id": 20453,
+            "title": "三個傻瓜",
+            "original_title": "3 Idiots",
+            "release_date": "2009-12-23",
+        }), patch.object(weekly, "tmdb_release_dates", return_value=release_results):
+            output, _, _ = refresh.build_verified_output([candidate])
+
+        record = output["tmdb_has_tw_date"][0]
+        self.assertEqual(record["tmdb_tw_release_date"], cinema_date)
+        self.assertTrue(record["is_rerelease"])
 
     @patch.object(refresh.time, "sleep")
     @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
