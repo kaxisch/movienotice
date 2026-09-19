@@ -51,6 +51,7 @@ jobs:
         run: python3 scripts/generate_movie_pages.py
 
       - name: Commit refreshed site data
+        id: commit-site
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -61,3 +62,15 @@ jobs:
             git commit -m "Refresh TMDB-verified movie data"
             git push origin main
           fi
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Record public movie changes in Google Sheet
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
+          REFRESH_COMMIT_SHA: ${{ steps.commit-site.outputs.commit_sha }}
+        run: |
+          python3 scripts/publish_refresh_log.py \
+            /tmp/previous-movie-data.json \
+            data/movie-data.json \
+            --run-id "$GITHUB_RUN_ID"

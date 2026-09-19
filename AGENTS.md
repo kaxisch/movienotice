@@ -47,6 +47,8 @@
 ## TMDB Refresh 流程
 
 - `scripts/refresh_site_from_google_sheet.py` 執行 Refresh 時不得重新爬取開眼電影網。
+- Refresh 成功驗證並推送公開資料後，應將公開電影資料的新增、移除及日期、分類、重映標記等變更，寫入固定的私人 `_refresh_log` 工作表；每次執行在同一張表新增一個最新優先的區塊，不得為每次 Refresh 建立新分頁。即使沒有異動也應保留摘要，且同一個 GitHub Run 重跑不得產生重複區塊。
+- `_refresh_log` 只記錄公開資料前後差異，屬於私人維護資料，不得加入公開網站資源，也不得影響電影是否公開的判定。
 - Refresh 應讀取 Google Sheet `_candidates`、`_rereleases`、目前已發布電影、白名單及人工保留電影，再向 TMDB 重新確認台灣院線上映日期。
 - Refresh 必須重新驗證 `_candidates` 與 `_rereleases` 中已有院線存在訊號、但仍等待 TMDB 補登或校正本次台灣院線日期的一般及重映候選；TMDB `TW` type 1、2 或 3 日期與本次影城日期完全一致後，可由 Refresh 直接上架，不得要求再執行一次院線稽核；若日期仍不一致、候選已隱藏或本輪已確認缺席，仍不得公開。
 - Refresh 必須另外探索今天至距今第 180 天、具有 TMDB 台灣院線上映日期的電影，以涵蓋開眼尚未列出，或最近才在 TMDB 補登台灣上映日期的電影。
