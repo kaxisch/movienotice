@@ -1,12 +1,356 @@
 {
-  "generated_at": "2026-09-19T21:08:33.910443+08:00",
+  "generated_at": "2026-09-20T00:04:35.140342+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 75,
-    "soon_count": 70
+    "now_count": 77,
+    "soon_count": 68
   },
   "movies": {
     "now": [
+      {
+        "id": 838240,
+        "titleZh": "再見機器人",
+        "titleEn": "Robot Dreams",
+        "releaseDate": "2026-09-20",
+        "releaseYear": "2023",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-20",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/sR7txFuAGehkb6sRtylwAneHpR1.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hIeEpk2w1dnC9ly9ZJwwbunH2Cx.jpg",
+        "voteAverage": "8.0",
+        "genre": [
+          "動畫",
+          "劇情",
+          "喜劇",
+          "科幻"
+        ],
+        "duration": 102,
+        "synopsis": "一隻寂寞單身狗買了高科技機器人作伴，兩人在《動物方城市》般的紐約街頭共舞同歡，彷彿就此終結孤單。某天，他們在海灘上慵懶午睡，機器人醒來後卻再也無法動彈。命運將他們硬生生拆散，放任殘酷的思念將時光磨成鋒利的夢境。在無盡的等待中，他們幻想著重聚的那天。",
+        "imdb": "7.6",
+        "rt": "98%",
+        "mc": "87",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 23158,
+            "lastChanged": "2026-09-18T01:47:54.863982+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 139,
+            "lastChanged": "2026-09-18T01:47:54.863982+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 30,
+            "lastChanged": "2026-09-18T01:47:54.863982+08:00"
+          }
+        },
+        "trailerKey": "1o9TgmXOcQM",
+        "cast": [
+          {
+            "name": "伊凡・拉班達",
+            "char": "Dog / Robot / Various (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ixxMNjDFVN3dscWoQrl5eEnA94m.jpg"
+          },
+          {
+            "name": "亞伯特·崔佛·塞加拉",
+            "char": "Various (voice)",
+            "photo": null
+          },
+          {
+            "name": "拉斐爾·A·卡爾沃",
+            "char": "Various (voice)",
+            "photo": null
+          },
+          {
+            "name": "José García Tos",
+            "char": "Various (voice)",
+            "photo": null
+          },
+          {
+            "name": "José Luis Mediavilla",
+            "char": "Various (voice)",
+            "photo": null
+          },
+          {
+            "name": "Graciela Molina",
+            "char": "Duck / Various (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/lLc7GY0ZISaazX50GLGhHa0cNpc.jpg"
+          },
+          {
+            "name": "Esther Solans",
+            "char": "Various (voice)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "帕布羅·貝嘉",
+            "job": "Director"
+          },
+          {
+            "name": "帕布羅·貝嘉",
+            "job": "Writer"
+          }
+        ],
+        "budget": 5300000,
+        "revenue": 4656348,
+        "status": "Released",
+        "origLang": "es",
+        "origTitle": "Robot Dreams",
+        "platforms": [
+          {
+            "name": "Catchplay",
+            "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+          }
+        ],
+        "popularity": 8.9057,
+        "imdbId": "tt13429870",
+        "countries": [
+          "France",
+          "Spain"
+        ],
+        "detail": {
+          "duration": 102,
+          "genres": [
+            "動畫",
+            "劇情",
+            "喜劇",
+            "科幻"
+          ],
+          "synopsis": "一隻寂寞單身狗買了高科技機器人作伴，兩人在《動物方城市》般的紐約街頭共舞同歡，彷彿就此終結孤單。某天，他們在海灘上慵懶午睡，機器人醒來後卻再也無法動彈。命運將他們硬生生拆散，放任殘酷的思念將時光磨成鋒利的夢境。在無盡的等待中，他們幻想著重聚的那天。",
+          "poster": "https://image.tmdb.org/t/p/w500/sR7txFuAGehkb6sRtylwAneHpR1.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/hIeEpk2w1dnC9ly9ZJwwbunH2Cx.jpg",
+          "voteAverage": "8.0",
+          "trailerKey": "1o9TgmXOcQM",
+          "imdbId": "tt13429870",
+          "countries": [
+            "France",
+            "Spain"
+          ],
+          "cast": [
+            {
+              "name": "伊凡・拉班達",
+              "char": "Dog / Robot / Various (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ixxMNjDFVN3dscWoQrl5eEnA94m.jpg"
+            },
+            {
+              "name": "亞伯特·崔佛·塞加拉",
+              "char": "Various (voice)",
+              "photo": null
+            },
+            {
+              "name": "拉斐爾·A·卡爾沃",
+              "char": "Various (voice)",
+              "photo": null
+            },
+            {
+              "name": "José García Tos",
+              "char": "Various (voice)",
+              "photo": null
+            },
+            {
+              "name": "José Luis Mediavilla",
+              "char": "Various (voice)",
+              "photo": null
+            },
+            {
+              "name": "Graciela Molina",
+              "char": "Duck / Various (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/lLc7GY0ZISaazX50GLGhHa0cNpc.jpg"
+            },
+            {
+              "name": "Esther Solans",
+              "char": "Various (voice)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "帕布羅·貝嘉",
+              "job": "Director"
+            },
+            {
+              "name": "帕布羅·貝嘉",
+              "job": "Writer"
+            }
+          ],
+          "budget": 5300000,
+          "revenue": 4656348,
+          "status": "Released",
+          "origLang": "es",
+          "origTitle": "Robot Dreams",
+          "platforms": [
+            {
+              "name": "Catchplay",
+              "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/838240?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1740257,
+        "titleZh": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+        "titleEn": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+        "releaseDate": "2026-09-20",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-20",
+            "language": "ko"
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
+        "voteAverage": "",
+        "genre": [
+          "音樂"
+        ],
+        "duration": 255,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "쟈니",
+            "char": "Self",
+            "photo": null
+          },
+          {
+            "name": "태용",
+            "char": "Self",
+            "photo": null
+          },
+          {
+            "name": "유타",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/kCDHhUi7GPSjBqbrwBATzXo8kUL.jpg"
+          },
+          {
+            "name": "在玹",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/rOKDkDCIUcoPdzhOrRbuWK1zJN3.jpg"
+          },
+          {
+            "name": "해찬",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/pC1qftBqkV16d1Xt7t4tpJbbSp4.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Kyung Chan Kim",
+            "job": "Director"
+          },
+          {
+            "name": "Doyeon Kim",
+            "job": "Director"
+          },
+          {
+            "name": "Soyoung Park",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+        "platforms": [],
+        "popularity": 1.7149,
+        "imdbId": "tt44568569",
+        "countries": [],
+        "detail": {
+          "duration": 255,
+          "genres": [
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt44568569",
+          "countries": [],
+          "cast": [
+            {
+              "name": "쟈니",
+              "char": "Self",
+              "photo": null
+            },
+            {
+              "name": "태용",
+              "char": "Self",
+              "photo": null
+            },
+            {
+              "name": "유타",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/kCDHhUi7GPSjBqbrwBATzXo8kUL.jpg"
+            },
+            {
+              "name": "在玹",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/rOKDkDCIUcoPdzhOrRbuWK1zJN3.jpg"
+            },
+            {
+              "name": "해찬",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/pC1qftBqkV16d1Xt7t4tpJbbSp4.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Kyung Chan Kim",
+              "job": "Director"
+            },
+            {
+              "name": "Doyeon Kim",
+              "job": "Director"
+            },
+            {
+              "name": "Soyoung Park",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1740257?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 837335,
         "titleZh": "盜墓奇美拉",
@@ -2815,7 +3159,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.4",
         "genre": [
           "恐怖",
           "科幻",
@@ -2958,7 +3302,7 @@
           "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
           "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.4",
           "trailerKey": "f6Y2SgaHyCw",
           "imdbId": "tt35538033",
           "countries": [
@@ -12032,8 +12376,8 @@
             "job": "Writer"
           }
         ],
-        "budget": 0,
-        "revenue": 17800000,
+        "budget": 15000000,
+        "revenue": 18131048,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Tony",
@@ -12156,8 +12500,8 @@
               "job": "Writer"
             }
           ],
-          "budget": 0,
-          "revenue": 17800000,
+          "budget": 15000000,
+          "revenue": 18131048,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Tony",
@@ -12946,7 +13290,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 121,
+            "votes": 123,
             "lastChanged": "2026-09-02T13:00:47.913519+08:00"
           },
           "mc": {
@@ -14506,11 +14850,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 80000000,
@@ -14625,11 +14969,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 80000000,
@@ -15553,7 +15897,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
-        "voteAverage": "7.8",
+        "voteAverage": "7.9",
         "genre": [
           "科幻",
           "動作",
@@ -15699,7 +16043,7 @@
           "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
           "poster": "https://image.tmdb.org/t/p/w500/2zO573CUiqm4QDuIPycE1d1GUYc.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
-          "voteAverage": "7.8",
+          "voteAverage": "7.9",
           "trailerKey": "Upn2ejyAvnM",
           "imdbId": "tt22084616",
           "countries": [
@@ -17361,350 +17705,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 838240,
-        "titleZh": "再見機器人",
-        "titleEn": "Robot Dreams",
-        "releaseDate": "2026-09-20",
-        "releaseYear": "2023",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-20",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/sR7txFuAGehkb6sRtylwAneHpR1.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/hIeEpk2w1dnC9ly9ZJwwbunH2Cx.jpg",
-        "voteAverage": "8.0",
-        "genre": [
-          "動畫",
-          "劇情",
-          "喜劇",
-          "科幻"
-        ],
-        "duration": 102,
-        "synopsis": "一隻寂寞單身狗買了高科技機器人作伴，兩人在《動物方城市》般的紐約街頭共舞同歡，彷彿就此終結孤單。某天，他們在海灘上慵懶午睡，機器人醒來後卻再也無法動彈。命運將他們硬生生拆散，放任殘酷的思念將時光磨成鋒利的夢境。在無盡的等待中，他們幻想著重聚的那天。",
-        "imdb": "7.6",
-        "rt": "98%",
-        "mc": "87",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 23158,
-            "lastChanged": "2026-09-18T01:47:54.863982+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 139,
-            "lastChanged": "2026-09-18T01:47:54.863982+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 30,
-            "lastChanged": "2026-09-18T01:47:54.863982+08:00"
-          }
-        },
-        "trailerKey": "1o9TgmXOcQM",
-        "cast": [
-          {
-            "name": "伊凡・拉班達",
-            "char": "Dog / Robot / Various (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/ixxMNjDFVN3dscWoQrl5eEnA94m.jpg"
-          },
-          {
-            "name": "亞伯特·崔佛·塞加拉",
-            "char": "Various (voice)",
-            "photo": null
-          },
-          {
-            "name": "拉斐爾·A·卡爾沃",
-            "char": "Various (voice)",
-            "photo": null
-          },
-          {
-            "name": "José García Tos",
-            "char": "Various (voice)",
-            "photo": null
-          },
-          {
-            "name": "José Luis Mediavilla",
-            "char": "Various (voice)",
-            "photo": null
-          },
-          {
-            "name": "Graciela Molina",
-            "char": "Duck / Various (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/lLc7GY0ZISaazX50GLGhHa0cNpc.jpg"
-          },
-          {
-            "name": "Esther Solans",
-            "char": "Various (voice)",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "帕布羅·貝嘉",
-            "job": "Director"
-          },
-          {
-            "name": "帕布羅·貝嘉",
-            "job": "Writer"
-          }
-        ],
-        "budget": 5300000,
-        "revenue": 4656348,
-        "status": "Released",
-        "origLang": "es",
-        "origTitle": "Robot Dreams",
-        "platforms": [
-          {
-            "name": "Catchplay",
-            "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
-          },
-          {
-            "name": "Apple TV Store",
-            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
-          }
-        ],
-        "popularity": 8.9057,
-        "imdbId": "tt13429870",
-        "countries": [
-          "France",
-          "Spain"
-        ],
-        "detail": {
-          "duration": 102,
-          "genres": [
-            "動畫",
-            "劇情",
-            "喜劇",
-            "科幻"
-          ],
-          "synopsis": "一隻寂寞單身狗買了高科技機器人作伴，兩人在《動物方城市》般的紐約街頭共舞同歡，彷彿就此終結孤單。某天，他們在海灘上慵懶午睡，機器人醒來後卻再也無法動彈。命運將他們硬生生拆散，放任殘酷的思念將時光磨成鋒利的夢境。在無盡的等待中，他們幻想著重聚的那天。",
-          "poster": "https://image.tmdb.org/t/p/w500/sR7txFuAGehkb6sRtylwAneHpR1.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/hIeEpk2w1dnC9ly9ZJwwbunH2Cx.jpg",
-          "voteAverage": "8.0",
-          "trailerKey": "1o9TgmXOcQM",
-          "imdbId": "tt13429870",
-          "countries": [
-            "France",
-            "Spain"
-          ],
-          "cast": [
-            {
-              "name": "伊凡・拉班達",
-              "char": "Dog / Robot / Various (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/ixxMNjDFVN3dscWoQrl5eEnA94m.jpg"
-            },
-            {
-              "name": "亞伯特·崔佛·塞加拉",
-              "char": "Various (voice)",
-              "photo": null
-            },
-            {
-              "name": "拉斐爾·A·卡爾沃",
-              "char": "Various (voice)",
-              "photo": null
-            },
-            {
-              "name": "José García Tos",
-              "char": "Various (voice)",
-              "photo": null
-            },
-            {
-              "name": "José Luis Mediavilla",
-              "char": "Various (voice)",
-              "photo": null
-            },
-            {
-              "name": "Graciela Molina",
-              "char": "Duck / Various (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/lLc7GY0ZISaazX50GLGhHa0cNpc.jpg"
-            },
-            {
-              "name": "Esther Solans",
-              "char": "Various (voice)",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "帕布羅·貝嘉",
-              "job": "Director"
-            },
-            {
-              "name": "帕布羅·貝嘉",
-              "job": "Writer"
-            }
-          ],
-          "budget": 5300000,
-          "revenue": 4656348,
-          "status": "Released",
-          "origLang": "es",
-          "origTitle": "Robot Dreams",
-          "platforms": [
-            {
-              "name": "Catchplay",
-              "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
-            },
-            {
-              "name": "Apple TV Store",
-              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/838240?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1740257,
-        "titleZh": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-        "titleEn": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-        "releaseDate": "2026-09-20",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-20",
-            "language": "ko"
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
-        "voteAverage": "",
-        "genre": [
-          "音樂"
-        ],
-        "duration": 255,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "쟈니",
-            "char": "Self",
-            "photo": null
-          },
-          {
-            "name": "태용",
-            "char": "Self",
-            "photo": null
-          },
-          {
-            "name": "유타",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/kCDHhUi7GPSjBqbrwBATzXo8kUL.jpg"
-          },
-          {
-            "name": "在玹",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/rOKDkDCIUcoPdzhOrRbuWK1zJN3.jpg"
-          },
-          {
-            "name": "해찬",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/pC1qftBqkV16d1Xt7t4tpJbbSp4.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Kyung Chan Kim",
-            "job": "Director"
-          },
-          {
-            "name": "Doyeon Kim",
-            "job": "Director"
-          },
-          {
-            "name": "Soyoung Park",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ko",
-        "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-        "platforms": [],
-        "popularity": 1.7149,
-        "imdbId": "tt44568569",
-        "countries": [],
-        "detail": {
-          "duration": 255,
-          "genres": [
-            "音樂"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt44568569",
-          "countries": [],
-          "cast": [
-            {
-              "name": "쟈니",
-              "char": "Self",
-              "photo": null
-            },
-            {
-              "name": "태용",
-              "char": "Self",
-              "photo": null
-            },
-            {
-              "name": "유타",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/kCDHhUi7GPSjBqbrwBATzXo8kUL.jpg"
-            },
-            {
-              "name": "在玹",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/rOKDkDCIUcoPdzhOrRbuWK1zJN3.jpg"
-            },
-            {
-              "name": "해찬",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/pC1qftBqkV16d1Xt7t4tpJbbSp4.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Kyung Chan Kim",
-              "job": "Director"
-            },
-            {
-              "name": "Doyeon Kim",
-              "job": "Director"
-            },
-            {
-              "name": "Soyoung Park",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ko",
-          "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1740257?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 176654,
         "titleZh": "再見阿郎",
@@ -21265,22 +21265,22 @@
           {
             "name": "戴夫·法蘭科",
             "char": "Raww (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/d0I1BgNBAVvLJEDSfmyNVjYWPZE.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/to7ee1xcCOpDSKMXjBIRuYEfbEc.jpg"
           },
           {
             "name": "Lea Salonga",
             "char": "Manang (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/nK9DqbXGPVnaET6I6u0IHL89DjP.jpg"
-          },
-          {
-            "name": "曼尼·賈辛托",
-            "char": "Bungi (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/cA8lv5GCU5DkZMEeplaVgttrlXr.jpg"
           },
           {
             "name": "珍妮·史雷",
             "char": "Batiba (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
+          },
+          {
+            "name": "曼尼·賈辛托",
+            "char": "Bungi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
           },
           {
             "name": "多莉·德·萊昂",
@@ -21298,11 +21298,6 @@
             "photo": "https://image.tmdb.org/t/p/w500/nn1y0te102CvakOJ0rSJ7rYPLDF.jpg"
           },
           {
-            "name": "Amielynn Abellera",
-            "char": "Raissa's Mother (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
-          },
-          {
             "name": "Kevin McCann",
             "char": "Prince Mermahn (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/tY9R5lQyA0vI7Bz6COiyyzOtkqJ.jpg"
@@ -21318,14 +21313,24 @@
             "photo": "https://image.tmdb.org/t/p/w500/hjNFQfrwxbcBEibYgBKRk5DYktZ.jpg"
           },
           {
-            "name": "Kristin Villanueva",
-            "char": "(voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/eWBC6D2NuqJobskGH3QkZBsoGZ.jpg"
+            "name": "Amielynn Abellera",
+            "char": "Raissa's Mother (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
           },
           {
-            "name": "索菲亞·拉弗爾特扎",
-            "char": "(voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/8Hk7kx3vD7w9xBMyIRrLF20Aufg.jpg"
+            "name": "尤金·科戴洛",
+            "char": "Barondo / Mr. Lopez (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
+          },
+          {
+            "name": "艾瑞克·鮑扎",
+            "char": "General Button Wutton / Sarangay (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/afOlsVPQxbtkom604MeCemjlwEV.jpg"
+          },
+          {
+            "name": "Nico Santos",
+            "char": "Starfish Pastie 1 / Starfish Pastie 2 (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/e96iYbxaqC9zGaFPxZ2fH82MBNu.jpg"
           }
         ],
         "crew": [
@@ -21385,22 +21390,22 @@
             {
               "name": "戴夫·法蘭科",
               "char": "Raww (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/d0I1BgNBAVvLJEDSfmyNVjYWPZE.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/to7ee1xcCOpDSKMXjBIRuYEfbEc.jpg"
             },
             {
               "name": "Lea Salonga",
               "char": "Manang (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/nK9DqbXGPVnaET6I6u0IHL89DjP.jpg"
-            },
-            {
-              "name": "曼尼·賈辛托",
-              "char": "Bungi (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/cA8lv5GCU5DkZMEeplaVgttrlXr.jpg"
             },
             {
               "name": "珍妮·史雷",
               "char": "Batiba (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
+            },
+            {
+              "name": "曼尼·賈辛托",
+              "char": "Bungi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
             },
             {
               "name": "多莉·德·萊昂",
@@ -21418,11 +21423,6 @@
               "photo": "https://image.tmdb.org/t/p/w500/nn1y0te102CvakOJ0rSJ7rYPLDF.jpg"
             },
             {
-              "name": "Amielynn Abellera",
-              "char": "Raissa's Mother (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
-            },
-            {
               "name": "Kevin McCann",
               "char": "Prince Mermahn (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/tY9R5lQyA0vI7Bz6COiyyzOtkqJ.jpg"
@@ -21438,14 +21438,24 @@
               "photo": "https://image.tmdb.org/t/p/w500/hjNFQfrwxbcBEibYgBKRk5DYktZ.jpg"
             },
             {
-              "name": "Kristin Villanueva",
-              "char": "(voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/eWBC6D2NuqJobskGH3QkZBsoGZ.jpg"
+              "name": "Amielynn Abellera",
+              "char": "Raissa's Mother (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
             },
             {
-              "name": "索菲亞·拉弗爾特扎",
-              "char": "(voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/8Hk7kx3vD7w9xBMyIRrLF20Aufg.jpg"
+              "name": "尤金·科戴洛",
+              "char": "Barondo / Mr. Lopez (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
+            },
+            {
+              "name": "艾瑞克·鮑扎",
+              "char": "General Button Wutton / Sarangay (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/afOlsVPQxbtkom604MeCemjlwEV.jpg"
+            },
+            {
+              "name": "Nico Santos",
+              "char": "Starfish Pastie 1 / Starfish Pastie 2 (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/e96iYbxaqC9zGaFPxZ2fH82MBNu.jpg"
             }
           ],
           "crew": [
@@ -26890,11 +26900,11 @@
         ],
         "crew": [
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
@@ -26984,11 +26994,11 @@
           ],
           "crew": [
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
@@ -28088,207 +28098,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1613284,
-        "titleZh": "告別的年代",
-        "titleEn": "告別的年代",
-        "releaseDate": "2026-11-06",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-11-06",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/uvHiuF2gcnmdmQDoj3o3fJmG8xL.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/rA5t6Ui2kOF7gZtjQ3xuZWYBjnM.jpg",
-        "voteAverage": "",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 142,
-        "synopsis": "1990年代的馬來西亞，孤獨的少年凱循著母親的遺言，找到一本名為《告別的年代》的小說。透過書頁，他走進主人翁杜麗安的世界，見證一段始於1969年怡保的愛情與家族祕密。年輕的杜麗安愛上了中學教師連生。就在連生向她吐露家族世代相傳的祕密後，竟離奇失蹤。多年以後，杜麗安早已嫁做人婦，卻因繼女劉蓮與一名叫望生的男子出現，再度面對塵封已久的往事。望生有著與連生一模一樣的容貌，卻聲稱自己是連生的雙胞胎哥哥。當埋藏多年的真相逐漸浮現，愛情、失落與命運交錯，勾勒出一個家族近百年的命運流轉。 而凱也在閱讀的過程中，發現自己與這段往事存在著意想不到的聯繫。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "宋芸樺",
-            "char": "Du Li An",
-            "photo": "https://image.tmdb.org/t/p/w500/xHBne0spwBf5xHyHulLOaOB9Fa3.jpg"
-          },
-          {
-            "name": "邱士縉",
-            "char": "Lin Sang, Mong Sang",
-            "photo": "https://image.tmdb.org/t/p/w500/rRlXvS7GeIFSG2hUZB9FZWRBTRq.jpg"
-          },
-          {
-            "name": "Troy Liu",
-            "char": "Kei",
-            "photo": "https://image.tmdb.org/t/p/w500/krfHjrVoG7nrg3w2iOPYJs56axb.jpg"
-          },
-          {
-            "name": "Li Xuan Siow",
-            "char": "Lau Lin",
-            "photo": "https://image.tmdb.org/t/p/w500/xhICTax2MJoGAiG0ma9BjKhxqB6.jpg"
-          },
-          {
-            "name": "ประภามณฑล เอี่ยมจันทร์",
-            "char": "Mana",
-            "photo": "https://image.tmdb.org/t/p/w500/sWbS173gysDXTvtffJHroZ27zmm.jpg"
-          },
-          {
-            "name": "姜予",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/3ivz9E3MzkSAFMqzzPYIbnHBovV.jpg"
-          },
-          {
-            "name": "蔡昌憲",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/hLKscapHezzzTLo7l2dSWw6XoXH.jpg"
-          },
-          {
-            "name": "叶良财",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/bM2cykLA7BgqnGfCMe01SUdMil9.jpg"
-          },
-          {
-            "name": "Lynn Lim",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/ozdnR7onNQG7doi1Rw5ONhDE5Uv.jpg"
-          },
-          {
-            "name": "劉亮佐",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/oLBmCRIBdyxZeiBEJ2qsEEPFVYG.jpg"
-          },
-          {
-            "name": "林子熙",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/obAzrY4RCnoUPFmI3AQg3Alse70.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Edmund Yeo",
-            "job": "Director"
-          },
-          {
-            "name": "Edmund Yeo",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "告別的年代",
-        "platforms": [],
-        "popularity": 2.0719,
-        "imdbId": "tt35486511",
-        "countries": [
-          "Taiwan",
-          "Malaysia"
-        ],
-        "detail": {
-          "duration": 142,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "1990年代的馬來西亞，孤獨的少年凱循著母親的遺言，找到一本名為《告別的年代》的小說。透過書頁，他走進主人翁杜麗安的世界，見證一段始於1969年怡保的愛情與家族祕密。年輕的杜麗安愛上了中學教師連生。就在連生向她吐露家族世代相傳的祕密後，竟離奇失蹤。多年以後，杜麗安早已嫁做人婦，卻因繼女劉蓮與一名叫望生的男子出現，再度面對塵封已久的往事。望生有著與連生一模一樣的容貌，卻聲稱自己是連生的雙胞胎哥哥。當埋藏多年的真相逐漸浮現，愛情、失落與命運交錯，勾勒出一個家族近百年的命運流轉。 而凱也在閱讀的過程中，發現自己與這段往事存在著意想不到的聯繫。",
-          "poster": "https://image.tmdb.org/t/p/w500/uvHiuF2gcnmdmQDoj3o3fJmG8xL.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/rA5t6Ui2kOF7gZtjQ3xuZWYBjnM.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt35486511",
-          "countries": [
-            "Taiwan",
-            "Malaysia"
-          ],
-          "cast": [
-            {
-              "name": "宋芸樺",
-              "char": "Du Li An",
-              "photo": "https://image.tmdb.org/t/p/w500/xHBne0spwBf5xHyHulLOaOB9Fa3.jpg"
-            },
-            {
-              "name": "邱士縉",
-              "char": "Lin Sang, Mong Sang",
-              "photo": "https://image.tmdb.org/t/p/w500/rRlXvS7GeIFSG2hUZB9FZWRBTRq.jpg"
-            },
-            {
-              "name": "Troy Liu",
-              "char": "Kei",
-              "photo": "https://image.tmdb.org/t/p/w500/krfHjrVoG7nrg3w2iOPYJs56axb.jpg"
-            },
-            {
-              "name": "Li Xuan Siow",
-              "char": "Lau Lin",
-              "photo": "https://image.tmdb.org/t/p/w500/xhICTax2MJoGAiG0ma9BjKhxqB6.jpg"
-            },
-            {
-              "name": "ประภามณฑล เอี่ยมจันทร์",
-              "char": "Mana",
-              "photo": "https://image.tmdb.org/t/p/w500/sWbS173gysDXTvtffJHroZ27zmm.jpg"
-            },
-            {
-              "name": "姜予",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/3ivz9E3MzkSAFMqzzPYIbnHBovV.jpg"
-            },
-            {
-              "name": "蔡昌憲",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/hLKscapHezzzTLo7l2dSWw6XoXH.jpg"
-            },
-            {
-              "name": "叶良财",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/bM2cykLA7BgqnGfCMe01SUdMil9.jpg"
-            },
-            {
-              "name": "Lynn Lim",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/ozdnR7onNQG7doi1Rw5ONhDE5Uv.jpg"
-            },
-            {
-              "name": "劉亮佐",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/oLBmCRIBdyxZeiBEJ2qsEEPFVYG.jpg"
-            },
-            {
-              "name": "林子熙",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/obAzrY4RCnoUPFmI3AQg3Alse70.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Edmund Yeo",
-              "job": "Director"
-            },
-            {
-              "name": "Edmund Yeo",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "告別的年代",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1613284?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1437511,
         "titleZh": "搶銀行先修班",
         "titleEn": "How to Rob a Bank",
@@ -28947,6 +28756,207 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1567605?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1613284,
+        "titleZh": "告別的年代",
+        "titleEn": "告別的年代",
+        "releaseDate": "2026-11-13",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-13",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/uvHiuF2gcnmdmQDoj3o3fJmG8xL.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/rA5t6Ui2kOF7gZtjQ3xuZWYBjnM.jpg",
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 142,
+        "synopsis": "1990年代的馬來西亞，孤獨的少年凱循著母親的遺言，找到一本名為《告別的年代》的小說。透過書頁，他走進主人翁杜麗安的世界，見證一段始於1969年怡保的愛情與家族祕密。年輕的杜麗安愛上了中學教師連生。就在連生向她吐露家族世代相傳的祕密後，竟離奇失蹤。多年以後，杜麗安早已嫁做人婦，卻因繼女劉蓮與一名叫望生的男子出現，再度面對塵封已久的往事。望生有著與連生一模一樣的容貌，卻聲稱自己是連生的雙胞胎哥哥。當埋藏多年的真相逐漸浮現，愛情、失落與命運交錯，勾勒出一個家族近百年的命運流轉。 而凱也在閱讀的過程中，發現自己與這段往事存在著意想不到的聯繫。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "宋芸樺",
+            "char": "Du Li An",
+            "photo": "https://image.tmdb.org/t/p/w500/xHBne0spwBf5xHyHulLOaOB9Fa3.jpg"
+          },
+          {
+            "name": "邱士縉",
+            "char": "Lin Sang, Mong Sang",
+            "photo": "https://image.tmdb.org/t/p/w500/rRlXvS7GeIFSG2hUZB9FZWRBTRq.jpg"
+          },
+          {
+            "name": "Troy Liu",
+            "char": "Kei",
+            "photo": "https://image.tmdb.org/t/p/w500/krfHjrVoG7nrg3w2iOPYJs56axb.jpg"
+          },
+          {
+            "name": "Li Xuan Siow",
+            "char": "Lau Lin",
+            "photo": "https://image.tmdb.org/t/p/w500/xhICTax2MJoGAiG0ma9BjKhxqB6.jpg"
+          },
+          {
+            "name": "ประภามณฑล เอี่ยมจันทร์",
+            "char": "Mana",
+            "photo": "https://image.tmdb.org/t/p/w500/sWbS173gysDXTvtffJHroZ27zmm.jpg"
+          },
+          {
+            "name": "姜予",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/3ivz9E3MzkSAFMqzzPYIbnHBovV.jpg"
+          },
+          {
+            "name": "蔡昌憲",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/hLKscapHezzzTLo7l2dSWw6XoXH.jpg"
+          },
+          {
+            "name": "叶良财",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bM2cykLA7BgqnGfCMe01SUdMil9.jpg"
+          },
+          {
+            "name": "Lynn Lim",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/ozdnR7onNQG7doi1Rw5ONhDE5Uv.jpg"
+          },
+          {
+            "name": "劉亮佐",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/oLBmCRIBdyxZeiBEJ2qsEEPFVYG.jpg"
+          },
+          {
+            "name": "林子熙",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/obAzrY4RCnoUPFmI3AQg3Alse70.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Edmund Yeo",
+            "job": "Director"
+          },
+          {
+            "name": "Edmund Yeo",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "告別的年代",
+        "platforms": [],
+        "popularity": 2.0719,
+        "imdbId": "tt35486511",
+        "countries": [
+          "Taiwan",
+          "Malaysia"
+        ],
+        "detail": {
+          "duration": 142,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "1990年代的馬來西亞，孤獨的少年凱循著母親的遺言，找到一本名為《告別的年代》的小說。透過書頁，他走進主人翁杜麗安的世界，見證一段始於1969年怡保的愛情與家族祕密。年輕的杜麗安愛上了中學教師連生。就在連生向她吐露家族世代相傳的祕密後，竟離奇失蹤。多年以後，杜麗安早已嫁做人婦，卻因繼女劉蓮與一名叫望生的男子出現，再度面對塵封已久的往事。望生有著與連生一模一樣的容貌，卻聲稱自己是連生的雙胞胎哥哥。當埋藏多年的真相逐漸浮現，愛情、失落與命運交錯，勾勒出一個家族近百年的命運流轉。 而凱也在閱讀的過程中，發現自己與這段往事存在著意想不到的聯繫。",
+          "poster": "https://image.tmdb.org/t/p/w500/uvHiuF2gcnmdmQDoj3o3fJmG8xL.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/rA5t6Ui2kOF7gZtjQ3xuZWYBjnM.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt35486511",
+          "countries": [
+            "Taiwan",
+            "Malaysia"
+          ],
+          "cast": [
+            {
+              "name": "宋芸樺",
+              "char": "Du Li An",
+              "photo": "https://image.tmdb.org/t/p/w500/xHBne0spwBf5xHyHulLOaOB9Fa3.jpg"
+            },
+            {
+              "name": "邱士縉",
+              "char": "Lin Sang, Mong Sang",
+              "photo": "https://image.tmdb.org/t/p/w500/rRlXvS7GeIFSG2hUZB9FZWRBTRq.jpg"
+            },
+            {
+              "name": "Troy Liu",
+              "char": "Kei",
+              "photo": "https://image.tmdb.org/t/p/w500/krfHjrVoG7nrg3w2iOPYJs56axb.jpg"
+            },
+            {
+              "name": "Li Xuan Siow",
+              "char": "Lau Lin",
+              "photo": "https://image.tmdb.org/t/p/w500/xhICTax2MJoGAiG0ma9BjKhxqB6.jpg"
+            },
+            {
+              "name": "ประภามณฑล เอี่ยมจันทร์",
+              "char": "Mana",
+              "photo": "https://image.tmdb.org/t/p/w500/sWbS173gysDXTvtffJHroZ27zmm.jpg"
+            },
+            {
+              "name": "姜予",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/3ivz9E3MzkSAFMqzzPYIbnHBovV.jpg"
+            },
+            {
+              "name": "蔡昌憲",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/hLKscapHezzzTLo7l2dSWw6XoXH.jpg"
+            },
+            {
+              "name": "叶良财",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bM2cykLA7BgqnGfCMe01SUdMil9.jpg"
+            },
+            {
+              "name": "Lynn Lim",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/ozdnR7onNQG7doi1Rw5ONhDE5Uv.jpg"
+            },
+            {
+              "name": "劉亮佐",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/oLBmCRIBdyxZeiBEJ2qsEEPFVYG.jpg"
+            },
+            {
+              "name": "林子熙",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/obAzrY4RCnoUPFmI3AQg3Alse70.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Edmund Yeo",
+              "job": "Director"
+            },
+            {
+              "name": "Edmund Yeo",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "告別的年代",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1613284?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -29731,11 +29741,11 @@
         ],
         "crew": [
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
@@ -29858,11 +29868,11 @@
           ],
           "crew": [
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
@@ -30671,11 +30681,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Brian K. Vaughan",
@@ -30783,11 +30793,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Brian K. Vaughan",
