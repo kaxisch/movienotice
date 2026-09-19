@@ -1,6 +1,7 @@
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -22,6 +23,23 @@ def movie(movie_id, title, date, bucket, rerelease=False):
 
 
 class RefreshLogTests(unittest.TestCase):
+    def test_google_request_retries_without_tmdb_refresh_dependency(self):
+        class Request:
+            attempts = 0
+
+            def execute(self):
+                self.attempts += 1
+                if self.attempts == 1:
+                    raise ConnectionError("reset")
+                return {"ok": True}
+
+        request = Request()
+        with patch.object(refresh_log.time, "sleep"):
+            result = refresh_log.execute_google_sheets_request(request, "test")
+
+        self.assertEqual(result, {"ok": True})
+        self.assertEqual(request.attempts, 2)
+
     def test_diff_distinguishes_add_remove_and_field_changes(self):
         previous = {
             1: movie(1, "保留片", "2026-09-19", "現正熱映"),

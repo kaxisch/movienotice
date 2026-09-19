@@ -4,6 +4,7 @@
 import argparse
 import json
 import os
+import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -15,7 +16,6 @@ from publish_to_google_sheet import (
     load_service_account_credentials,
     quote_sheet_range,
 )
-from refresh_site_from_google_sheet import execute_google_sheets_request
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -38,6 +38,33 @@ HEADERS = [
     "Commit SHA",
 ]
 RUN_ID_INDEX = HEADERS.index("Run ID")
+GOOGLE_SHEETS_RETRY_ATTEMPTS = 4
+GOOGLE_SHEETS_RETRY_DELAY = 2
+GOOGLE_SHEETS_TRANSIENT_STATUS_CODES = {429, 500, 502, 503, 504}
+
+
+def is_transient_google_sheets_error(error):
+    status = getattr(getattr(error, "resp", None), "status", None)
+    return status in GOOGLE_SHEETS_TRANSIENT_STATUS_CODES or isinstance(
+        error, (TimeoutError, ConnectionError, OSError)
+    )
+
+
+def execute_google_sheets_request(request, operation):
+    """Retry transient Google Sheets failures without importing the TMDB refresh."""
+    for attempt in range(1, GOOGLE_SHEETS_RETRY_ATTEMPTS + 1):
+        try:
+            return request.execute()
+        except Exception as error:
+            if not is_transient_google_sheets_error(error) or attempt >= GOOGLE_SHEETS_RETRY_ATTEMPTS:
+                raise
+            delay = GOOGLE_SHEETS_RETRY_DELAY * (2 ** (attempt - 1))
+            print(
+                f"Google Sheets temporary failure during {operation}; "
+                f"retry {attempt}/{GOOGLE_SHEETS_RETRY_ATTEMPTS - 1} in {delay}s: {error}",
+                flush=True,
+            )
+            time.sleep(delay)
 
 
 def parse_args():
