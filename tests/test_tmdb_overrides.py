@@ -120,6 +120,7 @@ class TmdbOverrideTests(unittest.TestCase):
             "洲崎樂園 赤信號": 125222,
             "安詳之獸": 125253,
             "高年級實習生": 607833,
+            "Perfume“Cold Sleep” Perfume“Cold Sleep”-25 years Document-": 1603232,
             "Perfume“Cold Sleep Perfume“Cold Sleep”-25 years Document-": 1603232,
             "Perfume \"Cold Sleep\" -25 years Document-": 1603232,
             "ENHYPEN VR CONCERT : DESTINY": 1769154,
