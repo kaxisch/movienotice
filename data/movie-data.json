@@ -1,12 +1,179 @@
 {
-  "generated_at": "2026-09-22T20:02:19.095979+08:00",
+  "generated_at": "2026-09-23T01:16:53.873359+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 80,
-    "soon_count": 64
+    "now_count": 81,
+    "soon_count": 63
   },
   "movies": {
     "now": [
+      {
+        "id": 255796,
+        "titleZh": "今天不回家",
+        "titleEn": "今天不回家",
+        "releaseDate": "2026-09-23",
+        "releaseYear": "1996",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-23",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/oGQZ4Lk6GpJOZSEOR7OcwQdSjF9.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/tseGkGnc7YvAVq0LXC1QMkHBEjA.jpg",
+        "voteAverage": "7.0",
+        "genre": [
+          "劇情",
+          "喜劇"
+        ],
+        "duration": 120,
+        "synopsis": "",
+        "imdb": "7.3",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 110,
+            "lastChanged": "2026-09-17T01:38:26.296338+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "郎雄",
+            "char": "Dr. Chen Pinyan",
+            "photo": "https://image.tmdb.org/t/p/w500/i1aiG0pf73LKssRbo6tFv0kzUnz.jpg"
+          },
+          {
+            "name": "歸亞蕾",
+            "char": "Mrs. Chen",
+            "photo": "https://image.tmdb.org/t/p/w500/eX9aVWCGy6l9RSTqqauMinwEn0l.jpg"
+          },
+          {
+            "name": "趙文瑄",
+            "char": "Chen Siming",
+            "photo": "https://image.tmdb.org/t/p/w500/c5LTdq5lsDzIxfu2a6a4jZQe3nK.jpg"
+          },
+          {
+            "name": "劉若英",
+            "char": "Chen Xiaoqi",
+            "photo": "https://image.tmdb.org/t/p/w500/7U4w2slJYKlg6USmwLta48WnBUW.jpg"
+          },
+          {
+            "name": "陳小春",
+            "char": "Changgang",
+            "photo": "https://image.tmdb.org/t/p/w500/dErONNxvHXmWA5zjICoYzz54vVu.jpg"
+          },
+          {
+            "name": "杜德偉",
+            "char": "Longhong/Cai Deyao",
+            "photo": "https://image.tmdb.org/t/p/w500/phgKsjLIiatjDLpRPtovm7GA0g7.jpg"
+          },
+          {
+            "name": "楊貴媚",
+            "char": "Qin Zhen",
+            "photo": "https://image.tmdb.org/t/p/w500/bQuu5naLHk5ergPgQZXpGXJm3aO.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "張艾嘉",
+            "job": "Screenplay"
+          },
+          {
+            "name": "張艾嘉",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "今天不回家",
+        "platforms": [],
+        "popularity": 0.9732,
+        "imdbId": "tt0117938",
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 120,
+          "genres": [
+            "劇情",
+            "喜劇"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/oGQZ4Lk6GpJOZSEOR7OcwQdSjF9.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/tseGkGnc7YvAVq0LXC1QMkHBEjA.jpg",
+          "voteAverage": "7.0",
+          "trailerKey": null,
+          "imdbId": "tt0117938",
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "郎雄",
+              "char": "Dr. Chen Pinyan",
+              "photo": "https://image.tmdb.org/t/p/w500/i1aiG0pf73LKssRbo6tFv0kzUnz.jpg"
+            },
+            {
+              "name": "歸亞蕾",
+              "char": "Mrs. Chen",
+              "photo": "https://image.tmdb.org/t/p/w500/eX9aVWCGy6l9RSTqqauMinwEn0l.jpg"
+            },
+            {
+              "name": "趙文瑄",
+              "char": "Chen Siming",
+              "photo": "https://image.tmdb.org/t/p/w500/c5LTdq5lsDzIxfu2a6a4jZQe3nK.jpg"
+            },
+            {
+              "name": "劉若英",
+              "char": "Chen Xiaoqi",
+              "photo": "https://image.tmdb.org/t/p/w500/7U4w2slJYKlg6USmwLta48WnBUW.jpg"
+            },
+            {
+              "name": "陳小春",
+              "char": "Changgang",
+              "photo": "https://image.tmdb.org/t/p/w500/dErONNxvHXmWA5zjICoYzz54vVu.jpg"
+            },
+            {
+              "name": "杜德偉",
+              "char": "Longhong/Cai Deyao",
+              "photo": "https://image.tmdb.org/t/p/w500/phgKsjLIiatjDLpRPtovm7GA0g7.jpg"
+            },
+            {
+              "name": "楊貴媚",
+              "char": "Qin Zhen",
+              "photo": "https://image.tmdb.org/t/p/w500/bQuu5naLHk5ergPgQZXpGXJm3aO.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "張艾嘉",
+              "job": "Screenplay"
+            },
+            {
+              "name": "張艾嘉",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "今天不回家",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/255796?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 176654,
         "titleZh": "再見阿郎",
@@ -125,11 +292,11 @@
         ],
         "crew": [
           {
-            "name": "Liu Wei-Bin",
+            "name": "Yung-hsiang Chang",
             "job": "Screenplay"
           },
           {
-            "name": "Yung-hsiang Chang",
+            "name": "Liu Wei-Bin",
             "job": "Screenplay"
           },
           {
@@ -246,11 +413,11 @@
           ],
           "crew": [
             {
-              "name": "Liu Wei-Bin",
+              "name": "Yung-hsiang Chang",
               "job": "Screenplay"
             },
             {
-              "name": "Yung-hsiang Chang",
+              "name": "Liu Wei-Bin",
               "job": "Screenplay"
             },
             {
@@ -3951,7 +4118,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-        "voteAverage": "7.3",
+        "voteAverage": "7.4",
         "genre": [
           "恐怖",
           "科幻",
@@ -4094,7 +4261,7 @@
           "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
           "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-          "voteAverage": "7.3",
+          "voteAverage": "7.4",
           "trailerKey": "f6Y2SgaHyCw",
           "imdbId": "tt35538033",
           "countries": [
@@ -5555,16 +5722,16 @@
         ],
         "crew": [
           {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
-          },
-          {
-            "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
-          },
-          {
             "name": "Krzysztof Piesiewicz",
             "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Screenplay"
+          },
+          {
+            "name": "古茲托夫·奇斯洛夫斯基",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -5687,16 +5854,16 @@
           ],
           "crew": [
             {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
-            },
-            {
-              "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
-            },
-            {
               "name": "Krzysztof Piesiewicz",
               "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Screenplay"
+            },
+            {
+              "name": "古茲托夫·奇斯洛夫斯基",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -8474,11 +8641,11 @@
             "job": "Director"
           },
           {
-            "name": "Eskil Vogt",
+            "name": "Joachim Trier",
             "job": "Writer"
           },
           {
-            "name": "Joachim Trier",
+            "name": "Eskil Vogt",
             "job": "Writer"
           }
         ],
@@ -8608,11 +8775,11 @@
               "job": "Director"
             },
             {
-              "name": "Eskil Vogt",
+              "name": "Joachim Trier",
               "job": "Writer"
             },
             {
-              "name": "Joachim Trier",
+              "name": "Eskil Vogt",
               "job": "Writer"
             }
           ],
@@ -8862,7 +9029,7 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
-        "rt": "72%",
+        "rt": "78%",
         "mc": "66",
         "ratingMeta": {
           "imdb": {
@@ -8871,9 +9038,9 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
-            "lastChanged": "2026-09-22T04:09:27.886554+08:00"
+            "source": "mdblist",
+            "votes": 152,
+            "lastChanged": "2026-09-23T01:16:53.873359+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -16092,7 +16259,7 @@
           }
         ],
         "budget": 750000,
-        "revenue": 516820052,
+        "revenue": 519516701,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Obsession",
@@ -16217,7 +16384,7 @@
             }
           ],
           "budget": 750000,
-          "revenue": 516820052,
+          "revenue": 519516701,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Obsession",
@@ -18431,173 +18598,6 @@
     ],
     "soon": [
       {
-        "id": 255796,
-        "titleZh": "今天不回家",
-        "titleEn": "今天不回家",
-        "releaseDate": "2026-09-23",
-        "releaseYear": "1996",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-23",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/oGQZ4Lk6GpJOZSEOR7OcwQdSjF9.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/tseGkGnc7YvAVq0LXC1QMkHBEjA.jpg",
-        "voteAverage": "7.0",
-        "genre": [
-          "劇情",
-          "喜劇"
-        ],
-        "duration": 120,
-        "synopsis": "",
-        "imdb": "7.3",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 110,
-            "lastChanged": "2026-09-17T01:38:26.296338+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "郎雄",
-            "char": "Dr. Chen Pinyan",
-            "photo": "https://image.tmdb.org/t/p/w500/i1aiG0pf73LKssRbo6tFv0kzUnz.jpg"
-          },
-          {
-            "name": "歸亞蕾",
-            "char": "Mrs. Chen",
-            "photo": "https://image.tmdb.org/t/p/w500/eX9aVWCGy6l9RSTqqauMinwEn0l.jpg"
-          },
-          {
-            "name": "趙文瑄",
-            "char": "Chen Siming",
-            "photo": "https://image.tmdb.org/t/p/w500/c5LTdq5lsDzIxfu2a6a4jZQe3nK.jpg"
-          },
-          {
-            "name": "劉若英",
-            "char": "Chen Xiaoqi",
-            "photo": "https://image.tmdb.org/t/p/w500/7U4w2slJYKlg6USmwLta48WnBUW.jpg"
-          },
-          {
-            "name": "陳小春",
-            "char": "Changgang",
-            "photo": "https://image.tmdb.org/t/p/w500/dErONNxvHXmWA5zjICoYzz54vVu.jpg"
-          },
-          {
-            "name": "杜德偉",
-            "char": "Longhong/Cai Deyao",
-            "photo": "https://image.tmdb.org/t/p/w500/phgKsjLIiatjDLpRPtovm7GA0g7.jpg"
-          },
-          {
-            "name": "楊貴媚",
-            "char": "Qin Zhen",
-            "photo": "https://image.tmdb.org/t/p/w500/bQuu5naLHk5ergPgQZXpGXJm3aO.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "張艾嘉",
-            "job": "Screenplay"
-          },
-          {
-            "name": "張艾嘉",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "今天不回家",
-        "platforms": [],
-        "popularity": 0.9732,
-        "imdbId": "tt0117938",
-        "countries": [
-          "Taiwan"
-        ],
-        "detail": {
-          "duration": 120,
-          "genres": [
-            "劇情",
-            "喜劇"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/oGQZ4Lk6GpJOZSEOR7OcwQdSjF9.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/tseGkGnc7YvAVq0LXC1QMkHBEjA.jpg",
-          "voteAverage": "7.0",
-          "trailerKey": null,
-          "imdbId": "tt0117938",
-          "countries": [
-            "Taiwan"
-          ],
-          "cast": [
-            {
-              "name": "郎雄",
-              "char": "Dr. Chen Pinyan",
-              "photo": "https://image.tmdb.org/t/p/w500/i1aiG0pf73LKssRbo6tFv0kzUnz.jpg"
-            },
-            {
-              "name": "歸亞蕾",
-              "char": "Mrs. Chen",
-              "photo": "https://image.tmdb.org/t/p/w500/eX9aVWCGy6l9RSTqqauMinwEn0l.jpg"
-            },
-            {
-              "name": "趙文瑄",
-              "char": "Chen Siming",
-              "photo": "https://image.tmdb.org/t/p/w500/c5LTdq5lsDzIxfu2a6a4jZQe3nK.jpg"
-            },
-            {
-              "name": "劉若英",
-              "char": "Chen Xiaoqi",
-              "photo": "https://image.tmdb.org/t/p/w500/7U4w2slJYKlg6USmwLta48WnBUW.jpg"
-            },
-            {
-              "name": "陳小春",
-              "char": "Changgang",
-              "photo": "https://image.tmdb.org/t/p/w500/dErONNxvHXmWA5zjICoYzz54vVu.jpg"
-            },
-            {
-              "name": "杜德偉",
-              "char": "Longhong/Cai Deyao",
-              "photo": "https://image.tmdb.org/t/p/w500/phgKsjLIiatjDLpRPtovm7GA0g7.jpg"
-            },
-            {
-              "name": "楊貴媚",
-              "char": "Qin Zhen",
-              "photo": "https://image.tmdb.org/t/p/w500/bQuu5naLHk5ergPgQZXpGXJm3aO.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "張艾嘉",
-              "job": "Screenplay"
-            },
-            {
-              "name": "張艾嘉",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "今天不回家",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/255796?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 14003,
         "titleZh": "鋼之鍊金術師：香巴拉的征服者",
         "titleEn": "劇場版 鋼の錬金術師 シャンバラを征く者",
@@ -19455,7 +19455,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/kY3pGqJu62TPDINS2KZ0uQbTkz4.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-        "voteAverage": "7.7",
+        "voteAverage": "7.9",
         "genre": [
           "冒險",
           "驚悚"
@@ -19492,12 +19492,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -19520,7 +19520,7 @@
           "synopsis": "在經歷可怕的墜機之後，特種部隊軍官詹姆斯貝爾蒙與他的戰鬥偵察犬奧丁，受困在阿拉斯加荒野深處。他們為了求生必須面對惡劣的天候。",
           "poster": "https://image.tmdb.org/t/p/w500/kY3pGqJu62TPDINS2KZ0uQbTkz4.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-          "voteAverage": "7.7",
+          "voteAverage": "7.9",
           "trailerKey": "CUIZ7ciID7Y",
           "imdbId": "tt7526136",
           "countries": [
@@ -19545,12 +19545,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -19886,9 +19886,9 @@
             "photo": null
           },
           {
-            "name": "Jeff Zucker",
+            "name": "傑夫·佐克",
             "char": "Jeff Zucker",
-            "photo": null
+            "photo": "https://image.tmdb.org/t/p/w500/lZYdpofDQ1DVdukiqoDdRPYtt3x.jpg"
           }
         ],
         "crew": [
@@ -20004,9 +20004,9 @@
               "photo": null
             },
             {
-              "name": "Jeff Zucker",
+              "name": "傑夫·佐克",
               "char": "Jeff Zucker",
-              "photo": null
+              "photo": "https://image.tmdb.org/t/p/w500/lZYdpofDQ1DVdukiqoDdRPYtt3x.jpg"
             }
           ],
           "crew": [
@@ -21631,7 +21631,7 @@
           {
             "name": "Alex Feder",
             "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/ugTvQYbO19AzqYVQY6lj9GQkB1t.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/9qB6FL50i425zzuXlTHqfTC3t0e.jpg"
           },
           {
             "name": "布萊德·達爾森",
@@ -21711,7 +21711,7 @@
             {
               "name": "Alex Feder",
               "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/ugTvQYbO19AzqYVQY6lj9GQkB1t.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/9qB6FL50i425zzuXlTHqfTC3t0e.jpg"
             },
             {
               "name": "布萊德·達爾森",
@@ -22352,11 +22352,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -22477,11 +22477,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -23719,7 +23719,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/zhAdEIYJNYEyqlJxBQGDod5XoYb.jpg",
         "posterIsBackdrop": false,
-        "backdrop": null,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/xk6BqHZgqNaVG48JII2ZD7GiPM7.jpg",
         "voteAverage": "",
         "genre": [
           "紀錄"
@@ -23730,7 +23730,7 @@
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": null,
+        "trailerKey": "WqWdH3cmgGE",
         "cast": [],
         "crew": [
           {
@@ -23756,9 +23756,9 @@
           ],
           "synopsis": "故事從都市原住民青少年劉力臣與蘇靜雯的拳擊人生開始。力臣天賦異稟，國中即拿下全國冠軍，卻在升上高中後陷入迷惘——拳擊、升學、原住民身分，哪一個才是他該走的路？在他迷惘的同時，他的拳擊成績逐步下滑，重創他的信心。靜雯則來自新北三峽南靖部落，被看好成為下一個世代的奧運拳擊選手，心裡對於拳擊充滿了不確定性，繼續練拳的唯一理由是所有人的期待。都市部落出身的她，卻在都市中找不到家的歸屬感。",
           "poster": "https://image.tmdb.org/t/p/w500/zhAdEIYJNYEyqlJxBQGDod5XoYb.jpg",
-          "backdrop": null,
+          "backdrop": "https://image.tmdb.org/t/p/w1280/xk6BqHZgqNaVG48JII2ZD7GiPM7.jpg",
           "voteAverage": "",
-          "trailerKey": null,
+          "trailerKey": "WqWdH3cmgGE",
           "imdbId": null,
           "countries": [
             "Taiwan"
@@ -25067,7 +25067,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/qn5ZbYnWKq6p8GOk6EPlx2Q9iIY.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/pFvcLJ5YdgRloANWh1iryUrgkx2.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/o7ZJqLGMGuIrnZbv2DvCFqqlarY.jpg",
         "voteAverage": "5.3",
@@ -25087,7 +25087,7 @@
             "lastChanged": "2026-09-17T13:17:39.454856+08:00"
           }
         },
-        "trailerKey": null,
+        "trailerKey": "zZK7vYf33Ow",
         "cast": [
           {
             "name": "鄧超",
@@ -25198,10 +25198,10 @@
             "奇幻"
           ],
           "synopsis": "小說家路空文為自己的小說《弒神》寫下結局，卻引發書中角色對自身命運的強烈反抗。故事中的主角被迫與殺父仇人赤髮鬼同行踏上逆天改命的旅途；但野心勃勃的赤髮鬼卻將銅虎、小桔子、行者、霹靂火、黑龍及入雲龍等角色捲入重重危機。一場跨越現實與幻想、作者與角色的終極對決即將展開！",
-          "poster": "https://image.tmdb.org/t/p/w500/qn5ZbYnWKq6p8GOk6EPlx2Q9iIY.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/pFvcLJ5YdgRloANWh1iryUrgkx2.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/o7ZJqLGMGuIrnZbv2DvCFqqlarY.jpg",
           "voteAverage": "5.3",
-          "trailerKey": null,
+          "trailerKey": "zZK7vYf33Ow",
           "imdbId": "tt33095008",
           "countries": [
             "China"
@@ -27249,11 +27249,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -27371,11 +27371,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -29771,11 +29771,11 @@
         ],
         "crew": [
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
@@ -29898,11 +29898,11 @@
           ],
           "crew": [
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
