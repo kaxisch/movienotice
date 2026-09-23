@@ -423,12 +423,16 @@ def build_verified_output(candidates):
                     if item.get("date") == observed_cinema_date
                 ]
                 if not selected_releases:
-                    log(
-                        f"  Excluded pending cinema candidate TMDB {tmdb_id}: TW cinema release "
-                        f"type 1, 2, or 3 does not match observed cinema date {observed_cinema_date}"
+                    selected_releases = weekly.select_public_tw_theatrical_releases(
+                        tmdb_id, eligible_releases
                     )
-                    continue
-                tw_date = observed_cinema_date
+                    tw_date = selected_releases[0]["date"]
+                    log(
+                        f"  Using TMDB Taiwan theatrical date {tw_date} for cinema-present candidate "
+                        f"{tmdb_id}; observed cinema date {observed_cinema_date} differs"
+                    )
+                else:
+                    tw_date = observed_cinema_date
             else:
                 selected_releases = weekly.select_public_tw_theatrical_releases(
                     tmdb_id, eligible_releases
