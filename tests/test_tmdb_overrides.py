@@ -129,6 +129,10 @@ class TmdbOverrideTests(unittest.TestCase):
             "成人童話": 1174128,
             "LOVE LIVE! 蓮之空女學院學園偶像俱樂部": 1675042,
             "猛鬼大學4": 1610936,
+            "SB19 Wakas at Simula SB19 Wakas at Simula: The Trilogy Concert Finale In Cinemas": 1776482,
+            "SB19 Wakas at Simula: The Trilogy Concert Finale": 1776482,
+            "One Piece IV Movie: Adventure of Dead End": 44727,
+            "航海王4": 44727,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
