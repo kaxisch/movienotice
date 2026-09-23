@@ -1235,7 +1235,7 @@ class RefreshVisibilityTests(unittest.TestCase):
     @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
     @patch.object(refresh, "load_current_site_ids", return_value=[])
     @patch.object(weekly, "fetch_supplemental_soon_candidates", return_value=[])
-    def test_pending_cinema_candidate_waits_when_tmdb_date_does_not_match(
+    def test_pending_regular_cinema_candidate_uses_valid_tmdb_date_when_source_date_differs(
         self, _supplemental, _site_ids, _whitelist_ids, _manual, _sleep
     ):
         today = datetime.now(timezone(timedelta(hours=8))).date()
@@ -1268,7 +1268,9 @@ class RefreshVisibilityTests(unittest.TestCase):
         ):
             output, _, _ = refresh.build_verified_output([candidate])
 
-        self.assertEqual(output["tmdb_has_tw_date"], [])
+        record = output["tmdb_has_tw_date"][0]
+        self.assertEqual(record["release_date_tw"], different_date)
+        self.assertEqual(record["tmdb_tw_release_date"], different_date)
 
     @patch.object(refresh.time, "sleep")
     @patch.object(refresh, "load_current_whitelist_ids", return_value=[])
