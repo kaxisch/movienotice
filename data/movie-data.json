@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-23T05:41:16.291409+08:00",
+  "generated_at": "2026-09-23T12:00:16.712365+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 81,
-    "soon_count": 63
+    "now_count": 78,
+    "soon_count": 65
   },
   "movies": {
     "now": [
@@ -292,11 +292,11 @@
         ],
         "crew": [
           {
-            "name": "Yung-hsiang Chang",
+            "name": "Liu Wei-Bin",
             "job": "Screenplay"
           },
           {
-            "name": "Liu Wei-Bin",
+            "name": "Yung-hsiang Chang",
             "job": "Screenplay"
           },
           {
@@ -310,7 +310,7 @@
         "origLang": "zh",
         "origTitle": "再見阿郎",
         "platforms": [],
-        "popularity": 0.883,
+        "popularity": 0.7728,
         "imdbId": "tt1111842",
         "countries": [
           "Taiwan"
@@ -413,11 +413,11 @@
           ],
           "crew": [
             {
-              "name": "Yung-hsiang Chang",
+              "name": "Liu Wei-Bin",
               "job": "Screenplay"
             },
             {
-              "name": "Liu Wei-Bin",
+              "name": "Yung-hsiang Chang",
               "job": "Screenplay"
             },
             {
@@ -509,7 +509,7 @@
         "origLang": "zh",
         "origTitle": "寂寞的十七歲",
         "platforms": [],
-        "popularity": 1.0112,
+        "popularity": 0.8463,
         "imdbId": "tt1286561",
         "countries": [
           "Taiwan"
@@ -573,257 +573,12 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1598667,
-        "titleZh": "危險關係—Lesley Manville版(英國國家劇院現場)",
-        "titleEn": "National Theatre Live: Les Liaisons Dangereuses",
-        "releaseDate": "2026-09-22",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-22",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
-        "voteAverage": "",
-        "genre": [
-          "劇情",
-          "愛情",
-          "喜劇"
-        ],
-        "duration": 179,
-        "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Aidan Turner",
-            "char": "Vicomte de Valmont",
-            "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
-          },
-          {
-            "name": "萊斯利·曼維爾",
-            "char": "Marquise de Merteuil",
-            "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
-          },
-          {
-            "name": "莫妮卡·巴巴羅",
-            "char": "Madame de Tourvel",
-            "photo": "https://image.tmdb.org/t/p/w500/fcujBTiKyZgJzaDenhv5ryo9SyB.jpg"
-          },
-          {
-            "name": "Darragh Hand",
-            "char": "Chevalier Danceny",
-            "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
-          },
-          {
-            "name": "Cat Simmons",
-            "char": "Madame de Volanges",
-            "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
-          },
-          {
-            "name": "Hannah van der Westhuysen",
-            "char": "Cécile Volanges",
-            "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
-          },
-          {
-            "name": "Ali Goldsmith",
-            "char": "Major-Domo / Dancer",
-            "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
-          },
-          {
-            "name": "Gabrielle Drake",
-            "char": "Madame de Rosemonde",
-            "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
-          },
-          {
-            "name": "Nandi Bhebhe",
-            "char": "Julie / Understudy Madame de Tourvel",
-            "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
-          },
-          {
-            "name": "Sharif Afifi",
-            "char": "Azolan / Understudy Vicomte de Valmont",
-            "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
-          },
-          {
-            "name": "Curtis Angus",
-            "char": "Father Anselm / Dancer",
-            "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
-          },
-          {
-            "name": "Ishmail Aaron",
-            "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
-            "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
-          },
-          {
-            "name": "Charlotte Avery",
-            "char": "Ensemble / Understudy Marquise de Merteuil",
-            "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
-          },
-          {
-            "name": "Lucia Chocarro",
-            "char": "Émile",
-            "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
-          },
-          {
-            "name": "Liz Ewing",
-            "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
-            "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
-          },
-          {
-            "name": "Georges Hann",
-            "char": "Dancer",
-            "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Marianne Elliott",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
-        "platforms": [],
-        "popularity": 1.9636,
-        "imdbId": "tt40258746",
-        "countries": [
-          "United Kingdom"
-        ],
-        "detail": {
-          "duration": 179,
-          "genres": [
-            "劇情",
-            "愛情",
-            "喜劇"
-          ],
-          "synopsis": "在18世紀末的法國貴族社會，梅黛夫人與瓦爾蒙子爵這對舊情人，以他人的愛情與名譽為賭注，一面設局誘惑天真的少女塞西爾，一面試圖攻陷端莊虔誠的圖爾韋爾夫人。在引誘、試探、操控與報復之間，這場情感遊戲逐漸失控——從征服與取樂，失速滑向關乎名譽、慾望與生存的殘酷終極清算。",
-          "poster": "https://image.tmdb.org/t/p/w500/4FEzeNkXF4SZTW9cSXOOw3MdvWo.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/erDoDbYYqeAamcF0g7wZjUIOqZi.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt40258746",
-          "countries": [
-            "United Kingdom"
-          ],
-          "cast": [
-            {
-              "name": "Aidan Turner",
-              "char": "Vicomte de Valmont",
-              "photo": "https://image.tmdb.org/t/p/w500/vzL4c4a72MpEAuPVZaqj9dJBNIr.jpg"
-            },
-            {
-              "name": "萊斯利·曼維爾",
-              "char": "Marquise de Merteuil",
-              "photo": "https://image.tmdb.org/t/p/w500/tioPlSoypjdME3oMu3g7XmgIIKS.jpg"
-            },
-            {
-              "name": "莫妮卡·巴巴羅",
-              "char": "Madame de Tourvel",
-              "photo": "https://image.tmdb.org/t/p/w500/fcujBTiKyZgJzaDenhv5ryo9SyB.jpg"
-            },
-            {
-              "name": "Darragh Hand",
-              "char": "Chevalier Danceny",
-              "photo": "https://image.tmdb.org/t/p/w500/pi6r33vbL2Jt1C8UED65zOAVEX1.jpg"
-            },
-            {
-              "name": "Cat Simmons",
-              "char": "Madame de Volanges",
-              "photo": "https://image.tmdb.org/t/p/w500/xlZL4D6zzQutUZTa4i1JcyKAvfP.jpg"
-            },
-            {
-              "name": "Hannah van der Westhuysen",
-              "char": "Cécile Volanges",
-              "photo": "https://image.tmdb.org/t/p/w500/n5r5hvJG0hxkpCJ9q4ZhmFsd562.jpg"
-            },
-            {
-              "name": "Ali Goldsmith",
-              "char": "Major-Domo / Dancer",
-              "photo": "https://image.tmdb.org/t/p/w500/fiG8IHwfe47YWVI5z6mmwmV6Sb.jpg"
-            },
-            {
-              "name": "Gabrielle Drake",
-              "char": "Madame de Rosemonde",
-              "photo": "https://image.tmdb.org/t/p/w500/xFOxjDfrXq81rxw3BuqkEk1UBfF.jpg"
-            },
-            {
-              "name": "Nandi Bhebhe",
-              "char": "Julie / Understudy Madame de Tourvel",
-              "photo": "https://image.tmdb.org/t/p/w500/eaPkAYPrfUumWFEew6pn0P49plE.jpg"
-            },
-            {
-              "name": "Sharif Afifi",
-              "char": "Azolan / Understudy Vicomte de Valmont",
-              "photo": "https://image.tmdb.org/t/p/w500/7WihMwpvjYbY8HXxjzeREZDDZZj.jpg"
-            },
-            {
-              "name": "Curtis Angus",
-              "char": "Father Anselm / Dancer",
-              "photo": "https://image.tmdb.org/t/p/w500/zdwhF0tAfLvAO93fZoUilZJ3T2c.jpg"
-            },
-            {
-              "name": "Ishmail Aaron",
-              "char": "Ensemble / Understudy Azolan / Understudy Danceny / Understudy Major-Domo",
-              "photo": "https://image.tmdb.org/t/p/w500/6SL2d5RuUojnU7u2i1NtcSVQp3b.jpg"
-            },
-            {
-              "name": "Charlotte Avery",
-              "char": "Ensemble / Understudy Marquise de Merteuil",
-              "photo": "https://image.tmdb.org/t/p/w500/bJ2y5nZhvQICZlS5w5285AQ08Ma.jpg"
-            },
-            {
-              "name": "Lucia Chocarro",
-              "char": "Émile",
-              "photo": "https://image.tmdb.org/t/p/w500/c2GKfpJy79zZx4QZ8GAlQM30cC2.jpg"
-            },
-            {
-              "name": "Liz Ewing",
-              "char": "Ensemble / Understudy Madame de Volanges / Understudy Madame de Rosemonde",
-              "photo": "https://image.tmdb.org/t/p/w500/raGzjZAkhpZsW3hwBHOfDYk3bcY.jpg"
-            },
-            {
-              "name": "Georges Hann",
-              "char": "Dancer",
-              "photo": "https://image.tmdb.org/t/p/w500/wGWn2h6yy6w4TNcTC3ekiTSYFRP.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Marianne Elliott",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "National Theatre Live: Les Liaisons Dangereuses",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1598667?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 838240,
         "titleZh": "再見機器人",
         "titleEn": "Robot Dreams",
         "releaseDate": "2026-09-20",
         "releaseYear": "2023",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-09-20",
@@ -1059,7 +814,7 @@
         "origLang": "zh",
         "origTitle": "獨奏者之舞",
         "platforms": [],
-        "popularity": 0.6191,
+        "popularity": 0.7149,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -1093,219 +848,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1695300?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1740257,
-        "titleZh": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-        "titleEn": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-        "releaseDate": "2026-09-20",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-20",
-            "language": "ko"
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
-        "voteAverage": "",
-        "genre": [
-          "音樂"
-        ],
-        "duration": 180,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "쟈니",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/rHTOkR1ErOa0imKryngvNnUFBOg.jpg"
-          },
-          {
-            "name": "태용",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/dFpcoA79X9h2bxB189r645dssw.jpg"
-          },
-          {
-            "name": "유타",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/g2pzM7Oe2Jh07567urI53lp4gHa.jpg"
-          },
-          {
-            "name": "在玹",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/zPlMDrW518cRY1r9BJltmV3sjl3.jpg"
-          },
-          {
-            "name": "해찬",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/hKLymA8lCRbRAZEBvVlNjvl9jOa.jpg"
-          },
-          {
-            "name": "도영",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/aQYpSkRoWXRhrsBPUqtjOKEwqdR.jpg"
-          },
-          {
-            "name": "정우",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/pVvj4tdP6VcCGHSxhfiFzlBeqxX.jpg"
-          },
-          {
-            "name": "시온",
-            "char": "Self (as NCT WISH)",
-            "photo": "https://image.tmdb.org/t/p/w500/ejgjzndRNCXjDAAjuEB4ONH6s1f.jpg"
-          },
-          {
-            "name": "유우시",
-            "char": "Self (as NCT WISH)",
-            "photo": "https://image.tmdb.org/t/p/w500/aN8G6VXWsTtBVitZ3CeVE37Y9ld.jpg"
-          },
-          {
-            "name": "재희",
-            "char": "Self (as NCT WISH)",
-            "photo": "https://image.tmdb.org/t/p/w500/65FxybWP2yvVyq6lBJNJFE5fuSS.jpg"
-          },
-          {
-            "name": "료",
-            "char": "Self (as NCT WISH)",
-            "photo": "https://image.tmdb.org/t/p/w500/7dMKJX13PhAv5tefRAnFv2IUF2R.jpg"
-          },
-          {
-            "name": "사쿠야",
-            "char": "Self (as NCT WISH)",
-            "photo": "https://image.tmdb.org/t/p/w500/4FVACiUs8EckLA3Xbtfvidpzw2L.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Kyung Chan Kim",
-            "job": "Director"
-          },
-          {
-            "name": "Doyeon Kim",
-            "job": "Director"
-          },
-          {
-            "name": "Soyoung Park",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ko",
-        "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-        "platforms": [],
-        "popularity": 2.3159,
-        "imdbId": "tt44568569",
-        "countries": [],
-        "detail": {
-          "duration": 180,
-          "genres": [
-            "音樂"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/wLItpgfVeRL4VlqoaQJRQXzUmc1.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/lqDLtZ8pdSPZZR6k8S2pqGTfuZz.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt44568569",
-          "countries": [],
-          "cast": [
-            {
-              "name": "쟈니",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/rHTOkR1ErOa0imKryngvNnUFBOg.jpg"
-            },
-            {
-              "name": "태용",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/dFpcoA79X9h2bxB189r645dssw.jpg"
-            },
-            {
-              "name": "유타",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/g2pzM7Oe2Jh07567urI53lp4gHa.jpg"
-            },
-            {
-              "name": "在玹",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/zPlMDrW518cRY1r9BJltmV3sjl3.jpg"
-            },
-            {
-              "name": "해찬",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/hKLymA8lCRbRAZEBvVlNjvl9jOa.jpg"
-            },
-            {
-              "name": "도영",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/aQYpSkRoWXRhrsBPUqtjOKEwqdR.jpg"
-            },
-            {
-              "name": "정우",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/pVvj4tdP6VcCGHSxhfiFzlBeqxX.jpg"
-            },
-            {
-              "name": "시온",
-              "char": "Self (as NCT WISH)",
-              "photo": "https://image.tmdb.org/t/p/w500/ejgjzndRNCXjDAAjuEB4ONH6s1f.jpg"
-            },
-            {
-              "name": "유우시",
-              "char": "Self (as NCT WISH)",
-              "photo": "https://image.tmdb.org/t/p/w500/aN8G6VXWsTtBVitZ3CeVE37Y9ld.jpg"
-            },
-            {
-              "name": "재희",
-              "char": "Self (as NCT WISH)",
-              "photo": "https://image.tmdb.org/t/p/w500/65FxybWP2yvVyq6lBJNJFE5fuSS.jpg"
-            },
-            {
-              "name": "료",
-              "char": "Self (as NCT WISH)",
-              "photo": "https://image.tmdb.org/t/p/w500/7dMKJX13PhAv5tefRAnFv2IUF2R.jpg"
-            },
-            {
-              "name": "사쿠야",
-              "char": "Self (as NCT WISH)",
-              "photo": "https://image.tmdb.org/t/p/w500/4FVACiUs8EckLA3Xbtfvidpzw2L.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Kyung Chan Kim",
-              "job": "Director"
-            },
-            {
-              "name": "Doyeon Kim",
-              "job": "Director"
-            },
-            {
-              "name": "Soyoung Park",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ko",
-          "origTitle": "NCT 127 5TH TOUR ‘NEO CITY  SEOUL - THE REDLINE’ in CINEMAS",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1740257?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -2191,7 +1733,7 @@
         "origLang": "cs",
         "origTitle": "Franz",
         "platforms": [],
-        "popularity": 3.1936,
+        "popularity": 2.9745,
         "imdbId": "tt17070412",
         "countries": [
           "Czech Republic",
@@ -2454,7 +1996,7 @@
         "origLang": "ko",
         "origTitle": "동화지만 청불입니다",
         "platforms": [],
-        "popularity": 4.6271,
+        "popularity": 4.8412,
         "imdbId": "tt35303960",
         "countries": [
           "South Korea"
@@ -2964,7 +2506,7 @@
         "origLang": "ja",
         "origTitle": "時には懺悔を",
         "platforms": [],
-        "popularity": 2.2735,
+        "popularity": 2.1582,
         "imdbId": "tt36236732",
         "countries": [
           "Japan"
@@ -3188,7 +2730,7 @@
         "origLang": "en",
         "origTitle": "Scotty",
         "platforms": [],
-        "popularity": 1.3855,
+        "popularity": 1.2374,
         "imdbId": "tt31549553",
         "countries": [
           "Germany"
@@ -3338,7 +2880,7 @@
         "origLang": "zh",
         "origTitle": "婚・紗・罩",
         "platforms": [],
-        "popularity": 0.4939,
+        "popularity": 0.4985,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -3458,7 +3000,7 @@
         "origLang": "ko",
         "origTitle": "와인드업: 더 무비",
         "platforms": [],
-        "popularity": 2.137,
+        "popularity": 1.9242,
         "imdbId": "tt43672139",
         "countries": [
           "South Korea"
@@ -3618,7 +3160,7 @@
         "origLang": "ja",
         "origTitle": "死ねばいいのに",
         "platforms": [],
-        "popularity": 0.998,
+        "popularity": 1.0549,
         "imdbId": "tt42477970",
         "countries": [
           "Japan"
@@ -3976,7 +3518,7 @@
         "origLang": "ja",
         "origTitle": "ラブ≠コメディ",
         "platforms": [],
-        "popularity": 0.8434,
+        "popularity": 0.8667,
         "imdbId": "tt43653895",
         "countries": [
           "Japan"
@@ -4067,7 +3609,7 @@
         "origLang": "ko",
         "origTitle": "엔하이픈 브이알콘서트 : 데스티니",
         "platforms": [],
-        "popularity": 1.1876,
+        "popularity": 1.1568,
         "imdbId": null,
         "countries": [],
         "detail": {
@@ -4117,8 +3659,8 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-        "voteAverage": "7.4",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+        "voteAverage": "7.3",
         "genre": [
           "恐怖",
           "科幻",
@@ -4127,17 +3669,17 @@
         "duration": 94,
         "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
         "imdb": "",
-        "rt": "96%",
+        "rt": "95%",
         "mc": "81",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 200,
-            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
+            "votes": 236,
+            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 45,
+            "votes": 47,
             "lastChanged": "2026-09-19T05:14:57.623584+08:00"
           }
         },
@@ -4165,7 +3707,7 @@
           },
           {
             "name": "Johnno Wilson",
-            "char": "Max",
+            "char": "Officer Wilson",
             "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
           },
           {
@@ -4260,8 +3802,8 @@
           ],
           "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
           "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
-          "voteAverage": "7.4",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+          "voteAverage": "7.3",
           "trailerKey": "f6Y2SgaHyCw",
           "imdbId": "tt35538033",
           "countries": [
@@ -4292,7 +3834,7 @@
             },
             {
               "name": "Johnno Wilson",
-              "char": "Max",
+              "char": "Officer Wilson",
               "photo": "https://image.tmdb.org/t/p/w500/eZtBoBE0F7Qb9ZyNpacMOQtmWnM.jpg"
             },
             {
@@ -4373,255 +3915,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1423191?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1507580,
-        "titleZh": "哈姆雷特—Hiran Abeysekera版",
-        "titleEn": "National Theatre Live: Hamlet",
-        "releaseDate": "2026-09-12",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-12",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/g0bgIJHg0qCSkOM0wCTDJG3nKpZ.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/eid7AFjPqVcqsUEkKuOzMsTjwQ5.jpg",
-        "voteAverage": "6.5",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 160,
-        "synopsis": "丹麥王國鬼影幢幢，你可曾窺見端倪？在重重責任與種種疑慮的撕扯中，在至高權力與幾許特權的圍困下，年輕的哈姆雷特王子終將發出那石破天驚的一問——你我都心領神會的永恆詰問。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Hiran Abeysekera",
-            "char": "Hamlet",
-            "photo": "https://image.tmdb.org/t/p/w500/1AcEoZAsUYtRaZCMHE0p9u1xbIs.jpg"
-          },
-          {
-            "name": "阿利斯塔爾·佩特瑞",
-            "char": "Claudius",
-            "photo": "https://image.tmdb.org/t/p/w500/b6KUFhtWtmmTIcs7gL9kZktzJzl.jpg"
-          },
-          {
-            "name": "Geoffrey Streatfeild",
-            "char": "Polonius",
-            "photo": "https://image.tmdb.org/t/p/w500/95ifVdcQFLxNDHZgDyljFPATUuZ.jpg"
-          },
-          {
-            "name": "Ayesha Dharker",
-            "char": "Gertrude",
-            "photo": "https://image.tmdb.org/t/p/w500/6LNt1MmG22qPQxQgRVmoOPfQofQ.jpg"
-          },
-          {
-            "name": "Francesca Mills",
-            "char": "Ophelia",
-            "photo": "https://image.tmdb.org/t/p/w500/iQvDhjHcUzIFYYETimmKq5r0xjH.jpg"
-          },
-          {
-            "name": "Ryan Ellsworth",
-            "char": "Ghost/Player King/First Gravedigger",
-            "photo": "https://image.tmdb.org/t/p/w500/82dIg0CigQo47H06Y54gb7u5lFh.jpg"
-          },
-          {
-            "name": "Tessa Wong",
-            "char": "Horatio",
-            "photo": "https://image.tmdb.org/t/p/w500/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
-          },
-          {
-            "name": "Tom Glenister",
-            "char": "Laertes",
-            "photo": "https://image.tmdb.org/t/p/w500/ud8WGXD27xoF8oBxOL1vHroEAo5.jpg"
-          },
-          {
-            "name": "Phil Cheadle",
-            "char": "Marcellus / Captain",
-            "photo": "https://image.tmdb.org/t/p/w500/4JDkMQsBQ2tEhKjk8bw3dD5u1Wu.jpg"
-          },
-          {
-            "name": "Kiren Kebaili-Dwyer",
-            "char": "Fortinbras",
-            "photo": "https://image.tmdb.org/t/p/w500/6X44DCz89B5nI0sFbPqeb5ZyeY6.jpg"
-          },
-          {
-            "name": "Joe Bolland",
-            "char": "Guildenstern",
-            "photo": null
-          },
-          {
-            "name": "Mary Higgins",
-            "char": "Osric / Voltemand",
-            "photo": "https://image.tmdb.org/t/p/w500/jYQdct2jLldGzxs6PsrzDqbYxQw.jpg"
-          },
-          {
-            "name": "Liz Jadav",
-            "char": "Nurse / Priest",
-            "photo": "https://image.tmdb.org/t/p/w500/ienk34EXxHE7ILVN5GP0XAZ2iwI.jpg"
-          },
-          {
-            "name": "Hari Mackinnon",
-            "char": "Rosencrantz",
-            "photo": null
-          },
-          {
-            "name": "Sophia Papadopoulos",
-            "char": "Cornelius / English Ambassador / Second Gravedigger",
-            "photo": null
-          },
-          {
-            "name": "Siobhan Redmond",
-            "char": "First Player",
-            "photo": "https://image.tmdb.org/t/p/w500/sxWG5sNKmjKgCCGpiK6ZI3sLKyo.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Robert Hastie",
-            "job": "Director"
-          },
-          {
-            "name": "Christine Lalla",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "National Theatre Live: Hamlet",
-        "platforms": [],
-        "popularity": 1.4845,
-        "imdbId": "tt37511206",
-        "countries": [
-          "United Kingdom"
-        ],
-        "detail": {
-          "duration": 160,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "丹麥王國鬼影幢幢，你可曾窺見端倪？在重重責任與種種疑慮的撕扯中，在至高權力與幾許特權的圍困下，年輕的哈姆雷特王子終將發出那石破天驚的一問——你我都心領神會的永恆詰問。",
-          "poster": "https://image.tmdb.org/t/p/w500/g0bgIJHg0qCSkOM0wCTDJG3nKpZ.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/eid7AFjPqVcqsUEkKuOzMsTjwQ5.jpg",
-          "voteAverage": "6.5",
-          "trailerKey": null,
-          "imdbId": "tt37511206",
-          "countries": [
-            "United Kingdom"
-          ],
-          "cast": [
-            {
-              "name": "Hiran Abeysekera",
-              "char": "Hamlet",
-              "photo": "https://image.tmdb.org/t/p/w500/1AcEoZAsUYtRaZCMHE0p9u1xbIs.jpg"
-            },
-            {
-              "name": "阿利斯塔爾·佩特瑞",
-              "char": "Claudius",
-              "photo": "https://image.tmdb.org/t/p/w500/b6KUFhtWtmmTIcs7gL9kZktzJzl.jpg"
-            },
-            {
-              "name": "Geoffrey Streatfeild",
-              "char": "Polonius",
-              "photo": "https://image.tmdb.org/t/p/w500/95ifVdcQFLxNDHZgDyljFPATUuZ.jpg"
-            },
-            {
-              "name": "Ayesha Dharker",
-              "char": "Gertrude",
-              "photo": "https://image.tmdb.org/t/p/w500/6LNt1MmG22qPQxQgRVmoOPfQofQ.jpg"
-            },
-            {
-              "name": "Francesca Mills",
-              "char": "Ophelia",
-              "photo": "https://image.tmdb.org/t/p/w500/iQvDhjHcUzIFYYETimmKq5r0xjH.jpg"
-            },
-            {
-              "name": "Ryan Ellsworth",
-              "char": "Ghost/Player King/First Gravedigger",
-              "photo": "https://image.tmdb.org/t/p/w500/82dIg0CigQo47H06Y54gb7u5lFh.jpg"
-            },
-            {
-              "name": "Tessa Wong",
-              "char": "Horatio",
-              "photo": "https://image.tmdb.org/t/p/w500/8bgwte22fpOPlPtBtItxYBk5HjT.jpg"
-            },
-            {
-              "name": "Tom Glenister",
-              "char": "Laertes",
-              "photo": "https://image.tmdb.org/t/p/w500/ud8WGXD27xoF8oBxOL1vHroEAo5.jpg"
-            },
-            {
-              "name": "Phil Cheadle",
-              "char": "Marcellus / Captain",
-              "photo": "https://image.tmdb.org/t/p/w500/4JDkMQsBQ2tEhKjk8bw3dD5u1Wu.jpg"
-            },
-            {
-              "name": "Kiren Kebaili-Dwyer",
-              "char": "Fortinbras",
-              "photo": "https://image.tmdb.org/t/p/w500/6X44DCz89B5nI0sFbPqeb5ZyeY6.jpg"
-            },
-            {
-              "name": "Joe Bolland",
-              "char": "Guildenstern",
-              "photo": null
-            },
-            {
-              "name": "Mary Higgins",
-              "char": "Osric / Voltemand",
-              "photo": "https://image.tmdb.org/t/p/w500/jYQdct2jLldGzxs6PsrzDqbYxQw.jpg"
-            },
-            {
-              "name": "Liz Jadav",
-              "char": "Nurse / Priest",
-              "photo": "https://image.tmdb.org/t/p/w500/ienk34EXxHE7ILVN5GP0XAZ2iwI.jpg"
-            },
-            {
-              "name": "Hari Mackinnon",
-              "char": "Rosencrantz",
-              "photo": null
-            },
-            {
-              "name": "Sophia Papadopoulos",
-              "char": "Cornelius / English Ambassador / Second Gravedigger",
-              "photo": null
-            },
-            {
-              "name": "Siobhan Redmond",
-              "char": "First Player",
-              "photo": "https://image.tmdb.org/t/p/w500/sxWG5sNKmjKgCCGpiK6ZI3sLKyo.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Robert Hastie",
-              "job": "Director"
-            },
-            {
-              "name": "Christine Lalla",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "National Theatre Live: Hamlet",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1507580?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -4761,7 +4054,7 @@
         "origLang": "ja",
         "origTitle": "ONE PIECE FILM Z",
         "platforms": [],
-        "popularity": 8.7625,
+        "popularity": 8.3594,
         "imdbId": "tt2375379",
         "countries": [
           "Japan"
@@ -4959,7 +4252,7 @@
             "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
           }
         ],
-        "popularity": 2.2914,
+        "popularity": 2.1728,
         "imdbId": "tt1893269",
         "countries": [
           "Japan",
@@ -5745,7 +5038,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 8.5647,
+        "popularity": 7.9283,
         "imdbId": "tt0111495",
         "countries": [
           "France",
@@ -6013,11 +5306,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -6035,7 +5328,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.6744,
+        "popularity": 4.6636,
         "imdbId": "tt0101765",
         "countries": [
           "France",
@@ -6144,11 +5437,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -6295,12 +5588,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -6412,12 +5705,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -6561,7 +5854,7 @@
         "origLang": "ko",
         "origTitle": "경주기행",
         "platforms": [],
-        "popularity": 3.3888,
+        "popularity": 3.1881,
         "imdbId": "tt38814489",
         "countries": [
           "South Korea"
@@ -6818,11 +6111,11 @@
         "crew": [
           {
             "name": "約翰·卡尼",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "約翰·卡尼",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Peter McDonald",
@@ -6835,7 +6128,7 @@
         "origLang": "en",
         "origTitle": "Power Ballad",
         "platforms": [],
-        "popularity": 10.6132,
+        "popularity": 9.2782,
         "imdbId": "tt32267691",
         "countries": [
           "Ireland",
@@ -6943,11 +6236,11 @@
           "crew": [
             {
               "name": "約翰·卡尼",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "約翰·卡尼",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Peter McDonald",
@@ -7382,7 +6675,7 @@
         "origLang": "en",
         "origTitle": "Palestine 36",
         "platforms": [],
-        "popularity": 6.1181,
+        "popularity": 5.5973,
         "imdbId": "tt29271622",
         "countries": [
           "Palestinian Territory",
@@ -7592,7 +6885,7 @@
         "origLang": "zh",
         "origTitle": "大仙尪仔",
         "platforms": [],
-        "popularity": 0.6974,
+        "popularity": 0.6266,
         "imdbId": "tt43659346",
         "countries": [
           "Taiwan"
@@ -7690,7 +6983,7 @@
         "duration": 100,
         "synopsis": "一心以成為漫畫家為目標的兩位少女藤野、京本之間青春動人的故事。",
         "imdb": "8.0",
-        "rt": "86%",
+        "rt": "87%",
         "mc": "73",
         "ratingMeta": {
           "imdb": {
@@ -7700,8 +6993,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 22,
-            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
+            "votes": 23,
+            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -7783,7 +7076,7 @@
         "origLang": "ja",
         "origTitle": "ルックバック",
         "platforms": [],
-        "popularity": 4.2948,
+        "popularity": 4.6225,
         "imdbId": "tt39094466",
         "countries": [
           "Japan"
@@ -8133,11 +7426,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -8146,7 +7439,7 @@
         "origLang": "zh",
         "origTitle": "怎麼可能我家的祖先是你家的鬼",
         "platforms": [],
-        "popularity": 1.2953,
+        "popularity": 1.1135,
         "imdbId": "tt43560584",
         "countries": [
           "Taiwan"
@@ -8206,11 +7499,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -8373,7 +7666,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.7647,
+        "popularity": 4.4663,
         "imdbId": "tt1483797",
         "countries": [
           "Japan"
@@ -8641,11 +7934,11 @@
             "job": "Director"
           },
           {
-            "name": "Joachim Trier",
+            "name": "Eskil Vogt",
             "job": "Writer"
           },
           {
-            "name": "Eskil Vogt",
+            "name": "Joachim Trier",
             "job": "Writer"
           }
         ],
@@ -8660,7 +7953,7 @@
             "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
           }
         ],
-        "popularity": 13.9324,
+        "popularity": 12.2354,
         "imdbId": "tt10370710",
         "countries": [
           "Norway",
@@ -8775,11 +8068,11 @@
               "job": "Director"
             },
             {
-              "name": "Joachim Trier",
+              "name": "Eskil Vogt",
               "job": "Writer"
             },
             {
-              "name": "Eskil Vogt",
+              "name": "Joachim Trier",
               "job": "Writer"
             }
           ],
@@ -8903,7 +8196,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
         "platforms": [],
-        "popularity": 29.6861,
+        "popularity": 27.1888,
         "imdbId": "tt14523706",
         "countries": [
           "Japan"
@@ -9066,11 +8359,6 @@
             "photo": "https://image.tmdb.org/t/p/w500/AfQFFyGeG9xOQnEJb1Ash1RomkP.jpg"
           },
           {
-            "name": "이상희",
-            "char": "Nak-yeon",
-            "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
-          },
-          {
             "name": "艾莉西亞·薇坎德",
             "char": "J'aur",
             "photo": "https://image.tmdb.org/t/p/w500/lZu8qiTwiQIN96cuptgqMCCaUtg.jpg"
@@ -9091,9 +8379,9 @@
             "photo": "https://image.tmdb.org/t/p/w500/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg"
           },
           {
-            "name": "黃石正",
-            "char": "Head of Health Center",
-            "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
+            "name": "이상희",
+            "char": "Nak-yeon",
+            "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
           },
           {
             "name": "音文碩",
@@ -9104,6 +8392,11 @@
             "name": "임현식",
             "char": "Hae-sul",
             "photo": "https://image.tmdb.org/t/p/w500/syQMfT7qchOwKDMXc3vQB57v1ZL.jpg"
+          },
+          {
+            "name": "黃石正",
+            "char": "Head of Health Center",
+            "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
           },
           {
             "name": "한우열",
@@ -9147,7 +8440,7 @@
         "origLang": "ko",
         "origTitle": "호프",
         "platforms": [],
-        "popularity": 80.4913,
+        "popularity": 69.9905,
         "imdbId": "tt27369017",
         "countries": [
           "South Korea"
@@ -9185,11 +8478,6 @@
               "photo": "https://image.tmdb.org/t/p/w500/AfQFFyGeG9xOQnEJb1Ash1RomkP.jpg"
             },
             {
-              "name": "이상희",
-              "char": "Nak-yeon",
-              "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
-            },
-            {
               "name": "艾莉西亞·薇坎德",
               "char": "J'aur",
               "photo": "https://image.tmdb.org/t/p/w500/lZu8qiTwiQIN96cuptgqMCCaUtg.jpg"
@@ -9210,9 +8498,9 @@
               "photo": "https://image.tmdb.org/t/p/w500/9HFxi8ZnBiby3AQ7tBOPDxXFkCT.jpg"
             },
             {
-              "name": "黃石正",
-              "char": "Head of Health Center",
-              "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
+              "name": "이상희",
+              "char": "Nak-yeon",
+              "photo": "https://image.tmdb.org/t/p/w500/wOYFSg20yGe48VFALqGAlrLjFHV.jpg"
             },
             {
               "name": "音文碩",
@@ -9223,6 +8511,11 @@
               "name": "임현식",
               "char": "Hae-sul",
               "photo": "https://image.tmdb.org/t/p/w500/syQMfT7qchOwKDMXc3vQB57v1ZL.jpg"
+            },
+            {
+              "name": "黃石正",
+              "char": "Head of Health Center",
+              "photo": "https://image.tmdb.org/t/p/w500/MEhgvZBDS890lfCSeUwHxWL3Xh.jpg"
             },
             {
               "name": "한우열",
@@ -9289,7 +8582,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
-        "voteAverage": "6.6",
+        "voteAverage": "6.4",
         "genre": [
           "驚悚"
         ],
@@ -9400,16 +8693,16 @@
         ],
         "crew": [
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Jonathan Frank",
+            "job": "Writer"
           },
           {
             "name": "Peter Spierig",
             "job": "Director"
           },
           {
-            "name": "Scott Mann",
-            "job": "Writer"
+            "name": "Michael Spierig",
+            "job": "Director"
           }
         ],
         "budget": 3000000,
@@ -9432,7 +8725,7 @@
           "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
-          "voteAverage": "6.6",
+          "voteAverage": "6.4",
           "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
@@ -9523,16 +8816,16 @@
           ],
           "crew": [
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Jonathan Frank",
+              "job": "Writer"
             },
             {
               "name": "Peter Spierig",
               "job": "Director"
             },
             {
-              "name": "Scott Mann",
-              "job": "Writer"
+              "name": "Michael Spierig",
+              "job": "Director"
             }
           ],
           "budget": 3000000,
@@ -9543,428 +8836,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1101412?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1509612,
-        "titleZh": "最後的作業",
-        "titleEn": "마지막 숙제",
-        "releaseDate": "2026-09-04",
-        "releaseYear": "2025",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
-        "voteAverage": "5.5",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 109,
-        "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
-        "imdb": "6.3",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 16,
-            "lastChanged": "2026-09-19T10:25:35.153327+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "嚴泰雄",
-            "char": "Kim Yeong-nam",
-            "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
-          },
-          {
-            "name": "박상면",
-            "char": "Vice Principal",
-            "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
-          },
-          {
-            "name": "전수경",
-            "char": "Principal",
-            "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
-          },
-          {
-            "name": "윤현숙",
-            "char": "PTA President",
-            "photo": null
-          },
-          {
-            "name": "최이나",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "남대협",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "홍정민",
-            "char": "Eun-bi",
-            "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
-          },
-          {
-            "name": "이재준",
-            "char": "Joon-soo",
-            "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
-          },
-          {
-            "name": "조재영",
-            "char": "Chang-il",
-            "photo": null
-          },
-          {
-            "name": "임한빈",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
-          },
-          {
-            "name": "한창민",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
-          },
-          {
-            "name": "도연",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "이성종",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "이정철",
-            "job": "Director"
-          },
-          {
-            "name": "최석환",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ko",
-        "origTitle": "마지막 숙제",
-        "platforms": [],
-        "popularity": 0.7497,
-        "imdbId": "tt34539004",
-        "countries": [
-          "South Korea"
-        ],
-        "detail": {
-          "duration": 109,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "在競爭激烈、階級意識悄悄滲入校園的都市裡，一名背負過去傷痕與歉意的老師金英男，來到江南一所私立小學，擔任四年三班的代理導師。他曾經身處升學競爭最殘酷的體制中心，也因過去的選擇留下難以抹去的遺憾；如今，他帶著沉重的懺悔走進教室，試著用不同於以往的方式，重新理解教育，也重新面對自己的人生。",
-          "poster": "https://image.tmdb.org/t/p/w500/jj22QNr3GAu0yjfeUSp8Uyk4Q5v.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/skN5xKDmxVFcqy9bL8HUfb4u4QT.jpg",
-          "voteAverage": "5.5",
-          "trailerKey": null,
-          "imdbId": "tt34539004",
-          "countries": [
-            "South Korea"
-          ],
-          "cast": [
-            {
-              "name": "嚴泰雄",
-              "char": "Kim Yeong-nam",
-              "photo": "https://image.tmdb.org/t/p/w500/i7HVXuJXAVcQIEmfOWJFtZcA92S.jpg"
-            },
-            {
-              "name": "박상면",
-              "char": "Vice Principal",
-              "photo": "https://image.tmdb.org/t/p/w500/a5zfhhfSpc32BLAGMXloVm6vglL.jpg"
-            },
-            {
-              "name": "전수경",
-              "char": "Principal",
-              "photo": "https://image.tmdb.org/t/p/w500/aCU4zek584nZscfrymE8hgDBIXT.jpg"
-            },
-            {
-              "name": "윤현숙",
-              "char": "PTA President",
-              "photo": null
-            },
-            {
-              "name": "최이나",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "남대협",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "홍정민",
-              "char": "Eun-bi",
-              "photo": "https://image.tmdb.org/t/p/w500/wzNSb977QuCRQmqk9zSbn24MLyq.jpg"
-            },
-            {
-              "name": "이재준",
-              "char": "Joon-soo",
-              "photo": "https://image.tmdb.org/t/p/w500/6H36FrQNFrNDuKr08wvB2YIMROV.jpg"
-            },
-            {
-              "name": "조재영",
-              "char": "Chang-il",
-              "photo": null
-            },
-            {
-              "name": "임한빈",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/u5TB3kZhNBEptEzW4Yg2N5hKx2T.jpg"
-            },
-            {
-              "name": "한창민",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/8szz32yBuQVkFodjTohglKF7p1X.jpg"
-            },
-            {
-              "name": "도연",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "이성종",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/wYlbaWusNjFOlLC4dQNFsrQySKK.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "이정철",
-              "job": "Director"
-            },
-            {
-              "name": "최석환",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ko",
-          "origTitle": "마지막 숙제",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1509612?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1516724,
-        "titleZh": "今晚我想來點棒的",
-        "titleEn": "Pour le plaisir",
-        "releaseDate": "2026-09-04",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-04",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
-        "voteAverage": "6.2",
-        "genre": [
-          "喜劇"
-        ],
-        "duration": 95,
-        "synopsis": "芬妮和發明家湯姆結婚二十年，婚姻幸福美滿，但芬妮有個令她煩惱的小祕密：她從未體驗過性高潮！得知此事的湯姆既生氣又沮喪，但深愛芬妮的他決定運用長才，要設計出一個能讓女性獲得快感的劃時代情趣玩具！",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "O6S_WKOIOoA",
-        "cast": [
-          {
-            "name": "Alexandra Lamy",
-            "char": "Fanny",
-            "photo": "https://image.tmdb.org/t/p/w500/m52fdEhVo6sBjEhgyM6bqFwC1HA.jpg"
-          },
-          {
-            "name": "François Cluzet",
-            "char": "Thomas",
-            "photo": "https://image.tmdb.org/t/p/w500/f6PO7Lkrem1N4UmklxHro2k6Jto.jpg"
-          },
-          {
-            "name": "Mitty Hazanavicius",
-            "char": "Elsa",
-            "photo": "https://image.tmdb.org/t/p/w500/4WzOf2T2NOlgG1t9k8SNMCfyhth.jpg"
-          },
-          {
-            "name": "Delphine Baril",
-            "char": "Pauline",
-            "photo": "https://image.tmdb.org/t/p/w500/571fTrSLspp8xPGkwwBUpKhl884.jpg"
-          },
-          {
-            "name": "François-Xavier Demaison",
-            "char": "Serge",
-            "photo": "https://image.tmdb.org/t/p/w500/u2WWC1YAJuZLLk6Ho4IzhNAozqe.jpg"
-          },
-          {
-            "name": "Reem Kherici",
-            "char": "Caroline",
-            "photo": "https://image.tmdb.org/t/p/w500/nfOOJB41gb0aFrPxfyF3u3i4HZn.jpg"
-          },
-          {
-            "name": "Kyan Khojandi",
-            "char": "Pierre",
-            "photo": "https://image.tmdb.org/t/p/w500/e2XcdnMz6hCVz4skEZXjsEr9A72.jpg"
-          },
-          {
-            "name": "Camille Aumont Carnel",
-            "char": "Camille",
-            "photo": null
-          },
-          {
-            "name": "François Bureloup",
-            "char": "Le gyneco",
-            "photo": "https://image.tmdb.org/t/p/w500/d9I0Qspe7U7V0VO1yMntaRvSG39.jpg"
-          },
-          {
-            "name": "Huguette Lacheau",
-            "char": "Odile",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Reem Kherici",
-            "job": "Director"
-          },
-          {
-            "name": "Reem Kherici",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Gari Kikoïne",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 7164147,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "Pour le plaisir",
-        "platforms": [],
-        "popularity": 15.3537,
-        "imdbId": "tt38607784",
-        "countries": [
-          "France"
-        ],
-        "detail": {
-          "duration": 95,
-          "genres": [
-            "喜劇"
-          ],
-          "synopsis": "芬妮和發明家湯姆結婚二十年，婚姻幸福美滿，但芬妮有個令她煩惱的小祕密：她從未體驗過性高潮！得知此事的湯姆既生氣又沮喪，但深愛芬妮的他決定運用長才，要設計出一個能讓女性獲得快感的劃時代情趣玩具！",
-          "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
-          "voteAverage": "6.2",
-          "trailerKey": "O6S_WKOIOoA",
-          "imdbId": "tt38607784",
-          "countries": [
-            "France"
-          ],
-          "cast": [
-            {
-              "name": "Alexandra Lamy",
-              "char": "Fanny",
-              "photo": "https://image.tmdb.org/t/p/w500/m52fdEhVo6sBjEhgyM6bqFwC1HA.jpg"
-            },
-            {
-              "name": "François Cluzet",
-              "char": "Thomas",
-              "photo": "https://image.tmdb.org/t/p/w500/f6PO7Lkrem1N4UmklxHro2k6Jto.jpg"
-            },
-            {
-              "name": "Mitty Hazanavicius",
-              "char": "Elsa",
-              "photo": "https://image.tmdb.org/t/p/w500/4WzOf2T2NOlgG1t9k8SNMCfyhth.jpg"
-            },
-            {
-              "name": "Delphine Baril",
-              "char": "Pauline",
-              "photo": "https://image.tmdb.org/t/p/w500/571fTrSLspp8xPGkwwBUpKhl884.jpg"
-            },
-            {
-              "name": "François-Xavier Demaison",
-              "char": "Serge",
-              "photo": "https://image.tmdb.org/t/p/w500/u2WWC1YAJuZLLk6Ho4IzhNAozqe.jpg"
-            },
-            {
-              "name": "Reem Kherici",
-              "char": "Caroline",
-              "photo": "https://image.tmdb.org/t/p/w500/nfOOJB41gb0aFrPxfyF3u3i4HZn.jpg"
-            },
-            {
-              "name": "Kyan Khojandi",
-              "char": "Pierre",
-              "photo": "https://image.tmdb.org/t/p/w500/e2XcdnMz6hCVz4skEZXjsEr9A72.jpg"
-            },
-            {
-              "name": "Camille Aumont Carnel",
-              "char": "Camille",
-              "photo": null
-            },
-            {
-              "name": "François Bureloup",
-              "char": "Le gyneco",
-              "photo": "https://image.tmdb.org/t/p/w500/d9I0Qspe7U7V0VO1yMntaRvSG39.jpg"
-            },
-            {
-              "name": "Huguette Lacheau",
-              "char": "Odile",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Reem Kherici",
-              "job": "Director"
-            },
-            {
-              "name": "Reem Kherici",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Gari Kikoïne",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 7164147,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "Pour le plaisir",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1516724?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -10069,7 +8940,7 @@
         "origLang": "de",
         "origTitle": "Der verlorene Mann",
         "platforms": [],
-        "popularity": 3.0477,
+        "popularity": 2.6842,
         "imdbId": "tt39602467",
         "countries": [
           "Germany"
@@ -10207,7 +9078,7 @@
         "origLang": "zh",
         "origTitle": "我的爸爸是死刑犯",
         "platforms": [],
-        "popularity": 1.0681,
+        "popularity": 1.1091,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -10339,7 +9210,7 @@
         "origLang": "ja",
         "origTitle": "白鳥とコウモリ",
         "platforms": [],
-        "popularity": 1.4129,
+        "popularity": 1.4043,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -10556,7 +9427,7 @@
         "origLang": "ja",
         "origTitle": "THE ORIGIN OF ULTRAMAN",
         "platforms": [],
-        "popularity": 2.2208,
+        "popularity": 2.1654,
         "imdbId": "tt43564240",
         "countries": [
           "Japan"
@@ -10685,7 +9556,7 @@
         "titleEn": "GHOST IN THE SHELL / 攻殻機動隊",
         "releaseDate": "2026-08-28",
         "releaseYear": "1995",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-08-28",
@@ -11068,16 +9939,16 @@
         ],
         "crew": [
           {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
             "name": "Eskil Vogt",
             "job": "Screenplay"
           },
           {
             "name": "Joachim Trier",
             "job": "Screenplay"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -11091,7 +9962,7 @@
             "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
           }
         ],
-        "popularity": 4.8937,
+        "popularity": 4.4856,
         "imdbId": "tt1736633",
         "countries": [
           "Norway"
@@ -11184,16 +10055,16 @@
           ],
           "crew": [
             {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
               "name": "Eskil Vogt",
               "job": "Screenplay"
             },
             {
               "name": "Joachim Trier",
               "job": "Screenplay"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -11406,6 +10277,270 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/950028?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1283671,
+        "titleZh": "世界末日愛上你",
+        "titleEn": "Amour Apocalypse",
+        "releaseDate": "2026-08-28",
+        "releaseYear": "2025",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-28",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/cnsFTztgJ749rI4i2FApoXFqK9I.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wKPevTkODWTjWf4xWGkrXGbg9Xi.jpg",
+        "voteAverage": "6.2",
+        "genre": [
+          "喜劇",
+          "愛情",
+          "劇情"
+        ],
+        "duration": 100,
+        "synopsis": "經營犬舍的亞當，儘管努力保持身心健康，仍難以克服末日逼近的危機感。某天他撥了光療燈客服專線，結識了一名聲音溫柔的神祕女子。兩人隔著電話建立起微妙連結，也悄悄鬆動了他對現實世界的認知，帶著突如其來的愛與希望，亞當踏上了尋找真愛的旅程。",
+        "imdb": "6.2",
+        "rt": "75%",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 661,
+            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 24,
+            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
+          }
+        },
+        "trailerKey": "ad5udu6ozNU",
+        "cast": [
+          {
+            "name": "Patrick Hivon",
+            "char": "Adam",
+            "photo": "https://image.tmdb.org/t/p/w500/hFzf98t22oW5JHBYgdoRnjojzKp.jpg"
+          },
+          {
+            "name": "潘波‧裴拉柏",
+            "char": "Tina",
+            "photo": "https://image.tmdb.org/t/p/w500/5XrzISDEox0KubRDzJU668Oxmxy.jpg"
+          },
+          {
+            "name": "Gilles Renaud",
+            "char": "Eugène",
+            "photo": "https://image.tmdb.org/t/p/w500/lQprp6pM0i3xxA8MIG9OjkDlnS0.jpg"
+          },
+          {
+            "name": "Elizabeth Mageren",
+            "char": "Romy",
+            "photo": "https://image.tmdb.org/t/p/w500/xzGjBsJwSG0hQMlkpR2agM337j8.jpg"
+          },
+          {
+            "name": "艾瑞克·卡馬拉·布利安納",
+            "char": "Frank",
+            "photo": "https://image.tmdb.org/t/p/w500/rZidIbEwjMGkbng8cG8skbDKYnX.jpg"
+          },
+          {
+            "name": "康納·傑瑟普",
+            "char": "Tom",
+            "photo": "https://image.tmdb.org/t/p/w500/uVhhVxdK0uUcawfEE3Jp2YYKFRv.jpg"
+          },
+          {
+            "name": "Leona Son",
+            "char": "Rose",
+            "photo": null
+          },
+          {
+            "name": "Sienna Feghouli",
+            "char": "Taylor",
+            "photo": null
+          },
+          {
+            "name": "Gord Rand",
+            "char": "Scott",
+            "photo": "https://image.tmdb.org/t/p/w500/2CP7bwZJdnftD5OZv6yGJLsWVNu.jpg"
+          },
+          {
+            "name": "Patrick Garrow",
+            "char": "Mickey",
+            "photo": "https://image.tmdb.org/t/p/w500/gWu8E3zYnwBVa5zTZzQP3JO1uLI.jpg"
+          },
+          {
+            "name": "Denis Houle",
+            "char": "Denis",
+            "photo": "https://image.tmdb.org/t/p/w500/vJ25yWZSYBDsAXXDPLLUK9o4Ipj.jpg"
+          },
+          {
+            "name": "Jean-Carl Boucher",
+            "char": "Simon",
+            "photo": "https://image.tmdb.org/t/p/w500/nJg4gYoX7Mwobtm0YE6nvY0PCtn.jpg"
+          },
+          {
+            "name": "Fabiola N. Aladin",
+            "char": "Kathleen",
+            "photo": "https://image.tmdb.org/t/p/w500/oDGPAVZT1lHPCJwThIT2j9l83SH.jpg"
+          },
+          {
+            "name": "Benoît Mauffette",
+            "char": "René",
+            "photo": "https://image.tmdb.org/t/p/w500/m0Cny4VRjz84Y46YHk1liJwym5l.jpg"
+          },
+          {
+            "name": "Arlen Aguayo-Stewart",
+            "char": "Catalina",
+            "photo": "https://image.tmdb.org/t/p/w500/2oockOLP6BVShcdJFkSiqygQY3h.jpg"
+          },
+          {
+            "name": "Martin Dubreuil",
+            "char": "M. Veilleux",
+            "photo": "https://image.tmdb.org/t/p/w500/tKbSHYYoa6duLm3l0MxDg26Z3fY.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Anne Émond",
+            "job": "Director"
+          },
+          {
+            "name": "Anne Émond",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Amour Apocalypse",
+        "platforms": [],
+        "popularity": 4.1948,
+        "imdbId": "tt33335204",
+        "countries": [
+          "Canada"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "喜劇",
+            "愛情",
+            "劇情"
+          ],
+          "synopsis": "經營犬舍的亞當，儘管努力保持身心健康，仍難以克服末日逼近的危機感。某天他撥了光療燈客服專線，結識了一名聲音溫柔的神祕女子。兩人隔著電話建立起微妙連結，也悄悄鬆動了他對現實世界的認知，帶著突如其來的愛與希望，亞當踏上了尋找真愛的旅程。",
+          "poster": "https://image.tmdb.org/t/p/w500/cnsFTztgJ749rI4i2FApoXFqK9I.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/wKPevTkODWTjWf4xWGkrXGbg9Xi.jpg",
+          "voteAverage": "6.2",
+          "trailerKey": "ad5udu6ozNU",
+          "imdbId": "tt33335204",
+          "countries": [
+            "Canada"
+          ],
+          "cast": [
+            {
+              "name": "Patrick Hivon",
+              "char": "Adam",
+              "photo": "https://image.tmdb.org/t/p/w500/hFzf98t22oW5JHBYgdoRnjojzKp.jpg"
+            },
+            {
+              "name": "潘波‧裴拉柏",
+              "char": "Tina",
+              "photo": "https://image.tmdb.org/t/p/w500/5XrzISDEox0KubRDzJU668Oxmxy.jpg"
+            },
+            {
+              "name": "Gilles Renaud",
+              "char": "Eugène",
+              "photo": "https://image.tmdb.org/t/p/w500/lQprp6pM0i3xxA8MIG9OjkDlnS0.jpg"
+            },
+            {
+              "name": "Elizabeth Mageren",
+              "char": "Romy",
+              "photo": "https://image.tmdb.org/t/p/w500/xzGjBsJwSG0hQMlkpR2agM337j8.jpg"
+            },
+            {
+              "name": "艾瑞克·卡馬拉·布利安納",
+              "char": "Frank",
+              "photo": "https://image.tmdb.org/t/p/w500/rZidIbEwjMGkbng8cG8skbDKYnX.jpg"
+            },
+            {
+              "name": "康納·傑瑟普",
+              "char": "Tom",
+              "photo": "https://image.tmdb.org/t/p/w500/uVhhVxdK0uUcawfEE3Jp2YYKFRv.jpg"
+            },
+            {
+              "name": "Leona Son",
+              "char": "Rose",
+              "photo": null
+            },
+            {
+              "name": "Sienna Feghouli",
+              "char": "Taylor",
+              "photo": null
+            },
+            {
+              "name": "Gord Rand",
+              "char": "Scott",
+              "photo": "https://image.tmdb.org/t/p/w500/2CP7bwZJdnftD5OZv6yGJLsWVNu.jpg"
+            },
+            {
+              "name": "Patrick Garrow",
+              "char": "Mickey",
+              "photo": "https://image.tmdb.org/t/p/w500/gWu8E3zYnwBVa5zTZzQP3JO1uLI.jpg"
+            },
+            {
+              "name": "Denis Houle",
+              "char": "Denis",
+              "photo": "https://image.tmdb.org/t/p/w500/vJ25yWZSYBDsAXXDPLLUK9o4Ipj.jpg"
+            },
+            {
+              "name": "Jean-Carl Boucher",
+              "char": "Simon",
+              "photo": "https://image.tmdb.org/t/p/w500/nJg4gYoX7Mwobtm0YE6nvY0PCtn.jpg"
+            },
+            {
+              "name": "Fabiola N. Aladin",
+              "char": "Kathleen",
+              "photo": "https://image.tmdb.org/t/p/w500/oDGPAVZT1lHPCJwThIT2j9l83SH.jpg"
+            },
+            {
+              "name": "Benoît Mauffette",
+              "char": "René",
+              "photo": "https://image.tmdb.org/t/p/w500/m0Cny4VRjz84Y46YHk1liJwym5l.jpg"
+            },
+            {
+              "name": "Arlen Aguayo-Stewart",
+              "char": "Catalina",
+              "photo": "https://image.tmdb.org/t/p/w500/2oockOLP6BVShcdJFkSiqygQY3h.jpg"
+            },
+            {
+              "name": "Martin Dubreuil",
+              "char": "M. Veilleux",
+              "photo": "https://image.tmdb.org/t/p/w500/tKbSHYYoa6duLm3l0MxDg26Z3fY.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Anne Émond",
+              "job": "Director"
+            },
+            {
+              "name": "Anne Émond",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Amour Apocalypse",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1283671?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -12502,7 +11637,7 @@
         "origLang": "en",
         "origTitle": "The Dog Stars",
         "platforms": [],
-        "popularity": 47.5229,
+        "popularity": 43.9697,
         "imdbId": "tt21285562",
         "countries": [
           "United States of America"
@@ -12744,7 +11879,7 @@
         "origLang": "zh",
         "origTitle": "粽邪4：坤蒂拉娜",
         "platforms": [],
-        "popularity": 25.2182,
+        "popularity": 22.5777,
         "imdbId": "tt38633224",
         "countries": [
           "Taiwan"
@@ -13116,6 +12251,289 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 12197,
+        "titleZh": "愛重奏",
+        "titleEn": "Reprise",
+        "releaseDate": "2026-08-21",
+        "releaseYear": "2006",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-21",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/879vY5qEXV33Zlr8SeQp2nsgJlA.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/l9OZmtjVoFhicaY0PtdmTRKiaSR.jpg",
+        "voteAverage": "7.1",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 107,
+        "synopsis": "伊利和菲利普這對死黨都懷著作家夢，他們相約寄出第一部作品後，迎來了截然不同的際遇。菲利普憑著過人才氣在文壇迅速竄紅，卻又瞬間陷入憂鬱；伊利雖然出師不利，但他仍不放棄地持續努力。半年後，菲利普的狀況改善許多，伊利的寫作技巧也突飛猛進，但兩人的未來會就此一帆風順嗎？",
+        "imdb": "7.3",
+        "rt": "88%",
+        "mc": "79",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 16018,
+            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 25,
+            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
+          }
+        },
+        "trailerKey": "g_K7lAf9-uM",
+        "cast": [
+          {
+            "name": "Anders Danielsen Lie",
+            "char": "Philipp",
+            "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
+          },
+          {
+            "name": "Espen Klouman Høiner",
+            "char": "Erik",
+            "photo": "https://image.tmdb.org/t/p/w500/kJK72kZDtO7nqi8BUONhvxrQDYy.jpg"
+          },
+          {
+            "name": "Viktoria Winge",
+            "char": "Kari",
+            "photo": "https://image.tmdb.org/t/p/w500/kxPhO9diaYveo40HAZiJaHQIXmT.jpg"
+          },
+          {
+            "name": "Christian Rubeck",
+            "char": "Lars",
+            "photo": "https://image.tmdb.org/t/p/w500/gZ7f4zkmX8hluHkP6OCLpiofQNC.jpg"
+          },
+          {
+            "name": "Henrik Elvestad",
+            "char": "Henning",
+            "photo": "https://image.tmdb.org/t/p/w500/osMxZszOCEEmLFMK5ZH2HoaUJhR.jpg"
+          },
+          {
+            "name": "歐德-馬格努斯·威廉姆森",
+            "char": "Morten",
+            "photo": "https://image.tmdb.org/t/p/w500/clkF2apRZNcRzswp60eKvL5Jc0d.jpg"
+          },
+          {
+            "name": "Pål Stokka",
+            "char": "Geir",
+            "photo": "https://image.tmdb.org/t/p/w500/uEXlNU32UTCktc6FffQ9r3cJb7D.jpg"
+          },
+          {
+            "name": "Henrik Mestad",
+            "char": "Jan",
+            "photo": "https://image.tmdb.org/t/p/w500/uhUKVFGEPP4168ulWUsz3GISn4a.jpg"
+          },
+          {
+            "name": "Thorbjørn Harr",
+            "char": "Mathis Wergeland",
+            "photo": "https://image.tmdb.org/t/p/w500/hqBkuGoISmRB5O8t6RkKcHv3bZA.jpg"
+          },
+          {
+            "name": "Rebekka Karijord",
+            "char": "Johanne",
+            "photo": "https://image.tmdb.org/t/p/w500/qpWXwOqIUHCJTIVba7rZ60lMpmP.jpg"
+          },
+          {
+            "name": "Sigmund Sæverud",
+            "char": "Sten Egil Dahl",
+            "photo": "https://image.tmdb.org/t/p/w500/kD5TN0TeSwJAny7BnVlTASRqXXG.jpg"
+          },
+          {
+            "name": "Tone Danielsen",
+            "char": "Inger",
+            "photo": "https://image.tmdb.org/t/p/w500/toKLCByR3MXEG1Dw05eLVzrXBTm.jpg"
+          },
+          {
+            "name": "Elisabeth Sand",
+            "char": "Hanne",
+            "photo": "https://image.tmdb.org/t/p/w500/1BO6JbOrsIsYIcM7waNXc8HGcBn.jpg"
+          },
+          {
+            "name": "Silje Hagen",
+            "char": "Lilian",
+            "photo": null
+          },
+          {
+            "name": "Eindride Eidsvold",
+            "char": "Narrator (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/2eqYPz6HA5ugCnnojeFa5k6hxg7.jpg"
+          },
+          {
+            "name": "Anders Borchgrevink",
+            "char": "Joy Division Jogger",
+            "photo": "https://image.tmdb.org/t/p/w500/vLrjlTDHkFQNFQQtWSqncCcRzuj.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
+            "name": "Joachim Trier",
+            "job": "Writer"
+          },
+          {
+            "name": "Eskil Vogt",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "no",
+        "origTitle": "Reprise",
+        "platforms": [
+          {
+            "name": "MUBI",
+            "logo": "/k7iSlvgWzZuO4zU5PcBjhABMuia.png"
+          }
+        ],
+        "popularity": 3.4118,
+        "imdbId": "tt0827517",
+        "countries": [
+          "Norway"
+        ],
+        "detail": {
+          "duration": 107,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "伊利和菲利普這對死黨都懷著作家夢，他們相約寄出第一部作品後，迎來了截然不同的際遇。菲利普憑著過人才氣在文壇迅速竄紅，卻又瞬間陷入憂鬱；伊利雖然出師不利，但他仍不放棄地持續努力。半年後，菲利普的狀況改善許多，伊利的寫作技巧也突飛猛進，但兩人的未來會就此一帆風順嗎？",
+          "poster": "https://image.tmdb.org/t/p/w500/879vY5qEXV33Zlr8SeQp2nsgJlA.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/l9OZmtjVoFhicaY0PtdmTRKiaSR.jpg",
+          "voteAverage": "7.1",
+          "trailerKey": "g_K7lAf9-uM",
+          "imdbId": "tt0827517",
+          "countries": [
+            "Norway"
+          ],
+          "cast": [
+            {
+              "name": "Anders Danielsen Lie",
+              "char": "Philipp",
+              "photo": "https://image.tmdb.org/t/p/w500/7qdJdzFFXhoSVvBCi53ryF1wkCn.jpg"
+            },
+            {
+              "name": "Espen Klouman Høiner",
+              "char": "Erik",
+              "photo": "https://image.tmdb.org/t/p/w500/kJK72kZDtO7nqi8BUONhvxrQDYy.jpg"
+            },
+            {
+              "name": "Viktoria Winge",
+              "char": "Kari",
+              "photo": "https://image.tmdb.org/t/p/w500/kxPhO9diaYveo40HAZiJaHQIXmT.jpg"
+            },
+            {
+              "name": "Christian Rubeck",
+              "char": "Lars",
+              "photo": "https://image.tmdb.org/t/p/w500/gZ7f4zkmX8hluHkP6OCLpiofQNC.jpg"
+            },
+            {
+              "name": "Henrik Elvestad",
+              "char": "Henning",
+              "photo": "https://image.tmdb.org/t/p/w500/osMxZszOCEEmLFMK5ZH2HoaUJhR.jpg"
+            },
+            {
+              "name": "歐德-馬格努斯·威廉姆森",
+              "char": "Morten",
+              "photo": "https://image.tmdb.org/t/p/w500/clkF2apRZNcRzswp60eKvL5Jc0d.jpg"
+            },
+            {
+              "name": "Pål Stokka",
+              "char": "Geir",
+              "photo": "https://image.tmdb.org/t/p/w500/uEXlNU32UTCktc6FffQ9r3cJb7D.jpg"
+            },
+            {
+              "name": "Henrik Mestad",
+              "char": "Jan",
+              "photo": "https://image.tmdb.org/t/p/w500/uhUKVFGEPP4168ulWUsz3GISn4a.jpg"
+            },
+            {
+              "name": "Thorbjørn Harr",
+              "char": "Mathis Wergeland",
+              "photo": "https://image.tmdb.org/t/p/w500/hqBkuGoISmRB5O8t6RkKcHv3bZA.jpg"
+            },
+            {
+              "name": "Rebekka Karijord",
+              "char": "Johanne",
+              "photo": "https://image.tmdb.org/t/p/w500/qpWXwOqIUHCJTIVba7rZ60lMpmP.jpg"
+            },
+            {
+              "name": "Sigmund Sæverud",
+              "char": "Sten Egil Dahl",
+              "photo": "https://image.tmdb.org/t/p/w500/kD5TN0TeSwJAny7BnVlTASRqXXG.jpg"
+            },
+            {
+              "name": "Tone Danielsen",
+              "char": "Inger",
+              "photo": "https://image.tmdb.org/t/p/w500/toKLCByR3MXEG1Dw05eLVzrXBTm.jpg"
+            },
+            {
+              "name": "Elisabeth Sand",
+              "char": "Hanne",
+              "photo": "https://image.tmdb.org/t/p/w500/1BO6JbOrsIsYIcM7waNXc8HGcBn.jpg"
+            },
+            {
+              "name": "Silje Hagen",
+              "char": "Lilian",
+              "photo": null
+            },
+            {
+              "name": "Eindride Eidsvold",
+              "char": "Narrator (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/2eqYPz6HA5ugCnnojeFa5k6hxg7.jpg"
+            },
+            {
+              "name": "Anders Borchgrevink",
+              "char": "Joy Division Jogger",
+              "photo": "https://image.tmdb.org/t/p/w500/vLrjlTDHkFQNFQQtWSqncCcRzuj.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
+              "name": "Joachim Trier",
+              "job": "Writer"
+            },
+            {
+              "name": "Eskil Vogt",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "no",
+          "origTitle": "Reprise",
+          "platforms": [
+            {
+              "name": "MUBI",
+              "logo": "/k7iSlvgWzZuO4zU5PcBjhABMuia.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/12197?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1329016,
         "titleZh": "野生狂廚",
         "titleEn": "Tony",
@@ -13390,6 +12808,155 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1329016?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1417790,
+        "titleZh": "在世界的盡頭相遇",
+        "titleEn": "ミーツ・ザ・ワールド",
+        "releaseDate": "2026-08-21",
+        "releaseYear": "2025",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-08-21",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/qeImIVcG3U0VmEGsdulJvxVkkty.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/bSHwhJvu4kJBeRSe2MHEJFXYKgj.jpg",
+        "voteAverage": "7.0",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 126,
+        "synopsis": "身為動漫狂粉的單身女，因擔心自己孤老終生而開始相親。一次聯誼慘敗後，爛醉的他在歌舞伎町被厭世美女公關出手相救，兩人就此展開同居生活。正當兩人情誼逐漸超越友達以上，迎來的卻是一場不告而別。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "OO6yyVNK1jw",
+        "cast": [
+          {
+            "name": "杉咲花",
+            "char": "Yukari",
+            "photo": "https://image.tmdb.org/t/p/w500/uMdZegIX39id7QdYfnYPkpdFLFo.jpg"
+          },
+          {
+            "name": "南琴奈",
+            "char": "Rai",
+            "photo": "https://image.tmdb.org/t/p/w500/hpiO6jMfz5nshWVBckYjiTv0oqV.jpg"
+          },
+          {
+            "name": "板垣李光人",
+            "char": "Asahi",
+            "photo": "https://image.tmdb.org/t/p/w500/3cg9RXHS7LZFCO9gf4D40nO57pP.jpg"
+          },
+          {
+            "name": "蒼井優",
+            "char": "Yuki",
+            "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+          },
+          {
+            "name": "渋川清彦",
+            "char": "Oshin",
+            "photo": "https://image.tmdb.org/t/p/w500/eeQ3Dbrz7e09rJzcR31uxiH8xji.jpg"
+          },
+          {
+            "name": "菅田將暉",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/g7gXu0bE9jZ5LHjSqn1zHdNtiA1.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "松居大悟",
+            "job": "Director"
+          },
+          {
+            "name": "松居大悟",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "ミーツ・ザ・ワールド",
+        "platforms": [],
+        "popularity": 1.3227,
+        "imdbId": "tt38755605",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 126,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "身為動漫狂粉的單身女，因擔心自己孤老終生而開始相親。一次聯誼慘敗後，爛醉的他在歌舞伎町被厭世美女公關出手相救，兩人就此展開同居生活。正當兩人情誼逐漸超越友達以上，迎來的卻是一場不告而別。",
+          "poster": "https://image.tmdb.org/t/p/w500/qeImIVcG3U0VmEGsdulJvxVkkty.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/bSHwhJvu4kJBeRSe2MHEJFXYKgj.jpg",
+          "voteAverage": "7.0",
+          "trailerKey": "OO6yyVNK1jw",
+          "imdbId": "tt38755605",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "杉咲花",
+              "char": "Yukari",
+              "photo": "https://image.tmdb.org/t/p/w500/uMdZegIX39id7QdYfnYPkpdFLFo.jpg"
+            },
+            {
+              "name": "南琴奈",
+              "char": "Rai",
+              "photo": "https://image.tmdb.org/t/p/w500/hpiO6jMfz5nshWVBckYjiTv0oqV.jpg"
+            },
+            {
+              "name": "板垣李光人",
+              "char": "Asahi",
+              "photo": "https://image.tmdb.org/t/p/w500/3cg9RXHS7LZFCO9gf4D40nO57pP.jpg"
+            },
+            {
+              "name": "蒼井優",
+              "char": "Yuki",
+              "photo": "https://image.tmdb.org/t/p/w500/xxZuHK0Be3caq3iTe03rbfzC5xB.jpg"
+            },
+            {
+              "name": "渋川清彦",
+              "char": "Oshin",
+              "photo": "https://image.tmdb.org/t/p/w500/eeQ3Dbrz7e09rJzcR31uxiH8xji.jpg"
+            },
+            {
+              "name": "菅田將暉",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/g7gXu0bE9jZ5LHjSqn1zHdNtiA1.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "松居大悟",
+              "job": "Director"
+            },
+            {
+              "name": "松居大悟",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "ミーツ・ザ・ワールド",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1417790?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -13772,7 +13339,7 @@
         "origLang": "ja",
         "origTitle": "映画ラストマン -FIRST LOVE-",
         "platforms": [],
-        "popularity": 2.6515,
+        "popularity": 2.4998,
         "imdbId": "tt38691555",
         "countries": [
           "Japan"
@@ -14008,7 +13575,7 @@
         "origLang": "ja",
         "origTitle": "映画キミとアイドルプリキュア♪お待たせ！キミに届けるキラッキライブ！",
         "platforms": [],
-        "popularity": 2.0477,
+        "popularity": 1.6878,
         "imdbId": "tt36607192",
         "countries": [
           "Japan"
@@ -14557,7 +14124,7 @@
         "origLang": "en",
         "origTitle": "Insidious: Out of the Further",
         "platforms": [],
-        "popularity": 49.5999,
+        "popularity": 47.8869,
         "imdbId": "tt32393988",
         "countries": [
           "United States of America"
@@ -15242,275 +14809,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1564614,
-        "titleZh": "愛的魔樣",
-        "titleEn": "Leviticus",
-        "releaseDate": "2026-08-14",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-08-14",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/m4omNoYEwqwOlqFYXdWNOoOM7lv.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
-        "voteAverage": "6.8",
-        "genre": [
-          "恐怖",
-          "愛情"
-        ],
-        "duration": 88,
-        "synopsis": "父親過世後，納伊姆與母親搬到一座保守的宗教小鎮，試圖展開全新生活。在這裡，他結識了俊美少年萊恩，一段無法見容於世的戀情悄然萌芽。然而，當納伊姆意外撞見萊恩與牧師之子杭特難以啟齒的祕密後，他因為心生嫉妒而揭發真相。杭特的父母隨即請來驅魔師，企圖透過驅逐同性慾望的儀式來「矯正」兩人。沒想到，這場儀式非但沒有帶來救贖，反而誘發出詭異的超自然力量……",
-        "imdb": "6.4",
-        "rt": "93%",
-        "mc": "83",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 16673,
-            "lastChanged": "2026-08-10T10:55:40.980084+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 171,
-            "lastChanged": "2026-09-04T19:42:35.148723+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 30,
-            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
-          }
-        },
-        "trailerKey": "mio7Rpj45KQ",
-        "cast": [
-          {
-            "name": "Joe Bird",
-            "char": "Naim Reid",
-            "photo": "https://image.tmdb.org/t/p/w500/qUzFtIQFW1wUJC76VqMSVGy9QNb.jpg"
-          },
-          {
-            "name": "Stacy Clausen",
-            "char": "Ryan Whelan",
-            "photo": "https://image.tmdb.org/t/p/w500/8zwuEGXi26Yg9FQ29MntI5tWRk2.jpg"
-          },
-          {
-            "name": "蜜雅·娃絲柯思卡",
-            "char": "Arlene Reid",
-            "photo": "https://image.tmdb.org/t/p/w500/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg"
-          },
-          {
-            "name": "Nicholas Hope",
-            "char": "Deliverance Healer",
-            "photo": "https://image.tmdb.org/t/p/w500/jwl6mahxUgnLvaCfmKiQLN9M2f6.jpg"
-          },
-          {
-            "name": "Tyallah Bullock",
-            "char": "Marnie",
-            "photo": "https://image.tmdb.org/t/p/w500/ae680Po4jGoAS3fUebpYKfQvjvn.jpg"
-          },
-          {
-            "name": "伊旺·萊斯利",
-            "char": "Rod",
-            "photo": "https://image.tmdb.org/t/p/w500/mANm2VxOszTc4bkzBsxZpAB056c.jpg"
-          },
-          {
-            "name": "Jeremy Blewitt",
-            "char": "Hunter",
-            "photo": "https://image.tmdb.org/t/p/w500/xkMMkOVj1VrBN1KVMj7yKsBcGU5.jpg"
-          },
-          {
-            "name": "Davida McKenzie",
-            "char": "Izzie",
-            "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
-          },
-          {
-            "name": "Shannon Berry",
-            "char": "Jessica",
-            "photo": "https://image.tmdb.org/t/p/w500/ivNcFk0Yzetqkbq4GGugxrhRba7.jpg"
-          },
-          {
-            "name": "Julia Grace",
-            "char": "Cathy Whelan",
-            "photo": "https://image.tmdb.org/t/p/w500/5Se5ierKrANFEsUneyqQA3zUVwn.jpg"
-          },
-          {
-            "name": "Hyu Motoki",
-            "char": "Macca",
-            "photo": "https://image.tmdb.org/t/p/w500/3FxLc8wr8yzovYHFcorlg7LzEEr.jpg"
-          },
-          {
-            "name": "Edwina Wren",
-            "char": "Jacky",
-            "photo": "https://image.tmdb.org/t/p/w500/iMfeQvttnthKT1H1LKOKNoAZHMS.jpg"
-          },
-          {
-            "name": "Anna Mtungwazi",
-            "char": "Girl Reading Poem",
-            "photo": "https://image.tmdb.org/t/p/w500/p7Ay8MsvbT8KgFPUYWsAvhbb1BO.jpg"
-          },
-          {
-            "name": "David Serafin",
-            "char": "Bill",
-            "photo": "https://image.tmdb.org/t/p/w500/5BASMuxMtQnfOwiZVn09Cpt4mKY.jpg"
-          },
-          {
-            "name": "Flynn Glazebrook",
-            "char": "Macca's Mate",
-            "photo": "https://image.tmdb.org/t/p/w500/40eKJXhv5A5mwVwY7otfFh70Of3.jpg"
-          },
-          {
-            "name": "James Margetts",
-            "char": "Macca's Mate",
-            "photo": "https://image.tmdb.org/t/p/w500/iXBe1KryfEQHQlmrKixlkyiFc4X.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Adrian Chiarella",
-            "job": "Director"
-          },
-          {
-            "name": "Adrian Chiarella",
-            "job": "Writer"
-          }
-        ],
-        "budget": 3500000,
-        "revenue": 8493480,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Leviticus",
-        "platforms": [],
-        "popularity": 37.0228,
-        "imdbId": "tt39143902",
-        "countries": [
-          "Australia",
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 88,
-          "genres": [
-            "恐怖",
-            "愛情"
-          ],
-          "synopsis": "父親過世後，納伊姆與母親搬到一座保守的宗教小鎮，試圖展開全新生活。在這裡，他結識了俊美少年萊恩，一段無法見容於世的戀情悄然萌芽。然而，當納伊姆意外撞見萊恩與牧師之子杭特難以啟齒的祕密後，他因為心生嫉妒而揭發真相。杭特的父母隨即請來驅魔師，企圖透過驅逐同性慾望的儀式來「矯正」兩人。沒想到，這場儀式非但沒有帶來救贖，反而誘發出詭異的超自然力量……",
-          "poster": "https://image.tmdb.org/t/p/w500/m4omNoYEwqwOlqFYXdWNOoOM7lv.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
-          "voteAverage": "6.8",
-          "trailerKey": "mio7Rpj45KQ",
-          "imdbId": "tt39143902",
-          "countries": [
-            "Australia",
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "Joe Bird",
-              "char": "Naim Reid",
-              "photo": "https://image.tmdb.org/t/p/w500/qUzFtIQFW1wUJC76VqMSVGy9QNb.jpg"
-            },
-            {
-              "name": "Stacy Clausen",
-              "char": "Ryan Whelan",
-              "photo": "https://image.tmdb.org/t/p/w500/8zwuEGXi26Yg9FQ29MntI5tWRk2.jpg"
-            },
-            {
-              "name": "蜜雅·娃絲柯思卡",
-              "char": "Arlene Reid",
-              "photo": "https://image.tmdb.org/t/p/w500/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg"
-            },
-            {
-              "name": "Nicholas Hope",
-              "char": "Deliverance Healer",
-              "photo": "https://image.tmdb.org/t/p/w500/jwl6mahxUgnLvaCfmKiQLN9M2f6.jpg"
-            },
-            {
-              "name": "Tyallah Bullock",
-              "char": "Marnie",
-              "photo": "https://image.tmdb.org/t/p/w500/ae680Po4jGoAS3fUebpYKfQvjvn.jpg"
-            },
-            {
-              "name": "伊旺·萊斯利",
-              "char": "Rod",
-              "photo": "https://image.tmdb.org/t/p/w500/mANm2VxOszTc4bkzBsxZpAB056c.jpg"
-            },
-            {
-              "name": "Jeremy Blewitt",
-              "char": "Hunter",
-              "photo": "https://image.tmdb.org/t/p/w500/xkMMkOVj1VrBN1KVMj7yKsBcGU5.jpg"
-            },
-            {
-              "name": "Davida McKenzie",
-              "char": "Izzie",
-              "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
-            },
-            {
-              "name": "Shannon Berry",
-              "char": "Jessica",
-              "photo": "https://image.tmdb.org/t/p/w500/ivNcFk0Yzetqkbq4GGugxrhRba7.jpg"
-            },
-            {
-              "name": "Julia Grace",
-              "char": "Cathy Whelan",
-              "photo": "https://image.tmdb.org/t/p/w500/5Se5ierKrANFEsUneyqQA3zUVwn.jpg"
-            },
-            {
-              "name": "Hyu Motoki",
-              "char": "Macca",
-              "photo": "https://image.tmdb.org/t/p/w500/3FxLc8wr8yzovYHFcorlg7LzEEr.jpg"
-            },
-            {
-              "name": "Edwina Wren",
-              "char": "Jacky",
-              "photo": "https://image.tmdb.org/t/p/w500/iMfeQvttnthKT1H1LKOKNoAZHMS.jpg"
-            },
-            {
-              "name": "Anna Mtungwazi",
-              "char": "Girl Reading Poem",
-              "photo": "https://image.tmdb.org/t/p/w500/p7Ay8MsvbT8KgFPUYWsAvhbb1BO.jpg"
-            },
-            {
-              "name": "David Serafin",
-              "char": "Bill",
-              "photo": "https://image.tmdb.org/t/p/w500/5BASMuxMtQnfOwiZVn09Cpt4mKY.jpg"
-            },
-            {
-              "name": "Flynn Glazebrook",
-              "char": "Macca's Mate",
-              "photo": "https://image.tmdb.org/t/p/w500/40eKJXhv5A5mwVwY7otfFh70Of3.jpg"
-            },
-            {
-              "name": "James Margetts",
-              "char": "Macca's Mate",
-              "photo": "https://image.tmdb.org/t/p/w500/iXBe1KryfEQHQlmrKixlkyiFc4X.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Adrian Chiarella",
-              "job": "Director"
-            },
-            {
-              "name": "Adrian Chiarella",
-              "job": "Writer"
-            }
-          ],
-          "budget": 3500000,
-          "revenue": 8493480,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Leviticus",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1564614?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1732733,
         "titleZh": "終戰那一天",
         "titleEn": "終戰那一天",
@@ -15557,7 +14855,7 @@
         "origLang": "zh",
         "origTitle": "終戰那一天",
         "platforms": [],
-        "popularity": 0.6365,
+        "popularity": 0.6329,
         "imdbId": "tt44544376",
         "countries": [
           "Taiwan"
@@ -16808,7 +16106,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 432,
+            "votes": 434,
             "lastChanged": "2026-09-14T13:24:26.771481+08:00"
           },
           "mc": {
@@ -16920,7 +16218,7 @@
         "origLang": "en",
         "origTitle": "Spider-Man: Brand New Day",
         "platforms": [],
-        "popularity": 666.5009,
+        "popularity": 653.7739,
         "imdbId": "tt22084616",
         "countries": [
           "United States of America"
@@ -17193,7 +16491,7 @@
         "origLang": "ja",
         "origTitle": "君の名は。",
         "platforms": [],
-        "popularity": 28.9085,
+        "popularity": 27.1476,
         "imdbId": "tt5311514",
         "countries": [
           "Japan"
@@ -17334,7 +16632,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/d7MiRRamaAe58DacYEo2ZgziBBv.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iuylzRSllrGn7YB322kwKoOVMcq.jpg",
         "voteAverage": "8.0",
         "genre": [
           "冒險",
@@ -17477,7 +16775,7 @@
           ],
           "synopsis": "講述奧德修斯在特洛伊戰爭後歷經艱險返鄉，途中遭遇獨眼巨人、女妖與女巫，最終與妻子重逢的傳奇旅程。",
           "poster": "https://image.tmdb.org/t/p/w500/d7MiRRamaAe58DacYEo2ZgziBBv.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/iuylzRSllrGn7YB322kwKoOVMcq.jpg",
           "voteAverage": "8.0",
           "trailerKey": "2rzJuAIj0VI",
           "imdbId": "tt33764258",
@@ -17673,7 +16971,7 @@
         "origLang": "ja",
         "origTitle": "映画ドラえもん 新・のび太の海底鬼岩城",
         "platforms": [],
-        "popularity": 10.6505,
+        "popularity": 9.6539,
         "imdbId": "tt38201958",
         "countries": [
           "Japan"
@@ -18460,7 +17758,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 152.2425,
+        "popularity": 146.8947,
         "imdbId": "tt29355505",
         "countries": [
           "United States of America"
@@ -18745,7 +18043,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.9826,
+        "popularity": 4.4896,
         "imdbId": "tt0485323",
         "countries": [
           "Japan"
@@ -19289,7 +18587,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Joe Russo",
+            "name": "Anthony Russo",
             "job": "Director"
           }
         ],
@@ -19417,7 +18715,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Joe Russo",
+              "name": "Anthony Russo",
               "job": "Director"
             }
           ],
@@ -19455,10 +18753,11 @@
         "poster": "https://image.tmdb.org/t/p/w500/kY3pGqJu62TPDINS2KZ0uQbTkz4.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-        "voteAverage": "7.9",
+        "voteAverage": "7.8",
         "genre": [
           "冒險",
-          "驚悚"
+          "驚悚",
+          "戰爭"
         ],
         "duration": 101,
         "synopsis": "在經歷可怕的墜機之後，特種部隊軍官詹姆斯貝爾蒙與他的戰鬥偵察犬奧丁，受困在阿拉斯加荒野深處。他們為了求生必須面對惡劣的天候。",
@@ -19492,12 +18791,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -19506,7 +18805,7 @@
         "origLang": "en",
         "origTitle": "Heart of the Beast",
         "platforms": [],
-        "popularity": 49.2589,
+        "popularity": 71.8911,
         "imdbId": "tt7526136",
         "countries": [
           "United States of America"
@@ -19515,12 +18814,13 @@
           "duration": 101,
           "genres": [
             "冒險",
-            "驚悚"
+            "驚悚",
+            "戰爭"
           ],
           "synopsis": "在經歷可怕的墜機之後，特種部隊軍官詹姆斯貝爾蒙與他的戰鬥偵察犬奧丁，受困在阿拉斯加荒野深處。他們為了求生必須面對惡劣的天候。",
           "poster": "https://image.tmdb.org/t/p/w500/kY3pGqJu62TPDINS2KZ0uQbTkz4.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-          "voteAverage": "7.9",
+          "voteAverage": "7.8",
           "trailerKey": "CUIZ7ciID7Y",
           "imdbId": "tt7526136",
           "countries": [
@@ -19545,12 +18845,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -19666,7 +18966,7 @@
         "origLang": "fr",
         "origTitle": "À bicyclette !",
         "platforms": [],
-        "popularity": 3.054,
+        "popularity": 2.9311,
         "imdbId": "tt33298226",
         "countries": [
           "France"
@@ -19786,7 +19086,7 @@
           "劇情",
           "驚悚"
         ],
-        "duration": 110,
+        "duration": 109,
         "synopsis": "",
         "imdb": "8.7",
         "rt": "93%",
@@ -19888,7 +19188,7 @@
           {
             "name": "傑夫·佐克",
             "char": "Jeff Zucker",
-            "photo": "https://image.tmdb.org/t/p/w500/lZYdpofDQ1DVdukiqoDdRPYtt3x.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/a0fb87O31pqjgKgCvdV1lVdfDv0.jpg"
           }
         ],
         "crew": [
@@ -19907,13 +19207,13 @@
         "origLang": "en",
         "origTitle": "Primetime",
         "platforms": [],
-        "popularity": 24.9578,
+        "popularity": 26.4874,
         "imdbId": "tt34206385",
         "countries": [
           "United States of America"
         ],
         "detail": {
-          "duration": 110,
+          "duration": 109,
           "genres": [
             "劇情",
             "驚悚"
@@ -20006,7 +19306,7 @@
             {
               "name": "傑夫·佐克",
               "char": "Jeff Zucker",
-              "photo": "https://image.tmdb.org/t/p/w500/lZYdpofDQ1DVdukiqoDdRPYtt3x.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/a0fb87O31pqjgKgCvdV1lVdfDv0.jpg"
             }
           ],
           "crew": [
@@ -20048,7 +19348,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/trHy4SYLPfEslLULlXz12uPidFz.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
-        "voteAverage": "7.9",
+        "voteAverage": "7.7",
         "genre": [
           "動作",
           "喜劇",
@@ -20179,7 +19479,7 @@
         "origLang": "en",
         "origTitle": "Runner",
         "platforms": [],
-        "popularity": 63.9342,
+        "popularity": 60.807,
         "imdbId": "tt31349844",
         "countries": [
           "United States of America",
@@ -20196,7 +19496,7 @@
           "synopsis": "退伍特種部隊軍人漢克奉命護送醫療快遞員班，要將一副健康的肝臟送到病危的女孩手中，結果意圖搶奪肝臟的傭兵集團盯上了他們……",
           "poster": "https://image.tmdb.org/t/p/w500/trHy4SYLPfEslLULlXz12uPidFz.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
-          "voteAverage": "7.9",
+          "voteAverage": "7.7",
           "trailerKey": "S3Vz0fBz55A",
           "imdbId": "tt31349844",
           "countries": [
@@ -20365,7 +19665,7 @@
         "origLang": "en",
         "origTitle": "Space Cadet",
         "platforms": [],
-        "popularity": 4.0191,
+        "popularity": 3.8304,
         "imdbId": "tt26446095",
         "countries": [
           "Canada"
@@ -20547,7 +19847,7 @@
         "origLang": "ja",
         "origTitle": "Perfume \"コールドスリープ\" -25 years Document-",
         "platforms": [],
-        "popularity": 1.2039,
+        "popularity": 1.0622,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -20734,7 +20034,7 @@
         "origLang": "th",
         "origTitle": "เทอม 4",
         "platforms": [],
-        "popularity": 2.6058,
+        "popularity": 2.2742,
         "imdbId": "tt43380212",
         "countries": [
           "Thailand"
@@ -21001,7 +20301,7 @@
         "origLang": "ja",
         "origTitle": "黒牢城",
         "platforms": [],
-        "popularity": 3.7576,
+        "popularity": 3.168,
         "imdbId": "tt39602215",
         "countries": [
           "Japan"
@@ -21213,7 +20513,7 @@
         "origLang": "ja",
         "origTitle": "5秒で完全犯罪を生成する方法",
         "platforms": [],
-        "popularity": 1.879,
+        "popularity": 1.688,
         "imdbId": "tt42864901",
         "countries": [
           "Japan"
@@ -21314,7 +20614,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-        "voteAverage": "7.9",
+        "voteAverage": "7.4",
         "genre": [
           "動畫",
           "冒險",
@@ -21459,7 +20759,7 @@
           "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-          "voteAverage": "7.9",
+          "voteAverage": "7.4",
           "trailerKey": "WII6-Ss-kTM",
           "imdbId": "tt36583977",
           "countries": [
@@ -22352,11 +21652,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -22370,7 +21670,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 3.4129,
+        "popularity": 3.3869,
         "imdbId": "tt1550312",
         "countries": [
           "Canada",
@@ -22477,11 +21777,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22784,7 +22084,7 @@
         "origLang": "da",
         "origTitle": "Mr. Nobody mod Putin",
         "platforms": [],
-        "popularity": 6.1248,
+        "popularity": 5.6928,
         "imdbId": "tt34965515",
         "countries": [
           "Denmark",
@@ -23007,7 +22307,7 @@
         "origLang": "en",
         "origTitle": "The Gentleman Thief",
         "platforms": [],
-        "popularity": 4.8162,
+        "popularity": 4.8813,
         "imdbId": "tt36415524",
         "countries": [
           "United States of America"
@@ -23243,7 +22543,7 @@
         "origLang": "ko",
         "origTitle": "귀신 부르는 앱: 영",
         "platforms": [],
-        "popularity": 3.6909,
+        "popularity": 3.3186,
         "imdbId": "tt38961056",
         "countries": [
           "South Korea"
@@ -23654,7 +22954,7 @@
         "origLang": "fr",
         "origTitle": "En nous",
         "platforms": [],
-        "popularity": 3.0078,
+        "popularity": 3.2707,
         "imdbId": "tt37964027",
         "countries": [
           "France"
@@ -23823,7 +23123,7 @@
         "origLang": "zh",
         "origTitle": "人吶，為什麼要跑步？",
         "platforms": [],
-        "popularity": 0.5506,
+        "popularity": 0.5196,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -24016,7 +23316,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 5.2905,
+        "popularity": 4.7184,
         "imdbId": "tt1776196",
         "countries": [
           "Japan"
@@ -24279,7 +23579,7 @@
         "origLang": "en",
         "origTitle": "The Social Reckoning",
         "platforms": [],
-        "popularity": 12.8738,
+        "popularity": 12.7247,
         "imdbId": "tt37510326",
         "countries": [
           "United States of America"
@@ -24444,7 +23744,7 @@
           },
           {
             "name": "Jay Duplass",
-            "char": "Russ",
+            "char": "Daddo / Russ",
             "photo": "https://image.tmdb.org/t/p/w500/eUY0JDlqzf5pE9pmdvv4IPU3NYn.jpg"
           },
           {
@@ -24454,7 +23754,7 @@
           },
           {
             "name": "阿里安·莫亞伊德",
-            "char": "",
+            "char": "Uncle Frank",
             "photo": "https://image.tmdb.org/t/p/w500/hYBqwt0HelUqgKSd1VDUAyvfDME.jpg"
           },
           {
@@ -24529,7 +23829,7 @@
         "origLang": "en",
         "origTitle": "Other Mommy",
         "platforms": [],
-        "popularity": 27.7115,
+        "popularity": 25.6916,
         "imdbId": "tt36586020",
         "countries": [
           "United States of America"
@@ -24561,7 +23861,7 @@
             },
             {
               "name": "Jay Duplass",
-              "char": "Russ",
+              "char": "Daddo / Russ",
               "photo": "https://image.tmdb.org/t/p/w500/eUY0JDlqzf5pE9pmdvv4IPU3NYn.jpg"
             },
             {
@@ -24571,7 +23871,7 @@
             },
             {
               "name": "阿里安·莫亞伊德",
-              "char": "",
+              "char": "Uncle Frank",
               "photo": "https://image.tmdb.org/t/p/w500/hYBqwt0HelUqgKSd1VDUAyvfDME.jpg"
             },
             {
@@ -24963,7 +24263,7 @@
         "origLang": "ko",
         "origTitle": "인턴",
         "platforms": [],
-        "popularity": 4.4183,
+        "popularity": 3.974,
         "imdbId": "tt43741215",
         "countries": [
           "South Korea"
@@ -25340,7 +24640,8 @@
         "voteAverage": "",
         "genre": [
           "動作",
-          "奇幻"
+          "奇幻",
+          "喜劇"
         ],
         "duration": 119,
         "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
@@ -25461,7 +24762,8 @@
           "duration": 119,
           "genres": [
             "動作",
-            "奇幻"
+            "奇幻",
+            "喜劇"
           ],
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
@@ -25872,7 +25174,7 @@
         "origLang": "en",
         "origTitle": "Virginia Woolf's Night & Day",
         "platforms": [],
-        "popularity": 3.681,
+        "popularity": 3.6762,
         "imdbId": "tt27802226",
         "countries": [
           "United Kingdom",
@@ -26002,6 +25304,185 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1370545,
+        "titleZh": "鼠一般的你",
+        "titleEn": "シンシン アンド ザ マウス／SINSIN AND THE MOUSE",
+        "releaseDate": "2026-10-16",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-16",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/aPuiy1zWg6WCHkE3IV5Ri16hSoX.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lJOWaE3eKrPIDPG1oviSP1blqYz.jpg",
+        "voteAverage": "4.0",
+        "genre": [
+          "愛情"
+        ],
+        "duration": 108,
+        "synopsis": "日本女孩為撫平喪母之痛，受朋友之邀來到台灣散心。在陌生的台北街頭，邂逅了寂寞的台日混血男孩。即便身處異地，心卻掀起漣漪，彼此撩撥試探，曖昧就此蔓延滋長。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "岸井ゆきの",
+            "char": "Chizumi",
+            "photo": "https://image.tmdb.org/t/p/w500/hhQ5BZI3HOZOO7iL614I9eNqGMI.jpg"
+          },
+          {
+            "name": "曾敬驊",
+            "char": "Sinsin",
+            "photo": "https://image.tmdb.org/t/p/w500/n0EZvptjlTlI7sCtaW27jMthkeA.jpg"
+          },
+          {
+            "name": "藤原季節",
+            "char": "Masamichi",
+            "photo": "https://image.tmdb.org/t/p/w500/prxUmwYEdyHYfs5Ig5gU0LcrLUq.jpg"
+          },
+          {
+            "name": "中田青渚",
+            "char": "Sachi",
+            "photo": "https://image.tmdb.org/t/p/w500/1xtLqzIm2K07Pwcp2XyiYh82czG.jpg"
+          },
+          {
+            "name": "伊勢佳世",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/dcEqXmBSnEONvmmZ9I7bIgOM3Jr.jpg"
+          },
+          {
+            "name": "柄本時生",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/3rJvkwGgA4IQWh5kxKEWjungq8m.jpg"
+          },
+          {
+            "name": "飯田基祐",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/iPz9FYCpT1XdUtBCE7qTiOD9dFx.jpg"
+          },
+          {
+            "name": "余貴美子",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/g1NZGtCzJKpqgdjNbNYaKBPyYRw.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "真壁幸紀",
+            "job": "Director"
+          },
+          {
+            "name": "加藤法子",
+            "job": "Writer"
+          },
+          {
+            "name": "真壁幸紀",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "シンシン アンド ザ マウス／SINSIN AND THE MOUSE",
+        "platforms": [],
+        "popularity": 1.9275,
+        "imdbId": "tt40981213",
+        "countries": [
+          "Japan",
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 108,
+          "genres": [
+            "愛情"
+          ],
+          "synopsis": "日本女孩為撫平喪母之痛，受朋友之邀來到台灣散心。在陌生的台北街頭，邂逅了寂寞的台日混血男孩。即便身處異地，心卻掀起漣漪，彼此撩撥試探，曖昧就此蔓延滋長。",
+          "poster": "https://image.tmdb.org/t/p/w500/aPuiy1zWg6WCHkE3IV5Ri16hSoX.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/lJOWaE3eKrPIDPG1oviSP1blqYz.jpg",
+          "voteAverage": "4.0",
+          "trailerKey": null,
+          "imdbId": "tt40981213",
+          "countries": [
+            "Japan",
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "岸井ゆきの",
+              "char": "Chizumi",
+              "photo": "https://image.tmdb.org/t/p/w500/hhQ5BZI3HOZOO7iL614I9eNqGMI.jpg"
+            },
+            {
+              "name": "曾敬驊",
+              "char": "Sinsin",
+              "photo": "https://image.tmdb.org/t/p/w500/n0EZvptjlTlI7sCtaW27jMthkeA.jpg"
+            },
+            {
+              "name": "藤原季節",
+              "char": "Masamichi",
+              "photo": "https://image.tmdb.org/t/p/w500/prxUmwYEdyHYfs5Ig5gU0LcrLUq.jpg"
+            },
+            {
+              "name": "中田青渚",
+              "char": "Sachi",
+              "photo": "https://image.tmdb.org/t/p/w500/1xtLqzIm2K07Pwcp2XyiYh82czG.jpg"
+            },
+            {
+              "name": "伊勢佳世",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/dcEqXmBSnEONvmmZ9I7bIgOM3Jr.jpg"
+            },
+            {
+              "name": "柄本時生",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/3rJvkwGgA4IQWh5kxKEWjungq8m.jpg"
+            },
+            {
+              "name": "飯田基祐",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/iPz9FYCpT1XdUtBCE7qTiOD9dFx.jpg"
+            },
+            {
+              "name": "余貴美子",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/g1NZGtCzJKpqgdjNbNYaKBPyYRw.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "真壁幸紀",
+              "job": "Director"
+            },
+            {
+              "name": "加藤法子",
+              "job": "Writer"
+            },
+            {
+              "name": "真壁幸紀",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "シンシン アンド ザ マウス／SINSIN AND THE MOUSE",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1370545?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1492861,
         "titleZh": "沙央",
         "titleEn": "沙央",
@@ -26103,7 +25584,7 @@
         "origLang": "zh",
         "origTitle": "沙央",
         "platforms": [],
-        "popularity": 0.8679,
+        "popularity": 0.7959,
         "imdbId": null,
         "countries": [
           "Taiwan",
@@ -26403,7 +25884,7 @@
         "origLang": "en",
         "origTitle": "National Theatre Live: Mrs. Warren's Profession",
         "platforms": [],
-        "popularity": 1.6125,
+        "popularity": 1.6147,
         "imdbId": "tt37511195",
         "countries": [
           "United Kingdom"
@@ -26593,7 +26074,7 @@
         "origLang": "en",
         "origTitle": "Clayface",
         "platforms": [],
-        "popularity": 14.9221,
+        "popularity": 14.6159,
         "imdbId": "tt34890576",
         "countries": [
           "United States of America"
@@ -26703,428 +26184,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1400940?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 858035,
-        "titleZh": "克拉拉與太陽",
-        "titleEn": "Klara and the Sun",
-        "releaseDate": "2026-10-23",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-23",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/1ZwcLnQMFvoAEbnGOsXJplgic6.jpg",
-        "voteAverage": "",
-        "genre": [
-          "科幻",
-          "劇情",
-          "喜劇"
-        ],
-        "duration": "",
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "RCuBTTOLtIg",
-        "cast": [
-          {
-            "name": "珍娜·奧特嘉",
-            "char": "Klara",
-            "photo": "https://image.tmdb.org/t/p/w500/cV4x7jNmsGLdKZn5I6xVF3Ltnmg.jpg"
-          },
-          {
-            "name": "Mia Tharia",
-            "char": "Josie",
-            "photo": "https://image.tmdb.org/t/p/w500/oHb6lb5swU8U4JPEGfbUY5vkW5y.jpg"
-          },
-          {
-            "name": "艾美·亞當斯",
-            "char": "Chrissie",
-            "photo": "https://image.tmdb.org/t/p/w500/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
-          },
-          {
-            "name": "娜塔莎·雷昂",
-            "char": "Manager",
-            "photo": "https://image.tmdb.org/t/p/w500/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
-          },
-          {
-            "name": "Aran Murphy",
-            "char": "Rick",
-            "photo": "https://image.tmdb.org/t/p/w500/gXwVwAY791aYZXkdSjLaRwYY37l.jpg"
-          },
-          {
-            "name": "Rachel House",
-            "char": "Melania",
-            "photo": "https://image.tmdb.org/t/p/w500/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
-          },
-          {
-            "name": "史蒂夫·布希密",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
-          },
-          {
-            "name": "Davida McKenzie",
-            "char": "Simone",
-            "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
-          },
-          {
-            "name": "Harry Greenwood",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/bTTjxIacR1a9GPVx2SkieZYHvbF.jpg"
-          },
-          {
-            "name": "Anastasiia Aksiuta",
-            "char": "AF-1",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Dahvi Waller",
-            "job": "Screenplay"
-          },
-          {
-            "name": "塔伊加·維迪提",
-            "job": "Director"
-          },
-          {
-            "name": "塔伊加·維迪提",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Post Production",
-        "origLang": "en",
-        "origTitle": "Klara and the Sun",
-        "platforms": [],
-        "popularity": 6.6058,
-        "imdbId": "tt14371256",
-        "countries": [
-          "New Zealand",
-          "United Kingdom",
-          "United States of America"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "科幻",
-            "劇情",
-            "喜劇"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/1ZwcLnQMFvoAEbnGOsXJplgic6.jpg",
-          "voteAverage": "",
-          "trailerKey": "RCuBTTOLtIg",
-          "imdbId": "tt14371256",
-          "countries": [
-            "New Zealand",
-            "United Kingdom",
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "珍娜·奧特嘉",
-              "char": "Klara",
-              "photo": "https://image.tmdb.org/t/p/w500/cV4x7jNmsGLdKZn5I6xVF3Ltnmg.jpg"
-            },
-            {
-              "name": "Mia Tharia",
-              "char": "Josie",
-              "photo": "https://image.tmdb.org/t/p/w500/oHb6lb5swU8U4JPEGfbUY5vkW5y.jpg"
-            },
-            {
-              "name": "艾美·亞當斯",
-              "char": "Chrissie",
-              "photo": "https://image.tmdb.org/t/p/w500/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
-            },
-            {
-              "name": "娜塔莎·雷昂",
-              "char": "Manager",
-              "photo": "https://image.tmdb.org/t/p/w500/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
-            },
-            {
-              "name": "Aran Murphy",
-              "char": "Rick",
-              "photo": "https://image.tmdb.org/t/p/w500/gXwVwAY791aYZXkdSjLaRwYY37l.jpg"
-            },
-            {
-              "name": "Rachel House",
-              "char": "Melania",
-              "photo": "https://image.tmdb.org/t/p/w500/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
-            },
-            {
-              "name": "史蒂夫·布希密",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
-            },
-            {
-              "name": "Davida McKenzie",
-              "char": "Simone",
-              "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
-            },
-            {
-              "name": "Harry Greenwood",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/bTTjxIacR1a9GPVx2SkieZYHvbF.jpg"
-            },
-            {
-              "name": "Anastasiia Aksiuta",
-              "char": "AF-1",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Dahvi Waller",
-              "job": "Screenplay"
-            },
-            {
-              "name": "塔伊加·維迪提",
-              "job": "Director"
-            },
-            {
-              "name": "塔伊加·維迪提",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Post Production",
-          "origLang": "en",
-          "origTitle": "Klara and the Sun",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/858035?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1061798,
-        "titleZh": "Jim Queen：肌情四射",
-        "titleEn": "Jim Queen",
-        "releaseDate": "2026-10-23",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-23",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/ue2Orwc7nNYFixoOLBHpse2H1uX.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/vQw05sfFEVCVpysDAU5C8NU1gMO.jpg",
-        "voteAverage": "7.9",
-        "genre": [
-          "動畫",
-          "喜劇"
-        ],
-        "duration": 85,
-        "synopsis": "一場註定消滅全宇宙同性戀的「直男病毒」正在巴黎街頭擴散！當健身網紅「超完美吉姆」遇上嬌弱少年盧西安，截然不同的兩人，攜手踏上找尋解藥的混亂冒險……",
-        "imdb": "7.6",
-        "rt": "95%",
-        "mc": "61",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 1190,
-            "lastChanged": "2026-09-21T07:30:53.814823+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 19,
-            "lastChanged": "2026-09-20T13:23:26.055418+08:00"
-          },
-          "mc": {
-            "source": "omdb",
-            "votes": 0,
-            "lastChanged": "2026-09-21T07:30:53.814823+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Alex Ramirès",
-            "char": "Jim Perfect (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/8rJepLXE50rKig31hrUJLLBtnWC.jpg"
-          },
-          {
-            "name": "Jéremy Gillet",
-            "char": "Lucien (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/spe3Lzq5NZnlBbEtle94eVtuf3h.jpg"
-          },
-          {
-            "name": "Shirley Souagnon",
-            "char": "Nina (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/ho2EcIPzTUz33nJSsW8KIM50NJM.jpg"
-          },
-          {
-            "name": "François Sagat",
-            "char": "Pavel (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/xkSAuK2WhFKFvIINOJKAz5rWahm.jpg"
-          },
-          {
-            "name": "Elisabeth Wiener",
-            "char": "Christine Bayer (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/Hzss2T3lZwJwNoRLSgkAKPonOm.jpg"
-          },
-          {
-            "name": "Harald Marlot",
-            "char": "Glamydia (voice)",
-            "photo": null
-          },
-          {
-            "name": "Alexandre Brik",
-            "char": "Robear (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/pzMey0PUuJfgZYG49KOJ5ClmpPU.jpg"
-          },
-          {
-            "name": "Philippe Katerine",
-            "char": "La prostate (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/vGo21vRILgGPT5Q3TTwzLxANemF.jpg"
-          },
-          {
-            "name": "Fabrice Petithuguenin",
-            "char": "Mr. Leather (voice)",
-            "photo": null
-          },
-          {
-            "name": "Brice Chevillard",
-            "char": "Michel / Dr. Ragout / Assistant du docteur (voice)",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Marco Nguyen",
-            "job": "Director"
-          },
-          {
-            "name": "Nicolas Athané",
-            "job": "Director"
-          },
-          {
-            "name": "Nicolas Athané",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "Jim Queen",
-        "platforms": [],
-        "popularity": 13.0615,
-        "imdbId": "tt36955518",
-        "countries": [
-          "France",
-          "Belgium"
-        ],
-        "detail": {
-          "duration": 85,
-          "genres": [
-            "動畫",
-            "喜劇"
-          ],
-          "synopsis": "一場註定消滅全宇宙同性戀的「直男病毒」正在巴黎街頭擴散！當健身網紅「超完美吉姆」遇上嬌弱少年盧西安，截然不同的兩人，攜手踏上找尋解藥的混亂冒險……",
-          "poster": "https://image.tmdb.org/t/p/w500/ue2Orwc7nNYFixoOLBHpse2H1uX.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/vQw05sfFEVCVpysDAU5C8NU1gMO.jpg",
-          "voteAverage": "7.9",
-          "trailerKey": null,
-          "imdbId": "tt36955518",
-          "countries": [
-            "France",
-            "Belgium"
-          ],
-          "cast": [
-            {
-              "name": "Alex Ramirès",
-              "char": "Jim Perfect (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/8rJepLXE50rKig31hrUJLLBtnWC.jpg"
-            },
-            {
-              "name": "Jéremy Gillet",
-              "char": "Lucien (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/spe3Lzq5NZnlBbEtle94eVtuf3h.jpg"
-            },
-            {
-              "name": "Shirley Souagnon",
-              "char": "Nina (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/ho2EcIPzTUz33nJSsW8KIM50NJM.jpg"
-            },
-            {
-              "name": "François Sagat",
-              "char": "Pavel (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/xkSAuK2WhFKFvIINOJKAz5rWahm.jpg"
-            },
-            {
-              "name": "Elisabeth Wiener",
-              "char": "Christine Bayer (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/Hzss2T3lZwJwNoRLSgkAKPonOm.jpg"
-            },
-            {
-              "name": "Harald Marlot",
-              "char": "Glamydia (voice)",
-              "photo": null
-            },
-            {
-              "name": "Alexandre Brik",
-              "char": "Robear (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/pzMey0PUuJfgZYG49KOJ5ClmpPU.jpg"
-            },
-            {
-              "name": "Philippe Katerine",
-              "char": "La prostate (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/vGo21vRILgGPT5Q3TTwzLxANemF.jpg"
-            },
-            {
-              "name": "Fabrice Petithuguenin",
-              "char": "Mr. Leather (voice)",
-              "photo": null
-            },
-            {
-              "name": "Brice Chevillard",
-              "char": "Michel / Dr. Ragout / Assistant du docteur (voice)",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Marco Nguyen",
-              "job": "Director"
-            },
-            {
-              "name": "Nicolas Athané",
-              "job": "Director"
-            },
-            {
-              "name": "Nicolas Athané",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "Jim Queen",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1061798?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -27405,6 +26464,507 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 858035,
+        "titleZh": "克拉拉與太陽",
+        "titleEn": "Klara and the Sun",
+        "releaseDate": "2026-10-23",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-23",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/1ZwcLnQMFvoAEbnGOsXJplgic6.jpg",
+        "voteAverage": "",
+        "genre": [
+          "科幻",
+          "劇情",
+          "喜劇"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "RCuBTTOLtIg",
+        "cast": [
+          {
+            "name": "珍娜·奧特嘉",
+            "char": "Klara",
+            "photo": "https://image.tmdb.org/t/p/w500/cV4x7jNmsGLdKZn5I6xVF3Ltnmg.jpg"
+          },
+          {
+            "name": "Mia Tharia",
+            "char": "Josie",
+            "photo": "https://image.tmdb.org/t/p/w500/oHb6lb5swU8U4JPEGfbUY5vkW5y.jpg"
+          },
+          {
+            "name": "艾美·亞當斯",
+            "char": "Chrissie",
+            "photo": "https://image.tmdb.org/t/p/w500/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+          },
+          {
+            "name": "娜塔莎·雷昂",
+            "char": "Manager",
+            "photo": "https://image.tmdb.org/t/p/w500/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
+          },
+          {
+            "name": "Aran Murphy",
+            "char": "Rick",
+            "photo": "https://image.tmdb.org/t/p/w500/gXwVwAY791aYZXkdSjLaRwYY37l.jpg"
+          },
+          {
+            "name": "Rachel House",
+            "char": "Melania",
+            "photo": "https://image.tmdb.org/t/p/w500/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
+          },
+          {
+            "name": "史蒂夫·布希密",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+          },
+          {
+            "name": "Davida McKenzie",
+            "char": "Simone",
+            "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
+          },
+          {
+            "name": "Harry Greenwood",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bTTjxIacR1a9GPVx2SkieZYHvbF.jpg"
+          },
+          {
+            "name": "Anastasiia Aksiuta",
+            "char": "AF-1",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Dahvi Waller",
+            "job": "Screenplay"
+          },
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Director"
+          },
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "en",
+        "origTitle": "Klara and the Sun",
+        "platforms": [],
+        "popularity": 6.6854,
+        "imdbId": "tt14371256",
+        "countries": [
+          "New Zealand",
+          "United Kingdom",
+          "United States of America"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "科幻",
+            "劇情",
+            "喜劇"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/1ZwcLnQMFvoAEbnGOsXJplgic6.jpg",
+          "voteAverage": "",
+          "trailerKey": "RCuBTTOLtIg",
+          "imdbId": "tt14371256",
+          "countries": [
+            "New Zealand",
+            "United Kingdom",
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "珍娜·奧特嘉",
+              "char": "Klara",
+              "photo": "https://image.tmdb.org/t/p/w500/cV4x7jNmsGLdKZn5I6xVF3Ltnmg.jpg"
+            },
+            {
+              "name": "Mia Tharia",
+              "char": "Josie",
+              "photo": "https://image.tmdb.org/t/p/w500/oHb6lb5swU8U4JPEGfbUY5vkW5y.jpg"
+            },
+            {
+              "name": "艾美·亞當斯",
+              "char": "Chrissie",
+              "photo": "https://image.tmdb.org/t/p/w500/1h2r2VTpoFb5QefAaBYYQgQzL9z.jpg"
+            },
+            {
+              "name": "娜塔莎·雷昂",
+              "char": "Manager",
+              "photo": "https://image.tmdb.org/t/p/w500/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
+            },
+            {
+              "name": "Aran Murphy",
+              "char": "Rick",
+              "photo": "https://image.tmdb.org/t/p/w500/gXwVwAY791aYZXkdSjLaRwYY37l.jpg"
+            },
+            {
+              "name": "Rachel House",
+              "char": "Melania",
+              "photo": "https://image.tmdb.org/t/p/w500/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg"
+            },
+            {
+              "name": "史蒂夫·布希密",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/n0pZumkrcZrAPMoPq684RhYnjPV.jpg"
+            },
+            {
+              "name": "Davida McKenzie",
+              "char": "Simone",
+              "photo": "https://image.tmdb.org/t/p/w500/6PdvjqoiKCyC0B12gZyQj109iw1.jpg"
+            },
+            {
+              "name": "Harry Greenwood",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bTTjxIacR1a9GPVx2SkieZYHvbF.jpg"
+            },
+            {
+              "name": "Anastasiia Aksiuta",
+              "char": "AF-1",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Dahvi Waller",
+              "job": "Screenplay"
+            },
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Director"
+            },
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "en",
+          "origTitle": "Klara and the Sun",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/858035?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1061798,
+        "titleZh": "Jim Queen：肌情四射",
+        "titleEn": "Jim Queen",
+        "releaseDate": "2026-10-23",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-23",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/ue2Orwc7nNYFixoOLBHpse2H1uX.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/vQw05sfFEVCVpysDAU5C8NU1gMO.jpg",
+        "voteAverage": "7.9",
+        "genre": [
+          "動畫",
+          "喜劇"
+        ],
+        "duration": 85,
+        "synopsis": "一場註定消滅全宇宙同性戀的「直男病毒」正在巴黎街頭擴散！當健身網紅「超完美吉姆」遇上嬌弱少年盧西安，截然不同的兩人，攜手踏上找尋解藥的混亂冒險……",
+        "imdb": "7.6",
+        "rt": "95%",
+        "mc": "61",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 1190,
+            "lastChanged": "2026-09-21T07:30:53.814823+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 19,
+            "lastChanged": "2026-09-20T13:23:26.055418+08:00"
+          },
+          "mc": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-21T07:30:53.814823+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Alex Ramirès",
+            "char": "Jim Perfect (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/8rJepLXE50rKig31hrUJLLBtnWC.jpg"
+          },
+          {
+            "name": "Jéremy Gillet",
+            "char": "Lucien (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/spe3Lzq5NZnlBbEtle94eVtuf3h.jpg"
+          },
+          {
+            "name": "Shirley Souagnon",
+            "char": "Nina (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ho2EcIPzTUz33nJSsW8KIM50NJM.jpg"
+          },
+          {
+            "name": "François Sagat",
+            "char": "Pavel (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xkSAuK2WhFKFvIINOJKAz5rWahm.jpg"
+          },
+          {
+            "name": "Elisabeth Wiener",
+            "char": "Christine Bayer (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/Hzss2T3lZwJwNoRLSgkAKPonOm.jpg"
+          },
+          {
+            "name": "Harald Marlot",
+            "char": "Glamydia (voice)",
+            "photo": null
+          },
+          {
+            "name": "Alexandre Brik",
+            "char": "Robear (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/pzMey0PUuJfgZYG49KOJ5ClmpPU.jpg"
+          },
+          {
+            "name": "Philippe Katerine",
+            "char": "La prostate (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/vGo21vRILgGPT5Q3TTwzLxANemF.jpg"
+          },
+          {
+            "name": "Fabrice Petithuguenin",
+            "char": "Mr. Leather (voice)",
+            "photo": null
+          },
+          {
+            "name": "Brice Chevillard",
+            "char": "Michel / Dr. Ragout / Assistant du docteur (voice)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Marco Nguyen",
+            "job": "Director"
+          },
+          {
+            "name": "Nicolas Athané",
+            "job": "Director"
+          },
+          {
+            "name": "Nicolas Athané",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Jim Queen",
+        "platforms": [],
+        "popularity": 10.3208,
+        "imdbId": "tt36955518",
+        "countries": [
+          "France",
+          "Belgium"
+        ],
+        "detail": {
+          "duration": 85,
+          "genres": [
+            "動畫",
+            "喜劇"
+          ],
+          "synopsis": "一場註定消滅全宇宙同性戀的「直男病毒」正在巴黎街頭擴散！當健身網紅「超完美吉姆」遇上嬌弱少年盧西安，截然不同的兩人，攜手踏上找尋解藥的混亂冒險……",
+          "poster": "https://image.tmdb.org/t/p/w500/ue2Orwc7nNYFixoOLBHpse2H1uX.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/vQw05sfFEVCVpysDAU5C8NU1gMO.jpg",
+          "voteAverage": "7.9",
+          "trailerKey": null,
+          "imdbId": "tt36955518",
+          "countries": [
+            "France",
+            "Belgium"
+          ],
+          "cast": [
+            {
+              "name": "Alex Ramirès",
+              "char": "Jim Perfect (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/8rJepLXE50rKig31hrUJLLBtnWC.jpg"
+            },
+            {
+              "name": "Jéremy Gillet",
+              "char": "Lucien (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/spe3Lzq5NZnlBbEtle94eVtuf3h.jpg"
+            },
+            {
+              "name": "Shirley Souagnon",
+              "char": "Nina (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ho2EcIPzTUz33nJSsW8KIM50NJM.jpg"
+            },
+            {
+              "name": "François Sagat",
+              "char": "Pavel (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xkSAuK2WhFKFvIINOJKAz5rWahm.jpg"
+            },
+            {
+              "name": "Elisabeth Wiener",
+              "char": "Christine Bayer (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/Hzss2T3lZwJwNoRLSgkAKPonOm.jpg"
+            },
+            {
+              "name": "Harald Marlot",
+              "char": "Glamydia (voice)",
+              "photo": null
+            },
+            {
+              "name": "Alexandre Brik",
+              "char": "Robear (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/pzMey0PUuJfgZYG49KOJ5ClmpPU.jpg"
+            },
+            {
+              "name": "Philippe Katerine",
+              "char": "La prostate (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/vGo21vRILgGPT5Q3TTwzLxANemF.jpg"
+            },
+            {
+              "name": "Fabrice Petithuguenin",
+              "char": "Mr. Leather (voice)",
+              "photo": null
+            },
+            {
+              "name": "Brice Chevillard",
+              "char": "Michel / Dr. Ragout / Assistant du docteur (voice)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Marco Nguyen",
+              "job": "Director"
+            },
+            {
+              "name": "Nicolas Athané",
+              "job": "Director"
+            },
+            {
+              "name": "Nicolas Athané",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Jim Queen",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1061798?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1733564,
+        "titleZh": "金三角 孤軍淚",
+        "titleEn": "金三角 孤軍淚",
+        "releaseDate": "2026-10-23",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-23",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/uDanLo3ZYuM3CduCCRwyL9E554p.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "紀錄"
+        ],
+        "duration": 80,
+        "synopsis": "位於泰國、緬甸與寮國的三國交界處，約有20萬平方公里的蓊鬱森林，蘊藏著豐富的沙金、銅礦和寶石，故贏得「金三角」之美名，惟自20世紀初，在各方垂涎爭奪之下，不幸淪為了「三不管」地帶的毒品王國。1949年，中華民國國軍在大陸全面潰敗，百萬軍民撤至臺灣之際，有一支殘兵敗退至泰緬寮「三角」地區，最初僅1,400餘人，惟在李彌將軍的領導下，爭取到國內外奧援，組成數千人部隊，在金三角站穩了腳跟，而這批留在金三角的「雲南反共救國軍」，卻也淪為不折不扣的「孤軍」……",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "謝小韞",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "金三角 孤軍淚",
+        "platforms": [],
+        "popularity": 0.6533,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 80,
+          "genres": [
+            "紀錄"
+          ],
+          "synopsis": "位於泰國、緬甸與寮國的三國交界處，約有20萬平方公里的蓊鬱森林，蘊藏著豐富的沙金、銅礦和寶石，故贏得「金三角」之美名，惟自20世紀初，在各方垂涎爭奪之下，不幸淪為了「三不管」地帶的毒品王國。1949年，中華民國國軍在大陸全面潰敗，百萬軍民撤至臺灣之際，有一支殘兵敗退至泰緬寮「三角」地區，最初僅1,400餘人，惟在李彌將軍的領導下，爭取到國內外奧援，組成數千人部隊，在金三角站穩了腳跟，而這批留在金三角的「雲南反共救國軍」，卻也淪為不折不扣的「孤軍」……",
+          "poster": "https://image.tmdb.org/t/p/w500/uDanLo3ZYuM3CduCCRwyL9E554p.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "謝小韞",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "金三角 孤軍淚",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1733564?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1575872,
         "titleZh": "心靈導失",
         "titleEn": "mentor",
@@ -27594,7 +27154,7 @@
         "origLang": "zh",
         "origTitle": "消失的金鳳娜",
         "platforms": [],
-        "popularity": 0.8964,
+        "popularity": 0.8599,
         "imdbId": "tt36958624",
         "countries": [
           "Taiwan"
@@ -27739,7 +27299,7 @@
         "origLang": "zh",
         "origTitle": "歡迎來到朵莉之家",
         "platforms": [],
-        "popularity": 1.3657,
+        "popularity": 1.1834,
         "imdbId": "tt37038996",
         "countries": [
           "Taiwan"
@@ -28174,7 +27734,7 @@
         "origLang": "en",
         "origTitle": "CatVideoFest 2026",
         "platforms": [],
-        "popularity": 1.1424,
+        "popularity": 0.9943,
         "imdbId": "tt39676060",
         "countries": [],
         "detail": {
@@ -28335,7 +27895,7 @@
         "origLang": "en",
         "origTitle": "How to Rob a Bank",
         "platforms": [],
-        "popularity": 10.0223,
+        "popularity": 9.4033,
         "imdbId": "tt35866986",
         "countries": [
           "United States of America"
@@ -28546,7 +28106,7 @@
         "origLang": "ja",
         "origTitle": "NEW GROUP",
         "platforms": [],
-        "popularity": 2.2668,
+        "popularity": 2.1424,
         "imdbId": "tt37694048",
         "countries": [
           "Japan"
@@ -29159,7 +28719,7 @@
         "origLang": "zh",
         "origTitle": "泡泡糖女孩",
         "platforms": [],
-        "popularity": 2.8358,
+        "popularity": 2.4391,
         "imdbId": "tt35683770",
         "countries": [
           "Singapore"
@@ -29579,7 +29139,7 @@
         "origLang": "en",
         "origTitle": "Hexed",
         "platforms": [],
-        "popularity": 10.8322,
+        "popularity": 10.4444,
         "imdbId": "tt38077943",
         "countries": [
           "United States of America"
@@ -29799,7 +29359,7 @@
         "origLang": "en",
         "origTitle": "The Cat in the Hat",
         "platforms": [],
-        "popularity": 9.079,
+        "popularity": 8.5534,
         "imdbId": "tt2321555",
         "countries": [
           "United Kingdom",
@@ -30025,7 +29585,7 @@
         "origLang": "zh",
         "origTitle": "高寮大劫",
         "platforms": [],
-        "popularity": 1.5569,
+        "popularity": 1.4319,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -30488,7 +30048,7 @@
         "origLang": "en",
         "origTitle": "Avengers: Doomsday",
         "platforms": [],
-        "popularity": 53.7654,
+        "popularity": 53.0277,
         "imdbId": "tt21357150",
         "countries": [
           "United States of America"
@@ -30738,7 +30298,7 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 17.4992,
+        "popularity": 16.7874,
         "imdbId": "tt31378509",
         "countries": [
           "United States of America"
@@ -30974,7 +30534,7 @@
         "origLang": "en",
         "origTitle": "Ice Age: Boiling Point",
         "platforms": [],
-        "popularity": 10.0469,
+        "popularity": 9.9622,
         "imdbId": "tt34512981",
         "countries": [
           "United States of America"
