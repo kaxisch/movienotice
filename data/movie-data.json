@@ -1,12 +1,288 @@
 {
-  "generated_at": "2026-09-24T20:12:11.769030+08:00",
+  "generated_at": "2026-09-25T01:32:27.378197+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 91,
-    "soon_count": 67
+    "now_count": 92,
+    "soon_count": 66
   },
   "movies": {
     "now": [
+      {
+        "id": 1465063,
+        "titleZh": "誤闖遺忘島",
+        "titleEn": "Forgotten Island",
+        "releaseDate": "2026-09-25",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-09-25",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
+        "voteAverage": "7.6",
+        "genre": [
+          "動畫",
+          "冒險",
+          "奇幻",
+          "喜劇",
+          "家庭"
+        ],
+        "duration": 109,
+        "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
+        "imdb": "",
+        "rt": "100%",
+        "mc": "78",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 50,
+            "lastChanged": "2026-09-22T13:20:58.746171+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 10,
+            "lastChanged": "2026-09-24T20:12:11.769030+08:00"
+          }
+        },
+        "trailerKey": "WII6-Ss-kTM",
+        "cast": [
+          {
+            "name": "嘉布麗葉兒·威爾森",
+            "char": "Jo (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/x025IY7XsQIL18aetxJKnEvWYCm.jpg"
+          },
+          {
+            "name": "萊薩·索貝拉諾",
+            "char": "Raissa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/4HdHYyLpqTsceBs9hPIFx8Mnl19.jpg"
+          },
+          {
+            "name": "戴夫·法蘭科",
+            "char": "Raww (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/to7ee1xcCOpDSKMXjBIRuYEfbEc.jpg"
+          },
+          {
+            "name": "Lea Salonga",
+            "char": "Manang (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/cA8lv5GCU5DkZMEeplaVgttrlXr.jpg"
+          },
+          {
+            "name": "珍妮·史雷",
+            "char": "Batiba (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
+          },
+          {
+            "name": "曼尼·賈辛托",
+            "char": "Bungi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
+          },
+          {
+            "name": "多莉·德·萊昂",
+            "char": "Lola Fatima (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/mNskbR6hayRY3DjTcECqIJ7eQsO.jpg"
+          },
+          {
+            "name": "喬·科伊",
+            "char": "Datu (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/rbD9UnkYFYsmewSn2YFPI8lL5UI.jpg"
+          },
+          {
+            "name": "錢信伊",
+            "char": "King Truffle Wuffle (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/nn1y0te102CvakOJ0rSJ7rYPLDF.jpg"
+          },
+          {
+            "name": "Kevin McCann",
+            "char": "Prince Mermahn (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/tY9R5lQyA0vI7Bz6COiyyzOtkqJ.jpg"
+          },
+          {
+            "name": "Kailey Crawford",
+            "char": "Young Jo (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qWRa5Ewo7P6yrUqOWhvzFJpG8I8.jpg"
+          },
+          {
+            "name": "Kayla Teruel",
+            "char": "Young Raissa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/bMgrPLCEv5vmZqD7vgfvwEl95B7.jpg"
+          },
+          {
+            "name": "Amielynn Abellera",
+            "char": "Raissa's Mother (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
+          },
+          {
+            "name": "尤金·科戴洛",
+            "char": "Barondo / Mr. Lopez (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
+          },
+          {
+            "name": "艾瑞克·鮑扎",
+            "char": "General Button Wutton / Sarangay (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/afOlsVPQxbtkom604MeCemjlwEV.jpg"
+          },
+          {
+            "name": "Nico Santos",
+            "char": "Starfish Pastie 1 / Starfish Pastie 2 (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/e96iYbxaqC9zGaFPxZ2fH82MBNu.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "喬伊·克勞福德",
+            "job": "Writer"
+          },
+          {
+            "name": "哈努爾·梅卡度",
+            "job": "Writer"
+          },
+          {
+            "name": "哈努爾·梅卡度",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Forgotten Island",
+        "platforms": [],
+        "popularity": 53.437,
+        "imdbId": "tt36583977",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 109,
+          "genres": [
+            "動畫",
+            "冒險",
+            "奇幻",
+            "喜劇",
+            "家庭"
+          ],
+          "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
+          "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
+          "voteAverage": "7.6",
+          "trailerKey": "WII6-Ss-kTM",
+          "imdbId": "tt36583977",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "嘉布麗葉兒·威爾森",
+              "char": "Jo (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/x025IY7XsQIL18aetxJKnEvWYCm.jpg"
+            },
+            {
+              "name": "萊薩·索貝拉諾",
+              "char": "Raissa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/4HdHYyLpqTsceBs9hPIFx8Mnl19.jpg"
+            },
+            {
+              "name": "戴夫·法蘭科",
+              "char": "Raww (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/to7ee1xcCOpDSKMXjBIRuYEfbEc.jpg"
+            },
+            {
+              "name": "Lea Salonga",
+              "char": "Manang (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/cA8lv5GCU5DkZMEeplaVgttrlXr.jpg"
+            },
+            {
+              "name": "珍妮·史雷",
+              "char": "Batiba (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
+            },
+            {
+              "name": "曼尼·賈辛托",
+              "char": "Bungi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
+            },
+            {
+              "name": "多莉·德·萊昂",
+              "char": "Lola Fatima (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/mNskbR6hayRY3DjTcECqIJ7eQsO.jpg"
+            },
+            {
+              "name": "喬·科伊",
+              "char": "Datu (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/rbD9UnkYFYsmewSn2YFPI8lL5UI.jpg"
+            },
+            {
+              "name": "錢信伊",
+              "char": "King Truffle Wuffle (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/nn1y0te102CvakOJ0rSJ7rYPLDF.jpg"
+            },
+            {
+              "name": "Kevin McCann",
+              "char": "Prince Mermahn (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/tY9R5lQyA0vI7Bz6COiyyzOtkqJ.jpg"
+            },
+            {
+              "name": "Kailey Crawford",
+              "char": "Young Jo (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qWRa5Ewo7P6yrUqOWhvzFJpG8I8.jpg"
+            },
+            {
+              "name": "Kayla Teruel",
+              "char": "Young Raissa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/bMgrPLCEv5vmZqD7vgfvwEl95B7.jpg"
+            },
+            {
+              "name": "Amielynn Abellera",
+              "char": "Raissa's Mother (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
+            },
+            {
+              "name": "尤金·科戴洛",
+              "char": "Barondo / Mr. Lopez (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
+            },
+            {
+              "name": "艾瑞克·鮑扎",
+              "char": "General Button Wutton / Sarangay (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/afOlsVPQxbtkom604MeCemjlwEV.jpg"
+            },
+            {
+              "name": "Nico Santos",
+              "char": "Starfish Pastie 1 / Starfish Pastie 2 (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/e96iYbxaqC9zGaFPxZ2fH82MBNu.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "喬伊·克勞福德",
+              "job": "Writer"
+            },
+            {
+              "name": "哈努爾·梅卡度",
+              "job": "Writer"
+            },
+            {
+              "name": "哈努爾·梅卡度",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Forgotten Island",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1465063?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 14003,
         "titleZh": "鋼之鍊金術師：香巴拉的征服者",
@@ -873,13 +1149,23 @@
         "duration": 101,
         "synopsis": "在經歷可怕的墜機之後，特種部隊軍官詹姆斯貝爾蒙與他的戰鬥偵察犬奧丁，受困在阿拉斯加荒野深處。他們為了求生必須面對惡劣的天候。",
         "imdb": "7.5",
-        "rt": "",
-        "mc": "",
+        "rt": "88%",
+        "mc": "69",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
             "votes": 542,
             "lastChanged": "2026-09-22T04:09:27.886554+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 68,
+            "lastChanged": "2026-09-25T01:32:27.378197+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 17,
+            "lastChanged": "2026-09-25T01:32:27.378197+08:00"
           }
         },
         "trailerKey": "CUIZ7ciID7Y",
@@ -1191,7 +1477,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/dDvmQrgC8ZTL4W1T96nE13xOCiP.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
-        "voteAverage": "6.4",
+        "voteAverage": "6.8",
         "genre": [
           "劇情",
           "驚悚"
@@ -1331,7 +1617,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/dDvmQrgC8ZTL4W1T96nE13xOCiP.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
-          "voteAverage": "6.4",
+          "voteAverage": "6.8",
           "trailerKey": "CC2-1zs75iU",
           "imdbId": "tt34206385",
           "countries": [
@@ -6489,18 +6775,18 @@
         "duration": 94,
         "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
         "imdb": "",
-        "rt": "95%",
-        "mc": "81",
+        "rt": "96%",
+        "mc": "79",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 236,
-            "lastChanged": "2026-09-23T12:00:16.712365+08:00"
+            "votes": 245,
+            "lastChanged": "2026-09-25T01:32:27.378197+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 47,
-            "lastChanged": "2026-09-19T05:14:57.623584+08:00"
+            "votes": 50,
+            "lastChanged": "2026-09-25T01:32:27.378197+08:00"
           }
         },
         "trailerKey": "f6Y2SgaHyCw",
@@ -7054,11 +7340,11 @@
         "crew": [
           {
             "name": "Heather Lenz",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Heather Lenz",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -7103,11 +7389,11 @@
           "crew": [
             {
               "name": "Heather Lenz",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Heather Lenz",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -8126,11 +8412,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -8257,11 +8543,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -10754,11 +11040,11 @@
             "job": "Director"
           },
           {
-            "name": "Joachim Trier",
+            "name": "Eskil Vogt",
             "job": "Writer"
           },
           {
-            "name": "Eskil Vogt",
+            "name": "Joachim Trier",
             "job": "Writer"
           }
         ],
@@ -10888,11 +11174,11 @@
               "job": "Director"
             },
             {
-              "name": "Joachim Trier",
+              "name": "Eskil Vogt",
               "job": "Writer"
             },
             {
-              "name": "Eskil Vogt",
+              "name": "Joachim Trier",
               "job": "Writer"
             }
           ],
@@ -11142,7 +11428,7 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
-        "rt": "78%",
+        "rt": "72%",
         "mc": "67",
         "ratingMeta": {
           "imdb": {
@@ -11151,9 +11437,9 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 158,
-            "lastChanged": "2026-09-24T13:20:18.240826+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-09-25T01:32:27.378197+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -17848,11 +18134,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 80000000,
@@ -17967,11 +18253,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 80000000,
@@ -18968,7 +19254,7 @@
           {
             "name": "佛蘿倫絲·普伊",
             "char": "Yelena Belova / Black Widow",
-            "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
           },
           {
             "name": "Liza Colón-Zayas",
@@ -19091,7 +19377,7 @@
             {
               "name": "佛蘿倫絲·普伊",
               "char": "Yelena Belova / Black Widow",
-              "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
             },
             {
               "name": "Liza Colón-Zayas",
@@ -20572,6 +20858,10 @@
         "origTitle": "Toy Story 5",
         "platforms": [
           {
+            "name": "Disney Plus",
+            "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+          },
+          {
             "name": "Apple TV Store",
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
@@ -20701,6 +20991,10 @@
           "origTitle": "Toy Story 5",
           "platforms": [
             {
+              "name": "Disney Plus",
+              "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+            },
+            {
               "name": "Apple TV Store",
               "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
             }
@@ -20713,282 +21007,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 1465063,
-        "titleZh": "誤闖遺忘島",
-        "titleEn": "Forgotten Island",
-        "releaseDate": "2026-09-25",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-25",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-        "voteAverage": "7.6",
-        "genre": [
-          "動畫",
-          "冒險",
-          "奇幻",
-          "喜劇",
-          "家庭"
-        ],
-        "duration": 109,
-        "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
-        "imdb": "",
-        "rt": "100%",
-        "mc": "78",
-        "ratingMeta": {
-          "rt": {
-            "source": "mdblist",
-            "votes": 50,
-            "lastChanged": "2026-09-22T13:20:58.746171+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 10,
-            "lastChanged": "2026-09-24T20:12:11.769030+08:00"
-          }
-        },
-        "trailerKey": "WII6-Ss-kTM",
-        "cast": [
-          {
-            "name": "嘉布麗葉兒·威爾森",
-            "char": "Jo (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/x025IY7XsQIL18aetxJKnEvWYCm.jpg"
-          },
-          {
-            "name": "萊薩·索貝拉諾",
-            "char": "Raissa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/4HdHYyLpqTsceBs9hPIFx8Mnl19.jpg"
-          },
-          {
-            "name": "戴夫·法蘭科",
-            "char": "Raww (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/to7ee1xcCOpDSKMXjBIRuYEfbEc.jpg"
-          },
-          {
-            "name": "Lea Salonga",
-            "char": "Manang (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/cA8lv5GCU5DkZMEeplaVgttrlXr.jpg"
-          },
-          {
-            "name": "珍妮·史雷",
-            "char": "Batiba (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
-          },
-          {
-            "name": "曼尼·賈辛托",
-            "char": "Bungi (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
-          },
-          {
-            "name": "多莉·德·萊昂",
-            "char": "Lola Fatima (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/mNskbR6hayRY3DjTcECqIJ7eQsO.jpg"
-          },
-          {
-            "name": "喬·科伊",
-            "char": "Datu (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/rbD9UnkYFYsmewSn2YFPI8lL5UI.jpg"
-          },
-          {
-            "name": "錢信伊",
-            "char": "King Truffle Wuffle (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/nn1y0te102CvakOJ0rSJ7rYPLDF.jpg"
-          },
-          {
-            "name": "Kevin McCann",
-            "char": "Prince Mermahn (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/tY9R5lQyA0vI7Bz6COiyyzOtkqJ.jpg"
-          },
-          {
-            "name": "Kailey Crawford",
-            "char": "Young Jo (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/qWRa5Ewo7P6yrUqOWhvzFJpG8I8.jpg"
-          },
-          {
-            "name": "Kayla Teruel",
-            "char": "Young Raissa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/bMgrPLCEv5vmZqD7vgfvwEl95B7.jpg"
-          },
-          {
-            "name": "Amielynn Abellera",
-            "char": "Raissa's Mother (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
-          },
-          {
-            "name": "尤金·科戴洛",
-            "char": "Barondo / Mr. Lopez (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
-          },
-          {
-            "name": "艾瑞克·鮑扎",
-            "char": "General Button Wutton / Sarangay (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/afOlsVPQxbtkom604MeCemjlwEV.jpg"
-          },
-          {
-            "name": "Nico Santos",
-            "char": "Starfish Pastie 1 / Starfish Pastie 2 (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/e96iYbxaqC9zGaFPxZ2fH82MBNu.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "喬伊·克勞福德",
-            "job": "Writer"
-          },
-          {
-            "name": "哈努爾·梅卡度",
-            "job": "Writer"
-          },
-          {
-            "name": "哈努爾·梅卡度",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Forgotten Island",
-        "platforms": [],
-        "popularity": 53.437,
-        "imdbId": "tt36583977",
-        "countries": [
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 109,
-          "genres": [
-            "動畫",
-            "冒險",
-            "奇幻",
-            "喜劇",
-            "家庭"
-          ],
-          "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
-          "poster": "https://image.tmdb.org/t/p/w500/7H23ieTIusX91xe78DQkyjYfgFl.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-          "voteAverage": "7.6",
-          "trailerKey": "WII6-Ss-kTM",
-          "imdbId": "tt36583977",
-          "countries": [
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "嘉布麗葉兒·威爾森",
-              "char": "Jo (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/x025IY7XsQIL18aetxJKnEvWYCm.jpg"
-            },
-            {
-              "name": "萊薩·索貝拉諾",
-              "char": "Raissa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/4HdHYyLpqTsceBs9hPIFx8Mnl19.jpg"
-            },
-            {
-              "name": "戴夫·法蘭科",
-              "char": "Raww (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/to7ee1xcCOpDSKMXjBIRuYEfbEc.jpg"
-            },
-            {
-              "name": "Lea Salonga",
-              "char": "Manang (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/cA8lv5GCU5DkZMEeplaVgttrlXr.jpg"
-            },
-            {
-              "name": "珍妮·史雷",
-              "char": "Batiba (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/iNpXig5Djkh5moYG4TCekIATs5B.jpg"
-            },
-            {
-              "name": "曼尼·賈辛托",
-              "char": "Bungi (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/jMbNV4nr5647r6CZJbT6nsnspMz.jpg"
-            },
-            {
-              "name": "多莉·德·萊昂",
-              "char": "Lola Fatima (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/mNskbR6hayRY3DjTcECqIJ7eQsO.jpg"
-            },
-            {
-              "name": "喬·科伊",
-              "char": "Datu (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/rbD9UnkYFYsmewSn2YFPI8lL5UI.jpg"
-            },
-            {
-              "name": "錢信伊",
-              "char": "King Truffle Wuffle (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/nn1y0te102CvakOJ0rSJ7rYPLDF.jpg"
-            },
-            {
-              "name": "Kevin McCann",
-              "char": "Prince Mermahn (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/tY9R5lQyA0vI7Bz6COiyyzOtkqJ.jpg"
-            },
-            {
-              "name": "Kailey Crawford",
-              "char": "Young Jo (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/qWRa5Ewo7P6yrUqOWhvzFJpG8I8.jpg"
-            },
-            {
-              "name": "Kayla Teruel",
-              "char": "Young Raissa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/bMgrPLCEv5vmZqD7vgfvwEl95B7.jpg"
-            },
-            {
-              "name": "Amielynn Abellera",
-              "char": "Raissa's Mother (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/65epo4rlzK95b8oTFyhCQszMppp.jpg"
-            },
-            {
-              "name": "尤金·科戴洛",
-              "char": "Barondo / Mr. Lopez (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
-            },
-            {
-              "name": "艾瑞克·鮑扎",
-              "char": "General Button Wutton / Sarangay (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/afOlsVPQxbtkom604MeCemjlwEV.jpg"
-            },
-            {
-              "name": "Nico Santos",
-              "char": "Starfish Pastie 1 / Starfish Pastie 2 (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/e96iYbxaqC9zGaFPxZ2fH82MBNu.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "喬伊·克勞福德",
-              "job": "Writer"
-            },
-            {
-              "name": "哈努爾·梅卡度",
-              "job": "Writer"
-            },
-            {
-              "name": "哈努爾·梅卡度",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Forgotten Island",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1465063?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 1388805,
         "titleZh": "LINKIN PARK: UNSHATTER",
@@ -21420,8 +21438,8 @@
         "backdrop": "https://image.tmdb.org/t/p/w1280/b7PtCwsuMw84REQq15nmQgT9UXN.jpg",
         "voteAverage": "9.3",
         "genre": [
-          "喜劇",
-          "劇情"
+          "劇情",
+          "喜劇"
         ],
         "duration": 129,
         "synopsis": "",
@@ -21540,8 +21558,8 @@
         "detail": {
           "duration": 129,
           "genres": [
-            "喜劇",
-            "劇情"
+            "劇情",
+            "喜劇"
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
@@ -21790,11 +21808,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -21915,11 +21933,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -24786,7 +24804,7 @@
           {
             "name": "潔西卡·雀絲坦",
             "char": "Ursula / Other Mommy",
-            "photo": "https://image.tmdb.org/t/p/w500/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/eQKnihReJeB9vQEa5gySzAlKfZt.jpg"
           },
           {
             "name": "Arabella Olivia Clark",
@@ -24903,7 +24921,7 @@
             {
               "name": "潔西卡·雀絲坦",
               "char": "Ursula / Other Mommy",
-              "photo": "https://image.tmdb.org/t/p/w500/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/eQKnihReJeB9vQEa5gySzAlKfZt.jpg"
             },
             {
               "name": "Arabella Olivia Clark",
@@ -25865,8 +25883,7 @@
         "voteAverage": "",
         "genre": [
           "動作",
-          "奇幻",
-          "喜劇"
+          "奇幻"
         ],
         "duration": 119,
         "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
@@ -25987,8 +26004,7 @@
           "duration": 119,
           "genres": [
             "動作",
-            "奇幻",
-            "喜劇"
+            "奇幻"
           ],
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
@@ -26160,7 +26176,7 @@
           {
             "name": "Jane Levy",
             "char": "Eva Gardiner",
-            "photo": "https://image.tmdb.org/t/p/w500/7eGX3HbChmEn8G8nGzB7nvthlfI.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/iYyWPOOpZgAqZK6IddSaD4R9QW3.jpg"
           },
           {
             "name": "艾蜜莉·路德",
@@ -26231,7 +26247,7 @@
             {
               "name": "Jane Levy",
               "char": "Eva Gardiner",
-              "photo": "https://image.tmdb.org/t/p/w500/7eGX3HbChmEn8G8nGzB7nvthlfI.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/iYyWPOOpZgAqZK6IddSaD4R9QW3.jpg"
             },
             {
               "name": "艾蜜莉·路德",
@@ -27956,7 +27972,7 @@
           },
           {
             "name": "Sonita Henry",
-            "char": "Clara Finch",
+            "char": "",
             "photo": "https://image.tmdb.org/t/p/w500/oIBILFSVqHT2warKlXSPDML3llI.jpg"
           }
         ],
@@ -28064,7 +28080,7 @@
             },
             {
               "name": "Sonita Henry",
-              "char": "Clara Finch",
+              "char": "",
               "photo": "https://image.tmdb.org/t/p/w500/oIBILFSVqHT2warKlXSPDML3llI.jpg"
             }
           ],
@@ -28110,7 +28126,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/afd5TWfpEwP6ELpeipTrB3RAex9.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/ycqTwRV7jUxjMospXxKTVS74nft.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
         "voteAverage": "",
         "genre": [
           "劇情",
@@ -28234,7 +28250,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/afd5TWfpEwP6ELpeipTrB3RAex9.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/ycqTwRV7jUxjMospXxKTVS74nft.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
           "voteAverage": "",
           "trailerKey": "06EfqdkjSfQ",
           "imdbId": "tt37510326",
@@ -28475,11 +28491,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -28597,11 +28613,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -33002,11 +33018,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -33129,11 +33145,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
@@ -33641,7 +33657,7 @@
           {
             "name": "佛蘿倫絲·普伊",
             "char": "Yelena Belova",
-            "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
           },
           {
             "name": "凡妮莎·寇比",
@@ -33764,7 +33780,7 @@
             {
               "name": "佛蘿倫絲·普伊",
               "char": "Yelena Belova",
-              "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
             },
             {
               "name": "凡妮莎·寇比",
@@ -33886,7 +33902,7 @@
           {
             "name": "佛蘿倫絲·普伊",
             "char": "Princess Irulan",
-            "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
           },
           {
             "name": "蕾貝卡·弗格森",
@@ -33998,7 +34014,7 @@
             {
               "name": "佛蘿倫絲·普伊",
               "char": "Princess Irulan",
-              "photo": "https://image.tmdb.org/t/p/w500/ejgQXt1fAvPueAvacDsGwG00aA.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg"
             },
             {
               "name": "蕾貝卡·弗格森",
