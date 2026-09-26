@@ -133,6 +133,13 @@ class TmdbOverrideTests(unittest.TestCase):
             "SB19 Wakas at Simula: The Trilogy Concert Finale": 1776482,
             "One Piece IV Movie: Adventure of Dead End": 44727,
             "航海王4": 44727,
+            "驚天劫機 Hijacked": 1479953,
+            "驚天劫機": 1479953,
+            "一個人旅行": 1339646,
+            "名偵探柯南 第30號殺人事件": 1777750,
+            "大搜查線N.E.W.": 1491083,
+            "大搜查線 N.E.W.": 1491083,
+            "航海王喬巴身世之謎": 44731,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
