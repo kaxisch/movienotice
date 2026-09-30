@@ -1,12 +1,510 @@
 {
-  "generated_at": "2026-09-30T21:01:53.428771+08:00",
+  "generated_at": "2026-10-01T04:20:04.862375+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 84,
-    "soon_count": 71
+    "now_count": 86,
+    "soon_count": 69
   },
   "movies": {
     "now": [
+      {
+        "id": 961214,
+        "titleZh": "復活男",
+        "titleEn": "부활남: 더 레드",
+        "releaseDate": "2026-10-01",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-01",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/uq11OaHZRn5WjmZQwlXDPRd91dk.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/kiDd05NykJBIoEvJPSG5SOd7qc6.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動作",
+          "奇幻"
+        ],
+        "duration": 102,
+        "synopsis": "在面試中數度落選的求職者石煥（具教煥飾演），即使處在人生最失意的時刻，身邊仍有摯友英夏（姜其永飾演）的毒舌勸告，以及妹妹藝琳（金是兒飾演）的始終支持。然而在某天夜裡，碩煥突然遭到神秘陌生人襲擊，當場失去性命。沒想到，死亡72小時之後，他竟奇蹟般地再度睜開了眼睛！石煥這才得知，自己擁有一種「無論死去多少次，都能再度復活」的特殊能力。而這個「死得越多，變得越強」的能力，又將把他帶向什麼樣的命運？一場賭上性命的瘋狂反擊，即將展開！",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "u9QiOd43D_g",
+        "cast": [
+          {
+            "name": "具教煥",
+            "char": "Cha Seok Hwan / Red",
+            "photo": "https://image.tmdb.org/t/p/w500/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
+          },
+          {
+            "name": "申承浩",
+            "char": "Black",
+            "photo": "https://image.tmdb.org/t/p/w500/6Ca6UNuwVmHPIVGIPQuChOp7oJp.jpg"
+          },
+          {
+            "name": "姜基榮",
+            "char": "Young-ha",
+            "photo": "https://image.tmdb.org/t/p/w500/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
+          },
+          {
+            "name": "김시아",
+            "char": "Cha Ye-rin",
+            "photo": "https://image.tmdb.org/t/p/w500/4xNracGIzNRRLNbIO5cWigbPpCA.jpg"
+          },
+          {
+            "name": "金成鈴",
+            "char": "Mi-joo",
+            "photo": "https://image.tmdb.org/t/p/w500/sPB8ySlzfJWNedISwugRWEBABIY.jpg"
+          },
+          {
+            "name": "김인우",
+            "char": "Cha Hyeong-seok",
+            "photo": "https://image.tmdb.org/t/p/w500/zseVjncNOROGqZbJozlMTgFHeeI.jpg"
+          },
+          {
+            "name": "김지율",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/k2rlfDSRwnvAMmwDfGebx77HwaY.jpg"
+          },
+          {
+            "name": "Justin Harvey",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/sB8FTFBs7xoiOCzbJM5X2vpi4Rr.jpg"
+          },
+          {
+            "name": "황근형",
+            "char": "Bully 4",
+            "photo": "https://image.tmdb.org/t/p/w500/7OPetSlFQRVHzmvbJ4TYO4ZTjNP.jpg"
+          },
+          {
+            "name": "Ha Jin-chul",
+            "char": "Police",
+            "photo": "https://image.tmdb.org/t/p/w500/d67bBCnHbqXRJvk299w4GeSEGBN.jpg"
+          },
+          {
+            "name": "Kwon Hee-wook",
+            "char": "Japanese diplomat",
+            "photo": "https://image.tmdb.org/t/p/w500/opiwH3xIEaV2vpLhNLV3RsIaQR0.jpg"
+          },
+          {
+            "name": "Kim Do-gyeong",
+            "char": "Citizen",
+            "photo": "https://image.tmdb.org/t/p/w500/hBvVzwAFS3cUsBcn4bYeOwYNBXT.jpg"
+          },
+          {
+            "name": "Lee Joong-hyun",
+            "char": "Guest",
+            "photo": "https://image.tmdb.org/t/p/w500/wq0c0O0kPxhqMU8ODSmIeEhFgLa.jpg"
+          },
+          {
+            "name": "金裕貞",
+            "char": "Blue",
+            "photo": "https://image.tmdb.org/t/p/w500/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "백종열",
+            "job": "Director"
+          },
+          {
+            "name": "강선주",
+            "job": "Writer"
+          },
+          {
+            "name": "박성신",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "부활남: 더 레드",
+        "platforms": [],
+        "popularity": 4.3443,
+        "imdbId": "tt29452783",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 102,
+          "genres": [
+            "動作",
+            "奇幻"
+          ],
+          "synopsis": "在面試中數度落選的求職者石煥（具教煥飾演），即使處在人生最失意的時刻，身邊仍有摯友英夏（姜其永飾演）的毒舌勸告，以及妹妹藝琳（金是兒飾演）的始終支持。然而在某天夜裡，碩煥突然遭到神秘陌生人襲擊，當場失去性命。沒想到，死亡72小時之後，他竟奇蹟般地再度睜開了眼睛！石煥這才得知，自己擁有一種「無論死去多少次，都能再度復活」的特殊能力。而這個「死得越多，變得越強」的能力，又將把他帶向什麼樣的命運？一場賭上性命的瘋狂反擊，即將展開！",
+          "poster": "https://image.tmdb.org/t/p/w500/uq11OaHZRn5WjmZQwlXDPRd91dk.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/kiDd05NykJBIoEvJPSG5SOd7qc6.jpg",
+          "voteAverage": "",
+          "trailerKey": "u9QiOd43D_g",
+          "imdbId": "tt29452783",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "具教煥",
+              "char": "Cha Seok Hwan / Red",
+              "photo": "https://image.tmdb.org/t/p/w500/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
+            },
+            {
+              "name": "申承浩",
+              "char": "Black",
+              "photo": "https://image.tmdb.org/t/p/w500/6Ca6UNuwVmHPIVGIPQuChOp7oJp.jpg"
+            },
+            {
+              "name": "姜基榮",
+              "char": "Young-ha",
+              "photo": "https://image.tmdb.org/t/p/w500/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
+            },
+            {
+              "name": "김시아",
+              "char": "Cha Ye-rin",
+              "photo": "https://image.tmdb.org/t/p/w500/4xNracGIzNRRLNbIO5cWigbPpCA.jpg"
+            },
+            {
+              "name": "金成鈴",
+              "char": "Mi-joo",
+              "photo": "https://image.tmdb.org/t/p/w500/sPB8ySlzfJWNedISwugRWEBABIY.jpg"
+            },
+            {
+              "name": "김인우",
+              "char": "Cha Hyeong-seok",
+              "photo": "https://image.tmdb.org/t/p/w500/zseVjncNOROGqZbJozlMTgFHeeI.jpg"
+            },
+            {
+              "name": "김지율",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/k2rlfDSRwnvAMmwDfGebx77HwaY.jpg"
+            },
+            {
+              "name": "Justin Harvey",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/sB8FTFBs7xoiOCzbJM5X2vpi4Rr.jpg"
+            },
+            {
+              "name": "황근형",
+              "char": "Bully 4",
+              "photo": "https://image.tmdb.org/t/p/w500/7OPetSlFQRVHzmvbJ4TYO4ZTjNP.jpg"
+            },
+            {
+              "name": "Ha Jin-chul",
+              "char": "Police",
+              "photo": "https://image.tmdb.org/t/p/w500/d67bBCnHbqXRJvk299w4GeSEGBN.jpg"
+            },
+            {
+              "name": "Kwon Hee-wook",
+              "char": "Japanese diplomat",
+              "photo": "https://image.tmdb.org/t/p/w500/opiwH3xIEaV2vpLhNLV3RsIaQR0.jpg"
+            },
+            {
+              "name": "Kim Do-gyeong",
+              "char": "Citizen",
+              "photo": "https://image.tmdb.org/t/p/w500/hBvVzwAFS3cUsBcn4bYeOwYNBXT.jpg"
+            },
+            {
+              "name": "Lee Joong-hyun",
+              "char": "Guest",
+              "photo": "https://image.tmdb.org/t/p/w500/wq0c0O0kPxhqMU8ODSmIeEhFgLa.jpg"
+            },
+            {
+              "name": "金裕貞",
+              "char": "Blue",
+              "photo": "https://image.tmdb.org/t/p/w500/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "백종열",
+              "job": "Director"
+            },
+            {
+              "name": "강선주",
+              "job": "Writer"
+            },
+            {
+              "name": "박성신",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "부활남: 더 레드",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/961214?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1248832,
+        "titleZh": "挖掘者",
+        "titleEn": "Digger",
+        "releaseDate": "2026-10-01",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-01",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4A3r1AjJg9Wa6ms3MGOScetCY0o.jpg",
+        "voteAverage": "7.3",
+        "genre": [
+          "喜劇",
+          "劇情"
+        ],
+        "duration": 129,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "sCs4ZEhwyjA",
+        "cast": [
+          {
+            "name": "湯姆·克魯斯",
+            "char": "Digger Rockwell / Curtis Markson",
+            "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
+          },
+          {
+            "name": "里茲·阿邁德",
+            "char": "Ganesh",
+            "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
+          },
+          {
+            "name": "John Goodman",
+            "char": "President Compson",
+            "photo": "https://image.tmdb.org/t/p/w500/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
+          },
+          {
+            "name": "桑德拉·惠勒",
+            "char": "Emma",
+            "photo": "https://image.tmdb.org/t/p/w500/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg"
+          },
+          {
+            "name": "麥可·史都巴格",
+            "char": "Vice President",
+            "photo": "https://image.tmdb.org/t/p/w500/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg"
+          },
+          {
+            "name": "傑西·普萊蒙",
+            "char": "Kenny",
+            "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+          },
+          {
+            "name": "Robert John Burke",
+            "char": "Fitzgerald",
+            "photo": "https://image.tmdb.org/t/p/w500/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg"
+          },
+          {
+            "name": "Emma D'Arcy",
+            "char": "Lena",
+            "photo": "https://image.tmdb.org/t/p/w500/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg"
+          },
+          {
+            "name": "Burn Gorman",
+            "char": "Amos",
+            "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
+          },
+          {
+            "name": "Sophie Wilde",
+            "char": "Hannah",
+            "photo": "https://image.tmdb.org/t/p/w500/fMZvMsvTv9MYSC6LTNdIUaMGjIv.jpg"
+          },
+          {
+            "name": "Pip Torrens",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
+          },
+          {
+            "name": "Mercedes Hernández",
+            "char": "Adelia",
+            "photo": "https://image.tmdb.org/t/p/w500/2pC5Lv1eiItvAxeEe8KTbRlM1wY.jpg"
+          },
+          {
+            "name": "Danny Kirrane",
+            "char": "Sandy Clarkson",
+            "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
+          },
+          {
+            "name": "James Dryden",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
+          },
+          {
+            "name": "Corey Johnson",
+            "char": "Jacobs",
+            "photo": "https://image.tmdb.org/t/p/w500/mhNbf4vGzixPL5mTIOBUPguqvpB.jpg"
+          },
+          {
+            "name": "Charlie Bentley",
+            "char": "EU Ambassador (uncredited)",
+            "photo": "https://image.tmdb.org/t/p/w500/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "阿利安卓·崗札雷·伊納利圖",
+            "job": "Director"
+          },
+          {
+            "name": "阿利安卓·崗札雷·伊納利圖",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Alexander Dinelaris",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 180000000,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Digger",
+        "platforms": [],
+        "popularity": 140.8925,
+        "imdbId": "tt31450459",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 129,
+          "genres": [
+            "喜劇",
+            "劇情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/4A3r1AjJg9Wa6ms3MGOScetCY0o.jpg",
+          "voteAverage": "7.3",
+          "trailerKey": "sCs4ZEhwyjA",
+          "imdbId": "tt31450459",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "湯姆·克魯斯",
+              "char": "Digger Rockwell / Curtis Markson",
+              "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
+            },
+            {
+              "name": "里茲·阿邁德",
+              "char": "Ganesh",
+              "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
+            },
+            {
+              "name": "John Goodman",
+              "char": "President Compson",
+              "photo": "https://image.tmdb.org/t/p/w500/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
+            },
+            {
+              "name": "桑德拉·惠勒",
+              "char": "Emma",
+              "photo": "https://image.tmdb.org/t/p/w500/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg"
+            },
+            {
+              "name": "麥可·史都巴格",
+              "char": "Vice President",
+              "photo": "https://image.tmdb.org/t/p/w500/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg"
+            },
+            {
+              "name": "傑西·普萊蒙",
+              "char": "Kenny",
+              "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+            },
+            {
+              "name": "Robert John Burke",
+              "char": "Fitzgerald",
+              "photo": "https://image.tmdb.org/t/p/w500/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg"
+            },
+            {
+              "name": "Emma D'Arcy",
+              "char": "Lena",
+              "photo": "https://image.tmdb.org/t/p/w500/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg"
+            },
+            {
+              "name": "Burn Gorman",
+              "char": "Amos",
+              "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
+            },
+            {
+              "name": "Sophie Wilde",
+              "char": "Hannah",
+              "photo": "https://image.tmdb.org/t/p/w500/fMZvMsvTv9MYSC6LTNdIUaMGjIv.jpg"
+            },
+            {
+              "name": "Pip Torrens",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
+            },
+            {
+              "name": "Mercedes Hernández",
+              "char": "Adelia",
+              "photo": "https://image.tmdb.org/t/p/w500/2pC5Lv1eiItvAxeEe8KTbRlM1wY.jpg"
+            },
+            {
+              "name": "Danny Kirrane",
+              "char": "Sandy Clarkson",
+              "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
+            },
+            {
+              "name": "James Dryden",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
+            },
+            {
+              "name": "Corey Johnson",
+              "char": "Jacobs",
+              "photo": "https://image.tmdb.org/t/p/w500/mhNbf4vGzixPL5mTIOBUPguqvpB.jpg"
+            },
+            {
+              "name": "Charlie Bentley",
+              "char": "EU Ambassador (uncredited)",
+              "photo": "https://image.tmdb.org/t/p/w500/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "阿利安卓·崗札雷·伊納利圖",
+              "job": "Director"
+            },
+            {
+              "name": "阿利安卓·崗札雷·伊納利圖",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Alexander Dinelaris",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 180000000,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Digger",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1248832?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 1388805,
         "titleZh": "LINKIN PARK: UNSHATTER",
@@ -24,7 +522,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/o3uTRtrkr56ixAz1hjDClc79H58.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/uL1HCc4wmcFcSr1zS3kXX3CNUeE.jpg",
-        "voteAverage": "",
+        "voteAverage": "10.0",
         "genre": [
           "音樂",
           "紀錄"
@@ -109,7 +607,7 @@
           "synopsis": "在痛失摯愛團員後,經歷了七年的沉寂,LINKIN PARK(聯合公園)的其餘成員努力尋找前進的方向。他們共同的過往與歷久彌新的友誼,加上兩位新成員帶來的全新視角,激發出重新燃起的創作能量,帶領他們踏上一段藝術重生的蜕變旅程。 影片追隨樂團的足跡,從2022年私密的錄音室時光,一路走到2024年11月15日於聖保羅舉行的震撼專輯發佈與演唱會。片中交織了罕見的珍貴檔案畫面、售罄演出中的震撼現場演出,以及團員與樂迷坦誠的採訪內容——捕捉到重新出發這件事最真實、最誠懇的一面",
           "poster": "https://image.tmdb.org/t/p/w500/o3uTRtrkr56ixAz1hjDClc79H58.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/uL1HCc4wmcFcSr1zS3kXX3CNUeE.jpg",
-          "voteAverage": "",
+          "voteAverage": "10.0",
           "trailerKey": null,
           "imdbId": "tt43442522",
           "countries": [
@@ -498,7 +996,7 @@
           {
             "name": "萊薩·索貝拉諾",
             "char": "Raissa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/4HdHYyLpqTsceBs9hPIFx8Mnl19.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/xsgT139b39OHdLkY87yIabNLi5Y.jpg"
           },
           {
             "name": "戴夫·法蘭科",
@@ -523,7 +1021,7 @@
           {
             "name": "多莉·德·萊昂",
             "char": "Lola Fatima (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/jitpV6REc3UHhb4wjaxbeaBhoTw.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/fwwvPAJaJA3F8P35MYGf8MmYfe8.jpg"
           },
           {
             "name": "喬·科伊",
@@ -586,7 +1084,7 @@
           }
         ],
         "budget": 80000000,
-        "revenue": 20649000,
+        "revenue": 21473920,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Forgotten Island",
@@ -623,7 +1121,7 @@
             {
               "name": "萊薩·索貝拉諾",
               "char": "Raissa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/4HdHYyLpqTsceBs9hPIFx8Mnl19.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/xsgT139b39OHdLkY87yIabNLi5Y.jpg"
             },
             {
               "name": "戴夫·法蘭科",
@@ -648,7 +1146,7 @@
             {
               "name": "多莉·德·萊昂",
               "char": "Lola Fatima (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/jitpV6REc3UHhb4wjaxbeaBhoTw.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/fwwvPAJaJA3F8P35MYGf8MmYfe8.jpg"
             },
             {
               "name": "喬·科伊",
@@ -711,7 +1209,7 @@
             }
           ],
           "budget": 80000000,
-          "revenue": 20649000,
+          "revenue": 21473920,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Forgotten Island",
@@ -1936,9 +2434,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dDvmQrgC8ZTL4W1T96nE13xOCiP.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
-        "voteAverage": "7.1",
+        "voteAverage": "7.0",
         "genre": [
-          "犯罪",
           "驚悚",
           "劇情"
         ],
@@ -2071,14 +2568,13 @@
         "detail": {
           "duration": 110,
           "genres": [
-            "犯罪",
             "驚悚",
             "劇情"
           ],
           "synopsis": "2006年，美國一檔由克里斯漢森（羅伯派汀森飾演）主持的實境節目《誘捕掠食者》正迅速竄紅。節目組先是讓成年人假扮青少年，在網路上「撒網捕魚」，誘使戀童癖者前往一處佈滿隱藏攝影機的住宅，再由克里斯漢森現身當面對峙、揭露對方罪行，最後出動大批警察現場逮捕。真實、刺激又極具衝擊性的獵捕過程，引爆全美觀眾的窺探慾望。電視台更看準時機，順勢將節目移至「黃金時段」播出，讓收視率扶搖直上。然而，當節目聲勢愈來愈大，同時段競爭對手也不斷製造話題，克里斯漢森與節目組開始不滿足只是獵捕那些小魚小蝦，轉而將目標鎖定在更具權勢、更受矚目的對象，企圖讓這場「誘捕」升級成一場前所未有的電視奇觀。就當節目野心不斷膨脹之際，一條足以撼動全美、甚至改變整個遊戲規則的「大鯨魚」終於上鉤…。",
           "poster": "https://image.tmdb.org/t/p/w500/dDvmQrgC8ZTL4W1T96nE13xOCiP.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
-          "voteAverage": "7.1",
+          "voteAverage": "7.0",
           "trailerKey": "CC2-1zs75iU",
           "imdbId": "tt34206385",
           "countries": [
@@ -3658,11 +4154,11 @@
         ],
         "crew": [
           {
-            "name": "Liu Wei-Bin",
+            "name": "Yung-hsiang Chang",
             "job": "Screenplay"
           },
           {
-            "name": "Yung-hsiang Chang",
+            "name": "Liu Wei-Bin",
             "job": "Screenplay"
           },
           {
@@ -3779,11 +4275,11 @@
           ],
           "crew": [
             {
-              "name": "Liu Wei-Bin",
+              "name": "Yung-hsiang Chang",
               "job": "Screenplay"
             },
             {
-              "name": "Yung-hsiang Chang",
+              "name": "Liu Wei-Bin",
               "job": "Screenplay"
             },
             {
@@ -3974,13 +4470,13 @@
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 139,
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           },
           "mc": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 30,
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           }
         },
@@ -7297,7 +7793,7 @@
           }
         ],
         "budget": 75000000,
-        "revenue": 196476247,
+        "revenue": 199272300,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Resident Evil",
@@ -7424,7 +7920,7 @@
             }
           ],
           "budget": 75000000,
-          "revenue": 196476247,
+          "revenue": 199272300,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Resident Evil",
@@ -9252,7 +9748,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ydaH0Cpk3IQ8TtxDwdAxJ5lpEBD.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/euUEDjof7fVX2t3nYFvLLN9ADK2.jpg",
-        "voteAverage": "7.1",
+        "voteAverage": "7.0",
         "genre": [
           "喜劇",
           "音樂",
@@ -9399,7 +9895,7 @@
           "synopsis": "一位婚禮樂團主唱「瑞克大砲」，在一次演出中，意外結識了事業正逢瓶頸的前男團偶像丹尼。兩位失意音樂人惺惺相惜，竟擦出強烈的音樂火花。未料，丹尼私自將瑞克未完成的抒情創作，改編為全新單曲發表，瞬間爆紅登上熱門榜首，成功重回巨星寶座。眼看自己的心血被剽竊，榮耀卻全歸他人，不甘心的瑞克決定挺身而出，不惜一切代價奪回屬於自己的創作與尊嚴。",
           "poster": "https://image.tmdb.org/t/p/w500/ydaH0Cpk3IQ8TtxDwdAxJ5lpEBD.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/euUEDjof7fVX2t3nYFvLLN9ADK2.jpg",
-          "voteAverage": "7.1",
+          "voteAverage": "7.0",
           "trailerKey": "o3edxHVqPLU",
           "imdbId": "tt32267691",
           "countries": [
@@ -11189,11 +11685,11 @@
             "job": "Director"
           },
           {
-            "name": "Eskil Vogt",
+            "name": "Joachim Trier",
             "job": "Writer"
           },
           {
-            "name": "Joachim Trier",
+            "name": "Eskil Vogt",
             "job": "Writer"
           }
         ],
@@ -11323,11 +11819,11 @@
               "job": "Director"
             },
             {
-              "name": "Eskil Vogt",
+              "name": "Joachim Trier",
               "job": "Writer"
             },
             {
-              "name": "Joachim Trier",
+              "name": "Eskil Vogt",
               "job": "Writer"
             }
           ],
@@ -11597,7 +12093,7 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
-        "rt": "78%",
+        "rt": "72%",
         "mc": "67",
         "ratingMeta": {
           "imdb": {
@@ -11606,9 +12102,9 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 165,
-            "lastChanged": "2026-09-30T20:40:41.687292+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-01T04:20:04.862375+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -11857,7 +12353,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
-        "voteAverage": "6.2",
+        "voteAverage": "6.1",
         "genre": [
           "驚悚"
         ],
@@ -11968,11 +12464,11 @@
         ],
         "crew": [
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Jonathan Frank",
+            "job": "Writer"
           },
           {
-            "name": "Peter Spierig",
+            "name": "Michael Spierig",
             "job": "Director"
           },
           {
@@ -12000,7 +12496,7 @@
           "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
-          "voteAverage": "6.2",
+          "voteAverage": "6.1",
           "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
@@ -12091,11 +12587,11 @@
           ],
           "crew": [
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Jonathan Frank",
+              "job": "Writer"
             },
             {
-              "name": "Peter Spierig",
+              "name": "Michael Spierig",
               "job": "Director"
             },
             {
@@ -15616,7 +16112,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/qC8bvcL2RDQdWNFpXbDn8YH2T1p.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/hs4QXgPuKJ4PPwYBWNTod61RKiA.jpg",
-        "voteAverage": "7.7",
+        "voteAverage": "7.6",
         "genre": [
           "喜劇",
           "科幻",
@@ -15624,14 +16120,14 @@
         ],
         "duration": 95,
         "synopsis": "「超拖」樂團雙人組有夠會拖，兩個懷著成名夢的好友，為了登上表演舞台，每天在破公寓談鋼琴練肖話，還找紀錄片團隊貼身側拍。只是十七年過去，少年變大叔，卻連場地預約電話都還沒打。他們以為只要幹場大事，例如跳下電視塔，成為話題，自然會被注意到。當計劃再度挫屎，習慣言聽計從的那個開始意識到，多年搭檔可能才是拖垮人生的雷包，於是打算拆夥落跑。誰知竟把箱型車開成時光機，陰錯陽差將所有人帶回十七年前的那一天！",
-        "imdb": "8.0",
+        "imdb": "7.7",
         "rt": "95%",
         "mc": "80",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
-            "votes": 5802,
-            "lastChanged": "2026-08-03T17:48:24.046684+08:00"
+            "votes": 13539,
+            "lastChanged": "2026-10-01T04:20:04.862375+08:00"
           },
           "rt": {
             "source": "mdblist",
@@ -15762,7 +16258,7 @@
           "synopsis": "「超拖」樂團雙人組有夠會拖，兩個懷著成名夢的好友，為了登上表演舞台，每天在破公寓談鋼琴練肖話，還找紀錄片團隊貼身側拍。只是十七年過去，少年變大叔，卻連場地預約電話都還沒打。他們以為只要幹場大事，例如跳下電視塔，成為話題，自然會被注意到。當計劃再度挫屎，習慣言聽計從的那個開始意識到，多年搭檔可能才是拖垮人生的雷包，於是打算拆夥落跑。誰知竟把箱型車開成時光機，陰錯陽差將所有人帶回十七年前的那一天！",
           "poster": "https://image.tmdb.org/t/p/w500/qC8bvcL2RDQdWNFpXbDn8YH2T1p.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/hs4QXgPuKJ4PPwYBWNTod61RKiA.jpg",
-          "voteAverage": "7.7",
+          "voteAverage": "7.6",
           "trailerKey": "gVI8kzhK-Lo",
           "imdbId": "tt35522483",
           "countries": [
@@ -16842,7 +17338,7 @@
           {
             "name": "英德·納瓦雷特",
             "char": "Nikki",
-            "photo": "https://image.tmdb.org/t/p/w500/ayKQBpXkjtLWIKOaITO493NTqFk.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/qlNBUGON8FebgzcqVhhRSVFYSa5.jpg"
           },
           {
             "name": "庫珀·湯姆林森",
@@ -16918,11 +17414,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
@@ -16967,7 +17463,7 @@
             {
               "name": "英德·納瓦雷特",
               "char": "Nikki",
-              "photo": "https://image.tmdb.org/t/p/w500/ayKQBpXkjtLWIKOaITO493NTqFk.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/qlNBUGON8FebgzcqVhhRSVFYSa5.jpg"
             },
             {
               "name": "庫珀·湯姆林森",
@@ -17043,11 +17539,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
@@ -17220,7 +17716,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/AuScmbIwpqa12bwhorWEdo9LZX.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/h2CZMPoOyEM5DXBzpSKMck2Jj9V.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/rVOll8XOde5BuIF4tGO1q0pfngQ.jpg",
         "voteAverage": "7.3",
         "genre": [
           "動畫",
@@ -17338,7 +17834,7 @@
           ],
           "synopsis": "某天，當吉伊卡哇與小八貓在廣場休息時，兔兔突然臉上貼著一張傳單現身。小八貓確認傳單後發現，那是一張寫著「特別島嶼邀請函」的招待券。傳單上寫著：「在島上完成簡單的討伐即可獲得 100 倍報酬」、「限定島嶼拉麵與甜點，甜的鹹的全都實質免費」。被這些誘人條件吸引，吉伊卡哇一行人決定前往島嶼合宿。雖然海獺對傳單內容感到懷疑，但仍一同搭船出發。然而，在登陸島嶼後，等待著吉伊卡哇他們的究竟是……！？",
           "poster": "https://image.tmdb.org/t/p/w500/AuScmbIwpqa12bwhorWEdo9LZX.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/h2CZMPoOyEM5DXBzpSKMck2Jj9V.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/rVOll8XOde5BuIF4tGO1q0pfngQ.jpg",
           "voteAverage": "7.3",
           "trailerKey": "Dm5dsOdXFfg",
           "imdbId": "tt39026173",
@@ -18160,10 +18656,16 @@
         ],
         "duration": 102,
         "synopsis": "大雄與朋友們對於暑假的露營地點意見不一，最後他們決定採納哆啦A夢的建議，前往大海中央露營！借助祕密道具「海底車」和「適應燈」的力量，五人展開海底露營之旅。他們發現了一艘沉船，並遇到神祕青年艾魯。原來，他是來自領土廣闊的海底王國「姆聯邦」的海底人！因為討厭陸上人，所以海底人對大雄一行人充滿戒心。「鬼岩城……開始活動了！」這個讓海底人畏懼的鬼岩城究竟是什麼？懷抱著對夥伴的信任，大雄一行人展開足以決定地球命運的大冒險！",
-        "imdb": "",
+        "imdb": "6.2",
         "rt": "",
         "mc": "",
-        "ratingMeta": {},
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 257,
+            "lastChanged": "2026-10-01T04:20:04.862375+08:00"
+          }
+        },
         "trailerKey": "t1xLVsUPm-c",
         "cast": [
           {
@@ -19191,504 +19693,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 961214,
-        "titleZh": "復活男",
-        "titleEn": "부활남: 더 레드",
-        "releaseDate": "2026-10-01",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-01",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/uq11OaHZRn5WjmZQwlXDPRd91dk.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/kiDd05NykJBIoEvJPSG5SOd7qc6.jpg",
-        "voteAverage": "",
-        "genre": [
-          "動作",
-          "奇幻"
-        ],
-        "duration": 102,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "u9QiOd43D_g",
-        "cast": [
-          {
-            "name": "具教煥",
-            "char": "Cha Seok Hwan / Red",
-            "photo": "https://image.tmdb.org/t/p/w500/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
-          },
-          {
-            "name": "申承浩",
-            "char": "Black",
-            "photo": "https://image.tmdb.org/t/p/w500/6Ca6UNuwVmHPIVGIPQuChOp7oJp.jpg"
-          },
-          {
-            "name": "姜基榮",
-            "char": "Young-ha",
-            "photo": "https://image.tmdb.org/t/p/w500/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
-          },
-          {
-            "name": "김시아",
-            "char": "Cha Ye-rin",
-            "photo": "https://image.tmdb.org/t/p/w500/4xNracGIzNRRLNbIO5cWigbPpCA.jpg"
-          },
-          {
-            "name": "金成鈴",
-            "char": "Mi-joo",
-            "photo": "https://image.tmdb.org/t/p/w500/sPB8ySlzfJWNedISwugRWEBABIY.jpg"
-          },
-          {
-            "name": "김인우",
-            "char": "Cha Hyeong-seok",
-            "photo": "https://image.tmdb.org/t/p/w500/zseVjncNOROGqZbJozlMTgFHeeI.jpg"
-          },
-          {
-            "name": "김지율",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/k2rlfDSRwnvAMmwDfGebx77HwaY.jpg"
-          },
-          {
-            "name": "Justin Harvey",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/sB8FTFBs7xoiOCzbJM5X2vpi4Rr.jpg"
-          },
-          {
-            "name": "황근형",
-            "char": "Bully 4",
-            "photo": "https://image.tmdb.org/t/p/w500/7OPetSlFQRVHzmvbJ4TYO4ZTjNP.jpg"
-          },
-          {
-            "name": "Ha Jin-chul",
-            "char": "Police",
-            "photo": "https://image.tmdb.org/t/p/w500/d67bBCnHbqXRJvk299w4GeSEGBN.jpg"
-          },
-          {
-            "name": "Kwon Hee-wook",
-            "char": "Japanese diplomat",
-            "photo": "https://image.tmdb.org/t/p/w500/opiwH3xIEaV2vpLhNLV3RsIaQR0.jpg"
-          },
-          {
-            "name": "Kim Do-gyeong",
-            "char": "Citizen",
-            "photo": "https://image.tmdb.org/t/p/w500/hBvVzwAFS3cUsBcn4bYeOwYNBXT.jpg"
-          },
-          {
-            "name": "Lee Joong-hyun",
-            "char": "Guest",
-            "photo": "https://image.tmdb.org/t/p/w500/wq0c0O0kPxhqMU8ODSmIeEhFgLa.jpg"
-          },
-          {
-            "name": "金裕貞",
-            "char": "Blue",
-            "photo": "https://image.tmdb.org/t/p/w500/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "백종열",
-            "job": "Director"
-          },
-          {
-            "name": "강선주",
-            "job": "Writer"
-          },
-          {
-            "name": "박성신",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ko",
-        "origTitle": "부활남: 더 레드",
-        "platforms": [],
-        "popularity": 4.3443,
-        "imdbId": "tt29452783",
-        "countries": [
-          "South Korea"
-        ],
-        "detail": {
-          "duration": 102,
-          "genres": [
-            "動作",
-            "奇幻"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/uq11OaHZRn5WjmZQwlXDPRd91dk.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/kiDd05NykJBIoEvJPSG5SOd7qc6.jpg",
-          "voteAverage": "",
-          "trailerKey": "u9QiOd43D_g",
-          "imdbId": "tt29452783",
-          "countries": [
-            "South Korea"
-          ],
-          "cast": [
-            {
-              "name": "具教煥",
-              "char": "Cha Seok Hwan / Red",
-              "photo": "https://image.tmdb.org/t/p/w500/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg"
-            },
-            {
-              "name": "申承浩",
-              "char": "Black",
-              "photo": "https://image.tmdb.org/t/p/w500/6Ca6UNuwVmHPIVGIPQuChOp7oJp.jpg"
-            },
-            {
-              "name": "姜基榮",
-              "char": "Young-ha",
-              "photo": "https://image.tmdb.org/t/p/w500/bZKB6fXWS7mBWoOBsXlLx0P36hJ.jpg"
-            },
-            {
-              "name": "김시아",
-              "char": "Cha Ye-rin",
-              "photo": "https://image.tmdb.org/t/p/w500/4xNracGIzNRRLNbIO5cWigbPpCA.jpg"
-            },
-            {
-              "name": "金成鈴",
-              "char": "Mi-joo",
-              "photo": "https://image.tmdb.org/t/p/w500/sPB8ySlzfJWNedISwugRWEBABIY.jpg"
-            },
-            {
-              "name": "김인우",
-              "char": "Cha Hyeong-seok",
-              "photo": "https://image.tmdb.org/t/p/w500/zseVjncNOROGqZbJozlMTgFHeeI.jpg"
-            },
-            {
-              "name": "김지율",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/k2rlfDSRwnvAMmwDfGebx77HwaY.jpg"
-            },
-            {
-              "name": "Justin Harvey",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/sB8FTFBs7xoiOCzbJM5X2vpi4Rr.jpg"
-            },
-            {
-              "name": "황근형",
-              "char": "Bully 4",
-              "photo": "https://image.tmdb.org/t/p/w500/7OPetSlFQRVHzmvbJ4TYO4ZTjNP.jpg"
-            },
-            {
-              "name": "Ha Jin-chul",
-              "char": "Police",
-              "photo": "https://image.tmdb.org/t/p/w500/d67bBCnHbqXRJvk299w4GeSEGBN.jpg"
-            },
-            {
-              "name": "Kwon Hee-wook",
-              "char": "Japanese diplomat",
-              "photo": "https://image.tmdb.org/t/p/w500/opiwH3xIEaV2vpLhNLV3RsIaQR0.jpg"
-            },
-            {
-              "name": "Kim Do-gyeong",
-              "char": "Citizen",
-              "photo": "https://image.tmdb.org/t/p/w500/hBvVzwAFS3cUsBcn4bYeOwYNBXT.jpg"
-            },
-            {
-              "name": "Lee Joong-hyun",
-              "char": "Guest",
-              "photo": "https://image.tmdb.org/t/p/w500/wq0c0O0kPxhqMU8ODSmIeEhFgLa.jpg"
-            },
-            {
-              "name": "金裕貞",
-              "char": "Blue",
-              "photo": "https://image.tmdb.org/t/p/w500/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "백종열",
-              "job": "Director"
-            },
-            {
-              "name": "강선주",
-              "job": "Writer"
-            },
-            {
-              "name": "박성신",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ko",
-          "origTitle": "부활남: 더 레드",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/961214?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1248832,
-        "titleZh": "挖掘者",
-        "titleEn": "Digger",
-        "releaseDate": "2026-10-01",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-01",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/4A3r1AjJg9Wa6ms3MGOScetCY0o.jpg",
-        "voteAverage": "7.3",
-        "genre": [
-          "喜劇",
-          "劇情"
-        ],
-        "duration": 129,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "sCs4ZEhwyjA",
-        "cast": [
-          {
-            "name": "湯姆·克魯斯",
-            "char": "Digger Rockwell / Curtis Markson",
-            "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
-          },
-          {
-            "name": "里茲·阿邁德",
-            "char": "Ganesh",
-            "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
-          },
-          {
-            "name": "John Goodman",
-            "char": "President Compson",
-            "photo": "https://image.tmdb.org/t/p/w500/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
-          },
-          {
-            "name": "桑德拉·惠勒",
-            "char": "Emma",
-            "photo": "https://image.tmdb.org/t/p/w500/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg"
-          },
-          {
-            "name": "麥可·史都巴格",
-            "char": "Vice President",
-            "photo": "https://image.tmdb.org/t/p/w500/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg"
-          },
-          {
-            "name": "傑西·普萊蒙",
-            "char": "Kenny",
-            "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
-          },
-          {
-            "name": "Robert John Burke",
-            "char": "Fitzgerald",
-            "photo": "https://image.tmdb.org/t/p/w500/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg"
-          },
-          {
-            "name": "Emma D'Arcy",
-            "char": "Lena",
-            "photo": "https://image.tmdb.org/t/p/w500/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg"
-          },
-          {
-            "name": "Burn Gorman",
-            "char": "Amos",
-            "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
-          },
-          {
-            "name": "Sophie Wilde",
-            "char": "Hannah",
-            "photo": "https://image.tmdb.org/t/p/w500/fMZvMsvTv9MYSC6LTNdIUaMGjIv.jpg"
-          },
-          {
-            "name": "Pip Torrens",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
-          },
-          {
-            "name": "Mercedes Hernández",
-            "char": "Adelia",
-            "photo": "https://image.tmdb.org/t/p/w500/2pC5Lv1eiItvAxeEe8KTbRlM1wY.jpg"
-          },
-          {
-            "name": "Danny Kirrane",
-            "char": "Sandy Clarkson",
-            "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
-          },
-          {
-            "name": "James Dryden",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
-          },
-          {
-            "name": "Corey Johnson",
-            "char": "Jacobs",
-            "photo": "https://image.tmdb.org/t/p/w500/mhNbf4vGzixPL5mTIOBUPguqvpB.jpg"
-          },
-          {
-            "name": "Charlie Bentley",
-            "char": "EU Ambassador (uncredited)",
-            "photo": "https://image.tmdb.org/t/p/w500/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "阿利安卓·崗札雷·伊納利圖",
-            "job": "Director"
-          },
-          {
-            "name": "阿利安卓·崗札雷·伊納利圖",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Alexander Dinelaris",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 130000000,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Digger",
-        "platforms": [],
-        "popularity": 140.8925,
-        "imdbId": "tt31450459",
-        "countries": [
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 129,
-          "genres": [
-            "喜劇",
-            "劇情"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/4A3r1AjJg9Wa6ms3MGOScetCY0o.jpg",
-          "voteAverage": "7.3",
-          "trailerKey": "sCs4ZEhwyjA",
-          "imdbId": "tt31450459",
-          "countries": [
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "湯姆·克魯斯",
-              "char": "Digger Rockwell / Curtis Markson",
-              "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
-            },
-            {
-              "name": "里茲·阿邁德",
-              "char": "Ganesh",
-              "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
-            },
-            {
-              "name": "John Goodman",
-              "char": "President Compson",
-              "photo": "https://image.tmdb.org/t/p/w500/yyYqoyKHO7hE1zpgEV2XlqYWcNV.jpg"
-            },
-            {
-              "name": "桑德拉·惠勒",
-              "char": "Emma",
-              "photo": "https://image.tmdb.org/t/p/w500/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg"
-            },
-            {
-              "name": "麥可·史都巴格",
-              "char": "Vice President",
-              "photo": "https://image.tmdb.org/t/p/w500/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg"
-            },
-            {
-              "name": "傑西·普萊蒙",
-              "char": "Kenny",
-              "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
-            },
-            {
-              "name": "Robert John Burke",
-              "char": "Fitzgerald",
-              "photo": "https://image.tmdb.org/t/p/w500/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg"
-            },
-            {
-              "name": "Emma D'Arcy",
-              "char": "Lena",
-              "photo": "https://image.tmdb.org/t/p/w500/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg"
-            },
-            {
-              "name": "Burn Gorman",
-              "char": "Amos",
-              "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
-            },
-            {
-              "name": "Sophie Wilde",
-              "char": "Hannah",
-              "photo": "https://image.tmdb.org/t/p/w500/fMZvMsvTv9MYSC6LTNdIUaMGjIv.jpg"
-            },
-            {
-              "name": "Pip Torrens",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
-            },
-            {
-              "name": "Mercedes Hernández",
-              "char": "Adelia",
-              "photo": "https://image.tmdb.org/t/p/w500/2pC5Lv1eiItvAxeEe8KTbRlM1wY.jpg"
-            },
-            {
-              "name": "Danny Kirrane",
-              "char": "Sandy Clarkson",
-              "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
-            },
-            {
-              "name": "James Dryden",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
-            },
-            {
-              "name": "Corey Johnson",
-              "char": "Jacobs",
-              "photo": "https://image.tmdb.org/t/p/w500/mhNbf4vGzixPL5mTIOBUPguqvpB.jpg"
-            },
-            {
-              "name": "Charlie Bentley",
-              "char": "EU Ambassador (uncredited)",
-              "photo": "https://image.tmdb.org/t/p/w500/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "阿利安卓·崗札雷·伊納利圖",
-              "job": "Director"
-            },
-            {
-              "name": "阿利安卓·崗札雷·伊納利圖",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Alexander Dinelaris",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 130000000,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Digger",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1248832?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 85033,
         "titleZh": "花神咖啡館",
@@ -22390,7 +22394,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/sSPreWTXybWDgfNvKoL9E4sahqH.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
         "voteAverage": "7.7",
         "genre": [
           "懸疑",
@@ -22405,14 +22409,14 @@
         "trailerKey": "hhxLgnnMECw",
         "cast": [
           {
-            "name": "安·海瑟薇",
-            "char": "Verity Crawford",
-            "photo": "https://image.tmdb.org/t/p/w500/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
-          },
-          {
             "name": "達珂塔·強生",
             "char": "Lowen Ashleigh",
             "photo": "https://image.tmdb.org/t/p/w500/qFek0KqpaPV5mVyHHNfAapDE9Tj.jpg"
+          },
+          {
+            "name": "安·海瑟薇",
+            "char": "Verity Crawford",
+            "photo": "https://image.tmdb.org/t/p/w500/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
           },
           {
             "name": "喬許·哈奈特",
@@ -22514,7 +22518,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/sSPreWTXybWDgfNvKoL9E4sahqH.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
           "voteAverage": "7.7",
           "trailerKey": "hhxLgnnMECw",
           "imdbId": "tt32261958",
@@ -22523,14 +22527,14 @@
           ],
           "cast": [
             {
-              "name": "安·海瑟薇",
-              "char": "Verity Crawford",
-              "photo": "https://image.tmdb.org/t/p/w500/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
-            },
-            {
               "name": "達珂塔·強生",
               "char": "Lowen Ashleigh",
               "photo": "https://image.tmdb.org/t/p/w500/qFek0KqpaPV5mVyHHNfAapDE9Tj.jpg"
+            },
+            {
+              "name": "安·海瑟薇",
+              "char": "Verity Crawford",
+              "photo": "https://image.tmdb.org/t/p/w500/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
             },
             {
               "name": "喬許·哈奈特",
@@ -22749,11 +22753,11 @@
         "crew": [
           {
             "name": "Pauline Loquès",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Pauline Loquès",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -22866,11 +22870,11 @@
           "crew": [
             {
               "name": "Pauline Loquès",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Pauline Loquès",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -24096,8 +24100,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 302,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -27102,11 +27106,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -27196,11 +27200,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -28803,11 +28807,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 8000000,
@@ -28924,11 +28928,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 8000000,
@@ -29751,7 +29755,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/gsPTjlO8WyWfEYGrVuwT4NBbuyA.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/v0T74v8LPZBSL247oGeTOp06tnm.jpg",
-        "voteAverage": "7.2",
+        "voteAverage": "6.6",
         "genre": [
           "動畫",
           "動作",
@@ -29834,7 +29838,7 @@
           "synopsis": "印有「東都鐵塔」的新版萬圓紙鈔問世，社會大眾為之沸騰。柯南與少年偵探團、阿笠博士、小蘭以及園子一同參觀日本紙幣印刷局的長野工廠。 另一方面，警視廳在命案現場發現偽鈔，隨即成立搜查本部。假鈔流通的消息震撼社會的同時，柯南與平次也前往疑似印製偽鈔的大阪。面對因偽造新鈔而引發的國家級危機，柯南將以史上最大規模的全明星陣容迎戰！",
           "poster": "https://image.tmdb.org/t/p/w500/gsPTjlO8WyWfEYGrVuwT4NBbuyA.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/v0T74v8LPZBSL247oGeTOp06tnm.jpg",
-          "voteAverage": "7.2",
+          "voteAverage": "6.6",
           "trailerKey": null,
           "imdbId": "tt46656123",
           "countries": [
