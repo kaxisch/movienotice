@@ -140,6 +140,12 @@ class TmdbOverrideTests(unittest.TestCase):
             "大搜查線N.E.W.": 1491083,
             "大搜查線 N.E.W.": 1491083,
             "航海王喬巴身世之謎": 44731,
+            "鬼降靈": 1575667,
+            "Lầu Chú Hỏa": 1575667,
+            "進擊的鼓手 4K重映": 244786,
+            "Look Back": 1244492,
+            "復仇者聯盟：終局之戰加碼重映_特別場3": 299534,
+            "AVENGERS: ENDGAME ENCORE_SPECAIL3": 299534,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
