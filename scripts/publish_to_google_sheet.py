@@ -246,14 +246,17 @@ def verify_reappeared_showtimes(current_items, previous_items, cinema_candidates
         run_started_at = str(previous.get("run_started_at", "") or "")
         late_restart = False
         try:
+            release_day = datetime.strptime(release_date, "%Y-%m-%d").date()
+            audit_day = datetime.strptime(run_date, "%Y-%m-%d").date()
+            old_release = release_day < audit_day - timedelta(days=60)
             late_restart = (
                 is_sheet_true(previous.get("ever_published"), default=False)
                 and datetime.strptime(run_started_at, "%Y-%m-%d").date()
-                > datetime.strptime(release_date, "%Y-%m-%d").date() + timedelta(days=60)
+                > release_day + timedelta(days=60)
             )
         except (TypeError, ValueError):
-            pass
-        needs_check = (
+            old_release = False
+        needs_check = old_release and (
             is_sheet_true(previous.get("reappeared_after_hidden"), default=False)
             or (miss_limit is not None and misses >= miss_limit)
             or late_restart
