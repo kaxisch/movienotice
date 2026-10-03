@@ -692,12 +692,30 @@ class CandidatePresenceTests(unittest.TestCase):
         fetch_html.assert_called_once()
 
     def test_reappeared_movie_requires_showtime_and_exact_new_tmdb_date(self):
-        candidate = {"reappeared_after_hidden": True}
-        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-10-08"))
+        candidate = {
+            "reappeared_after_hidden": True,
+            "tmdb_tw_release_date": "2026-05-08",
+        }
+        today = date(2026, 10, 3)
+        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-10-08", today))
 
         candidate.update({"showtime_verified": True, "showtime_date": "2026-10-08"})
-        self.assertTrue(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-10-08"))
-        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08"))
+        self.assertTrue(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-10-08", today))
+        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08", today))
+
+    def test_recent_or_future_reappearance_does_not_require_showtime(self):
+        today = date(2026, 10, 3)
+        for release_date in ("2026-09-18", "2026-10-30"):
+            candidate = {
+                "reappeared_after_hidden": True,
+                "tmdb_tw_release_date": release_date,
+            }
+            self.assertFalse(refresh.candidate_needs_showtime_verification(candidate, today))
+            self.assertTrue(
+                refresh.reappeared_candidate_has_verified_showtime(
+                    candidate, release_date, today
+                )
+            )
 
     def test_old_published_movie_with_late_candidate_restart_also_requires_showtime(self):
         candidate = {
@@ -707,8 +725,9 @@ class CandidatePresenceTests(unittest.TestCase):
             "run_started_at": "2026-09-26",
         }
 
-        self.assertTrue(refresh.candidate_needs_showtime_verification(candidate))
-        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08"))
+        today = date(2026, 10, 3)
+        self.assertTrue(refresh.candidate_needs_showtime_verification(candidate, today))
+        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08", today))
 
     def test_continuous_published_run_does_not_require_extra_showtime_check(self):
         candidate = {
@@ -718,8 +737,9 @@ class CandidatePresenceTests(unittest.TestCase):
             "run_started_at": "2026-05-08",
         }
 
-        self.assertFalse(refresh.candidate_needs_showtime_verification(candidate))
-        self.assertTrue(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08"))
+        today = date(2026, 10, 3)
+        self.assertFalse(refresh.candidate_needs_showtime_verification(candidate, today))
+        self.assertTrue(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08", today))
 
     def test_current_site_movie_is_marked_as_ever_published(self):
         items = [{"tmdb_id": 101}, {"tmdb_id": 202, "ever_published": False}]

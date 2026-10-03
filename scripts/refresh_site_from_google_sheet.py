@@ -266,15 +266,20 @@ def rerelease_needs_live_date_validation(candidate):
     )
 
 
-def candidate_needs_showtime_verification(candidate):
+def candidate_needs_showtime_verification(candidate, today):
+    try:
+        release_date = datetime.strptime(
+            str(candidate.get("tmdb_tw_release_date", "")), "%Y-%m-%d"
+        ).date()
+    except (TypeError, ValueError):
+        return False
+    if release_date >= today - timedelta(days=60):
+        return False
     if sheet_value_is_true(candidate.get("reappeared_after_hidden")):
         return True
     if not sheet_value_is_true(candidate.get("ever_published")):
         return False
     try:
-        release_date = datetime.strptime(
-            str(candidate.get("tmdb_tw_release_date", "")), "%Y-%m-%d"
-        ).date()
         run_started_at = datetime.strptime(
             str(candidate.get("run_started_at", "")), "%Y-%m-%d"
         ).date()
@@ -283,9 +288,9 @@ def candidate_needs_showtime_verification(candidate):
     return run_started_at > release_date + timedelta(days=60)
 
 
-def reappeared_candidate_has_verified_showtime(candidate, tmdb_date):
+def reappeared_candidate_has_verified_showtime(candidate, tmdb_date, today):
     """下架後或晚近重建的舊片必須有官方場次，且 TMDB 已登錄同一個本輪日期。"""
-    if not candidate_needs_showtime_verification(candidate):
+    if not candidate_needs_showtime_verification(candidate, today):
         return True
     showtime_date = str(candidate.get("showtime_date", "") or "").strip()
     return (
@@ -471,7 +476,7 @@ def build_verified_output(candidates):
 
         if (
             source.get("candidate_kind") != "rerelease"
-            and not reappeared_candidate_has_verified_showtime(source, tw_date)
+            and not reappeared_candidate_has_verified_showtime(source, tw_date, today)
         ):
             log(
                 f"  Held reappeared TMDB {tmdb_id}: no official showtime verified "
