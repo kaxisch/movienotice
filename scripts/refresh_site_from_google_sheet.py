@@ -266,6 +266,35 @@ def rerelease_needs_live_date_validation(candidate):
     )
 
 
+def candidate_needs_showtime_verification(candidate):
+    if sheet_value_is_true(candidate.get("reappeared_after_hidden")):
+        return True
+    if not sheet_value_is_true(candidate.get("ever_published")):
+        return False
+    try:
+        release_date = datetime.strptime(
+            str(candidate.get("tmdb_tw_release_date", "")), "%Y-%m-%d"
+        ).date()
+        run_started_at = datetime.strptime(
+            str(candidate.get("run_started_at", "")), "%Y-%m-%d"
+        ).date()
+    except (TypeError, ValueError):
+        return False
+    return run_started_at > release_date + timedelta(days=60)
+
+
+def reappeared_candidate_has_verified_showtime(candidate, tmdb_date):
+    """下架後或晚近重建的舊片必須有官方場次，且 TMDB 已登錄同一個本輪日期。"""
+    if not candidate_needs_showtime_verification(candidate):
+        return True
+    showtime_date = str(candidate.get("showtime_date", "") or "").strip()
+    return (
+        sheet_value_is_true(candidate.get("showtime_verified"))
+        and bool(showtime_date)
+        and showtime_date == tmdb_date
+    )
+
+
 def index_candidates_by_tmdb_id(candidates):
     """保留待即時驗證的重映；日期吻合前不覆蓋一般院線候選。"""
     indexed = {}
@@ -439,6 +468,16 @@ def build_verified_output(candidates):
                 )
                 tw_date = selected_releases[0]["date"]
         release_date = weekly.parse_iso_date(tw_date)
+
+        if (
+            source.get("candidate_kind") != "rerelease"
+            and not reappeared_candidate_has_verified_showtime(source, tw_date)
+        ):
+            log(
+                f"  Held reappeared TMDB {tmdb_id}: no official showtime verified "
+                f"for TMDB Taiwan theatrical date {tw_date}"
+            )
+            continue
 
         if should_hold_tmdb_only_near_term_candidate(
             tmdb_id, release_date, today, sheet_candidate_ids, bootstrap_manual_ids

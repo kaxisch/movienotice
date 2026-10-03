@@ -10,9 +10,11 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
@@ -46,7 +48,8 @@ CANDIDATE_HEADERS = [
     "ever_seen_atmovies", "atmovies_present", "consecutive_misses", "last_seen_atmovies",
     "last_audit_date", "ever_published", "run_generation", "run_started_at",
     "reappeared_after_hidden", "handoff_started_at", "cinema_present",
-    "present_sources", "absence_audit_complete",
+    "present_sources", "absence_audit_complete", "showtime_verified",
+    "showtime_date", "showtime_sources", "showtime_checked_at",
 ]
 RERELEASE_HEADERS = [
     "tmdb_id", "title_zh", "title_en", "cinema_release_date", "atmovies_original_date", "tmdb_tw_release_date",
@@ -183,6 +186,101 @@ def is_sheet_true(value, default=False):
     return sheet_value_is_true(value, default=default)
 
 
+def extract_vieshow_showtime_dates(html, audit_date):
+    """從威秀詳細頁擷取有具體時間的近期場次日期；空白場次區塊不算證據。"""
+    from bs4 import BeautifulSoup
+
+    if isinstance(audit_date, str):
+        audit_date = datetime.strptime(audit_date, "%Y-%m-%d").date()
+    text = BeautifulSoup(html or "", "html.parser").get_text(" ", strip=True)
+    date_matches = list(re.finditer(
+        r"(20\d{2})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", text
+    ))
+    verified = []
+    for index, match in enumerate(date_matches):
+        end = date_matches[index + 1].start() if index + 1 < len(date_matches) else len(text)
+        segment = text[match.end():end]
+        if not re.search(r"(?<!\d)(?:[01]?\d|2[0-3])[:：][0-5]\d(?!\d)", segment):
+            continue
+        show_date = datetime(
+            int(match.group(1)), int(match.group(2)), int(match.group(3))
+        ).date()
+        if audit_date <= show_date <= audit_date + timedelta(days=14):
+            verified.append(show_date.isoformat())
+    return sorted(set(verified))
+
+
+def verify_reappeared_showtimes(current_items, previous_items, cinema_candidates, run_date):
+    """只查已達缺席門檻後重新出現者；目前僅採官方威秀具體場次為自動證據。"""
+    from cinema_rereleases import fetch_html
+    from weekly_check import USER_AGENT
+
+    previous_by_id = {
+        int(item["tmdb_id"]): item for item in previous_items if item.get("tmdb_id")
+    }
+    urls_by_id = {}
+    for item in cinema_candidates:
+        try:
+            tmdb_id = int(item.get("tmdb_id", 0))
+        except (TypeError, ValueError):
+            continue
+        urls_by_id.setdefault(tmdb_id, set()).update(
+            url.strip() for url in str(item.get("source_urls", "") or "").splitlines()
+            if url.strip()
+        )
+
+    evidence = {}
+    current_ids = {
+        int(item["tmdb_id"]) for item in current_items if item.get("tmdb_id")
+    } | set(urls_by_id)
+    for tmdb_id in sorted(current_ids):
+        previous = previous_by_id.get(tmdb_id)
+        if not previous:
+            continue
+        miss_limit = candidate_miss_limit(previous, run_date)
+        try:
+            misses = int(previous.get("consecutive_misses", 0) or 0)
+        except (TypeError, ValueError):
+            misses = 0
+        release_date = str(previous.get("tmdb_tw_release_date", "") or "")
+        run_started_at = str(previous.get("run_started_at", "") or "")
+        late_restart = False
+        try:
+            late_restart = (
+                is_sheet_true(previous.get("ever_published"), default=False)
+                and datetime.strptime(run_started_at, "%Y-%m-%d").date()
+                > datetime.strptime(release_date, "%Y-%m-%d").date() + timedelta(days=60)
+            )
+        except (TypeError, ValueError):
+            pass
+        needs_check = (
+            is_sheet_true(previous.get("reappeared_after_hidden"), default=False)
+            or (miss_limit is not None and misses >= miss_limit)
+            or late_restart
+        )
+        if not needs_check:
+            continue
+
+        dates = set()
+        checked_sources = []
+        for url in sorted(urls_by_id.get(tmdb_id, set())):
+            host = urlparse(url).netloc.lower()
+            if host not in {"vscinemas.com.tw", "www.vscinemas.com.tw"}:
+                continue
+            checked_sources.append("vieshow")
+            try:
+                dates.update(extract_vieshow_showtime_dates(fetch_html(url, USER_AGENT), run_date))
+            except Exception as error:
+                log(f"Showtime verification warning for TMDB {tmdb_id}: {error}")
+        evidence[tmdb_id] = {
+            "showtime_verified": bool(dates),
+            "showtime_date": sorted(dates)[0] if dates else "",
+            "showtime_sources": ",".join(sorted(set(checked_sources))),
+            "showtime_checked_at": run_date,
+        }
+    return evidence
+
+
 def merge_candidate_presence(
     current_items, previous_items, run_date, cinema_presence=None, audit_complete=True,
     cinema_candidates=None,
@@ -276,6 +374,13 @@ def merge_candidate_presence(
                     True if audit_complete
                     else is_sheet_true(previous.get("absence_audit_complete"), default=False)
                 ),
+                "showtime_verified": (
+                    is_sheet_true(current.get("showtime_verified"), default=False)
+                    if reappeared else is_sheet_true(previous.get("showtime_verified"), default=False)
+                ),
+                "showtime_date": current.get("showtime_date", "") if reappeared else previous.get("showtime_date", ""),
+                "showtime_sources": current.get("showtime_sources", "") if reappeared else previous.get("showtime_sources", ""),
+                "showtime_checked_at": current.get("showtime_checked_at", "") if reappeared else previous.get("showtime_checked_at", ""),
             })
         elif cinema_sources:
             item = {**previous, **cinema_candidates_by_id.get(tmdb_id, {})}
@@ -307,6 +412,13 @@ def merge_candidate_presence(
                     reappeared
                     or is_sheet_true(previous.get("reappeared_after_hidden"), default=False)
                 ),
+                "showtime_verified": (
+                    is_sheet_true(cinema_candidates_by_id.get(tmdb_id, {}).get("showtime_verified"), default=False)
+                    if reappeared else is_sheet_true(previous.get("showtime_verified"), default=False)
+                ),
+                "showtime_date": cinema_candidates_by_id.get(tmdb_id, {}).get("showtime_date", "") if reappeared else previous.get("showtime_date", ""),
+                "showtime_sources": cinema_candidates_by_id.get(tmdb_id, {}).get("showtime_sources", "") if reappeared else previous.get("showtime_sources", ""),
+                "showtime_checked_at": cinema_candidates_by_id.get(tmdb_id, {}).get("showtime_checked_at", "") if reappeared else previous.get("showtime_checked_at", ""),
             })
         else:
             item = dict(previous)
@@ -828,6 +940,15 @@ def publish():
             manual_ids,
         )
         previous_candidate_items = mark_published_candidates(previous_candidate_items, movie_payload)
+        showtime_evidence = verify_reappeared_showtimes(
+            current_candidate_items, previous_candidate_items, cinema_candidates, run_date
+        )
+        for collection in (current_candidate_items, cinema_candidates):
+            for item in collection:
+                try:
+                    item.update(showtime_evidence.get(int(item.get("tmdb_id", 0)), {}))
+                except (TypeError, ValueError):
+                    continue
         cinema_presence = (
             rerelease_audit.get("cinema_presence", {}) if rerelease_audit is not None else {}
         )

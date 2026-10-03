@@ -416,6 +416,8 @@ class CinemaParserTests(unittest.TestCase):
             "title_en": "Café de Flore",
             "tmdb_title": "花神咖啡館",
             "cinema_status": "soon",
+            "present_sources": "vieshow",
+            "source_urls": "https://www.vscinemas.com.tw/film/detail.aspx?id=1",
         }
 
         persisted = weekly.regular_candidate_from_cinema_match(
@@ -426,6 +428,8 @@ class CinemaParserTests(unittest.TestCase):
         self.assertEqual(persisted["release_date_tw"], "2026-10-02")
         self.assertEqual(persisted["tmdb_tw_release_date"], "")
         self.assertEqual(persisted["source_bucket"], "next")
+        self.assertEqual(persisted["present_sources"], "vieshow")
+        self.assertIn("vscinemas.com.tw", persisted["source_urls"])
 
     def test_confirmed_cinema_match_keeps_verified_tmdb_date(self):
         persisted = weekly.regular_candidate_from_cinema_match(

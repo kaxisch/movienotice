@@ -980,6 +980,8 @@ def regular_candidate_from_cinema_match(candidate, cinema_date, status):
         "release_date_tw": cinema_date,
         "tmdb_tw_release_date": cinema_date if status == "confirmed" else "",
         "tmdb_title": candidate.get("tmdb_title", ""),
+        "present_sources": candidate.get("present_sources", ""),
+        "source_urls": candidate.get("source_urls", ""),
     }
 
 
