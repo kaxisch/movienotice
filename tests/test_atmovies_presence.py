@@ -656,6 +656,70 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(merged[0]["run_generation"], 2)
         self.assertEqual(merged[0]["run_started_at"], "2026-08-08")
         self.assertTrue(merged[0]["reappeared_after_hidden"])
+        self.assertFalse(merged[0]["showtime_verified"])
+
+    def test_vieshow_showtime_parser_requires_a_date_with_a_concrete_time(self):
+        empty = """<h4>電影場次 MOVIE TIME</h4><p>所有售票通路同步開放購票</p>"""
+        scheduled = """
+            <h4>2026 年 10 月 08 日 星期四</h4><a>18:40</a>
+            <h4>2026 年 10 月 09 日 星期五</h4><p>尚未開放</p>
+        """
+
+        self.assertEqual(publish.extract_vieshow_showtime_dates(empty, "2026-10-03"), [])
+        self.assertEqual(
+            publish.extract_vieshow_showtime_dates(scheduled, "2026-10-03"),
+            ["2026-10-08"],
+        )
+
+    @patch("cinema_rereleases.fetch_html")
+    def test_only_reappeared_candidate_gets_targeted_official_showtime_check(self, fetch_html):
+        fetch_html.return_value = "<h4>2026 年 10 月 08 日</h4><a>18:40</a>"
+        previous = [{
+            "tmdb_id": 202,
+            "tmdb_tw_release_date": "2026-05-08",
+            "consecutive_misses": 1,
+            "absence_audit_complete": True,
+        }]
+        cinema = [{
+            "tmdb_id": 202,
+            "source_urls": "https://www.vscinemas.com.tw/film/detail.aspx?id=8672",
+        }]
+
+        evidence = publish.verify_reappeared_showtimes([], previous, cinema, "2026-10-03")
+
+        self.assertTrue(evidence[202]["showtime_verified"])
+        self.assertEqual(evidence[202]["showtime_date"], "2026-10-08")
+        fetch_html.assert_called_once()
+
+    def test_reappeared_movie_requires_showtime_and_exact_new_tmdb_date(self):
+        candidate = {"reappeared_after_hidden": True}
+        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-10-08"))
+
+        candidate.update({"showtime_verified": True, "showtime_date": "2026-10-08"})
+        self.assertTrue(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-10-08"))
+        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08"))
+
+    def test_old_published_movie_with_late_candidate_restart_also_requires_showtime(self):
+        candidate = {
+            "ever_published": True,
+            "reappeared_after_hidden": False,
+            "tmdb_tw_release_date": "2026-05-08",
+            "run_started_at": "2026-09-26",
+        }
+
+        self.assertTrue(refresh.candidate_needs_showtime_verification(candidate))
+        self.assertFalse(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08"))
+
+    def test_continuous_published_run_does_not_require_extra_showtime_check(self):
+        candidate = {
+            "ever_published": True,
+            "reappeared_after_hidden": False,
+            "tmdb_tw_release_date": "2026-05-08",
+            "run_started_at": "2026-05-08",
+        }
+
+        self.assertFalse(refresh.candidate_needs_showtime_verification(candidate))
+        self.assertTrue(refresh.reappeared_candidate_has_verified_showtime(candidate, "2026-05-08"))
 
     def test_current_site_movie_is_marked_as_ever_published(self):
         items = [{"tmdb_id": 101}, {"tmdb_id": 202, "ever_published": False}]
