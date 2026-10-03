@@ -146,6 +146,12 @@ class TmdbOverrideTests(unittest.TestCase):
             "Look Back": 1244492,
             "復仇者聯盟：終局之戰加碼重映_特別場3": 299534,
             "AVENGERS: ENDGAME ENCORE_SPECAIL3": 299534,
+            "音樂劇《刀劍亂舞》〜月夜一縷〜": 1744239,
+            "歐威爾：2+2=5": 1098534,
+            "鋼之鍊金術師劇場版 Fullmetal Alchemist: the sacred stars of milos": 80518,
+            "獨奏者之舞": 1695300,
+            "鬼入室": 1558497,
+            "YORUSHIKA LIVE 「盜作」": 1740268,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
