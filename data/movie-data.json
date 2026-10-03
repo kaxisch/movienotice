@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T22:27:58.786839+08:00",
+  "generated_at": "2026-10-04T02:51:19.115853+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 91,
@@ -41,13 +41,13 @@
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 54,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           }
         },
@@ -137,11 +137,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -262,11 +262,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -311,7 +311,7 @@
         "synopsis": "俄羅斯教師祕密記錄在烏俄戰爭期間，小鎮學校成了徵兵中心的過程，帶出教育工作者在軍事化背景下面臨的道德困境。",
         "imdb": "7.9",
         "rt": "100%",
-        "mc": "80",
+        "mc": "79",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -319,14 +319,14 @@
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 53,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-09-20T13:23:26.055418+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           }
         },
         "trailerKey": "CLNG8B60APk",
@@ -1721,7 +1721,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
-        "voteAverage": "7.4",
+        "voteAverage": "7.3",
         "genre": [
           "喜劇",
           "劇情"
@@ -1777,17 +1777,17 @@
           },
           {
             "name": "Robert John Burke",
-            "char": "Fitzgerald",
+            "char": "General Fitzgerald",
             "photo": "https://image.tmdb.org/t/p/w500/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg"
           },
           {
             "name": "Emma D'Arcy",
-            "char": "Lena",
+            "char": "Lina",
             "photo": "https://image.tmdb.org/t/p/w500/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg"
           },
           {
             "name": "Burn Gorman",
-            "char": "Amos",
+            "char": "Defense Secretary Amos",
             "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
           },
           {
@@ -1796,8 +1796,13 @@
             "photo": "https://image.tmdb.org/t/p/w500/fMZvMsvTv9MYSC6LTNdIUaMGjIv.jpg"
           },
           {
+            "name": "Danny Kirrane",
+            "char": "Clarkson",
+            "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
+          },
+          {
             "name": "Pip Torrens",
-            "char": "",
+            "char": "AG Schumer",
             "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
           },
           {
@@ -1806,24 +1811,19 @@
             "photo": "https://image.tmdb.org/t/p/w500/2pC5Lv1eiItvAxeEe8KTbRlM1wY.jpg"
           },
           {
-            "name": "Danny Kirrane",
-            "char": "Sandy Clarkson",
-            "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
-          },
-          {
             "name": "James Dryden",
-            "char": "",
+            "char": "Brad",
             "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
           },
           {
             "name": "Corey Johnson",
-            "char": "Jacobs",
+            "char": "Admiral Jacobs",
             "photo": "https://image.tmdb.org/t/p/w500/mhNbf4vGzixPL5mTIOBUPguqvpB.jpg"
           },
           {
-            "name": "Charlie Bentley",
-            "char": "EU Ambassador (uncredited)",
-            "photo": "https://image.tmdb.org/t/p/w500/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg"
+            "name": "Teddy Hawley",
+            "char": "Kyle",
+            "photo": "https://image.tmdb.org/t/p/w500/lIgp8ltjD8AnHEv2Jfiyi5RJXLM.jpg"
           }
         ],
         "crew": [
@@ -1860,7 +1860,7 @@
           "synopsis": "故事講述全世界最有權勢的男人展開一場瘋狂的救援行動，為了在他引發的一場大災難摧毀一切之前，證明自己才是全人類的救星。",
           "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
-          "voteAverage": "7.4",
+          "voteAverage": "7.3",
           "trailerKey": "sCs4ZEhwyjA",
           "imdbId": "tt31450459",
           "countries": [
@@ -1899,17 +1899,17 @@
             },
             {
               "name": "Robert John Burke",
-              "char": "Fitzgerald",
+              "char": "General Fitzgerald",
               "photo": "https://image.tmdb.org/t/p/w500/uWEaY5gypb6cp1bdUYG4uCKw4sK.jpg"
             },
             {
               "name": "Emma D'Arcy",
-              "char": "Lena",
+              "char": "Lina",
               "photo": "https://image.tmdb.org/t/p/w500/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg"
             },
             {
               "name": "Burn Gorman",
-              "char": "Amos",
+              "char": "Defense Secretary Amos",
               "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
             },
             {
@@ -1918,8 +1918,13 @@
               "photo": "https://image.tmdb.org/t/p/w500/fMZvMsvTv9MYSC6LTNdIUaMGjIv.jpg"
             },
             {
+              "name": "Danny Kirrane",
+              "char": "Clarkson",
+              "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
+            },
+            {
               "name": "Pip Torrens",
-              "char": "",
+              "char": "AG Schumer",
               "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
             },
             {
@@ -1928,24 +1933,19 @@
               "photo": "https://image.tmdb.org/t/p/w500/2pC5Lv1eiItvAxeEe8KTbRlM1wY.jpg"
             },
             {
-              "name": "Danny Kirrane",
-              "char": "Sandy Clarkson",
-              "photo": "https://image.tmdb.org/t/p/w500/yfui1GBLB2UBktBi9WRuxJoJqcs.jpg"
-            },
-            {
               "name": "James Dryden",
-              "char": "",
+              "char": "Brad",
               "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
             },
             {
               "name": "Corey Johnson",
-              "char": "Jacobs",
+              "char": "Admiral Jacobs",
               "photo": "https://image.tmdb.org/t/p/w500/mhNbf4vGzixPL5mTIOBUPguqvpB.jpg"
             },
             {
-              "name": "Charlie Bentley",
-              "char": "EU Ambassador (uncredited)",
-              "photo": "https://image.tmdb.org/t/p/w500/xIrwKlRiAdGXBN7M8b8uAztv3rs.jpg"
+              "name": "Teddy Hawley",
+              "char": "Kyle",
+              "photo": "https://image.tmdb.org/t/p/w500/lIgp8ltjD8AnHEv2Jfiyi5RJXLM.jpg"
             }
           ],
           "crew": [
@@ -2450,8 +2450,8 @@
             "lastChanged": "2026-09-29T05:23:09.468732+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 24,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-27T00:46:39.335627+08:00"
           }
         },
@@ -3011,13 +3011,13 @@
             "lastChanged": "2026-09-05T21:36:31.443610+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 552,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-05T21:36:31.443610+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 57,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-05T21:36:31.443610+08:00"
           }
         },
@@ -3119,7 +3119,7 @@
           }
         ],
         "budget": 356000000,
-        "revenue": 2885439100,
+        "revenue": 2890946085,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Avengers: Endgame",
@@ -3247,7 +3247,7 @@
             }
           ],
           "budget": 356000000,
-          "revenue": 2885439100,
+          "revenue": 2890946085,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Avengers: Endgame",
@@ -3297,13 +3297,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 40,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 18,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -3911,8 +3911,8 @@
         "duration": 110,
         "synopsis": "2006年，美國一檔由克里斯漢森（羅伯派汀森飾演）主持的實境節目《誘捕掠食者》正迅速竄紅。節目組先是讓成年人假扮青少年，在網路上「撒網捕魚」，誘使戀童癖者前往一處佈滿隱藏攝影機的住宅，再由克里斯漢森現身當面對峙、揭露對方罪行，最後出動大批警察現場逮捕。真實、刺激又極具衝擊性的獵捕過程，引爆全美觀眾的窺探慾望。電視台更看準時機，順勢將節目移至「黃金時段」播出，讓收視率扶搖直上。然而，當節目聲勢愈來愈大，同時段競爭對手也不斷製造話題，克里斯漢森與節目組開始不滿足只是獵捕那些小魚小蝦，轉而將目標鎖定在更具權勢、更受矚目的對象，企圖讓這場「誘捕」升級成一場前所未有的電視奇觀。就當節目野心不斷膨脹之際，一條足以撼動全美、甚至改變整個遊戲規則的「大鯨魚」終於上鉤…。",
         "imdb": "8.7",
-        "rt": "87%",
-        "mc": "67",
+        "rt": "95%",
+        "mc": "75",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -3920,14 +3920,14 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 223,
-            "lastChanged": "2026-09-26T05:50:23.906484+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 48,
-            "lastChanged": "2026-09-28T13:48:47.622645+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           }
         },
         "trailerKey": "CC2-1zs75iU",
@@ -4192,8 +4192,8 @@
             "lastChanged": "2026-09-20T13:23:26.055418+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 15,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-13T20:17:03.939686+08:00"
           }
         },
@@ -5939,13 +5939,13 @@
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 139,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 30,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-18T01:47:54.863982+08:00"
           }
         },
@@ -6218,13 +6218,13 @@
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 153,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 31,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T16:52:04.363481+08:00"
           }
         },
@@ -6696,8 +6696,8 @@
         "mc": "64",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 62,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-14T13:24:26.771481+08:00"
           },
           "mc": {
@@ -7227,13 +7227,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 90,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -9433,13 +9433,13 @@
             "lastChanged": "2026-09-10T15:06:47.273745+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 60,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-10T15:06:47.273745+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 17,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-10T15:06:47.273745+08:00"
           }
         },
@@ -9551,7 +9551,7 @@
         "duration": 98,
         "synopsis": "故事講述一對音樂家夫婦皆同女兒出外，旅途中發生車禍，丈夫與女兒當場死亡，只剩下音樂家妻子朱莉（茱莉葉畢諾許 飾）活著。丈夫正為歐洲共同體譜寫會歌，曲子尚未為完成，悲痛欲絕的她為了重拾真正的自由，決心拋開過去，甚至毀掉丈夫遺留下來未完成的手稿，以展開新生活。在音樂交織下，走出一段衝突掙扎的心路歷程。",
         "imdb": "7.8",
-        "rt": "96%",
+        "rt": "98%",
         "mc": "87",
         "ratingMeta": {
           "imdb": {
@@ -9560,13 +9560,13 @@
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 57,
-            "lastChanged": "2026-09-14T13:24:26.771481+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T15:20:47.756750+08:00"
           }
         },
@@ -9656,11 +9656,11 @@
         "crew": [
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "古茲托夫·奇斯洛夫斯基",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Krzysztof Piesiewicz",
@@ -9786,11 +9786,11 @@
           "crew": [
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "古茲托夫·奇斯洛夫斯基",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Krzysztof Piesiewicz",
@@ -9849,13 +9849,13 @@
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 55,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T19:08:18.572103+08:00"
           }
         },
@@ -10139,13 +10139,13 @@
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 35,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T22:03:55.290760+08:00"
           }
         },
@@ -10427,8 +10427,8 @@
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 6,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T15:30:21.745375+08:00"
           }
         },
@@ -10517,12 +10517,12 @@
         ],
         "crew": [
           {
-            "name": "加藤祐司",
-            "job": "Writer"
-          },
-          {
             "name": "相米慎二",
             "job": "Director"
+          },
+          {
+            "name": "加藤祐司",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -10634,12 +10634,12 @@
           ],
           "crew": [
             {
-              "name": "加藤祐司",
-              "job": "Writer"
-            },
-            {
               "name": "相米慎二",
               "job": "Director"
+            },
+            {
+              "name": "加藤祐司",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -10944,13 +10944,13 @@
             "lastChanged": "2026-09-03T01:35:38.728747+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 192,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-03T01:35:38.728747+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 35,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-03T01:35:38.728747+08:00"
           }
         },
@@ -11495,13 +11495,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 63,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 11,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -11913,7 +11913,7 @@
         "synopsis": "一心以成為漫畫家為目標的兩位少女藤野、京本之間青春動人的故事。",
         "imdb": "8.0",
         "rt": "88%",
-        "mc": "73",
+        "mc": "72",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -11926,9 +11926,9 @@
             "lastChanged": "2026-09-25T20:11:45.430627+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 10,
-            "lastChanged": "2026-09-14T21:20:07.180082+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           }
         },
         "trailerKey": "ad3giJ30GOw",
@@ -12472,8 +12472,8 @@
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 10,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-26T11:20:40.169539+08:00"
           }
         },
@@ -12754,13 +12754,13 @@
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 249,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 47,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-29T23:34:02.047115+08:00"
           }
         },
@@ -12853,11 +12853,11 @@
             "job": "Director"
           },
           {
-            "name": "Joachim Trier",
+            "name": "Eskil Vogt",
             "job": "Writer"
           },
           {
-            "name": "Eskil Vogt",
+            "name": "Joachim Trier",
             "job": "Writer"
           }
         ],
@@ -12987,11 +12987,11 @@
               "job": "Director"
             },
             {
-              "name": "Joachim Trier",
+              "name": "Eskil Vogt",
               "job": "Writer"
             },
             {
-              "name": "Eskil Vogt",
+              "name": "Joachim Trier",
               "job": "Writer"
             }
           ],
@@ -13262,7 +13262,7 @@
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
         "rt": "72%",
-        "mc": "67",
+        "mc": "66",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -13275,9 +13275,9 @@
             "lastChanged": "2026-10-03T20:08:42.093412+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 37,
-            "lastChanged": "2026-09-23T05:41:16.291409+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           }
         },
         "trailerKey": "HZkGZqypnBM",
@@ -13528,8 +13528,8 @@
         "duration": 98,
         "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
         "imdb": "5.7",
-        "rt": "53%",
-        "mc": "54",
+        "rt": "55%",
+        "mc": "53",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -13537,14 +13537,14 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 58,
-            "lastChanged": "2026-09-30T02:15:59.024519+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 12,
-            "lastChanged": "2026-09-14T13:24:26.771481+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           }
         },
         "trailerKey": "9spjI5Y0jPg",
@@ -14445,13 +14445,13 @@
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 62,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 14,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T17:54:10.601724+08:00"
           }
         },
@@ -14714,13 +14714,13 @@
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 73,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 23,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-12T18:40:10.320523+08:00"
           }
         },
@@ -14799,16 +14799,16 @@
         ],
         "crew": [
           {
+            "name": "Joachim Trier",
+            "job": "Director"
+          },
+          {
             "name": "Eskil Vogt",
             "job": "Screenplay"
           },
           {
             "name": "Joachim Trier",
             "job": "Screenplay"
-          },
-          {
-            "name": "Joachim Trier",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -14915,16 +14915,16 @@
           ],
           "crew": [
             {
+              "name": "Joachim Trier",
+              "job": "Director"
+            },
+            {
               "name": "Eskil Vogt",
               "job": "Screenplay"
             },
             {
               "name": "Joachim Trier",
               "job": "Screenplay"
-            },
-            {
-              "name": "Joachim Trier",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -14979,13 +14979,13 @@
             "lastChanged": "2026-09-17T20:03:31.996847+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 287,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-28T20:10:43.018005+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 47,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -15916,13 +15916,13 @@
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 6,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-02T09:10:48.207352+08:00"
           }
         },
@@ -16197,8 +16197,8 @@
             "lastChanged": "2026-09-30T12:12:14.881286+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 25,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-30T12:12:14.881286+08:00"
           }
         },
@@ -16476,13 +16476,13 @@
             "lastChanged": "2026-10-03T20:15:33.030549+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 232,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-03T20:15:33.030549+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 51,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-03T20:15:33.030549+08:00"
           }
         },
@@ -16753,13 +16753,13 @@
             "lastChanged": "2026-09-08T19:44:27.052615+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 125,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-02T13:00:47.913519+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 25,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-22T10:04:09.255354+08:00"
           }
         },
@@ -17021,7 +17021,7 @@
         "duration": 106,
         "synopsis": "在自己的童年老家撫養女兒的年輕母親潔瑪，意外發現自己能夠進入「陰深處」，這個位於《陰兒房》宇宙核心、充滿迷失靈魂的煉獄空間。當邪惡力量開始接近她時，潔瑪逐漸察覺自己擁有一項足以改變一切的能力，她不僅能進入陰深處，甚至能將其中的存在帶回現實世界。一旦惡靈察覺這股力量，人類世界也將淪為牠們的遊樂場。",
         "imdb": "6.2",
-        "rt": "57%",
+        "rt": "58%",
         "mc": "47",
         "ratingMeta": {
           "imdb": {
@@ -17030,13 +17030,13 @@
             "lastChanged": "2026-09-09T13:09:44.762945+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 136,
-            "lastChanged": "2026-09-27T13:43:21.378949+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-25T05:58:27.192616+08:00"
           }
         },
@@ -17298,13 +17298,13 @@
             "lastChanged": "2026-10-01T04:20:04.862375+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 127,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-14T13:24:26.771481+08:00"
           }
         },
@@ -17568,7 +17568,7 @@
         "duration": 88,
         "synopsis": "飛船被捲入一場神祕風暴，汪汪隊的狗狗們於是迫降在一座充滿恐龍的未知熱帶小島，並遇見了受困在小島多年、精通所有恐龍知識的狗狗雷克斯。汪汪隊的死對頭韓丁納市長覬覦小島的天然資源，便展開魯莽的開採行動，卻意外引發了休眠火山的大爆發。汪汪隊因此必須展開前所未有、風險升級的恐龍級救援任務，在這座小島上的一切滅絕之前阻止韓丁納。",
         "imdb": "6.1",
-        "rt": "83%",
+        "rt": "81%",
         "mc": "47",
         "ratingMeta": {
           "imdb": {
@@ -17577,13 +17577,13 @@
             "lastChanged": "2026-09-21T07:30:53.814823+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 35,
-            "lastChanged": "2026-09-18T05:44:03.338771+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 4,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-16T03:01:03.289398+08:00"
           }
         },
@@ -17949,13 +17949,13 @@
             "lastChanged": "2026-09-15T03:58:35.024564+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 341,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-22T12:10:10.070395+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 52,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-20T10:05:08.444659+08:00"
           }
         },
@@ -18486,13 +18486,13 @@
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 329,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-09T13:09:44.762945+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 38,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -19149,7 +19149,7 @@
         "duration": 145,
         "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
         "imdb": "8.1",
-        "rt": "90%",
+        "rt": "89%",
         "mc": "66",
         "ratingMeta": {
           "imdb": {
@@ -19158,13 +19158,13 @@
             "lastChanged": "2026-08-10T16:16:01.158458+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 435,
-            "lastChanged": "2026-09-14T13:24:26.771481+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 56,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -19426,7 +19426,7 @@
         "duration": 173,
         "synopsis": "講述奧德修斯在特洛伊戰爭後歷經艱險返鄉，途中遭遇獨眼巨人、女妖與女巫，最終與妻子重逢的傳奇旅程。",
         "imdb": "8.4",
-        "rt": "94%",
+        "rt": "93%",
         "mc": "88",
         "ratingMeta": {
           "imdb": {
@@ -19435,13 +19435,13 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 514,
-            "lastChanged": "2026-09-14T13:24:26.771481+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 63,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-03T17:48:24.046684+08:00"
           }
         },
@@ -20277,7 +20277,7 @@
         "duration": 102,
         "synopsis": "伴隨著時代演進、以科技入侵作為主題，玩具們將陷入 3C 危機，胡迪、巴斯光年此生最強勁敵現身，讓人愛不釋手的閃亮亮玩具登場，全新角色「莉莉板」，一款高科技、青蛙造型的智慧平板玩具，有了這個新寶貝，誰還需要玩具呢？他們將面臨史上最大的挑戰。",
         "imdb": "7.4",
-        "rt": "92%",
+        "rt": "93%",
         "mc": "73",
         "ratingMeta": {
           "imdb": {
@@ -20286,13 +20286,13 @@
             "lastChanged": "2026-10-03T20:15:33.030549+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 328,
-            "lastChanged": "2026-10-03T20:15:33.030549+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 55,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-03T20:15:33.030549+08:00"
           }
         },
@@ -20723,8 +20723,8 @@
             "lastChanged": "2026-09-12T11:48:54.841369+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 12,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-12T11:48:54.841369+08:00"
           },
           "mc": {
@@ -21002,7 +21002,7 @@
         "duration": 97,
         "synopsis": "一支神祕的精英特務小隊在全球各地祕密行動，不僅擅長操作各方勢力，也擅長操作自動武器和高性能炸藥。當一位冷酷無情的暴君竊取了十億美元的巨額財富時，這支小隊奉命去偷回這筆錢。然而，隨著任務進行，局面卻變得越來越棘手，這場劫案逐漸演變成充滿策略、欺騙和求生的全面戰爭……",
         "imdb": "6.6",
-        "rt": "53%",
+        "rt": "51%",
         "mc": "53",
         "ratingMeta": {
           "imdb": {
@@ -21011,13 +21011,13 @@
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 74,
-            "lastChanged": "2026-09-29T09:16:10.554924+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 17,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           }
         },
@@ -21274,7 +21274,7 @@
         "synopsis": "喬治法米是埃及的當紅大明星，卻因故觸怒政府當局，在一夜之間失寵。為了挽回局勢自保，他被迫接受了一項無法拒絕的片約邀請——在一部國家級的政宣電影中，飾演現任的埃及總統塞西。隨著電影開拍，喬治逐漸被推進埃及權力核心的神祕圈子。但他很快發現自己不僅淪為政治宣傳工具，更踏進了一場致命的危險遊戲。",
         "imdb": "6.6",
         "rt": "76%",
-        "mc": "67",
+        "mc": "74",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -21282,14 +21282,14 @@
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 58,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 12,
-            "lastChanged": "2026-09-23T13:07:18.645431+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           }
         },
         "trailerKey": "nW42wy2Nl3E",
@@ -22071,8 +22071,8 @@
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 26,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           }
         },
@@ -22162,11 +22162,11 @@
         "crew": [
           {
             "name": "Pauline Loquès",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Pauline Loquès",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -22279,11 +22279,11 @@
           "crew": [
             {
               "name": "Pauline Loquès",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Pauline Loquès",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -22859,8 +22859,8 @@
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 16,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           }
         },
@@ -23546,7 +23546,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/k6vBdTGa3INsaZvxxKHrRJiSuia.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/mgjt1CMfwHXcWXZNk3Isoln30mX.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/dFbWsTNeWNu5zciprpOPYgiDzIG.jpg",
         "voteAverage": "",
         "genre": [
           "音樂"
@@ -23607,7 +23607,7 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/k6vBdTGa3INsaZvxxKHrRJiSuia.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/mgjt1CMfwHXcWXZNk3Isoln30mX.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/dFbWsTNeWNu5zciprpOPYgiDzIG.jpg",
           "voteAverage": "",
           "trailerKey": null,
           "imdbId": "tt43723335",
@@ -23792,8 +23792,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 50,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           }
         },
@@ -24519,7 +24519,7 @@
           "動作",
           "奇幻"
         ],
-        "duration": "",
+        "duration": 120,
         "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
         "imdb": "",
         "rt": "",
@@ -24635,7 +24635,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": "",
+          "duration": 120,
           "genres": [
             "動作",
             "奇幻"
@@ -24792,13 +24792,13 @@
             "lastChanged": "2026-09-24T02:32:34.205550+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 103,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-24T02:32:34.205550+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 32,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-24T02:32:34.205550+08:00"
           }
         },
@@ -26431,13 +26431,13 @@
             "lastChanged": "2026-09-19T15:52:33.057374+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 18,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-19T15:52:33.057374+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 4,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-19T15:52:33.057374+08:00"
           }
         },
@@ -26902,7 +26902,7 @@
         "duration": 85,
         "synopsis": "一場註定消滅全宇宙同性戀的「直男病毒」正在巴黎街頭擴散！當健身網紅「超完美吉姆」遇上嬌弱少年盧西安，截然不同的兩人，攜手踏上找尋解藥的混亂冒險……",
         "imdb": "7.6",
-        "rt": "95%",
+        "rt": "94%",
         "mc": "61",
         "ratingMeta": {
           "imdb": {
@@ -26911,9 +26911,9 @@
             "lastChanged": "2026-09-21T07:30:53.814823+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 21,
-            "lastChanged": "2026-09-20T13:23:26.055418+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           },
           "mc": {
             "source": "omdb",
@@ -27387,8 +27387,8 @@
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           }
         },
@@ -28569,8 +28569,8 @@
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 12,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T17:18:45.434623+08:00"
           }
         },
@@ -28840,13 +28840,13 @@
             "lastChanged": "2026-10-03T10:56:39.692599+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 102,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-03T10:56:39.692599+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 17,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-03T10:56:39.692599+08:00"
           }
         },
@@ -28936,11 +28936,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 69000000,
@@ -29064,11 +29064,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 69000000,
@@ -29117,7 +29117,7 @@
         "synopsis": "",
         "imdb": "6.8",
         "rt": "84%",
-        "mc": "69",
+        "mc": "74",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -29125,14 +29125,14 @@
             "lastChanged": "2026-10-03T20:08:42.093412+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 85,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-03T20:08:42.093412+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 20,
-            "lastChanged": "2026-10-03T20:08:42.093412+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-04T02:51:19.115853+08:00"
           }
         },
         "trailerKey": null,
@@ -29394,13 +29394,13 @@
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 271,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 48,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           }
         },
@@ -32430,6 +32430,10 @@
           {
             "name": "Fawn Veerasunthorn",
             "job": "Director"
+          },
+          {
+            "name": "Dana Ledoux Miller",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -32510,6 +32514,10 @@
             {
               "name": "Fawn Veerasunthorn",
               "job": "Director"
+            },
+            {
+              "name": "Dana Ledoux Miller",
+              "job": "Writer"
             }
           ],
           "budget": 0,
