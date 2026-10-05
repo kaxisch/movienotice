@@ -816,6 +816,16 @@ def infer_current_tmdb_theatrical_date(tw_releases, audit_date):
     return max(dates).isoformat() if dates else ""
 
 
+def select_cinema_release_date(cinema_dates):
+    """同一部電影各分店上映日不同時，以最早的有效院線日作為本輪上映日。"""
+    dates = sorted({
+        parsed
+        for value in (cinema_dates or [])
+        if (parsed := parse_iso_date(value))
+    })
+    return dates[0].isoformat() if dates else ""
+
+
 def rerelease_absence_audit_complete(source_health, tmdb_processing_complete):
     """威秀 403 不影響缺席稽核；開眼、秀泰、國賓與 TMDB 必須成功。"""
     return bool(tmdb_processing_complete) and all(
@@ -1709,7 +1719,6 @@ def export_google_sheets_tsv(output, generated_at_local, movie_data=None, rerele
 
 def build_rerelease_audit(atmovies_output, generated_at_local):
     """以開眼及影城片單聯集建立私人重映候選；個別影城失敗不阻斷開眼稽核。"""
-    from collections import Counter
     from cinema_rereleases import (
         SOURCE_URLS,
         fetch_additional_cinema_movies,
@@ -1939,8 +1948,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
     for item in matched.values():
         cinema_dates = item.pop("cinema_dates")
         atmovies_original_dates = item.pop("atmovies_original_dates")
-        date_counts = Counter(cinema_dates)
-        cinema_date = sorted(date_counts, key=lambda value: (-date_counts[value], value))[0] if date_counts else ""
+        cinema_date = select_cinema_release_date(cinema_dates)
         tw_releases = item.pop("tw_releases")
         if not cinema_date and "atmovies" in item["sources"]:
             cinema_date = infer_current_tmdb_theatrical_date(
