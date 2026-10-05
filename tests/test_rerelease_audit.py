@@ -468,6 +468,22 @@ class CinemaParserTests(unittest.TestCase):
             "2026-08-21",
         )
 
+    def test_multiple_branch_dates_use_earliest_theatrical_date(self):
+        self.assertEqual(
+            weekly.select_cinema_release_date([
+                "2026-11-06",
+                "2026-10-23",
+                "2026-10-23",
+            ]),
+            "2026-10-23",
+        )
+
+    def test_cinema_release_date_ignores_missing_or_invalid_values(self):
+        self.assertEqual(
+            weekly.select_cinema_release_date(["", "上映日期待確認", "2026-10-23"]),
+            "2026-10-23",
+        )
+
     def test_missing_cinema_date_does_not_reuse_ancient_tmdb_date(self):
         self.assertEqual(
             weekly.infer_current_tmdb_theatrical_date(
