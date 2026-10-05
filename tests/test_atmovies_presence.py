@@ -14,6 +14,28 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_source_date_matches_any_tmdb_tw_theatrical_date(self):
+        release_results = [
+            {
+                "iso_3166_1": "TW",
+                "release_dates": [
+                    {"type": 3, "release_date": "2026-10-16T00:00:00.000Z"},
+                    {"type": 3, "release_date": "2026-10-24T00:00:00.000Z"},
+                ],
+            }
+        ]
+
+        self.assertTrue(
+            weekly.source_date_matches_tw_theatrical_release(
+                "2026-10-16", release_results
+            )
+        )
+        self.assertFalse(
+            weekly.source_date_matches_tw_theatrical_release(
+                "2026-10-17", release_results
+            )
+        )
+
     def test_manual_release_waits_for_a_newer_audit_before_handoff(self):
         manual = {"handoff_after_audit_date": "2026-09-12"}
 

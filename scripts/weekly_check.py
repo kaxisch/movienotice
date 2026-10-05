@@ -868,6 +868,17 @@ def extract_tw_theatrical_date_from_results(release_results):
     return theatrical[-1]["date"] if theatrical else ""
 
 
+def source_date_matches_tw_theatrical_release(source_date, release_results, tmdb_id=None):
+    """來源日期只要符合任一筆 TMDB 台灣院線日期，就不應視為日期不一致。"""
+    return any(
+        release["date"] == source_date
+        for release in extract_tw_theatrical_releases_from_results(
+            release_results,
+            tmdb_id=tmdb_id,
+        )
+    )
+
+
 TMDB_CINEMA_RELEASE_TYPES = {1, 2, 3}
 TMDB_CINEMA_RELEASE_TYPE_FILTER = "1|2|3"
 PUBLIC_MULTI_DATE_MOVIE_IDS = {1586876}  # 《劇場版 吉伊卡哇》日文版與中文版相差一週
@@ -2136,7 +2147,11 @@ def main():
 
         release_results = tmdb_release_dates(tmdb_id) or []
         time.sleep(TMDB_DELAY)
-        tmdb_tw_release_date = extract_tw_theatrical_date_from_results(release_results)
+        tmdb_tw_releases = extract_tw_theatrical_releases_from_results(
+            release_results,
+            tmdb_id=tmdb_id,
+        )
+        tmdb_tw_release_date = tmdb_tw_releases[-1]["date"] if tmdb_tw_releases else ""
 
         record = {
             **movie,
@@ -2146,6 +2161,7 @@ def main():
             "tmdb_primary_release_date": tmdb_primary_release_date,
             "tmdb_release_year": tmdb_year,
             "tmdb_tw_release_date": tmdb_tw_release_date,
+            "tmdb_tw_release_dates": tmdb_tw_releases,
             "tmdb_match_score": result.get("_match_score"),
             "tmdb_match_suspicious_reasons": result.get("_match_suspicious_reasons", []),
         }
@@ -2155,7 +2171,11 @@ def main():
 
         if tmdb_tw_release_date:
             tmdb_has_tw_date.append(record)
-            if movie.get("release_date_tw") and movie.get("release_date_tw") != tmdb_tw_release_date:
+            if movie.get("release_date_tw") and not source_date_matches_tw_theatrical_release(
+                movie["release_date_tw"],
+                release_results,
+                tmdb_id=tmdb_id,
+            ):
                 tmdb_date_mismatch.append(record)
         else:
             missing_tw_date.append(record)
