@@ -1,12 +1,149 @@
 {
-  "generated_at": "2026-10-06T14:51:52.926883+08:00",
+  "generated_at": "2026-10-07T00:16:10.196787+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 91,
-    "soon_count": 66
+    "now_count": 92,
+    "soon_count": 65
   },
   "movies": {
     "now": [
+      {
+        "id": 1776482,
+        "titleZh": "SB19 Wakas at Simula: The Trilogy Concert Finale In Cinemas",
+        "titleEn": "SB19 Wakas at Simula: The Trilogy Concert Finale",
+        "releaseDate": "2026-10-07",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-07",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/3pENFLYk6fyZfl8U5ewiyWWAw17.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "音樂"
+        ],
+        "duration": 129,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Stell Ajero",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Justin De Dios",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/wFkzwW1BW8GUctdMk3DPqBHN7qf.jpg"
+          },
+          {
+            "name": "Pablo Nase",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Josh Cullen Santos",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/vnZM2EGVFECj61cIe37br7uyEUL.jpg"
+          },
+          {
+            "name": "SB19",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Ken Suson",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "오윤동",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "SB19 Wakas at Simula: The Trilogy Concert Finale",
+        "platforms": [],
+        "popularity": 1.0985,
+        "imdbId": "tt44932755",
+        "countries": [],
+        "detail": {
+          "duration": 129,
+          "genres": [
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/3pENFLYk6fyZfl8U5ewiyWWAw17.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt44932755",
+          "countries": [],
+          "cast": [
+            {
+              "name": "Stell Ajero",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Justin De Dios",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/wFkzwW1BW8GUctdMk3DPqBHN7qf.jpg"
+            },
+            {
+              "name": "Pablo Nase",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Josh Cullen Santos",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/vnZM2EGVFECj61cIe37br7uyEUL.jpg"
+            },
+            {
+              "name": "SB19",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Ken Suson",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "오윤동",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "SB19 Wakas at Simula: The Trilogy Concert Finale",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1776482?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 85033,
         "titleZh": "花神咖啡館",
@@ -137,11 +274,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -262,11 +399,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -847,7 +984,7 @@
         "origLang": "ko",
         "origTitle": "귀신 부르는 앱: 영",
         "platforms": [],
-        "popularity": 3.055,
+        "popularity": 3.1734,
         "imdbId": "tt38961056",
         "countries": [
           "South Korea"
@@ -1721,7 +1858,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.5",
         "genre": [
           "喜劇",
           "劇情"
@@ -1747,7 +1884,7 @@
         "cast": [
           {
             "name": "湯姆·克魯斯",
-            "char": "Rockwell",
+            "char": "Digger Rockwell",
             "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
           },
           {
@@ -1816,9 +1953,9 @@
             "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
           },
           {
-            "name": "Pip Torrens",
-            "char": "AG Schumer",
-            "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
+            "name": "Richard Foster-King",
+            "char": "Steve",
+            "photo": null
           },
           {
             "name": "Corey Johnson",
@@ -1860,7 +1997,7 @@
           "synopsis": "故事講述全世界最有權勢的男人展開一場瘋狂的救援行動，為了在他引發的一場大災難摧毀一切之前，證明自己才是全人類的救星。",
           "poster": "https://image.tmdb.org/t/p/w500/oCwmjNr1e9jnkyZwi5LJqS6ulnx.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.5",
           "trailerKey": "sCs4ZEhwyjA",
           "imdbId": "tt31450459",
           "countries": [
@@ -1869,7 +2006,7 @@
           "cast": [
             {
               "name": "湯姆·克魯斯",
-              "char": "Rockwell",
+              "char": "Digger Rockwell",
               "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
             },
             {
@@ -1938,9 +2075,9 @@
               "photo": "https://image.tmdb.org/t/p/w500/66DNJWRWXzv0Sl3OHB9o5DSqFEo.jpg"
             },
             {
-              "name": "Pip Torrens",
-              "char": "AG Schumer",
-              "photo": "https://image.tmdb.org/t/p/w500/1n7pzFfT6jDHe8kc6I0AEfRryhz.jpg"
+              "name": "Richard Foster-King",
+              "char": "Steve",
+              "photo": null
             },
             {
               "name": "Corey Johnson",
@@ -2061,7 +2198,7 @@
         "origLang": "en",
         "origTitle": "LINKIN PARK: UNSHATTER",
         "platforms": [],
-        "popularity": 8.6446,
+        "popularity": 8.0398,
         "imdbId": "tt43442522",
         "countries": [
           "United States of America",
@@ -3119,7 +3256,7 @@
           }
         ],
         "budget": 356000000,
-        "revenue": 2925499985,
+        "revenue": 2925713609,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Avengers: Endgame",
@@ -3129,7 +3266,7 @@
             "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
           }
         ],
-        "popularity": 118.8549,
+        "popularity": 106.1704,
         "imdbId": "tt4154796",
         "countries": [
           "United States of America"
@@ -3247,7 +3384,7 @@
             }
           ],
           "budget": 356000000,
-          "revenue": 2925499985,
+          "revenue": 2925713609,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Avengers: Endgame",
@@ -3604,12 +3741,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 82000000,
@@ -3667,12 +3804,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 82000000,
@@ -5260,7 +5397,7 @@
         "origLang": "ja",
         "origTitle": "5秒で完全犯罪を生成する方法",
         "platforms": [],
-        "popularity": 1.6742,
+        "popularity": 1.6408,
         "imdbId": "tt42864901",
         "countries": [
           "Japan"
@@ -8040,7 +8177,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/oxGmijEVPGX7pO99dRg0VGptEIP.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/tHSBqI8h0VerN9i2mZknVe8cZf9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/8wr3MR7b5njzv4Ql0iJEgW1Rrtm.jpg",
         "voteAverage": "",
@@ -8120,7 +8257,7 @@
             "奇幻"
           ],
           "synopsis": "曾被寄予厚望、被視為明日之星的高中棒球投手「宇鎮」，因為突如其來的「投球失憶症」而陷入低潮，再也無法投出理想中的好球。面對一次次挫敗，曾經相信他的球隊也逐漸失去信心，準備放棄這名備受期待的投手。就當夢想即將離他遠去的瞬間，一位神祕的轉學生「泰熙」突然出現在他面前，並自告奮勇成為他的專屬經紀人，陪伴他重新找回站上投手丘的勇氣。當宇鎮再度站上投手丘的那天，他能否突破心理障礙，投出改變人生的好球？而兩人又能否攜手實現未完成的青春夢想呢？",
-          "poster": "https://image.tmdb.org/t/p/w500/oxGmijEVPGX7pO99dRg0VGptEIP.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/tHSBqI8h0VerN9i2mZknVe8cZf9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/8wr3MR7b5njzv4Ql0iJEgW1Rrtm.jpg",
           "voteAverage": "",
           "trailerKey": "pGMHgYiJ8C0",
@@ -9273,7 +9410,7 @@
         "origLang": "en",
         "origTitle": "Resident Evil",
         "platforms": [],
-        "popularity": 364.5221,
+        "popularity": 384.9808,
         "imdbId": "tt35538033",
         "countries": [
           "United States of America",
@@ -9460,11 +9597,11 @@
         "crew": [
           {
             "name": "Heather Lenz",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Heather Lenz",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -9509,11 +9646,11 @@
           "crew": [
             {
               "name": "Heather Lenz",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Heather Lenz",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -10677,7 +10814,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/A58FVNOQ9qXxt0vdKGQ9kCo17El.jpg",
-        "voteAverage": "7.0",
+        "voteAverage": "6.5",
         "genre": [
           "劇情",
           "懸疑",
@@ -10805,7 +10942,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/2dAd2APyFUyJ6qEv9VFHdHQtQI6.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/A58FVNOQ9qXxt0vdKGQ9kCo17El.jpg",
-          "voteAverage": "7.0",
+          "voteAverage": "6.5",
           "trailerKey": null,
           "imdbId": "tt38814489",
           "countries": [
@@ -11046,11 +11183,11 @@
         "crew": [
           {
             "name": "約翰·卡尼",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "約翰·卡尼",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Peter McDonald",
@@ -11171,11 +11308,11 @@
           "crew": [
             {
               "name": "約翰·卡尼",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "約翰·卡尼",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Peter McDonald",
@@ -11820,7 +11957,7 @@
         "origLang": "zh",
         "origTitle": "大仙尪仔",
         "platforms": [],
-        "popularity": 0.8654,
+        "popularity": 0.8815,
         "imdbId": "tt43659346",
         "countries": [
           "Taiwan"
@@ -12351,11 +12488,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -12424,11 +12561,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -12878,7 +13015,7 @@
             "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
           }
         ],
-        "popularity": 10.3693,
+        "popularity": 10.7805,
         "imdbId": "tt10370710",
         "countries": [
           "Norway",
@@ -13267,7 +13404,7 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
-        "rt": "72%",
+        "rt": "78%",
         "mc": "67",
         "ratingMeta": {
           "imdb": {
@@ -13276,9 +13413,9 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
-            "lastChanged": "2026-10-05T14:35:49.283567+08:00"
+            "source": "mdblist",
+            "votes": 168,
+            "lastChanged": "2026-10-07T00:16:10.196787+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -13527,7 +13664,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
-        "voteAverage": "6.2",
+        "voteAverage": "6.1",
         "genre": [
           "驚悚"
         ],
@@ -13670,7 +13807,7 @@
           "synopsis": "妹妹杭特去世後，賈克斯悲痛欲絕，為了療傷，她邀請大膽的好友露絲一起挑戰泰國關山惡名昭彰的棧板步道。然而，突如其來的山崩讓她們困在距離地表3000英尺的高空，腳下只剩幾片殘存的木板。為了活下去，賈克斯必須面對內心最深的恐懼……",
           "poster": "https://image.tmdb.org/t/p/w500/28fsM6AloV9qNQO7chv0dTHvx80.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
-          "voteAverage": "6.2",
+          "voteAverage": "6.1",
           "trailerKey": "9spjI5Y0jPg",
           "imdbId": "tt31192372",
           "countries": [
@@ -16316,7 +16453,7 @@
             "logo": "/k7iSlvgWzZuO4zU5PcBjhABMuia.png"
           }
         ],
-        "popularity": 2.7111,
+        "popularity": 2.6664,
         "imdbId": "tt0827517",
         "countries": [
           "Norway"
@@ -16595,7 +16732,7 @@
         "origLang": "en",
         "origTitle": "Tony",
         "platforms": [],
-        "popularity": 23.2397,
+        "popularity": 21.6971,
         "imdbId": "tt33095251",
         "countries": [
           "United States of America",
@@ -17018,8 +17155,8 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/w2xDGa1252imRPgCbiY48AbkRBn.jpg",
-        "voteAverage": "6.5",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
+        "voteAverage": "6.6",
         "genre": [
           "恐怖",
           "驚悚"
@@ -17158,8 +17295,8 @@
           ],
           "synopsis": "在自己的童年老家撫養女兒的年輕母親潔瑪，意外發現自己能夠進入「陰深處」，這個位於《陰兒房》宇宙核心、充滿迷失靈魂的煉獄空間。當邪惡力量開始接近她時，潔瑪逐漸察覺自己擁有一項足以改變一切的能力，她不僅能進入陰深處，甚至能將其中的存在帶回現實世界。一旦惡靈察覺這股力量，人類世界也將淪為牠們的遊樂場。",
           "poster": "https://image.tmdb.org/t/p/w500/4iWnb67ay2UeGNURe4WmF4MEwtO.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/w2xDGa1252imRPgCbiY48AbkRBn.jpg",
-          "voteAverage": "6.5",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
+          "voteAverage": "6.6",
           "trailerKey": "coy7TQSchmw",
           "imdbId": "tt32393988",
           "countries": [
@@ -18051,11 +18188,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 80000000,
@@ -18073,7 +18210,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 240.3831,
+        "popularity": 205.5067,
         "imdbId": "tt27165187",
         "countries": [
           "United States of America"
@@ -18179,11 +18316,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 80000000,
@@ -18588,15 +18725,15 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
-        "revenue": 519159799,
+        "revenue": 520006715,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Obsession",
@@ -18606,7 +18743,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 167.7462,
+        "popularity": 158.9043,
         "imdbId": "tt37287335",
         "countries": [
           "United States of America",
@@ -18713,15 +18850,15 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
-          "revenue": 519159799,
+          "revenue": 520006715,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Obsession",
@@ -19146,7 +19283,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/2ECnnHWCdDOOWVxepZ4KVyZeFso.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/eSvYccJm5ejJXFtJTqM2dIqrhK7.jpg",
-        "voteAverage": "8.0",
+        "voteAverage": "8.1",
         "genre": [
           "科幻",
           "動作",
@@ -19182,19 +19319,19 @@
             "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
           },
           {
+            "name": "薩迪·辛克",
+            "char": "Jean Grey",
+            "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+          },
+          {
+            "name": "Tramell Tillman",
+            "char": "William 'Bill' Metzger",
+            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+          },
+          {
             "name": "千黛亞",
             "char": "MJ",
             "photo": "https://image.tmdb.org/t/p/w500/1qup8tSt95HLbcy2c2xrx4iJNxv.jpg"
-          },
-          {
-            "name": "馬克·魯法洛",
-            "char": "Bruce Banner / Hulk",
-            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
-          },
-          {
-            "name": "強·柏恩瑟",
-            "char": "Frank Castle / Punisher",
-            "photo": "https://image.tmdb.org/t/p/w500/bjcglF1IpDcZNs1HwFxakGpzBo6.jpg"
           },
           {
             "name": "雅各布·貝塔隆",
@@ -19202,9 +19339,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
           },
           {
-            "name": "薩迪·辛克",
-            "char": "Jean Grey",
-            "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            "name": "強·柏恩瑟",
+            "char": "Frank Castle / Punisher",
+            "photo": "https://image.tmdb.org/t/p/w500/bjcglF1IpDcZNs1HwFxakGpzBo6.jpg"
+          },
+          {
+            "name": "馬克·魯法洛",
+            "char": "Bruce Banner / Hulk",
+            "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
           },
           {
             "name": "佛蘿倫絲·普伊",
@@ -19215,11 +19357,6 @@
             "name": "Liza Colón-Zayas",
             "char": "Detective Jean DeWolff",
             "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
-          },
-          {
-            "name": "Tramell Tillman",
-            "char": "William 'Bill' Metzger",
-            "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
           },
           {
             "name": "瑪麗莎·托梅",
@@ -19292,7 +19429,7 @@
           "synopsis": "彼得帕克努力專注於大學生活，把蜘蛛人拋在腦後。然而，當新的威脅危及到他的朋友時，他不得不違背諾言，再次穿上戰衣，與一位意想不到的盟友聯手，保護他所愛的人。",
           "poster": "https://image.tmdb.org/t/p/w500/2ECnnHWCdDOOWVxepZ4KVyZeFso.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/eSvYccJm5ejJXFtJTqM2dIqrhK7.jpg",
-          "voteAverage": "8.0",
+          "voteAverage": "8.1",
           "trailerKey": "Upn2ejyAvnM",
           "imdbId": "tt22084616",
           "countries": [
@@ -19305,19 +19442,19 @@
               "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
             },
             {
+              "name": "薩迪·辛克",
+              "char": "Jean Grey",
+              "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+            },
+            {
+              "name": "Tramell Tillman",
+              "char": "William 'Bill' Metzger",
+              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
+            },
+            {
               "name": "千黛亞",
               "char": "MJ",
               "photo": "https://image.tmdb.org/t/p/w500/1qup8tSt95HLbcy2c2xrx4iJNxv.jpg"
-            },
-            {
-              "name": "馬克·魯法洛",
-              "char": "Bruce Banner / Hulk",
-              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
-            },
-            {
-              "name": "強·柏恩瑟",
-              "char": "Frank Castle / Punisher",
-              "photo": "https://image.tmdb.org/t/p/w500/bjcglF1IpDcZNs1HwFxakGpzBo6.jpg"
             },
             {
               "name": "雅各布·貝塔隆",
@@ -19325,9 +19462,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/53YhaL4xw4Sb1ssoHkeSSBaO29c.jpg"
             },
             {
-              "name": "薩迪·辛克",
-              "char": "Jean Grey",
-              "photo": "https://image.tmdb.org/t/p/w500/92FddzBfK50XOUbtwjqHPraoGHy.jpg"
+              "name": "強·柏恩瑟",
+              "char": "Frank Castle / Punisher",
+              "photo": "https://image.tmdb.org/t/p/w500/bjcglF1IpDcZNs1HwFxakGpzBo6.jpg"
+            },
+            {
+              "name": "馬克·魯法洛",
+              "char": "Bruce Banner / Hulk",
+              "photo": "https://image.tmdb.org/t/p/w500/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
             },
             {
               "name": "佛蘿倫絲·普伊",
@@ -19338,11 +19480,6 @@
               "name": "Liza Colón-Zayas",
               "char": "Detective Jean DeWolff",
               "photo": "https://image.tmdb.org/t/p/w500/q2gHcef0wckji0AS8ZEO6cYx065.jpg"
-            },
-            {
-              "name": "Tramell Tillman",
-              "char": "William 'Bill' Metzger",
-              "photo": "https://image.tmdb.org/t/p/w500/bEA15zMnkcXlRroYjKrFUWiiK7y.jpg"
             },
             {
               "name": "瑪麗莎·托梅",
@@ -19550,7 +19687,7 @@
         "origLang": "en",
         "origTitle": "The Odyssey",
         "platforms": [],
-        "popularity": 322.0423,
+        "popularity": 300.6444,
         "imdbId": "tt33764258",
         "countries": [
           "United Kingdom",
@@ -20555,143 +20692,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 1776482,
-        "titleZh": "SB19 Wakas at Simula: The Trilogy Concert Finale In Cinemas",
-        "titleEn": "SB19 Wakas at Simula: The Trilogy Concert Finale",
-        "releaseDate": "2026-10-07",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-07",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/3pENFLYk6fyZfl8U5ewiyWWAw17.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": null,
-        "voteAverage": "",
-        "genre": [
-          "音樂"
-        ],
-        "duration": 129,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Stell Ajero",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Justin De Dios",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/wFkzwW1BW8GUctdMk3DPqBHN7qf.jpg"
-          },
-          {
-            "name": "Pablo Nase",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Josh Cullen Santos",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vnZM2EGVFECj61cIe37br7uyEUL.jpg"
-          },
-          {
-            "name": "SB19",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Ken Suson",
-            "char": "",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "오윤동",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "SB19 Wakas at Simula: The Trilogy Concert Finale",
-        "platforms": [],
-        "popularity": 1.0985,
-        "imdbId": "tt44932755",
-        "countries": [],
-        "detail": {
-          "duration": 129,
-          "genres": [
-            "音樂"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/3pENFLYk6fyZfl8U5ewiyWWAw17.jpg",
-          "backdrop": null,
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt44932755",
-          "countries": [],
-          "cast": [
-            {
-              "name": "Stell Ajero",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Justin De Dios",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/wFkzwW1BW8GUctdMk3DPqBHN7qf.jpg"
-            },
-            {
-              "name": "Pablo Nase",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Josh Cullen Santos",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vnZM2EGVFECj61cIe37br7uyEUL.jpg"
-            },
-            {
-              "name": "SB19",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Ken Suson",
-              "char": "",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "오윤동",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "SB19 Wakas at Simula: The Trilogy Concert Finale",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1776482?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 80518,
         "titleZh": "鋼之鍊金術師：嘆息之丘的聖星",
@@ -22347,7 +22347,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/gy1RZonkd5CYWl64qCdIBcS4HjI.jpg",
         "voteAverage": "",
         "genre": [
           "恐怖"
@@ -22469,7 +22469,7 @@
           ],
           "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
           "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/gy1RZonkd5CYWl64qCdIBcS4HjI.jpg",
           "voteAverage": "",
           "trailerKey": "z5vaaaJBGXw",
           "imdbId": "tt36586020",
@@ -23552,8 +23552,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 302,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -24734,7 +24734,7 @@
         ],
         "budget": 0,
         "revenue": 0,
-        "status": "Post Production",
+        "status": "Released",
         "origLang": "en",
         "origTitle": "Whalefall",
         "platforms": [],
@@ -24805,7 +24805,7 @@
           ],
           "budget": 0,
           "revenue": 0,
-          "status": "Post Production",
+          "status": "Released",
           "origLang": "en",
           "origTitle": "Whalefall",
           "platforms": []
@@ -25269,7 +25269,7 @@
         "twTheatricalReleases": [
           {
             "date": "2026-10-16",
-            "language": ""
+            "language": "zh"
           }
         ],
         "twReleaseDateVerified": true,
@@ -26292,11 +26292,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -26414,11 +26414,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -26741,11 +26741,11 @@
         ],
         "crew": [
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
@@ -26835,11 +26835,11 @@
           ],
           "crew": [
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
@@ -26905,14 +26905,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/pXRADDRhprgaQ4Bri44NH3bYeu6.jpg"
           },
           {
-            "name": "烏米·馬薩庫",
-            "char": "Raya",
-            "photo": "https://image.tmdb.org/t/p/w500/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg"
-          },
-          {
             "name": "貝蒂·吉爾平",
             "char": "Kris",
             "photo": "https://image.tmdb.org/t/p/w500/6GvlDnnKM0WxBt0jUipBJw5VgD5.jpg"
+          },
+          {
+            "name": "烏米·馬薩庫",
+            "char": "Raya",
+            "photo": "https://image.tmdb.org/t/p/w500/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg"
           },
           {
             "name": "Billy Magnussen",
@@ -26986,7 +26986,7 @@
         "origLang": "en",
         "origTitle": "The Social Reckoning",
         "platforms": [],
-        "popularity": 18.28,
+        "popularity": 21.5967,
         "imdbId": "tt37510326",
         "countries": [
           "United States of America"
@@ -27023,14 +27023,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/pXRADDRhprgaQ4Bri44NH3bYeu6.jpg"
             },
             {
-              "name": "烏米·馬薩庫",
-              "char": "Raya",
-              "photo": "https://image.tmdb.org/t/p/w500/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg"
-            },
-            {
               "name": "貝蒂·吉爾平",
               "char": "Kris",
               "photo": "https://image.tmdb.org/t/p/w500/6GvlDnnKM0WxBt0jUipBJw5VgD5.jpg"
+            },
+            {
+              "name": "烏米·馬薩庫",
+              "char": "Raya",
+              "photo": "https://image.tmdb.org/t/p/w500/vp7qDA7cYZj0MDYk1k4wysmznnN.jpg"
             },
             {
               "name": "Billy Magnussen",
@@ -27244,7 +27244,7 @@
         "origLang": "pl",
         "origTitle": "Chopin, Chopin!",
         "platforms": [],
-        "popularity": 3.1859,
+        "popularity": 4.62,
         "imdbId": "tt33305572",
         "countries": [
           "Poland"
@@ -28197,7 +28197,7 @@
         "cast": [],
         "crew": [
           {
-            "name": "謝小韞",
+            "name": "吳平海",
             "job": "Director"
           }
         ],
@@ -28229,7 +28229,7 @@
           "cast": [],
           "crew": [
             {
-              "name": "謝小韞",
+              "name": "吳平海",
               "job": "Director"
             }
           ],
@@ -29535,7 +29535,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/fLXSy0auJHU8J0edVbyAa0bWMlC.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
-        "voteAverage": "6.3",
+        "voteAverage": "6.2",
         "genre": [
           "喜劇",
           "恐怖",
@@ -29649,11 +29649,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 8000000,
@@ -29678,7 +29678,7 @@
           "synopsis": "一名酷兒電影製片人受聘執導經典砍殺電影《瘴氣營地》系列（片中虛構電影系列）的新作。她執著於邀請原作中飾演最後的女孩、而如今已隱居的女演員參演。兩人合作後，逐漸陷入一場充滿心理與性慾狂亂的瘋狂漩渦。",
           "poster": "https://image.tmdb.org/t/p/w500/fLXSy0auJHU8J0edVbyAa0bWMlC.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
-          "voteAverage": "6.3",
+          "voteAverage": "6.2",
           "trailerKey": null,
           "imdbId": "tt35298123",
           "countries": [
@@ -29770,11 +29770,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 8000000,
@@ -32164,11 +32164,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -32226,11 +32226,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -33514,11 +33514,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Brian K. Vaughan",
@@ -33626,11 +33626,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Brian K. Vaughan",
