@@ -153,6 +153,7 @@ class TmdbOverrideTests(unittest.TestCase):
             "獨奏者之舞": 1695300,
             "鬼入室": 1558497,
             "YORUSHIKA LIVE 「盜作」": 1740268,
+            "駭速劫案": 938150,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
