@@ -1,12 +1,149 @@
 {
-  "generated_at": "2026-10-09T18:55:09.693459+08:00",
+  "generated_at": "2026-10-10T02:32:04.357802+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 104,
-    "soon_count": 58
+    "now_count": 105,
+    "soon_count": 61
   },
   "movies": {
     "now": [
+      {
+        "id": 1740268,
+        "titleZh": "YORUSHIKA LIVE 「盜作」",
+        "titleEn": "ヨルシカ LIVE「盗作」",
+        "releaseDate": "2026-10-10",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-10",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/k6vBdTGa3INsaZvxxKHrRJiSuia.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/dFbWsTNeWNu5zciprpOPYgiDzIG.jpg",
+        "voteAverage": "",
+        "genre": [
+          "音樂"
+        ],
+        "duration": 87,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "n-buna",
+            "char": "Guitar / Chorus / Recitation",
+            "photo": null
+          },
+          {
+            "name": "suis",
+            "char": "Vocal",
+            "photo": null
+          },
+          {
+            "name": "下鶴光康",
+            "char": "Guitar",
+            "photo": "https://image.tmdb.org/t/p/w500/4rv423Ng8FT0Qfz0fie619KfcaD.jpg"
+          },
+          {
+            "name": "キタニタツヤ",
+            "char": "Bass",
+            "photo": "https://image.tmdb.org/t/p/w500/bgBb03OesPGVGWbyLE41jWqvzfo.jpg"
+          },
+          {
+            "name": "Masack",
+            "char": "Drums / Percussion",
+            "photo": "https://image.tmdb.org/t/p/w500/zVDGOBWrTU2oGxjx5tlOMfBUoAz.jpg"
+          },
+          {
+            "name": "Tetsuya Hirahata",
+            "char": "Piano / Keyboards",
+            "photo": "https://image.tmdb.org/t/p/w500/wauXWZTh5t54Nzuc3LqYw3heVqG.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "稲垣哲朗",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "ヨルシカ LIVE「盗作」",
+        "platforms": [],
+        "popularity": 2.2349,
+        "imdbId": "tt43723335",
+        "countries": [],
+        "detail": {
+          "duration": 87,
+          "genres": [
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/k6vBdTGa3INsaZvxxKHrRJiSuia.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/dFbWsTNeWNu5zciprpOPYgiDzIG.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt43723335",
+          "countries": [],
+          "cast": [
+            {
+              "name": "n-buna",
+              "char": "Guitar / Chorus / Recitation",
+              "photo": null
+            },
+            {
+              "name": "suis",
+              "char": "Vocal",
+              "photo": null
+            },
+            {
+              "name": "下鶴光康",
+              "char": "Guitar",
+              "photo": "https://image.tmdb.org/t/p/w500/4rv423Ng8FT0Qfz0fie619KfcaD.jpg"
+            },
+            {
+              "name": "キタニタツヤ",
+              "char": "Bass",
+              "photo": "https://image.tmdb.org/t/p/w500/bgBb03OesPGVGWbyLE41jWqvzfo.jpg"
+            },
+            {
+              "name": "Masack",
+              "char": "Drums / Percussion",
+              "photo": "https://image.tmdb.org/t/p/w500/zVDGOBWrTU2oGxjx5tlOMfBUoAz.jpg"
+            },
+            {
+              "name": "Tetsuya Hirahata",
+              "char": "Piano / Keyboards",
+              "photo": "https://image.tmdb.org/t/p/w500/wauXWZTh5t54Nzuc3LqYw3heVqG.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "稲垣哲朗",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "ヨルシカ LIVE「盗作」",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1740268?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 80518,
         "titleZh": "鋼之鍊金術師：嘆息之丘的聖星",
@@ -1668,7 +1805,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/gy1RZonkd5CYWl64qCdIBcS4HjI.jpg",
-        "voteAverage": "7.5",
+        "voteAverage": "6.9",
         "genre": [
           "恐怖"
         ],
@@ -1790,7 +1927,7 @@
           "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
           "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/gy1RZonkd5CYWl64qCdIBcS4HjI.jpg",
-          "voteAverage": "7.5",
+          "voteAverage": "6.9",
           "trailerKey": "z5vaaaJBGXw",
           "imdbId": "tt36586020",
           "countries": [
@@ -2872,11 +3009,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -2997,11 +3134,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5782,7 +5919,7 @@
           {
             "name": "克里斯·伊凡",
             "char": "Steve Rogers / Captain America",
-            "photo": "https://image.tmdb.org/t/p/w500/a52ncG9JskJtqrryE0KakPPBkHJ.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
           },
           {
             "name": "馬克·魯法洛",
@@ -5865,7 +6002,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Joe Russo",
+            "name": "Anthony Russo",
             "job": "Director"
           }
         ],
@@ -5910,7 +6047,7 @@
             {
               "name": "克里斯·伊凡",
               "char": "Steve Rogers / Captain America",
-              "photo": "https://image.tmdb.org/t/p/w500/a52ncG9JskJtqrryE0KakPPBkHJ.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
             },
             {
               "name": "馬克·魯法洛",
@@ -5993,7 +6130,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Joe Russo",
+              "name": "Anthony Russo",
               "job": "Director"
             }
           ],
@@ -8396,11 +8533,11 @@
         ],
         "crew": [
           {
-            "name": "Yung-hsiang Chang",
+            "name": "Liu Wei-Bin",
             "job": "Screenplay"
           },
           {
-            "name": "Liu Wei-Bin",
+            "name": "Yung-hsiang Chang",
             "job": "Screenplay"
           },
           {
@@ -8517,11 +8654,11 @@
           ],
           "crew": [
             {
-              "name": "Yung-hsiang Chang",
+              "name": "Liu Wei-Bin",
               "job": "Screenplay"
             },
             {
-              "name": "Liu Wei-Bin",
+              "name": "Yung-hsiang Chang",
               "job": "Screenplay"
             },
             {
@@ -13752,7 +13889,7 @@
           {
             "name": "哈瓦娜·羅斯·劉",
             "char": "Marcia",
-            "photo": "https://image.tmdb.org/t/p/w500/xt5jIhVekKpwZDbVuHJb8H4A6oM.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/lqdialbfdj5l4KYMSlL4aausMaV.jpg"
           },
           {
             "name": "傑克·雷諾",
@@ -13813,11 +13950,11 @@
         "crew": [
           {
             "name": "約翰·卡尼",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "約翰·卡尼",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Peter McDonald",
@@ -13877,7 +14014,7 @@
             {
               "name": "哈瓦娜·羅斯·劉",
               "char": "Marcia",
-              "photo": "https://image.tmdb.org/t/p/w500/xt5jIhVekKpwZDbVuHJb8H4A6oM.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/lqdialbfdj5l4KYMSlL4aausMaV.jpg"
             },
             {
               "name": "傑克·雷諾",
@@ -13938,11 +14075,11 @@
           "crew": [
             {
               "name": "約翰·卡尼",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "約翰·卡尼",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Peter McDonald",
@@ -15118,11 +15255,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -15191,11 +15328,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -15893,7 +16030,7 @@
           }
         ],
         "budget": 0,
-        "revenue": 13800000,
+        "revenue": 14802000,
         "status": "Released",
         "origLang": "ja",
         "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
@@ -15997,7 +16134,7 @@
             }
           ],
           "budget": 0,
-          "revenue": 13800000,
+          "revenue": 14802000,
           "status": "Released",
           "origLang": "ja",
           "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
@@ -16025,7 +16162,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7ad5bqevd4TUZphJLi3qyTIj5U6.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
-        "voteAverage": "7.3",
+        "voteAverage": "7.2",
         "genre": [
           "科幻",
           "懸疑",
@@ -16167,7 +16304,7 @@
           "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
           "poster": "https://image.tmdb.org/t/p/w500/7ad5bqevd4TUZphJLi3qyTIj5U6.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
-          "voteAverage": "7.3",
+          "voteAverage": "7.2",
           "trailerKey": "HZkGZqypnBM",
           "imdbId": "tt27369017",
           "countries": [
@@ -16405,11 +16542,11 @@
         ],
         "crew": [
           {
-            "name": "Michael Spierig",
-            "job": "Director"
+            "name": "Jonathan Frank",
+            "job": "Writer"
           },
           {
-            "name": "Peter Spierig",
+            "name": "Michael Spierig",
             "job": "Director"
           },
           {
@@ -16528,11 +16665,11 @@
           ],
           "crew": [
             {
-              "name": "Michael Spierig",
-              "job": "Director"
+              "name": "Jonathan Frank",
+              "job": "Writer"
             },
             {
-              "name": "Peter Spierig",
+              "name": "Michael Spierig",
               "job": "Director"
             },
             {
@@ -16569,7 +16706,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
-        "voteAverage": "6.2",
+        "voteAverage": "6.3",
         "genre": [
           "喜劇"
         ],
@@ -16665,7 +16802,7 @@
           "synopsis": "芬妮和發明家湯姆結婚二十年，婚姻幸福美滿，但芬妮有個令她煩惱的小祕密：她從未體驗過性高潮！得知此事的湯姆既生氣又沮喪，但深愛芬妮的他決定運用長才，要設計出一個能讓女性獲得快感的劃時代情趣玩具！",
           "poster": "https://image.tmdb.org/t/p/w500/3xVwZQLrAYl4Uoi2rPYwqzMirWK.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/eJKKygAF718jp1HhGvH3SMoi5Cv.jpg",
-          "voteAverage": "6.2",
+          "voteAverage": "6.3",
           "trailerKey": "O6S_WKOIOoA",
           "imdbId": "tt38607784",
           "countries": [
@@ -19469,7 +19606,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
-        "voteAverage": "7.5",
+        "voteAverage": "7.4",
         "genre": [
           "動作",
           "驚悚"
@@ -19614,7 +19751,7 @@
           "synopsis": "目睹億萬富翁企業家老闆在面前遭到殺害後，柯爾李德被誣陷為兇手，他被迫展開逃亡，同時要在過程中設法揭發一樁國際陰謀。",
           "poster": "https://image.tmdb.org/t/p/w500/9UmRLdkctpIwvUkmPFvyz67Psu8.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
-          "voteAverage": "7.5",
+          "voteAverage": "7.4",
           "trailerKey": "NfocDa8yXOk",
           "imdbId": "tt32338669",
           "countries": [
@@ -20796,11 +20933,11 @@
         "crew": [
           {
             "name": "David Robert Mitchell",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "David Robert Mitchell",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 80000000,
@@ -20924,11 +21061,11 @@
           "crew": [
             {
               "name": "David Robert Mitchell",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "David Robert Mitchell",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 80000000,
@@ -21333,11 +21470,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
@@ -21458,11 +21595,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
@@ -23311,143 +23448,6 @@
     ],
     "soon": [
       {
-        "id": 1740268,
-        "titleZh": "YORUSHIKA LIVE 「盜作」",
-        "titleEn": "ヨルシカ LIVE「盗作」",
-        "releaseDate": "2026-10-10",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-10",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/k6vBdTGa3INsaZvxxKHrRJiSuia.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/dFbWsTNeWNu5zciprpOPYgiDzIG.jpg",
-        "voteAverage": "",
-        "genre": [
-          "音樂"
-        ],
-        "duration": 87,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "n-buna",
-            "char": "Guitar / Chorus / Recitation",
-            "photo": null
-          },
-          {
-            "name": "suis",
-            "char": "Vocal",
-            "photo": null
-          },
-          {
-            "name": "下鶴光康",
-            "char": "Guitar",
-            "photo": "https://image.tmdb.org/t/p/w500/4rv423Ng8FT0Qfz0fie619KfcaD.jpg"
-          },
-          {
-            "name": "キタニタツヤ",
-            "char": "Bass",
-            "photo": "https://image.tmdb.org/t/p/w500/bgBb03OesPGVGWbyLE41jWqvzfo.jpg"
-          },
-          {
-            "name": "Masack",
-            "char": "Drums / Percussion",
-            "photo": "https://image.tmdb.org/t/p/w500/zVDGOBWrTU2oGxjx5tlOMfBUoAz.jpg"
-          },
-          {
-            "name": "Tetsuya Hirahata",
-            "char": "Piano / Keyboards",
-            "photo": "https://image.tmdb.org/t/p/w500/wauXWZTh5t54Nzuc3LqYw3heVqG.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "稲垣哲朗",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "ヨルシカ LIVE「盗作」",
-        "platforms": [],
-        "popularity": 2.2349,
-        "imdbId": "tt43723335",
-        "countries": [],
-        "detail": {
-          "duration": 87,
-          "genres": [
-            "音樂"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/k6vBdTGa3INsaZvxxKHrRJiSuia.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/dFbWsTNeWNu5zciprpOPYgiDzIG.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt43723335",
-          "countries": [],
-          "cast": [
-            {
-              "name": "n-buna",
-              "char": "Guitar / Chorus / Recitation",
-              "photo": null
-            },
-            {
-              "name": "suis",
-              "char": "Vocal",
-              "photo": null
-            },
-            {
-              "name": "下鶴光康",
-              "char": "Guitar",
-              "photo": "https://image.tmdb.org/t/p/w500/4rv423Ng8FT0Qfz0fie619KfcaD.jpg"
-            },
-            {
-              "name": "キタニタツヤ",
-              "char": "Bass",
-              "photo": "https://image.tmdb.org/t/p/w500/bgBb03OesPGVGWbyLE41jWqvzfo.jpg"
-            },
-            {
-              "name": "Masack",
-              "char": "Drums / Percussion",
-              "photo": "https://image.tmdb.org/t/p/w500/zVDGOBWrTU2oGxjx5tlOMfBUoAz.jpg"
-            },
-            {
-              "name": "Tetsuya Hirahata",
-              "char": "Piano / Keyboards",
-              "photo": "https://image.tmdb.org/t/p/w500/wauXWZTh5t54Nzuc3LqYw3heVqG.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "稲垣哲朗",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "ヨルシカ LIVE「盗作」",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1740268?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1489932,
         "titleZh": "Always Lalisa",
         "titleEn": "Always Lalisa",
@@ -23577,8 +23577,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 302,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -24411,12 +24411,12 @@
         ],
         "crew": [
           {
-            "name": "路陽",
-            "job": "Director"
-          },
-          {
             "name": "裏則林",
             "job": "Screenplay"
+          },
+          {
+            "name": "路陽",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -24529,12 +24529,12 @@
           ],
           "crew": [
             {
-              "name": "路陽",
-              "job": "Director"
-            },
-            {
               "name": "裏則林",
               "job": "Screenplay"
+            },
+            {
+              "name": "路陽",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -24602,7 +24602,7 @@
           {
             "name": "大衛·達斯馬齊連",
             "char": "M. Bison",
-            "photo": "https://image.tmdb.org/t/p/w500/nER1Vzhk51pGHb60KBF1Ja5tEXA.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/eLafwcpL64CqzwjjSgKpO7Rv4ae.jpg"
           },
           {
             "name": "寇帝·羅茲",
@@ -24726,7 +24726,7 @@
             {
               "name": "大衛·達斯馬齊連",
               "char": "M. Bison",
-              "photo": "https://image.tmdb.org/t/p/w500/nER1Vzhk51pGHb60KBF1Ja5tEXA.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/eLafwcpL64CqzwjjSgKpO7Rv4ae.jpg"
             },
             {
               "name": "寇帝·羅茲",
@@ -28842,7 +28842,7 @@
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": "TYUTLbbhUJ8",
+        "trailerKey": "Cu7JRGIbJaY",
         "cast": [
           {
             "name": "陳沖",
@@ -28924,7 +28924,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/wUzkKsMP5qhCDltVvmEnh73HwM5.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/A3kcA5K3CFaMSq5lTz7bVKP1Lpk.jpg",
           "voteAverage": "",
-          "trailerKey": "TYUTLbbhUJ8",
+          "trailerKey": "Cu7JRGIbJaY",
           "imdbId": "tt36958624",
           "countries": [
             "Taiwan"
@@ -29881,7 +29881,7 @@
           {
             "name": "吉蓮·安德森",
             "char": "Billy",
-            "photo": "https://image.tmdb.org/t/p/w500/gsxQC7yJT4vqnUqAN9bpsysxwO2.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/3Ny8ZYahb33vpqNEPNCE2IOXPew.jpg"
           },
           {
             "name": "Amanda Fix",
@@ -30002,7 +30002,7 @@
             {
               "name": "吉蓮·安德森",
               "char": "Billy",
-              "photo": "https://image.tmdb.org/t/p/w500/gsxQC7yJT4vqnUqAN9bpsysxwO2.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/3Ny8ZYahb33vpqNEPNCE2IOXPew.jpg"
             },
             {
               "name": "Amanda Fix",
@@ -32657,11 +32657,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -32719,11 +32719,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -34408,7 +34408,7 @@
           {
             "name": "克里斯·伊凡",
             "char": "Steve Rogers",
-            "photo": "https://image.tmdb.org/t/p/w500/a52ncG9JskJtqrryE0KakPPBkHJ.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
           },
           {
             "name": "克里斯·漢斯沃",
@@ -34531,7 +34531,7 @@
             {
               "name": "克里斯·伊凡",
               "char": "Steve Rogers",
-              "photo": "https://image.tmdb.org/t/p/w500/a52ncG9JskJtqrryE0KakPPBkHJ.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
             },
             {
               "name": "克里斯·漢斯沃",
@@ -34872,6 +34872,286 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1584245,
+        "titleZh": "美麗上山",
+        "titleEn": "美麗上山",
+        "releaseDate": "2026-12-18",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-12-18",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/88WiXrbxTqB7q1sPMQLZ2wPxglf.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": "",
+        "synopsis": "30年前，布農族少女美麗與青梅竹馬亮虎和伊曼一同在部落長大。他們攜手登上玉山雪峰，在雪白山巔留下屬於青春記憶。兩名少年都曾鼓起勇氣向美麗傾訴愛意，美麗始終未曾給出明確答案。不久，亮虎伊曼相繼入伍，得知美麗為逃離家族安排的婚姻，選擇與平地男子私奔，遠離故土。同時，東埔挖墳事件震動部落，族人群起抗爭，家園陷入動盪。 30年後，時過境遷人事全非。當年的摯友再次踏上旅程，在命運的盡頭陪伴昔日摯愛，也追憶那段無法挽回的青春歲月，並為族人漫長而艱辛的歷史發出深沉喟嘆。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "王牧瞳",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "陳宣合",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "李泰君",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "高蕾雅",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "蘇達",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/cEx7NEqSyUADBUr3RZRlxB2WgAe.jpg"
+          },
+          {
+            "name": "范逸臣",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/jhrR7n3TbHyHPU7qfE1JZ9SXxnr.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "王育麟",
+            "job": "Director"
+          },
+          {
+            "name": "王育麟",
+            "job": "Writer"
+          },
+          {
+            "name": "花柏容",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "zh",
+        "origTitle": "美麗上山",
+        "platforms": [],
+        "popularity": 0.8728,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "30年前，布農族少女美麗與青梅竹馬亮虎和伊曼一同在部落長大。他們攜手登上玉山雪峰，在雪白山巔留下屬於青春記憶。兩名少年都曾鼓起勇氣向美麗傾訴愛意，美麗始終未曾給出明確答案。不久，亮虎伊曼相繼入伍，得知美麗為逃離家族安排的婚姻，選擇與平地男子私奔，遠離故土。同時，東埔挖墳事件震動部落，族人群起抗爭，家園陷入動盪。 30年後，時過境遷人事全非。當年的摯友再次踏上旅程，在命運的盡頭陪伴昔日摯愛，也追憶那段無法挽回的青春歲月，並為族人漫長而艱辛的歷史發出深沉喟嘆。",
+          "poster": "https://image.tmdb.org/t/p/w500/88WiXrbxTqB7q1sPMQLZ2wPxglf.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "王牧瞳",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "陳宣合",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "李泰君",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "高蕾雅",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "蘇達",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/cEx7NEqSyUADBUr3RZRlxB2WgAe.jpg"
+            },
+            {
+              "name": "范逸臣",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/jhrR7n3TbHyHPU7qfE1JZ9SXxnr.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "王育麟",
+              "job": "Director"
+            },
+            {
+              "name": "王育麟",
+              "job": "Writer"
+            },
+            {
+              "name": "花柏容",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "zh",
+          "origTitle": "美麗上山",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1584245?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1566920,
+        "titleZh": "劇場版 藥師少女的獨語 亡妃的秘寶",
+        "titleEn": "劇場版 薬屋のひとりごと 亡妃の秘宝",
+        "releaseDate": "2027-01-29",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-01-29",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/zMf2TMkSbNsKebPLAtAsa0s0Zok.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "劇情",
+          "懸疑"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "悠木碧",
+            "char": "Maomao (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+          },
+          {
+            "name": "大塚剛央",
+            "char": "Jinshi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/wqeAMR0HOGUPBXz0TCNxDR51cQy.jpg"
+          },
+          {
+            "name": "伊瀨茉莉也",
+            "char": "Mu Qing (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/uMHWTKGolzzjXCiv20F0n8h2Pqu.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "長沼範裕",
+            "job": "Director"
+          },
+          {
+            "name": "柿原優子",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "In Production",
+        "origLang": "ja",
+        "origTitle": "劇場版 薬屋のひとりごと 亡妃の秘宝",
+        "platforms": [],
+        "popularity": 3.6632,
+        "imdbId": "tt39110207",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫",
+            "劇情",
+            "懸疑"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/zMf2TMkSbNsKebPLAtAsa0s0Zok.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt39110207",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "悠木碧",
+              "char": "Maomao (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg"
+            },
+            {
+              "name": "大塚剛央",
+              "char": "Jinshi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/wqeAMR0HOGUPBXz0TCNxDR51cQy.jpg"
+            },
+            {
+              "name": "伊瀨茉莉也",
+              "char": "Mu Qing (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/uMHWTKGolzzjXCiv20F0n8h2Pqu.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "長沼範裕",
+              "job": "Director"
+            },
+            {
+              "name": "柿原優子",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "In Production",
+          "origLang": "ja",
+          "origTitle": "劇場版 薬屋のひとりごと 亡妃の秘宝",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1566920?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1384758,
         "titleZh": "冰原歷險記6：沸常危機",
         "titleEn": "Ice Age: Boiling Point",
@@ -35115,6 +35395,261 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1147572,
+        "titleZh": "納尼亞：魔法師的外甥",
+        "titleEn": "Narnia: The Magician's Nephew",
+        "releaseDate": "2027-02-10",
+        "releaseYear": "2027",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-02-10",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/8vTNfYamvnHIgrMpSg1c4jnfD9y.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/j0rGMOFBEqLgbESDinmYfzq4yl1.jpg",
+        "voteAverage": "",
+        "genre": [
+          "奇幻",
+          "冒險",
+          "家庭"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "David McKenna",
+            "char": "Digory Kirke",
+            "photo": "https://image.tmdb.org/t/p/w500/m3iSEe5F8oAQkE0kRN3LTqMTpG.jpg"
+          },
+          {
+            "name": "Beatrice Campbell",
+            "char": "Polly Plummer",
+            "photo": "https://image.tmdb.org/t/p/w500/nzUTSc7KSPwnOo7tfRNDiFMWMgN.jpg"
+          },
+          {
+            "name": "艾瑪·麥基",
+            "char": "Jadis / The White Witch",
+            "photo": "https://image.tmdb.org/t/p/w500/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg"
+          },
+          {
+            "name": "凱莉·墨里根",
+            "char": "Mabel Kirke",
+            "photo": "https://image.tmdb.org/t/p/w500/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
+          },
+          {
+            "name": "Ciarán Hinds",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg"
+          },
+          {
+            "name": "丹尼爾·克雷格",
+            "char": "Andrew Ketterley",
+            "photo": "https://image.tmdb.org/t/p/w500/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg"
+          },
+          {
+            "name": "梅莉·史翠普",
+            "char": "Aslan (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/pSyM9cteYYWUBDalJzMPLH0SLgB.jpg"
+          },
+          {
+            "name": "寇布勒·霍爾德布魯克-史密斯",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/6KNQjNWVdosnKAehV7FHpxQV2dD.jpg"
+          },
+          {
+            "name": "Denise Gough",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/wWcby4ARYqr8d92ZdjyQcfaiJBW.jpg"
+          },
+          {
+            "name": "Susan Wokoma",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/puEiaNQZyG2gGfIZCyexbtrcv1F.jpg"
+          },
+          {
+            "name": "Tom Bonington",
+            "char": "Mr. Potts",
+            "photo": "https://image.tmdb.org/t/p/w500/2atuaW9Aw0bNKebJoRrX0ZGkqlz.jpg"
+          },
+          {
+            "name": "Ava Jager",
+            "char": "Violet Plummer",
+            "photo": null
+          },
+          {
+            "name": "Gerard Monaco",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/qMSwdA3InoaA2p8kFObUb2RoL8w.jpg"
+          },
+          {
+            "name": "James Murray",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/hU86LBqi7fx6Aht8CUcw6SSHMtr.jpg"
+          },
+          {
+            "name": "Samantha Spiro",
+            "char": "Beaver (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/tZ1Oz5DIc8dugsbGdtPnt0WOAAh.jpg"
+          },
+          {
+            "name": "Florrie May Wilkinson",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "葛莉塔·潔薇",
+            "job": "Director"
+          },
+          {
+            "name": "葛莉塔·潔薇",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 280000000,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "en",
+        "origTitle": "Narnia: The Magician's Nephew",
+        "platforms": [],
+        "popularity": 5.6086,
+        "imdbId": "tt9077514",
+        "countries": [
+          "United States of America",
+          "United Kingdom"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "奇幻",
+            "冒險",
+            "家庭"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/8vTNfYamvnHIgrMpSg1c4jnfD9y.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/j0rGMOFBEqLgbESDinmYfzq4yl1.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt9077514",
+          "countries": [
+            "United States of America",
+            "United Kingdom"
+          ],
+          "cast": [
+            {
+              "name": "David McKenna",
+              "char": "Digory Kirke",
+              "photo": "https://image.tmdb.org/t/p/w500/m3iSEe5F8oAQkE0kRN3LTqMTpG.jpg"
+            },
+            {
+              "name": "Beatrice Campbell",
+              "char": "Polly Plummer",
+              "photo": "https://image.tmdb.org/t/p/w500/nzUTSc7KSPwnOo7tfRNDiFMWMgN.jpg"
+            },
+            {
+              "name": "艾瑪·麥基",
+              "char": "Jadis / The White Witch",
+              "photo": "https://image.tmdb.org/t/p/w500/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg"
+            },
+            {
+              "name": "凱莉·墨里根",
+              "char": "Mabel Kirke",
+              "photo": "https://image.tmdb.org/t/p/w500/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
+            },
+            {
+              "name": "Ciarán Hinds",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg"
+            },
+            {
+              "name": "丹尼爾·克雷格",
+              "char": "Andrew Ketterley",
+              "photo": "https://image.tmdb.org/t/p/w500/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg"
+            },
+            {
+              "name": "梅莉·史翠普",
+              "char": "Aslan (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/pSyM9cteYYWUBDalJzMPLH0SLgB.jpg"
+            },
+            {
+              "name": "寇布勒·霍爾德布魯克-史密斯",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/6KNQjNWVdosnKAehV7FHpxQV2dD.jpg"
+            },
+            {
+              "name": "Denise Gough",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/wWcby4ARYqr8d92ZdjyQcfaiJBW.jpg"
+            },
+            {
+              "name": "Susan Wokoma",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/puEiaNQZyG2gGfIZCyexbtrcv1F.jpg"
+            },
+            {
+              "name": "Tom Bonington",
+              "char": "Mr. Potts",
+              "photo": "https://image.tmdb.org/t/p/w500/2atuaW9Aw0bNKebJoRrX0ZGkqlz.jpg"
+            },
+            {
+              "name": "Ava Jager",
+              "char": "Violet Plummer",
+              "photo": null
+            },
+            {
+              "name": "Gerard Monaco",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/qMSwdA3InoaA2p8kFObUb2RoL8w.jpg"
+            },
+            {
+              "name": "James Murray",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/hU86LBqi7fx6Aht8CUcw6SSHMtr.jpg"
+            },
+            {
+              "name": "Samantha Spiro",
+              "char": "Beaver (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/tZ1Oz5DIc8dugsbGdtPnt0WOAAh.jpg"
+            },
+            {
+              "name": "Florrie May Wilkinson",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "葛莉塔·潔薇",
+              "job": "Director"
+            },
+            {
+              "name": "葛莉塔·潔薇",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 280000000,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "en",
+          "origTitle": "Narnia: The Magician's Nephew",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1147572?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1497464,
         "titleZh": "貓的急轉彎",
         "titleEn": "Gatto",
@@ -35227,6 +35762,137 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1497464?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1531779,
+        "titleZh": "星空下的鋼琴手",
+        "titleEn": "星空下的鋼琴手",
+        "releaseDate": "2027-04-02",
+        "releaseYear": "2027",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-04-02",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": null,
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "劇情",
+          "音樂"
+        ],
+        "duration": "",
+        "synopsis": "改編自《自閉與自在》，天才鋼琴家李尚軒口述式自傳的電影《星空下的鋼琴手》，描繪李尚軒在音樂道路上的奮鬥與成長，以真摯琴音打動人心。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "李柏翰",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/6ji1USTcXoEbW648mvBrUIeRxh0.jpg"
+          },
+          {
+            "name": "曾珮瑜",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/6aFwU4xLkGGzwF3h5mhrLjEC3U3.jpg"
+          },
+          {
+            "name": "張翰",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/cxNICRepwp5rL6QQtOkWNxo1MeT.jpg"
+          },
+          {
+            "name": "江宇婷",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/zOYikXS7ISzzSMsfLr1yvgdG1Bv.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Hsieh Chih Wen",
+            "job": "Director"
+          },
+          {
+            "name": "Hsieh Chih Wen",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "zh",
+        "origTitle": "星空下的鋼琴手",
+        "platforms": [],
+        "popularity": 0.7258,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "劇情",
+            "音樂"
+          ],
+          "synopsis": "改編自《自閉與自在》，天才鋼琴家李尚軒口述式自傳的電影《星空下的鋼琴手》，描繪李尚軒在音樂道路上的奮鬥與成長，以真摯琴音打動人心。",
+          "poster": null,
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "李柏翰",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/6ji1USTcXoEbW648mvBrUIeRxh0.jpg"
+            },
+            {
+              "name": "曾珮瑜",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/6aFwU4xLkGGzwF3h5mhrLjEC3U3.jpg"
+            },
+            {
+              "name": "張翰",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/cxNICRepwp5rL6QQtOkWNxo1MeT.jpg"
+            },
+            {
+              "name": "江宇婷",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/zOYikXS7ISzzSMsfLr1yvgdG1Bv.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Hsieh Chih Wen",
+              "job": "Director"
+            },
+            {
+              "name": "Hsieh Chih Wen",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "zh",
+          "origTitle": "星空下的鋼琴手",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1531779?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
