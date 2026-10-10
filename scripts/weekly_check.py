@@ -47,7 +47,6 @@ NOW_LOOKBACK_DAYS = 180
 SOON_WINDOW_DAYS = 180
 RERELEASE_ABSENCE_REQUIRED_SOURCES = (
     "atmovies",
-    "showtime",
     "ambassador",
 )
 GENRE_MAP = {
@@ -827,7 +826,7 @@ def select_cinema_release_date(cinema_dates):
 
 
 def rerelease_absence_audit_complete(source_health, tmdb_processing_complete):
-    """威秀 403 不影響缺席稽核；開眼、秀泰、國賓與 TMDB 必須成功。"""
+    """秀泰與威秀失敗不影響缺席稽核；開眼、國賓與 TMDB 必須成功。"""
     return bool(tmdb_processing_complete) and all(
         source_health.get(source) is True
         for source in RERELEASE_ABSENCE_REQUIRED_SOURCES

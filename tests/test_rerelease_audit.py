@@ -555,9 +555,18 @@ class RereleasePresenceTests(unittest.TestCase):
         }
         self.assertTrue(weekly.rerelease_absence_audit_complete(health, True))
 
-    def test_required_source_or_tmdb_failure_blocks_absence_audit(self):
+    def test_showtime_403_does_not_block_complete_absence_audit(self):
         health = {
             "atmovies": True,
+            "showtime": False,
+            "ambassador": True,
+            "vieshow": False,
+        }
+        self.assertTrue(weekly.rerelease_absence_audit_complete(health, True))
+
+    def test_required_source_or_tmdb_failure_blocks_absence_audit(self):
+        health = {
+            "atmovies": False,
             "showtime": False,
             "ambassador": True,
             "vieshow": False,
@@ -566,7 +575,10 @@ class RereleasePresenceTests(unittest.TestCase):
             "eslite": True,
         }
         self.assertFalse(weekly.rerelease_absence_audit_complete(health, True))
-        health["showtime"] = True
+        health["atmovies"] = True
+        health["ambassador"] = False
+        self.assertFalse(weekly.rerelease_absence_audit_complete(health, True))
+        health["ambassador"] = True
         self.assertFalse(weekly.rerelease_absence_audit_complete(health, False))
 
     def test_eslite_failure_does_not_block_stable_source_absence_audit(self):
