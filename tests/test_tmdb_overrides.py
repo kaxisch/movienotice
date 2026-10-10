@@ -154,6 +154,15 @@ class TmdbOverrideTests(unittest.TestCase):
             "鬼入室": 1558497,
             "YORUSHIKA LIVE 「盜作」": 1740268,
             "駭速劫案": 938150,
+            "魔法科高中的劣等生 四葉繼承篇": 1310387,
+            "The Irregular at Magic High School THE MOVIE": 1310387,
+            "滯留": 1425859,
+            "Remain": 1425859,
+            "天羅地網": 615121,
+            "The Thomas Crown Affair": 615121,
+            "比如父子": 605320,
+            "門當父不對之親家駕到": 1400336,
+            "Focker-in-Law": 1400336,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
