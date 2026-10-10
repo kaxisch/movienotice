@@ -5,6 +5,8 @@ from pathlib import Path
 from urllib.parse import urljoin
 from unittest.mock import patch
 
+import requests
+
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT_DIR / "scripts"))
@@ -321,6 +323,22 @@ class CinemaParserTests(unittest.TestCase):
             urljoin(cinema.SOURCE_URLS["showtime"], "/programs/12345/"),
             "https://www.showtimes.com.tw/programs/12345/",
         )
+
+    @patch("cinema_rereleases.subprocess.run")
+    @patch("cinema_rereleases.fetch_html")
+    def test_showtime_uses_curl_after_cloudflare_403(self, fetch_html, run):
+        response = requests.Response()
+        response.status_code = 403
+        fetch_html.side_effect = requests.HTTPError(response=response)
+        run.return_value.stdout = "<html>秀泰片單</html>".encode()
+
+        html = cinema.fetch_showtime_html("MovieNotice/1.0")
+
+        self.assertIn("秀泰片單", html)
+        command = run.call_args.args[0]
+        self.assertEqual(command[0], "curl")
+        self.assertIn("--fail", command)
+        self.assertEqual(command[-1], cinema.SOURCE_URLS["showtime"])
 
     def test_rerelease_requires_marker_or_earlier_tw_theatrical_date(self):
         movie = {"title_zh": "普通舊片", "release_date_tw": "2026-08-05"}

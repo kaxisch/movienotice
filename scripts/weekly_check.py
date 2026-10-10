@@ -1734,6 +1734,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         SOURCE_URLS,
         fetch_additional_cinema_movies,
         fetch_html,
+        fetch_showtime_html,
         has_rerelease_marker,
         is_confirmed_rerelease,
         is_promotional_screening,
@@ -1773,7 +1774,7 @@ def build_rerelease_audit(atmovies_output, generated_at_local):
         log(f"Cinema audit warning: VieShow failed: {error}")
 
     try:
-        html = fetch_html(SOURCE_URLS["showtime"], USER_AGENT)
+        html = fetch_showtime_html(USER_AGENT)
         cinema_movies.extend(parse_showtime(html, generated_at_local.date()))
         source_health["showtime"] = True
     except Exception as error:
