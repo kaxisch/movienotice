@@ -2,6 +2,7 @@
 
 import json
 import re
+import subprocess
 from datetime import date, timedelta
 from urllib.parse import parse_qs, urljoin, urlparse
 
@@ -80,6 +81,34 @@ def fetch_html(url, user_agent, timeout=30):
     html = response.content.decode("utf-8", errors="replace") if "charset=\"utf-8\"" in head or "charset=utf-8" in head else response.text
     if "access denied" in html.lower():
         raise RuntimeError(f"存取遭拒：{url}")
+    return html
+
+
+def fetch_showtime_html(user_agent, timeout=30):
+    """讀取秀泰官方片單；requests 遭 Cloudflare 403 時改用標準 curl。"""
+    try:
+        return fetch_html(SOURCE_URLS["showtime"], user_agent, timeout=timeout)
+    except requests.HTTPError as error:
+        if error.response is None or error.response.status_code != 403:
+            raise
+
+    browser_agent = (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        f"(KHTML, like Gecko) Chrome/124.0 Safari/537.36 {user_agent}"
+    )
+    result = subprocess.run(
+        [
+            "curl", "--fail", "--location", "--silent", "--show-error",
+            "--max-time", str(timeout), "--user-agent", browser_agent,
+            SOURCE_URLS["showtime"],
+        ],
+        check=True,
+        capture_output=True,
+        timeout=timeout + 5,
+    )
+    html = result.stdout.decode("utf-8", errors="replace")
+    if "access denied" in html.lower():
+        raise RuntimeError(f"存取遭拒：{SOURCE_URLS['showtime']}")
     return html
 
 
