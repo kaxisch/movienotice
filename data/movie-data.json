@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-10T18:20:08.306891+08:00",
+  "generated_at": "2026-10-10T21:02:19.881636+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 75,
-    "soon_count": 68
+    "soon_count": 70
   },
   "movies": {
     "now": [
@@ -4640,12 +4640,12 @@
         "cast": [
           {
             "name": "湯姆·克魯斯",
-            "char": "Digger Rockwell",
+            "char": "Rockwell",
             "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
           },
           {
             "name": "里茲·阿邁德",
-            "char": "Nirav Ganesh",
+            "char": "Ganesh",
             "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
           },
           {
@@ -4734,7 +4734,7 @@
           }
         ],
         "budget": 180000000,
-        "revenue": 20000000,
+        "revenue": 26532754,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Digger",
@@ -4762,12 +4762,12 @@
           "cast": [
             {
               "name": "湯姆·克魯斯",
-              "char": "Digger Rockwell",
+              "char": "Rockwell",
               "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
             },
             {
               "name": "里茲·阿邁德",
-              "char": "Nirav Ganesh",
+              "char": "Ganesh",
               "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
             },
             {
@@ -4856,7 +4856,7 @@
             }
           ],
           "budget": 180000000,
-          "revenue": 20000000,
+          "revenue": 26532754,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Digger",
@@ -20086,11 +20086,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -20208,11 +20208,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -20315,12 +20315,12 @@
         ],
         "crew": [
           {
-            "name": "塔伊加·維迪提",
-            "job": "Director"
-          },
-          {
             "name": "Dahvi Waller",
             "job": "Screenplay"
+          },
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Director"
           },
           {
             "name": "塔伊加·維迪提",
@@ -20412,12 +20412,12 @@
           ],
           "crew": [
             {
-              "name": "塔伊加·維迪提",
-              "job": "Director"
-            },
-            {
               "name": "Dahvi Waller",
               "job": "Screenplay"
+            },
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Director"
             },
             {
               "name": "塔伊加·維迪提",
@@ -24136,7 +24136,7 @@
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           }
         },
-        "trailerKey": null,
+        "trailerKey": "b1RzzAXqYDU",
         "cast": [
           {
             "name": "Hannah Einbinder",
@@ -24222,11 +24222,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 8000000,
@@ -24252,7 +24252,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/fLXSy0auJHU8J0edVbyAa0bWMlC.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
           "voteAverage": "6.2",
-          "trailerKey": null,
+          "trailerKey": "b1RzzAXqYDU",
           "imdbId": "tt35298123",
           "countries": [
             "United Kingdom",
@@ -24343,11 +24343,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 8000000,
@@ -24358,6 +24358,227 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1240889?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1294189,
+        "titleZh": "即刻狂飆",
+        "titleEn": "The Mongoose",
+        "releaseDate": "2026-10-30",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-30",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4Sg8glM5axUt3NbNM4ky92w4NZu.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動作",
+          "驚悚"
+        ],
+        "duration": 99,
+        "synopsis": "一位戰爭英雄被指控犯下他沒有未犯下的罪行，而在已經無可失去的情況下，他獲得了昔日同袍、以及希望他能夠逃脫成功的同情民眾們的幫助，與執法部門展開一場橫跨全國的飛車追逐。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "連恩尼遜",
+            "char": "Ryan 'Fang' Flanagan",
+            "photo": "https://image.tmdb.org/t/p/w500/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+          },
+          {
+            "name": "瑪麗莎·托梅",
+            "char": "Tara",
+            "photo": "https://image.tmdb.org/t/p/w500/vAQ10fvGfVyuJdMNKVMA4ZkacWL.jpg"
+          },
+          {
+            "name": "文·雷姆斯",
+            "char": "Tanker",
+            "photo": "https://image.tmdb.org/t/p/w500/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
+          },
+          {
+            "name": "Michael Chiklis",
+            "char": "Major Walter Pope",
+            "photo": "https://image.tmdb.org/t/p/w500/pAkKjbzxP6Z6Y5zAGpwmWQo1iji.jpg"
+          },
+          {
+            "name": "Brett Tucker",
+            "char": "Todd",
+            "photo": "https://image.tmdb.org/t/p/w500/6IUQyy2pA8PRXX1MEx088JH6pcu.jpg"
+          },
+          {
+            "name": "Stella Stocker",
+            "char": "Helene (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ilRVeYRcQrAeHYLMOPPzLzZMJcC.jpg"
+          },
+          {
+            "name": "Hamish Michael",
+            "char": "Captain Parks",
+            "photo": "https://image.tmdb.org/t/p/w500/4O0WjvxElALgMFIiX19RJJbJM7B.jpg"
+          },
+          {
+            "name": "Toby Truslove",
+            "char": "Captain McBride",
+            "photo": "https://image.tmdb.org/t/p/w500/17AaSGRY0RyJBFbdj0uSLK7n5wV.jpg"
+          },
+          {
+            "name": "Eddie Baroo",
+            "char": "Veteran Seth",
+            "photo": "https://image.tmdb.org/t/p/w500/pdxur3LhMEg8DNajEhHKE1J7FIx.jpg"
+          },
+          {
+            "name": "Maurice Marvel Meredith",
+            "char": "Major James Tilton",
+            "photo": null
+          },
+          {
+            "name": "Nicole Chapman",
+            "char": "Angelina",
+            "photo": "https://image.tmdb.org/t/p/w500/nUZUVKNuxbkfJStEizFGekvLnkZ.jpg"
+          },
+          {
+            "name": "Jack Kenny",
+            "char": "Earl",
+            "photo": "https://image.tmdb.org/t/p/w500/v3A8RFnCNVloc7GIptPfSuJkhdp.jpg"
+          },
+          {
+            "name": "Yesse Spence",
+            "char": "FBI Agent Heller",
+            "photo": "https://image.tmdb.org/t/p/w500/vRUM9gtTlFCzI97YISnzq6X4fC4.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Mark Vanselow",
+            "job": "Director"
+          },
+          {
+            "name": "Thompson Evans",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "In Production",
+        "origLang": "en",
+        "origTitle": "The Mongoose",
+        "platforms": [],
+        "popularity": 169.253,
+        "imdbId": "tt13611778",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 99,
+          "genres": [
+            "動作",
+            "驚悚"
+          ],
+          "synopsis": "一位戰爭英雄被指控犯下他沒有未犯下的罪行，而在已經無可失去的情況下，他獲得了昔日同袍、以及希望他能夠逃脫成功的同情民眾們的幫助，與執法部門展開一場橫跨全國的飛車追逐。",
+          "poster": "https://image.tmdb.org/t/p/w500/4Sg8glM5axUt3NbNM4ky92w4NZu.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt13611778",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "連恩尼遜",
+              "char": "Ryan 'Fang' Flanagan",
+              "photo": "https://image.tmdb.org/t/p/w500/sRLev3wJioBgun3ZoeAUFpkLy0D.jpg"
+            },
+            {
+              "name": "瑪麗莎·托梅",
+              "char": "Tara",
+              "photo": "https://image.tmdb.org/t/p/w500/vAQ10fvGfVyuJdMNKVMA4ZkacWL.jpg"
+            },
+            {
+              "name": "文·雷姆斯",
+              "char": "Tanker",
+              "photo": "https://image.tmdb.org/t/p/w500/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
+            },
+            {
+              "name": "Michael Chiklis",
+              "char": "Major Walter Pope",
+              "photo": "https://image.tmdb.org/t/p/w500/pAkKjbzxP6Z6Y5zAGpwmWQo1iji.jpg"
+            },
+            {
+              "name": "Brett Tucker",
+              "char": "Todd",
+              "photo": "https://image.tmdb.org/t/p/w500/6IUQyy2pA8PRXX1MEx088JH6pcu.jpg"
+            },
+            {
+              "name": "Stella Stocker",
+              "char": "Helene (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ilRVeYRcQrAeHYLMOPPzLzZMJcC.jpg"
+            },
+            {
+              "name": "Hamish Michael",
+              "char": "Captain Parks",
+              "photo": "https://image.tmdb.org/t/p/w500/4O0WjvxElALgMFIiX19RJJbJM7B.jpg"
+            },
+            {
+              "name": "Toby Truslove",
+              "char": "Captain McBride",
+              "photo": "https://image.tmdb.org/t/p/w500/17AaSGRY0RyJBFbdj0uSLK7n5wV.jpg"
+            },
+            {
+              "name": "Eddie Baroo",
+              "char": "Veteran Seth",
+              "photo": "https://image.tmdb.org/t/p/w500/pdxur3LhMEg8DNajEhHKE1J7FIx.jpg"
+            },
+            {
+              "name": "Maurice Marvel Meredith",
+              "char": "Major James Tilton",
+              "photo": null
+            },
+            {
+              "name": "Nicole Chapman",
+              "char": "Angelina",
+              "photo": "https://image.tmdb.org/t/p/w500/nUZUVKNuxbkfJStEizFGekvLnkZ.jpg"
+            },
+            {
+              "name": "Jack Kenny",
+              "char": "Earl",
+              "photo": "https://image.tmdb.org/t/p/w500/v3A8RFnCNVloc7GIptPfSuJkhdp.jpg"
+            },
+            {
+              "name": "Yesse Spence",
+              "char": "FBI Agent Heller",
+              "photo": "https://image.tmdb.org/t/p/w500/vRUM9gtTlFCzI97YISnzq6X4fC4.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Mark Vanselow",
+              "job": "Director"
+            },
+            {
+              "name": "Thompson Evans",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "In Production",
+          "origLang": "en",
+          "origTitle": "The Mongoose",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1294189?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -26423,7 +26644,6 @@
         "backdrop": "https://image.tmdb.org/t/p/w1280/bG8uwYAq5Y9bPDaoxq2eHjopA9T.jpg",
         "voteAverage": "",
         "genre": [
-          "劇情",
           "奇幻",
           "喜劇"
         ],
@@ -26540,7 +26760,6 @@
         "detail": {
           "duration": "",
           "genres": [
-            "劇情",
             "奇幻",
             "喜劇"
           ],
@@ -30256,6 +30475,231 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1147572?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1425859,
+        "titleZh": "滯留",
+        "titleEn": "Remain",
+        "releaseDate": "2027-02-12",
+        "releaseYear": "2027",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-02-12",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/5T2UuYXXvope5stKWCUAG89ZeGy.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/tWUizVQOYarekT6JRqPtQogIY3s.jpg",
+        "voteAverage": "",
+        "genre": [
+          "愛情",
+          "恐怖",
+          "懸疑",
+          "驚悚"
+        ],
+        "duration": "",
+        "synopsis": "泰特高登是個低調遁世的建築師，他搬到沿海小鎮，準備完成他最新的作品。不久他遇見一名迷人的年輕女子，她使他走出封閉的世界，卻也讓他捲入籠罩著全鎮的致命謎團中。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "OsmhRxPJjF8",
+        "cast": [
+          {
+            "name": "傑克·葛倫霍",
+            "char": "Tate Gordon",
+            "photo": "https://image.tmdb.org/t/p/w500/ct2Gh2sJSxd4yaMrSsqSt1HpIC3.jpg"
+          },
+          {
+            "name": "菲比·迪諾佛",
+            "char": "Wren",
+            "photo": "https://image.tmdb.org/t/p/w500/gvriCFuwIvOoZyYph5YkYGZyFR9.jpg"
+          },
+          {
+            "name": "Ashley Walters",
+            "char": "Oscar",
+            "photo": "https://image.tmdb.org/t/p/w500/jSazpnwfMqbIuBGjnB8r0Yb5l7H.jpg"
+          },
+          {
+            "name": "Julie Hagerty",
+            "char": "Louise",
+            "photo": "https://image.tmdb.org/t/p/w500/bQZ0bcFNyE4a3GDNfYMmfO7eWMl.jpg"
+          },
+          {
+            "name": "傑·O·山德斯",
+            "char": "Reece",
+            "photo": "https://image.tmdb.org/t/p/w500/z8btmLryEZlLkBah2XhZFydmty4.jpg"
+          },
+          {
+            "name": "Tracy Ifeachor",
+            "char": "Theresa",
+            "photo": "https://image.tmdb.org/t/p/w500/q29NohhVk5YnslKXXUxbwebkAnf.jpg"
+          },
+          {
+            "name": "Hannah James",
+            "char": "Tessa",
+            "photo": "https://image.tmdb.org/t/p/w500/vsYHBHfnUgdTHsJDXnhRwmEIYAa.jpg"
+          },
+          {
+            "name": "Caleb Ruminer",
+            "char": "Griffin",
+            "photo": "https://image.tmdb.org/t/p/w500/xt9fRft3oXDG4BfxM0Gf9dJcQI5.jpg"
+          },
+          {
+            "name": "Kieran Mulcare",
+            "char": "Dax",
+            "photo": "https://image.tmdb.org/t/p/w500/oXyvDu1QqMDEFu6g9OeMO3o9Xz8.jpg"
+          },
+          {
+            "name": "Maria Dizzia",
+            "char": "Sydney",
+            "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
+          },
+          {
+            "name": "Amity Dolore",
+            "char": "Wren Lookalike",
+            "photo": "https://image.tmdb.org/t/p/w500/qXv6S327O7g5yer3xcO1XRXGCMT.jpg"
+          },
+          {
+            "name": "Cameron Moquin",
+            "char": "Paramedic",
+            "photo": null
+          },
+          {
+            "name": "M.奈沙馬蘭",
+            "char": "Nash",
+            "photo": "https://image.tmdb.org/t/p/w500/tOhFWjauKvJgjCVLJFnhbBCZuxZ.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "M.奈沙馬蘭",
+            "job": "Director"
+          },
+          {
+            "name": "M.奈沙馬蘭",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Remain",
+        "platforms": [],
+        "popularity": 4.7376,
+        "imdbId": "tt35621542",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "愛情",
+            "恐怖",
+            "懸疑",
+            "驚悚"
+          ],
+          "synopsis": "泰特高登是個低調遁世的建築師，他搬到沿海小鎮，準備完成他最新的作品。不久他遇見一名迷人的年輕女子，她使他走出封閉的世界，卻也讓他捲入籠罩著全鎮的致命謎團中。",
+          "poster": "https://image.tmdb.org/t/p/w500/5T2UuYXXvope5stKWCUAG89ZeGy.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/tWUizVQOYarekT6JRqPtQogIY3s.jpg",
+          "voteAverage": "",
+          "trailerKey": "OsmhRxPJjF8",
+          "imdbId": "tt35621542",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "傑克·葛倫霍",
+              "char": "Tate Gordon",
+              "photo": "https://image.tmdb.org/t/p/w500/ct2Gh2sJSxd4yaMrSsqSt1HpIC3.jpg"
+            },
+            {
+              "name": "菲比·迪諾佛",
+              "char": "Wren",
+              "photo": "https://image.tmdb.org/t/p/w500/gvriCFuwIvOoZyYph5YkYGZyFR9.jpg"
+            },
+            {
+              "name": "Ashley Walters",
+              "char": "Oscar",
+              "photo": "https://image.tmdb.org/t/p/w500/jSazpnwfMqbIuBGjnB8r0Yb5l7H.jpg"
+            },
+            {
+              "name": "Julie Hagerty",
+              "char": "Louise",
+              "photo": "https://image.tmdb.org/t/p/w500/bQZ0bcFNyE4a3GDNfYMmfO7eWMl.jpg"
+            },
+            {
+              "name": "傑·O·山德斯",
+              "char": "Reece",
+              "photo": "https://image.tmdb.org/t/p/w500/z8btmLryEZlLkBah2XhZFydmty4.jpg"
+            },
+            {
+              "name": "Tracy Ifeachor",
+              "char": "Theresa",
+              "photo": "https://image.tmdb.org/t/p/w500/q29NohhVk5YnslKXXUxbwebkAnf.jpg"
+            },
+            {
+              "name": "Hannah James",
+              "char": "Tessa",
+              "photo": "https://image.tmdb.org/t/p/w500/vsYHBHfnUgdTHsJDXnhRwmEIYAa.jpg"
+            },
+            {
+              "name": "Caleb Ruminer",
+              "char": "Griffin",
+              "photo": "https://image.tmdb.org/t/p/w500/xt9fRft3oXDG4BfxM0Gf9dJcQI5.jpg"
+            },
+            {
+              "name": "Kieran Mulcare",
+              "char": "Dax",
+              "photo": "https://image.tmdb.org/t/p/w500/oXyvDu1QqMDEFu6g9OeMO3o9Xz8.jpg"
+            },
+            {
+              "name": "Maria Dizzia",
+              "char": "Sydney",
+              "photo": "https://image.tmdb.org/t/p/w500/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg"
+            },
+            {
+              "name": "Amity Dolore",
+              "char": "Wren Lookalike",
+              "photo": "https://image.tmdb.org/t/p/w500/qXv6S327O7g5yer3xcO1XRXGCMT.jpg"
+            },
+            {
+              "name": "Cameron Moquin",
+              "char": "Paramedic",
+              "photo": null
+            },
+            {
+              "name": "M.奈沙馬蘭",
+              "char": "Nash",
+              "photo": "https://image.tmdb.org/t/p/w500/tOhFWjauKvJgjCVLJFnhbBCZuxZ.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "M.奈沙馬蘭",
+              "job": "Director"
+            },
+            {
+              "name": "M.奈沙馬蘭",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Remain",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1425859?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
