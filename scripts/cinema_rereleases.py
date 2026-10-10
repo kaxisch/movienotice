@@ -20,7 +20,9 @@ SOURCE_URLS = {
     "spot_taipei": "https://www.spot.org.tw/movies/201404/movies201404.html",
     "vieshow_now": "https://www.vscinemas.com.tw/film/",
     "vieshow_soon": "https://www.vscinemas.com.tw/film/coming.aspx",
-    "showtime": "https://www.showtimes.com.tw/programs/",
+    # 直接讀官方靜態檔；目錄網址在 GitHub Actions 的美國 runner 會被
+    # Cloudflare 回傳 403，但兩個入口提供相同的 SEO 電影片單。
+    "showtime": "https://www.showtimes.com.tw/programs/index.html",
     "ambassador": "https://www.ambassador.com.tw/home/MovieList?Type=1",
     "spot_huashan_now": "https://www.spot-hs.org.tw/movie/nowplaying.html",
     "spot_huashan_soon": "https://www.spot-hs.org.tw/movie/comingsoon.html",

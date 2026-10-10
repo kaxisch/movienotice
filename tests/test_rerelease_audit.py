@@ -2,6 +2,7 @@ import sys
 import unittest
 from datetime import date
 from pathlib import Path
+from urllib.parse import urljoin
 from unittest.mock import patch
 
 
@@ -310,6 +311,16 @@ class CinemaParserTests(unittest.TestCase):
         self.assertEqual(movies[0]["source"], "eslite")
         self.assertEqual(movies[0]["status"], "now")
         self.assertEqual(movies[1]["status"], "soon")
+
+    def test_showtime_source_uses_direct_static_index(self):
+        self.assertEqual(
+            cinema.SOURCE_URLS["showtime"],
+            "https://www.showtimes.com.tw/programs/index.html",
+        )
+        self.assertEqual(
+            urljoin(cinema.SOURCE_URLS["showtime"], "/programs/12345/"),
+            "https://www.showtimes.com.tw/programs/12345/",
+        )
 
     def test_rerelease_requires_marker_or_earlier_tw_theatrical_date(self):
         movie = {"title_zh": "普通舊片", "release_date_tw": "2026-08-05"}

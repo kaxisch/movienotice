@@ -10,11 +10,6 @@ document.addEventListener("keydown", function(e) {
 });
 
 document.addEventListener("click", function(e) {
-  var mobileCardInfo = e.target.closest(".movie-card .card-info");
-  if (mobileCardInfo && window.matchMedia("(max-width: 1024px) and (pointer: coarse)").matches) {
-    e.preventDefault();
-    return;
-  }
   if (e.target.closest(".movie-link")) holdPinnedTabBarForMobileReturn();
   var infoPanel = document.getElementById("site-info-panel");
   if (infoPanel && !infoPanel.hidden && !e.target.closest(".site-info-wrap")) closeSiteInfo();
