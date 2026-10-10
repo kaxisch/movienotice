@@ -86,7 +86,8 @@ body { background: transparent; color: #fff; min-height: 100vh; font-weight: 300
 .movie-link { color: inherit; text-decoration: none; }
 .movie-link:focus-visible { outline: 2px solid rgba(255,255,255,0.38); outline-offset: 4px; }
 .movie-card { min-width: 0; display: flex; flex-direction: column; }
-.card-info { flex: 1; display: flex; flex-direction: column; align-items: stretch; min-height: 0; }
+.card-poster-link { display: block; }
+.card-info { flex: 1; display: flex; flex-direction: column; align-items: stretch; min-height: 0; cursor: text; -webkit-user-select: text; user-select: text; }
 .card-img-wrap { cursor: pointer; position: relative; width: 100%; padding-top: 150%; border-radius: 16px; overflow: hidden; margin-bottom: 16px; background: var(--glass-bg); border: 1px solid var(--glass-border); transition: border-color 0.3s; }
 .card-img-wrap:hover { border-color: rgba(255,255,255,0.15); box-shadow: 0 0 20px rgba(255,255,255,0.05); }
 .card-img-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s; }

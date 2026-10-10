@@ -217,7 +217,6 @@ function holdPinnedTabBarForMobileReturn() {
 }
 
 document.addEventListener("touchstart", function(event) {
-  if (event.target.closest(".movie-card .card-info")) return;
   if (event.target.closest(".movie-link")) holdPinnedTabBarForMobileReturn();
 }, { passive: true, capture: true });
 

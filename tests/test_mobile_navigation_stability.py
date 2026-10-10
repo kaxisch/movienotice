@@ -64,13 +64,22 @@ class MobileNavigationStabilityTests(unittest.TestCase):
         self.assertIn("sortMovies(false, true)", script)
         self.assertIn("if (!options || !options.preserveViewport) scrollToResults()", script)
 
-    def test_mobile_card_text_does_not_follow_detail_link(self):
-        script = homepage_script()
+    def test_card_view_links_only_the_poster_and_keeps_text_selectable(self):
+        data_script = (ROOT / "app-data.js").read_text()
         styles = (ROOT / "styles.css").read_text()
 
-        self.assertIn('e.target.closest(".movie-card .card-info")', script)
-        self.assertIn('e.preventDefault()', script)
+        self.assertIn('<article class="movie-card fade-in"', data_script)
+        self.assertIn('<a class="card-poster-link movie-link"', data_script)
+        self.assertIn('</div></a>\' +', data_script)
+        self.assertIn('<div class="card-info">', data_script)
+        self.assertIn("user-select: text", styles)
+        self.assertIn("cursor: text", styles)
         self.assertIn("-webkit-tap-highlight-color: transparent", styles)
+
+    def test_list_view_remains_a_full_row_link(self):
+        data_script = (ROOT / "app-data.js").read_text()
+
+        self.assertIn('<a class="list-item movie-link fade-in"', data_script)
 
     def test_pinned_tab_bar_is_held_during_mobile_history_return(self):
         script = homepage_script()

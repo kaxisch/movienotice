@@ -289,13 +289,14 @@ function cardHTML(m, showRatings) {
   var releaseLabel = m.isRerelease
     ? '<span class="this-week-ribbon rerelease-ribbon">' + (isThisWeek ? '本週重映' : '重映') + '</span>'
     : (isThisWeek ? '<span class="this-week-ribbon">本週上映</span>' : '');
-  return '<a class="movie-card movie-link fade-in" id="card-' + m.id + '" href="' + href + '">' +
+  return '<article class="movie-card fade-in" id="card-' + m.id + '">' +
+    '<a class="card-poster-link movie-link" href="' + href + '" aria-label="查看' + escHtml(m.titleZh) + '電影資訊">' +
     '<div class="card-img-wrap"><div class="card-poster-clip">' + imgHTML + releaseLabel +
     '<div class="card-hover-overlay"><span class="card-hover-genre">' + escHtml(normalizeGenreList(m.genre).slice(0,2).join(' / ')) + '</span></div></div>' +
     '<span class="card-corner card-corner-tl" aria-hidden="true"></span><span class="card-corner card-corner-tr" aria-hidden="true"></span>' +
-    '<span class="card-corner card-corner-bl" aria-hidden="true"></span><span class="card-corner card-corner-br" aria-hidden="true"></span></div>' +
+    '<span class="card-corner card-corner-bl" aria-hidden="true"></span><span class="card-corner card-corner-br" aria-hidden="true"></span></div></a>' +
     '<div class="card-info"><p class="card-title">' + escHtml(m.titleZh) + '</p>' + titleEn +
-    '<div class="card-spacer"></div>' + metaHTML + '</div></a>';
+    '<div class="card-spacer"></div>' + metaHTML + '</div></article>';
 }
 
 function skeletonHTML() {
