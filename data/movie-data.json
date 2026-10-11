@@ -1,12 +1,107 @@
 {
-  "generated_at": "2026-10-11T21:28:32.963072+08:00",
+  "generated_at": "2026-10-12T03:43:12.726643+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 75,
-    "soon_count": 71
+    "now_count": 76,
+    "soon_count": 70
   },
   "movies": {
     "now": [
+      {
+        "id": 1489932,
+        "titleZh": "Always Lalisa",
+        "titleEn": "Always Lalisa",
+        "releaseDate": "2026-10-12",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-12",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/pOZnrUX1UMblLiqq9ZtZUde3cQV.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
+        "voteAverage": "",
+        "genre": [
+          "紀錄",
+          "音樂"
+        ],
+        "duration": 98,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "ลิซ่า",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/qI8vV0rh9XWC7FObzEGDRSg4PBN.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Sue Kim",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Always Lalisa",
+        "platforms": [],
+        "popularity": 3.5216,
+        "imdbId": "tt37108970",
+        "countries": [
+          "United States of America",
+          "Singapore"
+        ],
+        "detail": {
+          "duration": 98,
+          "genres": [
+            "紀錄",
+            "音樂"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/pOZnrUX1UMblLiqq9ZtZUde3cQV.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt37108970",
+          "countries": [
+            "United States of America",
+            "Singapore"
+          ],
+          "cast": [
+            {
+              "name": "ลิซ่า",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/qI8vV0rh9XWC7FObzEGDRSg4PBN.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Sue Kim",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Always Lalisa",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1489932?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 1740268,
         "titleZh": "YORUSHIKA LIVE 「盜作」",
@@ -1805,9 +1900,11 @@
         "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-        "voteAverage": "5.9",
+        "voteAverage": "5.8",
         "genre": [
-          "恐怖"
+          "恐怖",
+          "奇幻",
+          "驚悚"
         ],
         "duration": 93,
         "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
@@ -1933,12 +2030,14 @@
         "detail": {
           "duration": 93,
           "genres": [
-            "恐怖"
+            "恐怖",
+            "奇幻",
+            "驚悚"
           ],
           "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
           "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-          "voteAverage": "5.9",
+          "voteAverage": "5.8",
           "trailerKey": "z5vaaaJBGXw",
           "imdbId": "tt36586020",
           "countries": [
@@ -3377,7 +3476,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ihuG3xufzRmPiWBKMo0kpU935ZY.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/aayQcCebqLmkTZdILp9JVcFiIRL.jpg",
-        "voteAverage": "5.3",
+        "voteAverage": "5.4",
         "genre": [
           "動作",
           "犯罪",
@@ -3509,7 +3608,7 @@
           "synopsis": "一起涉及價值一億美元名畫的遊艇劫案，意外演變成一場危機四伏的騙局，退休大盜梅森必須設法保護他個性衝動的弟弟尚恩免於受難。然而，隨著事態的升級，梅森過去的敵人也紛紛現身，他被迫使出混身解數以保住性命……",
           "poster": "https://image.tmdb.org/t/p/w500/ihuG3xufzRmPiWBKMo0kpU935ZY.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/aayQcCebqLmkTZdILp9JVcFiIRL.jpg",
-          "voteAverage": "5.3",
+          "voteAverage": "5.4",
           "trailerKey": "BU79VOhdyNk",
           "imdbId": "tt36415524",
           "countries": [
@@ -5063,7 +5162,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-        "voteAverage": "8.1",
+        "voteAverage": "8.0",
         "genre": [
           "動畫",
           "冒險",
@@ -5213,7 +5312,7 @@
           "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-          "voteAverage": "8.1",
+          "voteAverage": "8.0",
           "trailerKey": "WII6-Ss-kTM",
           "imdbId": "tt36583977",
           "countries": [
@@ -5752,12 +5851,12 @@
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
         "budget": 356000000,
-        "revenue": 2925713609,
+        "revenue": 2927449455,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Avengers: Endgame",
@@ -5880,12 +5979,12 @@
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
           "budget": 356000000,
-          "revenue": 2925713609,
+          "revenue": 2927449455,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Avengers: Endgame",
@@ -10575,12 +10674,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -10692,12 +10791,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -11867,7 +11966,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7ad5bqevd4TUZphJLi3qyTIj5U6.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
-        "voteAverage": "7.3",
+        "voteAverage": "7.2",
         "genre": [
           "科幻",
           "懸疑",
@@ -12009,7 +12108,7 @@
           "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
           "poster": "https://image.tmdb.org/t/p/w500/7ad5bqevd4TUZphJLi3qyTIj5U6.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
-          "voteAverage": "7.3",
+          "voteAverage": "7.2",
           "trailerKey": "HZkGZqypnBM",
           "imdbId": "tt27369017",
           "countries": [
@@ -12251,12 +12350,12 @@
             "job": "Writer"
           },
           {
-            "name": "Michael Spierig",
+            "name": "Peter Spierig",
             "job": "Director"
           },
           {
-            "name": "Scott Mann",
-            "job": "Writer"
+            "name": "Michael Spierig",
+            "job": "Director"
           }
         ],
         "budget": 3000000,
@@ -12374,12 +12473,12 @@
               "job": "Writer"
             },
             {
-              "name": "Michael Spierig",
+              "name": "Peter Spierig",
               "job": "Director"
             },
             {
-              "name": "Scott Mann",
-              "job": "Writer"
+              "name": "Michael Spierig",
+              "job": "Director"
             }
           ],
           "budget": 3000000,
@@ -14137,7 +14236,7 @@
           {
             "name": "Hayden Chemberlen",
             "char": "Rex (voice)",
-            "photo": null
+            "photo": "https://image.tmdb.org/t/p/w500/4URyyXgHu8c8uUcFTx7FvbNT0uq.jpg"
           },
           {
             "name": "Fortune Feimster",
@@ -14172,7 +14271,7 @@
           {
             "name": "Henry Bolan",
             "char": "Ryder (voice)",
-            "photo": null
+            "photo": "https://image.tmdb.org/t/p/w500/g7sPqESb8YJ8lM2eFanePyJEVTd.jpg"
           },
           {
             "name": "Lucien Duncan-Reid",
@@ -14182,7 +14281,7 @@
           {
             "name": "William Desrosiers",
             "char": "Rocky (voice)",
-            "photo": null
+            "photo": "https://image.tmdb.org/t/p/w500/yDirvwIX93EzNOCLoMDiPJgNOEy.jpg"
           }
         ],
         "crew": [
@@ -14264,7 +14363,7 @@
             {
               "name": "Hayden Chemberlen",
               "char": "Rex (voice)",
-              "photo": null
+              "photo": "https://image.tmdb.org/t/p/w500/4URyyXgHu8c8uUcFTx7FvbNT0uq.jpg"
             },
             {
               "name": "Fortune Feimster",
@@ -14299,7 +14398,7 @@
             {
               "name": "Henry Bolan",
               "char": "Ryder (voice)",
-              "photo": null
+              "photo": "https://image.tmdb.org/t/p/w500/g7sPqESb8YJ8lM2eFanePyJEVTd.jpg"
             },
             {
               "name": "Lucien Duncan-Reid",
@@ -14309,7 +14408,7 @@
             {
               "name": "William Desrosiers",
               "char": "Rocky (voice)",
-              "photo": null
+              "photo": "https://image.tmdb.org/t/p/w500/yDirvwIX93EzNOCLoMDiPJgNOEy.jpg"
             }
           ],
           "crew": [
@@ -15688,7 +15787,7 @@
           {
             "name": "湯姆·霍蘭德",
             "char": "Peter Parker / Spider-Man",
-            "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/adwEBb2sCSzqwnpVgNEG7irl1Ne.jpg"
           },
           {
             "name": "薩迪·辛克",
@@ -15781,7 +15880,7 @@
           }
         ],
         "budget": 225000000,
-        "revenue": 2505477000,
+        "revenue": 2507246993,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Spider-Man: Brand New Day",
@@ -15816,7 +15915,7 @@
             {
               "name": "湯姆·霍蘭德",
               "char": "Peter Parker / Spider-Man",
-              "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/adwEBb2sCSzqwnpVgNEG7irl1Ne.jpg"
             },
             {
               "name": "薩迪·辛克",
@@ -15909,7 +16008,7 @@
             }
           ],
           "budget": 225000000,
-          "revenue": 2505477000,
+          "revenue": 2507246993,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Spider-Man: Brand New Day",
@@ -15980,7 +16079,7 @@
           {
             "name": "湯姆·霍蘭德",
             "char": "Telemachus",
-            "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/adwEBb2sCSzqwnpVgNEG7irl1Ne.jpg"
           },
           {
             "name": "安·海瑟薇",
@@ -16064,7 +16163,7 @@
           }
         ],
         "budget": 250000000,
-        "revenue": 1767464000,
+        "revenue": 1772582567,
         "status": "Released",
         "origLang": "en",
         "origTitle": "The Odyssey",
@@ -16101,7 +16200,7 @@
             {
               "name": "湯姆·霍蘭德",
               "char": "Telemachus",
-              "photo": "https://image.tmdb.org/t/p/w500/xKBAaPIa1c7tzZD3Y0MhBLv4hPE.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/adwEBb2sCSzqwnpVgNEG7irl1Ne.jpg"
             },
             {
               "name": "安·海瑟薇",
@@ -16185,7 +16284,7 @@
             }
           ],
           "budget": 250000000,
-          "revenue": 1767464000,
+          "revenue": 1772582567,
           "status": "Released",
           "origLang": "en",
           "origTitle": "The Odyssey",
@@ -16778,101 +16877,6 @@
     ],
     "soon": [
       {
-        "id": 1489932,
-        "titleZh": "Always Lalisa",
-        "titleEn": "Always Lalisa",
-        "releaseDate": "2026-10-12",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-12",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/pOZnrUX1UMblLiqq9ZtZUde3cQV.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
-        "voteAverage": "",
-        "genre": [
-          "紀錄",
-          "音樂"
-        ],
-        "duration": 98,
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "ลิซ่า",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/qI8vV0rh9XWC7FObzEGDRSg4PBN.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Sue Kim",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Always Lalisa",
-        "platforms": [],
-        "popularity": 3.5216,
-        "imdbId": "tt37108970",
-        "countries": [
-          "United States of America",
-          "Singapore"
-        ],
-        "detail": {
-          "duration": 98,
-          "genres": [
-            "紀錄",
-            "音樂"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/pOZnrUX1UMblLiqq9ZtZUde3cQV.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt37108970",
-          "countries": [
-            "United States of America",
-            "Singapore"
-          ],
-          "cast": [
-            {
-              "name": "ลิซ่า",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/qI8vV0rh9XWC7FObzEGDRSg4PBN.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Sue Kim",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Always Lalisa",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1489932?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 244786,
         "titleZh": "進擊的鼓手",
         "titleEn": "Whiplash",
@@ -16907,8 +16911,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 302,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -17696,12 +17700,12 @@
           {
             "name": "張震",
             "char": "久天",
-            "photo": "https://image.tmdb.org/t/p/w500/4BOQ5pJXdsArkMHvyVhrV8Ditnr.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/tkROVkn6yoqF3AcQ4hneOursHXR.jpg"
           },
           {
             "name": "辛芷蕾",
             "char": "入云龙",
-            "photo": "https://image.tmdb.org/t/p/w500/zvMets7h4JiiLJvFzuLMJbrdMiq.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg"
           },
           {
             "name": "郭京飛",
@@ -17814,12 +17818,12 @@
             {
               "name": "張震",
               "char": "久天",
-              "photo": "https://image.tmdb.org/t/p/w500/4BOQ5pJXdsArkMHvyVhrV8Ditnr.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/tkROVkn6yoqF3AcQ4hneOursHXR.jpg"
             },
             {
               "name": "辛芷蕾",
               "char": "入云龙",
-              "photo": "https://image.tmdb.org/t/p/w500/zvMets7h4JiiLJvFzuLMJbrdMiq.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg"
             },
             {
               "name": "郭京飛",
@@ -20096,11 +20100,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -20218,11 +20222,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -20325,12 +20329,12 @@
         ],
         "crew": [
           {
-            "name": "Dahvi Waller",
-            "job": "Screenplay"
-          },
-          {
             "name": "塔伊加·維迪提",
             "job": "Director"
+          },
+          {
+            "name": "Dahvi Waller",
+            "job": "Screenplay"
           },
           {
             "name": "塔伊加·維迪提",
@@ -20422,12 +20426,12 @@
           ],
           "crew": [
             {
-              "name": "Dahvi Waller",
-              "job": "Screenplay"
-            },
-            {
               "name": "塔伊加·維迪提",
               "job": "Director"
+            },
+            {
+              "name": "Dahvi Waller",
+              "job": "Screenplay"
             },
             {
               "name": "塔伊加·維迪提",
@@ -20545,11 +20549,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -20639,11 +20643,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -23307,7 +23311,7 @@
           {
             "name": "劉嘉玲",
             "char": "Magistrate's wife",
-            "photo": "https://image.tmdb.org/t/p/w500/rqx8aDm8lfy6Rk0rSkPcxuuJ7iR.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/5Va4jk69gkdAcABtkTtcUz85RLA.jpg"
           },
           {
             "name": "邵兵",
@@ -23376,11 +23380,11 @@
             "job": "Director"
           },
           {
-            "name": "述平",
+            "name": "姜文",
             "job": "Screenplay"
           },
           {
-            "name": "姜文",
+            "name": "Li Bukong",
             "job": "Screenplay"
           }
         ],
@@ -23448,7 +23452,7 @@
             {
               "name": "劉嘉玲",
               "char": "Magistrate's wife",
-              "photo": "https://image.tmdb.org/t/p/w500/rqx8aDm8lfy6Rk0rSkPcxuuJ7iR.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/5Va4jk69gkdAcABtkTtcUz85RLA.jpg"
             },
             {
               "name": "邵兵",
@@ -23517,11 +23521,11 @@
               "job": "Director"
             },
             {
-              "name": "述平",
+              "name": "姜文",
               "job": "Screenplay"
             },
             {
-              "name": "姜文",
+              "name": "Li Bukong",
               "job": "Screenplay"
             }
           ],
@@ -30575,7 +30579,7 @@
           {
             "name": "梅莉·史翠普",
             "char": "Aslan (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/pSyM9cteYYWUBDalJzMPLH0SLgB.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
           },
           {
             "name": "寇布勒·霍爾德布魯克-史密斯",
@@ -30696,7 +30700,7 @@
             {
               "name": "梅莉·史翠普",
               "char": "Aslan (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/pSyM9cteYYWUBDalJzMPLH0SLgB.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
             },
             {
               "name": "寇布勒·霍爾德布魯克-史密斯",
