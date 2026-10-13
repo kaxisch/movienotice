@@ -283,9 +283,14 @@ class CandidatePresenceTests(unittest.TestCase):
         self.assertEqual(params["region"], "TW")
         self.assertEqual(params["with_release_type"], "1|2|3")
 
-    def test_tmdb_only_candidate_inside_day_60_is_held(self):
+    def test_tmdb_only_candidate_inside_60_days_before_or_after_today_is_held(self):
         today = date(2026, 9, 5)
 
+        self.assertTrue(
+            refresh.should_hold_tmdb_only_near_term_candidate(
+                100, today - timedelta(days=60), today, set(), set()
+            )
+        )
         self.assertTrue(
             refresh.should_hold_tmdb_only_near_term_candidate(
                 101, today + timedelta(days=30), today, set(), set()
@@ -297,9 +302,14 @@ class CandidatePresenceTests(unittest.TestCase):
             )
         )
 
-    def test_far_future_sheet_and_manual_candidates_are_not_held(self):
+    def test_outside_near_term_sheet_and_manual_candidates_are_not_held(self):
         today = date(2026, 9, 5)
 
+        self.assertFalse(
+            refresh.should_hold_tmdb_only_near_term_candidate(
+                100, today - timedelta(days=61), today, set(), set()
+            )
+        )
         self.assertFalse(
             refresh.should_hold_tmdb_only_near_term_candidate(
                 101, today + timedelta(days=61), today, set(), set()
@@ -323,6 +333,38 @@ class CandidatePresenceTests(unittest.TestCase):
             "iso_3166_1": "TW",
             "release_dates": [
                 {"type": 3, "release_date": f"{release_date}T00:00:00.000Z"},
+            ],
+        }]
+
+        with (
+            patch.object(
+                weekly,
+                "fetch_supplemental_soon_candidates",
+                return_value=[{"id": 101}],
+            ),
+            patch.object(weekly, "tmdb_movie", return_value={
+                "id": 101,
+                "title": "影展候選",
+                "original_title": "Festival Candidate",
+                "release_date": release_date,
+            }),
+            patch.object(weekly, "tmdb_release_dates", return_value=release_results),
+            patch.object(refresh, "load_current_site_ids", return_value=[]),
+            patch.object(refresh, "load_current_whitelist_ids", return_value=[]),
+            patch.object(refresh, "load_manual_releases", return_value=[]),
+            patch.object(refresh.time, "sleep"),
+        ):
+            output, _, _ = refresh.build_verified_output([])
+
+        self.assertEqual(output["tmdb_has_tw_date"], [])
+
+    def test_refresh_does_not_publish_recent_tmdb_only_discovery(self):
+        today = datetime.now(timezone(timedelta(hours=8))).date()
+        release_date = (today - timedelta(days=10)).isoformat()
+        release_results = [{
+            "iso_3166_1": "TW",
+            "release_dates": [
+                {"type": 1, "release_date": f"{release_date}T00:00:00.000Z"},
             ],
         }]
 
