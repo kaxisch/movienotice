@@ -163,6 +163,7 @@ class TmdbOverrideTests(unittest.TestCase):
             "比如父子": 605320,
             "門當父不對之親家駕到": 1400336,
             "Focker-in-Law": 1400336,
+            "樂園的孩子": 1584855,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
