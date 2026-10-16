@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T00:55:44.092738+08:00",
+  "generated_at": "2026-10-17T05:41:34.089444+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 88,
@@ -1169,12 +1169,12 @@
         ],
         "crew": [
           {
-            "name": "裏則林",
-            "job": "Screenplay"
-          },
-          {
             "name": "路陽",
             "job": "Director"
+          },
+          {
+            "name": "裏則林",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -1287,12 +1287,12 @@
           ],
           "crew": [
             {
-              "name": "裏則林",
-              "job": "Screenplay"
-            },
-            {
               "name": "路陽",
               "job": "Director"
+            },
+            {
+              "name": "裏則林",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -1324,7 +1324,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
-        "voteAverage": "6.4",
+        "voteAverage": "6.2",
         "genre": [
           "動作",
           "奇幻"
@@ -1469,7 +1469,7 @@
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
-          "voteAverage": "6.4",
+          "voteAverage": "6.2",
           "trailerKey": "vR-RQWBeraY",
           "imdbId": "tt27419420",
           "countries": [
@@ -1736,20 +1736,25 @@
         "poster": "https://image.tmdb.org/t/p/w500/trYFD8GsLSyZdgiuoAZy9zbpppw.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.4",
         "genre": [
           "驚悚"
         ],
         "duration": 106,
         "synopsis": "年輕潛水員在加州海岸尋找亡父遺骸時意外遭受襲擊，更被一頭長達80英呎、重達60噸的巨大抹香鯨活生生吞下肚！在氧氣僅存一小時的極端絕境中，他必須在巨鯨腹中展開驚心動魄的逃生倒數。",
         "imdb": "",
-        "rt": "",
-        "mc": "72",
+        "rt": "71%",
+        "mc": "58",
         "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 132,
+            "lastChanged": "2026-10-17T05:41:34.089444+08:00"
+          },
           "mc": {
             "source": "mdblist",
-            "votes": 7,
-            "lastChanged": "2026-10-15T01:36:54.428764+08:00"
+            "votes": 33,
+            "lastChanged": "2026-10-17T05:41:34.089444+08:00"
           }
         },
         "trailerKey": "zii5_IrdK0o",
@@ -1818,7 +1823,7 @@
           "synopsis": "年輕潛水員在加州海岸尋找亡父遺骸時意外遭受襲擊，更被一頭長達80英呎、重達60噸的巨大抹香鯨活生生吞下肚！在氧氣僅存一小時的極端絕境中，他必須在巨鯨腹中展開驚心動魄的逃生倒數。",
           "poster": "https://image.tmdb.org/t/p/w500/trYFD8GsLSyZdgiuoAZy9zbpppw.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.4",
           "trailerKey": "zii5_IrdK0o",
           "imdbId": "tt28535715",
           "countries": [
@@ -3950,7 +3955,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 179,
+            "votes": 181,
             "lastChanged": "2026-10-15T01:36:54.428764+08:00"
           },
           "mc": {
@@ -4811,6 +4816,11 @@
             "photo": "https://image.tmdb.org/t/p/w500/faV10C9gsWfF7E5HwKoqymhbDPb.jpg"
           },
           {
+            "name": "Millie Wood",
+            "char": "Little Girl",
+            "photo": null
+          },
+          {
             "name": "Travis Nelson",
             "char": "Tony",
             "photo": "https://image.tmdb.org/t/p/w500/y5aSsFzlsW21qjXb2gxdla8rsKc.jpg"
@@ -4819,6 +4829,11 @@
             "name": "Carrie Dimaculangan",
             "char": "Callie",
             "photo": "https://image.tmdb.org/t/p/w500/be9i55RrygV2ti7vXwr61j8OlCL.jpg"
+          },
+          {
+            "name": "Erin Birgy",
+            "char": "Erin",
+            "photo": null
           },
           {
             "name": "Hayley Spelman",
@@ -4833,16 +4848,6 @@
           {
             "name": "Alejandro Nieves",
             "char": "Tube Kid 2",
-            "photo": null
-          },
-          {
-            "name": "Tyrone Kearns",
-            "char": "Diner Parent (uncredited)",
-            "photo": null
-          },
-          {
-            "name": "Eleanor Jordan O'Farrell",
-            "char": "Party Guest (uncredited)",
             "photo": null
           }
         ],
@@ -4928,6 +4933,11 @@
               "photo": "https://image.tmdb.org/t/p/w500/faV10C9gsWfF7E5HwKoqymhbDPb.jpg"
             },
             {
+              "name": "Millie Wood",
+              "char": "Little Girl",
+              "photo": null
+            },
+            {
               "name": "Travis Nelson",
               "char": "Tony",
               "photo": "https://image.tmdb.org/t/p/w500/y5aSsFzlsW21qjXb2gxdla8rsKc.jpg"
@@ -4936,6 +4946,11 @@
               "name": "Carrie Dimaculangan",
               "char": "Callie",
               "photo": "https://image.tmdb.org/t/p/w500/be9i55RrygV2ti7vXwr61j8OlCL.jpg"
+            },
+            {
+              "name": "Erin Birgy",
+              "char": "Erin",
+              "photo": null
             },
             {
               "name": "Hayley Spelman",
@@ -4950,16 +4965,6 @@
             {
               "name": "Alejandro Nieves",
               "char": "Tube Kid 2",
-              "photo": null
-            },
-            {
-              "name": "Tyrone Kearns",
-              "char": "Diner Parent (uncredited)",
-              "photo": null
-            },
-            {
-              "name": "Eleanor Jordan O'Farrell",
-              "char": "Party Guest (uncredited)",
               "photo": null
             }
           ],
@@ -5947,11 +5952,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -6072,11 +6077,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -7554,7 +7559,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 322,
+            "votes": 331,
             "lastChanged": "2026-10-12T19:19:21.892273+08:00"
           },
           "mc": {
@@ -8671,15 +8676,15 @@
         ],
         "crew": [
           {
-            "name": "Christopher Markus",
-            "job": "Screenplay"
-          },
-          {
             "name": "Stephen McFeely",
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Christopher Markus",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
@@ -8799,15 +8804,15 @@
           ],
           "crew": [
             {
-              "name": "Christopher Markus",
-              "job": "Screenplay"
-            },
-            {
               "name": "Stephen McFeely",
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Christopher Markus",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
@@ -9189,12 +9194,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 82000000,
@@ -9272,12 +9277,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 82000000,
@@ -13970,7 +13975,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/njHvKCs8WGFihziUpH1ImYv1fYH.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/e5LTUuIumJCgeoAApfCXhKUZ1UH.jpg",
-        "voteAverage": "7.7",
+        "voteAverage": "7.6",
         "genre": [
           "劇情",
           "歷史",
@@ -14116,7 +14121,7 @@
           "synopsis": "1936年，阿拉伯起義事件，巴勒斯坦人首次奮起反抗英國的統治，隨著託管地的村莊紛紛起身反抗英國殖民統治。溫和的少年在鄉村的家與動盪不安的耶路撒冷之間徘徊，渴望超越這場日益加劇的動亂的未來，發動了對抗英國30年統治中規模最大、時間最長的起義。這一決定性時刻，不僅關乎大英帝國的命運，也影響整個歐亞地區的未來。",
           "poster": "https://image.tmdb.org/t/p/w500/njHvKCs8WGFihziUpH1ImYv1fYH.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/e5LTUuIumJCgeoAApfCXhKUZ1UH.jpg",
-          "voteAverage": "7.7",
+          "voteAverage": "7.6",
           "trailerKey": "Ro-BClO3GAI",
           "imdbId": "tt29271622",
           "countries": [
@@ -15142,7 +15147,7 @@
           {
             "name": "Harriet Slater",
             "char": "Jax Hunter",
-            "photo": "https://image.tmdb.org/t/p/w500/mR9ewUjIKoP6Z4DjokAD83tpZ6q.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
           },
           {
             "name": "Arsema Thomas",
@@ -15226,12 +15231,12 @@
             "job": "Writer"
           },
           {
-            "name": "Michael Spierig",
+            "name": "Peter Spierig",
             "job": "Director"
           },
           {
-            "name": "Scott Mann",
-            "job": "Writer"
+            "name": "Michael Spierig",
+            "job": "Director"
           }
         ],
         "budget": 3000000,
@@ -15265,7 +15270,7 @@
             {
               "name": "Harriet Slater",
               "char": "Jax Hunter",
-              "photo": "https://image.tmdb.org/t/p/w500/mR9ewUjIKoP6Z4DjokAD83tpZ6q.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/9BJxdhi4tuiQdgT8bfDuiPipnsx.jpg"
             },
             {
               "name": "Arsema Thomas",
@@ -15349,12 +15354,12 @@
               "job": "Writer"
             },
             {
-              "name": "Michael Spierig",
+              "name": "Peter Spierig",
               "job": "Director"
             },
             {
-              "name": "Scott Mann",
-              "job": "Writer"
+              "name": "Michael Spierig",
+              "job": "Director"
             }
           ],
           "budget": 3000000,
@@ -18776,6 +18781,10 @@
           {
             "name": "Catchplay",
             "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
         "popularity": 713.4232,
@@ -18904,6 +18913,10 @@
             {
               "name": "Catchplay",
               "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
             }
           ]
         },
@@ -18972,7 +18985,7 @@
           {
             "name": "安·海瑟薇",
             "char": "Penelope",
-            "photo": "https://image.tmdb.org/t/p/w500/uZoIcKYtjxrk5ItlJyUtKcGDZkH.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
           },
           {
             "name": "羅伯·派汀森",
@@ -19093,7 +19106,7 @@
             {
               "name": "安·海瑟薇",
               "char": "Penelope",
-              "photo": "https://image.tmdb.org/t/p/w500/uZoIcKYtjxrk5ItlJyUtKcGDZkH.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
             },
             {
               "name": "羅伯·派汀森",
@@ -19691,11 +19704,11 @@
         "crew": [
           {
             "name": "Qiu Sheng",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Qiu Sheng",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -19765,11 +19778,11 @@
           "crew": [
             {
               "name": "Qiu Sheng",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Qiu Sheng",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -20570,11 +20583,11 @@
         ],
         "crew": [
           {
-            "name": "吉野弘幸",
+            "name": "川原礫",
             "job": "Screenplay"
           },
           {
-            "name": "川原礫",
+            "name": "吉野弘幸",
             "job": "Screenplay"
           },
           {
@@ -20673,11 +20686,11 @@
           ],
           "crew": [
             {
-              "name": "吉野弘幸",
+              "name": "川原礫",
               "job": "Screenplay"
             },
             {
-              "name": "川原礫",
+              "name": "吉野弘幸",
               "job": "Screenplay"
             },
             {
@@ -21687,7 +21700,7 @@
           "歷史",
           "音樂"
         ],
-        "duration": "",
+        "duration": 114,
         "synopsis": "1835年的巴黎，25歲的蕭邦早已是風靡上流社會的超級巨星。貴族為他傾倒，法國國王邀他演奏，巴黎最時髦的派對少不了他的身影，堪稱夜生活之王。白天授課、創作，夜晚流連沙龍與宴會，在愛情、友情與名流生活間恣意穿梭。即使疾病逐漸侵蝕身體，他仍以幽默掩飾脆弱，拒絕停下腳步，在生命倒數中寫下一首首傳世之作，直到終於明白，音樂才是他無法割捨的愛。",
         "imdb": "6.3",
         "rt": "",
@@ -21804,7 +21817,7 @@
           "Poland"
         ],
         "detail": {
-          "duration": "",
+          "duration": 114,
           "genres": [
             "劇情",
             "歷史",
@@ -23972,11 +23985,11 @@
             "job": "Director"
           },
           {
-            "name": "姜文",
+            "name": "述平",
             "job": "Screenplay"
           },
           {
-            "name": "Li Bukong",
+            "name": "姜文",
             "job": "Screenplay"
           }
         ],
@@ -24113,11 +24126,11 @@
               "job": "Director"
             },
             {
-              "name": "姜文",
+              "name": "述平",
               "job": "Screenplay"
             },
             {
-              "name": "Li Bukong",
+              "name": "姜文",
               "job": "Screenplay"
             }
           ],
