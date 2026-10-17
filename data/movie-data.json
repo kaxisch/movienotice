@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T10:54:48.258820+08:00",
+  "generated_at": "2026-10-17T11:02:25.103264+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 81,
-    "soon_count": 65
+    "now_count": 82,
+    "soon_count": 66
   },
   "movies": {
     "now": [
@@ -2782,6 +2782,157 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1729116?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1614539,
+        "titleZh": "劇場版 「BanG Dream! Ave Mujica prima aurora」",
+        "titleEn": "BanG Dream! Ave Mujica prima aurora",
+        "releaseDate": "2026-10-16",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-16",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/9vubI8KwZIOKye9tOoHVpftPNt3.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/5hvcmoHXVnzOS5zFEDpbaLJsfjt.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "劇情",
+          "音樂"
+        ],
+        "duration": "",
+        "synopsis": "樂團的人氣持續攀升，成員們各自的活動也逐漸步上軌道。而祥子為下一個舞台所準備的，是一場會員制的假面舞會-―「秘密舞會」。立誓要成為神的她，心中究竟有何打算。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "高尾奏音",
+            "char": "Sakiko Togawa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/w3h6h9R29uRsOv01qbk94ym2msm.jpg"
+          },
+          {
+            "name": "佐佐木李子",
+            "char": "Uika Misumi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/s5zSSVM0JcOSnsNh8ELlfe2srKf.jpg"
+          },
+          {
+            "name": "渡瀨結月",
+            "char": "Mutsumi Wakaba (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qIaOUZyeDIXMUvPfaFvSkHYYnPn.jpg"
+          },
+          {
+            "name": "岡田夢以",
+            "char": "Umiri Yahata (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/zxmqfyUcO8o8MfFS9uQpIJvF1h7.jpg"
+          },
+          {
+            "name": "米澤茜",
+            "char": "Nyamu Yūtenji (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/9jF8yUUHFnVdDFDdiFAAMT7izLQ.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "柿本広大",
+            "job": "Director"
+          },
+          {
+            "name": "後藤みどり",
+            "job": "Screenplay"
+          },
+          {
+            "name": "和場明子",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "BanG Dream! Ave Mujica prima aurora",
+        "platforms": [],
+        "popularity": 3.3874,
+        "imdbId": "tt39335288",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫",
+            "劇情",
+            "音樂"
+          ],
+          "synopsis": "樂團的人氣持續攀升，成員們各自的活動也逐漸步上軌道。而祥子為下一個舞台所準備的，是一場會員制的假面舞會-―「秘密舞會」。立誓要成為神的她，心中究竟有何打算。",
+          "poster": "https://image.tmdb.org/t/p/w500/9vubI8KwZIOKye9tOoHVpftPNt3.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/5hvcmoHXVnzOS5zFEDpbaLJsfjt.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt39335288",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "高尾奏音",
+              "char": "Sakiko Togawa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/w3h6h9R29uRsOv01qbk94ym2msm.jpg"
+            },
+            {
+              "name": "佐佐木李子",
+              "char": "Uika Misumi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/s5zSSVM0JcOSnsNh8ELlfe2srKf.jpg"
+            },
+            {
+              "name": "渡瀨結月",
+              "char": "Mutsumi Wakaba (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qIaOUZyeDIXMUvPfaFvSkHYYnPn.jpg"
+            },
+            {
+              "name": "岡田夢以",
+              "char": "Umiri Yahata (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/zxmqfyUcO8o8MfFS9uQpIJvF1h7.jpg"
+            },
+            {
+              "name": "米澤茜",
+              "char": "Nyamu Yūtenji (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/9jF8yUUHFnVdDFDdiFAAMT7izLQ.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "柿本広大",
+              "job": "Director"
+            },
+            {
+              "name": "後藤みどり",
+              "job": "Screenplay"
+            },
+            {
+              "name": "和場明子",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "BanG Dream! Ave Mujica prima aurora",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1614539?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -25829,6 +25980,145 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1494715?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1630206,
+        "titleZh": "黑潮",
+        "titleEn": "黑潮",
+        "releaseDate": "2026-11-13",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-13",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/3qCQM31uVUGYWpVWJRMWdOUQSCw.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pvjdAa8m0A4HTZfbIvpk3TkBcWI.jpg",
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 106,
+        "synopsis": "剛刑滿出獄的殺人犯忠因為父親的離世而回到漁村。十年前，忠因為殺了一個年輕人被判誤殺入獄。這段殺人回憶一直纏繞着忠，他心裏非常愧疚，想盡辦法試圖找到已經搬離的死者家屬，希望得到他們的原諒。過程中，忠遇見了一個長期被囚禁在高腳屋房裏的精神病患雪。兩個渴望救贖的男女互相撫平了彼此過往的傷痛。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "陳澤耀",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/hu5qFTamb8yQcPLb52UxWMlTOlD.jpg"
+          },
+          {
+            "name": "李沐",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/rr2xnkDpF1KpZS5xKDp59FgvRwX.jpg"
+          },
+          {
+            "name": "Karena Teo",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Hon Kahoe",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bIpvQ8Pk2PnPCFJVDHJui8dYyet.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Kethsvin Chee",
+            "job": "Director"
+          },
+          {
+            "name": "Kethsvin Chee",
+            "job": "Writer"
+          },
+          {
+            "name": "李心潔",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "黑潮",
+        "platforms": [],
+        "popularity": 1.0958,
+        "imdbId": "tt35486825",
+        "countries": [
+          "Malaysia",
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 106,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "剛刑滿出獄的殺人犯忠因為父親的離世而回到漁村。十年前，忠因為殺了一個年輕人被判誤殺入獄。這段殺人回憶一直纏繞着忠，他心裏非常愧疚，想盡辦法試圖找到已經搬離的死者家屬，希望得到他們的原諒。過程中，忠遇見了一個長期被囚禁在高腳屋房裏的精神病患雪。兩個渴望救贖的男女互相撫平了彼此過往的傷痛。",
+          "poster": "https://image.tmdb.org/t/p/w500/3qCQM31uVUGYWpVWJRMWdOUQSCw.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pvjdAa8m0A4HTZfbIvpk3TkBcWI.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt35486825",
+          "countries": [
+            "Malaysia",
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "陳澤耀",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/hu5qFTamb8yQcPLb52UxWMlTOlD.jpg"
+            },
+            {
+              "name": "李沐",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/rr2xnkDpF1KpZS5xKDp59FgvRwX.jpg"
+            },
+            {
+              "name": "Karena Teo",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Hon Kahoe",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bIpvQ8Pk2PnPCFJVDHJui8dYyet.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Kethsvin Chee",
+              "job": "Director"
+            },
+            {
+              "name": "Kethsvin Chee",
+              "job": "Writer"
+            },
+            {
+              "name": "李心潔",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "黑潮",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1630206?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
