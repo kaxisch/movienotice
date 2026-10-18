@@ -1,12 +1,179 @@
 {
-  "generated_at": "2026-10-18T21:35:38.174129+08:00",
+  "generated_at": "2026-10-19T00:09:35.531511+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 82,
-    "soon_count": 76
+    "now_count": 84,
+    "soon_count": 74
   },
   "movies": {
     "now": [
+      {
+        "id": 605320,
+        "titleZh": "比如父子",
+        "titleEn": "比如父子",
+        "releaseDate": "2026-10-19",
+        "releaseYear": "2025",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-19",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/oWGBl7wc8URvjWYLDI3S9a253Pv.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hcJRrFnsCSYqJETQxNNUAVIGqaz.jpg",
+        "voteAverage": "4.0",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 109,
+        "synopsis": "18歲時鄒橋的父親離世了，他在喪禮悼詞中臨陣逃脫，甚至無法面對儀式性的道別，只想關閉通訊、躲進夜店喧鬧的音樂中，假裝徜徉漂浮於水上，掩埋悲傷；十年後，他已成家立業，並透過人工智慧在虛擬實境中重建「父親」，嘗試彌補未曾說出口的遺憾，就像是父親曾經教他關於拳擊的事情，他也試圖與這名AI父親，溝通、對話並學習一切的可能。",
+        "imdb": "5.3",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 36,
+            "lastChanged": "2026-10-10T18:20:08.306891+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "宋洋",
+            "char": "Zou Jian Tang",
+            "photo": "https://image.tmdb.org/t/p/w500/eVSUyv9a2ZiPUTrCV88aqADNmT0.jpg"
+          },
+          {
+            "name": "Sun Ning",
+            "char": "Zou Qiao",
+            "photo": "https://image.tmdb.org/t/p/w500/oKKHYR6yCkfEisckawmDFZGE01F.jpg"
+          },
+          {
+            "name": "孫安可",
+            "char": "Chun Li / Qing Yu",
+            "photo": "https://image.tmdb.org/t/p/w500/qvHUqczVNyBcvg2aUcK46Gs5M62.jpg"
+          },
+          {
+            "name": "Tong Chenjie",
+            "char": "Pan Yao",
+            "photo": "https://image.tmdb.org/t/p/w500/qX4vmOpm1rWt7rVhWfyY9TJg0u1.jpg"
+          },
+          {
+            "name": "柯佳嬿",
+            "char": "Mistress",
+            "photo": "https://image.tmdb.org/t/p/w500/4AyTq3yyDRJkGpUaBRUmoCOF87e.jpg"
+          },
+          {
+            "name": "赵佳丽",
+            "char": "Lin Na",
+            "photo": "https://image.tmdb.org/t/p/w500/9abtyT7HWQbXpO0IzErpk8ODybE.jpg"
+          },
+          {
+            "name": "罗伟宸",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/iCWmTai8CdqSnqjwCsW0trnhWPx.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Qiu Sheng",
+            "job": "Writer"
+          },
+          {
+            "name": "Qiu Sheng",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "比如父子",
+        "platforms": [],
+        "popularity": 1.5848,
+        "imdbId": "tt29560385",
+        "countries": [
+          "China",
+          "France"
+        ],
+        "detail": {
+          "duration": 109,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "18歲時鄒橋的父親離世了，他在喪禮悼詞中臨陣逃脫，甚至無法面對儀式性的道別，只想關閉通訊、躲進夜店喧鬧的音樂中，假裝徜徉漂浮於水上，掩埋悲傷；十年後，他已成家立業，並透過人工智慧在虛擬實境中重建「父親」，嘗試彌補未曾說出口的遺憾，就像是父親曾經教他關於拳擊的事情，他也試圖與這名AI父親，溝通、對話並學習一切的可能。",
+          "poster": "https://image.tmdb.org/t/p/w500/oWGBl7wc8URvjWYLDI3S9a253Pv.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/hcJRrFnsCSYqJETQxNNUAVIGqaz.jpg",
+          "voteAverage": "4.0",
+          "trailerKey": null,
+          "imdbId": "tt29560385",
+          "countries": [
+            "China",
+            "France"
+          ],
+          "cast": [
+            {
+              "name": "宋洋",
+              "char": "Zou Jian Tang",
+              "photo": "https://image.tmdb.org/t/p/w500/eVSUyv9a2ZiPUTrCV88aqADNmT0.jpg"
+            },
+            {
+              "name": "Sun Ning",
+              "char": "Zou Qiao",
+              "photo": "https://image.tmdb.org/t/p/w500/oKKHYR6yCkfEisckawmDFZGE01F.jpg"
+            },
+            {
+              "name": "孫安可",
+              "char": "Chun Li / Qing Yu",
+              "photo": "https://image.tmdb.org/t/p/w500/qvHUqczVNyBcvg2aUcK46Gs5M62.jpg"
+            },
+            {
+              "name": "Tong Chenjie",
+              "char": "Pan Yao",
+              "photo": "https://image.tmdb.org/t/p/w500/qX4vmOpm1rWt7rVhWfyY9TJg0u1.jpg"
+            },
+            {
+              "name": "柯佳嬿",
+              "char": "Mistress",
+              "photo": "https://image.tmdb.org/t/p/w500/4AyTq3yyDRJkGpUaBRUmoCOF87e.jpg"
+            },
+            {
+              "name": "赵佳丽",
+              "char": "Lin Na",
+              "photo": "https://image.tmdb.org/t/p/w500/9abtyT7HWQbXpO0IzErpk8ODybE.jpg"
+            },
+            {
+              "name": "罗伟宸",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/iCWmTai8CdqSnqjwCsW0trnhWPx.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Qiu Sheng",
+              "job": "Writer"
+            },
+            {
+              "name": "Qiu Sheng",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "比如父子",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/605320?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 244786,
         "titleZh": "進擊的鼓手",
@@ -2371,7 +2538,7 @@
           "劇情",
           "愛情"
         ],
-        "duration": "",
+        "duration": 100,
         "synopsis": "一段在馬來西亞東海岸的三個聾啞孩子的成長之旅，由孩子的視角觀看馬來西亞種族問題。",
         "imdb": "",
         "rt": "",
@@ -2458,7 +2625,7 @@
           "Malaysia"
         ],
         "detail": {
-          "duration": "",
+          "duration": 100,
           "genres": [
             "劇情",
             "愛情"
@@ -8178,7 +8345,7 @@
         "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
         "imdb": "7.7",
         "rt": "94%",
-        "mc": "72",
+        "mc": "73",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -8187,13 +8354,13 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 119,
+            "votes": 120,
             "lastChanged": "2026-10-16T19:53:43.182874+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 27,
-            "lastChanged": "2026-10-16T19:53:43.182874+08:00"
+            "votes": 28,
+            "lastChanged": "2026-10-19T00:09:35.531511+08:00"
           }
         },
         "trailerKey": "WII6-Ss-kTM",
@@ -8822,7 +8989,7 @@
           {
             "name": "布麗·拉森",
             "char": "Carol Danvers / Captain Marvel",
-            "photo": "https://image.tmdb.org/t/p/w500/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg"
           },
           {
             "name": "湯姆·霍蘭德",
@@ -8847,15 +9014,15 @@
         ],
         "crew": [
           {
-            "name": "Stephen McFeely",
-            "job": "Screenplay"
-          },
-          {
             "name": "Christopher Markus",
             "job": "Screenplay"
           },
           {
-            "name": "Joe Russo",
+            "name": "Stephen McFeely",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Anthony Russo",
             "job": "Director"
           }
         ],
@@ -8950,7 +9117,7 @@
             {
               "name": "布麗·拉森",
               "char": "Carol Danvers / Captain Marvel",
-              "photo": "https://image.tmdb.org/t/p/w500/iqZ5uKJWbwSITCK4CqdlUHZTnXD.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg"
             },
             {
               "name": "湯姆·霍蘭德",
@@ -8975,15 +9142,15 @@
           ],
           "crew": [
             {
-              "name": "Stephen McFeely",
-              "job": "Screenplay"
-            },
-            {
               "name": "Christopher Markus",
               "job": "Screenplay"
             },
             {
-              "name": "Joe Russo",
+              "name": "Stephen McFeely",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Anthony Russo",
               "job": "Director"
             }
           ],
@@ -13489,11 +13656,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -13562,11 +13729,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -17854,176 +18021,88 @@
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
-      }
-    ],
-    "soon": [
+      },
       {
-        "id": 605320,
-        "titleZh": "比如父子",
-        "titleEn": "比如父子",
-        "releaseDate": "2026-10-19",
+        "id": 1641719,
+        "titleZh": "骨恆久於羽",
+        "titleEn": "骨恆久於羽",
+        "releaseDate": "2026-05-03",
         "releaseYear": "2025",
         "isRerelease": false,
         "twTheatricalReleases": [
           {
-            "date": "2026-10-19",
+            "date": "2026-05-03",
             "language": ""
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/oWGBl7wc8URvjWYLDI3S9a253Pv.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/cgsT3gWFdxfNLNKrSISCH1yKWpx.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/hcJRrFnsCSYqJETQxNNUAVIGqaz.jpg",
-        "voteAverage": "4.0",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mIqhdfwOmap6LeihRVNy2EGz6BE.jpg",
+        "voteAverage": "",
         "genre": [
-          "劇情"
+          "紀錄"
         ],
-        "duration": 109,
-        "synopsis": "18歲時鄒橋的父親離世了，他在喪禮悼詞中臨陣逃脫，甚至無法面對儀式性的道別，只想關閉通訊、躲進夜店喧鬧的音樂中，假裝徜徉漂浮於水上，掩埋悲傷；十年後，他已成家立業，並透過人工智慧在虛擬實境中重建「父親」，嘗試彌補未曾說出口的遺憾，就像是父親曾經教他關於拳擊的事情，他也試圖與這名AI父親，溝通、對話並學習一切的可能。",
-        "imdb": "5.3",
+        "duration": "",
+        "synopsis": "影片由散落在台灣台東布農部落的利稻、霧鹿，以及周邊山林的15個篇章組成。有些是孩童追逐、或被靈獸追逐的夢境，有些是長輩們成長於蛇與熊神話中的記憶，還有在某些鳥類棲息地上所發生的奇異邂逅。",
+        "imdb": "",
         "rt": "",
         "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 36,
-            "lastChanged": "2026-10-10T18:20:08.306891+08:00"
-          }
-        },
+        "ratingMeta": {},
         "trailerKey": null,
-        "cast": [
-          {
-            "name": "宋洋",
-            "char": "Zou Jian Tang",
-            "photo": "https://image.tmdb.org/t/p/w500/eVSUyv9a2ZiPUTrCV88aqADNmT0.jpg"
-          },
-          {
-            "name": "Sun Ning",
-            "char": "Zou Qiao",
-            "photo": "https://image.tmdb.org/t/p/w500/oKKHYR6yCkfEisckawmDFZGE01F.jpg"
-          },
-          {
-            "name": "孫安可",
-            "char": "Chun Li / Qing Yu",
-            "photo": "https://image.tmdb.org/t/p/w500/qvHUqczVNyBcvg2aUcK46Gs5M62.jpg"
-          },
-          {
-            "name": "Tong Chenjie",
-            "char": "Pan Yao",
-            "photo": "https://image.tmdb.org/t/p/w500/qX4vmOpm1rWt7rVhWfyY9TJg0u1.jpg"
-          },
-          {
-            "name": "柯佳嬿",
-            "char": "Mistress",
-            "photo": "https://image.tmdb.org/t/p/w500/4AyTq3yyDRJkGpUaBRUmoCOF87e.jpg"
-          },
-          {
-            "name": "赵佳丽",
-            "char": "Lin Na",
-            "photo": "https://image.tmdb.org/t/p/w500/9abtyT7HWQbXpO0IzErpk8ODybE.jpg"
-          },
-          {
-            "name": "罗伟宸",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/iCWmTai8CdqSnqjwCsW0trnhWPx.jpg"
-          }
-        ],
+        "cast": [],
         "crew": [
           {
-            "name": "Qiu Sheng",
+            "name": "澎葉生",
             "job": "Director"
-          },
-          {
-            "name": "Qiu Sheng",
-            "job": "Writer"
           }
         ],
         "budget": 0,
         "revenue": 0,
         "status": "Released",
         "origLang": "zh",
-        "origTitle": "比如父子",
+        "origTitle": "骨恆久於羽",
         "platforms": [],
-        "popularity": 1.5848,
-        "imdbId": "tt29560385",
+        "popularity": 0.5255,
+        "imdbId": "tt41776974",
         "countries": [
-          "China",
-          "France"
+          "Taiwan"
         ],
         "detail": {
-          "duration": 109,
+          "duration": "",
           "genres": [
-            "劇情"
+            "紀錄"
           ],
-          "synopsis": "18歲時鄒橋的父親離世了，他在喪禮悼詞中臨陣逃脫，甚至無法面對儀式性的道別，只想關閉通訊、躲進夜店喧鬧的音樂中，假裝徜徉漂浮於水上，掩埋悲傷；十年後，他已成家立業，並透過人工智慧在虛擬實境中重建「父親」，嘗試彌補未曾說出口的遺憾，就像是父親曾經教他關於拳擊的事情，他也試圖與這名AI父親，溝通、對話並學習一切的可能。",
-          "poster": "https://image.tmdb.org/t/p/w500/oWGBl7wc8URvjWYLDI3S9a253Pv.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/hcJRrFnsCSYqJETQxNNUAVIGqaz.jpg",
-          "voteAverage": "4.0",
+          "synopsis": "影片由散落在台灣台東布農部落的利稻、霧鹿，以及周邊山林的15個篇章組成。有些是孩童追逐、或被靈獸追逐的夢境，有些是長輩們成長於蛇與熊神話中的記憶，還有在某些鳥類棲息地上所發生的奇異邂逅。",
+          "poster": "https://image.tmdb.org/t/p/w500/cgsT3gWFdxfNLNKrSISCH1yKWpx.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/mIqhdfwOmap6LeihRVNy2EGz6BE.jpg",
+          "voteAverage": "",
           "trailerKey": null,
-          "imdbId": "tt29560385",
+          "imdbId": "tt41776974",
           "countries": [
-            "China",
-            "France"
+            "Taiwan"
           ],
-          "cast": [
-            {
-              "name": "宋洋",
-              "char": "Zou Jian Tang",
-              "photo": "https://image.tmdb.org/t/p/w500/eVSUyv9a2ZiPUTrCV88aqADNmT0.jpg"
-            },
-            {
-              "name": "Sun Ning",
-              "char": "Zou Qiao",
-              "photo": "https://image.tmdb.org/t/p/w500/oKKHYR6yCkfEisckawmDFZGE01F.jpg"
-            },
-            {
-              "name": "孫安可",
-              "char": "Chun Li / Qing Yu",
-              "photo": "https://image.tmdb.org/t/p/w500/qvHUqczVNyBcvg2aUcK46Gs5M62.jpg"
-            },
-            {
-              "name": "Tong Chenjie",
-              "char": "Pan Yao",
-              "photo": "https://image.tmdb.org/t/p/w500/qX4vmOpm1rWt7rVhWfyY9TJg0u1.jpg"
-            },
-            {
-              "name": "柯佳嬿",
-              "char": "Mistress",
-              "photo": "https://image.tmdb.org/t/p/w500/4AyTq3yyDRJkGpUaBRUmoCOF87e.jpg"
-            },
-            {
-              "name": "赵佳丽",
-              "char": "Lin Na",
-              "photo": "https://image.tmdb.org/t/p/w500/9abtyT7HWQbXpO0IzErpk8ODybE.jpg"
-            },
-            {
-              "name": "罗伟宸",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/iCWmTai8CdqSnqjwCsW0trnhWPx.jpg"
-            }
-          ],
+          "cast": [],
           "crew": [
             {
-              "name": "Qiu Sheng",
+              "name": "澎葉生",
               "job": "Director"
-            },
-            {
-              "name": "Qiu Sheng",
-              "job": "Writer"
             }
           ],
           "budget": 0,
           "revenue": 0,
           "status": "Released",
           "origLang": "zh",
-          "origTitle": "比如父子",
+          "origTitle": "骨恆久於羽",
           "platforms": []
         },
-        "tmdbUrl": "https://www.themoviedb.org/movie/605320?language=zh-TW",
+        "tmdbUrl": "https://www.themoviedb.org/movie/1641719?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
-      },
+      }
+    ],
+    "soon": [
       {
         "id": 1507563,
         "titleZh": "華倫夫人的職業",
@@ -18965,7 +19044,7 @@
           "劇情",
           "喜劇"
         ],
-        "duration": 117,
+        "duration": 116,
         "synopsis": "",
         "imdb": "",
         "rt": "",
@@ -19052,7 +19131,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": 117,
+          "duration": 116,
           "genres": [
             "科幻",
             "劇情",
@@ -19755,12 +19834,12 @@
         ],
         "crew": [
           {
-            "name": "배세영",
-            "job": "Writer"
-          },
-          {
             "name": "김창주",
             "job": "Director"
+          },
+          {
+            "name": "배세영",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -19873,12 +19952,12 @@
           ],
           "crew": [
             {
-              "name": "배세영",
-              "job": "Writer"
-            },
-            {
               "name": "김창주",
               "job": "Director"
+            },
+            {
+              "name": "배세영",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22212,11 +22291,11 @@
             "job": "Director"
           },
           {
-            "name": "姜文",
+            "name": "述平",
             "job": "Screenplay"
           },
           {
-            "name": "Li Bukong",
+            "name": "姜文",
             "job": "Screenplay"
           }
         ],
@@ -22353,11 +22432,11 @@
               "job": "Director"
             },
             {
-              "name": "姜文",
+              "name": "述平",
               "job": "Screenplay"
             },
             {
-              "name": "Li Bukong",
+              "name": "姜文",
               "job": "Screenplay"
             }
           ],
@@ -22791,11 +22870,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 69000000,
@@ -22919,11 +22998,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 69000000,
@@ -24824,11 +24903,11 @@
         "crew": [
           {
             "name": "Sung Hsin-Yin",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Sung Hsin-Yin",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -24916,11 +24995,11 @@
           "crew": [
             {
               "name": "Sung Hsin-Yin",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Sung Hsin-Yin",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -29795,11 +29874,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -29922,11 +30001,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
@@ -31067,11 +31146,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -31129,11 +31208,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -31287,7 +31366,7 @@
           },
           {
             "name": "Alex Huston Fischer",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -31412,7 +31491,7 @@
             },
             {
               "name": "Alex Huston Fischer",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -31423,163 +31502,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1195803?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1584245,
-        "titleZh": "美麗上山",
-        "titleEn": "美麗上山",
-        "releaseDate": "2026-12-18",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-12-18",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/88WiXrbxTqB7q1sPMQLZ2wPxglf.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": null,
-        "voteAverage": "",
-        "genre": [
-          "劇情"
-        ],
-        "duration": "",
-        "synopsis": "30年前，布農族少女美麗與青梅竹馬亮虎和伊曼一同在部落長大。他們攜手登上玉山雪峰，在雪白山巔留下屬於青春記憶。兩名少年都曾鼓起勇氣向美麗傾訴愛意，美麗始終未曾給出明確答案。不久，亮虎伊曼相繼入伍，得知美麗為逃離家族安排的婚姻，選擇與平地男子私奔，遠離故土。同時，東埔挖墳事件震動部落，族人群起抗爭，家園陷入動盪。 30年後，時過境遷人事全非。當年的摯友再次踏上旅程，在命運的盡頭陪伴昔日摯愛，也追憶那段無法挽回的青春歲月，並為族人漫長而艱辛的歷史發出深沉喟嘆。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "王牧瞳",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "陳宣合",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "李泰君",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "高蕾雅",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "蘇達",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/cEx7NEqSyUADBUr3RZRlxB2WgAe.jpg"
-          },
-          {
-            "name": "范逸臣",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/jhrR7n3TbHyHPU7qfE1JZ9SXxnr.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "王育麟",
-            "job": "Director"
-          },
-          {
-            "name": "王育麟",
-            "job": "Writer"
-          },
-          {
-            "name": "花柏容",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Post Production",
-        "origLang": "zh",
-        "origTitle": "美麗上山",
-        "platforms": [],
-        "popularity": 0.9189,
-        "imdbId": null,
-        "countries": [
-          "Taiwan"
-        ],
-        "detail": {
-          "duration": "",
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "30年前，布農族少女美麗與青梅竹馬亮虎和伊曼一同在部落長大。他們攜手登上玉山雪峰，在雪白山巔留下屬於青春記憶。兩名少年都曾鼓起勇氣向美麗傾訴愛意，美麗始終未曾給出明確答案。不久，亮虎伊曼相繼入伍，得知美麗為逃離家族安排的婚姻，選擇與平地男子私奔，遠離故土。同時，東埔挖墳事件震動部落，族人群起抗爭，家園陷入動盪。 30年後，時過境遷人事全非。當年的摯友再次踏上旅程，在命運的盡頭陪伴昔日摯愛，也追憶那段無法挽回的青春歲月，並為族人漫長而艱辛的歷史發出深沉喟嘆。",
-          "poster": "https://image.tmdb.org/t/p/w500/88WiXrbxTqB7q1sPMQLZ2wPxglf.jpg",
-          "backdrop": null,
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": null,
-          "countries": [
-            "Taiwan"
-          ],
-          "cast": [
-            {
-              "name": "王牧瞳",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "陳宣合",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "李泰君",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "高蕾雅",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "蘇達",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/cEx7NEqSyUADBUr3RZRlxB2WgAe.jpg"
-            },
-            {
-              "name": "范逸臣",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/jhrR7n3TbHyHPU7qfE1JZ9SXxnr.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "王育麟",
-              "job": "Director"
-            },
-            {
-              "name": "王育麟",
-              "job": "Writer"
-            },
-            {
-              "name": "花柏容",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Post Production",
-          "origLang": "zh",
-          "origTitle": "美麗上山",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1584245?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -32710,8 +32632,7 @@
         "genre": [
           "愛情",
           "恐怖",
-          "懸疑",
-          "驚悚"
+          "懸疑"
         ],
         "duration": "",
         "synopsis": "泰特高登是個低調遁世的建築師，他搬到沿海小鎮，準備完成他最新的作品。不久他遇見一名迷人的年輕女子，她使他走出封閉的世界，卻也讓他捲入籠罩著全鎮的致命謎團中。",
@@ -32813,8 +32734,7 @@
           "genres": [
             "愛情",
             "恐怖",
-            "懸疑",
-            "驚悚"
+            "懸疑"
           ],
           "synopsis": "泰特高登是個低調遁世的建築師，他搬到沿海小鎮，準備完成他最新的作品。不久他遇見一名迷人的年輕女子，她使他走出封閉的世界，卻也讓他捲入籠罩著全鎮的致命謎團中。",
           "poster": "https://image.tmdb.org/t/p/w500/5T2UuYXXvope5stKWCUAG89ZeGy.jpg",
