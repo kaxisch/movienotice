@@ -467,6 +467,38 @@ class CandidatePresenceTests(unittest.TestCase):
 
         self.assertTrue(weekly.should_keep_static_movie(movie, record))
 
+    def test_short_movie_with_cinema_presence_but_no_atmovies_id_is_kept(self):
+        movie = {"releaseDate": "2026-10-16", "duration": 56, "platforms": []}
+        record = {
+            "source_bucket": "now",
+            "candidate_kind": "atmovies",
+            "atmovies_id": "",
+            "cinema_present": "TRUE",
+        }
+
+        self.assertTrue(weekly.should_keep_static_movie(movie, record))
+
+    def test_short_movie_with_atmovies_presence_but_no_source_id_is_kept(self):
+        movie = {"releaseDate": "2026-10-16", "duration": 56, "platforms": []}
+        record = {
+            "source_bucket": "now",
+            "candidate_kind": "atmovies",
+            "atmovies_id": "",
+            "atmovies_present": "TRUE",
+        }
+
+        self.assertTrue(weekly.should_keep_static_movie(movie, record))
+
+    def test_short_cinema_candidate_without_atmovies_id_is_kept(self):
+        movie = {"releaseDate": "2026-10-16", "duration": 56, "platforms": []}
+        record = {
+            "source_bucket": "now",
+            "candidate_kind": "cinema",
+            "atmovies_id": "",
+        }
+
+        self.assertTrue(weekly.should_keep_static_movie(movie, record))
+
     def test_short_tmdb_only_discovery_without_cinema_evidence_is_excluded(self):
         movie = {"releaseDate": "2026-11-01", "duration": 45, "platforms": []}
         record = {"source_bucket": "next", "candidate_kind": ""}

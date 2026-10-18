@@ -1426,6 +1426,7 @@ def should_keep_static_movie(movie, record):
         record.get("candidate_kind") in {"cinema", "rerelease"}
         or str(record.get("atmovies_present", "")).strip().lower() in {"1", "true", "yes", "y"}
         or str(record.get("cinema_present", "")).strip().lower() in {"1", "true", "yes", "y"}
+        or bool(str(record.get("atmovies_id", "") or "").strip())
     )
     if (
         record.get("source_bucket") != "manual"
@@ -1439,8 +1440,7 @@ def should_keep_static_movie(movie, record):
         duration
         and duration <= 60
         and record.get("source_bucket") != "manual"
-        and record.get("candidate_kind") != "rerelease"
-        and not record.get("atmovies_id")
+        and not has_cinema_evidence
     ):
         return False
     return True
