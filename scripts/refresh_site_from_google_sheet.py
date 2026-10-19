@@ -237,14 +237,14 @@ def should_hide_rerelease(candidate):
 def should_hold_tmdb_only_near_term_candidate(
     tmdb_id, release_date, today, sheet_candidate_ids, manual_ids
 ):
-    """上映前後 60 天內只有 TMDB 日期、尚無院線候選狀態的電影不得先公開。"""
+    """純 TMDB 候選只可在上映 61～180 天前公開。
+
+    過去日期不得用 180 天回溯窗口首次上架；該窗口只供已有院線候選
+    狀態的電影及人工保留電影驗證使用。
+    """
     if not release_date or tmdb_id in sheet_candidate_ids or tmdb_id in manual_ids:
         return False
-    return (
-        today - timedelta(days=ATMOVIES_HANDOFF_DAYS)
-        <= release_date
-        <= today + timedelta(days=ATMOVIES_HANDOFF_DAYS)
-    )
+    return release_date <= today + timedelta(days=ATMOVIES_HANDOFF_DAYS)
 
 
 def rerelease_can_override_regular_candidate(candidate):
@@ -493,7 +493,8 @@ def build_verified_output(candidates):
         ):
             log(
                 f"  Held TMDB-only candidate {tmdb_id}: Taiwan cinema date {tw_date} is "
-                "within 60 days before or after today but no cinema audit candidate exists"
+                "not eligible for TMDB-only publication because it is today/past or within "
+                "60 days ahead, and no cinema audit candidate exists"
             )
             continue
 
