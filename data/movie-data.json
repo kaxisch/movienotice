@@ -1,12 +1,167 @@
 {
-  "generated_at": "2026-10-19T21:55:16.594225+08:00",
+  "generated_at": "2026-10-20T04:44:17.364382+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 83,
-    "soon_count": 74
+    "now_count": 84,
+    "soon_count": 73
   },
   "movies": {
     "now": [
+      {
+        "id": 1507563,
+        "titleZh": "華倫夫人的職業",
+        "titleEn": "National Theatre Live: Mrs. Warren's Profession",
+        "releaseDate": "2026-10-20",
+        "releaseYear": "2025",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-20",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 114,
+        "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
+        "imdb": "7.7",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 79,
+            "lastChanged": "2026-09-29T05:23:09.468732+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Imelda Staunton",
+            "char": "Mrs Peggy Warren",
+            "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
+          },
+          {
+            "name": "貝希·卡特",
+            "char": "Vivie Warren",
+            "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
+          },
+          {
+            "name": "Kevin Doyle",
+            "char": "Reverend Samuel Gardner",
+            "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
+          },
+          {
+            "name": "Robert Glenister",
+            "char": "Sir George Crofts",
+            "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
+          },
+          {
+            "name": "Reuben Joseph",
+            "char": "Frank Gardner",
+            "photo": null
+          },
+          {
+            "name": "Sid Sigar",
+            "char": "Mr. Praed",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Dominic Cooke",
+            "job": "Director"
+          },
+          {
+            "name": "George Bernard Shaw",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "National Theatre Live: Mrs. Warren's Profession",
+        "platforms": [],
+        "popularity": 2.3066,
+        "imdbId": "tt37511195",
+        "countries": [
+          "United Kingdom"
+        ],
+        "detail": {
+          "duration": 114,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
+          "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt37511195",
+          "countries": [
+            "United Kingdom"
+          ],
+          "cast": [
+            {
+              "name": "Imelda Staunton",
+              "char": "Mrs Peggy Warren",
+              "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
+            },
+            {
+              "name": "貝希·卡特",
+              "char": "Vivie Warren",
+              "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
+            },
+            {
+              "name": "Kevin Doyle",
+              "char": "Reverend Samuel Gardner",
+              "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
+            },
+            {
+              "name": "Robert Glenister",
+              "char": "Sir George Crofts",
+              "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
+            },
+            {
+              "name": "Reuben Joseph",
+              "char": "Frank Gardner",
+              "photo": null
+            },
+            {
+              "name": "Sid Sigar",
+              "char": "Mr. Praed",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Dominic Cooke",
+              "job": "Director"
+            },
+            {
+              "name": "George Bernard Shaw",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "National Theatre Live: Mrs. Warren's Profession",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1507563?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 605320,
         "titleZh": "比如父子",
@@ -81,11 +236,11 @@
         "crew": [
           {
             "name": "Qiu Sheng",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Qiu Sheng",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -155,11 +310,11 @@
           "crew": [
             {
               "name": "Qiu Sheng",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Qiu Sheng",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -209,8 +364,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 303,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -1439,7 +1594,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
-        "voteAverage": "6.3",
+        "voteAverage": "6.2",
         "genre": [
           "動作",
           "奇幻"
@@ -1584,7 +1739,7 @@
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
-          "voteAverage": "6.3",
+          "voteAverage": "6.2",
           "trailerKey": "vR-RQWBeraY",
           "imdbId": "tt27419420",
           "countries": [
@@ -4654,11 +4809,11 @@
         "crew": [
           {
             "name": "Pauline Loquès",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Pauline Loquès",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -4771,11 +4926,11 @@
           "crew": [
             {
               "name": "Pauline Loquès",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Pauline Loquès",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -9022,7 +9177,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
@@ -9150,7 +9305,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
@@ -11197,13 +11352,13 @@
         "duration": 127,
         "synopsis": "年輕的卡夫卡，白天是保險公司職員，在保守的社會、動盪的經濟與戰爭陰影步步逼近的時代，他一邊應付工作與家庭，一邊努力替自己的文字留下一席之地。從19世紀末的布拉格出發，沿著卡夫卡短暫的人生，追尋他如何一步步成為現代文學巨人，重新認識這位早在一百年前就把「厭世」書寫成藝術的大文豪。",
         "imdb": "",
-        "rt": "74%",
+        "rt": "75%",
         "mc": "64",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 62,
-            "lastChanged": "2026-09-14T13:24:26.771481+08:00"
+            "votes": 63,
+            "lastChanged": "2026-10-20T04:44:17.364382+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -13239,12 +13394,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -13356,12 +13511,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -16483,11 +16638,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -16608,11 +16763,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -18025,161 +18180,6 @@
     ],
     "soon": [
       {
-        "id": 1507563,
-        "titleZh": "華倫夫人的職業",
-        "titleEn": "National Theatre Live: Mrs. Warren's Profession",
-        "releaseDate": "2026-10-20",
-        "releaseYear": "2025",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-20",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
-        "voteAverage": "",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 114,
-        "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
-        "imdb": "7.7",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 79,
-            "lastChanged": "2026-09-29T05:23:09.468732+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Imelda Staunton",
-            "char": "Mrs Peggy Warren",
-            "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
-          },
-          {
-            "name": "貝希·卡特",
-            "char": "Vivie Warren",
-            "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
-          },
-          {
-            "name": "Kevin Doyle",
-            "char": "Reverend Samuel Gardner",
-            "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
-          },
-          {
-            "name": "Robert Glenister",
-            "char": "Sir George Crofts",
-            "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
-          },
-          {
-            "name": "Reuben Joseph",
-            "char": "Frank Gardner",
-            "photo": null
-          },
-          {
-            "name": "Sid Sigar",
-            "char": "Mr. Praed",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Dominic Cooke",
-            "job": "Director"
-          },
-          {
-            "name": "George Bernard Shaw",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "National Theatre Live: Mrs. Warren's Profession",
-        "platforms": [],
-        "popularity": 2.3066,
-        "imdbId": "tt37511195",
-        "countries": [
-          "United Kingdom"
-        ],
-        "detail": {
-          "duration": 114,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
-          "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt37511195",
-          "countries": [
-            "United Kingdom"
-          ],
-          "cast": [
-            {
-              "name": "Imelda Staunton",
-              "char": "Mrs Peggy Warren",
-              "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
-            },
-            {
-              "name": "貝希·卡特",
-              "char": "Vivie Warren",
-              "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
-            },
-            {
-              "name": "Kevin Doyle",
-              "char": "Reverend Samuel Gardner",
-              "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
-            },
-            {
-              "name": "Robert Glenister",
-              "char": "Sir George Crofts",
-              "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
-            },
-            {
-              "name": "Reuben Joseph",
-              "char": "Frank Gardner",
-              "photo": null
-            },
-            {
-              "name": "Sid Sigar",
-              "char": "Mr. Praed",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Dominic Cooke",
-              "job": "Director"
-            },
-            {
-              "name": "George Bernard Shaw",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "National Theatre Live: Mrs. Warren's Profession",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1507563?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1400940,
         "titleZh": "泥面人",
         "titleEn": "Clayface",
@@ -18196,7 +18196,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/kVtOcoUJ68chBD2tmERkdWz7lK5.jpg",
-        "voteAverage": "8.2",
+        "voteAverage": "8.1",
         "genre": [
           "恐怖",
           "驚悚",
@@ -18326,7 +18326,7 @@
           "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
           "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/kVtOcoUJ68chBD2tmERkdWz7lK5.jpg",
-          "voteAverage": "8.2",
+          "voteAverage": "8.1",
           "trailerKey": "v889uS_W0Q0",
           "imdbId": "tt34890576",
           "countries": [
@@ -18810,11 +18810,11 @@
         ],
         "crew": [
           {
-            "name": "吉野弘幸",
+            "name": "川原礫",
             "job": "Screenplay"
           },
           {
-            "name": "川原礫",
+            "name": "吉野弘幸",
             "job": "Screenplay"
           },
           {
@@ -18913,11 +18913,11 @@
           ],
           "crew": [
             {
-              "name": "吉野弘幸",
+              "name": "川原礫",
               "job": "Screenplay"
             },
             {
-              "name": "川原礫",
+              "name": "吉野弘幸",
               "job": "Screenplay"
             },
             {
@@ -19755,12 +19755,12 @@
         ],
         "crew": [
           {
-            "name": "김창주",
-            "job": "Director"
-          },
-          {
             "name": "배세영",
             "job": "Writer"
+          },
+          {
+            "name": "김창주",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -19873,12 +19873,12 @@
           ],
           "crew": [
             {
-              "name": "김창주",
-              "job": "Director"
-            },
-            {
               "name": "배세영",
               "job": "Writer"
+            },
+            {
+              "name": "김창주",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -19918,13 +19918,13 @@
         "duration": 113,
         "synopsis": "故事靈感源自真實事件，聚焦年輕的 Facebook 工程師法蘭西絲豪根，在關鍵時刻挺身而出，並與《華爾街日報》記者傑夫霍維茲合作，展開一段充滿風險與挑戰的調查歷程。隨著調查逐步深入，兩人最終揭開社群平台長期隱匿的內部運作與爭議，掀起全球關注的重大揭弊行動。",
         "imdb": "",
-        "rt": "55%",
+        "rt": "54%",
         "mc": "51",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 242,
-            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
+            "votes": 244,
+            "lastChanged": "2026-10-20T04:44:17.364382+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -22212,7 +22212,7 @@
             "job": "Director"
           },
           {
-            "name": "Zhu Sujin",
+            "name": "述平",
             "job": "Screenplay"
           },
           {
@@ -22353,7 +22353,7 @@
               "job": "Director"
             },
             {
-              "name": "Zhu Sujin",
+              "name": "述平",
               "job": "Screenplay"
             },
             {
@@ -22515,15 +22515,15 @@
         "crew": [
           {
             "name": "Jack Hazan",
+            "job": "Director"
+          },
+          {
+            "name": "Jack Hazan",
             "job": "Writer"
           },
           {
             "name": "David Mingay",
             "job": "Writer"
-          },
-          {
-            "name": "Jack Hazan",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -22637,15 +22637,15 @@
           "crew": [
             {
               "name": "Jack Hazan",
+              "job": "Director"
+            },
+            {
+              "name": "Jack Hazan",
               "job": "Writer"
             },
             {
               "name": "David Mingay",
               "job": "Writer"
-            },
-            {
-              "name": "Jack Hazan",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -23345,11 +23345,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 10000000,
@@ -23466,11 +23466,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 10000000,
@@ -23583,12 +23583,12 @@
         ],
         "crew": [
           {
-            "name": "Mark Vanselow",
-            "job": "Director"
-          },
-          {
             "name": "Thompson Evans",
             "job": "Writer"
+          },
+          {
+            "name": "Mark Vanselow",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -23686,12 +23686,12 @@
           ],
           "crew": [
             {
-              "name": "Mark Vanselow",
-              "job": "Director"
-            },
-            {
               "name": "Thompson Evans",
               "job": "Writer"
+            },
+            {
+              "name": "Mark Vanselow",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -23871,7 +23871,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/eTcA1UKFhpKIyELXv4hOIUi8rX.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/sSr5oyHoM1alEnIaHJOu5YHZGh8.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/pj9hWVWT7nZATGx6vomZRJIaI5E.jpg",
         "voteAverage": "4.0",
@@ -23880,7 +23880,7 @@
           "驚悚"
         ],
         "duration": 126,
-        "synopsis": "",
+        "synopsis": "托爾的家庭非常不幸，母親過世、父親負債累累又酗酒，叔叔則是愛好暴力的惡霸。托爾深信母親的死是父親和叔叔造成的，為了向他們復仇，他向當地的薩滿蒂安尋求協助。蒂安答應幫助托爾，但條件是他必須成為下一任的薩滿。托爾答應之後不久，父親跟叔叔相繼意外身亡。然而，托爾的決定也為他招來了一連串恐怖事件……",
         "imdb": "6.3",
         "rt": "",
         "mc": "",
@@ -24005,8 +24005,8 @@
             "恐怖",
             "驚悚"
           ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/eTcA1UKFhpKIyELXv4hOIUi8rX.jpg",
+          "synopsis": "托爾的家庭非常不幸，母親過世、父親負債累累又酗酒，叔叔則是愛好暴力的惡霸。托爾深信母親的死是父親和叔叔造成的，為了向他們復仇，他向當地的薩滿蒂安尋求協助。蒂安答應幫助托爾，但條件是他必須成為下一任的薩滿。托爾答應之後不久，父親跟叔叔相繼意外身亡。然而，托爾的決定也為他招來了一連串恐怖事件……",
+          "poster": "https://image.tmdb.org/t/p/w500/sSr5oyHoM1alEnIaHJOu5YHZGh8.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/pj9hWVWT7nZATGx6vomZRJIaI5E.jpg",
           "voteAverage": "4.0",
           "trailerKey": null,
@@ -24824,11 +24824,11 @@
         "crew": [
           {
             "name": "Sung Hsin-Yin",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Sung Hsin-Yin",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -24916,11 +24916,11 @@
           "crew": [
             {
               "name": "Sung Hsin-Yin",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Sung Hsin-Yin",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -25779,16 +25779,16 @@
         ],
         "crew": [
           {
-            "name": "Manuel Bauer",
+            "name": "Philip Delaquis",
+            "job": "Writer"
+          },
+          {
+            "name": "Barbara Miller",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
-          },
-          {
-            "name": "Philip Delaquis",
-            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -25827,16 +25827,16 @@
           ],
           "crew": [
             {
-              "name": "Manuel Bauer",
+              "name": "Philip Delaquis",
+              "job": "Writer"
+            },
+            {
+              "name": "Barbara Miller",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
-            },
-            {
-              "name": "Philip Delaquis",
-              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -29795,11 +29795,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -29922,11 +29922,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
@@ -30866,11 +30866,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -30980,11 +30980,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
