@@ -164,6 +164,17 @@ class TmdbOverrideTests(unittest.TestCase):
             "門當父不對之親家駕到": 1400336,
             "Focker-in-Law": 1400336,
             "樂園的孩子": 1584855,
+            "黑潮": 1630206,
+            "晚窒息": 1433055,
+            "劇場版 「BanG Dream! Ave Mujica prima aurora」": 1614539,
+            "活命水特弓隊": 1148558,
+            "加速世界 INFINITE BURST": 381873,
+            "進擊的鼓手  4K重映_特別場2": 244786,
+            "WHIPLASH_SPECIAL2": 244786,
+            "同級生：10週年重映": 372754,
+            "窗外有藍天 經典數位修復": 11257,
+            "讓子彈飛 全新4K修復版": 51533,
+            "鋼之鍊金術師劇場版": 80518,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):

@@ -399,7 +399,12 @@
     "tmdb_id": 244786,
     "title_zh": "進擊的鼓手",
     "note": "2026-09-30 audit: 進擊的鼓手 4K重映 was manually confirmed as TMDB 244786",
-    "source_titles": ["進擊的鼓手 4K重映", "進擊的鼓手4K重映"]
+    "source_titles": [
+      "進擊的鼓手 4K重映",
+      "進擊的鼓手4K重映",
+      "進擊的鼓手  4K重映_特別場2",
+      "WHIPLASH_SPECIAL2"
+    ]
   },
   "title:Look Back": {
     "tmdb_id": 1244492,
@@ -442,6 +447,7 @@
     "source_titles": [
       "鋼之鍊金術師劇場版 Fullmetal Alchemist: the sacred stars of milos",
       "Fullmetal Alchemist: The Sacred Star of Milos",
+      "鋼之鍊金術師劇場版",
       "鋼之鍊金術師：嘆息之丘的聖星"
     ]
   },
@@ -511,5 +517,60 @@
     "title_zh": "樂園的孩子",
     "note": "2026-10-14 audit: manually confirmed as TMDB 1584855; reject the incorrect Paradise Lost match 1708288",
     "source_titles": ["樂園的孩子"]
+  },
+  "fdcn25375197": {
+    "tmdb_id": 1630206,
+    "title_zh": "黑潮",
+    "note": "2026-10-21 audit: 黑潮 was reconfirmed as TMDB 1630206; reject the incorrect Dead Tide match 1497085",
+    "source_titles": ["黑潮"]
+  },
+  "fscn37566261": {
+    "tmdb_id": 1433055,
+    "title_zh": "晚窒息",
+    "note": "2026-10-21 audit: 晚窒息 was manually confirmed as TMDB 1433055; reject the incorrect Suffocation match 1492383",
+    "source_titles": ["晚窒息"]
+  },
+  "fbjp39335288": {
+    "tmdb_id": 1614539,
+    "title_zh": "劇場版 「BanG Dream! Ave Mujica prima aurora」",
+    "note": "2026-10-21 audit: full Chinese title and current TMDB match were reconfirmed",
+    "source_titles": [
+      "劇場版 「BanG Dream! Ave Mujica prima aurora」",
+      "BANG DREAM! AVE MUJICA PRIMA AURORA BanG Dream! Ave Mujica: prima aurora"
+    ]
+  },
+  "fako33364791": {
+    "tmdb_id": 1148558,
+    "title_zh": "活命水特弓隊",
+    "note": "2026-10-21 audit: current TMDB match was reconfirmed",
+    "source_titles": ["活命水特弓隊", "Amazon Bullseye", "아마존 활명수"]
+  },
+  "fajp75923132": {
+    "tmdb_id": 381873,
+    "title_zh": "加速世界 INFINITE BURST",
+    "note": "2026-10-21 audit: full Chinese title and current TMDB match were reconfirmed",
+    "source_titles": [
+      "加速世界 INFINITE BURST",
+      "加速世界 劇場版",
+      "INFINITE BURST ACCEL WORLD INFINITE BURST"
+    ]
+  },
+  "title:同級生10週年重映": {
+    "tmdb_id": 372754,
+    "title_zh": "同級生 劇場版",
+    "note": "2026-10-21 audit: 10th anniversary rerelease variants were reconfirmed as TMDB 372754",
+    "source_titles": ["同級生：10週年重映", "同級生 十週年重映", "DOUKYUSEI"]
+  },
+  "title:窗外有藍天經典數位修復": {
+    "tmdb_id": 11257,
+    "title_zh": "窗外有藍天",
+    "note": "2026-10-21 audit: restored rerelease title was reconfirmed as TMDB 11257",
+    "source_titles": ["窗外有藍天 經典數位修復"]
+  },
+  "title:讓子彈飛全新4K修復版": {
+    "tmdb_id": 51533,
+    "title_zh": "讓子彈飛",
+    "note": "2026-10-21 audit: 4K restored rerelease title was reconfirmed as TMDB 51533",
+    "source_titles": ["讓子彈飛 全新4K修復版"]
   }
 }
