@@ -1,167 +1,12 @@
 {
-  "generated_at": "2026-10-21T05:51:30.451765+08:00",
+  "generated_at": "2026-10-21T09:40:13.799260+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 84,
+    "now_count": 82,
     "soon_count": 73
   },
   "movies": {
     "now": [
-      {
-        "id": 1507563,
-        "titleZh": "華倫夫人的職業",
-        "titleEn": "National Theatre Live: Mrs. Warren's Profession",
-        "releaseDate": "2026-10-20",
-        "releaseYear": "2025",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-20",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
-        "voteAverage": "",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 114,
-        "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
-        "imdb": "7.7",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 79,
-            "lastChanged": "2026-09-29T05:23:09.468732+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Imelda Staunton",
-            "char": "Mrs Peggy Warren",
-            "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
-          },
-          {
-            "name": "貝希·卡特",
-            "char": "Vivie Warren",
-            "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
-          },
-          {
-            "name": "Kevin Doyle",
-            "char": "Reverend Samuel Gardner",
-            "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
-          },
-          {
-            "name": "Robert Glenister",
-            "char": "Sir George Crofts",
-            "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
-          },
-          {
-            "name": "Reuben Joseph",
-            "char": "Frank Gardner",
-            "photo": null
-          },
-          {
-            "name": "Sid Sigar",
-            "char": "Mr. Praed",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Dominic Cooke",
-            "job": "Director"
-          },
-          {
-            "name": "George Bernard Shaw",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "National Theatre Live: Mrs. Warren's Profession",
-        "platforms": [],
-        "popularity": 2.0587,
-        "imdbId": "tt37511195",
-        "countries": [
-          "United Kingdom"
-        ],
-        "detail": {
-          "duration": 114,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "女兒薇薇畢業於劍橋大學，立志投身法律界，追求獨立自主的人生。然而她隨後卻發現，自己優渥舒適的求學生涯，竟全來自母親在歐洲各地經營八大行業的收入供養；另一方面，華倫夫人對女兒的生活方式與婚姻選擇亦百般干涉，兩人的矛盾在重逢後一觸即發。",
-          "poster": "https://image.tmdb.org/t/p/w500/y7KIqj9tTB3b1kmLH2DVprsiag.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/uGiMhHMEU9m5pdkfeQi9qnD6Cvr.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt37511195",
-          "countries": [
-            "United Kingdom"
-          ],
-          "cast": [
-            {
-              "name": "Imelda Staunton",
-              "char": "Mrs Peggy Warren",
-              "photo": "https://image.tmdb.org/t/p/w500/tABRYOHUQeaUCAqrelJV5ZHjl1W.jpg"
-            },
-            {
-              "name": "貝希·卡特",
-              "char": "Vivie Warren",
-              "photo": "https://image.tmdb.org/t/p/w500/rMzm3hoFQIisFFXOhsDvHI2Ka9z.jpg"
-            },
-            {
-              "name": "Kevin Doyle",
-              "char": "Reverend Samuel Gardner",
-              "photo": "https://image.tmdb.org/t/p/w500/qAOTfour2vXXpQxlMK4sSKISb4F.jpg"
-            },
-            {
-              "name": "Robert Glenister",
-              "char": "Sir George Crofts",
-              "photo": "https://image.tmdb.org/t/p/w500/18oHwzcExUfXnDLyDWQEtmjPo1V.jpg"
-            },
-            {
-              "name": "Reuben Joseph",
-              "char": "Frank Gardner",
-              "photo": null
-            },
-            {
-              "name": "Sid Sigar",
-              "char": "Mr. Praed",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Dominic Cooke",
-              "job": "Director"
-            },
-            {
-              "name": "George Bernard Shaw",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "National Theatre Live: Mrs. Warren's Profession",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1507563?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 605320,
         "titleZh": "比如父子",
@@ -249,7 +94,7 @@
         "origLang": "zh",
         "origTitle": "比如父子",
         "platforms": [],
-        "popularity": 2.0983,
+        "popularity": 1.9993,
         "imdbId": "tt29560385",
         "countries": [
           "China",
@@ -720,7 +565,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 3.0154,
+        "popularity": 2.8366,
         "imdbId": "tt28766949",
         "countries": [
           "Thailand"
@@ -829,6 +674,293 @@
           ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1167366?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 823,
+        "titleZh": "人狼",
+        "titleEn": "人狼 JIN-ROH",
+        "releaseDate": "2026-10-16",
+        "releaseYear": "1999",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-16",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/nC1PUOAWUirtCdnBJ0W34arU18d.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/6HtIoLN8VQ5IQQo9VU9HmM4jSFc.jpg",
+        "voteAverage": "7.4",
+        "genre": [
+          "動畫",
+          "驚悚",
+          "科幻"
+        ],
+        "duration": 102,
+        "synopsis": "日本首都東京，由於強硬的經濟政策導致失業率及兇殘犯罪急速增加。政府為了徹底控制反政府勢力，於是在首都圈內設立了治安部隊。這支通稱「首都警」的治安部隊，以極快的速度擴展著其勢力範圍。反政府勢力在事後也因為法律的修正而被歸類為非法團體，因而被迫轉至地下發展，這些地下組織與首都警在城內不斷地持續著抗爭與戰鬥。但是一般民眾卻對仗著強大火力與反政府組織對抗的「首都警」感到不能接受，甚至對他們發出譴責。「首都警」也因此變得越來越孤立......。",
+        "imdb": "7.3",
+        "rt": "52%",
+        "mc": "59",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 21471,
+            "lastChanged": "2026-10-21T09:40:13.799260+08:00"
+          },
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-21T09:40:13.799260+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 13,
+            "lastChanged": "2026-10-21T09:40:13.799260+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "藤木義勝",
+            "char": "Kazuki Fuse (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/iRPQnuXhAaMiRgQg72Jmh2FodAA.jpg"
+          },
+          {
+            "name": "武藤寿美",
+            "char": "Kei Amamiya (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ehU6qAHket9NoKR9FW61uAdJpzV.jpg"
+          },
+          {
+            "name": "木下浩之",
+            "char": "Atsushi Henmi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/g4hGwfF8XWWQLa8tCxZuWjiNnKa.jpg"
+          },
+          {
+            "name": "廣田行生",
+            "char": "Bunmei Muroto (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
+          },
+          {
+            "name": "吉田幸紘",
+            "char": "Hajime Handa (voice)",
+            "photo": null
+          },
+          {
+            "name": "堀部隆一",
+            "char": "Shiro Tatsumi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/wCZzsH2YT7TaENzd1JldkWBx1nF.jpg"
+          },
+          {
+            "name": "仙台惠理",
+            "char": "Agawa Nanao (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/z9IobfwAWI51Ebwgnwe2rd7inTG.jpg"
+          },
+          {
+            "name": "中川謙二",
+            "char": "Isao Aniya (voice)",
+            "photo": null
+          },
+          {
+            "name": "大木民夫",
+            "char": "Capital Police Member (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ixEU7F1vWpcm0MGqc04xXNGLpHz.jpg"
+          },
+          {
+            "name": "古本新乃輔",
+            "char": "Additional Voices (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/rTdLYY05nBqQlZBR7MV8HkPtOga.jpg"
+          },
+          {
+            "name": "松尾銀三",
+            "char": "Additional Voices (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/zKogiynSZjHiJY5DL3jqfEmejSJ.jpg"
+          },
+          {
+            "name": "松山鷹志",
+            "char": "Additional Voices (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/fBufEEFKgnEirPWJoGOpnJsZUjn.jpg"
+          },
+          {
+            "name": "幹本雄之",
+            "char": "Additional Voices (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/1Bbmr0rf1QMaw8Lhh9EXOqDL0Ng.jpg"
+          },
+          {
+            "name": "青木勇二",
+            "char": "Additional Voices (voice)",
+            "photo": null
+          },
+          {
+            "name": "長克巳",
+            "char": "Additional Voices (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/c5jrRqEne6k5qXrHtDeeVO5tGp4.jpg"
+          },
+          {
+            "name": "岸田修治",
+            "char": "Additional Voices (voice)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "沖浦啓之",
+            "job": "Director"
+          },
+          {
+            "name": "押井守",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 94072,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "人狼 JIN-ROH",
+        "platforms": [
+          {
+            "name": "Crunchyroll",
+            "logo": "/uFL3c4Cq8M6WoLymlC5Y8bmGytV.png"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+          }
+        ],
+        "popularity": 5.816,
+        "imdbId": "tt0193253",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 102,
+          "genres": [
+            "動畫",
+            "驚悚",
+            "科幻"
+          ],
+          "synopsis": "日本首都東京，由於強硬的經濟政策導致失業率及兇殘犯罪急速增加。政府為了徹底控制反政府勢力，於是在首都圈內設立了治安部隊。這支通稱「首都警」的治安部隊，以極快的速度擴展著其勢力範圍。反政府勢力在事後也因為法律的修正而被歸類為非法團體，因而被迫轉至地下發展，這些地下組織與首都警在城內不斷地持續著抗爭與戰鬥。但是一般民眾卻對仗著強大火力與反政府組織對抗的「首都警」感到不能接受，甚至對他們發出譴責。「首都警」也因此變得越來越孤立......。",
+          "poster": "https://image.tmdb.org/t/p/w500/nC1PUOAWUirtCdnBJ0W34arU18d.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/6HtIoLN8VQ5IQQo9VU9HmM4jSFc.jpg",
+          "voteAverage": "7.4",
+          "trailerKey": null,
+          "imdbId": "tt0193253",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "藤木義勝",
+              "char": "Kazuki Fuse (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/iRPQnuXhAaMiRgQg72Jmh2FodAA.jpg"
+            },
+            {
+              "name": "武藤寿美",
+              "char": "Kei Amamiya (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ehU6qAHket9NoKR9FW61uAdJpzV.jpg"
+            },
+            {
+              "name": "木下浩之",
+              "char": "Atsushi Henmi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/g4hGwfF8XWWQLa8tCxZuWjiNnKa.jpg"
+            },
+            {
+              "name": "廣田行生",
+              "char": "Bunmei Muroto (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/hNKAznrsBYoY7RzDu3un8asgzkD.jpg"
+            },
+            {
+              "name": "吉田幸紘",
+              "char": "Hajime Handa (voice)",
+              "photo": null
+            },
+            {
+              "name": "堀部隆一",
+              "char": "Shiro Tatsumi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/wCZzsH2YT7TaENzd1JldkWBx1nF.jpg"
+            },
+            {
+              "name": "仙台惠理",
+              "char": "Agawa Nanao (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/z9IobfwAWI51Ebwgnwe2rd7inTG.jpg"
+            },
+            {
+              "name": "中川謙二",
+              "char": "Isao Aniya (voice)",
+              "photo": null
+            },
+            {
+              "name": "大木民夫",
+              "char": "Capital Police Member (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ixEU7F1vWpcm0MGqc04xXNGLpHz.jpg"
+            },
+            {
+              "name": "古本新乃輔",
+              "char": "Additional Voices (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/rTdLYY05nBqQlZBR7MV8HkPtOga.jpg"
+            },
+            {
+              "name": "松尾銀三",
+              "char": "Additional Voices (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/zKogiynSZjHiJY5DL3jqfEmejSJ.jpg"
+            },
+            {
+              "name": "松山鷹志",
+              "char": "Additional Voices (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/fBufEEFKgnEirPWJoGOpnJsZUjn.jpg"
+            },
+            {
+              "name": "幹本雄之",
+              "char": "Additional Voices (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/1Bbmr0rf1QMaw8Lhh9EXOqDL0Ng.jpg"
+            },
+            {
+              "name": "青木勇二",
+              "char": "Additional Voices (voice)",
+              "photo": null
+            },
+            {
+              "name": "長克巳",
+              "char": "Additional Voices (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/c5jrRqEne6k5qXrHtDeeVO5tGp4.jpg"
+            },
+            {
+              "name": "岸田修治",
+              "char": "Additional Voices (voice)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "沖浦啓之",
+              "job": "Director"
+            },
+            {
+              "name": "押井守",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 94072,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "人狼 JIN-ROH",
+          "platforms": [
+            {
+              "name": "Crunchyroll",
+              "logo": "/uFL3c4Cq8M6WoLymlC5Y8bmGytV.png"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/823?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -1593,7 +1725,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
         "voteAverage": "6.3",
         "genre": [
           "動作",
@@ -1738,7 +1870,7 @@
           ],
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/5H5YphHsQmkQhrw13Wv1whCZKtN.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
           "voteAverage": "6.3",
           "trailerKey": "vR-RQWBeraY",
           "imdbId": "tt27419420",
@@ -1927,7 +2059,7 @@
         "origLang": "en",
         "origTitle": "Peter Hujar's Day",
         "platforms": [],
-        "popularity": 4.8883,
+        "popularity": 3.9675,
         "imdbId": "tt34250044",
         "countries": [
           "United States of America",
@@ -2005,7 +2137,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/trYFD8GsLSyZdgiuoAZy9zbpppw.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hBoY4pwszgeBEXLZ53WDTyLIMhr.jpg",
         "voteAverage": "6.6",
         "genre": [
           "驚悚"
@@ -2127,7 +2259,7 @@
           ],
           "synopsis": "年輕潛水員在加州海岸尋找亡父遺骸時意外遭受襲擊，更被一頭長達80英呎、重達60噸的巨大抹香鯨活生生吞下肚！在氧氣僅存一小時的極端絕境中，他必須在巨鯨腹中展開驚心動魄的逃生倒數。",
           "poster": "https://image.tmdb.org/t/p/w500/trYFD8GsLSyZdgiuoAZy9zbpppw.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/hBoY4pwszgeBEXLZ53WDTyLIMhr.jpg",
           "voteAverage": "6.6",
           "trailerKey": "zii5_IrdK0o",
           "imdbId": "tt28535715",
@@ -2356,12 +2488,12 @@
           }
         ],
         "budget": 0,
-        "revenue": 439901,
+        "revenue": 475135,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Virginia Woolf's Night & Day",
         "platforms": [],
-        "popularity": 3.6756,
+        "popularity": 3.6476,
         "imdbId": "tt27802226",
         "countries": [
           "United Kingdom",
@@ -2479,7 +2611,7 @@
             }
           ],
           "budget": 0,
-          "revenue": 439901,
+          "revenue": 475135,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Virginia Woolf's Night & Day",
@@ -3255,7 +3387,7 @@
         "origLang": "ja",
         "origTitle": "BanG Dream! Ave Mujica prima aurora",
         "platforms": [],
-        "popularity": 2.8042,
+        "popularity": 2.4895,
         "imdbId": "tt39335288",
         "countries": [
           "Japan"
@@ -3325,107 +3457,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1614539?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1489932,
-        "titleZh": "Always Lalisa",
-        "titleEn": "Always Lalisa",
-        "releaseDate": "2026-10-12",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-12",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/pOZnrUX1UMblLiqq9ZtZUde3cQV.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
-        "voteAverage": "7.0",
-        "genre": [
-          "紀錄",
-          "音樂"
-        ],
-        "duration": 98,
-        "synopsis": "",
-        "imdb": "7.6",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 229,
-            "lastChanged": "2026-10-16T12:58:19.465092+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "ลิซ่า",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/qI8vV0rh9XWC7FObzEGDRSg4PBN.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Sue Kim",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Always Lalisa",
-        "platforms": [],
-        "popularity": 9.9235,
-        "imdbId": "tt37108970",
-        "countries": [
-          "United States of America",
-          "Singapore"
-        ],
-        "detail": {
-          "duration": 98,
-          "genres": [
-            "紀錄",
-            "音樂"
-          ],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/pOZnrUX1UMblLiqq9ZtZUde3cQV.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/wJwTuwy1ZajIA6ivGjoe0Ee08XN.jpg",
-          "voteAverage": "7.0",
-          "trailerKey": null,
-          "imdbId": "tt37108970",
-          "countries": [
-            "United States of America",
-            "Singapore"
-          ],
-          "cast": [
-            {
-              "name": "ลิซ่า",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/qI8vV0rh9XWC7FObzEGDRSg4PBN.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Sue Kim",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Always Lalisa",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1489932?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -3502,7 +3533,7 @@
         "origLang": "ja",
         "origTitle": "ヨルシカ LIVE「盗作」",
         "platforms": [],
-        "popularity": 2.1222,
+        "popularity": 2.0215,
         "imdbId": "tt43723335",
         "countries": [],
         "detail": {
@@ -4284,7 +4315,7 @@
         "origLang": "ar",
         "origTitle": "نسور الجمهورية",
         "platforms": [],
-        "popularity": 6.6257,
+        "popularity": 7.0675,
         "imdbId": "tt30781967",
         "countries": [
           "Sweden",
@@ -5257,18 +5288,18 @@
         "duration": 93,
         "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
         "imdb": "",
-        "rt": "17%",
-        "mc": "39",
+        "rt": "18%",
+        "mc": "38",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 87,
-            "lastChanged": "2026-10-19T05:02:37.094990+08:00"
+            "votes": 89,
+            "lastChanged": "2026-10-21T09:40:13.799260+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 13,
-            "lastChanged": "2026-10-10T12:27:29.264611+08:00"
+            "votes": 14,
+            "lastChanged": "2026-10-21T09:40:13.799260+08:00"
           }
         },
         "trailerKey": "z5vaaaJBGXw",
@@ -6265,7 +6296,7 @@
         "origLang": "tl",
         "origTitle": "SB19 Wakas at Simula: The Trilogy Concert Finale",
         "platforms": [],
-        "popularity": 1.5873,
+        "popularity": 1.6664,
         "imdbId": "tt44932755",
         "countries": [],
         "detail": {
@@ -6455,11 +6486,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -6580,11 +6611,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -6929,7 +6960,7 @@
         "origLang": "en",
         "origTitle": "The Gentleman Thief",
         "platforms": [],
-        "popularity": 5.3191,
+        "popularity": 5.5632,
         "imdbId": "tt36415524",
         "countries": [
           "United States of America"
@@ -9699,12 +9730,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 82000000,
@@ -9782,12 +9813,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 82000000,
@@ -10211,12 +10242,12 @@
           }
         ],
         "budget": 0,
-        "revenue": 6432956,
+        "revenue": 18029340,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Runner",
         "platforms": [],
-        "popularity": 207.7833,
+        "popularity": 185.9514,
         "imdbId": "tt31349844",
         "countries": [
           "United States of America",
@@ -10337,7 +10368,7 @@
             }
           ],
           "budget": 0,
-          "revenue": 6432956,
+          "revenue": 18029340,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Runner",
@@ -11340,274 +11371,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1157322,
-        "titleZh": "變形卡夫卡",
-        "titleEn": "Franz",
-        "releaseDate": "2026-09-18",
-        "releaseYear": "2025",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-18",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/43GEko92RKLiuaE8vbXadNFKb3s.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/nXqRGRhFxa3v5rJsJUApYdKdiKu.jpg",
-        "voteAverage": "6.2",
-        "genre": [
-          "劇情",
-          "歷史"
-        ],
-        "duration": 127,
-        "synopsis": "年輕的卡夫卡，白天是保險公司職員，在保守的社會、動盪的經濟與戰爭陰影步步逼近的時代，他一邊應付工作與家庭，一邊努力替自己的文字留下一席之地。從19世紀末的布拉格出發，沿著卡夫卡短暫的人生，追尋他如何一步步成為現代文學巨人，重新認識這位早在一百年前就把「厭世」書寫成藝術的大文豪。",
-        "imdb": "",
-        "rt": "75%",
-        "mc": "64",
-        "ratingMeta": {
-          "rt": {
-            "source": "mdblist",
-            "votes": 63,
-            "lastChanged": "2026-10-20T04:44:17.364382+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 9,
-            "lastChanged": "2026-08-30T19:20:34.481628+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Idan Weiss",
-            "char": "Franz Kafka",
-            "photo": "https://image.tmdb.org/t/p/w500/sG1UIfeNSYS1yhlRhbmxXgzYc7V.jpg"
-          },
-          {
-            "name": "皮特·庫什",
-            "char": "Hermann Kafka",
-            "photo": "https://image.tmdb.org/t/p/w500/1RQBjJtHiKb6l8S1qp2purktKcg.jpg"
-          },
-          {
-            "name": "Katharina Stark",
-            "char": "Ottla Kafka",
-            "photo": "https://image.tmdb.org/t/p/w500/3cwKbMriYdDDhPwSQTXTdMhG6p6.jpg"
-          },
-          {
-            "name": "Sebastian Schwarz",
-            "char": "Max Brod",
-            "photo": "https://image.tmdb.org/t/p/w500/mqj2N2CHlYJDCNIaXAxE1dqUTih.jpg"
-          },
-          {
-            "name": "Carol Schuler",
-            "char": "Felicie Bauer",
-            "photo": "https://image.tmdb.org/t/p/w500/zUTBaFqe8NK8lAAHqSyc4ZEzkfv.jpg"
-          },
-          {
-            "name": "Jenovéfa Boková",
-            "char": "Milena Jesenska",
-            "photo": "https://image.tmdb.org/t/p/w500/nBswYnMu0nq0sIqlEoVY5fo2THG.jpg"
-          },
-          {
-            "name": "Ivan Trojan",
-            "char": "Siegried Löwy",
-            "photo": "https://image.tmdb.org/t/p/w500/suQi88Js4N32PnTdE4e1VJg2J6l.jpg"
-          },
-          {
-            "name": "Sandra Korzeniak",
-            "char": "Julie Kafka",
-            "photo": "https://image.tmdb.org/t/p/w500/ahWonv1FEhmJTDBbxcar0zf2J8W.jpg"
-          },
-          {
-            "name": "Aaron Friesz",
-            "char": "Oskar Baum",
-            "photo": "https://image.tmdb.org/t/p/w500/orzQmh8zc2D2rEclvEMyjsuuRp3.jpg"
-          },
-          {
-            "name": "Daniel Dongres",
-            "char": "young Franz",
-            "photo": null
-          },
-          {
-            "name": "Josef Trojan",
-            "char": "Icchak Löwy",
-            "photo": "https://image.tmdb.org/t/p/w500/iqYYVkkEZlVSWFWkKMsPRX9Q2Ml.jpg"
-          },
-          {
-            "name": "Vladimír Javorský",
-            "char": "ředitel pojišťovny",
-            "photo": "https://image.tmdb.org/t/p/w500/i8o9nZHcRiwK9RVOKEMmaM8RILG.jpg"
-          },
-          {
-            "name": "Gesa Schermuly",
-            "char": "Grete Bloch",
-            "photo": "https://image.tmdb.org/t/p/w500/7sLdFQ9yLpegQaZzc1Eg1yIWMI.jpg"
-          },
-          {
-            "name": "Emma Smetana",
-            "char": "průvodkyně v muzeu Franze Kafky",
-            "photo": "https://image.tmdb.org/t/p/w500/bvWvSXy0iBs3oAGKFZ2mq0ldkKC.jpg"
-          },
-          {
-            "name": "Karel Dobrý",
-            "char": "Pfohl",
-            "photo": "https://image.tmdb.org/t/p/w500/mcvTqsqIPTVZiT4saALPljNUQ5B.jpg"
-          },
-          {
-            "name": "Ondřej Malý",
-            "char": "manažer pojišťovny",
-            "photo": "https://image.tmdb.org/t/p/w500/3da0gaKcJhxVf05Lc6bRjnXvvaT.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Marek Epstein",
-            "job": "Writer"
-          },
-          {
-            "name": "Agnieszka Holland",
-            "job": "Director"
-          }
-        ],
-        "budget": 6500000,
-        "revenue": 721048,
-        "status": "Released",
-        "origLang": "cs",
-        "origTitle": "Franz",
-        "platforms": [],
-        "popularity": 4.4883,
-        "imdbId": "tt17070412",
-        "countries": [
-          "Czech Republic",
-          "Poland",
-          "Germany",
-          "France"
-        ],
-        "detail": {
-          "duration": 127,
-          "genres": [
-            "劇情",
-            "歷史"
-          ],
-          "synopsis": "年輕的卡夫卡，白天是保險公司職員，在保守的社會、動盪的經濟與戰爭陰影步步逼近的時代，他一邊應付工作與家庭，一邊努力替自己的文字留下一席之地。從19世紀末的布拉格出發，沿著卡夫卡短暫的人生，追尋他如何一步步成為現代文學巨人，重新認識這位早在一百年前就把「厭世」書寫成藝術的大文豪。",
-          "poster": "https://image.tmdb.org/t/p/w500/43GEko92RKLiuaE8vbXadNFKb3s.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/nXqRGRhFxa3v5rJsJUApYdKdiKu.jpg",
-          "voteAverage": "6.2",
-          "trailerKey": null,
-          "imdbId": "tt17070412",
-          "countries": [
-            "Czech Republic",
-            "Poland",
-            "Germany",
-            "France"
-          ],
-          "cast": [
-            {
-              "name": "Idan Weiss",
-              "char": "Franz Kafka",
-              "photo": "https://image.tmdb.org/t/p/w500/sG1UIfeNSYS1yhlRhbmxXgzYc7V.jpg"
-            },
-            {
-              "name": "皮特·庫什",
-              "char": "Hermann Kafka",
-              "photo": "https://image.tmdb.org/t/p/w500/1RQBjJtHiKb6l8S1qp2purktKcg.jpg"
-            },
-            {
-              "name": "Katharina Stark",
-              "char": "Ottla Kafka",
-              "photo": "https://image.tmdb.org/t/p/w500/3cwKbMriYdDDhPwSQTXTdMhG6p6.jpg"
-            },
-            {
-              "name": "Sebastian Schwarz",
-              "char": "Max Brod",
-              "photo": "https://image.tmdb.org/t/p/w500/mqj2N2CHlYJDCNIaXAxE1dqUTih.jpg"
-            },
-            {
-              "name": "Carol Schuler",
-              "char": "Felicie Bauer",
-              "photo": "https://image.tmdb.org/t/p/w500/zUTBaFqe8NK8lAAHqSyc4ZEzkfv.jpg"
-            },
-            {
-              "name": "Jenovéfa Boková",
-              "char": "Milena Jesenska",
-              "photo": "https://image.tmdb.org/t/p/w500/nBswYnMu0nq0sIqlEoVY5fo2THG.jpg"
-            },
-            {
-              "name": "Ivan Trojan",
-              "char": "Siegried Löwy",
-              "photo": "https://image.tmdb.org/t/p/w500/suQi88Js4N32PnTdE4e1VJg2J6l.jpg"
-            },
-            {
-              "name": "Sandra Korzeniak",
-              "char": "Julie Kafka",
-              "photo": "https://image.tmdb.org/t/p/w500/ahWonv1FEhmJTDBbxcar0zf2J8W.jpg"
-            },
-            {
-              "name": "Aaron Friesz",
-              "char": "Oskar Baum",
-              "photo": "https://image.tmdb.org/t/p/w500/orzQmh8zc2D2rEclvEMyjsuuRp3.jpg"
-            },
-            {
-              "name": "Daniel Dongres",
-              "char": "young Franz",
-              "photo": null
-            },
-            {
-              "name": "Josef Trojan",
-              "char": "Icchak Löwy",
-              "photo": "https://image.tmdb.org/t/p/w500/iqYYVkkEZlVSWFWkKMsPRX9Q2Ml.jpg"
-            },
-            {
-              "name": "Vladimír Javorský",
-              "char": "ředitel pojišťovny",
-              "photo": "https://image.tmdb.org/t/p/w500/i8o9nZHcRiwK9RVOKEMmaM8RILG.jpg"
-            },
-            {
-              "name": "Gesa Schermuly",
-              "char": "Grete Bloch",
-              "photo": "https://image.tmdb.org/t/p/w500/7sLdFQ9yLpegQaZzc1Eg1yIWMI.jpg"
-            },
-            {
-              "name": "Emma Smetana",
-              "char": "průvodkyně v muzeu Franze Kafky",
-              "photo": "https://image.tmdb.org/t/p/w500/bvWvSXy0iBs3oAGKFZ2mq0ldkKC.jpg"
-            },
-            {
-              "name": "Karel Dobrý",
-              "char": "Pfohl",
-              "photo": "https://image.tmdb.org/t/p/w500/mcvTqsqIPTVZiT4saALPljNUQ5B.jpg"
-            },
-            {
-              "name": "Ondřej Malý",
-              "char": "manažer pojišťovny",
-              "photo": "https://image.tmdb.org/t/p/w500/3da0gaKcJhxVf05Lc6bRjnXvvaT.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Marek Epstein",
-              "job": "Writer"
-            },
-            {
-              "name": "Agnieszka Holland",
-              "job": "Director"
-            }
-          ],
-          "budget": 6500000,
-          "revenue": 721048,
-          "status": "Released",
-          "origLang": "cs",
-          "origTitle": "Franz",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1157322?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1174128,
         "titleZh": "成人童話",
         "titleEn": "동화지만 청불입니다",
@@ -12504,7 +12267,7 @@
         "origLang": "en",
         "origTitle": "Scotty",
         "platforms": [],
-        "popularity": 1.1841,
+        "popularity": 1.2917,
         "imdbId": "tt31549553",
         "countries": [
           "Germany"
@@ -13420,7 +13183,7 @@
         "origLang": "ja",
         "origTitle": "台風クラブ",
         "platforms": [],
-        "popularity": 3.6856,
+        "popularity": 3.9312,
         "imdbId": "tt0088222",
         "countries": [
           "Japan"
@@ -14282,7 +14045,7 @@
         "origLang": "ko",
         "origTitle": "호프",
         "platforms": [],
-        "popularity": 385.9445,
+        "popularity": 408.3035,
         "imdbId": "tt27369017",
         "countries": [
           "South Korea"
@@ -14495,7 +14258,7 @@
         "origLang": "en",
         "origTitle": "The Invite",
         "platforms": [],
-        "popularity": 27.939,
+        "popularity": 28.9807,
         "imdbId": "tt14173636",
         "countries": [
           "United States of America"
@@ -14681,7 +14444,7 @@
         "origLang": "zh",
         "origTitle": "粽邪4：坤蒂拉娜",
         "platforms": [],
-        "popularity": 8.4006,
+        "popularity": 7.0618,
         "imdbId": "tt38633224",
         "countries": [
           "Taiwan"
@@ -15613,283 +15376,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1154538,
-        "titleZh": "超拖樂團之我要幹大事啦！",
-        "titleEn": "Nirvanna the Band the Show the Movie",
-        "releaseDate": "2026-08-14",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-08-14",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/qC8bvcL2RDQdWNFpXbDn8YH2T1p.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/hs4QXgPuKJ4PPwYBWNTod61RKiA.jpg",
-        "voteAverage": "7.6",
-        "genre": [
-          "喜劇",
-          "科幻",
-          "冒險"
-        ],
-        "duration": 95,
-        "synopsis": "「超拖」樂團雙人組有夠會拖，兩個懷著成名夢的好友，為了登上表演舞台，每天在破公寓談鋼琴練肖話，還找紀錄片團隊貼身側拍。只是十七年過去，少年變大叔，卻連場地預約電話都還沒打。他們以為只要幹場大事，例如跳下電視塔，成為話題，自然會被注意到。當計劃再度挫屎，習慣言聽計從的那個開始意識到，多年搭檔可能才是拖垮人生的雷包，於是打算拆夥落跑。誰知竟把箱型車開成時光機，陰錯陽差將所有人帶回十七年前的那一天！",
-        "imdb": "7.7",
-        "rt": "95%",
-        "mc": "80",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 13539,
-            "lastChanged": "2026-10-01T04:20:04.862375+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 127,
-            "lastChanged": "2026-08-20T10:05:08.444659+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 26,
-            "lastChanged": "2026-09-14T13:24:26.771481+08:00"
-          }
-        },
-        "trailerKey": "gVI8kzhK-Lo",
-        "cast": [
-          {
-            "name": "Matt Johnson",
-            "char": "Matt",
-            "photo": "https://image.tmdb.org/t/p/w500/3COKJ3lpoXhxgRELso9kmwDH29b.jpg"
-          },
-          {
-            "name": "Jay McCarrol",
-            "char": "Jay",
-            "photo": "https://image.tmdb.org/t/p/w500/g7bVGNlRXyiDCNeAnP9fF6K4gb3.jpg"
-          },
-          {
-            "name": "Ben Petrie",
-            "char": "Ben",
-            "photo": "https://image.tmdb.org/t/p/w500/r2mrAH6U7lh9hQspa9AkREQcwdH.jpg"
-          },
-          {
-            "name": "伊森恩",
-            "char": "Ethan",
-            "photo": "https://image.tmdb.org/t/p/w500/v74YKqKy78nDa4zTxgA7HfK617h.jpg"
-          },
-          {
-            "name": "Michael Scott",
-            "char": "Michael",
-            "photo": "https://image.tmdb.org/t/p/w500/4X1IzCgHn3lak6BBAQM1d23ck2h.jpg"
-          },
-          {
-            "name": "Jared Raab",
-            "char": "Jared",
-            "photo": "https://image.tmdb.org/t/p/w500/69wfjnsVyAsu9jdPzZekz2trU81.jpg"
-          },
-          {
-            "name": "Reid Janisse",
-            "char": "Reid",
-            "photo": "https://image.tmdb.org/t/p/w500/bRDCgmKfPbeteplKHJBvACV5Fx8.jpg"
-          },
-          {
-            "name": "Steve Hamelin",
-            "char": "Steve",
-            "photo": "https://image.tmdb.org/t/p/w500/rHnNHIyf3yIepS0LQoExttOSKVF.jpg"
-          },
-          {
-            "name": "Luke Lalonde",
-            "char": "Luke",
-            "photo": "https://image.tmdb.org/t/p/w500/8VxY52KSfUL7kVFEV8S9CSTiUCL.jpg"
-          },
-          {
-            "name": "Maddy Wilde",
-            "char": "Maddy",
-            "photo": "https://image.tmdb.org/t/p/w500/tBIzgnuOephyQdPpR4nwg52Bqme.jpg"
-          },
-          {
-            "name": "Mitch DeRosier",
-            "char": "Mitch",
-            "photo": "https://image.tmdb.org/t/p/w500/7dco5620Db6Mj6LRdfPdRp4f37f.jpg"
-          },
-          {
-            "name": "Luca Tarantini",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/vbiZorjGMFv3oo8adLb6VHXWB0w.jpg"
-          },
-          {
-            "name": "Nikolay Michaylov",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/mQVsO8vt9BVoYl7btBxsSu9p3RZ.jpg"
-          },
-          {
-            "name": "Ayush Joy",
-            "char": "Ayush",
-            "photo": null
-          },
-          {
-            "name": "Isabella Scovariello",
-            "char": "Isabella",
-            "photo": null
-          },
-          {
-            "name": "Ethan Keyes",
-            "char": "Ethan",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Matt Johnson",
-            "job": "Director"
-          },
-          {
-            "name": "Matt Johnson",
-            "job": "Writer"
-          },
-          {
-            "name": "Jay McCarrol",
-            "job": "Writer"
-          }
-        ],
-        "budget": 1200000,
-        "revenue": 5191174,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Nirvanna the Band the Show the Movie",
-        "platforms": [],
-        "popularity": 10.9702,
-        "imdbId": "tt35522483",
-        "countries": [
-          "Canada"
-        ],
-        "detail": {
-          "duration": 95,
-          "genres": [
-            "喜劇",
-            "科幻",
-            "冒險"
-          ],
-          "synopsis": "「超拖」樂團雙人組有夠會拖，兩個懷著成名夢的好友，為了登上表演舞台，每天在破公寓談鋼琴練肖話，還找紀錄片團隊貼身側拍。只是十七年過去，少年變大叔，卻連場地預約電話都還沒打。他們以為只要幹場大事，例如跳下電視塔，成為話題，自然會被注意到。當計劃再度挫屎，習慣言聽計從的那個開始意識到，多年搭檔可能才是拖垮人生的雷包，於是打算拆夥落跑。誰知竟把箱型車開成時光機，陰錯陽差將所有人帶回十七年前的那一天！",
-          "poster": "https://image.tmdb.org/t/p/w500/qC8bvcL2RDQdWNFpXbDn8YH2T1p.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/hs4QXgPuKJ4PPwYBWNTod61RKiA.jpg",
-          "voteAverage": "7.6",
-          "trailerKey": "gVI8kzhK-Lo",
-          "imdbId": "tt35522483",
-          "countries": [
-            "Canada"
-          ],
-          "cast": [
-            {
-              "name": "Matt Johnson",
-              "char": "Matt",
-              "photo": "https://image.tmdb.org/t/p/w500/3COKJ3lpoXhxgRELso9kmwDH29b.jpg"
-            },
-            {
-              "name": "Jay McCarrol",
-              "char": "Jay",
-              "photo": "https://image.tmdb.org/t/p/w500/g7bVGNlRXyiDCNeAnP9fF6K4gb3.jpg"
-            },
-            {
-              "name": "Ben Petrie",
-              "char": "Ben",
-              "photo": "https://image.tmdb.org/t/p/w500/r2mrAH6U7lh9hQspa9AkREQcwdH.jpg"
-            },
-            {
-              "name": "伊森恩",
-              "char": "Ethan",
-              "photo": "https://image.tmdb.org/t/p/w500/v74YKqKy78nDa4zTxgA7HfK617h.jpg"
-            },
-            {
-              "name": "Michael Scott",
-              "char": "Michael",
-              "photo": "https://image.tmdb.org/t/p/w500/4X1IzCgHn3lak6BBAQM1d23ck2h.jpg"
-            },
-            {
-              "name": "Jared Raab",
-              "char": "Jared",
-              "photo": "https://image.tmdb.org/t/p/w500/69wfjnsVyAsu9jdPzZekz2trU81.jpg"
-            },
-            {
-              "name": "Reid Janisse",
-              "char": "Reid",
-              "photo": "https://image.tmdb.org/t/p/w500/bRDCgmKfPbeteplKHJBvACV5Fx8.jpg"
-            },
-            {
-              "name": "Steve Hamelin",
-              "char": "Steve",
-              "photo": "https://image.tmdb.org/t/p/w500/rHnNHIyf3yIepS0LQoExttOSKVF.jpg"
-            },
-            {
-              "name": "Luke Lalonde",
-              "char": "Luke",
-              "photo": "https://image.tmdb.org/t/p/w500/8VxY52KSfUL7kVFEV8S9CSTiUCL.jpg"
-            },
-            {
-              "name": "Maddy Wilde",
-              "char": "Maddy",
-              "photo": "https://image.tmdb.org/t/p/w500/tBIzgnuOephyQdPpR4nwg52Bqme.jpg"
-            },
-            {
-              "name": "Mitch DeRosier",
-              "char": "Mitch",
-              "photo": "https://image.tmdb.org/t/p/w500/7dco5620Db6Mj6LRdfPdRp4f37f.jpg"
-            },
-            {
-              "name": "Luca Tarantini",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/vbiZorjGMFv3oo8adLb6VHXWB0w.jpg"
-            },
-            {
-              "name": "Nikolay Michaylov",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/mQVsO8vt9BVoYl7btBxsSu9p3RZ.jpg"
-            },
-            {
-              "name": "Ayush Joy",
-              "char": "Ayush",
-              "photo": null
-            },
-            {
-              "name": "Isabella Scovariello",
-              "char": "Isabella",
-              "photo": null
-            },
-            {
-              "name": "Ethan Keyes",
-              "char": "Ethan",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Matt Johnson",
-              "job": "Director"
-            },
-            {
-              "name": "Matt Johnson",
-              "job": "Writer"
-            },
-            {
-              "name": "Jay McCarrol",
-              "job": "Writer"
-            }
-          ],
-          "budget": 1200000,
-          "revenue": 5191174,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Nirvanna the Band the Show the Movie",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1154538?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1185806,
         "titleZh": "汪汪隊立大功：恐龍大電影",
         "titleEn": "PAW Patrol: The Dino Movie",
@@ -16396,7 +15882,7 @@
         "origLang": "ja",
         "origTitle": "ブルーロック",
         "platforms": [],
-        "popularity": 3.5615,
+        "popularity": 3.875,
         "imdbId": "tt39400168",
         "countries": [
           "Japan"
@@ -16650,11 +16136,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
@@ -16775,11 +16261,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
@@ -17065,7 +16551,7 @@
         "origLang": "ja",
         "origTitle": "映画ちいかわ 人魚の島のひみつ",
         "platforms": [],
-        "popularity": 8.0515,
+        "popularity": 8.1906,
         "imdbId": "tt39026173",
         "countries": [
           "Japan"
@@ -17630,7 +17116,7 @@
         "origLang": "en",
         "origTitle": "The Odyssey",
         "platforms": [],
-        "popularity": 572.2768,
+        "popularity": 632.2885,
         "imdbId": "tt33764258",
         "countries": [
           "United Kingdom",
@@ -17847,7 +17333,7 @@
         "origLang": "ja",
         "origTitle": "映画ドラえもん 新・のび太の海底鬼岩城",
         "platforms": [],
-        "popularity": 17.4521,
+        "popularity": 18.3801,
         "imdbId": "tt38201958",
         "countries": [
           "Japan"
@@ -18185,6 +17671,85 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1545621?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1654497,
+        "titleZh": "超人再起",
+        "titleEn": "超人再起",
+        "releaseDate": "2026-05-08",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-05-08",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/iYqvffPL1wjG1J4Vs3pTRsL13kP.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "紀錄"
+        ],
+        "duration": "",
+        "synopsis": "《超人再起》是《台灣超人》系列的最終篇章。當你看見消防員 余泰運 在高雄氣爆重傷後，忍痛復健，重新穿上那件沉重的消防衣；當你看見楊川輝 在一夕之間失去視力與聽力，卻不放棄在黑暗中一次次起跑，直到衝過亞洲紀錄。還有好多好多超人的故事，都在這部電影之中。你或許會想起生命裡那些「不知道還能不能撐下去」的漫長黑夜，也慢慢開始相信，只要願意不斷往前，路自然會出現。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "MdQDwxo8AFU",
+        "cast": [],
+        "crew": [
+          {
+            "name": "曲全立",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "超人再起",
+        "platforms": [],
+        "popularity": 0.6629,
+        "imdbId": null,
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "紀錄"
+          ],
+          "synopsis": "《超人再起》是《台灣超人》系列的最終篇章。當你看見消防員 余泰運 在高雄氣爆重傷後，忍痛復健，重新穿上那件沉重的消防衣；當你看見楊川輝 在一夕之間失去視力與聽力，卻不放棄在黑暗中一次次起跑，直到衝過亞洲紀錄。還有好多好多超人的故事，都在這部電影之中。你或許會想起生命裡那些「不知道還能不能撐下去」的漫長黑夜，也慢慢開始相信，只要願意不斷往前，路自然會出現。",
+          "poster": "https://image.tmdb.org/t/p/w500/iYqvffPL1wjG1J4Vs3pTRsL13kP.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": "MdQDwxo8AFU",
+          "imdbId": null,
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "曲全立",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "超人再起",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1654497?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -18971,7 +18536,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
-        "voteAverage": "",
+        "voteAverage": "10.0",
         "genre": [
           "科幻",
           "劇情"
@@ -19112,7 +18677,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
-          "voteAverage": "",
+          "voteAverage": "10.0",
           "trailerKey": "RCuBTTOLtIg",
           "imdbId": "tt14371256",
           "countries": [
@@ -19850,7 +19415,7 @@
         "origLang": "ko",
         "origTitle": "아마존 활명수",
         "platforms": [],
-        "popularity": 2.5923,
+        "popularity": 2.4825,
         "imdbId": "tt33364791",
         "countries": [
           "South Korea"
@@ -20783,7 +20348,7 @@
         "origLang": "ja",
         "origTitle": "映画 えんとつ町のプペル 〜約束の時計台〜",
         "platforms": [],
-        "popularity": 2.5857,
+        "popularity": 2.7629,
         "imdbId": "tt39371353",
         "countries": [
           "Japan"
@@ -22293,7 +21858,7 @@
             "job": "Director"
           },
           {
-            "name": "述平",
+            "name": "Zhu Sujin",
             "job": "Screenplay"
           },
           {
@@ -22324,7 +21889,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 7.4822,
+        "popularity": 7.1588,
         "imdbId": "tt1533117",
         "countries": [
           "China",
@@ -22434,7 +21999,7 @@
               "job": "Director"
             },
             {
-              "name": "述平",
+              "name": "Zhu Sujin",
               "job": "Screenplay"
             },
             {
@@ -22613,7 +22178,7 @@
         "origLang": "en",
         "origTitle": "A Bigger Splash",
         "platforms": [],
-        "popularity": 2.1705,
+        "popularity": 2.12,
         "imdbId": "tt0071219",
         "countries": [
           "United Kingdom"
@@ -22737,6 +22302,216 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/142195?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 490725,
+        "titleZh": "幸福路上",
+        "titleEn": "幸福路上",
+        "releaseDate": "2026-10-30",
+        "releaseYear": "2018",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-30",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/yB0JdYxylkXzBgHEuDa3ny4n8CZ.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/l0orJvGnUJfqxdwQ9sw8UQFEPRM.jpg",
+        "voteAverage": "7.1",
+        "genre": [
+          "動畫",
+          "劇情"
+        ],
+        "duration": 111,
+        "synopsis": "《幸福路上》從小琪的成長故事出發，帶領觀眾穿梭台灣80年代至今的各種時代變遷，透過小琪這一路上從懵懂無知到勇敢出走的自我追尋，去探討屬於這代人的幸福究竟是什麼？小琪就如同你我一般，努力尋找屬於自己的幸福，《幸福路上》不單單只是小琪的故事，也是獻給台灣的一份情書，透過一張張手繪動畫，重新紀錄身為台灣人都曾有過的共同記憶。",
+        "imdb": "7.2",
+        "rt": "100%",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 750,
+            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 6,
+            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
+          }
+        },
+        "trailerKey": "XbRmjNN4KWM",
+        "cast": [
+          {
+            "name": "桂綸鎂",
+            "char": "Lin Shu-Chi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/tXnaRb95Mv3fR84xw0doJX8DWQt.jpg"
+          },
+          {
+            "name": "魏德聖",
+            "char": "Wen (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/8249XnLg2N6pJu68dmam8esgGw7.jpg"
+          },
+          {
+            "name": "陳博正",
+            "char": "Lin's Father (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
+          },
+          {
+            "name": "廖慧珍",
+            "char": "Lin's Mother (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ldtBAPvd97XW8m2YxhusgXTznOz.jpg"
+          },
+          {
+            "name": "吳以涵",
+            "char": "Young Lin Shu-Chi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/sUC2OCNNlkCjgQnj3RusYfx5YIs.jpg"
+          },
+          {
+            "name": "Giwas Gigo",
+            "char": "Granny (voice)",
+            "photo": null
+          },
+          {
+            "name": "黎家秀",
+            "char": "Chuang Betty (voice)",
+            "photo": null
+          },
+          {
+            "name": "Penny Huang",
+            "char": "Young Chuang Betty (voice)",
+            "photo": null
+          },
+          {
+            "name": "Alan Hsu",
+            "char": "Young Hsu Sheng-En (voice)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Sung Hsin-Yin",
+            "job": "Director"
+          },
+          {
+            "name": "Sung Hsin-Yin",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "幸福路上",
+        "platforms": [
+          {
+            "name": "Catchplay",
+            "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+          }
+        ],
+        "popularity": 1.6622,
+        "imdbId": "tt7543904",
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 111,
+          "genres": [
+            "動畫",
+            "劇情"
+          ],
+          "synopsis": "《幸福路上》從小琪的成長故事出發，帶領觀眾穿梭台灣80年代至今的各種時代變遷，透過小琪這一路上從懵懂無知到勇敢出走的自我追尋，去探討屬於這代人的幸福究竟是什麼？小琪就如同你我一般，努力尋找屬於自己的幸福，《幸福路上》不單單只是小琪的故事，也是獻給台灣的一份情書，透過一張張手繪動畫，重新紀錄身為台灣人都曾有過的共同記憶。",
+          "poster": "https://image.tmdb.org/t/p/w500/yB0JdYxylkXzBgHEuDa3ny4n8CZ.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/l0orJvGnUJfqxdwQ9sw8UQFEPRM.jpg",
+          "voteAverage": "7.1",
+          "trailerKey": "XbRmjNN4KWM",
+          "imdbId": "tt7543904",
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "桂綸鎂",
+              "char": "Lin Shu-Chi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/tXnaRb95Mv3fR84xw0doJX8DWQt.jpg"
+            },
+            {
+              "name": "魏德聖",
+              "char": "Wen (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/8249XnLg2N6pJu68dmam8esgGw7.jpg"
+            },
+            {
+              "name": "陳博正",
+              "char": "Lin's Father (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
+            },
+            {
+              "name": "廖慧珍",
+              "char": "Lin's Mother (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ldtBAPvd97XW8m2YxhusgXTznOz.jpg"
+            },
+            {
+              "name": "吳以涵",
+              "char": "Young Lin Shu-Chi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/sUC2OCNNlkCjgQnj3RusYfx5YIs.jpg"
+            },
+            {
+              "name": "Giwas Gigo",
+              "char": "Granny (voice)",
+              "photo": null
+            },
+            {
+              "name": "黎家秀",
+              "char": "Chuang Betty (voice)",
+              "photo": null
+            },
+            {
+              "name": "Penny Huang",
+              "char": "Young Chuang Betty (voice)",
+              "photo": null
+            },
+            {
+              "name": "Alan Hsu",
+              "char": "Young Hsu Sheng-En (voice)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Sung Hsin-Yin",
+              "job": "Director"
+            },
+            {
+              "name": "Sung Hsin-Yin",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "幸福路上",
+          "platforms": [
+            {
+              "name": "Catchplay",
+              "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/490725?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -23170,7 +22945,7 @@
         "origLang": "en",
         "origTitle": "Orwell: 2+2=5",
         "platforms": [],
-        "popularity": 3.1613,
+        "popularity": 3.1688,
         "imdbId": "tt27052428",
         "countries": [
           "France",
@@ -23939,271 +23714,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1536008,
-        "titleZh": "薩滿的最後告解",
-        "titleEn": "คำสารภาพของหมอผี",
-        "releaseDate": "2026-10-30",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-30",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/sSr5oyHoM1alEnIaHJOu5YHZGh8.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/pj9hWVWT7nZATGx6vomZRJIaI5E.jpg",
-        "voteAverage": "4.0",
-        "genre": [
-          "恐怖",
-          "驚悚"
-        ],
-        "duration": 126,
-        "synopsis": "托爾的家庭非常不幸，母親過世、父親負債累累又酗酒，叔叔則是愛好暴力的惡霸。托爾深信母親的死是父親和叔叔造成的，為了向他們復仇，他向當地的薩滿蒂安尋求協助。蒂安答應幫助托爾，但條件是他必須成為下一任的薩滿。托爾答應之後不久，父親跟叔叔相繼意外身亡。然而，托爾的決定也為他招來了一連串恐怖事件……",
-        "imdb": "6.3",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 78,
-            "lastChanged": "2026-10-17T12:57:46.748889+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "ธีรเดช เมธาวรายุทธ",
-            "char": "Tor",
-            "photo": "https://image.tmdb.org/t/p/w500/2bSfc1SY6Vf0xMcU2rLvZWv1TdQ.jpg"
-          },
-          {
-            "name": "ชาคริต แย้มนาม",
-            "char": "Tian",
-            "photo": "https://image.tmdb.org/t/p/w500/2A9HfrGI51uAIXsnh3LHghwlQnx.jpg"
-          },
-          {
-            "name": "เจลีลชา คัปปุน",
-            "char": "Mali",
-            "photo": "https://image.tmdb.org/t/p/w500/d7rfzM7mmsHNKor8dXJ2f81I9qR.jpg"
-          },
-          {
-            "name": "เวนย์ ฟอลโคเนอร์",
-            "char": "Uncle Sak",
-            "photo": "https://image.tmdb.org/t/p/w500/bonAaoSmYekfXi1JvyYvO3JIe5B.jpg"
-          },
-          {
-            "name": "อัมรินทร์ นิติพน",
-            "char": "Kob",
-            "photo": "https://image.tmdb.org/t/p/w500/5XPYOUBFso7eBTFjJ5tfOxZlTZx.jpg"
-          },
-          {
-            "name": "รัญญา ศิยานนท์",
-            "char": "Noi",
-            "photo": "https://image.tmdb.org/t/p/w500/dmwTS6sASl6vI1qrpsF07KGqPIa.jpg"
-          },
-          {
-            "name": "Chalad Na Songkhla",
-            "char": "Monk",
-            "photo": "https://image.tmdb.org/t/p/w500/dp9u1znNZ0jyVgYg54p2TZz6eyX.jpg"
-          },
-          {
-            "name": "Seadthawut Porntanawut",
-            "char": "Ta",
-            "photo": "https://image.tmdb.org/t/p/w500/kVghSryDGDvxpOGiV6nYpLbLpjc.jpg"
-          },
-          {
-            "name": "Nathawat Kongthong",
-            "char": "Nong",
-            "photo": null
-          },
-          {
-            "name": "Kittiphan Bunplabwaree",
-            "char": "Inspector",
-            "photo": null
-          },
-          {
-            "name": "Pheenasith Nettasut",
-            "char": "Sergeant 1",
-            "photo": "https://image.tmdb.org/t/p/w500/9a0rEG7TxYSnWiwpzs2AhsIJQx0.jpg"
-          },
-          {
-            "name": "Paibool Poolsuk",
-            "char": "Sergeant 2",
-            "photo": null
-          },
-          {
-            "name": "แทนทิพย์ จาดพันธุ์อินทร์",
-            "char": "Na Na Thong Ritual Client 1",
-            "photo": null
-          },
-          {
-            "name": "Kanyarat Deeruen",
-            "char": "Na Na Thong Ritual Client 2",
-            "photo": null
-          },
-          {
-            "name": "Sirikhwan Trisiwet",
-            "char": "Na Na Thong Ritual Client 3",
-            "photo": null
-          },
-          {
-            "name": "Jirawun Kunagornwong",
-            "char": "The Dark Figure",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "Nattanont Cholumpi",
-            "job": "Director"
-          },
-          {
-            "name": "Rapeepimol Chaiyasena",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Sakchai Kiatpanya-opas",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "th",
-        "origTitle": "คำสารภาพของหมอผี",
-        "platforms": [],
-        "popularity": 3.2613,
-        "imdbId": "tt44632295",
-        "countries": [
-          "Thailand"
-        ],
-        "detail": {
-          "duration": 126,
-          "genres": [
-            "恐怖",
-            "驚悚"
-          ],
-          "synopsis": "托爾的家庭非常不幸，母親過世、父親負債累累又酗酒，叔叔則是愛好暴力的惡霸。托爾深信母親的死是父親和叔叔造成的，為了向他們復仇，他向當地的薩滿蒂安尋求協助。蒂安答應幫助托爾，但條件是他必須成為下一任的薩滿。托爾答應之後不久，父親跟叔叔相繼意外身亡。然而，托爾的決定也為他招來了一連串恐怖事件……",
-          "poster": "https://image.tmdb.org/t/p/w500/sSr5oyHoM1alEnIaHJOu5YHZGh8.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/pj9hWVWT7nZATGx6vomZRJIaI5E.jpg",
-          "voteAverage": "4.0",
-          "trailerKey": null,
-          "imdbId": "tt44632295",
-          "countries": [
-            "Thailand"
-          ],
-          "cast": [
-            {
-              "name": "ธีรเดช เมธาวรายุทธ",
-              "char": "Tor",
-              "photo": "https://image.tmdb.org/t/p/w500/2bSfc1SY6Vf0xMcU2rLvZWv1TdQ.jpg"
-            },
-            {
-              "name": "ชาคริต แย้มนาม",
-              "char": "Tian",
-              "photo": "https://image.tmdb.org/t/p/w500/2A9HfrGI51uAIXsnh3LHghwlQnx.jpg"
-            },
-            {
-              "name": "เจลีลชา คัปปุน",
-              "char": "Mali",
-              "photo": "https://image.tmdb.org/t/p/w500/d7rfzM7mmsHNKor8dXJ2f81I9qR.jpg"
-            },
-            {
-              "name": "เวนย์ ฟอลโคเนอร์",
-              "char": "Uncle Sak",
-              "photo": "https://image.tmdb.org/t/p/w500/bonAaoSmYekfXi1JvyYvO3JIe5B.jpg"
-            },
-            {
-              "name": "อัมรินทร์ นิติพน",
-              "char": "Kob",
-              "photo": "https://image.tmdb.org/t/p/w500/5XPYOUBFso7eBTFjJ5tfOxZlTZx.jpg"
-            },
-            {
-              "name": "รัญญา ศิยานนท์",
-              "char": "Noi",
-              "photo": "https://image.tmdb.org/t/p/w500/dmwTS6sASl6vI1qrpsF07KGqPIa.jpg"
-            },
-            {
-              "name": "Chalad Na Songkhla",
-              "char": "Monk",
-              "photo": "https://image.tmdb.org/t/p/w500/dp9u1znNZ0jyVgYg54p2TZz6eyX.jpg"
-            },
-            {
-              "name": "Seadthawut Porntanawut",
-              "char": "Ta",
-              "photo": "https://image.tmdb.org/t/p/w500/kVghSryDGDvxpOGiV6nYpLbLpjc.jpg"
-            },
-            {
-              "name": "Nathawat Kongthong",
-              "char": "Nong",
-              "photo": null
-            },
-            {
-              "name": "Kittiphan Bunplabwaree",
-              "char": "Inspector",
-              "photo": null
-            },
-            {
-              "name": "Pheenasith Nettasut",
-              "char": "Sergeant 1",
-              "photo": "https://image.tmdb.org/t/p/w500/9a0rEG7TxYSnWiwpzs2AhsIJQx0.jpg"
-            },
-            {
-              "name": "Paibool Poolsuk",
-              "char": "Sergeant 2",
-              "photo": null
-            },
-            {
-              "name": "แทนทิพย์ จาดพันธุ์อินทร์",
-              "char": "Na Na Thong Ritual Client 1",
-              "photo": null
-            },
-            {
-              "name": "Kanyarat Deeruen",
-              "char": "Na Na Thong Ritual Client 2",
-              "photo": null
-            },
-            {
-              "name": "Sirikhwan Trisiwet",
-              "char": "Na Na Thong Ritual Client 3",
-              "photo": null
-            },
-            {
-              "name": "Jirawun Kunagornwong",
-              "char": "The Dark Figure",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "Nattanont Cholumpi",
-              "job": "Director"
-            },
-            {
-              "name": "Rapeepimol Chaiyasena",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Sakchai Kiatpanya-opas",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "th",
-          "origTitle": "คำสารภาพของหมอผี",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1536008?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1567233,
         "titleZh": "世紀初戀 楊麗花",
         "titleEn": "世紀初戀 楊麗花",
@@ -24250,7 +23760,7 @@
         "origLang": "zh",
         "origTitle": "世紀初戀 楊麗花",
         "platforms": [],
-        "popularity": 1.3426,
+        "popularity": 1.3923,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -24627,7 +24137,7 @@
         "origLang": "ja",
         "origTitle": "どこよりも遠い場所にいる君へ",
         "platforms": [],
-        "popularity": 3.0829,
+        "popularity": 3.7244,
         "imdbId": "tt43691434",
         "countries": [
           "Japan"
@@ -24816,211 +24326,116 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 490725,
-        "titleZh": "幸福路上",
-        "titleEn": "幸福路上",
-        "releaseDate": "2026-10-30",
-        "releaseYear": "2018",
+        "id": 1340449,
+        "titleZh": "與達賴喇嘛談心：尋找幸福的智慧",
+        "titleEn": "Wisdom of Happiness",
+        "releaseDate": "2026-11-06",
+        "releaseYear": "2024",
         "isRerelease": true,
         "twTheatricalReleases": [
           {
-            "date": "2026-10-30",
+            "date": "2026-11-06",
             "language": ""
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/yB0JdYxylkXzBgHEuDa3ny4n8CZ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/qigUDdP23FhLmMVKcy3TTdwFqQu.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/l0orJvGnUJfqxdwQ9sw8UQFEPRM.jpg",
-        "voteAverage": "7.1",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/yyXEDXqI9iWXqtgn7pg5zoDGxDd.jpg",
+        "voteAverage": "7.3",
         "genre": [
-          "動畫",
-          "劇情"
+          "紀錄"
         ],
-        "duration": 111,
-        "synopsis": "《幸福路上》從小琪的成長故事出發，帶領觀眾穿梭台灣80年代至今的各種時代變遷，透過小琪這一路上從懵懂無知到勇敢出走的自我追尋，去探討屬於這代人的幸福究竟是什麼？小琪就如同你我一般，努力尋找屬於自己的幸福，《幸福路上》不單單只是小琪的故事，也是獻給台灣的一份情書，透過一張張手繪動畫，重新紀錄身為台灣人都曾有過的共同記憶。",
-        "imdb": "7.2",
-        "rt": "100%",
+        "duration": 90,
+        "synopsis": "一部以達賴喇嘛為主角的紀錄片，聚焦於他關於內心平靜與幸福的教誨，並探討這些智慧如何成為我們面對21世紀挑戰的指引。",
+        "imdb": "7.1",
+        "rt": "",
         "mc": "",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
-            "votes": 750,
-            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 6,
+            "votes": 471,
             "lastChanged": "2026-10-17T19:09:15.872157+08:00"
           }
         },
-        "trailerKey": "XbRmjNN4KWM",
+        "trailerKey": null,
         "cast": [
           {
-            "name": "桂綸鎂",
-            "char": "Lin Shu-Chi (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/tXnaRb95Mv3fR84xw0doJX8DWQt.jpg"
-          },
-          {
-            "name": "魏德聖",
-            "char": "Wen (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/8249XnLg2N6pJu68dmam8esgGw7.jpg"
-          },
-          {
-            "name": "陳博正",
-            "char": "Lin's Father (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
-          },
-          {
-            "name": "廖慧珍",
-            "char": "Lin's Mother (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/ldtBAPvd97XW8m2YxhusgXTznOz.jpg"
-          },
-          {
-            "name": "吳以涵",
-            "char": "Young Lin Shu-Chi (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/sUC2OCNNlkCjgQnj3RusYfx5YIs.jpg"
-          },
-          {
-            "name": "Giwas Gigo",
-            "char": "Granny (voice)",
-            "photo": null
-          },
-          {
-            "name": "黎家秀",
-            "char": "Chuang Betty (voice)",
-            "photo": null
-          },
-          {
-            "name": "Penny Huang",
-            "char": "Young Chuang Betty (voice)",
-            "photo": null
-          },
-          {
-            "name": "Alan Hsu",
-            "char": "Young Hsu Sheng-En (voice)",
-            "photo": null
+            "name": "Tenzin Gyatso",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/t2zbGyZeiCRkKdeUxy6dqOs6n5r.jpg"
           }
         ],
         "crew": [
           {
-            "name": "Sung Hsin-Yin",
-            "job": "Director"
+            "name": "Philip Delaquis",
+            "job": "Writer"
           },
           {
-            "name": "Sung Hsin-Yin",
+            "name": "Barbara Miller",
             "job": "Writer"
+          },
+          {
+            "name": "Philip Delaquis",
+            "job": "Director"
           }
         ],
         "budget": 0,
         "revenue": 0,
         "status": "Released",
-        "origLang": "zh",
-        "origTitle": "幸福路上",
-        "platforms": [
-          {
-            "name": "Catchplay",
-            "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
-          },
-          {
-            "name": "Apple TV Store",
-            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
-          }
-        ],
-        "popularity": 1.6622,
-        "imdbId": "tt7543904",
+        "origLang": "en",
+        "origTitle": "Wisdom of Happiness",
+        "platforms": [],
+        "popularity": 2.2011,
+        "imdbId": "tt33055004",
         "countries": [
-          "Taiwan"
+          "United States of America",
+          "Switzerland"
         ],
         "detail": {
-          "duration": 111,
+          "duration": 90,
           "genres": [
-            "動畫",
-            "劇情"
+            "紀錄"
           ],
-          "synopsis": "《幸福路上》從小琪的成長故事出發，帶領觀眾穿梭台灣80年代至今的各種時代變遷，透過小琪這一路上從懵懂無知到勇敢出走的自我追尋，去探討屬於這代人的幸福究竟是什麼？小琪就如同你我一般，努力尋找屬於自己的幸福，《幸福路上》不單單只是小琪的故事，也是獻給台灣的一份情書，透過一張張手繪動畫，重新紀錄身為台灣人都曾有過的共同記憶。",
-          "poster": "https://image.tmdb.org/t/p/w500/yB0JdYxylkXzBgHEuDa3ny4n8CZ.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/l0orJvGnUJfqxdwQ9sw8UQFEPRM.jpg",
-          "voteAverage": "7.1",
-          "trailerKey": "XbRmjNN4KWM",
-          "imdbId": "tt7543904",
+          "synopsis": "一部以達賴喇嘛為主角的紀錄片，聚焦於他關於內心平靜與幸福的教誨，並探討這些智慧如何成為我們面對21世紀挑戰的指引。",
+          "poster": "https://image.tmdb.org/t/p/w500/qigUDdP23FhLmMVKcy3TTdwFqQu.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/yyXEDXqI9iWXqtgn7pg5zoDGxDd.jpg",
+          "voteAverage": "7.3",
+          "trailerKey": null,
+          "imdbId": "tt33055004",
           "countries": [
-            "Taiwan"
+            "United States of America",
+            "Switzerland"
           ],
           "cast": [
             {
-              "name": "桂綸鎂",
-              "char": "Lin Shu-Chi (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/tXnaRb95Mv3fR84xw0doJX8DWQt.jpg"
-            },
-            {
-              "name": "魏德聖",
-              "char": "Wen (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/8249XnLg2N6pJu68dmam8esgGw7.jpg"
-            },
-            {
-              "name": "陳博正",
-              "char": "Lin's Father (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/rO0CAWlNaiyKZixxxdqUWut0URg.jpg"
-            },
-            {
-              "name": "廖慧珍",
-              "char": "Lin's Mother (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/ldtBAPvd97XW8m2YxhusgXTznOz.jpg"
-            },
-            {
-              "name": "吳以涵",
-              "char": "Young Lin Shu-Chi (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/sUC2OCNNlkCjgQnj3RusYfx5YIs.jpg"
-            },
-            {
-              "name": "Giwas Gigo",
-              "char": "Granny (voice)",
-              "photo": null
-            },
-            {
-              "name": "黎家秀",
-              "char": "Chuang Betty (voice)",
-              "photo": null
-            },
-            {
-              "name": "Penny Huang",
-              "char": "Young Chuang Betty (voice)",
-              "photo": null
-            },
-            {
-              "name": "Alan Hsu",
-              "char": "Young Hsu Sheng-En (voice)",
-              "photo": null
+              "name": "Tenzin Gyatso",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/t2zbGyZeiCRkKdeUxy6dqOs6n5r.jpg"
             }
           ],
           "crew": [
             {
-              "name": "Sung Hsin-Yin",
-              "job": "Director"
+              "name": "Philip Delaquis",
+              "job": "Writer"
             },
             {
-              "name": "Sung Hsin-Yin",
+              "name": "Barbara Miller",
               "job": "Writer"
+            },
+            {
+              "name": "Philip Delaquis",
+              "job": "Director"
             }
           ],
           "budget": 0,
           "revenue": 0,
           "status": "Released",
-          "origLang": "zh",
-          "origTitle": "幸福路上",
-          "platforms": [
-            {
-              "name": "Catchplay",
-              "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
-            },
-            {
-              "name": "Apple TV Store",
-              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
-            }
-          ]
+          "origLang": "en",
+          "origTitle": "Wisdom of Happiness",
+          "platforms": []
         },
-        "tmdbUrl": "https://www.themoviedb.org/movie/490725?language=zh-TW",
+        "tmdbUrl": "https://www.themoviedb.org/movie/1340449?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -25255,6 +24670,177 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1381071?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1573705,
+        "titleZh": "UFO離奇命案",
+        "titleEn": "UFO離奇命案",
+        "releaseDate": "2026-11-06",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-06",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/lMwNyDJDh0NEpoA8EWATi1XCQ5N.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uisrxMUd8BBoAze7tlGl6yC4cPO.jpg",
+        "voteAverage": "6.1",
+        "genre": [
+          "懸疑",
+          "喜劇",
+          "犯罪"
+        ],
+        "duration": 86,
+        "synopsis": "25年前，小學生豪仔在東頭山離奇消失，同行友人聲稱他被外星人抓走，成為轟動一時的新聞。25年後，外星人話題持續延燒，各方人馬為了不同原因，重回事發現場。沒想到設定的腳本逐步變調，現場爆發命案，勒索短訊隨後而來，就連外星人都下凡「共襄盛舉」，整起事件完全失控，大夥還需自圓其說！",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "淩文龍",
+            "char": "Mark / Ma Chak Hang",
+            "photo": "https://image.tmdb.org/t/p/w500/9QdaYqA1mVFXDHx9xh5Ea5X1xn4.jpg"
+          },
+          {
+            "name": "楊偲泳",
+            "char": "Man / Lau Pui Man",
+            "photo": "https://image.tmdb.org/t/p/w500/8pLwOmXlDjdVs6WoRDphqVWwhvU.jpg"
+          },
+          {
+            "name": "陳湛文",
+            "char": "Kam Chi Choi",
+            "photo": "https://image.tmdb.org/t/p/w500/eui1sqCp7BP6L58WC5xGhgMw202.jpg"
+          },
+          {
+            "name": "Ronald Lam Tsz-Kit",
+            "char": "Kit / Fung Man Kit",
+            "photo": "https://image.tmdb.org/t/p/w500/bosUDZgsKT7y8HMjtFShZZIf2Sw.jpg"
+          },
+          {
+            "name": "黃德斌",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/fSSna59ChOc0OA8ju2xRf8jxOvT.jpg"
+          },
+          {
+            "name": "陸駿光",
+            "char": "Cop",
+            "photo": "https://image.tmdb.org/t/p/w500/iFGsDWW6aNIiU1GDbju6bfjJqIP.jpg"
+          },
+          {
+            "name": "許晉邦",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "郭嘉熹",
+            "job": "Director"
+          },
+          {
+            "name": "李振傑",
+            "job": "Director"
+          },
+          {
+            "name": "郭嘉熹",
+            "job": "Writer"
+          }
+        ],
+        "budget": 382000,
+        "revenue": 458519,
+        "status": "Released",
+        "origLang": "cn",
+        "origTitle": "UFO離奇命案",
+        "platforms": [],
+        "popularity": 2.0746,
+        "imdbId": "tt38857175",
+        "countries": [
+          "Hong Kong"
+        ],
+        "detail": {
+          "duration": 86,
+          "genres": [
+            "懸疑",
+            "喜劇",
+            "犯罪"
+          ],
+          "synopsis": "25年前，小學生豪仔在東頭山離奇消失，同行友人聲稱他被外星人抓走，成為轟動一時的新聞。25年後，外星人話題持續延燒，各方人馬為了不同原因，重回事發現場。沒想到設定的腳本逐步變調，現場爆發命案，勒索短訊隨後而來，就連外星人都下凡「共襄盛舉」，整起事件完全失控，大夥還需自圓其說！",
+          "poster": "https://image.tmdb.org/t/p/w500/lMwNyDJDh0NEpoA8EWATi1XCQ5N.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/uisrxMUd8BBoAze7tlGl6yC4cPO.jpg",
+          "voteAverage": "6.1",
+          "trailerKey": null,
+          "imdbId": "tt38857175",
+          "countries": [
+            "Hong Kong"
+          ],
+          "cast": [
+            {
+              "name": "淩文龍",
+              "char": "Mark / Ma Chak Hang",
+              "photo": "https://image.tmdb.org/t/p/w500/9QdaYqA1mVFXDHx9xh5Ea5X1xn4.jpg"
+            },
+            {
+              "name": "楊偲泳",
+              "char": "Man / Lau Pui Man",
+              "photo": "https://image.tmdb.org/t/p/w500/8pLwOmXlDjdVs6WoRDphqVWwhvU.jpg"
+            },
+            {
+              "name": "陳湛文",
+              "char": "Kam Chi Choi",
+              "photo": "https://image.tmdb.org/t/p/w500/eui1sqCp7BP6L58WC5xGhgMw202.jpg"
+            },
+            {
+              "name": "Ronald Lam Tsz-Kit",
+              "char": "Kit / Fung Man Kit",
+              "photo": "https://image.tmdb.org/t/p/w500/bosUDZgsKT7y8HMjtFShZZIf2Sw.jpg"
+            },
+            {
+              "name": "黃德斌",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/fSSna59ChOc0OA8ju2xRf8jxOvT.jpg"
+            },
+            {
+              "name": "陸駿光",
+              "char": "Cop",
+              "photo": "https://image.tmdb.org/t/p/w500/iFGsDWW6aNIiU1GDbju6bfjJqIP.jpg"
+            },
+            {
+              "name": "許晉邦",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "郭嘉熹",
+              "job": "Director"
+            },
+            {
+              "name": "李振傑",
+              "job": "Director"
+            },
+            {
+              "name": "郭嘉熹",
+              "job": "Writer"
+            }
+          ],
+          "budget": 382000,
+          "revenue": 458519,
+          "status": "Released",
+          "origLang": "cn",
+          "origTitle": "UFO離奇命案",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1573705?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -25571,7 +25157,7 @@
         "origLang": "ja",
         "origTitle": "名探偵コナン 30号殺人事件",
         "platforms": [],
-        "popularity": 3.9498,
+        "popularity": 3.3646,
         "imdbId": "tt46656123",
         "countries": [
           "Japan"
@@ -25735,7 +25321,7 @@
         "origLang": "zh",
         "origTitle": "我要當總統",
         "platforms": [],
-        "popularity": 2.666,
+        "popularity": 2.8098,
         "imdbId": null,
         "countries": [
           "Japan",
@@ -25813,258 +25399,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1779644?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1340449,
-        "titleZh": "與達賴喇嘛談心：尋找幸福的智慧",
-        "titleEn": "Wisdom of Happiness",
-        "releaseDate": "2026-11-06",
-        "releaseYear": "2024",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-11-06",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/qigUDdP23FhLmMVKcy3TTdwFqQu.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/yyXEDXqI9iWXqtgn7pg5zoDGxDd.jpg",
-        "voteAverage": "7.3",
-        "genre": [
-          "紀錄"
-        ],
-        "duration": 90,
-        "synopsis": "一部以達賴喇嘛為主角的紀錄片，聚焦於他關於內心平靜與幸福的教誨，並探討這些智慧如何成為我們面對21世紀挑戰的指引。",
-        "imdb": "7.1",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 471,
-            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "Tenzin Gyatso",
-            "char": "Self",
-            "photo": "https://image.tmdb.org/t/p/w500/t2zbGyZeiCRkKdeUxy6dqOs6n5r.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Philip Delaquis",
-            "job": "Writer"
-          },
-          {
-            "name": "Barbara Miller",
-            "job": "Writer"
-          },
-          {
-            "name": "Philip Delaquis",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Wisdom of Happiness",
-        "platforms": [],
-        "popularity": 2.2011,
-        "imdbId": "tt33055004",
-        "countries": [
-          "United States of America",
-          "Switzerland"
-        ],
-        "detail": {
-          "duration": 90,
-          "genres": [
-            "紀錄"
-          ],
-          "synopsis": "一部以達賴喇嘛為主角的紀錄片，聚焦於他關於內心平靜與幸福的教誨，並探討這些智慧如何成為我們面對21世紀挑戰的指引。",
-          "poster": "https://image.tmdb.org/t/p/w500/qigUDdP23FhLmMVKcy3TTdwFqQu.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/yyXEDXqI9iWXqtgn7pg5zoDGxDd.jpg",
-          "voteAverage": "7.3",
-          "trailerKey": null,
-          "imdbId": "tt33055004",
-          "countries": [
-            "United States of America",
-            "Switzerland"
-          ],
-          "cast": [
-            {
-              "name": "Tenzin Gyatso",
-              "char": "Self",
-              "photo": "https://image.tmdb.org/t/p/w500/t2zbGyZeiCRkKdeUxy6dqOs6n5r.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Philip Delaquis",
-              "job": "Writer"
-            },
-            {
-              "name": "Barbara Miller",
-              "job": "Writer"
-            },
-            {
-              "name": "Philip Delaquis",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Wisdom of Happiness",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1340449?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 372754,
-        "titleZh": "同級生 劇場版",
-        "titleEn": "同級生",
-        "releaseDate": "2026-11-06",
-        "releaseYear": "2016",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-11-06",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/6zOGgbSQNtsyyZXkBRVk2zMjQYY.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/tLmyP7akYmxLwyfTEt2qyj2sOR3.jpg",
-        "voteAverage": "8.3",
-        "genre": [
-          "愛情",
-          "動畫"
-        ],
-        "duration": 61,
-        "synopsis": "高中資優生左条與帥氣吉他手草壁，雖然就讀同個班級，卻始終毫無交集。直到合唱比賽前夕的音樂課，草壁注意到左条沒有開口唱歌，卻在某天看見左条獨自一人練唱的身影，鬼使神差下草壁開始教他唱歌。這段不經意萌芽的微酸情感，在青春校園中緩緩滋長。",
-        "imdb": "7.7",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 4739,
-            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
-          }
-        },
-        "trailerKey": "z9XUDTa-Y0g",
-        "cast": [
-          {
-            "name": "野島健兒",
-            "char": "Rihito Sajo (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/nRSPVjDkdpnrQabnK5mENH118zN.jpg"
-          },
-          {
-            "name": "神谷浩史",
-            "char": "Hikaru Kusakabe (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/5aAAOlQ2hW5EqEQOzk4UeroxcTN.jpg"
-          },
-          {
-            "name": "石川英郎",
-            "char": "Manabu Hara (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/gEjEDNGt3CHsyzFQdNqewZVbh0.jpg"
-          },
-          {
-            "name": "百合野",
-            "char": "Mikipon (voice)",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "中村章子",
-            "job": "Director"
-          },
-          {
-            "name": "Asumiko Nakamura",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 1397526,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "同級生",
-        "platforms": [],
-        "popularity": 7.6602,
-        "imdbId": "tt5526028",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 61,
-          "genres": [
-            "愛情",
-            "動畫"
-          ],
-          "synopsis": "高中資優生左条與帥氣吉他手草壁，雖然就讀同個班級，卻始終毫無交集。直到合唱比賽前夕的音樂課，草壁注意到左条沒有開口唱歌，卻在某天看見左条獨自一人練唱的身影，鬼使神差下草壁開始教他唱歌。這段不經意萌芽的微酸情感，在青春校園中緩緩滋長。",
-          "poster": "https://image.tmdb.org/t/p/w500/6zOGgbSQNtsyyZXkBRVk2zMjQYY.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/tLmyP7akYmxLwyfTEt2qyj2sOR3.jpg",
-          "voteAverage": "8.3",
-          "trailerKey": "z9XUDTa-Y0g",
-          "imdbId": "tt5526028",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "野島健兒",
-              "char": "Rihito Sajo (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/nRSPVjDkdpnrQabnK5mENH118zN.jpg"
-            },
-            {
-              "name": "神谷浩史",
-              "char": "Hikaru Kusakabe (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/5aAAOlQ2hW5EqEQOzk4UeroxcTN.jpg"
-            },
-            {
-              "name": "石川英郎",
-              "char": "Manabu Hara (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/gEjEDNGt3CHsyzFQdNqewZVbh0.jpg"
-            },
-            {
-              "name": "百合野",
-              "char": "Mikipon (voice)",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "中村章子",
-              "job": "Director"
-            },
-            {
-              "name": "Asumiko Nakamura",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 1397526,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "同級生",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/372754?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -26334,7 +25668,7 @@
         "origLang": "en",
         "origTitle": "How to Rob a Bank",
         "platforms": [],
-        "popularity": 7.478,
+        "popularity": 7.4666,
         "imdbId": "tt35866986",
         "countries": [
           "United States of America"
@@ -27175,7 +26509,7 @@
         "origLang": "ja",
         "origTitle": "放送禁止 ぼくの3人の妻",
         "platforms": [],
-        "popularity": 1.0081,
+        "popularity": 1.1485,
         "imdbId": "tt39231777",
         "countries": [
           "Japan"
@@ -27346,7 +26680,7 @@
         "origLang": "zh",
         "origTitle": "告別的年代",
         "platforms": [],
-        "popularity": 2.0094,
+        "popularity": 2.5422,
         "imdbId": "tt35486511",
         "countries": [
           "Taiwan",
@@ -28366,7 +27700,7 @@
         "origLang": "es",
         "origTitle": "La bola negra",
         "platforms": [],
-        "popularity": 86.2839,
+        "popularity": 54.6603,
         "imdbId": "tt35511966",
         "countries": [
           "Spain",
@@ -29178,7 +28512,7 @@
         "origLang": "ja",
         "origTitle": "踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！",
         "platforms": [],
-        "popularity": 1.5011,
+        "popularity": 1.4583,
         "imdbId": "tt40826527",
         "countries": [
           "Japan"
@@ -29431,12 +28765,12 @@
         ],
         "crew": [
           {
-            "name": "James Ivory",
-            "job": "Director"
-          },
-          {
             "name": "露絲·鮑爾·賈華拉",
             "job": "Screenplay"
+          },
+          {
+            "name": "James Ivory",
+            "job": "Director"
           }
         ],
         "budget": 3000000,
@@ -29445,7 +28779,7 @@
         "origLang": "en",
         "origTitle": "A Room with a View",
         "platforms": [],
-        "popularity": 8.6124,
+        "popularity": 8.1495,
         "imdbId": "tt0091867",
         "countries": [
           "United Kingdom"
@@ -29549,12 +28883,12 @@
           ],
           "crew": [
             {
-              "name": "James Ivory",
-              "job": "Director"
-            },
-            {
               "name": "露絲·鮑爾·賈華拉",
               "job": "Screenplay"
+            },
+            {
+              "name": "James Ivory",
+              "job": "Director"
             }
           ],
           "budget": 3000000,
@@ -29666,7 +29000,7 @@
         "origLang": "en",
         "origTitle": "Focker-in-Law",
         "platforms": [],
-        "popularity": 9.8835,
+        "popularity": 8.971,
         "imdbId": "tt34966140",
         "countries": [
           "United States of America"
@@ -29756,6 +29090,185 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1400336?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1433055,
+        "titleZh": "晚窒息",
+        "titleEn": "晚窒息",
+        "releaseDate": "2026-11-27",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-27",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wkmeS9wF46R5SN45Z4QK63TxngC.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hbXpD6dVoA1oKJP3tFxD7DAJFPm.jpg",
+        "voteAverage": "",
+        "genre": [
+          "恐怖",
+          "驚悚"
+        ],
+        "duration": 96,
+        "synopsis": "在一所籠罩著詭異詛咒的菁英高中游泳隊內，五名少年因揭露一段禁忌師生戀的影片而引發連環死亡事件。 當詛咒再次應驗，他們被迫在絕望與背叛中掙扎，試圖揭開真相並阻止死亡輪迴，卻逐漸發現自己正成為彼此的終結者。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "jLqAP2D-T84",
+        "cast": [
+          {
+            "name": "姚愛寗",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/yMOEvWYK9eroPTLjteieHxGQolP.jpg"
+          },
+          {
+            "name": "王渝屏",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/gJYXB090fN4R3Ctljm9hlc0ilOv.jpg"
+          },
+          {
+            "name": "初孟軒",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/wh2hRiItJYDaqPY8pGxyUntlxl8.jpg"
+          },
+          {
+            "name": "洪群鈞",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/9Y2XFdi4t5RD9SG4nQPJIyreUCu.jpg"
+          },
+          {
+            "name": "鄧雨忱",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/weaIXWjYicF4qyJsl4WB5FzBuwq.jpg"
+          },
+          {
+            "name": "王寶兒",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "黃琦雯",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/aNEB8RE1iZiLvCViFvzqZsvzb0h.jpg"
+          },
+          {
+            "name": "范逸臣",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/jhrR7n3TbHyHPU7qfE1JZ9SXxnr.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "詹家維",
+            "job": "Director"
+          },
+          {
+            "name": "張佑維",
+            "job": "Director"
+          },
+          {
+            "name": "張耿銘",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "晚窒息",
+        "platforms": [],
+        "popularity": 1.6314,
+        "imdbId": "tt37566261",
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 96,
+          "genres": [
+            "恐怖",
+            "驚悚"
+          ],
+          "synopsis": "在一所籠罩著詭異詛咒的菁英高中游泳隊內，五名少年因揭露一段禁忌師生戀的影片而引發連環死亡事件。 當詛咒再次應驗，他們被迫在絕望與背叛中掙扎，試圖揭開真相並阻止死亡輪迴，卻逐漸發現自己正成為彼此的終結者。",
+          "poster": "https://image.tmdb.org/t/p/w500/wkmeS9wF46R5SN45Z4QK63TxngC.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/hbXpD6dVoA1oKJP3tFxD7DAJFPm.jpg",
+          "voteAverage": "",
+          "trailerKey": "jLqAP2D-T84",
+          "imdbId": "tt37566261",
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "姚愛寗",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/yMOEvWYK9eroPTLjteieHxGQolP.jpg"
+            },
+            {
+              "name": "王渝屏",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/gJYXB090fN4R3Ctljm9hlc0ilOv.jpg"
+            },
+            {
+              "name": "初孟軒",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/wh2hRiItJYDaqPY8pGxyUntlxl8.jpg"
+            },
+            {
+              "name": "洪群鈞",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/9Y2XFdi4t5RD9SG4nQPJIyreUCu.jpg"
+            },
+            {
+              "name": "鄧雨忱",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/weaIXWjYicF4qyJsl4WB5FzBuwq.jpg"
+            },
+            {
+              "name": "王寶兒",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "黃琦雯",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/aNEB8RE1iZiLvCViFvzqZsvzb0h.jpg"
+            },
+            {
+              "name": "范逸臣",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/jhrR7n3TbHyHPU7qfE1JZ9SXxnr.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "詹家維",
+              "job": "Director"
+            },
+            {
+              "name": "張佑維",
+              "job": "Director"
+            },
+            {
+              "name": "張耿銘",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "晚窒息",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1433055?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -30148,7 +29661,7 @@
         "origLang": "en",
         "origTitle": "Violent Night 2",
         "platforms": [],
-        "popularity": 7.1409,
+        "popularity": 5.9161,
         "imdbId": "tt32432428",
         "countries": [
           "United States of America"
@@ -30351,7 +29864,7 @@
         "origLang": "zh",
         "origTitle": "日光",
         "platforms": [],
-        "popularity": 1.1991,
+        "popularity": 1.552,
         "imdbId": "tt39673991",
         "countries": [
           "Taiwan",
@@ -30857,7 +30370,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/hQv25PAaEs7aLk2CMwfbgtLbSlr.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/dpxTT06JHQ9Xu95ZUlMfdP02kjD.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
         "voteAverage": "",
@@ -30865,7 +30378,7 @@
           "科幻",
           "冒險"
         ],
-        "duration": 150,
+        "duration": 140,
         "synopsis": "",
         "imdb": "",
         "rt": "",
@@ -30964,20 +30477,20 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 148.8851,
+        "popularity": 177.8139,
         "imdbId": "tt31378509",
         "countries": [
           "United States of America",
           "United Arab Emirates"
         ],
         "detail": {
-          "duration": 150,
+          "duration": 140,
           "genres": [
             "科幻",
             "冒險"
           ],
           "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/hQv25PAaEs7aLk2CMwfbgtLbSlr.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/dpxTT06JHQ9Xu95ZUlMfdP02kjD.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
           "voteAverage": "",
           "trailerKey": "wY8n1ExAN-s",
@@ -31148,11 +30661,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -31161,7 +30674,7 @@
         "origLang": "zh",
         "origTitle": "泡泡糖女孩",
         "platforms": [],
-        "popularity": 2.4837,
+        "popularity": 2.9243,
         "imdbId": "tt35683770",
         "countries": [
           "Singapore"
@@ -31210,11 +30723,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -31255,7 +30768,7 @@
         "duration": 105,
         "synopsis": "小鎮居民各司其職，無不以婚配嫁娶為志，一生期盼被頸圈套牢白紗的大喜之日。大齡漁婦小姑獨處招來訕笑，新娘拋出的喜蛋卻預言她將走上紅毯，漁婦就此向織柳匠許願一個丈夫。柳樹製成的情郎從天而降，漁婦從魚腥中脫身，陶醉於魚水之歡。專情又勇猛的柳樹男激起地方太太們的慾望、人夫們的嫉妒，異端夫婦將保守小鎮搞得天翻地覆，若完美情人能量身打造，還有什麼將橫空出世？",
         "imdb": "7.4",
-        "rt": "92%",
+        "rt": "94%",
         "mc": "64",
         "ratingMeta": {
           "imdb": {
@@ -31265,8 +30778,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 39,
-            "lastChanged": "2026-10-20T08:38:20.620978+08:00"
+            "votes": 49,
+            "lastChanged": "2026-10-21T09:40:13.799260+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -32097,7 +31610,7 @@
         "origLang": "en",
         "origTitle": "Ice Age: Boiling Point",
         "platforms": [],
-        "popularity": 15.1083,
+        "popularity": 12.5683,
         "imdbId": "tt34512981",
         "countries": [
           "United States of America"
@@ -32289,7 +31802,7 @@
         "origLang": "en",
         "origTitle": "The Rescue",
         "platforms": [],
-        "popularity": 2.9121,
+        "popularity": 2.6928,
         "imdbId": "tt35606013",
         "countries": [
           "United States of America"
@@ -32726,7 +32239,7 @@
         "origLang": "en",
         "origTitle": "Remain",
         "platforms": [],
-        "popularity": 8.3232,
+        "popularity": 8.7198,
         "imdbId": "tt35621542",
         "countries": [
           "United States of America"
