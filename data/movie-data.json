@@ -1,12 +1,273 @@
 {
-  "generated_at": "2026-10-21T20:20:40.045215+08:00",
+  "generated_at": "2026-10-22T01:38:25.995336+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 82,
-    "soon_count": 74
+    "now_count": 83,
+    "soon_count": 73
   },
   "movies": {
     "now": [
+      {
+        "id": 1400940,
+        "titleZh": "泥面人",
+        "titleEn": "Clayface",
+        "releaseDate": "2026-10-22",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-22",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
+        "voteAverage": "7.2",
+        "genre": [
+          "恐怖",
+          "驚悚",
+          "科幻"
+        ],
+        "duration": 109,
+        "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "v889uS_W0Q0",
+        "cast": [
+          {
+            "name": "Tom Rhys Harries",
+            "char": "Matt Hagen / Clayface",
+            "photo": "https://image.tmdb.org/t/p/w500/elxvpHPqOxGcKe6U2hcArIcpyWo.jpg"
+          },
+          {
+            "name": "娜歐蜜·艾基",
+            "char": "Caitlyn Corr",
+            "photo": "https://image.tmdb.org/t/p/w500/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
+          },
+          {
+            "name": "埃迪·馬桑",
+            "char": "Frank",
+            "photo": "https://image.tmdb.org/t/p/w500/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
+          },
+          {
+            "name": "Max Minghella",
+            "char": "John Borrelli",
+            "photo": "https://image.tmdb.org/t/p/w500/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg"
+          },
+          {
+            "name": "David Dencik",
+            "char": "Marcos Jabo",
+            "photo": "https://image.tmdb.org/t/p/w500/q5wLADc6yYd3owxSEG8VKbf7YWV.jpg"
+          },
+          {
+            "name": "Francesca Corney",
+            "char": "Rosie",
+            "photo": "https://image.tmdb.org/t/p/w500/p2B2dYAvl0TMUtbrZxzOdNgBbSE.jpg"
+          },
+          {
+            "name": "Ruby Sear",
+            "char": "Theresa",
+            "photo": "https://image.tmdb.org/t/p/w500/hNlLm6NaHPjakDJhPEY1suGcxKi.jpg"
+          },
+          {
+            "name": "Wil Coban",
+            "char": "Bones",
+            "photo": "https://image.tmdb.org/t/p/w500/73REwJckTBMNJoiGIrrGhcCdTqf.jpg"
+          },
+          {
+            "name": "Joshua James",
+            "char": "Corey Bowery",
+            "photo": "https://image.tmdb.org/t/p/w500/jw1n2Pzi2LJvyu6OkXTHMXPV7Q4.jpg"
+          },
+          {
+            "name": "Jake Curran",
+            "char": "Patches",
+            "photo": "https://image.tmdb.org/t/p/w500/pC6ozticiOmovaPpwqKVOMhn0b9.jpg"
+          },
+          {
+            "name": "Nancy Carroll",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/lXTNopDRBsDLTlXTREvuBT3KMIt.jpg"
+          },
+          {
+            "name": "Olivia-Mai Barrett",
+            "char": "Niki",
+            "photo": "https://image.tmdb.org/t/p/w500/gWZRzvOnUxZmvdzHuxBvIS0BEJP.jpg"
+          },
+          {
+            "name": "Sonita Henry",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/oIBILFSVqHT2warKlXSPDML3llI.jpg"
+          },
+          {
+            "name": "Adam Silver",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/jE3zEMEYflS3adHtF11YqLAwlVI.jpg"
+          },
+          {
+            "name": "Rob Brydon",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/xoKLZVwzaUgTUEvPX4vymXpC1fU.jpg"
+          },
+          {
+            "name": "Joana Ribeiro",
+            "char": "Mia",
+            "photo": "https://image.tmdb.org/t/p/w500/ipukcmtTCQGJ7LPZuP3YLXbpEbm.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "James Watkins",
+            "job": "Director"
+          },
+          {
+            "name": "麥可·弗拉納根",
+            "job": "Screenplay"
+          },
+          {
+            "name": "حسین امینی",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 30000000,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Clayface",
+        "platforms": [],
+        "popularity": 117.3969,
+        "imdbId": "tt34890576",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 109,
+          "genres": [
+            "恐怖",
+            "驚悚",
+            "科幻"
+          ],
+          "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
+          "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
+          "voteAverage": "7.2",
+          "trailerKey": "v889uS_W0Q0",
+          "imdbId": "tt34890576",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "Tom Rhys Harries",
+              "char": "Matt Hagen / Clayface",
+              "photo": "https://image.tmdb.org/t/p/w500/elxvpHPqOxGcKe6U2hcArIcpyWo.jpg"
+            },
+            {
+              "name": "娜歐蜜·艾基",
+              "char": "Caitlyn Corr",
+              "photo": "https://image.tmdb.org/t/p/w500/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
+            },
+            {
+              "name": "埃迪·馬桑",
+              "char": "Frank",
+              "photo": "https://image.tmdb.org/t/p/w500/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
+            },
+            {
+              "name": "Max Minghella",
+              "char": "John Borrelli",
+              "photo": "https://image.tmdb.org/t/p/w500/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg"
+            },
+            {
+              "name": "David Dencik",
+              "char": "Marcos Jabo",
+              "photo": "https://image.tmdb.org/t/p/w500/q5wLADc6yYd3owxSEG8VKbf7YWV.jpg"
+            },
+            {
+              "name": "Francesca Corney",
+              "char": "Rosie",
+              "photo": "https://image.tmdb.org/t/p/w500/p2B2dYAvl0TMUtbrZxzOdNgBbSE.jpg"
+            },
+            {
+              "name": "Ruby Sear",
+              "char": "Theresa",
+              "photo": "https://image.tmdb.org/t/p/w500/hNlLm6NaHPjakDJhPEY1suGcxKi.jpg"
+            },
+            {
+              "name": "Wil Coban",
+              "char": "Bones",
+              "photo": "https://image.tmdb.org/t/p/w500/73REwJckTBMNJoiGIrrGhcCdTqf.jpg"
+            },
+            {
+              "name": "Joshua James",
+              "char": "Corey Bowery",
+              "photo": "https://image.tmdb.org/t/p/w500/jw1n2Pzi2LJvyu6OkXTHMXPV7Q4.jpg"
+            },
+            {
+              "name": "Jake Curran",
+              "char": "Patches",
+              "photo": "https://image.tmdb.org/t/p/w500/pC6ozticiOmovaPpwqKVOMhn0b9.jpg"
+            },
+            {
+              "name": "Nancy Carroll",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/lXTNopDRBsDLTlXTREvuBT3KMIt.jpg"
+            },
+            {
+              "name": "Olivia-Mai Barrett",
+              "char": "Niki",
+              "photo": "https://image.tmdb.org/t/p/w500/gWZRzvOnUxZmvdzHuxBvIS0BEJP.jpg"
+            },
+            {
+              "name": "Sonita Henry",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/oIBILFSVqHT2warKlXSPDML3llI.jpg"
+            },
+            {
+              "name": "Adam Silver",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/jE3zEMEYflS3adHtF11YqLAwlVI.jpg"
+            },
+            {
+              "name": "Rob Brydon",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/xoKLZVwzaUgTUEvPX4vymXpC1fU.jpg"
+            },
+            {
+              "name": "Joana Ribeiro",
+              "char": "Mia",
+              "photo": "https://image.tmdb.org/t/p/w500/ipukcmtTCQGJ7LPZuP3YLXbpEbm.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "James Watkins",
+              "job": "Director"
+            },
+            {
+              "name": "麥可·弗拉納根",
+              "job": "Screenplay"
+            },
+            {
+              "name": "حسین امینی",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 30000000,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Clayface",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1400940?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 605320,
         "titleZh": "比如父子",
@@ -209,8 +470,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 303,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -1726,7 +1987,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
-        "voteAverage": "6.3",
+        "voteAverage": "6.2",
         "genre": [
           "動作",
           "奇幻"
@@ -1871,7 +2132,7 @@
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
-          "voteAverage": "6.3",
+          "voteAverage": "6.2",
           "trailerKey": "vR-RQWBeraY",
           "imdbId": "tt27419420",
           "countries": [
@@ -4582,7 +4843,7 @@
           }
         ],
         "budget": 40000000,
-        "revenue": 113961372,
+        "revenue": 145691770,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Verity",
@@ -4700,7 +4961,7 @@
             }
           ],
           "budget": 40000000,
-          "revenue": 113961372,
+          "revenue": 145691770,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Verity",
@@ -4840,11 +5101,11 @@
         "crew": [
           {
             "name": "Pauline Loquès",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Pauline Loquès",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -4957,11 +5218,11 @@
           "crew": [
             {
               "name": "Pauline Loquès",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Pauline Loquès",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -9868,7 +10129,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 241,
+            "votes": 242,
             "lastChanged": "2026-10-11T14:23:31.566712+08:00"
           },
           "mc": {
@@ -13169,12 +13430,12 @@
         ],
         "crew": [
           {
-            "name": "加藤祐司",
-            "job": "Writer"
-          },
-          {
             "name": "相米慎二",
             "job": "Director"
+          },
+          {
+            "name": "加藤祐司",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -13286,12 +13547,12 @@
           ],
           "crew": [
             {
-              "name": "加藤祐司",
-              "job": "Writer"
-            },
-            {
               "name": "相米慎二",
               "job": "Director"
+            },
+            {
+              "name": "加藤祐司",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -13330,8 +13591,8 @@
         "duration": 100,
         "synopsis": "一心以成為漫畫家為目標的兩位少女藤野、京本之間青春動人的故事。",
         "imdb": "7.6",
-        "rt": "88%",
-        "mc": "73",
+        "rt": "89%",
+        "mc": "76",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -13340,13 +13601,13 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 26,
-            "lastChanged": "2026-09-25T20:11:45.430627+08:00"
+            "votes": 28,
+            "lastChanged": "2026-10-22T01:38:25.995336+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 10,
-            "lastChanged": "2026-10-04T08:05:09.081153+08:00"
+            "votes": 12,
+            "lastChanged": "2026-10-22T01:38:25.995336+08:00"
           }
         },
         "trailerKey": "ad3giJ30GOw",
@@ -16136,11 +16397,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
@@ -16261,11 +16522,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
@@ -17757,267 +18018,6 @@
     ],
     "soon": [
       {
-        "id": 1400940,
-        "titleZh": "泥面人",
-        "titleEn": "Clayface",
-        "releaseDate": "2026-10-22",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-22",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-        "voteAverage": "7.2",
-        "genre": [
-          "恐怖",
-          "驚悚",
-          "科幻"
-        ],
-        "duration": 109,
-        "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": "v889uS_W0Q0",
-        "cast": [
-          {
-            "name": "Tom Rhys Harries",
-            "char": "Matt Hagen / Clayface",
-            "photo": "https://image.tmdb.org/t/p/w500/elxvpHPqOxGcKe6U2hcArIcpyWo.jpg"
-          },
-          {
-            "name": "娜歐蜜·艾基",
-            "char": "Caitlyn Corr",
-            "photo": "https://image.tmdb.org/t/p/w500/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
-          },
-          {
-            "name": "埃迪·馬桑",
-            "char": "Frank",
-            "photo": "https://image.tmdb.org/t/p/w500/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
-          },
-          {
-            "name": "Max Minghella",
-            "char": "John Borrelli",
-            "photo": "https://image.tmdb.org/t/p/w500/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg"
-          },
-          {
-            "name": "David Dencik",
-            "char": "Marcos Jabo",
-            "photo": "https://image.tmdb.org/t/p/w500/q5wLADc6yYd3owxSEG8VKbf7YWV.jpg"
-          },
-          {
-            "name": "Francesca Corney",
-            "char": "Rosie",
-            "photo": "https://image.tmdb.org/t/p/w500/p2B2dYAvl0TMUtbrZxzOdNgBbSE.jpg"
-          },
-          {
-            "name": "Ruby Sear",
-            "char": "Theresa",
-            "photo": "https://image.tmdb.org/t/p/w500/hNlLm6NaHPjakDJhPEY1suGcxKi.jpg"
-          },
-          {
-            "name": "Wil Coban",
-            "char": "Bones",
-            "photo": "https://image.tmdb.org/t/p/w500/73REwJckTBMNJoiGIrrGhcCdTqf.jpg"
-          },
-          {
-            "name": "Joshua James",
-            "char": "Corey Bowery",
-            "photo": "https://image.tmdb.org/t/p/w500/jw1n2Pzi2LJvyu6OkXTHMXPV7Q4.jpg"
-          },
-          {
-            "name": "Jake Curran",
-            "char": "Patches",
-            "photo": "https://image.tmdb.org/t/p/w500/pC6ozticiOmovaPpwqKVOMhn0b9.jpg"
-          },
-          {
-            "name": "Nancy Carroll",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/lXTNopDRBsDLTlXTREvuBT3KMIt.jpg"
-          },
-          {
-            "name": "Olivia-Mai Barrett",
-            "char": "Niki",
-            "photo": "https://image.tmdb.org/t/p/w500/gWZRzvOnUxZmvdzHuxBvIS0BEJP.jpg"
-          },
-          {
-            "name": "Sonita Henry",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/oIBILFSVqHT2warKlXSPDML3llI.jpg"
-          },
-          {
-            "name": "Adam Silver",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/jE3zEMEYflS3adHtF11YqLAwlVI.jpg"
-          },
-          {
-            "name": "Rob Brydon",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/xoKLZVwzaUgTUEvPX4vymXpC1fU.jpg"
-          },
-          {
-            "name": "Joana Ribeiro",
-            "char": "Mia",
-            "photo": "https://image.tmdb.org/t/p/w500/ipukcmtTCQGJ7LPZuP3YLXbpEbm.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "James Watkins",
-            "job": "Director"
-          },
-          {
-            "name": "麥可·弗拉納根",
-            "job": "Screenplay"
-          },
-          {
-            "name": "حسین امینی",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 30000000,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Clayface",
-        "platforms": [],
-        "popularity": 117.3969,
-        "imdbId": "tt34890576",
-        "countries": [
-          "United States of America"
-        ],
-        "detail": {
-          "duration": 109,
-          "genres": [
-            "恐怖",
-            "驚悚",
-            "科幻"
-          ],
-          "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
-          "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-          "voteAverage": "7.2",
-          "trailerKey": "v889uS_W0Q0",
-          "imdbId": "tt34890576",
-          "countries": [
-            "United States of America"
-          ],
-          "cast": [
-            {
-              "name": "Tom Rhys Harries",
-              "char": "Matt Hagen / Clayface",
-              "photo": "https://image.tmdb.org/t/p/w500/elxvpHPqOxGcKe6U2hcArIcpyWo.jpg"
-            },
-            {
-              "name": "娜歐蜜·艾基",
-              "char": "Caitlyn Corr",
-              "photo": "https://image.tmdb.org/t/p/w500/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
-            },
-            {
-              "name": "埃迪·馬桑",
-              "char": "Frank",
-              "photo": "https://image.tmdb.org/t/p/w500/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
-            },
-            {
-              "name": "Max Minghella",
-              "char": "John Borrelli",
-              "photo": "https://image.tmdb.org/t/p/w500/AhVDxsOOoAnwwVBL7ZY8W0mGsYJ.jpg"
-            },
-            {
-              "name": "David Dencik",
-              "char": "Marcos Jabo",
-              "photo": "https://image.tmdb.org/t/p/w500/q5wLADc6yYd3owxSEG8VKbf7YWV.jpg"
-            },
-            {
-              "name": "Francesca Corney",
-              "char": "Rosie",
-              "photo": "https://image.tmdb.org/t/p/w500/p2B2dYAvl0TMUtbrZxzOdNgBbSE.jpg"
-            },
-            {
-              "name": "Ruby Sear",
-              "char": "Theresa",
-              "photo": "https://image.tmdb.org/t/p/w500/hNlLm6NaHPjakDJhPEY1suGcxKi.jpg"
-            },
-            {
-              "name": "Wil Coban",
-              "char": "Bones",
-              "photo": "https://image.tmdb.org/t/p/w500/73REwJckTBMNJoiGIrrGhcCdTqf.jpg"
-            },
-            {
-              "name": "Joshua James",
-              "char": "Corey Bowery",
-              "photo": "https://image.tmdb.org/t/p/w500/jw1n2Pzi2LJvyu6OkXTHMXPV7Q4.jpg"
-            },
-            {
-              "name": "Jake Curran",
-              "char": "Patches",
-              "photo": "https://image.tmdb.org/t/p/w500/pC6ozticiOmovaPpwqKVOMhn0b9.jpg"
-            },
-            {
-              "name": "Nancy Carroll",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/lXTNopDRBsDLTlXTREvuBT3KMIt.jpg"
-            },
-            {
-              "name": "Olivia-Mai Barrett",
-              "char": "Niki",
-              "photo": "https://image.tmdb.org/t/p/w500/gWZRzvOnUxZmvdzHuxBvIS0BEJP.jpg"
-            },
-            {
-              "name": "Sonita Henry",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/oIBILFSVqHT2warKlXSPDML3llI.jpg"
-            },
-            {
-              "name": "Adam Silver",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/jE3zEMEYflS3adHtF11YqLAwlVI.jpg"
-            },
-            {
-              "name": "Rob Brydon",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/xoKLZVwzaUgTUEvPX4vymXpC1fU.jpg"
-            },
-            {
-              "name": "Joana Ribeiro",
-              "char": "Mia",
-              "photo": "https://image.tmdb.org/t/p/w500/ipukcmtTCQGJ7LPZuP3YLXbpEbm.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "James Watkins",
-              "job": "Director"
-            },
-            {
-              "name": "麥可·弗拉納根",
-              "job": "Screenplay"
-            },
-            {
-              "name": "حسین امینی",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 30000000,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Clayface",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1400940?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 20453,
         "titleZh": "三個傻瓜",
         "titleEn": "3 Idiots",
@@ -18147,11 +18147,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -18269,11 +18269,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -18536,7 +18536,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
-        "voteAverage": "10.0",
+        "voteAverage": "8.5",
         "genre": [
           "科幻",
           "劇情"
@@ -18643,12 +18643,12 @@
         ],
         "crew": [
           {
-            "name": "塔伊加·維迪提",
-            "job": "Director"
-          },
-          {
             "name": "Dahvi Waller",
             "job": "Screenplay"
+          },
+          {
+            "name": "塔伊加·維迪提",
+            "job": "Director"
           },
           {
             "name": "塔伊加·維迪提",
@@ -18677,7 +18677,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/4GHcpq5e2NhYPPhpmOJsibmaz1n.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
-          "voteAverage": "10.0",
+          "voteAverage": "8.5",
           "trailerKey": "RCuBTTOLtIg",
           "imdbId": "tt14371256",
           "countries": [
@@ -18769,12 +18769,12 @@
           ],
           "crew": [
             {
-              "name": "塔伊加·維迪提",
-              "job": "Director"
-            },
-            {
               "name": "Dahvi Waller",
               "job": "Screenplay"
+            },
+            {
+              "name": "塔伊加·維迪提",
+              "job": "Director"
             },
             {
               "name": "塔伊加·維迪提",
@@ -22396,11 +22396,11 @@
         "crew": [
           {
             "name": "Sung Hsin-Yin",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Sung Hsin-Yin",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -22488,11 +22488,11 @@
           "crew": [
             {
               "name": "Sung Hsin-Yin",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Sung Hsin-Yin",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -23201,11 +23201,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 10000000,
@@ -23322,11 +23322,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 10000000,
@@ -27735,8 +27735,8 @@
         "duration": 155,
         "synopsis": "西班牙內戰轉折時刻，佛朗哥軍營的小號手受命照顧戰俘，面對瑰麗胴體和慾望初萌，一段愛情也隨著戰事拉扯；出身貴族的酷兒因陰性氣質無法躋身上流，更被迫肩負著家族責任；新銳劇作家返鄉之際，接獲剛逝世祖父所留下的遺產，追尋著未曾言說的過去……1932、1937、2017，跨越三個年代，交織三個不同命運，在國家暴力、酷兒認同與歷史創傷的鴻溝裡彼此映照，譜寫一則傳誦愛的跨時代史詩。",
         "imdb": "7.0",
-        "rt": "87%",
-        "mc": "83",
+        "rt": "86%",
+        "mc": "82",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -27745,13 +27745,13 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 86,
-            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
+            "votes": 93,
+            "lastChanged": "2026-10-22T01:38:25.995336+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 25,
-            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
+            "votes": 27,
+            "lastChanged": "2026-10-22T01:38:25.995336+08:00"
           }
         },
         "trailerKey": "4cMNo7Tj5I4",
@@ -28302,7 +28302,7 @@
           "奇幻",
           "喜劇"
         ],
-        "duration": 99,
+        "duration": 110,
         "synopsis": "",
         "imdb": "",
         "rt": "",
@@ -28417,7 +28417,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": 99,
+          "duration": 110,
           "genres": [
             "冒險",
             "動畫",
@@ -28922,12 +28922,12 @@
         ],
         "crew": [
           {
-            "name": "露絲·鮑爾·賈華拉",
-            "job": "Screenplay"
-          },
-          {
             "name": "James Ivory",
             "job": "Director"
+          },
+          {
+            "name": "露絲·鮑爾·賈華拉",
+            "job": "Screenplay"
           }
         ],
         "budget": 3000000,
@@ -29040,12 +29040,12 @@
           ],
           "crew": [
             {
-              "name": "露絲·鮑爾·賈華拉",
-              "job": "Screenplay"
-            },
-            {
               "name": "James Ivory",
               "job": "Director"
+            },
+            {
+              "name": "露絲·鮑爾·賈華拉",
+              "job": "Screenplay"
             }
           ],
           "budget": 3000000,
@@ -30576,7 +30576,7 @@
           {
             "name": "夏綠蒂·蘭普琳",
             "char": "Reverend Mother Mohiam",
-            "photo": "https://image.tmdb.org/t/p/w500/jgpJroIhfkrZmh7C4T5MADjpGBG.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/7fhg5FCcl0VfYERP5D0unpybqgx.jpg"
           },
           {
             "name": "安雅·泰勒-喬伊",
@@ -30617,11 +30617,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -30690,7 +30690,7 @@
             {
               "name": "夏綠蒂·蘭普琳",
               "char": "Reverend Mother Mohiam",
-              "photo": "https://image.tmdb.org/t/p/w500/jgpJroIhfkrZmh7C4T5MADjpGBG.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/7fhg5FCcl0VfYERP5D0unpybqgx.jpg"
             },
             {
               "name": "安雅·泰勒-喬伊",
@@ -30731,11 +30731,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
@@ -30818,11 +30818,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -30880,11 +30880,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -30916,7 +30916,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-        "voteAverage": "1.0",
+        "voteAverage": "5.7",
         "genre": [
           "愛情",
           "奇幻",
@@ -31038,7 +31038,7 @@
           },
           {
             "name": "Alex Huston Fischer",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -31063,7 +31063,7 @@
           "synopsis": "小鎮居民各司其職，無不以婚配嫁娶為志，一生期盼被頸圈套牢白紗的大喜之日。大齡漁婦小姑獨處招來訕笑，新娘拋出的喜蛋卻預言她將走上紅毯，漁婦就此向織柳匠許願一個丈夫。柳樹製成的情郎從天而降，漁婦從魚腥中脫身，陶醉於魚水之歡。專情又勇猛的柳樹男激起地方太太們的慾望、人夫們的嫉妒，異端夫婦將保守小鎮搞得天翻地覆，若完美情人能量身打造，還有什麼將橫空出世？",
           "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-          "voteAverage": "1.0",
+          "voteAverage": "5.7",
           "trailerKey": null,
           "imdbId": "tt29611136",
           "countries": [
@@ -31163,7 +31163,7 @@
             },
             {
               "name": "Alex Huston Fischer",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
