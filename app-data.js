@@ -302,7 +302,7 @@ function cardHTML(m, showRatings) {
 function skeletonHTML() {
   var html = "";
   for (var i = 0; i < 10; i++) {
-    html += '<div><div class="skeleton" style="padding-top:150%;border-radius:16px;margin-bottom:12px"></div>' +
+    html += '<div><div class="skeleton" style="padding-top:150%;border-radius:0;margin-bottom:12px"></div>' +
       '<div class="skeleton" style="height:12px;border-radius:6px;margin-bottom:6px;width:75%"></div>' +
       '<div class="skeleton" style="height:10px;border-radius:6px;width:50%"></div></div>';
   }
