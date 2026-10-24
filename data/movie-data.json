@@ -1,12 +1,155 @@
 {
-  "generated_at": "2026-10-24T19:33:13.576985+08:00",
+  "generated_at": "2026-10-25T00:15:46.752265+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 89,
-    "soon_count": 61
+    "now_count": 90,
+    "soon_count": 60
   },
   "movies": {
     "now": [
+      {
+        "id": 1744239,
+        "titleZh": "音樂劇《刀劍亂舞》〜月夜一縷〜",
+        "titleEn": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
+        "releaseDate": "2026-10-25",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-25",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/9IFt7Z2qEWZIjO1CHlzZhKCw7N8.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "北園涼",
+            "char": "Kogitsunemaru",
+            "photo": "https://image.tmdb.org/t/p/w500/ehKO6bhkOOUFSbvzPJEqhuGFT2s.jpg"
+          },
+          {
+            "name": "大平峻也",
+            "char": "Imanotsurugi",
+            "photo": "https://image.tmdb.org/t/p/w500/m97Qnkj9ZmC8dtDZ2vtKMovt9Ze.jpg"
+          },
+          {
+            "name": "松島勇之介",
+            "char": "Ookanehira",
+            "photo": "https://image.tmdb.org/t/p/w500/uwxV6sS61K53tSk1InYumQvVMrq.jpg"
+          },
+          {
+            "name": "桜井 一",
+            "char": "Nansen Ichimonji",
+            "photo": null
+          },
+          {
+            "name": "水江建太",
+            "char": "Yamanbagiri Chougi",
+            "photo": "https://image.tmdb.org/t/p/w500/z7Pott0dttsXMDGnNk81VzQMNsj.jpg"
+          },
+          {
+            "name": "小越勇輝",
+            "char": "Ichimonji Norimune",
+            "photo": "https://image.tmdb.org/t/p/w500/ha5o5Xk4UTosfpnNGkAmpnVY9Ma.jpg"
+          },
+          {
+            "name": "Riku Akashi",
+            "char": "Himetsuru Ichimonji",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "茅野イサム",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
+        "platforms": [],
+        "popularity": 1.2826,
+        "imdbId": null,
+        "countries": [],
+        "detail": {
+          "duration": "",
+          "genres": [],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/9IFt7Z2qEWZIjO1CHlzZhKCw7N8.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": null,
+          "countries": [],
+          "cast": [
+            {
+              "name": "北園涼",
+              "char": "Kogitsunemaru",
+              "photo": "https://image.tmdb.org/t/p/w500/ehKO6bhkOOUFSbvzPJEqhuGFT2s.jpg"
+            },
+            {
+              "name": "大平峻也",
+              "char": "Imanotsurugi",
+              "photo": "https://image.tmdb.org/t/p/w500/m97Qnkj9ZmC8dtDZ2vtKMovt9Ze.jpg"
+            },
+            {
+              "name": "松島勇之介",
+              "char": "Ookanehira",
+              "photo": "https://image.tmdb.org/t/p/w500/uwxV6sS61K53tSk1InYumQvVMrq.jpg"
+            },
+            {
+              "name": "桜井 一",
+              "char": "Nansen Ichimonji",
+              "photo": null
+            },
+            {
+              "name": "水江建太",
+              "char": "Yamanbagiri Chougi",
+              "photo": "https://image.tmdb.org/t/p/w500/z7Pott0dttsXMDGnNk81VzQMNsj.jpg"
+            },
+            {
+              "name": "小越勇輝",
+              "char": "Ichimonji Norimune",
+              "photo": "https://image.tmdb.org/t/p/w500/ha5o5Xk4UTosfpnNGkAmpnVY9Ma.jpg"
+            },
+            {
+              "name": "Riku Akashi",
+              "char": "Himetsuru Ichimonji",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "茅野イサム",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1744239?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 519141,
         "titleZh": "麥特與麥斯",
@@ -2511,6 +2654,11 @@
             "name": "Dũng Hà",
             "char": "",
             "photo": "https://image.tmdb.org/t/p/w500/vnm4o2a05Szywk1mLO3rlhUfp4N.jpg"
+          },
+          {
+            "name": "Trương Huỳnh Như",
+            "char": "Hứa",
+            "photo": "https://image.tmdb.org/t/p/w500/fVpROQXt2yE6cnyUQioQFtXT18G.jpg"
           }
         ],
         "crew": [
@@ -2577,6 +2725,11 @@
               "name": "Dũng Hà",
               "char": "",
               "photo": "https://image.tmdb.org/t/p/w500/vnm4o2a05Szywk1mLO3rlhUfp4N.jpg"
+            },
+            {
+              "name": "Trương Huỳnh Như",
+              "char": "Hứa",
+              "photo": "https://image.tmdb.org/t/p/w500/fVpROQXt2yE6cnyUQioQFtXT18G.jpg"
             }
           ],
           "crew": [
@@ -3248,7 +3401,7 @@
             "job": "Screenplay"
           }
         ],
-        "budget": 40000000,
+        "budget": 44000000,
         "revenue": 0,
         "status": "Released",
         "origLang": "en",
@@ -3371,7 +3524,7 @@
               "job": "Screenplay"
             }
           ],
-          "budget": 40000000,
+          "budget": 44000000,
           "revenue": 0,
           "status": "Released",
           "origLang": "en",
@@ -3418,8 +3571,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 303,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -8510,7 +8663,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-        "voteAverage": "5.8",
+        "voteAverage": "5.9",
         "genre": [
           "恐怖"
         ],
@@ -8643,7 +8796,7 @@
           "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
           "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-          "voteAverage": "5.8",
+          "voteAverage": "5.9",
           "trailerKey": "z5vaaaJBGXw",
           "imdbId": "tt36586020",
           "countries": [
@@ -9715,11 +9868,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -9840,11 +9993,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -11943,7 +12096,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
@@ -12071,7 +12224,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
@@ -18761,7 +18914,7 @@
           {
             "name": "羅伯·派汀森",
             "char": "Antinous",
-            "photo": "https://image.tmdb.org/t/p/w500/sRUM2u8qLcsOaTm0jGJGlOEQhlQ.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
           },
           {
             "name": "希姆許·帕托",
@@ -18882,7 +19035,7 @@
             {
               "name": "羅伯·派汀森",
               "char": "Antinous",
-              "photo": "https://image.tmdb.org/t/p/w500/sRUM2u8qLcsOaTm0jGJGlOEQhlQ.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/3qZ09UE7lN6AtorfXFRYpEtSY93.jpg"
             },
             {
               "name": "希姆許·帕托",
@@ -19401,149 +19554,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 1744239,
-        "titleZh": "音樂劇《刀劍亂舞》〜月夜一縷〜",
-        "titleEn": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
-        "releaseDate": "2026-10-25",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-25",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/9IFt7Z2qEWZIjO1CHlzZhKCw7N8.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": null,
-        "voteAverage": "",
-        "genre": [],
-        "duration": "",
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "北園涼",
-            "char": "Kogitsunemaru",
-            "photo": "https://image.tmdb.org/t/p/w500/ehKO6bhkOOUFSbvzPJEqhuGFT2s.jpg"
-          },
-          {
-            "name": "大平峻也",
-            "char": "Imanotsurugi",
-            "photo": "https://image.tmdb.org/t/p/w500/m97Qnkj9ZmC8dtDZ2vtKMovt9Ze.jpg"
-          },
-          {
-            "name": "松島勇之介",
-            "char": "Ookanehira",
-            "photo": "https://image.tmdb.org/t/p/w500/uwxV6sS61K53tSk1InYumQvVMrq.jpg"
-          },
-          {
-            "name": "桜井 一",
-            "char": "Nansen Ichimonji",
-            "photo": null
-          },
-          {
-            "name": "水江建太",
-            "char": "Yamanbagiri Chougi",
-            "photo": "https://image.tmdb.org/t/p/w500/z7Pott0dttsXMDGnNk81VzQMNsj.jpg"
-          },
-          {
-            "name": "小越勇輝",
-            "char": "Ichimonji Norimune",
-            "photo": "https://image.tmdb.org/t/p/w500/ha5o5Xk4UTosfpnNGkAmpnVY9Ma.jpg"
-          },
-          {
-            "name": "Riku Akashi",
-            "char": "Himetsuru Ichimonji",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "茅野イサム",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
-        "platforms": [],
-        "popularity": 1.2826,
-        "imdbId": null,
-        "countries": [],
-        "detail": {
-          "duration": "",
-          "genres": [],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/9IFt7Z2qEWZIjO1CHlzZhKCw7N8.jpg",
-          "backdrop": null,
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": null,
-          "countries": [],
-          "cast": [
-            {
-              "name": "北園涼",
-              "char": "Kogitsunemaru",
-              "photo": "https://image.tmdb.org/t/p/w500/ehKO6bhkOOUFSbvzPJEqhuGFT2s.jpg"
-            },
-            {
-              "name": "大平峻也",
-              "char": "Imanotsurugi",
-              "photo": "https://image.tmdb.org/t/p/w500/m97Qnkj9ZmC8dtDZ2vtKMovt9Ze.jpg"
-            },
-            {
-              "name": "松島勇之介",
-              "char": "Ookanehira",
-              "photo": "https://image.tmdb.org/t/p/w500/uwxV6sS61K53tSk1InYumQvVMrq.jpg"
-            },
-            {
-              "name": "桜井 一",
-              "char": "Nansen Ichimonji",
-              "photo": null
-            },
-            {
-              "name": "水江建太",
-              "char": "Yamanbagiri Chougi",
-              "photo": "https://image.tmdb.org/t/p/w500/z7Pott0dttsXMDGnNk81VzQMNsj.jpg"
-            },
-            {
-              "name": "小越勇輝",
-              "char": "Ichimonji Norimune",
-              "photo": "https://image.tmdb.org/t/p/w500/ha5o5Xk4UTosfpnNGkAmpnVY9Ma.jpg"
-            },
-            {
-              "name": "Riku Akashi",
-              "char": "Himetsuru Ichimonji",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "茅野イサム",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1744239?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 1481451,
         "titleZh": "消失的金鳳娜",
@@ -20167,15 +20177,15 @@
         "crew": [
           {
             "name": "Jack Hazan",
-            "job": "Director"
-          },
-          {
-            "name": "Jack Hazan",
             "job": "Writer"
           },
           {
             "name": "David Mingay",
             "job": "Writer"
+          },
+          {
+            "name": "Jack Hazan",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -20289,15 +20299,15 @@
           "crew": [
             {
               "name": "Jack Hazan",
-              "job": "Director"
-            },
-            {
-              "name": "Jack Hazan",
               "job": "Writer"
             },
             {
               "name": "David Mingay",
               "job": "Writer"
+            },
+            {
+              "name": "Jack Hazan",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -20402,11 +20412,11 @@
         "crew": [
           {
             "name": "Sung Hsin-Yin",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Sung Hsin-Yin",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -20494,11 +20504,11 @@
           "crew": [
             {
               "name": "Sung Hsin-Yin",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Sung Hsin-Yin",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -21207,11 +21217,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 10000000,
@@ -21328,11 +21338,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 10000000,
@@ -21445,12 +21455,12 @@
         ],
         "crew": [
           {
-            "name": "Thompson Evans",
-            "job": "Writer"
-          },
-          {
             "name": "Mark Vanselow",
             "job": "Director"
+          },
+          {
+            "name": "Thompson Evans",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -21548,12 +21558,12 @@
           ],
           "crew": [
             {
-              "name": "Thompson Evans",
-              "job": "Writer"
-            },
-            {
               "name": "Mark Vanselow",
               "job": "Director"
+            },
+            {
+              "name": "Thompson Evans",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22776,16 +22786,16 @@
         ],
         "crew": [
           {
-            "name": "Barbara Miller",
-            "job": "Director"
-          },
-          {
-            "name": "Barbara Miller",
+            "name": "Manuel Bauer",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
+          },
+          {
+            "name": "Philip Delaquis",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -22824,16 +22834,16 @@
           ],
           "crew": [
             {
-              "name": "Barbara Miller",
-              "job": "Director"
-            },
-            {
-              "name": "Barbara Miller",
+              "name": "Manuel Bauer",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
+            },
+            {
+              "name": "Philip Delaquis",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -23971,7 +23981,7 @@
           "犯罪",
           "驚悚"
         ],
-        "duration": 122,
+        "duration": "",
         "synopsis": "",
         "imdb": "",
         "rt": "",
@@ -24082,7 +24092,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": 122,
+          "duration": "",
           "genres": [
             "動作",
             "犯罪",
@@ -25998,7 +26008,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lIGNfPlpkLyhMTLh9hxv9Y7xKsc.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
-        "voteAverage": "8.2",
+        "voteAverage": "8.3",
         "genre": [
           "劇情",
           "戰爭"
@@ -26143,7 +26153,7 @@
           "synopsis": "西班牙內戰轉折時刻，佛朗哥軍營的小號手受命照顧戰俘，面對瑰麗胴體和慾望初萌，一段愛情也隨著戰事拉扯；出身貴族的酷兒因陰性氣質無法躋身上流，更被迫肩負著家族責任；新銳劇作家返鄉之際，接獲剛逝世祖父所留下的遺產，追尋著未曾言說的過去……1932、1937、2017，跨越三個年代，交織三個不同命運，在國家暴力、酷兒認同與歷史創傷的鴻溝裡彼此映照，譜寫一則傳誦愛的跨時代史詩。",
           "poster": "https://image.tmdb.org/t/p/w500/lIGNfPlpkLyhMTLh9hxv9Y7xKsc.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
-          "voteAverage": "8.2",
+          "voteAverage": "8.3",
           "trailerKey": "4cMNo7Tj5I4",
           "imdbId": "tt35511966",
           "countries": [
@@ -26942,12 +26952,12 @@
         ],
         "crew": [
           {
-            "name": "露絲·鮑爾·賈華拉",
-            "job": "Screenplay"
-          },
-          {
             "name": "James Ivory",
             "job": "Director"
+          },
+          {
+            "name": "露絲·鮑爾·賈華拉",
+            "job": "Screenplay"
           }
         ],
         "budget": 3000000,
@@ -27060,12 +27070,12 @@
           ],
           "crew": [
             {
-              "name": "露絲·鮑爾·賈華拉",
-              "job": "Screenplay"
-            },
-            {
               "name": "James Ivory",
               "job": "Director"
+            },
+            {
+              "name": "露絲·鮑爾·賈華拉",
+              "job": "Screenplay"
             }
           ],
           "budget": 3000000,
@@ -27817,11 +27827,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -27944,11 +27954,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
