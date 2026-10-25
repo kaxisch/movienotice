@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-26T00:47:02.782399+08:00",
+  "generated_at": "2026-10-26T05:14:04.939317+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 87,
-    "soon_count": 61
+    "now_count": 88,
+    "soon_count": 63
   },
   "movies": {
     "now": [
@@ -429,7 +429,7 @@
       },
       {
         "id": 1797226,
-        "titleZh": "하이브 치어링 파티",
+        "titleZh": "HYBE CHEERING PARTY",
         "titleEn": "하이브 치어링 파티",
         "releaseDate": "2026-10-24",
         "releaseYear": "2026",
@@ -677,6 +677,105 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1165656,
+        "titleZh": "2022 IU CONCERT：The Golden Hour－在橙色太陽下",
+        "titleEn": "아이유 콘서트 : 더 골든 아워",
+        "releaseDate": "2026-10-23",
+        "releaseYear": "2023",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-23",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/rhc3ALgQ77kzHu8Z2X3hrFbEvTj.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/f5FjEf3u4ybAKfqUainQwJhZPy2.jpg",
+        "voteAverage": "8.6",
+        "genre": [
+          "音樂",
+          "紀錄"
+        ],
+        "duration": 171,
+        "synopsis": "《The Golden Hour: 在橙色太陽下》是韓國創作歌手IU的演唱會。這是她繼《Love, Poem》（2019）後時隔三年的首場個人演唱會，也使她成為首位在首爾奧林匹克主競技場舉辦單獨演唱會的韓國女歌手。",
+        "imdb": "9.2",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 91,
+            "lastChanged": "2026-10-26T05:14:04.939317+08:00"
+          }
+        },
+        "trailerKey": "44oi7sh9VX4",
+        "cast": [
+          {
+            "name": "IU",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/uNhKOO9lIAFXF11LM6gjCrX2CJz.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "An Jong-ho",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "아이유 콘서트 : 더 골든 아워",
+        "platforms": [],
+        "popularity": 1.8131,
+        "imdbId": "tt28997098",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 171,
+          "genres": [
+            "音樂",
+            "紀錄"
+          ],
+          "synopsis": "《The Golden Hour: 在橙色太陽下》是韓國創作歌手IU的演唱會。這是她繼《Love, Poem》（2019）後時隔三年的首場個人演唱會，也使她成為首位在首爾奧林匹克主競技場舉辦單獨演唱會的韓國女歌手。",
+          "poster": "https://image.tmdb.org/t/p/w500/rhc3ALgQ77kzHu8Z2X3hrFbEvTj.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/f5FjEf3u4ybAKfqUainQwJhZPy2.jpg",
+          "voteAverage": "8.6",
+          "trailerKey": "44oi7sh9VX4",
+          "imdbId": "tt28997098",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "IU",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/uNhKOO9lIAFXF11LM6gjCrX2CJz.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "An Jong-ho",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "아이유 콘서트 : 더 골든 아워",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1165656?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 20453,
         "titleZh": "三個傻瓜",
         "titleEn": "3 Idiots",
@@ -806,11 +905,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -928,11 +1027,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -1046,11 +1145,11 @@
         ],
         "crew": [
           {
-            "name": "川原礫",
+            "name": "吉野弘幸",
             "job": "Screenplay"
           },
           {
-            "name": "吉野弘幸",
+            "name": "川原礫",
             "job": "Screenplay"
           },
           {
@@ -1149,11 +1248,11 @@
           ],
           "crew": [
             {
-              "name": "川原礫",
+              "name": "吉野弘幸",
               "job": "Screenplay"
             },
             {
-              "name": "吉野弘幸",
+              "name": "川原礫",
               "job": "Screenplay"
             },
             {
@@ -1277,11 +1376,11 @@
         ],
         "crew": [
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
@@ -1371,11 +1470,11 @@
           ],
           "crew": [
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
@@ -1786,12 +1885,12 @@
         ],
         "crew": [
           {
-            "name": "김창주",
-            "job": "Director"
-          },
-          {
             "name": "배세영",
             "job": "Writer"
+          },
+          {
+            "name": "김창주",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -1904,12 +2003,12 @@
           ],
           "crew": [
             {
-              "name": "김창주",
-              "job": "Director"
-            },
-            {
               "name": "배세영",
               "job": "Writer"
+            },
+            {
+              "name": "김창주",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -5192,12 +5291,12 @@
         ],
         "crew": [
           {
-            "name": "裏則林",
-            "job": "Screenplay"
-          },
-          {
             "name": "路陽",
             "job": "Director"
+          },
+          {
+            "name": "裏則林",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -5310,12 +5409,12 @@
           ],
           "crew": [
             {
-              "name": "裏則林",
-              "job": "Screenplay"
-            },
-            {
               "name": "路陽",
               "job": "Director"
+            },
+            {
+              "name": "裏則林",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -7570,7 +7669,7 @@
           {
             "name": "亨利·卡維爾",
             "char": "Sid",
-            "photo": "https://image.tmdb.org/t/p/w500/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/dgTD7Q9owL3DyX9uYoSX9KZeUUz.jpg"
           },
           {
             "name": "傑克·葛倫霍",
@@ -7698,7 +7797,7 @@
             {
               "name": "亨利·卡維爾",
               "char": "Sid",
-              "photo": "https://image.tmdb.org/t/p/w500/kN3A5oLgtKYAxa9lAkpsIGYKYVo.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/dgTD7Q9owL3DyX9uYoSX9KZeUUz.jpg"
             },
             {
               "name": "傑克·葛倫霍",
@@ -8124,7 +8223,7 @@
           {
             "name": "安·海瑟薇",
             "char": "Verity Crawford",
-            "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/h1hgb3GaRi7ClMJWP2QYzyn2euE.jpg"
           },
           {
             "name": "達珂塔·強生",
@@ -8242,7 +8341,7 @@
             {
               "name": "安·海瑟薇",
               "char": "Verity Crawford",
-              "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/h1hgb3GaRi7ClMJWP2QYzyn2euE.jpg"
             },
             {
               "name": "達珂塔·強生",
@@ -8471,11 +8570,11 @@
         "crew": [
           {
             "name": "Pauline Loquès",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Pauline Loquès",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -8588,11 +8687,11 @@
           "crew": [
             {
               "name": "Pauline Loquès",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Pauline Loquès",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -8912,7 +9011,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-        "voteAverage": "5.9",
+        "voteAverage": "5.8",
         "genre": [
           "恐怖"
         ],
@@ -9027,7 +9126,7 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 87336939,
+        "revenue": 94869000,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Other Mommy",
@@ -9045,7 +9144,7 @@
           "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
           "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-          "voteAverage": "5.9",
+          "voteAverage": "5.8",
           "trailerKey": "z5vaaaJBGXw",
           "imdbId": "tt36586020",
           "countries": [
@@ -9144,7 +9243,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 87336939,
+          "revenue": 94869000,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Other Mommy",
@@ -11943,7 +12042,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-        "voteAverage": "7.8",
+        "voteAverage": "7.7",
         "genre": [
           "動畫",
           "冒險",
@@ -12093,7 +12192,7 @@
           "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-          "voteAverage": "7.8",
+          "voteAverage": "7.7",
           "trailerKey": "WII6-Ss-kTM",
           "imdbId": "tt36583977",
           "countries": [
@@ -12337,15 +12436,15 @@
         ],
         "crew": [
           {
-            "name": "Stephen McFeely",
-            "job": "Screenplay"
-          },
-          {
             "name": "Christopher Markus",
             "job": "Screenplay"
           },
           {
-            "name": "Joe Russo",
+            "name": "Stephen McFeely",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Anthony Russo",
             "job": "Director"
           }
         ],
@@ -12465,15 +12564,15 @@
           ],
           "crew": [
             {
-              "name": "Stephen McFeely",
-              "job": "Screenplay"
-            },
-            {
               "name": "Christopher Markus",
               "job": "Screenplay"
             },
             {
-              "name": "Joe Russo",
+              "name": "Stephen McFeely",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Anthony Russo",
               "job": "Director"
             }
           ],
@@ -14504,7 +14603,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 301,
+            "votes": 302,
             "lastChanged": "2026-09-25T01:32:27.378197+08:00"
           },
           "mc": {
@@ -14611,7 +14710,7 @@
           }
         ],
         "budget": 75000000,
-        "revenue": 364544196,
+        "revenue": 384481000,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Resident Evil",
@@ -14738,7 +14837,7 @@
             }
           ],
           "budget": 75000000,
-          "revenue": 364544196,
+          "revenue": 384481000,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Resident Evil",
@@ -14872,12 +14971,12 @@
         ],
         "crew": [
           {
-            "name": "相米慎二",
-            "job": "Director"
-          },
-          {
             "name": "加藤祐司",
             "job": "Writer"
+          },
+          {
+            "name": "相米慎二",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -14989,12 +15088,12 @@
           ],
           "crew": [
             {
-              "name": "相米慎二",
-              "job": "Director"
-            },
-            {
               "name": "加藤祐司",
               "job": "Writer"
+            },
+            {
+              "name": "相米慎二",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -16761,7 +16860,7 @@
           {
             "name": "Henry Bolan",
             "char": "Ryder (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/rd5qI7NkT5hy0PuHwNtRdsHV3EC.jpg"
+            "photo": null
           },
           {
             "name": "Lucien Duncan-Reid",
@@ -16888,7 +16987,7 @@
             {
               "name": "Henry Bolan",
               "char": "Ryder (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/rd5qI7NkT5hy0PuHwNtRdsHV3EC.jpg"
+              "photo": null
             },
             {
               "name": "Lucien Duncan-Reid",
@@ -17308,11 +17407,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -17433,11 +17532,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -18204,7 +18303,7 @@
           {
             "name": "安·海瑟薇",
             "char": "Penelope",
-            "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/h1hgb3GaRi7ClMJWP2QYzyn2euE.jpg"
           },
           {
             "name": "羅伯·派汀森",
@@ -18325,7 +18424,7 @@
             {
               "name": "安·海瑟薇",
               "char": "Penelope",
-              "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/h1hgb3GaRi7ClMJWP2QYzyn2euE.jpg"
             },
             {
               "name": "羅伯·派汀森",
@@ -19316,7 +19415,7 @@
             "job": "Director"
           },
           {
-            "name": "Zhu Sujin",
+            "name": "述平",
             "job": "Screenplay"
           },
           {
@@ -19457,7 +19556,7 @@
               "job": "Director"
             },
             {
-              "name": "Zhu Sujin",
+              "name": "述平",
               "job": "Screenplay"
             },
             {
@@ -19619,15 +19718,15 @@
         "crew": [
           {
             "name": "Jack Hazan",
+            "job": "Director"
+          },
+          {
+            "name": "Jack Hazan",
             "job": "Writer"
           },
           {
             "name": "David Mingay",
             "job": "Writer"
-          },
-          {
-            "name": "Jack Hazan",
-            "job": "Director"
           }
         ],
         "budget": 0,
@@ -19741,15 +19840,15 @@
           "crew": [
             {
               "name": "Jack Hazan",
+              "job": "Director"
+            },
+            {
+              "name": "Jack Hazan",
               "job": "Writer"
             },
             {
               "name": "David Mingay",
               "job": "Writer"
-            },
-            {
-              "name": "Jack Hazan",
-              "job": "Director"
             }
           ],
           "budget": 0,
@@ -20544,7 +20643,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/uN1mxDB5oYGVSzkjRaTa3DslzcP.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/c3N1tHx6cKmhbv7Gt8M4cwHWPUZ.jpg",
         "voteAverage": "6.1",
         "genre": [
           "喜劇",
@@ -20659,11 +20758,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 10000000,
@@ -20687,7 +20786,7 @@
           ],
           "synopsis": "臭名昭彰的80年代砍殺恐怖系列電影《絕命瘴氣營》即將重啟，新銳導演克里絲受邀執導再續新章。為了替電影注入真正的靈魂，她執意找回歸隱多年的初代「最後的女孩」女星比莉重返大銀幕。然而隨著合作展開，彼此潛藏的執念、壓抑與焦慮逐漸糾纏，兩人也一步步墜入充滿血腥、慾望和瘋狂的屍控世界。",
           "poster": "https://image.tmdb.org/t/p/w500/uN1mxDB5oYGVSzkjRaTa3DslzcP.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/c3N1tHx6cKmhbv7Gt8M4cwHWPUZ.jpg",
           "voteAverage": "6.1",
           "trailerKey": "b1RzzAXqYDU",
           "imdbId": "tt35298123",
@@ -20780,11 +20879,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 10000000,
@@ -22228,16 +22327,16 @@
         ],
         "crew": [
           {
-            "name": "Manuel Bauer",
+            "name": "Philip Delaquis",
+            "job": "Writer"
+          },
+          {
+            "name": "Barbara Miller",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
-          },
-          {
-            "name": "Philip Delaquis",
-            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -22276,16 +22375,16 @@
           ],
           "crew": [
             {
-              "name": "Manuel Bauer",
+              "name": "Philip Delaquis",
+              "job": "Writer"
+            },
+            {
+              "name": "Barbara Miller",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
-            },
-            {
-              "name": "Philip Delaquis",
-              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22530,6 +22629,265 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1381071?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1394740,
+        "titleZh": "老千：惡魔之歌",
+        "titleEn": "타짜: 벨제붑의 노래",
+        "releaseDate": "2026-11-06",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-06",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/6mbsPK06GzY2KkRzkGImRRbu0Mv.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/w5OX3u2SpMVRU0sol0mtIaf4LSI.jpg",
+        "voteAverage": "7.0",
+        "genre": [
+          "犯罪",
+          "劇情"
+        ],
+        "duration": 130,
+        "synopsis": "天生運氣過人的浪子張泰英，與靠著頂尖腦袋和野心證明自己的朴泰英，自學生時期便是生死與共的好友。兩人聯手創立線上賭場，事業版圖飛速擴張。然而，所有的光環與掌聲全落在此生彷彿被幸運之神眷顧的張泰英身上，讓默默苦幹的朴泰英心中暗自滋長嫉妒的毒芽。當事業攀上頂峰，嫉妒終於化為致命背叛。張泰英在越南慘遭好友陷害，瞬間墜入萬劫不復的深淵。大難不死的他，遇見了避世隱居的傳奇老千郭東旭，在生死磨練中潛心修煉極致牌技，誓言奪回失去的一切。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "6g9h5T1VIqw",
+        "cast": [
+          {
+            "name": "卞約漢",
+            "char": "Jang Taeyoung",
+            "photo": "https://image.tmdb.org/t/p/w500/5kOBQYbgBTAf8nVzgx0ecCsJ1pW.jpg"
+          },
+          {
+            "name": "盧載沅",
+            "char": "Park Taeyoung",
+            "photo": "https://image.tmdb.org/t/p/w500/8M4PRXZGllg3yrwluJraP1bakLO.jpg"
+          },
+          {
+            "name": "三吉彩花",
+            "char": "Kaneko",
+            "photo": "https://image.tmdb.org/t/p/w500/62oahK2mc58X5sNrxyhCVXKryIx.jpg"
+          },
+          {
+            "name": "趙祐鎮",
+            "char": "Kwak Dongwook",
+            "photo": "https://image.tmdb.org/t/p/w500/7yoOqi1yV4q9MBLOLMfQDFqbYc7.jpg"
+          },
+          {
+            "name": "尹敬浩",
+            "char": "Cho Joonghwan",
+            "photo": "https://image.tmdb.org/t/p/w500/217cVZqyvJypi4OR1uvxoaJxvLm.jpg"
+          },
+          {
+            "name": "스윙스",
+            "char": "Abraham",
+            "photo": "https://image.tmdb.org/t/p/w500/dMBG7ftCPrh4XmzzUve2ijds9Ii.jpg"
+          },
+          {
+            "name": "Stephanie Lee",
+            "char": "Linda Park",
+            "photo": "https://image.tmdb.org/t/p/w500/hbKeFkSfYEveXBvM12qgrPK1svM.jpg"
+          },
+          {
+            "name": "金民浩",
+            "char": "Hippo",
+            "photo": "https://image.tmdb.org/t/p/w500/49OxFNbTpXq9SM81ynQdtUnN38H.jpg"
+          },
+          {
+            "name": "林世美",
+            "char": "Jang Taehee",
+            "photo": "https://image.tmdb.org/t/p/w500/WZhJWf02ara2TkOWDqKUOVHw35.jpg"
+          },
+          {
+            "name": "伊原剛志",
+            "char": "Sasaki",
+            "photo": "https://image.tmdb.org/t/p/w500/xJdhEiJWcHcxpE5hOLp20EANVj9.jpg"
+          },
+          {
+            "name": "Hồng Đào",
+            "char": "Thảo",
+            "photo": "https://image.tmdb.org/t/p/w500/pQJYetiMP21NBQaMdeO6MgP7D12.jpg"
+          },
+          {
+            "name": "유다혜",
+            "char": "Party girl",
+            "photo": "https://image.tmdb.org/t/p/w500/wzj5A6fkxHdlEIn1YdLycvoZ2Ao.jpg"
+          },
+          {
+            "name": "남권아",
+            "char": "Park Taeyoung's mother",
+            "photo": "https://image.tmdb.org/t/p/w500/3khEPr2t7Qnh3mnynkI4nPUmpG.jpg"
+          },
+          {
+            "name": "임수형",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/9YBaSBTpw0FfEvp0co5xTVOEjx8.jpg"
+          },
+          {
+            "name": "문수영",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/x8LterUjvRWf5NBaOsbEw6kHUaN.jpg"
+          },
+          {
+            "name": "권혁",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/egQfvudbnQGWGwcsYoLV45d5bIl.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "최국희",
+            "job": "Director"
+          },
+          {
+            "name": "최국희",
+            "job": "Screenplay"
+          },
+          {
+            "name": "김현",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "타짜: 벨제붑의 노래",
+        "platforms": [],
+        "popularity": 6.6691,
+        "imdbId": "tt39233100",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 130,
+          "genres": [
+            "犯罪",
+            "劇情"
+          ],
+          "synopsis": "天生運氣過人的浪子張泰英，與靠著頂尖腦袋和野心證明自己的朴泰英，自學生時期便是生死與共的好友。兩人聯手創立線上賭場，事業版圖飛速擴張。然而，所有的光環與掌聲全落在此生彷彿被幸運之神眷顧的張泰英身上，讓默默苦幹的朴泰英心中暗自滋長嫉妒的毒芽。當事業攀上頂峰，嫉妒終於化為致命背叛。張泰英在越南慘遭好友陷害，瞬間墜入萬劫不復的深淵。大難不死的他，遇見了避世隱居的傳奇老千郭東旭，在生死磨練中潛心修煉極致牌技，誓言奪回失去的一切。",
+          "poster": "https://image.tmdb.org/t/p/w500/6mbsPK06GzY2KkRzkGImRRbu0Mv.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/w5OX3u2SpMVRU0sol0mtIaf4LSI.jpg",
+          "voteAverage": "7.0",
+          "trailerKey": "6g9h5T1VIqw",
+          "imdbId": "tt39233100",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "卞約漢",
+              "char": "Jang Taeyoung",
+              "photo": "https://image.tmdb.org/t/p/w500/5kOBQYbgBTAf8nVzgx0ecCsJ1pW.jpg"
+            },
+            {
+              "name": "盧載沅",
+              "char": "Park Taeyoung",
+              "photo": "https://image.tmdb.org/t/p/w500/8M4PRXZGllg3yrwluJraP1bakLO.jpg"
+            },
+            {
+              "name": "三吉彩花",
+              "char": "Kaneko",
+              "photo": "https://image.tmdb.org/t/p/w500/62oahK2mc58X5sNrxyhCVXKryIx.jpg"
+            },
+            {
+              "name": "趙祐鎮",
+              "char": "Kwak Dongwook",
+              "photo": "https://image.tmdb.org/t/p/w500/7yoOqi1yV4q9MBLOLMfQDFqbYc7.jpg"
+            },
+            {
+              "name": "尹敬浩",
+              "char": "Cho Joonghwan",
+              "photo": "https://image.tmdb.org/t/p/w500/217cVZqyvJypi4OR1uvxoaJxvLm.jpg"
+            },
+            {
+              "name": "스윙스",
+              "char": "Abraham",
+              "photo": "https://image.tmdb.org/t/p/w500/dMBG7ftCPrh4XmzzUve2ijds9Ii.jpg"
+            },
+            {
+              "name": "Stephanie Lee",
+              "char": "Linda Park",
+              "photo": "https://image.tmdb.org/t/p/w500/hbKeFkSfYEveXBvM12qgrPK1svM.jpg"
+            },
+            {
+              "name": "金民浩",
+              "char": "Hippo",
+              "photo": "https://image.tmdb.org/t/p/w500/49OxFNbTpXq9SM81ynQdtUnN38H.jpg"
+            },
+            {
+              "name": "林世美",
+              "char": "Jang Taehee",
+              "photo": "https://image.tmdb.org/t/p/w500/WZhJWf02ara2TkOWDqKUOVHw35.jpg"
+            },
+            {
+              "name": "伊原剛志",
+              "char": "Sasaki",
+              "photo": "https://image.tmdb.org/t/p/w500/xJdhEiJWcHcxpE5hOLp20EANVj9.jpg"
+            },
+            {
+              "name": "Hồng Đào",
+              "char": "Thảo",
+              "photo": "https://image.tmdb.org/t/p/w500/pQJYetiMP21NBQaMdeO6MgP7D12.jpg"
+            },
+            {
+              "name": "유다혜",
+              "char": "Party girl",
+              "photo": "https://image.tmdb.org/t/p/w500/wzj5A6fkxHdlEIn1YdLycvoZ2Ao.jpg"
+            },
+            {
+              "name": "남권아",
+              "char": "Park Taeyoung's mother",
+              "photo": "https://image.tmdb.org/t/p/w500/3khEPr2t7Qnh3mnynkI4nPUmpG.jpg"
+            },
+            {
+              "name": "임수형",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/9YBaSBTpw0FfEvp0co5xTVOEjx8.jpg"
+            },
+            {
+              "name": "문수영",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/x8LterUjvRWf5NBaOsbEw6kHUaN.jpg"
+            },
+            {
+              "name": "권혁",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/egQfvudbnQGWGwcsYoLV45d5bIl.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "최국희",
+              "job": "Director"
+            },
+            {
+              "name": "최국희",
+              "job": "Screenplay"
+            },
+            {
+              "name": "김현",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "타짜: 벨제붑의 노래",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1394740?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -22848,7 +23206,7 @@
       },
       {
         "id": 1634905,
-        "titleZh": "Vampire Carnival",
+        "titleZh": "暮光禁地",
         "titleEn": "Vampire Carnival",
         "releaseDate": "2026-11-06",
         "releaseYear": "2026",
@@ -23161,7 +23519,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/qf0gFuTgDlMsI5cJmpK1S15fFGF.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/v0T74v8LPZBSL247oGeTOp06tnm.jpg",
-        "voteAverage": "6.2",
+        "voteAverage": "6.4",
         "genre": [
           "動畫",
           "動作",
@@ -23250,7 +23608,7 @@
           "synopsis": "印有「東都鐵塔」的新版萬圓紙鈔問世，社會大眾為之沸騰。柯南與少年偵探團、阿笠博士、小蘭以及園子一同參觀日本紙幣印刷局的長野工廠。 另一方面，警視廳在命案現場發現偽鈔，隨即成立搜查本部。假鈔流通的消息震撼社會的同時，柯南與平次也前往疑似印製偽鈔的大阪。面對因偽造新鈔而引發的國家級危機，柯南將以史上最大規模的全明星陣容迎戰！",
           "poster": "https://image.tmdb.org/t/p/w500/qf0gFuTgDlMsI5cJmpK1S15fFGF.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/v0T74v8LPZBSL247oGeTOp06tnm.jpg",
-          "voteAverage": "6.2",
+          "voteAverage": "6.4",
           "trailerKey": "zQshv1-5Ni0",
           "imdbId": "tt46656123",
           "countries": [
@@ -25395,7 +25753,7 @@
         "duration": 115,
         "synopsis": "一對兄弟捲入一樁看似千載難逢的致富計畫，卻發現一切遠非想像中美好。當兩人試圖在危機四伏的俄羅斯黑幫世界中尋求出路，原本緊密的家族情誼也逐漸瓦解，最終引發足以改變彼此一生的嚴重後果……",
         "imdb": "7.0",
-        "rt": "87%",
+        "rt": "86%",
         "mc": "79",
         "ratingMeta": {
           "imdb": {
@@ -25405,8 +25763,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 78,
-            "lastChanged": "2026-10-17T19:09:15.872157+08:00"
+            "votes": 80,
+            "lastChanged": "2026-10-26T05:14:04.939317+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -25699,7 +26057,7 @@
           {
             "name": "Guitarricadelafuente",
             "char": "Sebastián",
-            "photo": "https://image.tmdb.org/t/p/w500/yWggVNZ1Q6wZhUvZlVEmdQQupJJ.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/A2Jfhf7lRBmMlQPGFZwEddT8MdS.jpg"
           },
           {
             "name": "Miguel Bernardeau",
@@ -25823,7 +26181,7 @@
             {
               "name": "Guitarricadelafuente",
               "char": "Sebastián",
-              "photo": "https://image.tmdb.org/t/p/w500/yWggVNZ1Q6wZhUvZlVEmdQQupJJ.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/A2Jfhf7lRBmMlQPGFZwEddT8MdS.jpg"
             },
             {
               "name": "Miguel Bernardeau",
@@ -26611,12 +26969,12 @@
         ],
         "crew": [
           {
-            "name": "露絲·鮑爾·賈華拉",
-            "job": "Screenplay"
-          },
-          {
             "name": "James Ivory",
             "job": "Director"
+          },
+          {
+            "name": "露絲·鮑爾·賈華拉",
+            "job": "Screenplay"
           }
         ],
         "budget": 3000000,
@@ -26729,12 +27087,12 @@
           ],
           "crew": [
             {
-              "name": "露絲·鮑爾·賈華拉",
-              "job": "Screenplay"
-            },
-            {
               "name": "James Ivory",
               "job": "Director"
+            },
+            {
+              "name": "露絲·鮑爾·賈華拉",
+              "job": "Screenplay"
             }
           ],
           "budget": 3000000,
@@ -27657,7 +28015,8 @@
         "voteAverage": "",
         "genre": [
           "動作",
-          "喜劇"
+          "喜劇",
+          "奇幻"
         ],
         "duration": 110,
         "synopsis": "",
@@ -27767,7 +28126,8 @@
           "duration": 110,
           "genres": [
             "動作",
-            "喜劇"
+            "喜劇",
+            "奇幻"
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/p1AjuGor48im2ZAtcxI6RkrZNBD.jpg",
@@ -28813,11 +29173,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -28932,11 +29292,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -29081,12 +29441,12 @@
         ],
         "crew": [
           {
-            "name": "Alex Huston Fischer",
+            "name": "Eleanor Wilson",
             "job": "Director"
           },
           {
             "name": "Eleanor Wilson",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Alex Huston Fischer",
@@ -29206,12 +29566,12 @@
           ],
           "crew": [
             {
-              "name": "Alex Huston Fischer",
+              "name": "Eleanor Wilson",
               "job": "Director"
             },
             {
               "name": "Eleanor Wilson",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Alex Huston Fischer",
@@ -29489,6 +29849,267 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1300926?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1260649,
+        "titleZh": "野蠻遊戲：虛實世界",
+        "titleEn": "Jumanji: Open World",
+        "releaseDate": "2027-01-27",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-01-27",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/lmtQ1hltmQhxqi20uEi2SAEhOqq.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pYN5Zjc3l1hj2hMeBbzRYDYTC1E.jpg",
+        "voteAverage": "",
+        "genre": [
+          "冒險",
+          "喜劇",
+          "奇幻"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "EeNgIvSFVYk",
+        "cast": [
+          {
+            "name": "巨石強森",
+            "char": "Dr. Smolder Bravestone",
+            "photo": "https://image.tmdb.org/t/p/w500/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+          },
+          {
+            "name": "凱文·哈特",
+            "char": "Franklin 'Mouse' Finbar",
+            "photo": "https://image.tmdb.org/t/p/w500/byiNydUlM6oP8diA7WMvYbNM7a1.jpg"
+          },
+          {
+            "name": "傑克·布萊克",
+            "char": "Professor Sheldon 'Shelly' Oberon",
+            "photo": "https://image.tmdb.org/t/p/w500/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+          },
+          {
+            "name": "凱倫·吉蘭",
+            "char": "Ruby Roundhouse",
+            "photo": "https://image.tmdb.org/t/p/w500/qYx8CflXVq48nGKX1IJsDrAj0sT.jpg"
+          },
+          {
+            "name": "奧卡菲娜",
+            "char": "Ming",
+            "photo": "https://image.tmdb.org/t/p/w500/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+          },
+          {
+            "name": "Alex Wolff",
+            "char": "Spencer Gilpin",
+            "photo": "https://image.tmdb.org/t/p/w500/7PMu5zFOEH7PqFDzrKThgKD4Ndf.jpg"
+          },
+          {
+            "name": "梅根·特納",
+            "char": "Martha Kaply",
+            "photo": "https://image.tmdb.org/t/p/w500/oIpJr6lOOwixCGfpcTT42n7VKsO.jpg"
+          },
+          {
+            "name": "Madison Iseman",
+            "char": "Bethany",
+            "photo": "https://image.tmdb.org/t/p/w500/5JVhacnNhqLcWpGPH1fqL7Ovq7g.jpg"
+          },
+          {
+            "name": "Ser'Darius Blain",
+            "char": "Anthony 'Fridge' Johnson",
+            "photo": "https://image.tmdb.org/t/p/w500/4INvD4RYdjGCznboNgdyfWA6dpG.jpg"
+          },
+          {
+            "name": "Brittany O'Grady",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/bNuz4XvSbvYw229j9gkO24qzsQm.jpg"
+          },
+          {
+            "name": "Burn Gorman",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
+          },
+          {
+            "name": "Bebe Neuwirth",
+            "char": "Nora",
+            "photo": "https://image.tmdb.org/t/p/w500/yFOdER8Fc07DU6U3kq2PRcbvDR.jpg"
+          },
+          {
+            "name": "Danny DeVito",
+            "char": "Eddie",
+            "photo": "https://image.tmdb.org/t/p/w500/6kO4IN7ndoIGw2JhyhAQN3SFmdx.jpg"
+          },
+          {
+            "name": "拉蒙尼·莫里斯",
+            "char": "Heater Repair Guy",
+            "photo": "https://image.tmdb.org/t/p/w500/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg"
+          },
+          {
+            "name": "瑪琳·辛科",
+            "char": "Spencer's Mom",
+            "photo": "https://image.tmdb.org/t/p/w500/uk58Dpo68zafLnePSEjgK09hM6X.jpg"
+          },
+          {
+            "name": "Nick Jonas",
+            "char": "Jefferson 'Seaplane' McDonough",
+            "photo": "https://image.tmdb.org/t/p/w500/y79k7wrDeyRbrGFs2Z3XHU5mq0o.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Jake Kasdan",
+            "job": "Director"
+          },
+          {
+            "name": "傑夫·皮克納",
+            "job": "Screenplay"
+          },
+          {
+            "name": "斯科特·羅森伯格",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Post Production",
+        "origLang": "en",
+        "origTitle": "Jumanji: Open World",
+        "platforms": [],
+        "popularity": 13.3106,
+        "imdbId": "tt26735127",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "冒險",
+            "喜劇",
+            "奇幻"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/lmtQ1hltmQhxqi20uEi2SAEhOqq.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pYN5Zjc3l1hj2hMeBbzRYDYTC1E.jpg",
+          "voteAverage": "",
+          "trailerKey": "EeNgIvSFVYk",
+          "imdbId": "tt26735127",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "巨石強森",
+              "char": "Dr. Smolder Bravestone",
+              "photo": "https://image.tmdb.org/t/p/w500/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg"
+            },
+            {
+              "name": "凱文·哈特",
+              "char": "Franklin 'Mouse' Finbar",
+              "photo": "https://image.tmdb.org/t/p/w500/byiNydUlM6oP8diA7WMvYbNM7a1.jpg"
+            },
+            {
+              "name": "傑克·布萊克",
+              "char": "Professor Sheldon 'Shelly' Oberon",
+              "photo": "https://image.tmdb.org/t/p/w500/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg"
+            },
+            {
+              "name": "凱倫·吉蘭",
+              "char": "Ruby Roundhouse",
+              "photo": "https://image.tmdb.org/t/p/w500/qYx8CflXVq48nGKX1IJsDrAj0sT.jpg"
+            },
+            {
+              "name": "奧卡菲娜",
+              "char": "Ming",
+              "photo": "https://image.tmdb.org/t/p/w500/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg"
+            },
+            {
+              "name": "Alex Wolff",
+              "char": "Spencer Gilpin",
+              "photo": "https://image.tmdb.org/t/p/w500/7PMu5zFOEH7PqFDzrKThgKD4Ndf.jpg"
+            },
+            {
+              "name": "梅根·特納",
+              "char": "Martha Kaply",
+              "photo": "https://image.tmdb.org/t/p/w500/oIpJr6lOOwixCGfpcTT42n7VKsO.jpg"
+            },
+            {
+              "name": "Madison Iseman",
+              "char": "Bethany",
+              "photo": "https://image.tmdb.org/t/p/w500/5JVhacnNhqLcWpGPH1fqL7Ovq7g.jpg"
+            },
+            {
+              "name": "Ser'Darius Blain",
+              "char": "Anthony 'Fridge' Johnson",
+              "photo": "https://image.tmdb.org/t/p/w500/4INvD4RYdjGCznboNgdyfWA6dpG.jpg"
+            },
+            {
+              "name": "Brittany O'Grady",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/bNuz4XvSbvYw229j9gkO24qzsQm.jpg"
+            },
+            {
+              "name": "Burn Gorman",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
+            },
+            {
+              "name": "Bebe Neuwirth",
+              "char": "Nora",
+              "photo": "https://image.tmdb.org/t/p/w500/yFOdER8Fc07DU6U3kq2PRcbvDR.jpg"
+            },
+            {
+              "name": "Danny DeVito",
+              "char": "Eddie",
+              "photo": "https://image.tmdb.org/t/p/w500/6kO4IN7ndoIGw2JhyhAQN3SFmdx.jpg"
+            },
+            {
+              "name": "拉蒙尼·莫里斯",
+              "char": "Heater Repair Guy",
+              "photo": "https://image.tmdb.org/t/p/w500/9qPDnMsF7JbYSSn1K9yryFBmmXl.jpg"
+            },
+            {
+              "name": "瑪琳·辛科",
+              "char": "Spencer's Mom",
+              "photo": "https://image.tmdb.org/t/p/w500/uk58Dpo68zafLnePSEjgK09hM6X.jpg"
+            },
+            {
+              "name": "Nick Jonas",
+              "char": "Jefferson 'Seaplane' McDonough",
+              "photo": "https://image.tmdb.org/t/p/w500/y79k7wrDeyRbrGFs2Z3XHU5mq0o.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Jake Kasdan",
+              "job": "Director"
+            },
+            {
+              "name": "傑夫·皮克納",
+              "job": "Screenplay"
+            },
+            {
+              "name": "斯科特·羅森伯格",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Post Production",
+          "origLang": "en",
+          "origTitle": "Jumanji: Open World",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1260649?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -30189,7 +30810,7 @@
           {
             "name": "Florrie May Wilkinson",
             "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vf32BxTTKgEoSmIdUF1KtO2rYQe.jpg"
+            "photo": null
           }
         ],
         "crew": [
@@ -30310,7 +30931,7 @@
             {
               "name": "Florrie May Wilkinson",
               "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vf32BxTTKgEoSmIdUF1KtO2rYQe.jpg"
+              "photo": null
             }
           ],
           "crew": [
@@ -30770,7 +31391,7 @@
           {
             "name": "安卓亞霍娜",
             "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/gzrI92WZFANIBXOmXl3QGfb8Jak.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/hzu7OqTmNCT1xdCdmwBSf2yJvaO.jpg"
           },
           {
             "name": "肯尼斯·布萊納",
@@ -30848,7 +31469,7 @@
             {
               "name": "安卓亞霍娜",
               "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/gzrI92WZFANIBXOmXl3QGfb8Jak.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/hzu7OqTmNCT1xdCdmwBSf2yJvaO.jpg"
             },
             {
               "name": "肯尼斯·布萊納",
