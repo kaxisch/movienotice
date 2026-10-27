@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T23:33:34.984808+08:00",
+  "generated_at": "2026-10-28T04:16:28.423193+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 88,
@@ -184,13 +184,13 @@
             "lastChanged": "2026-10-11T03:30:49.220899+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 76,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-11T03:30:49.220899+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 18,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-11T03:30:49.220899+08:00"
           }
         },
@@ -905,11 +905,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -1027,11 +1027,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -1885,12 +1885,12 @@
         ],
         "crew": [
           {
-            "name": "배세영",
-            "job": "Writer"
-          },
-          {
             "name": "김창주",
             "job": "Director"
+          },
+          {
+            "name": "배세영",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -2003,12 +2003,12 @@
           ],
           "crew": [
             {
-              "name": "배세영",
-              "job": "Writer"
-            },
-            {
               "name": "김창주",
               "job": "Director"
+            },
+            {
+              "name": "배세영",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -3629,7 +3629,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-        "voteAverage": "7.4",
+        "voteAverage": "7.5",
         "genre": [
           "恐怖",
           "驚悚",
@@ -3770,7 +3770,7 @@
           "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
           "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-          "voteAverage": "7.4",
+          "voteAverage": "7.5",
           "trailerKey": "v889uS_W0Q0",
           "imdbId": "tt34890576",
           "countries": [
@@ -4428,8 +4428,8 @@
             "lastChanged": "2026-10-21T09:40:13.799260+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-21T09:40:13.799260+08:00"
           }
         },
@@ -7365,8 +7365,8 @@
             "lastChanged": "2026-09-12T11:48:54.841369+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 12,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-12T11:48:54.841369+08:00"
           },
           "mc": {
@@ -7936,13 +7936,13 @@
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 58,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 12,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-04T08:05:09.081153+08:00"
           }
         },
@@ -8223,7 +8223,7 @@
           {
             "name": "安·海瑟薇",
             "char": "Verity Crawford",
-            "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/dUnrbrn2FeqfdpGRArPZeWPsS2g.jpg"
           },
           {
             "name": "達珂塔·強生",
@@ -8312,7 +8312,7 @@
           }
         ],
         "budget": 40000000,
-        "revenue": 145691770,
+        "revenue": 161987040,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Verity",
@@ -8341,7 +8341,7 @@
             {
               "name": "安·海瑟薇",
               "char": "Verity Crawford",
-              "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/dUnrbrn2FeqfdpGRArPZeWPsS2g.jpg"
             },
             {
               "name": "達珂塔·強生",
@@ -8430,7 +8430,7 @@
             }
           ],
           "budget": 40000000,
-          "revenue": 145691770,
+          "revenue": 161987040,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Verity",
@@ -8570,11 +8570,11 @@
         "crew": [
           {
             "name": "Pauline Loquès",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Pauline Loquès",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -8687,11 +8687,11 @@
           "crew": [
             {
               "name": "Pauline Loquès",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Pauline Loquès",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -9018,13 +9018,13 @@
         "duration": 93,
         "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
         "imdb": "",
-        "rt": "19%",
+        "rt": "20%",
         "mc": "38",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 96,
-            "lastChanged": "2026-10-23T20:02:57.108226+08:00"
+            "votes": 97,
+            "lastChanged": "2026-10-28T04:16:28.423193+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -10398,13 +10398,13 @@
             "lastChanged": "2026-10-05T14:35:49.283567+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 53,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-08-15T15:09:36.097690+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-04T08:05:09.081153+08:00"
           }
         },
@@ -12444,7 +12444,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
@@ -12572,7 +12572,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
@@ -15132,7 +15132,7 @@
         "duration": 100,
         "synopsis": "一心以成為漫畫家為目標的兩位少女藤野、京本之間青春動人的故事。",
         "imdb": "7.6",
-        "rt": "90%",
+        "rt": "88%",
         "mc": "76",
         "ratingMeta": {
           "imdb": {
@@ -15141,13 +15141,13 @@
             "lastChanged": "2026-10-10T12:27:29.264611+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 29,
-            "lastChanged": "2026-10-27T04:45:18.490429+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-28T04:16:28.423193+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 13,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-10-22T01:38:25.995336+08:00"
           }
         },
@@ -15729,8 +15729,8 @@
         "duration": 157,
         "synopsis": "一處偏遠小鎮，一則「猛虎出沒」消息，瞬間引爆全鎮恐慌。警察哨所所長以為只是荒誕傳聞，卻在接連發生的離奇事件當中，逐漸察覺某種超乎常理的存在，正逐步逼近整座小鎮。當恐懼開始蔓延、人性逐漸失控，一場源於未知的危機，也隨之演變成一場橫跨生存、信仰與毀滅的宇宙級災難……",
         "imdb": "6.9",
-        "rt": "79%",
-        "mc": "67",
+        "rt": "78%",
+        "mc": "66",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -15738,14 +15738,14 @@
             "lastChanged": "2026-09-07T13:12:11.716694+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 178,
-            "lastChanged": "2026-10-22T20:20:24.303168+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-28T04:16:28.423193+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 37,
-            "lastChanged": "2026-10-22T20:20:24.303168+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-28T04:16:28.423193+08:00"
           }
         },
         "trailerKey": "HZkGZqypnBM",
@@ -16596,11 +16596,11 @@
         "crew": [
           {
             "name": "押山清高",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "押山清高",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -16719,11 +16719,11 @@
           "crew": [
             {
               "name": "押山清高",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "押山清高",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -17407,11 +17407,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -17532,11 +17532,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -19415,11 +19415,11 @@
             "job": "Director"
           },
           {
-            "name": "Zhu Sujin",
+            "name": "姜文",
             "job": "Screenplay"
           },
           {
-            "name": "姜文",
+            "name": "Li Bukong",
             "job": "Screenplay"
           }
         ],
@@ -19556,11 +19556,11 @@
               "job": "Director"
             },
             {
-              "name": "Zhu Sujin",
+              "name": "姜文",
               "job": "Screenplay"
             },
             {
-              "name": "姜文",
+              "name": "Li Bukong",
               "job": "Screenplay"
             }
           ],
@@ -20204,11 +20204,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 69000000,
@@ -20332,11 +20332,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 69000000,
@@ -20653,7 +20653,7 @@
         "duration": 112,
         "synopsis": "臭名昭彰的80年代砍殺恐怖系列電影《絕命瘴氣營》即將重啟，新銳導演克里絲受邀執導再續新章。為了替電影注入真正的靈魂，她執意找回歸隱多年的初代「最後的女孩」女星比莉重返大銀幕。然而隨著合作展開，彼此潛藏的執念、壓抑與焦慮逐漸糾纏，兩人也一步步墜入充滿血腥、慾望和瘋狂的屍控世界。",
         "imdb": "7.1",
-        "rt": "94%",
+        "rt": "93%",
         "mc": "89",
         "ratingMeta": {
           "imdb": {
@@ -20662,13 +20662,13 @@
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 278,
-            "lastChanged": "2026-10-16T12:58:19.465092+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-28T04:16:28.423193+08:00"
           },
           "mc": {
-            "source": "mdblist",
-            "votes": 48,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T13:07:18.645431+08:00"
           }
         },
@@ -20758,11 +20758,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 10000000,
@@ -20879,11 +20879,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 10000000,
@@ -27844,11 +27844,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -27971,11 +27971,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
@@ -28835,8 +28835,8 @@
           "科幻",
           "冒險"
         ],
-        "duration": 150,
-        "synopsis": "",
+        "duration": 149,
+        "synopsis": "故事背景發生在保羅亞崔迪奪取帝國統治權的近二十年之後。如今已成為冷酷皇帝的保羅，在昔日盟友重現、可怕的新威脅接踵而至，而背叛的陰影更潛伏在每個角落之際，保羅必須面對他極權統治所帶來的後果。帝國崩塌的幻象與不幸身亡的愛人重現的交織景象不斷地困擾著保羅，將他捲入一場縝密又宏大的陰謀之中，而荃妮正是這重重謎團中的核心人物。隨著叛亂暗流湧動、強敵步步緊逼，保羅必須面對終極權力的真正代價，以及他摯愛之人的命運。",
         "imdb": "",
         "rt": "",
         "mc": "",
@@ -28928,7 +28928,7 @@
             "job": "Screenplay"
           }
         ],
-        "budget": 0,
+        "budget": 200000000,
         "revenue": 0,
         "status": "Post Production",
         "origLang": "en",
@@ -28941,12 +28941,12 @@
           "United Arab Emirates"
         ],
         "detail": {
-          "duration": 150,
+          "duration": 149,
           "genres": [
             "科幻",
             "冒險"
           ],
-          "synopsis": "",
+          "synopsis": "故事背景發生在保羅亞崔迪奪取帝國統治權的近二十年之後。如今已成為冷酷皇帝的保羅，在昔日盟友重現、可怕的新威脅接踵而至，而背叛的陰影更潛伏在每個角落之際，保羅必須面對他極權統治所帶來的後果。帝國崩塌的幻象與不幸身亡的愛人重現的交織景象不斷地困擾著保羅，將他捲入一場縝密又宏大的陰謀之中，而荃妮正是這重重謎團中的核心人物。隨著叛亂暗流湧動、強敵步步緊逼，保羅必須面對終極權力的真正代價，以及他摯愛之人的命運。",
           "poster": "https://image.tmdb.org/t/p/w500/dpxTT06JHQ9Xu95ZUlMfdP02kjD.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
           "voteAverage": "",
@@ -29042,7 +29042,7 @@
               "job": "Screenplay"
             }
           ],
-          "budget": 0,
+          "budget": 200000000,
           "revenue": 0,
           "status": "Post Production",
           "origLang": "en",
@@ -29337,7 +29337,7 @@
         "duration": 105,
         "synopsis": "小鎮居民各司其職，無不以婚配嫁娶為志，一生期盼被頸圈套牢白紗的大喜之日。大齡漁婦小姑獨處招來訕笑，新娘拋出的喜蛋卻預言她將走上紅毯，漁婦就此向織柳匠許願一個丈夫。柳樹製成的情郎從天而降，漁婦從魚腥中脫身，陶醉於魚水之歡。專情又勇猛的柳樹男激起地方太太們的慾望、人夫們的嫉妒，異端夫婦將保守小鎮搞得天翻地覆，若完美情人能量身打造，還有什麼將橫空出世？",
         "imdb": "7.4",
-        "rt": "94%",
+        "rt": "95%",
         "mc": "70",
         "ratingMeta": {
           "imdb": {
@@ -29347,12 +29347,12 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 117,
-            "lastChanged": "2026-10-25T19:58:46.672538+08:00"
+            "votes": 129,
+            "lastChanged": "2026-10-28T04:16:28.423193+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 31,
+            "votes": 32,
             "lastChanged": "2026-10-25T19:58:46.672538+08:00"
           }
         },
@@ -31915,13 +31915,13 @@
         "duration": 100,
         "synopsis": "李子傑是臺北警界出名的天才刑警。一次犯罪調查行動中，他失去了自己的團隊，從此深陷自責，並被調職至偏鄉警局。受到創傷影響，李子傑開始出現失憶症狀，卻決心將此事隱瞞。沒多久，他接手一起全新案件：一名日本富商的兒子遭到綁架。隨著記憶逐漸消逝，他只能依靠身體本能與直覺辦案。出乎意料的是，這份近乎本能的反應，竟一步步帶領他接近犯人，展開一場顛覆過往經驗的荒誕冒險。",
         "imdb": "",
-        "rt": "83%",
+        "rt": "82%",
         "mc": "",
         "ratingMeta": {
           "rt": {
-            "source": "mdblist",
-            "votes": 12,
-            "lastChanged": "2026-10-22T20:20:24.303168+08:00"
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-10-28T04:16:28.423193+08:00"
           }
         },
         "trailerKey": null,
