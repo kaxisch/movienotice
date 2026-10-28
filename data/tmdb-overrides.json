@@ -595,8 +595,14 @@
   },
   "title:TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW": {
     "tmdb_id": 1688795,
-    "note": "2026-10-25 audit: manually confirmed as TMDB 1688795",
-    "source_titles": ["TOMORROW X TOGETHER WORLD TOUR 'ACT : TOMORROW'", "TOMORROW X TOGETHER WORLD TOUR ACT : TOMORROW"]
+    "title_zh": "TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW",
+    "note": "2026-10-28 audit: manually confirmed as TMDB 1688795; preserve the duplicated Atmovies title as a matching alias only",
+    "source_titles": [
+      "TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW",
+      "TOMORROW X TOGETHER WORLD TOUR 'ACT : TOMORROW'",
+      "TOMORROW X TOGETHER WORLD TOUR ACT : TOMORROW",
+      "TOMORROW X TOGETHER WORLD TOUR ACT TOMOR TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW"
+    ]
   },
   "title:IU CONCERT THE GOLDEN HOUR": {
     "tmdb_id": 1165656,

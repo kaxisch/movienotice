@@ -175,6 +175,8 @@ class TmdbOverrideTests(unittest.TestCase):
             "窗外有藍天 經典數位修復": 11257,
             "讓子彈飛 全新4K修復版": 51533,
             "鋼之鍊金術師劇場版": 80518,
+            "TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW": 1688795,
+            "TOMORROW X TOGETHER WORLD TOUR ACT TOMOR TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW": 1688795,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
