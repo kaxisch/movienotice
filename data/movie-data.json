@@ -1,162 +1,19 @@
 {
-  "generated_at": "2026-10-28T08:44:33.402924+08:00",
+  "generated_at": "2026-10-28T09:59:50.336784+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 88,
+    "now_count": 87,
     "soon_count": 63
   },
   "movies": {
     "now": [
-      {
-        "id": 1744239,
-        "titleZh": "音樂劇《刀劍亂舞》〜月夜一縷〜",
-        "titleEn": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
-        "releaseDate": "2026-10-25",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-25",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/9IFt7Z2qEWZIjO1CHlzZhKCw7N8.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": null,
-        "voteAverage": "",
-        "genre": [],
-        "duration": "",
-        "synopsis": "",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "北園涼",
-            "char": "Kogitsunemaru",
-            "photo": "https://image.tmdb.org/t/p/w500/ehKO6bhkOOUFSbvzPJEqhuGFT2s.jpg"
-          },
-          {
-            "name": "大平峻也",
-            "char": "Imanotsurugi",
-            "photo": "https://image.tmdb.org/t/p/w500/m97Qnkj9ZmC8dtDZ2vtKMovt9Ze.jpg"
-          },
-          {
-            "name": "松島勇之介",
-            "char": "Ookanehira",
-            "photo": "https://image.tmdb.org/t/p/w500/uwxV6sS61K53tSk1InYumQvVMrq.jpg"
-          },
-          {
-            "name": "桜井 一",
-            "char": "Nansen Ichimonji",
-            "photo": null
-          },
-          {
-            "name": "水江建太",
-            "char": "Yamanbagiri Chougi",
-            "photo": "https://image.tmdb.org/t/p/w500/z7Pott0dttsXMDGnNk81VzQMNsj.jpg"
-          },
-          {
-            "name": "小越勇輝",
-            "char": "Ichimonji Norimune",
-            "photo": "https://image.tmdb.org/t/p/w500/ha5o5Xk4UTosfpnNGkAmpnVY9Ma.jpg"
-          },
-          {
-            "name": "Riku Akashi",
-            "char": "Himetsuru Ichimonji",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "茅野イサム",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
-        "platforms": [],
-        "popularity": 1.8281,
-        "imdbId": null,
-        "countries": [],
-        "detail": {
-          "duration": "",
-          "genres": [],
-          "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/9IFt7Z2qEWZIjO1CHlzZhKCw7N8.jpg",
-          "backdrop": null,
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": null,
-          "countries": [],
-          "cast": [
-            {
-              "name": "北園涼",
-              "char": "Kogitsunemaru",
-              "photo": "https://image.tmdb.org/t/p/w500/ehKO6bhkOOUFSbvzPJEqhuGFT2s.jpg"
-            },
-            {
-              "name": "大平峻也",
-              "char": "Imanotsurugi",
-              "photo": "https://image.tmdb.org/t/p/w500/m97Qnkj9ZmC8dtDZ2vtKMovt9Ze.jpg"
-            },
-            {
-              "name": "松島勇之介",
-              "char": "Ookanehira",
-              "photo": "https://image.tmdb.org/t/p/w500/uwxV6sS61K53tSk1InYumQvVMrq.jpg"
-            },
-            {
-              "name": "桜井 一",
-              "char": "Nansen Ichimonji",
-              "photo": null
-            },
-            {
-              "name": "水江建太",
-              "char": "Yamanbagiri Chougi",
-              "photo": "https://image.tmdb.org/t/p/w500/z7Pott0dttsXMDGnNk81VzQMNsj.jpg"
-            },
-            {
-              "name": "小越勇輝",
-              "char": "Ichimonji Norimune",
-              "photo": "https://image.tmdb.org/t/p/w500/ha5o5Xk4UTosfpnNGkAmpnVY9Ma.jpg"
-            },
-            {
-              "name": "Riku Akashi",
-              "char": "Himetsuru Ichimonji",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "茅野イサム",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "ミュージカル『刀剣乱舞』 ～月夜一縷～",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1744239?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 519141,
         "titleZh": "麥特與麥斯",
         "titleEn": "Matthias & Maxime",
         "releaseDate": "2026-10-24",
         "releaseYear": "2019",
-        "isRerelease": true,
+        "isRerelease": false,
         "twTheatricalReleases": [
           {
             "date": "2026-10-24",
@@ -428,6 +285,322 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1785968,
+        "titleZh": "ENHYPEN WORLD TOUR BLOOD SAGA",
+        "titleEn": "엔하이픈 월드 투어 ‘블러드 사가’",
+        "releaseDate": "2026-10-24",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/tmuxPlk22Gv0d81ilzKLvLzKQvi.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zYmBT7Z3ppmFi3FIDvdoEHDIw6H.jpg",
+        "voteAverage": "",
+        "genre": [
+          "音樂",
+          "紀錄"
+        ],
+        "duration": 101,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "정원",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/bec3lC42o12iqz2aceurd9mqsXh.jpg"
+          },
+          {
+            "name": "제이",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/kx61HXdyWa6XqsPrcmVReqlzjSB.jpg"
+          },
+          {
+            "name": "제이크",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/lmHfjA6VxqOVL7erPCbjg9Dh2Gc.jpg"
+          },
+          {
+            "name": "성훈",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/fdNAB1V48jvTDciVDp0uxPepFDo.jpg"
+          },
+          {
+            "name": "선우",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/h62qJd4VqeWFIJXdLf2A7kr97Ve.jpg"
+          },
+          {
+            "name": "니키",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/hrh9BJaNN2zYXdJE8f6KhlpUiEo.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Kim Yun-jeong",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "엔하이픈 월드 투어 ‘블러드 사가’",
+        "platforms": [],
+        "popularity": 1.8941,
+        "imdbId": "tt46658854",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 101,
+          "genres": [
+            "音樂",
+            "紀錄"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/tmuxPlk22Gv0d81ilzKLvLzKQvi.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/zYmBT7Z3ppmFi3FIDvdoEHDIw6H.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt46658854",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "정원",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/bec3lC42o12iqz2aceurd9mqsXh.jpg"
+            },
+            {
+              "name": "제이",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/kx61HXdyWa6XqsPrcmVReqlzjSB.jpg"
+            },
+            {
+              "name": "제이크",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/lmHfjA6VxqOVL7erPCbjg9Dh2Gc.jpg"
+            },
+            {
+              "name": "성훈",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/fdNAB1V48jvTDciVDp0uxPepFDo.jpg"
+            },
+            {
+              "name": "선우",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/h62qJd4VqeWFIJXdLf2A7kr97Ve.jpg"
+            },
+            {
+              "name": "니키",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/hrh9BJaNN2zYXdJE8f6KhlpUiEo.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Kim Yun-jeong",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "엔하이픈 월드 투어 ‘블러드 사가’",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1785968?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1797200,
+        "titleZh": "SEVENTEEN WORLD TOUR 'NEW_'",
+        "titleEn": "세븐틴 월드 투어 '뉴_'",
+        "releaseDate": "2026-10-24",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/p3SW5xiKdUJ0zIY3hMyyCQ6tcru.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/7aIA1FYNwowpAhYEBTxDlbjZqUa.jpg",
+        "voteAverage": "",
+        "genre": [
+          "音樂",
+          "紀錄"
+        ],
+        "duration": 103,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "에스쿱스",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/jqsvpqMSupL8X5l4M4LwgKwvaVB.jpg"
+          },
+          {
+            "name": "조슈아",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/cbEjrSGrHAXB57xgrtc2XxiSP3C.jpg"
+          },
+          {
+            "name": "文俊辉",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/z1seXrQQWG7nsQVHqSWKefJQ8DO.jpg"
+          },
+          {
+            "name": "디에잇",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/oMg7XU6R2zrWIPVY66PuWVTfM7M.jpg"
+          },
+          {
+            "name": "민규",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/aI40rxtCUFnHDxGTYJtEKrEPXKB.jpg"
+          },
+          {
+            "name": "도겸",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/3TxlEtoM93TNl9Md9lk8OcJFHXC.jpg"
+          },
+          {
+            "name": "승관",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/kYa2ffG2V0SwJJTQt5A29bWSqQc.jpg"
+          },
+          {
+            "name": "버논",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/3O6jWDX2EZDx9nuGmpOvCAcHfMr.jpg"
+          },
+          {
+            "name": "디노",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/2s1A8fHNvt3NUKIvBoGxc36sFEe.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Taehwan Yum",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "세븐틴 월드 투어 '뉴_'",
+        "platforms": [],
+        "popularity": 3.0704,
+        "imdbId": "tt46658626",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 103,
+          "genres": [
+            "音樂",
+            "紀錄"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/p3SW5xiKdUJ0zIY3hMyyCQ6tcru.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/7aIA1FYNwowpAhYEBTxDlbjZqUa.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt46658626",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "에스쿱스",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/jqsvpqMSupL8X5l4M4LwgKwvaVB.jpg"
+            },
+            {
+              "name": "조슈아",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/cbEjrSGrHAXB57xgrtc2XxiSP3C.jpg"
+            },
+            {
+              "name": "文俊辉",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/z1seXrQQWG7nsQVHqSWKefJQ8DO.jpg"
+            },
+            {
+              "name": "디에잇",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/oMg7XU6R2zrWIPVY66PuWVTfM7M.jpg"
+            },
+            {
+              "name": "민규",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/aI40rxtCUFnHDxGTYJtEKrEPXKB.jpg"
+            },
+            {
+              "name": "도겸",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/3TxlEtoM93TNl9Md9lk8OcJFHXC.jpg"
+            },
+            {
+              "name": "승관",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/kYa2ffG2V0SwJJTQt5A29bWSqQc.jpg"
+            },
+            {
+              "name": "버논",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/3O6jWDX2EZDx9nuGmpOvCAcHfMr.jpg"
+            },
+            {
+              "name": "디노",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/2s1A8fHNvt3NUKIvBoGxc36sFEe.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Taehwan Yum",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "세븐틴 월드 투어 '뉴_'",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1797200?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1797226,
         "titleZh": "HYBE CHEERING PARTY",
         "titleEn": "하이브 치어링 파티",
@@ -682,7 +855,7 @@
         "titleEn": "아이유 콘서트 : 더 골든 아워",
         "releaseDate": "2026-10-23",
         "releaseYear": "2023",
-        "isRerelease": false,
+        "isRerelease": true,
         "twTheatricalReleases": [
           {
             "date": "2026-10-23",
@@ -2161,7 +2334,7 @@
         "origLang": "en",
         "origTitle": "The Social Reckoning",
         "platforms": [],
-        "popularity": 70.9077,
+        "popularity": 53.424,
         "imdbId": "tt37510326",
         "countries": [
           "United States of America"
@@ -3196,7 +3369,7 @@
         "origLang": "ko",
         "origTitle": "실낙원",
         "platforms": [],
-        "popularity": 4.6262,
+        "popularity": 4.9826,
         "imdbId": "tt43658893",
         "countries": [
           "South Korea"
@@ -3919,8 +4092,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 303,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -6635,7 +6808,7 @@
         "origLang": "zh",
         "origTitle": "沙央",
         "platforms": [],
-        "popularity": 1.3177,
+        "popularity": 1.363,
         "imdbId": null,
         "countries": [
           "Taiwan",
@@ -11941,7 +12114,7 @@
         "origLang": "en",
         "origTitle": "LINKIN PARK: UNSHATTER",
         "platforms": [],
-        "popularity": 4.5366,
+        "popularity": 5.2194,
         "imdbId": "tt43442522",
         "countries": [
           "United States of America",
@@ -13752,7 +13925,7 @@
         "origLang": "ja",
         "origTitle": "5秒で完全犯罪を生成する方法",
         "platforms": [],
-        "popularity": 2.3262,
+        "popularity": 2.0118,
         "imdbId": "tt42864901",
         "countries": [
           "Japan"
@@ -14403,173 +14576,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1425552?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1617484,
-        "titleZh": "夢想出擊",
-        "titleEn": "와인드업: 더 무비",
-        "releaseDate": "2026-09-18",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-09-18",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/tHSBqI8h0VerN9i2mZknVe8cZf9.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/8wr3MR7b5njzv4Ql0iJEgW1Rrtm.jpg",
-        "voteAverage": "",
-        "genre": [
-          "劇情",
-          "奇幻"
-        ],
-        "duration": 88,
-        "synopsis": "曾被寄予厚望、被視為明日之星的高中棒球投手「宇鎮」，因為突如其來的「投球失憶症」而陷入低潮，再也無法投出理想中的好球。面對一次次挫敗，曾經相信他的球隊也逐漸失去信心，準備放棄這名備受期待的投手。就當夢想即將離他遠去的瞬間，一位神祕的轉學生「泰熙」突然出現在他面前，並自告奮勇成為他的專屬經紀人，陪伴他重新找回站上投手丘的勇氣。當宇鎮再度站上投手丘的那天，他能否突破心理障礙，投出改變人生的好球？而兩人又能否攜手實現未完成的青春夢想呢？",
-        "imdb": "6.9",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 38,
-            "lastChanged": "2026-10-25T20:34:34.220082+08:00"
-          }
-        },
-        "trailerKey": "pGMHgYiJ8C0",
-        "cast": [
-          {
-            "name": "제노",
-            "char": "Lee Woojin",
-            "photo": "https://image.tmdb.org/t/p/w500/dRi1w5EZTuUwtPvPeCFgAchz7ig.jpg"
-          },
-          {
-            "name": "재민",
-            "char": "Kwon Taehee / Kwon Taeseop",
-            "photo": "https://image.tmdb.org/t/p/w500/ejBgxEa7R0EHTjX7QrlMTobWvcg.jpg"
-          },
-          {
-            "name": "오현경",
-            "char": "Taehee's Mother",
-            "photo": "https://image.tmdb.org/t/p/w500/ksi10ik42LFnrI8FSQlw5NnSgrC.jpg"
-          },
-          {
-            "name": "李宗赫",
-            "char": "Coach",
-            "photo": "https://image.tmdb.org/t/p/w500/o9XEyccafEoyy2sDicr4AVSizzb.jpg"
-          },
-          {
-            "name": "Seo Dong-gun",
-            "char": "Kim Jeongho",
-            "photo": null
-          },
-          {
-            "name": "고예준",
-            "char": "Little Woojin",
-            "photo": null
-          },
-          {
-            "name": "신서우",
-            "char": "Little Taehee",
-            "photo": "https://image.tmdb.org/t/p/w500/ksPFL8buvZkHUa7z6vNwrayJ7vv.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "김성호",
-            "job": "Director"
-          },
-          {
-            "name": "Byun Jay-cheol",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ko",
-        "origTitle": "와인드업: 더 무비",
-        "platforms": [],
-        "popularity": 2.8265,
-        "imdbId": "tt43672139",
-        "countries": [
-          "South Korea"
-        ],
-        "detail": {
-          "duration": 88,
-          "genres": [
-            "劇情",
-            "奇幻"
-          ],
-          "synopsis": "曾被寄予厚望、被視為明日之星的高中棒球投手「宇鎮」，因為突如其來的「投球失憶症」而陷入低潮，再也無法投出理想中的好球。面對一次次挫敗，曾經相信他的球隊也逐漸失去信心，準備放棄這名備受期待的投手。就當夢想即將離他遠去的瞬間，一位神祕的轉學生「泰熙」突然出現在他面前，並自告奮勇成為他的專屬經紀人，陪伴他重新找回站上投手丘的勇氣。當宇鎮再度站上投手丘的那天，他能否突破心理障礙，投出改變人生的好球？而兩人又能否攜手實現未完成的青春夢想呢？",
-          "poster": "https://image.tmdb.org/t/p/w500/tHSBqI8h0VerN9i2mZknVe8cZf9.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/8wr3MR7b5njzv4Ql0iJEgW1Rrtm.jpg",
-          "voteAverage": "",
-          "trailerKey": "pGMHgYiJ8C0",
-          "imdbId": "tt43672139",
-          "countries": [
-            "South Korea"
-          ],
-          "cast": [
-            {
-              "name": "제노",
-              "char": "Lee Woojin",
-              "photo": "https://image.tmdb.org/t/p/w500/dRi1w5EZTuUwtPvPeCFgAchz7ig.jpg"
-            },
-            {
-              "name": "재민",
-              "char": "Kwon Taehee / Kwon Taeseop",
-              "photo": "https://image.tmdb.org/t/p/w500/ejBgxEa7R0EHTjX7QrlMTobWvcg.jpg"
-            },
-            {
-              "name": "오현경",
-              "char": "Taehee's Mother",
-              "photo": "https://image.tmdb.org/t/p/w500/ksi10ik42LFnrI8FSQlw5NnSgrC.jpg"
-            },
-            {
-              "name": "李宗赫",
-              "char": "Coach",
-              "photo": "https://image.tmdb.org/t/p/w500/o9XEyccafEoyy2sDicr4AVSizzb.jpg"
-            },
-            {
-              "name": "Seo Dong-gun",
-              "char": "Kim Jeongho",
-              "photo": null
-            },
-            {
-              "name": "고예준",
-              "char": "Little Woojin",
-              "photo": null
-            },
-            {
-              "name": "신서우",
-              "char": "Little Taehee",
-              "photo": "https://image.tmdb.org/t/p/w500/ksPFL8buvZkHUa7z6vNwrayJ7vv.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "김성호",
-              "job": "Director"
-            },
-            {
-              "name": "Byun Jay-cheol",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ko",
-          "origTitle": "와인드업: 더 무비",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1617484?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -16616,7 +16622,7 @@
             "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
           }
         ],
-        "popularity": 14.7672,
+        "popularity": 13.7909,
         "imdbId": "tt31711040",
         "countries": [
           "Japan"
@@ -18517,153 +18523,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 316880,
-        "titleZh": "魯冰花",
-        "titleEn": "魯冰花",
-        "releaseDate": "2026-07-08",
-        "releaseYear": "1989",
-        "isRerelease": true,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-07-08",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/iczUBXzquHaxAb2w2G7eHUJmuUG.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/b5DHrc92QvfECJPnIPOeakKJbS1.jpg",
-        "voteAverage": "8.2",
-        "genre": [
-          "劇情",
-          "家庭"
-        ],
-        "duration": 100,
-        "synopsis": "描述魯冰花盛開的時候，郭雲天從大城市調到偏鄉小學擔任美術教師，發現學童阿明擁有極高繪畫天份，卻因家境貧窮遭勢利教師、校長抵制，無法參與比賽。",
-        "imdb": "8.3",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 428,
-            "lastChanged": "2026-10-25T20:34:34.220082+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "黃坤玄",
-            "char": "Ah-Ming",
-            "photo": "https://image.tmdb.org/t/p/w500/2N1zEtU8PAhTFjONa2aG0AEtWjn.jpg"
-          },
-          {
-            "name": "李淑楨",
-            "char": "Cha-Mey",
-            "photo": "https://image.tmdb.org/t/p/w500/4WmJEbxU12tQjpmZtR3XMu5T4H7.jpg"
-          },
-          {
-            "name": "陳松勇",
-            "char": "The mayor",
-            "photo": "https://image.tmdb.org/t/p/w500/b6VqPvebGjTViMqPqgM5myaQtNh.jpg"
-          },
-          {
-            "name": "Han Yu",
-            "char": "Art teacher (Mr. Kuo)",
-            "photo": "https://image.tmdb.org/t/p/w500/eUwZdTPuJM6eaqqDS46JEeq57ts.jpg"
-          },
-          {
-            "name": "林義雄",
-            "char": "Father (Ku, Shi-sung)",
-            "photo": "https://image.tmdb.org/t/p/w500/w2AigKllqr4x8HdQGJX60Zg8vzR.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "吳念真",
-            "job": "Writer"
-          },
-          {
-            "name": "Yang Li-kuo",
-            "job": "Director"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "魯冰花",
-        "platforms": [],
-        "popularity": 2.4672,
-        "imdbId": "tt0097791",
-        "countries": [
-          "Taiwan"
-        ],
-        "detail": {
-          "duration": 100,
-          "genres": [
-            "劇情",
-            "家庭"
-          ],
-          "synopsis": "描述魯冰花盛開的時候，郭雲天從大城市調到偏鄉小學擔任美術教師，發現學童阿明擁有極高繪畫天份，卻因家境貧窮遭勢利教師、校長抵制，無法參與比賽。",
-          "poster": "https://image.tmdb.org/t/p/w500/iczUBXzquHaxAb2w2G7eHUJmuUG.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/b5DHrc92QvfECJPnIPOeakKJbS1.jpg",
-          "voteAverage": "8.2",
-          "trailerKey": null,
-          "imdbId": "tt0097791",
-          "countries": [
-            "Taiwan"
-          ],
-          "cast": [
-            {
-              "name": "黃坤玄",
-              "char": "Ah-Ming",
-              "photo": "https://image.tmdb.org/t/p/w500/2N1zEtU8PAhTFjONa2aG0AEtWjn.jpg"
-            },
-            {
-              "name": "李淑楨",
-              "char": "Cha-Mey",
-              "photo": "https://image.tmdb.org/t/p/w500/4WmJEbxU12tQjpmZtR3XMu5T4H7.jpg"
-            },
-            {
-              "name": "陳松勇",
-              "char": "The mayor",
-              "photo": "https://image.tmdb.org/t/p/w500/b6VqPvebGjTViMqPqgM5myaQtNh.jpg"
-            },
-            {
-              "name": "Han Yu",
-              "char": "Art teacher (Mr. Kuo)",
-              "photo": "https://image.tmdb.org/t/p/w500/eUwZdTPuJM6eaqqDS46JEeq57ts.jpg"
-            },
-            {
-              "name": "林義雄",
-              "char": "Father (Ku, Shi-sung)",
-              "photo": "https://image.tmdb.org/t/p/w500/w2AigKllqr4x8HdQGJX60Zg8vzR.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "吳念真",
-              "job": "Writer"
-            },
-            {
-              "name": "Yang Li-kuo",
-              "job": "Director"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "魯冰花",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/316880?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1542261,
         "titleZh": "電影哆啦A夢：新‧大雄的海底鬼岩城",
         "titleEn": "映画ドラえもん 新・のび太の海底鬼岩城",
@@ -20504,7 +20363,7 @@
         "origLang": "en",
         "origTitle": "Orwell: 2+2=5",
         "platforms": [],
-        "popularity": 2.8219,
+        "popularity": 2.7376,
         "imdbId": "tt27052428",
         "countries": [
           "France",
@@ -22766,7 +22625,7 @@
         "origLang": "ko",
         "origTitle": "타짜: 벨제붑의 노래",
         "platforms": [],
-        "popularity": 5.8921,
+        "popularity": 6.1531,
         "imdbId": "tt39233100",
         "countries": [
           "South Korea"
@@ -22981,7 +22840,7 @@
         "origLang": "cn",
         "origTitle": "UFO離奇命案",
         "platforms": [],
-        "popularity": 2.0764,
+        "popularity": 1.964,
         "imdbId": "tt38857175",
         "countries": [
           "Hong Kong"
@@ -29330,7 +29189,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-        "voteAverage": "7.9",
+        "voteAverage": "8.0",
         "genre": [
           "愛情",
           "奇幻",
@@ -29461,7 +29320,7 @@
         "origLang": "en",
         "origTitle": "Wicker",
         "platforms": [],
-        "popularity": 66.4569,
+        "popularity": 68.1485,
         "imdbId": "tt29611136",
         "countries": [
           "United Kingdom",
@@ -29477,7 +29336,7 @@
           "synopsis": "小鎮居民各司其職，無不以婚配嫁娶為志，一生期盼被頸圈套牢白紗的大喜之日。大齡漁婦小姑獨處招來訕笑，新娘拋出的喜蛋卻預言她將走上紅毯，漁婦就此向織柳匠許願一個丈夫。柳樹製成的情郎從天而降，漁婦從魚腥中脫身，陶醉於魚水之歡。專情又勇猛的柳樹男激起地方太太們的慾望、人夫們的嫉妒，異端夫婦將保守小鎮搞得天翻地覆，若完美情人能量身打造，還有什麼將橫空出世？",
           "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-          "voteAverage": "7.9",
+          "voteAverage": "8.0",
           "trailerKey": null,
           "imdbId": "tt29611136",
           "countries": [
@@ -30219,7 +30078,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 薬屋のひとりごと 亡妃の秘宝",
         "platforms": [],
-        "popularity": 4.2755,
+        "popularity": 4.7426,
         "imdbId": "tt39110207",
         "countries": [
           "Japan"
