@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-28T09:59:50.336784+08:00",
+  "generated_at": "2026-10-28T10:18:43.380863+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 87,
+    "now_count": 88,
     "soon_count": 63
   },
   "movies": {
@@ -280,6 +280,139 @@
           ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/519141?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1688795,
+        "titleZh": "TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW",
+        "titleEn": "투모로우바이투게더 월드 투어 ‘액트 : 투모로우'",
+        "releaseDate": "2026-10-24",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/aRoPHxYzfQjCLxSp4H4sJANNmou.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/35hGgrsbnpuex4XpdAlnQG1ssvk.jpg",
+        "voteAverage": "",
+        "genre": [
+          "音樂",
+          "紀錄"
+        ],
+        "duration": 97,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "수빈",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/1c2TogIABuZ1C8NtkpujzKBJJD8.jpg"
+          },
+          {
+            "name": "연준",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/79YO2nlJnbsEIlMYVcBWlZH7UFL.jpg"
+          },
+          {
+            "name": "범규",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/x1j6aCxAKvSQTUMVzQFEtG5760u.jpg"
+          },
+          {
+            "name": "태현",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/onxkvf36Q8KiyfX7Aj2Y95JsG9F.jpg"
+          },
+          {
+            "name": "휴닝카이",
+            "char": "Self",
+            "photo": "https://image.tmdb.org/t/p/w500/1aTQzaTeVieJFsVtnNTPJ9jPdFt.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Taehwan Yum",
+            "job": "Director"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "투모로우바이투게더 월드 투어 ‘액트 : 투모로우'",
+        "platforms": [],
+        "popularity": 2.4727,
+        "imdbId": "tt46658752",
+        "countries": [
+          "South Korea"
+        ],
+        "detail": {
+          "duration": 97,
+          "genres": [
+            "音樂",
+            "紀錄"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/aRoPHxYzfQjCLxSp4H4sJANNmou.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/35hGgrsbnpuex4XpdAlnQG1ssvk.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt46658752",
+          "countries": [
+            "South Korea"
+          ],
+          "cast": [
+            {
+              "name": "수빈",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/1c2TogIABuZ1C8NtkpujzKBJJD8.jpg"
+            },
+            {
+              "name": "연준",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/79YO2nlJnbsEIlMYVcBWlZH7UFL.jpg"
+            },
+            {
+              "name": "범규",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/x1j6aCxAKvSQTUMVzQFEtG5760u.jpg"
+            },
+            {
+              "name": "태현",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/onxkvf36Q8KiyfX7Aj2Y95JsG9F.jpg"
+            },
+            {
+              "name": "휴닝카이",
+              "char": "Self",
+              "photo": "https://image.tmdb.org/t/p/w500/1aTQzaTeVieJFsVtnNTPJ9jPdFt.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Taehwan Yum",
+              "job": "Director"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "투모로우바이투게더 월드 투어 ‘액트 : 투모로우'",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1688795?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -2072,7 +2205,7 @@
         "origLang": "ko",
         "origTitle": "아마존 활명수",
         "platforms": [],
-        "popularity": 2.3756,
+        "popularity": 2.4869,
         "imdbId": "tt33364791",
         "countries": [
           "South Korea"
@@ -2592,7 +2725,7 @@
         "origLang": "pl",
         "origTitle": "Chopin, Chopin!",
         "platforms": [],
-        "popularity": 3.5236,
+        "popularity": 3.5485,
         "imdbId": "tt33305572",
         "countries": [
           "Poland"
@@ -2809,7 +2942,7 @@
         "origLang": "en",
         "origTitle": "Monk in Pieces",
         "platforms": [],
-        "popularity": 1.5209,
+        "popularity": 1.5902,
         "imdbId": "tt34542628",
         "countries": [
           "United States of America",
@@ -4448,7 +4581,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 2.4537,
+        "popularity": 2.5726,
         "imdbId": "tt28766949",
         "countries": [
           "Thailand"
@@ -4891,7 +5024,7 @@
           },
           {
             "name": "韓韶禧",
-            "char": "Lee Seon-wu",
+            "char": "Lee Sun-woo",
             "photo": "https://image.tmdb.org/t/p/w500/hOVKA03jcKft8iWRyi4pl7SSgc1.jpg"
           },
           {
@@ -4993,7 +5126,7 @@
             },
             {
               "name": "韓韶禧",
-              "char": "Lee Seon-wu",
+              "char": "Lee Sun-woo",
               "photo": "https://image.tmdb.org/t/p/w500/hOVKA03jcKft8iWRyi4pl7SSgc1.jpg"
             },
             {
@@ -6145,7 +6278,7 @@
         "origLang": "en",
         "origTitle": "Whalefall",
         "platforms": [],
-        "popularity": 94.2277,
+        "popularity": 79.2953,
         "imdbId": "tt28535715",
         "countries": [
           "United States of America"
@@ -10642,7 +10775,7 @@
         "origLang": "da",
         "origTitle": "Mr. Nobody mod Putin",
         "platforms": [],
-        "popularity": 4.0328,
+        "popularity": 4.0099,
         "imdbId": "tt34965515",
         "countries": [
           "Denmark",
@@ -11383,7 +11516,7 @@
         "origLang": "zh",
         "origTitle": "遠離祖靈的孩子",
         "platforms": [],
-        "popularity": 0.5611,
+        "popularity": 0.5711,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -11462,7 +11595,7 @@
         "origLang": "zh",
         "origTitle": "人吶，為什麼要跑步？",
         "platforms": [],
-        "popularity": 0.5006,
+        "popularity": 0.4777,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -12634,7 +12767,7 @@
             "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
           }
         ],
-        "popularity": 79.1125,
+        "popularity": 76.6856,
         "imdbId": "tt4154796",
         "countries": [
           "United States of America"
@@ -13123,7 +13256,7 @@
         "origLang": "en",
         "origTitle": "Heart of the Beast",
         "platforms": [],
-        "popularity": 80.4941,
+        "popularity": 77.8195,
         "imdbId": "tt7526136",
         "countries": [
           "United States of America"
@@ -13713,7 +13846,7 @@
         "origLang": "ja",
         "origTitle": "黒牢城",
         "platforms": [],
-        "popularity": 4.4936,
+        "popularity": 4.294,
         "imdbId": "tt39602215",
         "countries": [
           "Japan"
@@ -17161,7 +17294,7 @@
         "origLang": "ja",
         "origTitle": "ブルーロック",
         "platforms": [],
-        "popularity": 4.6434,
+        "popularity": 3.9976,
         "imdbId": "tt39400168",
         "countries": [
           "Japan"
@@ -17433,7 +17566,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 108.5135,
+        "popularity": 102.6005,
         "imdbId": "tt37287335",
         "countries": [
           "United States of America",
@@ -17830,7 +17963,7 @@
         "origLang": "ja",
         "origTitle": "映画ちいかわ 人魚の島のひみつ",
         "platforms": [],
-        "popularity": 7.6024,
+        "popularity": 7.3591,
         "imdbId": "tt39026173",
         "countries": [
           "Japan"
@@ -19596,7 +19729,7 @@
         "origLang": "en",
         "origTitle": "A Bigger Splash",
         "platforms": [],
-        "popularity": 1.4711,
+        "popularity": 1.4794,
         "imdbId": "tt0071219",
         "countries": [
           "United Kingdom"
@@ -20065,11 +20198,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 69000000,
@@ -20193,11 +20326,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 69000000,
@@ -21057,7 +21190,7 @@
         "origLang": "zh",
         "origTitle": "歡迎來到朵莉之家",
         "platforms": [],
-        "popularity": 1.291,
+        "popularity": 1.3442,
         "imdbId": "tt37038996",
         "countries": [
           "Taiwan"
@@ -21268,7 +21401,7 @@
         "origLang": "th",
         "origTitle": "คำสารภาพของหมอผี",
         "platforms": [],
-        "popularity": 3.3884,
+        "popularity": 3.2903,
         "imdbId": "tt44632295",
         "countries": [
           "Thailand"
@@ -21443,7 +21576,7 @@
         "origLang": "zh",
         "origTitle": "世紀初戀 楊麗花",
         "platforms": [],
-        "popularity": 0.985,
+        "popularity": 0.9698,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -22081,7 +22214,7 @@
         "origLang": "ja",
         "origTitle": "同級生",
         "platforms": [],
-        "popularity": 6.3118,
+        "popularity": 6.0797,
         "imdbId": "tt5526028",
         "countries": [
           "Japan"
@@ -22996,7 +23129,7 @@
         "origLang": "ja",
         "origTitle": "チルド",
         "platforms": [],
-        "popularity": 2.9163,
+        "popularity": 3.1823,
         "imdbId": "tt39382917",
         "countries": [
           "Japan"
@@ -23177,7 +23310,7 @@
         "origLang": "en",
         "origTitle": "Vampire Carnival",
         "platforms": [],
-        "popularity": 36.7525,
+        "popularity": 36.6172,
         "imdbId": "tt39649289",
         "countries": [
           "Spain",
@@ -23964,7 +24097,7 @@
         "origLang": "en",
         "origTitle": "How to Rob a Bank",
         "platforms": [],
-        "popularity": 9.0604,
+        "popularity": 9.699,
         "imdbId": "tt35866986",
         "countries": [
           "United States of America"
@@ -24666,7 +24799,7 @@
         "origLang": "ja",
         "origTitle": "放送禁止 ぼくの3人の妻",
         "platforms": [],
-        "popularity": 1.2062,
+        "popularity": 1.3954,
         "imdbId": "tt39231777",
         "countries": [
           "Japan"
@@ -26016,7 +26149,7 @@
         "origLang": "es",
         "origTitle": "La bola negra",
         "platforms": [],
-        "popularity": 62.2797,
+        "popularity": 63.3714,
         "imdbId": "tt35511966",
         "countries": [
           "Spain",
@@ -27465,7 +27598,7 @@
         "origLang": "ja",
         "origTitle": "踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！",
         "platforms": [],
-        "popularity": 1.4013,
+        "popularity": 1.3366,
         "imdbId": "tt40826527",
         "countries": [
           "Japan"
@@ -28349,7 +28482,7 @@
         "origLang": "en",
         "origTitle": "The Booksellers",
         "platforms": [],
-        "popularity": 1.7215,
+        "popularity": 1.5831,
         "imdbId": "tt9355194",
         "countries": [
           "United States of America"
@@ -31128,7 +31261,7 @@
         "origLang": "zh",
         "origTitle": "花臉貓：修羅道",
         "platforms": [],
-        "popularity": 1.9002,
+        "popularity": 1.7762,
         "imdbId": "tt44935524",
         "countries": [
           "Taiwan"
