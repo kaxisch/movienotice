@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T14:25:27.771444+08:00",
+  "generated_at": "2026-10-29T21:41:28.835397+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 89,
-    "soon_count": 62
+    "soon_count": 63
   },
   "movies": {
     "now": [
@@ -1869,11 +1869,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -1963,11 +1963,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -3689,7 +3689,7 @@
         "origLang": "ko",
         "origTitle": "실낙원",
         "platforms": [],
-        "popularity": 4.9826,
+        "popularity": 5.1475,
         "imdbId": "tt43658893",
         "countries": [
           "South Korea"
@@ -3901,7 +3901,7 @@
         "origLang": "cn",
         "origTitle": "浪花男女",
         "platforms": [],
-        "popularity": 2.2564,
+        "popularity": 2.212,
         "imdbId": "tt37615065",
         "countries": [
           "Hong Kong"
@@ -4121,7 +4121,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/VnT9D7NogVWrmN2UuT30exIYPh.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
         "voteAverage": "7.5",
         "genre": [
           "恐怖",
@@ -4262,7 +4262,7 @@
           ],
           "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
           "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/VnT9D7NogVWrmN2UuT30exIYPh.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
           "voteAverage": "7.5",
           "trailerKey": "v889uS_W0Q0",
           "imdbId": "tt34890576",
@@ -4615,8 +4615,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 303,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -4971,7 +4971,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 2.5726,
+        "popularity": 2.5926,
         "imdbId": "tt28766949",
         "countries": [
           "Thailand"
@@ -5488,7 +5488,7 @@
         "origLang": "ko",
         "origTitle": "인턴",
         "platforms": [],
-        "popularity": 6.6253,
+        "popularity": 6.3284,
         "imdbId": "tt43741215",
         "countries": [
           "South Korea"
@@ -6160,7 +6160,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 132,
+            "votes": 140,
             "lastChanged": "2026-10-23T13:19:56.610899+08:00"
           },
           "mc": {
@@ -7610,7 +7610,7 @@
         "origLang": "ja",
         "origTitle": "BanG Dream! Ave Mujica prima aurora",
         "platforms": [],
-        "popularity": 2.8348,
+        "popularity": 2.4771,
         "imdbId": "tt39335288",
         "countries": [
           "Japan"
@@ -8261,7 +8261,7 @@
             "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
           }
         ],
-        "popularity": 22.6149,
+        "popularity": 21.2029,
         "imdbId": "tt27681354",
         "countries": [
           "United Kingdom",
@@ -8715,14 +8715,14 @@
         "trailerKey": "hhxLgnnMECw",
         "cast": [
           {
-            "name": "安·海瑟薇",
-            "char": "Verity Crawford",
-            "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
-          },
-          {
             "name": "達珂塔·強生",
             "char": "Lowen Ashleigh",
             "photo": "https://image.tmdb.org/t/p/w500/bSfVBJ8S3F1MPpCmIWb8UJcUZGP.jpg"
+          },
+          {
+            "name": "安·海瑟薇",
+            "char": "Verity Crawford",
+            "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
           },
           {
             "name": "喬許·哈奈特",
@@ -8811,7 +8811,7 @@
         "origLang": "en",
         "origTitle": "Verity",
         "platforms": [],
-        "popularity": 138.1498,
+        "popularity": 179.6426,
         "imdbId": "tt32261958",
         "countries": [
           "United States of America"
@@ -8834,14 +8834,14 @@
           ],
           "cast": [
             {
-              "name": "安·海瑟薇",
-              "char": "Verity Crawford",
-              "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
-            },
-            {
               "name": "達珂塔·強生",
               "char": "Lowen Ashleigh",
               "photo": "https://image.tmdb.org/t/p/w500/bSfVBJ8S3F1MPpCmIWb8UJcUZGP.jpg"
+            },
+            {
+              "name": "安·海瑟薇",
+              "char": "Verity Crawford",
+              "photo": "https://image.tmdb.org/t/p/w500/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg"
             },
             {
               "name": "喬許·哈奈特",
@@ -9065,11 +9065,11 @@
         "crew": [
           {
             "name": "Pauline Loquès",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Pauline Loquès",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -9182,11 +9182,11 @@
           "crew": [
             {
               "name": "Pauline Loquès",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Pauline Loquès",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -10711,11 +10711,11 @@
         "crew": [
           {
             "name": "Jean-Marc Vallée",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jean-Marc Vallée",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -10836,11 +10836,11 @@
           "crew": [
             {
               "name": "Jean-Marc Vallée",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jean-Marc Vallée",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -11613,7 +11613,7 @@
         "origLang": "fr",
         "origTitle": "En nous",
         "platforms": [],
-        "popularity": 2.4876,
+        "popularity": 2.4236,
         "imdbId": "tt37964027",
         "countries": [
           "France"
@@ -11947,7 +11947,7 @@
         "origLang": "ko",
         "origTitle": "부활남: 더 레드",
         "platforms": [],
-        "popularity": 8.1622,
+        "popularity": 7.7936,
         "imdbId": "tt29452783",
         "countries": [
           "South Korea"
@@ -12670,7 +12670,7 @@
         "origLang": "en",
         "origTitle": "Forgotten Island",
         "platforms": [],
-        "popularity": 104.3815,
+        "popularity": 115.6275,
         "imdbId": "tt36583977",
         "countries": [
           "United States of America"
@@ -12931,15 +12931,15 @@
         ],
         "crew": [
           {
-            "name": "Stephen McFeely",
-            "job": "Screenplay"
-          },
-          {
             "name": "Christopher Markus",
             "job": "Screenplay"
           },
           {
-            "name": "Joe Russo",
+            "name": "Stephen McFeely",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Anthony Russo",
             "job": "Director"
           }
         ],
@@ -13059,15 +13059,15 @@
           ],
           "crew": [
             {
-              "name": "Stephen McFeely",
-              "job": "Screenplay"
-            },
-            {
               "name": "Christopher Markus",
               "job": "Screenplay"
             },
             {
-              "name": "Joe Russo",
+              "name": "Stephen McFeely",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Anthony Russo",
               "job": "Director"
             }
           ],
@@ -14033,7 +14033,7 @@
         "origLang": "ja",
         "origTitle": "黒牢城",
         "platforms": [],
-        "popularity": 4.294,
+        "popularity": 3.6056,
         "imdbId": "tt39602215",
         "countries": [
           "Japan"
@@ -15716,11 +15716,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -15789,11 +15789,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -16942,7 +16942,7 @@
             "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
           }
         ],
-        "popularity": 13.7909,
+        "popularity": 13.1109,
         "imdbId": "tt31711040",
         "countries": [
           "Japan"
@@ -17481,7 +17481,7 @@
         "origLang": "ja",
         "origTitle": "ブルーロック",
         "platforms": [],
-        "popularity": 3.9976,
+        "popularity": 5.1661,
         "imdbId": "tt39400168",
         "countries": [
           "Japan"
@@ -17735,11 +17735,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
@@ -17860,11 +17860,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
@@ -17900,14 +17900,16 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/39bH8Q3xy4xUfYinUWOhx3iVauV.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/3TwUt1vUmbPaUMJSm7luCbDABTB.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jSinkzz4tsfTN2JXJQDkFxbjHQV.jpg",
         "voteAverage": "",
         "genre": [
           "冒險",
           "動畫",
-          "喜劇"
+          "喜劇",
+          "家庭",
+          "奇幻"
         ],
-        "duration": "",
+        "duration": 101,
         "synopsis": "某個夏天，日本各地接連出現怪異現象而引發騷動。在這之中，野原一家決定要回廣志的故鄉秋田縣老家。在準備行李時，有奇怪的影子正從庭院的暗處偷偷看著無憂無慮地玩著鬼抓人遊戲的小新。抵達秋田的野原一家，在爺爺．銀之介的家中度過安穩的時光。隔天早上，上面寫著「妖怪假期村」的傳單竟散落在小新一家就寢的房間。在小新的請求下，野原一家決定前往妖怪假期村，沒想到卻在杳無人煙的深山中闖入一個奇妙的空間，而那裡就是禁止人類進入的「妖怪之國」的入口……",
         "imdb": "",
         "rt": "",
@@ -17958,15 +17960,17 @@
           "Japan"
         ],
         "detail": {
-          "duration": "",
+          "duration": 101,
           "genres": [
             "冒險",
             "動畫",
-            "喜劇"
+            "喜劇",
+            "家庭",
+            "奇幻"
           ],
           "synopsis": "某個夏天，日本各地接連出現怪異現象而引發騷動。在這之中，野原一家決定要回廣志的故鄉秋田縣老家。在準備行李時，有奇怪的影子正從庭院的暗處偷偷看著無憂無慮地玩著鬼抓人遊戲的小新。抵達秋田的野原一家，在爺爺．銀之介的家中度過安穩的時光。隔天早上，上面寫著「妖怪假期村」的傳單竟散落在小新一家就寢的房間。在小新的請求下，野原一家決定前往妖怪假期村，沒想到卻在杳無人煙的深山中闖入一個奇妙的空間，而那裡就是禁止人類進入的「妖怪之國」的入口……",
           "poster": "https://image.tmdb.org/t/p/w500/39bH8Q3xy4xUfYinUWOhx3iVauV.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/3TwUt1vUmbPaUMJSm7luCbDABTB.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/jSinkzz4tsfTN2JXJQDkFxbjHQV.jpg",
           "voteAverage": "",
           "trailerKey": "pnjYxnn9Xm4",
           "imdbId": "tt41293342",
@@ -19148,7 +19152,7 @@
         "origLang": "ja",
         "origTitle": "名探偵コナン ハイウェイの堕天使",
         "platforms": [],
-        "popularity": 12.666,
+        "popularity": 12.3362,
         "imdbId": "tt39123115",
         "countries": [
           "Japan"
@@ -19409,11 +19413,11 @@
             "job": "Director"
           },
           {
-            "name": "姜文",
+            "name": "Zhu Sujin",
             "job": "Screenplay"
           },
           {
-            "name": "Li Bukong",
+            "name": "姜文",
             "job": "Screenplay"
           }
         ],
@@ -19550,11 +19554,11 @@
               "job": "Director"
             },
             {
-              "name": "姜文",
+              "name": "Zhu Sujin",
               "job": "Screenplay"
             },
             {
-              "name": "Li Bukong",
+              "name": "姜文",
               "job": "Screenplay"
             }
           ],
@@ -19947,11 +19951,11 @@
         "crew": [
           {
             "name": "Sung Hsin-Yin",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Sung Hsin-Yin",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -20039,11 +20043,11 @@
           "crew": [
             {
               "name": "Sung Hsin-Yin",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Sung Hsin-Yin",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -20198,11 +20202,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 69000000,
@@ -20326,11 +20330,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 69000000,
@@ -22319,8 +22323,8 @@
         ],
         "crew": [
           {
-            "name": "Barbara Miller",
-            "job": "Director"
+            "name": "Philip Delaquis",
+            "job": "Writer"
           },
           {
             "name": "Barbara Miller",
@@ -22337,7 +22341,7 @@
         "origLang": "en",
         "origTitle": "Wisdom of Happiness",
         "platforms": [],
-        "popularity": 3.773,
+        "popularity": 3.5305,
         "imdbId": "tt33055004",
         "countries": [
           "United States of America",
@@ -22367,8 +22371,8 @@
           ],
           "crew": [
             {
-              "name": "Barbara Miller",
-              "job": "Director"
+              "name": "Philip Delaquis",
+              "job": "Writer"
             },
             {
               "name": "Barbara Miller",
@@ -23127,7 +23131,7 @@
         "origLang": "ja",
         "origTitle": "チルド",
         "platforms": [],
-        "popularity": 3.1823,
+        "popularity": 3.1217,
         "imdbId": "tt39382917",
         "countries": [
           "Japan"
@@ -23218,7 +23222,7 @@
           "恐怖",
           "愛情"
         ],
-        "duration": "",
+        "duration": 106,
         "synopsis": "傑瑪是一名悲傷的年輕女子。當一個神祕的巡迴嘉年華來到她生活的鎮上時，她跟朋友們迫不及待地去參觀。在那裡，傑瑪跟一個神祕的陌生人擦出了愛情的火花。然而，傑瑪很快就發現到，這個嘉年華是通往一個地下世界的入口，那裡的吸血鬼不是以鮮血為食，而是以人類的絕望為食……",
         "imdb": "6.5",
         "rt": "",
@@ -23315,7 +23319,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": "",
+          "duration": 106,
           "genres": [
             "恐怖",
             "愛情"
@@ -23990,7 +23994,7 @@
           "犯罪",
           "驚悚"
         ],
-        "duration": "",
+        "duration": 122,
         "synopsis": "",
         "imdb": "",
         "rt": "",
@@ -24101,7 +24105,7 @@
           "United States of America"
         ],
         "detail": {
-          "duration": "",
+          "duration": 122,
           "genres": [
             "動作",
             "犯罪",
@@ -24978,7 +24982,7 @@
         "origLang": "zh",
         "origTitle": "告別的年代",
         "platforms": [],
-        "popularity": 2.8348,
+        "popularity": 2.7914,
         "imdbId": "tt35486511",
         "countries": [
           "Taiwan",
@@ -27836,11 +27840,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -27963,11 +27967,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
@@ -30684,6 +30688,193 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1518062,
+        "titleZh": "我的棋王爺爺",
+        "titleEn": "我的棋王爺爺",
+        "releaseDate": "2027-02-06",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-02-06",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/kmZEHtqBYc9Vd8YkfhQKBCHgFz5.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 110,
+        "synopsis": "1990年代末，鑰匙兒童江奕軒成長於城南萬華。由於父親平日忙於開計程車攬客，在漫漫午後時光裡，除了家附近的自助餐店與青年公園的棒球場，他最常去公園裡玩耍閒晃。某天，他在公園遇見自稱「棋王」的退伍老兵。老先生和他相約每天在此對弈象棋，只要奕軒能贏得一盤，就能得到50元獎金。一場跨世代情誼，以及許多意料之外的人生啟示，就此在棋盤上展開。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "李立群",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/xk05iTNkFuRz1Qd8hmfgNestpcR.jpg"
+          },
+          {
+            "name": "謝以樂",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/3kM2dFEGLgUmt9O9l1Up4ujH03P.jpg"
+          },
+          {
+            "name": "春風",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/xUqD0ClO8k1WlpP5D9osLlozRua.jpg"
+          },
+          {
+            "name": "陶傳正",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/qw4uPf19lKD96CK4jRC2k8erxwv.jpg"
+          },
+          {
+            "name": "朱宥丞",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/qZpEcnPLWpjr0Izx0mrZdJspuC2.jpg"
+          },
+          {
+            "name": "五木",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/c3FP0s8lS8JZNv8jnqeTXTvgvNX.jpg"
+          },
+          {
+            "name": "瑪菲司",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/nBcub3vJY2263NsMuzEmgBqjOdD.jpg"
+          },
+          {
+            "name": "張絡扉",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/i6PhRahBYmpmysyjuICebOFJXoY.jpg"
+          },
+          {
+            "name": "朱勻甄",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/xwAFt4wzSiNWiUmDPMPXUiWZruR.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "陳怡蓉",
+            "job": "Director"
+          },
+          {
+            "name": "林彣政",
+            "job": "Writer"
+          },
+          {
+            "name": "陳怡蓉",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "我的棋王爺爺",
+        "platforms": [],
+        "popularity": 1.3306,
+        "imdbId": "tt41618968",
+        "countries": [
+          "Taiwan"
+        ],
+        "detail": {
+          "duration": 110,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "1990年代末，鑰匙兒童江奕軒成長於城南萬華。由於父親平日忙於開計程車攬客，在漫漫午後時光裡，除了家附近的自助餐店與青年公園的棒球場，他最常去公園裡玩耍閒晃。某天，他在公園遇見自稱「棋王」的退伍老兵。老先生和他相約每天在此對弈象棋，只要奕軒能贏得一盤，就能得到50元獎金。一場跨世代情誼，以及許多意料之外的人生啟示，就此在棋盤上展開。",
+          "poster": "https://image.tmdb.org/t/p/w500/kmZEHtqBYc9Vd8YkfhQKBCHgFz5.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt41618968",
+          "countries": [
+            "Taiwan"
+          ],
+          "cast": [
+            {
+              "name": "李立群",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/xk05iTNkFuRz1Qd8hmfgNestpcR.jpg"
+            },
+            {
+              "name": "謝以樂",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/3kM2dFEGLgUmt9O9l1Up4ujH03P.jpg"
+            },
+            {
+              "name": "春風",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/xUqD0ClO8k1WlpP5D9osLlozRua.jpg"
+            },
+            {
+              "name": "陶傳正",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/qw4uPf19lKD96CK4jRC2k8erxwv.jpg"
+            },
+            {
+              "name": "朱宥丞",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/qZpEcnPLWpjr0Izx0mrZdJspuC2.jpg"
+            },
+            {
+              "name": "五木",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/c3FP0s8lS8JZNv8jnqeTXTvgvNX.jpg"
+            },
+            {
+              "name": "瑪菲司",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/nBcub3vJY2263NsMuzEmgBqjOdD.jpg"
+            },
+            {
+              "name": "張絡扉",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/i6PhRahBYmpmysyjuICebOFJXoY.jpg"
+            },
+            {
+              "name": "朱勻甄",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/xwAFt4wzSiNWiUmDPMPXUiWZruR.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "陳怡蓉",
+              "job": "Director"
+            },
+            {
+              "name": "林彣政",
+              "job": "Writer"
+            },
+            {
+              "name": "陳怡蓉",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "我的棋王爺爺",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1518062?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1147572,
         "titleZh": "納尼亞：魔法師的外甥",
         "titleEn": "Narnia: The Magician's Nephew",
@@ -31506,6 +31697,267 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1577970,
+        "titleZh": "狂忘警探",
+        "titleEn": "狂忘警探",
+        "releaseDate": "2027-03-05",
+        "releaseYear": "2027",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-03-05",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/yjjm0BDt91vSSb6y6CWUwDyr7FP.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/nhtXrhJVYYX4uz7haHPkL1KC3Bb.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動作",
+          "喜劇",
+          "劇情"
+        ],
+        "duration": 100,
+        "synopsis": "李子傑是臺北警界出名的天才刑警。一次犯罪調查行動中，他失去了自己的團隊，從此深陷自責，並被調職至偏鄉警局。受到創傷影響，李子傑開始出現失憶症狀，卻決心將此事隱瞞。沒多久，他接手一起全新案件：一名日本富商的兒子遭到綁架。隨著記憶逐漸消逝，他只能依靠身體本能與直覺辦案。出乎意料的是，這份近乎本能的反應，竟一步步帶領他接近犯人，展開一場顛覆過往經驗的荒誕冒險。",
+        "imdb": "",
+        "rt": "83%",
+        "mc": "",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 12,
+            "lastChanged": "2026-10-28T08:44:33.402924+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "阮經天",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/vDiFcca1TYcFssxjU9efGjIAWN4.jpg"
+          },
+          {
+            "name": "李沐",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/rr2xnkDpF1KpZS5xKDp59FgvRwX.jpg"
+          },
+          {
+            "name": "霧島れいか",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/htxRwdj2L0SxP18PzNIt21m6qEt.jpg"
+          },
+          {
+            "name": "堤真一",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/t3E5FKE7UGbdlnA8gy9lx03otIk.jpg"
+          },
+          {
+            "name": "謝盈萱",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/fwDJprZF61lqiaPRIdLltnfMvXC.jpg"
+          },
+          {
+            "name": "Daisuke Tsukahara",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/3k2rw891nrkz4uLjSw3BmLt9ast.jpg"
+          },
+          {
+            "name": "蔡凡熙",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/sy0WpVgR8IJeL7kJNsz5q2rShxg.jpg"
+          },
+          {
+            "name": "黃冠智",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/hRab1Y8qff9kbGbYtqoeeydOwsu.jpg"
+          },
+          {
+            "name": "張再興",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/JUO9YM1bi6RERs9SrkqxQaGTE6.jpg"
+          },
+          {
+            "name": "黃鐙輝",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/7FRImEjw1mmJX2XRUnSrE6JT5qx.jpg"
+          },
+          {
+            "name": "陳彥壯",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/3yPErWCOG5rmfxnrfJK4e4ZvLml.jpg"
+          },
+          {
+            "name": "楊傑",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/ocAjA8fZCThw3E4xb8sM3eIwWpR.jpg"
+          },
+          {
+            "name": "沈威年",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/qNUIJzkP3cxX6bpgCk0rzM2pBVJ.jpg"
+          },
+          {
+            "name": "梅賢治",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/8S6SUKnyNjopc2nmVrRstoH7GGv.jpg"
+          },
+          {
+            "name": "羅能華",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/ijgZgfQsh7Oxizyd7NdqI40FJhS.jpg"
+          },
+          {
+            "name": "歐陽倫",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/pFEdU0xpfug51xfYXDDyoXSymkE.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "薩布",
+            "job": "Director"
+          },
+          {
+            "name": "薩布",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "狂忘警探",
+        "platforms": [],
+        "popularity": 3.5263,
+        "imdbId": "tt38893248",
+        "countries": [
+          "Taiwan",
+          "Japan"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "動作",
+            "喜劇",
+            "劇情"
+          ],
+          "synopsis": "李子傑是臺北警界出名的天才刑警。一次犯罪調查行動中，他失去了自己的團隊，從此深陷自責，並被調職至偏鄉警局。受到創傷影響，李子傑開始出現失憶症狀，卻決心將此事隱瞞。沒多久，他接手一起全新案件：一名日本富商的兒子遭到綁架。隨著記憶逐漸消逝，他只能依靠身體本能與直覺辦案。出乎意料的是，這份近乎本能的反應，竟一步步帶領他接近犯人，展開一場顛覆過往經驗的荒誕冒險。",
+          "poster": "https://image.tmdb.org/t/p/w500/yjjm0BDt91vSSb6y6CWUwDyr7FP.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/nhtXrhJVYYX4uz7haHPkL1KC3Bb.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt38893248",
+          "countries": [
+            "Taiwan",
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "阮經天",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/vDiFcca1TYcFssxjU9efGjIAWN4.jpg"
+            },
+            {
+              "name": "李沐",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/rr2xnkDpF1KpZS5xKDp59FgvRwX.jpg"
+            },
+            {
+              "name": "霧島れいか",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/htxRwdj2L0SxP18PzNIt21m6qEt.jpg"
+            },
+            {
+              "name": "堤真一",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/t3E5FKE7UGbdlnA8gy9lx03otIk.jpg"
+            },
+            {
+              "name": "謝盈萱",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/fwDJprZF61lqiaPRIdLltnfMvXC.jpg"
+            },
+            {
+              "name": "Daisuke Tsukahara",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/3k2rw891nrkz4uLjSw3BmLt9ast.jpg"
+            },
+            {
+              "name": "蔡凡熙",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/sy0WpVgR8IJeL7kJNsz5q2rShxg.jpg"
+            },
+            {
+              "name": "黃冠智",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/hRab1Y8qff9kbGbYtqoeeydOwsu.jpg"
+            },
+            {
+              "name": "張再興",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/JUO9YM1bi6RERs9SrkqxQaGTE6.jpg"
+            },
+            {
+              "name": "黃鐙輝",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/7FRImEjw1mmJX2XRUnSrE6JT5qx.jpg"
+            },
+            {
+              "name": "陳彥壯",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/3yPErWCOG5rmfxnrfJK4e4ZvLml.jpg"
+            },
+            {
+              "name": "楊傑",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/ocAjA8fZCThw3E4xb8sM3eIwWpR.jpg"
+            },
+            {
+              "name": "沈威年",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/qNUIJzkP3cxX6bpgCk0rzM2pBVJ.jpg"
+            },
+            {
+              "name": "梅賢治",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/8S6SUKnyNjopc2nmVrRstoH7GGv.jpg"
+            },
+            {
+              "name": "羅能華",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/ijgZgfQsh7Oxizyd7NdqI40FJhS.jpg"
+            },
+            {
+              "name": "歐陽倫",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/pFEdU0xpfug51xfYXDDyoXSymkE.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "薩布",
+              "job": "Director"
+            },
+            {
+              "name": "薩布",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "狂忘警探",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1577970?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1497464,
         "titleZh": "貓的急轉彎",
         "titleEn": "Gatto",
@@ -31867,267 +32319,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1297467?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1577970,
-        "titleZh": "狂忘警探",
-        "titleEn": "狂忘警探",
-        "releaseDate": "2027-03-26",
-        "releaseYear": "2027",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2027-03-26",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/yjjm0BDt91vSSb6y6CWUwDyr7FP.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/nhtXrhJVYYX4uz7haHPkL1KC3Bb.jpg",
-        "voteAverage": "",
-        "genre": [
-          "動作",
-          "喜劇",
-          "劇情"
-        ],
-        "duration": 100,
-        "synopsis": "李子傑是臺北警界出名的天才刑警。一次犯罪調查行動中，他失去了自己的團隊，從此深陷自責，並被調職至偏鄉警局。受到創傷影響，李子傑開始出現失憶症狀，卻決心將此事隱瞞。沒多久，他接手一起全新案件：一名日本富商的兒子遭到綁架。隨著記憶逐漸消逝，他只能依靠身體本能與直覺辦案。出乎意料的是，這份近乎本能的反應，竟一步步帶領他接近犯人，展開一場顛覆過往經驗的荒誕冒險。",
-        "imdb": "",
-        "rt": "83%",
-        "mc": "",
-        "ratingMeta": {
-          "rt": {
-            "source": "mdblist",
-            "votes": 12,
-            "lastChanged": "2026-10-28T08:44:33.402924+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "阮經天",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vDiFcca1TYcFssxjU9efGjIAWN4.jpg"
-          },
-          {
-            "name": "李沐",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/rr2xnkDpF1KpZS5xKDp59FgvRwX.jpg"
-          },
-          {
-            "name": "霧島れいか",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/htxRwdj2L0SxP18PzNIt21m6qEt.jpg"
-          },
-          {
-            "name": "堤真一",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/t3E5FKE7UGbdlnA8gy9lx03otIk.jpg"
-          },
-          {
-            "name": "謝盈萱",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/fwDJprZF61lqiaPRIdLltnfMvXC.jpg"
-          },
-          {
-            "name": "Daisuke Tsukahara",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/3k2rw891nrkz4uLjSw3BmLt9ast.jpg"
-          },
-          {
-            "name": "蔡凡熙",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/sy0WpVgR8IJeL7kJNsz5q2rShxg.jpg"
-          },
-          {
-            "name": "黃冠智",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/hRab1Y8qff9kbGbYtqoeeydOwsu.jpg"
-          },
-          {
-            "name": "張再興",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/JUO9YM1bi6RERs9SrkqxQaGTE6.jpg"
-          },
-          {
-            "name": "黃鐙輝",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/7FRImEjw1mmJX2XRUnSrE6JT5qx.jpg"
-          },
-          {
-            "name": "陳彥壯",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/3yPErWCOG5rmfxnrfJK4e4ZvLml.jpg"
-          },
-          {
-            "name": "楊傑",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/ocAjA8fZCThw3E4xb8sM3eIwWpR.jpg"
-          },
-          {
-            "name": "沈威年",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/qNUIJzkP3cxX6bpgCk0rzM2pBVJ.jpg"
-          },
-          {
-            "name": "梅賢治",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/8S6SUKnyNjopc2nmVrRstoH7GGv.jpg"
-          },
-          {
-            "name": "羅能華",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/ijgZgfQsh7Oxizyd7NdqI40FJhS.jpg"
-          },
-          {
-            "name": "歐陽倫",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/pFEdU0xpfug51xfYXDDyoXSymkE.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "薩布",
-            "job": "Director"
-          },
-          {
-            "name": "薩布",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "狂忘警探",
-        "platforms": [],
-        "popularity": 3.5263,
-        "imdbId": "tt38893248",
-        "countries": [
-          "Taiwan",
-          "Japan"
-        ],
-        "detail": {
-          "duration": 100,
-          "genres": [
-            "動作",
-            "喜劇",
-            "劇情"
-          ],
-          "synopsis": "李子傑是臺北警界出名的天才刑警。一次犯罪調查行動中，他失去了自己的團隊，從此深陷自責，並被調職至偏鄉警局。受到創傷影響，李子傑開始出現失憶症狀，卻決心將此事隱瞞。沒多久，他接手一起全新案件：一名日本富商的兒子遭到綁架。隨著記憶逐漸消逝，他只能依靠身體本能與直覺辦案。出乎意料的是，這份近乎本能的反應，竟一步步帶領他接近犯人，展開一場顛覆過往經驗的荒誕冒險。",
-          "poster": "https://image.tmdb.org/t/p/w500/yjjm0BDt91vSSb6y6CWUwDyr7FP.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/nhtXrhJVYYX4uz7haHPkL1KC3Bb.jpg",
-          "voteAverage": "",
-          "trailerKey": null,
-          "imdbId": "tt38893248",
-          "countries": [
-            "Taiwan",
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "阮經天",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vDiFcca1TYcFssxjU9efGjIAWN4.jpg"
-            },
-            {
-              "name": "李沐",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/rr2xnkDpF1KpZS5xKDp59FgvRwX.jpg"
-            },
-            {
-              "name": "霧島れいか",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/htxRwdj2L0SxP18PzNIt21m6qEt.jpg"
-            },
-            {
-              "name": "堤真一",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/t3E5FKE7UGbdlnA8gy9lx03otIk.jpg"
-            },
-            {
-              "name": "謝盈萱",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/fwDJprZF61lqiaPRIdLltnfMvXC.jpg"
-            },
-            {
-              "name": "Daisuke Tsukahara",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/3k2rw891nrkz4uLjSw3BmLt9ast.jpg"
-            },
-            {
-              "name": "蔡凡熙",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/sy0WpVgR8IJeL7kJNsz5q2rShxg.jpg"
-            },
-            {
-              "name": "黃冠智",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/hRab1Y8qff9kbGbYtqoeeydOwsu.jpg"
-            },
-            {
-              "name": "張再興",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/JUO9YM1bi6RERs9SrkqxQaGTE6.jpg"
-            },
-            {
-              "name": "黃鐙輝",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/7FRImEjw1mmJX2XRUnSrE6JT5qx.jpg"
-            },
-            {
-              "name": "陳彥壯",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/3yPErWCOG5rmfxnrfJK4e4ZvLml.jpg"
-            },
-            {
-              "name": "楊傑",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/ocAjA8fZCThw3E4xb8sM3eIwWpR.jpg"
-            },
-            {
-              "name": "沈威年",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/qNUIJzkP3cxX6bpgCk0rzM2pBVJ.jpg"
-            },
-            {
-              "name": "梅賢治",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/8S6SUKnyNjopc2nmVrRstoH7GGv.jpg"
-            },
-            {
-              "name": "羅能華",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/ijgZgfQsh7Oxizyd7NdqI40FJhS.jpg"
-            },
-            {
-              "name": "歐陽倫",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/pFEdU0xpfug51xfYXDDyoXSymkE.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "薩布",
-              "job": "Director"
-            },
-            {
-              "name": "薩布",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "狂忘警探",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1577970?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
