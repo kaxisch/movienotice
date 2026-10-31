@@ -39,6 +39,7 @@ RERELEASE_CANDIDATES_FILE = DATA_DIR / "rerelease-candidates.json"
 MOVIE_DATA_FILE = DATA_DIR / "movie-data.json"
 WHITELIST_FILE = DATA_DIR / "tw-whitelist.json"
 MANUAL_RELEASES_FILE = DATA_DIR / "manual-releases.json"
+TMDB_OVERRIDES_FILE = DATA_DIR / "tmdb-overrides.json"
 CANDIDATES_SHEET_TITLE = "_candidates"
 RERELEASES_SHEET_TITLE = "_rereleases"
 AUDIT_STATUS_SHEET_TITLE = "_audit_status"
@@ -66,6 +67,31 @@ SPREADSHEET_MIME_TYPE = "application/vnd.google-apps.spreadsheet"
 FOLDER_MIME_TYPE = "application/vnd.google-apps.folder"
 DEFAULT_FOLDER_NAME = "tw movie"
 DEFAULT_SPREADSHEET_NAME = "movienotice_weekly"
+
+
+def load_superseded_tmdb_ids(path=TMDB_OVERRIDES_FILE):
+    """載入人工確認為錯誤配對、應由正確 TMDB ID 取代的舊 ID。"""
+    payload = load_json_payload(path, {})
+    superseded = set()
+    for override in payload.values():
+        for value in override.get("supersedes_tmdb_ids", []):
+            try:
+                superseded.add(int(value))
+            except (TypeError, ValueError):
+                continue
+    return superseded
+
+
+def discard_superseded_candidates(items, superseded_ids):
+    filtered = []
+    for item in items:
+        try:
+            tmdb_id = int(item.get("tmdb_id") or 0)
+        except (TypeError, ValueError):
+            tmdb_id = 0
+        if tmdb_id not in superseded_ids:
+            filtered.append(item)
+    return filtered
 
 
 def log(message):
@@ -923,6 +949,7 @@ def publish():
 
     rerelease_audit = load_rerelease_audit()
     current_candidate_items = load_candidate_items()
+    superseded_tmdb_ids = load_superseded_tmdb_ids()
     cinema_candidates = (
         rerelease_audit.get("regular_candidates", []) if rerelease_audit is not None else []
     )
@@ -934,6 +961,9 @@ def publish():
             previous_candidate_items = sheet_rows_to_items(
                 get_all_sheet_values(sheets_service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
             )
+        previous_candidate_items = discard_superseded_candidates(
+            previous_candidate_items, superseded_tmdb_ids
+        )
         manual_ids = load_json_ids(MANUAL_RELEASES_FILE, "manual")
         movie_payload = load_json_payload(MOVIE_DATA_FILE, {"movies": {}})
         previous_candidate_items = seed_site_handoff_candidates(
@@ -984,6 +1014,9 @@ def publish():
             previous_rerelease_items = sheet_rows_to_items(
                 get_all_sheet_values(sheets_service, spreadsheet_id, RERELEASES_SHEET_TITLE)
             )
+        previous_rerelease_items = discard_superseded_candidates(
+            previous_rerelease_items, superseded_tmdb_ids
+        )
         rerelease_items = merge_rerelease_presence(
             rerelease_audit.get("candidates", []),
             previous_rerelease_items,
