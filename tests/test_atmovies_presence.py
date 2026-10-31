@@ -14,6 +14,16 @@ import weekly_check as weekly
 
 
 class CandidatePresenceTests(unittest.TestCase):
+    def test_discards_manually_superseded_tmdb_candidate(self):
+        items = [
+            {"tmdb_id": 1534155, "title_zh": "Hen"},
+            {"tmdb_id": 1382513, "title_zh": "雞智逃亡生活"},
+        ]
+
+        filtered = publish.discard_superseded_candidates(items, {1534155})
+
+        self.assertEqual(filtered, [{"tmdb_id": 1382513, "title_zh": "雞智逃亡生活"}])
+
     def test_source_date_matches_any_tmdb_tw_theatrical_date(self):
         release_results = [
             {

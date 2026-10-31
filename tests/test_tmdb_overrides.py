@@ -177,6 +177,13 @@ class TmdbOverrideTests(unittest.TestCase):
             "鋼之鍊金術師劇場版": 80518,
             "TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW": 1688795,
             "TOMORROW X TOGETHER WORLD TOUR ACT TOMOR TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW": 1688795,
+            "追蹤者遊戲W 水魚交融": 1663504,
+            "樂園追放": 304023,
+            "樂園追放 心之共鳴": 1236857,
+            "樂園追放：心之共鳴": 1236857,
+            "Everybody Digs Bill Evans": 1378791,
+            "Hen": 1382513,
+            "雞智逃亡生活": 1382513,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):

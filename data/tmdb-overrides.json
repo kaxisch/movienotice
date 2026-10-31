@@ -608,5 +608,36 @@
     "tmdb_id": 1165656,
     "note": "2026-10-25 audit: manually confirmed as TMDB 1165656",
     "source_titles": ["IU CONCERT THE GOLDEN HOUR", "IU CONCERT: THE GOLDEN HOUR"]
+  },
+  "title:追蹤者遊戲W水魚交融": {
+    "tmdb_id": 1663504,
+    "title_zh": "追蹤者遊戲W 水魚交融",
+    "note": "2026-11-01 audit: manually confirmed as TMDB 1663504",
+    "source_titles": ["追蹤者遊戲W 水魚交融", "チェイサーゲームW 水魚の交わり"]
+  },
+  "title:樂園追放": {
+    "tmdb_id": 304023,
+    "title_zh": "樂園追放",
+    "note": "2026-11-01 audit: manually confirmed as TMDB 304023",
+    "source_titles": ["樂園追放", "樂園追放 -Expelled from Paradise-", "Expelled from Paradise"]
+  },
+  "title:樂園追放心之共鳴": {
+    "tmdb_id": 1236857,
+    "title_zh": "樂園追放：心之共鳴",
+    "note": "2026-11-01 audit: manually confirmed as TMDB 1236857",
+    "source_titles": ["樂園追放 心之共鳴", "樂園追放：心之共鳴", "楽園追放 心のレゾナンス"]
+  },
+  "title:Everybody Digs Bill Evans": {
+    "tmdb_id": 1378791,
+    "title_zh": "比爾艾文斯三重奏變",
+    "note": "2026-11-01 audit: preserve the user-confirmed Taiwan Chinese title",
+    "source_titles": ["Everybody Digs Bill Evans", "比爾艾文斯三重奏變"]
+  },
+  "title:Hen": {
+    "tmdb_id": 1382513,
+    "title_zh": "雞智逃亡生活",
+    "supersedes_tmdb_ids": [1534155],
+    "note": "2026-11-01 audit: Hen and 雞智逃亡生活 are the same film; TMDB 1534155 was an incorrect match",
+    "source_titles": ["Hen", "雞智逃亡生活"]
   }
 }
