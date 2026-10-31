@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T06:39:25.206774+08:00",
+  "generated_at": "2026-10-31T14:13:50.488567+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 102,
@@ -140,11 +140,11 @@
             "job": "Director"
           },
           {
-            "name": "姜文",
+            "name": "Zhu Sujin",
             "job": "Screenplay"
           },
           {
-            "name": "Li Bukong",
+            "name": "姜文",
             "job": "Screenplay"
           }
         ],
@@ -171,7 +171,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 5.8068,
+        "popularity": 5.9941,
         "imdbId": "tt1533117",
         "countries": [
           "China",
@@ -281,11 +281,11 @@
               "job": "Director"
             },
             {
-              "name": "姜文",
+              "name": "Zhu Sujin",
               "job": "Screenplay"
             },
             {
-              "name": "Li Bukong",
+              "name": "姜文",
               "job": "Screenplay"
             }
           ],
@@ -443,15 +443,15 @@
         "crew": [
           {
             "name": "Jack Hazan",
-            "job": "Director"
-          },
-          {
-            "name": "Jack Hazan",
             "job": "Writer"
           },
           {
             "name": "David Mingay",
             "job": "Writer"
+          },
+          {
+            "name": "Jack Hazan",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -460,7 +460,7 @@
         "origLang": "en",
         "origTitle": "A Bigger Splash",
         "platforms": [],
-        "popularity": 2.5861,
+        "popularity": 1.9659,
         "imdbId": "tt0071219",
         "countries": [
           "United Kingdom"
@@ -565,15 +565,15 @@
           "crew": [
             {
               "name": "Jack Hazan",
-              "job": "Director"
-            },
-            {
-              "name": "Jack Hazan",
               "job": "Writer"
             },
             {
               "name": "David Mingay",
               "job": "Writer"
+            },
+            {
+              "name": "Jack Hazan",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -700,7 +700,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 1.6629,
+        "popularity": 1.5263,
         "imdbId": "tt7543904",
         "countries": [
           "Taiwan"
@@ -951,7 +951,7 @@
             "logo": "/uQvhdtB8skccsGHmvKi3y5bqBsX.png"
           }
         ],
-        "popularity": 12.3839,
+        "popularity": 12.5914,
         "imdbId": "tt8178634",
         "countries": [
           "India"
@@ -1227,7 +1227,7 @@
         "origLang": "en",
         "origTitle": "Orwell: 2+2=5",
         "platforms": [],
-        "popularity": 2.551,
+        "popularity": 2.7468,
         "imdbId": "tt27052428",
         "countries": [
           "France",
@@ -1483,11 +1483,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 10000000,
@@ -1604,11 +1604,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 10000000,
@@ -1640,7 +1640,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
-        "voteAverage": "6.7",
+        "voteAverage": "7.1",
         "genre": [
           "動作",
           "驚悚"
@@ -1675,6 +1675,16 @@
             "photo": "https://image.tmdb.org/t/p/w500/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
           },
           {
+            "name": "Marcus Thomas",
+            "char": "Munch",
+            "photo": "https://image.tmdb.org/t/p/w500/wpsm5roIsSqaOX9ApIJqCxDAqgD.jpg"
+          },
+          {
+            "name": "Maurice Marvel Meredith",
+            "char": "Major James Tilton",
+            "photo": null
+          },
+          {
             "name": "Michael Chiklis",
             "char": "Major Walter Pope",
             "photo": "https://image.tmdb.org/t/p/w500/pAkKjbzxP6Z6Y5zAGpwmWQo1iji.jpg"
@@ -1705,11 +1715,6 @@
             "photo": "https://image.tmdb.org/t/p/w500/pdxur3LhMEg8DNajEhHKE1J7FIx.jpg"
           },
           {
-            "name": "Maurice Marvel Meredith",
-            "char": "Major James Tilton",
-            "photo": null
-          },
-          {
             "name": "Nicole Chapman",
             "char": "Angelina",
             "photo": "https://image.tmdb.org/t/p/w500/nUZUVKNuxbkfJStEizFGekvLnkZ.jpg"
@@ -1728,16 +1733,21 @@
             "name": "Jack Hewitt",
             "char": "Young Fang Flanagan",
             "photo": "https://image.tmdb.org/t/p/w500/dpOP67uoWSzoXIlnZXzeLxuaDfE.jpg"
+          },
+          {
+            "name": "Tom Wilson",
+            "char": "Officer Kevin",
+            "photo": "https://image.tmdb.org/t/p/w500/mn5GCmdYtsqueuOS137caa1uaHh.jpg"
           }
         ],
         "crew": [
           {
-            "name": "Thompson Evans",
-            "job": "Writer"
-          },
-          {
             "name": "Mark Vanselow",
             "job": "Director"
+          },
+          {
+            "name": "Thompson Evans",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -1746,7 +1756,7 @@
         "origLang": "en",
         "origTitle": "The Mongoose",
         "platforms": [],
-        "popularity": 147.8685,
+        "popularity": 147.5385,
         "imdbId": "tt13611778",
         "countries": [
           "Australia"
@@ -1760,7 +1770,7 @@
           "synopsis": "功勳卓著的退伍老兵萊恩被指控犯下謀殺案，於是他駕駛跑車，與警方展開一場玩命關頭史詩級追逐戰！",
           "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
-          "voteAverage": "6.7",
+          "voteAverage": "7.1",
           "trailerKey": "XIdGnG-pMeA",
           "imdbId": "tt13611778",
           "countries": [
@@ -1781,6 +1791,16 @@
               "name": "文·雷姆斯",
               "char": "Tanker",
               "photo": "https://image.tmdb.org/t/p/w500/tOVDvu1EQP78AwaUw6uh1wN818E.jpg"
+            },
+            {
+              "name": "Marcus Thomas",
+              "char": "Munch",
+              "photo": "https://image.tmdb.org/t/p/w500/wpsm5roIsSqaOX9ApIJqCxDAqgD.jpg"
+            },
+            {
+              "name": "Maurice Marvel Meredith",
+              "char": "Major James Tilton",
+              "photo": null
             },
             {
               "name": "Michael Chiklis",
@@ -1813,11 +1833,6 @@
               "photo": "https://image.tmdb.org/t/p/w500/pdxur3LhMEg8DNajEhHKE1J7FIx.jpg"
             },
             {
-              "name": "Maurice Marvel Meredith",
-              "char": "Major James Tilton",
-              "photo": null
-            },
-            {
               "name": "Nicole Chapman",
               "char": "Angelina",
               "photo": "https://image.tmdb.org/t/p/w500/nUZUVKNuxbkfJStEizFGekvLnkZ.jpg"
@@ -1836,16 +1851,21 @@
               "name": "Jack Hewitt",
               "char": "Young Fang Flanagan",
               "photo": "https://image.tmdb.org/t/p/w500/dpOP67uoWSzoXIlnZXzeLxuaDfE.jpg"
+            },
+            {
+              "name": "Tom Wilson",
+              "char": "Officer Kevin",
+              "photo": "https://image.tmdb.org/t/p/w500/mn5GCmdYtsqueuOS137caa1uaHh.jpg"
             }
           ],
           "crew": [
             {
-              "name": "Thompson Evans",
-              "job": "Writer"
-            },
-            {
               "name": "Mark Vanselow",
               "job": "Director"
+            },
+            {
+              "name": "Thompson Evans",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -1937,7 +1957,7 @@
         "origLang": "zh",
         "origTitle": "歡迎來到朵莉之家",
         "platforms": [],
-        "popularity": 1.2084,
+        "popularity": 1.2292,
         "imdbId": "tt37038996",
         "countries": [
           "Taiwan"
@@ -2148,7 +2168,7 @@
         "origLang": "th",
         "origTitle": "คำสารภาพของหมอผี",
         "platforms": [],
-        "popularity": 2.9396,
+        "popularity": 2.8966,
         "imdbId": "tt44632295",
         "countries": [
           "Thailand"
@@ -2323,7 +2343,7 @@
         "origLang": "zh",
         "origTitle": "世紀初戀 楊麗花",
         "platforms": [],
-        "popularity": 0.9325,
+        "popularity": 0.9155,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -2488,7 +2508,7 @@
         "origLang": "ja",
         "origTitle": "マッチング TRUE LOVE",
         "platforms": [],
-        "popularity": 3.5524,
+        "popularity": 3.2082,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -2699,7 +2719,7 @@
         "origLang": "ja",
         "origTitle": "どこよりも遠い場所にいる君へ",
         "platforms": [],
-        "popularity": 2.9918,
+        "popularity": 2.9135,
         "imdbId": "tt43691434",
         "countries": [
           "Japan"
@@ -2841,7 +2861,7 @@
         "origLang": "ja",
         "origTitle": "影を売る女",
         "platforms": [],
-        "popularity": 1.1553,
+        "popularity": 1.0736,
         "imdbId": "tt44090388",
         "countries": [],
         "detail": {
@@ -2981,7 +3001,7 @@
         "origLang": "zh",
         "origTitle": "消失的金鳳娜",
         "platforms": [],
-        "popularity": 1.567,
+        "popularity": 1.3981,
         "imdbId": "tt36958624",
         "countries": [
           "Taiwan"
@@ -3221,7 +3241,7 @@
             "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
           }
         ],
-        "popularity": 4.0035,
+        "popularity": 3.5487,
         "imdbId": "tt8767908",
         "countries": [
           "Canada"
@@ -3418,7 +3438,7 @@
         "origLang": "ko",
         "origTitle": "투모로우바이투게더 월드 투어 ‘액트 : 투모로우'",
         "platforms": [],
-        "popularity": 2.2645,
+        "popularity": 2.2495,
         "imdbId": "tt46658752",
         "countries": [
           "South Korea"
@@ -3556,7 +3576,7 @@
         "origLang": "ko",
         "origTitle": "엔하이픈 월드 투어 ‘블러드 사가’",
         "platforms": [],
-        "popularity": 2.0983,
+        "popularity": 2.1446,
         "imdbId": "tt46658854",
         "countries": [
           "South Korea"
@@ -3714,7 +3734,7 @@
         "origLang": "ko",
         "origTitle": "세븐틴 월드 투어 '뉴_'",
         "platforms": [],
-        "popularity": 2.9474,
+        "popularity": 2.6549,
         "imdbId": "tt46658626",
         "countries": [
           "South Korea"
@@ -3925,7 +3945,7 @@
         "origLang": "ko",
         "origTitle": "하이브 치어링 파티",
         "platforms": [],
-        "popularity": 3.9516,
+        "popularity": 3.7446,
         "imdbId": "tt46659669",
         "countries": [
           "South Korea"
@@ -4102,7 +4122,7 @@
         "origLang": "ko",
         "origTitle": "아이유 콘서트 : 더 골든 아워",
         "platforms": [],
-        "popularity": 2.1168,
+        "popularity": 1.5546,
         "imdbId": "tt28997098",
         "countries": [
           "South Korea"
@@ -4294,7 +4314,7 @@
         "origLang": "hi",
         "origTitle": "3 Idiots",
         "platforms": [],
-        "popularity": 11.0592,
+        "popularity": 10.5028,
         "imdbId": "tt1187043",
         "countries": [
           "India"
@@ -4517,11 +4537,11 @@
         ],
         "crew": [
           {
-            "name": "川原礫",
+            "name": "吉野弘幸",
             "job": "Screenplay"
           },
           {
-            "name": "吉野弘幸",
+            "name": "川原礫",
             "job": "Screenplay"
           },
           {
@@ -4540,7 +4560,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 2.3534,
+        "popularity": 2.2312,
         "imdbId": "tt5923132",
         "countries": [
           "Japan"
@@ -4620,11 +4640,11 @@
           ],
           "crew": [
             {
-              "name": "川原礫",
+              "name": "吉野弘幸",
               "job": "Screenplay"
             },
             {
-              "name": "吉野弘幸",
+              "name": "川原礫",
               "job": "Screenplay"
             },
             {
@@ -4766,7 +4786,7 @@
         "origLang": "fr",
         "origTitle": "Jim Queen",
         "platforms": [],
-        "popularity": 6.1963,
+        "popularity": 5.9843,
         "imdbId": "tt36955518",
         "countries": [
           "France",
@@ -5010,7 +5030,7 @@
         "origLang": "en",
         "origTitle": "The Pout-Pout Fish",
         "platforms": [],
-        "popularity": 8.4097,
+        "popularity": 8.0108,
         "imdbId": "tt12824390",
         "countries": [
           "Australia",
@@ -5271,7 +5291,7 @@
         "origLang": "ko",
         "origTitle": "아마존 활명수",
         "platforms": [],
-        "popularity": 2.223,
+        "popularity": 1.8908,
         "imdbId": "tt33364791",
         "countries": [
           "South Korea"
@@ -5533,7 +5553,7 @@
         "origLang": "en",
         "origTitle": "The Social Reckoning",
         "platforms": [],
-        "popularity": 52.6833,
+        "popularity": 50.7967,
         "imdbId": "tt37510326",
         "countries": [
           "United States of America"
@@ -5791,7 +5811,7 @@
         "origLang": "pl",
         "origTitle": "Chopin, Chopin!",
         "platforms": [],
-        "popularity": 3.5201,
+        "popularity": 3.2515,
         "imdbId": "tt33305572",
         "countries": [
           "Poland"
@@ -6008,7 +6028,7 @@
         "origLang": "en",
         "origTitle": "Monk in Pieces",
         "platforms": [],
-        "popularity": 1.6672,
+        "popularity": 1.6296,
         "imdbId": "tt34542628",
         "countries": [
           "United States of America",
@@ -6204,7 +6224,7 @@
         "origLang": "ja",
         "origTitle": "映画 えんとつ町のプペル 〜約束の時計台〜",
         "platforms": [],
-        "popularity": 2.3263,
+        "popularity": 1.9106,
         "imdbId": "tt39371353",
         "countries": [
           "Japan"
@@ -6393,7 +6413,7 @@
         "origLang": "vi",
         "origTitle": "Lầu Chú Hỏa",
         "platforms": [],
-        "popularity": 2.5055,
+        "popularity": 2.5268,
         "imdbId": "tt41782670",
         "countries": [
           "Vietnam",
@@ -6568,7 +6588,7 @@
         "origLang": "ko",
         "origTitle": "실낙원",
         "platforms": [],
-        "popularity": 5.0982,
+        "popularity": 4.2963,
         "imdbId": "tt43658893",
         "countries": [
           "South Korea"
@@ -6780,7 +6800,7 @@
         "origLang": "cn",
         "origTitle": "浪花男女",
         "platforms": [],
-        "popularity": 2.2254,
+        "popularity": 2.0874,
         "imdbId": "tt37615065",
         "countries": [
           "Hong Kong"
@@ -7001,7 +7021,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
-        "voteAverage": "7.5",
+        "voteAverage": "7.4",
         "genre": [
           "恐怖",
           "驚悚",
@@ -7127,7 +7147,7 @@
         "origLang": "en",
         "origTitle": "Clayface",
         "platforms": [],
-        "popularity": 218.7851,
+        "popularity": 190.6963,
         "imdbId": "tt34890576",
         "countries": [
           "United States of America"
@@ -7142,7 +7162,7 @@
           "synopsis": "麥特哈根從一個在高譚市街頭長大的小孩，一路躍升為好萊塢當紅男星。原本前途一片光明，卻因當地犯罪首腦的陰謀而慘遭毀容，璀璨星途也戛然而止。遭到團隊拋棄、一無所有的他，決定接受一項最先進的實驗性療程，奇蹟般恢復昔日容貌。然而，這項治療也意外扭曲了他的心智與現實感知，使他逐漸失去理智，最終一步步墜入被復仇吞噬的毀滅深淵。",
           "poster": "https://image.tmdb.org/t/p/w500/8CVxezsk8HLHC28FDbEHEfh6pMU.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
-          "voteAverage": "7.5",
+          "voteAverage": "7.4",
           "trailerKey": "v889uS_W0Q0",
           "imdbId": "tt34890576",
           "countries": [
@@ -7358,7 +7378,7 @@
         "origLang": "zh",
         "origTitle": "沙央",
         "platforms": [],
-        "popularity": 1.324,
+        "popularity": 1.2515,
         "imdbId": null,
         "countries": [
           "Taiwan",
@@ -7494,8 +7514,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 303,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -7603,7 +7623,7 @@
         "origLang": "en",
         "origTitle": "Whiplash",
         "platforms": [],
-        "popularity": 40.0909,
+        "popularity": 37.4243,
         "imdbId": "tt2582802",
         "countries": [
           "United States of America"
@@ -8116,7 +8136,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.1841,
+        "popularity": 4.1644,
         "imdbId": "tt0193253",
         "countries": [
           "Japan"
@@ -8367,7 +8387,7 @@
         "origLang": "ko",
         "origTitle": "인턴",
         "platforms": [],
-        "popularity": 6.5133,
+        "popularity": 6.7116,
         "imdbId": "tt43741215",
         "countries": [
           "South Korea"
@@ -8618,7 +8638,7 @@
             "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
           }
         ],
-        "popularity": 8.1462,
+        "popularity": 7.8795,
         "imdbId": "tt5095076",
         "countries": [
           "United States of America"
@@ -8866,12 +8886,12 @@
         ],
         "crew": [
           {
-            "name": "路陽",
-            "job": "Director"
-          },
-          {
             "name": "裏則林",
             "job": "Screenplay"
+          },
+          {
+            "name": "路陽",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -8880,7 +8900,7 @@
         "origLang": "zh",
         "origTitle": "刺杀小说家2",
         "platforms": [],
-        "popularity": 3.7702,
+        "popularity": 3.3503,
         "imdbId": "tt33095008",
         "countries": [
           "China"
@@ -8984,12 +9004,12 @@
           ],
           "crew": [
             {
-              "name": "路陽",
-              "job": "Director"
-            },
-            {
               "name": "裏則林",
               "job": "Screenplay"
+            },
+            {
+              "name": "路陽",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -9021,7 +9041,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
-        "voteAverage": "6.4",
+        "voteAverage": "6.3",
         "genre": [
           "動作",
           "奇幻"
@@ -9151,7 +9171,7 @@
         "origLang": "en",
         "origTitle": "Street Fighter",
         "platforms": [],
-        "popularity": 110.6582,
+        "popularity": 103.4923,
         "imdbId": "tt27419420",
         "countries": [
           "Japan",
@@ -9166,7 +9186,7 @@
           "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
           "poster": "https://image.tmdb.org/t/p/w500/6DTLKFQFldVHzcoGqxDxWPgKcsy.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
-          "voteAverage": "6.4",
+          "voteAverage": "6.3",
           "trailerKey": "vR-RQWBeraY",
           "imdbId": "tt27419420",
           "countries": [
@@ -9354,7 +9374,7 @@
         "origLang": "en",
         "origTitle": "Peter Hujar's Day",
         "platforms": [],
-        "popularity": 3.0064,
+        "popularity": 3.0756,
         "imdbId": "tt34250044",
         "countries": [
           "United States of America",
@@ -9547,7 +9567,7 @@
         "origLang": "en",
         "origTitle": "Whalefall",
         "platforms": [],
-        "popularity": 73.4918,
+        "popularity": 68.1881,
         "imdbId": "tt28535715",
         "countries": [
           "United States of America"
@@ -9798,7 +9818,7 @@
         "origLang": "en",
         "origTitle": "Virginia Woolf's Night & Day",
         "platforms": [],
-        "popularity": 2.9123,
+        "popularity": 3.2488,
         "imdbId": "tt27802226",
         "countries": [
           "United Kingdom",
@@ -10018,7 +10038,7 @@
         "origLang": "ja",
         "origTitle": "シンシン アンド ザ マウス／SINSIN AND THE MOUSE",
         "platforms": [],
-        "popularity": 1.8302,
+        "popularity": 1.6368,
         "imdbId": "tt40981213",
         "countries": [
           "Japan",
@@ -10200,7 +10220,7 @@
         "origLang": "ja",
         "origTitle": "汝、星のごとく",
         "platforms": [],
-        "popularity": 5.8218,
+        "popularity": 5.3389,
         "imdbId": "tt43738759",
         "countries": [
           "Japan"
@@ -10352,7 +10372,7 @@
         "origLang": "ja",
         "origTitle": "それいけ！アンパンマン　パンタンと約束の星",
         "platforms": [],
-        "popularity": 1.4415,
+        "popularity": 1.3596,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -10489,7 +10509,7 @@
         "origLang": "ja",
         "origTitle": "BanG Dream! Ave Mujica prima aurora",
         "platforms": [],
-        "popularity": 2.6484,
+        "popularity": 2.7756,
         "imdbId": "tt39335288",
         "countries": [
           "Japan"
@@ -10635,7 +10655,7 @@
         "origLang": "ja",
         "origTitle": "ヨルシカ LIVE「盗作」",
         "platforms": [],
-        "popularity": 4.4727,
+        "popularity": 4.3595,
         "imdbId": "tt43723335",
         "countries": [],
         "detail": {
@@ -10855,7 +10875,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.9981,
+        "popularity": 4.4782,
         "imdbId": "tt1776196",
         "countries": [
           "Japan"
@@ -11140,7 +11160,7 @@
             "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
           }
         ],
-        "popularity": 22.4228,
+        "popularity": 20.6937,
         "imdbId": "tt27681354",
         "countries": [
           "United Kingdom",
@@ -11417,7 +11437,7 @@
         "origLang": "ar",
         "origTitle": "نسور الجمهورية",
         "platforms": [],
-        "popularity": 5.0962,
+        "popularity": 4.9873,
         "imdbId": "tt30781967",
         "countries": [
           "Sweden",
@@ -11568,7 +11588,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
-        "voteAverage": "6.5",
+        "voteAverage": "6.6",
         "genre": [
           "懸疑",
           "驚悚"
@@ -11684,12 +11704,12 @@
           }
         ],
         "budget": 40000000,
-        "revenue": 161987040,
+        "revenue": 163738361,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Verity",
         "platforms": [],
-        "popularity": 197.3336,
+        "popularity": 204.6851,
         "imdbId": "tt32261958",
         "countries": [
           "United States of America"
@@ -11703,7 +11723,7 @@
           "synopsis": "經濟拮据的作家洛玟受聘為代筆，前往偏遠的克勞弗宅邸，替因意外無法完成作品的作家薇若蒂續寫小說。然而在整理資料的過程中，洛玟意外發現一份疑似自傳手稿，內容揭露出令人不寒而慄的祕密與扭曲情感。當真相逐步浮現，她開始質疑眼前的一切，究竟是創作虛構還是真實告白？在慾望與恐懼交織之下，界線逐漸崩解。",
           "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
-          "voteAverage": "6.5",
+          "voteAverage": "6.6",
           "trailerKey": "hhxLgnnMECw",
           "imdbId": "tt32261958",
           "countries": [
@@ -11802,7 +11822,7 @@
             }
           ],
           "budget": 40000000,
-          "revenue": 161987040,
+          "revenue": 163738361,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Verity",
@@ -11955,7 +11975,7 @@
         "origLang": "fr",
         "origTitle": "Nino",
         "platforms": [],
-        "popularity": 2.3701,
+        "popularity": 2.2802,
         "imdbId": "tt35519445",
         "countries": [
           "France"
@@ -12144,7 +12164,7 @@
         "origLang": "ja",
         "origTitle": "ひとりたび",
         "platforms": [],
-        "popularity": 2.3546,
+        "popularity": 2.2671,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -12383,7 +12403,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-        "voteAverage": "5.9",
+        "voteAverage": "5.8",
         "genre": [
           "恐怖"
         ],
@@ -12498,7 +12518,7 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 97654984,
+        "revenue": 99840248,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Other Mommy",
@@ -12516,7 +12536,7 @@
           "synopsis": "小女孩貝拉在家中和一個邪惡存在建立了一段關係，而它竟然長得跟她母親一模一樣。",
           "poster": "https://image.tmdb.org/t/p/w500/cxxqiGWjYDYc161bE7y1Cuaz3bT.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-          "voteAverage": "5.9",
+          "voteAverage": "5.8",
           "trailerKey": "z5vaaaJBGXw",
           "imdbId": "tt36586020",
           "countries": [
@@ -12615,7 +12635,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 97654984,
+          "revenue": 99840248,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Other Mommy",
@@ -12719,7 +12739,7 @@
         "origLang": "en",
         "origTitle": "Drunken Noodles",
         "platforms": [],
-        "popularity": 1.9447,
+        "popularity": 1.7269,
         "imdbId": "tt36510056",
         "countries": [
           "United States of America",
@@ -12938,7 +12958,7 @@
         "origLang": "vi",
         "origTitle": "Tử chiến trên không",
         "platforms": [],
-        "popularity": 2.5893,
+        "popularity": 2.6982,
         "imdbId": "tt38132338",
         "countries": [
           "Vietnam"
@@ -13125,7 +13145,7 @@
         "origLang": "ja",
         "origTitle": "映画 すみっコぐらし 空の王国とふたりのコ",
         "platforms": [],
-        "popularity": 0.9102,
+        "popularity": 0.8038,
         "imdbId": "tt38859765",
         "countries": [
           "Japan"
@@ -13257,7 +13277,7 @@
         "origLang": "vi",
         "origTitle": "Nhà Ma Xó",
         "platforms": [],
-        "popularity": 2.2506,
+        "popularity": 2.0398,
         "imdbId": "tt38693168",
         "countries": [
           "Vietnam"
@@ -13398,7 +13418,7 @@
         "origLang": "tl",
         "origTitle": "SB19 Wakas at Simula: The Trilogy Concert Finale",
         "platforms": [],
-        "popularity": 2.5456,
+        "popularity": 2.148,
         "imdbId": "tt44932755",
         "countries": [],
         "detail": {
@@ -13606,7 +13626,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 1.9685,
+        "popularity": 1.8472,
         "imdbId": "tt1550312",
         "countries": [
           "Canada",
@@ -13839,7 +13859,7 @@
         "origLang": "da",
         "origTitle": "Mr. Nobody mod Putin",
         "platforms": [],
-        "popularity": 4.263,
+        "popularity": 4.1447,
         "imdbId": "tt34965515",
         "countries": [
           "Denmark",
@@ -14062,7 +14082,7 @@
         "origLang": "en",
         "origTitle": "The Gentleman Thief",
         "platforms": [],
-        "popularity": 5.4728,
+        "popularity": 5.5995,
         "imdbId": "tt36415524",
         "countries": [
           "United States of America"
@@ -14314,7 +14334,7 @@
         "origLang": "cn",
         "origTitle": "我們不是什麼",
         "platforms": [],
-        "popularity": 1.8647,
+        "popularity": 1.6851,
         "imdbId": "tt37535198",
         "countries": [
           "Hong Kong"
@@ -14490,7 +14510,7 @@
         "origLang": "fr",
         "origTitle": "En nous",
         "platforms": [],
-        "popularity": 2.2469,
+        "popularity": 2.1451,
         "imdbId": "tt37964027",
         "countries": [
           "France"
@@ -14580,7 +14600,7 @@
         "origLang": "zh",
         "origTitle": "遠離祖靈的孩子",
         "platforms": [],
-        "popularity": 0.4855,
+        "popularity": 0.4971,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -14659,7 +14679,7 @@
         "origLang": "zh",
         "origTitle": "人吶，為什麼要跑步？",
         "platforms": [],
-        "popularity": 0.4712,
+        "popularity": 0.4555,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -14991,12 +15011,12 @@
         "cast": [
           {
             "name": "湯姆·克魯斯",
-            "char": "Rockwell",
+            "char": "Digger Rockwell",
             "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
           },
           {
             "name": "里茲·阿邁德",
-            "char": "Ganesh",
+            "char": "Dr. Nirav Ganesh",
             "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
           },
           {
@@ -15006,17 +15026,17 @@
           },
           {
             "name": "桑德拉·惠勒",
-            "char": "Emma",
+            "char": "Emma Rockwell",
             "photo": "https://image.tmdb.org/t/p/w500/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg"
           },
           {
             "name": "麥可·史都巴格",
-            "char": "Vice President",
+            "char": "Vice President Eddie",
             "photo": "https://image.tmdb.org/t/p/w500/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg"
           },
           {
             "name": "傑西·普萊蒙",
-            "char": "Kenny",
+            "char": "Kenny Rockwell",
             "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
           },
           {
@@ -15090,7 +15110,7 @@
         "origLang": "en",
         "origTitle": "Digger",
         "platforms": [],
-        "popularity": 75.0875,
+        "popularity": 71.0718,
         "imdbId": "tt31450459",
         "countries": [
           "United States of America"
@@ -15113,12 +15133,12 @@
           "cast": [
             {
               "name": "湯姆·克魯斯",
-              "char": "Rockwell",
+              "char": "Digger Rockwell",
               "photo": "https://image.tmdb.org/t/p/w500/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg"
             },
             {
               "name": "里茲·阿邁德",
-              "char": "Ganesh",
+              "char": "Dr. Nirav Ganesh",
               "photo": "https://image.tmdb.org/t/p/w500/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg"
             },
             {
@@ -15128,17 +15148,17 @@
             },
             {
               "name": "桑德拉·惠勒",
-              "char": "Emma",
+              "char": "Emma Rockwell",
               "photo": "https://image.tmdb.org/t/p/w500/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg"
             },
             {
               "name": "麥可·史都巴格",
-              "char": "Vice President",
+              "char": "Vice President Eddie",
               "photo": "https://image.tmdb.org/t/p/w500/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg"
             },
             {
               "name": "傑西·普萊蒙",
-              "char": "Kenny",
+              "char": "Kenny Rockwell",
               "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
             },
             {
@@ -15311,7 +15331,7 @@
         "origLang": "en",
         "origTitle": "LINKIN PARK: UNSHATTER",
         "platforms": [],
-        "popularity": 5.0957,
+        "popularity": 4.3706,
         "imdbId": "tt43442522",
         "countries": [
           "United States of America",
@@ -15547,7 +15567,7 @@
         "origLang": "en",
         "origTitle": "Forgotten Island",
         "platforms": [],
-        "popularity": 119.5326,
+        "popularity": 123.0659,
         "imdbId": "tt36583977",
         "countries": [
           "United States of America"
@@ -15831,7 +15851,7 @@
             "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
           }
         ],
-        "popularity": 74.8726,
+        "popularity": 73.5027,
         "imdbId": "tt4154796",
         "countries": [
           "United States of America"
@@ -16108,7 +16128,7 @@
         "origLang": "ja",
         "origTitle": "リリイ・シュシュのすべて",
         "platforms": [],
-        "popularity": 8.2737,
+        "popularity": 7.6338,
         "imdbId": "tt0297721",
         "countries": [
           "Japan"
@@ -16306,12 +16326,12 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 82000000,
@@ -16320,7 +16340,7 @@
         "origLang": "en",
         "origTitle": "Heart of the Beast",
         "platforms": [],
-        "popularity": 81.1322,
+        "popularity": 77.9665,
         "imdbId": "tt7526136",
         "countries": [
           "United States of America"
@@ -16369,12 +16389,12 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 82000000,
@@ -16527,12 +16547,12 @@
           }
         ],
         "budget": 14500000,
-        "revenue": 50738000,
+        "revenue": 52512741,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Primetime",
         "platforms": [],
-        "popularity": 62.0283,
+        "popularity": 60.5137,
         "imdbId": "tt34206385",
         "countries": [
           "United States of America"
@@ -16645,7 +16665,7 @@
             }
           ],
           "budget": 14500000,
-          "revenue": 50738000,
+          "revenue": 52512741,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Primetime",
@@ -16715,7 +16735,7 @@
         "origLang": "ja",
         "origTitle": "Perfume \"コールドスリープ\" -25 years Document-",
         "platforms": [],
-        "popularity": 1.9698,
+        "popularity": 1.744,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -16910,7 +16930,7 @@
         "origLang": "ja",
         "origTitle": "黒牢城",
         "platforms": [],
-        "popularity": 4.0185,
+        "popularity": 3.3531,
         "imdbId": "tt39602215",
         "countries": [
           "Japan"
@@ -17122,7 +17142,7 @@
         "origLang": "ja",
         "origTitle": "5秒で完全犯罪を生成する方法",
         "platforms": [],
-        "popularity": 1.8536,
+        "popularity": 1.631,
         "imdbId": "tt42864901",
         "countries": [
           "Japan"
@@ -17247,7 +17267,7 @@
         "origLang": "zh",
         "origTitle": "讓建築歌唱～徐亞英的交響人生",
         "platforms": [],
-        "popularity": 0.8177,
+        "popularity": 0.644,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -17429,7 +17449,7 @@
         "origLang": "en",
         "origTitle": "Plainclothes",
         "platforms": [],
-        "popularity": 3.2976,
+        "popularity": 3.1574,
         "imdbId": "tt27550504",
         "countries": [
           "United Kingdom",
@@ -17668,7 +17688,7 @@
         "origLang": "en",
         "origTitle": "Scotty",
         "platforms": [],
-        "popularity": 0.949,
+        "popularity": 0.9872,
         "imdbId": "tt31549553",
         "countries": [
           "Germany"
@@ -17920,7 +17940,7 @@
         "origLang": "en",
         "origTitle": "Resident Evil",
         "platforms": [],
-        "popularity": 139.1992,
+        "popularity": 120.4282,
         "imdbId": "tt35538033",
         "countries": [
           "United States of America",
@@ -18190,7 +18210,7 @@
         "origLang": "ja",
         "origTitle": "台風クラブ",
         "platforms": [],
-        "popularity": 3.9234,
+        "popularity": 3.5427,
         "imdbId": "tt0088222",
         "countries": [
           "Japan"
@@ -18593,11 +18613,11 @@
         "crew": [
           {
             "name": "蘇達",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "蘇達",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -18606,7 +18626,7 @@
         "origLang": "zh",
         "origTitle": "怎麼可能我家的祖先是你家的鬼",
         "platforms": [],
-        "popularity": 1.47,
+        "popularity": 1.1744,
         "imdbId": "tt43560584",
         "countries": [
           "Taiwan"
@@ -18666,11 +18686,11 @@
           "crew": [
             {
               "name": "蘇達",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "蘇達",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -18798,7 +18818,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
         "platforms": [],
-        "popularity": 9.3523,
+        "popularity": 7.6874,
         "imdbId": "tt14523706",
         "countries": [
           "Japan"
@@ -19052,7 +19072,7 @@
         "origLang": "ko",
         "origTitle": "호프",
         "platforms": [],
-        "popularity": 490.1318,
+        "popularity": 459.5076,
         "imdbId": "tt27369017",
         "countries": [
           "South Korea"
@@ -19294,7 +19314,7 @@
         "origLang": "zh",
         "origTitle": "粽邪4：坤蒂拉娜",
         "platforms": [],
-        "popularity": 3.7249,
+        "popularity": 3.2845,
         "imdbId": "tt38633224",
         "countries": [
           "Taiwan"
@@ -19544,7 +19564,7 @@
         "origLang": "zh",
         "origTitle": "網紅老爸",
         "platforms": [],
-        "popularity": 4.0062,
+        "popularity": 3.3487,
         "imdbId": "tt44878475",
         "countries": [
           "Taiwan"
@@ -19801,11 +19821,11 @@
         "crew": [
           {
             "name": "押山清高",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "押山清高",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -19819,7 +19839,7 @@
             "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
           }
         ],
-        "popularity": 14.7327,
+        "popularity": 12.8965,
         "imdbId": "tt31711040",
         "countries": [
           "Japan"
@@ -19924,11 +19944,11 @@
           "crew": [
             {
               "name": "押山清高",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "押山清高",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -20098,7 +20118,7 @@
         "origLang": "en",
         "origTitle": "PAW Patrol: The Dino Movie",
         "platforms": [],
-        "popularity": 37.4356,
+        "popularity": 35.7877,
         "imdbId": "tt29356163",
         "countries": [
           "Canada",
@@ -20358,7 +20378,7 @@
         "origLang": "ja",
         "origTitle": "ブルーロック",
         "platforms": [],
-        "popularity": 5.6248,
+        "popularity": 10.8574,
         "imdbId": "tt39400168",
         "countries": [
           "Japan"
@@ -20612,11 +20632,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -20737,11 +20757,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -20831,7 +20851,7 @@
         "origLang": "ja",
         "origTitle": "クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
         "platforms": [],
-        "popularity": 7.5237,
+        "popularity": 7.584,
         "imdbId": "tt41293342",
         "countries": [
           "Japan"
@@ -21031,7 +21051,7 @@
         "origLang": "ja",
         "origTitle": "映画ちいかわ 人魚の島のひみつ",
         "platforms": [],
-        "popularity": 7.9319,
+        "popularity": 7.1025,
         "imdbId": "tt39026173",
         "countries": [
           "Japan"
@@ -21596,7 +21616,7 @@
         "origLang": "en",
         "origTitle": "The Odyssey",
         "platforms": [],
-        "popularity": 212.9039,
+        "popularity": 202.8688,
         "imdbId": "tt33764258",
         "countries": [
           "United Kingdom",
@@ -22337,16 +22357,16 @@
         ],
         "crew": [
           {
-            "name": "Manuel Bauer",
+            "name": "Barbara Miller",
+            "job": "Director"
+          },
+          {
+            "name": "Barbara Miller",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
-          },
-          {
-            "name": "Philip Delaquis",
-            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -22355,7 +22375,7 @@
         "origLang": "en",
         "origTitle": "Wisdom of Happiness",
         "platforms": [],
-        "popularity": 3.1183,
+        "popularity": 2.6153,
         "imdbId": "tt33055004",
         "countries": [
           "United States of America",
@@ -22385,16 +22405,16 @@
           ],
           "crew": [
             {
-              "name": "Manuel Bauer",
+              "name": "Barbara Miller",
+              "job": "Director"
+            },
+            {
+              "name": "Barbara Miller",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
-            },
-            {
-              "name": "Philip Delaquis",
-              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -22774,7 +22794,7 @@
         "origLang": "ko",
         "origTitle": "타짜: 벨제붑의 노래",
         "platforms": [],
-        "popularity": 5.9787,
+        "popularity": 5.5949,
         "imdbId": "tt39233100",
         "countries": [
           "South Korea"
@@ -22989,7 +23009,7 @@
         "origLang": "cn",
         "origTitle": "UFO離奇命案",
         "platforms": [],
-        "popularity": 1.8207,
+        "popularity": 2.1039,
         "imdbId": "tt38857175",
         "countries": [
           "Hong Kong"
@@ -23145,7 +23165,7 @@
         "origLang": "ja",
         "origTitle": "チルド",
         "platforms": [],
-        "popularity": 3.1685,
+        "popularity": 2.8175,
         "imdbId": "tt39382917",
         "countries": [
           "Japan"
@@ -23326,7 +23346,7 @@
         "origLang": "en",
         "origTitle": "Vampire Carnival",
         "platforms": [],
-        "popularity": 38.8264,
+        "popularity": 36.4647,
         "imdbId": "tt39649289",
         "countries": [
           "Spain",
@@ -23478,7 +23498,7 @@
         "origLang": "en",
         "origTitle": "CatVideoFest 2026",
         "platforms": [],
-        "popularity": 0.7036,
+        "popularity": 0.7017,
         "imdbId": "tt39676060",
         "countries": [],
         "detail": {
@@ -23602,7 +23622,7 @@
         "origLang": "ja",
         "origTitle": "名探偵コナン 30号殺人事件",
         "platforms": [],
-        "popularity": 3.8559,
+        "popularity": 3.873,
         "imdbId": "tt46656123",
         "countries": [
           "Japan"
@@ -23766,7 +23786,7 @@
         "origLang": "zh",
         "origTitle": "我要當總統",
         "platforms": [],
-        "popularity": 2.64,
+        "popularity": 2.3621,
         "imdbId": null,
         "countries": [
           "Japan",
@@ -23918,7 +23938,7 @@
         "origLang": "ja",
         "origTitle": "魔法科高校の劣等生 四葉継承編",
         "platforms": [],
-        "popularity": 3.4614,
+        "popularity": 3.0996,
         "imdbId": "tt38652027",
         "countries": [
           "Japan"
@@ -24113,7 +24133,7 @@
         "origLang": "en",
         "origTitle": "How to Rob a Bank",
         "platforms": [],
-        "popularity": 9.8334,
+        "popularity": 9.6675,
         "imdbId": "tt35866986",
         "countries": [
           "United States of America"
@@ -24616,7 +24636,7 @@
         "origLang": "en",
         "origTitle": "Ebenezer",
         "platforms": [],
-        "popularity": 19.9578,
+        "popularity": 18.6313,
         "imdbId": "tt38773219",
         "countries": [
           "United States of America",
@@ -24815,7 +24835,7 @@
         "origLang": "ja",
         "origTitle": "放送禁止 ぼくの3人の妻",
         "platforms": [],
-        "popularity": 1.7281,
+        "popularity": 1.9828,
         "imdbId": "tt39231777",
         "countries": [
           "Japan"
@@ -24996,7 +25016,7 @@
         "origLang": "zh",
         "origTitle": "告別的年代",
         "platforms": [],
-        "popularity": 2.6308,
+        "popularity": 2.4653,
         "imdbId": "tt35486511",
         "countries": [
           "Taiwan",
@@ -25176,7 +25196,7 @@
         "origLang": "zh",
         "origTitle": "黑潮",
         "platforms": [],
-        "popularity": 2.0922,
+        "popularity": 1.8675,
         "imdbId": "tt35486825",
         "countries": [
           "Malaysia",
@@ -25364,7 +25384,7 @@
         "origLang": "ja",
         "origTitle": "だぁれかさんとアソぼ？",
         "platforms": [],
-        "popularity": 2.7476,
+        "popularity": 2.6674,
         "imdbId": "tt43380772",
         "countries": [
           "Japan"
@@ -25511,26 +25531,6 @@
             "photo": "https://image.tmdb.org/t/p/w500/8RnNxrgffoNOu7ZHPSGvYnfjtdI.jpg"
           },
           {
-            "name": "雷夫·范恩斯",
-            "char": "President Coriolanus Snow",
-            "photo": "https://image.tmdb.org/t/p/w500/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
-          },
-          {
-            "name": "傑西·普萊蒙",
-            "char": "Plutarch Heavensbee",
-            "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
-          },
-          {
-            "name": "Whitney Peak",
-            "char": "Lenore Dove Baird",
-            "photo": "https://image.tmdb.org/t/p/w500/leekdBJTnKuQZM0Ptqjy3uFwxzz.jpg"
-          },
-          {
-            "name": "艾兒·芬妮",
-            "char": "Effie Trinket",
-            "photo": "https://image.tmdb.org/t/p/w500/hGL46Q5bkVkQbKAT0SrXcV6ZvRg.jpg"
-          },
-          {
             "name": "麥肯娜·葛瑞絲",
             "char": "Maysilee Donner / Merrilee Donner",
             "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
@@ -25541,14 +25541,24 @@
             "photo": "https://image.tmdb.org/t/p/w500/7oihORN6wlSC9qKULcpVq7Kqv1l.jpg"
           },
           {
-            "name": "小凱文·哈里森",
-            "char": "Beetee Latier",
-            "photo": "https://image.tmdb.org/t/p/w500/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
+            "name": "雷夫·范恩斯",
+            "char": "President Coriolanus Snow",
+            "photo": "https://image.tmdb.org/t/p/w500/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
           },
           {
-            "name": "莉莉·泰勒",
-            "char": "Mags Flanagan",
-            "photo": "https://image.tmdb.org/t/p/w500/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg"
+            "name": "傑西·普萊蒙",
+            "char": "Plutarch Heavensbee",
+            "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+          },
+          {
+            "name": "艾兒·芬妮",
+            "char": "Effie Trinket",
+            "photo": "https://image.tmdb.org/t/p/w500/hGL46Q5bkVkQbKAT0SrXcV6ZvRg.jpg"
+          },
+          {
+            "name": "基倫·考克金",
+            "char": "Caesar Flickerman",
+            "photo": "https://image.tmdb.org/t/p/w500/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
           },
           {
             "name": "葛倫·克蘿絲",
@@ -25556,9 +25566,19 @@
             "photo": "https://image.tmdb.org/t/p/w500/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
           },
           {
-            "name": "基倫·考克金",
-            "char": "Caesar Flickerman",
-            "photo": "https://image.tmdb.org/t/p/w500/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
+            "name": "莉莉·泰勒",
+            "char": "Mags Flanagan",
+            "photo": "https://image.tmdb.org/t/p/w500/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg"
+          },
+          {
+            "name": "小凱文·哈里森",
+            "char": "Beetee Latier",
+            "photo": "https://image.tmdb.org/t/p/w500/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
+          },
+          {
+            "name": "Whitney Peak",
+            "char": "Lenore Dove Baird",
+            "photo": "https://image.tmdb.org/t/p/w500/leekdBJTnKuQZM0Ptqjy3uFwxzz.jpg"
           },
           {
             "name": "王班",
@@ -25606,7 +25626,7 @@
         "origLang": "en",
         "origTitle": "The Hunger Games: Sunrise on the Reaping",
         "platforms": [],
-        "popularity": 37.0152,
+        "popularity": 33.5242,
         "imdbId": "tt32558705",
         "countries": [
           "United States of America",
@@ -25636,26 +25656,6 @@
               "photo": "https://image.tmdb.org/t/p/w500/8RnNxrgffoNOu7ZHPSGvYnfjtdI.jpg"
             },
             {
-              "name": "雷夫·范恩斯",
-              "char": "President Coriolanus Snow",
-              "photo": "https://image.tmdb.org/t/p/w500/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
-            },
-            {
-              "name": "傑西·普萊蒙",
-              "char": "Plutarch Heavensbee",
-              "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
-            },
-            {
-              "name": "Whitney Peak",
-              "char": "Lenore Dove Baird",
-              "photo": "https://image.tmdb.org/t/p/w500/leekdBJTnKuQZM0Ptqjy3uFwxzz.jpg"
-            },
-            {
-              "name": "艾兒·芬妮",
-              "char": "Effie Trinket",
-              "photo": "https://image.tmdb.org/t/p/w500/hGL46Q5bkVkQbKAT0SrXcV6ZvRg.jpg"
-            },
-            {
               "name": "麥肯娜·葛瑞絲",
               "char": "Maysilee Donner / Merrilee Donner",
               "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
@@ -25666,14 +25666,24 @@
               "photo": "https://image.tmdb.org/t/p/w500/7oihORN6wlSC9qKULcpVq7Kqv1l.jpg"
             },
             {
-              "name": "小凱文·哈里森",
-              "char": "Beetee Latier",
-              "photo": "https://image.tmdb.org/t/p/w500/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
+              "name": "雷夫·范恩斯",
+              "char": "President Coriolanus Snow",
+              "photo": "https://image.tmdb.org/t/p/w500/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
             },
             {
-              "name": "莉莉·泰勒",
-              "char": "Mags Flanagan",
-              "photo": "https://image.tmdb.org/t/p/w500/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg"
+              "name": "傑西·普萊蒙",
+              "char": "Plutarch Heavensbee",
+              "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+            },
+            {
+              "name": "艾兒·芬妮",
+              "char": "Effie Trinket",
+              "photo": "https://image.tmdb.org/t/p/w500/hGL46Q5bkVkQbKAT0SrXcV6ZvRg.jpg"
+            },
+            {
+              "name": "基倫·考克金",
+              "char": "Caesar Flickerman",
+              "photo": "https://image.tmdb.org/t/p/w500/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
             },
             {
               "name": "葛倫·克蘿絲",
@@ -25681,9 +25691,19 @@
               "photo": "https://image.tmdb.org/t/p/w500/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
             },
             {
-              "name": "基倫·考克金",
-              "char": "Caesar Flickerman",
-              "photo": "https://image.tmdb.org/t/p/w500/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
+              "name": "莉莉·泰勒",
+              "char": "Mags Flanagan",
+              "photo": "https://image.tmdb.org/t/p/w500/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg"
+            },
+            {
+              "name": "小凱文·哈里森",
+              "char": "Beetee Latier",
+              "photo": "https://image.tmdb.org/t/p/w500/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
+            },
+            {
+              "name": "Whitney Peak",
+              "char": "Lenore Dove Baird",
+              "photo": "https://image.tmdb.org/t/p/w500/leekdBJTnKuQZM0Ptqjy3uFwxzz.jpg"
             },
             {
               "name": "王班",
@@ -25881,7 +25901,7 @@
         "origLang": "en",
         "origTitle": "Paper Tiger",
         "platforms": [],
-        "popularity": 6.2223,
+        "popularity": 5.5099,
         "imdbId": "tt34385689",
         "countries": [
           "United States of America",
@@ -26035,7 +26055,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/lIGNfPlpkLyhMTLh9hxv9Y7xKsc.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
-        "voteAverage": "8.0",
+        "voteAverage": "8.1",
         "genre": [
           "劇情",
           "戰爭"
@@ -26160,12 +26180,12 @@
           }
         ],
         "budget": 11100000,
-        "revenue": 34550139,
+        "revenue": 39537039,
         "status": "Released",
         "origLang": "es",
         "origTitle": "La bola negra",
         "platforms": [],
-        "popularity": 70.3061,
+        "popularity": 75.0998,
         "imdbId": "tt35511966",
         "countries": [
           "Spain",
@@ -26180,7 +26200,7 @@
           "synopsis": "西班牙內戰轉折時刻，佛朗哥軍營的小號手受命照顧戰俘，面對瑰麗胴體和慾望初萌，一段愛情也隨著戰事拉扯；出身貴族的酷兒因陰性氣質無法躋身上流，更被迫肩負著家族責任；新銳劇作家返鄉之際，接獲剛逝世祖父所留下的遺產，追尋著未曾言說的過去……1932、1937、2017，跨越三個年代，交織三個不同命運，在國家暴力、酷兒認同與歷史創傷的鴻溝裡彼此映照，譜寫一則傳誦愛的跨時代史詩。",
           "poster": "https://image.tmdb.org/t/p/w500/lIGNfPlpkLyhMTLh9hxv9Y7xKsc.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
-          "voteAverage": "8.0",
+          "voteAverage": "8.1",
           "trailerKey": "4cMNo7Tj5I4",
           "imdbId": "tt35511966",
           "countries": [
@@ -26284,7 +26304,7 @@
             }
           ],
           "budget": 11100000,
-          "revenue": 34550139,
+          "revenue": 39537039,
           "status": "Released",
           "origLang": "es",
           "origTitle": "La bola negra",
@@ -26401,7 +26421,7 @@
         "origLang": "cn",
         "origTitle": "善男信女",
         "platforms": [],
-        "popularity": 2.2135,
+        "popularity": 2.2957,
         "imdbId": "tt36563084",
         "countries": [
           "Hong Kong"
@@ -26545,7 +26565,7 @@
         "origLang": "zh",
         "origTitle": "重返巔峰北壁",
         "platforms": [],
-        "popularity": 0.5169,
+        "popularity": 0.4795,
         "imdbId": null,
         "countries": [
           "Taiwan",
@@ -26719,7 +26739,7 @@
         "origLang": "en",
         "origTitle": "Hexed",
         "platforms": [],
-        "popularity": 23.7154,
+        "popularity": 21.5087,
         "imdbId": "tt38077943",
         "countries": [
           "United States of America"
@@ -26979,12 +26999,12 @@
         ],
         "crew": [
           {
-            "name": "露絲·鮑爾·賈華拉",
-            "job": "Screenplay"
-          },
-          {
             "name": "James Ivory",
             "job": "Director"
+          },
+          {
+            "name": "露絲·鮑爾·賈華拉",
+            "job": "Screenplay"
           }
         ],
         "budget": 3000000,
@@ -26993,7 +27013,7 @@
         "origLang": "en",
         "origTitle": "A Room with a View",
         "platforms": [],
-        "popularity": 4.6991,
+        "popularity": 4.6987,
         "imdbId": "tt0091867",
         "countries": [
           "United Kingdom"
@@ -27097,12 +27117,12 @@
           ],
           "crew": [
             {
-              "name": "露絲·鮑爾·賈華拉",
-              "job": "Screenplay"
-            },
-            {
               "name": "James Ivory",
               "job": "Director"
+            },
+            {
+              "name": "露絲·鮑爾·賈華拉",
+              "job": "Screenplay"
             }
           ],
           "budget": 3000000,
@@ -27165,7 +27185,7 @@
           {
             "name": "斯凱勒·吉桑多",
             "char": "Henry Focker",
-            "photo": "https://image.tmdb.org/t/p/w500/pWxMzsp8GnVxgx91TZp7mbqV7oZ.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/4oywya1Roukq6FJFuWjU5z61WUg.jpg"
           },
           {
             "name": "歐文·威爾森",
@@ -27214,7 +27234,7 @@
         "origLang": "en",
         "origTitle": "Focker-in-Law",
         "platforms": [],
-        "popularity": 10.5142,
+        "popularity": 9.4033,
         "imdbId": "tt34966140",
         "countries": [
           "United States of America"
@@ -27253,7 +27273,7 @@
             {
               "name": "斯凱勒·吉桑多",
               "char": "Henry Focker",
-              "photo": "https://image.tmdb.org/t/p/w500/pWxMzsp8GnVxgx91TZp7mbqV7oZ.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/4oywya1Roukq6FJFuWjU5z61WUg.jpg"
             },
             {
               "name": "歐文·威爾森",
@@ -27399,7 +27419,7 @@
         "origLang": "zh",
         "origTitle": "晚窒息",
         "platforms": [],
-        "popularity": 1.9853,
+        "popularity": 1.6505,
         "imdbId": "tt37566261",
         "countries": [
           "Taiwan"
@@ -27614,7 +27634,7 @@
         "origLang": "ja",
         "origTitle": "踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！",
         "platforms": [],
-        "popularity": 1.2247,
+        "popularity": 1.0955,
         "imdbId": "tt40826527",
         "countries": [
           "Japan"
@@ -27872,7 +27892,7 @@
         "origLang": "en",
         "origTitle": "The Cat in the Hat",
         "platforms": [],
-        "popularity": 19.4594,
+        "popularity": 19.0718,
         "imdbId": "tt2321555",
         "countries": [
           "United Kingdom",
@@ -28127,7 +28147,7 @@
         "origLang": "en",
         "origTitle": "Violent Night 2",
         "platforms": [],
-        "popularity": 5.629,
+        "popularity": 5.1197,
         "imdbId": "tt32432428",
         "countries": [
           "United States of America"
@@ -28331,7 +28351,7 @@
         "origLang": "zh",
         "origTitle": "日光",
         "platforms": [],
-        "popularity": 2.976,
+        "popularity": 2.6245,
         "imdbId": "tt39673991",
         "countries": [
           "Taiwan",
@@ -28498,7 +28518,7 @@
         "origLang": "en",
         "origTitle": "The Booksellers",
         "platforms": [],
-        "popularity": 1.2333,
+        "popularity": 1.1322,
         "imdbId": "tt9355194",
         "countries": [
           "United States of America"
@@ -28694,7 +28714,7 @@
         "origLang": "en",
         "origTitle": "Avengers: Doomsday",
         "platforms": [],
-        "popularity": 110.2245,
+        "popularity": 119.2388,
         "imdbId": "tt21357150",
         "countries": [
           "United States of America"
@@ -28876,7 +28896,7 @@
           {
             "name": "蕾貝卡·弗格森",
             "char": "Lady Jessica",
-            "photo": "https://image.tmdb.org/t/p/w500/ra53cM1aNmdH0aFhj8yBqPOj2fb.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
           },
           {
             "name": "伊薩赫·德·班克爾",
@@ -28922,11 +28942,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Brian K. Vaughan",
@@ -28939,7 +28959,7 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 53.6528,
+        "popularity": 50.9272,
         "imdbId": "tt31378509",
         "countries": [
           "United States of America",
@@ -28985,7 +29005,7 @@
             {
               "name": "蕾貝卡·弗格森",
               "char": "Lady Jessica",
-              "photo": "https://image.tmdb.org/t/p/w500/ra53cM1aNmdH0aFhj8yBqPOj2fb.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
             },
             {
               "name": "伊薩赫·德·班克爾",
@@ -29031,11 +29051,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Brian K. Vaughan",
@@ -29173,11 +29193,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -29292,11 +29312,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -29459,7 +29479,7 @@
         "origLang": "en",
         "origTitle": "Wicker",
         "platforms": [],
-        "popularity": 72.6426,
+        "popularity": 73.2181,
         "imdbId": "tt29611136",
         "countries": [
           "United Kingdom",
@@ -29718,7 +29738,7 @@
         "origLang": "en",
         "origTitle": "The Angry Birds Movie 3",
         "platforms": [],
-        "popularity": 10.9848,
+        "popularity": 10.4426,
         "imdbId": "tt32557122",
         "countries": [
           "Finland",
@@ -29985,7 +30005,7 @@
         "origLang": "en",
         "origTitle": "Jumanji: Open World",
         "platforms": [],
-        "popularity": 15.2101,
+        "popularity": 15.6448,
         "imdbId": "tt26735127",
         "countries": [
           "United States of America"
@@ -30217,7 +30237,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 薬屋のひとりごと 亡妃の秘宝",
         "platforms": [],
-        "popularity": 4.4234,
+        "popularity": 3.9045,
         "imdbId": "tt39110207",
         "countries": [
           "Japan"
@@ -30440,7 +30460,7 @@
         "origLang": "en",
         "origTitle": "Ice Age: Boiling Point",
         "platforms": [],
-        "popularity": 12.4937,
+        "popularity": 11.1487,
         "imdbId": "tt34512981",
         "countries": [
           "United States of America"
@@ -30632,7 +30652,7 @@
         "origLang": "en",
         "origTitle": "The Rescue",
         "platforms": [],
-        "popularity": 2.6587,
+        "popularity": 2.399,
         "imdbId": "tt35606013",
         "countries": [
           "United States of America"
@@ -30796,7 +30816,7 @@
         "origLang": "zh",
         "origTitle": "我的棋王爺爺",
         "platforms": [],
-        "popularity": 1.3933,
+        "popularity": 1.2885,
         "imdbId": "tt41618968",
         "countries": [
           "Taiwan"
@@ -30920,29 +30940,14 @@
         "trailerKey": "bd0XmPxBJgM",
         "cast": [
           {
-            "name": "David McKenna",
-            "char": "Digory Kirke",
-            "photo": "https://image.tmdb.org/t/p/w500/m3iSEe5F8oAQkE0kRN3LTqMTpG.jpg"
-          },
-          {
             "name": "Beatrice Campbell",
             "char": "Polly Plummer",
             "photo": "https://image.tmdb.org/t/p/w500/nzUTSc7KSPwnOo7tfRNDiFMWMgN.jpg"
           },
           {
-            "name": "艾瑪·麥基",
-            "char": "Jadis / The White Witch",
-            "photo": "https://image.tmdb.org/t/p/w500/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg"
-          },
-          {
-            "name": "凱莉·墨里根",
-            "char": "Mabel Kirke",
-            "photo": "https://image.tmdb.org/t/p/w500/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
-          },
-          {
-            "name": "Ciarán Hinds",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/lyaKf0FipuiYWsVEQ5Nt0v5KwYx.jpg"
+            "name": "David McKenna",
+            "char": "Digory Kirke",
+            "photo": "https://image.tmdb.org/t/p/w500/m3iSEe5F8oAQkE0kRN3LTqMTpG.jpg"
           },
           {
             "name": "丹尼爾·克雷格",
@@ -30950,9 +30955,24 @@
             "photo": "https://image.tmdb.org/t/p/w500/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg"
           },
           {
+            "name": "凱莉·墨里根",
+            "char": "Mabel Kirke",
+            "photo": "https://image.tmdb.org/t/p/w500/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
+          },
+          {
+            "name": "艾瑪·麥基",
+            "char": "Jadis / The White Witch",
+            "photo": "https://image.tmdb.org/t/p/w500/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg"
+          },
+          {
             "name": "梅莉·史翠普",
             "char": "Aslan (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
+          },
+          {
+            "name": "Ciarán Hinds",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/lyaKf0FipuiYWsVEQ5Nt0v5KwYx.jpg"
           },
           {
             "name": "寇布勒·霍爾德布魯克-史密斯",
@@ -31016,7 +31036,7 @@
         "origLang": "en",
         "origTitle": "Narnia: The Magician's Nephew",
         "platforms": [],
-        "popularity": 10.5253,
+        "popularity": 9.6666,
         "imdbId": "tt9077514",
         "countries": [
           "United States of America",
@@ -31041,29 +31061,14 @@
           ],
           "cast": [
             {
-              "name": "David McKenna",
-              "char": "Digory Kirke",
-              "photo": "https://image.tmdb.org/t/p/w500/m3iSEe5F8oAQkE0kRN3LTqMTpG.jpg"
-            },
-            {
               "name": "Beatrice Campbell",
               "char": "Polly Plummer",
               "photo": "https://image.tmdb.org/t/p/w500/nzUTSc7KSPwnOo7tfRNDiFMWMgN.jpg"
             },
             {
-              "name": "艾瑪·麥基",
-              "char": "Jadis / The White Witch",
-              "photo": "https://image.tmdb.org/t/p/w500/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg"
-            },
-            {
-              "name": "凱莉·墨里根",
-              "char": "Mabel Kirke",
-              "photo": "https://image.tmdb.org/t/p/w500/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
-            },
-            {
-              "name": "Ciarán Hinds",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/lyaKf0FipuiYWsVEQ5Nt0v5KwYx.jpg"
+              "name": "David McKenna",
+              "char": "Digory Kirke",
+              "photo": "https://image.tmdb.org/t/p/w500/m3iSEe5F8oAQkE0kRN3LTqMTpG.jpg"
             },
             {
               "name": "丹尼爾·克雷格",
@@ -31071,9 +31076,24 @@
               "photo": "https://image.tmdb.org/t/p/w500/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg"
             },
             {
+              "name": "凱莉·墨里根",
+              "char": "Mabel Kirke",
+              "photo": "https://image.tmdb.org/t/p/w500/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
+            },
+            {
+              "name": "艾瑪·麥基",
+              "char": "Jadis / The White Witch",
+              "photo": "https://image.tmdb.org/t/p/w500/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg"
+            },
+            {
               "name": "梅莉·史翠普",
               "char": "Aslan (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/g5cVxQBAQ3AXt3LhdBXtbbN47Uc.jpg"
+            },
+            {
+              "name": "Ciarán Hinds",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/lyaKf0FipuiYWsVEQ5Nt0v5KwYx.jpg"
             },
             {
               "name": "寇布勒·霍爾德布魯克-史密斯",
@@ -31256,7 +31276,7 @@
         "origLang": "en",
         "origTitle": "Remain",
         "platforms": [],
-        "popularity": 7.4609,
+        "popularity": 6.594,
         "imdbId": "tt35621542",
         "countries": [
           "United States of America"
@@ -31454,7 +31474,7 @@
         "origLang": "zh",
         "origTitle": "花臉貓：修羅道",
         "platforms": [],
-        "popularity": 2.0728,
+        "popularity": 2.1309,
         "imdbId": "tt44935524",
         "countries": [
           "Taiwan"
@@ -31626,7 +31646,7 @@
         "origLang": "en",
         "origTitle": "The Thomas Crown Affair",
         "platforms": [],
-        "popularity": 4.2061,
+        "popularity": 3.8514,
         "imdbId": "tt5500064",
         "countries": [
           "United States of America"
@@ -31844,7 +31864,7 @@
         "origLang": "zh",
         "origTitle": "狂忘警探",
         "platforms": [],
-        "popularity": 4.788,
+        "popularity": 3.6028,
         "imdbId": "tt38893248",
         "countries": [
           "Taiwan",
@@ -32031,7 +32051,7 @@
         "origLang": "en",
         "origTitle": "Gatto",
         "platforms": [],
-        "popularity": 8.8104,
+        "popularity": 7.8857,
         "imdbId": "tt26443610",
         "countries": [
           "United States of America"
@@ -32214,7 +32234,7 @@
         "origLang": "en",
         "origTitle": "The Exorcist: Martyrs",
         "platforms": [],
-        "popularity": 6.9444,
+        "popularity": 7.0176,
         "imdbId": "tt32492552",
         "countries": [
           "United States of America"
@@ -32404,7 +32424,7 @@
         "origLang": "zh",
         "origTitle": "星空下的鋼琴手",
         "platforms": [],
-        "popularity": 0.6671,
+        "popularity": 0.5758,
         "imdbId": null,
         "countries": [
           "Taiwan"
