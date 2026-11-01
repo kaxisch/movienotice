@@ -35,6 +35,12 @@ jobs:
       - name: Save previous site data
         run: git show HEAD:data/movie-data.json > /tmp/previous-movie-data.json
 
+      - name: Apply manual TMDB reviews to audit candidates
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SPREADSHEET_ID: ${{ secrets.GOOGLE_SPREADSHEET_ID }}
+        run: python3 scripts/apply_manual_tmdb_reviews.py
+
       - name: Refresh TMDB-verified site data
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
