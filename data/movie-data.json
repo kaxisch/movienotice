@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-01T14:47:25.268932+08:00",
+  "generated_at": "2026-11-01T21:25:22.252970+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 91,
-    "soon_count": 63
+    "soon_count": 66
   },
   "movies": {
     "now": [
@@ -430,7 +430,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 1.5263,
+        "popularity": 1.5799,
         "imdbId": "tt7543904",
         "countries": [
           "Taiwan"
@@ -929,11 +929,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 69000000,
@@ -1057,11 +1057,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 69000000,
@@ -1496,7 +1496,7 @@
         "origLang": "en",
         "origTitle": "Teenage Sex and Death at Camp Miasma",
         "platforms": [],
-        "popularity": 24.2229,
+        "popularity": 25.721,
         "imdbId": "tt35298123",
         "countries": [
           "United Kingdom",
@@ -1640,7 +1640,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.7",
         "genre": [
           "動作",
           "驚悚"
@@ -1648,13 +1648,18 @@
         "duration": 99,
         "synopsis": "功勳卓著的退伍老兵萊恩被指控犯下謀殺案，於是他駕駛跑車，與警方展開一場玩命關頭史詩級追逐戰！",
         "imdb": "",
-        "rt": "25%",
-        "mc": "",
+        "rt": "32%",
+        "mc": "49",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 12,
-            "lastChanged": "2026-10-30T18:27:56.949846+08:00"
+            "votes": 19,
+            "lastChanged": "2026-11-01T21:25:22.252970+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 4,
+            "lastChanged": "2026-11-01T21:25:22.252970+08:00"
           }
         },
         "trailerKey": "XIdGnG-pMeA",
@@ -1742,12 +1747,12 @@
         ],
         "crew": [
           {
-            "name": "Mark Vanselow",
-            "job": "Director"
-          },
-          {
             "name": "Thompson Evans",
             "job": "Writer"
+          },
+          {
+            "name": "Mark Vanselow",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -1770,7 +1775,7 @@
           "synopsis": "功勳卓著的退伍老兵萊恩被指控犯下謀殺案，於是他駕駛跑車，與警方展開一場玩命關頭史詩級追逐戰！",
           "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/iRIhPqqoUHiFBxn8oYf3gCQnaKk.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.7",
           "trailerKey": "XIdGnG-pMeA",
           "imdbId": "tt13611778",
           "countries": [
@@ -1860,12 +1865,12 @@
           ],
           "crew": [
             {
-              "name": "Mark Vanselow",
-              "job": "Director"
-            },
-            {
               "name": "Thompson Evans",
               "job": "Writer"
+            },
+            {
+              "name": "Mark Vanselow",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -1957,7 +1962,7 @@
         "origLang": "zh",
         "origTitle": "歡迎來到朵莉之家",
         "platforms": [],
-        "popularity": 1.2292,
+        "popularity": 1.6338,
         "imdbId": "tt37038996",
         "countries": [
           "Taiwan"
@@ -2168,7 +2173,7 @@
         "origLang": "th",
         "origTitle": "คำสารภาพของหมอผี",
         "platforms": [],
-        "popularity": 2.8966,
+        "popularity": 3.2802,
         "imdbId": "tt44632295",
         "countries": [
           "Thailand"
@@ -3094,283 +3099,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 519141,
-        "titleZh": "麥特與麥斯",
-        "titleEn": "Matthias & Maxime",
-        "releaseDate": "2026-10-24",
-        "releaseYear": "2019",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-24",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/gDXL3i53jGhTj2RC4xj9AIiCSJo.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/27xckIk5qdMina9WEtnMjp3oJHX.jpg",
-        "voteAverage": "7.1",
-        "genre": [
-          "劇情",
-          "愛情"
-        ],
-        "duration": 120,
-        "synopsis": "一群年輕氣盛的男孩相約出遊，興高采烈地來到好友的湖邊小屋，卻意外被屋主煩人的妹妹纏上，拜託他們協助拍攝自己的短片作業。她找了麥特與麥斯，這對從小一起長大的好哥們參與演出，卻忘了提及劇本中所安排的吻戲橋段。沒想到這天外飛來的一吻，竟悄悄鬆動了一切：麥特與女友之間的關係、麥斯即將展開的遠行，也讓這段維繫多年的兄弟情誼，變得曖昧而複雜了起來⋯⋯。",
-        "imdb": "6.8",
-        "rt": "64%",
-        "mc": "60",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 9437,
-            "lastChanged": "2026-10-11T03:30:49.220899+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 76,
-            "lastChanged": "2026-10-11T03:30:49.220899+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 18,
-            "lastChanged": "2026-10-11T03:30:49.220899+08:00"
-          }
-        },
-        "trailerKey": "bIGKxlKKNu8",
-        "cast": [
-          {
-            "name": "Gabriel D'Almeida Freitas",
-            "char": "Matthias",
-            "photo": "https://image.tmdb.org/t/p/w500/caVvda8XSzg7SS02jNotK4ozl9d.jpg"
-          },
-          {
-            "name": "Xavier Dolan",
-            "char": "Maxime",
-            "photo": "https://image.tmdb.org/t/p/w500/4DsDMNQskzolD477eBY9r2ZYgbt.jpg"
-          },
-          {
-            "name": "Pier-Luc Funk",
-            "char": "Rivette",
-            "photo": "https://image.tmdb.org/t/p/w500/ffE7MUJhX9QvejJL3OuM7ekAtzs.jpg"
-          },
-          {
-            "name": "Samuel Gauthier",
-            "char": "Frank",
-            "photo": "https://image.tmdb.org/t/p/w500/keOLPtQTmyh2NI16wPBrDyddSzC.jpg"
-          },
-          {
-            "name": "Antoine Pilon",
-            "char": "Brass",
-            "photo": "https://image.tmdb.org/t/p/w500/kYrhXJu61pXPN29rGV6HofsqlO8.jpg"
-          },
-          {
-            "name": "Adib Alkhalidey",
-            "char": "Shariff",
-            "photo": "https://image.tmdb.org/t/p/w500/1vOcEu0zBBZWxJKZXg3TZER1iut.jpg"
-          },
-          {
-            "name": "米雪琳·伯納德",
-            "char": "Francine",
-            "photo": "https://image.tmdb.org/t/p/w500/mN3EoiEUtfWFS69NUr6kHMEU8oO.jpg"
-          },
-          {
-            "name": "Anne Dorval",
-            "char": "Manon",
-            "photo": "https://image.tmdb.org/t/p/w500/qepLsxlg2p5qai1y2bwI2zUM5iz.jpg"
-          },
-          {
-            "name": "Marilyn Castonguay",
-            "char": "Sarah",
-            "photo": "https://image.tmdb.org/t/p/w500/k7X3ojSMfmhgwGIpCSthuzNzVbA.jpg"
-          },
-          {
-            "name": "Catherine Brunet",
-            "char": "Lisa",
-            "photo": "https://image.tmdb.org/t/p/w500/yK2Q6conYIgMgBSprFHDtcpwWJB.jpg"
-          },
-          {
-            "name": "Harris Dickinson",
-            "char": "McAfee",
-            "photo": "https://image.tmdb.org/t/p/w500/pqqnYWWHa3Va80EXofXrVlRqIDM.jpg"
-          },
-          {
-            "name": "Camille Felton",
-            "char": "Erika Rivette",
-            "photo": "https://image.tmdb.org/t/p/w500/cWx9sczEStyC84TXi6hhA6zeLV.jpg"
-          },
-          {
-            "name": "Anne-Marie Cadieux",
-            "char": "Martine",
-            "photo": "https://image.tmdb.org/t/p/w500/3Vyb5vXzikhUdVvf3oEPaP77NQq.jpg"
-          },
-          {
-            "name": "Monique Spaziani",
-            "char": "Colette",
-            "photo": "https://image.tmdb.org/t/p/w500/cYJTsDaFH9Ipl9Lhu9uRhsbcSs1.jpg"
-          },
-          {
-            "name": "Jacques Lavallée",
-            "char": "Courtemanche",
-            "photo": "https://image.tmdb.org/t/p/w500/fWotM17g64Pbz3YJmZamgNgB1vf.jpg"
-          },
-          {
-            "name": "Louis-Julien Durso",
-            "char": "Matisse",
-            "photo": "https://image.tmdb.org/t/p/w500/hw9DqXL2WOreklthbJs2gEbbPe3.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Xavier Dolan",
-            "job": "Director"
-          },
-          {
-            "name": "Xavier Dolan",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "fr",
-        "origTitle": "Matthias & Maxime",
-        "platforms": [
-          {
-            "name": "Netflix",
-            "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
-          }
-        ],
-        "popularity": 3.1673,
-        "imdbId": "tt8767908",
-        "countries": [
-          "Canada"
-        ],
-        "detail": {
-          "duration": 120,
-          "genres": [
-            "劇情",
-            "愛情"
-          ],
-          "synopsis": "一群年輕氣盛的男孩相約出遊，興高采烈地來到好友的湖邊小屋，卻意外被屋主煩人的妹妹纏上，拜託他們協助拍攝自己的短片作業。她找了麥特與麥斯，這對從小一起長大的好哥們參與演出，卻忘了提及劇本中所安排的吻戲橋段。沒想到這天外飛來的一吻，竟悄悄鬆動了一切：麥特與女友之間的關係、麥斯即將展開的遠行，也讓這段維繫多年的兄弟情誼，變得曖昧而複雜了起來⋯⋯。",
-          "poster": "https://image.tmdb.org/t/p/w500/gDXL3i53jGhTj2RC4xj9AIiCSJo.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/27xckIk5qdMina9WEtnMjp3oJHX.jpg",
-          "voteAverage": "7.1",
-          "trailerKey": "bIGKxlKKNu8",
-          "imdbId": "tt8767908",
-          "countries": [
-            "Canada"
-          ],
-          "cast": [
-            {
-              "name": "Gabriel D'Almeida Freitas",
-              "char": "Matthias",
-              "photo": "https://image.tmdb.org/t/p/w500/caVvda8XSzg7SS02jNotK4ozl9d.jpg"
-            },
-            {
-              "name": "Xavier Dolan",
-              "char": "Maxime",
-              "photo": "https://image.tmdb.org/t/p/w500/4DsDMNQskzolD477eBY9r2ZYgbt.jpg"
-            },
-            {
-              "name": "Pier-Luc Funk",
-              "char": "Rivette",
-              "photo": "https://image.tmdb.org/t/p/w500/ffE7MUJhX9QvejJL3OuM7ekAtzs.jpg"
-            },
-            {
-              "name": "Samuel Gauthier",
-              "char": "Frank",
-              "photo": "https://image.tmdb.org/t/p/w500/keOLPtQTmyh2NI16wPBrDyddSzC.jpg"
-            },
-            {
-              "name": "Antoine Pilon",
-              "char": "Brass",
-              "photo": "https://image.tmdb.org/t/p/w500/kYrhXJu61pXPN29rGV6HofsqlO8.jpg"
-            },
-            {
-              "name": "Adib Alkhalidey",
-              "char": "Shariff",
-              "photo": "https://image.tmdb.org/t/p/w500/1vOcEu0zBBZWxJKZXg3TZER1iut.jpg"
-            },
-            {
-              "name": "米雪琳·伯納德",
-              "char": "Francine",
-              "photo": "https://image.tmdb.org/t/p/w500/mN3EoiEUtfWFS69NUr6kHMEU8oO.jpg"
-            },
-            {
-              "name": "Anne Dorval",
-              "char": "Manon",
-              "photo": "https://image.tmdb.org/t/p/w500/qepLsxlg2p5qai1y2bwI2zUM5iz.jpg"
-            },
-            {
-              "name": "Marilyn Castonguay",
-              "char": "Sarah",
-              "photo": "https://image.tmdb.org/t/p/w500/k7X3ojSMfmhgwGIpCSthuzNzVbA.jpg"
-            },
-            {
-              "name": "Catherine Brunet",
-              "char": "Lisa",
-              "photo": "https://image.tmdb.org/t/p/w500/yK2Q6conYIgMgBSprFHDtcpwWJB.jpg"
-            },
-            {
-              "name": "Harris Dickinson",
-              "char": "McAfee",
-              "photo": "https://image.tmdb.org/t/p/w500/pqqnYWWHa3Va80EXofXrVlRqIDM.jpg"
-            },
-            {
-              "name": "Camille Felton",
-              "char": "Erika Rivette",
-              "photo": "https://image.tmdb.org/t/p/w500/cWx9sczEStyC84TXi6hhA6zeLV.jpg"
-            },
-            {
-              "name": "Anne-Marie Cadieux",
-              "char": "Martine",
-              "photo": "https://image.tmdb.org/t/p/w500/3Vyb5vXzikhUdVvf3oEPaP77NQq.jpg"
-            },
-            {
-              "name": "Monique Spaziani",
-              "char": "Colette",
-              "photo": "https://image.tmdb.org/t/p/w500/cYJTsDaFH9Ipl9Lhu9uRhsbcSs1.jpg"
-            },
-            {
-              "name": "Jacques Lavallée",
-              "char": "Courtemanche",
-              "photo": "https://image.tmdb.org/t/p/w500/fWotM17g64Pbz3YJmZamgNgB1vf.jpg"
-            },
-            {
-              "name": "Louis-Julien Durso",
-              "char": "Matisse",
-              "photo": "https://image.tmdb.org/t/p/w500/hw9DqXL2WOreklthbJs2gEbbPe3.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Xavier Dolan",
-              "job": "Director"
-            },
-            {
-              "name": "Xavier Dolan",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "fr",
-          "origTitle": "Matthias & Maxime",
-          "platforms": [
-            {
-              "name": "Netflix",
-              "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
-            }
-          ]
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/519141?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1688795,
         "titleZh": "TOMORROW X TOGETHER WORLD TOUR ACT TOMORROW",
         "titleEn": "투모로우바이투게더 월드 투어 ‘액트 : 투모로우'",
@@ -4069,6 +3797,283 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 519141,
+        "titleZh": "麥特與麥斯",
+        "titleEn": "Matthias & Maxime",
+        "releaseDate": "2026-10-24",
+        "releaseYear": "2019",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-24",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/gDXL3i53jGhTj2RC4xj9AIiCSJo.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/27xckIk5qdMina9WEtnMjp3oJHX.jpg",
+        "voteAverage": "7.1",
+        "genre": [
+          "劇情",
+          "愛情"
+        ],
+        "duration": 120,
+        "synopsis": "一群年輕氣盛的男孩相約出遊，興高采烈地來到好友的湖邊小屋，卻意外被屋主煩人的妹妹纏上，拜託他們協助拍攝自己的短片作業。她找了麥特與麥斯，這對從小一起長大的好哥們參與演出，卻忘了提及劇本中所安排的吻戲橋段。沒想到這天外飛來的一吻，竟悄悄鬆動了一切：麥特與女友之間的關係、麥斯即將展開的遠行，也讓這段維繫多年的兄弟情誼，變得曖昧而複雜了起來⋯⋯。",
+        "imdb": "6.8",
+        "rt": "64%",
+        "mc": "60",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 9437,
+            "lastChanged": "2026-10-11T03:30:49.220899+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 76,
+            "lastChanged": "2026-10-11T03:30:49.220899+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 18,
+            "lastChanged": "2026-10-11T03:30:49.220899+08:00"
+          }
+        },
+        "trailerKey": "bIGKxlKKNu8",
+        "cast": [
+          {
+            "name": "Gabriel D'Almeida Freitas",
+            "char": "Matthias",
+            "photo": "https://image.tmdb.org/t/p/w500/caVvda8XSzg7SS02jNotK4ozl9d.jpg"
+          },
+          {
+            "name": "Xavier Dolan",
+            "char": "Maxime",
+            "photo": "https://image.tmdb.org/t/p/w500/4DsDMNQskzolD477eBY9r2ZYgbt.jpg"
+          },
+          {
+            "name": "Pier-Luc Funk",
+            "char": "Rivette",
+            "photo": "https://image.tmdb.org/t/p/w500/ffE7MUJhX9QvejJL3OuM7ekAtzs.jpg"
+          },
+          {
+            "name": "Samuel Gauthier",
+            "char": "Frank",
+            "photo": "https://image.tmdb.org/t/p/w500/keOLPtQTmyh2NI16wPBrDyddSzC.jpg"
+          },
+          {
+            "name": "Antoine Pilon",
+            "char": "Brass",
+            "photo": "https://image.tmdb.org/t/p/w500/kYrhXJu61pXPN29rGV6HofsqlO8.jpg"
+          },
+          {
+            "name": "Adib Alkhalidey",
+            "char": "Shariff",
+            "photo": "https://image.tmdb.org/t/p/w500/1vOcEu0zBBZWxJKZXg3TZER1iut.jpg"
+          },
+          {
+            "name": "米雪琳·伯納德",
+            "char": "Francine",
+            "photo": "https://image.tmdb.org/t/p/w500/mN3EoiEUtfWFS69NUr6kHMEU8oO.jpg"
+          },
+          {
+            "name": "Anne Dorval",
+            "char": "Manon",
+            "photo": "https://image.tmdb.org/t/p/w500/qepLsxlg2p5qai1y2bwI2zUM5iz.jpg"
+          },
+          {
+            "name": "Marilyn Castonguay",
+            "char": "Sarah",
+            "photo": "https://image.tmdb.org/t/p/w500/k7X3ojSMfmhgwGIpCSthuzNzVbA.jpg"
+          },
+          {
+            "name": "Catherine Brunet",
+            "char": "Lisa",
+            "photo": "https://image.tmdb.org/t/p/w500/yK2Q6conYIgMgBSprFHDtcpwWJB.jpg"
+          },
+          {
+            "name": "Harris Dickinson",
+            "char": "McAfee",
+            "photo": "https://image.tmdb.org/t/p/w500/pqqnYWWHa3Va80EXofXrVlRqIDM.jpg"
+          },
+          {
+            "name": "Camille Felton",
+            "char": "Erika Rivette",
+            "photo": "https://image.tmdb.org/t/p/w500/cWx9sczEStyC84TXi6hhA6zeLV.jpg"
+          },
+          {
+            "name": "Anne-Marie Cadieux",
+            "char": "Martine",
+            "photo": "https://image.tmdb.org/t/p/w500/3Vyb5vXzikhUdVvf3oEPaP77NQq.jpg"
+          },
+          {
+            "name": "Monique Spaziani",
+            "char": "Colette",
+            "photo": "https://image.tmdb.org/t/p/w500/cYJTsDaFH9Ipl9Lhu9uRhsbcSs1.jpg"
+          },
+          {
+            "name": "Jacques Lavallée",
+            "char": "Courtemanche",
+            "photo": "https://image.tmdb.org/t/p/w500/fWotM17g64Pbz3YJmZamgNgB1vf.jpg"
+          },
+          {
+            "name": "Louis-Julien Durso",
+            "char": "Matisse",
+            "photo": "https://image.tmdb.org/t/p/w500/hw9DqXL2WOreklthbJs2gEbbPe3.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Xavier Dolan",
+            "job": "Director"
+          },
+          {
+            "name": "Xavier Dolan",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "fr",
+        "origTitle": "Matthias & Maxime",
+        "platforms": [
+          {
+            "name": "Netflix",
+            "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          }
+        ],
+        "popularity": 3.1673,
+        "imdbId": "tt8767908",
+        "countries": [
+          "Canada"
+        ],
+        "detail": {
+          "duration": 120,
+          "genres": [
+            "劇情",
+            "愛情"
+          ],
+          "synopsis": "一群年輕氣盛的男孩相約出遊，興高采烈地來到好友的湖邊小屋，卻意外被屋主煩人的妹妹纏上，拜託他們協助拍攝自己的短片作業。她找了麥特與麥斯，這對從小一起長大的好哥們參與演出，卻忘了提及劇本中所安排的吻戲橋段。沒想到這天外飛來的一吻，竟悄悄鬆動了一切：麥特與女友之間的關係、麥斯即將展開的遠行，也讓這段維繫多年的兄弟情誼，變得曖昧而複雜了起來⋯⋯。",
+          "poster": "https://image.tmdb.org/t/p/w500/gDXL3i53jGhTj2RC4xj9AIiCSJo.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/27xckIk5qdMina9WEtnMjp3oJHX.jpg",
+          "voteAverage": "7.1",
+          "trailerKey": "bIGKxlKKNu8",
+          "imdbId": "tt8767908",
+          "countries": [
+            "Canada"
+          ],
+          "cast": [
+            {
+              "name": "Gabriel D'Almeida Freitas",
+              "char": "Matthias",
+              "photo": "https://image.tmdb.org/t/p/w500/caVvda8XSzg7SS02jNotK4ozl9d.jpg"
+            },
+            {
+              "name": "Xavier Dolan",
+              "char": "Maxime",
+              "photo": "https://image.tmdb.org/t/p/w500/4DsDMNQskzolD477eBY9r2ZYgbt.jpg"
+            },
+            {
+              "name": "Pier-Luc Funk",
+              "char": "Rivette",
+              "photo": "https://image.tmdb.org/t/p/w500/ffE7MUJhX9QvejJL3OuM7ekAtzs.jpg"
+            },
+            {
+              "name": "Samuel Gauthier",
+              "char": "Frank",
+              "photo": "https://image.tmdb.org/t/p/w500/keOLPtQTmyh2NI16wPBrDyddSzC.jpg"
+            },
+            {
+              "name": "Antoine Pilon",
+              "char": "Brass",
+              "photo": "https://image.tmdb.org/t/p/w500/kYrhXJu61pXPN29rGV6HofsqlO8.jpg"
+            },
+            {
+              "name": "Adib Alkhalidey",
+              "char": "Shariff",
+              "photo": "https://image.tmdb.org/t/p/w500/1vOcEu0zBBZWxJKZXg3TZER1iut.jpg"
+            },
+            {
+              "name": "米雪琳·伯納德",
+              "char": "Francine",
+              "photo": "https://image.tmdb.org/t/p/w500/mN3EoiEUtfWFS69NUr6kHMEU8oO.jpg"
+            },
+            {
+              "name": "Anne Dorval",
+              "char": "Manon",
+              "photo": "https://image.tmdb.org/t/p/w500/qepLsxlg2p5qai1y2bwI2zUM5iz.jpg"
+            },
+            {
+              "name": "Marilyn Castonguay",
+              "char": "Sarah",
+              "photo": "https://image.tmdb.org/t/p/w500/k7X3ojSMfmhgwGIpCSthuzNzVbA.jpg"
+            },
+            {
+              "name": "Catherine Brunet",
+              "char": "Lisa",
+              "photo": "https://image.tmdb.org/t/p/w500/yK2Q6conYIgMgBSprFHDtcpwWJB.jpg"
+            },
+            {
+              "name": "Harris Dickinson",
+              "char": "McAfee",
+              "photo": "https://image.tmdb.org/t/p/w500/pqqnYWWHa3Va80EXofXrVlRqIDM.jpg"
+            },
+            {
+              "name": "Camille Felton",
+              "char": "Erika Rivette",
+              "photo": "https://image.tmdb.org/t/p/w500/cWx9sczEStyC84TXi6hhA6zeLV.jpg"
+            },
+            {
+              "name": "Anne-Marie Cadieux",
+              "char": "Martine",
+              "photo": "https://image.tmdb.org/t/p/w500/3Vyb5vXzikhUdVvf3oEPaP77NQq.jpg"
+            },
+            {
+              "name": "Monique Spaziani",
+              "char": "Colette",
+              "photo": "https://image.tmdb.org/t/p/w500/cYJTsDaFH9Ipl9Lhu9uRhsbcSs1.jpg"
+            },
+            {
+              "name": "Jacques Lavallée",
+              "char": "Courtemanche",
+              "photo": "https://image.tmdb.org/t/p/w500/fWotM17g64Pbz3YJmZamgNgB1vf.jpg"
+            },
+            {
+              "name": "Louis-Julien Durso",
+              "char": "Matisse",
+              "photo": "https://image.tmdb.org/t/p/w500/hw9DqXL2WOreklthbJs2gEbbPe3.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Xavier Dolan",
+              "job": "Director"
+            },
+            {
+              "name": "Xavier Dolan",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "fr",
+          "origTitle": "Matthias & Maxime",
+          "platforms": [
+            {
+              "name": "Netflix",
+              "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/519141?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1165656,
         "titleZh": "2022 IU CONCERT：The Golden Hour－在橙色太陽下",
         "titleEn": "아이유 콘서트 : 더 골든 아워",
@@ -4122,7 +4127,7 @@
         "origLang": "ko",
         "origTitle": "아이유 콘서트 : 더 골든 아워",
         "platforms": [],
-        "popularity": 1.5546,
+        "popularity": 1.655,
         "imdbId": "tt28997098",
         "countries": [
           "South Korea"
@@ -4297,11 +4302,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -4314,7 +4319,7 @@
         "origLang": "hi",
         "origTitle": "3 Idiots",
         "platforms": [],
-        "popularity": 10.5028,
+        "popularity": 10.3065,
         "imdbId": "tt1187043",
         "countries": [
           "India"
@@ -4419,11 +4424,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -4537,11 +4542,11 @@
         ],
         "crew": [
           {
-            "name": "川原礫",
+            "name": "吉野弘幸",
             "job": "Screenplay"
           },
           {
-            "name": "吉野弘幸",
+            "name": "川原礫",
             "job": "Screenplay"
           },
           {
@@ -4560,7 +4565,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 2.2312,
+        "popularity": 2.2139,
         "imdbId": "tt5923132",
         "countries": [
           "Japan"
@@ -4640,11 +4645,11 @@
           ],
           "crew": [
             {
-              "name": "川原礫",
+              "name": "吉野弘幸",
               "job": "Screenplay"
             },
             {
-              "name": "吉野弘幸",
+              "name": "川原礫",
               "job": "Screenplay"
             },
             {
@@ -5277,12 +5282,12 @@
         ],
         "crew": [
           {
-            "name": "김창주",
-            "job": "Director"
-          },
-          {
             "name": "배세영",
             "job": "Writer"
+          },
+          {
+            "name": "김창주",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -5395,12 +5400,12 @@
           ],
           "crew": [
             {
-              "name": "김창주",
-              "job": "Director"
-            },
-            {
               "name": "배세영",
               "job": "Writer"
+            },
+            {
+              "name": "김창주",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -6966,7 +6971,7 @@
         "origLang": "zh",
         "origTitle": "金三角 孤軍淚",
         "platforms": [],
-        "popularity": 0.7996,
+        "popularity": 0.8112,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -7277,204 +7282,152 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1492861,
-        "titleZh": "沙央",
-        "titleEn": "沙央",
-        "releaseDate": "2026-10-19",
+        "id": 1614539,
+        "titleZh": "劇場版 「BanG Dream! Ave Mujica prima aurora」",
+        "titleEn": "BanG Dream! Ave Mujica prima aurora",
+        "releaseDate": "2026-10-16",
         "releaseYear": "2026",
         "isRerelease": false,
         "twTheatricalReleases": [
           {
-            "date": "2026-10-19",
-            "language": "zh"
+            "date": "2026-10-16",
+            "language": ""
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/9vubI8KwZIOKye9tOoHVpftPNt3.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
-        "voteAverage": "6.5",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/5hvcmoHXVnzOS5zFEDpbaLJsfjt.jpg",
+        "voteAverage": "9.0",
         "genre": [
+          "動畫",
           "劇情",
-          "愛情"
+          "音樂"
         ],
-        "duration": 100,
-        "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
+        "duration": 56,
+        "synopsis": "樂團的人氣持續攀升，成員們各自的活動也逐漸步上軌道。而祥子為下一個舞台所準備的，是一場會員制的假面舞會-―「秘密舞會」。立誓要成為神的她，心中究竟有何打算。",
         "imdb": "",
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": "ECic1SG92Qk",
+        "trailerKey": null,
         "cast": [
           {
-            "name": "Jo Kukathas",
-            "char": "",
-            "photo": null
+            "name": "高尾奏音",
+            "char": "Sakiko Togawa (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/w3h6h9R29uRsOv01qbk94ym2msm.jpg"
           },
           {
-            "name": "湯詠絮",
-            "char": "San San",
-            "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
+            "name": "佐佐木李子",
+            "char": "Uika Misumi (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/s5zSSVM0JcOSnsNh8ELlfe2srKf.jpg"
           },
           {
-            "name": "Mhia Farhana",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
+            "name": "渡瀨結月",
+            "char": "Mutsumi Wakaba (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qIaOUZyeDIXMUvPfaFvSkHYYnPn.jpg"
           },
           {
-            "name": "李李仁",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
+            "name": "岡田夢以",
+            "char": "Umiri Yahata (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/zxmqfyUcO8o8MfFS9uQpIJvF1h7.jpg"
           },
           {
-            "name": "Ai Leng Ong",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
-          },
-          {
-            "name": "Khir Rahman",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
-          },
-          {
-            "name": "Farah Ahmad",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
-          },
-          {
-            "name": "Amir Ahnaf",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
-          },
-          {
-            "name": "Jonathan Lee",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Tan Li Yang",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Nandagopal",
-            "char": "",
-            "photo": null
+            "name": "米澤茜",
+            "char": "Nyamu Yūtenji (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/9jF8yUUHFnVdDFDdiFAAMT7izLQ.jpg"
           }
         ],
         "crew": [
           {
-            "name": "湯湘竹",
+            "name": "柿本広大",
             "job": "Director"
           },
           {
-            "name": "湯湘竹",
-            "job": "Writer"
+            "name": "後藤みどり",
+            "job": "Screenplay"
+          },
+          {
+            "name": "和場明子",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
         "revenue": 0,
         "status": "Released",
-        "origLang": "zh",
-        "origTitle": "沙央",
+        "origLang": "ja",
+        "origTitle": "BanG Dream! Ave Mujica prima aurora",
         "platforms": [],
-        "popularity": 1.1089,
-        "imdbId": null,
+        "popularity": 2.7619,
+        "imdbId": "tt39335288",
         "countries": [
-          "Taiwan",
-          "Malaysia"
+          "Japan"
         ],
         "detail": {
-          "duration": 100,
+          "duration": 56,
           "genres": [
+            "動畫",
             "劇情",
-            "愛情"
+            "音樂"
           ],
-          "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
-          "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
-          "voteAverage": "6.5",
-          "trailerKey": "ECic1SG92Qk",
-          "imdbId": null,
+          "synopsis": "樂團的人氣持續攀升，成員們各自的活動也逐漸步上軌道。而祥子為下一個舞台所準備的，是一場會員制的假面舞會-―「秘密舞會」。立誓要成為神的她，心中究竟有何打算。",
+          "poster": "https://image.tmdb.org/t/p/w500/9vubI8KwZIOKye9tOoHVpftPNt3.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/5hvcmoHXVnzOS5zFEDpbaLJsfjt.jpg",
+          "voteAverage": "9.0",
+          "trailerKey": null,
+          "imdbId": "tt39335288",
           "countries": [
-            "Taiwan",
-            "Malaysia"
+            "Japan"
           ],
           "cast": [
             {
-              "name": "Jo Kukathas",
-              "char": "",
-              "photo": null
+              "name": "高尾奏音",
+              "char": "Sakiko Togawa (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/w3h6h9R29uRsOv01qbk94ym2msm.jpg"
             },
             {
-              "name": "湯詠絮",
-              "char": "San San",
-              "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
+              "name": "佐佐木李子",
+              "char": "Uika Misumi (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/s5zSSVM0JcOSnsNh8ELlfe2srKf.jpg"
             },
             {
-              "name": "Mhia Farhana",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
+              "name": "渡瀨結月",
+              "char": "Mutsumi Wakaba (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qIaOUZyeDIXMUvPfaFvSkHYYnPn.jpg"
             },
             {
-              "name": "李李仁",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
+              "name": "岡田夢以",
+              "char": "Umiri Yahata (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/zxmqfyUcO8o8MfFS9uQpIJvF1h7.jpg"
             },
             {
-              "name": "Ai Leng Ong",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
-            },
-            {
-              "name": "Khir Rahman",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
-            },
-            {
-              "name": "Farah Ahmad",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
-            },
-            {
-              "name": "Amir Ahnaf",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
-            },
-            {
-              "name": "Jonathan Lee",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Tan Li Yang",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Nandagopal",
-              "char": "",
-              "photo": null
+              "name": "米澤茜",
+              "char": "Nyamu Yūtenji (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/9jF8yUUHFnVdDFDdiFAAMT7izLQ.jpg"
             }
           ],
           "crew": [
             {
-              "name": "湯湘竹",
+              "name": "柿本広大",
               "job": "Director"
             },
             {
-              "name": "湯湘竹",
-              "job": "Writer"
+              "name": "後藤みどり",
+              "job": "Screenplay"
+            },
+            {
+              "name": "和場明子",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
           "revenue": 0,
           "status": "Released",
-          "origLang": "zh",
-          "origTitle": "沙央",
+          "origLang": "ja",
+          "origTitle": "BanG Dream! Ave Mujica prima aurora",
           "platforms": []
         },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1492861?language=zh-TW",
+        "tmdbUrl": "https://www.themoviedb.org/movie/1614539?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -7514,8 +7467,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 303,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -8886,12 +8839,12 @@
         ],
         "crew": [
           {
-            "name": "裏則林",
-            "job": "Screenplay"
-          },
-          {
             "name": "路陽",
             "job": "Director"
+          },
+          {
+            "name": "裏則林",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -9004,12 +8957,12 @@
           ],
           "crew": [
             {
-              "name": "裏則林",
-              "job": "Screenplay"
-            },
-            {
               "name": "路陽",
               "job": "Director"
+            },
+            {
+              "name": "裏則林",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -9567,7 +9520,7 @@
         "origLang": "en",
         "origTitle": "Whalefall",
         "platforms": [],
-        "popularity": 68.1881,
+        "popularity": 62.8816,
         "imdbId": "tt28535715",
         "countries": [
           "United States of America"
@@ -9818,7 +9771,7 @@
         "origLang": "en",
         "origTitle": "Virginia Woolf's Night & Day",
         "platforms": [],
-        "popularity": 3.2488,
+        "popularity": 3.1384,
         "imdbId": "tt27802226",
         "countries": [
           "United Kingdom",
@@ -10129,6 +10082,209 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1492861,
+        "titleZh": "沙央",
+        "titleEn": "沙央",
+        "releaseDate": "2026-10-16",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-10-16",
+            "language": "zh"
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
+        "voteAverage": "6.5",
+        "genre": [
+          "劇情",
+          "愛情"
+        ],
+        "duration": 100,
+        "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": "ECic1SG92Qk",
+        "cast": [
+          {
+            "name": "Jo Kukathas",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "湯詠絮",
+            "char": "San San",
+            "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
+          },
+          {
+            "name": "Mhia Farhana",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
+          },
+          {
+            "name": "李李仁",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
+          },
+          {
+            "name": "Ai Leng Ong",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
+          },
+          {
+            "name": "Khir Rahman",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
+          },
+          {
+            "name": "Farah Ahmad",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
+          },
+          {
+            "name": "Amir Ahnaf",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
+          },
+          {
+            "name": "Jonathan Lee",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Tan Li Yang",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Nandagopal",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "湯湘竹",
+            "job": "Director"
+          },
+          {
+            "name": "湯湘竹",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "沙央",
+        "platforms": [],
+        "popularity": 1.1089,
+        "imdbId": null,
+        "countries": [
+          "Taiwan",
+          "Malaysia"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "劇情",
+            "愛情"
+          ],
+          "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
+          "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
+          "voteAverage": "6.5",
+          "trailerKey": "ECic1SG92Qk",
+          "imdbId": null,
+          "countries": [
+            "Taiwan",
+            "Malaysia"
+          ],
+          "cast": [
+            {
+              "name": "Jo Kukathas",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "湯詠絮",
+              "char": "San San",
+              "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
+            },
+            {
+              "name": "Mhia Farhana",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
+            },
+            {
+              "name": "李李仁",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
+            },
+            {
+              "name": "Ai Leng Ong",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
+            },
+            {
+              "name": "Khir Rahman",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
+            },
+            {
+              "name": "Farah Ahmad",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
+            },
+            {
+              "name": "Amir Ahnaf",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
+            },
+            {
+              "name": "Jonathan Lee",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Tan Li Yang",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Nandagopal",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "湯湘竹",
+              "job": "Director"
+            },
+            {
+              "name": "湯湘竹",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "沙央",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1492861?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1590933,
         "titleZh": "宛如星辰的你",
         "titleEn": "汝、星のごとく",
@@ -10428,157 +10584,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1729116?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1614539,
-        "titleZh": "劇場版 「BanG Dream! Ave Mujica prima aurora」",
-        "titleEn": "BanG Dream! Ave Mujica prima aurora",
-        "releaseDate": "2026-10-16",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-16",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/9vubI8KwZIOKye9tOoHVpftPNt3.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/5hvcmoHXVnzOS5zFEDpbaLJsfjt.jpg",
-        "voteAverage": "9.0",
-        "genre": [
-          "動畫",
-          "劇情",
-          "音樂"
-        ],
-        "duration": 56,
-        "synopsis": "樂團的人氣持續攀升，成員們各自的活動也逐漸步上軌道。而祥子為下一個舞台所準備的，是一場會員制的假面舞會-―「秘密舞會」。立誓要成為神的她，心中究竟有何打算。",
-        "imdb": "",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {},
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "高尾奏音",
-            "char": "Sakiko Togawa (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/w3h6h9R29uRsOv01qbk94ym2msm.jpg"
-          },
-          {
-            "name": "佐佐木李子",
-            "char": "Uika Misumi (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/s5zSSVM0JcOSnsNh8ELlfe2srKf.jpg"
-          },
-          {
-            "name": "渡瀨結月",
-            "char": "Mutsumi Wakaba (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/qIaOUZyeDIXMUvPfaFvSkHYYnPn.jpg"
-          },
-          {
-            "name": "岡田夢以",
-            "char": "Umiri Yahata (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/zxmqfyUcO8o8MfFS9uQpIJvF1h7.jpg"
-          },
-          {
-            "name": "米澤茜",
-            "char": "Nyamu Yūtenji (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/9jF8yUUHFnVdDFDdiFAAMT7izLQ.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "柿本広大",
-            "job": "Director"
-          },
-          {
-            "name": "後藤みどり",
-            "job": "Screenplay"
-          },
-          {
-            "name": "和場明子",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "BanG Dream! Ave Mujica prima aurora",
-        "platforms": [],
-        "popularity": 2.7619,
-        "imdbId": "tt39335288",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 56,
-          "genres": [
-            "動畫",
-            "劇情",
-            "音樂"
-          ],
-          "synopsis": "樂團的人氣持續攀升，成員們各自的活動也逐漸步上軌道。而祥子為下一個舞台所準備的，是一場會員制的假面舞會-―「秘密舞會」。立誓要成為神的她，心中究竟有何打算。",
-          "poster": "https://image.tmdb.org/t/p/w500/9vubI8KwZIOKye9tOoHVpftPNt3.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/5hvcmoHXVnzOS5zFEDpbaLJsfjt.jpg",
-          "voteAverage": "9.0",
-          "trailerKey": null,
-          "imdbId": "tt39335288",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "高尾奏音",
-              "char": "Sakiko Togawa (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/w3h6h9R29uRsOv01qbk94ym2msm.jpg"
-            },
-            {
-              "name": "佐佐木李子",
-              "char": "Uika Misumi (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/s5zSSVM0JcOSnsNh8ELlfe2srKf.jpg"
-            },
-            {
-              "name": "渡瀨結月",
-              "char": "Mutsumi Wakaba (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/qIaOUZyeDIXMUvPfaFvSkHYYnPn.jpg"
-            },
-            {
-              "name": "岡田夢以",
-              "char": "Umiri Yahata (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/zxmqfyUcO8o8MfFS9uQpIJvF1h7.jpg"
-            },
-            {
-              "name": "米澤茜",
-              "char": "Nyamu Yūtenji (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/9jF8yUUHFnVdDFDdiFAAMT7izLQ.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "柿本広大",
-              "job": "Director"
-            },
-            {
-              "name": "後藤みどり",
-              "job": "Screenplay"
-            },
-            {
-              "name": "和場明子",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "BanG Dream! Ave Mujica prima aurora",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1614539?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -11160,7 +11165,7 @@
             "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
           }
         ],
-        "popularity": 20.6937,
+        "popularity": 20.8837,
         "imdbId": "tt27681354",
         "countries": [
           "United Kingdom",
@@ -11588,7 +11593,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
-        "voteAverage": "6.7",
+        "voteAverage": "6.8",
         "genre": [
           "懸疑",
           "驚悚"
@@ -11723,7 +11728,7 @@
           "synopsis": "經濟拮据的作家洛玟受聘為代筆，前往偏遠的克勞弗宅邸，替因意外無法完成作品的作家薇若蒂續寫小說。然而在整理資料的過程中，洛玟意外發現一份疑似自傳手稿，內容揭露出令人不寒而慄的祕密與扭曲情感。當真相逐步浮現，她開始質疑眼前的一切，究竟是創作虛構還是真實告白？在慾望與恐懼交織之下，界線逐漸崩解。",
           "poster": "https://image.tmdb.org/t/p/w500/6MYR8uHe9bDvHJT7tDscaLAiiF9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
-          "voteAverage": "6.7",
+          "voteAverage": "6.8",
           "trailerKey": "hhxLgnnMECw",
           "imdbId": "tt32261958",
           "countries": [
@@ -12364,7 +12369,7 @@
         "origLang": "en",
         "origTitle": "Other Mommy",
         "platforms": [],
-        "popularity": 89.8141,
+        "popularity": 86.746,
         "imdbId": "tt36586020",
         "countries": [
           "United States of America"
@@ -12580,7 +12585,7 @@
         "origLang": "en",
         "origTitle": "Drunken Noodles",
         "platforms": [],
-        "popularity": 1.7269,
+        "popularity": 1.652,
         "imdbId": "tt36510056",
         "countries": [
           "United States of America",
@@ -12986,7 +12991,7 @@
         "origLang": "ja",
         "origTitle": "映画 すみっコぐらし 空の王国とふたりのコ",
         "platforms": [],
-        "popularity": 0.8038,
+        "popularity": 0.7212,
         "imdbId": "tt38859765",
         "countries": [
           "Japan"
@@ -14081,7 +14086,7 @@
         "origLang": "zh",
         "origTitle": "人吶，為什麼要跑步？",
         "platforms": [],
-        "popularity": 0.4555,
+        "popularity": 0.474,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -14836,7 +14841,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.7",
         "genre": [
           "動畫",
           "冒險",
@@ -14986,7 +14991,7 @@
           "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.7",
           "trailerKey": "WII6-Ss-kTM",
           "imdbId": "tt36583977",
           "countries": [
@@ -15238,7 +15243,7 @@
             "job": "Screenplay"
           },
           {
-            "name": "Anthony Russo",
+            "name": "Joe Russo",
             "job": "Director"
           }
         ],
@@ -15366,7 +15371,7 @@
               "job": "Screenplay"
             },
             {
-              "name": "Anthony Russo",
+              "name": "Joe Russo",
               "job": "Director"
             }
           ],
@@ -15954,7 +15959,7 @@
         "origLang": "en",
         "origTitle": "Primetime",
         "platforms": [],
-        "popularity": 60.5137,
+        "popularity": 56.4555,
         "imdbId": "tt34206385",
         "countries": [
           "United States of America"
@@ -17214,7 +17219,7 @@
         "origLang": "ja",
         "origTitle": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
         "platforms": [],
-        "popularity": 7.6874,
+        "popularity": 8.197,
         "imdbId": "tt14523706",
         "countries": [
           "Japan"
@@ -17691,7 +17696,7 @@
         "origLang": "zh",
         "origTitle": "網紅老爸",
         "platforms": [],
-        "popularity": 3.3487,
+        "popularity": 3.3613,
         "imdbId": "tt44878475",
         "countries": [
           "Taiwan"
@@ -17948,11 +17953,11 @@
         "crew": [
           {
             "name": "押山清高",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "押山清高",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -17966,7 +17971,7 @@
             "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
           }
         ],
-        "popularity": 12.8965,
+        "popularity": 13.0035,
         "imdbId": "tt31711040",
         "countries": [
           "Japan"
@@ -18071,11 +18076,11 @@
           "crew": [
             {
               "name": "押山清高",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "押山清高",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -18245,7 +18250,7 @@
         "origLang": "en",
         "origTitle": "PAW Patrol: The Dino Movie",
         "platforms": [],
-        "popularity": 35.7877,
+        "popularity": 35.6964,
         "imdbId": "tt29356163",
         "countries": [
           "Canada",
@@ -20310,11 +20315,11 @@
         "crew": [
           {
             "name": "三島有紀子",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "三島有紀子",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -20433,11 +20438,11 @@
           "crew": [
             {
               "name": "三島有紀子",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "三島有紀子",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -20453,6 +20458,197 @@
           ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/135598?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 304023,
+        "titleZh": "樂園追放",
+        "titleEn": "楽園追放 -Expelled from Paradise-",
+        "releaseDate": "2026-11-06",
+        "releaseYear": "2014",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-06",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/iKgMqRSZ9kxsZ5D9WgtMdi5gAx6.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/poTFhNtA1kZa3Qb6ulCwa5HPEKb.jpg",
+        "voteAverage": "6.5",
+        "genre": [
+          "動畫",
+          "科幻",
+          "動作",
+          "冒險"
+        ],
+        "duration": 104,
+        "synopsis": "地球因為奈米機器的失控而淪為一片廢墟，絕大部分人類為了生存而捨棄了地表，數據化後移居到了電腦的世界“迪瓦”。公元2400年，“迪瓦”發生了異變，遭到地表世界的駭客入侵，入侵的主謀者自稱是弗隆提亞·賽塔。為了調查此人的目的，“迪瓦”的搜查官安吉拉轉移到近似肉體的素體中，前往地表世界與地表的調查員丁格匯合。然而在等待著她的，卻是在地面上的肆虐的沙地巨蟲群，安吉拉啟動了機動外骨骼迎擊這些怪物。在這片荒廢的大地上，弗隆提亞·賽塔正隱藏著自己的身影。安吉拉與丁格兩人攜手，開始了解開世界之謎的旅行……",
+        "imdb": "6.7",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 2009,
+            "lastChanged": "2026-11-01T21:25:22.252970+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "釘宮理惠",
+            "char": "Angela Balzac (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xHonhNFpTpz9zCVXLAF7D4OuHLv.jpg"
+          },
+          {
+            "name": "三木真一郎",
+            "char": "Zarik 'Dingo' Kajiwara (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/yL9Tx2HZgK7t5AssYl6oGE9bjdj.jpg"
+          },
+          {
+            "name": "神谷浩史",
+            "char": "Frontier Setter (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/5aAAOlQ2hW5EqEQOzk4UeroxcTN.jpg"
+          },
+          {
+            "name": "林原惠",
+            "char": "Christin Gillum (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/3Alm4pmBIxpeeh0Sdippxdbkpne.jpg"
+          },
+          {
+            "name": "高山南",
+            "char": "Veronica Kulikova (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/4Gunxt2UWnAX74ZoXKtqK2rI0e.jpg"
+          },
+          {
+            "name": "三石琴乃",
+            "char": "Hilde Thorwald (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/dRqbE5D3uqfKnAPsHp9etsvO1Gg.jpg"
+          },
+          {
+            "name": "三宅健太",
+            "char": "Issac (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
+          },
+          {
+            "name": "遠藤大智",
+            "char": "Lazlo (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/4vE6Naj5OHFYoRQXyMtucGnhOAP.jpg"
+          },
+          {
+            "name": "古谷徹",
+            "char": "Alonzo Percy (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/2et31Lo8I0gRbyYFaOu3TBRby7U.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "水島精二",
+            "job": "Director"
+          },
+          {
+            "name": "虛淵玄",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "楽園追放 -Expelled from Paradise-",
+        "platforms": [],
+        "popularity": 2.2358,
+        "imdbId": "tt2859246",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 104,
+          "genres": [
+            "動畫",
+            "科幻",
+            "動作",
+            "冒險"
+          ],
+          "synopsis": "地球因為奈米機器的失控而淪為一片廢墟，絕大部分人類為了生存而捨棄了地表，數據化後移居到了電腦的世界“迪瓦”。公元2400年，“迪瓦”發生了異變，遭到地表世界的駭客入侵，入侵的主謀者自稱是弗隆提亞·賽塔。為了調查此人的目的，“迪瓦”的搜查官安吉拉轉移到近似肉體的素體中，前往地表世界與地表的調查員丁格匯合。然而在等待著她的，卻是在地面上的肆虐的沙地巨蟲群，安吉拉啟動了機動外骨骼迎擊這些怪物。在這片荒廢的大地上，弗隆提亞·賽塔正隱藏著自己的身影。安吉拉與丁格兩人攜手，開始了解開世界之謎的旅行……",
+          "poster": "https://image.tmdb.org/t/p/w500/iKgMqRSZ9kxsZ5D9WgtMdi5gAx6.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/poTFhNtA1kZa3Qb6ulCwa5HPEKb.jpg",
+          "voteAverage": "6.5",
+          "trailerKey": null,
+          "imdbId": "tt2859246",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "釘宮理惠",
+              "char": "Angela Balzac (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xHonhNFpTpz9zCVXLAF7D4OuHLv.jpg"
+            },
+            {
+              "name": "三木真一郎",
+              "char": "Zarik 'Dingo' Kajiwara (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/yL9Tx2HZgK7t5AssYl6oGE9bjdj.jpg"
+            },
+            {
+              "name": "神谷浩史",
+              "char": "Frontier Setter (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/5aAAOlQ2hW5EqEQOzk4UeroxcTN.jpg"
+            },
+            {
+              "name": "林原惠",
+              "char": "Christin Gillum (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/3Alm4pmBIxpeeh0Sdippxdbkpne.jpg"
+            },
+            {
+              "name": "高山南",
+              "char": "Veronica Kulikova (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/4Gunxt2UWnAX74ZoXKtqK2rI0e.jpg"
+            },
+            {
+              "name": "三石琴乃",
+              "char": "Hilde Thorwald (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/dRqbE5D3uqfKnAPsHp9etsvO1Gg.jpg"
+            },
+            {
+              "name": "三宅健太",
+              "char": "Issac (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/7YL8vM2KYzPMeQqTpHWmNj6s1AP.jpg"
+            },
+            {
+              "name": "遠藤大智",
+              "char": "Lazlo (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/4vE6Naj5OHFYoRQXyMtucGnhOAP.jpg"
+            },
+            {
+              "name": "古谷徹",
+              "char": "Alonzo Percy (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/2et31Lo8I0gRbyYFaOu3TBRby7U.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "水島精二",
+              "job": "Director"
+            },
+            {
+              "name": "虛淵玄",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "楽園追放 -Expelled from Paradise-",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/304023?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -20500,8 +20696,8 @@
         ],
         "crew": [
           {
-            "name": "Philip Delaquis",
-            "job": "Writer"
+            "name": "Barbara Miller",
+            "job": "Director"
           },
           {
             "name": "Barbara Miller",
@@ -20548,8 +20744,8 @@
           ],
           "crew": [
             {
-              "name": "Philip Delaquis",
-              "job": "Writer"
+              "name": "Barbara Miller",
+              "job": "Director"
             },
             {
               "name": "Barbara Miller",
@@ -20696,7 +20892,7 @@
         "origLang": "ja",
         "origTitle": "ゴジラ-0.0",
         "platforms": [],
-        "popularity": 21.9383,
+        "popularity": 22.5256,
         "imdbId": "tt34384661",
         "countries": [
           "Japan"
@@ -21805,6 +22001,155 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1634905?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1663504,
+        "titleZh": "追蹤者遊戲W 水魚交融",
+        "titleEn": "チェイサーゲームW 水魚の交わり",
+        "releaseDate": "2026-11-06",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-06",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/5uR0hchlROg7eWvhAJK8pdDEwG4.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/px9bLLgBE7H5LitieUyqTOpMJw3.jpg",
+        "voteAverage": "10.0",
+        "genre": [
+          "愛情",
+          "劇情"
+        ],
+        "duration": 84,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "菅井友香",
+            "char": "Itsuki Harumoto",
+            "photo": "https://image.tmdb.org/t/p/w500/j4Ue5cwLqhR98FzkX2VgHbCyqh7.jpg"
+          },
+          {
+            "name": "中村百合香",
+            "char": "Fuyu Hayashi",
+            "photo": "https://image.tmdb.org/t/p/w500/ki61UbuvfptBAYmDncFQmItirA6.jpg"
+          },
+          {
+            "name": "岡本望来",
+            "char": "Tsuki Hayashi",
+            "photo": "https://image.tmdb.org/t/p/w500/nH4iuYCu2hEI6g2ViSmormGA6a7.jpg"
+          },
+          {
+            "name": "黒谷友香",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/uRaBDkYRAEdyphr7tWJOoBed0NL.jpg"
+          },
+          {
+            "name": "伊藤歩",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/5Lon3bBtHjiFCyNLpiDNI2oVinj.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "太田勇",
+            "job": "Director"
+          },
+          {
+            "name": "アサダアツシ",
+            "job": "Writer"
+          },
+          {
+            "name": "アサダアツシ",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "チェイサーゲームW 水魚の交わり",
+        "platforms": [],
+        "popularity": 2.2422,
+        "imdbId": "tt39817145",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 84,
+          "genres": [
+            "愛情",
+            "劇情"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/5uR0hchlROg7eWvhAJK8pdDEwG4.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/px9bLLgBE7H5LitieUyqTOpMJw3.jpg",
+          "voteAverage": "10.0",
+          "trailerKey": null,
+          "imdbId": "tt39817145",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "菅井友香",
+              "char": "Itsuki Harumoto",
+              "photo": "https://image.tmdb.org/t/p/w500/j4Ue5cwLqhR98FzkX2VgHbCyqh7.jpg"
+            },
+            {
+              "name": "中村百合香",
+              "char": "Fuyu Hayashi",
+              "photo": "https://image.tmdb.org/t/p/w500/ki61UbuvfptBAYmDncFQmItirA6.jpg"
+            },
+            {
+              "name": "岡本望来",
+              "char": "Tsuki Hayashi",
+              "photo": "https://image.tmdb.org/t/p/w500/nH4iuYCu2hEI6g2ViSmormGA6a7.jpg"
+            },
+            {
+              "name": "黒谷友香",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/uRaBDkYRAEdyphr7tWJOoBed0NL.jpg"
+            },
+            {
+              "name": "伊藤歩",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/5Lon3bBtHjiFCyNLpiDNI2oVinj.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "太田勇",
+              "job": "Director"
+            },
+            {
+              "name": "アサダアツシ",
+              "job": "Writer"
+            },
+            {
+              "name": "アサダアツシ",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "チェイサーゲームW 水魚の交わり",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1663504?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -22968,7 +23313,7 @@
         "origLang": "zh",
         "origTitle": "有用的人",
         "platforms": [],
-        "popularity": 2.2824,
+        "popularity": 2.3008,
         "imdbId": "tt44934439",
         "countries": [
           "Taiwan"
@@ -23795,7 +24140,7 @@
           {
             "name": "กชกร นิมากรณ์",
             "char": "Namthip",
-            "photo": "https://image.tmdb.org/t/p/w500/cRCxdyUsGBW38MepwTkmqoLdMpr.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/ui2po4D2wnhCPBjLXWwOPWZZ6QE.jpg"
           },
           {
             "name": "查寧通‧吉普利達",
@@ -23918,7 +24263,7 @@
             {
               "name": "กชกร นิมากรณ์",
               "char": "Namthip",
-              "photo": "https://image.tmdb.org/t/p/w500/cRCxdyUsGBW38MepwTkmqoLdMpr.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/ui2po4D2wnhCPBjLXWwOPWZZ6QE.jpg"
             },
             {
               "name": "查寧通‧吉普利達",
@@ -24484,7 +24829,7 @@
         "origLang": "zh",
         "origTitle": "告別的年代",
         "platforms": [],
-        "popularity": 2.4653,
+        "popularity": 2.5128,
         "imdbId": "tt35486511",
         "countries": [
           "Taiwan",
@@ -24966,6 +25311,161 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1658226?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1236857,
+        "titleZh": "樂園追放：心之共鳴",
+        "titleEn": "楽園追放 心のレゾナンス",
+        "releaseDate": "2026-11-20",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-20",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/cp9XcvYQgwFPQgfDi3Yjjq2I3dI.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": null,
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "科幻",
+          "動作",
+          "冒險"
+        ],
+        "duration": "",
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "佐倉綾音",
+            "char": "Gabriel (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/yPbTmntASE9psPIMhNGU5oo6vIH.jpg"
+          },
+          {
+            "name": "早見沙織",
+            "char": "Alma (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/gLv9lO7dlUbIsmyJUvgegqAAXki.jpg"
+          },
+          {
+            "name": "青山吉能",
+            "char": "Danel (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/yPOprcT7tPKR3p79RMYtogTEXGr.jpg"
+          },
+          {
+            "name": "天城莎莉",
+            "char": "Raguel (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/znxe30Cun1RpIzM5Iuq0IGpmWoC.jpg"
+          },
+          {
+            "name": "諸星堇",
+            "char": "Penem (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/6AoZkW7NxgsWXkoCkTGDSgFcyao.jpg"
+          },
+          {
+            "name": "釘宮理惠",
+            "char": "Angela Balzac (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/xHonhNFpTpz9zCVXLAF7D4OuHLv.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "水島精二",
+            "job": "Director"
+          },
+          {
+            "name": "虛淵玄",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "In Production",
+        "origLang": "ja",
+        "origTitle": "楽園追放 心のレゾナンス",
+        "platforms": [],
+        "popularity": 1.5879,
+        "imdbId": "tt31068334",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": "",
+          "genres": [
+            "動畫",
+            "科幻",
+            "動作",
+            "冒險"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/cp9XcvYQgwFPQgfDi3Yjjq2I3dI.jpg",
+          "backdrop": null,
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt31068334",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "佐倉綾音",
+              "char": "Gabriel (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/yPbTmntASE9psPIMhNGU5oo6vIH.jpg"
+            },
+            {
+              "name": "早見沙織",
+              "char": "Alma (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/gLv9lO7dlUbIsmyJUvgegqAAXki.jpg"
+            },
+            {
+              "name": "青山吉能",
+              "char": "Danel (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/yPOprcT7tPKR3p79RMYtogTEXGr.jpg"
+            },
+            {
+              "name": "天城莎莉",
+              "char": "Raguel (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/znxe30Cun1RpIzM5Iuq0IGpmWoC.jpg"
+            },
+            {
+              "name": "諸星堇",
+              "char": "Penem (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/6AoZkW7NxgsWXkoCkTGDSgFcyao.jpg"
+            },
+            {
+              "name": "釘宮理惠",
+              "char": "Angela Balzac (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/xHonhNFpTpz9zCVXLAF7D4OuHLv.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "水島精二",
+              "job": "Director"
+            },
+            {
+              "name": "虛淵玄",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "In Production",
+          "origLang": "ja",
+          "origTitle": "楽園追放 心のレゾナンス",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1236857?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -25539,7 +26039,7 @@
         "duration": 159,
         "synopsis": "西班牙內戰轉折時刻，佛朗哥軍營的小號手受命照顧戰俘，面對瑰麗胴體和慾望初萌，一段愛情也隨著戰事拉扯；出身貴族的酷兒因陰性氣質無法躋身上流，更被迫肩負著家族責任；新銳劇作家返鄉之際，接獲剛逝世祖父所留下的遺產，追尋著未曾言說的過去……1932、1937、2017，跨越三個年代，交織三個不同命運，在國家暴力、酷兒認同與歷史創傷的鴻溝裡彼此映照，譜寫一則傳誦愛的跨時代史詩。",
         "imdb": "7.0",
-        "rt": "86%",
+        "rt": "87%",
         "mc": "80",
         "ratingMeta": {
           "imdb": {
@@ -25549,8 +26049,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 110,
-            "lastChanged": "2026-10-30T18:27:56.949846+08:00"
+            "votes": 116,
+            "lastChanged": "2026-11-01T21:25:22.252970+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -28342,11 +28842,11 @@
         ],
         "crew": [
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
@@ -28360,7 +28860,7 @@
         "origLang": "en",
         "origTitle": "The Cat in the Hat",
         "platforms": [],
-        "popularity": 19.0718,
+        "popularity": 21.0432,
         "imdbId": "tt2321555",
         "countries": [
           "United Kingdom",
@@ -28469,11 +28969,11 @@
           ],
           "crew": [
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
@@ -29794,11 +30294,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -29903,11 +30403,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
@@ -30313,12 +30813,12 @@
         ],
         "crew": [
           {
-            "name": "Eleanor Wilson",
+            "name": "Alex Huston Fischer",
             "job": "Director"
           },
           {
             "name": "Eleanor Wilson",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Alex Huston Fischer",
@@ -30331,7 +30831,7 @@
         "origLang": "en",
         "origTitle": "Wicker",
         "platforms": [],
-        "popularity": 73.2181,
+        "popularity": 68.7979,
         "imdbId": "tt29611136",
         "countries": [
           "United Kingdom",
@@ -30438,12 +30938,12 @@
           ],
           "crew": [
             {
-              "name": "Eleanor Wilson",
+              "name": "Alex Huston Fischer",
               "job": "Director"
             },
             {
               "name": "Eleanor Wilson",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Alex Huston Fischer",
@@ -30590,7 +31090,7 @@
         "origLang": "en",
         "origTitle": "The Angry Birds Movie 3",
         "platforms": [],
-        "popularity": 10.4426,
+        "popularity": 10.2546,
         "imdbId": "tt32557122",
         "countries": [
           "Finland",
@@ -32498,7 +32998,7 @@
         "origLang": "en",
         "origTitle": "The Thomas Crown Affair",
         "platforms": [],
-        "popularity": 3.8514,
+        "popularity": 4.3497,
         "imdbId": "tt5500064",
         "countries": [
           "United States of America"
@@ -32716,7 +33216,7 @@
         "origLang": "zh",
         "origTitle": "狂忘警探",
         "platforms": [],
-        "popularity": 3.6028,
+        "popularity": 3.2302,
         "imdbId": "tt38893248",
         "countries": [
           "Taiwan",
