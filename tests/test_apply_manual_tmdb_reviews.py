@@ -75,6 +75,47 @@ class ApplyManualTmdbReviewsTests(unittest.TestCase):
             )[0]["absence_audit_complete"]
         )
 
+    def test_handles_missing_date_and_suspicious_manual_corrections(self):
+        rows = [
+            reviews.AUDIT_HEADERS,
+            ["missing_tw_date", "正義女聲", "2026-12-31", "First Voice", "https://www.themoviedb.org/movie/1362419?language=zh-TW"],
+            ["tmdb_match_suspicious", "大天使", "2026-12-24", "Archangel", "https://www.themoviedb.org/movie/1318889?language=zh-TW"],
+        ]
+        overrides = {
+            "title:正義女聲": {
+                "tmdb_id": 1706689,
+                "source_titles": ["正義女聲", "First Voice"],
+                "supersedes_tmdb_ids": [1362419],
+            },
+            "title:大天使": {
+                "tmdb_id": 1562642,
+                "source_titles": ["大天使", "Archangel"],
+                "supersedes_tmdb_ids": [1318889],
+            },
+        }
+
+        matches = reviews.manual_matches_from_rows(rows, overrides, "2026-11-04")
+
+        self.assertEqual([item["tmdb_id"] for item in matches], [1706689, 1562642])
+
+    def test_recovers_misaligned_row_when_current_link_is_superseded(self):
+        rows = [
+            reviews.AUDIT_HEADERS,
+            ["大天使", "正義女聲", "2026-12-31", "First Voice", "https://www.themoviedb.org/movie/1362419?language=zh-TW"],
+        ]
+        overrides = {
+            "title:正義女聲": {
+                "tmdb_id": 1706689,
+                "source_titles": ["正義女聲", "First Voice"],
+                "supersedes_tmdb_ids": [1362419],
+            }
+        }
+
+        matches = reviews.manual_matches_from_rows(rows, overrides, "2026-11-04")
+
+        self.assertEqual(len(matches), 1)
+        self.assertEqual(matches[0]["tmdb_id"], 1706689)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -12,7 +12,9 @@ from publish_to_google_sheet import (
     AUDIT_STATUS_SHEET_TITLE,
     CANDIDATE_HEADERS,
     CANDIDATES_SHEET_TITLE,
+    discard_superseded_candidates,
     load_service_account_credentials,
+    load_superseded_tmdb_ids,
     quote_sheet_range,
     sheet_rows_to_items,
 )
@@ -20,7 +22,13 @@ from publish_to_google_sheet import (
 
 ROOT_DIR = weekly.OUTPUT_DIR.parent
 MANUAL_MATCH_STATUS = "manually_matched"
-REVIEWABLE_STATUSES = {"tmdb_not_found", MANUAL_MATCH_STATUS}
+REVIEWABLE_STATUSES = {
+    "tmdb_not_found",
+    "missing_tw_date",
+    "tmdb_match_suspicious",
+    "tmdb_date_mismatch",
+    MANUAL_MATCH_STATUS,
+}
 AUDIT_HEADERS = [
     "類別", "台灣中文片名", "台灣上映日期", "原文片名", "TMDB連結",
     "原上映日期", "備註", "發現來源", "來源連結",
@@ -75,14 +83,22 @@ def manual_matches_from_rows(rows, overrides, audit_date, audit_complete=False):
     audit_day = date.fromisoformat(audit_date)
     for row_number, row in enumerate(rows[1:], start=2):
         item = {headers[index]: value for index, value in enumerate(row) if index < len(headers)}
-        if str(item.get("類別", "")).strip() not in REVIEWABLE_STATUSES:
-            continue
         movie = {
             "title_zh": str(item.get("台灣中文片名", "")).strip(),
             "title_en": str(item.get("原文片名", "")).strip(),
         }
         override = weekly.find_tmdb_override(movie, overrides)
         if not override or not override.get("tmdb_id"):
+            continue
+        status = str(item.get("類別", "")).strip()
+        current_link = str(item.get("TMDB連結", "")).strip()
+        superseded_links = {
+            weekly.tmdb_movie_url(value).split("?", 1)[0]
+            for value in override.get("supersedes_tmdb_ids", [])
+        }
+        if status not in REVIEWABLE_STATUSES and not any(
+            current_link.startswith(link) for link in superseded_links
+        ):
             continue
         tmdb_id = int(override["tmdb_id"])
         title_zh = str(override.get("title_zh") or movie["title_zh"]).strip()
@@ -207,7 +223,10 @@ def apply_reviews():
         get_values(service, spreadsheet_id, CANDIDATES_SHEET_TITLE)
         if CANDIDATES_SHEET_TITLE in titles else []
     )
-    merged = merge_manual_candidates(sheet_rows_to_items(existing_rows), matches)
+    existing = discard_superseded_candidates(
+        sheet_rows_to_items(existing_rows), load_superseded_tmdb_ids()
+    )
+    merged = merge_manual_candidates(existing, matches)
     body = {
         "valueInputOption": "RAW",
         "data": [
