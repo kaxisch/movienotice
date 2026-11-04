@@ -184,6 +184,13 @@ class TmdbOverrideTests(unittest.TestCase):
             "Everybody Digs Bill Evans": 1378791,
             "Hen": 1382513,
             "雞智逃亡生活": 1382513,
+            "正義女聲": 1706689,
+            "First Voice": 1706689,
+            "大天使": 1562642,
+            "Archangel": 1562642,
+            "Ghost Soldier": 1562642,
+            "皎潔深宵之月": 1410955,
+            "Uruwashi no Yoi no Tsuki": 1410955,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
