@@ -304,11 +304,33 @@ def reappeared_candidate_has_verified_showtime(candidate, tmdb_date, today):
     )
 
 
+def hidden_rerelease_matches_regular_run(history, regular):
+    """同一輪已下檔重映不得被一般候選用相同 TMDB 日期重新帶回。"""
+    if not sheet_value_is_true(history.get("rerelease_verified")):
+        return False
+    if not (
+        rerelease_is_hidden(history)
+        or not sheet_value_is_true(history.get("rerelease_present"))
+    ):
+        return False
+    history_dates = {
+        str(history.get("cinema_release_date", "") or "").strip(),
+        str(history.get("tmdb_tw_release_date", "") or "").strip(),
+    } - {""}
+    regular_dates = {
+        str(regular.get("release_date_tw", "") or "").strip(),
+        str(regular.get("tmdb_tw_release_date", "") or "").strip(),
+    } - {""}
+    return bool(history_dates.intersection(regular_dates))
+
+
 def index_candidates_by_tmdb_id(candidates):
     """保留待即時驗證的重映；日期吻合前不覆蓋一般院線候選。"""
     indexed = {}
+    rerelease_history = {}
     for candidate in candidates:
         if candidate.get("candidate_kind") == "rerelease_history":
+            rerelease_history.setdefault(candidate["tmdb_id"], []).append(candidate)
             continue
         confirmed_rerelease = rerelease_can_override_regular_candidate(candidate)
         pending_rerelease = rerelease_needs_live_date_validation(candidate)
@@ -339,6 +361,16 @@ def index_candidates_by_tmdb_id(candidates):
         previous_priority = shared_candidate_priority(previous)
         if current_priority > previous_priority:
             indexed[tmdb_id] = candidate
+    for tmdb_id, histories in rerelease_history.items():
+        regular = indexed.get(tmdb_id)
+        if not regular or regular.get("candidate_kind") == "rerelease":
+            continue
+        if any(hidden_rerelease_matches_regular_run(history, regular) for history in histories):
+            log(
+                f"  Hidden TMDB {tmdb_id}: general candidate matches a completed "
+                "hidden rerelease run"
+            )
+            indexed.pop(tmdb_id, None)
     return indexed
 
 

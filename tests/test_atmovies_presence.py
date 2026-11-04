@@ -1174,6 +1174,49 @@ class RefreshVisibilityTests(unittest.TestCase):
 
         self.assertEqual(indexed[1621964]["candidate_kind"], "atmovies")
 
+    def test_hidden_verified_rerelease_suppresses_same_regular_run(self):
+        regular = {
+            "tmdb_id": 1244492,
+            "candidate_kind": "atmovies",
+            "release_date_tw": "2026-09-11",
+            "tmdb_tw_release_date": "2026-08-27",
+            "atmovies_present": True,
+        }
+        history = {
+            "tmdb_id": 1244492,
+            "candidate_kind": "rerelease_history",
+            "cinema_release_date": "2026-08-27",
+            "tmdb_tw_release_date": "2026-08-27",
+            "rerelease_verified": True,
+            "rerelease_present": False,
+            "hidden": True,
+        }
+
+        indexed = refresh.index_candidates_by_tmdb_id([regular, history])
+
+        self.assertNotIn(1244492, indexed)
+
+    def test_hidden_rerelease_does_not_suppress_different_new_run(self):
+        regular = {
+            "tmdb_id": 101,
+            "candidate_kind": "atmovies",
+            "release_date_tw": "2027-02-05",
+            "tmdb_tw_release_date": "2027-02-05",
+        }
+        history = {
+            "tmdb_id": 101,
+            "candidate_kind": "rerelease_history",
+            "cinema_release_date": "2026-08-27",
+            "tmdb_tw_release_date": "2026-08-27",
+            "rerelease_verified": True,
+            "rerelease_present": False,
+            "hidden": True,
+        }
+
+        indexed = refresh.index_candidates_by_tmdb_id([history, regular])
+
+        self.assertEqual(indexed[101], regular)
+
     def test_mismatched_rerelease_date_does_not_override_regular_candidate(self):
         candidates = [
             {"tmdb_id": 101, "candidate_kind": "atmovies"},
