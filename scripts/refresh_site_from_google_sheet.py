@@ -306,6 +306,8 @@ def reappeared_candidate_has_verified_showtime(candidate, tmdb_date, today):
 
 def hidden_rerelease_matches_regular_run(history, regular):
     """同一輪已下檔重映不得被一般候選用相同 TMDB 日期重新帶回。"""
+    if sheet_value_is_true(regular.get("cinema_present")):
+        return False
     if not sheet_value_is_true(history.get("rerelease_verified")):
         return False
     if not (
