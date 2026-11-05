@@ -1217,6 +1217,30 @@ class RefreshVisibilityTests(unittest.TestCase):
 
         self.assertEqual(indexed[101], regular)
 
+    def test_hidden_rerelease_does_not_suppress_current_cinema_candidate(self):
+        regular = {
+            "tmdb_id": 1148558,
+            "candidate_kind": "atmovies",
+            "release_date_tw": "2026-10-23",
+            "tmdb_tw_release_date": "2026-10-23",
+            "atmovies_present": True,
+            "cinema_present": True,
+            "present_sources": "atmovies,centuryasia,centuryasia_kaohsiung,centuryasia_ximen",
+        }
+        history = {
+            "tmdb_id": 1148558,
+            "candidate_kind": "rerelease_history",
+            "cinema_release_date": "2026-10-23",
+            "tmdb_tw_release_date": "2026-10-23",
+            "rerelease_verified": True,
+            "rerelease_present": False,
+            "hidden": True,
+        }
+
+        indexed = refresh.index_candidates_by_tmdb_id([history, regular])
+
+        self.assertEqual(indexed[1148558], regular)
+
     def test_mismatched_rerelease_date_does_not_override_regular_candidate(self):
         candidates = [
             {"tmdb_id": 101, "candidate_kind": "atmovies"},
