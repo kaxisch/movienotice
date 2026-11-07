@@ -2126,8 +2126,10 @@ def main():
     tmdb_match_suspicious = []
 
     for i, movie in enumerate(unique, 1):
-        log(f"[{i}/{len(unique)}] {movie['title_zh']} ({movie['release_date_tw']})")
         override = find_tmdb_override(movie, tmdb_overrides)
+        if override and override.get("release_date_tw"):
+            movie = {**movie, "release_date_tw": str(override["release_date_tw"]).strip()}
+        log(f"[{i}/{len(unique)}] {movie['title_zh']} ({movie['release_date_tw']})")
         if override and override.get("tmdb_id"):
             override_id = override["tmdb_id"]
             log(f"  TMDB override: {movie['atmovies_id']} -> {override_id}")
