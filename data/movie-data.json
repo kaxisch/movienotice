@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T01:53:29.218581+08:00",
+  "generated_at": "2026-11-08T06:17:06.297981+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 91,
@@ -931,8 +931,8 @@
         ],
         "crew": [
           {
-            "name": "Philip Delaquis",
-            "job": "Writer"
+            "name": "Barbara Miller",
+            "job": "Director"
           },
           {
             "name": "Barbara Miller",
@@ -979,8 +979,8 @@
           ],
           "crew": [
             {
-              "name": "Philip Delaquis",
-              "job": "Writer"
+              "name": "Barbara Miller",
+              "job": "Director"
             },
             {
               "name": "Barbara Miller",
@@ -1020,7 +1020,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/smf7tL7UcRPfFSeFTbvii9sgNlp.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-        "voteAverage": "8.2",
+        "voteAverage": "8.1",
         "genre": [
           "科幻",
           "恐怖",
@@ -1106,6 +1106,11 @@
             "photo": "https://image.tmdb.org/t/p/w500/qiIizEalCI14Ztt9uXFVXqxecEO.jpg"
           },
           {
+            "name": "飯田基祐",
+            "char": "Akio Itagaki",
+            "photo": "https://image.tmdb.org/t/p/w500/iPz9FYCpT1XdUtBCE7qTiOD9dFx.jpg"
+          },
+          {
             "name": "Wes Wing",
             "char": "Major Harlan Gilbert",
             "photo": null
@@ -1119,11 +1124,6 @@
             "name": "Jordan Vogt-Roberts",
             "char": "US Soldier",
             "photo": "https://image.tmdb.org/t/p/w500/wHySqvxNrI0WEdH3bFPU1nHdY7x.jpg"
-          },
-          {
-            "name": "Michael Arias",
-            "char": "Soldier",
-            "photo": "https://image.tmdb.org/t/p/w500/bUIviOV86MUZGJwK55dwrjYRWuV.jpg"
           }
         ],
         "crew": [
@@ -1157,7 +1157,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/smf7tL7UcRPfFSeFTbvii9sgNlp.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-          "voteAverage": "8.2",
+          "voteAverage": "8.1",
           "trailerKey": null,
           "imdbId": "tt34384661",
           "countries": [
@@ -1225,6 +1225,11 @@
               "photo": "https://image.tmdb.org/t/p/w500/qiIizEalCI14Ztt9uXFVXqxecEO.jpg"
             },
             {
+              "name": "飯田基祐",
+              "char": "Akio Itagaki",
+              "photo": "https://image.tmdb.org/t/p/w500/iPz9FYCpT1XdUtBCE7qTiOD9dFx.jpg"
+            },
+            {
               "name": "Wes Wing",
               "char": "Major Harlan Gilbert",
               "photo": null
@@ -1238,11 +1243,6 @@
               "name": "Jordan Vogt-Roberts",
               "char": "US Soldier",
               "photo": "https://image.tmdb.org/t/p/w500/wHySqvxNrI0WEdH3bFPU1nHdY7x.jpg"
-            },
-            {
-              "name": "Michael Arias",
-              "char": "Soldier",
-              "photo": "https://image.tmdb.org/t/p/w500/bUIviOV86MUZGJwK55dwrjYRWuV.jpg"
             }
           ],
           "crew": [
@@ -4312,11 +4312,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 10000000,
@@ -4433,11 +4433,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 10000000,
@@ -6904,11 +6904,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -6998,11 +6998,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -9045,7 +9045,7 @@
           }
         ],
         "budget": 44000000,
-        "revenue": 91766064,
+        "revenue": 98357567,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Clayface",
@@ -9168,7 +9168,7 @@
             }
           ],
           "budget": 44000000,
-          "revenue": 91766064,
+          "revenue": 98357567,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Clayface",
@@ -9520,8 +9520,8 @@
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "rt": {
-            "source": "mdblist",
-            "votes": 303,
+            "source": "omdb",
+            "votes": 0,
             "lastChanged": "2026-09-23T20:05:17.517927+08:00"
           },
           "mc": {
@@ -10605,12 +10605,12 @@
         ],
         "crew": [
           {
-            "name": "路陽",
-            "job": "Director"
-          },
-          {
             "name": "裏則林",
             "job": "Screenplay"
+          },
+          {
+            "name": "路陽",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -10723,12 +10723,12 @@
           ],
           "crew": [
             {
-              "name": "路陽",
-              "job": "Director"
-            },
-            {
               "name": "裏則林",
               "job": "Screenplay"
+            },
+            {
+              "name": "路陽",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -12594,13 +12594,13 @@
         "duration": 117,
         "synopsis": "經濟拮据的作家洛玟受聘為代筆，前往偏遠的克勞弗宅邸，替因意外無法完成作品的作家薇若蒂續寫小說。然而在整理資料的過程中，洛玟意外發現一份疑似自傳手稿，內容揭露出令人不寒而慄的祕密與扭曲情感。當真相逐步浮現，她開始質疑眼前的一切，究竟是創作虛構還是真實告白？在慾望與恐懼交織之下，界線逐漸崩解。",
         "imdb": "",
-        "rt": "31%",
+        "rt": "32%",
         "mc": "44",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 189,
-            "lastChanged": "2026-10-15T01:36:54.428764+08:00"
+            "votes": 190,
+            "lastChanged": "2026-11-08T06:17:06.297981+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -12963,7 +12963,7 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 110828497,
+        "revenue": 111015502,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Other Mommy",
@@ -13080,7 +13080,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 110828497,
+          "revenue": 111015502,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Other Mommy",
@@ -14769,7 +14769,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 344,
+            "votes": 345,
             "lastChanged": "2026-11-06T04:17:18.864038+08:00"
           },
           "mc": {
@@ -15631,12 +15631,12 @@
         ],
         "crew": [
           {
-            "name": "David Ayer",
-            "job": "Director"
-          },
-          {
             "name": "Cameron Alexander",
             "job": "Writer"
+          },
+          {
+            "name": "David Ayer",
+            "job": "Director"
           }
         ],
         "budget": 82000000,
@@ -15694,12 +15694,12 @@
           ],
           "crew": [
             {
-              "name": "David Ayer",
-              "job": "Director"
-            },
-            {
               "name": "Cameron Alexander",
               "job": "Writer"
+            },
+            {
+              "name": "David Ayer",
+              "job": "Director"
             }
           ],
           "budget": 82000000,
@@ -27300,7 +27300,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
-        "voteAverage": "7.0",
+        "voteAverage": "7.2",
         "genre": [
           "動畫",
           "奇幻",
@@ -27446,7 +27446,7 @@
           "synopsis": "延續蘇斯博士奇妙又異想天開的傳統，兒童名著《戴帽子的貓》首次以動畫長片的形式躍上大銀幕，這是一場史詩般的瘋狂冒險旅程，充滿創意點子、惡作劇與奇幻魔法。戴帽子的貓接下了迄今最艱鉅的任務：為蓋比和賽巴斯汀這對姊弟加油打氣。對這位闖禍精來說，這可能是他證明自己的最後機會……否則他就會失去他的魔法帽！",
           "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
-          "voteAverage": "7.0",
+          "voteAverage": "7.2",
           "trailerKey": "L8j4Xmx7Nvs",
           "imdbId": "tt2321555",
           "countries": [
@@ -27578,7 +27578,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/qcdqAYEypAZtBwDkE5gCskyrYR9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
-        "voteAverage": "8.9",
+        "voteAverage": "8.8",
         "genre": [
           "劇情",
           "歷史"
@@ -27694,7 +27694,7 @@
           "synopsis": "1970年代，寄居紐約、屢屢碰壁的落魄演員席維斯史特龍，堅信自己不只是寫出拳擊手傳奇的人，更是註定要站上擂台的那個人——洛基。一無所有、女友莎夏即將臨盆，他卻把全部身家押上，面對製片公司砸下的天價酬勞，只要他交出劇本、讓出主角，史特龍一次次轉身說不。只為了「親自演出洛基」，這不只是他對命運下的戰帖，更是賭上人生的籌碼，只為一戰成名。",
           "poster": "https://image.tmdb.org/t/p/w500/qcdqAYEypAZtBwDkE5gCskyrYR9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
-          "voteAverage": "8.9",
+          "voteAverage": "8.8",
           "trailerKey": "8RwGOFzY1X8",
           "imdbId": "tt11995650",
           "countries": [
@@ -28568,7 +28568,7 @@
           {
             "name": "阿曼達·塞佛瑞",
             "char": "Self / Elizabeth Holmes",
-            "photo": "https://image.tmdb.org/t/p/w500/qvfwAfUfKfX4DraCgfn0YriiLO0.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg"
           },
           {
             "name": "克里斯托福·阿波特",
@@ -28655,7 +28655,7 @@
             {
               "name": "阿曼達·塞佛瑞",
               "char": "Self / Elizabeth Holmes",
-              "photo": "https://image.tmdb.org/t/p/w500/qvfwAfUfKfX4DraCgfn0YriiLO0.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg"
             },
             {
               "name": "克里斯托福·阿波特",
@@ -29217,11 +29217,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -29326,11 +29326,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
@@ -29623,7 +29623,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-        "voteAverage": "7.6",
+        "voteAverage": "7.5",
         "genre": [
           "愛情",
           "奇幻",
@@ -29770,7 +29770,7 @@
           "synopsis": "小鎮居民各司其職，無不以婚配嫁娶為志，一生期盼被頸圈套牢白紗的大喜之日。大齡漁婦小姑獨處招來訕笑，新娘拋出的喜蛋卻預言她將走上紅毯，漁婦就此向織柳匠許願一個丈夫。柳樹製成的情郎從天而降，漁婦從魚腥中脫身，陶醉於魚水之歡。專情又勇猛的柳樹男激起地方太太們的慾望、人夫們的嫉妒，異端夫婦將保守小鎮搞得天翻地覆，若完美情人能量身打造，還有什麼將橫空出世？",
           "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-          "voteAverage": "7.6",
+          "voteAverage": "7.5",
           "trailerKey": "0VQWpXozkv0",
           "imdbId": "tt29611136",
           "countries": [
@@ -29899,7 +29899,7 @@
           }
         ],
         "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/yp4fKJFjXZDBNPgFhmxlNTXhRtm.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
         "voteAverage": "9.0",
@@ -30024,7 +30024,7 @@
             "驚悚"
           ],
           "synopsis": "",
-          "poster": "https://image.tmdb.org/t/p/w500/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+          "poster": "https://image.tmdb.org/t/p/w500/yp4fKJFjXZDBNPgFhmxlNTXhRtm.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
           "voteAverage": "9.0",
           "trailerKey": null,
