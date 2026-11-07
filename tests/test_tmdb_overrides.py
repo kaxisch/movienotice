@@ -168,6 +168,8 @@ class TmdbOverrideTests(unittest.TestCase):
             "晚窒息": 1433055,
             "劇場版 「BanG Dream! Ave Mujica prima aurora」": 1614539,
             "活命水特弓隊": 1148558,
+            "六個說謊的大學生": 1545057,
+            "麥可傑克森：流行樂之王": 1139252,
             "加速世界 INFINITE BURST": 381873,
             "進擊的鼓手  4K重映_特別場2": 244786,
             "WHIPLASH_SPECIAL2": 244786,

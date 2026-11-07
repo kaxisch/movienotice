@@ -116,6 +116,25 @@ class ApplyManualTmdbReviewsTests(unittest.TestCase):
         self.assertEqual(len(matches), 1)
         self.assertEqual(matches[0]["tmdb_id"], 1706689)
 
+    def test_manual_date_override_corrects_audit_date(self):
+        rows = [
+            reviews.AUDIT_HEADERS,
+            ["tmdb_date_mismatch", "憤怒鳥玩電影3", "2027-12-31", "The Angry Birds Movie 3", ""],
+        ]
+        overrides = {
+            "title:憤怒鳥玩電影3": {
+                "tmdb_id": 1300926,
+                "release_date_tw": "2026-12-31",
+                "source_titles": ["憤怒鳥玩電影3", "The Angry Birds Movie 3"],
+            }
+        }
+
+        matches = reviews.manual_matches_from_rows(rows, overrides, "2026-11-07")
+        updated = reviews.updated_audit_rows(rows, matches)
+
+        self.assertEqual(matches[0]["release_date_tw"], "2026-12-31")
+        self.assertEqual(updated[1][2], "2026-12-31")
+
 
 if __name__ == "__main__":
     unittest.main()

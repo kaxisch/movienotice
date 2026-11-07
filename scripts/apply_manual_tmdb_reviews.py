@@ -102,7 +102,9 @@ def manual_matches_from_rows(rows, overrides, audit_date, audit_complete=False):
             continue
         tmdb_id = int(override["tmdb_id"])
         title_zh = str(override.get("title_zh") or movie["title_zh"]).strip()
-        release_date = str(item.get("台灣上映日期", "")).strip()
+        release_date = str(
+            override.get("release_date_tw") or item.get("台灣上映日期", "")
+        ).strip()
         matches.append({
             "row_number": row_number,
             "tmdb_id": tmdb_id,
@@ -160,6 +162,7 @@ def updated_audit_rows(rows, matches):
             updated[index].append("")
         updated[index][0] = MANUAL_MATCH_STATUS
         updated[index][1] = match["title_zh"]
+        updated[index][2] = match["release_date_tw"]
         updated[index][4] = weekly.tmdb_movie_url(match["tmdb_id"])
         updated[index][6] = "人工確認 TMDB 配對；由 Refresh 驗證台灣院線日期"
     return updated
