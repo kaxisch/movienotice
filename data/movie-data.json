@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T15:07:25.288883+08:00",
+  "generated_at": "2026-11-10T04:01:02.938122+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 91,
@@ -485,11 +485,11 @@
         "crew": [
           {
             "name": "三島有紀子",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "三島有紀子",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -608,11 +608,11 @@
           "crew": [
             {
               "name": "三島有紀子",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "三島有紀子",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -1013,16 +1013,16 @@
         ],
         "crew": [
           {
-            "name": "Manuel Bauer",
+            "name": "Philip Delaquis",
+            "job": "Writer"
+          },
+          {
+            "name": "Barbara Miller",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
-          },
-          {
-            "name": "Philip Delaquis",
-            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -1061,16 +1061,16 @@
           ],
           "crew": [
             {
-              "name": "Manuel Bauer",
+              "name": "Philip Delaquis",
+              "job": "Writer"
+            },
+            {
+              "name": "Barbara Miller",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
-            },
-            {
-              "name": "Philip Delaquis",
-              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -1102,14 +1102,14 @@
         "poster": "https://image.tmdb.org/t/p/w500/smf7tL7UcRPfFSeFTbvii9sgNlp.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-        "voteAverage": "8.0",
+        "voteAverage": "7.9",
         "genre": [
           "科幻",
           "恐怖",
           "動作"
         ],
-        "duration": 135,
-        "synopsis": "戰爭讓日本歸零，而哥吉拉將一切推向負數深淵。兩年過去，日本歷經無數艱難掙扎，努力重建家園，終於一步步找回原本的日常。就在人類好不容易守住得來不易的和平之際，新的威脅驟然襲來，瞬間粉碎了希望。這一次，沒有第三次機會。一切，將在此結束。",
+        "duration": 140,
+        "synopsis": "戰爭讓日本歸零，而哥吉拉將一切推向負數深淵。兩年過去，日本歷經無數艱難掙扎，努力重建家園，終於一步步找回原本的日常。就在人類好不容易守住得來不易的和平之際，新的威脅驟然襲來，瞬間粉碎了希望。",
         "imdb": "",
         "rt": "90%",
         "mc": "74",
@@ -1125,7 +1125,7 @@
             "lastChanged": "2026-11-06T19:28:46.924765+08:00"
           }
         },
-        "trailerKey": null,
+        "trailerKey": "ej4rt2o9OlA",
         "cast": [
           {
             "name": "神木隆之介",
@@ -1219,7 +1219,7 @@
           }
         ],
         "budget": 15000000,
-        "revenue": 63000000,
+        "revenue": 63610000,
         "status": "Released",
         "origLang": "ja",
         "origTitle": "ゴジラ-0.0",
@@ -1230,17 +1230,17 @@
           "Japan"
         ],
         "detail": {
-          "duration": 135,
+          "duration": 140,
           "genres": [
             "科幻",
             "恐怖",
             "動作"
           ],
-          "synopsis": "戰爭讓日本歸零，而哥吉拉將一切推向負數深淵。兩年過去，日本歷經無數艱難掙扎，努力重建家園，終於一步步找回原本的日常。就在人類好不容易守住得來不易的和平之際，新的威脅驟然襲來，瞬間粉碎了希望。這一次，沒有第三次機會。一切，將在此結束。",
+          "synopsis": "戰爭讓日本歸零，而哥吉拉將一切推向負數深淵。兩年過去，日本歷經無數艱難掙扎，努力重建家園，終於一步步找回原本的日常。就在人類好不容易守住得來不易的和平之際，新的威脅驟然襲來，瞬間粉碎了希望。",
           "poster": "https://image.tmdb.org/t/p/w500/smf7tL7UcRPfFSeFTbvii9sgNlp.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-          "voteAverage": "8.0",
-          "trailerKey": null,
+          "voteAverage": "7.9",
+          "trailerKey": "ej4rt2o9OlA",
           "imdbId": "tt34384661",
           "countries": [
             "Japan"
@@ -1338,7 +1338,7 @@
             }
           ],
           "budget": 15000000,
-          "revenue": 63000000,
+          "revenue": 63610000,
           "status": "Released",
           "origLang": "ja",
           "origTitle": "ゴジラ-0.0",
@@ -3051,11 +3051,11 @@
             "job": "Director"
           },
           {
-            "name": "姜文",
+            "name": "述平",
             "job": "Screenplay"
           },
           {
-            "name": "Li Bukong",
+            "name": "姜文",
             "job": "Screenplay"
           }
         ],
@@ -3192,11 +3192,11 @@
               "job": "Director"
             },
             {
-              "name": "姜文",
+              "name": "述平",
               "job": "Screenplay"
             },
             {
-              "name": "Li Bukong",
+              "name": "姜文",
               "job": "Screenplay"
             }
           ],
@@ -3840,11 +3840,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 69000000,
@@ -3968,11 +3968,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 69000000,
@@ -4394,11 +4394,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 10000000,
@@ -4515,11 +4515,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 10000000,
@@ -5259,7 +5259,7 @@
         "origLang": "zh",
         "origTitle": "世紀初戀 楊麗花",
         "platforms": [],
-        "popularity": 0.7822,
+        "popularity": 0.6097,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -6515,11 +6515,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -6637,11 +6637,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -6755,11 +6755,11 @@
         ],
         "crew": [
           {
-            "name": "吉野弘幸",
+            "name": "川原礫",
             "job": "Screenplay"
           },
           {
-            "name": "川原礫",
+            "name": "吉野弘幸",
             "job": "Screenplay"
           },
           {
@@ -6858,11 +6858,11 @@
           ],
           "crew": [
             {
-              "name": "吉野弘幸",
+              "name": "川原礫",
               "job": "Screenplay"
             },
             {
-              "name": "川原礫",
+              "name": "吉野弘幸",
               "job": "Screenplay"
             },
             {
@@ -6912,7 +6912,7 @@
         "duration": 85,
         "synopsis": "一場註定消滅全宇宙同性戀的「直男病毒」正在巴黎街頭擴散！當健身網紅「超完美吉姆」遇上嬌弱少年盧西安，截然不同的兩人，攜手踏上找尋解藥的混亂冒險……",
         "imdb": "7.6",
-        "rt": "95%",
+        "rt": "96%",
         "mc": "61",
         "ratingMeta": {
           "imdb": {
@@ -6921,9 +6921,9 @@
             "lastChanged": "2026-09-21T07:30:53.814823+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
-            "lastChanged": "2026-11-04T19:32:14.378915+08:00"
+            "source": "mdblist",
+            "votes": 24,
+            "lastChanged": "2026-11-10T04:01:02.938122+08:00"
           },
           "mc": {
             "source": "omdb",
@@ -9711,7 +9711,7 @@
         "origLang": "en",
         "origTitle": "Whiplash",
         "platforms": [],
-        "popularity": 27.9178,
+        "popularity": 27.5579,
         "imdbId": "tt2582802",
         "countries": [
           "United States of America"
@@ -9958,7 +9958,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 1.8599,
+        "popularity": 1.7951,
         "imdbId": "tt28766949",
         "countries": [
           "Thailand"
@@ -10687,12 +10687,12 @@
         ],
         "crew": [
           {
-            "name": "路陽",
-            "job": "Director"
-          },
-          {
             "name": "裏則林",
             "job": "Screenplay"
+          },
+          {
+            "name": "路陽",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -10701,7 +10701,7 @@
         "origLang": "zh",
         "origTitle": "刺杀小说家2",
         "platforms": [],
-        "popularity": 3.2645,
+        "popularity": 2.7414,
         "imdbId": "tt33095008",
         "countries": [
           "China"
@@ -10805,12 +10805,12 @@
           ],
           "crew": [
             {
-              "name": "路陽",
-              "job": "Director"
-            },
-            {
               "name": "裏則林",
               "job": "Screenplay"
+            },
+            {
+              "name": "路陽",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -10850,7 +10850,7 @@
         "duration": 120,
         "synopsis": "1993年，昔日並肩作戰卻早已分道揚鑣的街頭格鬥家隆與肯麥司特，因為受到一名神祕女子春麗的招募，再度參加下一屆世界戰士格鬥大會，這是一場拳頭、命運與怒火碰撞的殘酷對決。但是在這場生死大決鬥的背後，潛藏著一個致命陰謀，迫使他們不得不正面交鋒，並且面對各自過去的心魔。如果他們無法克服這一切，那就會GAME OVER遊戲結束！",
         "imdb": "6.2",
-        "rt": "41%",
+        "rt": "42%",
         "mc": "43",
         "ratingMeta": {
           "imdb": {
@@ -10860,8 +10860,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 145,
-            "lastChanged": "2026-10-23T13:19:56.610899+08:00"
+            "votes": 146,
+            "lastChanged": "2026-11-10T04:01:02.938122+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -12016,7 +12016,7 @@
           }
         ],
         "budget": 0,
-        "revenue": 8776000,
+        "revenue": 10650000,
         "status": "Released",
         "origLang": "ja",
         "origTitle": "汝、星のごとく",
@@ -12099,7 +12099,7 @@
             }
           ],
           "budget": 0,
-          "revenue": 8776000,
+          "revenue": 10650000,
           "status": "Released",
           "origLang": "ja",
           "origTitle": "汝、星のごとく",
@@ -12404,8 +12404,8 @@
             "lastChanged": "2026-10-08T18:56:55.425119+08:00"
           },
           "rt": {
-            "source": "omdb",
-            "votes": 0,
+            "source": "mdblist",
+            "votes": 75,
             "lastChanged": "2026-10-04T08:05:09.081153+08:00"
           },
           "mc": {
@@ -15108,7 +15108,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-        "voteAverage": "7.9",
+        "voteAverage": "8.0",
         "genre": [
           "動畫",
           "冒險",
@@ -15240,7 +15240,12 @@
         "status": "Released",
         "origLang": "en",
         "origTitle": "Forgotten Island",
-        "platforms": [],
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+          }
+        ],
         "popularity": 74.5189,
         "imdbId": "tt36583977",
         "countries": [
@@ -15258,7 +15263,7 @@
           "synopsis": "喬和蕾莎在慶祝她們共同相處的最後一晚的時候，意外發現一道神祕的傳送門，把她們帶往奇幻的納卡利島，那裡充滿她們從菲律賓家人述說的故事中聽到的各種魔法與神話生物。當她們發現回家的代價竟然是抹去彼此友情的所有記憶時，她們就必須在永遠遺忘對方之前，分秒必爭地盡快找到離開小島的方法。",
           "poster": "https://image.tmdb.org/t/p/w500/7m66kXWc767whPoBl0vTTmvsqa3.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-          "voteAverage": "7.9",
+          "voteAverage": "8.0",
           "trailerKey": "WII6-Ss-kTM",
           "imdbId": "tt36583977",
           "countries": [
@@ -15365,7 +15370,12 @@
           "status": "Released",
           "origLang": "en",
           "origTitle": "Forgotten Island",
-          "platforms": []
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+            }
+          ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1465063?language=zh-TW",
         "atmoviesId": "",
@@ -15397,7 +15407,7 @@
         "duration": 146,
         "synopsis": "現實的生活是痛苦的，但至少我有音樂、還有虛擬的網路世界！逃避現實生活的日本少年蓮見，歌手莉莉的音樂是他心靈的慰藉，而「莉莉狂」的BBS站台，更是他寄託青春的世界，只是當虛擬與現實的世界一同崩解時，除了導向青春的死亡，還剩下什麼？岩井俊二藉由王菲的靈感所發展而成的電影，大膽解剖日本青少年的網路文化與音樂狂潮，超越一貫的純美浪漫，詩一般的影像與文字譜下少年的私語心曲。",
         "imdb": "7.5",
-        "rt": "70%",
+        "rt": "68%",
         "mc": "73",
         "ratingMeta": {
           "imdb": {
@@ -15407,8 +15417,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 40,
-            "lastChanged": "2026-08-29T16:52:04.363481+08:00"
+            "votes": 37,
+            "lastChanged": "2026-11-10T04:01:02.938122+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -15515,7 +15525,7 @@
         "origLang": "ja",
         "origTitle": "リリイ・シュシュのすべて",
         "platforms": [],
-        "popularity": 8.4587,
+        "popularity": 6.2216,
         "imdbId": "tt0297721",
         "countries": [
           "Japan"
@@ -15726,7 +15736,12 @@
         "status": "Released",
         "origLang": "en",
         "origTitle": "Heart of the Beast",
-        "platforms": [],
+        "platforms": [
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+          }
+        ],
         "popularity": 410.9194,
         "imdbId": "tt7526136",
         "countries": [
@@ -15789,7 +15804,12 @@
           "status": "Released",
           "origLang": "en",
           "origTitle": "Heart of the Beast",
-          "platforms": []
+          "platforms": [
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+            }
+          ]
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1263337?language=zh-TW",
         "atmoviesId": "",
@@ -20710,7 +20730,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/v4m63Ymj3didisk3OthFosIzXh7.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/t8twfnytLPitdJzNVU1yjP4gjD7.jpg",
-        "voteAverage": "6.7",
+        "voteAverage": "7.0",
         "genre": [
           "科幻",
           "驚悚",
@@ -20835,7 +20855,7 @@
           "synopsis": "看似平靜的高校突然發生奇異現象，有學生突然四肢著地、靜止不動，然後愈來愈多人著魔般加入，在操場疊起「人形金字塔」。平凡少女與暗戀的轉校生目睹集體瘋魔，才發現自己是少數清醒的人。當校方以紀律之名要求全體照辦，失常成為正常，盲從成為感染，原本習慣靜默旁觀、格格不入的他們，膽敢抵抗這股漩渦嗎？",
           "poster": "https://image.tmdb.org/t/p/w500/v4m63Ymj3didisk3OthFosIzXh7.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/t8twfnytLPitdJzNVU1yjP4gjD7.jpg",
-          "voteAverage": "6.7",
+          "voteAverage": "7.0",
           "trailerKey": "TFSnViEzt4k",
           "imdbId": "tt37694048",
           "countries": [
@@ -21371,7 +21391,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/vzwT9kHTAM9tMFmBjwO1hej1k0M.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/oveb9ughaDh4GkjmVHvSgFnEzlM.jpg",
-        "voteAverage": "4.0",
+        "voteAverage": "7.0",
         "genre": [
           "奇幻",
           "喜劇"
@@ -21496,7 +21516,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/vzwT9kHTAM9tMFmBjwO1hej1k0M.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/oveb9ughaDh4GkjmVHvSgFnEzlM.jpg",
-          "voteAverage": "4.0",
+          "voteAverage": "7.0",
           "trailerKey": "x5FVMUuZldc",
           "imdbId": "tt38773219",
           "countries": [
@@ -22754,6 +22774,11 @@
             "photo": "https://image.tmdb.org/t/p/w500/8RnNxrgffoNOu7ZHPSGvYnfjtdI.jpg"
           },
           {
+            "name": "麥肯娜·葛瑞絲",
+            "char": "Maysilee Donner / Merrilee Donner",
+            "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+          },
+          {
             "name": "雷夫·范恩斯",
             "char": "President Coriolanus Snow",
             "photo": "https://image.tmdb.org/t/p/w500/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
@@ -22762,6 +22787,11 @@
             "name": "傑西·普萊蒙",
             "char": "Plutarch Heavensbee",
             "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+          },
+          {
+            "name": "葛倫·克蘿絲",
+            "char": "Drusilla Sickle",
+            "photo": "https://image.tmdb.org/t/p/w500/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
           },
           {
             "name": "Whitney Peak",
@@ -22787,16 +22817,6 @@
             "name": "小凱文·哈里森",
             "char": "Beetee Latier",
             "photo": "https://image.tmdb.org/t/p/w500/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
-          },
-          {
-            "name": "麥肯娜·葛瑞絲",
-            "char": "Maysilee Donner / Merrilee Donner",
-            "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
-          },
-          {
-            "name": "葛倫·克蘿絲",
-            "char": "Drusilla Sickle",
-            "photo": "https://image.tmdb.org/t/p/w500/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
           },
           {
             "name": "莉莉·泰勒",
@@ -22879,6 +22899,11 @@
               "photo": "https://image.tmdb.org/t/p/w500/8RnNxrgffoNOu7ZHPSGvYnfjtdI.jpg"
             },
             {
+              "name": "麥肯娜·葛瑞絲",
+              "char": "Maysilee Donner / Merrilee Donner",
+              "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+            },
+            {
               "name": "雷夫·范恩斯",
               "char": "President Coriolanus Snow",
               "photo": "https://image.tmdb.org/t/p/w500/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
@@ -22887,6 +22912,11 @@
               "name": "傑西·普萊蒙",
               "char": "Plutarch Heavensbee",
               "photo": "https://image.tmdb.org/t/p/w500/og4I51GsuwohdPgoELOHVMMqMre.jpg"
+            },
+            {
+              "name": "葛倫·克蘿絲",
+              "char": "Drusilla Sickle",
+              "photo": "https://image.tmdb.org/t/p/w500/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
             },
             {
               "name": "Whitney Peak",
@@ -22912,16 +22942,6 @@
               "name": "小凱文·哈里森",
               "char": "Beetee Latier",
               "photo": "https://image.tmdb.org/t/p/w500/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"
-            },
-            {
-              "name": "麥肯娜·葛瑞絲",
-              "char": "Maysilee Donner / Merrilee Donner",
-              "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
-            },
-            {
-              "name": "葛倫·克蘿絲",
-              "char": "Drusilla Sickle",
-              "photo": "https://image.tmdb.org/t/p/w500/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg"
             },
             {
               "name": "莉莉·泰勒",
@@ -23531,7 +23551,7 @@
           }
         ],
         "budget": 0,
-        "revenue": 1271000,
+        "revenue": 2114000,
         "status": "Released",
         "origLang": "ja",
         "origTitle": "うるわしの宵の月",
@@ -23614,7 +23634,7 @@
             }
           ],
           "budget": 0,
-          "revenue": 1271000,
+          "revenue": 2114000,
           "status": "Released",
           "origLang": "ja",
           "origTitle": "うるわしの宵の月",
@@ -24045,7 +24065,7 @@
         "origLang": "te",
         "origTitle": "Bāhubali: The Epic",
         "platforms": [],
-        "popularity": 4.1714,
+        "popularity": 4.2265,
         "imdbId": "tt37893389",
         "countries": [
           "India"
@@ -25405,12 +25425,12 @@
         ],
         "crew": [
           {
-            "name": "露絲·鮑爾·賈華拉",
-            "job": "Screenplay"
-          },
-          {
             "name": "James Ivory",
             "job": "Director"
+          },
+          {
+            "name": "露絲·鮑爾·賈華拉",
+            "job": "Screenplay"
           }
         ],
         "budget": 3000000,
@@ -25523,12 +25543,12 @@
           ],
           "crew": [
             {
-              "name": "露絲·鮑爾·賈華拉",
-              "job": "Screenplay"
-            },
-            {
               "name": "James Ivory",
               "job": "Director"
+            },
+            {
+              "name": "露絲·鮑爾·賈華拉",
+              "job": "Screenplay"
             }
           ],
           "budget": 3000000,
@@ -27382,7 +27402,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
-        "voteAverage": "7.2",
+        "voteAverage": "7.1",
         "genre": [
           "動畫",
           "奇幻",
@@ -27497,11 +27517,11 @@
         ],
         "crew": [
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
@@ -27533,7 +27553,7 @@
           "synopsis": "延續蘇斯博士奇妙又異想天開的傳統，兒童名著《戴帽子的貓》首次以動畫長片的形式躍上大銀幕，這是一場史詩般的瘋狂冒險旅程，充滿創意點子、惡作劇與奇幻魔法。戴帽子的貓接下了迄今最艱鉅的任務：為蓋比和賽巴斯汀這對姊弟加油打氣。對這位闖禍精來說，這可能是他證明自己的最後機會……否則他就會失去他的魔法帽！",
           "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
-          "voteAverage": "7.2",
+          "voteAverage": "7.1",
           "trailerKey": "L8j4Xmx7Nvs",
           "imdbId": "tt2321555",
           "countries": [
@@ -27624,11 +27644,11 @@
           ],
           "crew": [
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
@@ -27673,13 +27693,13 @@
         "duration": 128,
         "synopsis": "1970年代，寄居紐約、屢屢碰壁的落魄演員席維斯史特龍，堅信自己不只是寫出拳擊手傳奇的人，更是註定要站上擂台的那個人——洛基。一無所有、女友莎夏即將臨盆，他卻把全部身家押上，面對製片公司砸下的天價酬勞，只要他交出劇本、讓出主角，史特龍一次次轉身說不。只為了「親自演出洛基」，這不只是他對命運下的戰帖，更是賭上人生的籌碼，只為一戰成名。",
         "imdb": "",
-        "rt": "88%",
+        "rt": "89%",
         "mc": "66",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 92,
-            "lastChanged": "2026-11-07T18:39:49.116970+08:00"
+            "votes": 97,
+            "lastChanged": "2026-11-10T04:01:02.938122+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -28626,7 +28646,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 208,
+            "votes": 209,
             "lastChanged": "2026-11-07T13:03:38.982632+08:00"
           },
           "mc": {
@@ -29076,7 +29096,7 @@
         "origLang": "en",
         "origTitle": "Avengers: Doomsday",
         "platforms": [],
-        "popularity": 88.8729,
+        "popularity": 86.8559,
         "imdbId": "tt21357150",
         "countries": [
           "United States of America"
@@ -29304,11 +29324,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -29413,11 +29433,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
@@ -29823,16 +29843,16 @@
         ],
         "crew": [
           {
-            "name": "Eleanor Wilson",
+            "name": "Alex Huston Fischer",
             "job": "Director"
           },
           {
             "name": "Eleanor Wilson",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Alex Huston Fischer",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 10000000,
@@ -29948,16 +29968,16 @@
           ],
           "crew": [
             {
-              "name": "Eleanor Wilson",
+              "name": "Alex Huston Fischer",
               "job": "Director"
             },
             {
               "name": "Eleanor Wilson",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Alex Huston Fischer",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 10000000,
