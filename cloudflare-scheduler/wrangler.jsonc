@@ -1,0 +1,13 @@
+{
+  "name": "movienotice-weekly-audit-scheduler",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-11-11",
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": [
+      "37 22 * * TUE,FRI"
+    ]
+  }
+}
