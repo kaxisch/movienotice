@@ -1,9 +1,6 @@
 name: Weekly Atmovies Audit
 
 on:
-  schedule:
-    # 06:37 Asia/Taipei every Wednesday and Saturday.
-    - cron: "37 22 * * 2,5"
   workflow_dispatch:
 
 permissions:
