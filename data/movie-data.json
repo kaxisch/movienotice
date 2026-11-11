@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T22:20:57.571119+08:00",
+  "generated_at": "2026-11-12T03:51:10.195870+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 85,
-    "soon_count": 70
+    "now_count": 84,
+    "soon_count": 73
   },
   "movies": {
     "now": [
@@ -633,6 +633,281 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 20453,
+        "titleZh": "三個傻瓜",
+        "titleEn": "3 Idiots",
+        "releaseDate": "2026-11-06",
+        "releaseYear": "2009",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-06",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/ffhjNsl9dzb6b3xQJGYiiUJBJTp.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/u7kuUaySqXBVAtqEl9vkTkAzHV9.jpg",
+        "voteAverage": "8.0",
+        "genre": [
+          "劇情",
+          "喜劇"
+        ],
+        "duration": 171,
+        "synopsis": "法罕和拉加展開了一段尋找失聯好友藍丘的奇妙旅程。在旅途中，他們遇到了一場久違的賭約、一場必須搗亂的婚禮，以及一場失控的葬禮。這次冒險同時也是一次內心的探索，他們回憶起藍丘——這位以獨特方式深深影響並改變了他們生活的朋友。藍丘曾經啟發他們創造性和獨立思考，如今他身在何處？最終，在雲霧繚繞的美麗山巒中，兩位朋友找到了這個祕密的答案。",
+        "imdb": "8.4",
+        "rt": "94%",
+        "mc": "67",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 490786,
+            "lastChanged": "2026-09-19T15:52:33.057374+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 18,
+            "lastChanged": "2026-09-19T15:52:33.057374+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 4,
+            "lastChanged": "2026-09-19T15:52:33.057374+08:00"
+          }
+        },
+        "trailerKey": "DvdmWJpfI8w",
+        "cast": [
+          {
+            "name": "आमिर ख़ान",
+            "char": "Ranchoddas \"Rancho\" Chanchad",
+            "photo": "https://image.tmdb.org/t/p/w500/6uiZSwi2kvd1jZ7X7Xz9W9VGuV4.jpg"
+          },
+          {
+            "name": "R. Madhavan",
+            "char": "Farhan Qureshi",
+            "photo": "https://image.tmdb.org/t/p/w500/gaDrAdXxIrbBRCd9cX8YvJDEuLb.jpg"
+          },
+          {
+            "name": "Sharman Joshi",
+            "char": "Raju Rastogi",
+            "photo": "https://image.tmdb.org/t/p/w500/mQr8ynFFVq08qgQ4aSNl5B0ko8v.jpg"
+          },
+          {
+            "name": "करीना कपूर खान",
+            "char": "Pia Sahastrabudhhe",
+            "photo": "https://image.tmdb.org/t/p/w500/kp9xnwDALUt6nuPBGuJHlvnxGnM.jpg"
+          },
+          {
+            "name": "博曼·伊蘭尼",
+            "char": "Viru \"Virus\" Sahastrabudhhe",
+            "photo": "https://image.tmdb.org/t/p/w500/5J7GiiNar9bg9rGYeA2L30JXE2W.jpg"
+          },
+          {
+            "name": "Omi Vaidya",
+            "char": "Chatur \"Silencer\" Ramalingam",
+            "photo": "https://image.tmdb.org/t/p/w500/G37HGmfBM8b6pTczZrpJmTFIGl.jpg"
+          },
+          {
+            "name": "Mona Singh",
+            "char": "Mona Sahastrabuddhe",
+            "photo": "https://image.tmdb.org/t/p/w500/fBl5KYnlKY8HDUqlTs64xbDZtU8.jpg"
+          },
+          {
+            "name": "Rahul Kumar",
+            "char": "Millimeter",
+            "photo": "https://image.tmdb.org/t/p/w500/pYw7c1T0ifdvWMUtUJl3GMkx4aP.jpg"
+          },
+          {
+            "name": "Parikshat Sahni",
+            "char": "Mr. Qureshi",
+            "photo": "https://image.tmdb.org/t/p/w500/wQs7zYQNahLrntjqd7aIrajnbpM.jpg"
+          },
+          {
+            "name": "Farida Dadi",
+            "char": "Mrs. Qureshi",
+            "photo": "https://image.tmdb.org/t/p/w500/uriqyktmJedfF7LHkiWhKh4IXe1.jpg"
+          },
+          {
+            "name": "Amardeep Jha",
+            "char": "Mrs. Rastogi",
+            "photo": "https://image.tmdb.org/t/p/w500/elvrWT75OcIK45N6rd9KkEM34Pe.jpg"
+          },
+          {
+            "name": "Mukund Bhatt",
+            "char": "Mr. Rastogi",
+            "photo": null
+          },
+          {
+            "name": "Javed Jaffrey",
+            "char": "Ranchoddas Shyamaldas Chanchad",
+            "photo": "https://image.tmdb.org/t/p/w500/5JvPPxLsDEUFy6qDVawM3Itl6NV.jpg"
+          },
+          {
+            "name": "Ali Fazal",
+            "char": "Joy Lobo",
+            "photo": "https://image.tmdb.org/t/p/w500/lLDmx3RDuMXObASvdFXeUh1GOgd.jpg"
+          },
+          {
+            "name": "Olivier Lafont",
+            "char": "Suhas Tandon",
+            "photo": null
+          },
+          {
+            "name": "Arun Bali",
+            "char": "Shamaldas Chanchad",
+            "photo": "https://image.tmdb.org/t/p/w500/v6QHrFQsgBlz52vJb3pxzjJa21b.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Rajkumar Hirani",
+            "job": "Screenplay"
+          },
+          {
+            "name": "Rajkumar Hirani",
+            "job": "Director"
+          },
+          {
+            "name": "Vidhu Vinod Chopra",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 50000000,
+        "revenue": 60262836,
+        "status": "Released",
+        "origLang": "hi",
+        "origTitle": "3 Idiots",
+        "platforms": [],
+        "popularity": 9.1186,
+        "imdbId": "tt1187043",
+        "countries": [
+          "India"
+        ],
+        "detail": {
+          "duration": 171,
+          "genres": [
+            "劇情",
+            "喜劇"
+          ],
+          "synopsis": "法罕和拉加展開了一段尋找失聯好友藍丘的奇妙旅程。在旅途中，他們遇到了一場久違的賭約、一場必須搗亂的婚禮，以及一場失控的葬禮。這次冒險同時也是一次內心的探索，他們回憶起藍丘——這位以獨特方式深深影響並改變了他們生活的朋友。藍丘曾經啟發他們創造性和獨立思考，如今他身在何處？最終，在雲霧繚繞的美麗山巒中，兩位朋友找到了這個祕密的答案。",
+          "poster": "https://image.tmdb.org/t/p/w500/ffhjNsl9dzb6b3xQJGYiiUJBJTp.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/u7kuUaySqXBVAtqEl9vkTkAzHV9.jpg",
+          "voteAverage": "8.0",
+          "trailerKey": "DvdmWJpfI8w",
+          "imdbId": "tt1187043",
+          "countries": [
+            "India"
+          ],
+          "cast": [
+            {
+              "name": "आमिर ख़ान",
+              "char": "Ranchoddas \"Rancho\" Chanchad",
+              "photo": "https://image.tmdb.org/t/p/w500/6uiZSwi2kvd1jZ7X7Xz9W9VGuV4.jpg"
+            },
+            {
+              "name": "R. Madhavan",
+              "char": "Farhan Qureshi",
+              "photo": "https://image.tmdb.org/t/p/w500/gaDrAdXxIrbBRCd9cX8YvJDEuLb.jpg"
+            },
+            {
+              "name": "Sharman Joshi",
+              "char": "Raju Rastogi",
+              "photo": "https://image.tmdb.org/t/p/w500/mQr8ynFFVq08qgQ4aSNl5B0ko8v.jpg"
+            },
+            {
+              "name": "करीना कपूर खान",
+              "char": "Pia Sahastrabudhhe",
+              "photo": "https://image.tmdb.org/t/p/w500/kp9xnwDALUt6nuPBGuJHlvnxGnM.jpg"
+            },
+            {
+              "name": "博曼·伊蘭尼",
+              "char": "Viru \"Virus\" Sahastrabudhhe",
+              "photo": "https://image.tmdb.org/t/p/w500/5J7GiiNar9bg9rGYeA2L30JXE2W.jpg"
+            },
+            {
+              "name": "Omi Vaidya",
+              "char": "Chatur \"Silencer\" Ramalingam",
+              "photo": "https://image.tmdb.org/t/p/w500/G37HGmfBM8b6pTczZrpJmTFIGl.jpg"
+            },
+            {
+              "name": "Mona Singh",
+              "char": "Mona Sahastrabuddhe",
+              "photo": "https://image.tmdb.org/t/p/w500/fBl5KYnlKY8HDUqlTs64xbDZtU8.jpg"
+            },
+            {
+              "name": "Rahul Kumar",
+              "char": "Millimeter",
+              "photo": "https://image.tmdb.org/t/p/w500/pYw7c1T0ifdvWMUtUJl3GMkx4aP.jpg"
+            },
+            {
+              "name": "Parikshat Sahni",
+              "char": "Mr. Qureshi",
+              "photo": "https://image.tmdb.org/t/p/w500/wQs7zYQNahLrntjqd7aIrajnbpM.jpg"
+            },
+            {
+              "name": "Farida Dadi",
+              "char": "Mrs. Qureshi",
+              "photo": "https://image.tmdb.org/t/p/w500/uriqyktmJedfF7LHkiWhKh4IXe1.jpg"
+            },
+            {
+              "name": "Amardeep Jha",
+              "char": "Mrs. Rastogi",
+              "photo": "https://image.tmdb.org/t/p/w500/elvrWT75OcIK45N6rd9KkEM34Pe.jpg"
+            },
+            {
+              "name": "Mukund Bhatt",
+              "char": "Mr. Rastogi",
+              "photo": null
+            },
+            {
+              "name": "Javed Jaffrey",
+              "char": "Ranchoddas Shyamaldas Chanchad",
+              "photo": "https://image.tmdb.org/t/p/w500/5JvPPxLsDEUFy6qDVawM3Itl6NV.jpg"
+            },
+            {
+              "name": "Ali Fazal",
+              "char": "Joy Lobo",
+              "photo": "https://image.tmdb.org/t/p/w500/lLDmx3RDuMXObASvdFXeUh1GOgd.jpg"
+            },
+            {
+              "name": "Olivier Lafont",
+              "char": "Suhas Tandon",
+              "photo": null
+            },
+            {
+              "name": "Arun Bali",
+              "char": "Shamaldas Chanchad",
+              "photo": "https://image.tmdb.org/t/p/w500/v6QHrFQsgBlz52vJb3pxzjJa21b.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Rajkumar Hirani",
+              "job": "Screenplay"
+            },
+            {
+              "name": "Rajkumar Hirani",
+              "job": "Director"
+            },
+            {
+              "name": "Vidhu Vinod Chopra",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 50000000,
+          "revenue": 60262836,
+          "status": "Released",
+          "origLang": "hi",
+          "origTitle": "3 Idiots",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/20453?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 304023,
         "titleZh": "樂園追放",
         "titleEn": "楽園追放 -Expelled from Paradise-",
@@ -866,16 +1141,16 @@
         ],
         "crew": [
           {
-            "name": "Barbara Miller",
-            "job": "Director"
-          },
-          {
-            "name": "Barbara Miller",
+            "name": "Manuel Bauer",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
+          },
+          {
+            "name": "Philip Delaquis",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -914,16 +1189,16 @@
           ],
           "crew": [
             {
-              "name": "Barbara Miller",
-              "job": "Director"
-            },
-            {
-              "name": "Barbara Miller",
+              "name": "Manuel Bauer",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
+            },
+            {
+              "name": "Philip Delaquis",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -2492,7 +2767,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/qf0gFuTgDlMsI5cJmpK1S15fFGF.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/v0T74v8LPZBSL247oGeTOp06tnm.jpg",
-        "voteAverage": "6.5",
+        "voteAverage": "7.0",
         "genre": [
           "動畫",
           "動作",
@@ -2581,7 +2856,7 @@
           "synopsis": "印有「東都鐵塔」的新版萬圓紙鈔問世，社會大眾為之沸騰。柯南與少年偵探團、阿笠博士、小蘭以及園子一同參觀日本紙幣印刷局的長野工廠。 另一方面，警視廳在命案現場發現偽鈔，隨即成立搜查本部。假鈔流通的消息震撼社會的同時，柯南與平次也前往疑似印製偽鈔的大阪。面對因偽造新鈔而引發的國家級危機，柯南將以史上最大規模的全明星陣容迎戰！",
           "poster": "https://image.tmdb.org/t/p/w500/qf0gFuTgDlMsI5cJmpK1S15fFGF.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/v0T74v8LPZBSL247oGeTOp06tnm.jpg",
-          "voteAverage": "6.5",
+          "voteAverage": "7.0",
           "trailerKey": "zQshv1-5Ni0",
           "imdbId": "tt46656123",
           "countries": [
@@ -2944,11 +3219,11 @@
             "job": "Director"
           },
           {
-            "name": "述平",
+            "name": "姜文",
             "job": "Screenplay"
           },
           {
-            "name": "姜文",
+            "name": "Li Bukong",
             "job": "Screenplay"
           }
         ],
@@ -3085,11 +3360,11 @@
               "job": "Director"
             },
             {
-              "name": "述平",
+              "name": "姜文",
               "job": "Screenplay"
             },
             {
-              "name": "姜文",
+              "name": "Li Bukong",
               "job": "Screenplay"
             }
           ],
@@ -4287,11 +4562,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 10000000,
@@ -4408,11 +4683,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 10000000,
@@ -4443,7 +4718,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/bySCyjQXNPgsnLTlgJpSMnRazPD.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/aezAUwTATFwXVvN1HUTglE8NGwu.jpg",
         "voteAverage": "5.9",
         "genre": [
           "動作",
@@ -4578,7 +4853,7 @@
           ],
           "synopsis": "功勳卓著的退伍老兵萊恩被指控犯下謀殺案，於是他駕駛跑車，與警方展開一場玩命關頭史詩級追逐戰！",
           "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/bySCyjQXNPgsnLTlgJpSMnRazPD.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/aezAUwTATFwXVvN1HUTglE8NGwu.jpg",
           "voteAverage": "5.9",
           "trailerKey": "XIdGnG-pMeA",
           "imdbId": "tt13611778",
@@ -6002,281 +6277,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 20453,
-        "titleZh": "三個傻瓜",
-        "titleEn": "3 Idiots",
-        "releaseDate": "2026-10-23",
-        "releaseYear": "2009",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-23",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/ffhjNsl9dzb6b3xQJGYiiUJBJTp.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/u7kuUaySqXBVAtqEl9vkTkAzHV9.jpg",
-        "voteAverage": "8.0",
-        "genre": [
-          "劇情",
-          "喜劇"
-        ],
-        "duration": 171,
-        "synopsis": "法罕和拉加展開了一段尋找失聯好友藍丘的奇妙旅程。在旅途中，他們遇到了一場久違的賭約、一場必須搗亂的婚禮，以及一場失控的葬禮。這次冒險同時也是一次內心的探索，他們回憶起藍丘——這位以獨特方式深深影響並改變了他們生活的朋友。藍丘曾經啟發他們創造性和獨立思考，如今他身在何處？最終，在雲霧繚繞的美麗山巒中，兩位朋友找到了這個祕密的答案。",
-        "imdb": "8.4",
-        "rt": "94%",
-        "mc": "67",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 490786,
-            "lastChanged": "2026-09-19T15:52:33.057374+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 18,
-            "lastChanged": "2026-09-19T15:52:33.057374+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 4,
-            "lastChanged": "2026-09-19T15:52:33.057374+08:00"
-          }
-        },
-        "trailerKey": "DvdmWJpfI8w",
-        "cast": [
-          {
-            "name": "आमिर ख़ान",
-            "char": "Ranchoddas \"Rancho\" Chanchad",
-            "photo": "https://image.tmdb.org/t/p/w500/6uiZSwi2kvd1jZ7X7Xz9W9VGuV4.jpg"
-          },
-          {
-            "name": "R. Madhavan",
-            "char": "Farhan Qureshi",
-            "photo": "https://image.tmdb.org/t/p/w500/gaDrAdXxIrbBRCd9cX8YvJDEuLb.jpg"
-          },
-          {
-            "name": "Sharman Joshi",
-            "char": "Raju Rastogi",
-            "photo": "https://image.tmdb.org/t/p/w500/mQr8ynFFVq08qgQ4aSNl5B0ko8v.jpg"
-          },
-          {
-            "name": "करीना कपूर खान",
-            "char": "Pia Sahastrabudhhe",
-            "photo": "https://image.tmdb.org/t/p/w500/kp9xnwDALUt6nuPBGuJHlvnxGnM.jpg"
-          },
-          {
-            "name": "博曼·伊蘭尼",
-            "char": "Viru \"Virus\" Sahastrabudhhe",
-            "photo": "https://image.tmdb.org/t/p/w500/5J7GiiNar9bg9rGYeA2L30JXE2W.jpg"
-          },
-          {
-            "name": "Omi Vaidya",
-            "char": "Chatur \"Silencer\" Ramalingam",
-            "photo": "https://image.tmdb.org/t/p/w500/G37HGmfBM8b6pTczZrpJmTFIGl.jpg"
-          },
-          {
-            "name": "Mona Singh",
-            "char": "Mona Sahastrabuddhe",
-            "photo": "https://image.tmdb.org/t/p/w500/fBl5KYnlKY8HDUqlTs64xbDZtU8.jpg"
-          },
-          {
-            "name": "Rahul Kumar",
-            "char": "Millimeter",
-            "photo": "https://image.tmdb.org/t/p/w500/pYw7c1T0ifdvWMUtUJl3GMkx4aP.jpg"
-          },
-          {
-            "name": "Parikshat Sahni",
-            "char": "Mr. Qureshi",
-            "photo": "https://image.tmdb.org/t/p/w500/wQs7zYQNahLrntjqd7aIrajnbpM.jpg"
-          },
-          {
-            "name": "Farida Dadi",
-            "char": "Mrs. Qureshi",
-            "photo": "https://image.tmdb.org/t/p/w500/uriqyktmJedfF7LHkiWhKh4IXe1.jpg"
-          },
-          {
-            "name": "Amardeep Jha",
-            "char": "Mrs. Rastogi",
-            "photo": "https://image.tmdb.org/t/p/w500/elvrWT75OcIK45N6rd9KkEM34Pe.jpg"
-          },
-          {
-            "name": "Mukund Bhatt",
-            "char": "Mr. Rastogi",
-            "photo": null
-          },
-          {
-            "name": "Javed Jaffrey",
-            "char": "Ranchoddas Shyamaldas Chanchad",
-            "photo": "https://image.tmdb.org/t/p/w500/5JvPPxLsDEUFy6qDVawM3Itl6NV.jpg"
-          },
-          {
-            "name": "Ali Fazal",
-            "char": "Joy Lobo",
-            "photo": "https://image.tmdb.org/t/p/w500/lLDmx3RDuMXObASvdFXeUh1GOgd.jpg"
-          },
-          {
-            "name": "Olivier Lafont",
-            "char": "Suhas Tandon",
-            "photo": null
-          },
-          {
-            "name": "Arun Bali",
-            "char": "Shamaldas Chanchad",
-            "photo": "https://image.tmdb.org/t/p/w500/v6QHrFQsgBlz52vJb3pxzjJa21b.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Rajkumar Hirani",
-            "job": "Director"
-          },
-          {
-            "name": "Rajkumar Hirani",
-            "job": "Screenplay"
-          },
-          {
-            "name": "Vidhu Vinod Chopra",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 50000000,
-        "revenue": 60262836,
-        "status": "Released",
-        "origLang": "hi",
-        "origTitle": "3 Idiots",
-        "platforms": [],
-        "popularity": 9.1186,
-        "imdbId": "tt1187043",
-        "countries": [
-          "India"
-        ],
-        "detail": {
-          "duration": 171,
-          "genres": [
-            "劇情",
-            "喜劇"
-          ],
-          "synopsis": "法罕和拉加展開了一段尋找失聯好友藍丘的奇妙旅程。在旅途中，他們遇到了一場久違的賭約、一場必須搗亂的婚禮，以及一場失控的葬禮。這次冒險同時也是一次內心的探索，他們回憶起藍丘——這位以獨特方式深深影響並改變了他們生活的朋友。藍丘曾經啟發他們創造性和獨立思考，如今他身在何處？最終，在雲霧繚繞的美麗山巒中，兩位朋友找到了這個祕密的答案。",
-          "poster": "https://image.tmdb.org/t/p/w500/ffhjNsl9dzb6b3xQJGYiiUJBJTp.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/u7kuUaySqXBVAtqEl9vkTkAzHV9.jpg",
-          "voteAverage": "8.0",
-          "trailerKey": "DvdmWJpfI8w",
-          "imdbId": "tt1187043",
-          "countries": [
-            "India"
-          ],
-          "cast": [
-            {
-              "name": "आमिर ख़ान",
-              "char": "Ranchoddas \"Rancho\" Chanchad",
-              "photo": "https://image.tmdb.org/t/p/w500/6uiZSwi2kvd1jZ7X7Xz9W9VGuV4.jpg"
-            },
-            {
-              "name": "R. Madhavan",
-              "char": "Farhan Qureshi",
-              "photo": "https://image.tmdb.org/t/p/w500/gaDrAdXxIrbBRCd9cX8YvJDEuLb.jpg"
-            },
-            {
-              "name": "Sharman Joshi",
-              "char": "Raju Rastogi",
-              "photo": "https://image.tmdb.org/t/p/w500/mQr8ynFFVq08qgQ4aSNl5B0ko8v.jpg"
-            },
-            {
-              "name": "करीना कपूर खान",
-              "char": "Pia Sahastrabudhhe",
-              "photo": "https://image.tmdb.org/t/p/w500/kp9xnwDALUt6nuPBGuJHlvnxGnM.jpg"
-            },
-            {
-              "name": "博曼·伊蘭尼",
-              "char": "Viru \"Virus\" Sahastrabudhhe",
-              "photo": "https://image.tmdb.org/t/p/w500/5J7GiiNar9bg9rGYeA2L30JXE2W.jpg"
-            },
-            {
-              "name": "Omi Vaidya",
-              "char": "Chatur \"Silencer\" Ramalingam",
-              "photo": "https://image.tmdb.org/t/p/w500/G37HGmfBM8b6pTczZrpJmTFIGl.jpg"
-            },
-            {
-              "name": "Mona Singh",
-              "char": "Mona Sahastrabuddhe",
-              "photo": "https://image.tmdb.org/t/p/w500/fBl5KYnlKY8HDUqlTs64xbDZtU8.jpg"
-            },
-            {
-              "name": "Rahul Kumar",
-              "char": "Millimeter",
-              "photo": "https://image.tmdb.org/t/p/w500/pYw7c1T0ifdvWMUtUJl3GMkx4aP.jpg"
-            },
-            {
-              "name": "Parikshat Sahni",
-              "char": "Mr. Qureshi",
-              "photo": "https://image.tmdb.org/t/p/w500/wQs7zYQNahLrntjqd7aIrajnbpM.jpg"
-            },
-            {
-              "name": "Farida Dadi",
-              "char": "Mrs. Qureshi",
-              "photo": "https://image.tmdb.org/t/p/w500/uriqyktmJedfF7LHkiWhKh4IXe1.jpg"
-            },
-            {
-              "name": "Amardeep Jha",
-              "char": "Mrs. Rastogi",
-              "photo": "https://image.tmdb.org/t/p/w500/elvrWT75OcIK45N6rd9KkEM34Pe.jpg"
-            },
-            {
-              "name": "Mukund Bhatt",
-              "char": "Mr. Rastogi",
-              "photo": null
-            },
-            {
-              "name": "Javed Jaffrey",
-              "char": "Ranchoddas Shyamaldas Chanchad",
-              "photo": "https://image.tmdb.org/t/p/w500/5JvPPxLsDEUFy6qDVawM3Itl6NV.jpg"
-            },
-            {
-              "name": "Ali Fazal",
-              "char": "Joy Lobo",
-              "photo": "https://image.tmdb.org/t/p/w500/lLDmx3RDuMXObASvdFXeUh1GOgd.jpg"
-            },
-            {
-              "name": "Olivier Lafont",
-              "char": "Suhas Tandon",
-              "photo": null
-            },
-            {
-              "name": "Arun Bali",
-              "char": "Shamaldas Chanchad",
-              "photo": "https://image.tmdb.org/t/p/w500/v6QHrFQsgBlz52vJb3pxzjJa21b.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Rajkumar Hirani",
-              "job": "Director"
-            },
-            {
-              "name": "Rajkumar Hirani",
-              "job": "Screenplay"
-            },
-            {
-              "name": "Vidhu Vinod Chopra",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 50000000,
-          "revenue": 60262836,
-          "status": "Released",
-          "origLang": "hi",
-          "origTitle": "3 Idiots",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/20453?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 381873,
         "titleZh": "加速世界 INFINITE BURST",
         "titleEn": "アクセル・ワールド INFINITE∞BURST",
@@ -6602,11 +6602,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -6696,11 +6696,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -11697,193 +11697,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1467982,
-        "titleZh": "純愛上等！",
-        "titleEn": "純愛上等！",
-        "releaseDate": "2026-10-10",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-10-10",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/4WZ2Ls3cvx0IM6FuTfv7PHWrPLy.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/gEMeRXSlvdGHXlWQfP7kRqhAZeA.jpg",
-        "voteAverage": "8.7",
-        "genre": [
-          "愛情",
-          "喜劇"
-        ],
-        "duration": 101,
-        "synopsis": "開朗又重情義的圓頂著一頭金毛，是紅櫻高中的混混首腦，鐵齒自己根本沒時間談戀愛；冷靜又超然的美鶴總身著筆挺校服，是白岩高校的領頭羊，卻成了圓奶奶雜貨舖的新房客。本該是世仇，竟從見面第一天就小鹿亂撞，一熱一冷的兩人出奇合拍。然而，隨著他們越走越近，不堪過去也被再度揭開，那是圓決意不再打架的起點，也是美鶴無論如何都難以啟齒的孤獨祕密……",
-        "imdb": "6.1",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 17,
-            "lastChanged": "2026-11-11T19:25:48.651033+08:00"
-          }
-        },
-        "trailerKey": "7Z5Dc7oyqPE",
-        "cast": [
-          {
-            "name": "山中柔太朗",
-            "char": "Mitsuru Sato",
-            "photo": "https://image.tmdb.org/t/p/w500/4XuntAxbDhzkPjMF0uqQpP3wByf.jpg"
-          },
-          {
-            "name": "高松Aloha",
-            "char": "Madoka Kamei",
-            "photo": "https://image.tmdb.org/t/p/w500/7lS8ABaS3A1CzWRkSuWjj4NXMbh.jpg"
-          },
-          {
-            "name": "白鳥晴都",
-            "char": "Itsuki Kamei",
-            "photo": "https://image.tmdb.org/t/p/w500/kuqDz3eIcawaveHiigbYBV5ePw3.jpg"
-          },
-          {
-            "name": "浅野竣哉",
-            "char": "Kento Honda",
-            "photo": "https://image.tmdb.org/t/p/w500/bA51Bn99TkKnhsrKdMKiUby3aQt.jpg"
-          },
-          {
-            "name": "Daichi Kodaira",
-            "char": "Kazuo Ipponmatsu",
-            "photo": "https://image.tmdb.org/t/p/w500/yMhh1tvPBGTxmo7z3spS7wSk7lJ.jpg"
-          },
-          {
-            "name": "高橋璃央",
-            "char": "Keita Yamamoto",
-            "photo": "https://image.tmdb.org/t/p/w500/72CxCJRbYsWA4GfIRUK3YJOfJn5.jpg"
-          },
-          {
-            "name": "葵揚",
-            "char": "Ryunosuke Nakano",
-            "photo": "https://image.tmdb.org/t/p/w500/uZTbWFChfUFxhKatdj3Pt2jeja7.jpg"
-          },
-          {
-            "name": "Okawa Taiga",
-            "char": "Sarutoki Tsuchiya",
-            "photo": "https://image.tmdb.org/t/p/w500/imLWUFDitMJUJekZ2st1K80PO5R.jpg"
-          },
-          {
-            "name": "早瀬圭人",
-            "char": "Joichiro Todo",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "八重樫風雅",
-            "job": "Director"
-          },
-          {
-            "name": "川崎僚",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "ja",
-        "origTitle": "純愛上等！",
-        "platforms": [],
-        "popularity": 0.5194,
-        "imdbId": "tt42289343",
-        "countries": [
-          "Japan"
-        ],
-        "detail": {
-          "duration": 101,
-          "genres": [
-            "愛情",
-            "喜劇"
-          ],
-          "synopsis": "開朗又重情義的圓頂著一頭金毛，是紅櫻高中的混混首腦，鐵齒自己根本沒時間談戀愛；冷靜又超然的美鶴總身著筆挺校服，是白岩高校的領頭羊，卻成了圓奶奶雜貨舖的新房客。本該是世仇，竟從見面第一天就小鹿亂撞，一熱一冷的兩人出奇合拍。然而，隨著他們越走越近，不堪過去也被再度揭開，那是圓決意不再打架的起點，也是美鶴無論如何都難以啟齒的孤獨祕密……",
-          "poster": "https://image.tmdb.org/t/p/w500/4WZ2Ls3cvx0IM6FuTfv7PHWrPLy.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/gEMeRXSlvdGHXlWQfP7kRqhAZeA.jpg",
-          "voteAverage": "8.7",
-          "trailerKey": "7Z5Dc7oyqPE",
-          "imdbId": "tt42289343",
-          "countries": [
-            "Japan"
-          ],
-          "cast": [
-            {
-              "name": "山中柔太朗",
-              "char": "Mitsuru Sato",
-              "photo": "https://image.tmdb.org/t/p/w500/4XuntAxbDhzkPjMF0uqQpP3wByf.jpg"
-            },
-            {
-              "name": "高松Aloha",
-              "char": "Madoka Kamei",
-              "photo": "https://image.tmdb.org/t/p/w500/7lS8ABaS3A1CzWRkSuWjj4NXMbh.jpg"
-            },
-            {
-              "name": "白鳥晴都",
-              "char": "Itsuki Kamei",
-              "photo": "https://image.tmdb.org/t/p/w500/kuqDz3eIcawaveHiigbYBV5ePw3.jpg"
-            },
-            {
-              "name": "浅野竣哉",
-              "char": "Kento Honda",
-              "photo": "https://image.tmdb.org/t/p/w500/bA51Bn99TkKnhsrKdMKiUby3aQt.jpg"
-            },
-            {
-              "name": "Daichi Kodaira",
-              "char": "Kazuo Ipponmatsu",
-              "photo": "https://image.tmdb.org/t/p/w500/yMhh1tvPBGTxmo7z3spS7wSk7lJ.jpg"
-            },
-            {
-              "name": "高橋璃央",
-              "char": "Keita Yamamoto",
-              "photo": "https://image.tmdb.org/t/p/w500/72CxCJRbYsWA4GfIRUK3YJOfJn5.jpg"
-            },
-            {
-              "name": "葵揚",
-              "char": "Ryunosuke Nakano",
-              "photo": "https://image.tmdb.org/t/p/w500/uZTbWFChfUFxhKatdj3Pt2jeja7.jpg"
-            },
-            {
-              "name": "Okawa Taiga",
-              "char": "Sarutoki Tsuchiya",
-              "photo": "https://image.tmdb.org/t/p/w500/imLWUFDitMJUJekZ2st1K80PO5R.jpg"
-            },
-            {
-              "name": "早瀬圭人",
-              "char": "Joichiro Todo",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "八重樫風雅",
-              "job": "Director"
-            },
-            {
-              "name": "川崎僚",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "ja",
-          "origTitle": "純愛上等！",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1467982?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1740268,
         "titleZh": "YORUSHIKA LIVE 「盜作」",
         "titleEn": "ヨルシカ LIVE「盗作」",
@@ -16487,7 +16300,7 @@
           {
             "name": "麥肯娜·葛瑞絲",
             "char": "Skye (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/lIAEvs8Ls6R8V2xafrtXkvDS13p.jpg"
           },
           {
             "name": "泰瑞・克魯斯",
@@ -16614,7 +16427,7 @@
             {
               "name": "麥肯娜·葛瑞絲",
               "char": "Skye (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/lIAEvs8Ls6R8V2xafrtXkvDS13p.jpg"
             },
             {
               "name": "泰瑞・克魯斯",
@@ -16843,11 +16656,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 750000,
@@ -16968,11 +16781,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 750000,
@@ -17822,7 +17635,7 @@
           }
         ],
         "budget": 250000000,
-        "revenue": 1796113523,
+        "revenue": 1804356298,
         "status": "Released",
         "origLang": "en",
         "origTitle": "The Odyssey",
@@ -17943,7 +17756,7 @@
             }
           ],
           "budget": 250000000,
-          "revenue": 1796113523,
+          "revenue": 1804356298,
           "status": "Released",
           "origLang": "en",
           "origTitle": "The Odyssey",
@@ -19526,7 +19339,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/v4m63Ymj3didisk3OthFosIzXh7.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/t8twfnytLPitdJzNVU1yjP4gjD7.jpg",
-        "voteAverage": "6.8",
+        "voteAverage": "7.0",
         "genre": [
           "科幻",
           "驚悚",
@@ -19657,7 +19470,7 @@
           "synopsis": "看似平靜的高校突然發生奇異現象，有學生突然四肢著地、靜止不動，然後愈來愈多人著魔般加入，在操場疊起「人形金字塔」。平凡少女與暗戀的轉校生目睹集體瘋魔，才發現自己是少數清醒的人。當校方以紀律之名要求全體照辦，失常成為正常，盲從成為感染，原本習慣靜默旁觀、格格不入的他們，膽敢抵抗這股漩渦嗎？",
           "poster": "https://image.tmdb.org/t/p/w500/v4m63Ymj3didisk3OthFosIzXh7.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/t8twfnytLPitdJzNVU1yjP4gjD7.jpg",
-          "voteAverage": "6.8",
+          "voteAverage": "7.0",
           "trailerKey": "TFSnViEzt4k",
           "imdbId": "tt37694048",
           "countries": [
@@ -20193,7 +20006,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/vzwT9kHTAM9tMFmBjwO1hej1k0M.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/oveb9ughaDh4GkjmVHvSgFnEzlM.jpg",
-        "voteAverage": "8.3",
+        "voteAverage": "8.0",
         "genre": [
           "奇幻",
           "喜劇"
@@ -20318,7 +20131,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/vzwT9kHTAM9tMFmBjwO1hej1k0M.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/oveb9ughaDh4GkjmVHvSgFnEzlM.jpg",
-          "voteAverage": "8.3",
+          "voteAverage": "8.0",
           "trailerKey": "x5FVMUuZldc",
           "imdbId": "tt38773219",
           "countries": [
@@ -21176,6 +20989,307 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 438631,
+        "titleZh": "沙丘",
+        "titleEn": "Dune",
+        "releaseDate": "2026-11-13",
+        "releaseYear": "2021",
+        "isRerelease": true,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-13",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/qtSzr3bY8wP3lUDfTx2Qg5y5Qri.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qVgZu5BTx6pu4owCvVOm4zjTfOi.jpg",
+        "voteAverage": "7.8",
+        "genre": [
+          "科幻",
+          "冒險"
+        ],
+        "duration": 155,
+        "synopsis": "保羅亞崔迪是一個聰明又富有天賦的年輕人，肩負超越自己理解的偉大天命，且必須遠行至宇宙中最危險的行星，以確保他家人及族人未來的延續。敵對勢力為搶奪唯有此行星才出產的珍貴資源大打出手，而這也是人類最珍視的資源，一種能解鎖人類偉大潛能的物質，唯有能戰勝自己恐懼的人才能存活。",
+        "imdb": "8.0",
+        "rt": "83%",
+        "mc": "74",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 1094313,
+            "lastChanged": "2026-11-12T03:51:10.195870+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 512,
+            "lastChanged": "2026-11-12T03:51:10.195870+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 68,
+            "lastChanged": "2026-11-12T03:51:10.195870+08:00"
+          }
+        },
+        "trailerKey": "qSW95b7_z-Y",
+        "cast": [
+          {
+            "name": "提摩西·夏勒梅",
+            "char": "Paul Atreides",
+            "photo": "https://image.tmdb.org/t/p/w500/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg"
+          },
+          {
+            "name": "蕾貝卡·弗格森",
+            "char": "Lady Jessica Atreides",
+            "photo": "https://image.tmdb.org/t/p/w500/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
+          },
+          {
+            "name": "奧斯卡·伊薩克",
+            "char": "Duke Leto Atreides",
+            "photo": "https://image.tmdb.org/t/p/w500/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+          },
+          {
+            "name": "傑森·摩莫亞",
+            "char": "Duncan Idaho",
+            "photo": "https://image.tmdb.org/t/p/w500/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+          },
+          {
+            "name": "史戴倫·史柯斯嘉",
+            "char": "Baron Vladimir Harkonnen",
+            "photo": "https://image.tmdb.org/t/p/w500/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg"
+          },
+          {
+            "name": "史蒂芬·麥金利·亨德森",
+            "char": "Thufir Hawat",
+            "photo": "https://image.tmdb.org/t/p/w500/z2weSPo4sdMNj47tP5o0me41r2z.jpg"
+          },
+          {
+            "name": "喬許·布洛林",
+            "char": "Gurney Halleck",
+            "photo": "https://image.tmdb.org/t/p/w500/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg"
+          },
+          {
+            "name": "哈維爾·巴登",
+            "char": "Stilgar",
+            "photo": "https://image.tmdb.org/t/p/w500/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+          },
+          {
+            "name": "莎朗·鄧肯-布魯斯特",
+            "char": "Dr. Liet Kynes",
+            "photo": "https://image.tmdb.org/t/p/w500/gp5h6rOrqBrIGgID4AMd58O6Ow6.jpg"
+          },
+          {
+            "name": "張震",
+            "char": "Dr. Wellington Yueh",
+            "photo": "https://image.tmdb.org/t/p/w500/tkROVkn6yoqF3AcQ4hneOursHXR.jpg"
+          },
+          {
+            "name": "戴夫·巴帝斯塔",
+            "char": "Beast Rabban Harkonnen",
+            "photo": "https://image.tmdb.org/t/p/w500/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+          },
+          {
+            "name": "大衛·達斯馬齊連",
+            "char": "Piter de Vries",
+            "photo": "https://image.tmdb.org/t/p/w500/eLafwcpL64CqzwjjSgKpO7Rv4ae.jpg"
+          },
+          {
+            "name": "千黛亞",
+            "char": "Chani",
+            "photo": "https://image.tmdb.org/t/p/w500/1qup8tSt95HLbcy2c2xrx4iJNxv.jpg"
+          },
+          {
+            "name": "夏綠蒂·蘭普琳",
+            "char": "Reverend Mother Mohiam",
+            "photo": "https://image.tmdb.org/t/p/w500/7fhg5FCcl0VfYERP5D0unpybqgx.jpg"
+          },
+          {
+            "name": "Babs Olusanmokun",
+            "char": "Jamis",
+            "photo": "https://image.tmdb.org/t/p/w500/bqycmpUrpISeLzQniiYwAZ5X1RN.jpg"
+          },
+          {
+            "name": "班傑明·克萊門汀",
+            "char": "Herald of the Change",
+            "photo": "https://image.tmdb.org/t/p/w500/johpHbzqrue6XDG63vapfugGbnn.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "丹尼·維勒納夫",
+            "job": "Director"
+          },
+          {
+            "name": "埃里克·羅斯",
+            "job": "Screenplay"
+          },
+          {
+            "name": "丹尼·維勒納夫",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 165000000,
+        "revenue": 410668500,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Dune",
+        "platforms": [
+          {
+            "name": "Catchplay",
+            "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+          },
+          {
+            "name": "HBO Max",
+            "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+          },
+          {
+            "name": "Apple TV Store",
+            "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+          }
+        ],
+        "popularity": 40.0719,
+        "imdbId": "tt1160419",
+        "countries": [
+          "United States of America"
+        ],
+        "detail": {
+          "duration": 155,
+          "genres": [
+            "科幻",
+            "冒險"
+          ],
+          "synopsis": "保羅亞崔迪是一個聰明又富有天賦的年輕人，肩負超越自己理解的偉大天命，且必須遠行至宇宙中最危險的行星，以確保他家人及族人未來的延續。敵對勢力為搶奪唯有此行星才出產的珍貴資源大打出手，而這也是人類最珍視的資源，一種能解鎖人類偉大潛能的物質，唯有能戰勝自己恐懼的人才能存活。",
+          "poster": "https://image.tmdb.org/t/p/w500/qtSzr3bY8wP3lUDfTx2Qg5y5Qri.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/qVgZu5BTx6pu4owCvVOm4zjTfOi.jpg",
+          "voteAverage": "7.8",
+          "trailerKey": "qSW95b7_z-Y",
+          "imdbId": "tt1160419",
+          "countries": [
+            "United States of America"
+          ],
+          "cast": [
+            {
+              "name": "提摩西·夏勒梅",
+              "char": "Paul Atreides",
+              "photo": "https://image.tmdb.org/t/p/w500/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg"
+            },
+            {
+              "name": "蕾貝卡·弗格森",
+              "char": "Lady Jessica Atreides",
+              "photo": "https://image.tmdb.org/t/p/w500/ty8ZPzaCBBlqIr5qzpOXI24iC8j.jpg"
+            },
+            {
+              "name": "奧斯卡·伊薩克",
+              "char": "Duke Leto Atreides",
+              "photo": "https://image.tmdb.org/t/p/w500/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+            },
+            {
+              "name": "傑森·摩莫亞",
+              "char": "Duncan Idaho",
+              "photo": "https://image.tmdb.org/t/p/w500/3troAR6QbSb6nUFMDu61YCCWLKa.jpg"
+            },
+            {
+              "name": "史戴倫·史柯斯嘉",
+              "char": "Baron Vladimir Harkonnen",
+              "photo": "https://image.tmdb.org/t/p/w500/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg"
+            },
+            {
+              "name": "史蒂芬·麥金利·亨德森",
+              "char": "Thufir Hawat",
+              "photo": "https://image.tmdb.org/t/p/w500/z2weSPo4sdMNj47tP5o0me41r2z.jpg"
+            },
+            {
+              "name": "喬許·布洛林",
+              "char": "Gurney Halleck",
+              "photo": "https://image.tmdb.org/t/p/w500/7QpneI3HoZCCDVPyWx3p3t7yeo7.jpg"
+            },
+            {
+              "name": "哈維爾·巴登",
+              "char": "Stilgar",
+              "photo": "https://image.tmdb.org/t/p/w500/zfRID0jx8DKBluPGU9xtk9sZWUt.jpg"
+            },
+            {
+              "name": "莎朗·鄧肯-布魯斯特",
+              "char": "Dr. Liet Kynes",
+              "photo": "https://image.tmdb.org/t/p/w500/gp5h6rOrqBrIGgID4AMd58O6Ow6.jpg"
+            },
+            {
+              "name": "張震",
+              "char": "Dr. Wellington Yueh",
+              "photo": "https://image.tmdb.org/t/p/w500/tkROVkn6yoqF3AcQ4hneOursHXR.jpg"
+            },
+            {
+              "name": "戴夫·巴帝斯塔",
+              "char": "Beast Rabban Harkonnen",
+              "photo": "https://image.tmdb.org/t/p/w500/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+            },
+            {
+              "name": "大衛·達斯馬齊連",
+              "char": "Piter de Vries",
+              "photo": "https://image.tmdb.org/t/p/w500/eLafwcpL64CqzwjjSgKpO7Rv4ae.jpg"
+            },
+            {
+              "name": "千黛亞",
+              "char": "Chani",
+              "photo": "https://image.tmdb.org/t/p/w500/1qup8tSt95HLbcy2c2xrx4iJNxv.jpg"
+            },
+            {
+              "name": "夏綠蒂·蘭普琳",
+              "char": "Reverend Mother Mohiam",
+              "photo": "https://image.tmdb.org/t/p/w500/7fhg5FCcl0VfYERP5D0unpybqgx.jpg"
+            },
+            {
+              "name": "Babs Olusanmokun",
+              "char": "Jamis",
+              "photo": "https://image.tmdb.org/t/p/w500/bqycmpUrpISeLzQniiYwAZ5X1RN.jpg"
+            },
+            {
+              "name": "班傑明·克萊門汀",
+              "char": "Herald of the Change",
+              "photo": "https://image.tmdb.org/t/p/w500/johpHbzqrue6XDG63vapfugGbnn.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "丹尼·維勒納夫",
+              "job": "Director"
+            },
+            {
+              "name": "埃里克·羅斯",
+              "job": "Screenplay"
+            },
+            {
+              "name": "丹尼·維勒納夫",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 165000000,
+          "revenue": 410668500,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Dune",
+          "platforms": [
+            {
+              "name": "Catchplay",
+              "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
+            },
+            {
+              "name": "HBO Max",
+              "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+            },
+            {
+              "name": "Apple TV Store",
+              "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+            }
+          ]
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/438631?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1492861,
         "titleZh": "沙央",
         "titleEn": "沙央",
@@ -21573,12 +21687,12 @@
           {
             "name": "Joseph Zada",
             "char": "Haymitch Abernathy",
-            "photo": "https://image.tmdb.org/t/p/w500/8RnNxrgffoNOu7ZHPSGvYnfjtdI.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/7CUBF2zZpk9iFetHPfGFj9kOIx2.jpg"
           },
           {
             "name": "麥肯娜·葛瑞絲",
             "char": "Maysilee Donner / Merrilee Donner",
-            "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/lIAEvs8Ls6R8V2xafrtXkvDS13p.jpg"
           },
           {
             "name": "雷夫·范恩斯",
@@ -21598,12 +21712,12 @@
           {
             "name": "Whitney Peak",
             "char": "Lenore Dove Baird",
-            "photo": "https://image.tmdb.org/t/p/w500/nDJQufvXG9ojYV1dQi51TnG9h6K.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/AmfuOBQkvTmSvYNdtWDjfflkgmj.jpg"
           },
           {
             "name": "艾兒·芬妮",
             "char": "Effie Trinket",
-            "photo": "https://image.tmdb.org/t/p/w500/hGL46Q5bkVkQbKAT0SrXcV6ZvRg.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/ucC5faqfEYVhoC25M6Hi3znZmab.jpg"
           },
           {
             "name": "基倫·考克金",
@@ -21665,7 +21779,7 @@
             "job": "Screenplay"
           }
         ],
-        "budget": 200000000,
+        "budget": 185000000,
         "revenue": 0,
         "status": "Released",
         "origLang": "en",
@@ -21698,12 +21812,12 @@
             {
               "name": "Joseph Zada",
               "char": "Haymitch Abernathy",
-              "photo": "https://image.tmdb.org/t/p/w500/8RnNxrgffoNOu7ZHPSGvYnfjtdI.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/7CUBF2zZpk9iFetHPfGFj9kOIx2.jpg"
             },
             {
               "name": "麥肯娜·葛瑞絲",
               "char": "Maysilee Donner / Merrilee Donner",
-              "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/lIAEvs8Ls6R8V2xafrtXkvDS13p.jpg"
             },
             {
               "name": "雷夫·范恩斯",
@@ -21723,12 +21837,12 @@
             {
               "name": "Whitney Peak",
               "char": "Lenore Dove Baird",
-              "photo": "https://image.tmdb.org/t/p/w500/nDJQufvXG9ojYV1dQi51TnG9h6K.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/AmfuOBQkvTmSvYNdtWDjfflkgmj.jpg"
             },
             {
               "name": "艾兒·芬妮",
               "char": "Effie Trinket",
-              "photo": "https://image.tmdb.org/t/p/w500/hGL46Q5bkVkQbKAT0SrXcV6ZvRg.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/ucC5faqfEYVhoC25M6Hi3znZmab.jpg"
             },
             {
               "name": "基倫·考克金",
@@ -21790,7 +21904,7 @@
               "job": "Screenplay"
             }
           ],
-          "budget": 200000000,
+          "budget": 185000000,
           "revenue": 0,
           "status": "Released",
           "origLang": "en",
@@ -21838,7 +21952,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 84,
+            "votes": 91,
             "lastChanged": "2026-10-26T05:14:04.939317+08:00"
           },
           "mc": {
@@ -22720,6 +22834,193 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1422041?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1467982,
+        "titleZh": "純愛上等！",
+        "titleEn": "純愛上等！",
+        "releaseDate": "2026-11-20",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-20",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/4WZ2Ls3cvx0IM6FuTfv7PHWrPLy.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/gEMeRXSlvdGHXlWQfP7kRqhAZeA.jpg",
+        "voteAverage": "8.7",
+        "genre": [
+          "愛情",
+          "喜劇"
+        ],
+        "duration": 101,
+        "synopsis": "開朗又重情義的圓頂著一頭金毛，是紅櫻高中的混混首腦，鐵齒自己根本沒時間談戀愛；冷靜又超然的美鶴總身著筆挺校服，是白岩高校的領頭羊，卻成了圓奶奶雜貨舖的新房客。本該是世仇，竟從見面第一天就小鹿亂撞，一熱一冷的兩人出奇合拍。然而，隨著他們越走越近，不堪過去也被再度揭開，那是圓決意不再打架的起點，也是美鶴無論如何都難以啟齒的孤獨祕密……",
+        "imdb": "6.1",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 17,
+            "lastChanged": "2026-11-11T19:25:48.651033+08:00"
+          }
+        },
+        "trailerKey": "7Z5Dc7oyqPE",
+        "cast": [
+          {
+            "name": "山中柔太朗",
+            "char": "Mitsuru Sato",
+            "photo": "https://image.tmdb.org/t/p/w500/4XuntAxbDhzkPjMF0uqQpP3wByf.jpg"
+          },
+          {
+            "name": "高松Aloha",
+            "char": "Madoka Kamei",
+            "photo": "https://image.tmdb.org/t/p/w500/7lS8ABaS3A1CzWRkSuWjj4NXMbh.jpg"
+          },
+          {
+            "name": "白鳥晴都",
+            "char": "Itsuki Kamei",
+            "photo": "https://image.tmdb.org/t/p/w500/kuqDz3eIcawaveHiigbYBV5ePw3.jpg"
+          },
+          {
+            "name": "浅野竣哉",
+            "char": "Kento Honda",
+            "photo": "https://image.tmdb.org/t/p/w500/bA51Bn99TkKnhsrKdMKiUby3aQt.jpg"
+          },
+          {
+            "name": "Daichi Kodaira",
+            "char": "Kazuo Ipponmatsu",
+            "photo": "https://image.tmdb.org/t/p/w500/yMhh1tvPBGTxmo7z3spS7wSk7lJ.jpg"
+          },
+          {
+            "name": "高橋璃央",
+            "char": "Keita Yamamoto",
+            "photo": "https://image.tmdb.org/t/p/w500/72CxCJRbYsWA4GfIRUK3YJOfJn5.jpg"
+          },
+          {
+            "name": "葵揚",
+            "char": "Ryunosuke Nakano",
+            "photo": "https://image.tmdb.org/t/p/w500/uZTbWFChfUFxhKatdj3Pt2jeja7.jpg"
+          },
+          {
+            "name": "Okawa Taiga",
+            "char": "Sarutoki Tsuchiya",
+            "photo": "https://image.tmdb.org/t/p/w500/imLWUFDitMJUJekZ2st1K80PO5R.jpg"
+          },
+          {
+            "name": "早瀬圭人",
+            "char": "Joichiro Todo",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "八重樫風雅",
+            "job": "Director"
+          },
+          {
+            "name": "川崎僚",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ja",
+        "origTitle": "純愛上等！",
+        "platforms": [],
+        "popularity": 0.5194,
+        "imdbId": "tt42289343",
+        "countries": [
+          "Japan"
+        ],
+        "detail": {
+          "duration": 101,
+          "genres": [
+            "愛情",
+            "喜劇"
+          ],
+          "synopsis": "開朗又重情義的圓頂著一頭金毛，是紅櫻高中的混混首腦，鐵齒自己根本沒時間談戀愛；冷靜又超然的美鶴總身著筆挺校服，是白岩高校的領頭羊，卻成了圓奶奶雜貨舖的新房客。本該是世仇，竟從見面第一天就小鹿亂撞，一熱一冷的兩人出奇合拍。然而，隨著他們越走越近，不堪過去也被再度揭開，那是圓決意不再打架的起點，也是美鶴無論如何都難以啟齒的孤獨祕密……",
+          "poster": "https://image.tmdb.org/t/p/w500/4WZ2Ls3cvx0IM6FuTfv7PHWrPLy.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/gEMeRXSlvdGHXlWQfP7kRqhAZeA.jpg",
+          "voteAverage": "8.7",
+          "trailerKey": "7Z5Dc7oyqPE",
+          "imdbId": "tt42289343",
+          "countries": [
+            "Japan"
+          ],
+          "cast": [
+            {
+              "name": "山中柔太朗",
+              "char": "Mitsuru Sato",
+              "photo": "https://image.tmdb.org/t/p/w500/4XuntAxbDhzkPjMF0uqQpP3wByf.jpg"
+            },
+            {
+              "name": "高松Aloha",
+              "char": "Madoka Kamei",
+              "photo": "https://image.tmdb.org/t/p/w500/7lS8ABaS3A1CzWRkSuWjj4NXMbh.jpg"
+            },
+            {
+              "name": "白鳥晴都",
+              "char": "Itsuki Kamei",
+              "photo": "https://image.tmdb.org/t/p/w500/kuqDz3eIcawaveHiigbYBV5ePw3.jpg"
+            },
+            {
+              "name": "浅野竣哉",
+              "char": "Kento Honda",
+              "photo": "https://image.tmdb.org/t/p/w500/bA51Bn99TkKnhsrKdMKiUby3aQt.jpg"
+            },
+            {
+              "name": "Daichi Kodaira",
+              "char": "Kazuo Ipponmatsu",
+              "photo": "https://image.tmdb.org/t/p/w500/yMhh1tvPBGTxmo7z3spS7wSk7lJ.jpg"
+            },
+            {
+              "name": "高橋璃央",
+              "char": "Keita Yamamoto",
+              "photo": "https://image.tmdb.org/t/p/w500/72CxCJRbYsWA4GfIRUK3YJOfJn5.jpg"
+            },
+            {
+              "name": "葵揚",
+              "char": "Ryunosuke Nakano",
+              "photo": "https://image.tmdb.org/t/p/w500/uZTbWFChfUFxhKatdj3Pt2jeja7.jpg"
+            },
+            {
+              "name": "Okawa Taiga",
+              "char": "Sarutoki Tsuchiya",
+              "photo": "https://image.tmdb.org/t/p/w500/imLWUFDitMJUJekZ2st1K80PO5R.jpg"
+            },
+            {
+              "name": "早瀬圭人",
+              "char": "Joichiro Todo",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "八重樫風雅",
+              "job": "Director"
+            },
+            {
+              "name": "川崎僚",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ja",
+          "origTitle": "純愛上等！",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1467982?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -24896,6 +25197,280 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1219620,
+        "titleZh": "被消失的家園",
+        "titleEn": "اللي باقي منك",
+        "releaseDate": "2026-11-27",
+        "releaseYear": "2025",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-27",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/tcgvQKop7MhXDTz27LkRKhiorh6.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/gRMJQCyl6T2kFJlqRm3Gpo6HP0i.jpg",
+        "voteAverage": "8.0",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 145,
+        "synopsis": "一個巴勒斯坦少年的生命危在旦夕，急切需要做手術，但約旦河西岸境內的醫院並沒有適當的設備，就連檢查都無法提供。然而，離開西岸到鄰近國家求醫並非容易之事，武裝衝突、族群間的差別待遇、繁瑣的官僚程序……一一都是病人面對的障礙。橫跨幾代人的衝突不只是展現在街頭上，潛藏的阻撓和暴力也能致命於無形。《被消失的家園》以一家三代的故事，描繪出在西岸生活的巴勒斯坦人多年來的重擔，個人記憶背後更是集體歷史與回憶。",
+        "imdb": "",
+        "rt": "100%",
+        "mc": "78",
+        "ratingMeta": {
+          "rt": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-11-12T03:51:10.195870+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 14,
+            "lastChanged": "2026-11-12T03:51:10.195870+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "Saleh Bakri",
+            "char": "Salim",
+            "photo": "https://image.tmdb.org/t/p/w500/nx5owXvKk9QPOXbluDZhtAaUlRB.jpg"
+          },
+          {
+            "name": "Cherien Dabis",
+            "char": "Hanan",
+            "photo": "https://image.tmdb.org/t/p/w500/mfTEWYhZJURN4LbbJDlB4iVqjX.jpg"
+          },
+          {
+            "name": "Adam Bakri",
+            "char": "Sharif",
+            "photo": "https://image.tmdb.org/t/p/w500/gLIQ6bP2N35bmA2bWzqf5dmDmbH.jpg"
+          },
+          {
+            "name": "Maria Zreik",
+            "char": "Munira",
+            "photo": "https://image.tmdb.org/t/p/w500/wB2YGtBjfCl2syONpVQQjWEbaqh.jpg"
+          },
+          {
+            "name": "Mohammad Bakri",
+            "char": "Older Sharif",
+            "photo": "https://image.tmdb.org/t/p/w500/bNF2O4TXDoF8sivoqvipeiCqVqu.jpg"
+          },
+          {
+            "name": "Muhammad Abed Elrahman",
+            "char": "Noor",
+            "photo": "https://image.tmdb.org/t/p/w500/rwj9Q5VqeXGdUT4sZCBUMpZzH9a.jpg"
+          },
+          {
+            "name": "Sanad Alkabareti",
+            "char": "Young Noor",
+            "photo": null
+          },
+          {
+            "name": "Salah Al Din",
+            "char": "Young Salim",
+            "photo": null
+          },
+          {
+            "name": "Rida Suleiman",
+            "char": "Malek",
+            "photo": null
+          },
+          {
+            "name": "Yousef Zaalok",
+            "char": "Young Ahmad",
+            "photo": null
+          },
+          {
+            "name": "Nabil Al Raee",
+            "char": "Older Ahmad",
+            "photo": "https://image.tmdb.org/t/p/w500/jyYKBCG9Mp7ugb2p74bvPCQcixu.jpg"
+          },
+          {
+            "name": "Julia Hamdan",
+            "char": "Young Amira",
+            "photo": null
+          },
+          {
+            "name": "Marwan Hamdan",
+            "char": "Laith",
+            "photo": null
+          },
+          {
+            "name": "Jessica Jbara",
+            "char": "Salwa",
+            "photo": null
+          },
+          {
+            "name": "Hayat Abu Samara",
+            "char": "Layla",
+            "photo": null
+          },
+          {
+            "name": "Dominik Maringer",
+            "char": "Ari",
+            "photo": "https://image.tmdb.org/t/p/w500/2143wJbilYKnlYkdZqdx5lC84X8.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Cherien Dabis",
+            "job": "Director"
+          },
+          {
+            "name": "Cherien Dabis",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 276431,
+        "status": "Released",
+        "origLang": "ar",
+        "origTitle": "اللي باقي منك",
+        "platforms": [],
+        "popularity": 2.5694,
+        "imdbId": "tt29344894",
+        "countries": [
+          "Germany",
+          "Cyprus",
+          "United States of America",
+          "Qatar",
+          "Saudi Arabia",
+          "United Arab Emirates",
+          "Kuwait",
+          "Jordan"
+        ],
+        "detail": {
+          "duration": 145,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "一個巴勒斯坦少年的生命危在旦夕，急切需要做手術，但約旦河西岸境內的醫院並沒有適當的設備，就連檢查都無法提供。然而，離開西岸到鄰近國家求醫並非容易之事，武裝衝突、族群間的差別待遇、繁瑣的官僚程序……一一都是病人面對的障礙。橫跨幾代人的衝突不只是展現在街頭上，潛藏的阻撓和暴力也能致命於無形。《被消失的家園》以一家三代的故事，描繪出在西岸生活的巴勒斯坦人多年來的重擔，個人記憶背後更是集體歷史與回憶。",
+          "poster": "https://image.tmdb.org/t/p/w500/tcgvQKop7MhXDTz27LkRKhiorh6.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/gRMJQCyl6T2kFJlqRm3Gpo6HP0i.jpg",
+          "voteAverage": "8.0",
+          "trailerKey": null,
+          "imdbId": "tt29344894",
+          "countries": [
+            "Germany",
+            "Cyprus",
+            "United States of America",
+            "Qatar",
+            "Saudi Arabia",
+            "United Arab Emirates",
+            "Kuwait",
+            "Jordan"
+          ],
+          "cast": [
+            {
+              "name": "Saleh Bakri",
+              "char": "Salim",
+              "photo": "https://image.tmdb.org/t/p/w500/nx5owXvKk9QPOXbluDZhtAaUlRB.jpg"
+            },
+            {
+              "name": "Cherien Dabis",
+              "char": "Hanan",
+              "photo": "https://image.tmdb.org/t/p/w500/mfTEWYhZJURN4LbbJDlB4iVqjX.jpg"
+            },
+            {
+              "name": "Adam Bakri",
+              "char": "Sharif",
+              "photo": "https://image.tmdb.org/t/p/w500/gLIQ6bP2N35bmA2bWzqf5dmDmbH.jpg"
+            },
+            {
+              "name": "Maria Zreik",
+              "char": "Munira",
+              "photo": "https://image.tmdb.org/t/p/w500/wB2YGtBjfCl2syONpVQQjWEbaqh.jpg"
+            },
+            {
+              "name": "Mohammad Bakri",
+              "char": "Older Sharif",
+              "photo": "https://image.tmdb.org/t/p/w500/bNF2O4TXDoF8sivoqvipeiCqVqu.jpg"
+            },
+            {
+              "name": "Muhammad Abed Elrahman",
+              "char": "Noor",
+              "photo": "https://image.tmdb.org/t/p/w500/rwj9Q5VqeXGdUT4sZCBUMpZzH9a.jpg"
+            },
+            {
+              "name": "Sanad Alkabareti",
+              "char": "Young Noor",
+              "photo": null
+            },
+            {
+              "name": "Salah Al Din",
+              "char": "Young Salim",
+              "photo": null
+            },
+            {
+              "name": "Rida Suleiman",
+              "char": "Malek",
+              "photo": null
+            },
+            {
+              "name": "Yousef Zaalok",
+              "char": "Young Ahmad",
+              "photo": null
+            },
+            {
+              "name": "Nabil Al Raee",
+              "char": "Older Ahmad",
+              "photo": "https://image.tmdb.org/t/p/w500/jyYKBCG9Mp7ugb2p74bvPCQcixu.jpg"
+            },
+            {
+              "name": "Julia Hamdan",
+              "char": "Young Amira",
+              "photo": null
+            },
+            {
+              "name": "Marwan Hamdan",
+              "char": "Laith",
+              "photo": null
+            },
+            {
+              "name": "Jessica Jbara",
+              "char": "Salwa",
+              "photo": null
+            },
+            {
+              "name": "Hayat Abu Samara",
+              "char": "Layla",
+              "photo": null
+            },
+            {
+              "name": "Dominik Maringer",
+              "char": "Ari",
+              "photo": "https://image.tmdb.org/t/p/w500/2143wJbilYKnlYkdZqdx5lC84X8.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Cherien Dabis",
+              "job": "Director"
+            },
+            {
+              "name": "Cherien Dabis",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 276431,
+          "status": "Released",
+          "origLang": "ar",
+          "origTitle": "اللي باقي منك",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1219620?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1378791,
         "titleZh": "比爾艾文斯三重奏變",
         "titleEn": "Everybody Digs Bill Evans",
@@ -26224,7 +26799,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
-        "voteAverage": "7.2",
+        "voteAverage": "7.3",
         "genre": [
           "動畫",
           "奇幻",
@@ -26339,11 +26914,11 @@
         ],
         "crew": [
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
@@ -26375,7 +26950,7 @@
           "synopsis": "延續蘇斯博士奇妙又異想天開的傳統，兒童名著《戴帽子的貓》首次以動畫長片的形式躍上大銀幕，這是一場史詩般的瘋狂冒險旅程，充滿創意點子、惡作劇與奇幻魔法。戴帽子的貓接下了迄今最艱鉅的任務：為蓋比和賽巴斯汀這對姊弟加油打氣。對這位闖禍精來說，這可能是他證明自己的最後機會……否則他就會失去他的魔法帽！",
           "poster": "https://image.tmdb.org/t/p/w500/Y1wom3j2NMVufXNWsgpfN0kvpi.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
-          "voteAverage": "7.2",
+          "voteAverage": "7.3",
           "trailerKey": "L8j4Xmx7Nvs",
           "imdbId": "tt2321555",
           "countries": [
@@ -26466,11 +27041,11 @@
           ],
           "crew": [
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
@@ -26515,18 +27090,18 @@
         "duration": 128,
         "synopsis": "1970年代，寄居紐約、屢屢碰壁的落魄演員席維斯史特龍，堅信自己不只是寫出拳擊手傳奇的人，更是註定要站上擂台的那個人——洛基。一無所有、女友莎夏即將臨盆，他卻把全部身家押上，面對製片公司砸下的天價酬勞，只要他交出劇本、讓出主角，史特龍一次次轉身說不。只為了「親自演出洛基」，這不只是他對命運下的戰帖，更是賭上人生的籌碼，只為一戰成名。",
         "imdb": "",
-        "rt": "89%",
-        "mc": "66",
+        "rt": "88%",
+        "mc": "68",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 97,
-            "lastChanged": "2026-11-10T04:01:02.938122+08:00"
+            "votes": 104,
+            "lastChanged": "2026-11-12T03:51:10.195870+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 32,
-            "lastChanged": "2026-11-07T18:39:49.116970+08:00"
+            "votes": 37,
+            "lastChanged": "2026-11-12T03:51:10.195870+08:00"
           }
         },
         "trailerKey": "8RwGOFzY1X8",
@@ -28397,11 +28972,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -28516,11 +29091,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -28552,7 +29127,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-        "voteAverage": "7.5",
+        "voteAverage": "7.6",
         "genre": [
           "愛情",
           "奇幻",
@@ -28699,7 +29274,7 @@
           "synopsis": "小鎮居民各司其職，無不以婚配嫁娶為志，一生期盼被頸圈套牢白紗的大喜之日。大齡漁婦小姑獨處招來訕笑，新娘拋出的喜蛋卻預言她將走上紅毯，漁婦就此向織柳匠許願一個丈夫。柳樹製成的情郎從天而降，漁婦從魚腥中脫身，陶醉於魚水之歡。專情又勇猛的柳樹男激起地方太太們的慾望、人夫們的嫉妒，異端夫婦將保守小鎮搞得天翻地覆，若完美情人能量身打造，還有什麼將橫空出世？",
           "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
-          "voteAverage": "7.5",
+          "voteAverage": "7.6",
           "trailerKey": "0VQWpXozkv0",
           "imdbId": "tt29611136",
           "countries": [
@@ -28935,7 +29510,7 @@
             "job": "Writer"
           }
         ],
-        "budget": 0,
+        "budget": 110000000,
         "revenue": 0,
         "status": "Released",
         "origLang": "en",
@@ -29053,7 +29628,7 @@
               "job": "Writer"
             }
           ],
-          "budget": 0,
+          "budget": 110000000,
           "revenue": 0,
           "status": "Released",
           "origLang": "en",
@@ -31017,7 +31592,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/2vdKs8xgngUXRS3YEoxhWNTdW6.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/1QUe4ShpyvOLGzqXRvU86WRBpuy.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pJfMliqzzVzTU634zpYDMfYNX6c.jpg",
         "voteAverage": "",
         "genre": [
           "冒險",
@@ -31139,7 +31714,7 @@
           ],
           "synopsis": "觀眾所熟悉的經典角色曼尼、狄亞哥、喜德、巴克以及艾莉全數回歸，將與執著於橡實的鼠奎特、可愛搗蛋的負鼠兄弟可拉鼠與愛迪及小鼠奎特再度集結。這次，冰原歷險記家族從火山口猛烈噴發而出，意外闖入充滿恐龍與熔岩危機的瘋狂世界，踏上前往神秘「失落世界」未知角落的驚險旅程，迎接前所未見的挑戰與爆笑冒險。",
           "poster": "https://image.tmdb.org/t/p/w500/2vdKs8xgngUXRS3YEoxhWNTdW6.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/1QUe4ShpyvOLGzqXRvU86WRBpuy.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/pJfMliqzzVzTU634zpYDMfYNX6c.jpg",
           "voteAverage": "",
           "trailerKey": "NsUbanX2a-k",
           "imdbId": "tt34512981",
