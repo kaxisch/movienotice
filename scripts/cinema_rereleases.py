@@ -13,6 +13,8 @@ from bs4 import BeautifulSoup
 SOURCE_URLS = {
     "miramar_now": "https://www.miramarcinemas.tw/Movie/Index?type=now",
     "miramar_soon": "https://www.miramarcinemas.tw/Movie/Index?type=coming",
+    "miranew_now": "https://www.miranewcinemas.com/Movie/Index?type=NowShowing",
+    "miranew_soon": "https://www.miranewcinemas.com/Movie/Index?type=ComingSoon",
     "centuryasia_now": "https://www.centuryasia.com.tw/Movie/GetMovieRelease",
     "centuryasia_soon": "https://www.centuryasia.com.tw/Movie/GetMovieComing",
     "centuryasia_ximen": "https://ximen.centuryasia.com.tw/Movie_Info.aspx",
@@ -221,6 +223,46 @@ def parse_miramar(html, status="now"):
     return movies
 
 
+def parse_miranew(html, status="now"):
+    """解析美麗新官方片單內嵌的電影 JSON。"""
+    match = re.search(r"var\s+MovieList\s*=\s*'(.*?)';", html or "", re.DOTALL)
+    if not match or match.group(1).startswith("System.Net.WebException"):
+        raise ValueError("美麗新片單資料不存在")
+    try:
+        # 官方把 JSON 放在 JavaScript 單引號字串內；只解除包裹字串使用的
+        # 雙引號與單引號跳脫，保留 JSON 本身的 \r\n 等跳脫序列。
+        raw_json = match.group(1).replace(r'\"', '"').replace(r"\'", "'")
+        payload = json.loads(raw_json)
+    except (TypeError, ValueError, json.JSONDecodeError) as error:
+        raise ValueError("美麗新片單 JSON 格式異常") from error
+
+    items = payload.get("Data", {}).get("MovieList", []) if payload.get("Result") is True else []
+    if not isinstance(items, list) or not items:
+        raise ValueError("美麗新片單數量異常：0")
+
+    movies = []
+    for item in items:
+        title_zh = str(item.get("MovieCName") or "").strip()
+        title_en = str(item.get("MovieEName") or "").strip()
+        movie_id = str(item.get("MovieId") or "").strip()
+        if not title_zh or not movie_id:
+            raise ValueError("美麗新電影資料缺少片名或 ID")
+        title_zh = re.sub(r"\s*[（(][^）)]*[）)]\s*$", "", title_zh).strip()
+        title_en = re.sub(r"\s*[（(][^）)]*[）)]\s*$", "", title_en).strip()
+        movies.append({
+            "title_zh": title_zh,
+            "title_en": title_en,
+            "release_date_tw": _source_release_date(item.get("ReleaseDate")),
+            "status": status,
+            "source": "miranew",
+            "source_url": (
+                "https://www.miranewcinemas.com/Movie/Detail"
+                f"?type={'NowShowing' if status == 'now' else 'ComingSoon'}&MovieId={movie_id}"
+            ),
+        })
+    return movies
+
+
 def parse_centuryasia_branch(html, source):
     """喜樂時代舊版分館：依官網區塊取得狀態，不以舊日期推定仍上映。"""
     soup = BeautifulSoup(html, "html.parser")
@@ -276,6 +318,8 @@ def fetch_additional_cinema_movies(user_agent, today):
         "spot_taipei": lambda: parse_spot_taipei(fetch_html(SOURCE_URLS["spot_taipei"], user_agent), today),
         "miramar": lambda: [movie for status in ("now", "soon") for movie in
                             parse_miramar(fetch_html(SOURCE_URLS[f"miramar_{status}"], user_agent), status)],
+        "miranew": lambda: [movie for status in ("now", "soon") for movie in
+                            parse_miranew(fetch_html(SOURCE_URLS[f"miranew_{status}"], user_agent), status)],
         "centuryasia": lambda: [movie for status in ("now", "soon") for movie in
                                 parse_centuryasia(json.loads(fetch_html(SOURCE_URLS[f"centuryasia_{status}"], user_agent)), status)],
     }
