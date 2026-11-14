@@ -1,3 +1,4 @@
+import json
 import sys
 import unittest
 from datetime import date
@@ -34,6 +35,31 @@ class CinemaParserTests(unittest.TestCase):
         self.assertEqual(missing[0]["release_date_tw"], "")
         with self.assertRaises(ValueError):
             cinema.parse_miramar("<html>blocked</html>")
+
+    def test_miranew_reads_embedded_movie_json_and_rejects_failed_pages(self):
+        payload = {
+            "Result": True,
+            "Data": {"MovieList": [{
+                "MovieId": "movie-123",
+                "MovieCName": "測試電影(輔12級)",
+                "MovieEName": "TEST FILM(PG-12)",
+                "ReleaseDate": "2026-11-13",
+            }]},
+        }
+        raw = json.dumps(payload, ensure_ascii=False).replace('"', r'\"')
+        html = f"<script>var MovieList = '{raw}';</script>"
+        movie = cinema.parse_miranew(html)[0]
+        self.assertEqual(movie["title_zh"], "測試電影")
+        self.assertEqual(movie["title_en"], "TEST FILM")
+        self.assertEqual(movie["release_date_tw"], "2026-11-13")
+        self.assertEqual(movie["source"], "miranew")
+        self.assertIn("MovieId=movie-123", movie["source_url"])
+        soon = cinema.parse_miranew(html, "soon")[0]
+        self.assertEqual(soon["status"], "soon")
+        self.assertIn("type=ComingSoon", soon["source_url"])
+        for broken in ("<html>blocked</html>", "<script>var MovieList = 'System.Net.WebException';</script>"):
+            with self.assertRaises(ValueError):
+                cinema.parse_miranew(broken)
 
     def test_centuryasia_branch_uses_section_status_and_preserves_old_date(self):
         html = '''<ul id="ContentPlaceHolder1_movie_poster"><li>
@@ -77,10 +103,11 @@ class CinemaParserTests(unittest.TestCase):
         with patch.object(cinema, "fetch_html", side_effect=fetch):
             movies, health, errors = cinema.fetch_additional_cinema_movies("test", date(2026, 9, 9))
         self.assertFalse(health["miramar"])
+        self.assertFalse(health["miranew"])
         self.assertIn("miramar", errors)
         self.assertTrue(health["centuryasia"])
         self.assertEqual({movie["source"] for movie in movies}, {"centuryasia"})
-        self.assertEqual(set(health), {"miramar", "spot_taipei", "centuryasia", "centuryasia_ximen",
+        self.assertEqual(set(health), {"miramar", "miranew", "spot_taipei", "centuryasia", "centuryasia_ximen",
                                       "centuryasia_beyond", "centuryasia_kaohsiung"})
         self.assertTrue(weekly.rerelease_absence_audit_complete({
             **health, "atmovies": True, "showtime": True, "ambassador": True,
