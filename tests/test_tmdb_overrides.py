@@ -193,6 +193,7 @@ class TmdbOverrideTests(unittest.TestCase):
             "Ghost Soldier": 1562642,
             "皎潔深宵之月": 1410955,
             "Uruwashi no Yoi no Tsuki": 1410955,
+            "暴雪": 1244809,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
