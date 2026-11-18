@@ -38,7 +38,7 @@ class WeeklyAuditWatchdogTests(unittest.TestCase):
         workflow = (ROOT_DIR / ".github/workflows/weekly-check-watchdog.yml").read_text(
             encoding="utf-8"
         )
-        self.assertIn('cron: "7 0,1 * * 3,6"', workflow)
+        self.assertIn('cron: "7 5,7 * * 3,6"', workflow)
         self.assertIn("actions: write", workflow)
         self.assertIn("steps.audit.outputs.completed != 'true'", workflow)
         self.assertIn("gh workflow run weekly-check.yml --ref main", workflow)
