@@ -1,12 +1,241 @@
 {
-  "generated_at": "2026-11-18T20:11:16.323541+08:00",
+  "generated_at": "2026-11-19T04:53:07.448602+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 86,
+    "now_count": 87,
     "soon_count": 66
   },
   "movies": {
     "now": [
+      {
+        "id": 1492861,
+        "titleZh": "沙央",
+        "titleEn": "沙央",
+        "releaseDate": "2026-11-19",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-19",
+            "language": "zh"
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
+        "voteAverage": "6.2",
+        "genre": [
+          "劇情",
+          "愛情"
+        ],
+        "duration": 100,
+        "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
+        "imdb": "6.5",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 10,
+            "lastChanged": "2026-11-06T19:28:46.924765+08:00"
+          }
+        },
+        "trailerKey": "ECic1SG92Qk",
+        "cast": [
+          {
+            "name": "Jo Kukathas",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "湯詠絮",
+            "char": "San San",
+            "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
+          },
+          {
+            "name": "Mhia Farhana",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
+          },
+          {
+            "name": "李李仁",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
+          },
+          {
+            "name": "Ai Leng Ong",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
+          },
+          {
+            "name": "Khir Rahman",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
+          },
+          {
+            "name": "Farah Ahmad",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
+          },
+          {
+            "name": "Amir Ahnaf",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
+          },
+          {
+            "name": "Jonathan Lee",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Tan Li Yang",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Nandagopal",
+            "char": "",
+            "photo": null
+          },
+          {
+            "name": "Mhia Firdaus",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/s3wiPYFu7hIlbWWOSIVjC8C836W.jpg"
+          },
+          {
+            "name": "Nandagopall MOHAN",
+            "char": "",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "湯湘竹",
+            "job": "Director"
+          },
+          {
+            "name": "湯湘竹",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "zh",
+        "origTitle": "沙央",
+        "platforms": [],
+        "popularity": 0.9772,
+        "imdbId": "tt43440269",
+        "countries": [
+          "Taiwan",
+          "Malaysia"
+        ],
+        "detail": {
+          "duration": 100,
+          "genres": [
+            "劇情",
+            "愛情"
+          ],
+          "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
+          "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
+          "voteAverage": "6.2",
+          "trailerKey": "ECic1SG92Qk",
+          "imdbId": "tt43440269",
+          "countries": [
+            "Taiwan",
+            "Malaysia"
+          ],
+          "cast": [
+            {
+              "name": "Jo Kukathas",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "湯詠絮",
+              "char": "San San",
+              "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
+            },
+            {
+              "name": "Mhia Farhana",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
+            },
+            {
+              "name": "李李仁",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
+            },
+            {
+              "name": "Ai Leng Ong",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
+            },
+            {
+              "name": "Khir Rahman",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
+            },
+            {
+              "name": "Farah Ahmad",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
+            },
+            {
+              "name": "Amir Ahnaf",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
+            },
+            {
+              "name": "Jonathan Lee",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Tan Li Yang",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Nandagopal",
+              "char": "",
+              "photo": null
+            },
+            {
+              "name": "Mhia Firdaus",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/s3wiPYFu7hIlbWWOSIVjC8C836W.jpg"
+            },
+            {
+              "name": "Nandagopall MOHAN",
+              "char": "",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "湯湘竹",
+              "job": "Director"
+            },
+            {
+              "name": "湯湘竹",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "zh",
+          "origTitle": "沙央",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1492861?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 438631,
         "titleZh": "沙丘",
@@ -1538,7 +1767,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/u38hNQbxvIicUdfrHpqa9puBnA9.jpg",
-        "voteAverage": "6.1",
+        "voteAverage": "6.2",
         "genre": [
           "動作",
           "犯罪",
@@ -1675,7 +1904,7 @@
           "synopsis": "一群深諳社群媒體操作的銀行搶匪，將一場場大膽搶案全程直播，卻不知道日益高漲的網路聲量，已讓他們成為一名資深 FBI 探員與一位天才軟體工程師鎖定的目標。即使這對意想不到的搭檔逐步逼近，這群大盜仍不斷突破極限，為了他們的信念押上一切，籌劃最野心勃勃的終極搶案。",
           "poster": "https://image.tmdb.org/t/p/w500/rCzPWWRHat2k5eSqDMAxIVWkVB4.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/u38hNQbxvIicUdfrHpqa9puBnA9.jpg",
-          "voteAverage": "6.1",
+          "voteAverage": "6.2",
           "trailerKey": "5rEgAVkGkDk",
           "imdbId": "tt35866986",
           "countries": [
@@ -3003,7 +3232,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/psRE5vZYCLZZxJqJaLErQTOeaHW.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/rA5t6Ui2kOF7gZtjQ3xuZWYBjnM.jpg",
-        "voteAverage": "9.0",
+        "voteAverage": "8.0",
         "genre": [
           "劇情",
           "愛情",
@@ -3122,7 +3351,7 @@
           "synopsis": "1990年代的馬來西亞，孤獨的少年凱循著母親的遺言，找到一本名為《告別的年代》的小說。透過書頁，他走進主人翁杜麗安的世界，見證一段始於1969年怡保的愛情與家族祕密。年輕的杜麗安愛上了中學教師連生。就在連生向她吐露家族世代相傳的祕密後，竟離奇失蹤。多年以後，杜麗安早已嫁做人婦，卻因繼女劉蓮與一名叫望生的男子出現，再度面對塵封已久的往事。望生有著與連生一模一樣的容貌，卻聲稱自己是連生的雙胞胎哥哥。當埋藏多年的真相逐漸浮現，愛情、失落與命運交錯，勾勒出一個家族近百年的命運流轉。 而凱也在閱讀的過程中，發現自己與這段往事存在著意想不到的聯繫。",
           "poster": "https://image.tmdb.org/t/p/w500/psRE5vZYCLZZxJqJaLErQTOeaHW.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/rA5t6Ui2kOF7gZtjQ3xuZWYBjnM.jpg",
-          "voteAverage": "9.0",
+          "voteAverage": "8.0",
           "trailerKey": "2N2nrKP-UyM",
           "imdbId": "tt35486511",
           "countries": [
@@ -3930,11 +4159,11 @@
         "crew": [
           {
             "name": "三島有紀子",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "三島有紀子",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -4053,11 +4282,11 @@
           "crew": [
             {
               "name": "三島有紀子",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "三島有紀子",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -4729,16 +4958,16 @@
         ],
         "crew": [
           {
-            "name": "Manuel Bauer",
+            "name": "Barbara Miller",
+            "job": "Director"
+          },
+          {
+            "name": "Barbara Miller",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
-          },
-          {
-            "name": "Philip Delaquis",
-            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -4777,16 +5006,16 @@
           ],
           "crew": [
             {
-              "name": "Manuel Bauer",
+              "name": "Barbara Miller",
+              "job": "Director"
+            },
+            {
+              "name": "Barbara Miller",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
-            },
-            {
-              "name": "Philip Delaquis",
-              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -6807,11 +7036,11 @@
             "job": "Director"
           },
           {
-            "name": "姜文",
+            "name": "Zhu Sujin",
             "job": "Screenplay"
           },
           {
-            "name": "Li Bukong",
+            "name": "姜文",
             "job": "Screenplay"
           }
         ],
@@ -6948,11 +7177,11 @@
               "job": "Director"
             },
             {
-              "name": "姜文",
+              "name": "Zhu Sujin",
               "job": "Screenplay"
             },
             {
-              "name": "Li Bukong",
+              "name": "姜文",
               "job": "Screenplay"
             }
           ],
@@ -7116,11 +7345,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 69000000,
@@ -7244,11 +7473,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 69000000,
@@ -7827,7 +8056,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/bySCyjQXNPgsnLTlgJpSMnRazPD.jpg",
-        "voteAverage": "6.3",
+        "voteAverage": "6.4",
         "genre": [
           "動作",
           "驚悚"
@@ -7934,12 +8163,12 @@
         ],
         "crew": [
           {
-            "name": "Thompson Evans",
-            "job": "Writer"
-          },
-          {
             "name": "Mark Vanselow",
             "job": "Director"
+          },
+          {
+            "name": "Thompson Evans",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -7962,7 +8191,7 @@
           "synopsis": "功勳卓著的退伍老兵萊恩被指控犯下謀殺案，於是他駕駛跑車，與警方展開一場玩命關頭史詩級追逐戰！",
           "poster": "https://image.tmdb.org/t/p/w500/p6jaXBXPG0qXSTRNVTtW91uxeny.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/bySCyjQXNPgsnLTlgJpSMnRazPD.jpg",
-          "voteAverage": "6.3",
+          "voteAverage": "6.4",
           "trailerKey": "XIdGnG-pMeA",
           "imdbId": "tt13611778",
           "countries": [
@@ -8052,12 +8281,12 @@
           ],
           "crew": [
             {
-              "name": "Thompson Evans",
-              "job": "Writer"
-            },
-            {
               "name": "Mark Vanselow",
               "job": "Director"
+            },
+            {
+              "name": "Thompson Evans",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -9725,11 +9954,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -9834,11 +10063,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -14775,7 +15004,7 @@
           }
         ],
         "budget": 18000000,
-        "revenue": 119356993,
+        "revenue": 119406588,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Other Mommy",
@@ -14892,7 +15121,7 @@
             }
           ],
           "budget": 18000000,
-          "revenue": 119356993,
+          "revenue": 119406588,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Other Mommy",
@@ -15981,16 +16210,16 @@
         ],
         "crew": [
           {
-            "name": "Cameron Alexander",
-            "job": "Writer"
-          },
-          {
             "name": "David Ayer",
             "job": "Director"
+          },
+          {
+            "name": "Cameron Alexander",
+            "job": "Writer"
           }
         ],
         "budget": 82000000,
-        "revenue": 192905278,
+        "revenue": 192931039,
         "status": "Released",
         "origLang": "en",
         "origTitle": "Heart of the Beast",
@@ -16053,16 +16282,16 @@
           ],
           "crew": [
             {
-              "name": "Cameron Alexander",
-              "job": "Writer"
-            },
-            {
               "name": "David Ayer",
               "job": "Director"
+            },
+            {
+              "name": "Cameron Alexander",
+              "job": "Writer"
             }
           ],
           "budget": 82000000,
-          "revenue": 192905278,
+          "revenue": 192931039,
           "status": "Released",
           "origLang": "en",
           "origTitle": "Heart of the Beast",
@@ -16177,7 +16406,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/8R79AZjX1Bt4219Ub3CrRMsPQsW.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
         "voteAverage": "7.5",
         "genre": [
           "恐怖",
@@ -16192,7 +16421,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 305,
+            "votes": 307,
             "lastChanged": "2026-09-25T01:32:27.378197+08:00"
           },
           "mc": {
@@ -16325,7 +16554,7 @@
           ],
           "synopsis": "醫療快遞員布萊恩在毫無預警之下，被捲入一場充滿動作、毫不停歇的生存競賽；隨著一個致命且恐怖的夜晚逐步崩解，混亂全面爆發，他只能拼命求生。",
           "poster": "https://image.tmdb.org/t/p/w500/lVXZnG5oCJNsQlThZUgUg7EJPHU.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/8R79AZjX1Bt4219Ub3CrRMsPQsW.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
           "voteAverage": "7.5",
           "trailerKey": "f6Y2SgaHyCw",
           "imdbId": "tt35538033",
@@ -17123,11 +17352,11 @@
         "crew": [
           {
             "name": "柯瑞·巴克",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "柯瑞·巴克",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 750000,
@@ -17248,11 +17477,11 @@
           "crew": [
             {
               "name": "柯瑞·巴克",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "柯瑞·巴克",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 750000,
@@ -18278,9 +18507,19 @@
             "photo": "https://image.tmdb.org/t/p/w500/4Gunxt2UWnAX74ZoXKtqK2rI0e.jpg"
           },
           {
+            "name": "澤城美雪",
+            "char": "Chihaya Hagiwara (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/11mGqwpmu8CoEy1YJgabj2g7MIv.jpg"
+          },
+          {
             "name": "山崎和佳奈",
             "char": "Ran Mouri (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/1hBk3w3v1p1VuAHs5On9nvL2rX2.jpg"
+          },
+          {
+            "name": "大塚明夫",
+            "char": "Jugo Yokomizo (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
           },
           {
             "name": "小山力也",
@@ -18291,11 +18530,6 @@
             "name": "林原惠",
             "char": "Ai Haibara (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/3Alm4pmBIxpeeh0Sdippxdbkpne.jpg"
-          },
-          {
-            "name": "澤城美雪",
-            "char": "Chihaya Hagiwara (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/11mGqwpmu8CoEy1YJgabj2g7MIv.jpg"
           },
           {
             "name": "三木真一郎",
@@ -18316,11 +18550,6 @@
             "name": "畑芽育",
             "char": "Minato Tateoki (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/9lfvEZ9spyIsqbi7gKTjPcx3vQx.jpg"
-          },
-          {
-            "name": "大塚明夫",
-            "char": "Jyuugo Yokomizo (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
           },
           {
             "name": "日高範子",
@@ -18398,9 +18627,19 @@
               "photo": "https://image.tmdb.org/t/p/w500/4Gunxt2UWnAX74ZoXKtqK2rI0e.jpg"
             },
             {
+              "name": "澤城美雪",
+              "char": "Chihaya Hagiwara (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/11mGqwpmu8CoEy1YJgabj2g7MIv.jpg"
+            },
+            {
               "name": "山崎和佳奈",
               "char": "Ran Mouri (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/1hBk3w3v1p1VuAHs5On9nvL2rX2.jpg"
+            },
+            {
+              "name": "大塚明夫",
+              "char": "Jugo Yokomizo (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
             },
             {
               "name": "小山力也",
@@ -18411,11 +18650,6 @@
               "name": "林原惠",
               "char": "Ai Haibara (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/3Alm4pmBIxpeeh0Sdippxdbkpne.jpg"
-            },
-            {
-              "name": "澤城美雪",
-              "char": "Chihaya Hagiwara (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/11mGqwpmu8CoEy1YJgabj2g7MIv.jpg"
             },
             {
               "name": "三木真一郎",
@@ -18436,11 +18670,6 @@
               "name": "畑芽育",
               "char": "Minato Tateoki (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/9lfvEZ9spyIsqbi7gKTjPcx3vQx.jpg"
-            },
-            {
-              "name": "大塚明夫",
-              "char": "Jyuugo Yokomizo (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/uH9oiqOOgrsz2zNnouVZ1qPzDyb.jpg"
             },
             {
               "name": "日高範子",
@@ -18497,235 +18726,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 1492861,
-        "titleZh": "沙央",
-        "titleEn": "沙央",
-        "releaseDate": "2026-11-19",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-11-19",
-            "language": "zh"
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
-        "voteAverage": "6.2",
-        "genre": [
-          "劇情",
-          "愛情"
-        ],
-        "duration": 100,
-        "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
-        "imdb": "6.5",
-        "rt": "",
-        "mc": "",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 10,
-            "lastChanged": "2026-11-06T19:28:46.924765+08:00"
-          }
-        },
-        "trailerKey": "ECic1SG92Qk",
-        "cast": [
-          {
-            "name": "Jo Kukathas",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "湯詠絮",
-            "char": "San San",
-            "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
-          },
-          {
-            "name": "Mhia Farhana",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
-          },
-          {
-            "name": "李李仁",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
-          },
-          {
-            "name": "Ai Leng Ong",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
-          },
-          {
-            "name": "Khir Rahman",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
-          },
-          {
-            "name": "Farah Ahmad",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
-          },
-          {
-            "name": "Amir Ahnaf",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
-          },
-          {
-            "name": "Jonathan Lee",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Tan Li Yang",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Nandagopal",
-            "char": "",
-            "photo": null
-          },
-          {
-            "name": "Mhia Firdaus",
-            "char": "",
-            "photo": "https://image.tmdb.org/t/p/w500/s3wiPYFu7hIlbWWOSIVjC8C836W.jpg"
-          },
-          {
-            "name": "Nandagopall MOHAN",
-            "char": "",
-            "photo": null
-          }
-        ],
-        "crew": [
-          {
-            "name": "湯湘竹",
-            "job": "Director"
-          },
-          {
-            "name": "湯湘竹",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "zh",
-        "origTitle": "沙央",
-        "platforms": [],
-        "popularity": 0.9772,
-        "imdbId": "tt43440269",
-        "countries": [
-          "Taiwan",
-          "Malaysia"
-        ],
-        "detail": {
-          "duration": 100,
-          "genres": [
-            "劇情",
-            "愛情"
-          ],
-          "synopsis": "三個各自懷有夢想的青少年──愛跳舞的阿杰、熱愛泰拳的米娜、還有嚮往海洋、愛打醒獅鼓的女孩珊珊，三個不同種族的家庭、三段成長課題，在親情與愛的交織下，於馬來西亞東海岸譜出動人的生命樂章。",
-          "poster": "https://image.tmdb.org/t/p/w500/wyBscirwboFVU3wxC1amA9tun6d.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/zAgjbRoxO2zvBMFuv0OFaZCNogs.jpg",
-          "voteAverage": "6.2",
-          "trailerKey": "ECic1SG92Qk",
-          "imdbId": "tt43440269",
-          "countries": [
-            "Taiwan",
-            "Malaysia"
-          ],
-          "cast": [
-            {
-              "name": "Jo Kukathas",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "湯詠絮",
-              "char": "San San",
-              "photo": "https://image.tmdb.org/t/p/w500/1V3u0rrKJRXKq8dY1dFy5zXgft8.jpg"
-            },
-            {
-              "name": "Mhia Farhana",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/iPz77O6A63jCGLOAIRUHAX9XDYO.jpg"
-            },
-            {
-              "name": "李李仁",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/vfKFkELfjIyaBhkQf0P5I7nyJe3.jpg"
-            },
-            {
-              "name": "Ai Leng Ong",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/r0ZQG4TjjnPFax4x4zHeNM2ebmG.jpg"
-            },
-            {
-              "name": "Khir Rahman",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/s6Uoy5arUYtor28j3gEch8ZLN5c.jpg"
-            },
-            {
-              "name": "Farah Ahmad",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/w2u7nOOaCQUZgOMLnIAJskNFMQx.jpg"
-            },
-            {
-              "name": "Amir Ahnaf",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/iOzSNq9rRthJgh6o0PY9kmUoXVJ.jpg"
-            },
-            {
-              "name": "Jonathan Lee",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Tan Li Yang",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Nandagopal",
-              "char": "",
-              "photo": null
-            },
-            {
-              "name": "Mhia Firdaus",
-              "char": "",
-              "photo": "https://image.tmdb.org/t/p/w500/s3wiPYFu7hIlbWWOSIVjC8C836W.jpg"
-            },
-            {
-              "name": "Nandagopall MOHAN",
-              "char": "",
-              "photo": null
-            }
-          ],
-          "crew": [
-            {
-              "name": "湯湘竹",
-              "job": "Director"
-            },
-            {
-              "name": "湯湘竹",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "zh",
-          "origTitle": "沙央",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1492861?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 1236857,
         "titleZh": "樂園追放：心之共鳴",
@@ -18898,7 +18898,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/bRNvk4ed1OBGXLYwIslyujjvhQy.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-        "voteAverage": "8.3",
+        "voteAverage": "7.8",
         "genre": [
           "科幻",
           "動作",
@@ -18920,7 +18920,7 @@
           {
             "name": "麥肯娜·葛瑞絲",
             "char": "Maysilee Donner / Merrilee Donner",
-            "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/lIAEvs8Ls6R8V2xafrtXkvDS13p.jpg"
           },
           {
             "name": "雷夫·范恩斯",
@@ -18970,17 +18970,17 @@
           {
             "name": "王班",
             "char": "Wyatt Callow",
-            "photo": "https://image.tmdb.org/t/p/w500/vt8K9qlvFVGhm26xYkAvSfiQUbM.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/5A6JgNR9nlFVjuzJ1oOXyj2hfJo.jpg"
           },
           {
             "name": "Molly McCann",
             "char": "Louella McCoy",
-            "photo": "https://image.tmdb.org/t/p/w500/d3k79ubpjS7zUuzj59NKj1YGrWv.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/bbUU9xY0DxKjytOkryqUBZlh9F8.jpg"
           },
           {
             "name": "Iona Bell",
             "char": "Lou Lou",
-            "photo": "https://image.tmdb.org/t/p/w500/jCYlqxmBaifA17cCEj7uEVHcCFZ.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/z3VkT66fAo69QeY4CdU6GTSwArg.jpg"
           },
           {
             "name": "Billy Porter",
@@ -19029,7 +19029,7 @@
           "synopsis": "故事發生在首集《飢餓遊戲》的24年前，年輕的黑密契被選中參加第50屆飢餓遊戲，同時也是第2屆「大旬祭」。大旬祭每25年舉行一次，規則會與往年有所不同。這一屆大旬祭，每一個行政區都必須派出兩倍數量的貢品，他們將在飢餓遊戲之中展開生死搏鬥。",
           "poster": "https://image.tmdb.org/t/p/w500/bRNvk4ed1OBGXLYwIslyujjvhQy.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-          "voteAverage": "8.3",
+          "voteAverage": "7.8",
           "trailerKey": "OzAbE61Yk6g",
           "imdbId": "tt32558705",
           "countries": [
@@ -19045,7 +19045,7 @@
             {
               "name": "麥肯娜·葛瑞絲",
               "char": "Maysilee Donner / Merrilee Donner",
-              "photo": "https://image.tmdb.org/t/p/w500/sK0CVa56IIpFhCDrcXSTqPWxNbx.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/lIAEvs8Ls6R8V2xafrtXkvDS13p.jpg"
             },
             {
               "name": "雷夫·范恩斯",
@@ -19095,17 +19095,17 @@
             {
               "name": "王班",
               "char": "Wyatt Callow",
-              "photo": "https://image.tmdb.org/t/p/w500/vt8K9qlvFVGhm26xYkAvSfiQUbM.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/5A6JgNR9nlFVjuzJ1oOXyj2hfJo.jpg"
             },
             {
               "name": "Molly McCann",
               "char": "Louella McCoy",
-              "photo": "https://image.tmdb.org/t/p/w500/d3k79ubpjS7zUuzj59NKj1YGrWv.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/bbUU9xY0DxKjytOkryqUBZlh9F8.jpg"
             },
             {
               "name": "Iona Bell",
               "char": "Lou Lou",
-              "photo": "https://image.tmdb.org/t/p/w500/jCYlqxmBaifA17cCEj7uEVHcCFZ.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/z3VkT66fAo69QeY4CdU6GTSwArg.jpg"
             },
             {
               "name": "Billy Porter",
@@ -19161,7 +19161,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/3GL5W81tNOv3hhYHhvqRLgaymrr.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/6S41dEoKH2cxw20QgLxhnsQoLQF.jpg",
-        "voteAverage": "6.0",
+        "voteAverage": "8.0",
         "genre": [
           "犯罪",
           "劇情",
@@ -19309,7 +19309,7 @@
           "synopsis": "一對兄弟捲入一樁看似千載難逢的致富計畫，卻發現一切遠非想像中美好。當兩人試圖在危機四伏的俄羅斯黑幫世界中尋求出路，原本緊密的家族情誼也逐漸瓦解，最終引發足以改變彼此一生的嚴重後果……",
           "poster": "https://image.tmdb.org/t/p/w500/3GL5W81tNOv3hhYHhvqRLgaymrr.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/6S41dEoKH2cxw20QgLxhnsQoLQF.jpg",
-          "voteAverage": "6.0",
+          "voteAverage": "8.0",
           "trailerKey": null,
           "imdbId": "tt34385689",
           "countries": [
@@ -21301,7 +21301,7 @@
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": null,
+        "trailerKey": "6BwIhkMl8O8",
         "cast": [
           {
             "name": "布萊德·彼特",
@@ -21416,7 +21416,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/qoTSavcI299AeQVZm2Q9k21jd1Q.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/qqPspJFy0XrEoVTKZdp0Em7kej6.jpg",
           "voteAverage": "",
-          "trailerKey": null,
+          "trailerKey": "6BwIhkMl8O8",
           "imdbId": "tt36408401",
           "countries": [
             "United States of America"
@@ -22214,12 +22214,12 @@
         ],
         "crew": [
           {
-            "name": "James Ivory",
-            "job": "Director"
-          },
-          {
             "name": "露絲·鮑爾·賈華拉",
             "job": "Screenplay"
+          },
+          {
+            "name": "James Ivory",
+            "job": "Director"
           }
         ],
         "budget": 3000000,
@@ -22332,12 +22332,12 @@
           ],
           "crew": [
             {
-              "name": "James Ivory",
-              "job": "Director"
-            },
-            {
               "name": "露絲·鮑爾·賈華拉",
               "job": "Screenplay"
+            },
+            {
+              "name": "James Ivory",
+              "job": "Director"
             }
           ],
           "budget": 3000000,
@@ -25399,7 +25399,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/qcdqAYEypAZtBwDkE5gCskyrYR9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
-        "voteAverage": "8.5",
+        "voteAverage": "8.6",
         "genre": [
           "劇情",
           "歷史"
@@ -25515,7 +25515,7 @@
           }
         ],
         "budget": 27000000,
-        "revenue": 1765627,
+        "revenue": 1795453,
         "status": "Released",
         "origLang": "en",
         "origTitle": "I Play Rocky",
@@ -25535,7 +25535,7 @@
           "synopsis": "1970年代，寄居紐約、屢屢碰壁的落魄演員席維斯史特龍，堅信自己不只是寫出拳擊手傳奇的人，更是註定要站上擂台的那個人——洛基。一無所有、女友莎夏即將臨盆，他卻把全部身家押上，面對製片公司砸下的天價酬勞，只要他交出劇本、讓出主角，史特龍一次次轉身說不。只為了「親自演出洛基」，這不只是他對命運下的戰帖，更是賭上人生的籌碼，只為一戰成名。",
           "poster": "https://image.tmdb.org/t/p/w500/qcdqAYEypAZtBwDkE5gCskyrYR9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
-          "voteAverage": "8.5",
+          "voteAverage": "8.6",
           "trailerKey": "8RwGOFzY1X8",
           "imdbId": "tt11995650",
           "countries": [
@@ -25635,7 +25635,7 @@
             }
           ],
           "budget": 27000000,
-          "revenue": 1765627,
+          "revenue": 1795453,
           "status": "Released",
           "origLang": "en",
           "origTitle": "I Play Rocky",
@@ -26881,7 +26881,7 @@
           {
             "name": "克里斯托福·阿波特",
             "char": "Billy Evans",
-            "photo": "https://image.tmdb.org/t/p/w500/qWmlTycQb3yXaGhxPb6LCyaDjqh.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/bE7zzh60RXydH3p632ZZSmsTlcn.jpg"
           },
           {
             "name": "Lance Oppenheim",
@@ -26973,7 +26973,7 @@
             {
               "name": "克里斯托福·阿波特",
               "char": "Billy Evans",
-              "photo": "https://image.tmdb.org/t/p/w500/qWmlTycQb3yXaGhxPb6LCyaDjqh.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/bE7zzh60RXydH3p632ZZSmsTlcn.jpg"
             },
             {
               "name": "Lance Oppenheim",
@@ -27192,7 +27192,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/vEqjtmwUpKtqYKW9bZHYzCPZRgV.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/3UXmXTfkekS0Dchl8iIqK7XJt0t.jpg",
-        "voteAverage": "",
+        "voteAverage": "6.0",
         "genre": [
           "驚悚",
           "懸疑",
@@ -27262,7 +27262,7 @@
           "synopsis": "一座位在偏遠山區的車站，任職多年的站長甲洙，原本只要完成最後一天工作，就能迎接退休生活。然而，一場突如其來的暴雪使交通全面受阻，接班人遲遲未能抵達，整座車站也逐漸陷入與外界隔絕的孤立處境。直到隔天，自稱是新任站務員的玄宅終於現身，沒想到在兩人進行職務交接之際，竟意外在鐵路隧道內發現一具來路不明的屍體！當暴雪封鎖所有退路，隱藏在這座孤立車站裡的驚人真相，也將逐步浮出水面……",
           "poster": "https://image.tmdb.org/t/p/w500/vEqjtmwUpKtqYKW9bZHYzCPZRgV.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/3UXmXTfkekS0Dchl8iIqK7XJt0t.jpg",
-          "voteAverage": "",
+          "voteAverage": "6.0",
           "trailerKey": "gFp2Am3-YWI",
           "imdbId": "tt34380971",
           "countries": [
@@ -27563,7 +27563,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/lBufpybggIqWg0AuQY3AE7GGOvT.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iNyaldCUvLEJuTwFSjOoghRA4ez.jpg",
         "voteAverage": "",
         "genre": [
           "科幻",
@@ -27693,7 +27693,7 @@
           ],
           "synopsis": "多重宇宙傳奇即將在漫威影業《復仇者聯盟：末日崛起》迎來最終章。三個不同宇宙的英雄們將面臨前所未見致命威脅。這部年度壓軸史詩鉅作，將為漫威 電影宇宙打開全新篇章。",
           "poster": "https://image.tmdb.org/t/p/w500/lBufpybggIqWg0AuQY3AE7GGOvT.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/iNyaldCUvLEJuTwFSjOoghRA4ez.jpg",
           "voteAverage": "",
           "trailerKey": "ZpmJZRRGK6o",
           "imdbId": "tt21357150",
@@ -27927,11 +27927,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -28046,11 +28046,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -28195,16 +28195,16 @@
         ],
         "crew": [
           {
-            "name": "Alex Huston Fischer",
-            "job": "Director"
-          },
-          {
             "name": "Eleanor Wilson",
             "job": "Director"
           },
           {
-            "name": "Alex Huston Fischer",
+            "name": "Eleanor Wilson",
             "job": "Screenplay"
+          },
+          {
+            "name": "Alex Huston Fischer",
+            "job": "Director"
           }
         ],
         "budget": 10000000,
@@ -28320,16 +28320,16 @@
           ],
           "crew": [
             {
-              "name": "Alex Huston Fischer",
-              "job": "Director"
-            },
-            {
               "name": "Eleanor Wilson",
               "job": "Director"
             },
             {
-              "name": "Alex Huston Fischer",
+              "name": "Eleanor Wilson",
               "job": "Screenplay"
+            },
+            {
+              "name": "Alex Huston Fischer",
+              "job": "Director"
             }
           ],
           "budget": 10000000,
@@ -29534,6 +29534,285 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1176962,
+        "titleZh": "雙面蘿絲",
+        "titleEn": "Rose",
+        "releaseDate": "2027-01-22",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-01-22",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/c4p2lQ5JdubYmPiY1gyizOhSJ71.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/1KUzZMCBOtInUFoGUEJJsQyQKVi.jpg",
+        "voteAverage": "7.6",
+        "genre": [
+          "劇情",
+          "歷史",
+          "戰爭"
+        ],
+        "duration": 94,
+        "synopsis": "17世紀德國農村，有座荒廢多時的莊園，出現一名自稱繼承人的神祕士兵；「他」行事粗獷俐落，逐漸建立起權力和威信，卻因一場意外暴露真實身分，走向審判。",
+        "imdb": "7.5",
+        "rt": "97%",
+        "mc": "88",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 2345,
+            "lastChanged": "2026-11-19T04:53:07.448602+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 35,
+            "lastChanged": "2026-11-19T04:53:07.448602+08:00"
+          },
+          "mc": {
+            "source": "omdb",
+            "votes": 0,
+            "lastChanged": "2026-11-19T04:53:07.448602+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "桑德拉·惠勒",
+            "char": "Rose",
+            "photo": "https://image.tmdb.org/t/p/w500/eytKTAVD9fP8kklbW4dMilbceig.jpg"
+          },
+          {
+            "name": "Caro Braun",
+            "char": "Suzanna",
+            "photo": "https://image.tmdb.org/t/p/w500/gMlt1SZ6eOUinOcSTc7QhrlEuuy.jpg"
+          },
+          {
+            "name": "Marisa Growaldt",
+            "char": "The Narrator (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/lbDsn2cj6ATAL4Su10Usp0R5b4t.jpg"
+          },
+          {
+            "name": "Robert Gwisdek",
+            "char": "The Bailiff",
+            "photo": "https://image.tmdb.org/t/p/w500/doCAnt1rXCLmbLlMA9wQx215LSF.jpg"
+          },
+          {
+            "name": "Godehard Giese",
+            "char": "The Large-Scale Farmer",
+            "photo": "https://image.tmdb.org/t/p/w500/2vz3pSqdPUEtJ5xcNTWh7eZVdkj.jpg"
+          },
+          {
+            "name": "Maria Dragus",
+            "char": "His Wife",
+            "photo": "https://image.tmdb.org/t/p/w500/4AiU1EdwWlNuxBbYV1qLxc09mv1.jpg"
+          },
+          {
+            "name": "Larisa Faber",
+            "char": "His Deceased Wife",
+            "photo": "https://image.tmdb.org/t/p/w500/vSidsrCNYtL7oAR9tcsn3oCGGLl.jpg"
+          },
+          {
+            "name": "Annalisa Hohl",
+            "char": "His Daughter",
+            "photo": "https://image.tmdb.org/t/p/w500/6138LUa2LOiptGunhP5rGiNrSm6.jpg"
+          },
+          {
+            "name": "Ruby De Quero",
+            "char": "His Daughter",
+            "photo": null
+          },
+          {
+            "name": "Enni Kräker",
+            "char": "His Daughter",
+            "photo": null
+          },
+          {
+            "name": "Hilde Kräker",
+            "char": "His Daughter",
+            "photo": null
+          },
+          {
+            "name": "Anni Stender",
+            "char": "His Daughter",
+            "photo": null
+          },
+          {
+            "name": "Klara Stender",
+            "char": "His Daughter",
+            "photo": null
+          },
+          {
+            "name": "Augustino Renken",
+            "char": "The Old Farmhand",
+            "photo": null
+          },
+          {
+            "name": "Maurice Leonhard",
+            "char": "The Young Farmhand",
+            "photo": null
+          },
+          {
+            "name": "Anni Molke",
+            "char": "The One Maid",
+            "photo": "https://image.tmdb.org/t/p/w500/lCezVRFFxQxeZ4fNwYuDNcKmnE4.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Markus Schleinzer",
+            "job": "Writer"
+          },
+          {
+            "name": "Markus Schleinzer",
+            "job": "Director"
+          },
+          {
+            "name": "Alexander Brom",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 681546,
+        "status": "Released",
+        "origLang": "de",
+        "origTitle": "Rose",
+        "platforms": [],
+        "popularity": 4.3316,
+        "imdbId": "tt25399154",
+        "countries": [
+          "Austria",
+          "Germany"
+        ],
+        "detail": {
+          "duration": 94,
+          "genres": [
+            "劇情",
+            "歷史",
+            "戰爭"
+          ],
+          "synopsis": "17世紀德國農村，有座荒廢多時的莊園，出現一名自稱繼承人的神祕士兵；「他」行事粗獷俐落，逐漸建立起權力和威信，卻因一場意外暴露真實身分，走向審判。",
+          "poster": "https://image.tmdb.org/t/p/w500/c4p2lQ5JdubYmPiY1gyizOhSJ71.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/1KUzZMCBOtInUFoGUEJJsQyQKVi.jpg",
+          "voteAverage": "7.6",
+          "trailerKey": null,
+          "imdbId": "tt25399154",
+          "countries": [
+            "Austria",
+            "Germany"
+          ],
+          "cast": [
+            {
+              "name": "桑德拉·惠勒",
+              "char": "Rose",
+              "photo": "https://image.tmdb.org/t/p/w500/eytKTAVD9fP8kklbW4dMilbceig.jpg"
+            },
+            {
+              "name": "Caro Braun",
+              "char": "Suzanna",
+              "photo": "https://image.tmdb.org/t/p/w500/gMlt1SZ6eOUinOcSTc7QhrlEuuy.jpg"
+            },
+            {
+              "name": "Marisa Growaldt",
+              "char": "The Narrator (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/lbDsn2cj6ATAL4Su10Usp0R5b4t.jpg"
+            },
+            {
+              "name": "Robert Gwisdek",
+              "char": "The Bailiff",
+              "photo": "https://image.tmdb.org/t/p/w500/doCAnt1rXCLmbLlMA9wQx215LSF.jpg"
+            },
+            {
+              "name": "Godehard Giese",
+              "char": "The Large-Scale Farmer",
+              "photo": "https://image.tmdb.org/t/p/w500/2vz3pSqdPUEtJ5xcNTWh7eZVdkj.jpg"
+            },
+            {
+              "name": "Maria Dragus",
+              "char": "His Wife",
+              "photo": "https://image.tmdb.org/t/p/w500/4AiU1EdwWlNuxBbYV1qLxc09mv1.jpg"
+            },
+            {
+              "name": "Larisa Faber",
+              "char": "His Deceased Wife",
+              "photo": "https://image.tmdb.org/t/p/w500/vSidsrCNYtL7oAR9tcsn3oCGGLl.jpg"
+            },
+            {
+              "name": "Annalisa Hohl",
+              "char": "His Daughter",
+              "photo": "https://image.tmdb.org/t/p/w500/6138LUa2LOiptGunhP5rGiNrSm6.jpg"
+            },
+            {
+              "name": "Ruby De Quero",
+              "char": "His Daughter",
+              "photo": null
+            },
+            {
+              "name": "Enni Kräker",
+              "char": "His Daughter",
+              "photo": null
+            },
+            {
+              "name": "Hilde Kräker",
+              "char": "His Daughter",
+              "photo": null
+            },
+            {
+              "name": "Anni Stender",
+              "char": "His Daughter",
+              "photo": null
+            },
+            {
+              "name": "Klara Stender",
+              "char": "His Daughter",
+              "photo": null
+            },
+            {
+              "name": "Augustino Renken",
+              "char": "The Old Farmhand",
+              "photo": null
+            },
+            {
+              "name": "Maurice Leonhard",
+              "char": "The Young Farmhand",
+              "photo": null
+            },
+            {
+              "name": "Anni Molke",
+              "char": "The One Maid",
+              "photo": "https://image.tmdb.org/t/p/w500/lCezVRFFxQxeZ4fNwYuDNcKmnE4.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Markus Schleinzer",
+              "job": "Writer"
+            },
+            {
+              "name": "Markus Schleinzer",
+              "job": "Director"
+            },
+            {
+              "name": "Alexander Brom",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 681546,
+          "status": "Released",
+          "origLang": "de",
+          "origTitle": "Rose",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1176962?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1260649,
         "titleZh": "野蠻遊戲：虛實世界",
         "titleEn": "Jumanji: Open World",
@@ -30439,6 +30718,41 @@
             "photo": "https://image.tmdb.org/t/p/w500/zKJ0fZ7ne57fTWWd3WP1OVvoLS6.jpg"
           },
           {
+            "name": "西恩·威廉·史考特",
+            "char": "Crash (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/AftiUFP4rYcl3SG3xllxyiLiuXS.jpg"
+          },
+          {
+            "name": "Josh Peck",
+            "char": "Eddie (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qoapD8slSdb550o1JEoepv1SvT0.jpg"
+          },
+          {
+            "name": "珍妮弗·洛佩茲",
+            "char": "Shira (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/aTUyQzZ9w6EJq5VXWX3C2ewZTAF.jpg"
+          },
+          {
+            "name": "Jessie J",
+            "char": "Brooke (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/eHOaPqybONPTnmdZqCCFrxVbdkX.jpg"
+          },
+          {
+            "name": "琪琪·帕瑪",
+            "char": "Peaches (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/x3eFVQVw4vOCJByLlkBnMMwEnG7.jpg"
+          },
+          {
+            "name": "亞當·迪凡",
+            "char": "Julian (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/8zU8zMs7cpjVzkBXis6I3wO3YeQ.jpg"
+          },
+          {
+            "name": "Justina Machado",
+            "char": "Zee (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/j5FaJXoyhMHlqv1l6TBdt1CH1oO.jpg"
+          },
+          {
             "name": "Chris Wedge",
             "char": "Scrat (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/jsROWtAPougLiYZeCelUpmSGFFX.jpg"
@@ -30516,6 +30830,41 @@
               "name": "拉蒂法皇后",
               "char": "Ellie (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/zKJ0fZ7ne57fTWWd3WP1OVvoLS6.jpg"
+            },
+            {
+              "name": "西恩·威廉·史考特",
+              "char": "Crash (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/AftiUFP4rYcl3SG3xllxyiLiuXS.jpg"
+            },
+            {
+              "name": "Josh Peck",
+              "char": "Eddie (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qoapD8slSdb550o1JEoepv1SvT0.jpg"
+            },
+            {
+              "name": "珍妮弗·洛佩茲",
+              "char": "Shira (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/aTUyQzZ9w6EJq5VXWX3C2ewZTAF.jpg"
+            },
+            {
+              "name": "Jessie J",
+              "char": "Brooke (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/eHOaPqybONPTnmdZqCCFrxVbdkX.jpg"
+            },
+            {
+              "name": "琪琪·帕瑪",
+              "char": "Peaches (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/x3eFVQVw4vOCJByLlkBnMMwEnG7.jpg"
+            },
+            {
+              "name": "亞當·迪凡",
+              "char": "Julian (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/8zU8zMs7cpjVzkBXis6I3wO3YeQ.jpg"
+            },
+            {
+              "name": "Justina Machado",
+              "char": "Zee (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/j5FaJXoyhMHlqv1l6TBdt1CH1oO.jpg"
             },
             {
               "name": "Chris Wedge",
