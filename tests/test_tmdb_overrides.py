@@ -194,6 +194,9 @@ class TmdbOverrideTests(unittest.TestCase):
             "皎潔深宵之月": 1410955,
             "Uruwashi no Yoi no Tsuki": 1410955,
             "暴雪": 1244809,
+            "你和我的房間這種感覺": 1600745,
+            "你和我的房間 這種感覺": 1600745,
+            "鬼的花嫁": 1592586,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):
