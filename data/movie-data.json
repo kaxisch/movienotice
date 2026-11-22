@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T19:57:28.109574+08:00",
+  "generated_at": "2026-11-23T03:58:01.204618+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 89,
-    "soon_count": 60
+    "soon_count": 59
   },
   "movies": {
     "now": [
@@ -35,17 +35,57 @@
         "mc": "",
         "ratingMeta": {},
         "trailerKey": null,
-        "cast": [],
+        "cast": [
+          {
+            "name": "金南俊",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/xotRaOk5UqdLIOoaJ2SKe3ffRGe.jpg"
+          },
+          {
+            "name": "金碩珍",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/cothCnRmZXC63olRZ816lZoGMDc.jpg"
+          },
+          {
+            "name": "閔玧其",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/83xf9EkLK3k7CJSaXe3iVgBC6S3.jpg"
+          },
+          {
+            "name": "鄭號錫",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/2xZu36Z6JFT95AIzazyRHW51dC1.jpg"
+          },
+          {
+            "name": "朴智旻",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/r1c7BrccHJ6oN6K4JAvJ9REcLBs.jpg"
+          },
+          {
+            "name": "金泰亨",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/jPCklfz8cAXfvRptmeNeYBa9Myf.jpg"
+          },
+          {
+            "name": "田柾國",
+            "char": "",
+            "photo": "https://image.tmdb.org/t/p/w500/2O7wrPFZtdfNJ5w6LGlIri3Xd0.jpg"
+          }
+        ],
         "crew": [
           {
             "name": "Ha Jung-jae",
             "job": "Director"
+          },
+          {
+            "name": "Ha Jung-jae",
+            "job": "Writer"
           }
         ],
         "budget": 0,
         "revenue": 0,
         "status": "Released",
-        "origLang": "en",
+        "origLang": "ko",
         "origTitle": "BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG: LIVE VIEWING",
         "platforms": [],
         "popularity": 1.0992,
@@ -63,17 +103,57 @@
           "trailerKey": null,
           "imdbId": "tt50486016",
           "countries": [],
-          "cast": [],
+          "cast": [
+            {
+              "name": "金南俊",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/xotRaOk5UqdLIOoaJ2SKe3ffRGe.jpg"
+            },
+            {
+              "name": "金碩珍",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/cothCnRmZXC63olRZ816lZoGMDc.jpg"
+            },
+            {
+              "name": "閔玧其",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/83xf9EkLK3k7CJSaXe3iVgBC6S3.jpg"
+            },
+            {
+              "name": "鄭號錫",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/2xZu36Z6JFT95AIzazyRHW51dC1.jpg"
+            },
+            {
+              "name": "朴智旻",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/r1c7BrccHJ6oN6K4JAvJ9REcLBs.jpg"
+            },
+            {
+              "name": "金泰亨",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/jPCklfz8cAXfvRptmeNeYBa9Myf.jpg"
+            },
+            {
+              "name": "田柾國",
+              "char": "",
+              "photo": "https://image.tmdb.org/t/p/w500/2O7wrPFZtdfNJ5w6LGlIri3Xd0.jpg"
+            }
+          ],
           "crew": [
             {
               "name": "Ha Jung-jae",
               "job": "Director"
+            },
+            {
+              "name": "Ha Jung-jae",
+              "job": "Writer"
             }
           ],
           "budget": 0,
           "revenue": 0,
           "status": "Released",
-          "origLang": "en",
+          "origLang": "ko",
           "origTitle": "BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG: LIVE VIEWING",
           "platforms": []
         },
@@ -254,7 +334,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/bRNvk4ed1OBGXLYwIslyujjvhQy.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-        "voteAverage": "7.7",
+        "voteAverage": "7.8",
         "genre": [
           "科幻",
           "動作",
@@ -375,7 +455,7 @@
           }
         ],
         "budget": 185000000,
-        "revenue": 56000000,
+        "revenue": 225000000,
         "status": "Released",
         "origLang": "en",
         "origTitle": "The Hunger Games: Sunrise on the Reaping",
@@ -396,7 +476,7 @@
           "synopsis": "故事發生在首集《飢餓遊戲》的24年前，年輕的黑密契被選中參加第50屆飢餓遊戲，同時也是第2屆「大旬祭」。大旬祭每25年舉行一次，規則會與往年有所不同。這一屆大旬祭，每一個行政區都必須派出兩倍數量的貢品，他們將在飢餓遊戲之中展開生死搏鬥。",
           "poster": "https://image.tmdb.org/t/p/w500/bRNvk4ed1OBGXLYwIslyujjvhQy.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-          "voteAverage": "7.7",
+          "voteAverage": "7.8",
           "trailerKey": "OzAbE61Yk6g",
           "imdbId": "tt32558705",
           "countries": [
@@ -500,7 +580,7 @@
             }
           ],
           "budget": 185000000,
-          "revenue": 56000000,
+          "revenue": 225000000,
           "status": "Released",
           "origLang": "en",
           "origTitle": "The Hunger Games: Sunrise on the Reaping",
@@ -538,7 +618,7 @@
         "synopsis": "一對兄弟捲入一樁看似千載難逢的致富計畫，卻發現一切遠非想像中美好。當兩人試圖在危機四伏的俄羅斯黑幫世界中尋求出路，原本緊密的家族情誼也逐漸瓦解，最終引發足以改變彼此一生的嚴重後果……",
         "imdb": "7.0",
         "rt": "87%",
-        "mc": "80",
+        "mc": "81",
         "ratingMeta": {
           "imdb": {
             "source": "omdb",
@@ -547,13 +627,13 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 131,
+            "votes": 138,
             "lastChanged": "2026-11-20T20:07:47.819500+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 36,
-            "lastChanged": "2026-11-18T20:11:16.323541+08:00"
+            "votes": 38,
+            "lastChanged": "2026-11-23T03:58:01.204618+08:00"
           }
         },
         "trailerKey": null,
@@ -2129,7 +2209,7 @@
           {
             "name": "袁澧林",
             "char": "Hannah",
-            "photo": "https://image.tmdb.org/t/p/w500/nqacJJ8vt0STorScSqXx9le1OIn.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/4o51gDx9AG8TFhCmw3RwlCGJlE8.jpg"
           },
           {
             "name": "周秀娜",
@@ -2246,7 +2326,7 @@
             {
               "name": "袁澧林",
               "char": "Hannah",
-              "photo": "https://image.tmdb.org/t/p/w500/nqacJJ8vt0STorScSqXx9le1OIn.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/4o51gDx9AG8TFhCmw3RwlCGJlE8.jpg"
             },
             {
               "name": "周秀娜",
@@ -2507,7 +2587,7 @@
         "rt": "",
         "mc": "",
         "ratingMeta": {},
-        "trailerKey": null,
+        "trailerKey": "qQaYUd7ESFk",
         "cast": [
           {
             "name": "鍾雪瑩",
@@ -2604,7 +2684,7 @@
           "poster": "https://image.tmdb.org/t/p/w500/vrgAemQS4UjwbyJW49UXgR0NecS.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/fkGd9qm5RXG9cR1dXbUsXfxL5L8.jpg",
           "voteAverage": "",
-          "trailerKey": null,
+          "trailerKey": "qQaYUd7ESFk",
           "imdbId": "tt36563084",
           "countries": [
             "Hong Kong"
@@ -2877,7 +2957,7 @@
           {
             "name": "Nandagopall MOHAN",
             "char": "",
-            "photo": null
+            "photo": "https://image.tmdb.org/t/p/w500/r2pTHlnPgffgm2yIWMkXaeOShms.jpg"
           }
         ],
         "crew": [
@@ -2982,7 +3062,7 @@
             {
               "name": "Nandagopall MOHAN",
               "char": "",
-              "photo": null
+              "photo": "https://image.tmdb.org/t/p/w500/r2pTHlnPgffgm2yIWMkXaeOShms.jpg"
             }
           ],
           "crew": [
@@ -3140,11 +3220,11 @@
             "job": "Director"
           },
           {
-            "name": "丹尼·維勒納夫",
+            "name": "埃里克·羅斯",
             "job": "Screenplay"
           },
           {
-            "name": "埃里克·羅斯",
+            "name": "丹尼·維勒納夫",
             "job": "Screenplay"
           }
         ],
@@ -3275,11 +3355,11 @@
               "job": "Director"
             },
             {
-              "name": "丹尼·維勒納夫",
+              "name": "埃里克·羅斯",
               "job": "Screenplay"
             },
             {
-              "name": "埃里克·羅斯",
+              "name": "丹尼·維勒納夫",
               "job": "Screenplay"
             }
           ],
@@ -3402,7 +3482,7 @@
           {
             "name": "蕾雅·瑟杜",
             "char": "Lady Margot Fenring",
-            "photo": "https://image.tmdb.org/t/p/w500/4q6xqqWLLleQrFjeqeYYV8B0fwE.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/7JAUieStGsHZAy6ed2WuFy4CJjm.jpg"
           },
           {
             "name": "史戴倫·史柯斯嘉",
@@ -3537,7 +3617,7 @@
             {
               "name": "蕾雅·瑟杜",
               "char": "Lady Margot Fenring",
-              "photo": "https://image.tmdb.org/t/p/w500/4q6xqqWLLleQrFjeqeYYV8B0fwE.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/7JAUieStGsHZAy6ed2WuFy4CJjm.jpg"
             },
             {
               "name": "史戴倫·史柯斯嘉",
@@ -7633,11 +7713,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -7755,11 +7835,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -8012,16 +8092,16 @@
         ],
         "crew": [
           {
-            "name": "Philip Delaquis",
-            "job": "Writer"
-          },
-          {
-            "name": "Barbara Miller",
+            "name": "Manuel Bauer",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
+          },
+          {
+            "name": "Philip Delaquis",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -8060,16 +8140,16 @@
           ],
           "crew": [
             {
-              "name": "Philip Delaquis",
-              "job": "Writer"
-            },
-            {
-              "name": "Barbara Miller",
+              "name": "Manuel Bauer",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
+            },
+            {
+              "name": "Philip Delaquis",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -8137,14 +8217,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/eQN8N2chINckvQDiNqzDXI0v9vN.jpg"
           },
           {
-            "name": "田中泯",
-            "char": "Kanji Murakami",
-            "photo": "https://image.tmdb.org/t/p/w500/bXmBnejA48Da7LzLdJqTKSVPCwd.jpg"
-          },
-          {
             "name": "吉岡秀隆",
             "char": "Kenji Noda",
             "photo": "https://image.tmdb.org/t/p/w500/xWNS6qStVthhWoxmKDfNS729BjJ.jpg"
+          },
+          {
+            "name": "田中泯",
+            "char": "Kanji Murakami",
+            "photo": "https://image.tmdb.org/t/p/w500/bXmBnejA48Da7LzLdJqTKSVPCwd.jpg"
           },
           {
             "name": "長澤雅美",
@@ -8162,14 +8242,14 @@
             "photo": "https://image.tmdb.org/t/p/w500/lPDKfLKIKDCBdqig3uhYnPjwY5h.jpg"
           },
           {
-            "name": "國村隼",
-            "char": "Dr. Ogata",
-            "photo": "https://image.tmdb.org/t/p/w500/zC0GbuXQGPur7i8AkdPUWedmDKz.jpg"
-          },
-          {
             "name": "安藤櫻",
             "char": "Sumiko Ōta",
             "photo": "https://image.tmdb.org/t/p/w500/k2R2ryEFEuUe2f3Dsd5yH8aRdqV.jpg"
+          },
+          {
+            "name": "國村隼",
+            "char": "Dr. Ogata",
+            "photo": "https://image.tmdb.org/t/p/w500/zC0GbuXQGPur7i8AkdPUWedmDKz.jpg"
           },
           {
             "name": "田中美央",
@@ -8256,14 +8336,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/eQN8N2chINckvQDiNqzDXI0v9vN.jpg"
             },
             {
-              "name": "田中泯",
-              "char": "Kanji Murakami",
-              "photo": "https://image.tmdb.org/t/p/w500/bXmBnejA48Da7LzLdJqTKSVPCwd.jpg"
-            },
-            {
               "name": "吉岡秀隆",
               "char": "Kenji Noda",
               "photo": "https://image.tmdb.org/t/p/w500/xWNS6qStVthhWoxmKDfNS729BjJ.jpg"
+            },
+            {
+              "name": "田中泯",
+              "char": "Kanji Murakami",
+              "photo": "https://image.tmdb.org/t/p/w500/bXmBnejA48Da7LzLdJqTKSVPCwd.jpg"
             },
             {
               "name": "長澤雅美",
@@ -8281,14 +8361,14 @@
               "photo": "https://image.tmdb.org/t/p/w500/lPDKfLKIKDCBdqig3uhYnPjwY5h.jpg"
             },
             {
-              "name": "國村隼",
-              "char": "Dr. Ogata",
-              "photo": "https://image.tmdb.org/t/p/w500/zC0GbuXQGPur7i8AkdPUWedmDKz.jpg"
-            },
-            {
               "name": "安藤櫻",
               "char": "Sumiko Ōta",
               "photo": "https://image.tmdb.org/t/p/w500/k2R2ryEFEuUe2f3Dsd5yH8aRdqV.jpg"
+            },
+            {
+              "name": "國村隼",
+              "char": "Dr. Ogata",
+              "photo": "https://image.tmdb.org/t/p/w500/zC0GbuXQGPur7i8AkdPUWedmDKz.jpg"
             },
             {
               "name": "田中美央",
@@ -9941,7 +10021,7 @@
             "job": "Director"
           },
           {
-            "name": "Zhu Sujin",
+            "name": "述平",
             "job": "Screenplay"
           },
           {
@@ -10082,7 +10162,7 @@
               "job": "Director"
             },
             {
-              "name": "Zhu Sujin",
+              "name": "述平",
               "job": "Screenplay"
             },
             {
@@ -10250,11 +10330,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           }
         ],
         "budget": 69000000,
@@ -10378,11 +10458,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             }
           ],
           "budget": 69000000,
@@ -10804,11 +10884,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 10000000,
@@ -10925,11 +11005,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 10000000,
@@ -12613,11 +12693,11 @@
         ],
         "crew": [
           {
-            "name": "吉野弘幸",
+            "name": "川原礫",
             "job": "Screenplay"
           },
           {
-            "name": "川原礫",
+            "name": "吉野弘幸",
             "job": "Screenplay"
           },
           {
@@ -12716,11 +12796,11 @@
           ],
           "crew": [
             {
-              "name": "吉野弘幸",
+              "name": "川原礫",
               "job": "Screenplay"
             },
             {
-              "name": "川原礫",
+              "name": "吉野弘幸",
               "job": "Screenplay"
             },
             {
@@ -12748,7 +12828,7 @@
       {
         "id": 1061798,
         "titleZh": "Jim Queen：肌情四射",
-        "titleEn": "Jim Queen",
+        "titleEn": "Jim Queen à la Recherche de la Chloroqueer",
         "releaseDate": "2026-10-23",
         "releaseYear": "2026",
         "isRerelease": false,
@@ -12859,11 +12939,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -12875,7 +12955,7 @@
         "revenue": 0,
         "status": "Released",
         "origLang": "fr",
-        "origTitle": "Jim Queen",
+        "origTitle": "Jim Queen à la Recherche de la Chloroqueer",
         "platforms": [],
         "popularity": 5.6749,
         "imdbId": "tt36955518",
@@ -12968,11 +13048,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -12984,7 +13064,7 @@
           "revenue": 0,
           "status": "Released",
           "origLang": "fr",
-          "origTitle": "Jim Queen",
+          "origTitle": "Jim Queen à la Recherche de la Chloroqueer",
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1061798?language=zh-TW",
@@ -19346,7 +19426,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/8EBeBzR24eKzgbfiPZqASoReI21.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/pYIJeLvfbVamFGO6hOERGVP2gTf.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/eMcrgrIyeAgMHS5R9LltDnuxB5R.jpg",
         "voteAverage": "5.0",
         "genre": [
           "冒險",
@@ -19480,7 +19560,7 @@
           ],
           "synopsis": "個性衝動、行事不按牌理出牌的少女比莉，與謹慎小心的母親愛麗絲之間關係緊繃。當比莉意外釋放出隱藏的魔法能力後，被帶往一個神祕的魔法秘境，在那裡，她受到羽毛筆與魔法日誌的迎接。隨著這場充滿奇幻魔法的冒險展開，比莉逐漸揭開家族塵封已久的祕密，而這些祕密也可能徹底改變女巫魔法世界的未來。",
           "poster": "https://image.tmdb.org/t/p/w500/8EBeBzR24eKzgbfiPZqASoReI21.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/pYIJeLvfbVamFGO6hOERGVP2gTf.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/eMcrgrIyeAgMHS5R9LltDnuxB5R.jpg",
           "voteAverage": "5.0",
           "trailerKey": "9PW8cxlfEZY",
           "imdbId": "tt38077943",
@@ -19909,7 +19989,8 @@
         "genre": [
           "動畫",
           "家庭",
-          "奇幻"
+          "奇幻",
+          "冒險"
         ],
         "duration": 125,
         "synopsis": "隧道的另一端，是一個不可思議的地方！一個不可能有的地點，一個不可能的事情竟然發生。10歲的少女千尋和父母，被捲入人類不能踏入的世界。在這個處處令人驚訝的地方，千尋感受到強大的無力感……和渺小的希望。 讓我在這裡工作吧！為解救被變成動物的父母，千尋求生的力量原本是沉睡的，現在終於被喚醒！",
@@ -20055,7 +20136,8 @@
           "genres": [
             "動畫",
             "家庭",
-            "奇幻"
+            "奇幻",
+            "冒險"
           ],
           "synopsis": "隧道的另一端，是一個不可思議的地方！一個不可能有的地點，一個不可能的事情竟然發生。10歲的少女千尋和父母，被捲入人類不能踏入的世界。在這個處處令人驚訝的地方，千尋感受到強大的無力感……和渺小的希望。 讓我在這裡工作吧！為解救被變成動物的父母，千尋求生的力量原本是沉睡的，現在終於被喚醒！",
           "poster": "https://image.tmdb.org/t/p/w500/qIVSUzgVfg1citQeZdBDGKTinUb.jpg",
@@ -20997,7 +21079,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/ipZXLn5CMiyAS1kJjRP94lqNNI2.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/9xGnS3dtcSUm5YTbxXAqqeLMcp2.jpg",
-        "voteAverage": "",
+        "voteAverage": "6.0",
         "genre": [
           "劇情"
         ],
@@ -21081,7 +21163,7 @@
           "synopsis": "這座城，是不是只愛有錢人？即將退伍的俊陽和賣福建麵的父親蝸居組屋，相看兩厭，直到接踵舉辦的兩場婚禮，讓俊陽女友和父親新妻先後住進同一屋簷下。經濟拮据磨蝕人心，也考驗兩代羈絆。然而當變故頓生，才是一夜長大的伊始。",
           "poster": "https://image.tmdb.org/t/p/w500/ipZXLn5CMiyAS1kJjRP94lqNNI2.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/9xGnS3dtcSUm5YTbxXAqqeLMcp2.jpg",
-          "voteAverage": "",
+          "voteAverage": "6.0",
           "trailerKey": null,
           "imdbId": "tt13848364",
           "countries": [
@@ -23590,11 +23672,11 @@
         ],
         "crew": [
           {
-            "name": "Erica Rivinoja",
+            "name": "Alessandro Carloni",
             "job": "Screenplay"
           },
           {
-            "name": "Alessandro Carloni",
+            "name": "Erica Rivinoja",
             "job": "Screenplay"
           },
           {
@@ -23717,11 +23799,11 @@
           ],
           "crew": [
             {
-              "name": "Erica Rivinoja",
+              "name": "Alessandro Carloni",
               "job": "Screenplay"
             },
             {
-              "name": "Alessandro Carloni",
+              "name": "Erica Rivinoja",
               "job": "Screenplay"
             },
             {
@@ -23794,11 +23876,11 @@
             "job": "Writer"
           },
           {
-            "name": "Matt Mitchell",
-            "job": "Writer"
+            "name": "Martin Owen",
+            "job": "Director"
           },
           {
-            "name": "Martin Owen",
+            "name": "伊卓瑞斯·艾巴",
             "job": "Director"
           }
         ],
@@ -23854,11 +23936,11 @@
               "job": "Writer"
             },
             {
-              "name": "Matt Mitchell",
-              "job": "Writer"
+              "name": "Martin Owen",
+              "job": "Director"
             },
             {
-              "name": "Martin Owen",
+              "name": "伊卓瑞斯·艾巴",
               "job": "Director"
             }
           ],
@@ -23899,18 +23981,18 @@
         "duration": 128,
         "synopsis": "1970年代，寄居紐約、屢屢碰壁的落魄演員席維斯史特龍，堅信自己不只是寫出拳擊手傳奇的人，更是註定要站上擂台的那個人——洛基。一無所有、女友莎夏即將臨盆，他卻把全部身家押上，面對製片公司砸下的天價酬勞，只要他交出劇本、讓出主角，史特龍一次次轉身說不。只為了「親自演出洛基」，這不只是他對命運下的戰帖，更是賭上人生的籌碼，只為一戰成名。",
         "imdb": "",
-        "rt": "88%",
-        "mc": "69",
+        "rt": "89%",
+        "mc": "68",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 171,
-            "lastChanged": "2026-11-20T20:07:47.819500+08:00"
+            "votes": 187,
+            "lastChanged": "2026-11-23T03:58:01.204618+08:00"
           },
           "mc": {
             "source": "mdblist",
-            "votes": 43,
-            "lastChanged": "2026-11-20T20:07:47.819500+08:00"
+            "votes": 46,
+            "lastChanged": "2026-11-23T03:58:01.204618+08:00"
           }
         },
         "trailerKey": "8RwGOFzY1X8",
@@ -25935,7 +26017,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/vEqjtmwUpKtqYKW9bZHYzCPZRgV.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/3UXmXTfkekS0Dchl8iIqK7XJt0t.jpg",
-        "voteAverage": "8.0",
+        "voteAverage": "7.5",
         "genre": [
           "驚悚",
           "懸疑",
@@ -26005,7 +26087,7 @@
           "synopsis": "一座位在偏遠山區的車站，任職多年的站長甲洙，原本只要完成最後一天工作，就能迎接退休生活。然而，一場突如其來的暴雪使交通全面受阻，接班人遲遲未能抵達，整座車站也逐漸陷入與外界隔絕的孤立處境。直到隔天，自稱是新任站務員的玄宅終於現身，沒想到在兩人進行職務交接之際，竟意外在鐵路隧道內發現一具來路不明的屍體！當暴雪封鎖所有退路，隱藏在這座孤立車站裡的驚人真相，也將逐步浮出水面……",
           "poster": "https://image.tmdb.org/t/p/w500/vEqjtmwUpKtqYKW9bZHYzCPZRgV.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/3UXmXTfkekS0Dchl8iIqK7XJt0t.jpg",
-          "voteAverage": "8.0",
+          "voteAverage": "7.5",
           "trailerKey": "gFp2Am3-YWI",
           "imdbId": "tt34380971",
           "countries": [
@@ -26865,11 +26947,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -26984,11 +27066,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -27299,7 +27381,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/yp4fKJFjXZDBNPgFhmxlNTXhRtm.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
-        "voteAverage": "8.9",
+        "voteAverage": "9.0",
         "genre": [
           "動作",
           "驚悚"
@@ -27434,7 +27516,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/yp4fKJFjXZDBNPgFhmxlNTXhRtm.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
-          "voteAverage": "8.9",
+          "voteAverage": "9.0",
           "trailerKey": null,
           "imdbId": "tt38686316",
           "countries": [
@@ -28146,11 +28228,11 @@
         ],
         "crew": [
           {
-            "name": "Chalit Krileadmongkon",
+            "name": "ภาคภูมิ วงษ์จินดา",
             "job": "Director"
           },
           {
-            "name": "ภาคภูมิ วงษ์จินดา",
+            "name": "Chalit Krileadmongkon",
             "job": "Director"
           },
           {
@@ -28269,11 +28351,11 @@
           ],
           "crew": [
             {
-              "name": "Chalit Krileadmongkon",
+              "name": "ภาคภูมิ วงษ์จินดา",
               "job": "Director"
             },
             {
-              "name": "ภาคภูมิ วงษ์จินดา",
+              "name": "Chalit Krileadmongkon",
               "job": "Director"
             },
             {
@@ -28794,285 +28876,6 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1520592?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
-        "id": 1176962,
-        "titleZh": "雙面蘿絲",
-        "titleEn": "Rose",
-        "releaseDate": "2027-01-22",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2027-01-22",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/c4p2lQ5JdubYmPiY1gyizOhSJ71.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/1KUzZMCBOtInUFoGUEJJsQyQKVi.jpg",
-        "voteAverage": "7.6",
-        "genre": [
-          "劇情",
-          "歷史",
-          "戰爭"
-        ],
-        "duration": 94,
-        "synopsis": "17世紀德國農村，有座荒廢多時的莊園，出現一名自稱繼承人的神祕士兵；「他」行事粗獷俐落，逐漸建立起權力和威信，卻因一場意外暴露真實身分，走向審判。",
-        "imdb": "7.5",
-        "rt": "97%",
-        "mc": "88",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 2345,
-            "lastChanged": "2026-11-19T04:53:07.448602+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 39,
-            "lastChanged": "2026-11-19T04:53:07.448602+08:00"
-          },
-          "mc": {
-            "source": "omdb",
-            "votes": 0,
-            "lastChanged": "2026-11-19T04:53:07.448602+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "桑德拉·惠勒",
-            "char": "Rose",
-            "photo": "https://image.tmdb.org/t/p/w500/gDiFGzVbpjFU44QJGKsEVk8WuVw.jpg"
-          },
-          {
-            "name": "Caro Braun",
-            "char": "Suzanna",
-            "photo": "https://image.tmdb.org/t/p/w500/gMlt1SZ6eOUinOcSTc7QhrlEuuy.jpg"
-          },
-          {
-            "name": "Marisa Growaldt",
-            "char": "The Narrator (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/lbDsn2cj6ATAL4Su10Usp0R5b4t.jpg"
-          },
-          {
-            "name": "Robert Gwisdek",
-            "char": "The Bailiff",
-            "photo": "https://image.tmdb.org/t/p/w500/doCAnt1rXCLmbLlMA9wQx215LSF.jpg"
-          },
-          {
-            "name": "Godehard Giese",
-            "char": "The Large-Scale Farmer",
-            "photo": "https://image.tmdb.org/t/p/w500/2vz3pSqdPUEtJ5xcNTWh7eZVdkj.jpg"
-          },
-          {
-            "name": "Maria Dragus",
-            "char": "His Wife",
-            "photo": "https://image.tmdb.org/t/p/w500/4AiU1EdwWlNuxBbYV1qLxc09mv1.jpg"
-          },
-          {
-            "name": "Larisa Faber",
-            "char": "His Deceased Wife",
-            "photo": "https://image.tmdb.org/t/p/w500/vSidsrCNYtL7oAR9tcsn3oCGGLl.jpg"
-          },
-          {
-            "name": "Annalisa Hohl",
-            "char": "His Daughter",
-            "photo": "https://image.tmdb.org/t/p/w500/6138LUa2LOiptGunhP5rGiNrSm6.jpg"
-          },
-          {
-            "name": "Ruby De Quero",
-            "char": "His Daughter",
-            "photo": null
-          },
-          {
-            "name": "Enni Kräker",
-            "char": "His Daughter",
-            "photo": null
-          },
-          {
-            "name": "Hilde Kräker",
-            "char": "His Daughter",
-            "photo": null
-          },
-          {
-            "name": "Anni Stender",
-            "char": "His Daughter",
-            "photo": null
-          },
-          {
-            "name": "Klara Stender",
-            "char": "His Daughter",
-            "photo": null
-          },
-          {
-            "name": "Augustino Renken",
-            "char": "The Old Farmhand",
-            "photo": null
-          },
-          {
-            "name": "Maurice Leonhard",
-            "char": "The Young Farmhand",
-            "photo": null
-          },
-          {
-            "name": "Anni Molke",
-            "char": "The One Maid",
-            "photo": "https://image.tmdb.org/t/p/w500/lCezVRFFxQxeZ4fNwYuDNcKmnE4.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Markus Schleinzer",
-            "job": "Writer"
-          },
-          {
-            "name": "Markus Schleinzer",
-            "job": "Director"
-          },
-          {
-            "name": "Alexander Brom",
-            "job": "Writer"
-          }
-        ],
-        "budget": 0,
-        "revenue": 681546,
-        "status": "Released",
-        "origLang": "de",
-        "origTitle": "Rose",
-        "platforms": [],
-        "popularity": 4.4011,
-        "imdbId": "tt25399154",
-        "countries": [
-          "Austria",
-          "Germany"
-        ],
-        "detail": {
-          "duration": 94,
-          "genres": [
-            "劇情",
-            "歷史",
-            "戰爭"
-          ],
-          "synopsis": "17世紀德國農村，有座荒廢多時的莊園，出現一名自稱繼承人的神祕士兵；「他」行事粗獷俐落，逐漸建立起權力和威信，卻因一場意外暴露真實身分，走向審判。",
-          "poster": "https://image.tmdb.org/t/p/w500/c4p2lQ5JdubYmPiY1gyizOhSJ71.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/1KUzZMCBOtInUFoGUEJJsQyQKVi.jpg",
-          "voteAverage": "7.6",
-          "trailerKey": null,
-          "imdbId": "tt25399154",
-          "countries": [
-            "Austria",
-            "Germany"
-          ],
-          "cast": [
-            {
-              "name": "桑德拉·惠勒",
-              "char": "Rose",
-              "photo": "https://image.tmdb.org/t/p/w500/gDiFGzVbpjFU44QJGKsEVk8WuVw.jpg"
-            },
-            {
-              "name": "Caro Braun",
-              "char": "Suzanna",
-              "photo": "https://image.tmdb.org/t/p/w500/gMlt1SZ6eOUinOcSTc7QhrlEuuy.jpg"
-            },
-            {
-              "name": "Marisa Growaldt",
-              "char": "The Narrator (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/lbDsn2cj6ATAL4Su10Usp0R5b4t.jpg"
-            },
-            {
-              "name": "Robert Gwisdek",
-              "char": "The Bailiff",
-              "photo": "https://image.tmdb.org/t/p/w500/doCAnt1rXCLmbLlMA9wQx215LSF.jpg"
-            },
-            {
-              "name": "Godehard Giese",
-              "char": "The Large-Scale Farmer",
-              "photo": "https://image.tmdb.org/t/p/w500/2vz3pSqdPUEtJ5xcNTWh7eZVdkj.jpg"
-            },
-            {
-              "name": "Maria Dragus",
-              "char": "His Wife",
-              "photo": "https://image.tmdb.org/t/p/w500/4AiU1EdwWlNuxBbYV1qLxc09mv1.jpg"
-            },
-            {
-              "name": "Larisa Faber",
-              "char": "His Deceased Wife",
-              "photo": "https://image.tmdb.org/t/p/w500/vSidsrCNYtL7oAR9tcsn3oCGGLl.jpg"
-            },
-            {
-              "name": "Annalisa Hohl",
-              "char": "His Daughter",
-              "photo": "https://image.tmdb.org/t/p/w500/6138LUa2LOiptGunhP5rGiNrSm6.jpg"
-            },
-            {
-              "name": "Ruby De Quero",
-              "char": "His Daughter",
-              "photo": null
-            },
-            {
-              "name": "Enni Kräker",
-              "char": "His Daughter",
-              "photo": null
-            },
-            {
-              "name": "Hilde Kräker",
-              "char": "His Daughter",
-              "photo": null
-            },
-            {
-              "name": "Anni Stender",
-              "char": "His Daughter",
-              "photo": null
-            },
-            {
-              "name": "Klara Stender",
-              "char": "His Daughter",
-              "photo": null
-            },
-            {
-              "name": "Augustino Renken",
-              "char": "The Old Farmhand",
-              "photo": null
-            },
-            {
-              "name": "Maurice Leonhard",
-              "char": "The Young Farmhand",
-              "photo": null
-            },
-            {
-              "name": "Anni Molke",
-              "char": "The One Maid",
-              "photo": "https://image.tmdb.org/t/p/w500/lCezVRFFxQxeZ4fNwYuDNcKmnE4.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Markus Schleinzer",
-              "job": "Writer"
-            },
-            {
-              "name": "Markus Schleinzer",
-              "job": "Director"
-            },
-            {
-              "name": "Alexander Brom",
-              "job": "Writer"
-            }
-          ],
-          "budget": 0,
-          "revenue": 681546,
-          "status": "Released",
-          "origLang": "de",
-          "origTitle": "Rose",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1176962?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
