@@ -33,8 +33,21 @@ SOURCE_URLS = {
     "wonderful_soon": "https://wonderful.movie.com.tw/movie/index?type=upcoming",
     "eslite": "https://meet.eslite.com/tw/tc/gallery/201803020001",
 }
+ANNIVERSARY_PREFIX = r"(?:(?:\d+|[一二三四五六七八九十百]+)\s*(?:週|周)年(?:紀念)?\s*)?"
+FORMAT_PREFIX = r"(?:(?:4k|2k|uhd)\s*)?"
+RERELEASE_WORDING = r"(?:重映|重新上映|重返(?:大)?銀幕|經典重現)"
+RESTORATION_WORDING = (
+    r"(?:(?:全新|經典)\s*)?"
+    r"(?:(?:4k|2k|uhd)\s*)?"
+    r"(?:(?:全新|經典)\s*)?"
+    r"(?:(?:數位|數字)\s*)?"
+    r"修復(?:版)?"
+)
 RERELEASE_PATTERN = re.compile(
-    r"重映|重新上映|重返(?:大)?銀幕|經典重現|(?:數位|數字|4k|2k)\s*(?:經典)?修復(?:版)?",
+    rf"{ANNIVERSARY_PREFIX}(?:"
+    rf"{RESTORATION_WORDING}(?:\s*{RERELEASE_WORDING})?"
+    rf"|{FORMAT_PREFIX}(?:經典\s*)?{RERELEASE_WORDING}"
+    rf")",
     re.IGNORECASE,
 )
 PROMO_PREFIX_PATTERN = re.compile(
@@ -46,7 +59,7 @@ PROMOTIONAL_SCREENING_PATTERN = re.compile(
     re.IGNORECASE,
 )
 RERELEASE_PAREN_PATTERN = re.compile(
-    r"[（(][^）)]*(?:重映|重新上映|重返(?:大)?銀幕|經典重現|(?:數位|數字|4k|2k)\s*(?:經典)?修復)[^）)]*[）)]",
+    rf"[（(][^）)]*(?:{RERELEASE_PATTERN.pattern})[^）)]*[）)]",
     re.IGNORECASE,
 )
 
