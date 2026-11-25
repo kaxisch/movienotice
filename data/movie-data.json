@@ -1,12 +1,288 @@
 {
-  "generated_at": "2026-11-25T17:03:14.347688+08:00",
+  "generated_at": "2026-11-26T01:49:30.274915+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 86,
-    "soon_count": 59
+    "now_count": 87,
+    "soon_count": 58
   },
   "movies": {
     "now": [
+      {
+        "id": 1538497,
+        "titleZh": "歡迎光臨魔法秘境",
+        "titleEn": "Hexed",
+        "releaseDate": "2026-11-26",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2026-11-26",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/8EBeBzR24eKzgbfiPZqASoReI21.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
+        "voteAverage": "6.3",
+        "genre": [
+          "冒險",
+          "動畫",
+          "家庭",
+          "奇幻",
+          "喜劇"
+        ],
+        "duration": 103,
+        "synopsis": "個性衝動、行事不按牌理出牌的少女比莉，與謹慎小心的母親愛麗絲之間關係緊繃。當比莉意外釋放出隱藏的魔法能力後，被帶往一個神祕的魔法秘境，在那裡，她受到羽毛筆與魔法日誌的迎接。隨著這場充滿奇幻魔法的冒險展開，比莉逐漸揭開家族塵封已久的祕密，而這些祕密也可能徹底改變女巫魔法世界的未來。",
+        "imdb": "",
+        "rt": "69%",
+        "mc": "56",
+        "ratingMeta": {
+          "rt": {
+            "source": "mdblist",
+            "votes": 55,
+            "lastChanged": "2026-11-25T17:03:14.347688+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 22,
+            "lastChanged": "2026-11-25T17:03:14.347688+08:00"
+          }
+        },
+        "trailerKey": "9PW8cxlfEZY",
+        "cast": [
+          {
+            "name": "海莉·史坦菲德",
+            "char": "Billie Doe (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/qDInsG0cxWNxS1X4t59TBZ5S6x5.jpg"
+          },
+          {
+            "name": "Rashida Jones",
+            "char": "Alice Doe (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/cgWGm9eYCretBWeljPVtpRV7n6V.jpg"
+          },
+          {
+            "name": "茱蒂·佛斯特",
+            "char": "Queen Celeste (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/5emVgsLFlU6SmeBIFsF2Y7aqwtG.jpg"
+          },
+          {
+            "name": "華頓·哥金斯",
+            "char": "Beef Roger Crummchuk (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/5lcVMJbWrNDFiWa1WxK4oR8zwev.jpg"
+          },
+          {
+            "name": "亨利·溫克勒",
+            "char": "Nigel (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/c35LVOjB1gbY5iYzhN9PGIXUHWt.jpg"
+          },
+          {
+            "name": "Dan Stevens",
+            "char": "Hieronymous / Crystal Ball Greeter (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/fFsgginZKH527o38ZfdDxuzx7Ew.jpg"
+          },
+          {
+            "name": "佈雷特·吉爾曼",
+            "char": "Principal Huggins (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
+          },
+          {
+            "name": "Tracey Ullman",
+            "char": "Quill (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/cmug3uUXKBo9fhCcJk3pkgt1nvM.jpg"
+          },
+          {
+            "name": "史蒂芬·弗萊",
+            "char": "Quire (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/dH7GuUZ8QPM9RN99ak9KKOkSkdS.jpg"
+          },
+          {
+            "name": "山姆森·卡優",
+            "char": "Constable Beans (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/jyGT8cgl6MEANOpRKoHgXaC1yp6.jpg"
+          },
+          {
+            "name": "歐陽萬成",
+            "char": "Wizard Steve (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/1QfCVmdNo4AqBdN54kc9DTBx84X.jpg"
+          },
+          {
+            "name": "朗·範徹斯",
+            "char": "Wizard Francis (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/DtULMxPvAlOKfrwISxdEffIKlk.jpg"
+          },
+          {
+            "name": "Andrew Galloway",
+            "char": "Moon Hype McInmoon (voice)",
+            "photo": "https://image.tmdb.org/t/p/w500/o3YQ9x4E4xTBcPJJ4a5dMcE1PbF.jpg"
+          },
+          {
+            "name": "Kaylee Palau-Stayman",
+            "char": "Baby Billie (voice)",
+            "photo": null
+          },
+          {
+            "name": "Kina Green",
+            "char": "Young Alice (voice)",
+            "photo": null
+          },
+          {
+            "name": "Jaxson Tagami",
+            "char": "Bodie (voice)",
+            "photo": null
+          }
+        ],
+        "crew": [
+          {
+            "name": "Jason Hand",
+            "job": "Director"
+          },
+          {
+            "name": "ฝน วีระสุนทร",
+            "job": "Director"
+          },
+          {
+            "name": "Jared Bush",
+            "job": "Screenplay"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "en",
+        "origTitle": "Hexed",
+        "platforms": [],
+        "popularity": 58.7667,
+        "imdbId": "tt38077943",
+        "countries": [
+          "United States"
+        ],
+        "detail": {
+          "duration": 103,
+          "genres": [
+            "冒險",
+            "動畫",
+            "家庭",
+            "奇幻",
+            "喜劇"
+          ],
+          "synopsis": "個性衝動、行事不按牌理出牌的少女比莉，與謹慎小心的母親愛麗絲之間關係緊繃。當比莉意外釋放出隱藏的魔法能力後，被帶往一個神祕的魔法秘境，在那裡，她受到羽毛筆與魔法日誌的迎接。隨著這場充滿奇幻魔法的冒險展開，比莉逐漸揭開家族塵封已久的祕密，而這些祕密也可能徹底改變女巫魔法世界的未來。",
+          "poster": "https://image.tmdb.org/t/p/w500/8EBeBzR24eKzgbfiPZqASoReI21.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
+          "voteAverage": "6.3",
+          "trailerKey": "9PW8cxlfEZY",
+          "imdbId": "tt38077943",
+          "countries": [
+            "United States"
+          ],
+          "cast": [
+            {
+              "name": "海莉·史坦菲德",
+              "char": "Billie Doe (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/qDInsG0cxWNxS1X4t59TBZ5S6x5.jpg"
+            },
+            {
+              "name": "Rashida Jones",
+              "char": "Alice Doe (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/cgWGm9eYCretBWeljPVtpRV7n6V.jpg"
+            },
+            {
+              "name": "茱蒂·佛斯特",
+              "char": "Queen Celeste (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/5emVgsLFlU6SmeBIFsF2Y7aqwtG.jpg"
+            },
+            {
+              "name": "華頓·哥金斯",
+              "char": "Beef Roger Crummchuk (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/5lcVMJbWrNDFiWa1WxK4oR8zwev.jpg"
+            },
+            {
+              "name": "亨利·溫克勒",
+              "char": "Nigel (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/c35LVOjB1gbY5iYzhN9PGIXUHWt.jpg"
+            },
+            {
+              "name": "Dan Stevens",
+              "char": "Hieronymous / Crystal Ball Greeter (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/fFsgginZKH527o38ZfdDxuzx7Ew.jpg"
+            },
+            {
+              "name": "佈雷特·吉爾曼",
+              "char": "Principal Huggins (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
+            },
+            {
+              "name": "Tracey Ullman",
+              "char": "Quill (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/cmug3uUXKBo9fhCcJk3pkgt1nvM.jpg"
+            },
+            {
+              "name": "史蒂芬·弗萊",
+              "char": "Quire (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/dH7GuUZ8QPM9RN99ak9KKOkSkdS.jpg"
+            },
+            {
+              "name": "山姆森·卡優",
+              "char": "Constable Beans (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/jyGT8cgl6MEANOpRKoHgXaC1yp6.jpg"
+            },
+            {
+              "name": "歐陽萬成",
+              "char": "Wizard Steve (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/1QfCVmdNo4AqBdN54kc9DTBx84X.jpg"
+            },
+            {
+              "name": "朗·範徹斯",
+              "char": "Wizard Francis (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/DtULMxPvAlOKfrwISxdEffIKlk.jpg"
+            },
+            {
+              "name": "Andrew Galloway",
+              "char": "Moon Hype McInmoon (voice)",
+              "photo": "https://image.tmdb.org/t/p/w500/o3YQ9x4E4xTBcPJJ4a5dMcE1PbF.jpg"
+            },
+            {
+              "name": "Kaylee Palau-Stayman",
+              "char": "Baby Billie (voice)",
+              "photo": null
+            },
+            {
+              "name": "Kina Green",
+              "char": "Young Alice (voice)",
+              "photo": null
+            },
+            {
+              "name": "Jaxson Tagami",
+              "char": "Bodie (voice)",
+              "photo": null
+            }
+          ],
+          "crew": [
+            {
+              "name": "Jason Hand",
+              "job": "Director"
+            },
+            {
+              "name": "ฝน วีระสุนทร",
+              "job": "Director"
+            },
+            {
+              "name": "Jared Bush",
+              "job": "Screenplay"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "en",
+          "origTitle": "Hexed",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1538497?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
       {
         "id": 1457866,
         "titleZh": "後來，有個克里夫",
@@ -23,7 +299,7 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/vY9rs67NYNvcKX2xddxox3SH3iW.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/qqPspJFy0XrEoVTKZdp0Em7kej6.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/aRO4TuqF8dkRCb5tPlsSlpJbmQD.jpg",
         "voteAverage": "",
         "genre": [
           "喜劇",
@@ -160,7 +436,7 @@
           ],
           "synopsis": "1977年的洛杉磯，謀殺、勒索、竊盜……罪惡成了日常。距離那場好萊塢童話已過八年，克里夫布茲再度登場！這一次，他不再是殺死嬉皮的特技演員，而是遊走法律邊緣、專門替好萊塢收拾爛攤子的狠角色。",
           "poster": "https://image.tmdb.org/t/p/w500/vY9rs67NYNvcKX2xddxox3SH3iW.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/qqPspJFy0XrEoVTKZdp0Em7kej6.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/aRO4TuqF8dkRCb5tPlsSlpJbmQD.jpg",
           "voteAverage": "",
           "trailerKey": "6BwIhkMl8O8",
           "imdbId": "tt36408401",
@@ -722,7 +998,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/3GL5W81tNOv3hhYHhvqRLgaymrr.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/7QshsnWS3NIZp60qMgcYm1C6dxm.jpg",
-        "voteAverage": "8.0",
+        "voteAverage": "8.7",
         "genre": [
           "犯罪",
           "劇情",
@@ -870,7 +1146,7 @@
           "synopsis": "一對兄弟捲入一樁看似千載難逢的致富計畫，卻發現一切遠非想像中美好。當兩人試圖在危機四伏的俄羅斯黑幫世界中尋求出路，原本緊密的家族情誼也逐漸瓦解，最終引發足以改變彼此一生的嚴重後果……",
           "poster": "https://image.tmdb.org/t/p/w500/3GL5W81tNOv3hhYHhvqRLgaymrr.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/7QshsnWS3NIZp60qMgcYm1C6dxm.jpg",
-          "voteAverage": "8.0",
+          "voteAverage": "8.7",
           "trailerKey": null,
           "imdbId": "tt34385689",
           "countries": [
@@ -2351,7 +2627,7 @@
             "photo": "https://image.tmdb.org/t/p/w500/ypmPVRkZkjtS7qE3P8nU5GYCXnT.jpg"
           },
           {
-            "name": "So Chun-Wai",
+            "name": "蘇振雄",
             "char": "Director Chui",
             "photo": "https://image.tmdb.org/t/p/w500/woYTLlIY7jqdVGytlrotIvUFzgX.jpg"
           },
@@ -2468,7 +2744,7 @@
               "photo": "https://image.tmdb.org/t/p/w500/ypmPVRkZkjtS7qE3P8nU5GYCXnT.jpg"
             },
             {
-              "name": "So Chun-Wai",
+              "name": "蘇振雄",
               "char": "Director Chui",
               "photo": "https://image.tmdb.org/t/p/w500/woYTLlIY7jqdVGytlrotIvUFzgX.jpg"
             },
@@ -2754,12 +3030,12 @@
             "photo": "https://image.tmdb.org/t/p/w500/2h3YV9lNOkvmjIqrrp0fY4RSzEw.jpg"
           },
           {
-            "name": "Wing-Kei Wong",
+            "name": "黃詠琪",
             "char": "Wing-Kat's Little Sister",
             "photo": null
           },
           {
-            "name": "So Chun-Wai",
+            "name": "蘇振雄",
             "char": "Wing-Kat's Little Sister's Boyfriend",
             "photo": "https://image.tmdb.org/t/p/w500/woYTLlIY7jqdVGytlrotIvUFzgX.jpg"
           }
@@ -2774,7 +3050,7 @@
             "job": "Writer"
           },
           {
-            "name": "Christine Wong Wai Man",
+            "name": "黃惠敏",
             "job": "Writer"
           }
         ],
@@ -2855,12 +3131,12 @@
               "photo": "https://image.tmdb.org/t/p/w500/2h3YV9lNOkvmjIqrrp0fY4RSzEw.jpg"
             },
             {
-              "name": "Wing-Kei Wong",
+              "name": "黃詠琪",
               "char": "Wing-Kat's Little Sister",
               "photo": null
             },
             {
-              "name": "So Chun-Wai",
+              "name": "蘇振雄",
               "char": "Wing-Kat's Little Sister's Boyfriend",
               "photo": "https://image.tmdb.org/t/p/w500/woYTLlIY7jqdVGytlrotIvUFzgX.jpg"
             }
@@ -2875,7 +3151,7 @@
               "job": "Writer"
             },
             {
-              "name": "Christine Wong Wai Man",
+              "name": "黃惠敏",
               "job": "Writer"
             }
           ],
@@ -4741,13 +5017,13 @@
         "duration": 122,
         "synopsis": "一群深諳社群媒體操作的銀行搶匪，將一場場大膽搶案全程直播，卻不知道日益高漲的網路聲量，已讓他們成為一名資深 FBI 探員與一位天才軟體工程師鎖定的目標。即使這對意想不到的搭檔逐步逼近，這群大盜仍不斷突破極限，為了他們的信念押上一切，籌劃最野心勃勃的終極搶案。",
         "imdb": "",
-        "rt": "39%",
+        "rt": "40%",
         "mc": "49",
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 122,
-            "lastChanged": "2026-11-23T21:35:03.023202+08:00"
+            "votes": 128,
+            "lastChanged": "2026-11-26T01:49:30.274915+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -6810,7 +7086,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/wPehV9BD0hnhoXSTyV7uslaqUEu.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
-        "voteAverage": "7.2",
+        "voteAverage": "7.3",
         "genre": [
           "劇情"
         ],
@@ -6954,7 +7230,7 @@
           "synopsis": "羅馬尼亞一家七口搬來挪威，恪守基督教保守教義的他們深信這裡能過上更好的生活。一日，老師注意到大女兒身上的瘀青，旋即通報兒保機構，警方很快找上門，孩子們全數被帶走安置。錯愕的父母誠實配合調查，對日常管教的陳述卻成為「呈堂證供」。當虔誠信仰被置於強調開放、包容與兒童自主的主流社會中放大檢視，一場爭回孩子的攻防，也逐漸演變為保守宗教信念與世俗進步價值的正面交鋒。",
           "poster": "https://image.tmdb.org/t/p/w500/wPehV9BD0hnhoXSTyV7uslaqUEu.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
-          "voteAverage": "7.2",
+          "voteAverage": "7.3",
           "trailerKey": null,
           "imdbId": "tt35410859",
           "countries": [
@@ -10729,11 +11005,11 @@
         "crew": [
           {
             "name": "Jane Schoenbrun",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Jane Schoenbrun",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 10000000,
@@ -10850,11 +11126,11 @@
           "crew": [
             {
               "name": "Jane Schoenbrun",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Jane Schoenbrun",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 10000000,
@@ -10993,12 +11269,12 @@
         ],
         "crew": [
           {
-            "name": "Mark Vanselow",
-            "job": "Director"
-          },
-          {
             "name": "Thompson Evans",
             "job": "Writer"
+          },
+          {
+            "name": "Mark Vanselow",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -11111,12 +11387,12 @@
           ],
           "crew": [
             {
-              "name": "Mark Vanselow",
-              "job": "Director"
-            },
-            {
               "name": "Thompson Evans",
               "job": "Writer"
+            },
+            {
+              "name": "Mark Vanselow",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -13236,7 +13512,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/afd5TWfpEwP6ELpeipTrB3RAex9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-        "voteAverage": "7.0",
+        "voteAverage": "7.1",
         "genre": [
           "劇情",
           "驚悚"
@@ -13371,7 +13647,7 @@
           "synopsis": "故事靈感源自真實事件，聚焦年輕的 Facebook 工程師法蘭西絲豪根，在關鍵時刻挺身而出，並與《華爾街日報》記者傑夫霍維茲合作，展開一段充滿風險與挑戰的調查歷程。隨著調查逐步深入，兩人最終揭開社群平台長期隱匿的內部運作與爭議，掀起全球關注的重大揭弊行動。",
           "poster": "https://image.tmdb.org/t/p/w500/afd5TWfpEwP6ELpeipTrB3RAex9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-          "voteAverage": "7.0",
+          "voteAverage": "7.1",
           "trailerKey": "s0-EvSBPZnM",
           "imdbId": "tt37510326",
           "countries": [
@@ -14446,12 +14722,12 @@
         ],
         "crew": [
           {
-            "name": "路陽",
-            "job": "Director"
-          },
-          {
             "name": "裏則林",
             "job": "Screenplay"
+          },
+          {
+            "name": "路陽",
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -14564,12 +14840,12 @@
           ],
           "crew": [
             {
-              "name": "路陽",
-              "job": "Director"
-            },
-            {
               "name": "裏則林",
               "job": "Screenplay"
+            },
+            {
+              "name": "路陽",
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -18165,7 +18441,7 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 516,
+            "votes": 518,
             "lastChanged": "2026-10-04T08:05:09.081153+08:00"
           },
           "mc": {
@@ -18412,282 +18688,6 @@
       }
     ],
     "soon": [
-      {
-        "id": 1538497,
-        "titleZh": "歡迎光臨魔法秘境",
-        "titleEn": "Hexed",
-        "releaseDate": "2026-11-26",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-11-26",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/8EBeBzR24eKzgbfiPZqASoReI21.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
-        "voteAverage": "6.3",
-        "genre": [
-          "冒險",
-          "動畫",
-          "家庭",
-          "奇幻",
-          "喜劇"
-        ],
-        "duration": 103,
-        "synopsis": "個性衝動、行事不按牌理出牌的少女比莉，與謹慎小心的母親愛麗絲之間關係緊繃。當比莉意外釋放出隱藏的魔法能力後，被帶往一個神祕的魔法秘境，在那裡，她受到羽毛筆與魔法日誌的迎接。隨著這場充滿奇幻魔法的冒險展開，比莉逐漸揭開家族塵封已久的祕密，而這些祕密也可能徹底改變女巫魔法世界的未來。",
-        "imdb": "",
-        "rt": "69%",
-        "mc": "56",
-        "ratingMeta": {
-          "rt": {
-            "source": "mdblist",
-            "votes": 55,
-            "lastChanged": "2026-11-25T17:03:14.347688+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 22,
-            "lastChanged": "2026-11-25T17:03:14.347688+08:00"
-          }
-        },
-        "trailerKey": "9PW8cxlfEZY",
-        "cast": [
-          {
-            "name": "海莉·史坦菲德",
-            "char": "Billie Doe (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/fItdOWdrHNRGGRRD9NFQWtO5L1t.jpg"
-          },
-          {
-            "name": "Rashida Jones",
-            "char": "Alice Doe (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/cgWGm9eYCretBWeljPVtpRV7n6V.jpg"
-          },
-          {
-            "name": "茱蒂·佛斯特",
-            "char": "Queen Celeste (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/5emVgsLFlU6SmeBIFsF2Y7aqwtG.jpg"
-          },
-          {
-            "name": "華頓·哥金斯",
-            "char": "Beef Roger Crummchuk (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/5lcVMJbWrNDFiWa1WxK4oR8zwev.jpg"
-          },
-          {
-            "name": "Tracey Ullman",
-            "char": "Ms. Quill (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/cmug3uUXKBo9fhCcJk3pkgt1nvM.jpg"
-          },
-          {
-            "name": "史蒂芬·弗萊",
-            "char": "Elias Quire (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/dH7GuUZ8QPM9RN99ak9KKOkSkdS.jpg"
-          },
-          {
-            "name": "亨利·溫克勒",
-            "char": "Nigel (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/c35LVOjB1gbY5iYzhN9PGIXUHWt.jpg"
-          },
-          {
-            "name": "Dan Stevens",
-            "char": "Hieronymous (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/fFsgginZKH527o38ZfdDxuzx7Ew.jpg"
-          },
-          {
-            "name": "佈雷特·吉爾曼",
-            "char": "Principal Huggins (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
-          },
-          {
-            "name": "山姆森·卡優",
-            "char": "Constable Beans (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/jyGT8cgl6MEANOpRKoHgXaC1yp6.jpg"
-          },
-          {
-            "name": "歐陽萬成",
-            "char": "Wizard Steve (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/1QfCVmdNo4AqBdN54kc9DTBx84X.jpg"
-          },
-          {
-            "name": "朗·範徹斯",
-            "char": "Wizard Francis (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/DtULMxPvAlOKfrwISxdEffIKlk.jpg"
-          },
-          {
-            "name": "Drew Mcintyre",
-            "char": "Moon Hype McInmoon (voice)",
-            "photo": null
-          },
-          {
-            "name": "Andrew Galloway",
-            "char": "(voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/o3YQ9x4E4xTBcPJJ4a5dMcE1PbF.jpg"
-          },
-          {
-            "name": "切瑞·奧特瑞",
-            "char": "Hedda (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/A56szuLpt2yttvnHB49KNUZmD4b.jpg"
-          },
-          {
-            "name": "Kathy Najimy",
-            "char": "Raccoon Rhonda (voice)",
-            "photo": "https://image.tmdb.org/t/p/w500/nqbZF7Igr0SC8Xq8y0jwmx0mLDN.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Jason Hand",
-            "job": "Director"
-          },
-          {
-            "name": "ฝน วีระสุนทร",
-            "job": "Director"
-          },
-          {
-            "name": "Jared Bush",
-            "job": "Screenplay"
-          }
-        ],
-        "budget": 0,
-        "revenue": 0,
-        "status": "Released",
-        "origLang": "en",
-        "origTitle": "Hexed",
-        "platforms": [],
-        "popularity": 58.7667,
-        "imdbId": "tt38077943",
-        "countries": [
-          "United States"
-        ],
-        "detail": {
-          "duration": 103,
-          "genres": [
-            "冒險",
-            "動畫",
-            "家庭",
-            "奇幻",
-            "喜劇"
-          ],
-          "synopsis": "個性衝動、行事不按牌理出牌的少女比莉，與謹慎小心的母親愛麗絲之間關係緊繃。當比莉意外釋放出隱藏的魔法能力後，被帶往一個神祕的魔法秘境，在那裡，她受到羽毛筆與魔法日誌的迎接。隨著這場充滿奇幻魔法的冒險展開，比莉逐漸揭開家族塵封已久的祕密，而這些祕密也可能徹底改變女巫魔法世界的未來。",
-          "poster": "https://image.tmdb.org/t/p/w500/8EBeBzR24eKzgbfiPZqASoReI21.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
-          "voteAverage": "6.3",
-          "trailerKey": "9PW8cxlfEZY",
-          "imdbId": "tt38077943",
-          "countries": [
-            "United States"
-          ],
-          "cast": [
-            {
-              "name": "海莉·史坦菲德",
-              "char": "Billie Doe (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/fItdOWdrHNRGGRRD9NFQWtO5L1t.jpg"
-            },
-            {
-              "name": "Rashida Jones",
-              "char": "Alice Doe (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/cgWGm9eYCretBWeljPVtpRV7n6V.jpg"
-            },
-            {
-              "name": "茱蒂·佛斯特",
-              "char": "Queen Celeste (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/5emVgsLFlU6SmeBIFsF2Y7aqwtG.jpg"
-            },
-            {
-              "name": "華頓·哥金斯",
-              "char": "Beef Roger Crummchuk (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/5lcVMJbWrNDFiWa1WxK4oR8zwev.jpg"
-            },
-            {
-              "name": "Tracey Ullman",
-              "char": "Ms. Quill (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/cmug3uUXKBo9fhCcJk3pkgt1nvM.jpg"
-            },
-            {
-              "name": "史蒂芬·弗萊",
-              "char": "Elias Quire (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/dH7GuUZ8QPM9RN99ak9KKOkSkdS.jpg"
-            },
-            {
-              "name": "亨利·溫克勒",
-              "char": "Nigel (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/c35LVOjB1gbY5iYzhN9PGIXUHWt.jpg"
-            },
-            {
-              "name": "Dan Stevens",
-              "char": "Hieronymous (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/fFsgginZKH527o38ZfdDxuzx7Ew.jpg"
-            },
-            {
-              "name": "佈雷特·吉爾曼",
-              "char": "Principal Huggins (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/ub2IuMWFNQGYghHTPq0lpmn2Ue0.jpg"
-            },
-            {
-              "name": "山姆森·卡優",
-              "char": "Constable Beans (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/jyGT8cgl6MEANOpRKoHgXaC1yp6.jpg"
-            },
-            {
-              "name": "歐陽萬成",
-              "char": "Wizard Steve (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/1QfCVmdNo4AqBdN54kc9DTBx84X.jpg"
-            },
-            {
-              "name": "朗·範徹斯",
-              "char": "Wizard Francis (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/DtULMxPvAlOKfrwISxdEffIKlk.jpg"
-            },
-            {
-              "name": "Drew Mcintyre",
-              "char": "Moon Hype McInmoon (voice)",
-              "photo": null
-            },
-            {
-              "name": "Andrew Galloway",
-              "char": "(voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/o3YQ9x4E4xTBcPJJ4a5dMcE1PbF.jpg"
-            },
-            {
-              "name": "切瑞·奧特瑞",
-              "char": "Hedda (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/A56szuLpt2yttvnHB49KNUZmD4b.jpg"
-            },
-            {
-              "name": "Kathy Najimy",
-              "char": "Raccoon Rhonda (voice)",
-              "photo": "https://image.tmdb.org/t/p/w500/nqbZF7Igr0SC8Xq8y0jwmx0mLDN.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Jason Hand",
-              "job": "Director"
-            },
-            {
-              "name": "ฝน วีระสุนทร",
-              "job": "Director"
-            },
-            {
-              "name": "Jared Bush",
-              "job": "Screenplay"
-            }
-          ],
-          "budget": 0,
-          "revenue": 0,
-          "status": "Released",
-          "origLang": "en",
-          "origTitle": "Hexed",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1538497?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
       {
         "id": 1012201,
         "titleZh": "劇場版 排球少年!! 垃圾場的決戰",
@@ -19407,12 +19407,12 @@
         ],
         "crew": [
           {
-            "name": "James Ivory",
-            "job": "Director"
-          },
-          {
             "name": "露絲·鮑爾·賈華拉",
             "job": "Screenplay"
+          },
+          {
+            "name": "James Ivory",
+            "job": "Director"
           }
         ],
         "budget": 3000000,
@@ -19525,12 +19525,12 @@
           ],
           "crew": [
             {
-              "name": "James Ivory",
-              "job": "Director"
-            },
-            {
               "name": "露絲·鮑爾·賈華拉",
               "job": "Screenplay"
+            },
+            {
+              "name": "James Ivory",
+              "job": "Director"
             }
           ],
           "budget": 3000000,
@@ -22343,8 +22343,7 @@
         "voteAverage": "",
         "genre": [
           "動作",
-          "喜劇",
-          "奇幻"
+          "喜劇"
         ],
         "duration": 110,
         "synopsis": "被困在一座即將崩塌的紐澤西購物中心，與北極失去聯繫的聖誕老人，必須在商城遭殘暴犯罪首領及其手下佔領之際，親自出手，以猛烈暴力伸張正義。",
@@ -22441,7 +22440,7 @@
         ],
         "budget": 0,
         "revenue": 0,
-        "status": "Planned",
+        "status": "Released",
         "origLang": "en",
         "origTitle": "Violent Night 2",
         "platforms": [],
@@ -22454,8 +22453,7 @@
           "duration": 110,
           "genres": [
             "動作",
-            "喜劇",
-            "奇幻"
+            "喜劇"
           ],
           "synopsis": "被困在一座即將崩塌的紐澤西購物中心，與北極失去聯繫的聖誕老人，必須在商城遭殘暴犯罪首領及其手下佔領之際，親自出手，以猛烈暴力伸張正義。",
           "poster": "https://image.tmdb.org/t/p/w500/p1AjuGor48im2ZAtcxI6RkrZNBD.jpg",
@@ -22554,7 +22552,7 @@
           ],
           "budget": 0,
           "revenue": 0,
-          "status": "Planned",
+          "status": "Released",
           "origLang": "en",
           "origTitle": "Violent Night 2",
           "platforms": []
@@ -22592,7 +22590,7 @@
         "duration": 108,
         "synopsis": "延續蘇斯博士奇妙又異想天開的傳統，兒童名著《戴帽子的貓》首次以動畫長片的形式躍上大銀幕，這是一場史詩般的瘋狂冒險旅程，充滿創意點子、惡作劇與奇幻魔法。戴帽子的貓接下了迄今最艱鉅的任務：為蓋比和賽巴斯汀這對姊弟加油打氣。對這位闖禍精來說，這可能是他證明自己的最後機會……否則他就會失去他的魔法帽！",
         "imdb": "6.7",
-        "rt": "48%",
+        "rt": "49%",
         "mc": "46",
         "ratingMeta": {
           "imdb": {
@@ -22602,8 +22600,8 @@
           },
           "rt": {
             "source": "mdblist",
-            "votes": 71,
-            "lastChanged": "2026-11-23T21:35:03.023202+08:00"
+            "votes": 73,
+            "lastChanged": "2026-11-26T01:49:30.274915+08:00"
           },
           "mc": {
             "source": "mdblist",
@@ -22900,11 +22898,11 @@
             "job": "Writer"
           },
           {
-            "name": "Matt Mitchell",
-            "job": "Writer"
+            "name": "Martin Owen",
+            "job": "Director"
           },
           {
-            "name": "Martin Owen",
+            "name": "伊卓瑞斯·艾巴",
             "job": "Director"
           }
         ],
@@ -22960,11 +22958,11 @@
               "job": "Writer"
             },
             {
-              "name": "Matt Mitchell",
-              "job": "Writer"
+              "name": "Martin Owen",
+              "job": "Director"
             },
             {
-              "name": "Martin Owen",
+              "name": "伊卓瑞斯·艾巴",
               "job": "Director"
             }
           ],
@@ -22997,7 +22995,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/qcdqAYEypAZtBwDkE5gCskyrYR9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
-        "voteAverage": "8.4",
+        "voteAverage": "8.3",
         "genre": [
           "劇情",
           "歷史"
@@ -23133,7 +23131,7 @@
           "synopsis": "1970年代，寄居紐約、屢屢碰壁的落魄演員席維斯史特龍，堅信自己不只是寫出拳擊手傳奇的人，更是註定要站上擂台的那個人——洛基。一無所有、女友莎夏即將臨盆，他卻把全部身家押上，面對製片公司砸下的天價酬勞，只要他交出劇本、讓出主角，史特龍一次次轉身說不。只為了「親自演出洛基」，這不只是他對命運下的戰帖，更是賭上人生的籌碼，只為一戰成名。",
           "poster": "https://image.tmdb.org/t/p/w500/qcdqAYEypAZtBwDkE5gCskyrYR9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/1lnnjBCRLZzKRhQipK5zm61YkPe.jpg",
-          "voteAverage": "8.4",
+          "voteAverage": "8.3",
           "trailerKey": "8RwGOFzY1X8",
           "imdbId": "tt11995650",
           "countries": [
@@ -23596,8 +23594,7 @@
         "voteAverage": "",
         "genre": [
           "動畫",
-          "劇情",
-          "歷史"
+          "紀錄"
         ],
         "duration": 86,
         "synopsis": "2009年11月23日，菲律賓南方的一座小島發生震驚世界的馬京達瑙大屠殺。這事件成為菲國歷史上最殘暴的選舉相關暴力事件之一，也是現代史上造成最多記者死亡的攻擊事件。在馬京達瑙省馬薩萊村的荒野中，57 具遺體被尋獲，唯獨那第58人，記者貝博特・莫邁，至今仍下落不明。",
@@ -23673,8 +23670,7 @@
           "duration": 86,
           "genres": [
             "動畫",
-            "劇情",
-            "歷史"
+            "紀錄"
           ],
           "synopsis": "2009年11月23日，菲律賓南方的一座小島發生震驚世界的馬京達瑙大屠殺。這事件成為菲國歷史上最殘暴的選舉相關暴力事件之一，也是現代史上造成最多記者死亡的攻擊事件。在馬京達瑙省馬薩萊村的荒野中，57 具遺體被尋獲，唯獨那第58人，記者貝博特・莫邁，至今仍下落不明。",
           "poster": "https://image.tmdb.org/t/p/w500/iD8ZWZVg2Grj55jiA7BuQv3zs9q.jpg",
@@ -25469,11 +25465,11 @@
         "crew": [
           {
             "name": "丹尼·維勒納夫",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "丹尼·維勒納夫",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Brian K. Vaughan",
@@ -25578,11 +25574,11 @@
           "crew": [
             {
               "name": "丹尼·維勒納夫",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "丹尼·維勒納夫",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Brian K. Vaughan",
@@ -25981,11 +25977,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -26100,11 +26096,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -26249,11 +26245,11 @@
         ],
         "crew": [
           {
-            "name": "Alex Huston Fischer",
+            "name": "Eleanor Wilson",
             "job": "Director"
           },
           {
-            "name": "Eleanor Wilson",
+            "name": "Alex Huston Fischer",
             "job": "Director"
           },
           {
@@ -26374,11 +26370,11 @@
           ],
           "crew": [
             {
-              "name": "Alex Huston Fischer",
+              "name": "Eleanor Wilson",
               "job": "Director"
             },
             {
-              "name": "Eleanor Wilson",
+              "name": "Alex Huston Fischer",
               "job": "Director"
             },
             {
