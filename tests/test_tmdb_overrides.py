@@ -197,6 +197,9 @@ class TmdbOverrideTests(unittest.TestCase):
             "你和我的房間這種感覺": 1600745,
             "你和我的房間 這種感覺": 1600745,
             "鬼的花嫁": 1592586,
+            "南國再見，南國": 88811,
+            "南國再見南國": 88811,
+            "Goodbye South, Goodbye": 88811,
         }
         for title, tmdb_id in expected.items():
             with self.subTest(title=title):

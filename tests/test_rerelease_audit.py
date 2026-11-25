@@ -380,7 +380,14 @@ class CinemaParserTests(unittest.TestCase):
         self.assertEqual(cinema.strip_rerelease_labels("你的名字。（十周年重映）"), "你的名字")
         self.assertEqual(cinema.strip_rerelease_labels("魯冰花（數位修復版）"), "魯冰花")
         self.assertEqual(cinema.strip_rerelease_labels("魯冰花 數位修復版"), "魯冰花")
+        self.assertEqual(cinema.strip_rerelease_labels("你的名字10週年紀念4K重映"), "你的名字")
+        self.assertEqual(cinema.strip_rerelease_labels("南國再見，南國 4K全新修復"), "南國再見，南國")
+        self.assertEqual(cinema.strip_rerelease_labels("南國再見，南國 全新4K數位修復版"), "南國再見，南國")
         self.assertEqual(cinema.strip_rerelease_labels("Your Name.(2026)"), "Your Name")
+
+    def test_extended_rerelease_labels_are_detected_as_rerelease_evidence(self):
+        self.assertTrue(cinema.has_rerelease_marker("你的名字10週年紀念4K重映"))
+        self.assertTrue(cinema.has_rerelease_marker("南國再見，南國 4K全新修復"))
 
     def test_promotional_screening_is_not_treated_as_general_rerelease(self):
         self.assertTrue(cinema.is_promotional_screening("（DBOX特別場）蜘蛛人：重生日"))
@@ -405,7 +412,27 @@ class CinemaParserTests(unittest.TestCase):
 
     @patch("weekly_check.time.sleep")
     @patch("weekly_check.tmdb_search")
-    def test_unmarked_same_title_prefers_new_movie_from_cinema_year(self, tmdb_search, _sleep):
+    def test_rerelease_match_searches_without_anniversary_or_restoration_suffix(self, tmdb_search, _sleep):
+        tmdb_search.return_value = [{
+            "id": 88811,
+            "title": "南國再見，南國",
+            "original_title": "Goodbye South, Goodbye",
+            "release_date": "1996-05-13",
+        }]
+
+        result = weekly.choose_rerelease_tmdb_match({
+            "title_zh": "南國再見，南國 30週年紀念4K全新修復重映",
+            "release_date_tw": "2026-11-25",
+        })
+
+        self.assertEqual(result["id"], 88811)
+        self.assertTrue(all(call.args[0] == "南國再見，南國" for call in tmdb_search.call_args_list))
+        self.assertGreaterEqual(result["_match_score"], 200)
+
+    @patch("weekly_check.load_tmdb_overrides", return_value={})
+    @patch("weekly_check.time.sleep")
+    @patch("weekly_check.tmdb_search")
+    def test_unmarked_same_title_prefers_new_movie_from_cinema_year(self, tmdb_search, _sleep, _overrides):
         tmdb_search.return_value = [
             {"id": 100001, "title": "驀然回首", "original_title": "Look Back", "release_date": "2024-06-28"},
             {"id": 1591675, "title": "驀然回首", "original_title": "Look Back", "release_date": "2026-08-07"},
