@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T01:49:30.274915+08:00",
+  "generated_at": "2026-11-26T03:35:08.397194+08:00",
   "source": "api.themoviedb.org",
   "summary": {
-    "now_count": 87,
-    "soon_count": 58
+    "now_count": 86,
+    "soon_count": 60
   },
   "movies": {
     "now": [
@@ -3610,11 +3610,11 @@
             "job": "Director"
           },
           {
-            "name": "埃里克·羅斯",
+            "name": "丹尼·維勒納夫",
             "job": "Screenplay"
           },
           {
-            "name": "丹尼·維勒納夫",
+            "name": "埃里克·羅斯",
             "job": "Screenplay"
           }
         ],
@@ -3745,11 +3745,11 @@
               "job": "Director"
             },
             {
-              "name": "埃里克·羅斯",
+              "name": "丹尼·維勒納夫",
               "job": "Screenplay"
             },
             {
-              "name": "丹尼·維勒納夫",
+              "name": "埃里克·羅斯",
               "job": "Screenplay"
             }
           ],
@@ -7070,283 +7070,6 @@
         "sourceBucket": "tmdb"
       },
       {
-        "id": 1401459,
-        "titleZh": "完美家庭風暴",
-        "titleEn": "Fjord",
-        "releaseDate": "2026-11-09",
-        "releaseYear": "2026",
-        "isRerelease": false,
-        "twTheatricalReleases": [
-          {
-            "date": "2026-11-09",
-            "language": ""
-          }
-        ],
-        "twReleaseDateVerified": true,
-        "poster": "https://image.tmdb.org/t/p/w500/wPehV9BD0hnhoXSTyV7uslaqUEu.jpg",
-        "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
-        "voteAverage": "7.3",
-        "genre": [
-          "劇情"
-        ],
-        "duration": 146,
-        "synopsis": "羅馬尼亞一家七口搬來挪威，恪守基督教保守教義的他們深信這裡能過上更好的生活。一日，老師注意到大女兒身上的瘀青，旋即通報兒保機構，警方很快找上門，孩子們全數被帶走安置。錯愕的父母誠實配合調查，對日常管教的陳述卻成為「呈堂證供」。當虔誠信仰被置於強調開放、包容與兒童自主的主流社會中放大檢視，一場爭回孩子的攻防，也逐漸演變為保守宗教信念與世俗進步價值的正面交鋒。",
-        "imdb": "7.6",
-        "rt": "91%",
-        "mc": "78",
-        "ratingMeta": {
-          "imdb": {
-            "source": "omdb",
-            "votes": 4193,
-            "lastChanged": "2026-11-21T10:47:32.575103+08:00"
-          },
-          "rt": {
-            "source": "mdblist",
-            "votes": 165,
-            "lastChanged": "2026-11-21T10:47:32.575103+08:00"
-          },
-          "mc": {
-            "source": "mdblist",
-            "votes": 45,
-            "lastChanged": "2026-11-21T10:47:32.575103+08:00"
-          }
-        },
-        "trailerKey": null,
-        "cast": [
-          {
-            "name": "賽巴斯汀·史坦",
-            "char": "Mihai Gheorghiu",
-            "photo": "https://image.tmdb.org/t/p/w500/v20RLWst39klatsqUgSrwHxhwee.jpg"
-          },
-          {
-            "name": "蕾娜特·萊茵斯薇",
-            "char": "Lisbet Gheorghiu",
-            "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
-          },
-          {
-            "name": "莉莎·卡萊希德",
-            "char": "Mia Halberg",
-            "photo": "https://image.tmdb.org/t/p/w500/r6vxXVZfiTgOHumGRtPTQpXQtKz.jpg"
-          },
-          {
-            "name": "Ellen Dorrit Petersen",
-            "char": "Gunda",
-            "photo": "https://image.tmdb.org/t/p/w500/ynXvnMlMCCn0Uk6AOwRHLQRF9nZ.jpg"
-          },
-          {
-            "name": "Lisa Loven Kongsli",
-            "char": "Frida",
-            "photo": "https://image.tmdb.org/t/p/w500/pm5y6qrZqinsYZW0Rud1DjYU4mP.jpg"
-          },
-          {
-            "name": "Henrikke Lund Olsen",
-            "char": "Noora Halberg",
-            "photo": "https://image.tmdb.org/t/p/w500/1uGyDvAwm9uyhLtnXtPahhnUYHY.jpg"
-          },
-          {
-            "name": "Markus Tønseth",
-            "char": "Mats Halberg",
-            "photo": "https://image.tmdb.org/t/p/w500/ubDlfMGerK0RePOESlud0mpTpJu.jpg"
-          },
-          {
-            "name": "Vanessa Ceban",
-            "char": "Elia Gheorghiu",
-            "photo": null
-          },
-          {
-            "name": "Jonathan Ciprian Breazu",
-            "char": "Emmanuel Gheorghiu",
-            "photo": null
-          },
-          {
-            "name": "Christian Rubeck",
-            "char": "Attorney Jacobsen",
-            "photo": "https://image.tmdb.org/t/p/w500/gZ7f4zkmX8hluHkP6OCLpiofQNC.jpg"
-          },
-          {
-            "name": "Øyvind Venstad Kjeksrud",
-            "char": "Åke",
-            "photo": "https://image.tmdb.org/t/p/w500/gbokW1fpI189V7kKsDES1tHJqgr.jpg"
-          },
-          {
-            "name": "Giulia Nahmany",
-            "char": "Ruth",
-            "photo": "https://image.tmdb.org/t/p/w500/vHhT80PtKoO7nRQyzATh9GRvehZ.jpg"
-          },
-          {
-            "name": "Erik Hivju",
-            "char": "Frederick Grandfather",
-            "photo": "https://image.tmdb.org/t/p/w500/9CdMaQJJMywkM51cvhJM7VMxN84.jpg"
-          },
-          {
-            "name": "Ingvild Lien",
-            "char": "Head Nurse Mathilde",
-            "photo": "https://image.tmdb.org/t/p/w500/xg7KYR32HYf1zJ53RqD6Som9qg4.jpg"
-          },
-          {
-            "name": "Bartek Kaminski",
-            "char": "Klaus",
-            "photo": "https://image.tmdb.org/t/p/w500/1xhZOoS5Spt1nAkJ4mCtTy8bmuB.jpg"
-          },
-          {
-            "name": "Turid Rivertz Vatne",
-            "char": "Brita",
-            "photo": "https://image.tmdb.org/t/p/w500/2IaW3ZyPKUhNeOLMkga690KjD9c.jpg"
-          }
-        ],
-        "crew": [
-          {
-            "name": "Cristian Mungiu",
-            "job": "Director"
-          },
-          {
-            "name": "Cristian Mungiu",
-            "job": "Writer"
-          }
-        ],
-        "budget": 4750000,
-        "revenue": 2810531,
-        "status": "Released",
-        "origLang": "ro",
-        "origTitle": "Fjord",
-        "platforms": [],
-        "popularity": 39.1779,
-        "imdbId": "tt35410859",
-        "countries": [
-          "Romania",
-          "Norway",
-          "France",
-          "Finland",
-          "Denmark",
-          "Sweden",
-          "United States"
-        ],
-        "detail": {
-          "duration": 146,
-          "genres": [
-            "劇情"
-          ],
-          "synopsis": "羅馬尼亞一家七口搬來挪威，恪守基督教保守教義的他們深信這裡能過上更好的生活。一日，老師注意到大女兒身上的瘀青，旋即通報兒保機構，警方很快找上門，孩子們全數被帶走安置。錯愕的父母誠實配合調查，對日常管教的陳述卻成為「呈堂證供」。當虔誠信仰被置於強調開放、包容與兒童自主的主流社會中放大檢視，一場爭回孩子的攻防，也逐漸演變為保守宗教信念與世俗進步價值的正面交鋒。",
-          "poster": "https://image.tmdb.org/t/p/w500/wPehV9BD0hnhoXSTyV7uslaqUEu.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
-          "voteAverage": "7.3",
-          "trailerKey": null,
-          "imdbId": "tt35410859",
-          "countries": [
-            "Romania",
-            "Norway",
-            "France",
-            "Finland",
-            "Denmark",
-            "Sweden",
-            "United States"
-          ],
-          "cast": [
-            {
-              "name": "賽巴斯汀·史坦",
-              "char": "Mihai Gheorghiu",
-              "photo": "https://image.tmdb.org/t/p/w500/v20RLWst39klatsqUgSrwHxhwee.jpg"
-            },
-            {
-              "name": "蕾娜特·萊茵斯薇",
-              "char": "Lisbet Gheorghiu",
-              "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
-            },
-            {
-              "name": "莉莎·卡萊希德",
-              "char": "Mia Halberg",
-              "photo": "https://image.tmdb.org/t/p/w500/r6vxXVZfiTgOHumGRtPTQpXQtKz.jpg"
-            },
-            {
-              "name": "Ellen Dorrit Petersen",
-              "char": "Gunda",
-              "photo": "https://image.tmdb.org/t/p/w500/ynXvnMlMCCn0Uk6AOwRHLQRF9nZ.jpg"
-            },
-            {
-              "name": "Lisa Loven Kongsli",
-              "char": "Frida",
-              "photo": "https://image.tmdb.org/t/p/w500/pm5y6qrZqinsYZW0Rud1DjYU4mP.jpg"
-            },
-            {
-              "name": "Henrikke Lund Olsen",
-              "char": "Noora Halberg",
-              "photo": "https://image.tmdb.org/t/p/w500/1uGyDvAwm9uyhLtnXtPahhnUYHY.jpg"
-            },
-            {
-              "name": "Markus Tønseth",
-              "char": "Mats Halberg",
-              "photo": "https://image.tmdb.org/t/p/w500/ubDlfMGerK0RePOESlud0mpTpJu.jpg"
-            },
-            {
-              "name": "Vanessa Ceban",
-              "char": "Elia Gheorghiu",
-              "photo": null
-            },
-            {
-              "name": "Jonathan Ciprian Breazu",
-              "char": "Emmanuel Gheorghiu",
-              "photo": null
-            },
-            {
-              "name": "Christian Rubeck",
-              "char": "Attorney Jacobsen",
-              "photo": "https://image.tmdb.org/t/p/w500/gZ7f4zkmX8hluHkP6OCLpiofQNC.jpg"
-            },
-            {
-              "name": "Øyvind Venstad Kjeksrud",
-              "char": "Åke",
-              "photo": "https://image.tmdb.org/t/p/w500/gbokW1fpI189V7kKsDES1tHJqgr.jpg"
-            },
-            {
-              "name": "Giulia Nahmany",
-              "char": "Ruth",
-              "photo": "https://image.tmdb.org/t/p/w500/vHhT80PtKoO7nRQyzATh9GRvehZ.jpg"
-            },
-            {
-              "name": "Erik Hivju",
-              "char": "Frederick Grandfather",
-              "photo": "https://image.tmdb.org/t/p/w500/9CdMaQJJMywkM51cvhJM7VMxN84.jpg"
-            },
-            {
-              "name": "Ingvild Lien",
-              "char": "Head Nurse Mathilde",
-              "photo": "https://image.tmdb.org/t/p/w500/xg7KYR32HYf1zJ53RqD6Som9qg4.jpg"
-            },
-            {
-              "name": "Bartek Kaminski",
-              "char": "Klaus",
-              "photo": "https://image.tmdb.org/t/p/w500/1xhZOoS5Spt1nAkJ4mCtTy8bmuB.jpg"
-            },
-            {
-              "name": "Turid Rivertz Vatne",
-              "char": "Brita",
-              "photo": "https://image.tmdb.org/t/p/w500/2IaW3ZyPKUhNeOLMkga690KjD9c.jpg"
-            }
-          ],
-          "crew": [
-            {
-              "name": "Cristian Mungiu",
-              "job": "Director"
-            },
-            {
-              "name": "Cristian Mungiu",
-              "job": "Writer"
-            }
-          ],
-          "budget": 4750000,
-          "revenue": 2810531,
-          "status": "Released",
-          "origLang": "ro",
-          "origTitle": "Fjord",
-          "platforms": []
-        },
-        "tmdbUrl": "https://www.themoviedb.org/movie/1401459?language=zh-TW",
-        "atmoviesId": "",
-        "atmoviesUrl": "",
-        "sourceBucket": "tmdb"
-      },
-      {
         "id": 1562230,
         "titleZh": "廚師發辦",
         "titleEn": "廚師發辦",
@@ -8213,16 +7936,16 @@
         ],
         "crew": [
           {
-            "name": "Manuel Bauer",
+            "name": "Barbara Miller",
+            "job": "Director"
+          },
+          {
+            "name": "Barbara Miller",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
-          },
-          {
-            "name": "Philip Delaquis",
-            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -8261,16 +7984,16 @@
           ],
           "crew": [
             {
-              "name": "Manuel Bauer",
+              "name": "Barbara Miller",
+              "job": "Director"
+            },
+            {
+              "name": "Barbara Miller",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
-            },
-            {
-              "name": "Philip Delaquis",
-              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -10142,7 +9865,7 @@
             "job": "Director"
           },
           {
-            "name": "述平",
+            "name": "Zhu Sujin",
             "job": "Screenplay"
           },
           {
@@ -10283,7 +10006,7 @@
               "job": "Director"
             },
             {
-              "name": "述平",
+              "name": "Zhu Sujin",
               "job": "Screenplay"
             },
             {
@@ -12833,11 +12556,11 @@
         ],
         "crew": [
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
@@ -12942,11 +12665,11 @@
           ],
           "crew": [
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
@@ -13512,7 +13235,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/afd5TWfpEwP6ELpeipTrB3RAex9.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-        "voteAverage": "7.1",
+        "voteAverage": "7.0",
         "genre": [
           "劇情",
           "驚悚"
@@ -13647,7 +13370,7 @@
           "synopsis": "故事靈感源自真實事件，聚焦年輕的 Facebook 工程師法蘭西絲豪根，在關鍵時刻挺身而出，並與《華爾街日報》記者傑夫霍維茲合作，展開一段充滿風險與挑戰的調查歷程。隨著調查逐步深入，兩人最終揭開社群平台長期隱匿的內部運作與爭議，掀起全球關注的重大揭弊行動。",
           "poster": "https://image.tmdb.org/t/p/w500/afd5TWfpEwP6ELpeipTrB3RAex9.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-          "voteAverage": "7.1",
+          "voteAverage": "7.0",
           "trailerKey": "s0-EvSBPZnM",
           "imdbId": "tt37510326",
           "countries": [
@@ -15156,7 +14879,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/trYFD8GsLSyZdgiuoAZy9zbpppw.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
-        "voteAverage": "6.6",
+        "voteAverage": "6.5",
         "genre": [
           "驚悚"
         ],
@@ -15283,7 +15006,7 @@
           "synopsis": "年輕潛水員在加州海岸尋找亡父遺骸時意外遭受襲擊，更被一頭長達80英呎、重達60噸的巨大抹香鯨活生生吞下肚！在氧氣僅存一小時的極端絕境中，他必須在巨鯨腹中展開驚心動魄的逃生倒數。",
           "poster": "https://image.tmdb.org/t/p/w500/trYFD8GsLSyZdgiuoAZy9zbpppw.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
-          "voteAverage": "6.6",
+          "voteAverage": "6.5",
           "trailerKey": "zii5_IrdK0o",
           "imdbId": "tt28535715",
           "countries": [
@@ -21169,8 +20892,8 @@
         "twReleaseDateVerified": true,
         "poster": "https://image.tmdb.org/t/p/w500/wWwKURKR0fCav2tnoDfmsPZlmEM.jpg",
         "posterIsBackdrop": false,
-        "backdrop": "https://image.tmdb.org/t/p/w1280/nubnNXuMArUhiDW1nUevGsG65x9.jpg",
-        "voteAverage": "7.6",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
+        "voteAverage": "7.3",
         "genre": [
           "喜劇",
           "愛情"
@@ -21289,8 +21012,8 @@
           ],
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/wWwKURKR0fCav2tnoDfmsPZlmEM.jpg",
-          "backdrop": "https://image.tmdb.org/t/p/w1280/nubnNXuMArUhiDW1nUevGsG65x9.jpg",
-          "voteAverage": "7.6",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
+          "voteAverage": "7.3",
           "trailerKey": "ouOu_Xyh6GE",
           "imdbId": "tt34966140",
           "countries": [
@@ -26132,7 +25855,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/r4DTGm1f1r23cyjRJ5kFMh7qYlj.jpg",
-        "voteAverage": "7.5",
+        "voteAverage": "7.4",
         "genre": [
           "愛情",
           "奇幻",
@@ -26245,11 +25968,11 @@
         ],
         "crew": [
           {
-            "name": "Eleanor Wilson",
+            "name": "Alex Huston Fischer",
             "job": "Director"
           },
           {
-            "name": "Alex Huston Fischer",
+            "name": "Eleanor Wilson",
             "job": "Director"
           },
           {
@@ -26279,7 +26002,7 @@
           "synopsis": "小鎮居民各司其職，無不以婚配嫁娶為志，一生期盼被頸圈套牢白紗的大喜之日。大齡漁婦小姑獨處招來訕笑，新娘拋出的喜蛋卻預言她將走上紅毯，漁婦就此向織柳匠許願一個丈夫。柳樹製成的情郎從天而降，漁婦從魚腥中脫身，陶醉於魚水之歡。專情又勇猛的柳樹男激起地方太太們的慾望、人夫們的嫉妒，異端夫婦將保守小鎮搞得天翻地覆，若完美情人能量身打造，還有什麼將橫空出世？",
           "poster": "https://image.tmdb.org/t/p/w500/jU1waMPXONkQbPCP1Ec8AVMuqZV.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/r4DTGm1f1r23cyjRJ5kFMh7qYlj.jpg",
-          "voteAverage": "7.5",
+          "voteAverage": "7.4",
           "trailerKey": "0VQWpXozkv0",
           "imdbId": "tt29611136",
           "countries": [
@@ -26370,11 +26093,11 @@
           ],
           "crew": [
             {
-              "name": "Eleanor Wilson",
+              "name": "Alex Huston Fischer",
               "job": "Director"
             },
             {
-              "name": "Alex Huston Fischer",
+              "name": "Eleanor Wilson",
               "job": "Director"
             },
             {
@@ -27701,6 +27424,283 @@
         "sourceBucket": "tmdb"
       },
       {
+        "id": 1401459,
+        "titleZh": "完美家庭風暴",
+        "titleEn": "Fjord",
+        "releaseDate": "2027-01-15",
+        "releaseYear": "2026",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-01-15",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/wPehV9BD0hnhoXSTyV7uslaqUEu.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
+        "voteAverage": "7.3",
+        "genre": [
+          "劇情"
+        ],
+        "duration": 146,
+        "synopsis": "羅馬尼亞一家七口搬來挪威，恪守基督教保守教義的他們深信這裡能過上更好的生活。一日，老師注意到大女兒身上的瘀青，旋即通報兒保機構，警方很快找上門，孩子們全數被帶走安置。錯愕的父母誠實配合調查，對日常管教的陳述卻成為「呈堂證供」。當虔誠信仰被置於強調開放、包容與兒童自主的主流社會中放大檢視，一場爭回孩子的攻防，也逐漸演變為保守宗教信念與世俗進步價值的正面交鋒。",
+        "imdb": "7.6",
+        "rt": "91%",
+        "mc": "78",
+        "ratingMeta": {
+          "imdb": {
+            "source": "omdb",
+            "votes": 4193,
+            "lastChanged": "2026-11-21T10:47:32.575103+08:00"
+          },
+          "rt": {
+            "source": "mdblist",
+            "votes": 165,
+            "lastChanged": "2026-11-21T10:47:32.575103+08:00"
+          },
+          "mc": {
+            "source": "mdblist",
+            "votes": 45,
+            "lastChanged": "2026-11-21T10:47:32.575103+08:00"
+          }
+        },
+        "trailerKey": null,
+        "cast": [
+          {
+            "name": "賽巴斯汀·史坦",
+            "char": "Mihai Gheorghiu",
+            "photo": "https://image.tmdb.org/t/p/w500/v20RLWst39klatsqUgSrwHxhwee.jpg"
+          },
+          {
+            "name": "蕾娜特·萊茵斯薇",
+            "char": "Lisbet Gheorghiu",
+            "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+          },
+          {
+            "name": "莉莎·卡萊希德",
+            "char": "Mia Halberg",
+            "photo": "https://image.tmdb.org/t/p/w500/r6vxXVZfiTgOHumGRtPTQpXQtKz.jpg"
+          },
+          {
+            "name": "Ellen Dorrit Petersen",
+            "char": "Gunda",
+            "photo": "https://image.tmdb.org/t/p/w500/ynXvnMlMCCn0Uk6AOwRHLQRF9nZ.jpg"
+          },
+          {
+            "name": "Lisa Loven Kongsli",
+            "char": "Frida",
+            "photo": "https://image.tmdb.org/t/p/w500/pm5y6qrZqinsYZW0Rud1DjYU4mP.jpg"
+          },
+          {
+            "name": "Henrikke Lund Olsen",
+            "char": "Noora Halberg",
+            "photo": "https://image.tmdb.org/t/p/w500/1uGyDvAwm9uyhLtnXtPahhnUYHY.jpg"
+          },
+          {
+            "name": "Markus Tønseth",
+            "char": "Mats Halberg",
+            "photo": "https://image.tmdb.org/t/p/w500/ubDlfMGerK0RePOESlud0mpTpJu.jpg"
+          },
+          {
+            "name": "Vanessa Ceban",
+            "char": "Elia Gheorghiu",
+            "photo": null
+          },
+          {
+            "name": "Jonathan Ciprian Breazu",
+            "char": "Emmanuel Gheorghiu",
+            "photo": null
+          },
+          {
+            "name": "Christian Rubeck",
+            "char": "Attorney Jacobsen",
+            "photo": "https://image.tmdb.org/t/p/w500/gZ7f4zkmX8hluHkP6OCLpiofQNC.jpg"
+          },
+          {
+            "name": "Øyvind Venstad Kjeksrud",
+            "char": "Åke",
+            "photo": "https://image.tmdb.org/t/p/w500/gbokW1fpI189V7kKsDES1tHJqgr.jpg"
+          },
+          {
+            "name": "Giulia Nahmany",
+            "char": "Ruth",
+            "photo": "https://image.tmdb.org/t/p/w500/vHhT80PtKoO7nRQyzATh9GRvehZ.jpg"
+          },
+          {
+            "name": "Erik Hivju",
+            "char": "Frederick Grandfather",
+            "photo": "https://image.tmdb.org/t/p/w500/9CdMaQJJMywkM51cvhJM7VMxN84.jpg"
+          },
+          {
+            "name": "Ingvild Lien",
+            "char": "Head Nurse Mathilde",
+            "photo": "https://image.tmdb.org/t/p/w500/xg7KYR32HYf1zJ53RqD6Som9qg4.jpg"
+          },
+          {
+            "name": "Bartek Kaminski",
+            "char": "Klaus",
+            "photo": "https://image.tmdb.org/t/p/w500/1xhZOoS5Spt1nAkJ4mCtTy8bmuB.jpg"
+          },
+          {
+            "name": "Turid Rivertz Vatne",
+            "char": "Brita",
+            "photo": "https://image.tmdb.org/t/p/w500/2IaW3ZyPKUhNeOLMkga690KjD9c.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "name": "Cristian Mungiu",
+            "job": "Director"
+          },
+          {
+            "name": "Cristian Mungiu",
+            "job": "Writer"
+          }
+        ],
+        "budget": 4750000,
+        "revenue": 2810531,
+        "status": "Released",
+        "origLang": "ro",
+        "origTitle": "Fjord",
+        "platforms": [],
+        "popularity": 39.1779,
+        "imdbId": "tt35410859",
+        "countries": [
+          "Romania",
+          "Norway",
+          "France",
+          "Finland",
+          "Denmark",
+          "Sweden",
+          "United States"
+        ],
+        "detail": {
+          "duration": 146,
+          "genres": [
+            "劇情"
+          ],
+          "synopsis": "羅馬尼亞一家七口搬來挪威，恪守基督教保守教義的他們深信這裡能過上更好的生活。一日，老師注意到大女兒身上的瘀青，旋即通報兒保機構，警方很快找上門，孩子們全數被帶走安置。錯愕的父母誠實配合調查，對日常管教的陳述卻成為「呈堂證供」。當虔誠信仰被置於強調開放、包容與兒童自主的主流社會中放大檢視，一場爭回孩子的攻防，也逐漸演變為保守宗教信念與世俗進步價值的正面交鋒。",
+          "poster": "https://image.tmdb.org/t/p/w500/wPehV9BD0hnhoXSTyV7uslaqUEu.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
+          "voteAverage": "7.3",
+          "trailerKey": null,
+          "imdbId": "tt35410859",
+          "countries": [
+            "Romania",
+            "Norway",
+            "France",
+            "Finland",
+            "Denmark",
+            "Sweden",
+            "United States"
+          ],
+          "cast": [
+            {
+              "name": "賽巴斯汀·史坦",
+              "char": "Mihai Gheorghiu",
+              "photo": "https://image.tmdb.org/t/p/w500/v20RLWst39klatsqUgSrwHxhwee.jpg"
+            },
+            {
+              "name": "蕾娜特·萊茵斯薇",
+              "char": "Lisbet Gheorghiu",
+              "photo": "https://image.tmdb.org/t/p/w500/q0ljTd4fyFSJKxPgmcrKtdg3HKo.jpg"
+            },
+            {
+              "name": "莉莎·卡萊希德",
+              "char": "Mia Halberg",
+              "photo": "https://image.tmdb.org/t/p/w500/r6vxXVZfiTgOHumGRtPTQpXQtKz.jpg"
+            },
+            {
+              "name": "Ellen Dorrit Petersen",
+              "char": "Gunda",
+              "photo": "https://image.tmdb.org/t/p/w500/ynXvnMlMCCn0Uk6AOwRHLQRF9nZ.jpg"
+            },
+            {
+              "name": "Lisa Loven Kongsli",
+              "char": "Frida",
+              "photo": "https://image.tmdb.org/t/p/w500/pm5y6qrZqinsYZW0Rud1DjYU4mP.jpg"
+            },
+            {
+              "name": "Henrikke Lund Olsen",
+              "char": "Noora Halberg",
+              "photo": "https://image.tmdb.org/t/p/w500/1uGyDvAwm9uyhLtnXtPahhnUYHY.jpg"
+            },
+            {
+              "name": "Markus Tønseth",
+              "char": "Mats Halberg",
+              "photo": "https://image.tmdb.org/t/p/w500/ubDlfMGerK0RePOESlud0mpTpJu.jpg"
+            },
+            {
+              "name": "Vanessa Ceban",
+              "char": "Elia Gheorghiu",
+              "photo": null
+            },
+            {
+              "name": "Jonathan Ciprian Breazu",
+              "char": "Emmanuel Gheorghiu",
+              "photo": null
+            },
+            {
+              "name": "Christian Rubeck",
+              "char": "Attorney Jacobsen",
+              "photo": "https://image.tmdb.org/t/p/w500/gZ7f4zkmX8hluHkP6OCLpiofQNC.jpg"
+            },
+            {
+              "name": "Øyvind Venstad Kjeksrud",
+              "char": "Åke",
+              "photo": "https://image.tmdb.org/t/p/w500/gbokW1fpI189V7kKsDES1tHJqgr.jpg"
+            },
+            {
+              "name": "Giulia Nahmany",
+              "char": "Ruth",
+              "photo": "https://image.tmdb.org/t/p/w500/vHhT80PtKoO7nRQyzATh9GRvehZ.jpg"
+            },
+            {
+              "name": "Erik Hivju",
+              "char": "Frederick Grandfather",
+              "photo": "https://image.tmdb.org/t/p/w500/9CdMaQJJMywkM51cvhJM7VMxN84.jpg"
+            },
+            {
+              "name": "Ingvild Lien",
+              "char": "Head Nurse Mathilde",
+              "photo": "https://image.tmdb.org/t/p/w500/xg7KYR32HYf1zJ53RqD6Som9qg4.jpg"
+            },
+            {
+              "name": "Bartek Kaminski",
+              "char": "Klaus",
+              "photo": "https://image.tmdb.org/t/p/w500/1xhZOoS5Spt1nAkJ4mCtTy8bmuB.jpg"
+            },
+            {
+              "name": "Turid Rivertz Vatne",
+              "char": "Brita",
+              "photo": "https://image.tmdb.org/t/p/w500/2IaW3ZyPKUhNeOLMkga690KjD9c.jpg"
+            }
+          ],
+          "crew": [
+            {
+              "name": "Cristian Mungiu",
+              "job": "Director"
+            },
+            {
+              "name": "Cristian Mungiu",
+              "job": "Writer"
+            }
+          ],
+          "budget": 4750000,
+          "revenue": 2810531,
+          "status": "Released",
+          "origLang": "ro",
+          "origTitle": "Fjord",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1401459?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
         "id": 1440769,
         "titleZh": "蜂刑者2",
         "titleEn": "The Beekeeper 2",
@@ -28201,6 +28201,107 @@
           "platforms": []
         },
         "tmdbUrl": "https://www.themoviedb.org/movie/1520592?language=zh-TW",
+        "atmoviesId": "",
+        "atmoviesUrl": "",
+        "sourceBucket": "tmdb"
+      },
+      {
+        "id": 1450418,
+        "titleZh": "星際賽車",
+        "titleEn": "MegaRacer",
+        "releaseDate": "2027-01-22",
+        "releaseYear": "2027",
+        "isRerelease": false,
+        "twTheatricalReleases": [
+          {
+            "date": "2027-01-22",
+            "language": ""
+          }
+        ],
+        "twReleaseDateVerified": true,
+        "poster": "https://image.tmdb.org/t/p/w500/7kaxdjNBZmWV3nM04DX7f9Riaep.jpg",
+        "posterIsBackdrop": false,
+        "backdrop": "https://image.tmdb.org/t/p/w1280/tOXWfycyW8ef7Fcj5S1RNGnaNgm.jpg",
+        "voteAverage": "",
+        "genre": [
+          "動畫",
+          "科幻",
+          "冒險"
+        ],
+        "duration": 85,
+        "synopsis": "",
+        "imdb": "",
+        "rt": "",
+        "mc": "",
+        "ratingMeta": {},
+        "trailerKey": null,
+        "cast": [],
+        "crew": [
+          {
+            "name": "Yoo-Byung Yoon",
+            "job": "Director"
+          },
+          {
+            "name": "Ji-Youn Park",
+            "job": "Writer"
+          },
+          {
+            "name": "Chang-Won Kim",
+            "job": "Writer"
+          }
+        ],
+        "budget": 0,
+        "revenue": 0,
+        "status": "Released",
+        "origLang": "ko",
+        "origTitle": "MegaRacer",
+        "platforms": [],
+        "popularity": 0.0422,
+        "imdbId": "tt6552604",
+        "countries": [
+          "South Korea",
+          "United States"
+        ],
+        "detail": {
+          "duration": 85,
+          "genres": [
+            "動畫",
+            "科幻",
+            "冒險"
+          ],
+          "synopsis": "",
+          "poster": "https://image.tmdb.org/t/p/w500/7kaxdjNBZmWV3nM04DX7f9Riaep.jpg",
+          "backdrop": "https://image.tmdb.org/t/p/w1280/tOXWfycyW8ef7Fcj5S1RNGnaNgm.jpg",
+          "voteAverage": "",
+          "trailerKey": null,
+          "imdbId": "tt6552604",
+          "countries": [
+            "South Korea",
+            "United States"
+          ],
+          "cast": [],
+          "crew": [
+            {
+              "name": "Yoo-Byung Yoon",
+              "job": "Director"
+            },
+            {
+              "name": "Ji-Youn Park",
+              "job": "Writer"
+            },
+            {
+              "name": "Chang-Won Kim",
+              "job": "Writer"
+            }
+          ],
+          "budget": 0,
+          "revenue": 0,
+          "status": "Released",
+          "origLang": "ko",
+          "origTitle": "MegaRacer",
+          "platforms": []
+        },
+        "tmdbUrl": "https://www.themoviedb.org/movie/1450418?language=zh-TW",
         "atmoviesId": "",
         "atmoviesUrl": "",
         "sourceBucket": "tmdb"
@@ -30925,7 +31026,7 @@
           {
             "name": "史嘉蕾·喬韓森",
             "char": "Det. Julie Miller",
-            "photo": "https://image.tmdb.org/t/p/w500/2I2xAQmL87k5YswCnc4vHjpXxE0.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/TiJIJGNWk0r1Y4bYuB50clneUd.jpg"
           },
           {
             "name": "莎夏·卡勒",
@@ -31042,7 +31143,7 @@
             {
               "name": "史嘉蕾·喬韓森",
               "char": "Det. Julie Miller",
-              "photo": "https://image.tmdb.org/t/p/w500/2I2xAQmL87k5YswCnc4vHjpXxE0.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/TiJIJGNWk0r1Y4bYuB50clneUd.jpg"
             },
             {
               "name": "莎夏·卡勒",
