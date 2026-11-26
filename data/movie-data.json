@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T03:35:08.397194+08:00",
+  "generated_at": "2026-11-26T11:46:27.148864+08:00",
   "source": "api.themoviedb.org",
   "summary": {
     "now_count": 86,
@@ -146,7 +146,7 @@
             "job": "Screenplay"
           }
         ],
-        "budget": 0,
+        "budget": 200000000,
         "revenue": 0,
         "status": "Released",
         "origLang": "en",
@@ -155,7 +155,8 @@
         "popularity": 58.7667,
         "imdbId": "tt38077943",
         "countries": [
-          "United States"
+          "United States",
+          "Canada"
         ],
         "detail": {
           "duration": 103,
@@ -173,7 +174,8 @@
           "trailerKey": "9PW8cxlfEZY",
           "imdbId": "tt38077943",
           "countries": [
-            "United States"
+            "United States",
+            "Canada"
           ],
           "cast": [
             {
@@ -271,7 +273,7 @@
               "job": "Screenplay"
             }
           ],
-          "budget": 0,
+          "budget": 200000000,
           "revenue": 0,
           "status": "Released",
           "origLang": "en",
@@ -367,12 +369,12 @@
           },
           {
             "name": "Corey Fogelmanis",
-            "char": "",
+            "char": "Speed Racer (Joey)",
             "photo": "https://image.tmdb.org/t/p/w500/nqAps1IQ9uBZlTNu7jZa2nmAXXa.jpg"
           },
           {
             "name": "Karren Karagulian",
-            "char": "",
+            "char": "Chiken Hawk",
             "photo": "https://image.tmdb.org/t/p/w500/rxyx8OFgShe0Kolptm5LpbsOUJj.jpg"
           },
           {
@@ -387,7 +389,7 @@
           },
           {
             "name": "Barry Livingston",
-            "char": "",
+            "char": "Disco Kingpin",
             "photo": "https://image.tmdb.org/t/p/w500/3zcKDmYcOv18c4VxIoPqLuQbmen.jpg"
           },
           {
@@ -397,12 +399,12 @@
           },
           {
             "name": "Emily Alyn Lind",
-            "char": "",
+            "char": "Actress",
             "photo": "https://image.tmdb.org/t/p/w500/oyamam9VmA6KsBCNUPLK8BfseVH.jpg"
           },
           {
             "name": "Jim Cummings",
-            "char": "",
+            "char": "Oliver Babcock",
             "photo": "https://image.tmdb.org/t/p/w500/hN40vFQgOUWUOPtD5yiSIMRPqol.jpg"
           }
         ],
@@ -486,12 +488,12 @@
             },
             {
               "name": "Corey Fogelmanis",
-              "char": "",
+              "char": "Speed Racer (Joey)",
               "photo": "https://image.tmdb.org/t/p/w500/nqAps1IQ9uBZlTNu7jZa2nmAXXa.jpg"
             },
             {
               "name": "Karren Karagulian",
-              "char": "",
+              "char": "Chiken Hawk",
               "photo": "https://image.tmdb.org/t/p/w500/rxyx8OFgShe0Kolptm5LpbsOUJj.jpg"
             },
             {
@@ -506,7 +508,7 @@
             },
             {
               "name": "Barry Livingston",
-              "char": "",
+              "char": "Disco Kingpin",
               "photo": "https://image.tmdb.org/t/p/w500/3zcKDmYcOv18c4VxIoPqLuQbmen.jpg"
             },
             {
@@ -516,12 +518,12 @@
             },
             {
               "name": "Emily Alyn Lind",
-              "char": "",
+              "char": "Actress",
               "photo": "https://image.tmdb.org/t/p/w500/oyamam9VmA6KsBCNUPLK8BfseVH.jpg"
             },
             {
               "name": "Jim Cummings",
-              "char": "",
+              "char": "Oliver Babcock",
               "photo": "https://image.tmdb.org/t/p/w500/hN40vFQgOUWUOPtD5yiSIMRPqol.jpg"
             }
           ],
@@ -790,6 +792,16 @@
             "photo": "https://image.tmdb.org/t/p/w500/4TiNEWVb5R0E62H9ljkY9RU4PoK.jpg"
           },
           {
+            "name": "伍迪·哈里遜",
+            "char": "Haymitch",
+            "photo": "https://image.tmdb.org/t/p/w500/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg"
+          },
+          {
+            "name": "Elizabeth Banks",
+            "char": "Effie Abernathy",
+            "photo": "https://image.tmdb.org/t/p/w500/hQ7IwCQjlpsBPSpnnjjhH3rjwSJ.jpg"
+          },
+          {
             "name": "小凱文·哈里森",
             "char": "Beetee",
             "photo": "https://image.tmdb.org/t/p/w500/eZzlQfYpvDc649h17tXpKKQusnt.jpg"
@@ -818,16 +830,6 @@
             "name": "Iona Bell",
             "char": "Lou Lou",
             "photo": "https://image.tmdb.org/t/p/w500/z3VkT66fAo69QeY4CdU6GTSwArg.jpg"
-          },
-          {
-            "name": "Billy Porter",
-            "char": "Magno Stift",
-            "photo": "https://image.tmdb.org/t/p/w500/3BrMhoTURtBpbPZjNxYILmxfqJP.jpg"
-          },
-          {
-            "name": "Jhaleil Swaby",
-            "char": "Panache",
-            "photo": "https://image.tmdb.org/t/p/w500/bc1W48Ed875s0UqejA6XaRK9XZZ.jpg"
           }
         ],
         "crew": [
@@ -850,7 +852,7 @@
         "origLang": "en",
         "origTitle": "The Hunger Games: Sunrise on the Reaping",
         "platforms": [],
-        "popularity": 378.9684,
+        "popularity": 373.411,
         "imdbId": "tt32558705",
         "countries": [
           "United States",
@@ -915,6 +917,16 @@
               "photo": "https://image.tmdb.org/t/p/w500/4TiNEWVb5R0E62H9ljkY9RU4PoK.jpg"
             },
             {
+              "name": "伍迪·哈里遜",
+              "char": "Haymitch",
+              "photo": "https://image.tmdb.org/t/p/w500/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg"
+            },
+            {
+              "name": "Elizabeth Banks",
+              "char": "Effie Abernathy",
+              "photo": "https://image.tmdb.org/t/p/w500/hQ7IwCQjlpsBPSpnnjjhH3rjwSJ.jpg"
+            },
+            {
               "name": "小凱文·哈里森",
               "char": "Beetee",
               "photo": "https://image.tmdb.org/t/p/w500/eZzlQfYpvDc649h17tXpKKQusnt.jpg"
@@ -943,16 +955,6 @@
               "name": "Iona Bell",
               "char": "Lou Lou",
               "photo": "https://image.tmdb.org/t/p/w500/z3VkT66fAo69QeY4CdU6GTSwArg.jpg"
-            },
-            {
-              "name": "Billy Porter",
-              "char": "Magno Stift",
-              "photo": "https://image.tmdb.org/t/p/w500/3BrMhoTURtBpbPZjNxYILmxfqJP.jpg"
-            },
-            {
-              "name": "Jhaleil Swaby",
-              "char": "Panache",
-              "photo": "https://image.tmdb.org/t/p/w500/bc1W48Ed875s0UqejA6XaRK9XZZ.jpg"
             }
           ],
           "crew": [
@@ -998,7 +1000,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/3GL5W81tNOv3hhYHhvqRLgaymrr.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/7QshsnWS3NIZp60qMgcYm1C6dxm.jpg",
-        "voteAverage": "8.7",
+        "voteAverage": "8.2",
         "genre": [
           "犯罪",
           "劇情",
@@ -1041,7 +1043,7 @@
           {
             "name": "史嘉蕾·喬韓森",
             "char": "Hester Pearl",
-            "photo": "https://image.tmdb.org/t/p/w500/2I2xAQmL87k5YswCnc4vHjpXxE0.jpg"
+            "photo": "https://image.tmdb.org/t/p/w500/TiJIJGNWk0r1Y4bYuB50clneUd.jpg"
           },
           {
             "name": "Gavin Goudey",
@@ -1146,7 +1148,7 @@
           "synopsis": "一對兄弟捲入一樁看似千載難逢的致富計畫，卻發現一切遠非想像中美好。當兩人試圖在危機四伏的俄羅斯黑幫世界中尋求出路，原本緊密的家族情誼也逐漸瓦解，最終引發足以改變彼此一生的嚴重後果……",
           "poster": "https://image.tmdb.org/t/p/w500/3GL5W81tNOv3hhYHhvqRLgaymrr.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/7QshsnWS3NIZp60qMgcYm1C6dxm.jpg",
-          "voteAverage": "8.7",
+          "voteAverage": "8.2",
           "trailerKey": null,
           "imdbId": "tt34385689",
           "countries": [
@@ -1172,7 +1174,7 @@
             {
               "name": "史嘉蕾·喬韓森",
               "char": "Hester Pearl",
-              "photo": "https://image.tmdb.org/t/p/w500/2I2xAQmL87k5YswCnc4vHjpXxE0.jpg"
+              "photo": "https://image.tmdb.org/t/p/w500/TiJIJGNWk0r1Y4bYuB50clneUd.jpg"
             },
             {
               "name": "Gavin Goudey",
@@ -1537,7 +1539,7 @@
         "origLang": "ja",
         "origTitle": "うるわしの宵の月",
         "platforms": [],
-        "popularity": 1.6055,
+        "popularity": 1.6207,
         "imdbId": "tt39931233",
         "countries": [
           "Japan"
@@ -2001,7 +2003,7 @@
         "origLang": "ja",
         "origTitle": "純愛上等！",
         "platforms": [],
-        "popularity": 1.3734,
+        "popularity": 1.2186,
         "imdbId": "tt42289343",
         "countries": [
           "Japan"
@@ -2688,7 +2690,7 @@
         "origLang": "cn",
         "origTitle": "第四幕",
         "platforms": [],
-        "popularity": 1.5205,
+        "popularity": 1.3564,
         "imdbId": "tt38798617",
         "countries": [
           "Hong Kong SAR China"
@@ -2882,7 +2884,7 @@
         "origLang": "ja",
         "origTitle": "床一面こんな感じ",
         "platforms": [],
-        "popularity": 0.2038,
+        "popularity": 0.2256,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -3208,7 +3210,7 @@
         "origLang": "zh",
         "origTitle": "重返巔峰北壁",
         "platforms": [],
-        "popularity": 0.1352,
+        "popularity": 0.1971,
         "imdbId": null,
         "countries": [
           "Taiwan",
@@ -3366,7 +3368,7 @@
         "origLang": "ms",
         "origTitle": "沙央",
         "platforms": [],
-        "popularity": 1.5266,
+        "popularity": 1.3459,
         "imdbId": "tt43440269",
         "countries": [
           "Taiwan",
@@ -3610,11 +3612,11 @@
             "job": "Director"
           },
           {
-            "name": "丹尼·維勒納夫",
+            "name": "埃里克·羅斯",
             "job": "Screenplay"
           },
           {
-            "name": "埃里克·羅斯",
+            "name": "丹尼·維勒納夫",
             "job": "Screenplay"
           }
         ],
@@ -3637,7 +3639,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 46.4103,
+        "popularity": 45.4938,
         "imdbId": "tt1160419",
         "countries": [
           "United States"
@@ -3745,11 +3747,11 @@
               "job": "Director"
             },
             {
-              "name": "丹尼·維勒納夫",
+              "name": "埃里克·羅斯",
               "job": "Screenplay"
             },
             {
-              "name": "埃里克·羅斯",
+              "name": "丹尼·維勒納夫",
               "job": "Screenplay"
             }
           ],
@@ -3938,7 +3940,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 55.8793,
+        "popularity": 52.2283,
         "imdbId": "tt15239678",
         "countries": [
           "United States"
@@ -4218,7 +4220,7 @@
         "origLang": "ja",
         "origTitle": "黒牢城",
         "platforms": [],
-        "popularity": 5.3017,
+        "popularity": 4.875,
         "imdbId": "tt39602215",
         "countries": [
           "Japan"
@@ -4413,7 +4415,7 @@
         "origLang": "ja",
         "origTitle": "魔法科高校の劣等生 四葉継承編",
         "platforms": [],
-        "popularity": 2.6932,
+        "popularity": 2.6355,
         "imdbId": "tt38652027",
         "countries": [
           "Japan"
@@ -4510,7 +4512,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 32,
+            "votes": 33,
             "lastChanged": "2026-11-01T02:48:51.499932+08:00"
           },
           "mc": {
@@ -4622,7 +4624,7 @@
         "origLang": "el",
         "origTitle": "Κότα",
         "platforms": [],
-        "popularity": 2.7349,
+        "popularity": 2.7196,
         "imdbId": "tt29283995",
         "countries": [
           "Germany",
@@ -4874,7 +4876,7 @@
         "origLang": "zh",
         "origTitle": "有用的人",
         "platforms": [],
-        "popularity": 0.7185,
+        "popularity": 0.7564,
         "imdbId": "tt44934439",
         "countries": [
           "Taiwan"
@@ -5323,7 +5325,7 @@
         "origLang": "fr",
         "origTitle": "Nous, l'Orchestre",
         "platforms": [],
-        "popularity": 0.6252,
+        "popularity": 0.5926,
         "imdbId": "tt39183481",
         "countries": [
           "France"
@@ -5515,7 +5517,7 @@
         "origLang": "ja",
         "origTitle": "NEW GROUP",
         "platforms": [],
-        "popularity": 2.5369,
+        "popularity": 2.3636,
         "imdbId": "tt37694048",
         "countries": [
           "Japan"
@@ -6386,7 +6388,7 @@
         "origLang": "ja",
         "origTitle": "放送禁止 ぼくの3人の妻",
         "platforms": [],
-        "popularity": 0.4747,
+        "popularity": 0.3833,
         "imdbId": "tt39231777",
         "countries": [
           "Japan"
@@ -6575,7 +6577,7 @@
         "origLang": "zh",
         "origTitle": "告別的年代",
         "platforms": [],
-        "popularity": 1.2337,
+        "popularity": 1.101,
         "imdbId": "tt35486511",
         "countries": [
           "Taiwan",
@@ -6768,7 +6770,7 @@
         "origLang": "zh",
         "origTitle": "黑潮",
         "platforms": [],
-        "popularity": 0.9109,
+        "popularity": 0.9399,
         "imdbId": "tt35486825",
         "countries": [
           "Malaysia"
@@ -7175,7 +7177,7 @@
         "origLang": "cn",
         "origTitle": "廚師發辦",
         "platforms": [],
-        "popularity": 0.7934,
+        "popularity": 0.6496,
         "imdbId": null,
         "countries": [
           "Hong Kong SAR China",
@@ -7358,7 +7360,7 @@
             "logo": "/bonc3GQiIbZVG9WyNYEYAI9mqFy.png"
           }
         ],
-        "popularity": 6.8894,
+        "popularity": 6.8641,
         "imdbId": "tt5526028",
         "countries": [
           "Japan"
@@ -7557,11 +7559,11 @@
         "crew": [
           {
             "name": "Rajkumar Hirani",
-            "job": "Director"
+            "job": "Screenplay"
           },
           {
             "name": "Rajkumar Hirani",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "Vidhu Vinod Chopra",
@@ -7574,7 +7576,7 @@
         "origLang": "hi",
         "origTitle": "3 Idiots",
         "platforms": [],
-        "popularity": 9.8606,
+        "popularity": 10.1497,
         "imdbId": "tt1187043",
         "countries": [
           "India"
@@ -7679,11 +7681,11 @@
           "crew": [
             {
               "name": "Rajkumar Hirani",
-              "job": "Director"
+              "job": "Screenplay"
             },
             {
               "name": "Rajkumar Hirani",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "Vidhu Vinod Chopra",
@@ -7936,16 +7938,16 @@
         ],
         "crew": [
           {
-            "name": "Barbara Miller",
-            "job": "Director"
-          },
-          {
-            "name": "Barbara Miller",
+            "name": "Manuel Bauer",
             "job": "Writer"
           },
           {
             "name": "Philip Delaquis",
             "job": "Director"
+          },
+          {
+            "name": "Philip Delaquis",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -7954,7 +7956,7 @@
         "origLang": "en",
         "origTitle": "Wisdom of Happiness",
         "platforms": [],
-        "popularity": 1.2542,
+        "popularity": 1.1745,
         "imdbId": "tt33055004",
         "countries": [
           "United States",
@@ -7984,16 +7986,16 @@
           ],
           "crew": [
             {
-              "name": "Barbara Miller",
-              "job": "Director"
-            },
-            {
-              "name": "Barbara Miller",
+              "name": "Manuel Bauer",
               "job": "Writer"
             },
             {
               "name": "Philip Delaquis",
               "job": "Director"
+            },
+            {
+              "name": "Philip Delaquis",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -8039,7 +8041,7 @@
         "ratingMeta": {
           "rt": {
             "source": "mdblist",
-            "votes": 222,
+            "votes": 224,
             "lastChanged": "2026-11-24T10:32:53.502312+08:00"
           },
           "mc": {
@@ -8147,7 +8149,7 @@
         "origLang": "ja",
         "origTitle": "ゴジラ-0.0",
         "platforms": [],
-        "popularity": 88.3298,
+        "popularity": 80.211,
         "imdbId": "tt34384661",
         "countries": [
           "Japan"
@@ -8403,7 +8405,7 @@
         "origLang": "ko",
         "origTitle": "타짜: 벨제붑의 노래",
         "platforms": [],
-        "popularity": 5.8518,
+        "popularity": 5.8947,
         "imdbId": "tt39233100",
         "countries": [
           "South Korea"
@@ -8640,7 +8642,7 @@
         "origLang": "ja",
         "origTitle": "青春ブタ野郎はディアフレンドの夢を見ない",
         "platforms": [],
-        "popularity": 3.8344,
+        "popularity": 3.9225,
         "imdbId": "tt39927807",
         "countries": [
           "Japan"
@@ -8833,7 +8835,7 @@
         "origLang": "cn",
         "origTitle": "UFO離奇命案",
         "platforms": [],
-        "popularity": 0.6723,
+        "popularity": 0.8474,
         "imdbId": "tt38857175",
         "countries": [
           "Hong Kong SAR China"
@@ -9190,7 +9192,7 @@
         "origLang": "en",
         "origTitle": "Vampire Carnival",
         "platforms": [],
-        "popularity": 2.9518,
+        "popularity": 2.448,
         "imdbId": "tt39649289",
         "countries": [
           "Spain",
@@ -9362,7 +9364,7 @@
         "origLang": "en",
         "origTitle": "CatVideoFest 2026",
         "platforms": [],
-        "popularity": 0.3266,
+        "popularity": 0.275,
         "imdbId": "tt39676060",
         "countries": [],
         "detail": {
@@ -9486,7 +9488,7 @@
         "origLang": "ja",
         "origTitle": "名探偵コナン 30号殺人事件",
         "platforms": [],
-        "popularity": 2.7227,
+        "popularity": 2.8704,
         "imdbId": "tt46656123",
         "countries": [
           "Japan"
@@ -9650,7 +9652,7 @@
         "origLang": "zh",
         "origTitle": "我要當總統",
         "platforms": [],
-        "popularity": 0.2257,
+        "popularity": 0.2048,
         "imdbId": null,
         "countries": [
           "Japan",
@@ -9865,11 +9867,11 @@
             "job": "Director"
           },
           {
-            "name": "Zhu Sujin",
+            "name": "姜文",
             "job": "Screenplay"
           },
           {
-            "name": "姜文",
+            "name": "Li Bukong",
             "job": "Screenplay"
           }
         ],
@@ -10006,11 +10008,11 @@
               "job": "Director"
             },
             {
-              "name": "Zhu Sujin",
+              "name": "姜文",
               "job": "Screenplay"
             },
             {
-              "name": "姜文",
+              "name": "Li Bukong",
               "job": "Screenplay"
             }
           ],
@@ -10174,11 +10176,11 @@
         "crew": [
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Screenplay"
+            "job": "Director"
           },
           {
             "name": "ఎస్.ఎస్. రాజమౌళి",
-            "job": "Director"
+            "job": "Screenplay"
           }
         ],
         "budget": 69000000,
@@ -10302,11 +10304,11 @@
           "crew": [
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Screenplay"
+              "job": "Director"
             },
             {
               "name": "ఎస్.ఎస్. రాజమౌళి",
-              "job": "Director"
+              "job": "Screenplay"
             }
           ],
           "budget": 69000000,
@@ -11006,7 +11008,7 @@
         "origLang": "en",
         "origTitle": "The Mongoose",
         "platforms": [],
-        "popularity": 101.6431,
+        "popularity": 93.294,
         "imdbId": "tt13611778",
         "countries": [
           "Australia"
@@ -11207,7 +11209,7 @@
         "origLang": "zh",
         "origTitle": "歡迎來到朵莉之家",
         "platforms": [],
-        "popularity": 0.6698,
+        "popularity": 0.7426,
         "imdbId": "tt37038996",
         "countries": [
           "Taiwan"
@@ -11418,7 +11420,7 @@
         "origLang": "th",
         "origTitle": "คำสารภาพของหมอผี",
         "platforms": [],
-        "popularity": 1.9849,
+        "popularity": 2.0158,
         "imdbId": "tt44632295",
         "countries": [
           "Thailand"
@@ -12111,7 +12113,7 @@
         "origLang": "ja",
         "origTitle": "影を売る女",
         "platforms": [],
-        "popularity": 0.2724,
+        "popularity": 0.2769,
         "imdbId": "tt44090388",
         "countries": [],
         "detail": {
@@ -12251,7 +12253,7 @@
         "origLang": "zh",
         "origTitle": "消失的金鳳娜",
         "platforms": [],
-        "popularity": 0.7744,
+        "popularity": 0.7952,
         "imdbId": "tt36958624",
         "countries": [
           "Taiwan"
@@ -12397,7 +12399,7 @@
         "origLang": "ko",
         "origTitle": "아이유 콘서트 : 더 골든 아워",
         "platforms": [],
-        "popularity": 1.019,
+        "popularity": 1.4362,
         "imdbId": "tt28997098",
         "countries": [
           "South Korea"
@@ -12556,11 +12558,11 @@
         ],
         "crew": [
           {
-            "name": "Nicolas Athané",
+            "name": "Marco Nguyen",
             "job": "Director"
           },
           {
-            "name": "Marco Nguyen",
+            "name": "Nicolas Athané",
             "job": "Director"
           },
           {
@@ -12665,11 +12667,11 @@
           ],
           "crew": [
             {
-              "name": "Nicolas Athané",
+              "name": "Marco Nguyen",
               "job": "Director"
             },
             {
-              "name": "Marco Nguyen",
+              "name": "Nicolas Athané",
               "job": "Director"
             },
             {
@@ -12833,7 +12835,7 @@
         "origLang": "en",
         "origTitle": "The Pout-Pout Fish",
         "platforms": [],
-        "popularity": 9.556,
+        "popularity": 9.1847,
         "imdbId": "tt12824390",
         "countries": [
           "Australia",
@@ -13080,12 +13082,12 @@
         ],
         "crew": [
           {
-            "name": "裴世英",
-            "job": "Writer"
-          },
-          {
             "name": "김창주",
             "job": "Director"
+          },
+          {
+            "name": "裴世英",
+            "job": "Writer"
           }
         ],
         "budget": 0,
@@ -13198,12 +13200,12 @@
           ],
           "crew": [
             {
-              "name": "裴世英",
-              "job": "Writer"
-            },
-            {
               "name": "김창주",
               "job": "Director"
+            },
+            {
+              "name": "裴世英",
+              "job": "Writer"
             }
           ],
           "budget": 0,
@@ -13356,7 +13358,7 @@
         "origLang": "en",
         "origTitle": "The Social Reckoning",
         "platforms": [],
-        "popularity": 81.7303,
+        "popularity": 80.7717,
         "imdbId": "tt37510326",
         "countries": [
           "United States"
@@ -13614,7 +13616,7 @@
         "origLang": "pl",
         "origTitle": "Chopin, Chopin!",
         "platforms": [],
-        "popularity": 2.8267,
+        "popularity": 2.4533,
         "imdbId": "tt33305572",
         "countries": [
           "Poland"
@@ -14042,7 +14044,7 @@
         "origLang": "en",
         "origTitle": "Clayface",
         "platforms": [],
-        "popularity": 48.6174,
+        "popularity": 42.6266,
         "imdbId": "tt34890576",
         "countries": [
           "United States"
@@ -14253,7 +14255,7 @@
         "origLang": "en",
         "origTitle": "National Theatre Live: Mrs. Warren's Profession",
         "platforms": [],
-        "popularity": 0.9,
+        "popularity": 0.8769,
         "imdbId": "tt37511195",
         "countries": [
           "United Kingdom"
@@ -14445,12 +14447,12 @@
         ],
         "crew": [
           {
-            "name": "裏則林",
-            "job": "Screenplay"
-          },
-          {
             "name": "路陽",
             "job": "Director"
+          },
+          {
+            "name": "裏則林",
+            "job": "Screenplay"
           }
         ],
         "budget": 0,
@@ -14563,12 +14565,12 @@
           ],
           "crew": [
             {
-              "name": "裏則林",
-              "job": "Screenplay"
-            },
-            {
               "name": "路陽",
               "job": "Director"
+            },
+            {
+              "name": "裏則林",
+              "job": "Screenplay"
             }
           ],
           "budget": 0,
@@ -14993,7 +14995,7 @@
         "origLang": "en",
         "origTitle": "Whalefall",
         "platforms": [],
-        "popularity": 33.3769,
+        "popularity": 29.0714,
         "imdbId": "tt28535715",
         "countries": [
           "United States"
@@ -15244,7 +15246,7 @@
         "origLang": "en",
         "origTitle": "Virginia Woolf's Night & Day",
         "platforms": [],
-        "popularity": 2.2799,
+        "popularity": 2.2919,
         "imdbId": "tt27802226",
         "countries": [
           "United Kingdom",
@@ -15617,7 +15619,7 @@
         "origLang": "ja",
         "origTitle": "それいけ！アンパンマン　パンタンと約束の星",
         "platforms": [],
-        "popularity": 0.6623,
+        "popularity": 0.7191,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -16107,7 +16109,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 244.1644,
+        "popularity": 229.4784,
         "imdbId": "tt36586020",
         "countries": [
           "United States"
@@ -16503,7 +16505,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 4.5466,
+        "popularity": 5.0009,
         "imdbId": "tt1776196",
         "countries": [
           "Japan"
@@ -16680,7 +16682,7 @@
         "origLang": "zh",
         "origTitle": "人吶，為什麼要跑步？",
         "platforms": [],
-        "popularity": 0.0651,
+        "popularity": 0.0344,
         "imdbId": null,
         "countries": [
           "Taiwan"
@@ -16860,7 +16862,7 @@
         "origLang": "en",
         "origTitle": "Digger",
         "platforms": [],
-        "popularity": 21.4113,
+        "popularity": 21.678,
         "imdbId": "tt31450459",
         "countries": [
           "United States"
@@ -17085,7 +17087,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 317.4426,
+        "popularity": 305.2201,
         "imdbId": "tt7526136",
         "countries": [
           "United States"
@@ -17237,7 +17239,7 @@
           },
           {
             "name": "札克·克瑞格",
-            "char": "Intercom (voice)",
+            "char": "Voice on Intercom (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/bpFGFfWYIrZVK7WjwkVLwIoMKEb.jpg"
           },
           {
@@ -17277,7 +17279,7 @@
           },
           {
             "name": "Sara Paxton",
-            "char": "Michelle (voice)",
+            "char": "Voice of Michelle (voice)",
             "photo": "https://image.tmdb.org/t/p/w500/DWrjFhjSLY4EFanCMKNPrUmP2p.jpg"
           },
           {
@@ -17311,7 +17313,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 231.9361,
+        "popularity": 223.4965,
         "imdbId": "tt35538033",
         "countries": [
           "United States",
@@ -17369,7 +17371,7 @@
             },
             {
               "name": "札克·克瑞格",
-              "char": "Intercom (voice)",
+              "char": "Voice on Intercom (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/bpFGFfWYIrZVK7WjwkVLwIoMKEb.jpg"
             },
             {
@@ -17409,7 +17411,7 @@
             },
             {
               "name": "Sara Paxton",
-              "char": "Michelle (voice)",
+              "char": "Voice of Michelle (voice)",
               "photo": "https://image.tmdb.org/t/p/w500/DWrjFhjSLY4EFanCMKNPrUmP2p.jpg"
             },
             {
@@ -17802,7 +17804,7 @@
         "origLang": "ja",
         "origTitle": "クレヨンしんちゃん 奇々怪々！オラの妖怪バケ～ション",
         "platforms": [],
-        "popularity": 10.4086,
+        "popularity": 10.3931,
         "imdbId": "tt41293342",
         "countries": [
           "Japan"
@@ -18862,7 +18864,7 @@
             "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
           }
         ],
-        "popularity": 45.482,
+        "popularity": 42.1296,
         "imdbId": "tt0245429",
         "countries": [
           "Japan"
@@ -19130,12 +19132,12 @@
         ],
         "crew": [
           {
-            "name": "露絲·鮑爾·賈華拉",
-            "job": "Screenplay"
-          },
-          {
             "name": "James Ivory",
             "job": "Director"
+          },
+          {
+            "name": "露絲·鮑爾·賈華拉",
+            "job": "Screenplay"
           }
         ],
         "budget": 3000000,
@@ -19248,12 +19250,12 @@
           ],
           "crew": [
             {
-              "name": "露絲·鮑爾·賈華拉",
-              "job": "Screenplay"
-            },
-            {
               "name": "James Ivory",
               "job": "Director"
+            },
+            {
+              "name": "露絲·鮑爾·賈華拉",
+              "job": "Screenplay"
             }
           ],
           "budget": 3000000,
@@ -19403,7 +19405,7 @@
             "logo": "/uFL3c4Cq8M6WoLymlC5Y8bmGytV.png"
           }
         ],
-        "popularity": 3.5393,
+        "popularity": 3.7808,
         "imdbId": "tt0301083",
         "countries": [
           "Japan"
@@ -19885,7 +19887,7 @@
         "origLang": "zh",
         "origTitle": "我们不是陌生人",
         "platforms": [],
-        "popularity": 1.7593,
+        "popularity": 1.6825,
         "imdbId": "tt13848364",
         "countries": [
           "Singapore",
@@ -20013,7 +20015,7 @@
         "origLang": "en",
         "origTitle": "Michael Jackson's HiStory: The King of Pop 1958-2009",
         "platforms": [],
-        "popularity": 0.5944,
+        "popularity": 0.7193,
         "imdbId": null,
         "countries": [],
         "detail": {
@@ -20476,7 +20478,7 @@
         "origLang": "en",
         "origTitle": "The Cycle",
         "platforms": [],
-        "popularity": 17.355,
+        "popularity": 16.0848,
         "imdbId": "tt32358390",
         "countries": [
           "United States",
@@ -20893,7 +20895,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/wWwKURKR0fCav2tnoDfmsPZlmEM.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
-        "voteAverage": "7.3",
+        "voteAverage": "7.1",
         "genre": [
           "喜劇",
           "愛情"
@@ -20999,7 +21001,7 @@
         "origLang": "en",
         "origTitle": "Focker In-Law",
         "platforms": [],
-        "popularity": 48.7467,
+        "popularity": 55.3602,
         "imdbId": "tt34966140",
         "countries": [
           "United States"
@@ -21013,7 +21015,7 @@
           "synopsis": "",
           "poster": "https://image.tmdb.org/t/p/w500/wWwKURKR0fCav2tnoDfmsPZlmEM.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
-          "voteAverage": "7.3",
+          "voteAverage": "7.1",
           "trailerKey": "ouOu_Xyh6GE",
           "imdbId": "tt34966140",
           "countries": [
@@ -21199,7 +21201,7 @@
         "origLang": "zh",
         "origTitle": "晚窒息",
         "platforms": [],
-        "popularity": 0.9767,
+        "popularity": 0.9566,
         "imdbId": "tt37566261",
         "countries": [
           "Taiwan"
@@ -21414,7 +21416,7 @@
         "origLang": "ja",
         "origTitle": "踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！",
         "platforms": [],
-        "popularity": 0.6554,
+        "popularity": 0.7476,
         "imdbId": "tt40826527",
         "countries": [
           "Japan"
@@ -21665,7 +21667,7 @@
         "origLang": "ja",
         "origTitle": "パリに咲くエトワール",
         "platforms": [],
-        "popularity": 1.817,
+        "popularity": 2.1478,
         "imdbId": "tt37874634",
         "countries": [
           "Japan"
@@ -21922,7 +21924,7 @@
         "origLang": "ja",
         "origTitle": "映画『正直不動産』",
         "platforms": [],
-        "popularity": 1.2957,
+        "popularity": 1.173,
         "imdbId": "tt41991760",
         "countries": [
           "Japan"
@@ -22163,11 +22165,11 @@
         ],
         "budget": 0,
         "revenue": 0,
-        "status": "Released",
+        "status": "In Production",
         "origLang": "en",
         "origTitle": "Violent Night 2",
         "platforms": [],
-        "popularity": 13.345,
+        "popularity": 14.334,
         "imdbId": "tt32432428",
         "countries": [
           "United States"
@@ -22275,7 +22277,7 @@
           ],
           "budget": 0,
           "revenue": 0,
-          "status": "Released",
+          "status": "In Production",
           "origLang": "en",
           "origTitle": "Violent Night 2",
           "platforms": []
@@ -22635,7 +22637,7 @@
         "origLang": "en",
         "origTitle": "Above the Below",
         "platforms": [],
-        "popularity": 3.3995,
+        "popularity": 3.1776,
         "imdbId": "tt29634374",
         "countries": [
           "United Kingdom",
@@ -22982,7 +22984,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/vlpt6qLyBHNBKxiGYTE3RiPxNmo.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/19zqLF8PKpVuhCs1CZmvzLfyZqQ.jpg",
-        "voteAverage": "",
+        "voteAverage": "2.0",
         "genre": [
           "動作",
           "驚悚",
@@ -23048,7 +23050,7 @@
         "origLang": "ko",
         "origTitle": "슬픈 열대",
         "platforms": [],
-        "popularity": 2.8058,
+        "popularity": 3.6739,
         "imdbId": "tt33317763",
         "countries": [
           "South Korea"
@@ -23063,7 +23065,7 @@
           "synopsis": "一群遭受遺棄的孩子，被培養成冷酷無情的殺手，組成名為「悲傷熱帶」的殺手組織。成員們自幼接受殘酷訓練，而將他們一手養大、掌控整個組織的領袖「師父」（金明民飾演），更是所有人敬畏的存在。然而，師父竟在某天遭人殺害，徹底打破組織長年以來維持的秩序。失去了唯一的掌權者，原本情同手足的成員，也瞬間陷入猜忌與對立。另一方面，覬覦師父地位已久的合作勢力也開始蠢蠢欲動，所有人都想趁組織群龍無首之際，搶下至高無上的權力。究竟誰才能成為下一位掌權者？誰又能在這場沒有退路的生存之戰中全身而退？一場血染「悲傷熱帶」的殺戮風暴，正準備揭開序幕！",
           "poster": "https://image.tmdb.org/t/p/w500/vlpt6qLyBHNBKxiGYTE3RiPxNmo.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/19zqLF8PKpVuhCs1CZmvzLfyZqQ.jpg",
-          "voteAverage": "",
+          "voteAverage": "2.0",
           "trailerKey": "8AhOSZcpo9o",
           "imdbId": "tt33317763",
           "countries": [
@@ -23213,7 +23215,7 @@
         "origLang": "zh",
         "origTitle": "日光",
         "platforms": [],
-        "popularity": 0.8883,
+        "popularity": 0.7503,
         "imdbId": "tt39673991",
         "countries": [
           "Taiwan",
@@ -23384,7 +23386,7 @@
         "origLang": "tl",
         "origTitle": "58th",
         "platforms": [],
-        "popularity": 0.814,
+        "popularity": 0.7405,
         "imdbId": "tt34748116",
         "countries": [
           "Philippines"
@@ -23564,7 +23566,7 @@
         "origLang": "ja",
         "origTitle": "ナギダイアリー",
         "platforms": [],
-        "popularity": 1.2698,
+        "popularity": 1.2649,
         "imdbId": "tt28551050",
         "countries": [
           "Japan",
@@ -23780,7 +23782,7 @@
         "origLang": "ja",
         "origTitle": "鬼の花嫁",
         "platforms": [],
-        "popularity": 2.5183,
+        "popularity": 2.3715,
         "imdbId": "tt39112665",
         "countries": [
           "Japan"
@@ -23972,7 +23974,7 @@
         "origLang": "ja",
         "origTitle": "君と花火と約束と",
         "platforms": [],
-        "popularity": 0.9867,
+        "popularity": 1.2557,
         "imdbId": "tt41293380",
         "countries": [
           "Japan"
@@ -24084,7 +24086,7 @@
         "origLang": "zh",
         "origTitle": "微笑之後：曾雅妮",
         "platforms": [],
-        "popularity": 0.128,
+        "popularity": 0.2248,
         "imdbId": "tt48376112",
         "countries": [
           "Taiwan",
@@ -24257,7 +24259,7 @@
         "origLang": "zh",
         "origTitle": "高寮大劫",
         "platforms": [],
-        "popularity": 1.4335,
+        "popularity": 1.2176,
         "imdbId": "tt51594964",
         "countries": [
           "Taiwan"
@@ -24398,7 +24400,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/m4uJihTd89rmTz1V3qhu0CGXRgJ.jpg",
         "posterIsBackdrop": false,
         "backdrop": "https://image.tmdb.org/t/p/w1280/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
-        "voteAverage": "8.7",
+        "voteAverage": "8.6",
         "genre": [
           "紀錄"
         ],
@@ -24503,7 +24505,7 @@
         "origLang": "en",
         "origTitle": "You Can See Everything",
         "platforms": [],
-        "popularity": 99.3363,
+        "popularity": 123.4705,
         "imdbId": "tt45368240",
         "countries": [
           "United States"
@@ -24516,7 +24518,7 @@
           "synopsis": "曾以「一滴血就能檢測上百種疾病」震撼矽谷的賽拉諾斯（Theranos）創辦人伊莉莎白霍姆斯，從備受追捧的新創女王跌落神壇，最終因詐欺罪名成立。入獄前夕，她邀請拍攝團隊走進家中，在鏡頭前吐露真心。導演原想挖掘騙局背後的秘辛，沒想到隨著朝夕相處，她與丈夫堅定的說詞，竟讓原本抱持懷疑的導演也逐漸動搖。",
           "poster": "https://image.tmdb.org/t/p/w500/m4uJihTd89rmTz1V3qhu0CGXRgJ.jpg",
           "backdrop": "https://image.tmdb.org/t/p/w1280/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
-          "voteAverage": "8.7",
+          "voteAverage": "8.6",
           "trailerKey": "L9nOEmmLcrI",
           "imdbId": "tt45368240",
           "countries": [
@@ -24825,7 +24827,7 @@
         "origLang": "ko",
         "origTitle": "폭설",
         "platforms": [],
-        "popularity": 2.9438,
+        "popularity": 2.9701,
         "imdbId": "tt34380971",
         "countries": [
           "South Korea"
@@ -24996,7 +24998,7 @@
         "origLang": "ja",
         "origTitle": "M.I.S.S.I.O.N. 歌劇な潜入捜査官",
         "platforms": [],
-        "popularity": 0.9216,
+        "popularity": 0.8675,
         "imdbId": "tt46023662",
         "countries": [
           "Japan"
@@ -25205,7 +25207,7 @@
         "origLang": "en",
         "origTitle": "Dune: Part Three",
         "platforms": [],
-        "popularity": 48.0643,
+        "popularity": 52.0432,
         "imdbId": "tt31378509",
         "countries": [
           "United States",
@@ -25452,7 +25454,7 @@
         "origLang": "en",
         "origTitle": "Avengers: Doomsday",
         "platforms": [],
-        "popularity": 248.5211,
+        "popularity": 261.3654,
         "imdbId": "tt21357150",
         "countries": [
           "United States"
@@ -25700,11 +25702,11 @@
         "crew": [
           {
             "name": "Ang Geck Geck",
-            "job": "Director"
+            "job": "Writer"
           },
           {
             "name": "Ang Geck Geck",
-            "job": "Writer"
+            "job": "Director"
           }
         ],
         "budget": 0,
@@ -25819,11 +25821,11 @@
           "crew": [
             {
               "name": "Ang Geck Geck",
-              "job": "Director"
+              "job": "Writer"
             },
             {
               "name": "Ang Geck Geck",
-              "job": "Writer"
+              "job": "Director"
             }
           ],
           "budget": 0,
@@ -25902,12 +25904,12 @@
           },
           {
             "name": "Elizabeth Debicki",
-            "char": "The Tailor’s Wife",
+            "char": "The Tailor's Wife",
             "photo": "https://image.tmdb.org/t/p/w500/sJxj44aKdY0pjSIgnxBgMWLrQmw.jpg"
           },
           {
             "name": "Marli Siu",
-            "char": "The Bottlewasher’s Wife",
+            "char": "The Bottlewasher's Wife",
             "photo": "https://image.tmdb.org/t/p/w500/pNi3TfnnJuDz25m93Nr2AKIYV4R.jpg"
           },
           {
@@ -25932,7 +25934,7 @@
           },
           {
             "name": "Emily Lloyd-Saini",
-            "char": "The Innkeeper’s Wife",
+            "char": "The Innkeeper's Wife",
             "photo": "https://image.tmdb.org/t/p/w500/tW4TD9PmBGutKVhvUNXSWxZjkVn.jpg"
           },
           {
@@ -25957,7 +25959,7 @@
           },
           {
             "name": "Shobu Kapoor",
-            "char": "The Shoemaker’s Wife",
+            "char": "The Shoemaker's Wife",
             "photo": "https://image.tmdb.org/t/p/w500/xYw04alDmANRMeSw9Xi7wt5HQwm.jpg"
           },
           {
@@ -25968,11 +25970,11 @@
         ],
         "crew": [
           {
-            "name": "Alex Huston Fischer",
+            "name": "Eleanor Wilson",
             "job": "Director"
           },
           {
-            "name": "Eleanor Wilson",
+            "name": "Alex Huston Fischer",
             "job": "Director"
           },
           {
@@ -26027,12 +26029,12 @@
             },
             {
               "name": "Elizabeth Debicki",
-              "char": "The Tailor’s Wife",
+              "char": "The Tailor's Wife",
               "photo": "https://image.tmdb.org/t/p/w500/sJxj44aKdY0pjSIgnxBgMWLrQmw.jpg"
             },
             {
               "name": "Marli Siu",
-              "char": "The Bottlewasher’s Wife",
+              "char": "The Bottlewasher's Wife",
               "photo": "https://image.tmdb.org/t/p/w500/pNi3TfnnJuDz25m93Nr2AKIYV4R.jpg"
             },
             {
@@ -26057,7 +26059,7 @@
             },
             {
               "name": "Emily Lloyd-Saini",
-              "char": "The Innkeeper’s Wife",
+              "char": "The Innkeeper's Wife",
               "photo": "https://image.tmdb.org/t/p/w500/tW4TD9PmBGutKVhvUNXSWxZjkVn.jpg"
             },
             {
@@ -26082,7 +26084,7 @@
             },
             {
               "name": "Shobu Kapoor",
-              "char": "The Shoemaker’s Wife",
+              "char": "The Shoemaker's Wife",
               "photo": "https://image.tmdb.org/t/p/w500/xYw04alDmANRMeSw9Xi7wt5HQwm.jpg"
             },
             {
@@ -26093,11 +26095,11 @@
           ],
           "crew": [
             {
-              "name": "Alex Huston Fischer",
+              "name": "Eleanor Wilson",
               "job": "Director"
             },
             {
-              "name": "Eleanor Wilson",
+              "name": "Alex Huston Fischer",
               "job": "Director"
             },
             {
@@ -26757,7 +26759,7 @@
         "origLang": "ja",
         "origTitle": "ファーストボイス ー私たちの逆転裁判ー",
         "platforms": [],
-        "popularity": 0.8284,
+        "popularity": 0.7503,
         "imdbId": null,
         "countries": [
           "Japan"
@@ -27294,7 +27296,7 @@
         "origLang": "th",
         "origTitle": "โอมุคาเดะ",
         "platforms": [],
-        "popularity": 1.7794,
+        "popularity": 1.6592,
         "imdbId": "tt38223449",
         "countries": [
           "Thailand"
@@ -27822,7 +27824,7 @@
         "origLang": "en",
         "origTitle": "The Beekeeper 2",
         "platforms": [],
-        "popularity": 10.6474,
+        "popularity": 10.4644,
         "imdbId": "tt35935357",
         "countries": [
           "United States",
@@ -28081,7 +28083,7 @@
         "origLang": "en",
         "origTitle": "River",
         "platforms": [],
-        "popularity": 3.8093,
+        "popularity": 3.7703,
         "imdbId": "tt33085567",
         "countries": [
           "United States"
@@ -28252,11 +28254,11 @@
         ],
         "budget": 0,
         "revenue": 0,
-        "status": "Released",
+        "status": "In Production",
         "origLang": "ko",
         "origTitle": "MegaRacer",
         "platforms": [],
-        "popularity": 0.0422,
+        "popularity": 0.1041,
         "imdbId": "tt6552604",
         "countries": [
           "South Korea",
@@ -28296,7 +28298,7 @@
           ],
           "budget": 0,
           "revenue": 0,
-          "status": "Released",
+          "status": "In Production",
           "origLang": "ko",
           "origTitle": "MegaRacer",
           "platforms": []
@@ -28329,7 +28331,7 @@
           "喜劇",
           "奇幻"
         ],
-        "duration": 126,
+        "duration": "",
         "synopsis": "",
         "imdb": "",
         "rt": "",
@@ -28444,7 +28446,7 @@
           "United States"
         ],
         "detail": {
-          "duration": 126,
+          "duration": "",
           "genres": [
             "冒險",
             "喜劇",
@@ -29556,7 +29558,7 @@
         "origLang": "zh",
         "origTitle": "我的棋王爺爺",
         "platforms": [],
-        "popularity": 0.4437,
+        "popularity": 0.3819,
         "imdbId": "tt41618968",
         "countries": [
           "Taiwan"
@@ -29776,7 +29778,7 @@
         "origLang": "en",
         "origTitle": "Narnia: The Magician's Nephew",
         "platforms": [],
-        "popularity": 6.7703,
+        "popularity": 6.8273,
         "imdbId": "tt9077514",
         "countries": [
           "United States",
@@ -30214,7 +30216,7 @@
         "origLang": "zh",
         "origTitle": "花臉貓：修羅道",
         "platforms": [],
-        "popularity": 0.7118,
+        "popularity": 0.6762,
         "imdbId": "tt44935524",
         "countries": [
           "Taiwan"
@@ -30386,7 +30388,7 @@
         "origLang": "en",
         "origTitle": "The Thomas Crown Affair",
         "platforms": [],
-        "popularity": 4.3338,
+        "popularity": 3.9785,
         "imdbId": "tt5500064",
         "countries": [
           "United States"
@@ -30603,7 +30605,7 @@
         "origLang": "en",
         "origTitle": "Gatto",
         "platforms": [],
-        "popularity": 7.0042,
+        "popularity": 7.2666,
         "imdbId": "tt26443610",
         "countries": [
           "United States"
@@ -30867,7 +30869,7 @@
         "origLang": "zh",
         "origTitle": "狂忘警探",
         "platforms": [],
-        "popularity": 1.9653,
+        "popularity": 1.9075,
         "imdbId": "tt38893248",
         "countries": [
           "Taiwan",
@@ -31314,7 +31316,7 @@
         "origLang": "zh",
         "origTitle": "天亮前的戀愛",
         "platforms": [],
-        "popularity": 0.3289,
+        "popularity": 0.302,
         "imdbId": null,
         "countries": [
           "Taiwan",
@@ -31463,7 +31465,7 @@
         "origLang": "zh",
         "origTitle": "星空下的鋼琴手",
         "platforms": [],
-        "popularity": 0.4898,
+        "popularity": 0.5809,
         "imdbId": "tt51595085",
         "countries": [
           "Taiwan"
@@ -31589,7 +31591,7 @@
         "origLang": "zh",
         "origTitle": "歌舞的我們",
         "platforms": [],
-        "popularity": 0.2227,
+        "popularity": 0.2119,
         "imdbId": "tt42601658",
         "countries": [
           "Taiwan"
